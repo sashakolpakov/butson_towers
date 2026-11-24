@@ -86,6 +86,9 @@ witnesses and their complete connection to these theorems are the next
 formalization work; executable verification and kernel-checked proofs
 are recorded separately.
 
+A separate [Lean reproducibility package](release/lean_verification/README.md)
+contains the locked sources, checksum verifier and successful extracted replay.
+
 ## Manuscript and HexagonMath tooling
 
 The [announcement and source package](release/hadamard_7572_announcement/README.md)
@@ -94,3 +97,10 @@ defaults live in `hexagon_parameters.local`; credentials live separately
 in `hexagon_key.local`. Both files remain private, outside Git and release
 archives. Local preparation and saved defaults do not authorize a remote
 draft, submission or publication.
+
+Audit the Git index, reachable history and release ZIPs without printing
+private values:
+
+```sh
+.venv/bin/python scripts/check_private_files.py --root .
+```

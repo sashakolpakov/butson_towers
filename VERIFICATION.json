@@ -8,7 +8,9 @@
     "source_checkout_independent": true,
     "runtime_independent_of_original_repository": true,
     "complete_migrated_suite_passed": 307,
-    "additional_native_driver_checks_passed": 6
+    "additional_native_driver_checks_passed": 6,
+    "privacy_regression_checks_passed": 13,
+    "total_unique_checks_verified": 326
   },
   "formal": {
     "lean_toolchain": "leanprover/lean4:v4.32.0",
@@ -142,7 +144,15 @@
     ],
     "project_axioms_or_placeholders": false,
     "concrete_finite_witnesses_formally_integrated": false,
-    "rechecked_after_relocation": true
+    "rechecked_after_relocation": true,
+    "reproducibility_package": {
+      "archive": "release/lean_verification/butson-towers-lean-repro.zip",
+      "sha256": "e1bfc3ad04d104073497c349d88b86d8e57a68ba62c61a0c361e39da5dc21376",
+      "source_files": 13,
+      "fresh_extracted_replay_passed": true,
+      "dependency_pins_checked": 9,
+      "dependency_mode": "existing-pinned-cache"
+    }
   },
   "release": {
     "source_zip_sha256": "a236a7ab84069ca9a9d85816d4ec872a93d0f3a3fe124fabaf40f2a947824ea5",
@@ -153,9 +163,47 @@
   "private_configuration": {
     "excluded_from_git": true,
     "excluded_from_submission_archive": true,
-    "mode": "0600"
+    "mode": "0600",
+    "audit": {
+      "checks": {
+        "all_git_index_blobs_checked": true,
+        "all_reachable_git_objects_checked": true,
+        "credential_loaded": true,
+        "git_index_checked": true,
+        "parameters_loaded": true,
+        "release_zip_walk_completed": true,
+        "root_private_files_present_regular_and_mode_0600": true
+      },
+      "counts": {
+        "errors": 0,
+        "findings": 0,
+        "git_blob_bytes_checked": 116197151,
+        "git_blobs_checked": 1132,
+        "git_index_blob_entries_checked": 1136,
+        "git_index_only_blobs_checked": 12,
+        "git_objects_checked": 1170,
+        "private_files_checked": 2,
+        "reachable_git_blobs_checked": 1120,
+        "reachable_git_objects_checked": 1158,
+        "reachable_git_trees_checked": 34,
+        "release_archives_checked": 2,
+        "tracked_paths_checked": 1136,
+        "zip_archives_checked": 478,
+        "zip_expanded_bytes_checked": 147271718,
+        "zip_members_checked": 1097
+      },
+      "errors": [],
+      "findings": [],
+      "ok": true
+    },
+    "all_local_files_and_directories_excluded": true
   },
   "final_location_verified": true,
   "final_repository": "/Users/sasha/butson_towers",
-  "final_location_representative_tests_passed": 17
+  "final_location_representative_tests_passed": 17,
+  "original_classification_repository": {
+    "memory_tests_passed": 104,
+    "remaining_tests_passed": 551,
+    "retained_and_verified": true
+  }
 }
