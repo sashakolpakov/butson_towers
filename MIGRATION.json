@@ -11476,7 +11476,7 @@
       "source_sha256": "19d6d5a290d621bc336d5e787bb16adac5951f4c843b83d2c2393f7eb844e52d",
       "bytes": 1246,
       "role": "copy_shared_or_project_metadata",
-      "destination_sha256": "efb9b46809e617e018307bb0fce634d23a9e8465abac3361d4821c089618a89c"
+      "destination_sha256": "1deb310198fd09ba429f4a48dab19ff0aa94a8299f98141a1c8905f9ed8fe0ab"
     },
     {
       "path": ".ignore",
@@ -16538,5 +16538,6 @@
   "source_cleanup_performed": true,
   "pre_installation_checks_passed": true,
   "source_files_removed_after_verification": 2182,
-  "final_repository_installed": true
+  "final_repository_installed": true,
+  "all_previously_versioned_moved_research_preserved_in_new_git": true
 }

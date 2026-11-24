@@ -56,3 +56,8 @@ runs/
 !/artifacts/large-butson-descendants/
 /artifacts/large-butson-descendants/*
 !/artifacts/large-butson-descendants/*.npz
+
+# Previously versioned exact partial-descent definitions are preserved here.
+!/artifacts/partial-fifth-descent/
+/artifacts/partial-fifth-descent/*
+!/artifacts/partial-fifth-descent/*.npz
