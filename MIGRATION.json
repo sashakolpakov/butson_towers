@@ -16524,6 +16524,20 @@
       "bytes": 61760,
       "role": "copy_shared_research_evidence",
       "destination_sha256": "fdb868884391fd3848c1585a3c9f080461210526a5ce6128fb3ac6477fb4af88"
+    },
+    {
+      "path": "tests/test_sextic_row_congruence.py",
+      "source_sha256": "cd346c2d3f102c114e544a1014e8b918bb6d036fc8a5abc07baaf69501547406",
+      "destination_sha256": "cd346c2d3f102c114e544a1014e8b918bb6d036fc8a5abc07baaf69501547406",
+      "bytes": 2349,
+      "role": "move"
+    },
+    {
+      "path": "tests/test_sextic_row_mod4.py",
+      "source_sha256": "cd75a003d6289cdb77dd660926b480619a07d74af1a4b866c8a000f18539f5fc",
+      "destination_sha256": "cd75a003d6289cdb77dd660926b480619a07d74af1a4b866c8a000f18539f5fc",
+      "bytes": 3252,
+      "role": "move"
     }
   ],
   "private_configuration": {
@@ -16537,7 +16551,7 @@
   },
   "source_cleanup_performed": true,
   "pre_installation_checks_passed": true,
-  "source_files_removed_after_verification": 2182,
+  "source_files_removed_after_verification": 2184,
   "final_repository_installed": true,
   "all_previously_versioned_moved_research_preserved_in_new_git": true
 }

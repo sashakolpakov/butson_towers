@@ -3,10 +3,12 @@
   "checked_utc": "2026-11-24T21:58:41.215188+00:00",
   "python": {
     "version": "3.12.13",
-    "migrated_test_files": 71,
-    "tests_passed": 307,
+    "migrated_test_files": 73,
+    "tests_passed": 313,
     "source_checkout_independent": true,
-    "runtime_independent_of_original_repository": true
+    "runtime_independent_of_original_repository": true,
+    "complete_migrated_suite_passed": 307,
+    "additional_native_driver_checks_passed": 6
   },
   "formal": {
     "lean_toolchain": "leanprover/lean4:v4.32.0",
