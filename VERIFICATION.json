@@ -139,7 +139,8 @@
       }
     ],
     "project_axioms_or_placeholders": false,
-    "concrete_finite_witnesses_formally_integrated": false
+    "concrete_finite_witnesses_formally_integrated": false,
+    "rechecked_after_relocation": true
   },
   "release": {
     "source_zip_sha256": "a236a7ab84069ca9a9d85816d4ec872a93d0f3a3fe124fabaf40f2a947824ea5",
@@ -152,5 +153,7 @@
     "excluded_from_submission_archive": true,
     "mode": "0600"
   },
-  "final_location_verified": false
+  "final_location_verified": true,
+  "final_repository": "/Users/sasha/butson_towers",
+  "final_location_representative_tests_passed": 17
 }

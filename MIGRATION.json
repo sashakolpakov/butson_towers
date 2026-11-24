@@ -16535,6 +16535,8 @@
     "permissions": "0600",
     "credential_values_or_hashes_in_manifest": false
   },
-  "source_cleanup_performed": false,
-  "pre_installation_checks_passed": true
+  "source_cleanup_performed": true,
+  "pre_installation_checks_passed": true,
+  "source_files_removed_after_verification": 2182,
+  "final_repository_installed": true
 }
