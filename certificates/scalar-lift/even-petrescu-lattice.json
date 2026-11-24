@@ -1,0 +1,114 @@
+{
+  "schema": "even-petrescu-lattice-v1",
+  "scope": "Exact 5^3-part of the joint integrality condition; no symmetry ansatz",
+  "Paley_order": 500,
+  "modulus": 125,
+  "K_binary_sha256": "114966412a6e7786ba753e037ea6278c73a26904de4bcbdeb0ad69122476a968",
+  "S_sign_sha256": "1fe6000692d67b94b1bee3517108a619447289e4aa4dd8d651adb3fedafaf0ed",
+  "S_definition": "S=R K, R=diag(1,-1,...,-1)",
+  "S_plus_St_equals_2I": true,
+  "S_St_equals_500I": true,
+  "P_definition": "P=S/2 modulo 125",
+  "P_squared_equals_P": true,
+  "Pt_equals_I_minus_P": true,
+  "rank_P_modulo_5_by_full_elimination": 250,
+  "all_entries_of_P_and_I_minus_P_are_units_modulo_125": true,
+  "input_orders": [
+    1000,
+    2000
+  ],
+  "block_condition": "P (D*)_ij (I-P)=0 modulo 125 in every power-basis coefficient",
+  "equivalent_to_5_cubed_part_of_E_integrality_for_regular_D": true,
+  "powers_of_two_integrality_and_root_sum_constraints_remain": true,
+  "dense_controls": {
+    "dense_coefficient_blocks_M": [
+      "K",
+      "K^T"
+    ],
+    "both_lattice_projections_zero": true,
+    "full_Gram_identity_K_Kt_equals_500I": true,
+    "integral_full_transform_identities": [
+      "K K K^T/500=K",
+      "K K^T K^T/500=K^T"
+    ],
+    "adjoint_convention": "M=D*, so D=K gives the transformed matrix K^T",
+    "one_sign_flip_position": [
+      7,
+      13
+    ],
+    "negative_projection_equals_exact_rank_one_update": true,
+    "nonzero_negative_projection_entries": 250000,
+    "Petrescu_corner_Gram_claimed": false
+  },
+  "root_support_audits": [
+    {
+      "phase": 24,
+      "power_basis_degree": 8,
+      "all_root_coefficients_in_minus_one_zero_one": true,
+      "ordered_root_difference_pairs_checked": 576,
+      "maximum_root_difference_coefficient": 2,
+      "all_nontrivial_single_entry_phase_changes_rejected": 23,
+      "minimum_support_of_nonzero_single_row_change": 63,
+      "minimum_support_of_nonzero_single_row_sign_flips": 125,
+      "bound_scope": "A change confined to one row (or one column) of one 500 by 500 block",
+      "multirow_trade_lower_bound_claimed": false
+    },
+    {
+      "phase": 48,
+      "power_basis_degree": 16,
+      "all_root_coefficients_in_minus_one_zero_one": true,
+      "ordered_root_difference_pairs_checked": 2304,
+      "maximum_root_difference_coefficient": 2,
+      "all_nontrivial_single_entry_phase_changes_rejected": 47,
+      "minimum_support_of_nonzero_single_row_change": 63,
+      "minimum_support_of_nonzero_single_row_sign_flips": 125,
+      "bound_scope": "A change confined to one row (or one column) of one 500 by 500 block",
+      "multirow_trade_lower_bound_claimed": false
+    }
+  ],
+  "direct_small_Walsh_factor_controls": [
+    {
+      "Walsh_order": 2,
+      "Paley_order": 20,
+      "full_order": 40,
+      "modulus": 5,
+      "one_entry_flipped": false,
+      "forward_factorization_verified": true,
+      "inverse_recovers_all_block_projections": true,
+      "both_zero_congruences_hold": true
+    },
+    {
+      "Walsh_order": 2,
+      "Paley_order": 20,
+      "full_order": 40,
+      "modulus": 5,
+      "one_entry_flipped": true,
+      "forward_factorization_verified": true,
+      "inverse_recovers_all_block_projections": true,
+      "both_zero_congruences_hold": false
+    },
+    {
+      "Walsh_order": 4,
+      "Paley_order": 20,
+      "full_order": 80,
+      "modulus": 5,
+      "one_entry_flipped": false,
+      "forward_factorization_verified": true,
+      "inverse_recovers_all_block_projections": true,
+      "both_zero_congruences_hold": true
+    },
+    {
+      "Walsh_order": 4,
+      "Paley_order": 20,
+      "full_order": 80,
+      "modulus": 5,
+      "one_entry_flipped": true,
+      "forward_factorization_verified": true,
+      "inverse_recovers_all_block_projections": true,
+      "both_zero_congruences_hold": false
+    }
+  ],
+  "monomial_or_permutation_symmetry_required": false,
+  "native_solver_run": false,
+  "large_source_constructed": false
+}

@@ -1,0 +1,597 @@
+{
+  "schema": "scoped-monomial-multiplier-necessary-gates-v1",
+  "assumptions": [
+    "Odd cyclic lengthp>1; exactly one signed channel per position.",
+    "Summed periodic autocorrelation equals p*delta0; origin vector=e0.",
+    "An x-independent signed channel-permutation representation of a residue-multiplier group acts equivariantly.",
+    "The inversion lemma assumes -1 belongs to the group; for primep every even-order subgroup contains -1."
+  ],
+  "binary_group_ring_proof": {
+    "ring": "F2[z]/(z^p-1)",
+    "onehot_sum": "sum_i B_i=J",
+    "norm": "sum_i B_i(z) B_i(z^-1)=1",
+    "identity_color_action": "sum_i B_i^2=J^2=J!=1 for p>1",
+    "transposition_color_action": "B1*B2+B2*B1=0 leaves(B0+B3)^2=1",
+    "squaring_is_automorphism": "f(z)^2=f(z^2);2 is invertible modulo oddp",
+    "fixed_channel_support": "B0+B3=1, disjoint supports and origin=e0 imply B0=1 and B3=0",
+    "signed_DC": "Inversion pairs the swapped channels with equal absolute row sums, so p=1+2s^2"
+  },
+  "small_control_scope": "All signed inversion actions with color identity, and one tail transposition representative up to tail relabelling. No extra off-origin support restriction is imposed in the enumeration.",
+  "complete_small_controls": [
+    {
+      "length": 3,
+      "identity": {
+        "signed_actions": 8,
+        "action_word_cases_checked": 64,
+        "valid_action_word_pairs": 0,
+        "unique_valid_words": 0,
+        "first_valid_word": null
+      },
+      "tail_transposition": {
+        "signed_actions": 4,
+        "action_word_cases_checked": 32,
+        "valid_action_word_pairs": 16,
+        "unique_valid_words": 8,
+        "first_valid_word": [
+          0,
+          2,
+          4
+        ]
+      }
+    },
+    {
+      "length": 5,
+      "identity": {
+        "signed_actions": 8,
+        "action_word_cases_checked": 512,
+        "valid_action_word_pairs": 0,
+        "unique_valid_words": 0,
+        "first_valid_word": null
+      },
+      "tail_transposition": {
+        "signed_actions": 4,
+        "action_word_cases_checked": 256,
+        "valid_action_word_pairs": 0,
+        "unique_valid_words": 0,
+        "first_valid_word": null
+      }
+    },
+    {
+      "length": 7,
+      "identity": {
+        "signed_actions": 8,
+        "action_word_cases_checked": 4096,
+        "valid_action_word_pairs": 0,
+        "unique_valid_words": 0,
+        "first_valid_word": null
+      },
+      "tail_transposition": {
+        "signed_actions": 4,
+        "action_word_cases_checked": 2048,
+        "valid_action_word_pairs": 0,
+        "unique_valid_words": 0,
+        "first_valid_word": null
+      }
+    },
+    {
+      "length": 9,
+      "identity": {
+        "signed_actions": 8,
+        "action_word_cases_checked": 32768,
+        "valid_action_word_pairs": 0,
+        "unique_valid_words": 0,
+        "first_valid_word": null
+      },
+      "tail_transposition": {
+        "signed_actions": 4,
+        "action_word_cases_checked": 16384,
+        "valid_action_word_pairs": 0,
+        "unique_valid_words": 0,
+        "first_valid_word": null
+      }
+    }
+  ],
+  "even_multiplier_target_gates": [
+    {
+      "prime": 167,
+      "half_p_minus_one": 83,
+      "is_square": false,
+      "even_order_multiplier_excluded_by_necessary_gate": true,
+      "existence_claimed_when_square": false
+    },
+    {
+      "prime": 179,
+      "half_p_minus_one": 89,
+      "is_square": false,
+      "even_order_multiplier_excluded_by_necessary_gate": true,
+      "existence_claimed_when_square": false
+    },
+    {
+      "prime": 191,
+      "half_p_minus_one": 95,
+      "is_square": false,
+      "even_order_multiplier_excluded_by_necessary_gate": true,
+      "existence_claimed_when_square": false
+    },
+    {
+      "prime": 223,
+      "half_p_minus_one": 111,
+      "is_square": false,
+      "even_order_multiplier_excluded_by_necessary_gate": true,
+      "existence_claimed_when_square": false
+    },
+    {
+      "prime": 283,
+      "half_p_minus_one": 141,
+      "is_square": false,
+      "even_order_multiplier_excluded_by_necessary_gate": true,
+      "existence_claimed_when_square": false
+    },
+    {
+      "prime": 631,
+      "half_p_minus_one": 315,
+      "is_square": false,
+      "even_order_multiplier_excluded_by_necessary_gate": true,
+      "existence_claimed_when_square": false
+    },
+    {
+      "prime": 919,
+      "half_p_minus_one": 459,
+      "is_square": false,
+      "even_order_multiplier_excluded_by_necessary_gate": true,
+      "existence_claimed_when_square": false
+    },
+    {
+      "prime": 19,
+      "half_p_minus_one": 9,
+      "is_square": true,
+      "even_order_multiplier_excluded_by_necessary_gate": false,
+      "existence_claimed_when_square": false
+    }
+  ],
+  "odd_multiplier_DC_argument": {
+    "signed_stabilizer_order": 48,
+    "trivial_image_rule": "For oddm not divisible3, a homomorphism into the signed stabilizer ofe0 has trivial image because gcd(m,48)=1.",
+    "row_sums": "r0=1+m*h; r1,r2,r3 are multiplesofm; sum_i r_i^2=p.",
+    "p191_m5_short_proof": "Modulo25 forces r0=-4 among{-9,-4,1,6,11}; then(r1/5)^2+(r2/5)^2+(r3/5)^2=7, impossible for three squares from{0,1,4}."
+  },
+  "complete_odd_multiplier_DC_gates": [
+    {
+      "prime": 167,
+      "all_nontrivial_odd_divisor_orders": [
+        83
+      ],
+      "DC_checks": [
+        {
+          "group_order": 83,
+          "first_row_sum_candidates": [
+            1
+          ],
+          "tail_row_sum_candidates": [
+            0
+          ],
+          "DC_norm_solutions": []
+        }
+      ],
+      "nontrivial_odd_monomial_multiplier_excluded": true
+    },
+    {
+      "prime": 179,
+      "all_nontrivial_odd_divisor_orders": [
+        89
+      ],
+      "DC_checks": [
+        {
+          "group_order": 89,
+          "first_row_sum_candidates": [
+            1
+          ],
+          "tail_row_sum_candidates": [
+            0
+          ],
+          "DC_norm_solutions": []
+        }
+      ],
+      "nontrivial_odd_monomial_multiplier_excluded": true
+    },
+    {
+      "prime": 191,
+      "all_nontrivial_odd_divisor_orders": [
+        5,
+        19,
+        95
+      ],
+      "DC_checks": [
+        {
+          "group_order": 5,
+          "first_row_sum_candidates": [
+            -9,
+            -4,
+            1,
+            6,
+            11
+          ],
+          "tail_row_sum_candidates": [
+            -10,
+            -5,
+            0,
+            5,
+            10
+          ],
+          "DC_norm_solutions": []
+        },
+        {
+          "group_order": 19,
+          "first_row_sum_candidates": [
+            1
+          ],
+          "tail_row_sum_candidates": [
+            0
+          ],
+          "DC_norm_solutions": []
+        },
+        {
+          "group_order": 95,
+          "first_row_sum_candidates": [
+            1
+          ],
+          "tail_row_sum_candidates": [
+            0
+          ],
+          "DC_norm_solutions": []
+        }
+      ],
+      "nontrivial_odd_monomial_multiplier_excluded": true
+    }
+  ],
+  "scope": "Necessary symmetry gates only. No nonexistence claim for unrestricted periodic T-designs, arbitrary channel actions, general scalar frames, or real Hadamard matrices. Square DC cases such as p19 are not asserted to exist.",
+  "small_control_elapsed_seconds": 0.09484654199331999,
+  "related_local_four_row_clock_gate": {
+    "D4": [
+      [
+        0,
+        1,
+        1,
+        1
+      ],
+      [
+        -1,
+        0,
+        1,
+        -1
+      ],
+      [
+        -1,
+        -1,
+        0,
+        1
+      ],
+      [
+        -1,
+        1,
+        -1,
+        0
+      ]
+    ],
+    "R6_numerator": [
+      [
+        1,
+        -1,
+        -1,
+        -1
+      ],
+      [
+        1,
+        1,
+        -1,
+        1
+      ],
+      [
+        1,
+        1,
+        1,
+        -1
+      ],
+      [
+        1,
+        -1,
+        1,
+        1
+      ]
+    ],
+    "R6_denominator": 2,
+    "R6_orthogonal_verified_exactly": true,
+    "all16_cube_vectors_checked": [
+      {
+        "x": [
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        "input_product": 1,
+        "R6x": [
+          1,
+          -1,
+          -1,
+          -1
+        ],
+        "flat": true
+      },
+      {
+        "x": [
+          -1,
+          -1,
+          -1,
+          1
+        ],
+        "input_product": -1,
+        "R6x": [
+          0,
+          0,
+          -2,
+          0
+        ],
+        "flat": false
+      },
+      {
+        "x": [
+          -1,
+          -1,
+          1,
+          -1
+        ],
+        "input_product": -1,
+        "R6x": [
+          0,
+          -2,
+          0,
+          0
+        ],
+        "flat": false
+      },
+      {
+        "x": [
+          -1,
+          -1,
+          1,
+          1
+        ],
+        "input_product": 1,
+        "R6x": [
+          -1,
+          -1,
+          -1,
+          1
+        ],
+        "flat": true
+      },
+      {
+        "x": [
+          -1,
+          1,
+          -1,
+          -1
+        ],
+        "input_product": -1,
+        "R6x": [
+          0,
+          0,
+          0,
+          -2
+        ],
+        "flat": false
+      },
+      {
+        "x": [
+          -1,
+          1,
+          -1,
+          1
+        ],
+        "input_product": 1,
+        "R6x": [
+          -1,
+          1,
+          -1,
+          -1
+        ],
+        "flat": true
+      },
+      {
+        "x": [
+          -1,
+          1,
+          1,
+          -1
+        ],
+        "input_product": 1,
+        "R6x": [
+          -1,
+          -1,
+          1,
+          -1
+        ],
+        "flat": true
+      },
+      {
+        "x": [
+          -1,
+          1,
+          1,
+          1
+        ],
+        "input_product": -1,
+        "R6x": [
+          -2,
+          0,
+          0,
+          0
+        ],
+        "flat": false
+      },
+      {
+        "x": [
+          1,
+          -1,
+          -1,
+          -1
+        ],
+        "input_product": -1,
+        "R6x": [
+          2,
+          0,
+          0,
+          0
+        ],
+        "flat": false
+      },
+      {
+        "x": [
+          1,
+          -1,
+          -1,
+          1
+        ],
+        "input_product": 1,
+        "R6x": [
+          1,
+          1,
+          -1,
+          1
+        ],
+        "flat": true
+      },
+      {
+        "x": [
+          1,
+          -1,
+          1,
+          -1
+        ],
+        "input_product": 1,
+        "R6x": [
+          1,
+          -1,
+          1,
+          1
+        ],
+        "flat": true
+      },
+      {
+        "x": [
+          1,
+          -1,
+          1,
+          1
+        ],
+        "input_product": -1,
+        "R6x": [
+          0,
+          0,
+          0,
+          2
+        ],
+        "flat": false
+      },
+      {
+        "x": [
+          1,
+          1,
+          -1,
+          -1
+        ],
+        "input_product": 1,
+        "R6x": [
+          1,
+          1,
+          1,
+          -1
+        ],
+        "flat": true
+      },
+      {
+        "x": [
+          1,
+          1,
+          -1,
+          1
+        ],
+        "input_product": -1,
+        "R6x": [
+          0,
+          2,
+          0,
+          0
+        ],
+        "flat": false
+      },
+      {
+        "x": [
+          1,
+          1,
+          1,
+          -1
+        ],
+        "input_product": -1,
+        "R6x": [
+          0,
+          0,
+          2,
+          0
+        ],
+        "flat": false
+      },
+      {
+        "x": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "input_product": 1,
+        "R6x": [
+          -1,
+          1,
+          1,
+          1
+        ],
+        "flat": true
+      }
+    ],
+    "flat_input_vectors": 8,
+    "flat_input_product": 1,
+    "nonflat_input_vectors": 8,
+    "nonflat_output_type": "one entry+-2 and three zeros",
+    "positive_order4_Hadamard_frame": [
+      [
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        -1,
+        1,
+        -1
+      ],
+      [
+        1,
+        1,
+        -1,
+        -1
+      ],
+      [
+        1,
+        -1,
+        -1,
+        1
+      ]
+    ],
+    "R6_times_positive_order4_frame_is_flat": true,
+    "closed_quadruple_argument": "For N=4p with oddp>1, normalize one of4orthogonal closed rows to1. The other3are u,v,+-uv; their4column classes have sizep. Every5throw orthogonal to them has class sums0 by the invertible4x4Walsh system, impossible for odd class size.",
+    "excluded_shortcut": "block-diagonal copies of this localR6 (including local signed row/column variants) applied to a real H(N), N=4mod8,N>4",
+    "general_sixth_root_actions_or_globally_mixed_frames_excluded": false
+  }
+}

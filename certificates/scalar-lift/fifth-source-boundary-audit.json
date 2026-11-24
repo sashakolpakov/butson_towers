@@ -1,0 +1,790 @@
+{
+  "scope": "Exact residue-field necessity and rowwise feasibility only; no source completion",
+  "field": "F2[x]/(x^4+x^3+x^2+x+1), hexadecimal/power-basis integer encoding",
+  "fifth_roots": [
+    1,
+    2,
+    4,
+    8,
+    15
+  ],
+  "absolute_trace_kernel": [
+    0,
+    1,
+    6,
+    7,
+    10,
+    11,
+    12,
+    13
+  ],
+  "exact_X_plus_Y_alphabet": [
+    0,
+    6,
+    7,
+    10,
+    11,
+    12,
+    13
+  ],
+  "D_mod_two": [
+    [
+      2,
+      15,
+      8,
+      8,
+      15
+    ],
+    [
+      15,
+      8,
+      8,
+      15,
+      2
+    ],
+    [
+      8,
+      8,
+      15,
+      2,
+      15
+    ],
+    [
+      8,
+      15,
+      2,
+      15,
+      8
+    ],
+    [
+      15,
+      2,
+      15,
+      8,
+      8
+    ]
+  ],
+  "D_unitary_verified": true,
+  "D_row_and_column_sum": 2,
+  "initial_seed": {
+    "F2_image_rank": 15,
+    "F2_codomain_dimension": 20,
+    "representative_row_count": 6,
+    "compatible_representative_targets": 0,
+    "all_representative_targets_compatible": false,
+    "W_equals_T_D_star_is_binary": true,
+    "W_J_is_all_ones": true,
+    "excluded_by_trace": true
+  },
+  "one_D_block_rotated_by_zeta5_cubed": {
+    "F2_image_rank": 20,
+    "F2_codomain_dimension": 20,
+    "representative_row_count": 11,
+    "compatible_representative_targets": 11,
+    "all_representative_targets_compatible": true,
+    "exact_sum_alphabet_reaches_all_scalar_targets": true,
+    "minimum_number_of_attainable_scalar_norms": 3,
+    "scalar_sum_and_norm_lookup": {
+      "0": {
+        "0": [
+          0,
+          0,
+          0
+        ],
+        "13": [
+          6,
+          11,
+          10
+        ],
+        "12": [
+          7,
+          12,
+          13
+        ]
+      },
+      "1": {
+        "0": [
+          0,
+          7,
+          7
+        ],
+        "1": [
+          0,
+          12,
+          10
+        ],
+        "13": [
+          6,
+          10,
+          10
+        ],
+        "12": [
+          6,
+          12,
+          13
+        ]
+      },
+      "2": {
+        "1": [
+          0,
+          7,
+          11
+        ],
+        "0": [
+          0,
+          12,
+          6
+        ],
+        "13": [
+          6,
+          7,
+          12
+        ],
+        "12": [
+          6,
+          10,
+          6
+        ]
+      },
+      "3": {
+        "13": [
+          0,
+          0,
+          12
+        ],
+        "1": [
+          0,
+          6,
+          11
+        ],
+        "12": [
+          6,
+          11,
+          6
+        ]
+      },
+      "4": {
+        "0": [
+          0,
+          7,
+          12
+        ],
+        "1": [
+          0,
+          10,
+          6
+        ],
+        "12": [
+          6,
+          7,
+          11
+        ],
+        "13": [
+          6,
+          12,
+          6
+        ]
+      },
+      "5": {
+        "12": [
+          0,
+          0,
+          11
+        ],
+        "0": [
+          0,
+          6,
+          12
+        ],
+        "1": [
+          0,
+          11,
+          6
+        ],
+        "13": [
+          7,
+          12,
+          6
+        ]
+      },
+      "6": {
+        "13": [
+          0,
+          0,
+          7
+        ],
+        "0": [
+          0,
+          11,
+          10
+        ],
+        "12": [
+          7,
+          12,
+          10
+        ],
+        "1": [
+          10,
+          12,
+          0
+        ]
+      },
+      "7": {
+        "13": [
+          0,
+          7,
+          0
+        ],
+        "0": [
+          0,
+          10,
+          10
+        ],
+        "1": [
+          0,
+          12,
+          13
+        ],
+        "12": [
+          6,
+          12,
+          10
+        ]
+      },
+      "8": {
+        "0": [
+          0,
+          6,
+          6
+        ],
+        "1": [
+          0,
+          11,
+          12
+        ],
+        "13": [
+          6,
+          11,
+          11
+        ],
+        "12": [
+          6,
+          13,
+          12
+        ]
+      },
+      "9": {
+        "0": [
+          0,
+          7,
+          6
+        ],
+        "1": [
+          0,
+          10,
+          12
+        ],
+        "13": [
+          6,
+          10,
+          11
+        ],
+        "12": [
+          7,
+          13,
+          12
+        ]
+      },
+      "10": {
+        "1": [
+          0,
+          7,
+          10
+        ],
+        "12": [
+          0,
+          10,
+          0
+        ],
+        "0": [
+          0,
+          12,
+          7
+        ],
+        "13": [
+          11,
+          12,
+          10
+        ]
+      },
+      "11": {
+        "12": [
+          0,
+          0,
+          13
+        ],
+        "1": [
+          0,
+          6,
+          10
+        ],
+        "0": [
+          7,
+          12,
+          0
+        ],
+        "13": [
+          10,
+          12,
+          10
+        ]
+      },
+      "12": {
+        "1": [
+          0,
+          7,
+          13
+        ],
+        "13": [
+          0,
+          12,
+          0
+        ],
+        "12": [
+          6,
+          7,
+          10
+        ]
+      },
+      "13": {
+        "12": [
+          0,
+          0,
+          10
+        ],
+        "1": [
+          0,
+          6,
+          13
+        ],
+        "13": [
+          7,
+          12,
+          7
+        ]
+      },
+      "14": {
+        "13": [
+          0,
+          0,
+          6
+        ],
+        "0": [
+          0,
+          11,
+          11
+        ],
+        "1": [
+          0,
+          13,
+          12
+        ],
+        "12": [
+          6,
+          11,
+          12
+        ]
+      },
+      "15": {
+        "0": [
+          0,
+          10,
+          11
+        ],
+        "13": [
+          6,
+          7,
+          6
+        ],
+        "12": [
+          6,
+          10,
+          12
+        ]
+      }
+    },
+    "rowwise_boundary_and_unit_norm_witnesses": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        10,
+        7,
+        7,
+        7,
+        12,
+        11,
+        11,
+        12,
+        12,
+        6
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        7,
+        7,
+        7,
+        12,
+        10,
+        11,
+        12,
+        12,
+        6,
+        11
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        7,
+        7,
+        7,
+        10,
+        12,
+        12,
+        12,
+        11,
+        11,
+        6
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        7,
+        7,
+        10,
+        7,
+        10,
+        12,
+        11,
+        11,
+        11,
+        6
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        7,
+        10,
+        7,
+        7,
+        10,
+        11,
+        11,
+        11,
+        12,
+        6
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        7,
+        10,
+        7,
+        12,
+        10,
+        12,
+        11,
+        7,
+        10,
+        11
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        10,
+        7,
+        7,
+        10,
+        10,
+        11,
+        7,
+        7,
+        11,
+        6
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        7,
+        7,
+        10,
+        10,
+        10,
+        7,
+        7,
+        11,
+        6,
+        11
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        7,
+        10,
+        7,
+        10,
+        12,
+        7,
+        11,
+        12,
+        11,
+        10
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        10,
+        7,
+        10,
+        7,
+        12,
+        11,
+        12,
+        11,
+        7,
+        10
+      ],
+      [
+        0,
+        0,
+        0,
+        6,
+        6,
+        10,
+        10,
+        10,
+        7,
+        10,
+        11,
+        11,
+        11,
+        6,
+        12
+      ]
+    ],
+    "representative_targets": [
+      [
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        8,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        8,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        8,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        8,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        8
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    ],
+    "all_11_representative_rows_verified": true,
+    "simultaneous_row_orthogonality_verified": false,
+    "trace_obstruction_removed": true,
+    "later_joint_trace_unitarity_obstruction_excludes_this_seed": true,
+    "later_proof": "docs/FIFTH_GLOBAL_RESIDUE.md"
+  },
+  "one_B_block_rotated_from_coset1_to_coset2": {
+    "F2_image_rank": 16,
+    "F2_codomain_dimension": 20,
+    "representative_row_count": 7,
+    "compatible_representative_targets": 7,
+    "all_representative_targets_compatible": true,
+    "later_joint_trace_unitarity_obstruction_excludes_this_seed": true
+  },
+  "odd_unitary_counterexample": {
+    "E2": [
+      [
+        12,
+        13
+      ],
+      [
+        13,
+        12
+      ]
+    ],
+    "E7": [
+      [
+        0,
+        12,
+        12,
+        13,
+        12,
+        13,
+        13
+      ],
+      [
+        13,
+        0,
+        12,
+        12,
+        13,
+        12,
+        13
+      ],
+      [
+        13,
+        13,
+        0,
+        12,
+        12,
+        13,
+        12
+      ],
+      [
+        12,
+        13,
+        13,
+        0,
+        12,
+        12,
+        13
+      ],
+      [
+        13,
+        12,
+        13,
+        13,
+        0,
+        12,
+        12
+      ],
+      [
+        12,
+        13,
+        12,
+        13,
+        13,
+        0,
+        12
+      ],
+      [
+        12,
+        12,
+        13,
+        12,
+        13,
+        13,
+        0
+      ]
+    ],
+    "full_unitary_Grams_verified": true,
+    "all_entries_in_exact_sum_alphabet": true,
+    "odd_orders_747_and_1497_available_by_E7_plus_E2_direct_sums": true,
+    "compatibility_with_prescribed_T_claimed": false
+  },
+  "applies_to_Dita_dyadic_B8_phases": [
+    8,
+    16
+  ],
+  "dyadic_B8_reduction": "all entries equal1, independently of its primitive cross ratio",
+  "high_source_orders": [
+    1499,
+    2999
+  ],
+  "all_fifth_root_bordered_sources_excluded": false,
+  "new_Hadamard_matrix_constructed": false
+}

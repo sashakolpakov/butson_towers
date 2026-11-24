@@ -1,0 +1,73 @@
+{
+  "schema": "exact-nearest-cyclotomic-pair-repair-validation-v1",
+  "hashes": {
+    "experiments/scalar_lift/cyclotomic_pair_nearest.cpp": "1c6192b32b49a2f79c06d24ab5059abc67f950939f60db06944d60c26ef36e01",
+    "experiments/scalar_lift/cyclotomic_pair_nearest.py": "17586fc3bf119efeed0c4becfd735d26aad1ce107699d3752f47acf91aebf0da",
+    "experiments/scalar_lift/cyclotomic_pair_import.cpp": "beca2da019c9101fe5a7153d9f14b5aa6ab663e673dc2c9eb7ddf1504b559599",
+    "experiments/scalar_lift/cyclotomic_pair_import.py": "3ba15f19c93dd9469c762c35650428ff17e83df98729403cf26aab381a38c69c",
+    "artifacts/uniform-od-search/cyclotomic_pair_nearest": "9bd61a96cee10a829fc9b9ab2c9360a281121dc4685cc6e51059e56758f891af",
+    "artifacts/uniform-od-search/cyclotomic_pair_import": "c83ee44f7fb6270aee149cba7dd316e14faeb7d875825165dfd323860a8e1775"
+  },
+  "result_reports": [
+    {
+      "path": "search-state/cyclotomic-nearest-repair-20261123/q6-n719-21-10-29--22/result.json",
+      "sha256": "aeab77a461da0b1201f69c275b973d20cc51c3ed3ef2b3db31e98465c4df489e"
+    },
+    {
+      "path": "search-state/cyclotomic-nearest-repair-20261123/q4-n599-18-17-24-3/result.json",
+      "sha256": "60d127211086dcf31cfd64a636210842ea6660a377e4a22b3e3e2955028a2d6b"
+    },
+    {
+      "path": "search-state/cyclotomic-nearest-repair-20261123/q6-n599-24-1-28--17/result.json",
+      "sha256": "aaf71e53b11ce2628324b9f4a2fc1d89d2041868ecbbf47d3c18118edc41e38f"
+    },
+    {
+      "path": "search-state/cyclotomic-nearest-repair-20261123/q4-n599-18-17-24-3-continued/result.json",
+      "sha256": "c70851c20bb093a5a76b3ff2044961c03c8b4ed91e286a223ca7f41485aafb86"
+    },
+    {
+      "path": "search-state/cyclotomic-nearest-repair-20261123/q4-n669-22-11-27-2/result.json",
+      "sha256": "a780224741146f8ace91c079bb9fca77508dc404c6cc8e1c0add36f0f8a1e7f4"
+    },
+    {
+      "path": "search-state/cyclotomic-nearest-repair-20261123/orbit-m13-case1-child/result.json",
+      "sha256": "d11b032f2db6211a1a442c3baa46118e305f8860296547270278828b956dd823"
+    },
+    {
+      "path": "search-state/cyclotomic-nearest-repair-20261123/q6-n599-24-1-28--17-continued/result.json",
+      "sha256": "a952344e946c0f9db26677927c55cab3d170bc1dc054183ff591c4fbab6fe210"
+    },
+    {
+      "path": "search-state/cyclotomic-nearest-repair-20261123/control/result.json",
+      "sha256": "33227bdcfab518d590644f9abdd9db404a633ca2276025ef29fc67ceaae99afb"
+    }
+  ],
+  "actual_case_runs": 7,
+  "cpu_seconds_sum": 44.243109,
+  "maximum_candidate_bytes": 1547208,
+  "rounds": 39,
+  "full_row_neighborhoods_exhausted": 77,
+  "selected_pair_products_exhausted": 38,
+  "all_row_moves_evaluated": 18591281,
+  "all_selected_pair_distances_evaluated": 10004518,
+  "accepted_both_individually_uphill_moves": 2,
+  "all_final_states_profiles_residuals_independently_replayed": true,
+  "positive_known_control_energy": [
+    4,
+    0
+  ],
+  "positive_control_full_source_and_H12_Grams_verified": true,
+  "tests_passed": 8,
+  "import_checks": [
+    "both q4 and q6 old-native resume",
+    "strict current-best comparison",
+    "stale rejection leaves checkpoint/report/ledger byte identical",
+    "RNG counters epoch temperature preserved",
+    "offset reset0",
+    "checkpoint/report/ledger refresh",
+    "busy campaign lock rejection",
+    "rollback of all three files after injected post-commit failure"
+  ],
+  "production_files_mutated": false,
+  "new_unknown_Hadamard_constructed": false
+}

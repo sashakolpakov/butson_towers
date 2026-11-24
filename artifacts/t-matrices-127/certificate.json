@@ -1,0 +1,488 @@
+{
+  "schema": "complete-periodic-T127-and-known-H1524-control-v1",
+  "verified_utc": "2026-11-24T19:50:16.178928+00:00",
+  "object": "Four periodic circulant T-matrices of order127",
+  "p": 127,
+  "m": 9,
+  "mu": 22,
+  "states": [
+    0,
+    0,
+    4,
+    0,
+    1,
+    6,
+    2,
+    3,
+    6,
+    1,
+    0,
+    3,
+    5,
+    4,
+    3
+  ],
+  "T_matrices": {
+    "entry_recipe": "T_i[r,c]=b_i[(c-r) mod127]",
+    "actual_entry_alphabet": [
+      -1,
+      0,
+      1
+    ],
+    "supports_partition_every_matrix_position": true,
+    "row_support_sizes": [
+      46,
+      27,
+      27,
+      27
+    ],
+    "individual_T_matrices_claimed_to_be_weighing_matrices": false,
+    "summed_integer_Gram": "sum_i T_i*T_i^T=127I",
+    "all127_periodic_correlations_verified": true,
+    "complete127x127_summed_matrix_Gram_verified": true,
+    "b_row_sums": [
+      10,
+      3,
+      3,
+      3
+    ],
+    "aperiodic_T_sequence_claimed": false
+  },
+  "coefficient_pair": {
+    "a_recipe": "a=D4*b",
+    "a_row_sums": [
+      9,
+      -10,
+      -10,
+      -10
+    ],
+    "actual_entry_alphabet": [
+      -1,
+      0,
+      1
+    ],
+    "complementary_disjoint_sign_support": true,
+    "all127_AA_BB_symmetric_mixed_correlations_verified": true,
+    "zero_shift_norms": {
+      "AA": 381,
+      "BB": 127,
+      "symmetric_mixed": 0
+    },
+    "weighted_GS_intermediates": {
+      "U=GS(a)": {
+        "order": 508,
+        "weight": 381,
+        "alphabet": [
+          -1,
+          0,
+          1
+        ]
+      },
+      "V=GS(b)": {
+        "order": 508,
+        "weight": 127,
+        "alphabet": [
+          -1,
+          0,
+          1
+        ]
+      }
+    }
+  },
+  "scalar_restriction": {
+    "field_extension": "Q(zeta_6)/Q",
+    "field_degree": 2,
+    "module_rank": 254,
+    "rational_dimension": 508,
+    "canonical_trace_basis": [
+      "1",
+      "zeta_6"
+    ],
+    "canonical_trace_metric": [
+      [
+        2,
+        1
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "action": "R=Q*P^T/508",
+    "conjugation": "R^T=I-R",
+    "verified_identities": [
+      "R*R^T=I",
+      "R^2-R+I=0",
+      "R*P=Q"
+    ],
+    "incoming_Hermitian_form": "h(u,v)=u^T*v/2-(u^T*(2R-I)*v)*sqrt(-3)/6; linear in second argument",
+    "transported_trace_form": "Tr h(u,v)=u^T*v",
+    "actual_R_entry_numerators": [
+      -254,
+      -162,
+      -158,
+      -154,
+      -150,
+      -146,
+      -142,
+      -138,
+      -134,
+      -130,
+      -126,
+      -122,
+      -118,
+      -114,
+      -110,
+      -106,
+      -102,
+      -98,
+      -94,
+      -90,
+      -82,
+      -66,
+      -62,
+      -58,
+      -54,
+      -50,
+      -46,
+      -42,
+      -38,
+      -34,
+      -30,
+      -26,
+      -22,
+      -18,
+      -14,
+      -10,
+      -6,
+      -2,
+      2,
+      6,
+      10,
+      14,
+      18,
+      22,
+      26,
+      30,
+      34,
+      38,
+      42,
+      46,
+      50,
+      54,
+      58,
+      62,
+      66,
+      82,
+      90,
+      94,
+      98,
+      102,
+      106,
+      110,
+      114,
+      118,
+      122,
+      126,
+      130,
+      134,
+      138,
+      142,
+      146,
+      150,
+      154,
+      158,
+      162,
+      254
+    ],
+    "actual_R_entry_denominator": 508,
+    "actual_preframe_source_entry_alphabet": "{0,-1} union actual_R_entry_numerators/508"
+  },
+  "compatible_frame": {
+    "P": "GS(a-b)",
+    "Q": "GS(a+b)",
+    "dimension": 508,
+    "gram_scale": 508,
+    "actual_P_Q_alphabet": [
+      -1,
+      1
+    ],
+    "full_P_Q_integer_Grams_verified": true,
+    "full_symmetric_cross_identity": "P Q^T+Q P^T=508I",
+    "full_symmetric_cross_verified": true,
+    "P_packed_sha256": "907e3feb8e602a6e11338654e068ded900e03cc065b8675322d3c5809a4a261e",
+    "Q_packed_sha256": "72c2d61022b7cfd28349afa2e89fd915477bd757f941a93bad1ffba68c22c269"
+  },
+  "Butson_source": {
+    "order": 3,
+    "phase": 6,
+    "exponents": [
+      [
+        3,
+        1,
+        1
+      ],
+      [
+        1,
+        3,
+        1
+      ],
+      [
+        1,
+        1,
+        3
+      ]
+    ],
+    "actual_used_exponents": [
+      1,
+      3
+    ],
+    "actual_used_roots": [
+      "zeta_6",
+      "-1"
+    ],
+    "source_gram_scale": 3,
+    "source_exact_Gram_verified": true,
+    "exponent_sha256_little_endian_i8": "4060d60ac464927b501cdbfd3103bb7755541c3c67ea94ef1eee8d809ca88241",
+    "used_flat_images": {
+      "1": "Q",
+      "3": "-P"
+    },
+    "unused_nonflat_image_example": "rho(zeta_6^2)*P=Q-P=2V"
+  },
+  "known_Hadamard_control": {
+    "order": 1524,
+    "actual_alphabet": [
+      -1,
+      1
+    ],
+    "gram_scale": 1524,
+    "source_scale_times_frame_scale": "3*508=1524",
+    "matrix_recipe": "3x3 block matrix with diagonal-P and off-diagonalQ",
+    "full_actual_NPZ_integer_Gram_independently_verified": true,
+    "distinct_row_pairs_checked": 1160526,
+    "packed_sign_bits_sha256": "2f90301a69292ef94dfb8cb5d2bd2329b094eebf882e5b1a4bfebfecf1934ef8",
+    "original_NPZ_file_sha256": "542f9d666320945ae61cc45cd3085b3739b5753e9b52fc8ca18a0fc323f9a7df",
+    "packed_shape": [
+      1524,
+      191
+    ],
+    "packed_bitorder": "little",
+    "last_byte_used_bits": 4,
+    "padding_bits_zero": true,
+    "known_order_reason": "Paley I applies to the prime1523",
+    "new_real_Hadamard_order_claimed": false,
+    "new_equivalence_class_claimed": false,
+    "binary_matrix_included_in_bundle": false
+  },
+  "primary_T127_status": {
+    "audit_file": "novelty.json",
+    "claim_scope": "These periodic T-matrices of order 127 are new to the best of the author's knowledge. The 3 November 2026 survey, Table 3, lists 127 as its smallest open T-matrix order.",
+    "absolute_publication_priority_claimed": false,
+    "aperiodic_T_sequence_claimed": false
+  },
+  "auxiliary_binary_search_parameters": {
+    "scope": "Search sieve only; deterministic verification does not require this map or field.",
+    "p": 127,
+    "m": 9,
+    "mu": 22,
+    "field_degree": 7,
+    "field_modulus": 167,
+    "field_modulus_hex": "0xa7",
+    "inverse_columns": [
+      129629098,
+      84711701,
+      52040309,
+      96613087,
+      13722980,
+      113554221,
+      187723516,
+      165567999,
+      168095274,
+      19866522,
+      172168037,
+      6470328,
+      189321526,
+      219199316,
+      242118367,
+      47944928,
+      148213521,
+      79251396,
+      164622853,
+      10377460,
+      126221379,
+      129480549,
+      57534576,
+      208323874,
+      148801864,
+      239424266,
+      15182936,
+      164254849
+    ],
+    "head_net": 1,
+    "tail_net": 1,
+    "fixed_first_head_negative": false,
+    "producer_full_quadratic_identity_validation": {
+      "color_map_rank": 28,
+      "determinant_map_rank": 7,
+      "full_quadratic_coefficients_checked": 407,
+      "exact_identity": "Cabs mod2=L(p*b1+q*b0+1), L invertible"
+    }
+  },
+  "discovery": {
+    "seed": 20261126127,
+    "native_seconds": 0.00231371,
+    "field_parameters_sampled": 289,
+    "axis_words_sent_to_sign_lifting": 73,
+    "sum_of_affine_kernel_sizes": 2400,
+    "mod8_survivors": 28,
+    "exact_DC_survivors": 19,
+    "counter_scope": "The final successful kernel may stop early. Kernel-size sums are not counts of full integer correlation evaluations or distinct independent trials.",
+    "native_source_sha256": "35a60b45817d3679a6069288b6e2a30fd849687010a5b4727984c7115932b785",
+    "runner_source_sha256": "9ebba34b06ab7fb5a9e76778dd9b6ab429bff0ee9612a35f9561461115785c97"
+  },
+  "archive_free_renamed_script_replay": {
+    "only_input_files": [
+      "recipe127.py",
+      "t127.json"
+    ],
+    "no_reference_NPZ_or_certificate_required": true,
+    "all_T_and_Hadamard_checks_passed": true,
+    "packed_matrix_identical_to_original": true,
+    "written_NPZ_byte_identical_to_original": true,
+    "verification_report": {
+      "periodic_T_matrix_order": 127,
+      "multiplier": 22,
+      "multiplier_order": 9,
+      "actual_T_entry_alphabet": [
+        -1,
+        0,
+        1
+      ],
+      "b_row_sums": [
+        10,
+        3,
+        3,
+        3
+      ],
+      "b_support_sizes": [
+        46,
+        27,
+        27,
+        27
+      ],
+      "all127_periodic_correlations_verified": true,
+      "full_T_matrix_disjoint_support_and_integer_Gram_verified": true,
+      "T_matrix_Gram_scale": 127,
+      "all127_coefficient_pair_correlations_verified": true,
+      "aperiodic_T_sequence_claimed": false,
+      "scalar_Hadamard_control": {
+        "known_order_control": 1524,
+        "actual_alphabet": [
+          -1,
+          1
+        ],
+        "all_P_Q_and_symmetric_cross_integer_Grams_verified": true,
+        "full_H1524_integer_Gram_verified": true,
+        "distinct_Hadamard_row_pairs_checked": 1160526,
+        "packed_sha256": "2f90301a69292ef94dfb8cb5d2bd2329b094eebf882e5b1a4bfebfecf1934ef8",
+        "field": "Q(zeta_6)/Q",
+        "field_degree": 2,
+        "module_rank": 254,
+        "rational_dimension": 508,
+        "source_gram_scale": 3,
+        "frame_gram_scale": 508,
+        "endpoint_gram_scale": 1524,
+        "actual_R_entry_numerators": [
+          -254,
+          -162,
+          -158,
+          -154,
+          -150,
+          -146,
+          -142,
+          -138,
+          -134,
+          -130,
+          -126,
+          -122,
+          -118,
+          -114,
+          -110,
+          -106,
+          -102,
+          -98,
+          -94,
+          -90,
+          -82,
+          -66,
+          -62,
+          -58,
+          -54,
+          -50,
+          -46,
+          -42,
+          -38,
+          -34,
+          -30,
+          -26,
+          -22,
+          -18,
+          -14,
+          -10,
+          -6,
+          -2,
+          2,
+          6,
+          10,
+          14,
+          18,
+          22,
+          26,
+          30,
+          34,
+          38,
+          42,
+          46,
+          50,
+          54,
+          58,
+          62,
+          66,
+          82,
+          90,
+          94,
+          98,
+          102,
+          106,
+          110,
+          114,
+          118,
+          122,
+          126,
+          130,
+          134,
+          138,
+          142,
+          146,
+          150,
+          154,
+          158,
+          162,
+          254
+        ],
+        "actual_R_entry_denominator": 508,
+        "new_real_order_claimed": false
+      },
+      "elapsed_seconds": 0.4993854580097832
+    }
+  },
+  "independent_audit": "independent-audit.json",
+  "file_sha256": {
+    "t127.json": "4a415276e4c1f0360fe4e6bc6ca88d24955cda2b5c5297dbc44a6d63a0bf7a2b",
+    "recipe.py": "a48c93678cc6b4a82a7c87f6c955cb4fd736c91ccbc25aee5c59554f0a556056",
+    "independent-audit.json": "ca77c1cbab84e6d82ed482ea5c55a53d39c394adc8a48c5d5eb8e9876a9a4d56",
+    "novelty.json": "bb77855a822ab955d6061b159bf56370dfbd88e3d4fa32119e851a57a20e3bb9",
+    "README.md": "bad104b855e541827b61ab9d02a86cccfbadc9ebe7dc646999db9e48844c260e"
+  }
+}

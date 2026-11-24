@@ -1,0 +1,1016 @@
+{
+  "schema": "even-petrescu-conference-boundary-v1",
+  "scope": "Complete known-order cyclotomic boundary sources and one partial corner; no new real order",
+  "formal_full_Gram_certificates": [
+    {
+      "phase": 8,
+      "conference_weight": 499,
+      "block_coefficients_in_I_C": [
+        [
+          [
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              0
+            ]
+          ],
+          [
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              1,
+              0
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              0,
+              0,
+              0,
+              1
+            ],
+            [
+              0,
+              0,
+              -1,
+              0
+            ]
+          ],
+          [
+            [
+              0,
+              0,
+              0,
+              -1
+            ],
+            [
+              -1,
+              0,
+              0,
+              0
+            ]
+          ]
+        ]
+      ],
+      "all_four_full_Gram_blocks": [
+        [
+          [
+            [
+              1000,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          [
+            [
+              1000,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        ]
+      ],
+      "complete_Gram_equals_twice_weight_plus_one_I": true,
+      "proof_uses_exact_C_star_minus_C_and_C_squared_minus_weight_I": true,
+      "complementary_pair_Gram_verified": true,
+      "root_entry_proof": "C has zero diagonal and off-diagonal signs; every diagonal and off-diagonal coefficient is a root"
+    },
+    {
+      "phase": 16,
+      "conference_weight": 499,
+      "block_coefficients_in_I_C": [
+        [
+          [
+            [
+              0,
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          [
+            [
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              -1,
+              0,
+              0,
+              0
+            ]
+          ],
+          [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              -1
+            ],
+            [
+              -1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        ]
+      ],
+      "all_four_full_Gram_blocks": [
+        [
+          [
+            [
+              1000,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        ],
+        [
+          [
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          [
+            [
+              1000,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ]
+        ]
+      ],
+      "complete_Gram_equals_twice_weight_plus_one_I": true,
+      "proof_uses_exact_C_star_minus_C_and_C_squared_minus_weight_I": true,
+      "complementary_pair_Gram_verified": true,
+      "root_entry_proof": "C has zero diagonal and off-diagonal signs; every diagonal and off-diagonal coefficient is a root"
+    }
+  ],
+  "new_boundary_kernel_certificates": [
+    {
+      "phase": 8,
+      "modulus": 125,
+      "channels": [
+        {
+          "C_eigenvalue_mod_125": 1,
+          "channel_coefficients": [
+            [
+              [
+                1,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                1,
+                0
+              ]
+            ],
+            [
+              [
+                0,
+                0,
+                -1,
+                1
+              ],
+              [
+                -1,
+                0,
+                0,
+                -1
+              ]
+            ]
+          ],
+          "determinant_zero_exactly": true,
+          "unit_pivot_inverse_coefficients": [
+            63,
+            -63,
+            63,
+            -63
+          ],
+          "kernel_vector": [
+            [
+              0,
+              -1,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              0
+            ]
+          ],
+          "rank_over_cyclotomic_ring_mod_125": 1,
+          "Paley_summand_rank": 250
+        },
+        {
+          "C_eigenvalue_mod_125": -1,
+          "channel_coefficients": [
+            [
+              [
+                -1,
+                1,
+                0,
+                0
+              ],
+              [
+                0,
+                1,
+                -1,
+                0
+              ]
+            ],
+            [
+              [
+                0,
+                0,
+                1,
+                1
+              ],
+              [
+                1,
+                0,
+                0,
+                -1
+              ]
+            ]
+          ],
+          "determinant_zero_exactly": true,
+          "unit_pivot_inverse_coefficients": [
+            -63,
+            -63,
+            -63,
+            -63
+          ],
+          "kernel_vector": [
+            [
+              0,
+              1,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              0
+            ]
+          ],
+          "rank_over_cyclotomic_ring_mod_125": 1,
+          "Paley_summand_rank": 250
+        }
+      ],
+      "graph_operator": "G_z=-i*conjugate(z)*C",
+      "graph_operator_coefficients_in_I_C": [
+        [
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          -1,
+          0,
+          0
+        ]
+      ],
+      "full_kernel": "{(G_z*w,w): w in R^500}, R=Z[zeta_d]/125",
+      "exact_graph_image_before_reduction": [
+        [
+          [
+            0,
+            500,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            0,
+            0,
+            -500
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      ],
+      "exact_graph_image_formula": "H(z)[G_z;I]=500*conjugate(z)*[iI;I]",
+      "kernel_rank": 500,
+      "each_Paley_summand_contributes_rank": 250,
+      "different_from_two_copies_of_old_Paley_kernel": true,
+      "graph_is_totally_isotropic_modulo_125": true,
+      "lossless_factorization": "H(z)=U[I,-G_z] modulo125; U is the first block column and has an invertible top block",
+      "inverse_top_block_coefficients_in_I_C": [
+        [
+          0,
+          -63,
+          0,
+          -63
+        ],
+        [
+          63,
+          0,
+          63,
+          0
+        ]
+      ],
+      "new_coupled_congruence_for_M_equals_Dstar": "M11*G_z+M12=G_z*(M21*G_z+M22) modulo125",
+      "equivalent_reduced_Gram_congruence": "[I,-G_z] M [I,-G_z]*=0 modulo125",
+      "normalized_kernel_transport": "C0* ker(H(z)), C0=diag(conjugate(raw first row)*raw[0,0])",
+      "normalization_star_means_adjoint": true,
+      "order_2000_kernel_before_normalization": "two copies of this graph, since the outer H2 is invertible modulo125"
+    },
+    {
+      "phase": 16,
+      "modulus": 125,
+      "channels": [
+        {
+          "C_eigenvalue_mod_125": 1,
+          "channel_coefficients": [
+            [
+              [
+                1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0,
+                0
+              ]
+            ],
+            [
+              [
+                0,
+                0,
+                0,
+                0,
+                -1,
+                1,
+                0,
+                0
+              ],
+              [
+                -1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                -1
+              ]
+            ]
+          ],
+          "determinant_zero_exactly": true,
+          "unit_pivot_inverse_coefficients": [
+            63,
+            -63,
+            63,
+            -63,
+            63,
+            -63,
+            63,
+            -63
+          ],
+          "kernel_vector": [
+            [
+              0,
+              0,
+              0,
+              -1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "rank_over_cyclotomic_ring_mod_125": 1,
+          "Paley_summand_rank": 250
+        },
+        {
+          "C_eigenvalue_mod_125": -1,
+          "channel_coefficients": [
+            [
+              [
+                -1,
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                0,
+                0,
+                1,
+                -1,
+                0,
+                0,
+                0
+              ]
+            ],
+            [
+              [
+                0,
+                0,
+                0,
+                0,
+                1,
+                1,
+                0,
+                0
+              ],
+              [
+                1,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                -1
+              ]
+            ]
+          ],
+          "determinant_zero_exactly": true,
+          "unit_pivot_inverse_coefficients": [
+            -63,
+            -63,
+            -63,
+            -63,
+            -63,
+            -63,
+            -63,
+            -63
+          ],
+          "kernel_vector": [
+            [
+              0,
+              0,
+              0,
+              1,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              1,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ]
+          ],
+          "rank_over_cyclotomic_ring_mod_125": 1,
+          "Paley_summand_rank": 250
+        }
+      ],
+      "graph_operator": "G_z=-i*conjugate(z)*C",
+      "graph_operator_coefficients_in_I_C": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          -1,
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "full_kernel": "{(G_z*w,w): w in R^500}, R=Z[zeta_d]/125",
+      "exact_graph_image_before_reduction": [
+        [
+          [
+            0,
+            0,
+            0,
+            500,
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ],
+        [
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            -500
+          ],
+          [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        ]
+      ],
+      "exact_graph_image_formula": "H(z)[G_z;I]=500*conjugate(z)*[iI;I]",
+      "kernel_rank": 500,
+      "each_Paley_summand_contributes_rank": 250,
+      "different_from_two_copies_of_old_Paley_kernel": true,
+      "graph_is_totally_isotropic_modulo_125": true,
+      "lossless_factorization": "H(z)=U[I,-G_z] modulo125; U is the first block column and has an invertible top block",
+      "inverse_top_block_coefficients_in_I_C": [
+        [
+          0,
+          -63,
+          0,
+          -63,
+          0,
+          -63,
+          0,
+          -63
+        ],
+        [
+          63,
+          0,
+          63,
+          0,
+          63,
+          0,
+          63,
+          0
+        ]
+      ],
+      "new_coupled_congruence_for_M_equals_Dstar": "M11*G_z+M12=G_z*(M21*G_z+M22) modulo125",
+      "equivalent_reduced_Gram_congruence": "[I,-G_z] M [I,-G_z]*=0 modulo125",
+      "normalized_kernel_transport": "C0* ker(H(z)), C0=diag(conjugate(raw first row)*raw[0,0])",
+      "normalization_star_means_adjoint": true,
+      "order_2000_kernel_before_normalization": "two copies of this graph, since the outer H2 is invertible modulo125"
+    }
+  ],
+  "complete_known_sources": [
+    {
+      "order": 1000,
+      "phase": 8,
+      "construction": "conference family",
+      "normalized_first_row_and_column_all_one": true,
+      "all_entries_exact_dyadic_roots": true,
+      "root_exponent_counts": [
+        2498,
+        497004,
+        998,
+        0,
+        1498,
+        497004,
+        998,
+        0
+      ],
+      "normalized_exponent_sha256": "426ae87cb4d666a4f976f2503f7891b3e001c755a25b2b0257a1c177b262c6bb",
+      "primitive_cross_ratio_rows": [
+        0,
+        1
+      ],
+      "primitive_cross_ratio_columns": [
+        0,
+        2
+      ],
+      "primitive_cross_ratio_exponent": 1,
+      "cross_ratio_order": 8,
+      "full_Gram_certification": "exact order-500 conference identity and every formal two-by-two Gram block; tensor identity for order 2000",
+      "T_shape_after_deleting_initial_row": [
+        999,
+        1000
+      ],
+      "T_row_Gram": "1000 I",
+      "T_column_Gram": "1000 I-J",
+      "compatible_restricted_cubic_alphabet": "mu_8 subset mu_8 union omega*mu_8",
+      "known_order_control_only": true,
+      "higher_Petrescu_source_completed": false
+    },
+    {
+      "order": 1000,
+      "phase": 16,
+      "construction": "conference family",
+      "normalized_first_row_and_column_all_one": true,
+      "all_entries_exact_dyadic_roots": true,
+      "root_exponent_counts": [
+        2498,
+        497004,
+        998,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1498,
+        497004,
+        998,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "normalized_exponent_sha256": "fcaba264b83d968afba22f776a97ba44d72715d84b19f926e4d19388ad3fd063",
+      "primitive_cross_ratio_rows": [
+        0,
+        1
+      ],
+      "primitive_cross_ratio_columns": [
+        0,
+        2
+      ],
+      "primitive_cross_ratio_exponent": 1,
+      "cross_ratio_order": 16,
+      "full_Gram_certification": "exact order-500 conference identity and every formal two-by-two Gram block; tensor identity for order 2000",
+      "T_shape_after_deleting_initial_row": [
+        999,
+        1000
+      ],
+      "T_row_Gram": "1000 I",
+      "T_column_Gram": "1000 I-J",
+      "compatible_restricted_cubic_alphabet": "mu_16 subset mu_16 union omega*mu_16",
+      "known_order_control_only": true,
+      "higher_Petrescu_source_completed": false
+    },
+    {
+      "order": 2000,
+      "phase": 8,
+      "construction": "H2 tensor conference family",
+      "normalized_first_row_and_column_all_one": true,
+      "all_entries_exact_dyadic_roots": true,
+      "root_exponent_counts": [
+        8992,
+        1988016,
+        3992,
+        0,
+        6992,
+        1988016,
+        3992,
+        0
+      ],
+      "normalized_exponent_sha256": "23e9e1ba1b1bf2903ace58b431183124a104d5c4890a6aad3e1b472a20391a7a",
+      "primitive_cross_ratio_rows": [
+        0,
+        1
+      ],
+      "primitive_cross_ratio_columns": [
+        0,
+        2
+      ],
+      "primitive_cross_ratio_exponent": 1,
+      "cross_ratio_order": 8,
+      "full_Gram_certification": "exact order-500 conference identity and every formal two-by-two Gram block; tensor identity for order 2000",
+      "T_shape_after_deleting_initial_row": [
+        1999,
+        2000
+      ],
+      "T_row_Gram": "2000 I",
+      "T_column_Gram": "2000 I-J",
+      "compatible_restricted_cubic_alphabet": "mu_8 subset mu_8 union omega*mu_8",
+      "known_order_control_only": true,
+      "higher_Petrescu_source_completed": false
+    },
+    {
+      "order": 2000,
+      "phase": 16,
+      "construction": "H2 tensor conference family",
+      "normalized_first_row_and_column_all_one": true,
+      "all_entries_exact_dyadic_roots": true,
+      "root_exponent_counts": [
+        8992,
+        1988016,
+        3992,
+        0,
+        0,
+        0,
+        0,
+        0,
+        6992,
+        1988016,
+        3992,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "normalized_exponent_sha256": "374b41d1bf2c77bb4e8f85fa726d08addcc3dac67648af5a9cdf49b156291279",
+      "primitive_cross_ratio_rows": [
+        0,
+        1
+      ],
+      "primitive_cross_ratio_columns": [
+        0,
+        2
+      ],
+      "primitive_cross_ratio_exponent": 1,
+      "cross_ratio_order": 16,
+      "full_Gram_certification": "exact order-500 conference identity and every formal two-by-two Gram block; tensor identity for order 2000",
+      "T_shape_after_deleting_initial_row": [
+        1999,
+        2000
+      ],
+      "T_row_Gram": "2000 I",
+      "T_column_Gram": "2000 I-J",
+      "compatible_restricted_cubic_alphabet": "mu_16 subset mu_16 union omega*mu_16",
+      "known_order_control_only": true,
+      "higher_Petrescu_source_completed": false
+    }
+  ],
+  "partial_corner": {
+    "order": 1000,
+    "phase": 8,
+    "formula": "D0=[[A,B],[B,A]], A=C+zeta8 I, B=i(C+conjugate(zeta8) I)",
+    "all_entries_are_roots": true,
+    "full_Gram": "1000 I_1000 + 2 ([[0,1],[1,0]] tensor I_500)",
+    "difference_sector_Gram": "998 I_500",
+    "sum_sector_Gram": "1002 I_500",
+    "required_sum_sector_Gram_not_yet_met": "998 I_500+4 J_500",
+    "all_blocks_preserve_old_Paley_lattice_modulo_125": true,
+    "lattice_proof": "every block and its adjoint is a linear combination of I,C; C=S-I commutes with P",
+    "desired_Petrescu_corner_constructed": false
+  },
+  "independent_small_direct_Gram_controls": [
+    {
+      "order": 8,
+      "phase": 8,
+      "H2_tensor": false,
+      "complete_entrywise_cyclotomic_Gram_checked": true
+    },
+    {
+      "order": 16,
+      "phase": 8,
+      "H2_tensor": true,
+      "complete_entrywise_cyclotomic_Gram_checked": true
+    },
+    {
+      "order": 8,
+      "phase": 16,
+      "H2_tensor": false,
+      "complete_entrywise_cyclotomic_Gram_checked": true
+    },
+    {
+      "order": 16,
+      "phase": 16,
+      "H2_tensor": true,
+      "complete_entrywise_cyclotomic_Gram_checked": true
+    }
+  ],
+  "new_normalized_boundary_requires_its_own_joint_lattice_equations": true,
+  "parameter_need_not_be_a_root_for_unitarity": true,
+  "novelty_of_the_conference_construction_claimed": false,
+  "native_solver_run": false,
+  "new_real_Hadamard_order_constructed": false
+}

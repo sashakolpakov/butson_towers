@@ -1,0 +1,772 @@
+{
+  "source_order": 1499,
+  "core_group": "F7 x F107",
+  "core_length": 749,
+  "conditional_outputs": {
+    "phase24": 11992,
+    "phase48": 23984,
+    "phase96": 47968
+  },
+  "scope": "Bordered four-circulant source charts; supports and phases jointly variable",
+  "norm_classification": {
+    "norm": 1499,
+    "base_phase": 24,
+    "generators": [
+      [
+        23,
+        21,
+        0,
+        0,
+        0,
+        -21,
+        23,
+        0
+      ],
+      [
+        -26,
+        -7,
+        0,
+        0,
+        0,
+        -7,
+        26,
+        0
+      ],
+      [
+        -26,
+        7,
+        0,
+        0,
+        0,
+        7,
+        26,
+        0
+      ],
+      [
+        23,
+        -21,
+        0,
+        0,
+        0,
+        21,
+        23,
+        0
+      ]
+    ],
+    "irreducible_residue_factors": [
+      [
+        1498,
+        74,
+        1
+      ],
+      [
+        1498,
+        709,
+        1
+      ],
+      [
+        1498,
+        790,
+        1
+      ],
+      [
+        1498,
+        1425,
+        1
+      ]
+    ],
+    "conjugate_pairs": [
+      [
+        0,
+        3
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "all_ideal_allocations_covered": true,
+    "all_base_norm_elements": 96,
+    "norm_elements_congruent_to_one_mod_two": [
+      [
+        -7,
+        -26,
+        0,
+        -26,
+        14,
+        26,
+        0,
+        0
+      ],
+      [
+        -7,
+        26,
+        0,
+        26,
+        14,
+        -26,
+        0,
+        0
+      ],
+      [
+        7,
+        -26,
+        0,
+        -26,
+        -14,
+        26,
+        0,
+        0
+      ],
+      [
+        7,
+        26,
+        0,
+        26,
+        -14,
+        -26,
+        0,
+        0
+      ]
+    ],
+    "tower": [
+      {
+        "phase": 48,
+        "residue_degree": 4,
+        "four_inert_prime_factors": [
+          [
+            1498,
+            0,
+            74,
+            0,
+            1
+          ],
+          [
+            1498,
+            0,
+            709,
+            0,
+            1
+          ],
+          [
+            1498,
+            0,
+            790,
+            0,
+            1
+          ],
+          [
+            1498,
+            0,
+            1425,
+            0,
+            1
+          ]
+        ],
+        "all_norm_elements": 192,
+        "parity_norm_elements_all_descend_to_phase_24": true,
+        "parity_norm_element_count": 4
+      },
+      {
+        "phase": 96,
+        "residue_degree": 8,
+        "four_inert_prime_factors": [
+          [
+            1498,
+            0,
+            0,
+            0,
+            74,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            1498,
+            0,
+            0,
+            0,
+            709,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            1498,
+            0,
+            0,
+            0,
+            790,
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            1498,
+            0,
+            0,
+            0,
+            1425,
+            0,
+            0,
+            0,
+            1
+          ]
+        ],
+        "all_norm_elements": 384,
+        "parity_norm_elements_all_descend_to_phase_24": true,
+        "parity_norm_element_count": 4
+      }
+    ],
+    "no_Butson_source_descent_asserted": true
+  },
+  "chart_audit": {
+    "phase_checks": [
+      {
+        "phase": 24,
+        "all_four_norm_cases": [
+          {
+            "z_in_base_field": [
+              -7,
+              -26,
+              0,
+              -26,
+              14,
+              26,
+              0,
+              0
+            ],
+            "largest_coefficient_distance_mod_53": 13,
+            "seven_root_coefficient_bound": 7,
+            "a_mod_two_is_single_root": false,
+            "three_root_mod_two_tests": {
+              "E": true,
+              "F_and_G": true,
+              "H": false
+            }
+          },
+          {
+            "z_in_base_field": [
+              -7,
+              26,
+              0,
+              26,
+              14,
+              -26,
+              0,
+              0
+            ],
+            "largest_coefficient_distance_mod_53": 13,
+            "seven_root_coefficient_bound": 7,
+            "a_mod_two_is_single_root": false,
+            "three_root_mod_two_tests": {
+              "E": true,
+              "F_and_G": true,
+              "H": false
+            }
+          },
+          {
+            "z_in_base_field": [
+              7,
+              -26,
+              0,
+              -26,
+              -14,
+              26,
+              0,
+              0
+            ],
+            "largest_coefficient_distance_mod_53": 13,
+            "seven_root_coefficient_bound": 7,
+            "a_mod_two_is_single_root": false,
+            "three_root_mod_two_tests": {
+              "E": false,
+              "F_and_G": false,
+              "H": false
+            }
+          },
+          {
+            "z_in_base_field": [
+              7,
+              26,
+              0,
+              26,
+              -14,
+              -26,
+              0,
+              0
+            ],
+            "largest_coefficient_distance_mod_53": 13,
+            "seven_root_coefficient_bound": 7,
+            "a_mod_two_is_single_root": false,
+            "three_root_mod_two_tests": {
+              "E": false,
+              "F_and_G": false,
+              "H": false
+            }
+          }
+        ]
+      },
+      {
+        "phase": 48,
+        "all_four_norm_cases": [
+          {
+            "z_in_base_field": [
+              -7,
+              -26,
+              0,
+              -26,
+              14,
+              26,
+              0,
+              0
+            ],
+            "largest_coefficient_distance_mod_53": 13,
+            "seven_root_coefficient_bound": 7,
+            "a_mod_two_is_single_root": false,
+            "three_root_mod_two_tests": {
+              "E": false,
+              "F_and_G": false,
+              "H": false
+            }
+          },
+          {
+            "z_in_base_field": [
+              -7,
+              26,
+              0,
+              26,
+              14,
+              -26,
+              0,
+              0
+            ],
+            "largest_coefficient_distance_mod_53": 13,
+            "seven_root_coefficient_bound": 7,
+            "a_mod_two_is_single_root": false,
+            "three_root_mod_two_tests": {
+              "E": false,
+              "F_and_G": false,
+              "H": false
+            }
+          },
+          {
+            "z_in_base_field": [
+              7,
+              -26,
+              0,
+              -26,
+              -14,
+              26,
+              0,
+              0
+            ],
+            "largest_coefficient_distance_mod_53": 13,
+            "seven_root_coefficient_bound": 7,
+            "a_mod_two_is_single_root": false,
+            "three_root_mod_two_tests": {
+              "E": true,
+              "F_and_G": true,
+              "H": false
+            }
+          },
+          {
+            "z_in_base_field": [
+              7,
+              26,
+              0,
+              26,
+              -14,
+              -26,
+              0,
+              0
+            ],
+            "largest_coefficient_distance_mod_53": 13,
+            "seven_root_coefficient_bound": 7,
+            "a_mod_two_is_single_root": false,
+            "three_root_mod_two_tests": {
+              "E": true,
+              "F_and_G": true,
+              "H": false
+            }
+          }
+        ]
+      },
+      {
+        "phase": 96,
+        "all_four_norm_cases": [
+          {
+            "z_in_base_field": [
+              -7,
+              -26,
+              0,
+              -26,
+              14,
+              26,
+              0,
+              0
+            ],
+            "largest_coefficient_distance_mod_53": 13,
+            "seven_root_coefficient_bound": 7,
+            "a_mod_two_is_single_root": false,
+            "three_root_mod_two_tests": {
+              "E": true,
+              "F_and_G": true,
+              "H": false
+            }
+          },
+          {
+            "z_in_base_field": [
+              -7,
+              26,
+              0,
+              26,
+              14,
+              -26,
+              0,
+              0
+            ],
+            "largest_coefficient_distance_mod_53": 13,
+            "seven_root_coefficient_bound": 7,
+            "a_mod_two_is_single_root": false,
+            "three_root_mod_two_tests": {
+              "E": true,
+              "F_and_G": true,
+              "H": false
+            }
+          },
+          {
+            "z_in_base_field": [
+              7,
+              -26,
+              0,
+              -26,
+              -14,
+              26,
+              0,
+              0
+            ],
+            "largest_coefficient_distance_mod_53": 13,
+            "seven_root_coefficient_bound": 7,
+            "a_mod_two_is_single_root": false,
+            "three_root_mod_two_tests": {
+              "E": false,
+              "F_and_G": false,
+              "H": false
+            }
+          },
+          {
+            "z_in_base_field": [
+              7,
+              26,
+              0,
+              26,
+              -14,
+              -26,
+              0,
+              0
+            ],
+            "largest_coefficient_distance_mod_53": 13,
+            "seven_root_coefficient_bound": 7,
+            "a_mod_two_is_single_root": false,
+            "three_root_mod_two_tests": {
+              "E": false,
+              "F_and_G": false,
+              "H": false
+            }
+          }
+        ]
+      }
+    ],
+    "product_charts": [
+      {
+        "H7_order": 1,
+        "H107_order": 1,
+        "orbits_per_sequence": 749,
+        "excluded": false,
+        "reason": null
+      },
+      {
+        "H7_order": 1,
+        "H107_order": 2,
+        "orbits_per_sequence": 378,
+        "excluded": false,
+        "reason": null
+      },
+      {
+        "H7_order": 1,
+        "H107_order": 53,
+        "orbits_per_sequence": 21,
+        "excluded": true,
+        "reason": "H53_fixed_seven_points_coefficient_bound"
+      },
+      {
+        "H7_order": 1,
+        "H107_order": 106,
+        "orbits_per_sequence": 14,
+        "excluded": true,
+        "reason": "H53_fixed_seven_points_coefficient_bound"
+      },
+      {
+        "H7_order": 2,
+        "H107_order": 1,
+        "orbits_per_sequence": 428,
+        "excluded": false,
+        "reason": null
+      },
+      {
+        "H7_order": 2,
+        "H107_order": 2,
+        "orbits_per_sequence": 216,
+        "excluded": true,
+        "reason": "global_negation_row_sum_mod_two"
+      },
+      {
+        "H7_order": 2,
+        "H107_order": 53,
+        "orbits_per_sequence": 12,
+        "excluded": true,
+        "reason": "H53_fixed_seven_points_coefficient_bound"
+      },
+      {
+        "H7_order": 2,
+        "H107_order": 106,
+        "orbits_per_sequence": 8,
+        "excluded": true,
+        "reason": "H53_fixed_seven_points_coefficient_bound"
+      },
+      {
+        "H7_order": 3,
+        "H107_order": 1,
+        "orbits_per_sequence": 321,
+        "excluded": false,
+        "reason": null
+      },
+      {
+        "H7_order": 3,
+        "H107_order": 2,
+        "orbits_per_sequence": 162,
+        "excluded": true,
+        "reason": "H_block_three_root_mod_two_obstruction"
+      },
+      {
+        "H7_order": 3,
+        "H107_order": 53,
+        "orbits_per_sequence": 9,
+        "excluded": true,
+        "reason": "H53_fixed_seven_points_coefficient_bound"
+      },
+      {
+        "H7_order": 3,
+        "H107_order": 106,
+        "orbits_per_sequence": 6,
+        "excluded": true,
+        "reason": "H53_fixed_seven_points_coefficient_bound"
+      },
+      {
+        "H7_order": 6,
+        "H107_order": 1,
+        "orbits_per_sequence": 214,
+        "excluded": true,
+        "reason": "nontrivial_F7_character_energy_at_most_856"
+      },
+      {
+        "H7_order": 6,
+        "H107_order": 2,
+        "orbits_per_sequence": 108,
+        "excluded": true,
+        "reason": "global_negation_row_sum_mod_two"
+      },
+      {
+        "H7_order": 6,
+        "H107_order": 53,
+        "orbits_per_sequence": 6,
+        "excluded": true,
+        "reason": "H53_fixed_seven_points_coefficient_bound"
+      },
+      {
+        "H7_order": 6,
+        "H107_order": 106,
+        "orbits_per_sequence": 4,
+        "excluded": true,
+        "reason": "H53_fixed_seven_points_coefficient_bound"
+      }
+    ],
+    "constant_border_normal_forms": [
+      {
+        "corner_color": 0,
+        "top_orbit_colors": [
+          0,
+          1
+        ],
+        "left_orbit_colors": [
+          0,
+          1
+        ],
+        "dephased_core_classes": [
+          [
+            0,
+            1
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            0,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      },
+      {
+        "corner_color": 1,
+        "top_orbit_colors": [
+          0,
+          0
+        ],
+        "left_orbit_colors": [
+          0,
+          0
+        ],
+        "dephased_core_classes": [
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            2
+          ],
+          [
+            1,
+            2
+          ]
+        ]
+      }
+    ],
+    "both_constant_border_forms_excluded_by_compact_chart_tests": true,
+    "H6_energy_bound": {
+      "maximum": 856,
+      "required": 1499
+    },
+    "next_unexcluded_product_chart": {
+      "H7_order": 3,
+      "H107_order": 1,
+      "orbits_per_sequence": 321,
+      "phase_variables": 1284
+    }
+  },
+  "next_chart_row_sum_probes": {
+    "E": {
+      "status": "OPTIMAL",
+      "block": "E",
+      "native_time_limit_seconds": 2,
+      "workers": 1,
+      "multiplicities": [
+        {
+          "orbit_weight": 1,
+          "counts": {
+            "4": 1,
+            "6": 2,
+            "9": 1,
+            "12": 1,
+            "15": 1,
+            "18": 2,
+            "22": 99
+          }
+        },
+        {
+          "orbit_weight": 3,
+          "counts": {
+            "4": 2,
+            "6": 85,
+            "9": 4,
+            "10": 33,
+            "12": 1,
+            "15": 4,
+            "18": 85
+          }
+        }
+      ],
+      "exact_weighted_sum_verified": true
+    },
+    "F_and_G": {
+      "status": "OPTIMAL",
+      "block": "F_and_G",
+      "native_time_limit_seconds": 2,
+      "workers": 1,
+      "multiplicities": [
+        {
+          "orbit_weight": 1,
+          "counts": {
+            "12": 1,
+            "15": 2,
+            "20": 1,
+            "21": 1,
+            "23": 102
+          }
+        },
+        {
+          "orbit_weight": 3,
+          "counts": {
+            "3": 5,
+            "5": 84,
+            "11": 34,
+            "12": 1,
+            "17": 84,
+            "20": 2,
+            "21": 4
+          }
+        }
+      ],
+      "exact_weighted_sum_verified": true
+    },
+    "H": {
+      "status": "OPTIMAL",
+      "block": "H",
+      "native_time_limit_seconds": 2,
+      "workers": 1,
+      "multiplicities": [
+        {
+          "orbit_weight": 1,
+          "counts": {
+            "11": 60,
+            "13": 1,
+            "17": 2,
+            "19": 1,
+            "20": 2,
+            "23": 41
+          }
+        },
+        {
+          "orbit_weight": 3,
+          "counts": {
+            "4": 1,
+            "5": 5,
+            "8": 2,
+            "10": 98,
+            "13": 4,
+            "19": 4,
+            "22": 98,
+            "23": 2
+          }
+        }
+      ],
+      "exact_weighted_sum_verified": true
+    }
+  },
+  "full_correlation_solver_run": false,
+  "source_constructed": false,
+  "new_real_Hadamard_order_constructed": false
+}

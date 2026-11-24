@@ -1,0 +1,83 @@
+{
+  "scope": "One bounded exact periodic one-hot quadruple search; a restricted joint GS design chart",
+  "prime": 223,
+  "multiplier_order": 3,
+  "block_order": 892,
+  "algebraic_source_3_and_13_output_orders": [
+    2676,
+    11596
+  ],
+  "native_limit_seconds": 45.0,
+  "wall_limit_seconds": 60.0,
+  "elapsed_seconds": 45.56669262499781,
+  "worker_pid": 32417,
+  "worker_exit_code": 0,
+  "worker_reaped": true,
+  "external_watchdog_triggered": false,
+  "events": [
+    {
+      "stage": "worker_started",
+      "elapsed_seconds": 1.5829864423722029e-06,
+      "pid": 32417
+    },
+    {
+      "stage": "model_ready",
+      "elapsed_seconds": 0.04333874999429099,
+      "prime": 223,
+      "multiplier_order": 3,
+      "block_order": 892,
+      "design_type": [
+        669,
+        223
+      ],
+      "algebraic_source_3_and_13_output_orders": [
+        2676,
+        11596
+      ],
+      "one_hot_eight_state_orbit_variables": 75,
+      "independent_nonzero_shift_classes": 37,
+      "row_sum_types": [
+        [
+          -14,
+          3,
+          3,
+          3
+        ],
+        [
+          -5,
+          6,
+          9,
+          9
+        ],
+        [
+          13,
+          3,
+          3,
+          6
+        ]
+      ],
+      "total_model_variables": 3154,
+      "total_model_constraints": 2893,
+      "all_one_hot_sequences_unknown": true,
+      "generator_sequence_relation": "a=D*b with fixed skew conference D4",
+      "order_4p_scalar_operator_prescribed": false,
+      "objective": "exact feasibility; every autocorrelation residual is zero"
+    },
+    {
+      "stage": "solver_finished",
+      "elapsed_seconds": 45.05086458299775,
+      "solver_status": "UNKNOWN",
+      "solver_wall_seconds": 45.006289,
+      "branches": 978139,
+      "conflicts": 22546,
+      "witness": null
+    }
+  ],
+  "diagnostics": [],
+  "solver_status": "UNKNOWN",
+  "exact_design_constructed": false,
+  "inconclusive": true,
+  "mathematical_nonexistence_certificate_produced": false,
+  "new_real_Hadamard_order_claimed": false,
+  "witness": null
+}

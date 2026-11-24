@@ -1,0 +1,64 @@
+{
+  "scope": "One bounded exact feasibility search for OD(892;669,223) in the four-sequence multiplier-three Goethals-Seidel chart",
+  "target_orders": [
+    2676,
+    11596
+  ],
+  "block_order": 892,
+  "native_limit_seconds": 45.0,
+  "wall_limit_seconds": 60.0,
+  "elapsed_seconds": 45.811326541996095,
+  "worker_pid": 14338,
+  "worker_exit_code": 0,
+  "worker_reaped": true,
+  "external_watchdog_triggered": false,
+  "events": [
+    {
+      "stage": "worker_started",
+      "elapsed_seconds": 1.6250123735517263e-06,
+      "pid": 14338
+    },
+    {
+      "stage": "model_ready",
+      "elapsed_seconds": 0.32805616600671783,
+      "prime": 223,
+      "multiplier_order": 3,
+      "block_order": 892,
+      "design_type": [
+        669,
+        223
+      ],
+      "target_orders": [
+        2676,
+        11596
+      ],
+      "orbit_count": 75,
+      "four_state_orbit_variables": 300,
+      "independent_nonzero_shift_classes": 37,
+      "coefficient_correlation_equations": 111,
+      "trivial_character_types": 30,
+      "total_model_variables": 34508,
+      "total_model_constraints": 11525,
+      "scalar_operator_prescribed": false,
+      "all_four_design_sequences_unknown": true,
+      "objective": "exact feasibility; every residual constrained to zero"
+    },
+    {
+      "stage": "solver_finished",
+      "elapsed_seconds": 45.34877625000081,
+      "solver_status": "UNKNOWN",
+      "solver_wall_seconds": 45.019482,
+      "conflicts": 5,
+      "branches": 20131,
+      "exact_design_constructed": false,
+      "witness": null
+    }
+  ],
+  "diagnostics": [],
+  "solver_status": "UNKNOWN",
+  "exact_design_constructed": false,
+  "inconclusive": true,
+  "mathematical_nonexistence_certificate_produced": false,
+  "new_real_hadamard_order_claimed": false,
+  "witness": null
+}

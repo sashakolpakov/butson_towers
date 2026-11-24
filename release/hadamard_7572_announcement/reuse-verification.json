@@ -1,0 +1,97 @@
+{
+  "schema": "portable-h7572-further-endpoints-audit-v1",
+  "frame_width": 2524,
+  "field": "Q(zeta_6)/Q",
+  "field_degree": 2,
+  "module_rank": 1262,
+  "conjugation": "transpose",
+  "canonical_trace_metric": [
+    [
+      2,
+      1
+    ],
+    [
+      1,
+      2
+    ]
+  ],
+  "full_P_Q_and_symmetric_cross_integer_identities_verified": true,
+  "frame_reuse_certificate_sha256": "1e2dfc6aa7f5c6b8d278e43904549176d806fe1efb2a39b250175024a2300370",
+  "outputs": [
+    {
+      "order": 17668,
+      "source_order": 7,
+      "source_scale": 7,
+      "frame_scale": 2524,
+      "all_entry_images_are_signs": true,
+      "complete_algebraic_Gram_verified": true,
+      "full_dense_endpoint_Gram_performed": false,
+      "order_status": "new",
+      "order_status_basis": "New to the best of the author's knowledge; no earlier construction located in the dated literature search."
+    },
+    {
+      "order": 22716,
+      "source_order": 9,
+      "source_scale": 9,
+      "frame_scale": 2524,
+      "all_entry_images_are_signs": true,
+      "complete_algebraic_Gram_verified": true,
+      "full_dense_endpoint_Gram_performed": false,
+      "order_status": "new",
+      "order_status_basis": "New to the best of the author's knowledge; no earlier construction located in the dated literature search."
+    },
+    {
+      "order": 32812,
+      "source_order": 13,
+      "source_scale": 13,
+      "frame_scale": 2524,
+      "all_entry_images_are_signs": true,
+      "complete_algebraic_Gram_verified": true,
+      "full_dense_endpoint_Gram_performed": false,
+      "order_status": "new",
+      "order_status_basis": "New to the best of the author's knowledge; no earlier construction located in the dated literature search."
+    },
+    {
+      "order": 98436,
+      "source_order": 39,
+      "source_scale": 39,
+      "frame_scale": 2524,
+      "all_entry_images_are_signs": true,
+      "complete_algebraic_Gram_verified": true,
+      "full_dense_endpoint_Gram_performed": false,
+      "order_status": "new",
+      "order_status_basis": "New to the best of the author's knowledge; no earlier construction located in the dated literature search."
+    },
+    {
+      "order": 295308,
+      "source_order": 117,
+      "source_scale": 117,
+      "frame_scale": 2524,
+      "all_entry_images_are_signs": true,
+      "complete_algebraic_Gram_verified": true,
+      "full_dense_endpoint_Gram_performed": false,
+      "order_status": "new",
+      "order_status_basis": "New to the best of the author's knowledge; no earlier construction located in the dated literature search."
+    },
+    {
+      "order": 885924,
+      "source_order": 351,
+      "source_scale": 351,
+      "frame_scale": 2524,
+      "all_entry_images_are_signs": true,
+      "complete_algebraic_Gram_verified": true,
+      "full_dense_endpoint_Gram_performed": false,
+      "order_status": "known",
+      "order_status_basis": "Paley I with prime 885923"
+    }
+  ],
+  "new_orders_claimed": true,
+  "new_orders": [
+    17668,
+    22716,
+    32812,
+    98436,
+    295308
+  ],
+  "novelty_convention": "Known where an earlier construction was located; otherwise new to the best of the author's knowledge."
+}

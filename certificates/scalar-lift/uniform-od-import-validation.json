@@ -1,0 +1,29 @@
+{
+  "schema": "optional-OD-checkpoint-import-validation-v1",
+  "hashes": {
+    "experiments/scalar_lift/uniform_od_import.cpp": "4fb427b3624ff852808a0628be2a41085cb8617ca502f88d4ce31a81262d6506",
+    "experiments/scalar_lift/uniform_od_import.py": "bfa3e177d86fb09001b574684a4a2256ac051f60fcc312c227a0eda2b6a01017",
+    "experiments/scalar_lift/uniform_multivariable_od_search.cpp": "82d03919185ffb8f708dcc4c0eded6a8e7af25eca431f3ab0f902adf6823c5f1",
+    "artifacts/uniform-od-search/od_import": "29c596fb0ea6378575dcc4e5892c333041edc61bf3c0465c976b28ea8b1fd110",
+    "artifacts/uniform-od-search/od_full_search": "2137fb48709fac75eca5a3ddbdf9afaacd77dd00fdad46fa6077143e985e31a5",
+    "tests/test_uniform_od_import.py": "bb9de4eb3878ff9367e70f321fb613824a6c5edabc20e3454c7223cdebe3518d"
+  },
+  "tests_passed": 3,
+  "control": "known OD28 exact-zero state imported into positive-energy temporary native checkpoint",
+  "checks": {
+    "strict_improvement_against_current_saved_best": true,
+    "independent_python_before_after_correlations": true,
+    "native_staged_checkpoint_replay": true,
+    "unmodified_original_native_binary_resumed_import": true,
+    "serialized_RNG_preserved": true,
+    "move_acceptance_trade_counters_preserved": true,
+    "anneal_epoch_preserved_offset_reset0": true,
+    "position_buckets_rebuilt": true,
+    "rejected_stale_candidate_checkpoint_byte_identical": true,
+    "active_campaign_lock_excludes_import": true,
+    "simulated_post_commit_failure_rolls_back_original_bytes": true
+  },
+  "production_native_source_edited": false,
+  "production_native_binary_edited": false,
+  "live_production_checkpoint_touched": false
+}

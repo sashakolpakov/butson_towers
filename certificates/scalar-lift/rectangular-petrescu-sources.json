@@ -1,0 +1,1113 @@
+{
+  "schema": "rectangular-smaller-Butson-sources-v1",
+  "source_order": 1499,
+  "phase": 120,
+  "verified_small_metric_inputs": [
+    {
+      "order": 2,
+      "phase": 120,
+      "complete_Gram_verified": true,
+      "integral_normalizer_norm_equals_order": true,
+      "normalized_source_is_unitary_over_the_required_field": true
+    },
+    {
+      "order": 5,
+      "phase": 120,
+      "complete_Gram_verified": true,
+      "integral_normalizer_norm_equals_order": true,
+      "normalized_source_is_unitary_over_the_required_field": true
+    },
+    {
+      "order": 7,
+      "phase": 120,
+      "complete_Gram_verified": true,
+      "integral_normalizer_norm_equals_order": true,
+      "normalized_source_is_unitary_over_the_required_field": true
+    },
+    {
+      "order": 35,
+      "phase": 120,
+      "complete_Gram_verified": true,
+      "integral_normalizer_norm_equals_order": true,
+      "normalized_source_is_unitary_over_the_required_field": true
+    }
+  ],
+  "branches": [
+    {
+      "parameters": {
+        "source_order": 1499,
+        "input_order": 567,
+        "selected_rows": 466,
+        "omitted_rows": 101,
+        "selected_metric_norm": 365,
+        "complement_metric_norm": 1499,
+        "phase": 120,
+        "known_input_constructor_available": true,
+        "known_input_route": "restricted BH7 followed by four exact triplings",
+        "characteristic_zero_source_constructed": false
+      },
+      "known_input": {
+        "order": 567,
+        "phase": 120,
+        "all_row_pairs_checked": 160461,
+        "exact_unreal_component_Gram_verified": true,
+        "all_raw_cubic_fifth_alphabet_entries_verified": true,
+        "cubic_colors": [
+          0,
+          1
+        ],
+        "fifth_colors": [
+          1
+        ],
+        "source_exponent_sha256": "cdb985cec5d5683e079c5fc9afdf686ea6e97c182c64f2fa43bc40fda3be3997"
+      },
+      "metric_norms": {
+        "selected_norm": 365,
+        "selected_scalar_gaussian_coefficients": [
+          19,
+          2
+        ],
+        "source_norm": 1499,
+        "source_scalar_formula": "21+23*(zeta8+zeta8^3)",
+        "both_scalar_norms_verified": true,
+        "scalar_metric_is_not_a_root_completion": true
+      },
+      "actual_root_pair": {
+        "input_order": 567,
+        "source_order": 1499,
+        "selected_rows": 466,
+        "unit_root_sum_positions": 365,
+        "zero_root_sum_positions": 101,
+        "E_row_squared_norm": 365,
+        "F_row_squared_norm": 1499,
+        "pair_phases": {
+          "unit_sum": [
+            24,
+            64
+          ],
+          "zero_sum": [
+            24,
+            84
+          ]
+        },
+        "full_two_by_two_Gram_of_length1499_rows_verified": true,
+        "all_entries_in_raw_phase120_lift_alphabet": true,
+        "boundary_input_row_index": 0,
+        "two_row_exponent_sha256": "9f63cb9165fe4d3793f5271f91e42544fb408d7fb1b94b1e3556a7b71a366a6d",
+        "cross_row_completion_and_corner_still_missing": true
+      }
+    },
+    {
+      "parameters": {
+        "source_order": 1499,
+        "input_order": 729,
+        "selected_rows": 385,
+        "omitted_rows": 344,
+        "selected_metric_norm": 41,
+        "complement_metric_norm": 1499,
+        "phase": 120,
+        "known_input_constructor_available": true,
+        "known_input_route": "restricted BH3 followed by five exact triplings",
+        "characteristic_zero_source_constructed": false
+      },
+      "known_input": {
+        "order": 729,
+        "phase": 120,
+        "all_row_pairs_checked": 265356,
+        "exact_unreal_component_Gram_verified": true,
+        "all_raw_cubic_fifth_alphabet_entries_verified": true,
+        "cubic_colors": [
+          0,
+          1
+        ],
+        "fifth_colors": [
+          1
+        ],
+        "source_exponent_sha256": "15d4ddddb5d1dd834ef77919ee62569a9f209ce15023f4f1d89fcb80ba6cc98e"
+      },
+      "metric_norms": {
+        "selected_norm": 41,
+        "selected_scalar_gaussian_coefficients": [
+          5,
+          4
+        ],
+        "source_norm": 1499,
+        "source_scalar_formula": "21+23*(zeta8+zeta8^3)",
+        "both_scalar_norms_verified": true,
+        "scalar_metric_is_not_a_root_completion": true
+      },
+      "actual_root_pair": {
+        "input_order": 729,
+        "source_order": 1499,
+        "selected_rows": 385,
+        "unit_root_sum_positions": 41,
+        "zero_root_sum_positions": 344,
+        "E_row_squared_norm": 41,
+        "F_row_squared_norm": 1499,
+        "pair_phases": {
+          "unit_sum": [
+            24,
+            64
+          ],
+          "zero_sum": [
+            24,
+            84
+          ]
+        },
+        "full_two_by_two_Gram_of_length1499_rows_verified": true,
+        "all_entries_in_raw_phase120_lift_alphabet": true,
+        "boundary_input_row_index": 0,
+        "two_row_exponent_sha256": "22dcaab8daa1b5849b87a12ebaf5e9035b026a5c66db507305cff921bc250553",
+        "cross_row_completion_and_corner_still_missing": true
+      }
+    }
+  ],
+  "finite_branch_catalogue": [
+    {
+      "source_order": 1499,
+      "input_order": 567,
+      "selected_rows": 466,
+      "omitted_rows": 101,
+      "selected_metric_norm": 365,
+      "complement_metric_norm": 1499,
+      "phase": 120,
+      "known_input_constructor_available": true,
+      "known_input_route": "restricted BH7 followed by four exact triplings",
+      "characteristic_zero_source_constructed": false,
+      "row_selection_descriptor": {
+        "kind": "stride",
+        "step": 1,
+        "shift": 0
+      },
+      "selected_row_indices_sha256": "ebe3464fd023b772e220d2386be9580697cdac20f2d7c4e9df66174405f828ac",
+      "metric_descriptor": {
+        "kind": "monomial",
+        "root_phase_shift": 0
+      },
+      "status": "EXCLUDED_ROOT_SUM_ENTRY_BOUND",
+      "reason": "E has a nonzero entry with squared modulus delta, but every sum of two unit roots has squared modulus at most4.",
+      "actual_row_subset_selected": true,
+      "source_constructed": false
+    },
+    {
+      "source_order": 1499,
+      "input_order": 567,
+      "selected_rows": 466,
+      "omitted_rows": 101,
+      "selected_metric_norm": 365,
+      "complement_metric_norm": 1499,
+      "phase": 120,
+      "known_input_constructor_available": true,
+      "known_input_route": "restricted BH7 followed by four exact triplings",
+      "characteristic_zero_source_constructed": false,
+      "row_selection_descriptor": {
+        "kind": "stride",
+        "step": 1,
+        "shift": 0
+      },
+      "selected_row_indices_sha256": "ebe3464fd023b772e220d2386be9580697cdac20f2d7c4e9df66174405f828ac",
+      "metric_descriptor": {
+        "kind": "nonuniform_spectral_monomial",
+        "phase_slope": 1,
+        "phase_shift": 15
+      },
+      "status": "EXCLUDED_ROOT_SUM_ENTRY_BOUND",
+      "reason": "E has a nonzero entry with squared modulus delta, but every sum of two unit roots has squared modulus at most4.",
+      "actual_row_subset_selected": true,
+      "source_constructed": false
+    },
+    {
+      "source_order": 1499,
+      "input_order": 567,
+      "selected_rows": 466,
+      "omitted_rows": 101,
+      "selected_metric_norm": 365,
+      "complement_metric_norm": 1499,
+      "phase": 120,
+      "known_input_constructor_available": true,
+      "known_input_route": "restricted BH7 followed by four exact triplings",
+      "characteristic_zero_source_constructed": false,
+      "row_selection_descriptor": {
+        "kind": "stride",
+        "step": 1,
+        "shift": 0
+      },
+      "selected_row_indices_sha256": "ebe3464fd023b772e220d2386be9580697cdac20f2d7c4e9df66174405f828ac",
+      "metric_descriptor": {
+        "kind": "nonuniform_spectral_monomial",
+        "phase_slope": 7,
+        "phase_shift": 24
+      },
+      "status": "EXCLUDED_ROOT_SUM_ENTRY_BOUND",
+      "reason": "E has a nonzero entry with squared modulus delta, but every sum of two unit roots has squared modulus at most4.",
+      "actual_row_subset_selected": true,
+      "source_constructed": false
+    },
+    {
+      "source_order": 1499,
+      "input_order": 567,
+      "selected_rows": 466,
+      "omitted_rows": 101,
+      "selected_metric_norm": 365,
+      "complement_metric_norm": 1499,
+      "phase": 120,
+      "known_input_constructor_available": true,
+      "known_input_route": "restricted BH7 followed by four exact triplings",
+      "characteristic_zero_source_constructed": false,
+      "row_selection_descriptor": {
+        "kind": "stride",
+        "step": 1,
+        "shift": 0
+      },
+      "selected_row_indices_sha256": "ebe3464fd023b772e220d2386be9580697cdac20f2d7c4e9df66174405f828ac",
+      "metric_descriptor": {
+        "kind": "normalized_small_Butson_blocks",
+        "block_order": 2
+      },
+      "status": "EXCLUDED_ROOT_SUM_ENTRY_BOUND",
+      "reason": "Each E entry has squared modulus delta/block_order>4.",
+      "actual_row_subset_selected": true,
+      "source_constructed": false
+    },
+    {
+      "source_order": 1499,
+      "input_order": 567,
+      "selected_rows": 466,
+      "omitted_rows": 101,
+      "selected_metric_norm": 365,
+      "complement_metric_norm": 1499,
+      "phase": 120,
+      "known_input_constructor_available": true,
+      "known_input_route": "restricted BH7 followed by four exact triplings",
+      "characteristic_zero_source_constructed": false,
+      "row_selection_descriptor": {
+        "kind": "stride",
+        "step": 1,
+        "shift": 0
+      },
+      "selected_row_indices_sha256": "ebe3464fd023b772e220d2386be9580697cdac20f2d7c4e9df66174405f828ac",
+      "metric_descriptor": {
+        "kind": "dense_integral_root_split"
+      },
+      "status": "OPEN_ROOT_COMPLETION",
+      "reason": "The actual two-row root gate passes; a complete coupled E,F,D remains missing.",
+      "actual_row_subset_selected": true,
+      "source_constructed": false
+    },
+    {
+      "source_order": 1499,
+      "input_order": 567,
+      "selected_rows": 466,
+      "omitted_rows": 101,
+      "selected_metric_norm": 365,
+      "complement_metric_norm": 1499,
+      "phase": 120,
+      "known_input_constructor_available": true,
+      "known_input_route": "restricted BH7 followed by four exact triplings",
+      "characteristic_zero_source_constructed": false,
+      "row_selection_descriptor": {
+        "kind": "stride",
+        "step": 1,
+        "shift": 1
+      },
+      "selected_row_indices_sha256": "7ac79b66ec7adbff57e042b1e0c16119d5568a19b903f1422af746e12d46c676",
+      "metric_descriptor": {
+        "kind": "monomial",
+        "root_phase_shift": 0
+      },
+      "status": "EXCLUDED_ROOT_SUM_ENTRY_BOUND",
+      "reason": "E has a nonzero entry with squared modulus delta, but every sum of two unit roots has squared modulus at most4.",
+      "actual_row_subset_selected": true,
+      "source_constructed": false
+    },
+    {
+      "source_order": 1499,
+      "input_order": 567,
+      "selected_rows": 466,
+      "omitted_rows": 101,
+      "selected_metric_norm": 365,
+      "complement_metric_norm": 1499,
+      "phase": 120,
+      "known_input_constructor_available": true,
+      "known_input_route": "restricted BH7 followed by four exact triplings",
+      "characteristic_zero_source_constructed": false,
+      "row_selection_descriptor": {
+        "kind": "stride",
+        "step": 1,
+        "shift": 1
+      },
+      "selected_row_indices_sha256": "7ac79b66ec7adbff57e042b1e0c16119d5568a19b903f1422af746e12d46c676",
+      "metric_descriptor": {
+        "kind": "nonuniform_spectral_monomial",
+        "phase_slope": 1,
+        "phase_shift": 15
+      },
+      "status": "EXCLUDED_ROOT_SUM_ENTRY_BOUND",
+      "reason": "E has a nonzero entry with squared modulus delta, but every sum of two unit roots has squared modulus at most4.",
+      "actual_row_subset_selected": true,
+      "source_constructed": false
+    },
+    {
+      "source_order": 1499,
+      "input_order": 567,
+      "selected_rows": 466,
+      "omitted_rows": 101,
+      "selected_metric_norm": 365,
+      "complement_metric_norm": 1499,
+      "phase": 120,
+      "known_input_constructor_available": true,
+      "known_input_route": "restricted BH7 followed by four exact triplings",
+      "characteristic_zero_source_constructed": false,
+      "row_selection_descriptor": {
+        "kind": "stride",
+        "step": 1,
+        "shift": 1
+      },
+      "selected_row_indices_sha256": "7ac79b66ec7adbff57e042b1e0c16119d5568a19b903f1422af746e12d46c676",
+      "metric_descriptor": {
+        "kind": "nonuniform_spectral_monomial",
+        "phase_slope": 7,
+        "phase_shift": 24
+      },
+      "status": "EXCLUDED_ROOT_SUM_ENTRY_BOUND",
+      "reason": "E has a nonzero entry with squared modulus delta, but every sum of two unit roots has squared modulus at most4.",
+      "actual_row_subset_selected": true,
+      "source_constructed": false
+    },
+    {
+      "source_order": 1499,
+      "input_order": 567,
+      "selected_rows": 466,
+      "omitted_rows": 101,
+      "selected_metric_norm": 365,
+      "complement_metric_norm": 1499,
+      "phase": 120,
+      "known_input_constructor_available": true,
+      "known_input_route": "restricted BH7 followed by four exact triplings",
+      "characteristic_zero_source_constructed": false,
+      "row_selection_descriptor": {
+        "kind": "stride",
+        "step": 1,
+        "shift": 1
+      },
+      "selected_row_indices_sha256": "7ac79b66ec7adbff57e042b1e0c16119d5568a19b903f1422af746e12d46c676",
+      "metric_descriptor": {
+        "kind": "normalized_small_Butson_blocks",
+        "block_order": 2
+      },
+      "status": "EXCLUDED_ROOT_SUM_ENTRY_BOUND",
+      "reason": "Each E entry has squared modulus delta/block_order>4.",
+      "actual_row_subset_selected": true,
+      "source_constructed": false
+    },
+    {
+      "source_order": 1499,
+      "input_order": 567,
+      "selected_rows": 466,
+      "omitted_rows": 101,
+      "selected_metric_norm": 365,
+      "complement_metric_norm": 1499,
+      "phase": 120,
+      "known_input_constructor_available": true,
+      "known_input_route": "restricted BH7 followed by four exact triplings",
+      "characteristic_zero_source_constructed": false,
+      "row_selection_descriptor": {
+        "kind": "stride",
+        "step": 1,
+        "shift": 1
+      },
+      "selected_row_indices_sha256": "7ac79b66ec7adbff57e042b1e0c16119d5568a19b903f1422af746e12d46c676",
+      "metric_descriptor": {
+        "kind": "dense_integral_root_split"
+      },
+      "status": "OPEN_ROOT_COMPLETION",
+      "reason": "The actual two-row root gate passes; a complete coupled E,F,D remains missing.",
+      "actual_row_subset_selected": true,
+      "source_constructed": false
+    },
+    {
+      "source_order": 1499,
+      "input_order": 567,
+      "selected_rows": 466,
+      "omitted_rows": 101,
+      "selected_metric_norm": 365,
+      "complement_metric_norm": 1499,
+      "phase": 120,
+      "known_input_constructor_available": true,
+      "known_input_route": "restricted BH7 followed by four exact triplings",
+      "characteristic_zero_source_constructed": false,
+      "row_selection_descriptor": {
+        "kind": "stride",
+        "step": 2,
+        "shift": 7
+      },
+      "selected_row_indices_sha256": "0cfa6f88f5f56b84363b9ef3c2c6b97e44684c8c40b200de1de3b10558bb78b0",
+      "metric_descriptor": {
+        "kind": "monomial",
+        "root_phase_shift": 0
+      },
+      "status": "EXCLUDED_ROOT_SUM_ENTRY_BOUND",
+      "reason": "E has a nonzero entry with squared modulus delta, but every sum of two unit roots has squared modulus at most4.",
+      "actual_row_subset_selected": true,
+      "source_constructed": false
+    },
+    {
+      "source_order": 1499,
+      "input_order": 567,
+      "selected_rows": 466,
+      "omitted_rows": 101,
+      "selected_metric_norm": 365,
+      "complement_metric_norm": 1499,
+      "phase": 120,
+      "known_input_constructor_available": true,
+      "known_input_route": "restricted BH7 followed by four exact triplings",
+      "characteristic_zero_source_constructed": false,
+      "row_selection_descriptor": {
+        "kind": "stride",
+        "step": 2,
+        "shift": 7
+      },
+      "selected_row_indices_sha256": "0cfa6f88f5f56b84363b9ef3c2c6b97e44684c8c40b200de1de3b10558bb78b0",
+      "metric_descriptor": {
+        "kind": "nonuniform_spectral_monomial",
+        "phase_slope": 1,
+        "phase_shift": 15
+      },
+      "status": "EXCLUDED_ROOT_SUM_ENTRY_BOUND",
+      "reason": "E has a nonzero entry with squared modulus delta, but every sum of two unit roots has squared modulus at most4.",
+      "actual_row_subset_selected": true,
+      "source_constructed": false
+    },
+    {
+      "source_order": 1499,
+      "input_order": 567,
+      "selected_rows": 466,
+      "omitted_rows": 101,
+      "selected_metric_norm": 365,
+      "complement_metric_norm": 1499,
+      "phase": 120,
+      "known_input_constructor_available": true,
+      "known_input_route": "restricted BH7 followed by four exact triplings",
+      "characteristic_zero_source_constructed": false,
+      "row_selection_descriptor": {
+        "kind": "stride",
+        "step": 2,
+        "shift": 7
+      },
+      "selected_row_indices_sha256": "0cfa6f88f5f56b84363b9ef3c2c6b97e44684c8c40b200de1de3b10558bb78b0",
+      "metric_descriptor": {
+        "kind": "nonuniform_spectral_monomial",
+        "phase_slope": 7,
+        "phase_shift": 24
+      },
+      "status": "EXCLUDED_ROOT_SUM_ENTRY_BOUND",
+      "reason": "E has a nonzero entry with squared modulus delta, but every sum of two unit roots has squared modulus at most4.",
+      "actual_row_subset_selected": true,
+      "source_constructed": false
+    },
+    {
+      "source_order": 1499,
+      "input_order": 567,
+      "selected_rows": 466,
+      "omitted_rows": 101,
+      "selected_metric_norm": 365,
+      "complement_metric_norm": 1499,
+      "phase": 120,
+      "known_input_constructor_available": true,
+      "known_input_route": "restricted BH7 followed by four exact triplings",
+      "characteristic_zero_source_constructed": false,
+      "row_selection_descriptor": {
+        "kind": "stride",
+        "step": 2,
+        "shift": 7
+      },
+      "selected_row_indices_sha256": "0cfa6f88f5f56b84363b9ef3c2c6b97e44684c8c40b200de1de3b10558bb78b0",
+      "metric_descriptor": {
+        "kind": "normalized_small_Butson_blocks",
+        "block_order": 2
+      },
+      "status": "EXCLUDED_ROOT_SUM_ENTRY_BOUND",
+      "reason": "Each E entry has squared modulus delta/block_order>4.",
+      "actual_row_subset_selected": true,
+      "source_constructed": false
+    },
+    {
+      "source_order": 1499,
+      "input_order": 567,
+      "selected_rows": 466,
+      "omitted_rows": 101,
+      "selected_metric_norm": 365,
+      "complement_metric_norm": 1499,
+      "phase": 120,
+      "known_input_constructor_available": true,
+      "known_input_route": "restricted BH7 followed by four exact triplings",
+      "characteristic_zero_source_constructed": false,
+      "row_selection_descriptor": {
+        "kind": "stride",
+        "step": 2,
+        "shift": 7
+      },
+      "selected_row_indices_sha256": "0cfa6f88f5f56b84363b9ef3c2c6b97e44684c8c40b200de1de3b10558bb78b0",
+      "metric_descriptor": {
+        "kind": "dense_integral_root_split"
+      },
+      "status": "OPEN_ROOT_COMPLETION",
+      "reason": "The actual two-row root gate passes; a complete coupled E,F,D remains missing.",
+      "actual_row_subset_selected": true,
+      "source_constructed": false
+    },
+    {
+      "source_order": 1499,
+      "input_order": 729,
+      "selected_rows": 385,
+      "omitted_rows": 344,
+      "selected_metric_norm": 41,
+      "complement_metric_norm": 1499,
+      "phase": 120,
+      "known_input_constructor_available": true,
+      "known_input_route": "restricted BH3 followed by five exact triplings",
+      "characteristic_zero_source_constructed": false,
+      "row_selection_descriptor": {
+        "kind": "stride",
+        "step": 1,
+        "shift": 0
+      },
+      "selected_row_indices_sha256": "a5c877d164887f8b157c0480c93856fb150b5537e49cc92cb40dabd00032a950",
+      "metric_descriptor": {
+        "kind": "monomial",
+        "root_phase_shift": 0
+      },
+      "status": "EXCLUDED_ROOT_SUM_ENTRY_BOUND",
+      "reason": "E has a nonzero entry with squared modulus delta, but every sum of two unit roots has squared modulus at most4.",
+      "actual_row_subset_selected": true,
+      "source_constructed": false
+    },
+    {
+      "source_order": 1499,
+      "input_order": 729,
+      "selected_rows": 385,
+      "omitted_rows": 344,
+      "selected_metric_norm": 41,
+      "complement_metric_norm": 1499,
+      "phase": 120,
+      "known_input_constructor_available": true,
+      "known_input_route": "restricted BH3 followed by five exact triplings",
+      "characteristic_zero_source_constructed": false,
+      "row_selection_descriptor": {
+        "kind": "stride",
+        "step": 1,
+        "shift": 0
+      },
+      "selected_row_indices_sha256": "a5c877d164887f8b157c0480c93856fb150b5537e49cc92cb40dabd00032a950",
+      "metric_descriptor": {
+        "kind": "nonuniform_spectral_monomial",
+        "phase_slope": 1,
+        "phase_shift": 15
+      },
+      "status": "EXCLUDED_ROOT_SUM_ENTRY_BOUND",
+      "reason": "E has a nonzero entry with squared modulus delta, but every sum of two unit roots has squared modulus at most4.",
+      "actual_row_subset_selected": true,
+      "source_constructed": false
+    },
+    {
+      "source_order": 1499,
+      "input_order": 729,
+      "selected_rows": 385,
+      "omitted_rows": 344,
+      "selected_metric_norm": 41,
+      "complement_metric_norm": 1499,
+      "phase": 120,
+      "known_input_constructor_available": true,
+      "known_input_route": "restricted BH3 followed by five exact triplings",
+      "characteristic_zero_source_constructed": false,
+      "row_selection_descriptor": {
+        "kind": "stride",
+        "step": 1,
+        "shift": 0
+      },
+      "selected_row_indices_sha256": "a5c877d164887f8b157c0480c93856fb150b5537e49cc92cb40dabd00032a950",
+      "metric_descriptor": {
+        "kind": "nonuniform_spectral_monomial",
+        "phase_slope": 7,
+        "phase_shift": 24
+      },
+      "status": "EXCLUDED_ROOT_SUM_ENTRY_BOUND",
+      "reason": "E has a nonzero entry with squared modulus delta, but every sum of two unit roots has squared modulus at most4.",
+      "actual_row_subset_selected": true,
+      "source_constructed": false
+    },
+    {
+      "source_order": 1499,
+      "input_order": 729,
+      "selected_rows": 385,
+      "omitted_rows": 344,
+      "selected_metric_norm": 41,
+      "complement_metric_norm": 1499,
+      "phase": 120,
+      "known_input_constructor_available": true,
+      "known_input_route": "restricted BH3 followed by five exact triplings",
+      "characteristic_zero_source_constructed": false,
+      "row_selection_descriptor": {
+        "kind": "stride",
+        "step": 1,
+        "shift": 0
+      },
+      "selected_row_indices_sha256": "a5c877d164887f8b157c0480c93856fb150b5537e49cc92cb40dabd00032a950",
+      "metric_descriptor": {
+        "kind": "normalized_small_Butson_blocks",
+        "block_order": 5
+      },
+      "status": "EXCLUDED_ROOT_SUM_ENTRY_BOUND",
+      "reason": "Each E entry has squared modulus delta/block_order>4.",
+      "actual_row_subset_selected": true,
+      "source_constructed": false
+    },
+    {
+      "source_order": 1499,
+      "input_order": 729,
+      "selected_rows": 385,
+      "omitted_rows": 344,
+      "selected_metric_norm": 41,
+      "complement_metric_norm": 1499,
+      "phase": 120,
+      "known_input_constructor_available": true,
+      "known_input_route": "restricted BH3 followed by five exact triplings",
+      "characteristic_zero_source_constructed": false,
+      "row_selection_descriptor": {
+        "kind": "stride",
+        "step": 1,
+        "shift": 0
+      },
+      "selected_row_indices_sha256": "a5c877d164887f8b157c0480c93856fb150b5537e49cc92cb40dabd00032a950",
+      "metric_descriptor": {
+        "kind": "normalized_small_Butson_blocks",
+        "block_order": 7
+      },
+      "status": "EXCLUDED_ROOT_SUM_ENTRY_BOUND",
+      "reason": "Each E entry has squared modulus delta/block_order>4.",
+      "actual_row_subset_selected": true,
+      "source_constructed": false
+    },
+    {
+      "source_order": 1499,
+      "input_order": 729,
+      "selected_rows": 385,
+      "omitted_rows": 344,
+      "selected_metric_norm": 41,
+      "complement_metric_norm": 1499,
+      "phase": 120,
+      "known_input_constructor_available": true,
+      "known_input_route": "restricted BH3 followed by five exact triplings",
+      "characteristic_zero_source_constructed": false,
+      "row_selection_descriptor": {
+        "kind": "stride",
+        "step": 1,
+        "shift": 0
+      },
+      "selected_row_indices_sha256": "a5c877d164887f8b157c0480c93856fb150b5537e49cc92cb40dabd00032a950",
+      "metric_descriptor": {
+        "kind": "normalized_small_Butson_blocks",
+        "block_order": 35
+      },
+      "status": "EXCLUDED_ROOT_SUM_INTEGRAL_NORM",
+      "reason": "The rational squared modulus delta/block_order is not an integer, whereas the squared norm of an integral root sum is an algebraic integer.",
+      "actual_row_subset_selected": true,
+      "source_constructed": false
+    },
+    {
+      "source_order": 1499,
+      "input_order": 729,
+      "selected_rows": 385,
+      "omitted_rows": 344,
+      "selected_metric_norm": 41,
+      "complement_metric_norm": 1499,
+      "phase": 120,
+      "known_input_constructor_available": true,
+      "known_input_route": "restricted BH3 followed by five exact triplings",
+      "characteristic_zero_source_constructed": false,
+      "row_selection_descriptor": {
+        "kind": "stride",
+        "step": 1,
+        "shift": 0
+      },
+      "selected_row_indices_sha256": "a5c877d164887f8b157c0480c93856fb150b5537e49cc92cb40dabd00032a950",
+      "metric_descriptor": {
+        "kind": "dense_integral_root_split"
+      },
+      "status": "OPEN_ROOT_COMPLETION",
+      "reason": "The actual two-row root gate passes; a complete coupled E,F,D remains missing.",
+      "actual_row_subset_selected": true,
+      "source_constructed": false
+    },
+    {
+      "source_order": 1499,
+      "input_order": 729,
+      "selected_rows": 385,
+      "omitted_rows": 344,
+      "selected_metric_norm": 41,
+      "complement_metric_norm": 1499,
+      "phase": 120,
+      "known_input_constructor_available": true,
+      "known_input_route": "restricted BH3 followed by five exact triplings",
+      "characteristic_zero_source_constructed": false,
+      "row_selection_descriptor": {
+        "kind": "stride",
+        "step": 1,
+        "shift": 1
+      },
+      "selected_row_indices_sha256": "82a99737f7700322100f8ab3844a7029359b212e98e71829aa1f301a1f858afa",
+      "metric_descriptor": {
+        "kind": "monomial",
+        "root_phase_shift": 0
+      },
+      "status": "EXCLUDED_ROOT_SUM_ENTRY_BOUND",
+      "reason": "E has a nonzero entry with squared modulus delta, but every sum of two unit roots has squared modulus at most4.",
+      "actual_row_subset_selected": true,
+      "source_constructed": false
+    },
+    {
+      "source_order": 1499,
+      "input_order": 729,
+      "selected_rows": 385,
+      "omitted_rows": 344,
+      "selected_metric_norm": 41,
+      "complement_metric_norm": 1499,
+      "phase": 120,
+      "known_input_constructor_available": true,
+      "known_input_route": "restricted BH3 followed by five exact triplings",
+      "characteristic_zero_source_constructed": false,
+      "row_selection_descriptor": {
+        "kind": "stride",
+        "step": 1,
+        "shift": 1
+      },
+      "selected_row_indices_sha256": "82a99737f7700322100f8ab3844a7029359b212e98e71829aa1f301a1f858afa",
+      "metric_descriptor": {
+        "kind": "nonuniform_spectral_monomial",
+        "phase_slope": 1,
+        "phase_shift": 15
+      },
+      "status": "EXCLUDED_ROOT_SUM_ENTRY_BOUND",
+      "reason": "E has a nonzero entry with squared modulus delta, but every sum of two unit roots has squared modulus at most4.",
+      "actual_row_subset_selected": true,
+      "source_constructed": false
+    },
+    {
+      "source_order": 1499,
+      "input_order": 729,
+      "selected_rows": 385,
+      "omitted_rows": 344,
+      "selected_metric_norm": 41,
+      "complement_metric_norm": 1499,
+      "phase": 120,
+      "known_input_constructor_available": true,
+      "known_input_route": "restricted BH3 followed by five exact triplings",
+      "characteristic_zero_source_constructed": false,
+      "row_selection_descriptor": {
+        "kind": "stride",
+        "step": 1,
+        "shift": 1
+      },
+      "selected_row_indices_sha256": "82a99737f7700322100f8ab3844a7029359b212e98e71829aa1f301a1f858afa",
+      "metric_descriptor": {
+        "kind": "nonuniform_spectral_monomial",
+        "phase_slope": 7,
+        "phase_shift": 24
+      },
+      "status": "EXCLUDED_ROOT_SUM_ENTRY_BOUND",
+      "reason": "E has a nonzero entry with squared modulus delta, but every sum of two unit roots has squared modulus at most4.",
+      "actual_row_subset_selected": true,
+      "source_constructed": false
+    },
+    {
+      "source_order": 1499,
+      "input_order": 729,
+      "selected_rows": 385,
+      "omitted_rows": 344,
+      "selected_metric_norm": 41,
+      "complement_metric_norm": 1499,
+      "phase": 120,
+      "known_input_constructor_available": true,
+      "known_input_route": "restricted BH3 followed by five exact triplings",
+      "characteristic_zero_source_constructed": false,
+      "row_selection_descriptor": {
+        "kind": "stride",
+        "step": 1,
+        "shift": 1
+      },
+      "selected_row_indices_sha256": "82a99737f7700322100f8ab3844a7029359b212e98e71829aa1f301a1f858afa",
+      "metric_descriptor": {
+        "kind": "normalized_small_Butson_blocks",
+        "block_order": 5
+      },
+      "status": "EXCLUDED_ROOT_SUM_ENTRY_BOUND",
+      "reason": "Each E entry has squared modulus delta/block_order>4.",
+      "actual_row_subset_selected": true,
+      "source_constructed": false
+    },
+    {
+      "source_order": 1499,
+      "input_order": 729,
+      "selected_rows": 385,
+      "omitted_rows": 344,
+      "selected_metric_norm": 41,
+      "complement_metric_norm": 1499,
+      "phase": 120,
+      "known_input_constructor_available": true,
+      "known_input_route": "restricted BH3 followed by five exact triplings",
+      "characteristic_zero_source_constructed": false,
+      "row_selection_descriptor": {
+        "kind": "stride",
+        "step": 1,
+        "shift": 1
+      },
+      "selected_row_indices_sha256": "82a99737f7700322100f8ab3844a7029359b212e98e71829aa1f301a1f858afa",
+      "metric_descriptor": {
+        "kind": "normalized_small_Butson_blocks",
+        "block_order": 7
+      },
+      "status": "EXCLUDED_ROOT_SUM_ENTRY_BOUND",
+      "reason": "Each E entry has squared modulus delta/block_order>4.",
+      "actual_row_subset_selected": true,
+      "source_constructed": false
+    },
+    {
+      "source_order": 1499,
+      "input_order": 729,
+      "selected_rows": 385,
+      "omitted_rows": 344,
+      "selected_metric_norm": 41,
+      "complement_metric_norm": 1499,
+      "phase": 120,
+      "known_input_constructor_available": true,
+      "known_input_route": "restricted BH3 followed by five exact triplings",
+      "characteristic_zero_source_constructed": false,
+      "row_selection_descriptor": {
+        "kind": "stride",
+        "step": 1,
+        "shift": 1
+      },
+      "selected_row_indices_sha256": "82a99737f7700322100f8ab3844a7029359b212e98e71829aa1f301a1f858afa",
+      "metric_descriptor": {
+        "kind": "normalized_small_Butson_blocks",
+        "block_order": 35
+      },
+      "status": "EXCLUDED_ROOT_SUM_INTEGRAL_NORM",
+      "reason": "The rational squared modulus delta/block_order is not an integer, whereas the squared norm of an integral root sum is an algebraic integer.",
+      "actual_row_subset_selected": true,
+      "source_constructed": false
+    },
+    {
+      "source_order": 1499,
+      "input_order": 729,
+      "selected_rows": 385,
+      "omitted_rows": 344,
+      "selected_metric_norm": 41,
+      "complement_metric_norm": 1499,
+      "phase": 120,
+      "known_input_constructor_available": true,
+      "known_input_route": "restricted BH3 followed by five exact triplings",
+      "characteristic_zero_source_constructed": false,
+      "row_selection_descriptor": {
+        "kind": "stride",
+        "step": 1,
+        "shift": 1
+      },
+      "selected_row_indices_sha256": "82a99737f7700322100f8ab3844a7029359b212e98e71829aa1f301a1f858afa",
+      "metric_descriptor": {
+        "kind": "dense_integral_root_split"
+      },
+      "status": "OPEN_ROOT_COMPLETION",
+      "reason": "The actual two-row root gate passes; a complete coupled E,F,D remains missing.",
+      "actual_row_subset_selected": true,
+      "source_constructed": false
+    },
+    {
+      "source_order": 1499,
+      "input_order": 729,
+      "selected_rows": 385,
+      "omitted_rows": 344,
+      "selected_metric_norm": 41,
+      "complement_metric_norm": 1499,
+      "phase": 120,
+      "known_input_constructor_available": true,
+      "known_input_route": "restricted BH3 followed by five exact triplings",
+      "characteristic_zero_source_constructed": false,
+      "row_selection_descriptor": {
+        "kind": "stride",
+        "step": 2,
+        "shift": 7
+      },
+      "selected_row_indices_sha256": "0eabcc3395c350ea689ab5c9c6b89011267cd3bce67fa8446b6c22b3575e1b04",
+      "metric_descriptor": {
+        "kind": "monomial",
+        "root_phase_shift": 0
+      },
+      "status": "EXCLUDED_ROOT_SUM_ENTRY_BOUND",
+      "reason": "E has a nonzero entry with squared modulus delta, but every sum of two unit roots has squared modulus at most4.",
+      "actual_row_subset_selected": true,
+      "source_constructed": false
+    },
+    {
+      "source_order": 1499,
+      "input_order": 729,
+      "selected_rows": 385,
+      "omitted_rows": 344,
+      "selected_metric_norm": 41,
+      "complement_metric_norm": 1499,
+      "phase": 120,
+      "known_input_constructor_available": true,
+      "known_input_route": "restricted BH3 followed by five exact triplings",
+      "characteristic_zero_source_constructed": false,
+      "row_selection_descriptor": {
+        "kind": "stride",
+        "step": 2,
+        "shift": 7
+      },
+      "selected_row_indices_sha256": "0eabcc3395c350ea689ab5c9c6b89011267cd3bce67fa8446b6c22b3575e1b04",
+      "metric_descriptor": {
+        "kind": "nonuniform_spectral_monomial",
+        "phase_slope": 1,
+        "phase_shift": 15
+      },
+      "status": "EXCLUDED_ROOT_SUM_ENTRY_BOUND",
+      "reason": "E has a nonzero entry with squared modulus delta, but every sum of two unit roots has squared modulus at most4.",
+      "actual_row_subset_selected": true,
+      "source_constructed": false
+    },
+    {
+      "source_order": 1499,
+      "input_order": 729,
+      "selected_rows": 385,
+      "omitted_rows": 344,
+      "selected_metric_norm": 41,
+      "complement_metric_norm": 1499,
+      "phase": 120,
+      "known_input_constructor_available": true,
+      "known_input_route": "restricted BH3 followed by five exact triplings",
+      "characteristic_zero_source_constructed": false,
+      "row_selection_descriptor": {
+        "kind": "stride",
+        "step": 2,
+        "shift": 7
+      },
+      "selected_row_indices_sha256": "0eabcc3395c350ea689ab5c9c6b89011267cd3bce67fa8446b6c22b3575e1b04",
+      "metric_descriptor": {
+        "kind": "nonuniform_spectral_monomial",
+        "phase_slope": 7,
+        "phase_shift": 24
+      },
+      "status": "EXCLUDED_ROOT_SUM_ENTRY_BOUND",
+      "reason": "E has a nonzero entry with squared modulus delta, but every sum of two unit roots has squared modulus at most4.",
+      "actual_row_subset_selected": true,
+      "source_constructed": false
+    },
+    {
+      "source_order": 1499,
+      "input_order": 729,
+      "selected_rows": 385,
+      "omitted_rows": 344,
+      "selected_metric_norm": 41,
+      "complement_metric_norm": 1499,
+      "phase": 120,
+      "known_input_constructor_available": true,
+      "known_input_route": "restricted BH3 followed by five exact triplings",
+      "characteristic_zero_source_constructed": false,
+      "row_selection_descriptor": {
+        "kind": "stride",
+        "step": 2,
+        "shift": 7
+      },
+      "selected_row_indices_sha256": "0eabcc3395c350ea689ab5c9c6b89011267cd3bce67fa8446b6c22b3575e1b04",
+      "metric_descriptor": {
+        "kind": "normalized_small_Butson_blocks",
+        "block_order": 5
+      },
+      "status": "EXCLUDED_ROOT_SUM_ENTRY_BOUND",
+      "reason": "Each E entry has squared modulus delta/block_order>4.",
+      "actual_row_subset_selected": true,
+      "source_constructed": false
+    },
+    {
+      "source_order": 1499,
+      "input_order": 729,
+      "selected_rows": 385,
+      "omitted_rows": 344,
+      "selected_metric_norm": 41,
+      "complement_metric_norm": 1499,
+      "phase": 120,
+      "known_input_constructor_available": true,
+      "known_input_route": "restricted BH3 followed by five exact triplings",
+      "characteristic_zero_source_constructed": false,
+      "row_selection_descriptor": {
+        "kind": "stride",
+        "step": 2,
+        "shift": 7
+      },
+      "selected_row_indices_sha256": "0eabcc3395c350ea689ab5c9c6b89011267cd3bce67fa8446b6c22b3575e1b04",
+      "metric_descriptor": {
+        "kind": "normalized_small_Butson_blocks",
+        "block_order": 7
+      },
+      "status": "EXCLUDED_ROOT_SUM_ENTRY_BOUND",
+      "reason": "Each E entry has squared modulus delta/block_order>4.",
+      "actual_row_subset_selected": true,
+      "source_constructed": false
+    },
+    {
+      "source_order": 1499,
+      "input_order": 729,
+      "selected_rows": 385,
+      "omitted_rows": 344,
+      "selected_metric_norm": 41,
+      "complement_metric_norm": 1499,
+      "phase": 120,
+      "known_input_constructor_available": true,
+      "known_input_route": "restricted BH3 followed by five exact triplings",
+      "characteristic_zero_source_constructed": false,
+      "row_selection_descriptor": {
+        "kind": "stride",
+        "step": 2,
+        "shift": 7
+      },
+      "selected_row_indices_sha256": "0eabcc3395c350ea689ab5c9c6b89011267cd3bce67fa8446b6c22b3575e1b04",
+      "metric_descriptor": {
+        "kind": "normalized_small_Butson_blocks",
+        "block_order": 35
+      },
+      "status": "EXCLUDED_ROOT_SUM_INTEGRAL_NORM",
+      "reason": "The rational squared modulus delta/block_order is not an integer, whereas the squared norm of an integral root sum is an algebraic integer.",
+      "actual_row_subset_selected": true,
+      "source_constructed": false
+    },
+    {
+      "source_order": 1499,
+      "input_order": 729,
+      "selected_rows": 385,
+      "omitted_rows": 344,
+      "selected_metric_norm": 41,
+      "complement_metric_norm": 1499,
+      "phase": 120,
+      "known_input_constructor_available": true,
+      "known_input_route": "restricted BH3 followed by five exact triplings",
+      "characteristic_zero_source_constructed": false,
+      "row_selection_descriptor": {
+        "kind": "stride",
+        "step": 2,
+        "shift": 7
+      },
+      "selected_row_indices_sha256": "0eabcc3395c350ea689ab5c9c6b89011267cd3bce67fa8446b6c22b3575e1b04",
+      "metric_descriptor": {
+        "kind": "dense_integral_root_split"
+      },
+      "status": "OPEN_ROOT_COMPLETION",
+      "reason": "The actual two-row root gate passes; a complete coupled E,F,D remains missing.",
+      "actual_row_subset_selected": true,
+      "source_constructed": false
+    }
+  ],
+  "finite_branch_count": 36,
+  "excluded_finite_branches": 30,
+  "open_dense_completion_branches": 6,
+  "new_characteristic_zero_source_or_real_order_constructed": false
+}

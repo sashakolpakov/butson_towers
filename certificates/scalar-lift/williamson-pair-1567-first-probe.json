@@ -1,0 +1,33 @@
+{
+  "prime": 1567,
+  "multiplier": 18,
+  "nonzero_orbits": 87,
+  "signed_support_orbit_sums": [
+    0,
+    0,
+    -1,
+    -2
+  ],
+  "transformed_row_sums": [
+    1,
+    1,
+    -35,
+    -71
+  ],
+  "correlation_equations": 87,
+  "model_variables": 4263,
+  "model_constraints": 3920,
+  "search_scope": "Williamson product theorem; fixed multiplier and declared row sector",
+  "high_target": 25072,
+  "intermediate_real_order": 6268,
+  "status": "UNKNOWN",
+  "workers": 1,
+  "native_limit_seconds": 45.0,
+  "wall_seconds": 45.0003777500242,
+  "branches": 1240530,
+  "conflicts": 3264,
+  "new_Hadamard_order_constructed": false,
+  "worker_reaped": true,
+  "watchdog_seconds": 70.0,
+  "total_wall_seconds": 45.63709704199573
+}

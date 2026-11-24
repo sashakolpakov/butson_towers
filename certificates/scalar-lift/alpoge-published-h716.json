@@ -1,0 +1,40 @@
+{
+  "schema": "published-order716-input-v1",
+  "source_url": "https://hexagonmath.org/pdf/2611.00637v1",
+  "source_tex_url": "https://hexagonmath.org/api/v1/works/2611.00637v1/source?path=hadamard-revised.tex",
+  "source_identifier": "hexagon:2611.00637v1",
+  "source_license": "CC0-1.0",
+  "source_location": "Table A2, order716; Proposition2; section6.1 width4 recipe",
+  "source_author_as_printed": "Claude",
+  "announced_by": [
+    "Levent Alp\u00f6ge",
+    "Philippe Voinov",
+    "Saul Reynolds-Haertle"
+  ],
+  "order": 716,
+  "phase": 2,
+  "core_group_moduli": [
+    178
+  ],
+  "border_width": 4,
+  "literal_core_hex": [
+    "6370A5D5F65EAF7C823604CE47AD9504D157BE511B024",
+    "1C3826C46D2311AC3EADBA71E3EC1DC96988D61F56DD0",
+    "7F530ED2DD2826F0F1CCBAC05678969162137878E65D4",
+    "FFF4473346A7786A13B7920005DC665CAABC3509DBC90"
+  ],
+  "core_row_sums": [
+    2,
+    0,
+    0,
+    0
+  ],
+  "full_integer_Gram_verified": true,
+  "independent_bit_distance_Gram_verified": true,
+  "all_nonzero_periodic_autocorrelation_sums_equal_minus4": true,
+  "matrix_binary_sha256": "88aac92b04ab2d664d81cf8872c4543c1657755f4008d129826cf9e7561078ee",
+  "source_construction_search_performed": false,
+  "tree_edge_added": false,
+  "new_order_claimed": false,
+  "compatible_nonreal_scalar_action_supplied": false
+}

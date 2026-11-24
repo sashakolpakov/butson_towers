@@ -1,0 +1,11 @@
+{
+  "source": "main.tex",
+  "source_sha256": "b9b860e21e2a1f317f57b5315aad67c2b67060d7c14922a2004580f091be263b",
+  "reference_pdf": "announcement.pdf",
+  "pdf_sha256": "88638d172f419c62f39be19bdaf0283e35e5a74cb2d0134b91f2f389ff8da83f",
+  "pages": 5,
+  "command": "latexmk -pdf -interaction=nonstopmode -halt-on-error -outdir=build main.tex",
+  "warnings": [],
+  "source_and_reference_pdf_checked": true,
+  "all_pages_visually_reviewed": true
+}

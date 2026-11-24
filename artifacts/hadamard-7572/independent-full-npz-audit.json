@@ -1,0 +1,30 @@
+{
+  "schema": "independent-actual-npz-full-integer-gram-audit-v1",
+  "verifier": "Python int.from_bytes and int.bit_count; no construction/verifier imports",
+  "order": 7572,
+  "packed_shape": [
+    7572,
+    947
+  ],
+  "packed_dtype": "uint8",
+  "packed_bitorder": "little",
+  "last_byte_used_bits": 4,
+  "all_padding_bits_zero": true,
+  "packed_negative_entry_count": 28338210,
+  "positive_entry_count": 28996974,
+  "actual_entry_alphabet": [
+    -1,
+    1
+  ],
+  "packed_sha256": "bc3cb6fca9243a6ef01c82de2a446080c8866e0f30d76c0f23ef0508ae5e2e9b",
+  "packed_sha256_matches_endpoint": true,
+  "npz_file_sha256": "cb0541a9019643d1e76698405c260731458627c01c8516bcb6d4d13c626d6364",
+  "all_diagonal_Gram_entries": 7572,
+  "all_offdiagonal_Gram_entries": 0,
+  "independent_offdiagonal_pairs_checked": 28663806,
+  "ordered_Gram_entries_certified": 57335184,
+  "exact_all_row_integer_Gram_verified": true,
+  "elapsed_seconds": 7.6237196669681,
+  "endpoint_found": true,
+  "novelty_claimed": false
+}

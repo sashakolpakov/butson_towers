@@ -1,0 +1,986 @@
+{
+  "schema": "constructive-spence-williamson-scalar-families-v1",
+  "primary_reference": {
+    "author": "Edward Spence",
+    "title": "An infinite family of Williamson matrices",
+    "year": 1977,
+    "doi_url": "https://doi.org/10.1017/S1446788700020255",
+    "location": "Theorem4, printedp254; all four recurrence lines checked against the PDF image"
+  },
+  "implementation": "experiments/scalar_lift/williamson_spence_family.py",
+  "implementation_sha256": "4ecae4bb17fa18a0a0f06a8018d952a36ac209c9ca813312a25efbee0e38995a",
+  "starters": [
+    {
+      "q": 13,
+      "order": 7,
+      "origin": {
+        "recipe": "D=E=S,F=I+R,G=-I+R; symmetric circulants R^2+S^2=qI",
+        "R_first_row": [
+          0,
+          -1,
+          -1,
+          1,
+          1,
+          -1,
+          -1
+        ],
+        "S_first_row": [
+          1,
+          -1,
+          1,
+          1,
+          1,
+          1,
+          -1
+        ],
+        "complete_conference_half_Gram_verified": true
+      },
+      "literal_first_rows_pm": [
+        "+-++++-",
+        "+-++++-",
+        "+--++--",
+        "---++--"
+      ],
+      "all_signs_symmetry_and_commutativity_verified": true,
+      "complete_strong_minus_Gram": "4I",
+      "complete_strong_plus_Gram": "52I",
+      "complete_summed_Gram": "28I"
+    },
+    {
+      "q": 17,
+      "order": 9,
+      "origin": {
+        "recipe": "D=E=S,F=I+R,G=-I+R; symmetric circulants R^2+S^2=qI",
+        "R_first_row": [
+          0,
+          -1,
+          1,
+          -1,
+          -1,
+          -1,
+          -1,
+          1,
+          -1
+        ],
+        "S_first_row": [
+          1,
+          -1,
+          -1,
+          1,
+          1,
+          1,
+          1,
+          -1,
+          -1
+        ],
+        "complete_conference_half_Gram_verified": true
+      },
+      "literal_first_rows_pm": [
+        "+--++++--",
+        "+--++++--",
+        "+-+----+-",
+        "--+----+-"
+      ],
+      "all_signs_symmetry_and_commutativity_verified": true,
+      "complete_strong_minus_Gram": "4I",
+      "complete_strong_plus_Gram": "68I",
+      "complete_summed_Gram": "36I"
+    },
+    {
+      "q": 61,
+      "order": 31,
+      "origin": {
+        "recipe": "signed re-pairing of exact retained Williamson input",
+        "input": "experiments/scalar_lift/williamson_inputs.json",
+        "input_sha256": "242f554cf113c68ab882e147c3b2702b7bb62e68b66ad36b16c92b6c194f8560",
+        "raw_order": 31,
+        "channel_indices": [
+          0,
+          3,
+          1,
+          2
+        ],
+        "channel_signs": [
+          1,
+          -1,
+          1,
+          1
+        ]
+      },
+      "literal_first_rows_pm": [
+        "++++++-+--+---++++---+--+-+++++",
+        "-+++++-+--+---++++---+--+-+++++",
+        "+--++---+-+-++----++-+-+---++--",
+        "+--++---+-+-++----++-+-+---++--"
+      ],
+      "all_signs_symmetry_and_commutativity_verified": true,
+      "complete_strong_minus_Gram": "4I",
+      "complete_strong_plus_Gram": "244I",
+      "complete_summed_Gram": "124I"
+    },
+    {
+      "q": 101,
+      "order": 51,
+      "origin": {
+        "recipe": "signed re-pairing of exact retained Williamson input",
+        "input": "experiments/scalar_lift/williamson_inputs.json",
+        "input_sha256": "242f554cf113c68ab882e147c3b2702b7bb62e68b66ad36b16c92b6c194f8560",
+        "raw_order": 51,
+        "channel_indices": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "channel_signs": [
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      "literal_first_rows_pm": [
+        "+---+++-++-+-+++--+++++--++--+++++--+++-+-++-+++---",
+        "----+++-++-+-+++--+++++--++--+++++--+++-+-++-+++---",
+        "-+--+----+-+++-+-+++++--+--+--+++++-+-+++-+----+--+",
+        "-+--+----+-+++-+-+++++--+--+--+++++-+-+++-+----+--+"
+      ],
+      "all_signs_symmetry_and_commutativity_verified": true,
+      "complete_strong_minus_Gram": "4I",
+      "complete_strong_plus_Gram": "404I",
+      "complete_summed_Gram": "204I"
+    },
+    {
+      "q": 121,
+      "order": 61,
+      "origin": {
+        "recipe": "signed re-pairing of exact retained Williamson input",
+        "input": "experiments/scalar_lift/williamson_inputs.json",
+        "input_sha256": "242f554cf113c68ab882e147c3b2702b7bb62e68b66ad36b16c92b6c194f8560",
+        "raw_order": 61,
+        "channel_indices": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "channel_signs": [
+          1,
+          1,
+          1,
+          -1
+        ]
+      },
+      "literal_first_rows_pm": [
+        "++--+--++--+-+-++++--+-----+------+-----+--++++-+-+--++--+--+",
+        "++--+--++--+-+-++++--+-----+------+-----+--++++-+-+--++--+--+",
+        "+---+-+-++++---++--+-++-+---++++++---+-++-+--++---++++-+-+---",
+        "----+-+-++++---++--+-++-+---++++++---+-++-+--++---++++-+-+---"
+      ],
+      "all_signs_symmetry_and_commutativity_verified": true,
+      "complete_strong_minus_Gram": "4I",
+      "complete_strong_plus_Gram": "484I",
+      "complete_summed_Gram": "244I"
+    }
+  ],
+  "Paley_parameters": [
+    {
+      "q": 13,
+      "prime": 13,
+      "degree": 1,
+      "field_model": "GF(13)",
+      "literal_quadratic_character_first_row": [
+        0,
+        1,
+        -1,
+        1,
+        1,
+        -1,
+        -1,
+        -1,
+        -1,
+        1,
+        1,
+        -1,
+        1
+      ],
+      "all_q_squared_Q_Gram_entries_verified": true,
+      "identities": "Q=Q^T,Q^2=qI-J,QJ=JQ=0"
+    },
+    {
+      "q": 17,
+      "prime": 17,
+      "degree": 1,
+      "field_model": "GF(17)",
+      "literal_quadratic_character_first_row": [
+        0,
+        1,
+        1,
+        -1,
+        1,
+        -1,
+        -1,
+        -1,
+        1,
+        1,
+        -1,
+        -1,
+        -1,
+        1,
+        -1,
+        1,
+        1
+      ],
+      "all_q_squared_Q_Gram_entries_verified": true,
+      "identities": "Q=Q^T,Q^2=qI-J,QJ=JQ=0"
+    },
+    {
+      "q": 61,
+      "prime": 61,
+      "degree": 1,
+      "field_model": "GF(61)",
+      "literal_quadratic_character_first_row": [
+        0,
+        1,
+        -1,
+        1,
+        1,
+        1,
+        -1,
+        -1,
+        -1,
+        1,
+        -1,
+        -1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        -1,
+        1,
+        1,
+        -1,
+        1,
+        -1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        -1,
+        -1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        -1,
+        1,
+        -1,
+        -1,
+        -1,
+        1,
+        1,
+        1,
+        -1,
+        1
+      ],
+      "all_q_squared_Q_Gram_entries_verified": true,
+      "identities": "Q=Q^T,Q^2=qI-J,QJ=JQ=0"
+    },
+    {
+      "q": 101,
+      "prime": 101,
+      "degree": 1,
+      "field_model": "GF(101)",
+      "literal_quadratic_character_first_row": [
+        0,
+        1,
+        -1,
+        -1,
+        1,
+        1,
+        1,
+        -1,
+        -1,
+        1,
+        -1,
+        -1,
+        -1,
+        1,
+        1,
+        -1,
+        1,
+        1,
+        -1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        -1,
+        -1,
+        -1,
+        1,
+        1,
+        -1,
+        1,
+        -1,
+        -1,
+        1,
+        1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        1,
+        1,
+        -1,
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        -1,
+        -1,
+        -1,
+        -1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        1,
+        1,
+        -1,
+        1,
+        1,
+        -1,
+        -1,
+        -1,
+        1,
+        -1,
+        -1,
+        1,
+        1,
+        1,
+        -1,
+        -1,
+        1
+      ],
+      "all_q_squared_Q_Gram_entries_verified": true,
+      "identities": "Q=Q^T,Q^2=qI-J,QJ=JQ=0"
+    },
+    {
+      "q": 121,
+      "prime": 11,
+      "degree": 2,
+      "field_model": "GF(11)[u]/(u^2-2)",
+      "literal_quadratic_character_first_row": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        -1,
+        -1,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        -1,
+        -1,
+        1,
+        1,
+        -1,
+        1,
+        -1,
+        -1,
+        -1,
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        1,
+        -1,
+        -1,
+        1,
+        -1,
+        -1,
+        1,
+        -1,
+        -1,
+        1,
+        1,
+        -1,
+        1,
+        -1,
+        -1,
+        1,
+        1,
+        -1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        -1,
+        -1,
+        -1,
+        -1,
+        1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        -1,
+        -1,
+        -1,
+        -1,
+        1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        -1,
+        1,
+        1,
+        -1,
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        -1,
+        -1,
+        1,
+        -1,
+        -1,
+        1,
+        -1,
+        -1,
+        1,
+        1,
+        1,
+        -1,
+        1,
+        -1,
+        -1,
+        -1,
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        -1,
+        -1,
+        -1,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        -1,
+        -1
+      ],
+      "all_q_squared_Q_Gram_entries_verified": true,
+      "identities": "Q=Q^T,Q^2=qI-J,QJ=JQ=0"
+    }
+  ],
+  "recurrence": {
+    "D_next": "(D-E)/2 tensor J + (D+E)/2 tensor(Q+I)",
+    "E_next": "(D-E)/2 tensor J + (D+E)/2 tensor(Q-I)",
+    "F_next": "(F-G)/2 tensor J + (F+G)/2 tensor(Q+I)",
+    "G_next": "(F-G)/2 tensor J + (F+G)/2 tensor(Q-I)"
+  },
+  "independent_induction_proof": {
+    "M": "(D-E)^2+(F-G)^2",
+    "P": "(D+E)^2+(F+G)^2",
+    "M_next": "P tensor I",
+    "P_next": "qP tensor I+(qM-P) tensor J",
+    "invariants": "M_r=4q^rI,P_r=4q^(r+1)I; sumfour A_j^2=(M_r+P_r)/2=4w_rI",
+    "symmetry_and_commutativity": "inherited since previous components commute and I,J,Q commute and are symmetric",
+    "entry_test": "for paired signs a,b, exactly one of(a-b)/2,(a+b)/2 is nonzero; on the diagonal the Q term vanishes, off the diagonal the I term vanishes, giving only signs",
+    "literal_entry_cost": "O(r) arithmetic and O(r) labels, no dense source matrix"
+  },
+  "scalar_restriction": {
+    "algebra": "Q[C_w0 x (C_p)^(e*r)],q=p^e,w0=(q+1)/2",
+    "cyclotomic_product": "product_{d|w0}Q(zeta_d) times product_{d|w0}Q(zeta_(p*d))^((q^r-1)/(p-1))",
+    "dimension": "w_r=w0*q^r",
+    "conjugation": "invert every group element",
+    "trace": "normalized regular trace: coefficient of identity=(1/w_r)*sum of all cyclotomic field traces, with recorded multiplicities",
+    "metric": "I_w in the inverse-group basis; factor power-basis blocks are RamanujanSum_d(j-i)/w_r",
+    "complete_weighted_OD_source": "D_T(A_0,...,A_3), order4*631 over the group algebra and Gram4*631*w_rI",
+    "actual_source_entry_alphabet": "+/-the four recorded group polynomials A_j; weighted, not asserted Butson",
+    "literal_restriction_entry_images": "+/-the sign group-circulant matrices A_j",
+    "endpoint_entry_alphabet": [
+      -1,
+      1
+    ],
+    "endpoint_order_and_Gram_scale": "2524*w_r",
+    "zero_policy": "zero entries in individual cyclotomic factors are retained; the complete inverse-group basis reconstruction has only sign entries"
+  },
+  "families": [
+    {
+      "q": 13,
+      "source_order_formula": "7*13^r",
+      "real_endpoint_order_formula": "17668*13^r",
+      "parameter_range": "all integers r>=0",
+      "construction_complete": true,
+      "every_order_new_claimed": false
+    },
+    {
+      "q": 17,
+      "source_order_formula": "9*17^r",
+      "real_endpoint_order_formula": "22716*17^r",
+      "parameter_range": "all integers r>=0",
+      "construction_complete": true,
+      "every_order_new_claimed": false
+    },
+    {
+      "q": 61,
+      "source_order_formula": "31*61^r",
+      "real_endpoint_order_formula": "78244*61^r",
+      "parameter_range": "all integers r>=0",
+      "construction_complete": true,
+      "every_order_new_claimed": false
+    },
+    {
+      "q": 101,
+      "source_order_formula": "51*101^r",
+      "real_endpoint_order_formula": "128724*101^r",
+      "parameter_range": "all integers r>=0",
+      "construction_complete": true,
+      "every_order_new_claimed": false
+    },
+    {
+      "q": 121,
+      "source_order_formula": "61*121^r",
+      "real_endpoint_order_formula": "153964*121^r",
+      "parameter_range": "all integers r>=0",
+      "construction_complete": true,
+      "every_order_new_claimed": false
+    }
+  ],
+  "first_expanded_members": [
+    {
+      "q": 13,
+      "r": 1,
+      "source_order": 91,
+      "group_dimensions": [
+        7,
+        13
+      ],
+      "literal_first_rows_int8_row_major_sha256": "17f3b227fb81c0a6c26d7cdfe38925c5facaf0eeabce59a86898c272d38d2e99",
+      "actual_source_component_entry_alphabet": [
+        -1,
+        1
+      ],
+      "complete_exact_source_norm_checks": {
+        "all_group_coefficients_per_identity_checked": 91,
+        "complete_identities_checked": [
+          "sum_j A_j^2=4wI",
+          "(D-E)^2+(F-G)^2=4q^rI",
+          "(D+E)^2+(F+G)^2=4q^(r+1)I"
+        ],
+        "method": "integer NTT of Kronecker-encoded multivariate polynomials, followed by exact group folding",
+        "modulus": 998244353,
+        "NTT_length": 512,
+        "absolute_integer_coefficient_bound": 728,
+        "bound_strictly_below_modulus": true,
+        "all_polynomials_self_conjugate": true,
+        "integer_exactness": "target residual coefficients have magnitude at most8w<modulus; zero residues therefore prove zero integers"
+      },
+      "full_dense_summed_source_Gram_executed": true,
+      "dense_summed_Gram_entries_checked": 8281,
+      "literal_entry_and_row_indices_checked": [
+        0,
+        1,
+        45,
+        90
+      ],
+      "cyclotomic_factors": [
+        {
+          "index": 1,
+          "field_degree": 1,
+          "multiplicity": 1
+        },
+        {
+          "index": 7,
+          "field_degree": 6,
+          "multiplicity": 1
+        },
+        {
+          "index": 13,
+          "field_degree": 12,
+          "multiplicity": 1
+        },
+        {
+          "index": 91,
+          "field_degree": 72,
+          "multiplicity": 1
+        }
+      ],
+      "source_algebra_dimension": 91,
+      "weighted_OD_source_order_over_algebra": 2524,
+      "weighted_OD_source_Gram_scale": 229684,
+      "literal_T631_endpoint_order_and_Gram_scale": 229684,
+      "endpoint_allocation_performed": false,
+      "order_novelty_scope": "classified separately in the completed endpoint ledger; no family-wide novelty inference"
+    },
+    {
+      "q": 17,
+      "r": 1,
+      "source_order": 153,
+      "group_dimensions": [
+        9,
+        17
+      ],
+      "literal_first_rows_int8_row_major_sha256": "c55a25f30f518364e784692b02dba436bdf147955517c2e886cdc4fc202c178e",
+      "actual_source_component_entry_alphabet": [
+        -1,
+        1
+      ],
+      "complete_exact_source_norm_checks": {
+        "all_group_coefficients_per_identity_checked": 153,
+        "complete_identities_checked": [
+          "sum_j A_j^2=4wI",
+          "(D-E)^2+(F-G)^2=4q^rI",
+          "(D+E)^2+(F+G)^2=4q^(r+1)I"
+        ],
+        "method": "integer NTT of Kronecker-encoded multivariate polynomials, followed by exact group folding",
+        "modulus": 998244353,
+        "NTT_length": 1024,
+        "absolute_integer_coefficient_bound": 1224,
+        "bound_strictly_below_modulus": true,
+        "all_polynomials_self_conjugate": true,
+        "integer_exactness": "target residual coefficients have magnitude at most8w<modulus; zero residues therefore prove zero integers"
+      },
+      "full_dense_summed_source_Gram_executed": true,
+      "dense_summed_Gram_entries_checked": 23409,
+      "literal_entry_and_row_indices_checked": [
+        0,
+        1,
+        76,
+        152
+      ],
+      "cyclotomic_factors": [
+        {
+          "index": 1,
+          "field_degree": 1,
+          "multiplicity": 1
+        },
+        {
+          "index": 3,
+          "field_degree": 2,
+          "multiplicity": 1
+        },
+        {
+          "index": 9,
+          "field_degree": 6,
+          "multiplicity": 1
+        },
+        {
+          "index": 17,
+          "field_degree": 16,
+          "multiplicity": 1
+        },
+        {
+          "index": 51,
+          "field_degree": 32,
+          "multiplicity": 1
+        },
+        {
+          "index": 153,
+          "field_degree": 96,
+          "multiplicity": 1
+        }
+      ],
+      "source_algebra_dimension": 153,
+      "weighted_OD_source_order_over_algebra": 2524,
+      "weighted_OD_source_Gram_scale": 386172,
+      "literal_T631_endpoint_order_and_Gram_scale": 386172,
+      "endpoint_allocation_performed": false,
+      "order_novelty_scope": "classified separately in the completed endpoint ledger; no family-wide novelty inference"
+    },
+    {
+      "q": 61,
+      "r": 1,
+      "source_order": 1891,
+      "group_dimensions": [
+        31,
+        61
+      ],
+      "literal_first_rows_int8_row_major_sha256": "8cc4b0c20f8be6a2e1275f6bd4c7fef5a31a63fb752875ffc8e56d57077e216f",
+      "actual_source_component_entry_alphabet": [
+        -1,
+        1
+      ],
+      "complete_exact_source_norm_checks": {
+        "all_group_coefficients_per_identity_checked": 1891,
+        "complete_identities_checked": [
+          "sum_j A_j^2=4wI",
+          "(D-E)^2+(F-G)^2=4q^rI",
+          "(D+E)^2+(F+G)^2=4q^(r+1)I"
+        ],
+        "method": "integer NTT of Kronecker-encoded multivariate polynomials, followed by exact group folding",
+        "modulus": 998244353,
+        "NTT_length": 8192,
+        "absolute_integer_coefficient_bound": 15128,
+        "bound_strictly_below_modulus": true,
+        "all_polynomials_self_conjugate": true,
+        "integer_exactness": "target residual coefficients have magnitude at most8w<modulus; zero residues therefore prove zero integers"
+      },
+      "full_dense_summed_source_Gram_executed": false,
+      "dense_summed_Gram_entries_checked": 0,
+      "literal_entry_and_row_indices_checked": [
+        0,
+        1,
+        945,
+        1890
+      ],
+      "cyclotomic_factors": [
+        {
+          "index": 1,
+          "field_degree": 1,
+          "multiplicity": 1
+        },
+        {
+          "index": 31,
+          "field_degree": 30,
+          "multiplicity": 1
+        },
+        {
+          "index": 61,
+          "field_degree": 60,
+          "multiplicity": 1
+        },
+        {
+          "index": 1891,
+          "field_degree": 1800,
+          "multiplicity": 1
+        }
+      ],
+      "source_algebra_dimension": 1891,
+      "weighted_OD_source_order_over_algebra": 2524,
+      "weighted_OD_source_Gram_scale": 4772884,
+      "literal_T631_endpoint_order_and_Gram_scale": 4772884,
+      "endpoint_allocation_performed": false,
+      "order_novelty_scope": "classified separately in the completed endpoint ledger; no family-wide novelty inference"
+    },
+    {
+      "q": 101,
+      "r": 1,
+      "source_order": 5151,
+      "group_dimensions": [
+        51,
+        101
+      ],
+      "literal_first_rows_int8_row_major_sha256": "678dc101901c2c5046b727627313a3de6b08802100c2d5f8544ab0c734756e21",
+      "actual_source_component_entry_alphabet": [
+        -1,
+        1
+      ],
+      "complete_exact_source_norm_checks": {
+        "all_group_coefficients_per_identity_checked": 5151,
+        "complete_identities_checked": [
+          "sum_j A_j^2=4wI",
+          "(D-E)^2+(F-G)^2=4q^rI",
+          "(D+E)^2+(F+G)^2=4q^(r+1)I"
+        ],
+        "method": "integer NTT of Kronecker-encoded multivariate polynomials, followed by exact group folding",
+        "modulus": 998244353,
+        "NTT_length": 32768,
+        "absolute_integer_coefficient_bound": 41208,
+        "bound_strictly_below_modulus": true,
+        "all_polynomials_self_conjugate": true,
+        "integer_exactness": "target residual coefficients have magnitude at most8w<modulus; zero residues therefore prove zero integers"
+      },
+      "full_dense_summed_source_Gram_executed": false,
+      "dense_summed_Gram_entries_checked": 0,
+      "literal_entry_and_row_indices_checked": [
+        0,
+        1,
+        2575,
+        5150
+      ],
+      "cyclotomic_factors": [
+        {
+          "index": 1,
+          "field_degree": 1,
+          "multiplicity": 1
+        },
+        {
+          "index": 3,
+          "field_degree": 2,
+          "multiplicity": 1
+        },
+        {
+          "index": 17,
+          "field_degree": 16,
+          "multiplicity": 1
+        },
+        {
+          "index": 51,
+          "field_degree": 32,
+          "multiplicity": 1
+        },
+        {
+          "index": 101,
+          "field_degree": 100,
+          "multiplicity": 1
+        },
+        {
+          "index": 303,
+          "field_degree": 200,
+          "multiplicity": 1
+        },
+        {
+          "index": 1717,
+          "field_degree": 1600,
+          "multiplicity": 1
+        },
+        {
+          "index": 5151,
+          "field_degree": 3200,
+          "multiplicity": 1
+        }
+      ],
+      "source_algebra_dimension": 5151,
+      "weighted_OD_source_order_over_algebra": 2524,
+      "weighted_OD_source_Gram_scale": 13001124,
+      "literal_T631_endpoint_order_and_Gram_scale": 13001124,
+      "endpoint_allocation_performed": false,
+      "order_novelty_scope": "classified separately in the completed endpoint ledger; no family-wide novelty inference"
+    },
+    {
+      "q": 121,
+      "r": 1,
+      "source_order": 7381,
+      "group_dimensions": [
+        61,
+        11,
+        11
+      ],
+      "literal_first_rows_int8_row_major_sha256": "a275751048a86786e89ce0d71c664c9b713eeb632b48e97b2137a92cc012ea3d",
+      "actual_source_component_entry_alphabet": [
+        -1,
+        1
+      ],
+      "complete_exact_source_norm_checks": {
+        "all_group_coefficients_per_identity_checked": 7381,
+        "complete_identities_checked": [
+          "sum_j A_j^2=4wI",
+          "(D-E)^2+(F-G)^2=4q^rI",
+          "(D+E)^2+(F+G)^2=4q^(r+1)I"
+        ],
+        "method": "integer NTT of Kronecker-encoded multivariate polynomials, followed by exact group folding",
+        "modulus": 998244353,
+        "NTT_length": 65536,
+        "absolute_integer_coefficient_bound": 59048,
+        "bound_strictly_below_modulus": true,
+        "all_polynomials_self_conjugate": true,
+        "integer_exactness": "target residual coefficients have magnitude at most8w<modulus; zero residues therefore prove zero integers"
+      },
+      "full_dense_summed_source_Gram_executed": false,
+      "dense_summed_Gram_entries_checked": 0,
+      "literal_entry_and_row_indices_checked": [
+        0,
+        1,
+        3690,
+        7380
+      ],
+      "cyclotomic_factors": [
+        {
+          "index": 1,
+          "field_degree": 1,
+          "multiplicity": 1
+        },
+        {
+          "index": 61,
+          "field_degree": 60,
+          "multiplicity": 1
+        },
+        {
+          "index": 11,
+          "field_degree": 10,
+          "multiplicity": 12
+        },
+        {
+          "index": 671,
+          "field_degree": 600,
+          "multiplicity": 12
+        }
+      ],
+      "source_algebra_dimension": 7381,
+      "weighted_OD_source_order_over_algebra": 2524,
+      "weighted_OD_source_Gram_scale": 18629644,
+      "literal_T631_endpoint_order_and_Gram_scale": 18629644,
+      "endpoint_allocation_performed": false,
+      "order_novelty_scope": "classified separately in the completed endpoint ledger; no family-wide novelty inference"
+    }
+  ],
+  "source_method_priority_claimed": false,
+  "new_order_status_scope": "The constructive infinite families are established here; novelty of individual real orders is recorded separately."
+}

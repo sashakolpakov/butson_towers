@@ -1,0 +1,411 @@
+{
+  "schema": "even-petrescu-conference-corner-v1",
+  "exclusion_scope": "D=[[A,B],[B,A]], A-B=(1-i)L C R, C real conference, L/R root-diagonal, restricted phase24/48 entries",
+  "excluded_corner_phase_pairs": [
+    [
+      1000,
+      24
+    ],
+    [
+      1000,
+      48
+    ],
+    [
+      2000,
+      48
+    ]
+  ],
+  "local_pair_tables": [
+    {
+      "phase": 8,
+      "allowed_pair_count": 160,
+      "row_tuple_fields": [
+        "w_i",
+        "w_j",
+        "u_i_over_u_j",
+        "Q_ij",
+        "Q_ji",
+        "even_dot"
+      ],
+      "complete_table_sha256": "79f0624a8aaa57d7e033d447a27f827119a2aa3aff97203cba3578e14f90c3da",
+      "projection_modulus": 2,
+      "allowed_w_pair_projection": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "all_retained_equations_rechecked_exactly": true,
+      "dyadic_descent_and_canonical_sector_conditions_verified": true,
+      "dyadic_w_with_nondyadic_ratio_count": null
+    },
+    {
+      "phase": 16,
+      "allowed_pair_count": 288,
+      "row_tuple_fields": [
+        "w_i",
+        "w_j",
+        "u_i_over_u_j",
+        "Q_ij",
+        "Q_ji",
+        "even_dot"
+      ],
+      "complete_table_sha256": "3e1ed9199bad71d2281bcab84767d7aac0871190d2c3130965a654b4aca150d9",
+      "projection_modulus": 4,
+      "allowed_w_pair_projection": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          2,
+          2
+        ],
+        [
+          3,
+          1
+        ]
+      ],
+      "all_retained_equations_rechecked_exactly": true,
+      "dyadic_descent_and_canonical_sector_conditions_verified": true,
+      "dyadic_w_with_nondyadic_ratio_count": null
+    },
+    {
+      "phase": 24,
+      "allowed_pair_count": 288,
+      "row_tuple_fields": [
+        "w_i",
+        "w_j",
+        "u_i_over_u_j",
+        "Q_ij",
+        "Q_ji",
+        "even_dot"
+      ],
+      "complete_table_sha256": "59cd96bbc498f3946d7aa2f21a89c686007f1c5683489046e9dfc889cc3fede0",
+      "projection_modulus": 3,
+      "allowed_w_pair_projection": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "all_retained_equations_rechecked_exactly": true,
+      "dyadic_descent_and_canonical_sector_conditions_verified": false,
+      "dyadic_w_with_nondyadic_ratio_count": 0
+    },
+    {
+      "phase": 48,
+      "allowed_pair_count": 544,
+      "row_tuple_fields": [
+        "w_i",
+        "w_j",
+        "u_i_over_u_j",
+        "Q_ij",
+        "Q_ji",
+        "even_dot"
+      ],
+      "complete_table_sha256": "e55f3db9173e542018344721333151308421fa228db14711cde2b23d41f749ea",
+      "projection_modulus": 3,
+      "allowed_w_pair_projection": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          2
+        ],
+        [
+          2,
+          1
+        ]
+      ],
+      "all_retained_equations_rechecked_exactly": true,
+      "dyadic_descent_and_canonical_sector_conditions_verified": false,
+      "dyadic_w_with_nondyadic_ratio_count": 0
+    }
+  ],
+  "sector_exclusions": [
+    {
+      "half_order": 500,
+      "corner_order": 1000,
+      "Gaussian_column_sum_norm": 1499,
+      "Gaussian_norm_is_3_mod_4": true,
+      "pure_skew_sector_requires_m_equals_1": true,
+      "pure_symmetric_sector_required_square": 1497,
+      "required_integer_square_is_nonsquare": true,
+      "mixed_sector_equations": [
+        "(a-1)(b-3)=0",
+        "(b-1)(a-3)=0",
+        "a+b=m"
+      ],
+      "mixed_sector_solutions": []
+    },
+    {
+      "half_order": 1000,
+      "corner_order": 2000,
+      "Gaussian_column_sum_norm": 2999,
+      "Gaussian_norm_is_3_mod_4": true,
+      "pure_skew_sector_requires_m_equals_1": true,
+      "pure_symmetric_sector_required_square": 2997,
+      "required_integer_square_is_nonsquare": true,
+      "mixed_sector_equations": [
+        "(a-1)(b-3)=0",
+        "(b-1)(a-3)=0",
+        "a+b=m"
+      ],
+      "mixed_sector_solutions": []
+    }
+  ],
+  "off_diagonal_color_lemma": "For m>=4, either one side has constant cubic color, or both have the same singleton exceptional index",
+  "proof_document": "docs/EVEN_PETRESCU_CONFERENCE_CORNER.md",
+  "positive_complex_conference_escape": [
+    {
+      "conference_order": 500,
+      "dyadic_phase": 8,
+      "conference_exponents_sha256": "7ead48e79b953a7c343df803ddb0c6e9109960e26675831c459b68e00ed4a2b4",
+      "nonreal_cross_ratio": {
+        "rows": [
+          3,
+          4
+        ],
+        "columns": [
+          0,
+          2
+        ],
+        "exponent": 3,
+        "not_plus_or_minus_one": true
+      },
+      "all_off_diagonal_entries_are_roots": true,
+      "Gram_proof": "U C U^T times its adjoint equals (m-1)I; U is unitary",
+      "difference_Gram": "998 I_500",
+      "boundary_mode_certificate": {
+        "modulus": 125,
+        "rotated_coordinates": [
+          1,
+          2
+        ],
+        "C_eta_e_plus_equals_minus_e_plus": true,
+        "C_eta_e_minus_equals_e_minus": true,
+        "necessary_difference_boundary_graph_blocks_zero": true
+      },
+      "root_pair_choices": "one independent sign per off-diagonal entry and one root per diagonal",
+      "sum_sector_Gram_or_graph_congruence_claimed": false,
+      "single_pair_corner_completion_excluded": true
+    },
+    {
+      "conference_order": 500,
+      "dyadic_phase": 16,
+      "conference_exponents_sha256": "a1fb418eec0316f2135200d90eab841baa4cd9c509379ff84c7d6d5c245e1151",
+      "nonreal_cross_ratio": {
+        "rows": [
+          3,
+          4
+        ],
+        "columns": [
+          0,
+          2
+        ],
+        "exponent": 7,
+        "not_plus_or_minus_one": true
+      },
+      "all_off_diagonal_entries_are_roots": true,
+      "Gram_proof": "U C U^T times its adjoint equals (m-1)I; U is unitary",
+      "difference_Gram": "998 I_500",
+      "boundary_mode_certificate": {
+        "modulus": 125,
+        "rotated_coordinates": [
+          1,
+          2
+        ],
+        "C_eta_e_plus_equals_minus_e_plus": true,
+        "C_eta_e_minus_equals_e_minus": true,
+        "necessary_difference_boundary_graph_blocks_zero": true
+      },
+      "root_pair_choices": "one independent sign per off-diagonal entry and one root per diagonal",
+      "sum_sector_Gram_or_graph_congruence_claimed": false,
+      "single_pair_corner_completion_excluded": true
+    },
+    {
+      "conference_order": 1000,
+      "dyadic_phase": 16,
+      "conference_exponents_sha256": "067ef49b5c2853524384ad7867f179106b475a442fc26b8341c1b214e8c07009",
+      "nonreal_cross_ratio": {
+        "rows": [
+          3,
+          4
+        ],
+        "columns": [
+          0,
+          2
+        ],
+        "exponent": 7,
+        "not_plus_or_minus_one": true
+      },
+      "all_off_diagonal_entries_are_roots": true,
+      "Gram_proof": "U C U^T times its adjoint equals (m-1)I; U is unitary",
+      "difference_Gram": "1998 I_1000",
+      "boundary_mode_certificate": {
+        "modulus": 125,
+        "rotated_coordinates": [
+          1,
+          2
+        ],
+        "C_eta_e_plus_equals_minus_e_plus": true,
+        "C_eta_e_minus_equals_e_minus": true,
+        "necessary_difference_boundary_graph_blocks_zero": true
+      },
+      "root_pair_choices": "one independent sign per off-diagonal entry and one root per diagonal",
+      "sum_sector_Gram_or_graph_congruence_claimed": false,
+      "single_pair_corner_completion_excluded": true
+    }
+  ],
+  "small_direct_controls": [
+    {
+      "phase": 8,
+      "conference_order": 8,
+      "direct_unitary_congruence_verified": true,
+      "complete_conference_Gram_verified": true,
+      "every_A_B_entry_is_a_root": true,
+      "complete_difference_Gram_verified": true,
+      "complete_corner_Gram_factorization_verified": true,
+      "nonreal_cross_ratio": {
+        "rows": [
+          3,
+          4
+        ],
+        "columns": [
+          0,
+          2
+        ],
+        "exponent": 1,
+        "not_plus_or_minus_one": true
+      }
+    },
+    {
+      "phase": 16,
+      "conference_order": 8,
+      "direct_unitary_congruence_verified": true,
+      "complete_conference_Gram_verified": true,
+      "every_A_B_entry_is_a_root": true,
+      "complete_difference_Gram_verified": true,
+      "complete_corner_Gram_factorization_verified": true,
+      "nonreal_cross_ratio": {
+        "rows": [
+          3,
+          4
+        ],
+        "columns": [
+          0,
+          2
+        ],
+        "exponent": 1,
+        "not_plus_or_minus_one": true
+      }
+    }
+  ],
+  "normalized_affine_graph_control": {
+    "modulus": 17,
+    "conference_order": 68,
+    "primitive_phase": 16,
+    "root_value": 3,
+    "boundary_projectors_and_complement_square_verified": true,
+    "complex_difference_Gram_and_boundary_blocks_verified": true,
+    "entire_affine_graph_equation_verified": true,
+    "single_entry_negative_control_rejected": true,
+    "free_ring_parameter_count": 135,
+    "root_entry_or_corner_Gram_claimed_for_the_affine_control": false
+  },
+  "few_pair_joint_rank_preflight": {
+    "scope": "disjoint finite-coordinate pair congruences preserving root entries, fixed Delta=(1-i)C_prime and symmetric normalized corner",
+    "root_reduction_mod125_is_injective": true,
+    "rank_bound_handles_coefficient_wrap_mod125": true,
+    "single_pair_stronger_exact_rank_bound": 2,
+    "records": [
+      {
+        "half_order": 500,
+        "finite_coordinate_pairs": 1,
+        "conference_correction_row_type_bound": 5,
+        "root_B_rank_upper_bound": 11,
+        "corner_Gram_required_B_rank": 84,
+        "excluded_by_this_bound": true
+      },
+      {
+        "half_order": 500,
+        "finite_coordinate_pairs": 2,
+        "conference_correction_row_type_bound": 13,
+        "root_B_rank_upper_bound": 27,
+        "corner_Gram_required_B_rank": 84,
+        "excluded_by_this_bound": true
+      },
+      {
+        "half_order": 500,
+        "finite_coordinate_pairs": 3,
+        "conference_correction_row_type_bound": 33,
+        "root_B_rank_upper_bound": 67,
+        "corner_Gram_required_B_rank": 84,
+        "excluded_by_this_bound": true
+      },
+      {
+        "half_order": 500,
+        "finite_coordinate_pairs": 4,
+        "conference_correction_row_type_bound": 89,
+        "root_B_rank_upper_bound": 179,
+        "corner_Gram_required_B_rank": 84,
+        "excluded_by_this_bound": false
+      },
+      {
+        "half_order": 1000,
+        "finite_coordinate_pairs": 1,
+        "conference_correction_row_type_bound": 5,
+        "root_B_rank_upper_bound": 11,
+        "corner_Gram_required_B_rank": 167,
+        "excluded_by_this_bound": true
+      },
+      {
+        "half_order": 1000,
+        "finite_coordinate_pairs": 2,
+        "conference_correction_row_type_bound": 13,
+        "root_B_rank_upper_bound": 27,
+        "corner_Gram_required_B_rank": 167,
+        "excluded_by_this_bound": true
+      },
+      {
+        "half_order": 1000,
+        "finite_coordinate_pairs": 3,
+        "conference_correction_row_type_bound": 33,
+        "root_B_rank_upper_bound": 67,
+        "corner_Gram_required_B_rank": 167,
+        "excluded_by_this_bound": true
+      },
+      {
+        "half_order": 1000,
+        "finite_coordinate_pairs": 4,
+        "conference_correction_row_type_bound": 89,
+        "root_B_rank_upper_bound": 179,
+        "corner_Gram_required_B_rank": 167,
+        "excluded_by_this_bound": false
+      }
+    ],
+    "two_SAT_census_run_on_excluded_one_two_or_three_pair_families": false
+  },
+  "no_general_corner_nonexistence_claimed": true,
+  "completed_corner_or_high_source_constructed": false,
+  "native_solver_run": false
+}

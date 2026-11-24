@@ -1,0 +1,28 @@
+{
+  "schema": "exact-single-factor-SL2-parity-map-v1",
+  "p": 13,
+  "m": 3,
+  "mu": 3,
+  "field_degree": 2,
+  "field_modulus": 7,
+  "inverse_columns": [
+    176,
+    208,
+    191,
+    213,
+    105,
+    215,
+    60,
+    40
+  ],
+  "head_net": 0,
+  "tail_net": 2,
+  "fixed_first_head_negative": false,
+  "parity_map_validation": {
+    "color_map_rank": 8,
+    "determinant_map_rank": 2,
+    "full_quadratic_coefficients_checked": 37,
+    "exact_identity": "Cabs mod2=L(p*b1+q*b0+1), L invertible"
+  },
+  "control_scope": "headless axis chart with positive first tail; no order-novelty claim"
+}

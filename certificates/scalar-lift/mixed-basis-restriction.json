@@ -1,0 +1,3654 @@
+{
+  "schema": "mixed-same-basis-scalar-restriction-v1",
+  "cases": [
+    {
+      "source_id": "catalogue-p7-q12",
+      "source_hash": "9d0465a2350a4b8a206e82c04cfbf61085aecb612baa7285ec79e6669508c201",
+      "source_Gram_replayed": true,
+      "period_degree": 3,
+      "period_conductor": 31,
+      "period_norm_witness": [
+        2,
+        3,
+        1
+      ],
+      "faithful_period_multiplication_sha256": "aaeb3fa14e191288a2676c100095060eb55f6d7cc80724c0ed230cacd8c3163c",
+      "auxiliary_generator_in_mixed_basis": "S^-1 (M_eta0 tensor I_4) S",
+      "matrix_order": 84,
+      "basis_width": 12,
+      "node_visits": 45,
+      "distinct_action_metric_nodes": 35,
+      "literal_duplicates_pruned": 10,
+      "nodes": [
+        {
+          "basis_shears": [],
+          "action_metric_sha256": "5d507e37925a8f353e09d4143566e21a61725a95fa1eadc6f8fd4f96e4379ccd",
+          "nonproduct_basis_vector_witness": null,
+          "metric_sha256": "b325d62c0f020e7602884dd49b71e12547a22aff2b7f2f900496a2231113519b",
+          "complete_entry_counts": {
+            "-1": 375,
+            "0": 6231,
+            "1": 450
+          },
+          "all_entries_signs": false,
+          "inverse_shears_replayed_exactly": true
+        },
+        {
+          "basis_shears": [
+            [
+              0,
+              5,
+              -2
+            ]
+          ],
+          "action_metric_sha256": "4b47f56e6e0154796c055410ccacd655d2ee468091ad77126ee89354f0fcb5c8",
+          "nonproduct_basis_vector_witness": {
+            "basis_column": 5,
+            "period_rows": [
+              0,
+              1
+            ],
+            "local_columns": [
+              0,
+              1
+            ],
+            "minor": [
+              [
+                -2,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "nonzero_minor_determinant": -2
+          },
+          "metric_sha256": "34251e723c554749071eb68d2a6836473e230215a2d0bee8662e7e8b3277d15c",
+          "complete_entry_counts": {
+            "-2": 72,
+            "-1": 375,
+            "0": 6084,
+            "1": 450,
+            "2": 75
+          },
+          "all_entries_signs": false,
+          "inverse_shears_replayed_exactly": true
+        },
+        {
+          "basis_shears": [
+            [
+              0,
+              5,
+              -1
+            ]
+          ],
+          "action_metric_sha256": "b11555a70c2dccd51bff0e4ecb7551d2b5048fd7c6f4fa990fc6afe61e0b87f3",
+          "nonproduct_basis_vector_witness": {
+            "basis_column": 5,
+            "period_rows": [
+              0,
+              1
+            ],
+            "local_columns": [
+              0,
+              1
+            ],
+            "minor": [
+              [
+                -1,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "nonzero_minor_determinant": -1
+          },
+          "metric_sha256": "96cb628182f6d2a49b693a146d431410d92e92b46a6677399e1169a2253e3ec2",
+          "complete_entry_counts": {
+            "-1": 447,
+            "0": 6084,
+            "1": 525
+          },
+          "all_entries_signs": false,
+          "inverse_shears_replayed_exactly": true
+        },
+        {
+          "basis_shears": [
+            [
+              0,
+              5,
+              1
+            ]
+          ],
+          "action_metric_sha256": "8e0da5def49ff150edc7cd6de34e682466683f92c14cccc19a0f9b4e54313b66",
+          "nonproduct_basis_vector_witness": {
+            "basis_column": 5,
+            "period_rows": [
+              0,
+              1
+            ],
+            "local_columns": [
+              0,
+              1
+            ],
+            "minor": [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "nonzero_minor_determinant": 1
+          },
+          "metric_sha256": "80c72867cc3268c4e10e875cbe4b72866f2ebcfc2098903ffe761113a95e7fa2",
+          "complete_entry_counts": {
+            "-1": 450,
+            "0": 6084,
+            "1": 522
+          },
+          "all_entries_signs": false,
+          "inverse_shears_replayed_exactly": true
+        },
+        {
+          "basis_shears": [
+            [
+              0,
+              5,
+              2
+            ]
+          ],
+          "action_metric_sha256": "575341ba5b393688b53857cb6fd9cdffbd65afe9e704a934544fc0bdd104f922",
+          "nonproduct_basis_vector_witness": {
+            "basis_column": 5,
+            "period_rows": [
+              0,
+              1
+            ],
+            "local_columns": [
+              0,
+              1
+            ],
+            "minor": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "nonzero_minor_determinant": 2
+          },
+          "metric_sha256": "ffee8a3403a1aced6790fb0088e13593158c9b0d312505e42cbd668785ee7ea0",
+          "complete_entry_counts": {
+            "-2": 75,
+            "-1": 375,
+            "0": 6084,
+            "1": 450,
+            "2": 72
+          },
+          "all_entries_signs": false,
+          "inverse_shears_replayed_exactly": true
+        },
+        {
+          "basis_shears": [
+            [
+              1,
+              10,
+              -2
+            ]
+          ],
+          "action_metric_sha256": "1cbecdb03d741ef9261139b89ff274462d08638fec91747bd23e0bf21c7c1734",
+          "nonproduct_basis_vector_witness": {
+            "basis_column": 10,
+            "period_rows": [
+              0,
+              2
+            ],
+            "local_columns": [
+              1,
+              2
+            ],
+            "minor": [
+              [
+                -2,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "nonzero_minor_determinant": -2
+          },
+          "metric_sha256": "28f8aae4743c9ca51770e22ebd07300c85a12177767268353b5788dd01516249",
+          "complete_entry_counts": {
+            "-2": 68,
+            "-1": 375,
+            "0": 6097,
+            "1": 450,
+            "2": 66
+          },
+          "all_entries_signs": false,
+          "inverse_shears_replayed_exactly": true
+        },
+        {
+          "basis_shears": [
+            [
+              1,
+              10,
+              -1
+            ]
+          ],
+          "action_metric_sha256": "7494e49854ac0651a8718a6aee78e36a17ed92d15dd5e7c92f95194ee328925a",
+          "nonproduct_basis_vector_witness": {
+            "basis_column": 10,
+            "period_rows": [
+              0,
+              2
+            ],
+            "local_columns": [
+              1,
+              2
+            ],
+            "minor": [
+              [
+                -1,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "nonzero_minor_determinant": -1
+          },
+          "metric_sha256": "06a694ce8a0df090b474d4b6eef302ea911c6e5d43f5d4870602d70de037029d",
+          "complete_entry_counts": {
+            "-1": 443,
+            "0": 6097,
+            "1": 516
+          },
+          "all_entries_signs": false,
+          "inverse_shears_replayed_exactly": true
+        },
+        {
+          "basis_shears": [
+            [
+              1,
+              10,
+              1
+            ]
+          ],
+          "action_metric_sha256": "7ae5baaac8f54d366dd6fbb316e8918af682277c08306121a252f600ee7a23a1",
+          "nonproduct_basis_vector_witness": {
+            "basis_column": 10,
+            "period_rows": [
+              0,
+              2
+            ],
+            "local_columns": [
+              1,
+              2
+            ],
+            "minor": [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "nonzero_minor_determinant": 1
+          },
+          "metric_sha256": "ce462223f7d565bbb0b95624aefa77d70671f1d08ba52556c1568ded954a801b",
+          "complete_entry_counts": {
+            "-1": 441,
+            "0": 6097,
+            "1": 518
+          },
+          "all_entries_signs": false,
+          "inverse_shears_replayed_exactly": true
+        },
+        {
+          "basis_shears": [
+            [
+              1,
+              10,
+              2
+            ]
+          ],
+          "action_metric_sha256": "0f40f21de6de3e7c1d38ca62ae74cdef092f2eaf3c270bc76e1fa5068d3619ae",
+          "nonproduct_basis_vector_witness": {
+            "basis_column": 10,
+            "period_rows": [
+              0,
+              2
+            ],
+            "local_columns": [
+              1,
+              2
+            ],
+            "minor": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "nonzero_minor_determinant": 2
+          },
+          "metric_sha256": "dbf06c7cca58ac067401109161e9d04c114285236e36decfe2572534c58271a7",
+          "complete_entry_counts": {
+            "-2": 66,
+            "-1": 375,
+            "0": 6097,
+            "1": 450,
+            "2": 68
+          },
+          "all_entries_signs": false,
+          "inverse_shears_replayed_exactly": true
+        },
+        {
+          "basis_shears": [
+            [
+              4,
+              11,
+              -1
+            ]
+          ],
+          "action_metric_sha256": "b06e58c255711274c2184cc1cca4dc467683057018819db2a26562bc52d1f290",
+          "nonproduct_basis_vector_witness": {
+            "basis_column": 11,
+            "period_rows": [
+              1,
+              2
+            ],
+            "local_columns": [
+              0,
+              3
+            ],
+            "minor": [
+              [
+                -1,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "nonzero_minor_determinant": -1
+          },
+          "metric_sha256": "38292f884c4d90f6fd3956a58c873005570ac4e5581d19c1ca67fe57e126ec8d",
+          "complete_entry_counts": {
+            "-1": 441,
+            "0": 6097,
+            "1": 518
+          },
+          "all_entries_signs": false,
+          "inverse_shears_replayed_exactly": true
+        },
+        {
+          "basis_shears": [
+            [
+              4,
+              11,
+              1
+            ]
+          ],
+          "action_metric_sha256": "0ac820656650e5850fe40dc0d677e85dd78616c47434d554db69683841108f3b",
+          "nonproduct_basis_vector_witness": {
+            "basis_column": 11,
+            "period_rows": [
+              1,
+              2
+            ],
+            "local_columns": [
+              0,
+              3
+            ],
+            "minor": [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "nonzero_minor_determinant": 1
+          },
+          "metric_sha256": "cae00e88964342613901b30cddc80bf814ed3ec992e28b89fc6e37b43397ba4a",
+          "complete_entry_counts": {
+            "-1": 443,
+            "0": 6097,
+            "1": 516
+          },
+          "all_entries_signs": false,
+          "inverse_shears_replayed_exactly": true
+        },
+        {
+          "basis_shears": [
+            [
+              0,
+              5,
+              -2
+            ],
+            [
+              5,
+              10,
+              -1
+            ]
+          ],
+          "action_metric_sha256": "f4552c02d582efd7741f9b3ed6350784624c57e48f366b1d2db232cffebba677",
+          "nonproduct_basis_vector_witness": {
+            "basis_column": 5,
+            "period_rows": [
+              0,
+              1
+            ],
+            "local_columns": [
+              0,
+              1
+            ],
+            "minor": [
+              [
+                -2,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "nonzero_minor_determinant": -2
+          },
+          "metric_sha256": "3e449ba5bd4330db86bdfbcdaff74d9f1e120de96a9bdea592db860afa6df378",
+          "complete_entry_counts": {
+            "-2": 112,
+            "-1": 443,
+            "0": 5865,
+            "1": 516,
+            "2": 120
+          },
+          "all_entries_signs": false,
+          "inverse_shears_replayed_exactly": true
+        },
+        {
+          "basis_shears": [
+            [
+              0,
+              5,
+              -2
+            ],
+            [
+              5,
+              10,
+              1
+            ]
+          ],
+          "action_metric_sha256": "6806063cad357480e9b758e3ac403b48d8f37e8161d432b50021d9633adcfa8b",
+          "nonproduct_basis_vector_witness": {
+            "basis_column": 5,
+            "period_rows": [
+              0,
+              1
+            ],
+            "local_columns": [
+              0,
+              1
+            ],
+            "minor": [
+              [
+                -2,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "nonzero_minor_determinant": -2
+          },
+          "metric_sha256": "9b19be0aec1a550eba475ebb1c183b46ddb85c6117cb13e115db1e204f090a9b",
+          "complete_entry_counts": {
+            "-2": 117,
+            "-1": 441,
+            "0": 5865,
+            "1": 518,
+            "2": 115
+          },
+          "all_entries_signs": false,
+          "inverse_shears_replayed_exactly": true
+        },
+        {
+          "basis_shears": [
+            [
+              0,
+              5,
+              -1
+            ],
+            [
+              5,
+              10,
+              -1
+            ]
+          ],
+          "action_metric_sha256": "ed8d09536ebf5d8cc92fb6ddacac514b2b900b097c5dab801ed9be6de0348dcd",
+          "nonproduct_basis_vector_witness": {
+            "basis_column": 5,
+            "period_rows": [
+              0,
+              1
+            ],
+            "local_columns": [
+              0,
+              1
+            ],
+            "minor": [
+              [
+                -1,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "nonzero_minor_determinant": -1
+          },
+          "metric_sha256": "2f1aca922479294ba5d82e9ce5e88934ef7e77e792b27abe72aeab4f469c4592",
+          "complete_entry_counts": {
+            "-1": 555,
+            "0": 5865,
+            "1": 636
+          },
+          "all_entries_signs": false,
+          "inverse_shears_replayed_exactly": true
+        },
+        {
+          "basis_shears": [
+            [
+              0,
+              5,
+              -1
+            ],
+            [
+              5,
+              10,
+              1
+            ]
+          ],
+          "action_metric_sha256": "bc9f6309894fe53558ee2b6c1390971cf32bce9c0ceaf5c9898929f5917789bf",
+          "nonproduct_basis_vector_witness": {
+            "basis_column": 5,
+            "period_rows": [
+              0,
+              1
+            ],
+            "local_columns": [
+              0,
+              1
+            ],
+            "minor": [
+              [
+                -1,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "nonzero_minor_determinant": -1
+          },
+          "metric_sha256": "bb68dd00bc824550de76ed8c606360adc2136150bbb6db4d50b1fa03d49424e4",
+          "complete_entry_counts": {
+            "-1": 558,
+            "0": 5865,
+            "1": 633
+          },
+          "all_entries_signs": false,
+          "inverse_shears_replayed_exactly": true
+        },
+        {
+          "basis_shears": [
+            [
+              0,
+              5,
+              1
+            ],
+            [
+              5,
+              10,
+              -1
+            ]
+          ],
+          "action_metric_sha256": "e82c99e0aa6e8c77e96b55f15a421fd0b460616e209523f8d1e9f5bb0b7bb59b",
+          "nonproduct_basis_vector_witness": {
+            "basis_column": 5,
+            "period_rows": [
+              0,
+              1
+            ],
+            "local_columns": [
+              0,
+              1
+            ],
+            "minor": [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "nonzero_minor_determinant": 1
+          },
+          "metric_sha256": "c8694cf0f08c3dfc6a28d1baa53164944b5194bf72912b60e3401287ef574193",
+          "complete_entry_counts": {
+            "-1": 563,
+            "0": 5865,
+            "1": 628
+          },
+          "all_entries_signs": false,
+          "inverse_shears_replayed_exactly": true
+        },
+        {
+          "basis_shears": [
+            [
+              0,
+              5,
+              1
+            ],
+            [
+              5,
+              10,
+              1
+            ]
+          ],
+          "action_metric_sha256": "ffe0757171adc296665f3b07286abf0728e95aedb1fa8719272212b4282b1243",
+          "nonproduct_basis_vector_witness": {
+            "basis_column": 5,
+            "period_rows": [
+              0,
+              1
+            ],
+            "local_columns": [
+              0,
+              1
+            ],
+            "minor": [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "nonzero_minor_determinant": 1
+          },
+          "metric_sha256": "be873f670b5c688d62d11fd6b583c53e629aa269905cb3a2325d4d26394a1ba0",
+          "complete_entry_counts": {
+            "-1": 556,
+            "0": 5865,
+            "1": 635
+          },
+          "all_entries_signs": false,
+          "inverse_shears_replayed_exactly": true
+        },
+        {
+          "basis_shears": [
+            [
+              0,
+              5,
+              2
+            ],
+            [
+              5,
+              10,
+              -1
+            ]
+          ],
+          "action_metric_sha256": "b6d5a9e7e203da29d899d67f86ca64c1df8cc3559bf2193fda02f870c330d68c",
+          "nonproduct_basis_vector_witness": {
+            "basis_column": 5,
+            "period_rows": [
+              0,
+              1
+            ],
+            "local_columns": [
+              0,
+              1
+            ],
+            "minor": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "nonzero_minor_determinant": 2
+          },
+          "metric_sha256": "b3cdeed28527e6acb2b8026ed3b9dd13674c5ac3a3a2446401a9c3bdad710a5b",
+          "complete_entry_counts": {
+            "-2": 120,
+            "-1": 443,
+            "0": 5865,
+            "1": 516,
+            "2": 112
+          },
+          "all_entries_signs": false,
+          "inverse_shears_replayed_exactly": true
+        },
+        {
+          "basis_shears": [
+            [
+              0,
+              5,
+              2
+            ],
+            [
+              5,
+              10,
+              1
+            ]
+          ],
+          "action_metric_sha256": "005d8b9dd32e9732851cb686dcec593aca464d688d562925960771408372c864",
+          "nonproduct_basis_vector_witness": {
+            "basis_column": 5,
+            "period_rows": [
+              0,
+              1
+            ],
+            "local_columns": [
+              0,
+              1
+            ],
+            "minor": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "nonzero_minor_determinant": 2
+          },
+          "metric_sha256": "1fe63c0bf273ddf225e34cff78efb3a52a6645e8379bff121b87981f04f05804",
+          "complete_entry_counts": {
+            "-2": 115,
+            "-1": 441,
+            "0": 5865,
+            "1": 518,
+            "2": 117
+          },
+          "all_entries_signs": false,
+          "inverse_shears_replayed_exactly": true
+        },
+        {
+          "basis_shears": [
+            [
+              0,
+              5,
+              -2
+            ],
+            [
+              0,
+              5,
+              2
+            ]
+          ],
+          "literal_duplicate_of": 0,
+          "action_metric_sha256": "5d507e37925a8f353e09d4143566e21a61725a95fa1eadc6f8fd4f96e4379ccd"
+        },
+        {
+          "basis_shears": [
+            [
+              0,
+              5,
+              -1
+            ],
+            [
+              0,
+              5,
+              1
+            ]
+          ],
+          "literal_duplicate_of": 0,
+          "action_metric_sha256": "5d507e37925a8f353e09d4143566e21a61725a95fa1eadc6f8fd4f96e4379ccd"
+        },
+        {
+          "basis_shears": [
+            [
+              0,
+              5,
+              1
+            ],
+            [
+              0,
+              5,
+              -1
+            ]
+          ],
+          "literal_duplicate_of": 0,
+          "action_metric_sha256": "5d507e37925a8f353e09d4143566e21a61725a95fa1eadc6f8fd4f96e4379ccd"
+        },
+        {
+          "basis_shears": [
+            [
+              0,
+              5,
+              2
+            ],
+            [
+              0,
+              5,
+              -2
+            ]
+          ],
+          "literal_duplicate_of": 0,
+          "action_metric_sha256": "5d507e37925a8f353e09d4143566e21a61725a95fa1eadc6f8fd4f96e4379ccd"
+        },
+        {
+          "basis_shears": [
+            [
+              1,
+              10,
+              -2
+            ],
+            [
+              1,
+              10,
+              2
+            ]
+          ],
+          "literal_duplicate_of": 0,
+          "action_metric_sha256": "5d507e37925a8f353e09d4143566e21a61725a95fa1eadc6f8fd4f96e4379ccd"
+        },
+        {
+          "basis_shears": [
+            [
+              1,
+              10,
+              -1
+            ],
+            [
+              1,
+              10,
+              1
+            ]
+          ],
+          "literal_duplicate_of": 0,
+          "action_metric_sha256": "5d507e37925a8f353e09d4143566e21a61725a95fa1eadc6f8fd4f96e4379ccd"
+        },
+        {
+          "basis_shears": [
+            [
+              1,
+              10,
+              1
+            ],
+            [
+              1,
+              10,
+              -1
+            ]
+          ],
+          "literal_duplicate_of": 0,
+          "action_metric_sha256": "5d507e37925a8f353e09d4143566e21a61725a95fa1eadc6f8fd4f96e4379ccd"
+        },
+        {
+          "basis_shears": [
+            [
+              1,
+              10,
+              2
+            ],
+            [
+              1,
+              10,
+              -2
+            ]
+          ],
+          "literal_duplicate_of": 0,
+          "action_metric_sha256": "5d507e37925a8f353e09d4143566e21a61725a95fa1eadc6f8fd4f96e4379ccd"
+        },
+        {
+          "basis_shears": [
+            [
+              4,
+              11,
+              -1
+            ],
+            [
+              4,
+              11,
+              1
+            ]
+          ],
+          "literal_duplicate_of": 0,
+          "action_metric_sha256": "5d507e37925a8f353e09d4143566e21a61725a95fa1eadc6f8fd4f96e4379ccd"
+        },
+        {
+          "basis_shears": [
+            [
+              4,
+              11,
+              1
+            ],
+            [
+              4,
+              11,
+              -1
+            ]
+          ],
+          "literal_duplicate_of": 0,
+          "action_metric_sha256": "5d507e37925a8f353e09d4143566e21a61725a95fa1eadc6f8fd4f96e4379ccd"
+        },
+        {
+          "basis_shears": [
+            [
+              0,
+              5,
+              -2
+            ],
+            [
+              5,
+              10,
+              -1
+            ],
+            [
+              10,
+              0,
+              -1
+            ]
+          ],
+          "action_metric_sha256": "e168f35b4b9b02794ba60b89c707af861920a88f464034ed942475b6f340e1fe",
+          "nonproduct_basis_vector_witness": {
+            "basis_column": 0,
+            "period_rows": [
+              0,
+              1
+            ],
+            "local_columns": [
+              0,
+              1
+            ],
+            "minor": [
+              [
+                -1,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "nonzero_minor_determinant": -1
+          },
+          "metric_sha256": "48c0b6b30d420a5afb9930b5d000c507b66c4e251d452b7d54f079e1358900de",
+          "complete_entry_counts": {
+            "-3": 5,
+            "-2": 185,
+            "-1": 539,
+            "0": 5534,
+            "1": 583,
+            "2": 201,
+            "3": 9
+          },
+          "all_entries_signs": false,
+          "inverse_shears_replayed_exactly": true
+        },
+        {
+          "basis_shears": [
+            [
+              0,
+              5,
+              -2
+            ],
+            [
+              5,
+              10,
+              -1
+            ],
+            [
+              10,
+              0,
+              1
+            ]
+          ],
+          "action_metric_sha256": "900606aea8d7cd2865c48a072aa582cf92afc6ec87b21b95e850014dc537cb72",
+          "nonproduct_basis_vector_witness": {
+            "basis_column": 0,
+            "period_rows": [
+              0,
+              1
+            ],
+            "local_columns": [
+              0,
+              1
+            ],
+            "minor": [
+              [
+                3,
+                0
+              ],
+              [
+                0,
+                -1
+              ]
+            ],
+            "nonzero_minor_determinant": -3
+          },
+          "metric_sha256": "c8096fa2e1f303f2bca358e50a20dc30671513532613ac3ffd57f06398fb127e",
+          "complete_entry_counts": {
+            "-3": 30,
+            "-2": 193,
+            "-1": 502,
+            "0": 5534,
+            "1": 565,
+            "2": 193,
+            "3": 39
+          },
+          "all_entries_signs": false,
+          "inverse_shears_replayed_exactly": true
+        },
+        {
+          "basis_shears": [
+            [
+              0,
+              5,
+              -2
+            ],
+            [
+              5,
+              10,
+              1
+            ],
+            [
+              10,
+              0,
+              -1
+            ]
+          ],
+          "action_metric_sha256": "0e10b985875a44900ab6ae67e4fdc77a416511e79edfd3d7c8f4fcf5636d54d1",
+          "nonproduct_basis_vector_witness": {
+            "basis_column": 0,
+            "period_rows": [
+              0,
+              1
+            ],
+            "local_columns": [
+              0,
+              1
+            ],
+            "minor": [
+              [
+                3,
+                0
+              ],
+              [
+                0,
+                -1
+              ]
+            ],
+            "nonzero_minor_determinant": -3
+          },
+          "metric_sha256": "b349dc0c8a2848499643c4912c37c16e22dece6e87c6220c1c519f9f6e6a7984",
+          "complete_entry_counts": {
+            "-3": 30,
+            "-2": 190,
+            "-1": 510,
+            "0": 5534,
+            "1": 557,
+            "2": 196,
+            "3": 39
+          },
+          "all_entries_signs": false,
+          "inverse_shears_replayed_exactly": true
+        },
+        {
+          "basis_shears": [
+            [
+              0,
+              5,
+              -2
+            ],
+            [
+              5,
+              10,
+              1
+            ],
+            [
+              10,
+              0,
+              1
+            ]
+          ],
+          "action_metric_sha256": "a92131097d76008e9f510e32d2d17d884bd1441adb592facdb9e1ea2357e8a8c",
+          "nonproduct_basis_vector_witness": {
+            "basis_column": 0,
+            "period_rows": [
+              0,
+              1
+            ],
+            "local_columns": [
+              0,
+              1
+            ],
+            "minor": [
+              [
+                -1,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "nonzero_minor_determinant": -1
+          },
+          "metric_sha256": "a1a2c26d1fb9e4bf1342c90c54e61925415d8242bc783bcbf04e464c1b2cfcf2",
+          "complete_entry_counts": {
+            "-3": 5,
+            "-2": 198,
+            "-1": 527,
+            "0": 5534,
+            "1": 595,
+            "2": 188,
+            "3": 9
+          },
+          "all_entries_signs": false,
+          "inverse_shears_replayed_exactly": true
+        },
+        {
+          "basis_shears": [
+            [
+              0,
+              5,
+              -1
+            ],
+            [
+              5,
+              10,
+              -1
+            ],
+            [
+              10,
+              0,
+              -1
+            ]
+          ],
+          "action_metric_sha256": "2dc71ba2ac0b9ad8d55797c8815fcb065fbc9d377c71439b5fbf5ab3e214f539",
+          "nonproduct_basis_vector_witness": {
+            "basis_column": 0,
+            "period_rows": [
+              1,
+              2
+            ],
+            "local_columns": [
+              1,
+              2
+            ],
+            "minor": [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                -1
+              ]
+            ],
+            "nonzero_minor_determinant": -1
+          },
+          "metric_sha256": "bf46b520b59b2b58a60addddbe3a6c6f62fc129cbfb78309b0a351713ad23083",
+          "complete_entry_counts": {
+            "-2": 5,
+            "-1": 685,
+            "0": 5603,
+            "1": 754,
+            "2": 9
+          },
+          "all_entries_signs": false,
+          "inverse_shears_replayed_exactly": true
+        },
+        {
+          "basis_shears": [
+            [
+              0,
+              5,
+              -1
+            ],
+            [
+              5,
+              10,
+              -1
+            ],
+            [
+              10,
+              0,
+              1
+            ]
+          ],
+          "action_metric_sha256": "a23601bab2cfcba3cf1827546e03c2ad1428622237f38973cc49477d864f1afc",
+          "nonproduct_basis_vector_witness": {
+            "basis_column": 0,
+            "period_rows": [
+              0,
+              1
+            ],
+            "local_columns": [
+              0,
+              1
+            ],
+            "minor": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                -1
+              ]
+            ],
+            "nonzero_minor_determinant": -2
+          },
+          "metric_sha256": "998c4d01dae3843660ded1032902b9cb071be2d16d08127095b83fc12e65f8f0",
+          "complete_entry_counts": {
+            "-2": 30,
+            "-1": 686,
+            "0": 5548,
+            "1": 753,
+            "2": 39
+          },
+          "all_entries_signs": false,
+          "inverse_shears_replayed_exactly": true
+        },
+        {
+          "basis_shears": [
+            [
+              0,
+              5,
+              -1
+            ],
+            [
+              5,
+              10,
+              1
+            ],
+            [
+              10,
+              0,
+              -1
+            ]
+          ],
+          "action_metric_sha256": "99bbfcca9a6be66a845fbd343439955a7227ef1d6b832b1565dc0315b9dfba24",
+          "nonproduct_basis_vector_witness": {
+            "basis_column": 0,
+            "period_rows": [
+              0,
+              1
+            ],
+            "local_columns": [
+              0,
+              1
+            ],
+            "minor": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                -1
+              ]
+            ],
+            "nonzero_minor_determinant": -2
+          },
+          "metric_sha256": "f1d032f621442ad02c00f3f489bc523d4a2b9e3ac44edcb021e7dfd593386934",
+          "complete_entry_counts": {
+            "-2": 30,
+            "-1": 691,
+            "0": 5548,
+            "1": 748,
+            "2": 39
+          },
+          "all_entries_signs": false,
+          "inverse_shears_replayed_exactly": true
+        },
+        {
+          "basis_shears": [
+            [
+              0,
+              5,
+              -1
+            ],
+            [
+              5,
+              10,
+              1
+            ],
+            [
+              10,
+              0,
+              1
+            ]
+          ],
+          "action_metric_sha256": "d65d55641038a3cb003cd34d629da54e89b631b7c464f21b716c08b0f946aea1",
+          "nonproduct_basis_vector_witness": {
+            "basis_column": 0,
+            "period_rows": [
+              1,
+              2
+            ],
+            "local_columns": [
+              1,
+              2
+            ],
+            "minor": [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "nonzero_minor_determinant": 1
+          },
+          "metric_sha256": "344c4329bece7a4dcd3ae49e3441f215e1e640ff8c58d3279525e26f786072c8",
+          "complete_entry_counts": {
+            "-2": 5,
+            "-1": 686,
+            "0": 5603,
+            "1": 753,
+            "2": 9
+          },
+          "all_entries_signs": false,
+          "inverse_shears_replayed_exactly": true
+        },
+        {
+          "basis_shears": [
+            [
+              0,
+              5,
+              1
+            ],
+            [
+              5,
+              10,
+              -1
+            ],
+            [
+              10,
+              0,
+              -1
+            ]
+          ],
+          "action_metric_sha256": "e8a3d95807347ca3e38484bed7757cd63561eacbc1adbbe7a1247861d35e33f1",
+          "nonproduct_basis_vector_witness": {
+            "basis_column": 0,
+            "period_rows": [
+              0,
+              1
+            ],
+            "local_columns": [
+              0,
+              1
+            ],
+            "minor": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "nonzero_minor_determinant": 2
+          },
+          "metric_sha256": "e7235c6bc8fa66def3e759ce6d596a576235bcd8fa0dfa66469d1f86c77d4215",
+          "complete_entry_counts": {
+            "-2": 30,
+            "-1": 701,
+            "0": 5548,
+            "1": 738,
+            "2": 39
+          },
+          "all_entries_signs": false,
+          "inverse_shears_replayed_exactly": true
+        },
+        {
+          "basis_shears": [
+            [
+              0,
+              5,
+              1
+            ],
+            [
+              5,
+              10,
+              -1
+            ],
+            [
+              10,
+              0,
+              1
+            ]
+          ],
+          "action_metric_sha256": "76945d7f4c11ed7785211644867694fcf58d65a4af2e3639ed3a50081b8310dd",
+          "nonproduct_basis_vector_witness": {
+            "basis_column": 0,
+            "period_rows": [
+              1,
+              2
+            ],
+            "local_columns": [
+              1,
+              2
+            ],
+            "minor": [
+              [
+                -1,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "nonzero_minor_determinant": -1
+          },
+          "metric_sha256": "8d9107d07290d0be7c92b4638e614c9bf8a22ec1187c18a68285d6a576c68301",
+          "complete_entry_counts": {
+            "-2": 5,
+            "-1": 686,
+            "0": 5603,
+            "1": 753,
+            "2": 9
+          },
+          "all_entries_signs": false,
+          "inverse_shears_replayed_exactly": true
+        },
+        {
+          "basis_shears": [
+            [
+              0,
+              5,
+              1
+            ],
+            [
+              5,
+              10,
+              1
+            ],
+            [
+              10,
+              0,
+              -1
+            ]
+          ],
+          "action_metric_sha256": "6f500278ea9422b9f034ef4d12928da9d83b4e9c796918b5c3fdc3f834f0f789",
+          "nonproduct_basis_vector_witness": {
+            "basis_column": 0,
+            "period_rows": [
+              1,
+              2
+            ],
+            "local_columns": [
+              1,
+              2
+            ],
+            "minor": [
+              [
+                -1,
+                0
+              ],
+              [
+                0,
+                -1
+              ]
+            ],
+            "nonzero_minor_determinant": 1
+          },
+          "metric_sha256": "e4d84662a5cc2807765492cbd8313b71d5d92d1c71bd8d50eb98de27065268b5",
+          "complete_entry_counts": {
+            "-2": 5,
+            "-1": 697,
+            "0": 5603,
+            "1": 742,
+            "2": 9
+          },
+          "all_entries_signs": false,
+          "inverse_shears_replayed_exactly": true
+        },
+        {
+          "basis_shears": [
+            [
+              0,
+              5,
+              1
+            ],
+            [
+              5,
+              10,
+              1
+            ],
+            [
+              10,
+              0,
+              1
+            ]
+          ],
+          "action_metric_sha256": "cbff173aa50f9f06e1fceaa76e2bc1323fef9d79a6d7e1b2b9cba510bcff1a6f",
+          "nonproduct_basis_vector_witness": {
+            "basis_column": 0,
+            "period_rows": [
+              0,
+              1
+            ],
+            "local_columns": [
+              0,
+              1
+            ],
+            "minor": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "nonzero_minor_determinant": 2
+          },
+          "metric_sha256": "0044122375bc51c47050edf860c4011277ea27c5424ed8d544f73aa696cd4fcf",
+          "complete_entry_counts": {
+            "-2": 30,
+            "-1": 676,
+            "0": 5548,
+            "1": 763,
+            "2": 39
+          },
+          "all_entries_signs": false,
+          "inverse_shears_replayed_exactly": true
+        },
+        {
+          "basis_shears": [
+            [
+              0,
+              5,
+              2
+            ],
+            [
+              5,
+              10,
+              -1
+            ],
+            [
+              10,
+              0,
+              -1
+            ]
+          ],
+          "action_metric_sha256": "f643a1f2e4f8251d10ce91d7ad9c2d6ce152327888cde8250bc445089fc0b769",
+          "nonproduct_basis_vector_witness": {
+            "basis_column": 0,
+            "period_rows": [
+              0,
+              1
+            ],
+            "local_columns": [
+              0,
+              1
+            ],
+            "minor": [
+              [
+                3,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "nonzero_minor_determinant": 3
+          },
+          "metric_sha256": "db80368e677e35b1740d8d6326d16d1559f47dff1507bea7ed97d63074b930fa",
+          "complete_entry_counts": {
+            "-3": 30,
+            "-2": 201,
+            "-1": 509,
+            "0": 5534,
+            "1": 558,
+            "2": 185,
+            "3": 39
+          },
+          "all_entries_signs": false,
+          "inverse_shears_replayed_exactly": true
+        },
+        {
+          "basis_shears": [
+            [
+              0,
+              5,
+              2
+            ],
+            [
+              5,
+              10,
+              -1
+            ],
+            [
+              10,
+              0,
+              1
+            ]
+          ],
+          "action_metric_sha256": "0ff419f41c2065a8fe4f0ba2ed7d32c9d85c000f6804f34873f2d3ff3f60777f",
+          "nonproduct_basis_vector_witness": {
+            "basis_column": 0,
+            "period_rows": [
+              0,
+              1
+            ],
+            "local_columns": [
+              0,
+              1
+            ],
+            "minor": [
+              [
+                -1,
+                0
+              ],
+              [
+                0,
+                -1
+              ]
+            ],
+            "nonzero_minor_determinant": 1
+          },
+          "metric_sha256": "dd83826212cd80b79923f4c53f24fad307d3e49dd4a69ba95e4794b6685d1685",
+          "complete_entry_counts": {
+            "-3": 5,
+            "-2": 193,
+            "-1": 532,
+            "0": 5534,
+            "1": 590,
+            "2": 193,
+            "3": 9
+          },
+          "all_entries_signs": false,
+          "inverse_shears_replayed_exactly": true
+        },
+        {
+          "basis_shears": [
+            [
+              0,
+              5,
+              2
+            ],
+            [
+              5,
+              10,
+              1
+            ],
+            [
+              10,
+              0,
+              -1
+            ]
+          ],
+          "action_metric_sha256": "58dc5779dd61c8aa1d6203d944dce393023e0e0320547ed8efc4c530f7545025",
+          "nonproduct_basis_vector_witness": {
+            "basis_column": 0,
+            "period_rows": [
+              0,
+              1
+            ],
+            "local_columns": [
+              0,
+              1
+            ],
+            "minor": [
+              [
+                -1,
+                0
+              ],
+              [
+                0,
+                -1
+              ]
+            ],
+            "nonzero_minor_determinant": 1
+          },
+          "metric_sha256": "15ec13b82381ffbf099dd8cf4d56ce400b4bde07283abcd37966ddf7a623deb5",
+          "complete_entry_counts": {
+            "-3": 5,
+            "-2": 196,
+            "-1": 540,
+            "0": 5534,
+            "1": 582,
+            "2": 190,
+            "3": 9
+          },
+          "all_entries_signs": false,
+          "inverse_shears_replayed_exactly": true
+        },
+        {
+          "basis_shears": [
+            [
+              0,
+              5,
+              2
+            ],
+            [
+              5,
+              10,
+              1
+            ],
+            [
+              10,
+              0,
+              1
+            ]
+          ],
+          "action_metric_sha256": "a6926425b2cca57bcf03a6154cb73f123aadaf0250d3e4adab3af0a936ab7d21",
+          "nonproduct_basis_vector_witness": {
+            "basis_column": 0,
+            "period_rows": [
+              0,
+              1
+            ],
+            "local_columns": [
+              0,
+              1
+            ],
+            "minor": [
+              [
+                3,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "nonzero_minor_determinant": 3
+          },
+          "metric_sha256": "36e5bea0e47e83c15314983606f774918bb6d23f44b5a6dc33ac85339afe4f60",
+          "complete_entry_counts": {
+            "-3": 30,
+            "-2": 188,
+            "-1": 497,
+            "0": 5534,
+            "1": 570,
+            "2": 198,
+            "3": 39
+          },
+          "all_entries_signs": false,
+          "inverse_shears_replayed_exactly": true
+        }
+      ],
+      "determinant_absolute_value": "7^42",
+      "determinant_is_odd": true,
+      "all_same_basis_restrictions_excluded_from_sign_endpoints": true,
+      "all_same_basis_restrictions_excluded_from_Hadamard_Gram": true,
+      "unequal_domain_codomain_bases_excluded": false
+    },
+    {
+      "source_id": "unreal13-q6",
+      "source_hash": "b92f18ce3195f80497beb80db1c1ce804b558ec6485dfe6ec762a0ddd393b59f",
+      "source_Gram_replayed": true,
+      "period_degree": 179,
+      "period_conductor": 268501,
+      "period_norm_witness": [
+        721,
+        186,
+        5
+      ],
+      "faithful_period_multiplication_sha256": "7f4498c6dfb2ce022075e257964ce2465e7319cd8bfdb1bd1cfd23cab1e72fd7",
+      "auxiliary_generator_in_mixed_basis": "S^-1 (M_eta0 tensor I_4) S",
+      "matrix_order": 9308,
+      "basis_width": 716,
+      "node_visits": 45,
+      "distinct_action_metric_nodes": 35,
+      "literal_duplicates_pruned": 10,
+      "nodes": [
+        {
+          "basis_shears": [],
+          "action_metric_sha256": "d26d95b2d438a735cd9dbcfb24d369d9ddd6bf345d513515613b446e5077ed53",
+          "nonproduct_basis_vector_witness": null,
+          "metric_sha256": "440c2ccc17f3a9af4046dfa446a1cc6b2cd295068d467b1a5581ab48f56bb960",
+          "complete_entry_counts": {
+            "-1": 68736,
+            "0": 86487788,
+            "1": 82340
+          },
+          "all_entries_signs": false,
+          "inverse_shears_replayed_exactly": true
+        },
+        {
+          "basis_shears": [
+            [
+              0,
+              5,
+              -2
+            ]
+          ],
+          "action_metric_sha256": "d2418d675f273a81f85a79217ab9c1c28535797a7ed3b933e3791250f7fa6356",
+          "nonproduct_basis_vector_witness": {
+            "basis_column": 5,
+            "period_rows": [
+              0,
+              1
+            ],
+            "local_columns": [
+              0,
+              1
+            ],
+            "minor": [
+              [
+                -2,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "nonzero_minor_determinant": -2
+          },
+          "metric_sha256": "1b0f0b136db305c6ad7d8dc0ff445a9b6c5d5f2a152145d59d11869d991a3d49",
+          "complete_entry_counts": {
+            "-2": 120,
+            "-1": 68736,
+            "0": 86487536,
+            "1": 82340,
+            "2": 132
+          },
+          "all_entries_signs": false,
+          "inverse_shears_replayed_exactly": true
+        },
+        {
+          "basis_shears": [
+            [
+              0,
+              5,
+              -1
+            ]
+          ],
+          "action_metric_sha256": "42f17aa4dc6bc648f3d2fbc77ad0a78bf30e3db211bbacc3ce7156172f9366ca",
+          "nonproduct_basis_vector_witness": {
+            "basis_column": 5,
+            "period_rows": [
+              0,
+              1
+            ],
+            "local_columns": [
+              0,
+              1
+            ],
+            "minor": [
+              [
+                -1,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "nonzero_minor_determinant": -1
+          },
+          "metric_sha256": "b720e01fd8f75f3ba668f7475ee39d9b2666cd0e6ee0a1d5157bad71d71a9df8",
+          "complete_entry_counts": {
+            "-1": 68856,
+            "0": 86487536,
+            "1": 82472
+          },
+          "all_entries_signs": false,
+          "inverse_shears_replayed_exactly": true
+        },
+        {
+          "basis_shears": [
+            [
+              0,
+              5,
+              1
+            ]
+          ],
+          "action_metric_sha256": "9612e84fcd1c5b9ab8287204a9667170769c43b19cc5511f847a695b7f9e6d91",
+          "nonproduct_basis_vector_witness": {
+            "basis_column": 5,
+            "period_rows": [
+              0,
+              1
+            ],
+            "local_columns": [
+              0,
+              1
+            ],
+            "minor": [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "nonzero_minor_determinant": 1
+          },
+          "metric_sha256": "565714b8b6a4bfd2b70c1f42f22029e9f99006d604f452bd71a4ec36130e7005",
+          "complete_entry_counts": {
+            "-1": 68868,
+            "0": 86487536,
+            "1": 82460
+          },
+          "all_entries_signs": false,
+          "inverse_shears_replayed_exactly": true
+        },
+        {
+          "basis_shears": [
+            [
+              0,
+              5,
+              2
+            ]
+          ],
+          "action_metric_sha256": "0fc578de954a838a1d98df932325c1aaa2c5d43e3ffd70e459333560d3bc8523",
+          "nonproduct_basis_vector_witness": {
+            "basis_column": 5,
+            "period_rows": [
+              0,
+              1
+            ],
+            "local_columns": [
+              0,
+              1
+            ],
+            "minor": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "nonzero_minor_determinant": 2
+          },
+          "metric_sha256": "5a57cded2681a369046a44ad495747f3781ca981aa23fab15ff24fc4e483066c",
+          "complete_entry_counts": {
+            "-2": 132,
+            "-1": 68736,
+            "0": 86487536,
+            "1": 82340,
+            "2": 120
+          },
+          "all_entries_signs": false,
+          "inverse_shears_replayed_exactly": true
+        },
+        {
+          "basis_shears": [
+            [
+              1,
+              10,
+              -2
+            ]
+          ],
+          "action_metric_sha256": "c50392b804847adb259a773a0e1c1021a978ba8243cb62a1bc9bb66b13051b45",
+          "nonproduct_basis_vector_witness": {
+            "basis_column": 10,
+            "period_rows": [
+              0,
+              2
+            ],
+            "local_columns": [
+              1,
+              2
+            ],
+            "minor": [
+              [
+                -2,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "nonzero_minor_determinant": -2
+          },
+          "metric_sha256": "b48e203d84657593ab7a087195d7aac1058abe5f653bd5e67d0af26d02ec0b91",
+          "complete_entry_counts": {
+            "-2": 132,
+            "-1": 68736,
+            "0": 86487536,
+            "1": 82340,
+            "2": 120
+          },
+          "all_entries_signs": false,
+          "inverse_shears_replayed_exactly": true
+        },
+        {
+          "basis_shears": [
+            [
+              1,
+              10,
+              -1
+            ]
+          ],
+          "action_metric_sha256": "bbf25feb9e4697a0d44e9ae1a17b546f80a75d850ac460fbacc92540b55abb53",
+          "nonproduct_basis_vector_witness": {
+            "basis_column": 10,
+            "period_rows": [
+              0,
+              2
+            ],
+            "local_columns": [
+              1,
+              2
+            ],
+            "minor": [
+              [
+                -1,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "nonzero_minor_determinant": -1
+          },
+          "metric_sha256": "d1989be4b881fb4e93e53256866e17a125eee9ba3055e2ffd07508cd204aacf3",
+          "complete_entry_counts": {
+            "-1": 68868,
+            "0": 86487536,
+            "1": 82460
+          },
+          "all_entries_signs": false,
+          "inverse_shears_replayed_exactly": true
+        },
+        {
+          "basis_shears": [
+            [
+              1,
+              10,
+              1
+            ]
+          ],
+          "action_metric_sha256": "b4158653add5a9a9722fef257509a4ed9d509e1d8e35e5bc3359e65223efe302",
+          "nonproduct_basis_vector_witness": {
+            "basis_column": 10,
+            "period_rows": [
+              0,
+              2
+            ],
+            "local_columns": [
+              1,
+              2
+            ],
+            "minor": [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "nonzero_minor_determinant": 1
+          },
+          "metric_sha256": "e523e1ec1221d0129c6314291f9761231b04cca6ce8631fd4c6256dc1d0747e6",
+          "complete_entry_counts": {
+            "-1": 68856,
+            "0": 86487536,
+            "1": 82472
+          },
+          "all_entries_signs": false,
+          "inverse_shears_replayed_exactly": true
+        },
+        {
+          "basis_shears": [
+            [
+              1,
+              10,
+              2
+            ]
+          ],
+          "action_metric_sha256": "71098a7d57d5f77f5aad37ad970dc65892a74f2a2d36490d29e25430b90a48ce",
+          "nonproduct_basis_vector_witness": {
+            "basis_column": 10,
+            "period_rows": [
+              0,
+              2
+            ],
+            "local_columns": [
+              1,
+              2
+            ],
+            "minor": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "nonzero_minor_determinant": 2
+          },
+          "metric_sha256": "7579461736ef48557ac4eb403c354ffe474452f9fa16165c23c4d93a1ca5b73b",
+          "complete_entry_counts": {
+            "-2": 120,
+            "-1": 68736,
+            "0": 86487536,
+            "1": 82340,
+            "2": 132
+          },
+          "all_entries_signs": false,
+          "inverse_shears_replayed_exactly": true
+        },
+        {
+          "basis_shears": [
+            [
+              4,
+              11,
+              -1
+            ]
+          ],
+          "action_metric_sha256": "d6854629b4ddd42225734e3309c3f2c3836e4ecb88483dfe85eb0a15d5543ceb",
+          "nonproduct_basis_vector_witness": {
+            "basis_column": 11,
+            "period_rows": [
+              1,
+              2
+            ],
+            "local_columns": [
+              0,
+              3
+            ],
+            "minor": [
+              [
+                -1,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "nonzero_minor_determinant": -1
+          },
+          "metric_sha256": "6193fa0d68fd0766797db6a6f44fb78f01d718ae612301d46cff8b21ec1e3889",
+          "complete_entry_counts": {
+            "-1": 68856,
+            "0": 86487536,
+            "1": 82472
+          },
+          "all_entries_signs": false,
+          "inverse_shears_replayed_exactly": true
+        },
+        {
+          "basis_shears": [
+            [
+              4,
+              11,
+              1
+            ]
+          ],
+          "action_metric_sha256": "b39c3184527cc8a4d3bc8d8319bd83901b1cbfc4aab2eb5d15d0ce5c5f4f7fe1",
+          "nonproduct_basis_vector_witness": {
+            "basis_column": 11,
+            "period_rows": [
+              1,
+              2
+            ],
+            "local_columns": [
+              0,
+              3
+            ],
+            "minor": [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "nonzero_minor_determinant": 1
+          },
+          "metric_sha256": "63d5ce03f0699f7ed7285f45c4ebcf37e4941111a1a775adfb648ac67275c8a9",
+          "complete_entry_counts": {
+            "-1": 68868,
+            "0": 86487536,
+            "1": 82460
+          },
+          "all_entries_signs": false,
+          "inverse_shears_replayed_exactly": true
+        },
+        {
+          "basis_shears": [
+            [
+              0,
+              5,
+              -2
+            ],
+            [
+              5,
+              10,
+              -1
+            ]
+          ],
+          "action_metric_sha256": "c03d76ab72227c2ac3772048ccc2910afb46e24e2f77b9a0577c5d64cc28d208",
+          "nonproduct_basis_vector_witness": {
+            "basis_column": 5,
+            "period_rows": [
+              0,
+              1
+            ],
+            "local_columns": [
+              0,
+              1
+            ],
+            "minor": [
+              [
+                -2,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "nonzero_minor_determinant": -2
+          },
+          "metric_sha256": "f954d0004762637eab0bde5c50a832359f4cf7d1e33e19086a89ffea5e24ad15",
+          "complete_entry_counts": {
+            "-2": 204,
+            "-1": 68868,
+            "0": 86487116,
+            "1": 82460,
+            "2": 216
+          },
+          "all_entries_signs": false,
+          "inverse_shears_replayed_exactly": true
+        },
+        {
+          "basis_shears": [
+            [
+              0,
+              5,
+              -2
+            ],
+            [
+              5,
+              10,
+              1
+            ]
+          ],
+          "action_metric_sha256": "d3aa0127365c81069e97b5518ca6ef31a21a3427cd665732c1a17b5680bfc268",
+          "nonproduct_basis_vector_witness": {
+            "basis_column": 5,
+            "period_rows": [
+              0,
+              1
+            ],
+            "local_columns": [
+              0,
+              1
+            ],
+            "minor": [
+              [
+                -2,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "nonzero_minor_determinant": -2
+          },
+          "metric_sha256": "cf7b554bb1c3d30d898ff8d05f82b75d3b4143bef43239c671b5f9e755458d9d",
+          "complete_entry_counts": {
+            "-2": 204,
+            "-1": 68856,
+            "0": 86487116,
+            "1": 82472,
+            "2": 216
+          },
+          "all_entries_signs": false,
+          "inverse_shears_replayed_exactly": true
+        },
+        {
+          "basis_shears": [
+            [
+              0,
+              5,
+              -1
+            ],
+            [
+              5,
+              10,
+              -1
+            ]
+          ],
+          "action_metric_sha256": "e73366205eb28bc1e684e51c8290026afa95826d0fdc713528bcbfb004b038cb",
+          "nonproduct_basis_vector_witness": {
+            "basis_column": 5,
+            "period_rows": [
+              0,
+              1
+            ],
+            "local_columns": [
+              0,
+              1
+            ],
+            "minor": [
+              [
+                -1,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "nonzero_minor_determinant": -1
+          },
+          "metric_sha256": "ce149c19a803f68abb6162888de39f1cc6a5d89585df71fdab2d730518a5928d",
+          "complete_entry_counts": {
+            "-1": 69072,
+            "0": 86487116,
+            "1": 82676
+          },
+          "all_entries_signs": false,
+          "inverse_shears_replayed_exactly": true
+        },
+        {
+          "basis_shears": [
+            [
+              0,
+              5,
+              -1
+            ],
+            [
+              5,
+              10,
+              1
+            ]
+          ],
+          "action_metric_sha256": "61d75e57da004025621dfb7e72dd7c32b72f21db9f49af776348008f7982bc1e",
+          "nonproduct_basis_vector_witness": {
+            "basis_column": 5,
+            "period_rows": [
+              0,
+              1
+            ],
+            "local_columns": [
+              0,
+              1
+            ],
+            "minor": [
+              [
+                -1,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "nonzero_minor_determinant": -1
+          },
+          "metric_sha256": "a5db438e20a7ac5771f5cf8bf8e1fbbfe01aa5e32541220d158a58073dda8777",
+          "complete_entry_counts": {
+            "-1": 69060,
+            "0": 86487116,
+            "1": 82688
+          },
+          "all_entries_signs": false,
+          "inverse_shears_replayed_exactly": true
+        },
+        {
+          "basis_shears": [
+            [
+              0,
+              5,
+              1
+            ],
+            [
+              5,
+              10,
+              -1
+            ]
+          ],
+          "action_metric_sha256": "d795464eeb403f312215c8877018f8d37371c081b2c1c5c721e135e4ba5c2ec5",
+          "nonproduct_basis_vector_witness": {
+            "basis_column": 5,
+            "period_rows": [
+              0,
+              1
+            ],
+            "local_columns": [
+              0,
+              1
+            ],
+            "minor": [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "nonzero_minor_determinant": 1
+          },
+          "metric_sha256": "1a8025332411566a913bba677a5342bbfead95580604333ed590206aea515373",
+          "complete_entry_counts": {
+            "-1": 69084,
+            "0": 86487116,
+            "1": 82664
+          },
+          "all_entries_signs": false,
+          "inverse_shears_replayed_exactly": true
+        },
+        {
+          "basis_shears": [
+            [
+              0,
+              5,
+              1
+            ],
+            [
+              5,
+              10,
+              1
+            ]
+          ],
+          "action_metric_sha256": "cd77e4d2d0609a36370ebb0f434cc3a2bb30b2f172106c8574c07acbb82ad4fd",
+          "nonproduct_basis_vector_witness": {
+            "basis_column": 5,
+            "period_rows": [
+              0,
+              1
+            ],
+            "local_columns": [
+              0,
+              1
+            ],
+            "minor": [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "nonzero_minor_determinant": 1
+          },
+          "metric_sha256": "dd0e498f760c5766f68ec8d57b948713b219b7b781bc11849ccc569b14a39f8a",
+          "complete_entry_counts": {
+            "-1": 69072,
+            "0": 86487116,
+            "1": 82676
+          },
+          "all_entries_signs": false,
+          "inverse_shears_replayed_exactly": true
+        },
+        {
+          "basis_shears": [
+            [
+              0,
+              5,
+              2
+            ],
+            [
+              5,
+              10,
+              -1
+            ]
+          ],
+          "action_metric_sha256": "eb8919ede476bef1bb9cc3b1917d4bdf8cc10b171f6a3dc10d730aa039775aab",
+          "nonproduct_basis_vector_witness": {
+            "basis_column": 5,
+            "period_rows": [
+              0,
+              1
+            ],
+            "local_columns": [
+              0,
+              1
+            ],
+            "minor": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "nonzero_minor_determinant": 2
+          },
+          "metric_sha256": "0c3dab0379370ff3e3d7782206fbad040a59f7b5f2bb57b525e511ae40eb5a21",
+          "complete_entry_counts": {
+            "-2": 216,
+            "-1": 68868,
+            "0": 86487116,
+            "1": 82460,
+            "2": 204
+          },
+          "all_entries_signs": false,
+          "inverse_shears_replayed_exactly": true
+        },
+        {
+          "basis_shears": [
+            [
+              0,
+              5,
+              2
+            ],
+            [
+              5,
+              10,
+              1
+            ]
+          ],
+          "action_metric_sha256": "3c68d17d132eb4185bdc71f4c998da58f14f6ff60de99af3f7920267b1eece11",
+          "nonproduct_basis_vector_witness": {
+            "basis_column": 5,
+            "period_rows": [
+              0,
+              1
+            ],
+            "local_columns": [
+              0,
+              1
+            ],
+            "minor": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "nonzero_minor_determinant": 2
+          },
+          "metric_sha256": "61154da6fdc70ce454f070e49c99a0026464bb95a6c1f19851c64475b8bae119",
+          "complete_entry_counts": {
+            "-2": 216,
+            "-1": 68856,
+            "0": 86487116,
+            "1": 82472,
+            "2": 204
+          },
+          "all_entries_signs": false,
+          "inverse_shears_replayed_exactly": true
+        },
+        {
+          "basis_shears": [
+            [
+              0,
+              5,
+              -2
+            ],
+            [
+              0,
+              5,
+              2
+            ]
+          ],
+          "literal_duplicate_of": 0,
+          "action_metric_sha256": "d26d95b2d438a735cd9dbcfb24d369d9ddd6bf345d513515613b446e5077ed53"
+        },
+        {
+          "basis_shears": [
+            [
+              0,
+              5,
+              -1
+            ],
+            [
+              0,
+              5,
+              1
+            ]
+          ],
+          "literal_duplicate_of": 0,
+          "action_metric_sha256": "d26d95b2d438a735cd9dbcfb24d369d9ddd6bf345d513515613b446e5077ed53"
+        },
+        {
+          "basis_shears": [
+            [
+              0,
+              5,
+              1
+            ],
+            [
+              0,
+              5,
+              -1
+            ]
+          ],
+          "literal_duplicate_of": 0,
+          "action_metric_sha256": "d26d95b2d438a735cd9dbcfb24d369d9ddd6bf345d513515613b446e5077ed53"
+        },
+        {
+          "basis_shears": [
+            [
+              0,
+              5,
+              2
+            ],
+            [
+              0,
+              5,
+              -2
+            ]
+          ],
+          "literal_duplicate_of": 0,
+          "action_metric_sha256": "d26d95b2d438a735cd9dbcfb24d369d9ddd6bf345d513515613b446e5077ed53"
+        },
+        {
+          "basis_shears": [
+            [
+              1,
+              10,
+              -2
+            ],
+            [
+              1,
+              10,
+              2
+            ]
+          ],
+          "literal_duplicate_of": 0,
+          "action_metric_sha256": "d26d95b2d438a735cd9dbcfb24d369d9ddd6bf345d513515613b446e5077ed53"
+        },
+        {
+          "basis_shears": [
+            [
+              1,
+              10,
+              -1
+            ],
+            [
+              1,
+              10,
+              1
+            ]
+          ],
+          "literal_duplicate_of": 0,
+          "action_metric_sha256": "d26d95b2d438a735cd9dbcfb24d369d9ddd6bf345d513515613b446e5077ed53"
+        },
+        {
+          "basis_shears": [
+            [
+              1,
+              10,
+              1
+            ],
+            [
+              1,
+              10,
+              -1
+            ]
+          ],
+          "literal_duplicate_of": 0,
+          "action_metric_sha256": "d26d95b2d438a735cd9dbcfb24d369d9ddd6bf345d513515613b446e5077ed53"
+        },
+        {
+          "basis_shears": [
+            [
+              1,
+              10,
+              2
+            ],
+            [
+              1,
+              10,
+              -2
+            ]
+          ],
+          "literal_duplicate_of": 0,
+          "action_metric_sha256": "d26d95b2d438a735cd9dbcfb24d369d9ddd6bf345d513515613b446e5077ed53"
+        },
+        {
+          "basis_shears": [
+            [
+              4,
+              11,
+              -1
+            ],
+            [
+              4,
+              11,
+              1
+            ]
+          ],
+          "literal_duplicate_of": 0,
+          "action_metric_sha256": "d26d95b2d438a735cd9dbcfb24d369d9ddd6bf345d513515613b446e5077ed53"
+        },
+        {
+          "basis_shears": [
+            [
+              4,
+              11,
+              1
+            ],
+            [
+              4,
+              11,
+              -1
+            ]
+          ],
+          "literal_duplicate_of": 0,
+          "action_metric_sha256": "d26d95b2d438a735cd9dbcfb24d369d9ddd6bf345d513515613b446e5077ed53"
+        },
+        {
+          "basis_shears": [
+            [
+              0,
+              5,
+              -2
+            ],
+            [
+              5,
+              10,
+              -1
+            ],
+            [
+              10,
+              0,
+              -1
+            ]
+          ],
+          "action_metric_sha256": "b59263ae064e8f056d54ebfea5f16f6eea0de5feb12c9c2ad42135dbe71949c3",
+          "nonproduct_basis_vector_witness": {
+            "basis_column": 0,
+            "period_rows": [
+              0,
+              1
+            ],
+            "local_columns": [
+              0,
+              1
+            ],
+            "minor": [
+              [
+                -1,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "nonzero_minor_determinant": -1
+          },
+          "metric_sha256": "a662e5ead37aaf141d24da1115a633e2aaf8167745b8dba16a2e1801c0edca03",
+          "complete_entry_counts": {
+            "-2": 396,
+            "-1": 69060,
+            "0": 86486360,
+            "1": 82604,
+            "2": 444
+          },
+          "all_entries_signs": false,
+          "inverse_shears_replayed_exactly": true
+        },
+        {
+          "basis_shears": [
+            [
+              0,
+              5,
+              -2
+            ],
+            [
+              5,
+              10,
+              -1
+            ],
+            [
+              10,
+              0,
+              1
+            ]
+          ],
+          "action_metric_sha256": "f0a8c841399e15ef82aa09b10645db601e630ff2133a700c4e00f2c66f231414",
+          "nonproduct_basis_vector_witness": {
+            "basis_column": 0,
+            "period_rows": [
+              0,
+              1
+            ],
+            "local_columns": [
+              0,
+              1
+            ],
+            "minor": [
+              [
+                3,
+                0
+              ],
+              [
+                0,
+                -1
+              ]
+            ],
+            "nonzero_minor_determinant": -3
+          },
+          "metric_sha256": "90f38607d48a4f25111bcc5317d17ed7b17ee1f546815559f7fd71af77f853f0",
+          "complete_entry_counts": {
+            "-3": 36,
+            "-2": 420,
+            "-1": 68988,
+            "0": 86486360,
+            "1": 82592,
+            "2": 420,
+            "3": 48
+          },
+          "all_entries_signs": false,
+          "inverse_shears_replayed_exactly": true
+        },
+        {
+          "basis_shears": [
+            [
+              0,
+              5,
+              -2
+            ],
+            [
+              5,
+              10,
+              1
+            ],
+            [
+              10,
+              0,
+              -1
+            ]
+          ],
+          "action_metric_sha256": "efe77462a4fd378235fe76ea444faf2b648778e1052317a895127b6dd05c4316",
+          "nonproduct_basis_vector_witness": {
+            "basis_column": 0,
+            "period_rows": [
+              0,
+              1
+            ],
+            "local_columns": [
+              0,
+              1
+            ],
+            "minor": [
+              [
+                3,
+                0
+              ],
+              [
+                0,
+                -1
+              ]
+            ],
+            "nonzero_minor_determinant": -3
+          },
+          "metric_sha256": "841eb544a6b27de55739008a333bd6b53c071f0f156e02ec958dfea30c87b32e",
+          "complete_entry_counts": {
+            "-3": 36,
+            "-2": 408,
+            "-1": 69000,
+            "0": 86486360,
+            "1": 82580,
+            "2": 432,
+            "3": 48
+          },
+          "all_entries_signs": false,
+          "inverse_shears_replayed_exactly": true
+        },
+        {
+          "basis_shears": [
+            [
+              0,
+              5,
+              -2
+            ],
+            [
+              5,
+              10,
+              1
+            ],
+            [
+              10,
+              0,
+              1
+            ]
+          ],
+          "action_metric_sha256": "92397d5fdb858bba5b05c092f8e80b5b4c95c9639e9cca51deaa8d5d6848c2a8",
+          "nonproduct_basis_vector_witness": {
+            "basis_column": 0,
+            "period_rows": [
+              0,
+              1
+            ],
+            "local_columns": [
+              0,
+              1
+            ],
+            "minor": [
+              [
+                -1,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "nonzero_minor_determinant": -1
+          },
+          "metric_sha256": "18f9adb7701ccb45b850cd81411d61f1bedad7179245b360f3fe4da5cc7fa093",
+          "complete_entry_counts": {
+            "-2": 432,
+            "-1": 69024,
+            "0": 86486360,
+            "1": 82640,
+            "2": 408
+          },
+          "all_entries_signs": false,
+          "inverse_shears_replayed_exactly": true
+        },
+        {
+          "basis_shears": [
+            [
+              0,
+              5,
+              -1
+            ],
+            [
+              5,
+              10,
+              -1
+            ],
+            [
+              10,
+              0,
+              -1
+            ]
+          ],
+          "action_metric_sha256": "7591ae6c2c588555b3ee7e3f1ab34f3a12119fe5296b3168febbd30521b346e5",
+          "nonproduct_basis_vector_witness": {
+            "basis_column": 0,
+            "period_rows": [
+              1,
+              2
+            ],
+            "local_columns": [
+              1,
+              2
+            ],
+            "minor": [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                -1
+              ]
+            ],
+            "nonzero_minor_determinant": -1
+          },
+          "metric_sha256": "757d0626bd877fa0a7f6d7685d710dbe249508a3bf5a738c58e4ee6f457bc2d1",
+          "complete_entry_counts": {
+            "-1": 69408,
+            "0": 86486444,
+            "1": 83012
+          },
+          "all_entries_signs": false,
+          "inverse_shears_replayed_exactly": true
+        },
+        {
+          "basis_shears": [
+            [
+              0,
+              5,
+              -1
+            ],
+            [
+              5,
+              10,
+              -1
+            ],
+            [
+              10,
+              0,
+              1
+            ]
+          ],
+          "action_metric_sha256": "7e2997c643f7661028a36db264ff734975da60c986636a425a1c80964bac48fd",
+          "nonproduct_basis_vector_witness": {
+            "basis_column": 0,
+            "period_rows": [
+              0,
+              1
+            ],
+            "local_columns": [
+              0,
+              1
+            ],
+            "minor": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                -1
+              ]
+            ],
+            "nonzero_minor_determinant": -2
+          },
+          "metric_sha256": "ab5469bb58f707c8946ef54d41f50adb91f50f7c4358e2f442ff395ad5edda86",
+          "complete_entry_counts": {
+            "-2": 36,
+            "-1": 69408,
+            "0": 86486360,
+            "1": 83012,
+            "2": 48
+          },
+          "all_entries_signs": false,
+          "inverse_shears_replayed_exactly": true
+        },
+        {
+          "basis_shears": [
+            [
+              0,
+              5,
+              -1
+            ],
+            [
+              5,
+              10,
+              1
+            ],
+            [
+              10,
+              0,
+              -1
+            ]
+          ],
+          "action_metric_sha256": "0f1e58c6dffd8ba558df9a275001c74159a4af35593a142f282ea1f8b6b769bd",
+          "nonproduct_basis_vector_witness": {
+            "basis_column": 0,
+            "period_rows": [
+              0,
+              1
+            ],
+            "local_columns": [
+              0,
+              1
+            ],
+            "minor": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                -1
+              ]
+            ],
+            "nonzero_minor_determinant": -2
+          },
+          "metric_sha256": "9534592bd55ee903e5e981fede80fae084048b08bc1f3c07271299b1bf81262a",
+          "complete_entry_counts": {
+            "-2": 36,
+            "-1": 69408,
+            "0": 86486360,
+            "1": 83012,
+            "2": 48
+          },
+          "all_entries_signs": false,
+          "inverse_shears_replayed_exactly": true
+        },
+        {
+          "basis_shears": [
+            [
+              0,
+              5,
+              -1
+            ],
+            [
+              5,
+              10,
+              1
+            ],
+            [
+              10,
+              0,
+              1
+            ]
+          ],
+          "action_metric_sha256": "5b1ff8e6d5c78239c9e6ddb82bd192d02031ebe49886667a4226b54f351ccc44",
+          "nonproduct_basis_vector_witness": {
+            "basis_column": 0,
+            "period_rows": [
+              1,
+              2
+            ],
+            "local_columns": [
+              1,
+              2
+            ],
+            "minor": [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "nonzero_minor_determinant": 1
+          },
+          "metric_sha256": "6d9b312d3397a6989ffb35e04ab277ca673d6df7c7320ef37a410224a8df6e27",
+          "complete_entry_counts": {
+            "-1": 69408,
+            "0": 86486444,
+            "1": 83012
+          },
+          "all_entries_signs": false,
+          "inverse_shears_replayed_exactly": true
+        },
+        {
+          "basis_shears": [
+            [
+              0,
+              5,
+              1
+            ],
+            [
+              5,
+              10,
+              -1
+            ],
+            [
+              10,
+              0,
+              -1
+            ]
+          ],
+          "action_metric_sha256": "289f2a32a3e17680d5f44008a7f091a46dc641da8e69943120e4b3f40869fce9",
+          "nonproduct_basis_vector_witness": {
+            "basis_column": 0,
+            "period_rows": [
+              0,
+              1
+            ],
+            "local_columns": [
+              0,
+              1
+            ],
+            "minor": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "nonzero_minor_determinant": 2
+          },
+          "metric_sha256": "a0ad800183e4242f8a1bc0e418d110471e848252ba40071c796bb0a0cfea20b2",
+          "complete_entry_counts": {
+            "-2": 36,
+            "-1": 69456,
+            "0": 86486360,
+            "1": 82964,
+            "2": 48
+          },
+          "all_entries_signs": false,
+          "inverse_shears_replayed_exactly": true
+        },
+        {
+          "basis_shears": [
+            [
+              0,
+              5,
+              1
+            ],
+            [
+              5,
+              10,
+              -1
+            ],
+            [
+              10,
+              0,
+              1
+            ]
+          ],
+          "action_metric_sha256": "12894601264cfd81b983a043b534d8ad304eee8cac495929bc9b1cbe1e5bf634",
+          "nonproduct_basis_vector_witness": {
+            "basis_column": 0,
+            "period_rows": [
+              1,
+              2
+            ],
+            "local_columns": [
+              1,
+              2
+            ],
+            "minor": [
+              [
+                -1,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "nonzero_minor_determinant": -1
+          },
+          "metric_sha256": "453db7a957021bc9827748ba813772c848a5ace7c775a1555c9c87261d344a99",
+          "complete_entry_counts": {
+            "-1": 69408,
+            "0": 86486444,
+            "1": 83012
+          },
+          "all_entries_signs": false,
+          "inverse_shears_replayed_exactly": true
+        },
+        {
+          "basis_shears": [
+            [
+              0,
+              5,
+              1
+            ],
+            [
+              5,
+              10,
+              1
+            ],
+            [
+              10,
+              0,
+              -1
+            ]
+          ],
+          "action_metric_sha256": "3262ed589fb3860ca6506972a07e42531483559d9f6b35e4b8890ab7f29e6549",
+          "nonproduct_basis_vector_witness": {
+            "basis_column": 0,
+            "period_rows": [
+              1,
+              2
+            ],
+            "local_columns": [
+              1,
+              2
+            ],
+            "minor": [
+              [
+                -1,
+                0
+              ],
+              [
+                0,
+                -1
+              ]
+            ],
+            "nonzero_minor_determinant": 1
+          },
+          "metric_sha256": "bc917e366d505984e2a28d73b79026cdea4f86c2cfa7f9a447ea12f0774b6d49",
+          "complete_entry_counts": {
+            "-1": 69432,
+            "0": 86486444,
+            "1": 82988
+          },
+          "all_entries_signs": false,
+          "inverse_shears_replayed_exactly": true
+        },
+        {
+          "basis_shears": [
+            [
+              0,
+              5,
+              1
+            ],
+            [
+              5,
+              10,
+              1
+            ],
+            [
+              10,
+              0,
+              1
+            ]
+          ],
+          "action_metric_sha256": "ceb6b45937bef9b370a2d3864954f300bcac00022e6dc4f6cc4969a37aba5027",
+          "nonproduct_basis_vector_witness": {
+            "basis_column": 0,
+            "period_rows": [
+              0,
+              1
+            ],
+            "local_columns": [
+              0,
+              1
+            ],
+            "minor": [
+              [
+                2,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "nonzero_minor_determinant": 2
+          },
+          "metric_sha256": "d5b3f9d73db3af982d4318fa8ebe76dedee73fe99a767fd730c8f4168e42428b",
+          "complete_entry_counts": {
+            "-2": 36,
+            "-1": 69384,
+            "0": 86486360,
+            "1": 83036,
+            "2": 48
+          },
+          "all_entries_signs": false,
+          "inverse_shears_replayed_exactly": true
+        },
+        {
+          "basis_shears": [
+            [
+              0,
+              5,
+              2
+            ],
+            [
+              5,
+              10,
+              -1
+            ],
+            [
+              10,
+              0,
+              -1
+            ]
+          ],
+          "action_metric_sha256": "e657eccf7884770e3cb37050c567163c17209b05c61a5c59582d8610e919a551",
+          "nonproduct_basis_vector_witness": {
+            "basis_column": 0,
+            "period_rows": [
+              0,
+              1
+            ],
+            "local_columns": [
+              0,
+              1
+            ],
+            "minor": [
+              [
+                3,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "nonzero_minor_determinant": 3
+          },
+          "metric_sha256": "3a02c6943cdf28197aab21cfa74053fe3a473c895e4e308f41a5695d819c6efe",
+          "complete_entry_counts": {
+            "-3": 36,
+            "-2": 444,
+            "-1": 69012,
+            "0": 86486360,
+            "1": 82568,
+            "2": 396,
+            "3": 48
+          },
+          "all_entries_signs": false,
+          "inverse_shears_replayed_exactly": true
+        },
+        {
+          "basis_shears": [
+            [
+              0,
+              5,
+              2
+            ],
+            [
+              5,
+              10,
+              -1
+            ],
+            [
+              10,
+              0,
+              1
+            ]
+          ],
+          "action_metric_sha256": "01605c1f76d83455df6d9703fb97a856f61f61b58c276be86ec65f3a2923331b",
+          "nonproduct_basis_vector_witness": {
+            "basis_column": 0,
+            "period_rows": [
+              0,
+              1
+            ],
+            "local_columns": [
+              0,
+              1
+            ],
+            "minor": [
+              [
+                -1,
+                0
+              ],
+              [
+                0,
+                -1
+              ]
+            ],
+            "nonzero_minor_determinant": 1
+          },
+          "metric_sha256": "f5740abad40ef9af10b9524be3aaba1238e2e94c555333bcd7c1ea22afa957ff",
+          "complete_entry_counts": {
+            "-2": 420,
+            "-1": 69036,
+            "0": 86486360,
+            "1": 82628,
+            "2": 420
+          },
+          "all_entries_signs": false,
+          "inverse_shears_replayed_exactly": true
+        },
+        {
+          "basis_shears": [
+            [
+              0,
+              5,
+              2
+            ],
+            [
+              5,
+              10,
+              1
+            ],
+            [
+              10,
+              0,
+              -1
+            ]
+          ],
+          "action_metric_sha256": "b87dd33b18b41b0bea0dc7fbe42f602c3ed36036576cdb201c4351781a56b742",
+          "nonproduct_basis_vector_witness": {
+            "basis_column": 0,
+            "period_rows": [
+              0,
+              1
+            ],
+            "local_columns": [
+              0,
+              1
+            ],
+            "minor": [
+              [
+                -1,
+                0
+              ],
+              [
+                0,
+                -1
+              ]
+            ],
+            "nonzero_minor_determinant": 1
+          },
+          "metric_sha256": "c22385f5fd8f85a7ee9b77c8f91293121b590dd65fb0bd2a1d14e0117318a02c",
+          "complete_entry_counts": {
+            "-2": 432,
+            "-1": 69048,
+            "0": 86486360,
+            "1": 82616,
+            "2": 408
+          },
+          "all_entries_signs": false,
+          "inverse_shears_replayed_exactly": true
+        },
+        {
+          "basis_shears": [
+            [
+              0,
+              5,
+              2
+            ],
+            [
+              5,
+              10,
+              1
+            ],
+            [
+              10,
+              0,
+              1
+            ]
+          ],
+          "action_metric_sha256": "d48a3ab4b248e8611f369ec1b747b4d4229fb13648b7f0b69588277ba28ee9a2",
+          "nonproduct_basis_vector_witness": {
+            "basis_column": 0,
+            "period_rows": [
+              0,
+              1
+            ],
+            "local_columns": [
+              0,
+              1
+            ],
+            "minor": [
+              [
+                3,
+                0
+              ],
+              [
+                0,
+                1
+              ]
+            ],
+            "nonzero_minor_determinant": 3
+          },
+          "metric_sha256": "f4044d65fc87e70ac1413a75540836c24309a36a0ad94a1e11338e8af29581e2",
+          "complete_entry_counts": {
+            "-3": 36,
+            "-2": 408,
+            "-1": 68976,
+            "0": 86486360,
+            "1": 82604,
+            "2": 432,
+            "3": 48
+          },
+          "all_entries_signs": false,
+          "inverse_shears_replayed_exactly": true
+        }
+      ],
+      "determinant_absolute_value": "13^4654",
+      "determinant_is_odd": true,
+      "all_same_basis_restrictions_excluded_from_sign_endpoints": true,
+      "all_same_basis_restrictions_excluded_from_Hadamard_Gram": true,
+      "unequal_domain_codomain_bases_excluded": false
+    }
+  ],
+  "finite_declared_batch_finished": true,
+  "pending_recipes": 0,
+  "same_domain_codomain_basis": true,
+  "right_frame_or_normalization_inserted": false,
+  "only_operations": "scalar restriction in a declared mixed basis and exact action/metric duplicate pruning",
+  "basis_definition": "S=product(I+t E_pq); every shear changes both period and cyclotomic coordinates",
+  "entry_accessor": "MixedRestriction(field,source,basis_shears).entry(i,j)",
+  "small_independent_verification": {
+    "full_basis_conjugation_checked": true,
+    "complete_weighted_Gram_checked": true,
+    "complete_matrix_determinant_checked": true,
+    "basis_determinant": 1,
+    "matrix_order": 84
+  },
+  "node_visits": 90,
+  "distinct_nodes": 70,
+  "literal_duplicates_pruned": 20,
+  "new_sign_Hadamard_found": false,
+  "scope": "Finite nonproduct same-basis tests; determinant proof closes all same-basis variants, not unequal basis pairs"
+}

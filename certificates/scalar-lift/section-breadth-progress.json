@@ -1,0 +1,264 @@
+{
+  "schema": "balanced-section-breadth-progress-v1",
+  "as_of_utc": "2026-11-23T18:47:51.830577+00:00",
+  "new_Hadamard_order_verified": false,
+  "scope": "Nonzero candidates and a continuing heuristic search, not a record",
+  "supervisor": {
+    "pid": 37380,
+    "command": [
+      "/Users/sasha/hadamard/.native-env/bin/python",
+      "-m",
+      "experiments.scalar_lift.section_breadth_portfolio",
+      "--directory",
+      "/Users/sasha/hadamard/search-state/section-breadth-portfolio",
+      "--cpu-seconds",
+      "15"
+    ],
+    "started_utc": "2026-11-23T18:46:50.939914+00:00",
+    "one_worker": true,
+    "replacement_for_pid": 65703,
+    "retained_cases": 7,
+    "queued_cases": 28
+  },
+  "worker_ownership_lock_held": true,
+  "completed_outer_stages_at_snapshot": 13,
+  "queued_target_orders": [
+    4792,
+    11992,
+    23992,
+    23960,
+    10552,
+    11512,
+    12536,
+    5752,
+    12632,
+    14264,
+    15832,
+    15896,
+    17656,
+    18008,
+    18296,
+    18712,
+    18968,
+    19192,
+    20344,
+    21368,
+    21416,
+    21464,
+    21496,
+    21592,
+    23032,
+    23096,
+    23224,
+    23512
+  ],
+  "queued_cases": 28,
+  "retained_cases": [
+    {
+      "target_order": 4792,
+      "period": 599,
+      "initial_energy": 31451136,
+      "retained_energy": 27143168,
+      "calls": 2,
+      "literal_candidate": "/Users/sasha/hadamard/search-state/section-breadth-portfolio/r599/best-27143168.npz",
+      "candidate_sha256": "f3d8b784e2741e6ff3a8f13581df7c01972f5a974750a8bdf67120016f8e9829",
+      "full_integer_residual_array_verified": true,
+      "twist_balance_verified": true,
+      "ntt_replay_cpu_seconds": 0.0072309999999999874
+    },
+    {
+      "target_order": 11992,
+      "period": 1499,
+      "initial_energy": 269632512,
+      "retained_energy": 126826272,
+      "calls": 2,
+      "literal_candidate": "/Users/sasha/hadamard/search-state/section-breadth-portfolio/r1499/best-126826272.npz",
+      "candidate_sha256": "1fa05bc453a77a8d414d35bf060d891896f578e0a9712bcd1bc5c4d1da9625ff",
+      "full_integer_residual_array_verified": true,
+      "twist_balance_verified": true,
+      "ntt_replay_cpu_seconds": 0.014136999999999983
+    },
+    {
+      "target_order": 23992,
+      "period": 2999,
+      "initial_energy": 1129094144,
+      "retained_energy": 680635008,
+      "calls": 2,
+      "literal_candidate": "/Users/sasha/hadamard/search-state/section-breadth-portfolio/r2999/best-680635008.npz",
+      "candidate_sha256": "d00e9e2bdbcbad9cb32c245e533817f4cc9192f2cd62f58b49ffa3afffb07c84",
+      "full_integer_residual_array_verified": true,
+      "twist_balance_verified": true,
+      "ntt_replay_cpu_seconds": 0.03135599999999997
+    },
+    {
+      "target_order": 23960,
+      "period": 2995,
+      "initial_energy": 3562218496,
+      "retained_energy": 1567032064,
+      "calls": 2,
+      "literal_candidate": "/Users/sasha/hadamard/search-state/section-breadth-portfolio/r2995/best-1567032064.npz",
+      "candidate_sha256": "caa4cea6e2ee1d306901566f55c0ec3197934f122e388d737370fa88cdf2b16e",
+      "full_integer_residual_array_verified": true,
+      "twist_balance_verified": true,
+      "ntt_replay_cpu_seconds": 0.03328599999999998
+    },
+    {
+      "target_order": 10552,
+      "period": 1319,
+      "initial_energy": 212478976,
+      "retained_energy": 107235840,
+      "calls": 2,
+      "literal_candidate": "/Users/sasha/hadamard/search-state/section-breadth-portfolio/r1319/best-107235840-00d30da9a2001d2b2c780dd671f22d7f4bb00193db2951e7ed1cbfc14d0e058f.npz",
+      "candidate_sha256": "dfe5300d30aba59f9c4143aa61dc49b60da6d12796e88ad5d99f0e8503ccc35f",
+      "full_integer_residual_array_verified": true,
+      "twist_balance_verified": true,
+      "ntt_replay_cpu_seconds": 0.013537999999999994
+    },
+    {
+      "target_order": 11512,
+      "period": 1439,
+      "initial_energy": 257117184,
+      "retained_energy": 130647360,
+      "calls": 2,
+      "literal_candidate": "/Users/sasha/hadamard/search-state/section-breadth-portfolio/r1439/best-130647360-8348dfc99c52090f4467f12b903b9a6558120105189f28113026fcab52e1fce5.npz",
+      "candidate_sha256": "b85211c7474d28a9db51da829d7e52dcc70e0776a4cb3edc675ba2e5e362862a",
+      "full_integer_residual_array_verified": true,
+      "twist_balance_verified": true,
+      "ntt_replay_cpu_seconds": 0.013863999999999987
+    },
+    {
+      "target_order": 12536,
+      "period": 1567,
+      "initial_energy": 296324096,
+      "retained_energy": 146276512,
+      "calls": 2,
+      "literal_candidate": "/Users/sasha/hadamard/search-state/section-breadth-portfolio/r1567/best-146276512-4b27ec48b280164803ff346463d4bf39ce68de93e45d3bb6e9b2e73bf451c182.npz",
+      "candidate_sha256": "80e816feba08789a9034eb1487ee4b9c66fd18ed03c9c85b741278fb8d654228",
+      "full_integer_residual_array_verified": true,
+      "twist_balance_verified": true,
+      "ntt_replay_cpu_seconds": 0.01441300000000001
+    },
+    {
+      "target_order": 5752,
+      "period": 719,
+      "initial_energy": 64306176,
+      "retained_energy": 26704896,
+      "calls": 1,
+      "literal_candidate": "/Users/sasha/hadamard/search-state/section-breadth-portfolio/r719/best-26704896-24999bd36a0113f8aedc856b52ce4517c968a014d52a78d3fbdf1e7a5ceeee6e.npz",
+      "candidate_sha256": "6ace3de18ac71932e65d9a831e44f9fbb93811babc2dc90bc3da7e796a89aebe",
+      "full_integer_residual_array_verified": true,
+      "twist_balance_verified": true,
+      "ntt_replay_cpu_seconds": 0.006589999999999985
+    }
+  ],
+  "native_exact_ntt_library_sha256": "c2398b5413c00e76f0eb5499ca16b32650ae411984752ee8004827057137ae17",
+  "executor_identity": {
+    "schema": "breadth-section-portfolio-v1",
+    "seed": 20261123,
+    "frontier_sha256": "602ba627a52cbb6f8ad57c38c9ac4390e562cf85b827ca979c8f92c1b3016d8d",
+    "seed_manifest_sha256": "08f6fdf3873e577c6e64f3c2789c322b644094b6bf5bb97256918a3b22b24570",
+    "sources": {
+      "section_breadth_portfolio.py": "e595bf5c6ef00a69367e3575e5c9c4be12ceebd845a6d0ff19541886b2dca97b",
+      "section_free_twist_projection.py": "31e86bbf46eb52fab37835f530894085ad8a7afb326151d8494bf6945ab58a79",
+      "section_exact_ntt.py": "49e16be2f5785c171350e0761750be8f9d35e24c610fc01dd3cab406a5c06a2e",
+      "section_exact_ntt.cpp": "5e02b615bee5cb90312a4a43cd1951b37ce2b1b9b4b39abdc1188b12bb1b93dd",
+      "section_compact_witness.py": "ca77e0ce62eb11e7c36ae0c4af2587c420d569224b3e297929e102dd1b444d25",
+      "higher_section_seeds.py": "cee7b23b44fc06449b0efe8c8feae7e03c1f69ccabb9d647cb913ae6d08d8eba",
+      "section_spectral_projection.py": "2197c596100963d9f9037bca25188e0d16b9c843667ed1a97bea673b2fe7bd30"
+    },
+    "ntt_library_sha256": "c2398b5413c00e76f0eb5499ca16b32650ae411984752ee8004827057137ae17",
+    "focused_identity": {
+      "schema": "focused-hadamard-search-v1",
+      "seed": 20261123,
+      "stages": [
+        "prefix",
+        "repair",
+        "profile",
+        "orbit",
+        "warm",
+        "previous"
+      ],
+      "binaries": {
+        "artifacts/sextic-code-search/row_stronger_final": "275c3bfdf56c3d0134461578edb83c74a572857a8704bd26b81a1e4edc4a2264",
+        "artifacts/section-profile-search/profile_search": "10119ea48fde71c1357f6524d8434b3b96fb66fcaaf671c077e1abe190f76184",
+        "artifacts/variable-section-search/section_search": "fdb868884391fd3848c1585a3c9f080461210526a5ce6128fb3ac6477fb4af88",
+        "artifacts/uniform-od-search/cyclotomic_pair_nearest": "9bd61a96cee10a829fc9b9ab2c9360a281121dc4685cc6e51059e56758f891af",
+        "artifacts/uniform-od-search/cyclotomic_pair_import": "c83ee44f7fb6270aee149cba7dd316e14faeb7d875825165dfd323860a8e1775",
+        "artifacts/uniform-od-search/cyclotomic_orbit_pair_search": "331e79a50cd2c9a7fb76f59bbf59cea030250ebe519f2751940175650478f64c",
+        "artifacts/sextic-code-search/row_mod4_final": "c94f335a2c907917cf3170cd6eec2df037e092468d933ab2b164cf852e7f175a"
+      },
+      "sources": {
+        "focused_portfolio.py": "1e76b9993fe7d9e850606536f3f1472b3f24dc0f76533f11e383b7bbcab9733c",
+        "prefix_strengthening.py": "9e846012c579a760ce04e38a293fe5483bfe34e341eecff2aa59483924c01265",
+        "section_profile_search.py": "cb8b0aa1e1bd10bd7e0c25517d68d11039c844af2f4335186e2014bc0d674f82",
+        "cyclotomic_pair_nearest.py": "17586fc3bf119efeed0c4becfd735d26aad1ce107699d3752f47acf91aebf0da",
+        "cyclotomic_pair_import.py": "3ba15f19c93dd9469c762c35650428ff17e83df98729403cf26aab381a38c69c",
+        "cyclotomic_orbit_pairs.py": "198a654fcdd93bff41f7d561aa2a9fa5e158bf4418f08954362babfe7e1b0a8f",
+        "section_global_search.py": "aa7ea757d8bbe4d3fd4127a08fee14b520d962cc30b5967b0b20520bfadd4dfa",
+        "section_spectral_projection.py": "2197c596100963d9f9037bca25188e0d16b9c843667ed1a97bea673b2fe7bd30",
+        "prefix_lattice_lns.py": "476c563cdc8e46e15f24a3e4d5a53d77fece4d3cc8929adddc5902bc1cdfbd2a"
+      },
+      "previous_identity": {
+        "schema": "five-approach-architecture-portfolio-v1",
+        "stages": [
+          "sections",
+          "pairs",
+          "prefix",
+          "sections",
+          "legacy",
+          "completion"
+        ],
+        "seed": 20261123,
+        "legacy_directory": "/Users/sasha/hadamard/search-state/uniform-design-portfolio",
+        "pair_directory": "/Users/sasha/hadamard/search-state/cyclotomic-pair-production",
+        "one_worker": true,
+        "source_sha256": {
+          "architecture_portfolio.py": "30b0fbafae22537466db1de58e962759608e6ae84167a63d781b6356f904ffec",
+          "quaternary_pair_campaign.py": "638f1a18a63a7a41512e2a52f0025c20934901099f4160c1976277c715edefaa",
+          "cyclotomic_quotient_designs.py": "774c6ad984d5f080b62832c02c1938adc237a0081d22a40a078f89eea0660ce3",
+          "correlation_completion.py": "603913bbed16151404b91c92077b7f01e0d0fed9ffc62ce09df3679a3e57dbb3",
+          "uniform_od_import.py": "bfa3e177d86fb09001b574684a4a2256ac051f60fcc312c227a0eda2b6a01017",
+          "sextic_code_search.py": "2bc6516edd64e78fadda27753b569961e677435bbc8f3244f71fd16950a863be",
+          "variable_section_search.py": "e84cf51726aba64ecfc0c7828544fa32ee2ae9f34617306a4955342362dd82c5",
+          "variable_section_search.cpp": "dcf9f718d82f4e9bd21cbee8ec1d1084a3fa540dd00f18e39d3c3d5816f6cbc0",
+          "quaternary_pair_search.cpp": "36c3d0d02c6284164dee918387e84f24295bc5bb8fdc5c85177863c3ff5024e8"
+        },
+        "native_binary_sha256": {
+          "artifacts/variable-section-search/section_search": "fdb868884391fd3848c1585a3c9f080461210526a5ce6128fb3ac6477fb4af88",
+          "artifacts/uniform-od-search/quaternary_pair_search": "67ef656b2e5ca659fcc02dcf6f9b8f0cc2f7c74eda2d5f5004b6b3c0d1686264",
+          "artifacts/sextic-code-search/row_search": "cc416669d9e17432657509ae458e418d394d8832bceb434ed17b600229c97e9a",
+          "artifacts/uniform-od-search/od_import": "29c596fb0ea6378575dcc4e5892c333041edc61bf3c0465c976b28ea8b1fd110"
+        }
+      },
+      "one_worker": true
+    },
+    "modes": [
+      [
+        "dr",
+        0.5
+      ],
+      [
+        "dr",
+        0.8
+      ],
+      [
+        "ap",
+        0.8
+      ],
+      [
+        "dr",
+        1.0
+      ]
+    ],
+    "one_worker": true
+  },
+  "validation": "42 targeted tests passed; C++ compilation warning-clean; Ruff clean; two independent mathematical audits",
+  "related_certificates": [
+    "higher-section-seeds.json",
+    "section-free-twist-projection.json",
+    "arbitrary-period-section-audit.json"
+  ],
+  "old_supervisor_checkpointed_pid": 65703,
+  "active_supervisor_pid": 37380,
+  "one_permanent_worker": true
+}

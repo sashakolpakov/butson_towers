@@ -1,0 +1,65 @@
+{
+  "schema": "scalar-reduction-orthogonality-invariant-audit-v1",
+  "source_assumption": "H H*=nI over a cyclotomic field with conjugation",
+  "regular_representation_adjoint": "rho(conj x)=G^-1 rho(x)^* G",
+  "automatic_identity": "M^*(I_n tensor G)M=n(I_n tensor G)",
+  "Euclidean_two_frame_identity": "if P^*GP=aI and Q^*GQ=bI, blocks Q^-1 rho(u)P give total Gram n*a/b I",
+  "flat_sign_width_d_requires_scale_ratio": "a/b=d",
+  "Gaussian_all4_phase_block_cross_identity_verified": true,
+  "Gaussian_BH2q4_literal_H4_verified": [
+    [
+      1,
+      1,
+      -1,
+      1
+    ],
+    [
+      1,
+      -1,
+      1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      -1
+    ],
+    [
+      1,
+      -1,
+      -1,
+      -1
+    ]
+  ],
+  "cube_root_trace_Gram": [
+    [
+      2,
+      -1
+    ],
+    [
+      -1,
+      2
+    ]
+  ],
+  "cube_root_multiplication_matrix": [
+    [
+      0,
+      -1
+    ],
+    [
+      1,
+      -1
+    ]
+  ],
+  "cube_root_trace_determinant": 3,
+  "Fourier3_restricted_weighted_Gram_verified": true,
+  "Fourier3_restricted_Euclidean_Gram_is_not_3I": true,
+  "no_unknown_large_Hadamard_frame_searched": true,
+  "new_source_or_PAF_search_run": false,
+  "random_error_controls_run": false,
+  "retrospective_random_balanced_code_expected_odd_period_energy": "512*r^2-128*r",
+  "retrospective_relative_Frobenius_Gram_error": "sqrt(E/(512*r^2))",
+  "no_theoretical_convergence_claim": true,
+  "live_files_modified": false
+}

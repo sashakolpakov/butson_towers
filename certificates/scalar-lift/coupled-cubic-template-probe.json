@@ -1,0 +1,26 @@
+{
+  "schema": "coupled-cubic-template-probe-v1",
+  "width": 24,
+  "seed": 20261122024,
+  "limits": {
+    "C_candidates": 128,
+    "local_first_lift_templates": 64,
+    "seconds": 30
+  },
+  "statistics": {
+    "C_examined": 128,
+    "distinct_C": 128,
+    "first_bit_consistent_C": 3,
+    "affine_B_samples": 36,
+    "nondegenerate_first_lifts": 4,
+    "local_pi4_systems": 8
+  },
+  "examined_data_sha256": "e5b6f28833236e7a7b6480af1d6b3b77e5f3e67fe9ac5823a1b7bb2e99b83582",
+  "termination": "C_LIMIT",
+  "elapsed_seconds": 1.884,
+  "local_witnesses": [],
+  "projector_identity_required": false,
+  "native_probe_run": false,
+  "unrestricted_or_template_class_nonexistence_claimed": false,
+  "new_characteristic_zero_source_claimed": false
+}

@@ -1,0 +1,4508 @@
+{
+  "schema": "complete-cyclotomic-algebra-scalar-endpoints-v1",
+  "T_design": {
+    "T_source": {
+      "order": 631,
+      "actual_alphabet": [
+        -1,
+        0,
+        1
+      ],
+      "supports_partition_every_position": true,
+      "all_periodic_shifts_checked": 631,
+      "summed_circulant_Gram_scale": 631,
+      "generating_rows_int8_sha256": "fe4855aee9e85fc10ba5ca13ce55e7afd037d310d7636067678629e3a6b47ea2",
+      "row_sums": [
+        22,
+        7,
+        7,
+        7
+      ]
+    },
+    "orthogonal_design_order": 2524,
+    "variable_count": 4,
+    "variable_weights": [
+      631,
+      631,
+      631,
+      631
+    ],
+    "source_identity": "D(x)D(x)^T=p*(x0^2+x1^2+x2^2+x3^2)*I_(4p)",
+    "construction": "D(x)=GS(L(x)b), with the literal L table retained below",
+    "L_variable_and_sign": [
+      [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          2,
+          -1
+        ],
+        [
+          3,
+          -1
+        ]
+      ],
+      [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          2,
+          -1
+        ]
+      ],
+      [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          -1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      [
+        [
+          3,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    ],
+    "GS_convention": "The standalone gs function in this recipe; reversal has J_uv=1 when u+v=p-1",
+    "all_polynomial_periodic_Gram_coefficients_checked": 6310,
+    "full_polynomial_Gram_verified": true,
+    "all_circulant_blocks_commute": true,
+    "coefficient_matrices_entry_alphabet": [
+      -1,
+      0,
+      1
+    ],
+    "coefficient_matrices_disjoint_and_cover_every_entry": true,
+    "coefficient_matrices_int8_sha256": [
+      "2c113a74d199300eb90c297e7cc58cf63f19ee70bf4bf6596b99622e26d0330b",
+      "0a69f1ba5e00ae9852dfe298d26fdbdd870af8d2c514b764afeb9abcc1ad6542",
+      "d34628b2fac3cd0b546679224ef5661dccdbb88bb181c64ebcbe270e95555f18",
+      "413bf6e2044646fc92c36eb92cf4d609eb9cf4df78fb5ccbc5aa93512d265d97"
+    ],
+    "full_dense_coefficient_matrix_products_performed": false,
+    "literal_T_source": "artifacts/hadamard-7572/t631.json",
+    "literal_T_source_sha256": "c5497ef485a23f1c99385035eaf02472b4dad4dee9d906d0d6b2aeb2f3680871",
+    "orbit_states": [
+      0,
+      0,
+      5,
+      4,
+      4,
+      0,
+      7,
+      0,
+      7,
+      2,
+      3,
+      0,
+      1,
+      2,
+      6,
+      1,
+      4,
+      2,
+      0,
+      1,
+      1,
+      4,
+      3,
+      4,
+      7,
+      3,
+      3,
+      5,
+      6,
+      2,
+      7
+    ],
+    "multiplier": 458,
+    "multiplier_order": 21
+  },
+  "outputs": [
+    {
+      "p": 631,
+      "w": 1,
+      "output_order": 2524,
+      "Williamson_source": {
+        "order": 1,
+        "first_rows_pm": [
+          "+",
+          "+",
+          "+",
+          "+"
+        ],
+        "actual_used_scalar_polynomials": "f_j(c)=sum_k first_rows[j][k]*c^k",
+        "all_f_j_self_adjoint": true,
+        "all_pairwise_amicability_identities_verified": true,
+        "full_integer_Gram_verified": true,
+        "cyclic_algebra_norm_relation_verified": true,
+        "exact_norm_relation": "sum_j f_j(c)^2=4 in Q[c]/(c^1-1)",
+        "row_sums": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "first_rows_int8_sha256": "27ecd0a598e76f8a2fd264d427df0a119903e8eae384e478902541756f089dd1",
+        "entry_images_are_literal_sign_circulants": true,
+        "input_file": "experiments/scalar_lift/williamson_inputs.json",
+        "input_file_sha256": "242f554cf113c68ab882e147c3b2702b7bb62e68b66ad36b16c92b6c194f8560",
+        "primary_source": {
+          "id": "sage_official_literal_table",
+          "url": "https://github.com/sagemath/sage/blob/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py#L577",
+          "raw_url": "https://raw.githubusercontent.com/sagemath/sage/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py",
+          "commit": "8de8dad7bcb38e1baa43508cbe944bf04a2d0401",
+          "commit_date": "2026-11-14",
+          "source_sha256": "15b018c9d25cfbe1a45f98ee1421b338beb2b39077c6777e6bc33bc0fbd4b01d",
+          "function": "williamson_type_quadruples_smallcases",
+          "documentation_url": "https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/matrices/hadamard_matrix.html#sage.combinat.matrices.hadamard_matrix.williamson_type_quadruples_smallcases",
+          "documented_original_sources": "Sage attributes orders 3,5,...,29,37,43 to [Ha83], and 31,33,39,41,45,49,51,55,57,61,63 to [Lon2013]."
+        }
+      },
+      "scalar_algebra": {
+        "algebra": "Q[c]/(c^1-1)",
+        "algebra_is_single_number_field": true,
+        "number_field_factors": [
+          {
+            "conductor": 1,
+            "field_degree": 1,
+            "module_rank": 1
+          }
+        ],
+        "rational_dimension": 1,
+        "coordinate_basis": "beta_j=c^(-j), 0<=j<w",
+        "conjugation": "c -> c^(-1)",
+        "trace_functional": "tau(a)=[c^0]a=(1/1)*sum_(d|1) Tr_Q(zeta_d)/Q(a_d)",
+        "trace_metric": "I_1",
+        "metric_entry_formula": "G_ij=tau(conjugate(beta_i)*beta_j)=delta_ij",
+        "multiplication_action": "rho(f)[r,s]=f_coefficients[(s-r) mod w]",
+        "adjoint_identity": "rho(conjugate(f))=rho(f)^T",
+        "endpoint_frame": "I_1",
+        "endpoint_frame_Gram_scale": 1
+      },
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 2524,
+      "weighted_source_is_Butson": false,
+      "weighted_source_used_alphabet": "{+f_j(c),-f_j(c):0<=j<4}, with literal polynomials recorded above",
+      "actual_used_source_polynomials_pm": [
+        "+",
+        "-"
+      ],
+      "actual_used_source_polynomial_count": 2,
+      "source_identity": "D(f)D(f)*=631*sum_j f_j(c)^2*I=2524I",
+      "rational_dimension_after_restriction": 2524,
+      "endpoint_Gram_scale": 2524,
+      "endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "endpoint_recipe": "H=sum_(j=0)^3 X_j tensor rho(f_j); X_j are the four disjoint GS orthogonal-design coefficients",
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "all_used_scalar_images_verified_sign_circulants": true,
+      "literal_entry_and_row_recipe_available": true,
+      "dense_endpoint_allocated": false,
+      "complete_dense_endpoint_Gram_performed": false,
+      "literal_row_controls": {
+        "row_indices": [
+          0,
+          1,
+          1262,
+          2523
+        ],
+        "all_selected_full_rows_are_signs": true,
+        "all_selected_row_pairs_checked_by_exact_bit_counts": true,
+        "complete_Gram_proof": "Full polynomial OD identity and complete exact Williamson norm relation; row checks are interface controls."
+      },
+      "reported_order_status": {
+        "p": 631,
+        "w": 1,
+        "order": 2524,
+        "status": "known",
+        "prior_construction": {
+          "family": "Goethals-Seidel supplementary difference sets",
+          "reference_url": "https://arxiv.org/abs/1301.3671v2",
+          "parameters": {
+            "cyclic_group_order": 631,
+            "Hadamard_order": 2524
+          },
+          "reference_detail": "Djokovic, Golubitsky and Kotsireas (2013), explicit ordinary and skew Hadamard matrices of order2524."
+        },
+        "checked_utc": "2026-11-24 21:25:01 UTC",
+        "williamson_input_sha256": "27ecd0a598e76f8a2fd264d427df0a119903e8eae384e478902541756f089dd1",
+        "arithmetic_checks": {
+          "N_minus1_factorization": [
+            [
+              3,
+              1
+            ],
+            [
+              29,
+              2
+            ]
+          ],
+          "N_over2_minus1_factorization": [
+            [
+              13,
+              1
+            ],
+            [
+              97,
+              1
+            ]
+          ],
+          "N_over4_minus2_factorization": [
+            [
+              17,
+              1
+            ],
+            [
+              37,
+              1
+            ]
+          ],
+          "N_over4_minus2_mod8": 5
+        }
+      }
+    },
+    {
+      "p": 631,
+      "w": 3,
+      "output_order": 7572,
+      "Williamson_source": {
+        "order": 3,
+        "first_rows_pm": [
+          "+++",
+          "+--",
+          "+--",
+          "+--"
+        ],
+        "actual_used_scalar_polynomials": "f_j(c)=sum_k first_rows[j][k]*c^k",
+        "all_f_j_self_adjoint": true,
+        "all_pairwise_amicability_identities_verified": true,
+        "full_integer_Gram_verified": true,
+        "cyclic_algebra_norm_relation_verified": true,
+        "exact_norm_relation": "sum_j f_j(c)^2=12 in Q[c]/(c^3-1)",
+        "row_sums": [
+          3,
+          -1,
+          -1,
+          -1
+        ],
+        "first_rows_int8_sha256": "7fe7ffe6ccac570f04ed305e09cbf24ea834394b81bc3ae799552fab399fd2df",
+        "entry_images_are_literal_sign_circulants": true,
+        "input_file": "experiments/scalar_lift/williamson_inputs.json",
+        "input_file_sha256": "242f554cf113c68ab882e147c3b2702b7bb62e68b66ad36b16c92b6c194f8560",
+        "primary_source": {
+          "id": "sage_official_literal_table",
+          "url": "https://github.com/sagemath/sage/blob/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py#L577",
+          "raw_url": "https://raw.githubusercontent.com/sagemath/sage/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py",
+          "commit": "8de8dad7bcb38e1baa43508cbe944bf04a2d0401",
+          "commit_date": "2026-11-14",
+          "source_sha256": "15b018c9d25cfbe1a45f98ee1421b338beb2b39077c6777e6bc33bc0fbd4b01d",
+          "function": "williamson_type_quadruples_smallcases",
+          "documentation_url": "https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/matrices/hadamard_matrix.html#sage.combinat.matrices.hadamard_matrix.williamson_type_quadruples_smallcases",
+          "documented_original_sources": "Sage attributes orders 3,5,...,29,37,43 to [Ha83], and 31,33,39,41,45,49,51,55,57,61,63 to [Lon2013]."
+        }
+      },
+      "scalar_algebra": {
+        "algebra": "Q[c]/(c^3-1)",
+        "algebra_is_single_number_field": false,
+        "number_field_factors": [
+          {
+            "conductor": 1,
+            "field_degree": 1,
+            "module_rank": 1
+          },
+          {
+            "conductor": 3,
+            "field_degree": 2,
+            "module_rank": 1
+          }
+        ],
+        "rational_dimension": 3,
+        "coordinate_basis": "beta_j=c^(-j), 0<=j<w",
+        "conjugation": "c -> c^(-1)",
+        "trace_functional": "tau(a)=[c^0]a=(1/3)*sum_(d|3) Tr_Q(zeta_d)/Q(a_d)",
+        "trace_metric": "I_3",
+        "metric_entry_formula": "G_ij=tau(conjugate(beta_i)*beta_j)=delta_ij",
+        "multiplication_action": "rho(f)[r,s]=f_coefficients[(s-r) mod w]",
+        "adjoint_identity": "rho(conjugate(f))=rho(f)^T",
+        "endpoint_frame": "I_3",
+        "endpoint_frame_Gram_scale": 1
+      },
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 7572,
+      "weighted_source_is_Butson": false,
+      "weighted_source_used_alphabet": "{+f_j(c),-f_j(c):0<=j<4}, with literal polynomials recorded above",
+      "actual_used_source_polynomials_pm": [
+        "+++",
+        "+--",
+        "-++",
+        "---"
+      ],
+      "actual_used_source_polynomial_count": 4,
+      "source_identity": "D(f)D(f)*=631*sum_j f_j(c)^2*I=7572I",
+      "rational_dimension_after_restriction": 7572,
+      "endpoint_Gram_scale": 7572,
+      "endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "endpoint_recipe": "H=sum_(j=0)^3 X_j tensor rho(f_j); X_j are the four disjoint GS orthogonal-design coefficients",
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "all_used_scalar_images_verified_sign_circulants": true,
+      "literal_entry_and_row_recipe_available": true,
+      "dense_endpoint_allocated": false,
+      "complete_dense_endpoint_Gram_performed": false,
+      "literal_row_controls": {
+        "row_indices": [
+          0,
+          1,
+          2,
+          3,
+          3786,
+          7571
+        ],
+        "all_selected_full_rows_are_signs": true,
+        "all_selected_row_pairs_checked_by_exact_bit_counts": true,
+        "complete_Gram_proof": "Full polynomial OD identity and complete exact Williamson norm relation; row checks are interface controls."
+      },
+      "reported_order_status": {
+        "p": 631,
+        "w": 3,
+        "order": 7572,
+        "status": "new_to_best_of_authors_knowledge",
+        "prior_construction": null,
+        "checked_utc": "2026-11-24 21:25:01 UTC",
+        "williamson_input_sha256": "7fe7ffe6ccac570f04ed305e09cbf24ea834394b81bc3ae799552fab399fd2df",
+        "arithmetic_checks": {
+          "N_minus1_factorization": [
+            [
+              67,
+              1
+            ],
+            [
+              113,
+              1
+            ]
+          ],
+          "N_over2_minus1_factorization": [
+            [
+              5,
+              1
+            ],
+            [
+              757,
+              1
+            ]
+          ],
+          "N_over4_minus2_factorization": [
+            [
+              31,
+              1
+            ],
+            [
+              61,
+              1
+            ]
+          ],
+          "N_over4_minus2_mod8": 3
+        },
+        "previously_completed_project_order": true
+      }
+    },
+    {
+      "p": 631,
+      "w": 5,
+      "output_order": 12620,
+      "Williamson_source": {
+        "order": 5,
+        "first_rows_pm": [
+          "+-++-",
+          "++--+",
+          "+----",
+          "+----"
+        ],
+        "actual_used_scalar_polynomials": "f_j(c)=sum_k first_rows[j][k]*c^k",
+        "all_f_j_self_adjoint": true,
+        "all_pairwise_amicability_identities_verified": true,
+        "full_integer_Gram_verified": true,
+        "cyclic_algebra_norm_relation_verified": true,
+        "exact_norm_relation": "sum_j f_j(c)^2=20 in Q[c]/(c^5-1)",
+        "row_sums": [
+          1,
+          1,
+          -3,
+          -3
+        ],
+        "first_rows_int8_sha256": "5e15c1638cbff7f4e8a36f5a5c6eaadfabda994fdc29309d776e97841c4c2278",
+        "entry_images_are_literal_sign_circulants": true,
+        "input_file": "experiments/scalar_lift/williamson_inputs.json",
+        "input_file_sha256": "242f554cf113c68ab882e147c3b2702b7bb62e68b66ad36b16c92b6c194f8560",
+        "primary_source": {
+          "id": "sage_official_literal_table",
+          "url": "https://github.com/sagemath/sage/blob/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py#L577",
+          "raw_url": "https://raw.githubusercontent.com/sagemath/sage/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py",
+          "commit": "8de8dad7bcb38e1baa43508cbe944bf04a2d0401",
+          "commit_date": "2026-11-14",
+          "source_sha256": "15b018c9d25cfbe1a45f98ee1421b338beb2b39077c6777e6bc33bc0fbd4b01d",
+          "function": "williamson_type_quadruples_smallcases",
+          "documentation_url": "https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/matrices/hadamard_matrix.html#sage.combinat.matrices.hadamard_matrix.williamson_type_quadruples_smallcases",
+          "documented_original_sources": "Sage attributes orders 3,5,...,29,37,43 to [Ha83], and 31,33,39,41,45,49,51,55,57,61,63 to [Lon2013]."
+        }
+      },
+      "scalar_algebra": {
+        "algebra": "Q[c]/(c^5-1)",
+        "algebra_is_single_number_field": false,
+        "number_field_factors": [
+          {
+            "conductor": 1,
+            "field_degree": 1,
+            "module_rank": 1
+          },
+          {
+            "conductor": 5,
+            "field_degree": 4,
+            "module_rank": 1
+          }
+        ],
+        "rational_dimension": 5,
+        "coordinate_basis": "beta_j=c^(-j), 0<=j<w",
+        "conjugation": "c -> c^(-1)",
+        "trace_functional": "tau(a)=[c^0]a=(1/5)*sum_(d|5) Tr_Q(zeta_d)/Q(a_d)",
+        "trace_metric": "I_5",
+        "metric_entry_formula": "G_ij=tau(conjugate(beta_i)*beta_j)=delta_ij",
+        "multiplication_action": "rho(f)[r,s]=f_coefficients[(s-r) mod w]",
+        "adjoint_identity": "rho(conjugate(f))=rho(f)^T",
+        "endpoint_frame": "I_5",
+        "endpoint_frame_Gram_scale": 1
+      },
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 12620,
+      "weighted_source_is_Butson": false,
+      "weighted_source_used_alphabet": "{+f_j(c),-f_j(c):0<=j<4}, with literal polynomials recorded above",
+      "actual_used_source_polynomials_pm": [
+        "++--+",
+        "+-++-",
+        "+----",
+        "-++++",
+        "-+--+",
+        "--++-"
+      ],
+      "actual_used_source_polynomial_count": 6,
+      "source_identity": "D(f)D(f)*=631*sum_j f_j(c)^2*I=12620I",
+      "rational_dimension_after_restriction": 12620,
+      "endpoint_Gram_scale": 12620,
+      "endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "endpoint_recipe": "H=sum_(j=0)^3 X_j tensor rho(f_j); X_j are the four disjoint GS orthogonal-design coefficients",
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "all_used_scalar_images_verified_sign_circulants": true,
+      "literal_entry_and_row_recipe_available": true,
+      "dense_endpoint_allocated": false,
+      "complete_dense_endpoint_Gram_performed": false,
+      "literal_row_controls": {
+        "row_indices": [
+          0,
+          1,
+          4,
+          5,
+          6310,
+          12619
+        ],
+        "all_selected_full_rows_are_signs": true,
+        "all_selected_row_pairs_checked_by_exact_bit_counts": true,
+        "complete_Gram_proof": "Full polynomial OD identity and complete exact Williamson norm relation; row checks are interface controls."
+      },
+      "reported_order_status": {
+        "p": 631,
+        "w": 5,
+        "order": 12620,
+        "status": "known",
+        "prior_construction": {
+          "family": "Paley I",
+          "reference_url": "https://doi.org/10.1002/sapm1933121311",
+          "supporting_reference_url": "https://arxiv.org/html/2610.27175v2#S2.Thm2",
+          "parameters": {
+            "q": 12619,
+            "q_is_prime": true,
+            "q_mod4": 3,
+            "output_order": 12620
+          }
+        },
+        "checked_utc": "2026-11-24 21:25:01 UTC",
+        "williamson_input_sha256": "5e15c1638cbff7f4e8a36f5a5c6eaadfabda994fdc29309d776e97841c4c2278",
+        "arithmetic_checks": {
+          "N_minus1_factorization": [
+            [
+              12619,
+              1
+            ]
+          ],
+          "N_over2_minus1_factorization": [
+            [
+              3,
+              2
+            ],
+            [
+              701,
+              1
+            ]
+          ],
+          "N_over4_minus2_factorization": [
+            [
+              3,
+              1
+            ],
+            [
+              1051,
+              1
+            ]
+          ],
+          "N_over4_minus2_mod8": 1
+        }
+      }
+    },
+    {
+      "p": 631,
+      "w": 7,
+      "output_order": 17668,
+      "Williamson_source": {
+        "order": 7,
+        "first_rows_pm": [
+          "+--++--",
+          "+-+--+-",
+          "++----+",
+          "+------"
+        ],
+        "actual_used_scalar_polynomials": "f_j(c)=sum_k first_rows[j][k]*c^k",
+        "all_f_j_self_adjoint": true,
+        "all_pairwise_amicability_identities_verified": true,
+        "full_integer_Gram_verified": true,
+        "cyclic_algebra_norm_relation_verified": true,
+        "exact_norm_relation": "sum_j f_j(c)^2=28 in Q[c]/(c^7-1)",
+        "row_sums": [
+          -1,
+          -1,
+          -1,
+          -5
+        ],
+        "first_rows_int8_sha256": "c37f26fa0f5ebde9ca04e8ce4da0ff6c10a7c644ba41633de9382659b8fcb624",
+        "entry_images_are_literal_sign_circulants": true,
+        "input_file": "experiments/scalar_lift/williamson_inputs.json",
+        "input_file_sha256": "242f554cf113c68ab882e147c3b2702b7bb62e68b66ad36b16c92b6c194f8560",
+        "primary_source": {
+          "id": "sage_official_literal_table",
+          "url": "https://github.com/sagemath/sage/blob/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py#L577",
+          "raw_url": "https://raw.githubusercontent.com/sagemath/sage/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py",
+          "commit": "8de8dad7bcb38e1baa43508cbe944bf04a2d0401",
+          "commit_date": "2026-11-14",
+          "source_sha256": "15b018c9d25cfbe1a45f98ee1421b338beb2b39077c6777e6bc33bc0fbd4b01d",
+          "function": "williamson_type_quadruples_smallcases",
+          "documentation_url": "https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/matrices/hadamard_matrix.html#sage.combinat.matrices.hadamard_matrix.williamson_type_quadruples_smallcases",
+          "documented_original_sources": "Sage attributes orders 3,5,...,29,37,43 to [Ha83], and 31,33,39,41,45,49,51,55,57,61,63 to [Lon2013]."
+        }
+      },
+      "scalar_algebra": {
+        "algebra": "Q[c]/(c^7-1)",
+        "algebra_is_single_number_field": false,
+        "number_field_factors": [
+          {
+            "conductor": 1,
+            "field_degree": 1,
+            "module_rank": 1
+          },
+          {
+            "conductor": 7,
+            "field_degree": 6,
+            "module_rank": 1
+          }
+        ],
+        "rational_dimension": 7,
+        "coordinate_basis": "beta_j=c^(-j), 0<=j<w",
+        "conjugation": "c -> c^(-1)",
+        "trace_functional": "tau(a)=[c^0]a=(1/7)*sum_(d|7) Tr_Q(zeta_d)/Q(a_d)",
+        "trace_metric": "I_7",
+        "metric_entry_formula": "G_ij=tau(conjugate(beta_i)*beta_j)=delta_ij",
+        "multiplication_action": "rho(f)[r,s]=f_coefficients[(s-r) mod w]",
+        "adjoint_identity": "rho(conjugate(f))=rho(f)^T",
+        "endpoint_frame": "I_7",
+        "endpoint_frame_Gram_scale": 1
+      },
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 17668,
+      "weighted_source_is_Butson": false,
+      "weighted_source_used_alphabet": "{+f_j(c),-f_j(c):0<=j<4}, with literal polynomials recorded above",
+      "actual_used_source_polynomials_pm": [
+        "++----+",
+        "+-+--+-",
+        "+--++--",
+        "+------",
+        "-++++++",
+        "-++--++",
+        "-+-++-+",
+        "--++++-"
+      ],
+      "actual_used_source_polynomial_count": 8,
+      "source_identity": "D(f)D(f)*=631*sum_j f_j(c)^2*I=17668I",
+      "rational_dimension_after_restriction": 17668,
+      "endpoint_Gram_scale": 17668,
+      "endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "endpoint_recipe": "H=sum_(j=0)^3 X_j tensor rho(f_j); X_j are the four disjoint GS orthogonal-design coefficients",
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "all_used_scalar_images_verified_sign_circulants": true,
+      "literal_entry_and_row_recipe_available": true,
+      "dense_endpoint_allocated": false,
+      "complete_dense_endpoint_Gram_performed": false,
+      "literal_row_controls": {
+        "row_indices": [
+          0,
+          1,
+          6,
+          7,
+          8834,
+          17667
+        ],
+        "all_selected_full_rows_are_signs": true,
+        "all_selected_row_pairs_checked_by_exact_bit_counts": true,
+        "complete_Gram_proof": "Full polynomial OD identity and complete exact Williamson norm relation; row checks are interface controls."
+      },
+      "reported_order_status": {
+        "p": 631,
+        "w": 7,
+        "order": 17668,
+        "status": "new_to_best_of_authors_knowledge",
+        "prior_construction": null,
+        "checked_utc": "2026-11-24 21:25:01 UTC",
+        "williamson_input_sha256": "c37f26fa0f5ebde9ca04e8ce4da0ff6c10a7c644ba41633de9382659b8fcb624",
+        "arithmetic_checks": {
+          "N_minus1_factorization": [
+            [
+              3,
+              2
+            ],
+            [
+              13,
+              1
+            ],
+            [
+              151,
+              1
+            ]
+          ],
+          "N_over2_minus1_factorization": [
+            [
+              11,
+              2
+            ],
+            [
+              73,
+              1
+            ]
+          ],
+          "N_over4_minus2_factorization": [
+            [
+              5,
+              1
+            ],
+            [
+              883,
+              1
+            ]
+          ],
+          "N_over4_minus2_mod8": 7
+        },
+        "previously_completed_project_order": true
+      }
+    },
+    {
+      "p": 631,
+      "w": 9,
+      "output_order": 22716,
+      "Williamson_source": {
+        "order": 9,
+        "first_rows_pm": [
+          "+---++---",
+          "+--+--+--",
+          "+-+----+-",
+          "++------+"
+        ],
+        "actual_used_scalar_polynomials": "f_j(c)=sum_k first_rows[j][k]*c^k",
+        "all_f_j_self_adjoint": true,
+        "all_pairwise_amicability_identities_verified": true,
+        "full_integer_Gram_verified": true,
+        "cyclic_algebra_norm_relation_verified": true,
+        "exact_norm_relation": "sum_j f_j(c)^2=36 in Q[c]/(c^9-1)",
+        "row_sums": [
+          -3,
+          -3,
+          -3,
+          -3
+        ],
+        "first_rows_int8_sha256": "f99ead7f1b67fa7f751b30d686656f5ed8b6178e0af27a0dc863abdb3f484e29",
+        "entry_images_are_literal_sign_circulants": true,
+        "input_file": "experiments/scalar_lift/williamson_inputs.json",
+        "input_file_sha256": "242f554cf113c68ab882e147c3b2702b7bb62e68b66ad36b16c92b6c194f8560",
+        "primary_source": {
+          "id": "sage_official_literal_table",
+          "url": "https://github.com/sagemath/sage/blob/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py#L577",
+          "raw_url": "https://raw.githubusercontent.com/sagemath/sage/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py",
+          "commit": "8de8dad7bcb38e1baa43508cbe944bf04a2d0401",
+          "commit_date": "2026-11-14",
+          "source_sha256": "15b018c9d25cfbe1a45f98ee1421b338beb2b39077c6777e6bc33bc0fbd4b01d",
+          "function": "williamson_type_quadruples_smallcases",
+          "documentation_url": "https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/matrices/hadamard_matrix.html#sage.combinat.matrices.hadamard_matrix.williamson_type_quadruples_smallcases",
+          "documented_original_sources": "Sage attributes orders 3,5,...,29,37,43 to [Ha83], and 31,33,39,41,45,49,51,55,57,61,63 to [Lon2013]."
+        }
+      },
+      "scalar_algebra": {
+        "algebra": "Q[c]/(c^9-1)",
+        "algebra_is_single_number_field": false,
+        "number_field_factors": [
+          {
+            "conductor": 1,
+            "field_degree": 1,
+            "module_rank": 1
+          },
+          {
+            "conductor": 3,
+            "field_degree": 2,
+            "module_rank": 1
+          },
+          {
+            "conductor": 9,
+            "field_degree": 6,
+            "module_rank": 1
+          }
+        ],
+        "rational_dimension": 9,
+        "coordinate_basis": "beta_j=c^(-j), 0<=j<w",
+        "conjugation": "c -> c^(-1)",
+        "trace_functional": "tau(a)=[c^0]a=(1/9)*sum_(d|9) Tr_Q(zeta_d)/Q(a_d)",
+        "trace_metric": "I_9",
+        "metric_entry_formula": "G_ij=tau(conjugate(beta_i)*beta_j)=delta_ij",
+        "multiplication_action": "rho(f)[r,s]=f_coefficients[(s-r) mod w]",
+        "adjoint_identity": "rho(conjugate(f))=rho(f)^T",
+        "endpoint_frame": "I_9",
+        "endpoint_frame_Gram_scale": 1
+      },
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 22716,
+      "weighted_source_is_Butson": false,
+      "weighted_source_used_alphabet": "{+f_j(c),-f_j(c):0<=j<4}, with literal polynomials recorded above",
+      "actual_used_source_polynomials_pm": [
+        "++------+",
+        "+-+----+-",
+        "+--+--+--",
+        "+---++---",
+        "-+++--+++",
+        "-++-++-++",
+        "-+-++++-+",
+        "--++++++-"
+      ],
+      "actual_used_source_polynomial_count": 8,
+      "source_identity": "D(f)D(f)*=631*sum_j f_j(c)^2*I=22716I",
+      "rational_dimension_after_restriction": 22716,
+      "endpoint_Gram_scale": 22716,
+      "endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "endpoint_recipe": "H=sum_(j=0)^3 X_j tensor rho(f_j); X_j are the four disjoint GS orthogonal-design coefficients",
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "all_used_scalar_images_verified_sign_circulants": true,
+      "literal_entry_and_row_recipe_available": true,
+      "dense_endpoint_allocated": false,
+      "complete_dense_endpoint_Gram_performed": false,
+      "literal_row_controls": {
+        "row_indices": [
+          0,
+          1,
+          8,
+          9,
+          11358,
+          22715
+        ],
+        "all_selected_full_rows_are_signs": true,
+        "all_selected_row_pairs_checked_by_exact_bit_counts": true,
+        "complete_Gram_proof": "Full polynomial OD identity and complete exact Williamson norm relation; row checks are interface controls."
+      },
+      "reported_order_status": {
+        "p": 631,
+        "w": 9,
+        "order": 22716,
+        "status": "new_to_best_of_authors_knowledge",
+        "prior_construction": null,
+        "checked_utc": "2026-11-24 21:25:01 UTC",
+        "williamson_input_sha256": "f99ead7f1b67fa7f751b30d686656f5ed8b6178e0af27a0dc863abdb3f484e29",
+        "arithmetic_checks": {
+          "N_minus1_factorization": [
+            [
+              5,
+              1
+            ],
+            [
+              7,
+              1
+            ],
+            [
+              11,
+              1
+            ],
+            [
+              59,
+              1
+            ]
+          ],
+          "N_over2_minus1_factorization": [
+            [
+              41,
+              1
+            ],
+            [
+              277,
+              1
+            ]
+          ],
+          "N_over4_minus2_factorization": [
+            [
+              7,
+              1
+            ],
+            [
+              811,
+              1
+            ]
+          ],
+          "N_over4_minus2_mod8": 5
+        },
+        "previously_completed_project_order": true
+      }
+    },
+    {
+      "p": 631,
+      "w": 11,
+      "output_order": 27764,
+      "Williamson_source": {
+        "order": 11,
+        "first_rows_pm": [
+          "++--------+",
+          "++-+-++-+-+",
+          "++-++--++-+",
+          "+-++----++-"
+        ],
+        "actual_used_scalar_polynomials": "f_j(c)=sum_k first_rows[j][k]*c^k",
+        "all_f_j_self_adjoint": true,
+        "all_pairwise_amicability_identities_verified": true,
+        "full_integer_Gram_verified": true,
+        "cyclic_algebra_norm_relation_verified": true,
+        "exact_norm_relation": "sum_j f_j(c)^2=44 in Q[c]/(c^11-1)",
+        "row_sums": [
+          -5,
+          3,
+          3,
+          -1
+        ],
+        "first_rows_int8_sha256": "3c3a907732388c240d9bb6ef7d1b2567ca0ccc30f9b1070a7cf4c4d4df75c44e",
+        "entry_images_are_literal_sign_circulants": true,
+        "input_file": "experiments/scalar_lift/williamson_inputs.json",
+        "input_file_sha256": "242f554cf113c68ab882e147c3b2702b7bb62e68b66ad36b16c92b6c194f8560",
+        "primary_source": {
+          "id": "sage_official_literal_table",
+          "url": "https://github.com/sagemath/sage/blob/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py#L577",
+          "raw_url": "https://raw.githubusercontent.com/sagemath/sage/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py",
+          "commit": "8de8dad7bcb38e1baa43508cbe944bf04a2d0401",
+          "commit_date": "2026-11-14",
+          "source_sha256": "15b018c9d25cfbe1a45f98ee1421b338beb2b39077c6777e6bc33bc0fbd4b01d",
+          "function": "williamson_type_quadruples_smallcases",
+          "documentation_url": "https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/matrices/hadamard_matrix.html#sage.combinat.matrices.hadamard_matrix.williamson_type_quadruples_smallcases",
+          "documented_original_sources": "Sage attributes orders 3,5,...,29,37,43 to [Ha83], and 31,33,39,41,45,49,51,55,57,61,63 to [Lon2013]."
+        }
+      },
+      "scalar_algebra": {
+        "algebra": "Q[c]/(c^11-1)",
+        "algebra_is_single_number_field": false,
+        "number_field_factors": [
+          {
+            "conductor": 1,
+            "field_degree": 1,
+            "module_rank": 1
+          },
+          {
+            "conductor": 11,
+            "field_degree": 10,
+            "module_rank": 1
+          }
+        ],
+        "rational_dimension": 11,
+        "coordinate_basis": "beta_j=c^(-j), 0<=j<w",
+        "conjugation": "c -> c^(-1)",
+        "trace_functional": "tau(a)=[c^0]a=(1/11)*sum_(d|11) Tr_Q(zeta_d)/Q(a_d)",
+        "trace_metric": "I_11",
+        "metric_entry_formula": "G_ij=tau(conjugate(beta_i)*beta_j)=delta_ij",
+        "multiplication_action": "rho(f)[r,s]=f_coefficients[(s-r) mod w]",
+        "adjoint_identity": "rho(conjugate(f))=rho(f)^T",
+        "endpoint_frame": "I_11",
+        "endpoint_frame_Gram_scale": 1
+      },
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 27764,
+      "weighted_source_is_Butson": false,
+      "weighted_source_used_alphabet": "{+f_j(c),-f_j(c):0<=j<4}, with literal polynomials recorded above",
+      "actual_used_source_polynomials_pm": [
+        "++-++--++-+",
+        "++-+-++-+-+",
+        "++--------+",
+        "+-++----++-",
+        "-+--++++--+",
+        "--++++++++-",
+        "--+-+--+-+-",
+        "--+--++--+-"
+      ],
+      "actual_used_source_polynomial_count": 8,
+      "source_identity": "D(f)D(f)*=631*sum_j f_j(c)^2*I=27764I",
+      "rational_dimension_after_restriction": 27764,
+      "endpoint_Gram_scale": 27764,
+      "endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "endpoint_recipe": "H=sum_(j=0)^3 X_j tensor rho(f_j); X_j are the four disjoint GS orthogonal-design coefficients",
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "all_used_scalar_images_verified_sign_circulants": true,
+      "literal_entry_and_row_recipe_available": true,
+      "dense_endpoint_allocated": false,
+      "complete_dense_endpoint_Gram_performed": false,
+      "literal_row_controls": {
+        "row_indices": [
+          0,
+          1,
+          10,
+          11,
+          13882,
+          27763
+        ],
+        "all_selected_full_rows_are_signs": true,
+        "all_selected_row_pairs_checked_by_exact_bit_counts": true,
+        "complete_Gram_proof": "Full polynomial OD identity and complete exact Williamson norm relation; row checks are interface controls."
+      },
+      "reported_order_status": {
+        "p": 631,
+        "w": 11,
+        "order": 27764,
+        "status": "known",
+        "prior_construction": {
+          "family": "Paley I",
+          "reference_url": "https://doi.org/10.1002/sapm1933121311",
+          "supporting_reference_url": "https://arxiv.org/html/2610.27175v2#S2.Thm2",
+          "parameters": {
+            "q": 27763,
+            "q_is_prime": true,
+            "q_mod4": 3,
+            "output_order": 27764
+          }
+        },
+        "checked_utc": "2026-11-24 21:25:01 UTC",
+        "williamson_input_sha256": "3c3a907732388c240d9bb6ef7d1b2567ca0ccc30f9b1070a7cf4c4d4df75c44e",
+        "arithmetic_checks": {
+          "N_minus1_factorization": [
+            [
+              27763,
+              1
+            ]
+          ],
+          "N_over2_minus1_factorization": [
+            [
+              3,
+              1
+            ],
+            [
+              7,
+              1
+            ],
+            [
+              661,
+              1
+            ]
+          ],
+          "N_over4_minus2_factorization": [
+            [
+              3,
+              3
+            ],
+            [
+              257,
+              1
+            ]
+          ],
+          "N_over4_minus2_mod8": 3
+        }
+      }
+    },
+    {
+      "p": 631,
+      "w": 13,
+      "output_order": 32812,
+      "Williamson_source": {
+        "order": 13,
+        "first_rows_pm": [
+          "++++-+--+-+++",
+          "+---+-++-+---",
+          "++---+--+---+",
+          "++---+--+---+"
+        ],
+        "actual_used_scalar_polynomials": "f_j(c)=sum_k first_rows[j][k]*c^k",
+        "all_f_j_self_adjoint": true,
+        "all_pairwise_amicability_identities_verified": true,
+        "full_integer_Gram_verified": true,
+        "cyclic_algebra_norm_relation_verified": true,
+        "exact_norm_relation": "sum_j f_j(c)^2=52 in Q[c]/(c^13-1)",
+        "row_sums": [
+          5,
+          -3,
+          -3,
+          -3
+        ],
+        "first_rows_int8_sha256": "058f283db7fbb6c95cf35647c962e43688da2c29272bc1680a548a5d546cd8c0",
+        "entry_images_are_literal_sign_circulants": true,
+        "input_file": "experiments/scalar_lift/williamson_inputs.json",
+        "input_file_sha256": "242f554cf113c68ab882e147c3b2702b7bb62e68b66ad36b16c92b6c194f8560",
+        "primary_source": {
+          "id": "sage_official_literal_table",
+          "url": "https://github.com/sagemath/sage/blob/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py#L577",
+          "raw_url": "https://raw.githubusercontent.com/sagemath/sage/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py",
+          "commit": "8de8dad7bcb38e1baa43508cbe944bf04a2d0401",
+          "commit_date": "2026-11-14",
+          "source_sha256": "15b018c9d25cfbe1a45f98ee1421b338beb2b39077c6777e6bc33bc0fbd4b01d",
+          "function": "williamson_type_quadruples_smallcases",
+          "documentation_url": "https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/matrices/hadamard_matrix.html#sage.combinat.matrices.hadamard_matrix.williamson_type_quadruples_smallcases",
+          "documented_original_sources": "Sage attributes orders 3,5,...,29,37,43 to [Ha83], and 31,33,39,41,45,49,51,55,57,61,63 to [Lon2013]."
+        }
+      },
+      "scalar_algebra": {
+        "algebra": "Q[c]/(c^13-1)",
+        "algebra_is_single_number_field": false,
+        "number_field_factors": [
+          {
+            "conductor": 1,
+            "field_degree": 1,
+            "module_rank": 1
+          },
+          {
+            "conductor": 13,
+            "field_degree": 12,
+            "module_rank": 1
+          }
+        ],
+        "rational_dimension": 13,
+        "coordinate_basis": "beta_j=c^(-j), 0<=j<w",
+        "conjugation": "c -> c^(-1)",
+        "trace_functional": "tau(a)=[c^0]a=(1/13)*sum_(d|13) Tr_Q(zeta_d)/Q(a_d)",
+        "trace_metric": "I_13",
+        "metric_entry_formula": "G_ij=tau(conjugate(beta_i)*beta_j)=delta_ij",
+        "multiplication_action": "rho(f)[r,s]=f_coefficients[(s-r) mod w]",
+        "adjoint_identity": "rho(conjugate(f))=rho(f)^T",
+        "endpoint_frame": "I_13",
+        "endpoint_frame_Gram_scale": 1
+      },
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 32812,
+      "weighted_source_is_Butson": false,
+      "weighted_source_used_alphabet": "{+f_j(c),-f_j(c):0<=j<4}, with literal polynomials recorded above",
+      "actual_used_source_polynomials_pm": [
+        "++++-+--+-+++",
+        "++---+--+---+",
+        "+---+-++-+---",
+        "-+++-+--+-+++",
+        "--+++-++-+++-",
+        "----+-++-+---"
+      ],
+      "actual_used_source_polynomial_count": 6,
+      "source_identity": "D(f)D(f)*=631*sum_j f_j(c)^2*I=32812I",
+      "rational_dimension_after_restriction": 32812,
+      "endpoint_Gram_scale": 32812,
+      "endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "endpoint_recipe": "H=sum_(j=0)^3 X_j tensor rho(f_j); X_j are the four disjoint GS orthogonal-design coefficients",
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "all_used_scalar_images_verified_sign_circulants": true,
+      "literal_entry_and_row_recipe_available": true,
+      "dense_endpoint_allocated": false,
+      "complete_dense_endpoint_Gram_performed": false,
+      "literal_row_controls": {
+        "row_indices": [
+          0,
+          1,
+          12,
+          13,
+          16406,
+          32811
+        ],
+        "all_selected_full_rows_are_signs": true,
+        "all_selected_row_pairs_checked_by_exact_bit_counts": true,
+        "complete_Gram_proof": "Full polynomial OD identity and complete exact Williamson norm relation; row checks are interface controls."
+      },
+      "reported_order_status": {
+        "p": 631,
+        "w": 13,
+        "order": 32812,
+        "status": "new_to_best_of_authors_knowledge",
+        "prior_construction": null,
+        "checked_utc": "2026-11-24 21:25:01 UTC",
+        "williamson_input_sha256": "058f283db7fbb6c95cf35647c962e43688da2c29272bc1680a548a5d546cd8c0",
+        "arithmetic_checks": {
+          "N_minus1_factorization": [
+            [
+              3,
+              1
+            ],
+            [
+              10937,
+              1
+            ]
+          ],
+          "N_over2_minus1_factorization": [
+            [
+              5,
+              1
+            ],
+            [
+              17,
+              1
+            ],
+            [
+              193,
+              1
+            ]
+          ],
+          "N_over4_minus2_factorization": [
+            [
+              59,
+              1
+            ],
+            [
+              139,
+              1
+            ]
+          ],
+          "N_over4_minus2_mod8": 1
+        },
+        "previously_completed_project_order": true
+      }
+    },
+    {
+      "p": 631,
+      "w": 15,
+      "output_order": 37860,
+      "Williamson_source": {
+        "order": 15,
+        "first_rows_pm": [
+          "+-+---++++---+-",
+          "++-++------++-+",
+          "++-++++--++++-+",
+          "++-++-+--+-++-+"
+        ],
+        "actual_used_scalar_polynomials": "f_j(c)=sum_k first_rows[j][k]*c^k",
+        "all_f_j_self_adjoint": true,
+        "all_pairwise_amicability_identities_verified": true,
+        "full_integer_Gram_verified": true,
+        "cyclic_algebra_norm_relation_verified": true,
+        "exact_norm_relation": "sum_j f_j(c)^2=60 in Q[c]/(c^15-1)",
+        "row_sums": [
+          -1,
+          -1,
+          7,
+          3
+        ],
+        "first_rows_int8_sha256": "991c5797b6ee8a4d471144ff9df3fe017fc6696db05a1ff12078675f87b6ba4a",
+        "entry_images_are_literal_sign_circulants": true,
+        "input_file": "experiments/scalar_lift/williamson_inputs.json",
+        "input_file_sha256": "242f554cf113c68ab882e147c3b2702b7bb62e68b66ad36b16c92b6c194f8560",
+        "primary_source": {
+          "id": "sage_official_literal_table",
+          "url": "https://github.com/sagemath/sage/blob/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py#L577",
+          "raw_url": "https://raw.githubusercontent.com/sagemath/sage/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py",
+          "commit": "8de8dad7bcb38e1baa43508cbe944bf04a2d0401",
+          "commit_date": "2026-11-14",
+          "source_sha256": "15b018c9d25cfbe1a45f98ee1421b338beb2b39077c6777e6bc33bc0fbd4b01d",
+          "function": "williamson_type_quadruples_smallcases",
+          "documentation_url": "https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/matrices/hadamard_matrix.html#sage.combinat.matrices.hadamard_matrix.williamson_type_quadruples_smallcases",
+          "documented_original_sources": "Sage attributes orders 3,5,...,29,37,43 to [Ha83], and 31,33,39,41,45,49,51,55,57,61,63 to [Lon2013]."
+        }
+      },
+      "scalar_algebra": {
+        "algebra": "Q[c]/(c^15-1)",
+        "algebra_is_single_number_field": false,
+        "number_field_factors": [
+          {
+            "conductor": 1,
+            "field_degree": 1,
+            "module_rank": 1
+          },
+          {
+            "conductor": 3,
+            "field_degree": 2,
+            "module_rank": 1
+          },
+          {
+            "conductor": 5,
+            "field_degree": 4,
+            "module_rank": 1
+          },
+          {
+            "conductor": 15,
+            "field_degree": 8,
+            "module_rank": 1
+          }
+        ],
+        "rational_dimension": 15,
+        "coordinate_basis": "beta_j=c^(-j), 0<=j<w",
+        "conjugation": "c -> c^(-1)",
+        "trace_functional": "tau(a)=[c^0]a=(1/15)*sum_(d|15) Tr_Q(zeta_d)/Q(a_d)",
+        "trace_metric": "I_15",
+        "metric_entry_formula": "G_ij=tau(conjugate(beta_i)*beta_j)=delta_ij",
+        "multiplication_action": "rho(f)[r,s]=f_coefficients[(s-r) mod w]",
+        "adjoint_identity": "rho(conjugate(f))=rho(f)^T",
+        "endpoint_frame": "I_15",
+        "endpoint_frame_Gram_scale": 1
+      },
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 37860,
+      "weighted_source_is_Butson": false,
+      "weighted_source_used_alphabet": "{+f_j(c),-f_j(c):0<=j<4}, with literal polynomials recorded above",
+      "actual_used_source_polynomials_pm": [
+        "++-++++--++++-+",
+        "++-++-+--+-++-+",
+        "++-++------++-+",
+        "+-+---++++---+-",
+        "-+-+++----+++-+",
+        "--+--++++++--+-",
+        "--+--+-++-+--+-",
+        "--+----++----+-"
+      ],
+      "actual_used_source_polynomial_count": 8,
+      "source_identity": "D(f)D(f)*=631*sum_j f_j(c)^2*I=37860I",
+      "rational_dimension_after_restriction": 37860,
+      "endpoint_Gram_scale": 37860,
+      "endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "endpoint_recipe": "H=sum_(j=0)^3 X_j tensor rho(f_j); X_j are the four disjoint GS orthogonal-design coefficients",
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "all_used_scalar_images_verified_sign_circulants": true,
+      "literal_entry_and_row_recipe_available": true,
+      "dense_endpoint_allocated": false,
+      "complete_dense_endpoint_Gram_performed": false,
+      "literal_row_controls": {
+        "row_indices": [
+          0,
+          1,
+          14,
+          15,
+          18930,
+          37859
+        ],
+        "all_selected_full_rows_are_signs": true,
+        "all_selected_row_pairs_checked_by_exact_bit_counts": true,
+        "complete_Gram_proof": "Full polynomial OD identity and complete exact Williamson norm relation; row checks are interface controls."
+      },
+      "reported_order_status": {
+        "p": 631,
+        "w": 15,
+        "order": 37860,
+        "status": "known",
+        "prior_construction": {
+          "family": "Paley sixteen-block product with classical T-matrices",
+          "reference_url": "https://arxiv.org/html/2610.27175v2#S4.T4",
+          "parameters": {
+            "s": 3155,
+            "t": 3,
+            "q": 12619,
+            "q_is_prime": true,
+            "q_mod8": 3,
+            "Paley_base_order": 12620,
+            "known_T_order": 3,
+            "output_order": 37860
+          },
+          "ingredient_reference_url": "https://arxiv.org/html/2610.27175v2#S4.T3",
+          "reference_detail": "Table4 Paley and Miyamoto blocks: H(4st) for T(t) and prime-power4s-1 congruent3 mod8. Here t=3 or5 has classical T-sequences."
+        },
+        "checked_utc": "2026-11-24 21:25:01 UTC",
+        "williamson_input_sha256": "991c5797b6ee8a4d471144ff9df3fe017fc6696db05a1ff12078675f87b6ba4a",
+        "arithmetic_checks": {
+          "N_minus1_factorization": [
+            [
+              17,
+              2
+            ],
+            [
+              131,
+              1
+            ]
+          ],
+          "N_over2_minus1_factorization": [
+            [
+              23,
+              1
+            ],
+            [
+              823,
+              1
+            ]
+          ],
+          "N_over4_minus2_factorization": [
+            [
+              9463,
+              1
+            ]
+          ],
+          "N_over4_minus2_mod8": 7
+        }
+      }
+    },
+    {
+      "p": 631,
+      "w": 17,
+      "output_order": 42908,
+      "Williamson_source": {
+        "order": 17,
+        "first_rows_pm": [
+          "+---+++----+++---",
+          "++-+---+--+---+-+",
+          "+--+-++++++++-+--",
+          "+-++-+++--+++-++-"
+        ],
+        "actual_used_scalar_polynomials": "f_j(c)=sum_k first_rows[j][k]*c^k",
+        "all_f_j_self_adjoint": true,
+        "all_pairwise_amicability_identities_verified": true,
+        "full_integer_Gram_verified": true,
+        "cyclic_algebra_norm_relation_verified": true,
+        "exact_norm_relation": "sum_j f_j(c)^2=68 in Q[c]/(c^17-1)",
+        "row_sums": [
+          -3,
+          -3,
+          5,
+          5
+        ],
+        "first_rows_int8_sha256": "c4f2b0312348d225f1c8086369eaf34f75f7c09bd56ed8ec22b64ca9683dfc55",
+        "entry_images_are_literal_sign_circulants": true,
+        "input_file": "experiments/scalar_lift/williamson_inputs.json",
+        "input_file_sha256": "242f554cf113c68ab882e147c3b2702b7bb62e68b66ad36b16c92b6c194f8560",
+        "primary_source": {
+          "id": "sage_official_literal_table",
+          "url": "https://github.com/sagemath/sage/blob/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py#L577",
+          "raw_url": "https://raw.githubusercontent.com/sagemath/sage/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py",
+          "commit": "8de8dad7bcb38e1baa43508cbe944bf04a2d0401",
+          "commit_date": "2026-11-14",
+          "source_sha256": "15b018c9d25cfbe1a45f98ee1421b338beb2b39077c6777e6bc33bc0fbd4b01d",
+          "function": "williamson_type_quadruples_smallcases",
+          "documentation_url": "https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/matrices/hadamard_matrix.html#sage.combinat.matrices.hadamard_matrix.williamson_type_quadruples_smallcases",
+          "documented_original_sources": "Sage attributes orders 3,5,...,29,37,43 to [Ha83], and 31,33,39,41,45,49,51,55,57,61,63 to [Lon2013]."
+        }
+      },
+      "scalar_algebra": {
+        "algebra": "Q[c]/(c^17-1)",
+        "algebra_is_single_number_field": false,
+        "number_field_factors": [
+          {
+            "conductor": 1,
+            "field_degree": 1,
+            "module_rank": 1
+          },
+          {
+            "conductor": 17,
+            "field_degree": 16,
+            "module_rank": 1
+          }
+        ],
+        "rational_dimension": 17,
+        "coordinate_basis": "beta_j=c^(-j), 0<=j<w",
+        "conjugation": "c -> c^(-1)",
+        "trace_functional": "tau(a)=[c^0]a=(1/17)*sum_(d|17) Tr_Q(zeta_d)/Q(a_d)",
+        "trace_metric": "I_17",
+        "metric_entry_formula": "G_ij=tau(conjugate(beta_i)*beta_j)=delta_ij",
+        "multiplication_action": "rho(f)[r,s]=f_coefficients[(s-r) mod w]",
+        "adjoint_identity": "rho(conjugate(f))=rho(f)^T",
+        "endpoint_frame": "I_17",
+        "endpoint_frame_Gram_scale": 1
+      },
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 42908,
+      "weighted_source_is_Butson": false,
+      "weighted_source_used_alphabet": "{+f_j(c),-f_j(c):0<=j<4}, with literal polynomials recorded above",
+      "actual_used_source_polynomials_pm": [
+        "++-+---+--+---+-+",
+        "+-++-+++--+++-++-",
+        "+--+-++++++++-+--",
+        "+---+++----+++---",
+        "-+++---++++---+++",
+        "-++-+--------+-++",
+        "-+--+---++---+--+",
+        "--+-+++-++-+++-+-"
+      ],
+      "actual_used_source_polynomial_count": 8,
+      "source_identity": "D(f)D(f)*=631*sum_j f_j(c)^2*I=42908I",
+      "rational_dimension_after_restriction": 42908,
+      "endpoint_Gram_scale": 42908,
+      "endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "endpoint_recipe": "H=sum_(j=0)^3 X_j tensor rho(f_j); X_j are the four disjoint GS orthogonal-design coefficients",
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "all_used_scalar_images_verified_sign_circulants": true,
+      "literal_entry_and_row_recipe_available": true,
+      "dense_endpoint_allocated": false,
+      "complete_dense_endpoint_Gram_performed": false,
+      "literal_row_controls": {
+        "row_indices": [
+          0,
+          1,
+          16,
+          17,
+          21454,
+          42907
+        ],
+        "all_selected_full_rows_are_signs": true,
+        "all_selected_row_pairs_checked_by_exact_bit_counts": true,
+        "complete_Gram_proof": "Full polynomial OD identity and complete exact Williamson norm relation; row checks are interface controls."
+      },
+      "reported_order_status": {
+        "p": 631,
+        "w": 17,
+        "order": 42908,
+        "status": "new_to_best_of_authors_knowledge",
+        "prior_construction": null,
+        "checked_utc": "2026-11-24 21:25:01 UTC",
+        "williamson_input_sha256": "c4f2b0312348d225f1c8086369eaf34f75f7c09bd56ed8ec22b64ca9683dfc55",
+        "arithmetic_checks": {
+          "N_minus1_factorization": [
+            [
+              107,
+              1
+            ],
+            [
+              401,
+              1
+            ]
+          ],
+          "N_over2_minus1_factorization": [
+            [
+              3,
+              1
+            ],
+            [
+              7151,
+              1
+            ]
+          ],
+          "N_over4_minus2_factorization": [
+            [
+              3,
+              1
+            ],
+            [
+              5,
+              2
+            ],
+            [
+              11,
+              1
+            ],
+            [
+              13,
+              1
+            ]
+          ],
+          "N_over4_minus2_mod8": 5
+        }
+      }
+    },
+    {
+      "p": 631,
+      "w": 19,
+      "output_order": 47956,
+      "Williamson_source": {
+        "order": 19,
+        "first_rows_pm": [
+          "++--+++-+--+-+++--+",
+          "++-++--+-++-+--++-+",
+          "+-+---++++++++---+-",
+          "++--+-++++++++-+--+"
+        ],
+        "actual_used_scalar_polynomials": "f_j(c)=sum_k first_rows[j][k]*c^k",
+        "all_f_j_self_adjoint": true,
+        "all_pairwise_amicability_identities_verified": true,
+        "full_integer_Gram_verified": true,
+        "cyclic_algebra_norm_relation_verified": true,
+        "exact_norm_relation": "sum_j f_j(c)^2=76 in Q[c]/(c^19-1)",
+        "row_sums": [
+          3,
+          3,
+          3,
+          7
+        ],
+        "first_rows_int8_sha256": "b8c7175fa8ec12e7394ef6aa53e1bbc0e084fd830da75ed20e33ce6dbd5b5990",
+        "entry_images_are_literal_sign_circulants": true,
+        "input_file": "experiments/scalar_lift/williamson_inputs.json",
+        "input_file_sha256": "242f554cf113c68ab882e147c3b2702b7bb62e68b66ad36b16c92b6c194f8560",
+        "primary_source": {
+          "id": "sage_official_literal_table",
+          "url": "https://github.com/sagemath/sage/blob/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py#L577",
+          "raw_url": "https://raw.githubusercontent.com/sagemath/sage/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py",
+          "commit": "8de8dad7bcb38e1baa43508cbe944bf04a2d0401",
+          "commit_date": "2026-11-14",
+          "source_sha256": "15b018c9d25cfbe1a45f98ee1421b338beb2b39077c6777e6bc33bc0fbd4b01d",
+          "function": "williamson_type_quadruples_smallcases",
+          "documentation_url": "https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/matrices/hadamard_matrix.html#sage.combinat.matrices.hadamard_matrix.williamson_type_quadruples_smallcases",
+          "documented_original_sources": "Sage attributes orders 3,5,...,29,37,43 to [Ha83], and 31,33,39,41,45,49,51,55,57,61,63 to [Lon2013]."
+        }
+      },
+      "scalar_algebra": {
+        "algebra": "Q[c]/(c^19-1)",
+        "algebra_is_single_number_field": false,
+        "number_field_factors": [
+          {
+            "conductor": 1,
+            "field_degree": 1,
+            "module_rank": 1
+          },
+          {
+            "conductor": 19,
+            "field_degree": 18,
+            "module_rank": 1
+          }
+        ],
+        "rational_dimension": 19,
+        "coordinate_basis": "beta_j=c^(-j), 0<=j<w",
+        "conjugation": "c -> c^(-1)",
+        "trace_functional": "tau(a)=[c^0]a=(1/19)*sum_(d|19) Tr_Q(zeta_d)/Q(a_d)",
+        "trace_metric": "I_19",
+        "metric_entry_formula": "G_ij=tau(conjugate(beta_i)*beta_j)=delta_ij",
+        "multiplication_action": "rho(f)[r,s]=f_coefficients[(s-r) mod w]",
+        "adjoint_identity": "rho(conjugate(f))=rho(f)^T",
+        "endpoint_frame": "I_19",
+        "endpoint_frame_Gram_scale": 1
+      },
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 47956,
+      "weighted_source_is_Butson": false,
+      "weighted_source_used_alphabet": "{+f_j(c),-f_j(c):0<=j<4}, with literal polynomials recorded above",
+      "actual_used_source_polynomials_pm": [
+        "++-++--+-++-+--++-+",
+        "++--+++-+--+-+++--+",
+        "++--+-++++++++-+--+",
+        "+-+---++++++++---+-",
+        "-+-+++--------+++-+",
+        "--++-+--------+-++-",
+        "--++---+-++-+---++-",
+        "--+--++-+--+-++--+-"
+      ],
+      "actual_used_source_polynomial_count": 8,
+      "source_identity": "D(f)D(f)*=631*sum_j f_j(c)^2*I=47956I",
+      "rational_dimension_after_restriction": 47956,
+      "endpoint_Gram_scale": 47956,
+      "endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "endpoint_recipe": "H=sum_(j=0)^3 X_j tensor rho(f_j); X_j are the four disjoint GS orthogonal-design coefficients",
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "all_used_scalar_images_verified_sign_circulants": true,
+      "literal_entry_and_row_recipe_available": true,
+      "dense_endpoint_allocated": false,
+      "complete_dense_endpoint_Gram_performed": false,
+      "literal_row_controls": {
+        "row_indices": [
+          0,
+          1,
+          18,
+          19,
+          23978,
+          47955
+        ],
+        "all_selected_full_rows_are_signs": true,
+        "all_selected_row_pairs_checked_by_exact_bit_counts": true,
+        "complete_Gram_proof": "Full polynomial OD identity and complete exact Williamson norm relation; row checks are interface controls."
+      },
+      "reported_order_status": {
+        "p": 631,
+        "w": 19,
+        "order": 47956,
+        "status": "known",
+        "prior_construction": {
+          "family": "Paley II",
+          "reference_url": "https://doi.org/10.1002/sapm1933121311",
+          "supporting_reference_url": "https://arxiv.org/html/2610.27175v2#S2.Thm2",
+          "parameters": {
+            "q": 23977,
+            "q_is_prime": true,
+            "q_mod4": 1,
+            "output_order": 47956
+          }
+        },
+        "checked_utc": "2026-11-24 21:25:01 UTC",
+        "williamson_input_sha256": "b8c7175fa8ec12e7394ef6aa53e1bbc0e084fd830da75ed20e33ce6dbd5b5990",
+        "arithmetic_checks": {
+          "N_minus1_factorization": [
+            [
+              3,
+              1
+            ],
+            [
+              5,
+              1
+            ],
+            [
+              23,
+              1
+            ],
+            [
+              139,
+              1
+            ]
+          ],
+          "N_over2_minus1_factorization": [
+            [
+              23977,
+              1
+            ]
+          ],
+          "N_over4_minus2_factorization": [
+            [
+              11987,
+              1
+            ]
+          ],
+          "N_over4_minus2_mod8": 3
+        }
+      }
+    },
+    {
+      "p": 631,
+      "w": 21,
+      "output_order": 53004,
+      "Williamson_source": {
+        "order": 21,
+        "first_rows_pm": [
+          "+--++++---++---++++--",
+          "++++-+---+--+---+-+++",
+          "++--+-+-++--++-+-+--+",
+          "++-+++++-+--+-+++++-+"
+        ],
+        "actual_used_scalar_polynomials": "f_j(c)=sum_k first_rows[j][k]*c^k",
+        "all_f_j_self_adjoint": true,
+        "all_pairwise_amicability_identities_verified": true,
+        "full_integer_Gram_verified": true,
+        "cyclic_algebra_norm_relation_verified": true,
+        "exact_norm_relation": "sum_j f_j(c)^2=84 in Q[c]/(c^21-1)",
+        "row_sums": [
+          1,
+          1,
+          1,
+          9
+        ],
+        "first_rows_int8_sha256": "7734972e0611b864466321bdc2ce84da32daa35ab020415aa722d3da4ea7d24c",
+        "entry_images_are_literal_sign_circulants": true,
+        "input_file": "experiments/scalar_lift/williamson_inputs.json",
+        "input_file_sha256": "242f554cf113c68ab882e147c3b2702b7bb62e68b66ad36b16c92b6c194f8560",
+        "primary_source": {
+          "id": "sage_official_literal_table",
+          "url": "https://github.com/sagemath/sage/blob/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py#L577",
+          "raw_url": "https://raw.githubusercontent.com/sagemath/sage/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py",
+          "commit": "8de8dad7bcb38e1baa43508cbe944bf04a2d0401",
+          "commit_date": "2026-11-14",
+          "source_sha256": "15b018c9d25cfbe1a45f98ee1421b338beb2b39077c6777e6bc33bc0fbd4b01d",
+          "function": "williamson_type_quadruples_smallcases",
+          "documentation_url": "https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/matrices/hadamard_matrix.html#sage.combinat.matrices.hadamard_matrix.williamson_type_quadruples_smallcases",
+          "documented_original_sources": "Sage attributes orders 3,5,...,29,37,43 to [Ha83], and 31,33,39,41,45,49,51,55,57,61,63 to [Lon2013]."
+        }
+      },
+      "scalar_algebra": {
+        "algebra": "Q[c]/(c^21-1)",
+        "algebra_is_single_number_field": false,
+        "number_field_factors": [
+          {
+            "conductor": 1,
+            "field_degree": 1,
+            "module_rank": 1
+          },
+          {
+            "conductor": 3,
+            "field_degree": 2,
+            "module_rank": 1
+          },
+          {
+            "conductor": 7,
+            "field_degree": 6,
+            "module_rank": 1
+          },
+          {
+            "conductor": 21,
+            "field_degree": 12,
+            "module_rank": 1
+          }
+        ],
+        "rational_dimension": 21,
+        "coordinate_basis": "beta_j=c^(-j), 0<=j<w",
+        "conjugation": "c -> c^(-1)",
+        "trace_functional": "tau(a)=[c^0]a=(1/21)*sum_(d|21) Tr_Q(zeta_d)/Q(a_d)",
+        "trace_metric": "I_21",
+        "metric_entry_formula": "G_ij=tau(conjugate(beta_i)*beta_j)=delta_ij",
+        "multiplication_action": "rho(f)[r,s]=f_coefficients[(s-r) mod w]",
+        "adjoint_identity": "rho(conjugate(f))=rho(f)^T",
+        "endpoint_frame": "I_21",
+        "endpoint_frame_Gram_scale": 1
+      },
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 53004,
+      "weighted_source_is_Butson": false,
+      "weighted_source_used_alphabet": "{+f_j(c),-f_j(c):0<=j<4}, with literal polynomials recorded above",
+      "actual_used_source_polynomials_pm": [
+        "++++-+---+--+---+-+++",
+        "++-+++++-+--+-+++++-+",
+        "++--+-+-++--++-+-+--+",
+        "+--++++---++---++++--",
+        "-++----+++--+++----++",
+        "--++-+-+--++--+-+-++-",
+        "--+-----+-++-+-----+-",
+        "----+-+++-++-+++-+---"
+      ],
+      "actual_used_source_polynomial_count": 8,
+      "source_identity": "D(f)D(f)*=631*sum_j f_j(c)^2*I=53004I",
+      "rational_dimension_after_restriction": 53004,
+      "endpoint_Gram_scale": 53004,
+      "endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "endpoint_recipe": "H=sum_(j=0)^3 X_j tensor rho(f_j); X_j are the four disjoint GS orthogonal-design coefficients",
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "all_used_scalar_images_verified_sign_circulants": true,
+      "literal_entry_and_row_recipe_available": true,
+      "dense_endpoint_allocated": false,
+      "complete_dense_endpoint_Gram_performed": false,
+      "literal_row_controls": {
+        "row_indices": [
+          0,
+          1,
+          20,
+          21,
+          26502,
+          53003
+        ],
+        "all_selected_full_rows_are_signs": true,
+        "all_selected_row_pairs_checked_by_exact_bit_counts": true,
+        "complete_Gram_proof": "Full polynomial OD identity and complete exact Williamson norm relation; row checks are interface controls."
+      },
+      "reported_order_status": {
+        "p": 631,
+        "w": 21,
+        "order": 53004,
+        "status": "known",
+        "prior_construction": {
+          "family": "Paley I",
+          "reference_url": "https://doi.org/10.1002/sapm1933121311",
+          "supporting_reference_url": "https://arxiv.org/html/2610.27175v2#S2.Thm2",
+          "parameters": {
+            "q": 53003,
+            "q_is_prime": true,
+            "q_mod4": 3,
+            "output_order": 53004
+          }
+        },
+        "checked_utc": "2026-11-24 21:25:01 UTC",
+        "williamson_input_sha256": "7734972e0611b864466321bdc2ce84da32daa35ab020415aa722d3da4ea7d24c",
+        "arithmetic_checks": {
+          "N_minus1_factorization": [
+            [
+              53003,
+              1
+            ]
+          ],
+          "N_over2_minus1_factorization": [
+            [
+              26501,
+              1
+            ]
+          ],
+          "N_over4_minus2_factorization": [
+            [
+              13249,
+              1
+            ]
+          ],
+          "N_over4_minus2_mod8": 1
+        }
+      }
+    },
+    {
+      "p": 631,
+      "w": 23,
+      "output_order": 58052,
+      "Williamson_source": {
+        "order": 23,
+        "first_rows_pm": [
+          "++---+---+-++-+---+---+",
+          "+-++-++--++++++--++-++-",
+          "+++---++-+-++-+-++---++",
+          "+++-+++-+------+-+++-++"
+        ],
+        "actual_used_scalar_polynomials": "f_j(c)=sum_k first_rows[j][k]*c^k",
+        "all_f_j_self_adjoint": true,
+        "all_pairwise_amicability_identities_verified": true,
+        "full_integer_Gram_verified": true,
+        "cyclic_algebra_norm_relation_verified": true,
+        "exact_norm_relation": "sum_j f_j(c)^2=92 in Q[c]/(c^23-1)",
+        "row_sums": [
+          -5,
+          7,
+          3,
+          3
+        ],
+        "first_rows_int8_sha256": "91d383f8f9a86c519c2c0984353243638024d6bdf96b3544eaaa44335df8158c",
+        "entry_images_are_literal_sign_circulants": true,
+        "input_file": "experiments/scalar_lift/williamson_inputs.json",
+        "input_file_sha256": "242f554cf113c68ab882e147c3b2702b7bb62e68b66ad36b16c92b6c194f8560",
+        "primary_source": {
+          "id": "sage_official_literal_table",
+          "url": "https://github.com/sagemath/sage/blob/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py#L577",
+          "raw_url": "https://raw.githubusercontent.com/sagemath/sage/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py",
+          "commit": "8de8dad7bcb38e1baa43508cbe944bf04a2d0401",
+          "commit_date": "2026-11-14",
+          "source_sha256": "15b018c9d25cfbe1a45f98ee1421b338beb2b39077c6777e6bc33bc0fbd4b01d",
+          "function": "williamson_type_quadruples_smallcases",
+          "documentation_url": "https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/matrices/hadamard_matrix.html#sage.combinat.matrices.hadamard_matrix.williamson_type_quadruples_smallcases",
+          "documented_original_sources": "Sage attributes orders 3,5,...,29,37,43 to [Ha83], and 31,33,39,41,45,49,51,55,57,61,63 to [Lon2013]."
+        }
+      },
+      "scalar_algebra": {
+        "algebra": "Q[c]/(c^23-1)",
+        "algebra_is_single_number_field": false,
+        "number_field_factors": [
+          {
+            "conductor": 1,
+            "field_degree": 1,
+            "module_rank": 1
+          },
+          {
+            "conductor": 23,
+            "field_degree": 22,
+            "module_rank": 1
+          }
+        ],
+        "rational_dimension": 23,
+        "coordinate_basis": "beta_j=c^(-j), 0<=j<w",
+        "conjugation": "c -> c^(-1)",
+        "trace_functional": "tau(a)=[c^0]a=(1/23)*sum_(d|23) Tr_Q(zeta_d)/Q(a_d)",
+        "trace_metric": "I_23",
+        "metric_entry_formula": "G_ij=tau(conjugate(beta_i)*beta_j)=delta_ij",
+        "multiplication_action": "rho(f)[r,s]=f_coefficients[(s-r) mod w]",
+        "adjoint_identity": "rho(conjugate(f))=rho(f)^T",
+        "endpoint_frame": "I_23",
+        "endpoint_frame_Gram_scale": 1
+      },
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 58052,
+      "weighted_source_is_Butson": false,
+      "weighted_source_used_alphabet": "{+f_j(c),-f_j(c):0<=j<4}, with literal polynomials recorded above",
+      "actual_used_source_polynomials_pm": [
+        "+++-+++-+------+-+++-++",
+        "+++---++-+-++-+-++---++",
+        "++---+---+-++-+---+---+",
+        "+-++-++--++++++--++-++-",
+        "-+--+--++------++--+--+",
+        "--+++-+++-+--+-+++-+++-",
+        "---+++--+-+--+-+--+++--",
+        "---+---+-++++++-+---+--"
+      ],
+      "actual_used_source_polynomial_count": 8,
+      "source_identity": "D(f)D(f)*=631*sum_j f_j(c)^2*I=58052I",
+      "rational_dimension_after_restriction": 58052,
+      "endpoint_Gram_scale": 58052,
+      "endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "endpoint_recipe": "H=sum_(j=0)^3 X_j tensor rho(f_j); X_j are the four disjoint GS orthogonal-design coefficients",
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "all_used_scalar_images_verified_sign_circulants": true,
+      "literal_entry_and_row_recipe_available": true,
+      "dense_endpoint_allocated": false,
+      "complete_dense_endpoint_Gram_performed": false,
+      "literal_row_controls": {
+        "row_indices": [
+          0,
+          1,
+          22,
+          23,
+          29026,
+          58051
+        ],
+        "all_selected_full_rows_are_signs": true,
+        "all_selected_row_pairs_checked_by_exact_bit_counts": true,
+        "complete_Gram_proof": "Full polynomial OD identity and complete exact Williamson norm relation; row checks are interface controls."
+      },
+      "reported_order_status": {
+        "p": 631,
+        "w": 23,
+        "order": 58052,
+        "status": "new_to_best_of_authors_knowledge",
+        "prior_construction": null,
+        "checked_utc": "2026-11-24 21:25:01 UTC",
+        "williamson_input_sha256": "91d383f8f9a86c519c2c0984353243638024d6bdf96b3544eaaa44335df8158c",
+        "arithmetic_checks": {
+          "N_minus1_factorization": [
+            [
+              7,
+              1
+            ],
+            [
+              8293,
+              1
+            ]
+          ],
+          "N_over2_minus1_factorization": [
+            [
+              3,
+              3
+            ],
+            [
+              5,
+              2
+            ],
+            [
+              43,
+              1
+            ]
+          ],
+          "N_over4_minus2_factorization": [
+            [
+              3,
+              1
+            ],
+            [
+              7,
+              1
+            ],
+            [
+              691,
+              1
+            ]
+          ],
+          "N_over4_minus2_mod8": 7
+        }
+      }
+    },
+    {
+      "p": 631,
+      "w": 25,
+      "output_order": 63100,
+      "Williamson_source": {
+        "order": 25,
+        "first_rows_pm": [
+          "++++-+-+-+--++--+-+-+-+++",
+          "++--+--+-++++++++-+--+--+",
+          "+++--+--++++--++++--+--++",
+          "+-+--+++--++++++--+++--+-"
+        ],
+        "actual_used_scalar_polynomials": "f_j(c)=sum_k first_rows[j][k]*c^k",
+        "all_f_j_self_adjoint": true,
+        "all_pairwise_amicability_identities_verified": true,
+        "full_integer_Gram_verified": true,
+        "cyclic_algebra_norm_relation_verified": true,
+        "exact_norm_relation": "sum_j f_j(c)^2=100 in Q[c]/(c^25-1)",
+        "row_sums": [
+          5,
+          5,
+          5,
+          5
+        ],
+        "first_rows_int8_sha256": "f5687d6e35658986a3060518627e2e2f4c89489663ca554041f7f3c3f915c103",
+        "entry_images_are_literal_sign_circulants": true,
+        "input_file": "experiments/scalar_lift/williamson_inputs.json",
+        "input_file_sha256": "242f554cf113c68ab882e147c3b2702b7bb62e68b66ad36b16c92b6c194f8560",
+        "primary_source": {
+          "id": "sage_official_literal_table",
+          "url": "https://github.com/sagemath/sage/blob/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py#L577",
+          "raw_url": "https://raw.githubusercontent.com/sagemath/sage/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py",
+          "commit": "8de8dad7bcb38e1baa43508cbe944bf04a2d0401",
+          "commit_date": "2026-11-14",
+          "source_sha256": "15b018c9d25cfbe1a45f98ee1421b338beb2b39077c6777e6bc33bc0fbd4b01d",
+          "function": "williamson_type_quadruples_smallcases",
+          "documentation_url": "https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/matrices/hadamard_matrix.html#sage.combinat.matrices.hadamard_matrix.williamson_type_quadruples_smallcases",
+          "documented_original_sources": "Sage attributes orders 3,5,...,29,37,43 to [Ha83], and 31,33,39,41,45,49,51,55,57,61,63 to [Lon2013]."
+        }
+      },
+      "scalar_algebra": {
+        "algebra": "Q[c]/(c^25-1)",
+        "algebra_is_single_number_field": false,
+        "number_field_factors": [
+          {
+            "conductor": 1,
+            "field_degree": 1,
+            "module_rank": 1
+          },
+          {
+            "conductor": 5,
+            "field_degree": 4,
+            "module_rank": 1
+          },
+          {
+            "conductor": 25,
+            "field_degree": 20,
+            "module_rank": 1
+          }
+        ],
+        "rational_dimension": 25,
+        "coordinate_basis": "beta_j=c^(-j), 0<=j<w",
+        "conjugation": "c -> c^(-1)",
+        "trace_functional": "tau(a)=[c^0]a=(1/25)*sum_(d|25) Tr_Q(zeta_d)/Q(a_d)",
+        "trace_metric": "I_25",
+        "metric_entry_formula": "G_ij=tau(conjugate(beta_i)*beta_j)=delta_ij",
+        "multiplication_action": "rho(f)[r,s]=f_coefficients[(s-r) mod w]",
+        "adjoint_identity": "rho(conjugate(f))=rho(f)^T",
+        "endpoint_frame": "I_25",
+        "endpoint_frame_Gram_scale": 1
+      },
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 63100,
+      "weighted_source_is_Butson": false,
+      "weighted_source_used_alphabet": "{+f_j(c),-f_j(c):0<=j<4}, with literal polynomials recorded above",
+      "actual_used_source_polynomials_pm": [
+        "++++-+-+-+--++--+-+-+-+++",
+        "+++--+--++++--++++--+--++",
+        "++--+--+-++++++++-+--+--+",
+        "+-+--+++--++++++--+++--+-",
+        "-+-++---++------++---++-+",
+        "--++-++-+--------+-++-++-",
+        "---++-++----++----++-++--",
+        "----+-+-+-++--++-+-+-+---"
+      ],
+      "actual_used_source_polynomial_count": 8,
+      "source_identity": "D(f)D(f)*=631*sum_j f_j(c)^2*I=63100I",
+      "rational_dimension_after_restriction": 63100,
+      "endpoint_Gram_scale": 63100,
+      "endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "endpoint_recipe": "H=sum_(j=0)^3 X_j tensor rho(f_j); X_j are the four disjoint GS orthogonal-design coefficients",
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "all_used_scalar_images_verified_sign_circulants": true,
+      "literal_entry_and_row_recipe_available": true,
+      "dense_endpoint_allocated": false,
+      "complete_dense_endpoint_Gram_performed": false,
+      "literal_row_controls": {
+        "row_indices": [
+          0,
+          1,
+          24,
+          25,
+          31550,
+          63099
+        ],
+        "all_selected_full_rows_are_signs": true,
+        "all_selected_row_pairs_checked_by_exact_bit_counts": true,
+        "complete_Gram_proof": "Full polynomial OD identity and complete exact Williamson norm relation; row checks are interface controls."
+      },
+      "reported_order_status": {
+        "p": 631,
+        "w": 25,
+        "order": 63100,
+        "status": "known",
+        "prior_construction": {
+          "family": "Paley sixteen-block product with classical T-matrices",
+          "reference_url": "https://arxiv.org/html/2610.27175v2#S4.T4",
+          "parameters": {
+            "s": 3155,
+            "t": 5,
+            "q": 12619,
+            "q_is_prime": true,
+            "q_mod8": 3,
+            "Paley_base_order": 12620,
+            "known_T_order": 5,
+            "output_order": 63100
+          },
+          "ingredient_reference_url": "https://arxiv.org/html/2610.27175v2#S4.T3",
+          "reference_detail": "Table4 Paley and Miyamoto blocks: H(4st) for T(t) and prime-power4s-1 congruent3 mod8. Here t=3 or5 has classical T-sequences."
+        },
+        "checked_utc": "2026-11-24 21:25:01 UTC",
+        "williamson_input_sha256": "f5687d6e35658986a3060518627e2e2f4c89489663ca554041f7f3c3f915c103",
+        "arithmetic_checks": {
+          "N_minus1_factorization": [
+            [
+              3,
+              4
+            ],
+            [
+              19,
+              1
+            ],
+            [
+              41,
+              1
+            ]
+          ],
+          "N_over2_minus1_factorization": [
+            [
+              7,
+              1
+            ],
+            [
+              4507,
+              1
+            ]
+          ],
+          "N_over4_minus2_factorization": [
+            [
+              15773,
+              1
+            ]
+          ],
+          "N_over4_minus2_mod8": 5
+        }
+      }
+    },
+    {
+      "p": 631,
+      "w": 27,
+      "output_order": 68148,
+      "Williamson_source": {
+        "order": 27,
+        "first_rows_pm": [
+          "+--+--+-+++--++--+++-+--+--",
+          "+++-++-+---++--++---+-++-++",
+          "+---+++++-+-++++-+-+++++---",
+          "+---+++++-+-++++-+-+++++---"
+        ],
+        "actual_used_scalar_polynomials": "f_j(c)=sum_k first_rows[j][k]*c^k",
+        "all_f_j_self_adjoint": true,
+        "all_pairwise_amicability_identities_verified": true,
+        "full_integer_Gram_verified": true,
+        "cyclic_algebra_norm_relation_verified": true,
+        "exact_norm_relation": "sum_j f_j(c)^2=108 in Q[c]/(c^27-1)",
+        "row_sums": [
+          -1,
+          3,
+          7,
+          7
+        ],
+        "first_rows_int8_sha256": "e4bad648170186f8ea925062a392b98c6f5abae8e68f496c937fc335654ce1c6",
+        "entry_images_are_literal_sign_circulants": true,
+        "input_file": "experiments/scalar_lift/williamson_inputs.json",
+        "input_file_sha256": "242f554cf113c68ab882e147c3b2702b7bb62e68b66ad36b16c92b6c194f8560",
+        "primary_source": {
+          "id": "sage_official_literal_table",
+          "url": "https://github.com/sagemath/sage/blob/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py#L577",
+          "raw_url": "https://raw.githubusercontent.com/sagemath/sage/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py",
+          "commit": "8de8dad7bcb38e1baa43508cbe944bf04a2d0401",
+          "commit_date": "2026-11-14",
+          "source_sha256": "15b018c9d25cfbe1a45f98ee1421b338beb2b39077c6777e6bc33bc0fbd4b01d",
+          "function": "williamson_type_quadruples_smallcases",
+          "documentation_url": "https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/matrices/hadamard_matrix.html#sage.combinat.matrices.hadamard_matrix.williamson_type_quadruples_smallcases",
+          "documented_original_sources": "Sage attributes orders 3,5,...,29,37,43 to [Ha83], and 31,33,39,41,45,49,51,55,57,61,63 to [Lon2013]."
+        }
+      },
+      "scalar_algebra": {
+        "algebra": "Q[c]/(c^27-1)",
+        "algebra_is_single_number_field": false,
+        "number_field_factors": [
+          {
+            "conductor": 1,
+            "field_degree": 1,
+            "module_rank": 1
+          },
+          {
+            "conductor": 3,
+            "field_degree": 2,
+            "module_rank": 1
+          },
+          {
+            "conductor": 9,
+            "field_degree": 6,
+            "module_rank": 1
+          },
+          {
+            "conductor": 27,
+            "field_degree": 18,
+            "module_rank": 1
+          }
+        ],
+        "rational_dimension": 27,
+        "coordinate_basis": "beta_j=c^(-j), 0<=j<w",
+        "conjugation": "c -> c^(-1)",
+        "trace_functional": "tau(a)=[c^0]a=(1/27)*sum_(d|27) Tr_Q(zeta_d)/Q(a_d)",
+        "trace_metric": "I_27",
+        "metric_entry_formula": "G_ij=tau(conjugate(beta_i)*beta_j)=delta_ij",
+        "multiplication_action": "rho(f)[r,s]=f_coefficients[(s-r) mod w]",
+        "adjoint_identity": "rho(conjugate(f))=rho(f)^T",
+        "endpoint_frame": "I_27",
+        "endpoint_frame_Gram_scale": 1
+      },
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 68148,
+      "weighted_source_is_Butson": false,
+      "weighted_source_used_alphabet": "{+f_j(c),-f_j(c):0<=j<4}, with literal polynomials recorded above",
+      "actual_used_source_polynomials_pm": [
+        "+++-++-+---++--++---+-++-++",
+        "+--+--+-+++--++--+++-+--+--",
+        "+---+++++-+-++++-+-+++++---",
+        "-+++-----+-+----+-+-----+++",
+        "-++-++-+---++--++---+-++-++",
+        "---+--+-+++--++--+++-+--+--"
+      ],
+      "actual_used_source_polynomial_count": 6,
+      "source_identity": "D(f)D(f)*=631*sum_j f_j(c)^2*I=68148I",
+      "rational_dimension_after_restriction": 68148,
+      "endpoint_Gram_scale": 68148,
+      "endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "endpoint_recipe": "H=sum_(j=0)^3 X_j tensor rho(f_j); X_j are the four disjoint GS orthogonal-design coefficients",
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "all_used_scalar_images_verified_sign_circulants": true,
+      "literal_entry_and_row_recipe_available": true,
+      "dense_endpoint_allocated": false,
+      "complete_dense_endpoint_Gram_performed": false,
+      "literal_row_controls": {
+        "row_indices": [
+          0,
+          1,
+          26,
+          27,
+          34074,
+          68147
+        ],
+        "all_selected_full_rows_are_signs": true,
+        "all_selected_row_pairs_checked_by_exact_bit_counts": true,
+        "complete_Gram_proof": "Full polynomial OD identity and complete exact Williamson norm relation; row checks are interface controls."
+      },
+      "reported_order_status": {
+        "p": 631,
+        "w": 27,
+        "order": 68148,
+        "status": "known",
+        "prior_construction": {
+          "family": "Paley I",
+          "reference_url": "https://doi.org/10.1002/sapm1933121311",
+          "supporting_reference_url": "https://arxiv.org/html/2610.27175v2#S2.Thm2",
+          "parameters": {
+            "q": 68147,
+            "q_is_prime": true,
+            "q_mod4": 3,
+            "output_order": 68148
+          }
+        },
+        "checked_utc": "2026-11-24 21:25:01 UTC",
+        "williamson_input_sha256": "e4bad648170186f8ea925062a392b98c6f5abae8e68f496c937fc335654ce1c6",
+        "arithmetic_checks": {
+          "N_minus1_factorization": [
+            [
+              68147,
+              1
+            ]
+          ],
+          "N_over2_minus1_factorization": [
+            [
+              13,
+              1
+            ],
+            [
+              2621,
+              1
+            ]
+          ],
+          "N_over4_minus2_factorization": [
+            [
+              5,
+              1
+            ],
+            [
+              3407,
+              1
+            ]
+          ],
+          "N_over4_minus2_mod8": 3
+        }
+      }
+    },
+    {
+      "p": 631,
+      "w": 29,
+      "output_order": 73196,
+      "Williamson_source": {
+        "order": 29,
+        "first_rows_pm": [
+          "+++---++--+-+----+-+--++---++",
+          "+-+---++--+-++++++-+--++---+-",
+          "++++-++-+---++++++---+-++-+++",
+          "++--+--+-+++-++++-+++-+--+--+"
+        ],
+        "actual_used_scalar_polynomials": "f_j(c)=sum_k first_rows[j][k]*c^k",
+        "all_f_j_self_adjoint": true,
+        "all_pairwise_amicability_identities_verified": true,
+        "full_integer_Gram_verified": true,
+        "cyclic_algebra_norm_relation_verified": true,
+        "exact_norm_relation": "sum_j f_j(c)^2=116 in Q[c]/(c^29-1)",
+        "row_sums": [
+          -3,
+          1,
+          9,
+          5
+        ],
+        "first_rows_int8_sha256": "13b39bcebd785df988efc17390134476258e4222e360bcddceebf72890c252ab",
+        "entry_images_are_literal_sign_circulants": true,
+        "input_file": "experiments/scalar_lift/williamson_inputs.json",
+        "input_file_sha256": "242f554cf113c68ab882e147c3b2702b7bb62e68b66ad36b16c92b6c194f8560",
+        "primary_source": {
+          "id": "sage_official_literal_table",
+          "url": "https://github.com/sagemath/sage/blob/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py#L577",
+          "raw_url": "https://raw.githubusercontent.com/sagemath/sage/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py",
+          "commit": "8de8dad7bcb38e1baa43508cbe944bf04a2d0401",
+          "commit_date": "2026-11-14",
+          "source_sha256": "15b018c9d25cfbe1a45f98ee1421b338beb2b39077c6777e6bc33bc0fbd4b01d",
+          "function": "williamson_type_quadruples_smallcases",
+          "documentation_url": "https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/matrices/hadamard_matrix.html#sage.combinat.matrices.hadamard_matrix.williamson_type_quadruples_smallcases",
+          "documented_original_sources": "Sage attributes orders 3,5,...,29,37,43 to [Ha83], and 31,33,39,41,45,49,51,55,57,61,63 to [Lon2013]."
+        }
+      },
+      "scalar_algebra": {
+        "algebra": "Q[c]/(c^29-1)",
+        "algebra_is_single_number_field": false,
+        "number_field_factors": [
+          {
+            "conductor": 1,
+            "field_degree": 1,
+            "module_rank": 1
+          },
+          {
+            "conductor": 29,
+            "field_degree": 28,
+            "module_rank": 1
+          }
+        ],
+        "rational_dimension": 29,
+        "coordinate_basis": "beta_j=c^(-j), 0<=j<w",
+        "conjugation": "c -> c^(-1)",
+        "trace_functional": "tau(a)=[c^0]a=(1/29)*sum_(d|29) Tr_Q(zeta_d)/Q(a_d)",
+        "trace_metric": "I_29",
+        "metric_entry_formula": "G_ij=tau(conjugate(beta_i)*beta_j)=delta_ij",
+        "multiplication_action": "rho(f)[r,s]=f_coefficients[(s-r) mod w]",
+        "adjoint_identity": "rho(conjugate(f))=rho(f)^T",
+        "endpoint_frame": "I_29",
+        "endpoint_frame_Gram_scale": 1
+      },
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 73196,
+      "weighted_source_is_Butson": false,
+      "weighted_source_used_alphabet": "{+f_j(c),-f_j(c):0<=j<4}, with literal polynomials recorded above",
+      "actual_used_source_polynomials_pm": [
+        "++++-++-+---++++++---+-++-+++",
+        "+++---++--+-+----+-+--++---++",
+        "++--+--+-+++-++++-+++-+--+--+",
+        "+-+---++--+-++++++-+--++---+-",
+        "-+-+++--++-+------+-++--+++-+",
+        "--++-++-+---+----+---+-++-++-",
+        "---+++--++-+-++++-+-++--+++--",
+        "----+--+-+++------+++-+--+---"
+      ],
+      "actual_used_source_polynomial_count": 8,
+      "source_identity": "D(f)D(f)*=631*sum_j f_j(c)^2*I=73196I",
+      "rational_dimension_after_restriction": 73196,
+      "endpoint_Gram_scale": 73196,
+      "endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "endpoint_recipe": "H=sum_(j=0)^3 X_j tensor rho(f_j); X_j are the four disjoint GS orthogonal-design coefficients",
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "all_used_scalar_images_verified_sign_circulants": true,
+      "literal_entry_and_row_recipe_available": true,
+      "dense_endpoint_allocated": false,
+      "complete_dense_endpoint_Gram_performed": false,
+      "literal_row_controls": {
+        "row_indices": [
+          0,
+          1,
+          28,
+          29,
+          36598,
+          73195
+        ],
+        "all_selected_full_rows_are_signs": true,
+        "all_selected_row_pairs_checked_by_exact_bit_counts": true,
+        "complete_Gram_proof": "Full polynomial OD identity and complete exact Williamson norm relation; row checks are interface controls."
+      },
+      "reported_order_status": {
+        "p": 631,
+        "w": 29,
+        "order": 73196,
+        "status": "new_to_best_of_authors_knowledge",
+        "prior_construction": null,
+        "checked_utc": "2026-11-24 21:25:01 UTC",
+        "williamson_input_sha256": "13b39bcebd785df988efc17390134476258e4222e360bcddceebf72890c252ab",
+        "arithmetic_checks": {
+          "N_minus1_factorization": [
+            [
+              5,
+              1
+            ],
+            [
+              14639,
+              1
+            ]
+          ],
+          "N_over2_minus1_factorization": [
+            [
+              3,
+              1
+            ],
+            [
+              11,
+              1
+            ],
+            [
+              1109,
+              1
+            ]
+          ],
+          "N_over4_minus2_factorization": [
+            [
+              3,
+              2
+            ],
+            [
+              19,
+              1
+            ],
+            [
+              107,
+              1
+            ]
+          ],
+          "N_over4_minus2_mod8": 1
+        }
+      }
+    },
+    {
+      "p": 631,
+      "w": 31,
+      "output_order": 78244,
+      "Williamson_source": {
+        "order": 31,
+        "first_rows_pm": [
+          "++++++-+--+---++++---+--+-+++++",
+          "+--++---+-+-++----++-+-+---++--",
+          "+--++---+-+-++----++-+-+---++--",
+          "+-----+-++-+++----+++-++-+-----"
+        ],
+        "actual_used_scalar_polynomials": "f_j(c)=sum_k first_rows[j][k]*c^k",
+        "all_f_j_self_adjoint": true,
+        "all_pairwise_amicability_identities_verified": true,
+        "full_integer_Gram_verified": true,
+        "cyclic_algebra_norm_relation_verified": true,
+        "exact_norm_relation": "sum_j f_j(c)^2=124 in Q[c]/(c^31-1)",
+        "row_sums": [
+          7,
+          -5,
+          -5,
+          -5
+        ],
+        "first_rows_int8_sha256": "f8125f78a48903cf0cd984450be62d72509287d484935b57746be569ddb21977",
+        "entry_images_are_literal_sign_circulants": true,
+        "input_file": "experiments/scalar_lift/williamson_inputs.json",
+        "input_file_sha256": "242f554cf113c68ab882e147c3b2702b7bb62e68b66ad36b16c92b6c194f8560",
+        "primary_source": {
+          "id": "sage_official_literal_table",
+          "url": "https://github.com/sagemath/sage/blob/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py#L577",
+          "raw_url": "https://raw.githubusercontent.com/sagemath/sage/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py",
+          "commit": "8de8dad7bcb38e1baa43508cbe944bf04a2d0401",
+          "commit_date": "2026-11-14",
+          "source_sha256": "15b018c9d25cfbe1a45f98ee1421b338beb2b39077c6777e6bc33bc0fbd4b01d",
+          "function": "williamson_type_quadruples_smallcases",
+          "documentation_url": "https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/matrices/hadamard_matrix.html#sage.combinat.matrices.hadamard_matrix.williamson_type_quadruples_smallcases",
+          "documented_original_sources": "Sage attributes orders 3,5,...,29,37,43 to [Ha83], and 31,33,39,41,45,49,51,55,57,61,63 to [Lon2013]."
+        }
+      },
+      "scalar_algebra": {
+        "algebra": "Q[c]/(c^31-1)",
+        "algebra_is_single_number_field": false,
+        "number_field_factors": [
+          {
+            "conductor": 1,
+            "field_degree": 1,
+            "module_rank": 1
+          },
+          {
+            "conductor": 31,
+            "field_degree": 30,
+            "module_rank": 1
+          }
+        ],
+        "rational_dimension": 31,
+        "coordinate_basis": "beta_j=c^(-j), 0<=j<w",
+        "conjugation": "c -> c^(-1)",
+        "trace_functional": "tau(a)=[c^0]a=(1/31)*sum_(d|31) Tr_Q(zeta_d)/Q(a_d)",
+        "trace_metric": "I_31",
+        "metric_entry_formula": "G_ij=tau(conjugate(beta_i)*beta_j)=delta_ij",
+        "multiplication_action": "rho(f)[r,s]=f_coefficients[(s-r) mod w]",
+        "adjoint_identity": "rho(conjugate(f))=rho(f)^T",
+        "endpoint_frame": "I_31",
+        "endpoint_frame_Gram_scale": 1
+      },
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 78244,
+      "weighted_source_is_Butson": false,
+      "weighted_source_used_alphabet": "{+f_j(c),-f_j(c):0<=j<4}, with literal polynomials recorded above",
+      "actual_used_source_polynomials_pm": [
+        "++++++-+--+---++++---+--+-+++++",
+        "+--++---+-+-++----++-+-+---++--",
+        "+-----+-++-+++----+++-++-+-----",
+        "-+++++-+--+---++++---+--+-+++++",
+        "-++--+++-+-+--++++--+-+-+++--++",
+        "------+-++-+++----+++-++-+-----"
+      ],
+      "actual_used_source_polynomial_count": 6,
+      "source_identity": "D(f)D(f)*=631*sum_j f_j(c)^2*I=78244I",
+      "rational_dimension_after_restriction": 78244,
+      "endpoint_Gram_scale": 78244,
+      "endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "endpoint_recipe": "H=sum_(j=0)^3 X_j tensor rho(f_j); X_j are the four disjoint GS orthogonal-design coefficients",
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "all_used_scalar_images_verified_sign_circulants": true,
+      "literal_entry_and_row_recipe_available": true,
+      "dense_endpoint_allocated": false,
+      "complete_dense_endpoint_Gram_performed": false,
+      "literal_row_controls": {
+        "row_indices": [
+          0,
+          1,
+          30,
+          31,
+          39122,
+          78243
+        ],
+        "all_selected_full_rows_are_signs": true,
+        "all_selected_row_pairs_checked_by_exact_bit_counts": true,
+        "complete_Gram_proof": "Full polynomial OD identity and complete exact Williamson norm relation; row checks are interface controls."
+      },
+      "reported_order_status": {
+        "p": 631,
+        "w": 31,
+        "order": 78244,
+        "status": "new_to_best_of_authors_knowledge",
+        "prior_construction": null,
+        "checked_utc": "2026-11-24 21:25:01 UTC",
+        "williamson_input_sha256": "f8125f78a48903cf0cd984450be62d72509287d484935b57746be569ddb21977",
+        "arithmetic_checks": {
+          "N_minus1_factorization": [
+            [
+              3,
+              1
+            ],
+            [
+              11,
+              1
+            ],
+            [
+              2371,
+              1
+            ]
+          ],
+          "N_over2_minus1_factorization": [
+            [
+              19,
+              1
+            ],
+            [
+              29,
+              1
+            ],
+            [
+              71,
+              1
+            ]
+          ],
+          "N_over4_minus2_factorization": [
+            [
+              19559,
+              1
+            ]
+          ],
+          "N_over4_minus2_mod8": 7
+        }
+      }
+    },
+    {
+      "p": 631,
+      "w": 33,
+      "output_order": 83292,
+      "Williamson_source": {
+        "order": 33,
+        "first_rows_pm": [
+          "++++++-+-+-+++------+++-+-+-+++++",
+          "++-+-++-+----+++--+++----+-++-+-+",
+          "++--++-+++-+--+-++-+--+-+++-++--+",
+          "+--++--+++++-++----++-+++++--++--"
+        ],
+        "actual_used_scalar_polynomials": "f_j(c)=sum_k first_rows[j][k]*c^k",
+        "all_f_j_self_adjoint": true,
+        "all_pairwise_amicability_identities_verified": true,
+        "full_integer_Gram_verified": true,
+        "cyclic_algebra_norm_relation_verified": true,
+        "exact_norm_relation": "sum_j f_j(c)^2=132 in Q[c]/(c^33-1)",
+        "row_sums": [
+          9,
+          1,
+          5,
+          5
+        ],
+        "first_rows_int8_sha256": "49b668db311bbfee23cfd00db80c2f69a48e1f301f41d43f77f52f5556decf69",
+        "entry_images_are_literal_sign_circulants": true,
+        "input_file": "experiments/scalar_lift/williamson_inputs.json",
+        "input_file_sha256": "242f554cf113c68ab882e147c3b2702b7bb62e68b66ad36b16c92b6c194f8560",
+        "primary_source": {
+          "id": "sage_official_literal_table",
+          "url": "https://github.com/sagemath/sage/blob/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py#L577",
+          "raw_url": "https://raw.githubusercontent.com/sagemath/sage/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py",
+          "commit": "8de8dad7bcb38e1baa43508cbe944bf04a2d0401",
+          "commit_date": "2026-11-14",
+          "source_sha256": "15b018c9d25cfbe1a45f98ee1421b338beb2b39077c6777e6bc33bc0fbd4b01d",
+          "function": "williamson_type_quadruples_smallcases",
+          "documentation_url": "https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/matrices/hadamard_matrix.html#sage.combinat.matrices.hadamard_matrix.williamson_type_quadruples_smallcases",
+          "documented_original_sources": "Sage attributes orders 3,5,...,29,37,43 to [Ha83], and 31,33,39,41,45,49,51,55,57,61,63 to [Lon2013]."
+        }
+      },
+      "scalar_algebra": {
+        "algebra": "Q[c]/(c^33-1)",
+        "algebra_is_single_number_field": false,
+        "number_field_factors": [
+          {
+            "conductor": 1,
+            "field_degree": 1,
+            "module_rank": 1
+          },
+          {
+            "conductor": 3,
+            "field_degree": 2,
+            "module_rank": 1
+          },
+          {
+            "conductor": 11,
+            "field_degree": 10,
+            "module_rank": 1
+          },
+          {
+            "conductor": 33,
+            "field_degree": 20,
+            "module_rank": 1
+          }
+        ],
+        "rational_dimension": 33,
+        "coordinate_basis": "beta_j=c^(-j), 0<=j<w",
+        "conjugation": "c -> c^(-1)",
+        "trace_functional": "tau(a)=[c^0]a=(1/33)*sum_(d|33) Tr_Q(zeta_d)/Q(a_d)",
+        "trace_metric": "I_33",
+        "metric_entry_formula": "G_ij=tau(conjugate(beta_i)*beta_j)=delta_ij",
+        "multiplication_action": "rho(f)[r,s]=f_coefficients[(s-r) mod w]",
+        "adjoint_identity": "rho(conjugate(f))=rho(f)^T",
+        "endpoint_frame": "I_33",
+        "endpoint_frame_Gram_scale": 1
+      },
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 83292,
+      "weighted_source_is_Butson": false,
+      "weighted_source_used_alphabet": "{+f_j(c),-f_j(c):0<=j<4}, with literal polynomials recorded above",
+      "actual_used_source_polynomials_pm": [
+        "++++++-+-+-+++------+++-+-+-+++++",
+        "++-+-++-+----+++--+++----+-++-+-+",
+        "++--++-+++-+--+-++-+--+-+++-++--+",
+        "+--++--+++++-++----++-+++++--++--",
+        "-++--++-----+--++++--+-----++--++",
+        "--++--+---+-++-+--+-++-+---+--++-",
+        "--+-+--+-++++---++---++++-+--+-+-",
+        "------+-+-+---++++++---+-+-+-----"
+      ],
+      "actual_used_source_polynomial_count": 8,
+      "source_identity": "D(f)D(f)*=631*sum_j f_j(c)^2*I=83292I",
+      "rational_dimension_after_restriction": 83292,
+      "endpoint_Gram_scale": 83292,
+      "endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "endpoint_recipe": "H=sum_(j=0)^3 X_j tensor rho(f_j); X_j are the four disjoint GS orthogonal-design coefficients",
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "all_used_scalar_images_verified_sign_circulants": true,
+      "literal_entry_and_row_recipe_available": true,
+      "dense_endpoint_allocated": false,
+      "complete_dense_endpoint_Gram_performed": false,
+      "literal_row_controls": {
+        "row_indices": [
+          0,
+          1,
+          32,
+          33,
+          41646,
+          83291
+        ],
+        "all_selected_full_rows_are_signs": true,
+        "all_selected_row_pairs_checked_by_exact_bit_counts": true,
+        "complete_Gram_proof": "Full polynomial OD identity and complete exact Williamson norm relation; row checks are interface controls."
+      },
+      "reported_order_status": {
+        "p": 631,
+        "w": 33,
+        "order": 83292,
+        "status": "known",
+        "prior_construction": {
+          "family": "Paley sixteen-block product with classical T-matrices",
+          "reference_url": "https://arxiv.org/html/2610.27175v2#S4.T4",
+          "parameters": {
+            "s": 6941,
+            "t": 3,
+            "q": 27763,
+            "q_is_prime": true,
+            "q_mod8": 3,
+            "Paley_base_order": 27764,
+            "known_T_order": 3,
+            "output_order": 83292
+          },
+          "ingredient_reference_url": "https://arxiv.org/html/2610.27175v2#S4.T3",
+          "reference_detail": "Table4 Paley and Miyamoto blocks: H(4st) for T(t) and prime-power4s-1 congruent3 mod8. Here t=3 or5 has classical T-sequences."
+        },
+        "checked_utc": "2026-11-24 21:25:01 UTC",
+        "williamson_input_sha256": "49b668db311bbfee23cfd00db80c2f69a48e1f301f41d43f77f52f5556decf69",
+        "arithmetic_checks": {
+          "N_minus1_factorization": [
+            [
+              13,
+              1
+            ],
+            [
+              43,
+              1
+            ],
+            [
+              149,
+              1
+            ]
+          ],
+          "N_over2_minus1_factorization": [
+            [
+              5,
+              1
+            ],
+            [
+              8329,
+              1
+            ]
+          ],
+          "N_over4_minus2_factorization": [
+            [
+              47,
+              1
+            ],
+            [
+              443,
+              1
+            ]
+          ],
+          "N_over4_minus2_mod8": 5
+        }
+      }
+    },
+    {
+      "p": 631,
+      "w": 37,
+      "output_order": 93388,
+      "Williamson_source": {
+        "order": 37,
+        "first_rows_pm": [
+          "+--+-+-+-++---+--++++--+---++-+-+-+--",
+          "+---++-++--+-+-++----++-+-+--++-++---",
+          "+++++-+-----++----++----++-----+-++++",
+          "+--+++-+-----+----++----+-----+-+++--"
+        ],
+        "actual_used_scalar_polynomials": "f_j(c)=sum_k first_rows[j][k]*c^k",
+        "all_f_j_self_adjoint": true,
+        "all_pairwise_amicability_identities_verified": true,
+        "full_integer_Gram_verified": true,
+        "cyclic_algebra_norm_relation_verified": true,
+        "exact_norm_relation": "sum_j f_j(c)^2=148 in Q[c]/(c^37-1)",
+        "row_sums": [
+          -3,
+          -3,
+          -3,
+          -11
+        ],
+        "first_rows_int8_sha256": "020f4eb5786052254458165c47dbcf8c3648f1e68dfaeefd28525ce3f2521aca",
+        "entry_images_are_literal_sign_circulants": true,
+        "input_file": "experiments/scalar_lift/williamson_inputs.json",
+        "input_file_sha256": "242f554cf113c68ab882e147c3b2702b7bb62e68b66ad36b16c92b6c194f8560",
+        "primary_source": {
+          "id": "sage_official_literal_table",
+          "url": "https://github.com/sagemath/sage/blob/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py#L577",
+          "raw_url": "https://raw.githubusercontent.com/sagemath/sage/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py",
+          "commit": "8de8dad7bcb38e1baa43508cbe944bf04a2d0401",
+          "commit_date": "2026-11-14",
+          "source_sha256": "15b018c9d25cfbe1a45f98ee1421b338beb2b39077c6777e6bc33bc0fbd4b01d",
+          "function": "williamson_type_quadruples_smallcases",
+          "documentation_url": "https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/matrices/hadamard_matrix.html#sage.combinat.matrices.hadamard_matrix.williamson_type_quadruples_smallcases",
+          "documented_original_sources": "Sage attributes orders 3,5,...,29,37,43 to [Ha83], and 31,33,39,41,45,49,51,55,57,61,63 to [Lon2013]."
+        }
+      },
+      "scalar_algebra": {
+        "algebra": "Q[c]/(c^37-1)",
+        "algebra_is_single_number_field": false,
+        "number_field_factors": [
+          {
+            "conductor": 1,
+            "field_degree": 1,
+            "module_rank": 1
+          },
+          {
+            "conductor": 37,
+            "field_degree": 36,
+            "module_rank": 1
+          }
+        ],
+        "rational_dimension": 37,
+        "coordinate_basis": "beta_j=c^(-j), 0<=j<w",
+        "conjugation": "c -> c^(-1)",
+        "trace_functional": "tau(a)=[c^0]a=(1/37)*sum_(d|37) Tr_Q(zeta_d)/Q(a_d)",
+        "trace_metric": "I_37",
+        "metric_entry_formula": "G_ij=tau(conjugate(beta_i)*beta_j)=delta_ij",
+        "multiplication_action": "rho(f)[r,s]=f_coefficients[(s-r) mod w]",
+        "adjoint_identity": "rho(conjugate(f))=rho(f)^T",
+        "endpoint_frame": "I_37",
+        "endpoint_frame_Gram_scale": 1
+      },
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 93388,
+      "weighted_source_is_Butson": false,
+      "weighted_source_used_alphabet": "{+f_j(c),-f_j(c):0<=j<4}, with literal polynomials recorded above",
+      "actual_used_source_polynomials_pm": [
+        "+++++-+-----++----++----++-----+-++++",
+        "+--+++-+-----+----++----+-----+-+++--",
+        "+--+-+-+-++---+--++++--+---++-+-+-+--",
+        "+---++-++--+-+-++----++-+-+--++-++---",
+        "-+++--+--++-+-+--++++--+-+-++--+--+++",
+        "-++-+-+-+--+++-++----++-+++--+-+-+-++",
+        "-++---+-+++++-++++--++++-+++++-+---++",
+        "-----+-+++++--++++--++++--+++++-+----"
+      ],
+      "actual_used_source_polynomial_count": 8,
+      "source_identity": "D(f)D(f)*=631*sum_j f_j(c)^2*I=93388I",
+      "rational_dimension_after_restriction": 93388,
+      "endpoint_Gram_scale": 93388,
+      "endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "endpoint_recipe": "H=sum_(j=0)^3 X_j tensor rho(f_j); X_j are the four disjoint GS orthogonal-design coefficients",
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "all_used_scalar_images_verified_sign_circulants": true,
+      "literal_entry_and_row_recipe_available": true,
+      "dense_endpoint_allocated": false,
+      "complete_dense_endpoint_Gram_performed": false,
+      "literal_row_controls": {
+        "row_indices": [
+          0,
+          1,
+          36,
+          37,
+          46694,
+          93387
+        ],
+        "all_selected_full_rows_are_signs": true,
+        "all_selected_row_pairs_checked_by_exact_bit_counts": true,
+        "complete_Gram_proof": "Full polynomial OD identity and complete exact Williamson norm relation; row checks are interface controls."
+      },
+      "reported_order_status": {
+        "p": 631,
+        "w": 37,
+        "order": 93388,
+        "status": "new_to_best_of_authors_knowledge",
+        "prior_construction": null,
+        "checked_utc": "2026-11-24 21:25:01 UTC",
+        "williamson_input_sha256": "020f4eb5786052254458165c47dbcf8c3648f1e68dfaeefd28525ce3f2521aca",
+        "arithmetic_checks": {
+          "N_minus1_factorization": [
+            [
+              3,
+              1
+            ],
+            [
+              7,
+              1
+            ],
+            [
+              4447,
+              1
+            ]
+          ],
+          "N_over2_minus1_factorization": [
+            [
+              53,
+              1
+            ],
+            [
+              881,
+              1
+            ]
+          ],
+          "N_over4_minus2_factorization": [
+            [
+              5,
+              1
+            ],
+            [
+              7,
+              1
+            ],
+            [
+              23,
+              1
+            ],
+            [
+              29,
+              1
+            ]
+          ],
+          "N_over4_minus2_mod8": 1
+        }
+      }
+    },
+    {
+      "p": 631,
+      "w": 39,
+      "output_order": 98436,
+      "Williamson_source": {
+        "order": 39,
+        "first_rows_pm": [
+          "+++--+-+-----+--++----++--+-----+-+--++",
+          "+++--++-+---+-+--+----+--+-+---+-++--++",
+          "++++---+--++----+-+--+-+----++--+---+++",
+          "+---++-+-+-----+++-++-+++-----+-+-++---"
+        ],
+        "actual_used_scalar_polynomials": "f_j(c)=sum_k first_rows[j][k]*c^k",
+        "all_f_j_self_adjoint": true,
+        "all_pairwise_amicability_identities_verified": true,
+        "full_integer_Gram_verified": true,
+        "cyclic_algebra_norm_relation_verified": true,
+        "exact_norm_relation": "sum_j f_j(c)^2=156 in Q[c]/(c^39-1)",
+        "row_sums": [
+          -9,
+          -5,
+          -5,
+          -5
+        ],
+        "first_rows_int8_sha256": "7de0645faddd7297b108ea796040b68f92dfda762718b97cbbdf3f36eab1111a",
+        "entry_images_are_literal_sign_circulants": true,
+        "input_file": "experiments/scalar_lift/williamson_inputs.json",
+        "input_file_sha256": "242f554cf113c68ab882e147c3b2702b7bb62e68b66ad36b16c92b6c194f8560",
+        "primary_source": {
+          "id": "sage_official_literal_table",
+          "url": "https://github.com/sagemath/sage/blob/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py#L577",
+          "raw_url": "https://raw.githubusercontent.com/sagemath/sage/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py",
+          "commit": "8de8dad7bcb38e1baa43508cbe944bf04a2d0401",
+          "commit_date": "2026-11-14",
+          "source_sha256": "15b018c9d25cfbe1a45f98ee1421b338beb2b39077c6777e6bc33bc0fbd4b01d",
+          "function": "williamson_type_quadruples_smallcases",
+          "documentation_url": "https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/matrices/hadamard_matrix.html#sage.combinat.matrices.hadamard_matrix.williamson_type_quadruples_smallcases",
+          "documented_original_sources": "Sage attributes orders 3,5,...,29,37,43 to [Ha83], and 31,33,39,41,45,49,51,55,57,61,63 to [Lon2013]."
+        }
+      },
+      "scalar_algebra": {
+        "algebra": "Q[c]/(c^39-1)",
+        "algebra_is_single_number_field": false,
+        "number_field_factors": [
+          {
+            "conductor": 1,
+            "field_degree": 1,
+            "module_rank": 1
+          },
+          {
+            "conductor": 3,
+            "field_degree": 2,
+            "module_rank": 1
+          },
+          {
+            "conductor": 13,
+            "field_degree": 12,
+            "module_rank": 1
+          },
+          {
+            "conductor": 39,
+            "field_degree": 24,
+            "module_rank": 1
+          }
+        ],
+        "rational_dimension": 39,
+        "coordinate_basis": "beta_j=c^(-j), 0<=j<w",
+        "conjugation": "c -> c^(-1)",
+        "trace_functional": "tau(a)=[c^0]a=(1/39)*sum_(d|39) Tr_Q(zeta_d)/Q(a_d)",
+        "trace_metric": "I_39",
+        "metric_entry_formula": "G_ij=tau(conjugate(beta_i)*beta_j)=delta_ij",
+        "multiplication_action": "rho(f)[r,s]=f_coefficients[(s-r) mod w]",
+        "adjoint_identity": "rho(conjugate(f))=rho(f)^T",
+        "endpoint_frame": "I_39",
+        "endpoint_frame_Gram_scale": 1
+      },
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 98436,
+      "weighted_source_is_Butson": false,
+      "weighted_source_used_alphabet": "{+f_j(c),-f_j(c):0<=j<4}, with literal polynomials recorded above",
+      "actual_used_source_polynomials_pm": [
+        "++++---+--++----+-+--+-+----++--+---+++",
+        "+++--++-+---+-+--+----+--+-+---+-++--++",
+        "+++--+-+-----+--++----++--+-----+-+--++",
+        "+---++-+-+-----+++-++-+++-----+-+-++---",
+        "-+++--+-+-+++++---+--+---+++++-+-+--+++",
+        "---++-+-+++++-++--++++--++-+++++-+-++--",
+        "---++--+-+++-+-++-++++-++-+-+++-+--++--",
+        "----+++-++--++++-+-++-+-++++--++-+++---"
+      ],
+      "actual_used_source_polynomial_count": 8,
+      "source_identity": "D(f)D(f)*=631*sum_j f_j(c)^2*I=98436I",
+      "rational_dimension_after_restriction": 98436,
+      "endpoint_Gram_scale": 98436,
+      "endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "endpoint_recipe": "H=sum_(j=0)^3 X_j tensor rho(f_j); X_j are the four disjoint GS orthogonal-design coefficients",
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "all_used_scalar_images_verified_sign_circulants": true,
+      "literal_entry_and_row_recipe_available": true,
+      "dense_endpoint_allocated": false,
+      "complete_dense_endpoint_Gram_performed": false,
+      "literal_row_controls": {
+        "row_indices": [
+          0,
+          1,
+          38,
+          39,
+          49218,
+          98435
+        ],
+        "all_selected_full_rows_are_signs": true,
+        "all_selected_row_pairs_checked_by_exact_bit_counts": true,
+        "complete_Gram_proof": "Full polynomial OD identity and complete exact Williamson norm relation; row checks are interface controls."
+      },
+      "reported_order_status": {
+        "p": 631,
+        "w": 39,
+        "order": 98436,
+        "status": "new_to_best_of_authors_knowledge",
+        "prior_construction": null,
+        "checked_utc": "2026-11-24 21:25:01 UTC",
+        "williamson_input_sha256": "7de0645faddd7297b108ea796040b68f92dfda762718b97cbbdf3f36eab1111a",
+        "arithmetic_checks": {
+          "N_minus1_factorization": [
+            [
+              5,
+              1
+            ],
+            [
+              19687,
+              1
+            ]
+          ],
+          "N_over2_minus1_factorization": [
+            [
+              7,
+              1
+            ],
+            [
+              79,
+              1
+            ],
+            [
+              89,
+              1
+            ]
+          ],
+          "N_over4_minus2_factorization": [
+            [
+              11,
+              1
+            ],
+            [
+              2237,
+              1
+            ]
+          ],
+          "N_over4_minus2_mod8": 7
+        },
+        "previously_completed_project_order": true
+      }
+    },
+    {
+      "p": 631,
+      "w": 41,
+      "output_order": 103484,
+      "Williamson_source": {
+        "order": 41,
+        "first_rows_pm": [
+          "++++--+-++++-++--++----++--++-++++-+--+++",
+          "++++--+-++++-++--++----++--++-++++-+--+++",
+          "+++-++-+-+-+-----+++--+++-----+-+-+-++-++",
+          "+--+--+-+-+-+++++---++---+++++-+-+-+--+--"
+        ],
+        "actual_used_scalar_polynomials": "f_j(c)=sum_k first_rows[j][k]*c^k",
+        "all_f_j_self_adjoint": true,
+        "all_pairwise_amicability_identities_verified": true,
+        "full_integer_Gram_verified": true,
+        "cyclic_algebra_norm_relation_verified": true,
+        "exact_norm_relation": "sum_j f_j(c)^2=164 in Q[c]/(c^41-1)",
+        "row_sums": [
+          9,
+          9,
+          1,
+          1
+        ],
+        "first_rows_int8_sha256": "08eb71c85fe4867eb0e45c2a3c7d630a138b3cd3a14b7d6aeede2983fddb658b",
+        "entry_images_are_literal_sign_circulants": true,
+        "input_file": "experiments/scalar_lift/williamson_inputs.json",
+        "input_file_sha256": "242f554cf113c68ab882e147c3b2702b7bb62e68b66ad36b16c92b6c194f8560",
+        "primary_source": {
+          "id": "sage_official_literal_table",
+          "url": "https://github.com/sagemath/sage/blob/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py#L577",
+          "raw_url": "https://raw.githubusercontent.com/sagemath/sage/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py",
+          "commit": "8de8dad7bcb38e1baa43508cbe944bf04a2d0401",
+          "commit_date": "2026-11-14",
+          "source_sha256": "15b018c9d25cfbe1a45f98ee1421b338beb2b39077c6777e6bc33bc0fbd4b01d",
+          "function": "williamson_type_quadruples_smallcases",
+          "documentation_url": "https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/matrices/hadamard_matrix.html#sage.combinat.matrices.hadamard_matrix.williamson_type_quadruples_smallcases",
+          "documented_original_sources": "Sage attributes orders 3,5,...,29,37,43 to [Ha83], and 31,33,39,41,45,49,51,55,57,61,63 to [Lon2013]."
+        }
+      },
+      "scalar_algebra": {
+        "algebra": "Q[c]/(c^41-1)",
+        "algebra_is_single_number_field": false,
+        "number_field_factors": [
+          {
+            "conductor": 1,
+            "field_degree": 1,
+            "module_rank": 1
+          },
+          {
+            "conductor": 41,
+            "field_degree": 40,
+            "module_rank": 1
+          }
+        ],
+        "rational_dimension": 41,
+        "coordinate_basis": "beta_j=c^(-j), 0<=j<w",
+        "conjugation": "c -> c^(-1)",
+        "trace_functional": "tau(a)=[c^0]a=(1/41)*sum_(d|41) Tr_Q(zeta_d)/Q(a_d)",
+        "trace_metric": "I_41",
+        "metric_entry_formula": "G_ij=tau(conjugate(beta_i)*beta_j)=delta_ij",
+        "multiplication_action": "rho(f)[r,s]=f_coefficients[(s-r) mod w]",
+        "adjoint_identity": "rho(conjugate(f))=rho(f)^T",
+        "endpoint_frame": "I_41",
+        "endpoint_frame_Gram_scale": 1
+      },
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 103484,
+      "weighted_source_is_Butson": false,
+      "weighted_source_used_alphabet": "{+f_j(c),-f_j(c):0<=j<4}, with literal polynomials recorded above",
+      "actual_used_source_polynomials_pm": [
+        "++++--+-++++-++--++----++--++-++++-+--+++",
+        "+++-++-+-+-+-----+++--+++-----+-+-+-++-++",
+        "+--+--+-+-+-+++++---++---+++++-+-+-+--+--",
+        "-++-++-+-+-+-----+++--+++-----+-+-+-++-++",
+        "---+--+-+-+-+++++---++---+++++-+-+-+--+--",
+        "----++-+----+--++--++++--++--+----+-++---"
+      ],
+      "actual_used_source_polynomial_count": 6,
+      "source_identity": "D(f)D(f)*=631*sum_j f_j(c)^2*I=103484I",
+      "rational_dimension_after_restriction": 103484,
+      "endpoint_Gram_scale": 103484,
+      "endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "endpoint_recipe": "H=sum_(j=0)^3 X_j tensor rho(f_j); X_j are the four disjoint GS orthogonal-design coefficients",
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "all_used_scalar_images_verified_sign_circulants": true,
+      "literal_entry_and_row_recipe_available": true,
+      "dense_endpoint_allocated": false,
+      "complete_dense_endpoint_Gram_performed": false,
+      "literal_row_controls": {
+        "row_indices": [
+          0,
+          1,
+          40,
+          41,
+          51742,
+          103483
+        ],
+        "all_selected_full_rows_are_signs": true,
+        "all_selected_row_pairs_checked_by_exact_bit_counts": true,
+        "complete_Gram_proof": "Full polynomial OD identity and complete exact Williamson norm relation; row checks are interface controls."
+      },
+      "reported_order_status": {
+        "p": 631,
+        "w": 41,
+        "order": 103484,
+        "status": "known",
+        "prior_construction": {
+          "family": "Paley I",
+          "reference_url": "https://doi.org/10.1002/sapm1933121311",
+          "supporting_reference_url": "https://arxiv.org/html/2610.27175v2#S2.Thm2",
+          "parameters": {
+            "q": 103483,
+            "q_is_prime": true,
+            "q_mod4": 3,
+            "output_order": 103484
+          }
+        },
+        "checked_utc": "2026-11-24 21:25:01 UTC",
+        "williamson_input_sha256": "08eb71c85fe4867eb0e45c2a3c7d630a138b3cd3a14b7d6aeede2983fddb658b",
+        "arithmetic_checks": {
+          "N_minus1_factorization": [
+            [
+              103483,
+              1
+            ]
+          ],
+          "N_over2_minus1_factorization": [
+            [
+              3,
+              2
+            ],
+            [
+              5749,
+              1
+            ]
+          ],
+          "N_over4_minus2_factorization": [
+            [
+              3,
+              1
+            ],
+            [
+              8623,
+              1
+            ]
+          ],
+          "N_over4_minus2_mod8": 5
+        }
+      }
+    },
+    {
+      "p": 631,
+      "w": 43,
+      "output_order": 108532,
+      "Williamson_source": {
+        "order": 43,
+        "first_rows_pm": [
+          "++---++++-+--+--++--------++--+--+-++++---+",
+          "+++-+-++--+-+-++++-+----+-++++-+-+--++-+-++",
+          "++-++++++----+-+--++-++-++--+-+----++++++-+",
+          "+---++--++++-+-+++-++--++-+++-+-++++--++---"
+        ],
+        "actual_used_scalar_polynomials": "f_j(c)=sum_k first_rows[j][k]*c^k",
+        "all_f_j_self_adjoint": true,
+        "all_pairwise_amicability_identities_verified": true,
+        "full_integer_Gram_verified": true,
+        "cyclic_algebra_norm_relation_verified": true,
+        "exact_norm_relation": "sum_j f_j(c)^2=172 in Q[c]/(c^43-1)",
+        "row_sums": [
+          -5,
+          7,
+          7,
+          7
+        ],
+        "first_rows_int8_sha256": "09a0e3c52c7a48a357cb2b31f0a3df468dba1f618e8a4734fd000b4aa604ddd4",
+        "entry_images_are_literal_sign_circulants": true,
+        "input_file": "experiments/scalar_lift/williamson_inputs.json",
+        "input_file_sha256": "242f554cf113c68ab882e147c3b2702b7bb62e68b66ad36b16c92b6c194f8560",
+        "primary_source": {
+          "id": "sage_official_literal_table",
+          "url": "https://github.com/sagemath/sage/blob/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py#L577",
+          "raw_url": "https://raw.githubusercontent.com/sagemath/sage/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py",
+          "commit": "8de8dad7bcb38e1baa43508cbe944bf04a2d0401",
+          "commit_date": "2026-11-14",
+          "source_sha256": "15b018c9d25cfbe1a45f98ee1421b338beb2b39077c6777e6bc33bc0fbd4b01d",
+          "function": "williamson_type_quadruples_smallcases",
+          "documentation_url": "https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/matrices/hadamard_matrix.html#sage.combinat.matrices.hadamard_matrix.williamson_type_quadruples_smallcases",
+          "documented_original_sources": "Sage attributes orders 3,5,...,29,37,43 to [Ha83], and 31,33,39,41,45,49,51,55,57,61,63 to [Lon2013]."
+        }
+      },
+      "scalar_algebra": {
+        "algebra": "Q[c]/(c^43-1)",
+        "algebra_is_single_number_field": false,
+        "number_field_factors": [
+          {
+            "conductor": 1,
+            "field_degree": 1,
+            "module_rank": 1
+          },
+          {
+            "conductor": 43,
+            "field_degree": 42,
+            "module_rank": 1
+          }
+        ],
+        "rational_dimension": 43,
+        "coordinate_basis": "beta_j=c^(-j), 0<=j<w",
+        "conjugation": "c -> c^(-1)",
+        "trace_functional": "tau(a)=[c^0]a=(1/43)*sum_(d|43) Tr_Q(zeta_d)/Q(a_d)",
+        "trace_metric": "I_43",
+        "metric_entry_formula": "G_ij=tau(conjugate(beta_i)*beta_j)=delta_ij",
+        "multiplication_action": "rho(f)[r,s]=f_coefficients[(s-r) mod w]",
+        "adjoint_identity": "rho(conjugate(f))=rho(f)^T",
+        "endpoint_frame": "I_43",
+        "endpoint_frame_Gram_scale": 1
+      },
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 108532,
+      "weighted_source_is_Butson": false,
+      "weighted_source_used_alphabet": "{+f_j(c),-f_j(c):0<=j<4}, with literal polynomials recorded above",
+      "actual_used_source_polynomials_pm": [
+        "+++-+-++--+-+-++++-+----+-++++-+-+--++-+-++",
+        "++-++++++----+-+--++-++-++--+-+----++++++-+",
+        "++---++++-+--+--++--------++--+--+-++++---+",
+        "+---++--++++-+-+++-++--++-+++-+-++++--++---",
+        "-+++--++----+-+---+--++--+---+-+----++--+++",
+        "--+++----+-++-++--++++++++--++-++-+----+++-",
+        "--+------++++-+-++--+--+--++-+-++++------+-",
+        "---+-+--++-+-+----+-++++-+----+-+-++--+-+--"
+      ],
+      "actual_used_source_polynomial_count": 8,
+      "source_identity": "D(f)D(f)*=631*sum_j f_j(c)^2*I=108532I",
+      "rational_dimension_after_restriction": 108532,
+      "endpoint_Gram_scale": 108532,
+      "endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "endpoint_recipe": "H=sum_(j=0)^3 X_j tensor rho(f_j); X_j are the four disjoint GS orthogonal-design coefficients",
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "all_used_scalar_images_verified_sign_circulants": true,
+      "literal_entry_and_row_recipe_available": true,
+      "dense_endpoint_allocated": false,
+      "complete_dense_endpoint_Gram_performed": false,
+      "literal_row_controls": {
+        "row_indices": [
+          0,
+          1,
+          42,
+          43,
+          54266,
+          108531
+        ],
+        "all_selected_full_rows_are_signs": true,
+        "all_selected_row_pairs_checked_by_exact_bit_counts": true,
+        "complete_Gram_proof": "Full polynomial OD identity and complete exact Williamson norm relation; row checks are interface controls."
+      },
+      "reported_order_status": {
+        "p": 631,
+        "w": 43,
+        "order": 108532,
+        "status": "new_to_best_of_authors_knowledge",
+        "prior_construction": null,
+        "checked_utc": "2026-11-24 21:25:01 UTC",
+        "williamson_input_sha256": "09a0e3c52c7a48a357cb2b31f0a3df468dba1f618e8a4734fd000b4aa604ddd4",
+        "arithmetic_checks": {
+          "N_minus1_factorization": [
+            [
+              3,
+              2
+            ],
+            [
+              31,
+              1
+            ],
+            [
+              389,
+              1
+            ]
+          ],
+          "N_over2_minus1_factorization": [
+            [
+              5,
+              1
+            ],
+            [
+              10853,
+              1
+            ]
+          ],
+          "N_over4_minus2_factorization": [
+            [
+              13,
+              1
+            ],
+            [
+              2087,
+              1
+            ]
+          ],
+          "N_over4_minus2_mod8": 3
+        }
+      }
+    },
+    {
+      "p": 631,
+      "w": 49,
+      "output_order": 123676,
+      "Williamson_source": {
+        "order": 49,
+        "first_rows_pm": [
+          "++++-++-+---++-+++---++-++-++---+++-++---+-++-+++",
+          "++++-++-+---++-+++---++-++-++---+++-++---+-++-+++",
+          "+----+-++++--+-+++-+-+++--+++-+-+++-+--++++-+----",
+          "+++++-+----++-+---+-+---++---+-+---+-++----+-++++"
+        ],
+        "actual_used_scalar_polynomials": "f_j(c)=sum_k first_rows[j][k]*c^k",
+        "all_f_j_self_adjoint": true,
+        "all_pairwise_amicability_identities_verified": true,
+        "full_integer_Gram_verified": true,
+        "cyclic_algebra_norm_relation_verified": true,
+        "exact_norm_relation": "sum_j f_j(c)^2=196 in Q[c]/(c^49-1)",
+        "row_sums": [
+          9,
+          9,
+          5,
+          -3
+        ],
+        "first_rows_int8_sha256": "1308bc907821e4b3bed9ead79d718f81e31e423fa8be4f03b9877bb30b2a040a",
+        "entry_images_are_literal_sign_circulants": true,
+        "input_file": "experiments/scalar_lift/williamson_inputs.json",
+        "input_file_sha256": "242f554cf113c68ab882e147c3b2702b7bb62e68b66ad36b16c92b6c194f8560",
+        "primary_source": {
+          "id": "sage_official_literal_table",
+          "url": "https://github.com/sagemath/sage/blob/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py#L577",
+          "raw_url": "https://raw.githubusercontent.com/sagemath/sage/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py",
+          "commit": "8de8dad7bcb38e1baa43508cbe944bf04a2d0401",
+          "commit_date": "2026-11-14",
+          "source_sha256": "15b018c9d25cfbe1a45f98ee1421b338beb2b39077c6777e6bc33bc0fbd4b01d",
+          "function": "williamson_type_quadruples_smallcases",
+          "documentation_url": "https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/matrices/hadamard_matrix.html#sage.combinat.matrices.hadamard_matrix.williamson_type_quadruples_smallcases",
+          "documented_original_sources": "Sage attributes orders 3,5,...,29,37,43 to [Ha83], and 31,33,39,41,45,49,51,55,57,61,63 to [Lon2013]."
+        }
+      },
+      "scalar_algebra": {
+        "algebra": "Q[c]/(c^49-1)",
+        "algebra_is_single_number_field": false,
+        "number_field_factors": [
+          {
+            "conductor": 1,
+            "field_degree": 1,
+            "module_rank": 1
+          },
+          {
+            "conductor": 7,
+            "field_degree": 6,
+            "module_rank": 1
+          },
+          {
+            "conductor": 49,
+            "field_degree": 42,
+            "module_rank": 1
+          }
+        ],
+        "rational_dimension": 49,
+        "coordinate_basis": "beta_j=c^(-j), 0<=j<w",
+        "conjugation": "c -> c^(-1)",
+        "trace_functional": "tau(a)=[c^0]a=(1/49)*sum_(d|49) Tr_Q(zeta_d)/Q(a_d)",
+        "trace_metric": "I_49",
+        "metric_entry_formula": "G_ij=tau(conjugate(beta_i)*beta_j)=delta_ij",
+        "multiplication_action": "rho(f)[r,s]=f_coefficients[(s-r) mod w]",
+        "adjoint_identity": "rho(conjugate(f))=rho(f)^T",
+        "endpoint_frame": "I_49",
+        "endpoint_frame_Gram_scale": 1
+      },
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 123676,
+      "weighted_source_is_Butson": false,
+      "weighted_source_used_alphabet": "{+f_j(c),-f_j(c):0<=j<4}, with literal polynomials recorded above",
+      "actual_used_source_polynomials_pm": [
+        "+++++-+----++-+---+-+---++---+-+---+-++----+-++++",
+        "++++-++-+---++-+++---++-++-++---+++-++---+-++-+++",
+        "+----+-++++--+-+++-+-+++--+++-+-+++-+--++++-+----",
+        "-++++-+----++-+---+-+---++---+-+---+-++----+-++++",
+        "----+--+-+++--+---+++--+--+--+++---+--+++-+--+---",
+        "-----+-++++--+-+++-+-+++--+++-+-+++-+--++++-+----"
+      ],
+      "actual_used_source_polynomial_count": 6,
+      "source_identity": "D(f)D(f)*=631*sum_j f_j(c)^2*I=123676I",
+      "rational_dimension_after_restriction": 123676,
+      "endpoint_Gram_scale": 123676,
+      "endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "endpoint_recipe": "H=sum_(j=0)^3 X_j tensor rho(f_j); X_j are the four disjoint GS orthogonal-design coefficients",
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "all_used_scalar_images_verified_sign_circulants": true,
+      "literal_entry_and_row_recipe_available": true,
+      "dense_endpoint_allocated": false,
+      "complete_dense_endpoint_Gram_performed": false,
+      "literal_row_controls": {
+        "row_indices": [
+          0,
+          1,
+          48,
+          49,
+          61838,
+          123675
+        ],
+        "all_selected_full_rows_are_signs": true,
+        "all_selected_row_pairs_checked_by_exact_bit_counts": true,
+        "complete_Gram_proof": "Full polynomial OD identity and complete exact Williamson norm relation; row checks are interface controls."
+      },
+      "reported_order_status": {
+        "p": 631,
+        "w": 49,
+        "order": 123676,
+        "status": "known",
+        "prior_construction": {
+          "family": "Paley II",
+          "reference_url": "https://doi.org/10.1002/sapm1933121311",
+          "supporting_reference_url": "https://arxiv.org/html/2610.27175v2#S2.Thm2",
+          "parameters": {
+            "q": 61837,
+            "q_is_prime": true,
+            "q_mod4": 1,
+            "output_order": 123676
+          }
+        },
+        "checked_utc": "2026-11-24 21:25:01 UTC",
+        "williamson_input_sha256": "1308bc907821e4b3bed9ead79d718f81e31e423fa8be4f03b9877bb30b2a040a",
+        "arithmetic_checks": {
+          "N_minus1_factorization": [
+            [
+              3,
+              1
+            ],
+            [
+              5,
+              2
+            ],
+            [
+              17,
+              1
+            ],
+            [
+              97,
+              1
+            ]
+          ],
+          "N_over2_minus1_factorization": [
+            [
+              61837,
+              1
+            ]
+          ],
+          "N_over4_minus2_factorization": [
+            [
+              43,
+              1
+            ],
+            [
+              719,
+              1
+            ]
+          ],
+          "N_over4_minus2_mod8": 5
+        }
+      }
+    },
+    {
+      "p": 631,
+      "w": 51,
+      "output_order": 128724,
+      "Williamson_source": {
+        "order": 51,
+        "first_rows_pm": [
+          "+---+++-++-+-+++--+++++--++--+++++--+++-+-++-+++---",
+          "----+++-++-+-+++--+++++--++--+++++--+++-+-++-+++---",
+          "-+--+----+-+++-+-+++++--+--+--+++++-+-+++-+----+--+",
+          "-+--+----+-+++-+-+++++--+--+--+++++-+-+++-+----+--+"
+        ],
+        "actual_used_scalar_polynomials": "f_j(c)=sum_k first_rows[j][k]*c^k",
+        "all_f_j_self_adjoint": true,
+        "all_pairwise_amicability_identities_verified": true,
+        "full_integer_Gram_verified": true,
+        "cyclic_algebra_norm_relation_verified": true,
+        "exact_norm_relation": "sum_j f_j(c)^2=204 in Q[c]/(c^51-1)",
+        "row_sums": [
+          11,
+          9,
+          1,
+          1
+        ],
+        "first_rows_int8_sha256": "a9401b26e3ee28381889dc63d2e92baa4e4cde032d09150d5d9490c291af9bd0",
+        "entry_images_are_literal_sign_circulants": true,
+        "input_file": "experiments/scalar_lift/williamson_inputs.json",
+        "input_file_sha256": "242f554cf113c68ab882e147c3b2702b7bb62e68b66ad36b16c92b6c194f8560",
+        "primary_source": {
+          "id": "sage_official_literal_table",
+          "url": "https://github.com/sagemath/sage/blob/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py#L577",
+          "raw_url": "https://raw.githubusercontent.com/sagemath/sage/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py",
+          "commit": "8de8dad7bcb38e1baa43508cbe944bf04a2d0401",
+          "commit_date": "2026-11-14",
+          "source_sha256": "15b018c9d25cfbe1a45f98ee1421b338beb2b39077c6777e6bc33bc0fbd4b01d",
+          "function": "williamson_type_quadruples_smallcases",
+          "documentation_url": "https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/matrices/hadamard_matrix.html#sage.combinat.matrices.hadamard_matrix.williamson_type_quadruples_smallcases",
+          "documented_original_sources": "Sage attributes orders 3,5,...,29,37,43 to [Ha83], and 31,33,39,41,45,49,51,55,57,61,63 to [Lon2013]."
+        }
+      },
+      "scalar_algebra": {
+        "algebra": "Q[c]/(c^51-1)",
+        "algebra_is_single_number_field": false,
+        "number_field_factors": [
+          {
+            "conductor": 1,
+            "field_degree": 1,
+            "module_rank": 1
+          },
+          {
+            "conductor": 3,
+            "field_degree": 2,
+            "module_rank": 1
+          },
+          {
+            "conductor": 17,
+            "field_degree": 16,
+            "module_rank": 1
+          },
+          {
+            "conductor": 51,
+            "field_degree": 32,
+            "module_rank": 1
+          }
+        ],
+        "rational_dimension": 51,
+        "coordinate_basis": "beta_j=c^(-j), 0<=j<w",
+        "conjugation": "c -> c^(-1)",
+        "trace_functional": "tau(a)=[c^0]a=(1/51)*sum_(d|51) Tr_Q(zeta_d)/Q(a_d)",
+        "trace_metric": "I_51",
+        "metric_entry_formula": "G_ij=tau(conjugate(beta_i)*beta_j)=delta_ij",
+        "multiplication_action": "rho(f)[r,s]=f_coefficients[(s-r) mod w]",
+        "adjoint_identity": "rho(conjugate(f))=rho(f)^T",
+        "endpoint_frame": "I_51",
+        "endpoint_frame_Gram_scale": 1
+      },
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 128724,
+      "weighted_source_is_Butson": false,
+      "weighted_source_used_alphabet": "{+f_j(c),-f_j(c):0<=j<4}, with literal polynomials recorded above",
+      "actual_used_source_polynomials_pm": [
+        "++++---+--+-+---++-----++--++-----++---+-+--+---+++",
+        "+-++-++++-+---+-+-----++-++-++-----+-+---+-++++-++-",
+        "+---+++-++-+-+++--+++++--++--+++++--+++-+-++-+++---",
+        "-+++---+--+-+---++-----++--++-----++---+-+--+---+++",
+        "-+--+----+-+++-+-+++++--+--+--+++++-+-+++-+----+--+",
+        "----+++-++-+-+++--+++++--++--+++++--+++-+-++-+++---"
+      ],
+      "actual_used_source_polynomial_count": 6,
+      "source_identity": "D(f)D(f)*=631*sum_j f_j(c)^2*I=128724I",
+      "rational_dimension_after_restriction": 128724,
+      "endpoint_Gram_scale": 128724,
+      "endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "endpoint_recipe": "H=sum_(j=0)^3 X_j tensor rho(f_j); X_j are the four disjoint GS orthogonal-design coefficients",
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "all_used_scalar_images_verified_sign_circulants": true,
+      "literal_entry_and_row_recipe_available": true,
+      "dense_endpoint_allocated": false,
+      "complete_dense_endpoint_Gram_performed": false,
+      "literal_row_controls": {
+        "row_indices": [
+          0,
+          1,
+          50,
+          51,
+          64362,
+          128723
+        ],
+        "all_selected_full_rows_are_signs": true,
+        "all_selected_row_pairs_checked_by_exact_bit_counts": true,
+        "complete_Gram_proof": "Full polynomial OD identity and complete exact Williamson norm relation; row checks are interface controls."
+      },
+      "reported_order_status": {
+        "p": 631,
+        "w": 51,
+        "order": 128724,
+        "status": "new_to_best_of_authors_knowledge",
+        "prior_construction": null,
+        "checked_utc": "2026-11-24 21:25:01 UTC",
+        "williamson_input_sha256": "a9401b26e3ee28381889dc63d2e92baa4e4cde032d09150d5d9490c291af9bd0",
+        "arithmetic_checks": {
+          "N_minus1_factorization": [
+            [
+              7,
+              2
+            ],
+            [
+              37,
+              1
+            ],
+            [
+              71,
+              1
+            ]
+          ],
+          "N_over2_minus1_factorization": [
+            [
+              11,
+              1
+            ],
+            [
+              5851,
+              1
+            ]
+          ],
+          "N_over4_minus2_factorization": [
+            [
+              7,
+              1
+            ],
+            [
+              4597,
+              1
+            ]
+          ],
+          "N_over4_minus2_mod8": 3
+        }
+      }
+    },
+    {
+      "p": 631,
+      "w": 55,
+      "output_order": 138820,
+      "Williamson_source": {
+        "order": 55,
+        "first_rows_pm": [
+          "+-+--+-+-++--+-+++++-+++--++++--+++-+++++-+--++-+-+--+-",
+          "--+--+-+-++--+-+++++-+++--++++--+++-+++++-+--++-+-+--+-",
+          "+++----++-++--++----+-+-++++++++-+-+----++--++-++----++",
+          "+++----++-++--++----+-+-++++++++-+-+----++--++-++----++"
+        ],
+        "actual_used_scalar_polynomials": "f_j(c)=sum_k first_rows[j][k]*c^k",
+        "all_f_j_self_adjoint": true,
+        "all_pairwise_amicability_identities_verified": true,
+        "full_integer_Gram_verified": true,
+        "cyclic_algebra_norm_relation_verified": true,
+        "exact_norm_relation": "sum_j f_j(c)^2=220 in Q[c]/(c^55-1)",
+        "row_sums": [
+          11,
+          9,
+          3,
+          3
+        ],
+        "first_rows_int8_sha256": "914518d6bda74f14ea949f2176a49cc5025f4b8f692e4cedc85f322f3ebf8006",
+        "entry_images_are_literal_sign_circulants": true,
+        "input_file": "experiments/scalar_lift/williamson_inputs.json",
+        "input_file_sha256": "242f554cf113c68ab882e147c3b2702b7bb62e68b66ad36b16c92b6c194f8560",
+        "primary_source": {
+          "id": "sage_official_literal_table",
+          "url": "https://github.com/sagemath/sage/blob/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py#L577",
+          "raw_url": "https://raw.githubusercontent.com/sagemath/sage/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py",
+          "commit": "8de8dad7bcb38e1baa43508cbe944bf04a2d0401",
+          "commit_date": "2026-11-14",
+          "source_sha256": "15b018c9d25cfbe1a45f98ee1421b338beb2b39077c6777e6bc33bc0fbd4b01d",
+          "function": "williamson_type_quadruples_smallcases",
+          "documentation_url": "https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/matrices/hadamard_matrix.html#sage.combinat.matrices.hadamard_matrix.williamson_type_quadruples_smallcases",
+          "documented_original_sources": "Sage attributes orders 3,5,...,29,37,43 to [Ha83], and 31,33,39,41,45,49,51,55,57,61,63 to [Lon2013]."
+        }
+      },
+      "scalar_algebra": {
+        "algebra": "Q[c]/(c^55-1)",
+        "algebra_is_single_number_field": false,
+        "number_field_factors": [
+          {
+            "conductor": 1,
+            "field_degree": 1,
+            "module_rank": 1
+          },
+          {
+            "conductor": 5,
+            "field_degree": 4,
+            "module_rank": 1
+          },
+          {
+            "conductor": 11,
+            "field_degree": 10,
+            "module_rank": 1
+          },
+          {
+            "conductor": 55,
+            "field_degree": 40,
+            "module_rank": 1
+          }
+        ],
+        "rational_dimension": 55,
+        "coordinate_basis": "beta_j=c^(-j), 0<=j<w",
+        "conjugation": "c -> c^(-1)",
+        "trace_functional": "tau(a)=[c^0]a=(1/55)*sum_(d|55) Tr_Q(zeta_d)/Q(a_d)",
+        "trace_metric": "I_55",
+        "metric_entry_formula": "G_ij=tau(conjugate(beta_i)*beta_j)=delta_ij",
+        "multiplication_action": "rho(f)[r,s]=f_coefficients[(s-r) mod w]",
+        "adjoint_identity": "rho(conjugate(f))=rho(f)^T",
+        "endpoint_frame": "I_55",
+        "endpoint_frame_Gram_scale": 1
+      },
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 138820,
+      "weighted_source_is_Butson": false,
+      "weighted_source_used_alphabet": "{+f_j(c),-f_j(c):0<=j<4}, with literal polynomials recorded above",
+      "actual_used_source_polynomials_pm": [
+        "+++----++-++--++----+-+-++++++++-+-+----++--++-++----++",
+        "++-++-+-+--++-+-----+---++----++---+-----+-++--+-+-++-+",
+        "+-+--+-+-++--+-+++++-+++--++++--+++-+++++-+--++-+-+--+-",
+        "-+-++-+-+--++-+-----+---++----++---+-----+-++--+-+-++-+",
+        "--+--+-+-++--+-+++++-+++--++++--+++-+++++-+--++-+-+--+-",
+        "---++++--+--++--++++-+-+--------+-+-++++--++--+--++++--"
+      ],
+      "actual_used_source_polynomial_count": 6,
+      "source_identity": "D(f)D(f)*=631*sum_j f_j(c)^2*I=138820I",
+      "rational_dimension_after_restriction": 138820,
+      "endpoint_Gram_scale": 138820,
+      "endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "endpoint_recipe": "H=sum_(j=0)^3 X_j tensor rho(f_j); X_j are the four disjoint GS orthogonal-design coefficients",
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "all_used_scalar_images_verified_sign_circulants": true,
+      "literal_entry_and_row_recipe_available": true,
+      "dense_endpoint_allocated": false,
+      "complete_dense_endpoint_Gram_performed": false,
+      "literal_row_controls": {
+        "row_indices": [
+          0,
+          1,
+          54,
+          55,
+          69410,
+          138819
+        ],
+        "all_selected_full_rows_are_signs": true,
+        "all_selected_row_pairs_checked_by_exact_bit_counts": true,
+        "complete_Gram_proof": "Full polynomial OD identity and complete exact Williamson norm relation; row checks are interface controls."
+      },
+      "reported_order_status": {
+        "p": 631,
+        "w": 55,
+        "order": 138820,
+        "status": "known",
+        "prior_construction": {
+          "family": "Paley sixteen-block product with classical T-matrices",
+          "reference_url": "https://arxiv.org/html/2610.27175v2#S4.T4",
+          "parameters": {
+            "s": 6941,
+            "t": 5,
+            "q": 27763,
+            "q_is_prime": true,
+            "q_mod8": 3,
+            "Paley_base_order": 27764,
+            "known_T_order": 5,
+            "output_order": 138820
+          },
+          "ingredient_reference_url": "https://arxiv.org/html/2610.27175v2#S4.T3",
+          "reference_detail": "Table4 Paley and Miyamoto blocks: H(4st) for T(t) and prime-power4s-1 congruent3 mod8. Here t=3 or5 has classical T-sequences."
+        },
+        "checked_utc": "2026-11-24 21:25:01 UTC",
+        "williamson_input_sha256": "914518d6bda74f14ea949f2176a49cc5025f4b8f692e4cedc85f322f3ebf8006",
+        "arithmetic_checks": {
+          "N_minus1_factorization": [
+            [
+              3,
+              1
+            ],
+            [
+              46273,
+              1
+            ]
+          ],
+          "N_over2_minus1_factorization": [
+            [
+              31,
+              1
+            ],
+            [
+              2239,
+              1
+            ]
+          ],
+          "N_over4_minus2_factorization": [
+            [
+              34703,
+              1
+            ]
+          ],
+          "N_over4_minus2_mod8": 7
+        }
+      }
+    },
+    {
+      "p": 631,
+      "w": 57,
+      "output_order": 143868,
+      "Williamson_source": {
+        "order": 57,
+        "first_rows_pm": [
+          "+---++-+--++++-+++-++---+-++++++-+---++-+++-++++--+-++---",
+          "----++-+--++++-+++-++---+-++++++-+---++-+++-++++--+-++---",
+          "--+-+-+++--+--+-++---+++++-++++-+++++---++-+--+--+++-+-+-",
+          "--+-+-+++--+--+-++---+++++-++++-+++++---++-+--+--+++-+-+-"
+        ],
+        "actual_used_scalar_polynomials": "f_j(c)=sum_k first_rows[j][k]*c^k",
+        "all_f_j_self_adjoint": true,
+        "all_pairwise_amicability_identities_verified": true,
+        "full_integer_Gram_verified": true,
+        "cyclic_algebra_norm_relation_verified": true,
+        "exact_norm_relation": "sum_j f_j(c)^2=228 in Q[c]/(c^57-1)",
+        "row_sums": [
+          9,
+          7,
+          7,
+          7
+        ],
+        "first_rows_int8_sha256": "45db03f6349fe2b3e6408b04f9d1ea4b11b9004782120a1b96c1a33829fdcd85",
+        "entry_images_are_literal_sign_circulants": true,
+        "input_file": "experiments/scalar_lift/williamson_inputs.json",
+        "input_file_sha256": "242f554cf113c68ab882e147c3b2702b7bb62e68b66ad36b16c92b6c194f8560",
+        "primary_source": {
+          "id": "sage_official_literal_table",
+          "url": "https://github.com/sagemath/sage/blob/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py#L577",
+          "raw_url": "https://raw.githubusercontent.com/sagemath/sage/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py",
+          "commit": "8de8dad7bcb38e1baa43508cbe944bf04a2d0401",
+          "commit_date": "2026-11-14",
+          "source_sha256": "15b018c9d25cfbe1a45f98ee1421b338beb2b39077c6777e6bc33bc0fbd4b01d",
+          "function": "williamson_type_quadruples_smallcases",
+          "documentation_url": "https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/matrices/hadamard_matrix.html#sage.combinat.matrices.hadamard_matrix.williamson_type_quadruples_smallcases",
+          "documented_original_sources": "Sage attributes orders 3,5,...,29,37,43 to [Ha83], and 31,33,39,41,45,49,51,55,57,61,63 to [Lon2013]."
+        }
+      },
+      "scalar_algebra": {
+        "algebra": "Q[c]/(c^57-1)",
+        "algebra_is_single_number_field": false,
+        "number_field_factors": [
+          {
+            "conductor": 1,
+            "field_degree": 1,
+            "module_rank": 1
+          },
+          {
+            "conductor": 3,
+            "field_degree": 2,
+            "module_rank": 1
+          },
+          {
+            "conductor": 19,
+            "field_degree": 18,
+            "module_rank": 1
+          },
+          {
+            "conductor": 57,
+            "field_degree": 36,
+            "module_rank": 1
+          }
+        ],
+        "rational_dimension": 57,
+        "coordinate_basis": "beta_j=c^(-j), 0<=j<w",
+        "conjugation": "c -> c^(-1)",
+        "trace_functional": "tau(a)=[c^0]a=(1/57)*sum_(d|57) Tr_Q(zeta_d)/Q(a_d)",
+        "trace_metric": "I_57",
+        "metric_entry_formula": "G_ij=tau(conjugate(beta_i)*beta_j)=delta_ij",
+        "multiplication_action": "rho(f)[r,s]=f_coefficients[(s-r) mod w]",
+        "adjoint_identity": "rho(conjugate(f))=rho(f)^T",
+        "endpoint_frame": "I_57",
+        "endpoint_frame_Gram_scale": 1
+      },
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 143868,
+      "weighted_source_is_Butson": false,
+      "weighted_source_used_alphabet": "{+f_j(c),-f_j(c):0<=j<4}, with literal polynomials recorded above",
+      "actual_used_source_polynomials_pm": [
+        "++++--+-++----+---+--+++-+------+-+++--+---+----++-+--+++",
+        "++-+-+---++-++-+--+++-----+----+-----+++--+-++-++---+-+-+",
+        "+---++-+--++++-+++-++---+-++++++-+---++-+++-++++--+-++---",
+        "-+++--+-++----+---+--+++-+------+-+++--+---+----++-+--+++",
+        "--+-+-+++--+--+-++---+++++-++++-+++++---++-+--+--+++-+-+-",
+        "----++-+--++++-+++-++---+-++++++-+---++-+++-++++--+-++---"
+      ],
+      "actual_used_source_polynomial_count": 6,
+      "source_identity": "D(f)D(f)*=631*sum_j f_j(c)^2*I=143868I",
+      "rational_dimension_after_restriction": 143868,
+      "endpoint_Gram_scale": 143868,
+      "endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "endpoint_recipe": "H=sum_(j=0)^3 X_j tensor rho(f_j); X_j are the four disjoint GS orthogonal-design coefficients",
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "all_used_scalar_images_verified_sign_circulants": true,
+      "literal_entry_and_row_recipe_available": true,
+      "dense_endpoint_allocated": false,
+      "complete_dense_endpoint_Gram_performed": false,
+      "literal_row_controls": {
+        "row_indices": [
+          0,
+          1,
+          56,
+          57,
+          71934,
+          143867
+        ],
+        "all_selected_full_rows_are_signs": true,
+        "all_selected_row_pairs_checked_by_exact_bit_counts": true,
+        "complete_Gram_proof": "Full polynomial OD identity and complete exact Williamson norm relation; row checks are interface controls."
+      },
+      "reported_order_status": {
+        "p": 631,
+        "w": 57,
+        "order": 143868,
+        "status": "known",
+        "prior_construction": {
+          "family": "Paley II",
+          "reference_url": "https://doi.org/10.1002/sapm1933121311",
+          "supporting_reference_url": "https://arxiv.org/html/2610.27175v2#S2.Thm2",
+          "parameters": {
+            "q": 71933,
+            "q_is_prime": true,
+            "q_mod4": 1,
+            "output_order": 143868
+          }
+        },
+        "checked_utc": "2026-11-24 21:25:01 UTC",
+        "williamson_input_sha256": "45db03f6349fe2b3e6408b04f9d1ea4b11b9004782120a1b96c1a33829fdcd85",
+        "arithmetic_checks": {
+          "N_minus1_factorization": [
+            [
+              47,
+              1
+            ],
+            [
+              3061,
+              1
+            ]
+          ],
+          "N_over2_minus1_factorization": [
+            [
+              71933,
+              1
+            ]
+          ],
+          "N_over4_minus2_factorization": [
+            [
+              5,
+              1
+            ],
+            [
+              7193,
+              1
+            ]
+          ],
+          "N_over4_minus2_mod8": 5
+        }
+      }
+    },
+    {
+      "p": 631,
+      "w": 61,
+      "output_order": 153964,
+      "Williamson_source": {
+        "order": 61,
+        "first_rows_pm": [
+          "++--+--++--+-+-++++--+-----+------+-----+--++++-+-+--++--+--+",
+          "++--+--++--+-+-++++--+-----+------+-----+--++++-+-+--++--+--+",
+          "+---+-+-++++---++--+-++-+---++++++---+-++-+--++---++++-+-+---",
+          "++++-+-+----+++--++-+--+-+++------+++-+--+-++--+++----+-+-+++"
+        ],
+        "actual_used_scalar_polynomials": "f_j(c)=sum_k first_rows[j][k]*c^k",
+        "all_f_j_self_adjoint": true,
+        "all_pairwise_amicability_identities_verified": true,
+        "full_integer_Gram_verified": true,
+        "cyclic_algebra_norm_relation_verified": true,
+        "exact_norm_relation": "sum_j f_j(c)^2=244 in Q[c]/(c^61-1)",
+        "row_sums": [
+          -11,
+          -11,
+          1,
+          1
+        ],
+        "first_rows_int8_sha256": "342cc7335f227401368904af6ee0318b595b7bf0e730fd7526e7eedb9f526f47",
+        "entry_images_are_literal_sign_circulants": true,
+        "input_file": "experiments/scalar_lift/williamson_inputs.json",
+        "input_file_sha256": "242f554cf113c68ab882e147c3b2702b7bb62e68b66ad36b16c92b6c194f8560",
+        "primary_source": {
+          "id": "sage_official_literal_table",
+          "url": "https://github.com/sagemath/sage/blob/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py#L577",
+          "raw_url": "https://raw.githubusercontent.com/sagemath/sage/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py",
+          "commit": "8de8dad7bcb38e1baa43508cbe944bf04a2d0401",
+          "commit_date": "2026-11-14",
+          "source_sha256": "15b018c9d25cfbe1a45f98ee1421b338beb2b39077c6777e6bc33bc0fbd4b01d",
+          "function": "williamson_type_quadruples_smallcases",
+          "documentation_url": "https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/matrices/hadamard_matrix.html#sage.combinat.matrices.hadamard_matrix.williamson_type_quadruples_smallcases",
+          "documented_original_sources": "Sage attributes orders 3,5,...,29,37,43 to [Ha83], and 31,33,39,41,45,49,51,55,57,61,63 to [Lon2013]."
+        }
+      },
+      "scalar_algebra": {
+        "algebra": "Q[c]/(c^61-1)",
+        "algebra_is_single_number_field": false,
+        "number_field_factors": [
+          {
+            "conductor": 1,
+            "field_degree": 1,
+            "module_rank": 1
+          },
+          {
+            "conductor": 61,
+            "field_degree": 60,
+            "module_rank": 1
+          }
+        ],
+        "rational_dimension": 61,
+        "coordinate_basis": "beta_j=c^(-j), 0<=j<w",
+        "conjugation": "c -> c^(-1)",
+        "trace_functional": "tau(a)=[c^0]a=(1/61)*sum_(d|61) Tr_Q(zeta_d)/Q(a_d)",
+        "trace_metric": "I_61",
+        "metric_entry_formula": "G_ij=tau(conjugate(beta_i)*beta_j)=delta_ij",
+        "multiplication_action": "rho(f)[r,s]=f_coefficients[(s-r) mod w]",
+        "adjoint_identity": "rho(conjugate(f))=rho(f)^T",
+        "endpoint_frame": "I_61",
+        "endpoint_frame_Gram_scale": 1
+      },
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 153964,
+      "weighted_source_is_Butson": false,
+      "weighted_source_used_alphabet": "{+f_j(c),-f_j(c):0<=j<4}, with literal polynomials recorded above",
+      "actual_used_source_polynomials_pm": [
+        "++++-+-+----+++--++-+--+-+++------+++-+--+-++--+++----+-+-+++",
+        "++--+--++--+-+-++++--+-----+------+-----+--++++-+-+--++--+--+",
+        "+---+-+-++++---++--+-++-+---++++++---+-++-+--++---++++-+-+---",
+        "-+++-+-+----+++--++-+--+-+++------+++-+--+-++--+++----+-+-+++",
+        "--++-++--++-+-+----++-+++++-++++++-+++++-++----+-+-++--++-++-",
+        "----+-+-++++---++--+-++-+---++++++---+-++-+--++---++++-+-+---"
+      ],
+      "actual_used_source_polynomial_count": 6,
+      "source_identity": "D(f)D(f)*=631*sum_j f_j(c)^2*I=153964I",
+      "rational_dimension_after_restriction": 153964,
+      "endpoint_Gram_scale": 153964,
+      "endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "endpoint_recipe": "H=sum_(j=0)^3 X_j tensor rho(f_j); X_j are the four disjoint GS orthogonal-design coefficients",
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "all_used_scalar_images_verified_sign_circulants": true,
+      "literal_entry_and_row_recipe_available": true,
+      "dense_endpoint_allocated": false,
+      "complete_dense_endpoint_Gram_performed": false,
+      "literal_row_controls": {
+        "row_indices": [
+          0,
+          1,
+          60,
+          61,
+          76982,
+          153963
+        ],
+        "all_selected_full_rows_are_signs": true,
+        "all_selected_row_pairs_checked_by_exact_bit_counts": true,
+        "complete_Gram_proof": "Full polynomial OD identity and complete exact Williamson norm relation; row checks are interface controls."
+      },
+      "reported_order_status": {
+        "p": 631,
+        "w": 61,
+        "order": 153964,
+        "status": "new_to_best_of_authors_knowledge",
+        "prior_construction": null,
+        "checked_utc": "2026-11-24 21:25:01 UTC",
+        "williamson_input_sha256": "342cc7335f227401368904af6ee0318b595b7bf0e730fd7526e7eedb9f526f47",
+        "arithmetic_checks": {
+          "N_minus1_factorization": [
+            [
+              3,
+              2
+            ],
+            [
+              17107,
+              1
+            ]
+          ],
+          "N_over2_minus1_factorization": [
+            [
+              23,
+              1
+            ],
+            [
+              3347,
+              1
+            ]
+          ],
+          "N_over4_minus2_factorization": [
+            [
+              11,
+              1
+            ],
+            [
+              3499,
+              1
+            ]
+          ],
+          "N_over4_minus2_mod8": 1
+        }
+      }
+    },
+    {
+      "p": 631,
+      "w": 63,
+      "output_order": 159012,
+      "Williamson_source": {
+        "order": 63,
+        "first_rows_pm": [
+          "++-+++--++-++--+--+-++-+-+++--------+++-+-++-+--+--++-++--+++-+",
+          "-+-+++--++-++--+--+-++-+-+++--------+++-+-++-+--+--++-++--+++-+",
+          "++++-++-+-++++-+---+---+++---++++++---+++---+---+-++++-+-++-+++",
+          "++++-++-+-++++-+---+---+++---++++++---+++---+---+-++++-+-++-+++"
+        ],
+        "actual_used_scalar_polynomials": "f_j(c)=sum_k first_rows[j][k]*c^k",
+        "all_f_j_self_adjoint": true,
+        "all_pairwise_amicability_identities_verified": true,
+        "full_integer_Gram_verified": true,
+        "cyclic_algebra_norm_relation_verified": true,
+        "exact_norm_relation": "sum_j f_j(c)^2=252 in Q[c]/(c^63-1)",
+        "row_sums": [
+          3,
+          1,
+          11,
+          11
+        ],
+        "first_rows_int8_sha256": "0228b6820163b5ae464bd9e3ff4f62a9468d0a6fd4ea6e9f92f37bc5bb85b67e",
+        "entry_images_are_literal_sign_circulants": true,
+        "input_file": "experiments/scalar_lift/williamson_inputs.json",
+        "input_file_sha256": "242f554cf113c68ab882e147c3b2702b7bb62e68b66ad36b16c92b6c194f8560",
+        "primary_source": {
+          "id": "sage_official_literal_table",
+          "url": "https://github.com/sagemath/sage/blob/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py#L577",
+          "raw_url": "https://raw.githubusercontent.com/sagemath/sage/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py",
+          "commit": "8de8dad7bcb38e1baa43508cbe944bf04a2d0401",
+          "commit_date": "2026-11-14",
+          "source_sha256": "15b018c9d25cfbe1a45f98ee1421b338beb2b39077c6777e6bc33bc0fbd4b01d",
+          "function": "williamson_type_quadruples_smallcases",
+          "documentation_url": "https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/matrices/hadamard_matrix.html#sage.combinat.matrices.hadamard_matrix.williamson_type_quadruples_smallcases",
+          "documented_original_sources": "Sage attributes orders 3,5,...,29,37,43 to [Ha83], and 31,33,39,41,45,49,51,55,57,61,63 to [Lon2013]."
+        }
+      },
+      "scalar_algebra": {
+        "algebra": "Q[c]/(c^63-1)",
+        "algebra_is_single_number_field": false,
+        "number_field_factors": [
+          {
+            "conductor": 1,
+            "field_degree": 1,
+            "module_rank": 1
+          },
+          {
+            "conductor": 3,
+            "field_degree": 2,
+            "module_rank": 1
+          },
+          {
+            "conductor": 7,
+            "field_degree": 6,
+            "module_rank": 1
+          },
+          {
+            "conductor": 9,
+            "field_degree": 6,
+            "module_rank": 1
+          },
+          {
+            "conductor": 21,
+            "field_degree": 12,
+            "module_rank": 1
+          },
+          {
+            "conductor": 63,
+            "field_degree": 36,
+            "module_rank": 1
+          }
+        ],
+        "rational_dimension": 63,
+        "coordinate_basis": "beta_j=c^(-j), 0<=j<w",
+        "conjugation": "c -> c^(-1)",
+        "trace_functional": "tau(a)=[c^0]a=(1/63)*sum_(d|63) Tr_Q(zeta_d)/Q(a_d)",
+        "trace_metric": "I_63",
+        "metric_entry_formula": "G_ij=tau(conjugate(beta_i)*beta_j)=delta_ij",
+        "multiplication_action": "rho(f)[r,s]=f_coefficients[(s-r) mod w]",
+        "adjoint_identity": "rho(conjugate(f))=rho(f)^T",
+        "endpoint_frame": "I_63",
+        "endpoint_frame_Gram_scale": 1
+      },
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 159012,
+      "weighted_source_is_Butson": false,
+      "weighted_source_used_alphabet": "{+f_j(c),-f_j(c):0<=j<4}, with literal polynomials recorded above",
+      "actual_used_source_polynomials_pm": [
+        "++++-++-+-++++-+---+---+++---++++++---+++---+---+-++++-+-++-+++",
+        "++-+++--++-++--+--+-++-+-+++--------+++-+-++-+--+--++-++--+++-+",
+        "+-+---++--+--++-++-+--+-+---++++++++---+-+--+-++-++--+--++---+-",
+        "-+-+++--++-++--+--+-++-+-+++--------+++-+-++-+--+--++-++--+++-+",
+        "--+---++--+--++-++-+--+-+---++++++++---+-+--+-++-++--+--++---+-",
+        "----+--+-+----+-+++-+++---+++------+++---+++-+++-+----+-+--+---"
+      ],
+      "actual_used_source_polynomial_count": 6,
+      "source_identity": "D(f)D(f)*=631*sum_j f_j(c)^2*I=159012I",
+      "rational_dimension_after_restriction": 159012,
+      "endpoint_Gram_scale": 159012,
+      "endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "endpoint_recipe": "H=sum_(j=0)^3 X_j tensor rho(f_j); X_j are the four disjoint GS orthogonal-design coefficients",
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "all_used_scalar_images_verified_sign_circulants": true,
+      "literal_entry_and_row_recipe_available": true,
+      "dense_endpoint_allocated": false,
+      "complete_dense_endpoint_Gram_performed": false,
+      "literal_row_controls": {
+        "row_indices": [
+          0,
+          1,
+          62,
+          63,
+          79506,
+          159011
+        ],
+        "all_selected_full_rows_are_signs": true,
+        "all_selected_row_pairs_checked_by_exact_bit_counts": true,
+        "complete_Gram_proof": "Full polynomial OD identity and complete exact Williamson norm relation; row checks are interface controls."
+      },
+      "reported_order_status": {
+        "p": 631,
+        "w": 63,
+        "order": 159012,
+        "status": "known",
+        "prior_construction": {
+          "family": "Paley sixteen-block product with classical T-matrices",
+          "reference_url": "https://arxiv.org/html/2610.27175v2#S4.T4",
+          "parameters": {
+            "s": 13251,
+            "t": 3,
+            "q": 53003,
+            "q_is_prime": true,
+            "q_mod8": 3,
+            "Paley_base_order": 53004,
+            "known_T_order": 3,
+            "output_order": 159012
+          },
+          "ingredient_reference_url": "https://arxiv.org/html/2610.27175v2#S4.T3",
+          "reference_detail": "Table4 Paley and Miyamoto blocks: H(4st) for T(t) and prime-power4s-1 congruent3 mod8. Here t=3 or5 has classical T-sequences."
+        },
+        "checked_utc": "2026-11-24 21:25:01 UTC",
+        "williamson_input_sha256": "0228b6820163b5ae464bd9e3ff4f62a9468d0a6fd4ea6e9f92f37bc5bb85b67e",
+        "arithmetic_checks": {
+          "N_minus1_factorization": [
+            [
+              19,
+              1
+            ],
+            [
+              8369,
+              1
+            ]
+          ],
+          "N_over2_minus1_factorization": [
+            [
+              5,
+              1
+            ],
+            [
+              15901,
+              1
+            ]
+          ],
+          "N_over4_minus2_factorization": [
+            [
+              127,
+              1
+            ],
+            [
+              313,
+              1
+            ]
+          ],
+          "N_over4_minus2_mod8": 7
+        }
+      }
+    }
+  ],
+  "all_outputs_are_completed_literal_sign_matrix_recipes": true,
+  "restriction_scope": "Restriction of scalars from the finite etale algebra Q[C_w], explicitly factored into cyclotomic number fields; weighted source entries are not called Butson roots.",
+  "implementation_sha256": "990d193441cc3c64366826495190db39862e78d970ec6cae87dc9594805e1270",
+  "reconstruction_dependencies": [
+    "Python>=3.10",
+    "NumPy",
+    "neighboring literal T and Williamson input JSON files"
+  ],
+  "Williamson_input_sha256": "242f554cf113c68ab882e147c3b2702b7bb62e68b66ad36b16c92b6c194f8560",
+  "status_record": "experiments/scalar_lift/williamson_order_status.json",
+  "status_record_sha256": "74dd93f23c72a9d2bb828eaf7b7ca0b190b32e9000dd97bb99b6a7da095a49ea"
+}

@@ -1,0 +1,264 @@
+{
+  "scope": "Exact dense-output identities; no weighing-matrix completion or repair",
+  "sign_group": "F3^times = C2, interpreted as integer +1 and -1",
+  "tenth_root_transfer": {
+    "source": "BH(n,10) with no entries +/-1",
+    "intermediate": "BH(4n,4)",
+    "output": "real Hadamard of order 8n, all entries +/-1",
+    "source_field": "Q(zeta_5)",
+    "extension_field": "Q(i,zeta_5)=Q(zeta_20)",
+    "extension_degree": 2,
+    "relative_trace_base": "Q(i)",
+    "theta_coefficients_in_1_t_t2_t3": [
+      "3/10",
+      "0",
+      "1/10 + I/10",
+      "1/10 - I/10"
+    ],
+    "orthonormal_basis_power_coordinates_by_column": [
+      [
+        "1",
+        "-1",
+        "-I",
+        "I"
+      ],
+      [
+        "0",
+        "-2",
+        "-1 - I",
+        "1 + I"
+      ],
+      [
+        "0",
+        "-1 + I",
+        "-1 - I",
+        "2"
+      ],
+      [
+        "0",
+        "-1 + I",
+        "0",
+        "1 - I"
+      ]
+    ],
+    "all_four_nonidentity_powers_quaternary_flat": true,
+    "reference": "https://arxiv.org/html/1707.08815v3#S3.SS1"
+  },
+  "sources": {
+    "unreal_fifth_order_five": [
+      [
+        1,
+        4,
+        3,
+        3,
+        4
+      ],
+      [
+        4,
+        3,
+        3,
+        4,
+        1
+      ],
+      [
+        3,
+        3,
+        4,
+        1,
+        4
+      ],
+      [
+        3,
+        4,
+        1,
+        4,
+        3
+      ],
+      [
+        4,
+        1,
+        4,
+        3,
+        3
+      ]
+    ],
+    "unreal_tenth_order_ten": [
+      [
+        2,
+        2,
+        8,
+        8,
+        6,
+        6,
+        6,
+        6,
+        8,
+        8
+      ],
+      [
+        2,
+        7,
+        8,
+        3,
+        6,
+        1,
+        6,
+        1,
+        8,
+        3
+      ],
+      [
+        8,
+        8,
+        6,
+        6,
+        6,
+        6,
+        8,
+        8,
+        2,
+        2
+      ],
+      [
+        8,
+        3,
+        6,
+        1,
+        6,
+        1,
+        8,
+        3,
+        2,
+        7
+      ],
+      [
+        6,
+        6,
+        6,
+        6,
+        8,
+        8,
+        2,
+        2,
+        8,
+        8
+      ],
+      [
+        6,
+        1,
+        6,
+        1,
+        8,
+        3,
+        2,
+        7,
+        8,
+        3
+      ],
+      [
+        6,
+        6,
+        8,
+        8,
+        2,
+        2,
+        8,
+        8,
+        6,
+        6
+      ],
+      [
+        6,
+        1,
+        8,
+        3,
+        2,
+        7,
+        8,
+        3,
+        6,
+        1
+      ],
+      [
+        8,
+        8,
+        2,
+        2,
+        8,
+        8,
+        6,
+        6,
+        6,
+        6
+      ],
+      [
+        8,
+        3,
+        2,
+        7,
+        8,
+        3,
+        6,
+        1,
+        6,
+        1
+      ]
+    ]
+  },
+  "known_order_controls": [
+    {
+      "name": "Finite-field norm F9 to F3, Paley",
+      "real_order": 20,
+      "entry_alphabet": [
+        -1,
+        1
+      ],
+      "zero_count": 0,
+      "both_integer_grams_valid": true,
+      "every_row_quotient_has_equal_sign_counts": true,
+      "matrix_sha256": "13d6ae87fc9c2e950e8b73e41426be4a7aecb5264e0b6b8f39174de7d3dfeeed",
+      "known_order_control": true
+    },
+    {
+      "name": "Cyclotomic fifth-root extension",
+      "real_order": 40,
+      "entry_alphabet": [
+        -1,
+        1
+      ],
+      "zero_count": 0,
+      "both_integer_grams_valid": true,
+      "every_row_quotient_has_equal_sign_counts": true,
+      "matrix_sha256": "30ad937e9424e5ad2c842066e062ce97f81f1b65f1e10af2ca9066c063485185",
+      "known_order_control": true
+    },
+    {
+      "name": "Cyclotomic tenth-root extension",
+      "real_order": 80,
+      "entry_alphabet": [
+        -1,
+        1
+      ],
+      "zero_count": 0,
+      "both_integer_grams_valid": true,
+      "every_row_quotient_has_equal_sign_counts": true,
+      "matrix_sha256": "2b8fbc1bafcf903e43ab4643d9da8c7dfadc0576bcfc3e33e4ca7982236123a6",
+      "known_order_control": true
+    },
+    {
+      "name": "Multiplicative projection BH(8,10) to signs",
+      "real_order": 8,
+      "entry_alphabet": [
+        -1,
+        1
+      ],
+      "zero_count": 0,
+      "both_integer_grams_valid": true,
+      "every_row_quotient_has_equal_sign_counts": true,
+      "matrix_sha256": "418a9c40e64fcde468e49b12628879664e9d30011749425cfbfd783787b37f51",
+      "known_order_control": true
+    }
+  ],
+  "new_real_hadamard_order_claimed": false,
+  "novelty_claimed_for_transfer": false
+}

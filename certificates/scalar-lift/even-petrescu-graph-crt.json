@@ -1,0 +1,130 @@
+{
+  "schema": "even-petrescu-unrestricted-graph-crt-v1",
+  "scope": "Lossless linear graph congruence plus exact finite-root decoding; no corner Gram completion",
+  "input_block_shape": [
+    500,
+    500
+  ],
+  "all_three_input_blocks_arbitrary": true,
+  "forced_fourth_block_formula": "M12=G(M21 G+M22)-M11 G modulo125",
+  "CRT_component_signs": [
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      -1
+    ],
+    [
+      -1,
+      1
+    ],
+    [
+      -1,
+      -1
+    ]
+  ],
+  "each_component_block_shape": [
+    2,
+    2,
+    125,
+    125
+  ],
+  "root_decoder_controls": [
+    {
+      "phase": 24,
+      "every_root_decoded_uniquely": true,
+      "every_doubled_root_rejected": true,
+      "admitted_M_equals_Dstar_exponent_classes_mod3": [
+        0,
+        1
+      ],
+      "coefficient_modulus": 125
+    },
+    {
+      "phase": 48,
+      "every_root_decoded_uniquely": true,
+      "every_doubled_root_rejected": true,
+      "admitted_M_equals_Dstar_exponent_classes_mod3": [
+        0,
+        2
+      ],
+      "coefficient_modulus": 125
+    }
+  ],
+  "full_large_positive_control": {
+    "phase": 24,
+    "source_of_control": "row-permuted and row-gauged complete conference Hadamard",
+    "all_250000_forced_entries_equal_expected_roots": true,
+    "noncommuting_M11_witness": {
+      "entry": [
+        0,
+        0
+      ],
+      "exact_coefficient_difference": [
+        3,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "forced_block_exponent_sha256": "f1f9186b728b05a1ae97456bca8d04f57f8757ad302a856bc9b28eccda872e38",
+    "control_annihilates_graph_kernel_modulo125": true,
+    "control_is_singular_modulo5": true,
+    "retained_as_corner_candidate": false
+  },
+  "negative_root_control": {
+    "modified_M22_entry": [
+      3,
+      7
+    ],
+    "modified_M21_entry": [
+      3,
+      7
+    ],
+    "exact_rank_one_changes_to_forced_M12": true,
+    "full_CRT_replay_equals_independent_rank_one_updates": true,
+    "entries_failing_exact_root_decode": 249002
+  },
+  "additional_full_phase48_control": {
+    "all_250000_entries_verified": true,
+    "noncommuting_M11_witness": {
+      "entry": [
+        0,
+        0
+      ],
+      "exact_coefficient_difference": [
+        3,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ]
+    },
+    "retained_as_corner_candidate": false
+  },
+  "sign_only_rectangle_family_rejected_before_search": true,
+  "reason_sign_only_family_rejected": "two globally phased real blocks give a real row Gram; width1000 cannot have three sign rows with pair correlations2",
+  "single_rectangle_per_block_family_rejected_before_search": true,
+  "reason_single_rectangle_family_rejected": "rows sharing the two row-mask bits remain orthogonal in both blocks",
+  "necessary_combined_binary_row_mask_count_for_500_rows": 9,
+  "finite_candidate_census_run": false,
+  "native_solver_run": false,
+  "new_feasible_corner_candidate_found": false
+}

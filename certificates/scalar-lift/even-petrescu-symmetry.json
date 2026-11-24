@@ -1,0 +1,565 @@
+{
+  "schema": "even-petrescu-fixed-row-symmetry-v1",
+  "scope": "Specified pure permutation symmetries in the supplied Paley coordinates only",
+  "trace_audits": [
+    {
+      "phase": 2,
+      "degree": 1,
+      "doubled_normalized_root_traces": [
+        2,
+        -2
+      ],
+      "integral_trace_norm_for_every_integral_root_sum": true,
+      "primitive_phase_occurrence_required": false
+    },
+    {
+      "phase": 4,
+      "degree": 2,
+      "doubled_normalized_root_traces": [
+        2,
+        0,
+        -2,
+        0
+      ],
+      "integral_trace_norm_for_every_integral_root_sum": true,
+      "primitive_phase_occurrence_required": false
+    },
+    {
+      "phase": 8,
+      "degree": 4,
+      "doubled_normalized_root_traces": [
+        2,
+        0,
+        0,
+        0,
+        -2,
+        0,
+        0,
+        0
+      ],
+      "integral_trace_norm_for_every_integral_root_sum": true,
+      "primitive_phase_occurrence_required": false
+    },
+    {
+      "phase": 16,
+      "degree": 8,
+      "doubled_normalized_root_traces": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "integral_trace_norm_for_every_integral_root_sum": true,
+      "primitive_phase_occurrence_required": false
+    },
+    {
+      "phase": 24,
+      "degree": 8,
+      "doubled_normalized_root_traces": [
+        2,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        -2,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      "integral_trace_norm_for_every_integral_root_sum": true,
+      "primitive_phase_occurrence_required": false
+    },
+    {
+      "phase": 48,
+      "degree": 16,
+      "doubled_normalized_root_traces": [
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        -1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "integral_trace_norm_for_every_integral_root_sum": true,
+      "primitive_phase_occurrence_required": false
+    }
+  ],
+  "general_trace_proof_scope": "All conductors 2^k and 3*2^k, and all their root subsets",
+  "cases": [
+    {
+      "corner_order": 1000,
+      "source_order": 2998,
+      "Paley_component_count": 2,
+      "translation_fixed_row_audit": {
+        "source_norm": 2998,
+        "short_root_sum_length": 2,
+        "orbit_length": 499,
+        "B_upper_bound": 0,
+        "equation": "N=A+ell*C+ell^2*B; 0<=A<=f^2; C^2<=4*A*B",
+        "arithmetic_candidate_count": 1,
+        "arithmetic_candidates_if_excluded": [
+          {
+            "A": 4,
+            "B": 0,
+            "C": 6,
+            "C_squared": 36,
+            "four_A_B": 0
+          }
+        ],
+        "survivor_count": 0,
+        "first_survivor": null,
+        "specified_fixed_row_pattern_excluded": true,
+        "surviving_trace_triple_is_not_a_root_sum_or_corner_witness": false
+      },
+      "multiplier_audits": [
+        {
+          "orbits": {
+            "order": 6,
+            "generator_mod_499": 140,
+            "fixed_points_per_Paley_component": [
+              "infinity",
+              "0"
+            ],
+            "nonzero_orbit_count": 83,
+            "all_nonzero_orbit_lengths": 6
+          },
+          "fixed_row_audit": {
+            "source_norm": 2998,
+            "short_root_sum_length": 4,
+            "orbit_length": 6,
+            "B_upper_bound": 96,
+            "equation": "N=A+ell*C+ell^2*B; 0<=A<=f^2; C^2<=4*A*B",
+            "arithmetic_candidate_count": 291,
+            "arithmetic_candidates_if_excluded": null,
+            "survivor_count": 56,
+            "first_survivor": {
+              "A": 16,
+              "B": 72,
+              "C": 65,
+              "C_squared": 4225,
+              "four_A_B": 4608
+            },
+            "specified_fixed_row_pattern_excluded": false,
+            "surviving_trace_triple_is_not_a_root_sum_or_corner_witness": true
+          }
+        },
+        {
+          "orbits": {
+            "order": 83,
+            "generator_mod_499": 384,
+            "fixed_points_per_Paley_component": [
+              "infinity",
+              "0"
+            ],
+            "nonzero_orbit_count": 6,
+            "all_nonzero_orbit_lengths": 83
+          },
+          "fixed_row_audit": {
+            "source_norm": 2998,
+            "short_root_sum_length": 4,
+            "orbit_length": 83,
+            "B_upper_bound": 0,
+            "equation": "N=A+ell*C+ell^2*B; 0<=A<=f^2; C^2<=4*A*B",
+            "arithmetic_candidate_count": 1,
+            "arithmetic_candidates_if_excluded": [
+              {
+                "A": 10,
+                "B": 0,
+                "C": 36,
+                "C_squared": 1296,
+                "four_A_B": 0
+              }
+            ],
+            "survivor_count": 0,
+            "first_survivor": null,
+            "specified_fixed_row_pattern_excluded": true,
+            "surviving_trace_triple_is_not_a_root_sum_or_corner_witness": false
+          }
+        },
+        {
+          "orbits": {
+            "order": 166,
+            "generator_mod_499": 343,
+            "fixed_points_per_Paley_component": [
+              "infinity",
+              "0"
+            ],
+            "nonzero_orbit_count": 3,
+            "all_nonzero_orbit_lengths": 166
+          },
+          "fixed_row_audit": {
+            "source_norm": 2998,
+            "short_root_sum_length": 4,
+            "orbit_length": 166,
+            "B_upper_bound": 0,
+            "equation": "N=A+ell*C+ell^2*B; 0<=A<=f^2; C^2<=4*A*B",
+            "arithmetic_candidate_count": 1,
+            "arithmetic_candidates_if_excluded": [
+              {
+                "A": 10,
+                "B": 0,
+                "C": 18,
+                "C_squared": 324,
+                "four_A_B": 0
+              }
+            ],
+            "survivor_count": 0,
+            "first_survivor": null,
+            "specified_fixed_row_pattern_excluded": true,
+            "surviving_trace_triple_is_not_a_root_sum_or_corner_witness": false
+          }
+        },
+        {
+          "orbits": {
+            "order": 249,
+            "generator_mod_499": 49,
+            "fixed_points_per_Paley_component": [
+              "infinity",
+              "0"
+            ],
+            "nonzero_orbit_count": 2,
+            "all_nonzero_orbit_lengths": 249
+          },
+          "fixed_row_audit": {
+            "source_norm": 2998,
+            "short_root_sum_length": 4,
+            "orbit_length": 249,
+            "B_upper_bound": 0,
+            "equation": "N=A+ell*C+ell^2*B; 0<=A<=f^2; C^2<=4*A*B",
+            "arithmetic_candidate_count": 1,
+            "arithmetic_candidates_if_excluded": [
+              {
+                "A": 10,
+                "B": 0,
+                "C": 12,
+                "C_squared": 144,
+                "four_A_B": 0
+              }
+            ],
+            "survivor_count": 0,
+            "first_survivor": null,
+            "specified_fixed_row_pattern_excluded": true,
+            "surviving_trace_triple_is_not_a_root_sum_or_corner_witness": false
+          }
+        },
+        {
+          "orbits": {
+            "order": 498,
+            "generator_mod_499": 7,
+            "fixed_points_per_Paley_component": [
+              "infinity",
+              "0"
+            ],
+            "nonzero_orbit_count": 1,
+            "all_nonzero_orbit_lengths": 498
+          },
+          "fixed_row_audit": {
+            "source_norm": 2998,
+            "short_root_sum_length": 4,
+            "orbit_length": 498,
+            "B_upper_bound": 0,
+            "equation": "N=A+ell*C+ell^2*B; 0<=A<=f^2; C^2<=4*A*B",
+            "arithmetic_candidate_count": 1,
+            "arithmetic_candidates_if_excluded": [
+              {
+                "A": 10,
+                "B": 0,
+                "C": 6,
+                "C_squared": 36,
+                "four_A_B": 0
+              }
+            ],
+            "survivor_count": 0,
+            "first_survivor": null,
+            "specified_fixed_row_pattern_excluded": true,
+            "surviving_trace_triple_is_not_a_root_sum_or_corner_witness": false
+          }
+        }
+      ]
+    },
+    {
+      "corner_order": 2000,
+      "source_order": 5998,
+      "Paley_component_count": 4,
+      "translation_fixed_row_audit": {
+        "source_norm": 5998,
+        "short_root_sum_length": 4,
+        "orbit_length": 499,
+        "B_upper_bound": 0,
+        "equation": "N=A+ell*C+ell^2*B; 0<=A<=f^2; C^2<=4*A*B",
+        "arithmetic_candidate_count": 1,
+        "arithmetic_candidates_if_excluded": [
+          {
+            "A": 10,
+            "B": 0,
+            "C": 12,
+            "C_squared": 144,
+            "four_A_B": 0
+          }
+        ],
+        "survivor_count": 0,
+        "first_survivor": null,
+        "specified_fixed_row_pattern_excluded": true,
+        "surviving_trace_triple_is_not_a_root_sum_or_corner_witness": false
+      },
+      "multiplier_audits": [
+        {
+          "orbits": {
+            "order": 6,
+            "generator_mod_499": 140,
+            "fixed_points_per_Paley_component": [
+              "infinity",
+              "0"
+            ],
+            "nonzero_orbit_count": 83,
+            "all_nonzero_orbit_lengths": 6
+          },
+          "fixed_row_audit": {
+            "source_norm": 5998,
+            "short_root_sum_length": 8,
+            "orbit_length": 6,
+            "B_upper_bound": 205,
+            "equation": "N=A+ell*C+ell^2*B; 0<=A<=f^2; C^2<=4*A*B",
+            "arithmetic_candidate_count": 2266,
+            "arithmetic_candidates_if_excluded": null,
+            "survivor_count": 524,
+            "first_survivor": {
+              "A": 64,
+              "B": 134,
+              "C": 185,
+              "C_squared": 34225,
+              "four_A_B": 34304
+            },
+            "specified_fixed_row_pattern_excluded": false,
+            "surviving_trace_triple_is_not_a_root_sum_or_corner_witness": true
+          }
+        },
+        {
+          "orbits": {
+            "order": 83,
+            "generator_mod_499": 384,
+            "fixed_points_per_Paley_component": [
+              "infinity",
+              "0"
+            ],
+            "nonzero_orbit_count": 6,
+            "all_nonzero_orbit_lengths": 83
+          },
+          "fixed_row_audit": {
+            "source_norm": 5998,
+            "short_root_sum_length": 8,
+            "orbit_length": 83,
+            "B_upper_bound": 1,
+            "equation": "N=A+ell*C+ell^2*B; 0<=A<=f^2; C^2<=4*A*B",
+            "arithmetic_candidate_count": 2,
+            "arithmetic_candidates_if_excluded": [
+              {
+                "A": 22,
+                "B": 0,
+                "C": 72,
+                "C_squared": 5184,
+                "four_A_B": 0
+              },
+              {
+                "A": 22,
+                "B": 1,
+                "C": -11,
+                "C_squared": 121,
+                "four_A_B": 88
+              }
+            ],
+            "survivor_count": 0,
+            "first_survivor": null,
+            "specified_fixed_row_pattern_excluded": true,
+            "surviving_trace_triple_is_not_a_root_sum_or_corner_witness": false
+          }
+        },
+        {
+          "orbits": {
+            "order": 166,
+            "generator_mod_499": 343,
+            "fixed_points_per_Paley_component": [
+              "infinity",
+              "0"
+            ],
+            "nonzero_orbit_count": 3,
+            "all_nonzero_orbit_lengths": 166
+          },
+          "fixed_row_audit": {
+            "source_norm": 5998,
+            "short_root_sum_length": 8,
+            "orbit_length": 166,
+            "B_upper_bound": 0,
+            "equation": "N=A+ell*C+ell^2*B; 0<=A<=f^2; C^2<=4*A*B",
+            "arithmetic_candidate_count": 1,
+            "arithmetic_candidates_if_excluded": [
+              {
+                "A": 22,
+                "B": 0,
+                "C": 36,
+                "C_squared": 1296,
+                "four_A_B": 0
+              }
+            ],
+            "survivor_count": 0,
+            "first_survivor": null,
+            "specified_fixed_row_pattern_excluded": true,
+            "surviving_trace_triple_is_not_a_root_sum_or_corner_witness": false
+          }
+        },
+        {
+          "orbits": {
+            "order": 249,
+            "generator_mod_499": 49,
+            "fixed_points_per_Paley_component": [
+              "infinity",
+              "0"
+            ],
+            "nonzero_orbit_count": 2,
+            "all_nonzero_orbit_lengths": 249
+          },
+          "fixed_row_audit": {
+            "source_norm": 5998,
+            "short_root_sum_length": 8,
+            "orbit_length": 249,
+            "B_upper_bound": 0,
+            "equation": "N=A+ell*C+ell^2*B; 0<=A<=f^2; C^2<=4*A*B",
+            "arithmetic_candidate_count": 1,
+            "arithmetic_candidates_if_excluded": [
+              {
+                "A": 22,
+                "B": 0,
+                "C": 24,
+                "C_squared": 576,
+                "four_A_B": 0
+              }
+            ],
+            "survivor_count": 0,
+            "first_survivor": null,
+            "specified_fixed_row_pattern_excluded": true,
+            "surviving_trace_triple_is_not_a_root_sum_or_corner_witness": false
+          }
+        },
+        {
+          "orbits": {
+            "order": 498,
+            "generator_mod_499": 7,
+            "fixed_points_per_Paley_component": [
+              "infinity",
+              "0"
+            ],
+            "nonzero_orbit_count": 1,
+            "all_nonzero_orbit_lengths": 498
+          },
+          "fixed_row_audit": {
+            "source_norm": 5998,
+            "short_root_sum_length": 8,
+            "orbit_length": 498,
+            "B_upper_bound": 0,
+            "equation": "N=A+ell*C+ell^2*B; 0<=A<=f^2; C^2<=4*A*B",
+            "arithmetic_candidate_count": 1,
+            "arithmetic_candidates_if_excluded": [
+              {
+                "A": 22,
+                "B": 0,
+                "C": 12,
+                "C_squared": 144,
+                "four_A_B": 0
+              }
+            ],
+            "survivor_count": 0,
+            "first_survivor": null,
+            "specified_fixed_row_pattern_excluded": true,
+            "surviving_trace_triple_is_not_a_root_sum_or_corner_witness": false
+          }
+        }
+      ]
+    }
+  ],
+  "positive_scalar_control": {
+    "a": "1",
+    "b": "i",
+    "ell": 1,
+    "lambda_norm": 2,
+    "trace_triple": [
+      1,
+      1,
+      0
+    ],
+    "necessary_census_accepts": true
+  },
+  "largest_multiplier_subgroup_not_excluded_by_this_audit": 6,
+  "monomial_symmetry_with_nonconstant_phase_gauges_excluded": false,
+  "asymmetric_corners_excluded": false,
+  "native_solver_run": false,
+  "large_source_constructed": false
+}

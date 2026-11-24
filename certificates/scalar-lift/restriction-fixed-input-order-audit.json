@@ -1,0 +1,170 @@
+{
+  "schema": "fixed-ambient-restriction-order-audit-v1",
+  "scope": "fixed starting ambient fields, unchanged module rank, scalar restrictions to Q; no new ambient field, representation padding, or nonuniform maps",
+  "proof": "Restriction is transitive: the product of relative degrees is the initial absolute field degree, so the rational matrix order is n*[L:Q], independent of the field tower.",
+  "sources": [
+    {
+      "source_id": "conference-1000-q8",
+      "source_order": 1000,
+      "ambient_phase": 8,
+      "absolute_field_degree": 4,
+      "rational_endpoint_order": 4000,
+      "classification": "already_verified_real_order"
+    },
+    {
+      "source_id": "conference-1000-q16",
+      "source_order": 1000,
+      "ambient_phase": 16,
+      "absolute_field_degree": 8,
+      "rational_endpoint_order": 8000,
+      "classification": "already_verified_real_order"
+    },
+    {
+      "source_id": "conference-2000-q8",
+      "source_order": 2000,
+      "ambient_phase": 8,
+      "absolute_field_degree": 4,
+      "rational_endpoint_order": 8000,
+      "classification": "already_verified_real_order"
+    },
+    {
+      "source_id": "conference-2000-q16",
+      "source_order": 2000,
+      "ambient_phase": 16,
+      "absolute_field_degree": 8,
+      "rational_endpoint_order": 16000,
+      "classification": "already_verified_real_order"
+    },
+    {
+      "source_id": "unreal3-q6",
+      "source_order": 3,
+      "ambient_phase": 6,
+      "absolute_field_degree": 2,
+      "rational_endpoint_order": 6,
+      "classification": "forbidden_real_Hadamard_order"
+    },
+    {
+      "source_id": "unreal13-q6",
+      "source_order": 13,
+      "ambient_phase": 6,
+      "absolute_field_degree": 2,
+      "rational_endpoint_order": 26,
+      "classification": "forbidden_real_Hadamard_order"
+    },
+    {
+      "source_id": "common120-15",
+      "source_order": 15,
+      "ambient_phase": 120,
+      "absolute_field_degree": 32,
+      "rational_endpoint_order": 480,
+      "classification": "already_verified_real_order"
+    },
+    {
+      "source_id": "common120-35",
+      "source_order": 35,
+      "ambient_phase": 120,
+      "absolute_field_degree": 32,
+      "rational_endpoint_order": 1120,
+      "classification": "already_verified_real_order"
+    },
+    {
+      "source_id": "cubic13-q24-t0",
+      "source_order": 13,
+      "ambient_phase": 24,
+      "absolute_field_degree": 8,
+      "rational_endpoint_order": 104,
+      "classification": "already_verified_real_order"
+    },
+    {
+      "source_id": "cubic13-q24-t1",
+      "source_order": 39,
+      "ambient_phase": 24,
+      "absolute_field_degree": 8,
+      "rational_endpoint_order": 312,
+      "classification": "already_verified_real_order"
+    },
+    {
+      "source_id": "cubic13-q24-t2",
+      "source_order": 117,
+      "ambient_phase": 24,
+      "absolute_field_degree": 8,
+      "rational_endpoint_order": 936,
+      "classification": "already_verified_real_order"
+    },
+    {
+      "source_id": "cubic13-q24-t3",
+      "source_order": 351,
+      "ambient_phase": 24,
+      "absolute_field_degree": 8,
+      "rational_endpoint_order": 2808,
+      "classification": "already_verified_real_order"
+    },
+    {
+      "source_id": "cubic13-q24-t4",
+      "source_order": 1053,
+      "ambient_phase": 24,
+      "absolute_field_degree": 8,
+      "rational_endpoint_order": 8424,
+      "classification": "already_verified_real_order"
+    },
+    {
+      "source_id": "fifth-5-q20",
+      "source_order": 5,
+      "ambient_phase": 20,
+      "absolute_field_degree": 8,
+      "rational_endpoint_order": 40,
+      "classification": "already_verified_real_order"
+    },
+    {
+      "source_id": "fifth-40-q40",
+      "source_order": 40,
+      "ambient_phase": 40,
+      "absolute_field_degree": 16,
+      "rational_endpoint_order": 640,
+      "classification": "already_verified_real_order"
+    },
+    {
+      "source_id": "fifth-40-q80",
+      "source_order": 40,
+      "ambient_phase": 80,
+      "absolute_field_degree": 32,
+      "rational_endpoint_order": 1280,
+      "classification": "already_verified_real_order"
+    },
+    {
+      "source_id": "fifth-80-q40",
+      "source_order": 80,
+      "ambient_phase": 40,
+      "absolute_field_degree": 16,
+      "rational_endpoint_order": 1280,
+      "classification": "already_verified_real_order"
+    },
+    {
+      "source_id": "fifth-160-q20",
+      "source_order": 160,
+      "ambient_phase": 20,
+      "absolute_field_degree": 8,
+      "rational_endpoint_order": 1280,
+      "classification": "already_verified_real_order"
+    },
+    {
+      "source_id": "character-73",
+      "source_order": 5329,
+      "ambient_phase": 24,
+      "absolute_field_degree": 8,
+      "rational_endpoint_order": 42632,
+      "classification": "uniform_sign_endpoint_excluded_by_exact_odd_relation"
+    },
+    {
+      "source_id": "character-241",
+      "source_order": 58081,
+      "ambient_phase": 120,
+      "absolute_field_degree": 32,
+      "rational_endpoint_order": 1858592,
+      "classification": "uniform_sign_endpoint_excluded_by_exact_odd_relation"
+    }
+  ],
+  "all_sources_decided_for_this_scope": true,
+  "other_source_inputs_or_ambient_fields_excluded": false,
+  "new_Hadamard_order_found": false
+}

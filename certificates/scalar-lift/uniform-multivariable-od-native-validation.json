@@ -1,0 +1,294 @@
+{
+  "schema": "uniform-multivariable-od-native-validation-v1",
+  "source_sha256": "82d03919185ffb8f708dcc4c0eded6a8e7af25eca431f3ab0f902adf6823c5f1",
+  "binary_sha256": "2137fb48709fac75eca5a3ddbdf9afaacd77dd00fdad46fa6077143e985e31a5",
+  "tests": "tests/test_uniform_multivariable_od_native.py:7 passed in2.82s",
+  "positive_control_full_formal_OD4_Grams": true,
+  "deterministic_checkpoint_resume_byte_identical": true,
+  "even_half_period_incremental_updates_checked": true,
+  "bounded_prepared_case_smoke_checks": [
+    {
+      "case_id": "od-1-1-1-1",
+      "period": 1,
+      "variables": 4,
+      "weights": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "moves": 0,
+      "best_energy": 0,
+      "accepted_cross_color_trades": 0,
+      "independent_integer_residual_replay": true,
+      "native_self_check_every_move": true
+    },
+    {
+      "case_id": "od-3-3-3-3",
+      "period": 3,
+      "variables": 4,
+      "weights": [
+        3,
+        3,
+        3,
+        3
+      ],
+      "moves": 0,
+      "best_energy": 0,
+      "accepted_cross_color_trades": 0,
+      "independent_integer_residual_replay": true,
+      "native_self_check_every_move": true
+    },
+    {
+      "case_id": "od-9-27-158-474",
+      "period": 167,
+      "variables": 4,
+      "weights": [
+        9,
+        27,
+        158,
+        474
+      ],
+      "moves": 17,
+      "best_energy": 46696,
+      "accepted_cross_color_trades": 4,
+      "independent_integer_residual_replay": true,
+      "native_self_check_every_move": true
+    },
+    {
+      "case_id": "od-21-63-146-438",
+      "period": 167,
+      "variables": 4,
+      "weights": [
+        21,
+        63,
+        146,
+        438
+      ],
+      "moves": 17,
+      "best_energy": 48178,
+      "accepted_cross_color_trades": 2,
+      "independent_integer_residual_replay": true,
+      "native_self_check_every_move": true
+    },
+    {
+      "case_id": "od-38-114-129-387",
+      "period": 167,
+      "variables": 4,
+      "weights": [
+        38,
+        114,
+        129,
+        387
+      ],
+      "moves": 17,
+      "best_energy": 43480,
+      "accepted_cross_color_trades": 1,
+      "independent_integer_residual_replay": true,
+      "native_self_check_every_move": true
+    },
+    {
+      "case_id": "od-39-117-128-384",
+      "period": 167,
+      "variables": 4,
+      "weights": [
+        39,
+        117,
+        128,
+        384
+      ],
+      "moves": 17,
+      "best_energy": 48190,
+      "accepted_cross_color_trades": 2,
+      "independent_integer_residual_replay": true,
+      "native_self_check_every_move": true
+    },
+    {
+      "case_id": "od-50-117-150-351",
+      "period": 167,
+      "variables": 4,
+      "weights": [
+        50,
+        117,
+        150,
+        351
+      ],
+      "moves": 17,
+      "best_energy": 46226,
+      "accepted_cross_color_trades": 1,
+      "independent_integer_residual_replay": true,
+      "native_self_check_every_move": true
+    },
+    {
+      "case_id": "od-56-111-168-333",
+      "period": 167,
+      "variables": 4,
+      "weights": [
+        56,
+        111,
+        168,
+        333
+      ],
+      "moves": 17,
+      "best_energy": 41442,
+      "accepted_cross_color_trades": 1,
+      "independent_integer_residual_replay": true,
+      "native_self_check_every_move": true
+    },
+    {
+      "case_id": "od-63-104-189-312",
+      "period": 167,
+      "variables": 4,
+      "weights": [
+        63,
+        104,
+        189,
+        312
+      ],
+      "moves": 17,
+      "best_energy": 47188,
+      "accepted_cross_color_trades": 2,
+      "independent_integer_residual_replay": true,
+      "native_self_check_every_move": true
+    },
+    {
+      "case_id": "od-74-93-222-279",
+      "period": 167,
+      "variables": 4,
+      "weights": [
+        74,
+        93,
+        222,
+        279
+      ],
+      "moves": 17,
+      "best_energy": 49658,
+      "accepted_cross_color_trades": 1,
+      "independent_integer_residual_replay": true,
+      "native_self_check_every_move": true
+    },
+    {
+      "case_id": "od-81-86-243-258",
+      "period": 167,
+      "variables": 4,
+      "weights": [
+        81,
+        86,
+        243,
+        258
+      ],
+      "moves": 17,
+      "best_energy": 53226,
+      "accepted_cross_color_trades": 2,
+      "independent_integer_residual_replay": true,
+      "native_self_check_every_move": true
+    },
+    {
+      "case_id": "od-167-167-167-167",
+      "period": 167,
+      "variables": 4,
+      "weights": [
+        167,
+        167,
+        167,
+        167
+      ],
+      "moves": 17,
+      "best_energy": 48662,
+      "accepted_cross_color_trades": 4,
+      "independent_integer_residual_replay": true,
+      "native_self_check_every_move": true
+    },
+    {
+      "case_id": "od-2-167-499",
+      "period": 167,
+      "variables": 3,
+      "weights": [
+        2,
+        167,
+        499
+      ],
+      "moves": 17,
+      "best_energy": 47732,
+      "accepted_cross_color_trades": 2,
+      "independent_integer_residual_replay": true,
+      "native_self_check_every_move": true
+    },
+    {
+      "case_id": "od-7-167-494",
+      "period": 167,
+      "variables": 3,
+      "weights": [
+        7,
+        167,
+        494
+      ],
+      "moves": 17,
+      "best_energy": 42200,
+      "accepted_cross_color_trades": 0,
+      "independent_integer_residual_replay": true,
+      "native_self_check_every_move": true
+    },
+    {
+      "case_id": "od-9-158-501",
+      "period": 167,
+      "variables": 3,
+      "weights": [
+        9,
+        158,
+        501
+      ],
+      "moves": 17,
+      "best_energy": 45636,
+      "accepted_cross_color_trades": 1,
+      "independent_integer_residual_replay": true,
+      "native_self_check_every_move": true
+    },
+    {
+      "case_id": "od-167-167-334",
+      "period": 167,
+      "variables": 3,
+      "weights": [
+        167,
+        167,
+        334
+      ],
+      "moves": 17,
+      "best_energy": 47114,
+      "accepted_cross_color_trades": 1,
+      "independent_integer_residual_replay": true,
+      "native_self_check_every_move": true
+    },
+    {
+      "case_id": "od-2396",
+      "period": 599,
+      "variables": 1,
+      "weights": [
+        2396
+      ],
+      "moves": 17,
+      "best_energy": 651520,
+      "accepted_cross_color_trades": 0,
+      "independent_integer_residual_replay": true,
+      "native_self_check_every_move": true
+    },
+    {
+      "case_id": "od-2676",
+      "period": 669,
+      "variables": 1,
+      "weights": [
+        2676
+      ],
+      "moves": 17,
+      "best_energy": 1009888,
+      "accepted_cross_color_trades": 0,
+      "independent_integer_residual_replay": true,
+      "native_self_check_every_move": true
+    }
+  ],
+  "scope": "17 moves per declared case verifies arithmetic/protocol only; this is not a production search or completeness result",
+  "unequal_two_variable_weights_outside_three_to_one_checked": [
+    10,
+    18
+  ]
+}

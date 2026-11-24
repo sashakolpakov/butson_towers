@@ -1,0 +1,3333 @@
+{
+  "schema": "hadamard-higher-order-records-v1",
+  "checked_utc": "2026-11-24T19:47:56.077309+00:00",
+  "audit_scope": "Dated public literature records and current author-knowledge labels for completed scalar endpoints and periodic T127, with positive prior constructions and incomplete repeat targets recorded separately.",
+  "status_semantics": {
+    "new_to_best_author_knowledge": "Completed construction labelled New under the linked author-knowledge convention.",
+    "known": "A prior construction has been located.",
+    "target": "The endpoint search or finite recipe execution remains incomplete.",
+    "previously_explicitly_unresolved": "A named dated primary record listed the order as unresolved before the completed construction.",
+    "software_Unknown": "The software does not implement a construction."
+  },
+  "larger_comprehensive_order_catalog_found": false,
+  "larger_catalog_absence_implies_unresolved": false,
+  "completed_frame_reuse_outputs": [
+    {
+      "source_id": "catalogue-p7-q6",
+      "source_order": 7,
+      "source_hash": "da0f5b96daca8fa67e0236320694fabfab46e41fa25ff459f004a43e2187787a",
+      "source_used_alphabet": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "source_gram_scale": 7,
+      "frame_width": 2524,
+      "frame_gram_scale": 2524,
+      "output_order": 17668,
+      "output_gram_scale": 17668,
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "all_used_entry_images_verified_sign": true,
+      "literal_recipe_sha256": "6e6770978aad5873045fe3ba71df9455238c694d33e9cc69f43871b5e1449556",
+      "prior_order_status": "no_prior_construction_located",
+      "new_order_claimed": true,
+      "direct_family_parameters": {
+        "17667": {
+          "3": 2,
+          "13": 1,
+          "151": 1
+        },
+        "8833": {
+          "11": 2,
+          "73": 1
+        },
+        "4415": {
+          "5": 1,
+          "883": 1
+        }
+      },
+      "order_status": "new_to_best_author_knowledge"
+    },
+    {
+      "source_id": "aalto-9-6-000",
+      "source_order": 9,
+      "source_hash": "737720eabbad166c05975163d385826b3dd8f235713b70ad28a639629b56199b",
+      "source_used_alphabet": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "source_gram_scale": 9,
+      "frame_width": 2524,
+      "frame_gram_scale": 2524,
+      "output_order": 22716,
+      "output_gram_scale": 22716,
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "all_used_entry_images_verified_sign": true,
+      "literal_recipe_sha256": "fca67834ee9cc8e428c6df283d2399c0ef2815ec2288498e48e13ee0fbd7fe30",
+      "prior_order_status": "no_prior_construction_located",
+      "new_order_claimed": true,
+      "direct_family_parameters": {
+        "22715": {
+          "5": 1,
+          "7": 1,
+          "11": 1,
+          "59": 1
+        },
+        "11357": {
+          "41": 1,
+          "277": 1
+        },
+        "5677": {
+          "7": 1,
+          "811": 1
+        }
+      },
+      "order_status": "new_to_best_author_knowledge"
+    },
+    {
+      "source_id": "unreal13-q6",
+      "source_order": 13,
+      "source_hash": "b92f18ce3195f80497beb80db1c1ce804b558ec6485dfe6ec762a0ddd393b59f",
+      "source_used_alphabet": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "source_gram_scale": 13,
+      "frame_width": 2524,
+      "frame_gram_scale": 2524,
+      "output_order": 32812,
+      "output_gram_scale": 32812,
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "all_used_entry_images_verified_sign": true,
+      "literal_recipe_sha256": "fb199dd5486a5ef05dbba6161d77d230863b83d6163525775398e712fe171438",
+      "prior_order_status": "no_prior_construction_located",
+      "new_order_claimed": true,
+      "direct_family_parameters": {
+        "32811": {
+          "3": 1,
+          "10937": 1
+        },
+        "16405": {
+          "5": 1,
+          "17": 1,
+          "193": 1
+        },
+        "8201": {
+          "59": 1,
+          "139": 1
+        }
+      },
+      "order_status": "new_to_best_author_knowledge"
+    }
+  ],
+  "frame_scalar_data": {
+    "rational_dimension": 2524,
+    "field": "Q(zeta_6)/Q",
+    "field_degree": 2,
+    "module_rank": 1262,
+    "conjugation": "zeta_6 -> 1-zeta_6; scalar-action transpose",
+    "canonical_trace_metric": [
+      [
+        2,
+        1
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "actual_Euclidean_coordinate_trace_form": "h(u,v)=u^T*v/2-(u^T*S*v)*sqrt(-3)/6, S=2R-I; Tr(h)=u^T*v",
+    "scalar_action": "R=Q*P^T/2524",
+    "frame_gram_scale": 2524,
+    "flat_entry_images": {
+      "0": "P",
+      "1": "Q",
+      "3": "-P",
+      "4": "-Q"
+    }
+  },
+  "repeat_endpoint_statuses": [
+    {
+      "p": 271,
+      "source_order": 3,
+      "frame_width_if_completed": 1084,
+      "output_order": 3252,
+      "prior_order_status": "known_by_explicit_construction",
+      "endpoint_completed_in_this_record": true,
+      "positive_knownness_proofs": [
+        {
+          "construction": "Turyn_Williamson_plus_Cooper_Wallis",
+          "q": 541,
+          "q_prime": true,
+          "q_mod4": 1,
+          "Williamson_block_order": 271,
+          "T_order": 3,
+          "references": [
+            "turyn1972",
+            "whiteman1973",
+            "cooper_wallis1972",
+            "survey2026"
+          ]
+        },
+        {
+          "construction": "PaleyI",
+          "q": 3251,
+          "q_prime": true,
+          "q_mod4": 3,
+          "reference": "survey2026 Theorem2"
+        }
+      ],
+      "order_status": "known",
+      "construction_status": "completed_here",
+      "new_order_claimed": false
+    },
+    {
+      "p": 271,
+      "source_order": 7,
+      "frame_width_if_completed": 1084,
+      "output_order": 7588,
+      "prior_order_status": "known_by_explicit_construction",
+      "endpoint_completed_in_this_record": false,
+      "positive_knownness_proofs": [
+        {
+          "construction": "Turyn_Williamson_plus_Cooper_Wallis",
+          "q": 541,
+          "q_prime": true,
+          "q_mod4": 1,
+          "Williamson_block_order": 271,
+          "T_order": 7,
+          "references": [
+            "turyn1972",
+            "whiteman1973",
+            "cooper_wallis1972",
+            "survey2026"
+          ]
+        },
+        {
+          "construction": "PaleyII",
+          "q": 3793,
+          "q_prime": true,
+          "q_mod4": 1,
+          "reference": "survey2026 Theorem2"
+        }
+      ],
+      "order_status": "known",
+      "construction_status": "known_by_prior_construction",
+      "new_order_claimed": false
+    },
+    {
+      "p": 271,
+      "source_order": 9,
+      "frame_width_if_completed": 1084,
+      "output_order": 9756,
+      "prior_order_status": "known_by_explicit_construction",
+      "endpoint_completed_in_this_record": false,
+      "positive_knownness_proofs": [
+        {
+          "construction": "Turyn_Williamson_plus_Cooper_Wallis",
+          "q": 541,
+          "q_prime": true,
+          "q_mod4": 1,
+          "Williamson_block_order": 271,
+          "T_order": 9,
+          "references": [
+            "turyn1972",
+            "whiteman1973",
+            "cooper_wallis1972",
+            "survey2026"
+          ]
+        },
+        {
+          "construction": "PaleyII",
+          "q": 4877,
+          "q_prime": true,
+          "q_mod4": 1,
+          "reference": "survey2026 Theorem2"
+        }
+      ],
+      "order_status": "known",
+      "construction_status": "known_by_prior_construction",
+      "new_order_claimed": false
+    },
+    {
+      "p": 271,
+      "source_order": 13,
+      "frame_width_if_completed": 1084,
+      "output_order": 14092,
+      "prior_order_status": "known_by_explicit_construction",
+      "endpoint_completed_in_this_record": false,
+      "positive_knownness_proofs": [
+        {
+          "construction": "Turyn_Williamson_plus_Cooper_Wallis",
+          "q": 541,
+          "q_prime": true,
+          "q_mod4": 1,
+          "Williamson_block_order": 271,
+          "T_order": 13,
+          "references": [
+            "turyn1972",
+            "whiteman1973",
+            "cooper_wallis1972",
+            "survey2026"
+          ]
+        }
+      ],
+      "order_status": "known",
+      "construction_status": "known_by_prior_construction",
+      "new_order_claimed": false
+    },
+    {
+      "p": 307,
+      "source_order": 3,
+      "frame_width_if_completed": 1228,
+      "output_order": 3684,
+      "prior_order_status": "known_by_explicit_construction",
+      "endpoint_completed_in_this_record": false,
+      "positive_knownness_proofs": [
+        {
+          "construction": "Turyn_Williamson_plus_Cooper_Wallis",
+          "q": 613,
+          "q_prime": true,
+          "q_mod4": 1,
+          "Williamson_block_order": 307,
+          "T_order": 3,
+          "references": [
+            "turyn1972",
+            "whiteman1973",
+            "cooper_wallis1972",
+            "survey2026"
+          ]
+        }
+      ],
+      "order_status": "known",
+      "construction_status": "known_by_prior_construction",
+      "new_order_claimed": false
+    },
+    {
+      "p": 307,
+      "source_order": 7,
+      "frame_width_if_completed": 1228,
+      "output_order": 8596,
+      "prior_order_status": "known_by_explicit_construction",
+      "endpoint_completed_in_this_record": false,
+      "positive_knownness_proofs": [
+        {
+          "construction": "Turyn_Williamson_plus_Cooper_Wallis",
+          "q": 613,
+          "q_prime": true,
+          "q_mod4": 1,
+          "Williamson_block_order": 307,
+          "T_order": 7,
+          "references": [
+            "turyn1972",
+            "whiteman1973",
+            "cooper_wallis1972",
+            "survey2026"
+          ]
+        },
+        {
+          "construction": "PaleyII",
+          "q": 4297,
+          "q_prime": true,
+          "q_mod4": 1,
+          "reference": "survey2026 Theorem2"
+        }
+      ],
+      "order_status": "known",
+      "construction_status": "known_by_prior_construction",
+      "new_order_claimed": false
+    },
+    {
+      "p": 307,
+      "source_order": 9,
+      "frame_width_if_completed": 1228,
+      "output_order": 11052,
+      "prior_order_status": "known_by_explicit_construction",
+      "endpoint_completed_in_this_record": false,
+      "positive_knownness_proofs": [
+        {
+          "construction": "Turyn_Williamson_plus_Cooper_Wallis",
+          "q": 613,
+          "q_prime": true,
+          "q_mod4": 1,
+          "Williamson_block_order": 307,
+          "T_order": 9,
+          "references": [
+            "turyn1972",
+            "whiteman1973",
+            "cooper_wallis1972",
+            "survey2026"
+          ]
+        }
+      ],
+      "order_status": "known",
+      "construction_status": "known_by_prior_construction",
+      "new_order_claimed": false
+    },
+    {
+      "p": 307,
+      "source_order": 13,
+      "frame_width_if_completed": 1228,
+      "output_order": 15964,
+      "prior_order_status": "known_by_explicit_construction",
+      "endpoint_completed_in_this_record": false,
+      "positive_knownness_proofs": [
+        {
+          "construction": "Turyn_Williamson_plus_Cooper_Wallis",
+          "q": 613,
+          "q_prime": true,
+          "q_mod4": 1,
+          "Williamson_block_order": 307,
+          "T_order": 13,
+          "references": [
+            "turyn1972",
+            "whiteman1973",
+            "cooper_wallis1972",
+            "survey2026"
+          ]
+        },
+        {
+          "construction": "Yamada_Spence",
+          "q": 3989,
+          "q_prime": true,
+          "q_mod8": 5,
+          "required_skew_order": 1996,
+          "Spence_q": 997,
+          "Spence_q_prime": true,
+          "Spence_q_mod8": 5,
+          "references": [
+            "yamada_via_djokovic2011",
+            "spence_sage"
+          ]
+        }
+      ],
+      "order_status": "known",
+      "construction_status": "known_by_prior_construction",
+      "new_order_claimed": false
+    },
+    {
+      "p": 331,
+      "source_order": 3,
+      "frame_width_if_completed": 1324,
+      "output_order": 3972,
+      "prior_order_status": "known_by_explicit_construction",
+      "endpoint_completed_in_this_record": false,
+      "positive_knownness_proofs": [
+        {
+          "construction": "Turyn_Williamson_plus_Cooper_Wallis",
+          "q": 661,
+          "q_prime": true,
+          "q_mod4": 1,
+          "Williamson_block_order": 331,
+          "T_order": 3,
+          "references": [
+            "turyn1972",
+            "whiteman1973",
+            "cooper_wallis1972",
+            "survey2026"
+          ]
+        }
+      ],
+      "order_status": "known",
+      "construction_status": "known_by_prior_construction",
+      "new_order_claimed": false
+    },
+    {
+      "p": 331,
+      "source_order": 7,
+      "frame_width_if_completed": 1324,
+      "output_order": 9268,
+      "prior_order_status": "known_by_explicit_construction",
+      "endpoint_completed_in_this_record": false,
+      "positive_knownness_proofs": [
+        {
+          "construction": "Turyn_Williamson_plus_Cooper_Wallis",
+          "q": 661,
+          "q_prime": true,
+          "q_mod4": 1,
+          "Williamson_block_order": 331,
+          "T_order": 7,
+          "references": [
+            "turyn1972",
+            "whiteman1973",
+            "cooper_wallis1972",
+            "survey2026"
+          ]
+        }
+      ],
+      "order_status": "known",
+      "construction_status": "known_by_prior_construction",
+      "new_order_claimed": false
+    },
+    {
+      "p": 331,
+      "source_order": 9,
+      "frame_width_if_completed": 1324,
+      "output_order": 11916,
+      "prior_order_status": "known_by_explicit_construction",
+      "endpoint_completed_in_this_record": false,
+      "positive_knownness_proofs": [
+        {
+          "construction": "Turyn_Williamson_plus_Cooper_Wallis",
+          "q": 661,
+          "q_prime": true,
+          "q_mod4": 1,
+          "Williamson_block_order": 331,
+          "T_order": 9,
+          "references": [
+            "turyn1972",
+            "whiteman1973",
+            "cooper_wallis1972",
+            "survey2026"
+          ]
+        }
+      ],
+      "order_status": "known",
+      "construction_status": "known_by_prior_construction",
+      "new_order_claimed": false
+    },
+    {
+      "p": 331,
+      "source_order": 13,
+      "frame_width_if_completed": 1324,
+      "output_order": 17212,
+      "prior_order_status": "known_by_explicit_construction",
+      "endpoint_completed_in_this_record": false,
+      "positive_knownness_proofs": [
+        {
+          "construction": "Turyn_Williamson_plus_Cooper_Wallis",
+          "q": 661,
+          "q_prime": true,
+          "q_mod4": 1,
+          "Williamson_block_order": 331,
+          "T_order": 13,
+          "references": [
+            "turyn1972",
+            "whiteman1973",
+            "cooper_wallis1972",
+            "survey2026"
+          ]
+        }
+      ],
+      "order_status": "known",
+      "construction_status": "known_by_prior_construction",
+      "new_order_claimed": false
+    },
+    {
+      "p": 397,
+      "source_order": 3,
+      "frame_width_if_completed": 1588,
+      "output_order": 4764,
+      "prior_order_status": "known_by_explicit_construction",
+      "endpoint_completed_in_this_record": false,
+      "positive_knownness_proofs": [
+        {
+          "construction": "PaleyII",
+          "q": 2381,
+          "q_prime": true,
+          "q_mod4": 1,
+          "reference": "survey2026 Theorem2"
+        }
+      ],
+      "order_status": "known",
+      "construction_status": "known_by_prior_construction",
+      "new_order_claimed": false
+    },
+    {
+      "p": 397,
+      "source_order": 7,
+      "frame_width_if_completed": 1588,
+      "output_order": 11116,
+      "prior_order_status": "known_by_explicit_construction",
+      "endpoint_completed_in_this_record": false,
+      "positive_knownness_proofs": [
+        {
+          "construction": "PaleyII",
+          "q": 5557,
+          "q_prime": true,
+          "q_mod4": 1,
+          "reference": "survey2026 Theorem2"
+        }
+      ],
+      "order_status": "known",
+      "construction_status": "known_by_prior_construction",
+      "new_order_claimed": false
+    },
+    {
+      "p": 397,
+      "source_order": 9,
+      "frame_width_if_completed": 1588,
+      "output_order": 14292,
+      "prior_order_status": "no_prior_construction_located",
+      "endpoint_completed_in_this_record": false,
+      "positive_knownness_proofs": [],
+      "order_status": "target",
+      "construction_status": "incomplete",
+      "new_order_claimed": false
+    },
+    {
+      "p": 397,
+      "source_order": 13,
+      "frame_width_if_completed": 1588,
+      "output_order": 20644,
+      "prior_order_status": "known_by_explicit_construction",
+      "endpoint_completed_in_this_record": false,
+      "positive_knownness_proofs": [
+        {
+          "construction": "PaleyII",
+          "q": 10321,
+          "q_prime": true,
+          "q_mod4": 1,
+          "reference": "survey2026 Theorem2"
+        }
+      ],
+      "order_status": "known",
+      "construction_status": "known_by_prior_construction",
+      "new_order_claimed": false
+    },
+    {
+      "p": 547,
+      "source_order": 3,
+      "frame_width_if_completed": 2188,
+      "output_order": 6564,
+      "prior_order_status": "known_by_explicit_construction",
+      "endpoint_completed_in_this_record": true,
+      "positive_knownness_proofs": [
+        {
+          "construction": "Turyn_Williamson_plus_Cooper_Wallis",
+          "q": 1093,
+          "q_prime": true,
+          "q_mod4": 1,
+          "Williamson_block_order": 547,
+          "T_order": 3,
+          "references": [
+            "turyn1972",
+            "whiteman1973",
+            "cooper_wallis1972",
+            "survey2026"
+          ]
+        },
+        {
+          "construction": "PaleyI",
+          "q": 6563,
+          "q_prime": true,
+          "q_mod4": 3,
+          "reference": "survey2026 Theorem2"
+        }
+      ],
+      "order_status": "known",
+      "construction_status": "completed_here",
+      "new_order_claimed": false
+    },
+    {
+      "p": 547,
+      "source_order": 7,
+      "frame_width_if_completed": 2188,
+      "output_order": 15316,
+      "prior_order_status": "known_by_explicit_construction",
+      "endpoint_completed_in_this_record": false,
+      "positive_knownness_proofs": [
+        {
+          "construction": "Turyn_Williamson_plus_Cooper_Wallis",
+          "q": 1093,
+          "q_prime": true,
+          "q_mod4": 1,
+          "Williamson_block_order": 547,
+          "T_order": 7,
+          "references": [
+            "turyn1972",
+            "whiteman1973",
+            "cooper_wallis1972",
+            "survey2026"
+          ]
+        }
+      ],
+      "order_status": "known",
+      "construction_status": "known_by_prior_construction",
+      "new_order_claimed": false
+    },
+    {
+      "p": 547,
+      "source_order": 9,
+      "frame_width_if_completed": 2188,
+      "output_order": 19692,
+      "prior_order_status": "known_by_explicit_construction",
+      "endpoint_completed_in_this_record": false,
+      "positive_knownness_proofs": [
+        {
+          "construction": "Turyn_Williamson_plus_Cooper_Wallis",
+          "q": 1093,
+          "q_prime": true,
+          "q_mod4": 1,
+          "Williamson_block_order": 547,
+          "T_order": 9,
+          "references": [
+            "turyn1972",
+            "whiteman1973",
+            "cooper_wallis1972",
+            "survey2026"
+          ]
+        }
+      ],
+      "order_status": "known",
+      "construction_status": "known_by_prior_construction",
+      "new_order_claimed": false
+    },
+    {
+      "p": 547,
+      "source_order": 13,
+      "frame_width_if_completed": 2188,
+      "output_order": 28444,
+      "prior_order_status": "known_by_explicit_construction",
+      "endpoint_completed_in_this_record": false,
+      "positive_knownness_proofs": [
+        {
+          "construction": "Turyn_Williamson_plus_Cooper_Wallis",
+          "q": 1093,
+          "q_prime": true,
+          "q_mod4": 1,
+          "Williamson_block_order": 547,
+          "T_order": 13,
+          "references": [
+            "turyn1972",
+            "whiteman1973",
+            "cooper_wallis1972",
+            "survey2026"
+          ]
+        },
+        {
+          "construction": "PaleyII",
+          "q": 14221,
+          "q_prime": true,
+          "q_mod4": 1,
+          "reference": "survey2026 Theorem2"
+        }
+      ],
+      "order_status": "known",
+      "construction_status": "known_by_prior_construction",
+      "new_order_claimed": false
+    },
+    {
+      "p": 631,
+      "source_order": 3,
+      "frame_width_if_completed": 2524,
+      "output_order": 7572,
+      "prior_order_status": "previously_explicitly_unresolved",
+      "endpoint_completed_in_this_record": true,
+      "positive_knownness_proofs": [],
+      "prior_record": "survey2026Table5 andfrontier2026",
+      "endpoint_certificate": "artifacts/hadamard-7572/certificate.json",
+      "order_status": "new_to_best_author_knowledge",
+      "construction_status": "completed",
+      "new_order_claimed": true
+    },
+    {
+      "p": 631,
+      "source_order": 7,
+      "frame_width_if_completed": 2524,
+      "output_order": 17668,
+      "prior_order_status": "no_prior_construction_located",
+      "endpoint_completed_in_this_record": true,
+      "positive_knownness_proofs": [],
+      "order_status": "new_to_best_author_knowledge",
+      "construction_status": "completed",
+      "new_order_claimed": true
+    },
+    {
+      "p": 631,
+      "source_order": 9,
+      "frame_width_if_completed": 2524,
+      "output_order": 22716,
+      "prior_order_status": "no_prior_construction_located",
+      "endpoint_completed_in_this_record": true,
+      "positive_knownness_proofs": [],
+      "order_status": "new_to_best_author_knowledge",
+      "construction_status": "completed",
+      "new_order_claimed": true
+    },
+    {
+      "p": 631,
+      "source_order": 13,
+      "frame_width_if_completed": 2524,
+      "output_order": 32812,
+      "prior_order_status": "no_prior_construction_located",
+      "endpoint_completed_in_this_record": true,
+      "positive_knownness_proofs": [],
+      "order_status": "new_to_best_author_knowledge",
+      "construction_status": "completed",
+      "new_order_claimed": true
+    },
+    {
+      "p": 919,
+      "source_order": 3,
+      "frame_width_if_completed": 3676,
+      "output_order": 11028,
+      "prior_order_status": "known_by_explicit_construction",
+      "endpoint_completed_in_this_record": false,
+      "positive_knownness_proofs": [
+        {
+          "construction": "PaleyI",
+          "q": 11027,
+          "q_prime": true,
+          "q_mod4": 3,
+          "reference": "survey2026 Theorem2"
+        }
+      ],
+      "order_status": "known",
+      "construction_status": "known_by_prior_construction",
+      "new_order_claimed": false
+    },
+    {
+      "p": 919,
+      "source_order": 7,
+      "frame_width_if_completed": 3676,
+      "output_order": 25732,
+      "prior_order_status": "no_prior_construction_located",
+      "endpoint_completed_in_this_record": false,
+      "positive_knownness_proofs": [],
+      "order_status": "target",
+      "construction_status": "incomplete",
+      "new_order_claimed": false
+    },
+    {
+      "p": 919,
+      "source_order": 9,
+      "frame_width_if_completed": 3676,
+      "output_order": 33084,
+      "prior_order_status": "known_by_explicit_construction",
+      "endpoint_completed_in_this_record": false,
+      "positive_knownness_proofs": [
+        {
+          "construction": "PaleyI",
+          "q": 33083,
+          "q_prime": true,
+          "q_mod4": 3,
+          "reference": "survey2026 Theorem2"
+        }
+      ],
+      "order_status": "known",
+      "construction_status": "known_by_prior_construction",
+      "new_order_claimed": false
+    },
+    {
+      "p": 919,
+      "source_order": 13,
+      "frame_width_if_completed": 3676,
+      "output_order": 47788,
+      "prior_order_status": "known_by_explicit_construction",
+      "endpoint_completed_in_this_record": false,
+      "positive_knownness_proofs": [
+        {
+          "construction": "PaleyII",
+          "q": 23893,
+          "q_prime": true,
+          "q_mod4": 1,
+          "reference": "survey2026 Theorem2"
+        }
+      ],
+      "order_status": "known",
+      "construction_status": "known_by_prior_construction",
+      "new_order_claimed": false
+    },
+    {
+      "p": 1453,
+      "source_order": 3,
+      "frame_width_if_completed": 5812,
+      "output_order": 17436,
+      "prior_order_status": "known_by_explicit_construction",
+      "endpoint_completed_in_this_record": false,
+      "positive_knownness_proofs": [
+        {
+          "construction": "Yamada_PaleyI",
+          "q": 4357,
+          "q_prime": true,
+          "q_mod8": 5,
+          "required_skew_order": 2180,
+          "Paley_q": 2179,
+          "Paley_q_prime": true,
+          "Paley_q_mod4": 3,
+          "references": [
+            "yamada_via_djokovic2011",
+            "survey2026 Theorem2"
+          ]
+        }
+      ],
+      "order_status": "known",
+      "construction_status": "known_by_prior_construction",
+      "new_order_claimed": false
+    },
+    {
+      "p": 1453,
+      "source_order": 7,
+      "frame_width_if_completed": 5812,
+      "output_order": 40684,
+      "prior_order_status": "known_by_explicit_construction",
+      "endpoint_completed_in_this_record": false,
+      "positive_knownness_proofs": [
+        {
+          "construction": "PaleyII",
+          "q": 20341,
+          "q_prime": true,
+          "q_mod4": 1,
+          "reference": "survey2026 Theorem2"
+        }
+      ],
+      "order_status": "known",
+      "construction_status": "known_by_prior_construction",
+      "new_order_claimed": false
+    },
+    {
+      "p": 1453,
+      "source_order": 9,
+      "frame_width_if_completed": 5812,
+      "output_order": 52308,
+      "prior_order_status": "known_by_explicit_construction",
+      "endpoint_completed_in_this_record": false,
+      "positive_knownness_proofs": [
+        {
+          "construction": "PaleyII",
+          "q": 26153,
+          "q_prime": true,
+          "q_mod4": 1,
+          "reference": "survey2026 Theorem2"
+        }
+      ],
+      "order_status": "known",
+      "construction_status": "known_by_prior_construction",
+      "new_order_claimed": false
+    },
+    {
+      "p": 1453,
+      "source_order": 13,
+      "frame_width_if_completed": 5812,
+      "output_order": 75556,
+      "prior_order_status": "no_prior_construction_located",
+      "endpoint_completed_in_this_record": false,
+      "positive_knownness_proofs": [],
+      "order_status": "target",
+      "construction_status": "incomplete",
+      "new_order_claimed": false
+    },
+    {
+      "p": 1951,
+      "source_order": 3,
+      "frame_width_if_completed": 7804,
+      "output_order": 23412,
+      "prior_order_status": "no_prior_construction_located",
+      "endpoint_completed_in_this_record": false,
+      "positive_knownness_proofs": [],
+      "order_status": "target",
+      "construction_status": "incomplete",
+      "new_order_claimed": false
+    },
+    {
+      "p": 1951,
+      "source_order": 7,
+      "frame_width_if_completed": 7804,
+      "output_order": 54628,
+      "prior_order_status": "no_prior_construction_located",
+      "endpoint_completed_in_this_record": false,
+      "positive_knownness_proofs": [],
+      "order_status": "target",
+      "construction_status": "incomplete",
+      "new_order_claimed": false
+    },
+    {
+      "p": 1951,
+      "source_order": 9,
+      "frame_width_if_completed": 7804,
+      "output_order": 70236,
+      "prior_order_status": "known_by_explicit_construction",
+      "endpoint_completed_in_this_record": false,
+      "positive_knownness_proofs": [
+        {
+          "construction": "PaleyII",
+          "q": 35117,
+          "q_prime": true,
+          "q_mod4": 1,
+          "reference": "survey2026 Theorem2"
+        }
+      ],
+      "order_status": "known",
+      "construction_status": "known_by_prior_construction",
+      "new_order_claimed": false
+    },
+    {
+      "p": 1951,
+      "source_order": 13,
+      "frame_width_if_completed": 7804,
+      "output_order": 101452,
+      "prior_order_status": "no_prior_construction_located",
+      "endpoint_completed_in_this_record": false,
+      "positive_knownness_proofs": [],
+      "order_status": "target",
+      "construction_status": "incomplete",
+      "new_order_claimed": false
+    }
+  ],
+  "explicit_unresolved_conditional_targets": [
+    {
+      "p": 223,
+      "source_order": 3,
+      "order": 2676,
+      "frame_width_required": 892,
+      "endpoint_completed": false,
+      "record": "survey2026Table5 row4*3p p223; frontier2026row2676"
+    },
+    {
+      "p": 223,
+      "source_order": 13,
+      "order": 11596,
+      "frame_width_required": 892,
+      "endpoint_completed": false,
+      "record": "frontier2026row11596"
+    },
+    {
+      "p": 283,
+      "source_order": 7,
+      "order": 7924,
+      "frame_width_required": 1132,
+      "endpoint_completed": false,
+      "record": "survey2026Table5 row4*7p p283; frontier2026row7924"
+    }
+  ],
+  "failed_specific_shortcuts": [
+    {
+      "order": 14292,
+      "construction": "Paley16blocks t3 s1191",
+      "failed_parameter": 4763,
+      "factorization": {
+        "11": 1,
+        "433": 1
+      },
+      "scope": "Excludes this prime-power shortcut only."
+    }
+  ],
+  "primary_records": {
+    "survey2026": {
+      "url": "https://arxiv.org/html/2610.27175v2",
+      "version": "v2",
+      "version_date": "2026-11-03",
+      "coverage": {
+        "unresolved_order_max": 10000
+      },
+      "target_entries": {
+        "7572": "Table5, row4*3*p, p631",
+        "2676": "Table5, row4*3*p, p223",
+        "7924": "Table5, row4*7*p, p283"
+      },
+      "higher_three_entries": "out_of_scope"
+    },
+    "cati2025": {
+      "url": "https://arxiv.org/html/2411.18897v2",
+      "version": "v2",
+      "version_date": "2025-08-30",
+      "coverage": {
+        "minimum_exponent_table_odd_part_max": 2999,
+        "implemented_complete_known_order_max": 1208
+      },
+      "table4_convention": "Every odd n<=2999; m=2 cases not displayed. Missing rows within this declared complete range therefore mean known H(4n), not an open case.",
+      "target_entries": {
+        "4417": "out_of_scope",
+        "5679": "out_of_scope",
+        "8203": "out_of_scope",
+        "921": "m2 by stated convention",
+        "2763": "m2 by stated convention",
+        "2317": "m2 by stated convention",
+        "2979": "m2 by stated convention"
+      }
+    },
+    "frontier2026": {
+      "url": "https://github.com/vatskishan03/Hadamard/blob/d885022144ba6bf4efa8315e14871a3736947527/FRONTIER.md",
+      "commit": "d885022144ba6bf4efa8315e14871a3736947527",
+      "commit_date": "2026-11-06",
+      "file_last_changed_commit": "0a73016a2a6e80bfd4a36b530ad1e5ed02387947",
+      "file_last_changed_date": "2026-11-02",
+      "coverage": {
+        "odd_part_max": 2999,
+        "order_max": 11996
+      },
+      "target_rows": {
+        "2676": 669,
+        "7924": 1981,
+        "11596": 2899
+      },
+      "higher_three_entries": "out_of_scope"
+    },
+    "seberry_yamada1992": {
+      "url": "https://documents.uow.edu.au/~jennie/WEBPDF/175_1992.pdf#page=105",
+      "publication_year": 1992,
+      "coverage": {
+        "advertised_offline_odd_part_exclusive_max": 40000,
+        "printed_odd_part_exclusive_max": 3000
+      },
+      "locations": [
+        "printedp535 scope",
+        "printedp547 TableA2 convention",
+        "printedpp548-554 actualtable"
+      ],
+      "higher_three_entries": "not_in_printed_excerpt"
+    },
+    "seberry_yamada_mstructures": {
+      "url": "https://documents.uow.edu.au/~jennie/WEBPDF/134_1989.pdf",
+      "publication_year": 1990,
+      "author_preprint_filename_year": 1989,
+      "coverage": {
+        "advertised_odd_part_exclusive_max": 40000,
+        "displayed_hadamard_index_last_odd_part": 1999
+      },
+      "location": "28-page author PDF, final page ends displayed index at1999",
+      "higher_three_entries": "not_in_this_file"
+    },
+    "sage": {
+      "url": "https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/matrices/hadamard_matrix.html",
+      "docs_version": "10.10",
+      "source_url": "https://raw.githubusercontent.com/sagemath/sage/develop/src/sage/combinat/matrices/hadamard_matrix.py",
+      "source_HEAD": "8de8dad7bcb38e1baa43508cbe944bf04a2d0401",
+      "source_HEAD_date": "2026-11-14T22:47:31Z",
+      "coverage": "Arbitrary order constructor; module claims all known orders<=1200 implemented and only some above1200.",
+      "Unknown_meaning": "Sage does not implement a construction; matrix may exist.",
+      "target_specific_runtime_results": null,
+      "sagecell_attempts": [
+        {
+          "url": "https://sagecell.sagemath.org/service",
+          "method": "POST",
+          "result": "HTTP520, no status returned"
+        },
+        {
+          "url": "https://sagecell.sagemath.org/service",
+          "method": "POST",
+          "result": "20-second timeout, no status returned"
+        }
+      ]
+    },
+    "magma": {
+      "url": "https://docs.magma-maths.org/Combinatorics/HadamardMatrices/hadamard-database.html",
+      "coverage": {
+        "matrix_order_max": 256
+      },
+      "higher_three_entries": "out_of_scope"
+    },
+    "hadamardr": {
+      "url": "https://cran.r-project.org/web/packages/HadamardR/refman/HadamardR.html",
+      "version": "1.0.0",
+      "publication_date": "2020-04-07",
+      "coverage": "Documentation reports1158 constructible admissible orders below5000, not a larger complete order-status catalog.",
+      "higher_three_entries": "no_complete_status_claim"
+    },
+    "hoa64": {
+      "url": "https://github.com/bbeartheancient/hoa64",
+      "branch": "master",
+      "pushed_at": "2026-08-16T01:42:05Z",
+      "coverage": {
+        "reported_verified_order_count": 810,
+        "reported_max_order": 7408
+      },
+      "public_data_scope": "13 gzipped matrices; full810 CSV library not in repository.",
+      "higher_three_entries": "beyond_reported_library"
+    },
+    "dinitz_updates": {
+      "url": "https://site.uvm.edu/jdinitz/?page_id=404",
+      "last_edited": "2018-02-15",
+      "coverage": "Handbook PartV updates; order764 update, no current replacement high-order table.",
+      "higher_three_entries": "no_target_entry"
+    },
+    "turyn1972": {
+      "url": "https://www.sciencedirect.com/science/article/pii/0097316572900957",
+      "doi": "10.1016/0097-3165(72)90095-7",
+      "publication_year": 1972,
+      "theorem": "Williamson matrices of order(q+1)/2 for every prime power q=1mod4; also stated explicitly in current survey Section2.1/Table3."
+    },
+    "whiteman1973": {
+      "url": "https://www.sciencedirect.com/science/article/pii/0097316573900101",
+      "doi": "10.1016/0097-3165(73)90010-1",
+      "publication_year": 1973,
+      "location": "publisherabstract",
+      "theorem": "A new proof of Turyn: q=2n-1 primepower=1mod4 gives a Williamson-type Hadamard of order4n."
+    },
+    "cooper_wallis1972": {
+      "url": "https://doi.org/10.1017/S0004972700045019",
+      "publication_year": 1972,
+      "theorem": "T-matrices of ordert and Williamson-type matrices of orderw give H(4tw); Cati-Pasechnikv2Theorem5."
+    },
+    "yamada_via_djokovic2011": {
+      "url": "https://www.m-hikari.com/imf-2011/61-64-2011/djokovicIMF61-64-2011.pdf#page=3",
+      "publication_year": 2011,
+      "location": "p3063 Theorem2.3",
+      "theorem": "q=5mod8 primepower and skewH((q+3)/2) imply H(4(q+2))."
+    },
+    "spence_sage": {
+      "url": "https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/matrices/hadamard_matrix.html#sage.combinat.matrices.hadamard_matrix.skew_hadamard_matrix_spence_construction",
+      "theorem": "q=5mod8 primepower gives skewH(2(q+1))."
+    },
+    "handbook2007_table1_53": {
+      "bibliographic_title": "Handbook of Combinatorial Designs, second edition, V.1 Hadamard Matrices and Hadamard Designs",
+      "chapter_authors": [
+        "Robert Craigen",
+        "Hadi Kharaghani"
+      ],
+      "editors": [
+        "Charles J. Colbourn",
+        "Jeffrey H. Dinitz"
+      ],
+      "publication_date": "2006-11",
+      "copyright_year": 2007,
+      "isbn": "9781584885061",
+      "location": "Table1.53, printedpp278-279",
+      "editor_url": "https://site.uvm.edu/jdinitz/?page_id=312",
+      "scope_evidence_url": "https://arxiv.org/html/0912.5091",
+      "coverage": {
+        "odd_part_exclusive_max": 10000,
+        "real_order_exclusive_max": 40000,
+        "odd_part_entries": 5000
+      },
+      "convention_as_reported_by_djokovic2009": "Dot denotes t2/known H(4n); other entries give least then-recorded exponent t>=3.",
+      "literal_target_entries_obtained": false,
+      "target_entries": {
+        "4417": null,
+        "5679": null,
+        "8203": null,
+        "6433": null,
+        "3573": null
+      },
+      "current_global_status_inferred": false
+    },
+    "djokovic2009_hadamard_yang": {
+      "url": "https://arxiv.org/html/0912.5091",
+      "pdf_url": "https://arxiv.org/pdf/0912.5091",
+      "version": "v1",
+      "version_date": "2009-12-27",
+      "journal_doi": "10.1002/jcd.20249",
+      "locations": [
+        "introduction:Table1.53 scope and historical counts",
+        "Section3:138-element Delta and four additional cases"
+      ],
+      "reported_historical_table_bad_count_before": 1006,
+      "correction_count": 138,
+      "additional_construction_count": 4,
+      "reported_historical_bad_count_after": 864,
+      "target_delta_memberships": {
+        "4417": false,
+        "5679": false,
+        "8203": false,
+        "6433": false,
+        "3573": false
+      }
+    },
+    "djokovic2010_small_orders_base_sequences": {
+      "url": "https://arxiv.org/html/1008.2043",
+      "pdf_url": "https://arxiv.org/pdf/1008.2043",
+      "version": "v1",
+      "version_date": "2010-08-12",
+      "published_pdf_url": "https://www.m-hikari.com/imf-2011/61-64-2011/djokovicIMF61-64-2011.pdf",
+      "published_year": 2011,
+      "locations": [
+        "introduction:tentative baseline and reference-insufficiency caveat",
+        "Section2:42 explicit odd parts"
+      ],
+      "additional_construction_count": 42,
+      "reported_historical_bad_count_before": 864,
+      "reported_historical_bad_count_after": 822,
+      "target_delta_memberships": {
+        "4417": false,
+        "5679": false,
+        "8203": false,
+        "6433": false,
+        "3573": false
+      },
+      "caution": "Author did not independently verify every claimed good Handbook entry because references were insufficient. No baseline target entry is inferred from this caveat."
+    },
+    "seberry_yamada2020": {
+      "url": "https://doi.org/10.1002/9781119520252",
+      "publication_year": 2020,
+      "access_copy_url": "https://dokumen.pub/hadamard-matrices-constructions-using-number-theory-and-algebra-9781119520245-9781119520276-9781119520139.html",
+      "coverage": {
+        "updated_ordinary_table_odd_part_max": 3000
+      },
+      "locations": [
+        "Appendix A.1 introduction states that the updated table in A.3 covers q<=3000.",
+        "Section 3.6, pp.87\u201390: conditional T-property construction and computed examples through order 79."
+      ],
+      "higher_three_entries": "outside_updated_ordinary_table",
+      "unconditional_primepower_T_family_in_section3_6": false,
+      "verification": "The primary book text was read by the parent/root agent; its scope is recorded here."
+    },
+    "spence1977": {
+      "url": "https://doi.org/10.1017/S1446788700020255",
+      "title": "An infinite family of Williamson matrices",
+      "author": "Edward Spence",
+      "year": 1977,
+      "location": "Theorem4, printedp254; all four recurrence lines checked against the PDF image",
+      "scope": "Known constructive source recurrence; five exact starters and all-r endpoint constructions are retained separately from finite endpoint order labels."
+    }
+  },
+  "private_snapshots": [
+    {
+      "path": "artifacts/scalar-frontier/higher-order-records-20261124/sage-hadamard-develop.py",
+      "sha256": "15b018c9d25cfbe1a45f98ee1421b338beb2b39077c6777e6bc33bc0fbd4b01d",
+      "distribution": "private_or_ignored_snapshot; no third-party source copy in clean certificate bundle"
+    },
+    {
+      "path": "artifacts/scalar-frontier/higher-order-records-20261124/sage-database-develop.py",
+      "sha256": "761494ddc5af3a79e16be01df9a03f6c8feda262edf6dd3767d18c40ec5db721",
+      "distribution": "private_or_ignored_snapshot; no third-party source copy in clean certificate bundle"
+    },
+    {
+      "path": "artifacts/scalar-frontier/higher-order-records-20261124/sage-t-sequences-develop.py",
+      "sha256": "ed77587b27a7d6e48d97928dc6a984c733a511503a01eccf995fd8565f54b133",
+      "distribution": "private_or_ignored_snapshot; no third-party source copy in clean certificate bundle"
+    },
+    {
+      "path": "artifacts/scalar-frontier/higher-order-records-20261124/sage-difference-family-develop.py",
+      "sha256": "bebe5f9368d710d8b8026ab00970a8c330c000393be861b45db0e55ae1b5b90d",
+      "distribution": "private_or_ignored_snapshot; no third-party source copy in clean certificate bundle"
+    },
+    {
+      "path": "artifacts/scalar-frontier/higher-order-records-20261124/sage-head.json",
+      "sha256": "148074d419463d6a002f6382f733ebe70ed24314ccc19e06b28776756fa5964c",
+      "distribution": "private_or_ignored_snapshot; no third-party source copy in clean certificate bundle"
+    },
+    {
+      "path": "artifacts/scalar-frontier/higher-order-records-20261124/seberry-yamada1989-mstructures.pdf",
+      "sha256": "599ae479c0d1493c8aa4ed80c2c0acf6ec153774cdeb65bf9721c52591dba4d2",
+      "distribution": "private_or_ignored_snapshot; no third-party source copy in clean certificate bundle"
+    },
+    {
+      "path": "/private/tmp/sequences-handbook-1992.pdf",
+      "sha256": "826855f39cf56231ab9cee198de3fea905f2322f75968035f635b8501a4291f5",
+      "distribution": "private_or_ignored_snapshot; no third-party source copy in clean certificate bundle"
+    },
+    {
+      "path": "artifacts/scalar-frontier/novelty-7572-20261124/cati-pasechnik-v2.pdf",
+      "sha256": "12b04b17459e088618af96b624bff0d83eb072626f7de706a94a4b10746c34d6",
+      "distribution": "private_or_ignored_snapshot; no third-party source copy in clean certificate bundle"
+    },
+    {
+      "path": "artifacts/scalar-frontier/novelty-7572-20261124/survey-v2.pdf",
+      "sha256": "4b575c3055fcd8c2c2419d30f669b2c55d749351ecbbba50da8d6dedc5072322",
+      "distribution": "private_or_ignored_snapshot; no third-party source copy in clean certificate bundle"
+    },
+    {
+      "path": "artifacts/scalar-frontier/novelty-7572-20261124/frontier.md",
+      "sha256": "e67e681689e3a02a3426d8c70800244bb7e2b6eb0f024987fa7ca0ff63f0e9bd",
+      "distribution": "private_or_ignored_snapshot; no third-party source copy in clean certificate bundle"
+    },
+    {
+      "path": "artifacts/scalar-frontier/novelty-7572-20261124/math74-unknown.html",
+      "sha256": "8e396b54c8ed7cfa1e7a2dcd2fb2d5b57fdaff791398ef1ceab1c7383d5faaf5",
+      "distribution": "private_or_ignored_snapshot; no third-party source copy in clean certificate bundle"
+    },
+    {
+      "path": "artifacts/scalar-frontier/higher-order-records-20261124/djokovic2009-0912.5091.pdf",
+      "sha256": "d079bd8017f204ac91eee5d43c4e98fe0d97e3151520b64dbe23e4f4f575b725",
+      "distribution": "private_or_ignored_snapshot; no third-party source copy in clean certificate bundle"
+    },
+    {
+      "path": "artifacts/scalar-frontier/higher-order-records-20261124/djokovic2009-0912.5091.txt",
+      "sha256": "95bdc053bd980e515fad831742bb51fb68fba0425ebd87ccab652c34ac46f2cc",
+      "distribution": "private_or_ignored_snapshot; no third-party source copy in clean certificate bundle"
+    },
+    {
+      "path": "artifacts/scalar-frontier/higher-order-records-20261124/djokovic2010-1008.2043.pdf",
+      "sha256": "e75f1c4094bcc77edbca48737c6e18c0b6d1e2882757bdacdab9e4d52bd64a71",
+      "distribution": "private_or_ignored_snapshot; no third-party source copy in clean certificate bundle"
+    },
+    {
+      "path": "artifacts/scalar-frontier/higher-order-records-20261124/djokovic2010-1008.2043.txt",
+      "sha256": "7f1d4fc8f0e475e94da884c98f20875f79568f583074942a7d42e4c492e68bda",
+      "distribution": "private_or_ignored_snapshot; no third-party source copy in clean certificate bundle"
+    },
+    {
+      "path": "artifacts/scalar-frontier/higher-order-records-20261124/handbook2007-preview.pdf",
+      "sha256": "15e606a2b5d492712c8f125274113d821edfd9466c1eda13703ef90002696b10",
+      "distribution": "private_or_ignored_snapshot; no third-party source copy in clean certificate bundle"
+    },
+    {
+      "path": "artifacts/scalar-frontier/higher-order-records-20261124/kotsireas-wmi2024.pdf",
+      "sha256": "7679a70d4844adbe5fe6dc7430be5ca0d2e8033877322d4e28881097c556d7a4",
+      "distribution": "private_or_ignored_snapshot; no third-party source copy in clean certificate bundle"
+    },
+    {
+      "path": "artifacts/scalar-frontier/higher-order-records-20261124/handbook2007-delta-check.json",
+      "sha256": "28db2ab16664df9490844254187db717c49feb228fc3c5b7874d8d3470866682",
+      "distribution": "private_or_ignored_snapshot; no third-party source copy in clean certificate bundle"
+    }
+  ],
+  "checks": {
+    "Cati_table4_nontrivial_rows_parsed": 195,
+    "complete_table_m2_controls": [
+      921,
+      2763,
+      2317,
+      2979
+    ],
+    "exact_factorizations_checked": true,
+    "positive_construction_hypotheses_checked": true,
+    "reuse_source_and_endpoint_metadata_consistency_checked": true,
+    "runtime_Sage_target_query_succeeded": false,
+    "global_nonexistence_claimed": false,
+    "additional_new_order_claimed": true,
+    "historical_delta_lists_counts_and_disjointness_verified": true,
+    "historical_target_baseline_entry_read": false,
+    "completed_new_real_order_count": 18,
+    "incomplete_searches_labelled_targets": true,
+    "completed_known_recovered_order_count": 20,
+    "completed_endpoint_certificate_union_verified": true,
+    "separate_infinite_family_existence_and_finite_member_status_verified": true
+  },
+  "historical_table_1_53_followup": {
+    "checked_utc": "2026-11-24T19:35:37.265024+00:00",
+    "table_coverage_confirmed_from_primary_followups": true,
+    "literal_target_entries_obtained": false,
+    "historical_delta_counts_verified": {
+      "2009_corrections": 138,
+      "2009_further_constructions": 4,
+      "2010_further_constructions": 42,
+      "lists_disjoint": true
+    },
+    "targets": [
+      {
+        "real_order": 17668,
+        "odd_part": 4417,
+        "baseline_table_entry": null,
+        "in_2009_142_delta": false,
+        "in_2010_42_delta": false,
+        "status_from_this_followup": "baseline_table_entry_not_obtained",
+        "current_construction_label": "new_to_best_author_knowledge"
+      },
+      {
+        "real_order": 22716,
+        "odd_part": 5679,
+        "baseline_table_entry": null,
+        "in_2009_142_delta": false,
+        "in_2010_42_delta": false,
+        "status_from_this_followup": "baseline_table_entry_not_obtained",
+        "current_construction_label": "new_to_best_author_knowledge"
+      },
+      {
+        "real_order": 32812,
+        "odd_part": 8203,
+        "baseline_table_entry": null,
+        "in_2009_142_delta": false,
+        "in_2010_42_delta": false,
+        "status_from_this_followup": "baseline_table_entry_not_obtained",
+        "current_construction_label": "new_to_best_author_knowledge"
+      },
+      {
+        "real_order": 25732,
+        "odd_part": 6433,
+        "baseline_table_entry": null,
+        "in_2009_142_delta": false,
+        "in_2010_42_delta": false,
+        "status_from_this_followup": "baseline_table_entry_not_obtained",
+        "current_construction_label": "target"
+      },
+      {
+        "real_order": 14292,
+        "odd_part": 3573,
+        "baseline_table_entry": null,
+        "in_2009_142_delta": false,
+        "in_2010_42_delta": false,
+        "status_from_this_followup": "baseline_table_entry_not_obtained",
+        "current_construction_label": "target"
+      }
+    ],
+    "missing_baseline_reason": "Neither absence from the published correction lists nor the failed public table retrieval decides whether each baseline entry is a dot or a larger exponent.",
+    "current_global_unresolved_status_inferred": false,
+    "lookup_results": [
+      {
+        "url": "https://api.pageplace.de/preview/DT0400.9781420010541_A25103714/preview-9781420010541_A25103714.pdf",
+        "outcome": "102-page official preview; printedpp278-279 omitted."
+      },
+      {
+        "url": "https://citeseerx.ist.psu.edu/document?doi=68bd39dc22ed90e3c7239867eebf386cf01649b8&repid=rep1&type=pdf",
+        "institutional_metadata_url": "https://www-sop.inria.fr/members/David.Coudert/Biblio/Year/2006.complete.html",
+        "outcome": "inria-00429215 is Grooming, chapterVI.27, pp494-496; not the Hadamard chapter."
+      },
+      {
+        "url": "https://us.ticmeet.com/assets/archivos/d6f1d9b8-d39f-4888-925a-7eb81c4905cc/Kotsireas.pdf",
+        "outcome": "Search-indexed author slides; webfetch502 and valid-TLS hostname mismatch; no document obtained."
+      },
+      {
+        "url": "https://fmi.uni-sofia.bg/sites/default/files/wmi2024/presentations/a260900_presentation.pdf",
+        "outcome": "68-page public university presentation obtained; not a reproduction of Table1.53."
+      },
+      {
+        "url": "https://www.researchgate.net/publication/329786678_Hadamard_matrices_and_hadamard_designs",
+        "outcome": "Metadata page explicitly has no full text; no table obtained."
+      }
+    ],
+    "exact_private_replay": "artifacts/scalar-frontier/higher-order-records-20261124/handbook2007-delta-check.json"
+  },
+  "public_repo_higher_entry_scope": {
+    "repository": "vatskishan03/Hadamard",
+    "commit": "d885022144ba6bf4efa8315e14871a3736947527",
+    "tree_complete": true,
+    "tree_path_count": 3329,
+    "shared_ordinary_table": "search/data/cati_pasechnik_table4.txt",
+    "shared_table_nontrivial_rows": 195,
+    "shared_table_odd_part_max": 2999,
+    "full_Handbook1_53_transcription_obtained": false,
+    "higher_completed_order_list_is_exhaustive_global_status_table": false,
+    "missing_targets_imply_unresolved": false
+  },
+  "periodic_T127_record": {
+    "audit_certificate": "certificates/scalar-lift/periodic-t127-literature-audit.json",
+    "existence_certificate": "certificates/scalar-lift/hadamard-frame-p127.json",
+    "scope": "New periodic T-matrix ingredient; survey v2 Table 3 explicitly listed order 127 open. H1524 is a known Paley control.",
+    "ordinary_H1524_status": "known_PaleyI_q1523",
+    "status": "new_to_best_author_knowledge"
+  },
+  "status_updated_utc": "2026-11-24T21:36:39+00:00",
+  "status_convention_ref": "docs/HADAMARD_HIGHER_ORDER_RECORDS.md#higher-order-records-and-repeat-target-audit",
+  "historical_status_snapshot": {
+    "manifest": "artifacts/scalar-frontier/status-ledger-before-author-convention-20261124/manifest.json",
+    "sha256": "d654ab532dd92f16b7b4fabfdd37d3f28cd386ce8323cd1459969e68271d18e4",
+    "scope": "Dated pre-update copies of the active documentation and ledgers; source snapshots and observations remain preserved."
+  },
+  "completed_new_real_orders": [
+    7572,
+    17668,
+    22716,
+    32812,
+    42908,
+    58052,
+    73196,
+    78244,
+    93388,
+    98436,
+    108532,
+    128724,
+    153964,
+    229684,
+    295308,
+    386172,
+    4772884,
+    13001124
+  ],
+  "completed_known_real_controls": [
+    1524,
+    2524,
+    3252,
+    6564,
+    8636,
+    12620,
+    27764,
+    37860,
+    47956,
+    53004,
+    63100,
+    68148,
+    83292,
+    103484,
+    123676,
+    138820,
+    143868,
+    159012,
+    885924,
+    18629644
+  ],
+  "completed_order_statuses": [
+    {
+      "order": 1524,
+      "status": "known",
+      "construction_complete": true
+    },
+    {
+      "order": 2524,
+      "status": "known",
+      "construction_complete": true
+    },
+    {
+      "order": 3252,
+      "status": "known",
+      "construction_complete": true
+    },
+    {
+      "order": 6564,
+      "status": "known",
+      "construction_complete": true
+    },
+    {
+      "order": 7572,
+      "status": "new_to_best_author_knowledge",
+      "construction_complete": true
+    },
+    {
+      "order": 8636,
+      "status": "known",
+      "construction_complete": true
+    },
+    {
+      "order": 12620,
+      "status": "known",
+      "construction_complete": true
+    },
+    {
+      "order": 17668,
+      "status": "new_to_best_author_knowledge",
+      "construction_complete": true
+    },
+    {
+      "order": 22716,
+      "status": "new_to_best_author_knowledge",
+      "construction_complete": true
+    },
+    {
+      "order": 27764,
+      "status": "known",
+      "construction_complete": true
+    },
+    {
+      "order": 32812,
+      "status": "new_to_best_author_knowledge",
+      "construction_complete": true
+    },
+    {
+      "order": 37860,
+      "status": "known",
+      "construction_complete": true
+    },
+    {
+      "order": 42908,
+      "status": "new_to_best_author_knowledge",
+      "construction_complete": true
+    },
+    {
+      "order": 47956,
+      "status": "known",
+      "construction_complete": true
+    },
+    {
+      "order": 53004,
+      "status": "known",
+      "construction_complete": true
+    },
+    {
+      "order": 58052,
+      "status": "new_to_best_author_knowledge",
+      "construction_complete": true
+    },
+    {
+      "order": 63100,
+      "status": "known",
+      "construction_complete": true
+    },
+    {
+      "order": 68148,
+      "status": "known",
+      "construction_complete": true
+    },
+    {
+      "order": 73196,
+      "status": "new_to_best_author_knowledge",
+      "construction_complete": true
+    },
+    {
+      "order": 78244,
+      "status": "new_to_best_author_knowledge",
+      "construction_complete": true
+    },
+    {
+      "order": 83292,
+      "status": "known",
+      "construction_complete": true
+    },
+    {
+      "order": 93388,
+      "status": "new_to_best_author_knowledge",
+      "construction_complete": true
+    },
+    {
+      "order": 98436,
+      "status": "new_to_best_author_knowledge",
+      "construction_complete": true
+    },
+    {
+      "order": 103484,
+      "status": "known",
+      "construction_complete": true
+    },
+    {
+      "order": 108532,
+      "status": "new_to_best_author_knowledge",
+      "construction_complete": true
+    },
+    {
+      "order": 123676,
+      "status": "known",
+      "construction_complete": true
+    },
+    {
+      "order": 128724,
+      "status": "new_to_best_author_knowledge",
+      "construction_complete": true
+    },
+    {
+      "order": 138820,
+      "status": "known",
+      "construction_complete": true
+    },
+    {
+      "order": 143868,
+      "status": "known",
+      "construction_complete": true
+    },
+    {
+      "order": 153964,
+      "status": "new_to_best_author_knowledge",
+      "construction_complete": true
+    },
+    {
+      "order": 159012,
+      "status": "known",
+      "construction_complete": true
+    },
+    {
+      "order": 229684,
+      "status": "new_to_best_author_knowledge",
+      "construction_complete": true
+    },
+    {
+      "order": 295308,
+      "status": "new_to_best_author_knowledge",
+      "construction_complete": true
+    },
+    {
+      "order": 386172,
+      "status": "new_to_best_author_knowledge",
+      "construction_complete": true
+    },
+    {
+      "order": 885924,
+      "status": "known",
+      "construction_complete": true
+    },
+    {
+      "order": 4772884,
+      "status": "new_to_best_author_knowledge",
+      "construction_complete": true
+    },
+    {
+      "order": 13001124,
+      "status": "new_to_best_author_knowledge",
+      "construction_complete": true
+    },
+    {
+      "order": 18629644,
+      "status": "known",
+      "construction_complete": true
+    }
+  ],
+  "completed_tripled_outputs": [
+    {
+      "source_order": 39,
+      "source_gram_scale": 39,
+      "frame_width": 2524,
+      "frame_gram_scale": 2524,
+      "output_order": 98436,
+      "endpoint_gram_scale": 98436,
+      "source_alphabet_mod6": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "construction_complete": true,
+      "order_status": "new_to_best_author_knowledge",
+      "new_order_claimed": true,
+      "endpoint_recipe_certificate": "certificates/scalar-lift/tripled-unreal-scalar-endpoints.json"
+    },
+    {
+      "source_order": 117,
+      "source_gram_scale": 117,
+      "frame_width": 2524,
+      "frame_gram_scale": 2524,
+      "output_order": 295308,
+      "endpoint_gram_scale": 295308,
+      "source_alphabet_mod6": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "construction_complete": true,
+      "order_status": "new_to_best_author_knowledge",
+      "new_order_claimed": true,
+      "endpoint_recipe_certificate": "certificates/scalar-lift/tripled-unreal-scalar-endpoints.json"
+    },
+    {
+      "source_order": 351,
+      "source_gram_scale": 351,
+      "frame_width": 2524,
+      "frame_gram_scale": 2524,
+      "output_order": 885924,
+      "endpoint_gram_scale": 885924,
+      "source_alphabet_mod6": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "construction_complete": true,
+      "order_status": "known",
+      "new_order_claimed": false,
+      "endpoint_recipe_certificate": "certificates/scalar-lift/tripled-unreal-scalar-endpoints.json",
+      "prior_construction": {
+        "family": "PaleyI",
+        "q": 885923,
+        "q_prime": true,
+        "q_mod4": 3,
+        "order": 885924
+      }
+    }
+  ],
+  "completed_real_order_summary": {
+    "scope": "Documented completed orders in the main higher-order scalar-reduction campaign; small engine controls and unfinished targets are separate.",
+    "completed_order_count": 38,
+    "new_order_count": 18,
+    "new_orders_to_best_authors_knowledge": [
+      7572,
+      17668,
+      22716,
+      32812,
+      42908,
+      58052,
+      73196,
+      78244,
+      93388,
+      98436,
+      108532,
+      128724,
+      153964,
+      229684,
+      295308,
+      386172,
+      4772884,
+      13001124
+    ],
+    "known_recovered_order_count": 20,
+    "known_recovered_orders": [
+      1524,
+      2524,
+      3252,
+      6564,
+      8636,
+      12620,
+      27764,
+      37860,
+      47956,
+      53004,
+      63100,
+      68148,
+      83292,
+      103484,
+      123676,
+      138820,
+      143868,
+      159012,
+      885924,
+      18629644
+    ],
+    "separate_new_periodic_T_matrix_orders": [
+      127
+    ],
+    "counting_convention": "Union of distinct completed real orders; multiple source constructions of an order are counted once. The five infinite families are not counted as additional finite orders."
+  },
+  "completed_williamson_outputs": [
+    {
+      "output_order": 2524,
+      "order_status": "known",
+      "construction_complete": true,
+      "certificate": "certificates/scalar-lift/williamson-scalar-endpoints.json",
+      "certificate_output_selector": {
+        "output_order": 2524
+      },
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 2524,
+      "rational_dimension_after_restriction": 2524,
+      "endpoint_Gram_scale": 2524,
+      "actual_endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "literal_entry_and_row_recipe_available": true,
+      "prior_construction": {
+        "family": "Goethals-Seidel supplementary difference sets",
+        "reference_url": "https://arxiv.org/abs/1301.3671v2",
+        "parameters": {
+          "cyclic_group_order": 631,
+          "Hadamard_order": 2524
+        },
+        "reference_detail": "Djokovic, Golubitsky and Kotsireas (2013), explicit ordinary and skew Hadamard matrices of order2524."
+      },
+      "p": 631,
+      "w": 1,
+      "scalar_algebra": "Q[c]/(c^1-1)",
+      "scalar_dimension": 1,
+      "literal_source_first_rows_sha256": "27ecd0a598e76f8a2fd264d427df0a119903e8eae384e478902541756f089dd1",
+      "status_input": "experiments/scalar_lift/williamson_order_status.json",
+      "status_key": "631:1"
+    },
+    {
+      "output_order": 7572,
+      "order_status": "new_to_best_author_knowledge",
+      "construction_complete": true,
+      "certificate": "certificates/scalar-lift/williamson-scalar-endpoints.json",
+      "certificate_output_selector": {
+        "output_order": 7572
+      },
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 7572,
+      "rational_dimension_after_restriction": 7572,
+      "endpoint_Gram_scale": 7572,
+      "actual_endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "literal_entry_and_row_recipe_available": true,
+      "prior_construction": null,
+      "p": 631,
+      "w": 3,
+      "scalar_algebra": "Q[c]/(c^3-1)",
+      "scalar_dimension": 3,
+      "literal_source_first_rows_sha256": "7fe7ffe6ccac570f04ed305e09cbf24ea834394b81bc3ae799552fab399fd2df",
+      "status_input": "experiments/scalar_lift/williamson_order_status.json",
+      "status_key": "631:3"
+    },
+    {
+      "output_order": 12620,
+      "order_status": "known",
+      "construction_complete": true,
+      "certificate": "certificates/scalar-lift/williamson-scalar-endpoints.json",
+      "certificate_output_selector": {
+        "output_order": 12620
+      },
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 12620,
+      "rational_dimension_after_restriction": 12620,
+      "endpoint_Gram_scale": 12620,
+      "actual_endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "literal_entry_and_row_recipe_available": true,
+      "prior_construction": {
+        "family": "Paley I",
+        "reference_url": "https://doi.org/10.1002/sapm1933121311",
+        "supporting_reference_url": "https://arxiv.org/html/2610.27175v2#S2.Thm2",
+        "parameters": {
+          "q": 12619,
+          "q_is_prime": true,
+          "q_mod4": 3,
+          "output_order": 12620
+        }
+      },
+      "p": 631,
+      "w": 5,
+      "scalar_algebra": "Q[c]/(c^5-1)",
+      "scalar_dimension": 5,
+      "literal_source_first_rows_sha256": "5e15c1638cbff7f4e8a36f5a5c6eaadfabda994fdc29309d776e97841c4c2278",
+      "status_input": "experiments/scalar_lift/williamson_order_status.json",
+      "status_key": "631:5"
+    },
+    {
+      "output_order": 17668,
+      "order_status": "new_to_best_author_knowledge",
+      "construction_complete": true,
+      "certificate": "certificates/scalar-lift/williamson-scalar-endpoints.json",
+      "certificate_output_selector": {
+        "output_order": 17668
+      },
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 17668,
+      "rational_dimension_after_restriction": 17668,
+      "endpoint_Gram_scale": 17668,
+      "actual_endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "literal_entry_and_row_recipe_available": true,
+      "prior_construction": null,
+      "p": 631,
+      "w": 7,
+      "scalar_algebra": "Q[c]/(c^7-1)",
+      "scalar_dimension": 7,
+      "literal_source_first_rows_sha256": "c37f26fa0f5ebde9ca04e8ce4da0ff6c10a7c644ba41633de9382659b8fcb624",
+      "status_input": "experiments/scalar_lift/williamson_order_status.json",
+      "status_key": "631:7"
+    },
+    {
+      "output_order": 22716,
+      "order_status": "new_to_best_author_knowledge",
+      "construction_complete": true,
+      "certificate": "certificates/scalar-lift/williamson-scalar-endpoints.json",
+      "certificate_output_selector": {
+        "output_order": 22716
+      },
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 22716,
+      "rational_dimension_after_restriction": 22716,
+      "endpoint_Gram_scale": 22716,
+      "actual_endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "literal_entry_and_row_recipe_available": true,
+      "prior_construction": null,
+      "p": 631,
+      "w": 9,
+      "scalar_algebra": "Q[c]/(c^9-1)",
+      "scalar_dimension": 9,
+      "literal_source_first_rows_sha256": "f99ead7f1b67fa7f751b30d686656f5ed8b6178e0af27a0dc863abdb3f484e29",
+      "status_input": "experiments/scalar_lift/williamson_order_status.json",
+      "status_key": "631:9"
+    },
+    {
+      "output_order": 27764,
+      "order_status": "known",
+      "construction_complete": true,
+      "certificate": "certificates/scalar-lift/williamson-scalar-endpoints.json",
+      "certificate_output_selector": {
+        "output_order": 27764
+      },
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 27764,
+      "rational_dimension_after_restriction": 27764,
+      "endpoint_Gram_scale": 27764,
+      "actual_endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "literal_entry_and_row_recipe_available": true,
+      "prior_construction": {
+        "family": "Paley I",
+        "reference_url": "https://doi.org/10.1002/sapm1933121311",
+        "supporting_reference_url": "https://arxiv.org/html/2610.27175v2#S2.Thm2",
+        "parameters": {
+          "q": 27763,
+          "q_is_prime": true,
+          "q_mod4": 3,
+          "output_order": 27764
+        }
+      },
+      "p": 631,
+      "w": 11,
+      "scalar_algebra": "Q[c]/(c^11-1)",
+      "scalar_dimension": 11,
+      "literal_source_first_rows_sha256": "3c3a907732388c240d9bb6ef7d1b2567ca0ccc30f9b1070a7cf4c4d4df75c44e",
+      "status_input": "experiments/scalar_lift/williamson_order_status.json",
+      "status_key": "631:11"
+    },
+    {
+      "output_order": 32812,
+      "order_status": "new_to_best_author_knowledge",
+      "construction_complete": true,
+      "certificate": "certificates/scalar-lift/williamson-scalar-endpoints.json",
+      "certificate_output_selector": {
+        "output_order": 32812
+      },
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 32812,
+      "rational_dimension_after_restriction": 32812,
+      "endpoint_Gram_scale": 32812,
+      "actual_endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "literal_entry_and_row_recipe_available": true,
+      "prior_construction": null,
+      "p": 631,
+      "w": 13,
+      "scalar_algebra": "Q[c]/(c^13-1)",
+      "scalar_dimension": 13,
+      "literal_source_first_rows_sha256": "058f283db7fbb6c95cf35647c962e43688da2c29272bc1680a548a5d546cd8c0",
+      "status_input": "experiments/scalar_lift/williamson_order_status.json",
+      "status_key": "631:13"
+    },
+    {
+      "output_order": 37860,
+      "order_status": "known",
+      "construction_complete": true,
+      "certificate": "certificates/scalar-lift/williamson-scalar-endpoints.json",
+      "certificate_output_selector": {
+        "output_order": 37860
+      },
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 37860,
+      "rational_dimension_after_restriction": 37860,
+      "endpoint_Gram_scale": 37860,
+      "actual_endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "literal_entry_and_row_recipe_available": true,
+      "prior_construction": {
+        "family": "Paley sixteen-block product with classical T-matrices",
+        "reference_url": "https://arxiv.org/html/2610.27175v2#S4.T4",
+        "parameters": {
+          "s": 3155,
+          "t": 3,
+          "q": 12619,
+          "q_is_prime": true,
+          "q_mod8": 3,
+          "Paley_base_order": 12620,
+          "known_T_order": 3,
+          "output_order": 37860
+        },
+        "ingredient_reference_url": "https://arxiv.org/html/2610.27175v2#S4.T3",
+        "reference_detail": "Table4 Paley and Miyamoto blocks: H(4st) for T(t) and prime-power4s-1 congruent3 mod8. Here t=3 or5 has classical T-sequences."
+      },
+      "p": 631,
+      "w": 15,
+      "scalar_algebra": "Q[c]/(c^15-1)",
+      "scalar_dimension": 15,
+      "literal_source_first_rows_sha256": "991c5797b6ee8a4d471144ff9df3fe017fc6696db05a1ff12078675f87b6ba4a",
+      "status_input": "experiments/scalar_lift/williamson_order_status.json",
+      "status_key": "631:15"
+    },
+    {
+      "output_order": 42908,
+      "order_status": "new_to_best_author_knowledge",
+      "construction_complete": true,
+      "certificate": "certificates/scalar-lift/williamson-scalar-endpoints.json",
+      "certificate_output_selector": {
+        "output_order": 42908
+      },
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 42908,
+      "rational_dimension_after_restriction": 42908,
+      "endpoint_Gram_scale": 42908,
+      "actual_endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "literal_entry_and_row_recipe_available": true,
+      "prior_construction": null,
+      "p": 631,
+      "w": 17,
+      "scalar_algebra": "Q[c]/(c^17-1)",
+      "scalar_dimension": 17,
+      "literal_source_first_rows_sha256": "c4f2b0312348d225f1c8086369eaf34f75f7c09bd56ed8ec22b64ca9683dfc55",
+      "status_input": "experiments/scalar_lift/williamson_order_status.json",
+      "status_key": "631:17"
+    },
+    {
+      "output_order": 47956,
+      "order_status": "known",
+      "construction_complete": true,
+      "certificate": "certificates/scalar-lift/williamson-scalar-endpoints.json",
+      "certificate_output_selector": {
+        "output_order": 47956
+      },
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 47956,
+      "rational_dimension_after_restriction": 47956,
+      "endpoint_Gram_scale": 47956,
+      "actual_endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "literal_entry_and_row_recipe_available": true,
+      "prior_construction": {
+        "family": "Paley II",
+        "reference_url": "https://doi.org/10.1002/sapm1933121311",
+        "supporting_reference_url": "https://arxiv.org/html/2610.27175v2#S2.Thm2",
+        "parameters": {
+          "q": 23977,
+          "q_is_prime": true,
+          "q_mod4": 1,
+          "output_order": 47956
+        }
+      },
+      "p": 631,
+      "w": 19,
+      "scalar_algebra": "Q[c]/(c^19-1)",
+      "scalar_dimension": 19,
+      "literal_source_first_rows_sha256": "b8c7175fa8ec12e7394ef6aa53e1bbc0e084fd830da75ed20e33ce6dbd5b5990",
+      "status_input": "experiments/scalar_lift/williamson_order_status.json",
+      "status_key": "631:19"
+    },
+    {
+      "output_order": 53004,
+      "order_status": "known",
+      "construction_complete": true,
+      "certificate": "certificates/scalar-lift/williamson-scalar-endpoints.json",
+      "certificate_output_selector": {
+        "output_order": 53004
+      },
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 53004,
+      "rational_dimension_after_restriction": 53004,
+      "endpoint_Gram_scale": 53004,
+      "actual_endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "literal_entry_and_row_recipe_available": true,
+      "prior_construction": {
+        "family": "Paley I",
+        "reference_url": "https://doi.org/10.1002/sapm1933121311",
+        "supporting_reference_url": "https://arxiv.org/html/2610.27175v2#S2.Thm2",
+        "parameters": {
+          "q": 53003,
+          "q_is_prime": true,
+          "q_mod4": 3,
+          "output_order": 53004
+        }
+      },
+      "p": 631,
+      "w": 21,
+      "scalar_algebra": "Q[c]/(c^21-1)",
+      "scalar_dimension": 21,
+      "literal_source_first_rows_sha256": "7734972e0611b864466321bdc2ce84da32daa35ab020415aa722d3da4ea7d24c",
+      "status_input": "experiments/scalar_lift/williamson_order_status.json",
+      "status_key": "631:21"
+    },
+    {
+      "output_order": 58052,
+      "order_status": "new_to_best_author_knowledge",
+      "construction_complete": true,
+      "certificate": "certificates/scalar-lift/williamson-scalar-endpoints.json",
+      "certificate_output_selector": {
+        "output_order": 58052
+      },
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 58052,
+      "rational_dimension_after_restriction": 58052,
+      "endpoint_Gram_scale": 58052,
+      "actual_endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "literal_entry_and_row_recipe_available": true,
+      "prior_construction": null,
+      "p": 631,
+      "w": 23,
+      "scalar_algebra": "Q[c]/(c^23-1)",
+      "scalar_dimension": 23,
+      "literal_source_first_rows_sha256": "91d383f8f9a86c519c2c0984353243638024d6bdf96b3544eaaa44335df8158c",
+      "status_input": "experiments/scalar_lift/williamson_order_status.json",
+      "status_key": "631:23"
+    },
+    {
+      "output_order": 63100,
+      "order_status": "known",
+      "construction_complete": true,
+      "certificate": "certificates/scalar-lift/williamson-scalar-endpoints.json",
+      "certificate_output_selector": {
+        "output_order": 63100
+      },
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 63100,
+      "rational_dimension_after_restriction": 63100,
+      "endpoint_Gram_scale": 63100,
+      "actual_endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "literal_entry_and_row_recipe_available": true,
+      "prior_construction": {
+        "family": "Paley sixteen-block product with classical T-matrices",
+        "reference_url": "https://arxiv.org/html/2610.27175v2#S4.T4",
+        "parameters": {
+          "s": 3155,
+          "t": 5,
+          "q": 12619,
+          "q_is_prime": true,
+          "q_mod8": 3,
+          "Paley_base_order": 12620,
+          "known_T_order": 5,
+          "output_order": 63100
+        },
+        "ingredient_reference_url": "https://arxiv.org/html/2610.27175v2#S4.T3",
+        "reference_detail": "Table4 Paley and Miyamoto blocks: H(4st) for T(t) and prime-power4s-1 congruent3 mod8. Here t=3 or5 has classical T-sequences."
+      },
+      "p": 631,
+      "w": 25,
+      "scalar_algebra": "Q[c]/(c^25-1)",
+      "scalar_dimension": 25,
+      "literal_source_first_rows_sha256": "f5687d6e35658986a3060518627e2e2f4c89489663ca554041f7f3c3f915c103",
+      "status_input": "experiments/scalar_lift/williamson_order_status.json",
+      "status_key": "631:25"
+    },
+    {
+      "output_order": 68148,
+      "order_status": "known",
+      "construction_complete": true,
+      "certificate": "certificates/scalar-lift/williamson-scalar-endpoints.json",
+      "certificate_output_selector": {
+        "output_order": 68148
+      },
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 68148,
+      "rational_dimension_after_restriction": 68148,
+      "endpoint_Gram_scale": 68148,
+      "actual_endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "literal_entry_and_row_recipe_available": true,
+      "prior_construction": {
+        "family": "Paley I",
+        "reference_url": "https://doi.org/10.1002/sapm1933121311",
+        "supporting_reference_url": "https://arxiv.org/html/2610.27175v2#S2.Thm2",
+        "parameters": {
+          "q": 68147,
+          "q_is_prime": true,
+          "q_mod4": 3,
+          "output_order": 68148
+        }
+      },
+      "p": 631,
+      "w": 27,
+      "scalar_algebra": "Q[c]/(c^27-1)",
+      "scalar_dimension": 27,
+      "literal_source_first_rows_sha256": "e4bad648170186f8ea925062a392b98c6f5abae8e68f496c937fc335654ce1c6",
+      "status_input": "experiments/scalar_lift/williamson_order_status.json",
+      "status_key": "631:27"
+    },
+    {
+      "output_order": 73196,
+      "order_status": "new_to_best_author_knowledge",
+      "construction_complete": true,
+      "certificate": "certificates/scalar-lift/williamson-scalar-endpoints.json",
+      "certificate_output_selector": {
+        "output_order": 73196
+      },
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 73196,
+      "rational_dimension_after_restriction": 73196,
+      "endpoint_Gram_scale": 73196,
+      "actual_endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "literal_entry_and_row_recipe_available": true,
+      "prior_construction": null,
+      "p": 631,
+      "w": 29,
+      "scalar_algebra": "Q[c]/(c^29-1)",
+      "scalar_dimension": 29,
+      "literal_source_first_rows_sha256": "13b39bcebd785df988efc17390134476258e4222e360bcddceebf72890c252ab",
+      "status_input": "experiments/scalar_lift/williamson_order_status.json",
+      "status_key": "631:29"
+    },
+    {
+      "output_order": 78244,
+      "order_status": "new_to_best_author_knowledge",
+      "construction_complete": true,
+      "certificate": "certificates/scalar-lift/williamson-scalar-endpoints.json",
+      "certificate_output_selector": {
+        "output_order": 78244
+      },
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 78244,
+      "rational_dimension_after_restriction": 78244,
+      "endpoint_Gram_scale": 78244,
+      "actual_endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "literal_entry_and_row_recipe_available": true,
+      "prior_construction": null,
+      "p": 631,
+      "w": 31,
+      "scalar_algebra": "Q[c]/(c^31-1)",
+      "scalar_dimension": 31,
+      "literal_source_first_rows_sha256": "f8125f78a48903cf0cd984450be62d72509287d484935b57746be569ddb21977",
+      "status_input": "experiments/scalar_lift/williamson_order_status.json",
+      "status_key": "631:31"
+    },
+    {
+      "output_order": 83292,
+      "order_status": "known",
+      "construction_complete": true,
+      "certificate": "certificates/scalar-lift/williamson-scalar-endpoints.json",
+      "certificate_output_selector": {
+        "output_order": 83292
+      },
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 83292,
+      "rational_dimension_after_restriction": 83292,
+      "endpoint_Gram_scale": 83292,
+      "actual_endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "literal_entry_and_row_recipe_available": true,
+      "prior_construction": {
+        "family": "Paley sixteen-block product with classical T-matrices",
+        "reference_url": "https://arxiv.org/html/2610.27175v2#S4.T4",
+        "parameters": {
+          "s": 6941,
+          "t": 3,
+          "q": 27763,
+          "q_is_prime": true,
+          "q_mod8": 3,
+          "Paley_base_order": 27764,
+          "known_T_order": 3,
+          "output_order": 83292
+        },
+        "ingredient_reference_url": "https://arxiv.org/html/2610.27175v2#S4.T3",
+        "reference_detail": "Table4 Paley and Miyamoto blocks: H(4st) for T(t) and prime-power4s-1 congruent3 mod8. Here t=3 or5 has classical T-sequences."
+      },
+      "p": 631,
+      "w": 33,
+      "scalar_algebra": "Q[c]/(c^33-1)",
+      "scalar_dimension": 33,
+      "literal_source_first_rows_sha256": "49b668db311bbfee23cfd00db80c2f69a48e1f301f41d43f77f52f5556decf69",
+      "status_input": "experiments/scalar_lift/williamson_order_status.json",
+      "status_key": "631:33"
+    },
+    {
+      "output_order": 93388,
+      "order_status": "new_to_best_author_knowledge",
+      "construction_complete": true,
+      "certificate": "certificates/scalar-lift/williamson-scalar-endpoints.json",
+      "certificate_output_selector": {
+        "output_order": 93388
+      },
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 93388,
+      "rational_dimension_after_restriction": 93388,
+      "endpoint_Gram_scale": 93388,
+      "actual_endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "literal_entry_and_row_recipe_available": true,
+      "prior_construction": null,
+      "p": 631,
+      "w": 37,
+      "scalar_algebra": "Q[c]/(c^37-1)",
+      "scalar_dimension": 37,
+      "literal_source_first_rows_sha256": "020f4eb5786052254458165c47dbcf8c3648f1e68dfaeefd28525ce3f2521aca",
+      "status_input": "experiments/scalar_lift/williamson_order_status.json",
+      "status_key": "631:37"
+    },
+    {
+      "output_order": 98436,
+      "order_status": "new_to_best_author_knowledge",
+      "construction_complete": true,
+      "certificate": "certificates/scalar-lift/williamson-scalar-endpoints.json",
+      "certificate_output_selector": {
+        "output_order": 98436
+      },
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 98436,
+      "rational_dimension_after_restriction": 98436,
+      "endpoint_Gram_scale": 98436,
+      "actual_endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "literal_entry_and_row_recipe_available": true,
+      "prior_construction": null,
+      "p": 631,
+      "w": 39,
+      "scalar_algebra": "Q[c]/(c^39-1)",
+      "scalar_dimension": 39,
+      "literal_source_first_rows_sha256": "7de0645faddd7297b108ea796040b68f92dfda762718b97cbbdf3f36eab1111a",
+      "status_input": "experiments/scalar_lift/williamson_order_status.json",
+      "status_key": "631:39"
+    },
+    {
+      "output_order": 103484,
+      "order_status": "known",
+      "construction_complete": true,
+      "certificate": "certificates/scalar-lift/williamson-scalar-endpoints.json",
+      "certificate_output_selector": {
+        "output_order": 103484
+      },
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 103484,
+      "rational_dimension_after_restriction": 103484,
+      "endpoint_Gram_scale": 103484,
+      "actual_endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "literal_entry_and_row_recipe_available": true,
+      "prior_construction": {
+        "family": "Paley I",
+        "reference_url": "https://doi.org/10.1002/sapm1933121311",
+        "supporting_reference_url": "https://arxiv.org/html/2610.27175v2#S2.Thm2",
+        "parameters": {
+          "q": 103483,
+          "q_is_prime": true,
+          "q_mod4": 3,
+          "output_order": 103484
+        }
+      },
+      "p": 631,
+      "w": 41,
+      "scalar_algebra": "Q[c]/(c^41-1)",
+      "scalar_dimension": 41,
+      "literal_source_first_rows_sha256": "08eb71c85fe4867eb0e45c2a3c7d630a138b3cd3a14b7d6aeede2983fddb658b",
+      "status_input": "experiments/scalar_lift/williamson_order_status.json",
+      "status_key": "631:41"
+    },
+    {
+      "output_order": 108532,
+      "order_status": "new_to_best_author_knowledge",
+      "construction_complete": true,
+      "certificate": "certificates/scalar-lift/williamson-scalar-endpoints.json",
+      "certificate_output_selector": {
+        "output_order": 108532
+      },
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 108532,
+      "rational_dimension_after_restriction": 108532,
+      "endpoint_Gram_scale": 108532,
+      "actual_endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "literal_entry_and_row_recipe_available": true,
+      "prior_construction": null,
+      "p": 631,
+      "w": 43,
+      "scalar_algebra": "Q[c]/(c^43-1)",
+      "scalar_dimension": 43,
+      "literal_source_first_rows_sha256": "09a0e3c52c7a48a357cb2b31f0a3df468dba1f618e8a4734fd000b4aa604ddd4",
+      "status_input": "experiments/scalar_lift/williamson_order_status.json",
+      "status_key": "631:43"
+    },
+    {
+      "output_order": 123676,
+      "order_status": "known",
+      "construction_complete": true,
+      "certificate": "certificates/scalar-lift/williamson-scalar-endpoints.json",
+      "certificate_output_selector": {
+        "output_order": 123676
+      },
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 123676,
+      "rational_dimension_after_restriction": 123676,
+      "endpoint_Gram_scale": 123676,
+      "actual_endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "literal_entry_and_row_recipe_available": true,
+      "prior_construction": {
+        "family": "Paley II",
+        "reference_url": "https://doi.org/10.1002/sapm1933121311",
+        "supporting_reference_url": "https://arxiv.org/html/2610.27175v2#S2.Thm2",
+        "parameters": {
+          "q": 61837,
+          "q_is_prime": true,
+          "q_mod4": 1,
+          "output_order": 123676
+        }
+      },
+      "p": 631,
+      "w": 49,
+      "scalar_algebra": "Q[c]/(c^49-1)",
+      "scalar_dimension": 49,
+      "literal_source_first_rows_sha256": "1308bc907821e4b3bed9ead79d718f81e31e423fa8be4f03b9877bb30b2a040a",
+      "status_input": "experiments/scalar_lift/williamson_order_status.json",
+      "status_key": "631:49"
+    },
+    {
+      "output_order": 128724,
+      "order_status": "new_to_best_author_knowledge",
+      "construction_complete": true,
+      "certificate": "certificates/scalar-lift/williamson-scalar-endpoints.json",
+      "certificate_output_selector": {
+        "output_order": 128724
+      },
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 128724,
+      "rational_dimension_after_restriction": 128724,
+      "endpoint_Gram_scale": 128724,
+      "actual_endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "literal_entry_and_row_recipe_available": true,
+      "prior_construction": null,
+      "p": 631,
+      "w": 51,
+      "scalar_algebra": "Q[c]/(c^51-1)",
+      "scalar_dimension": 51,
+      "literal_source_first_rows_sha256": "a9401b26e3ee28381889dc63d2e92baa4e4cde032d09150d5d9490c291af9bd0",
+      "status_input": "experiments/scalar_lift/williamson_order_status.json",
+      "status_key": "631:51"
+    },
+    {
+      "output_order": 138820,
+      "order_status": "known",
+      "construction_complete": true,
+      "certificate": "certificates/scalar-lift/williamson-scalar-endpoints.json",
+      "certificate_output_selector": {
+        "output_order": 138820
+      },
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 138820,
+      "rational_dimension_after_restriction": 138820,
+      "endpoint_Gram_scale": 138820,
+      "actual_endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "literal_entry_and_row_recipe_available": true,
+      "prior_construction": {
+        "family": "Paley sixteen-block product with classical T-matrices",
+        "reference_url": "https://arxiv.org/html/2610.27175v2#S4.T4",
+        "parameters": {
+          "s": 6941,
+          "t": 5,
+          "q": 27763,
+          "q_is_prime": true,
+          "q_mod8": 3,
+          "Paley_base_order": 27764,
+          "known_T_order": 5,
+          "output_order": 138820
+        },
+        "ingredient_reference_url": "https://arxiv.org/html/2610.27175v2#S4.T3",
+        "reference_detail": "Table4 Paley and Miyamoto blocks: H(4st) for T(t) and prime-power4s-1 congruent3 mod8. Here t=3 or5 has classical T-sequences."
+      },
+      "p": 631,
+      "w": 55,
+      "scalar_algebra": "Q[c]/(c^55-1)",
+      "scalar_dimension": 55,
+      "literal_source_first_rows_sha256": "914518d6bda74f14ea949f2176a49cc5025f4b8f692e4cedc85f322f3ebf8006",
+      "status_input": "experiments/scalar_lift/williamson_order_status.json",
+      "status_key": "631:55"
+    },
+    {
+      "output_order": 143868,
+      "order_status": "known",
+      "construction_complete": true,
+      "certificate": "certificates/scalar-lift/williamson-scalar-endpoints.json",
+      "certificate_output_selector": {
+        "output_order": 143868
+      },
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 143868,
+      "rational_dimension_after_restriction": 143868,
+      "endpoint_Gram_scale": 143868,
+      "actual_endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "literal_entry_and_row_recipe_available": true,
+      "prior_construction": {
+        "family": "Paley II",
+        "reference_url": "https://doi.org/10.1002/sapm1933121311",
+        "supporting_reference_url": "https://arxiv.org/html/2610.27175v2#S2.Thm2",
+        "parameters": {
+          "q": 71933,
+          "q_is_prime": true,
+          "q_mod4": 1,
+          "output_order": 143868
+        }
+      },
+      "p": 631,
+      "w": 57,
+      "scalar_algebra": "Q[c]/(c^57-1)",
+      "scalar_dimension": 57,
+      "literal_source_first_rows_sha256": "45db03f6349fe2b3e6408b04f9d1ea4b11b9004782120a1b96c1a33829fdcd85",
+      "status_input": "experiments/scalar_lift/williamson_order_status.json",
+      "status_key": "631:57"
+    },
+    {
+      "output_order": 153964,
+      "order_status": "new_to_best_author_knowledge",
+      "construction_complete": true,
+      "certificate": "certificates/scalar-lift/williamson-scalar-endpoints.json",
+      "certificate_output_selector": {
+        "output_order": 153964
+      },
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 153964,
+      "rational_dimension_after_restriction": 153964,
+      "endpoint_Gram_scale": 153964,
+      "actual_endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "literal_entry_and_row_recipe_available": true,
+      "prior_construction": null,
+      "p": 631,
+      "w": 61,
+      "scalar_algebra": "Q[c]/(c^61-1)",
+      "scalar_dimension": 61,
+      "literal_source_first_rows_sha256": "342cc7335f227401368904af6ee0318b595b7bf0e730fd7526e7eedb9f526f47",
+      "status_input": "experiments/scalar_lift/williamson_order_status.json",
+      "status_key": "631:61"
+    },
+    {
+      "output_order": 159012,
+      "order_status": "known",
+      "construction_complete": true,
+      "certificate": "certificates/scalar-lift/williamson-scalar-endpoints.json",
+      "certificate_output_selector": {
+        "output_order": 159012
+      },
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 159012,
+      "rational_dimension_after_restriction": 159012,
+      "endpoint_Gram_scale": 159012,
+      "actual_endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "literal_entry_and_row_recipe_available": true,
+      "prior_construction": {
+        "family": "Paley sixteen-block product with classical T-matrices",
+        "reference_url": "https://arxiv.org/html/2610.27175v2#S4.T4",
+        "parameters": {
+          "s": 13251,
+          "t": 3,
+          "q": 53003,
+          "q_is_prime": true,
+          "q_mod8": 3,
+          "Paley_base_order": 53004,
+          "known_T_order": 3,
+          "output_order": 159012
+        },
+        "ingredient_reference_url": "https://arxiv.org/html/2610.27175v2#S4.T3",
+        "reference_detail": "Table4 Paley and Miyamoto blocks: H(4st) for T(t) and prime-power4s-1 congruent3 mod8. Here t=3 or5 has classical T-sequences."
+      },
+      "p": 631,
+      "w": 63,
+      "scalar_algebra": "Q[c]/(c^63-1)",
+      "scalar_dimension": 63,
+      "literal_source_first_rows_sha256": "0228b6820163b5ae464bd9e3ff4f62a9468d0a6fd4ea6e9f92f37bc5bb85b67e",
+      "status_input": "experiments/scalar_lift/williamson_order_status.json",
+      "status_key": "631:63"
+    }
+  ],
+  "completed_williamson_control_outputs": [
+    {
+      "output_order": 8636,
+      "order_status": "known",
+      "construction_complete": true,
+      "certificate": "certificates/scalar-lift/williamson-scalar-known-control.json",
+      "certificate_output_selector": {
+        "output_order": 8636
+      },
+      "weighted_source_order": 508,
+      "weighted_source_Gram_scale": 8636,
+      "rational_dimension_after_restriction": 8636,
+      "endpoint_Gram_scale": 8636,
+      "actual_endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "literal_entry_and_row_recipe_available": true,
+      "prior_construction": {
+        "family": "Cooper-Wallis with swapped classical ingredients",
+        "reference_url": "https://doi.org/10.1017/S0004972700045019",
+        "parameters": {
+          "known_T_order": 17,
+          "known_Williamson_type_order": 127,
+          "output_order": 8636
+        },
+        "ingredient_reference_url": "https://arxiv.org/html/0912.5091#S3",
+        "additional_reference_url": "https://arxiv.org/html/2610.27175v2#S4.T3",
+        "reference_detail": "The2009 paper records prior WT127 from good matrices and explicitly lists2159=17*127 among corrected known odd parts. Classical T17 gives H8636; this does not use the new periodic T127."
+      },
+      "p": 127,
+      "w": 17,
+      "scalar_algebra": "Q[c]/(c^17-1)",
+      "scalar_dimension": 17,
+      "literal_source_first_rows_sha256": "c4f2b0312348d225f1c8086369eaf34f75f7c09bd56ed8ec22b64ca9683dfc55",
+      "status_input": "experiments/scalar_lift/williamson_order_status.json",
+      "status_key": "127:17"
+    }
+  ],
+  "completed_spence_family_outputs": [
+    {
+      "output_order": 229684,
+      "order_status": "new_to_best_author_knowledge",
+      "construction_complete": true,
+      "certificate": "certificates/scalar-lift/williamson-family-endpoints.json",
+      "certificate_output_selector": {
+        "output_order": 229684
+      },
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 229684,
+      "rational_dimension_after_restriction": 229684,
+      "endpoint_Gram_scale": 229684,
+      "actual_endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "literal_entry_and_row_recipe_available": true,
+      "prior_construction": null,
+      "q": 13,
+      "r": 1,
+      "source_order": 91,
+      "scalar_group": "C_7 x C_13",
+      "scalar_dimension": 91,
+      "status_input": "experiments/scalar_lift/williamson_family_order_status.json",
+      "status_key": "family:13:1"
+    },
+    {
+      "output_order": 386172,
+      "order_status": "new_to_best_author_knowledge",
+      "construction_complete": true,
+      "certificate": "certificates/scalar-lift/williamson-family-endpoints.json",
+      "certificate_output_selector": {
+        "output_order": 386172
+      },
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 386172,
+      "rational_dimension_after_restriction": 386172,
+      "endpoint_Gram_scale": 386172,
+      "actual_endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "literal_entry_and_row_recipe_available": true,
+      "prior_construction": null,
+      "q": 17,
+      "r": 1,
+      "source_order": 153,
+      "scalar_group": "C_9 x C_17",
+      "scalar_dimension": 153,
+      "status_input": "experiments/scalar_lift/williamson_family_order_status.json",
+      "status_key": "family:17:1"
+    },
+    {
+      "output_order": 4772884,
+      "order_status": "new_to_best_author_knowledge",
+      "construction_complete": true,
+      "certificate": "certificates/scalar-lift/williamson-family-endpoints.json",
+      "certificate_output_selector": {
+        "output_order": 4772884
+      },
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 4772884,
+      "rational_dimension_after_restriction": 4772884,
+      "endpoint_Gram_scale": 4772884,
+      "actual_endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "literal_entry_and_row_recipe_available": true,
+      "prior_construction": null,
+      "q": 61,
+      "r": 1,
+      "source_order": 1891,
+      "scalar_group": "C_31 x C_61",
+      "scalar_dimension": 1891,
+      "status_input": "experiments/scalar_lift/williamson_family_order_status.json",
+      "status_key": "family:61:1"
+    },
+    {
+      "output_order": 13001124,
+      "order_status": "new_to_best_author_knowledge",
+      "construction_complete": true,
+      "certificate": "certificates/scalar-lift/williamson-family-endpoints.json",
+      "certificate_output_selector": {
+        "output_order": 13001124
+      },
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 13001124,
+      "rational_dimension_after_restriction": 13001124,
+      "endpoint_Gram_scale": 13001124,
+      "actual_endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "literal_entry_and_row_recipe_available": true,
+      "prior_construction": null,
+      "q": 101,
+      "r": 1,
+      "source_order": 5151,
+      "scalar_group": "C_51 x C_101",
+      "scalar_dimension": 5151,
+      "status_input": "experiments/scalar_lift/williamson_family_order_status.json",
+      "status_key": "family:101:1"
+    },
+    {
+      "output_order": 18629644,
+      "order_status": "known",
+      "construction_complete": true,
+      "certificate": "certificates/scalar-lift/williamson-family-endpoints.json",
+      "certificate_output_selector": {
+        "output_order": 18629644
+      },
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 18629644,
+      "rational_dimension_after_restriction": 18629644,
+      "endpoint_Gram_scale": 18629644,
+      "actual_endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "literal_entry_and_row_recipe_available": true,
+      "prior_construction": {
+        "family": "Paley II",
+        "reference_url": "https://doi.org/10.1002/sapm1933121311",
+        "supporting_reference_url": "https://arxiv.org/html/2610.27175v2#S2.Thm2",
+        "parameters": {
+          "q": 9314821,
+          "q_is_prime": true,
+          "q_mod4": 1,
+          "output_order": 18629644
+        }
+      },
+      "q": 121,
+      "r": 1,
+      "source_order": 7381,
+      "scalar_group": "C_61 x C_11 x C_11",
+      "scalar_dimension": 7381,
+      "status_input": "experiments/scalar_lift/williamson_family_order_status.json",
+      "status_key": "family:121:1"
+    }
+  ],
+  "completed_order_proof_index": {
+    "7572": [
+      {
+        "path": "certificates/scalar-lift/williamson-scalar-endpoints.json",
+        "output_selector": {
+          "output_order": 7572
+        }
+      },
+      {
+        "path": "artifacts/hadamard-7572/certificate.json",
+        "endpoint_order": 7572
+      }
+    ],
+    "17668": [
+      {
+        "path": "certificates/scalar-lift/williamson-scalar-endpoints.json",
+        "output_selector": {
+          "output_order": 17668
+        }
+      },
+      {
+        "path": "certificates/scalar-lift/hadamard-7572-frame-reuse.json",
+        "endpoint_order": 17668
+      }
+    ],
+    "22716": [
+      {
+        "path": "certificates/scalar-lift/williamson-scalar-endpoints.json",
+        "output_selector": {
+          "output_order": 22716
+        }
+      },
+      {
+        "path": "certificates/scalar-lift/hadamard-7572-frame-reuse.json",
+        "endpoint_order": 22716
+      }
+    ],
+    "32812": [
+      {
+        "path": "certificates/scalar-lift/williamson-scalar-endpoints.json",
+        "output_selector": {
+          "output_order": 32812
+        }
+      },
+      {
+        "path": "certificates/scalar-lift/hadamard-7572-frame-reuse.json",
+        "endpoint_order": 32812
+      }
+    ],
+    "98436": [
+      {
+        "path": "certificates/scalar-lift/williamson-scalar-endpoints.json",
+        "output_selector": {
+          "output_order": 98436
+        }
+      },
+      {
+        "path": "certificates/scalar-lift/tripled-unreal-scalar-endpoints.json",
+        "endpoint_order": 98436
+      }
+    ],
+    "2524": [
+      {
+        "path": "certificates/scalar-lift/williamson-scalar-endpoints.json",
+        "output_selector": {
+          "output_order": 2524
+        }
+      }
+    ],
+    "12620": [
+      {
+        "path": "certificates/scalar-lift/williamson-scalar-endpoints.json",
+        "output_selector": {
+          "output_order": 12620
+        }
+      }
+    ],
+    "27764": [
+      {
+        "path": "certificates/scalar-lift/williamson-scalar-endpoints.json",
+        "output_selector": {
+          "output_order": 27764
+        }
+      }
+    ],
+    "37860": [
+      {
+        "path": "certificates/scalar-lift/williamson-scalar-endpoints.json",
+        "output_selector": {
+          "output_order": 37860
+        }
+      }
+    ],
+    "42908": [
+      {
+        "path": "certificates/scalar-lift/williamson-scalar-endpoints.json",
+        "output_selector": {
+          "output_order": 42908
+        }
+      }
+    ],
+    "47956": [
+      {
+        "path": "certificates/scalar-lift/williamson-scalar-endpoints.json",
+        "output_selector": {
+          "output_order": 47956
+        }
+      }
+    ],
+    "53004": [
+      {
+        "path": "certificates/scalar-lift/williamson-scalar-endpoints.json",
+        "output_selector": {
+          "output_order": 53004
+        }
+      }
+    ],
+    "58052": [
+      {
+        "path": "certificates/scalar-lift/williamson-scalar-endpoints.json",
+        "output_selector": {
+          "output_order": 58052
+        }
+      }
+    ],
+    "63100": [
+      {
+        "path": "certificates/scalar-lift/williamson-scalar-endpoints.json",
+        "output_selector": {
+          "output_order": 63100
+        }
+      }
+    ],
+    "68148": [
+      {
+        "path": "certificates/scalar-lift/williamson-scalar-endpoints.json",
+        "output_selector": {
+          "output_order": 68148
+        }
+      }
+    ],
+    "73196": [
+      {
+        "path": "certificates/scalar-lift/williamson-scalar-endpoints.json",
+        "output_selector": {
+          "output_order": 73196
+        }
+      }
+    ],
+    "78244": [
+      {
+        "path": "certificates/scalar-lift/williamson-scalar-endpoints.json",
+        "output_selector": {
+          "output_order": 78244
+        }
+      }
+    ],
+    "83292": [
+      {
+        "path": "certificates/scalar-lift/williamson-scalar-endpoints.json",
+        "output_selector": {
+          "output_order": 83292
+        }
+      }
+    ],
+    "93388": [
+      {
+        "path": "certificates/scalar-lift/williamson-scalar-endpoints.json",
+        "output_selector": {
+          "output_order": 93388
+        }
+      }
+    ],
+    "103484": [
+      {
+        "path": "certificates/scalar-lift/williamson-scalar-endpoints.json",
+        "output_selector": {
+          "output_order": 103484
+        }
+      }
+    ],
+    "108532": [
+      {
+        "path": "certificates/scalar-lift/williamson-scalar-endpoints.json",
+        "output_selector": {
+          "output_order": 108532
+        }
+      }
+    ],
+    "123676": [
+      {
+        "path": "certificates/scalar-lift/williamson-scalar-endpoints.json",
+        "output_selector": {
+          "output_order": 123676
+        }
+      }
+    ],
+    "128724": [
+      {
+        "path": "certificates/scalar-lift/williamson-scalar-endpoints.json",
+        "output_selector": {
+          "output_order": 128724
+        }
+      }
+    ],
+    "138820": [
+      {
+        "path": "certificates/scalar-lift/williamson-scalar-endpoints.json",
+        "output_selector": {
+          "output_order": 138820
+        }
+      }
+    ],
+    "143868": [
+      {
+        "path": "certificates/scalar-lift/williamson-scalar-endpoints.json",
+        "output_selector": {
+          "output_order": 143868
+        }
+      }
+    ],
+    "153964": [
+      {
+        "path": "certificates/scalar-lift/williamson-scalar-endpoints.json",
+        "output_selector": {
+          "output_order": 153964
+        }
+      }
+    ],
+    "159012": [
+      {
+        "path": "certificates/scalar-lift/williamson-scalar-endpoints.json",
+        "output_selector": {
+          "output_order": 159012
+        }
+      }
+    ],
+    "8636": [
+      {
+        "path": "certificates/scalar-lift/williamson-scalar-known-control.json",
+        "output_selector": {
+          "output_order": 8636
+        }
+      }
+    ],
+    "229684": [
+      {
+        "path": "certificates/scalar-lift/williamson-family-endpoints.json",
+        "output_selector": {
+          "output_order": 229684
+        }
+      }
+    ],
+    "386172": [
+      {
+        "path": "certificates/scalar-lift/williamson-family-endpoints.json",
+        "output_selector": {
+          "output_order": 386172
+        }
+      }
+    ],
+    "4772884": [
+      {
+        "path": "certificates/scalar-lift/williamson-family-endpoints.json",
+        "output_selector": {
+          "output_order": 4772884
+        }
+      }
+    ],
+    "13001124": [
+      {
+        "path": "certificates/scalar-lift/williamson-family-endpoints.json",
+        "output_selector": {
+          "output_order": 13001124
+        }
+      }
+    ],
+    "18629644": [
+      {
+        "path": "certificates/scalar-lift/williamson-family-endpoints.json",
+        "output_selector": {
+          "output_order": 18629644
+        }
+      }
+    ],
+    "1524": [
+      {
+        "path": "artifacts/t-matrices-127/certificate.json",
+        "endpoint_order": 1524
+      }
+    ],
+    "3252": [
+      {
+        "path": "certificates/scalar-lift/hadamard-frame-p271.json",
+        "endpoint_order": 3252
+      }
+    ],
+    "6564": [
+      {
+        "path": "certificates/scalar-lift/hadamard-frame-p547.json",
+        "endpoint_order": 6564
+      }
+    ],
+    "295308": [
+      {
+        "path": "certificates/scalar-lift/tripled-unreal-scalar-endpoints.json",
+        "endpoint_order": 295308
+      }
+    ],
+    "885924": [
+      {
+        "path": "certificates/scalar-lift/tripled-unreal-scalar-endpoints.json",
+        "endpoint_order": 885924
+      }
+    ]
+  },
+  "campaign_completion_checked_utc": "2026-11-24T21:36:39+00:00",
+  "completed_endpoint_certificate_records": [
+    {
+      "path": "certificates/scalar-lift/williamson-scalar-endpoints.json",
+      "sha256": "346b1e57671605d8cc0dcafa415f8cabe62154feb18d653a67c3f59188f7dc38",
+      "output_count": 27
+    },
+    {
+      "path": "certificates/scalar-lift/williamson-scalar-known-control.json",
+      "sha256": "3075adff1d23d28169b6cd5b1678ebc282651888e8c280644c5c35d3c2254fa2",
+      "output_count": 1
+    },
+    {
+      "path": "certificates/scalar-lift/williamson-family-endpoints.json",
+      "sha256": "758dc7bf6c269e89f3142332789d468d17ac31fa5dbfa362278ca49fc76d2ca6",
+      "output_count": 5
+    }
+  ],
+  "williamson_scalar_common_data": {
+    "complete_T_source_order": 631,
+    "orthogonal_design_order": 2524,
+    "scalar_algebra": "Q[C_w], a product of cyclotomic number fields",
+    "scalar_dimension": "w",
+    "conjugation": "group inversion, complex conjugation on every number-field factor",
+    "trace": "normalized regular trace tau(a)=[identity]a=(1/w)*sum_d Tr_Q(zeta_d)/Q(a_d)",
+    "inverse_group_basis_trace_metric": "I_w",
+    "source_actual_alphabet": "signed copies of the four literal self-adjoint group polynomials f_j; weighted, not asserted Butson",
+    "source_norm": "sum_j f_j^2=4w; D_T(f)D_T(f)*=2524w I_2524",
+    "multiplication_adjoint": "rho(conjugate(f))=rho(f)^T",
+    "actual_used_entry_images": "literal sign circulants",
+    "endpoint_order_and_Gram_scale": "2524w"
+  },
+  "completed_constructive_scalar_families": [
+    {
+      "q": 13,
+      "source_order_formula": "7*13^r",
+      "real_endpoint_order_formula": "17668*13^r",
+      "parameter_range": "all integers r>=0",
+      "construction_complete": true,
+      "source_certificate": "certificates/scalar-lift/williamson-spence-family.json",
+      "source_certificate_sha256": "0ab2ac65129b6c8ac7ee97396847bcc000515473ba03b34a2da3c27715ede0ed",
+      "literal_executor": "experiments/scalar_lift/williamson_spence_family.py",
+      "finite_member_status_record": "experiments/scalar_lift/williamson_family_order_status.json",
+      "all_family_members_claimed_new": false
+    },
+    {
+      "q": 17,
+      "source_order_formula": "9*17^r",
+      "real_endpoint_order_formula": "22716*17^r",
+      "parameter_range": "all integers r>=0",
+      "construction_complete": true,
+      "source_certificate": "certificates/scalar-lift/williamson-spence-family.json",
+      "source_certificate_sha256": "0ab2ac65129b6c8ac7ee97396847bcc000515473ba03b34a2da3c27715ede0ed",
+      "literal_executor": "experiments/scalar_lift/williamson_spence_family.py",
+      "finite_member_status_record": "experiments/scalar_lift/williamson_family_order_status.json",
+      "all_family_members_claimed_new": false
+    },
+    {
+      "q": 61,
+      "source_order_formula": "31*61^r",
+      "real_endpoint_order_formula": "78244*61^r",
+      "parameter_range": "all integers r>=0",
+      "construction_complete": true,
+      "source_certificate": "certificates/scalar-lift/williamson-spence-family.json",
+      "source_certificate_sha256": "0ab2ac65129b6c8ac7ee97396847bcc000515473ba03b34a2da3c27715ede0ed",
+      "literal_executor": "experiments/scalar_lift/williamson_spence_family.py",
+      "finite_member_status_record": "experiments/scalar_lift/williamson_family_order_status.json",
+      "all_family_members_claimed_new": false
+    },
+    {
+      "q": 101,
+      "source_order_formula": "51*101^r",
+      "real_endpoint_order_formula": "128724*101^r",
+      "parameter_range": "all integers r>=0",
+      "construction_complete": true,
+      "source_certificate": "certificates/scalar-lift/williamson-spence-family.json",
+      "source_certificate_sha256": "0ab2ac65129b6c8ac7ee97396847bcc000515473ba03b34a2da3c27715ede0ed",
+      "literal_executor": "experiments/scalar_lift/williamson_spence_family.py",
+      "finite_member_status_record": "experiments/scalar_lift/williamson_family_order_status.json",
+      "all_family_members_claimed_new": false
+    },
+    {
+      "q": 121,
+      "source_order_formula": "61*121^r",
+      "real_endpoint_order_formula": "153964*121^r",
+      "parameter_range": "all integers r>=0",
+      "construction_complete": true,
+      "source_certificate": "certificates/scalar-lift/williamson-spence-family.json",
+      "source_certificate_sha256": "0ab2ac65129b6c8ac7ee97396847bcc000515473ba03b34a2da3c27715ede0ed",
+      "literal_executor": "experiments/scalar_lift/williamson_spence_family.py",
+      "finite_member_status_record": "experiments/scalar_lift/williamson_family_order_status.json",
+      "all_family_members_claimed_new": false
+    }
+  ]
+}

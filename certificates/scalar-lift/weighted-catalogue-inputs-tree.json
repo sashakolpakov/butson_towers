@@ -1,0 +1,1488 @@
+{
+  "schema": "hadamard.weighted-scalar-tree.v1",
+  "stop_reason": "registered_divisor_field_tree_complete",
+  "progress": {
+    "duplicates_pruned": 0,
+    "evaluated_edges": 10,
+    "last_matrix": {
+      "depth": 2,
+      "lower_field": 1,
+      "order": 28
+    },
+    "literal_nodes": 10
+  },
+  "nodes": [
+    {
+      "basis_exponents": [
+        0
+      ],
+      "bundle": "/Users/sasha/hadamard/search-state/weighted-catalogue-inputs-v1.sqlite3.matrices/298aedc45b1529b207c5713afaa85eddf91142a76ee6af9a456f1094c001d50b.npz",
+      "bundle_sha256": "779946c07ef635fe1024922d206a5986b651185b057de6b7c0dcb6fe8a2f1d08",
+      "canonical_basis_equivalence": {
+        "Hermitian_metric_congruence_exact": true,
+        "basis_identity_exact": true,
+        "canonical_basis_exponents": [
+          0
+        ],
+        "change_over_lower_field": {
+          "denominator": 1,
+          "numerators": [
+            [
+              [
+                1,
+                0
+              ]
+            ]
+          ]
+        },
+        "general_basis_equivalence_used_to_prune": false,
+        "path_basis_exponents": [
+          0
+        ],
+        "scalar_conjugacy_exact": true
+      },
+      "composition_proof": {
+        "existing_verified_source_node": true
+      },
+      "field_path": [
+        6
+      ],
+      "global_weighted_Gram_scale": 7,
+      "id": "298aedc45b1529b207c5713afaa85eddf91142a76ee6af9a456f1094c001d50b",
+      "lower_field": 6,
+      "matrix_order": 7,
+      "new_real_Hadamard_claimed": false,
+      "rational_endpoint": null,
+      "source": "catalogue-p7-q6",
+      "width": 1
+    },
+    {
+      "basis_exponents": [
+        0
+      ],
+      "bundle": "/Users/sasha/hadamard/search-state/weighted-catalogue-inputs-v1.sqlite3.matrices/d1d170f7b7ec0a12d5149b49ce7adbb1101dfd80c71c21c32ac8c522b87035af.npz",
+      "bundle_sha256": "4c0473d24ea7639359554b8f10c018e1e9e58bbe4d386901f876bd404195f10a",
+      "canonical_basis_equivalence": {
+        "Hermitian_metric_congruence_exact": true,
+        "basis_identity_exact": true,
+        "canonical_basis_exponents": [
+          0
+        ],
+        "change_over_lower_field": {
+          "denominator": 1,
+          "numerators": [
+            [
+              [
+                1,
+                0,
+                0,
+                0
+              ]
+            ]
+          ]
+        },
+        "general_basis_equivalence_used_to_prune": false,
+        "path_basis_exponents": [
+          0
+        ],
+        "scalar_conjugacy_exact": true
+      },
+      "composition_proof": {
+        "existing_verified_source_node": true
+      },
+      "field_path": [
+        12
+      ],
+      "global_weighted_Gram_scale": 7,
+      "id": "d1d170f7b7ec0a12d5149b49ce7adbb1101dfd80c71c21c32ac8c522b87035af",
+      "lower_field": 12,
+      "matrix_order": 7,
+      "new_real_Hadamard_claimed": false,
+      "rational_endpoint": null,
+      "source": "catalogue-p7-q12",
+      "width": 1
+    },
+    {
+      "basis_exponents": [
+        0
+      ],
+      "bundle": "/Users/sasha/hadamard/search-state/weighted-catalogue-inputs-v1.sqlite3.matrices/050504e7c131e1aae92f2566ff2add234edc4de3e39d03dddfbf35bfc5a00b80.npz",
+      "bundle_sha256": "0161773a04e1138a8bf0ca4e33a7b9f5ed5447e71f82859518feaed17bbaa337",
+      "canonical_basis_equivalence": {
+        "Hermitian_metric_congruence_exact": true,
+        "basis_identity_exact": true,
+        "canonical_basis_exponents": [
+          0
+        ],
+        "change_over_lower_field": {
+          "denominator": 1,
+          "numerators": [
+            [
+              [
+                1,
+                0
+              ]
+            ]
+          ]
+        },
+        "general_basis_equivalence_used_to_prune": false,
+        "path_basis_exponents": [
+          0
+        ],
+        "scalar_conjugacy_exact": true
+      },
+      "composition_proof": {
+        "existing_verified_source_node": true
+      },
+      "field_path": [
+        4
+      ],
+      "global_weighted_Gram_scale": 14,
+      "id": "050504e7c131e1aae92f2566ff2add234edc4de3e39d03dddfbf35bfc5a00b80",
+      "lower_field": 4,
+      "matrix_order": 14,
+      "new_real_Hadamard_claimed": false,
+      "rational_endpoint": null,
+      "source": "catalogue-d14-q4",
+      "width": 1
+    },
+    {
+      "basis_exponents": [
+        0,
+        1
+      ],
+      "bundle": "/Users/sasha/hadamard/search-state/weighted-catalogue-inputs-v1.sqlite3.matrices/322ce2e9d016513c0bf3647ae00660b3b482e471b419d1b441b6561fcac4b5e9.npz",
+      "bundle_sha256": "44200b00d3e8f3132b28aa03dc5389c852ac6d8053748e3c9b8017da23cc7653",
+      "canonical_basis_equivalence": {
+        "Hermitian_metric_congruence_exact": true,
+        "basis_identity_exact": true,
+        "canonical_basis_exponents": [
+          0,
+          1
+        ],
+        "change_over_lower_field": {
+          "denominator": 1,
+          "numerators": [
+            [
+              [
+                1
+              ],
+              [
+                0
+              ]
+            ],
+            [
+              [
+                0
+              ],
+              [
+                1
+              ]
+            ]
+          ]
+        },
+        "general_basis_equivalence_used_to_prune": false,
+        "path_basis_exponents": [
+          0,
+          1
+        ],
+        "scalar_conjugacy_exact": true
+      },
+      "composition_proof": {
+        "all_original_root_powers_checked": 6,
+        "every_action_coefficient_composed_exactly": true,
+        "metric_trace_transitivity_checked_coefficientwise": true,
+        "operation": "entrywise scalar restriction, with no Fourier frame or source modification",
+        "width_multiplied_by_relative_degree": true
+      },
+      "field_path": [
+        6,
+        1
+      ],
+      "global_weighted_Gram_scale": 7,
+      "id": "322ce2e9d016513c0bf3647ae00660b3b482e471b419d1b441b6561fcac4b5e9",
+      "lower_field": 1,
+      "matrix_order": 14,
+      "new_real_Hadamard_claimed": false,
+      "rational_endpoint": {
+        "all_entries_integral": true,
+        "complete_matrix_entry_counts": {
+          "-1": 54,
+          "0": 71,
+          "1": 71
+        },
+        "literal_entries_all_signs": false,
+        "matrix_order": 14,
+        "ordinary_Euclidean_Hadamard_claimed": false,
+        "weighted_Gram_scale": 7,
+        "weighted_Gram_scale_is_matrix_order": false
+      },
+      "source": "catalogue-p7-q6",
+      "width": 2
+    },
+    {
+      "basis_exponents": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "bundle": "/Users/sasha/hadamard/search-state/weighted-catalogue-inputs-v1.sqlite3.matrices/7778c3a63aa6027c79529dc210a447e0a0b931d04951d0853534e42b1ca81383.npz",
+      "bundle_sha256": "c30af2b895c3d94c56b0e17105e757d67c13ae25af85e7d90c55a7892bdaf7e9",
+      "canonical_basis_equivalence": {
+        "Hermitian_metric_congruence_exact": true,
+        "basis_identity_exact": true,
+        "canonical_basis_exponents": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "change_over_lower_field": {
+          "denominator": 1,
+          "numerators": [
+            [
+              [
+                1
+              ],
+              [
+                0
+              ],
+              [
+                0
+              ],
+              [
+                0
+              ]
+            ],
+            [
+              [
+                0
+              ],
+              [
+                1
+              ],
+              [
+                0
+              ],
+              [
+                0
+              ]
+            ],
+            [
+              [
+                0
+              ],
+              [
+                0
+              ],
+              [
+                1
+              ],
+              [
+                0
+              ]
+            ],
+            [
+              [
+                0
+              ],
+              [
+                0
+              ],
+              [
+                0
+              ],
+              [
+                1
+              ]
+            ]
+          ]
+        },
+        "general_basis_equivalence_used_to_prune": false,
+        "path_basis_exponents": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "scalar_conjugacy_exact": true
+      },
+      "composition_proof": {
+        "all_original_root_powers_checked": 12,
+        "every_action_coefficient_composed_exactly": true,
+        "metric_trace_transitivity_checked_coefficientwise": true,
+        "operation": "entrywise scalar restriction, with no Fourier frame or source modification",
+        "width_multiplied_by_relative_degree": true
+      },
+      "field_path": [
+        12,
+        1
+      ],
+      "global_weighted_Gram_scale": 7,
+      "id": "7778c3a63aa6027c79529dc210a447e0a0b931d04951d0853534e42b1ca81383",
+      "lower_field": 1,
+      "matrix_order": 28,
+      "new_real_Hadamard_claimed": false,
+      "rational_endpoint": {
+        "all_entries_integral": true,
+        "complete_matrix_entry_counts": {
+          "-1": 125,
+          "0": 509,
+          "1": 150
+        },
+        "literal_entries_all_signs": false,
+        "matrix_order": 28,
+        "ordinary_Euclidean_Hadamard_claimed": false,
+        "weighted_Gram_scale": 7,
+        "weighted_Gram_scale_is_matrix_order": false
+      },
+      "source": "catalogue-p7-q12",
+      "width": 4
+    },
+    {
+      "basis_exponents": [
+        0,
+        1
+      ],
+      "bundle": "/Users/sasha/hadamard/search-state/weighted-catalogue-inputs-v1.sqlite3.matrices/003745604a1b2c5083f5d013e6d6f18ce406bccb77e4f3e4072374ed616d2564.npz",
+      "bundle_sha256": "734379a854ce9d3cf822ad3ceff7ee8c3fae25bbaeeb80ba00c5a1b0d58c4417",
+      "canonical_basis_equivalence": {
+        "Hermitian_metric_congruence_exact": true,
+        "basis_identity_exact": true,
+        "canonical_basis_exponents": [
+          0,
+          1
+        ],
+        "change_over_lower_field": {
+          "denominator": 1,
+          "numerators": [
+            [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          ]
+        },
+        "general_basis_equivalence_used_to_prune": false,
+        "path_basis_exponents": [
+          0,
+          1
+        ],
+        "scalar_conjugacy_exact": true
+      },
+      "composition_proof": {
+        "all_original_root_powers_checked": 12,
+        "every_action_coefficient_composed_exactly": true,
+        "metric_trace_transitivity_checked_coefficientwise": true,
+        "operation": "entrywise scalar restriction, with no Fourier frame or source modification",
+        "width_multiplied_by_relative_degree": true
+      },
+      "field_path": [
+        12,
+        3
+      ],
+      "global_weighted_Gram_scale": 7,
+      "id": "003745604a1b2c5083f5d013e6d6f18ce406bccb77e4f3e4072374ed616d2564",
+      "lower_field": 3,
+      "matrix_order": 14,
+      "new_real_Hadamard_claimed": false,
+      "rational_endpoint": null,
+      "source": "catalogue-p7-q12",
+      "width": 2
+    },
+    {
+      "basis_exponents": [
+        0,
+        1
+      ],
+      "bundle": "/Users/sasha/hadamard/search-state/weighted-catalogue-inputs-v1.sqlite3.matrices/f720f6f0134eff97d0c7aef87e71b283eb6196af1323d469592644971aa4d932.npz",
+      "bundle_sha256": "9df3a57e2db508c3e0e5e9c51a30a632c58b65411ad8e260167d68ae3b9c11b5",
+      "canonical_basis_equivalence": {
+        "Hermitian_metric_congruence_exact": true,
+        "basis_identity_exact": true,
+        "canonical_basis_exponents": [
+          0,
+          1
+        ],
+        "change_over_lower_field": {
+          "denominator": 1,
+          "numerators": [
+            [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          ]
+        },
+        "general_basis_equivalence_used_to_prune": false,
+        "path_basis_exponents": [
+          0,
+          1
+        ],
+        "scalar_conjugacy_exact": true
+      },
+      "composition_proof": {
+        "all_original_root_powers_checked": 12,
+        "every_action_coefficient_composed_exactly": true,
+        "metric_trace_transitivity_checked_coefficientwise": true,
+        "operation": "entrywise scalar restriction, with no Fourier frame or source modification",
+        "width_multiplied_by_relative_degree": true
+      },
+      "field_path": [
+        12,
+        4
+      ],
+      "global_weighted_Gram_scale": 7,
+      "id": "f720f6f0134eff97d0c7aef87e71b283eb6196af1323d469592644971aa4d932",
+      "lower_field": 4,
+      "matrix_order": 14,
+      "new_real_Hadamard_claimed": false,
+      "rational_endpoint": null,
+      "source": "catalogue-p7-q12",
+      "width": 2
+    },
+    {
+      "basis_exponents": [
+        0,
+        1
+      ],
+      "bundle": "/Users/sasha/hadamard/search-state/weighted-catalogue-inputs-v1.sqlite3.matrices/672d3e66980c73d298eb891683431a0945fd7f3487e41e03a090fb1ac0934298.npz",
+      "bundle_sha256": "d8fd84e60412d09b7a49b5c63a6ccb45891bc3991e5b896fe31b445bda53833c",
+      "canonical_basis_equivalence": {
+        "Hermitian_metric_congruence_exact": true,
+        "basis_identity_exact": true,
+        "canonical_basis_exponents": [
+          0,
+          1
+        ],
+        "change_over_lower_field": {
+          "denominator": 1,
+          "numerators": [
+            [
+              [
+                1
+              ],
+              [
+                0
+              ]
+            ],
+            [
+              [
+                0
+              ],
+              [
+                1
+              ]
+            ]
+          ]
+        },
+        "general_basis_equivalence_used_to_prune": false,
+        "path_basis_exponents": [
+          0,
+          1
+        ],
+        "scalar_conjugacy_exact": true
+      },
+      "composition_proof": {
+        "all_original_root_powers_checked": 4,
+        "every_action_coefficient_composed_exactly": true,
+        "metric_trace_transitivity_checked_coefficientwise": true,
+        "operation": "entrywise scalar restriction, with no Fourier frame or source modification",
+        "width_multiplied_by_relative_degree": true
+      },
+      "field_path": [
+        4,
+        1
+      ],
+      "global_weighted_Gram_scale": 14,
+      "id": "672d3e66980c73d298eb891683431a0945fd7f3487e41e03a090fb1ac0934298",
+      "lower_field": 1,
+      "matrix_order": 28,
+      "new_real_Hadamard_claimed": false,
+      "rational_endpoint": {
+        "all_entries_integral": true,
+        "complete_matrix_entry_counts": {
+          "-1": 182,
+          "0": 392,
+          "1": 210
+        },
+        "literal_entries_all_signs": false,
+        "matrix_order": 28,
+        "ordinary_Euclidean_Hadamard_claimed": false,
+        "weighted_Gram_scale": 14,
+        "weighted_Gram_scale_is_matrix_order": false
+      },
+      "source": "catalogue-d14-q4",
+      "width": 2
+    },
+    {
+      "basis_exponents": [
+        0,
+        4,
+        1,
+        5
+      ],
+      "bundle": "/Users/sasha/hadamard/search-state/weighted-catalogue-inputs-v1.sqlite3.matrices/9782c54dbae3ca33db14e3f6e0156f84c3efec8b371a33d8a090cf1cba6c1d40.npz",
+      "bundle_sha256": "2d0d08fa8a3b42f08d66fd97283d8bc937e56555e26b1afcea0cb95a219b1c6c",
+      "canonical_basis_equivalence": {
+        "Hermitian_metric_congruence_exact": true,
+        "basis_identity_exact": true,
+        "canonical_basis_exponents": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "change_over_lower_field": {
+          "denominator": 1,
+          "numerators": [
+            [
+              [
+                1
+              ],
+              [
+                -1
+              ],
+              [
+                0
+              ],
+              [
+                0
+              ]
+            ],
+            [
+              [
+                0
+              ],
+              [
+                0
+              ],
+              [
+                1
+              ],
+              [
+                -1
+              ]
+            ],
+            [
+              [
+                0
+              ],
+              [
+                1
+              ],
+              [
+                0
+              ],
+              [
+                0
+              ]
+            ],
+            [
+              [
+                0
+              ],
+              [
+                0
+              ],
+              [
+                0
+              ],
+              [
+                1
+              ]
+            ]
+          ]
+        },
+        "general_basis_equivalence_used_to_prune": false,
+        "path_basis_exponents": [
+          0,
+          4,
+          1,
+          5
+        ],
+        "scalar_conjugacy_exact": true
+      },
+      "composition_proof": {
+        "all_original_root_powers_checked": 12,
+        "every_action_coefficient_composed_exactly": true,
+        "metric_trace_transitivity_checked_coefficientwise": true,
+        "operation": "entrywise scalar restriction, with no Fourier frame or source modification",
+        "width_multiplied_by_relative_degree": true
+      },
+      "field_path": [
+        12,
+        3,
+        1
+      ],
+      "global_weighted_Gram_scale": 7,
+      "id": "9782c54dbae3ca33db14e3f6e0156f84c3efec8b371a33d8a090cf1cba6c1d40",
+      "lower_field": 1,
+      "matrix_order": 28,
+      "new_real_Hadamard_claimed": false,
+      "rational_endpoint": {
+        "all_entries_integral": true,
+        "complete_matrix_entry_counts": {
+          "-1": 125,
+          "0": 509,
+          "1": 150
+        },
+        "literal_entries_all_signs": false,
+        "matrix_order": 28,
+        "ordinary_Euclidean_Hadamard_claimed": false,
+        "weighted_Gram_scale": 7,
+        "weighted_Gram_scale_is_matrix_order": false
+      },
+      "source": "catalogue-p7-q12",
+      "width": 4
+    },
+    {
+      "basis_exponents": [
+        0,
+        3,
+        1,
+        4
+      ],
+      "bundle": "/Users/sasha/hadamard/search-state/weighted-catalogue-inputs-v1.sqlite3.matrices/0381253fc335fd87b729a7e60fe2d27c42c4edf81ab04d5a2fdf5ea77200cc43.npz",
+      "bundle_sha256": "605fc895143152461922156b1a309be292812a76782262b060097ff1d63ff0c0",
+      "canonical_basis_equivalence": {
+        "Hermitian_metric_congruence_exact": true,
+        "basis_identity_exact": true,
+        "canonical_basis_exponents": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "change_over_lower_field": {
+          "denominator": 1,
+          "numerators": [
+            [
+              [
+                1
+              ],
+              [
+                0
+              ],
+              [
+                0
+              ],
+              [
+                -1
+              ]
+            ],
+            [
+              [
+                0
+              ],
+              [
+                0
+              ],
+              [
+                1
+              ],
+              [
+                0
+              ]
+            ],
+            [
+              [
+                0
+              ],
+              [
+                0
+              ],
+              [
+                0
+              ],
+              [
+                1
+              ]
+            ],
+            [
+              [
+                0
+              ],
+              [
+                1
+              ],
+              [
+                0
+              ],
+              [
+                0
+              ]
+            ]
+          ]
+        },
+        "general_basis_equivalence_used_to_prune": false,
+        "path_basis_exponents": [
+          0,
+          3,
+          1,
+          4
+        ],
+        "scalar_conjugacy_exact": true
+      },
+      "composition_proof": {
+        "all_original_root_powers_checked": 12,
+        "every_action_coefficient_composed_exactly": true,
+        "metric_trace_transitivity_checked_coefficientwise": true,
+        "operation": "entrywise scalar restriction, with no Fourier frame or source modification",
+        "width_multiplied_by_relative_degree": true
+      },
+      "field_path": [
+        12,
+        4,
+        1
+      ],
+      "global_weighted_Gram_scale": 7,
+      "id": "0381253fc335fd87b729a7e60fe2d27c42c4edf81ab04d5a2fdf5ea77200cc43",
+      "lower_field": 1,
+      "matrix_order": 28,
+      "new_real_Hadamard_claimed": false,
+      "rational_endpoint": {
+        "all_entries_integral": true,
+        "complete_matrix_entry_counts": {
+          "-1": 133,
+          "0": 490,
+          "1": 161
+        },
+        "literal_entries_all_signs": false,
+        "matrix_order": 28,
+        "ordinary_Euclidean_Hadamard_claimed": false,
+        "weighted_Gram_scale": 7,
+        "weighted_Gram_scale_is_matrix_order": false
+      },
+      "source": "catalogue-p7-q12",
+      "width": 4
+    }
+  ],
+  "edges": [
+    {
+      "basis_equivalence": {
+        "Hermitian_metric_congruence_exact": true,
+        "basis_identity_exact": true,
+        "canonical_basis_exponents": [
+          0
+        ],
+        "change_over_lower_field": {
+          "denominator": 1,
+          "numerators": [
+            [
+              [
+                1,
+                0
+              ]
+            ]
+          ]
+        },
+        "general_basis_equivalence_used_to_prune": false,
+        "path_basis_exponents": [
+          0
+        ],
+        "scalar_conjugacy_exact": true
+      },
+      "basis_equivalence_alone_used_for_pruning": false,
+      "composition_proof": {
+        "existing_verified_source_node": true
+      },
+      "literal_duplicate_pruned": false,
+      "path": [
+        6
+      ]
+    },
+    {
+      "basis_equivalence": {
+        "Hermitian_metric_congruence_exact": true,
+        "basis_identity_exact": true,
+        "canonical_basis_exponents": [
+          0
+        ],
+        "change_over_lower_field": {
+          "denominator": 1,
+          "numerators": [
+            [
+              [
+                1,
+                0,
+                0,
+                0
+              ]
+            ]
+          ]
+        },
+        "general_basis_equivalence_used_to_prune": false,
+        "path_basis_exponents": [
+          0
+        ],
+        "scalar_conjugacy_exact": true
+      },
+      "basis_equivalence_alone_used_for_pruning": false,
+      "composition_proof": {
+        "existing_verified_source_node": true
+      },
+      "literal_duplicate_pruned": false,
+      "path": [
+        12
+      ]
+    },
+    {
+      "basis_equivalence": {
+        "Hermitian_metric_congruence_exact": true,
+        "basis_identity_exact": true,
+        "canonical_basis_exponents": [
+          0
+        ],
+        "change_over_lower_field": {
+          "denominator": 1,
+          "numerators": [
+            [
+              [
+                1,
+                0
+              ]
+            ]
+          ]
+        },
+        "general_basis_equivalence_used_to_prune": false,
+        "path_basis_exponents": [
+          0
+        ],
+        "scalar_conjugacy_exact": true
+      },
+      "basis_equivalence_alone_used_for_pruning": false,
+      "composition_proof": {
+        "existing_verified_source_node": true
+      },
+      "literal_duplicate_pruned": false,
+      "path": [
+        4
+      ]
+    },
+    {
+      "basis_equivalence": {
+        "Hermitian_metric_congruence_exact": true,
+        "basis_identity_exact": true,
+        "canonical_basis_exponents": [
+          0,
+          1
+        ],
+        "change_over_lower_field": {
+          "denominator": 1,
+          "numerators": [
+            [
+              [
+                1
+              ],
+              [
+                0
+              ]
+            ],
+            [
+              [
+                0
+              ],
+              [
+                1
+              ]
+            ]
+          ]
+        },
+        "general_basis_equivalence_used_to_prune": false,
+        "path_basis_exponents": [
+          0,
+          1
+        ],
+        "scalar_conjugacy_exact": true
+      },
+      "basis_equivalence_alone_used_for_pruning": false,
+      "composition_proof": {
+        "all_original_root_powers_checked": 6,
+        "every_action_coefficient_composed_exactly": true,
+        "metric_trace_transitivity_checked_coefficientwise": true,
+        "operation": "entrywise scalar restriction, with no Fourier frame or source modification",
+        "width_multiplied_by_relative_degree": true
+      },
+      "literal_duplicate_pruned": false,
+      "path": [
+        6,
+        1
+      ]
+    },
+    {
+      "basis_equivalence": {
+        "Hermitian_metric_congruence_exact": true,
+        "basis_identity_exact": true,
+        "canonical_basis_exponents": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "change_over_lower_field": {
+          "denominator": 1,
+          "numerators": [
+            [
+              [
+                1
+              ],
+              [
+                0
+              ],
+              [
+                0
+              ],
+              [
+                0
+              ]
+            ],
+            [
+              [
+                0
+              ],
+              [
+                1
+              ],
+              [
+                0
+              ],
+              [
+                0
+              ]
+            ],
+            [
+              [
+                0
+              ],
+              [
+                0
+              ],
+              [
+                1
+              ],
+              [
+                0
+              ]
+            ],
+            [
+              [
+                0
+              ],
+              [
+                0
+              ],
+              [
+                0
+              ],
+              [
+                1
+              ]
+            ]
+          ]
+        },
+        "general_basis_equivalence_used_to_prune": false,
+        "path_basis_exponents": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "scalar_conjugacy_exact": true
+      },
+      "basis_equivalence_alone_used_for_pruning": false,
+      "composition_proof": {
+        "all_original_root_powers_checked": 12,
+        "every_action_coefficient_composed_exactly": true,
+        "metric_trace_transitivity_checked_coefficientwise": true,
+        "operation": "entrywise scalar restriction, with no Fourier frame or source modification",
+        "width_multiplied_by_relative_degree": true
+      },
+      "literal_duplicate_pruned": false,
+      "path": [
+        12,
+        1
+      ]
+    },
+    {
+      "basis_equivalence": {
+        "Hermitian_metric_congruence_exact": true,
+        "basis_identity_exact": true,
+        "canonical_basis_exponents": [
+          0,
+          1
+        ],
+        "change_over_lower_field": {
+          "denominator": 1,
+          "numerators": [
+            [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          ]
+        },
+        "general_basis_equivalence_used_to_prune": false,
+        "path_basis_exponents": [
+          0,
+          1
+        ],
+        "scalar_conjugacy_exact": true
+      },
+      "basis_equivalence_alone_used_for_pruning": false,
+      "composition_proof": {
+        "all_original_root_powers_checked": 12,
+        "every_action_coefficient_composed_exactly": true,
+        "metric_trace_transitivity_checked_coefficientwise": true,
+        "operation": "entrywise scalar restriction, with no Fourier frame or source modification",
+        "width_multiplied_by_relative_degree": true
+      },
+      "literal_duplicate_pruned": false,
+      "path": [
+        12,
+        3
+      ]
+    },
+    {
+      "basis_equivalence": {
+        "Hermitian_metric_congruence_exact": true,
+        "basis_identity_exact": true,
+        "canonical_basis_exponents": [
+          0,
+          1
+        ],
+        "change_over_lower_field": {
+          "denominator": 1,
+          "numerators": [
+            [
+              [
+                1,
+                0
+              ],
+              [
+                0,
+                0
+              ]
+            ],
+            [
+              [
+                0,
+                0
+              ],
+              [
+                1,
+                0
+              ]
+            ]
+          ]
+        },
+        "general_basis_equivalence_used_to_prune": false,
+        "path_basis_exponents": [
+          0,
+          1
+        ],
+        "scalar_conjugacy_exact": true
+      },
+      "basis_equivalence_alone_used_for_pruning": false,
+      "composition_proof": {
+        "all_original_root_powers_checked": 12,
+        "every_action_coefficient_composed_exactly": true,
+        "metric_trace_transitivity_checked_coefficientwise": true,
+        "operation": "entrywise scalar restriction, with no Fourier frame or source modification",
+        "width_multiplied_by_relative_degree": true
+      },
+      "literal_duplicate_pruned": false,
+      "path": [
+        12,
+        4
+      ]
+    },
+    {
+      "basis_equivalence": {
+        "Hermitian_metric_congruence_exact": true,
+        "basis_identity_exact": true,
+        "canonical_basis_exponents": [
+          0,
+          1
+        ],
+        "change_over_lower_field": {
+          "denominator": 1,
+          "numerators": [
+            [
+              [
+                1
+              ],
+              [
+                0
+              ]
+            ],
+            [
+              [
+                0
+              ],
+              [
+                1
+              ]
+            ]
+          ]
+        },
+        "general_basis_equivalence_used_to_prune": false,
+        "path_basis_exponents": [
+          0,
+          1
+        ],
+        "scalar_conjugacy_exact": true
+      },
+      "basis_equivalence_alone_used_for_pruning": false,
+      "composition_proof": {
+        "all_original_root_powers_checked": 4,
+        "every_action_coefficient_composed_exactly": true,
+        "metric_trace_transitivity_checked_coefficientwise": true,
+        "operation": "entrywise scalar restriction, with no Fourier frame or source modification",
+        "width_multiplied_by_relative_degree": true
+      },
+      "literal_duplicate_pruned": false,
+      "path": [
+        4,
+        1
+      ]
+    },
+    {
+      "basis_equivalence": {
+        "Hermitian_metric_congruence_exact": true,
+        "basis_identity_exact": true,
+        "canonical_basis_exponents": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "change_over_lower_field": {
+          "denominator": 1,
+          "numerators": [
+            [
+              [
+                1
+              ],
+              [
+                -1
+              ],
+              [
+                0
+              ],
+              [
+                0
+              ]
+            ],
+            [
+              [
+                0
+              ],
+              [
+                0
+              ],
+              [
+                1
+              ],
+              [
+                -1
+              ]
+            ],
+            [
+              [
+                0
+              ],
+              [
+                1
+              ],
+              [
+                0
+              ],
+              [
+                0
+              ]
+            ],
+            [
+              [
+                0
+              ],
+              [
+                0
+              ],
+              [
+                0
+              ],
+              [
+                1
+              ]
+            ]
+          ]
+        },
+        "general_basis_equivalence_used_to_prune": false,
+        "path_basis_exponents": [
+          0,
+          4,
+          1,
+          5
+        ],
+        "scalar_conjugacy_exact": true
+      },
+      "basis_equivalence_alone_used_for_pruning": false,
+      "composition_proof": {
+        "all_original_root_powers_checked": 12,
+        "every_action_coefficient_composed_exactly": true,
+        "metric_trace_transitivity_checked_coefficientwise": true,
+        "operation": "entrywise scalar restriction, with no Fourier frame or source modification",
+        "width_multiplied_by_relative_degree": true
+      },
+      "literal_duplicate_pruned": false,
+      "path": [
+        12,
+        3,
+        1
+      ]
+    },
+    {
+      "basis_equivalence": {
+        "Hermitian_metric_congruence_exact": true,
+        "basis_identity_exact": true,
+        "canonical_basis_exponents": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "change_over_lower_field": {
+          "denominator": 1,
+          "numerators": [
+            [
+              [
+                1
+              ],
+              [
+                0
+              ],
+              [
+                0
+              ],
+              [
+                -1
+              ]
+            ],
+            [
+              [
+                0
+              ],
+              [
+                0
+              ],
+              [
+                1
+              ],
+              [
+                0
+              ]
+            ],
+            [
+              [
+                0
+              ],
+              [
+                0
+              ],
+              [
+                0
+              ],
+              [
+                1
+              ]
+            ],
+            [
+              [
+                0
+              ],
+              [
+                1
+              ],
+              [
+                0
+              ],
+              [
+                0
+              ]
+            ]
+          ]
+        },
+        "general_basis_equivalence_used_to_prune": false,
+        "path_basis_exponents": [
+          0,
+          3,
+          1,
+          4
+        ],
+        "scalar_conjugacy_exact": true
+      },
+      "basis_equivalence_alone_used_for_pruning": false,
+      "composition_proof": {
+        "all_original_root_powers_checked": 12,
+        "every_action_coefficient_composed_exactly": true,
+        "metric_trace_transitivity_checked_coefficientwise": true,
+        "operation": "entrywise scalar restriction, with no Fourier frame or source modification",
+        "width_multiplied_by_relative_degree": true
+      },
+      "literal_duplicate_pruned": false,
+      "path": [
+        12,
+        4,
+        1
+      ]
+    }
+  ],
+  "pending_tasks": 0,
+  "rational_weighted_orders": [
+    14,
+    28
+  ],
+  "node_counts_by_depth": {
+    "0": 3,
+    "1": 5,
+    "2": 2
+  },
+  "source_field_order_counts": [
+    {
+      "source": "catalogue-d14-q4",
+      "field": 1,
+      "order": 28,
+      "nodes": 1
+    },
+    {
+      "source": "catalogue-d14-q4",
+      "field": 4,
+      "order": 14,
+      "nodes": 1
+    },
+    {
+      "source": "catalogue-p7-q12",
+      "field": 1,
+      "order": 28,
+      "nodes": 3
+    },
+    {
+      "source": "catalogue-p7-q12",
+      "field": 3,
+      "order": 14,
+      "nodes": 1
+    },
+    {
+      "source": "catalogue-p7-q12",
+      "field": 4,
+      "order": 14,
+      "nodes": 1
+    },
+    {
+      "source": "catalogue-p7-q12",
+      "field": 12,
+      "order": 7,
+      "nodes": 1
+    },
+    {
+      "source": "catalogue-p7-q6",
+      "field": 1,
+      "order": 14,
+      "nodes": 1
+    },
+    {
+      "source": "catalogue-p7-q6",
+      "field": 6,
+      "order": 7,
+      "nodes": 1
+    }
+  ],
+  "uniform_sign_gate_after_inventory": {
+    "available": true,
+    "certificate": "certificates/scalar-lift/scalar-restriction-all-sources.json",
+    "certificate_sha256": "d14401060e1c028f4d3f78447d4aab24b43613bcd7c1f5600f6ddf6145f80e3c",
+    "sources": [
+      {
+        "source": "catalogue-p7-q6",
+        "phase": 6,
+        "source_order": 7,
+        "coefficient_array_sha256": "da0f5b96daca8fa67e0236320694fabfab46e41fa25ff459f004a43e2187787a",
+        "not_excluded_by_saved_alphabet_gate": true,
+        "sign_flattenability_proved": false
+      },
+      {
+        "source": "catalogue-p7-q12",
+        "phase": 12,
+        "source_order": 7,
+        "coefficient_array_sha256": "9d0465a2350a4b8a206e82c04cfbf61085aecb612baa7285ec79e6669508c201",
+        "not_excluded_by_saved_alphabet_gate": true,
+        "sign_flattenability_proved": false
+      },
+      {
+        "source": "catalogue-d14-q4",
+        "phase": 4,
+        "source_order": 14,
+        "coefficient_array_sha256": "7729e8d138ffbbcbff98bef57963ede4d4924326c408d0988797eebb69e5380f",
+        "not_excluded_by_saved_alphabet_gate": true,
+        "sign_flattenability_proved": false
+      }
+    ],
+    "weighted_inventory_pruned": false
+  },
+  "only_operations": "scalar restriction and exact literal duplicate pruning",
+  "basis_distinct_candidates_retained": true,
+  "field_scope": "full cyclotomic divisor fields; other abelian subfields are not implemented",
+  "flatness_or_Euclidean_normalization_assumed": false,
+  "all_scalar_restriction_methods_exhausted": false,
+  "new_real_Hadamard_claimed": false,
+  "storage_bytes": 95540,
+  "batch_nodes": 10,
+  "batch_seconds": 0.048102457949426025
+}

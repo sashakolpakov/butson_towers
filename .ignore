@@ -1,0 +1,12 @@
+# Keep broad source searches focused; inspect generated proof stores by path.
+/artifacts/
+/search-state/
+/experiments/scalar_lift/search-state/
+/certificates/scalar-lift/
+*.local
+.local/
+
+# Migration inventory and proof-assistant caches are inspected by exact path.
+/MIGRATION.json
+/.venv/
+/formal/.lake/

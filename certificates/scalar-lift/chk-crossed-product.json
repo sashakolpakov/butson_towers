@@ -1,0 +1,26 @@
+{
+  "scope": "Universal exact formal Gram identity for the CHK crossed-product array",
+  "coefficient_variables": [
+    "a",
+    "a*",
+    "b",
+    "b*",
+    "c",
+    "c*",
+    "d",
+    "d*"
+  ],
+  "relations": [
+    "coefficient variables commute",
+    "t^2=1",
+    "t x = x* t",
+    "t*=t"
+  ],
+  "diagonal_Gram_blocks": "aa*+bb*+cc*+dd*",
+  "off_diagonal_Gram_blocks": "identically zero",
+  "all_16_Gram_blocks_checked": true,
+  "specialization": "quaternary circulants realified in dimension 2; t=reverse tensor diag(1,-1)",
+  "flattening": "right multiply each 2x2 signed permutation block by H2",
+  "result": "four complementary quaternary sequences of length n give an all-sign H(8n)",
+  "novelty_claimed": false
+}

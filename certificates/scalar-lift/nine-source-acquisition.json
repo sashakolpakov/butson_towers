@@ -1,0 +1,220 @@
+{
+  "literal_exponents": [
+    [
+      4,
+      4,
+      2,
+      5,
+      1,
+      5,
+      5,
+      1,
+      5
+    ],
+    [
+      2,
+      4,
+      4,
+      5,
+      5,
+      1,
+      5,
+      5,
+      1
+    ],
+    [
+      4,
+      2,
+      4,
+      1,
+      5,
+      5,
+      1,
+      5,
+      5
+    ],
+    [
+      5,
+      1,
+      5,
+      4,
+      4,
+      2,
+      5,
+      1,
+      5
+    ],
+    [
+      5,
+      5,
+      1,
+      2,
+      4,
+      4,
+      5,
+      5,
+      1
+    ],
+    [
+      1,
+      5,
+      5,
+      4,
+      2,
+      4,
+      1,
+      5,
+      5
+    ],
+    [
+      5,
+      1,
+      5,
+      5,
+      1,
+      5,
+      4,
+      4,
+      2
+    ],
+    [
+      5,
+      5,
+      1,
+      5,
+      5,
+      1,
+      2,
+      4,
+      4
+    ],
+    [
+      1,
+      5,
+      5,
+      1,
+      5,
+      5,
+      4,
+      2,
+      4
+    ]
+  ],
+  "period_field_preflight": [
+    {
+      "actual_period_multiplication_not_built_by_this_module": true,
+      "compositum": "Q(zeta12) times the real degree191 period field",
+      "compositum_degree": 764,
+      "degree_reason": "coprime field degrees4 and191",
+      "norm_equality_value": 894835625,
+      "norm_witness_a_b_t": [
+        27861,
+        788,
+        25
+      ],
+      "order_of_two": 1874,
+      "prime_conductor": 1431737,
+      "rational_source_matrix_order": 6876,
+      "real_period_degree": 191,
+      "sign_flattenability_proved": false,
+      "subgroup_order": 7496,
+      "trace_basis_parity": "a,t odd; b even; resulting S is identity modulo2",
+      "two_splits_completely": true
+    },
+    {
+      "actual_period_multiplication_not_built_by_this_module": true,
+      "compositum": "Q(zeta12) times the real degree191 period field",
+      "compositum_degree": 764,
+      "degree_reason": "coprime field degrees4 and191",
+      "norm_equality_value": 37989925,
+      "norm_witness_a_b_t": [
+        2669,
+        402,
+        5
+      ],
+      "order_of_two": 7956,
+      "prime_conductor": 1519597,
+      "rational_source_matrix_order": 6876,
+      "real_period_degree": 191,
+      "sign_flattenability_proved": false,
+      "subgroup_order": 7956,
+      "trace_basis_parity": "a,t odd; b even; resulting S is identity modulo2",
+      "two_splits_completely": true
+    },
+    {
+      "actual_period_multiplication_not_built_by_this_module": true,
+      "compositum": "Q(zeta12) times the real degree191 period field",
+      "compositum_degree": 764,
+      "degree_reason": "coprime field degrees4 and191",
+      "norm_equality_value": 16378641,
+      "norm_witness_a_b_t": [
+        2671,
+        220,
+        3
+      ],
+      "order_of_two": 2382,
+      "prime_conductor": 1819849,
+      "rational_source_matrix_order": 6876,
+      "real_period_degree": 191,
+      "sign_flattenability_proved": false,
+      "subgroup_order": 9528,
+      "trace_basis_parity": "a,t odd; b even; resulting S is identity modulo2",
+      "two_splits_completely": true
+    }
+  ],
+  "phase_field_degree_divides764": true,
+  "projective_field_degree": 2,
+  "projective_root_order": 6,
+  "real_Hadamard_of_order6876_constructed": false,
+  "schema": "saved-order-nine-source-acquisition-v1",
+  "source": {
+    "dense_exponents_available": true,
+    "id": "saved-unreal9-q6",
+    "order": 9,
+    "phase": 6,
+    "proof": {
+      "acquisition": "read literal entries from an existing certificate",
+      "exponent_sha256": "ef412f4ec5d8416f900c1e3d6059cb3d9771e1ae6bcd9f9fa378aed78abda127",
+      "family_reference_recorded_by_prior_artifact": "https://link.springer.com/article/10.1007/s10623-015-0045-y",
+      "full_Gram_verified": true,
+      "odd_integer_relation_gate": {
+        "complete_for_odd_integer_relations": true,
+        "embedding_modulus": 30,
+        "excluded": false,
+        "field_towers_or_bases_enumerated": false,
+        "nonuniform_coordinate_maps_excluded": false,
+        "phase": 6,
+        "profiles_checked": 20,
+        "reason": "no odd integer relation",
+        "scope": "every uniform Q-linear map of the actual scalar alphabet to equally sized sign blocks, including all scalar-restriction towers, uniform input/output basis choices, and representation multiplicities",
+        "sign_flattenability_proved": false,
+        "source_row_column_gauges_searched": false,
+        "status": "SKIP",
+        "used_alphabet": [
+          1,
+          2,
+          4,
+          5
+        ]
+      },
+      "order": 9,
+      "phase": 6,
+      "prior_certificate": "certificates/scalar-lift/inverse-dense-lifts.json",
+      "prior_file_sha256_at_acquisition": "0bc5859820c53953f3a9de19cd8e70d425a782e11da16b2c3632f30b8f2b05f4",
+      "prior_file_sha256_now": "0bc5859820c53953f3a9de19cd8e70d425a782e11da16b2c3632f30b8f2b05f4",
+      "prior_record_name": "unreal-order-nine-by-tripling",
+      "prior_record_sha256": "b78a2e434048f4ce2e197dff4389b55ded30605ffb1d56bc4e67cb0345198e4f",
+      "source_construction_performed": false,
+      "verification": "complete exact column Gram; square invertibility gives the row Gram"
+    },
+    "source_hash": "ef412f4ec5d8416f900c1e3d6059cb3d9771e1ae6bcd9f9fa378aed78abda127",
+    "used_alphabet": [
+      1,
+      2,
+      4,
+      5
+    ]
+  },
+  "source_construction_tree_edge_added": false,
+  "target_arithmetic": "6876=9*764=9*4*191"
+}

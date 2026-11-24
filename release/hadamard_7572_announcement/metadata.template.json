@@ -1,0 +1,39 @@
+{
+  "title": "New Hadamard orders and infinite families by restriction of scalars",
+  "abstract": "We construct real Hadamard matrices at eighteen new orders, to the best of the author's knowledge, and give five explicit infinite construction families. A complete periodic T-matrix design of order 631 provides a verified flat scalar frame for Q(zeta_6), giving orders 7572, 17668, 22716, 32812, 98436 and 295308. Restricting complete weighted orthogonal designs from products of cyclotomic fields gives eight further new orders: 42908, 58052, 73196, 78244, 93388, 108532, 128724 and 153964. Exact Williamson recurrences give families 17668*13^r, 22716*17^r, 78244*61^r, 128724*101^r and 153964*121^r for every integer r >= 0. Their first expansions give four further new orders: 229684, 386172, 4772884 and 13001124; the fifth first expansion is known. All source Grams, transported metrics and terminal sign-entry conditions are proved exactly. We also give new periodic circulant T-matrices of order 127. Standalone reconstruction and verification programs are included. The literature comparison is dated 24 November 2026.",
+  "subject": "math.CO",
+  "crossListSubjects": [],
+  "mscCodes": [
+    "05B20",
+    "15B34"
+  ],
+  "tags": [
+    "Hadamard matrices",
+    "Butson matrices",
+    "restriction of scalars",
+    "finite fields",
+    "computer-assisted proof"
+  ],
+  "authors": [
+    {
+      "name": "Alexander Kolpakov",
+      "orcid": "0000-0002-6764-8894",
+      "affiliation": null,
+      "contributorKind": "person",
+      "organizationId": null
+    }
+  ],
+  "submittingContributorIndex": 0,
+  "sponsorName": "Alexander Kolpakov",
+  "submittingOrganizationId": null,
+  "arxivId": null,
+  "authorshipMode": "mixed",
+  "humanUnderstanding": "some",
+  "provenance": "The author reviewed this manuscript to the extent expected of a referee. Ideas supplied by the author have known provenance; for ideas originating with the AI, the author cannot always trace how the model arrived at them. The human-understanding declaration is therefore some; the review is not a guarantee of correctness.\n\nThe author proposed the scalar-reduction viewpoint and projective-flatness formulation. OpenAI Codex and its automated collaborators developed the finite-field parameterization, search implementation, computations, automated cross-checks and initial text.",
+  "license": "CC BY-SA 4.0",
+  "correctnessConfirmed": true,
+  "communityInterestConfirmed": true,
+  "citationsConfirmed": true,
+  "rightsConfirmed": true,
+  "comments": "5 pages. Eighteen new real Hadamard orders to the best of the author's knowledge; five constructive infinite families; new periodic T-matrices of order 127. Includes standalone Python/NumPy recipes, exact source and endpoint Gram proofs, and a separate optional SymPy trace audit. H7572 was independently checked on all 28,663,806 distinct row pairs. Large endpoints have literal entry and row recipes with complete algebraic Gram proofs. Known orders are identified individually in the ancillary status records."
+}

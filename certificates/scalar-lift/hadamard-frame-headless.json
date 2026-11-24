@@ -1,0 +1,105 @@
+{
+  "schema": "headless-single-factor-SL2-conditional-controls-v1",
+  "active_source_sha256": {
+    "experiments/scalar_lift/hadamard_frame_search.py": "486cdef73d1e10ae81644d6a0d21e1a85257f8d5c93e79a6ff812dbfdcdacc79",
+    "experiments/scalar_lift/hadamard_frame_search.cpp": "0b8ccb45d64354a4d37ec72d3f3ea71be45200a380757654ec3f5ffa8acc4c4d"
+  },
+  "prototype_sources_and_campaign_sha256": {
+    "scope": "oneboundedheadlessT1453search;noendpointclaimed",
+    "seconds_cap": 600,
+    "seed": 202611261454,
+    "source_and_input_sha256": {
+      "artifacts/scalar-frontier/headless1453-engine/headless.cpp": "4fca4334cce4de0d159da23ea8f0b0c04446522c085341d3bf89a72d1a8983a8",
+      "artifacts/scalar-frontier/headless1453-engine/kernel.cpp": "aa14495bcb6804fb1886089870b977daed6e89c80c9c16a59f7f3efe7d09f4aa",
+      "/private/tmp/hadamard-headless": "6b12348913bbcbeaf9eb36d7ea1a8e974f93f270779e3b89f889ee971296a938",
+      "certificates/scalar-lift/hadamard-frame-p1453.json": "a179c1b049742bb76fbdc7306d82fa3ff533300b4e5d87cb32d79d7c1d072d69"
+    },
+    "conditional_generation": "uniformnonzeroSL2firstrows;alladmissiblew emittedperrow;notiidaxisdraws",
+    "gauge": "bprime(x)=C^k*b(r*x), positiveb(r)chosen; origin+e0andcommonpositivetailDCpreserved",
+    "small_control": "control13-validation.json",
+    "full_w_controls": [
+      "full-w-control.json",
+      "zero-p-control.json"
+    ]
+  },
+  "gauge_proof": [
+    "head_net0andtail_netpositive;inheadlessstratumeverypositiveorbitisatail",
+    "Choosepositiveb(r), multiplycoordinatesbyr andcyclicallyrotatetailchannelto1",
+    "Thispreservesorigin+e0, commonpositivetailDC, multipliercovarianceandallperiodiccorrelations",
+    "No globalsignflipneeded; firstsignpositiveandfirsttailaxis1arecompletegaugesforthisstratum"
+  ],
+  "sampling_scope": "Alladmissiblew emittedperuniformlysamplednonzeroSL2firstrow;uniformvisitintensity,notiidaxisdraws",
+  "complete_small_positive_control": {
+    "small_chart": "p13,m3,k0,firsttailaxis1,firstsignpositive,tailnet2",
+    "SL2_total_points": 60,
+    "all_nonzero_first_rows_exhausted": 15,
+    "complete_conditional_axis_set_size": 12,
+    "complete_exact_T13_solution_set_size": 18,
+    "conditional_axis_and_sign_sets_equal_independent_brute": true,
+    "H156_full_integer_Gram_verified": true
+  },
+  "actual_degree22_complete_w_controls": [
+    {
+      "p_field": 4112976,
+      "q_field": 4149651,
+      "all_w_checked": 4194304,
+      "first_axis_affine_space_size": 1048576,
+      "headless_w_count": 9,
+      "complete_w_sets_equal": true,
+      "naive_seconds": 0.135435,
+      "conditional_seconds": 0.000639834
+    },
+    {
+      "p_field": 0,
+      "q_field": 123456,
+      "all_w_checked": 4194304,
+      "first_axis_affine_space_size": 1048576,
+      "headless_w_count": 11,
+      "complete_w_sets_equal": true,
+      "naive_seconds": 0.103165,
+      "conditional_seconds": 0.000638875
+    }
+  ],
+  "bounded_10_second_calibration": {
+    "p": 1453,
+    "m": 33,
+    "mu": 1321,
+    "pairs": 1131,
+    "conditional_w_cardinality_sum": 1185939456,
+    "headless_axes": 10044,
+    "sign_kernel_cardinality_sum": 21063794688,
+    "mod8": 10086,
+    "DC": 2382,
+    "seconds": 10.0065,
+    "headless_first_axis": 1,
+    "first_sign_negative": false,
+    "records": [],
+    "new_order_claimed": false
+  },
+  "manual_public_CLI_positive_control": {
+    "p": 13,
+    "endpoint_order": 156,
+    "full_integer_Gram_verified": true,
+    "source_capture_phase": "before_native_build_and_search"
+  },
+  "largest_validated_field_degree": 22,
+  "no_new_Hadamard_order_claimed": true,
+  "long_campaign_status": "terminal, no Tzero",
+  "bounded_600_second_campaign": {
+    "p": 1453,
+    "m": 33,
+    "mu": 1321,
+    "pairs": 78085,
+    "conditional_w_cardinality_sum": 81878056960,
+    "headless_axes": 695235,
+    "sign_kernel_cardinality_sum": 1458011373568,
+    "mod8": 696661,
+    "DC": 166311,
+    "seconds": 600.001,
+    "headless_first_axis": 1,
+    "first_sign_negative": false,
+    "records": [],
+    "new_order_claimed": false
+  },
+  "campaign_new_order_claimed": false
+}

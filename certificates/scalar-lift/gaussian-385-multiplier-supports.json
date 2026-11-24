@@ -1,0 +1,409 @@
+{
+  "schema": "gaussian-385-multiplier-supports-v1",
+  "length": 385,
+  "weight": 41,
+  "hypothesis": "Gaussian norm41 multiplier and divisor11 descent force exactly two opposite ten-orbits",
+  "required_multiplier": 41,
+  "small_orbit_count": 20,
+  "large_orbit_count": 35,
+  "pair_symmetry": "AGL(1,F5) times F7 multiplicative group; order120",
+  "all_labelled_pairs_independently_eliminated": 595,
+  "inconsistent_labelled_pairs": 585,
+  "pair_class_count": 10,
+  "cases": [
+    {
+      "pair": [
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          1
+        ]
+      ],
+      "small_orbit_variables": 20,
+      "coefficient_rank": 6,
+      "augmented_rank": 7,
+      "affine_dimension": 14,
+      "particular": null,
+      "kernel_masks": [
+        1,
+        2,
+        4,
+        8,
+        240,
+        3840,
+        4352,
+        8704,
+        17408,
+        34560,
+        65552,
+        131104,
+        262208,
+        524400
+      ],
+      "inconsistent": true,
+      "affine_assignments_checked": 0,
+      "weight41_supports_checked": 0,
+      "binary_norm_one_weight41_supports": 0,
+      "pair_orbit_size": 30
+    },
+    {
+      "pair": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          0
+        ]
+      ],
+      "small_orbit_variables": 20,
+      "coefficient_rank": 8,
+      "augmented_rank": 8,
+      "affine_dimension": 12,
+      "particular": 1,
+      "kernel_masks": [
+        17,
+        34,
+        68,
+        136,
+        4096,
+        8192,
+        16384,
+        32768,
+        65792,
+        131584,
+        263168,
+        526336
+      ],
+      "inconsistent": false,
+      "affine_assignments_checked": 4096,
+      "weight41_supports_checked": 232,
+      "binary_norm_one_weight41_supports": 0,
+      "weight_histogram": {
+        "21": 2,
+        "22": 2,
+        "23": 8,
+        "24": 8,
+        "25": 24,
+        "26": 24,
+        "27": 56,
+        "28": 56,
+        "29": 104,
+        "30": 104,
+        "31": 168,
+        "32": 168,
+        "33": 232,
+        "34": 232,
+        "35": 280,
+        "36": 280,
+        "37": 300,
+        "38": 300,
+        "39": 280,
+        "40": 280,
+        "41": 232,
+        "42": 232,
+        "43": 168,
+        "44": 168,
+        "45": 104,
+        "46": 104,
+        "47": 56,
+        "48": 56,
+        "49": 24,
+        "50": 24,
+        "51": 8,
+        "52": 8,
+        "53": 2,
+        "54": 2
+      },
+      "first_odd_intersection_lag_counts": {
+        "11": 98,
+        "22": 64,
+        "33": 34,
+        "44": 18,
+        "55": 8,
+        "88": 4,
+        "99": 4,
+        "110": 2
+      },
+      "pair_orbit_size": 10
+    },
+    {
+      "pair": [
+        [
+          0,
+          0
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "small_orbit_variables": 20,
+      "coefficient_rank": 14,
+      "augmented_rank": 15,
+      "affine_dimension": 6,
+      "particular": null,
+      "kernel_masks": [
+        255,
+        61440,
+        69905,
+        139810,
+        279620,
+        555127
+      ],
+      "inconsistent": true,
+      "affine_assignments_checked": 0,
+      "weight41_supports_checked": 0,
+      "binary_norm_one_weight41_supports": 0,
+      "pair_orbit_size": 120
+    },
+    {
+      "pair": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      "small_orbit_variables": 20,
+      "coefficient_rank": 6,
+      "augmented_rank": 7,
+      "affine_dimension": 14,
+      "particular": null,
+      "kernel_masks": [
+        1,
+        2,
+        4,
+        8,
+        240,
+        3840,
+        4352,
+        8704,
+        17408,
+        34560,
+        65552,
+        131104,
+        262208,
+        524400
+      ],
+      "inconsistent": true,
+      "affine_assignments_checked": 0,
+      "weight41_supports_checked": 0,
+      "binary_norm_one_weight41_supports": 0,
+      "pair_orbit_size": 30
+    },
+    {
+      "pair": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          3
+        ]
+      ],
+      "small_orbit_variables": 20,
+      "coefficient_rank": 6,
+      "augmented_rank": 7,
+      "affine_dimension": 14,
+      "particular": null,
+      "kernel_masks": [
+        1,
+        2,
+        4,
+        8,
+        240,
+        3840,
+        4352,
+        8704,
+        17408,
+        34560,
+        65552,
+        131104,
+        262208,
+        524400
+      ],
+      "inconsistent": true,
+      "affine_assignments_checked": 0,
+      "weight41_supports_checked": 0,
+      "binary_norm_one_weight41_supports": 0,
+      "pair_orbit_size": 30
+    },
+    {
+      "pair": [
+        [
+          0,
+          1
+        ],
+        [
+          0,
+          6
+        ]
+      ],
+      "small_orbit_variables": 20,
+      "coefficient_rank": 6,
+      "augmented_rank": 7,
+      "affine_dimension": 14,
+      "particular": null,
+      "kernel_masks": [
+        1,
+        2,
+        4,
+        8,
+        240,
+        3840,
+        4352,
+        8704,
+        17408,
+        34560,
+        65552,
+        131104,
+        262208,
+        524400
+      ],
+      "inconsistent": true,
+      "affine_assignments_checked": 0,
+      "weight41_supports_checked": 0,
+      "binary_norm_one_weight41_supports": 0,
+      "pair_orbit_size": 15
+    },
+    {
+      "pair": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      "small_orbit_variables": 20,
+      "coefficient_rank": 8,
+      "augmented_rank": 9,
+      "affine_dimension": 12,
+      "particular": null,
+      "kernel_masks": [
+        17,
+        34,
+        68,
+        136,
+        4096,
+        8192,
+        16384,
+        32768,
+        65792,
+        131584,
+        263168,
+        526336
+      ],
+      "inconsistent": true,
+      "affine_assignments_checked": 0,
+      "weight41_supports_checked": 0,
+      "binary_norm_one_weight41_supports": 0,
+      "pair_orbit_size": 60
+    },
+    {
+      "pair": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      "small_orbit_variables": 20,
+      "coefficient_rank": 14,
+      "augmented_rank": 15,
+      "affine_dimension": 6,
+      "particular": null,
+      "kernel_masks": [
+        255,
+        61440,
+        69905,
+        139810,
+        279620,
+        555127
+      ],
+      "inconsistent": true,
+      "affine_assignments_checked": 0,
+      "weight41_supports_checked": 0,
+      "binary_norm_one_weight41_supports": 0,
+      "pair_orbit_size": 120
+    },
+    {
+      "pair": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          3
+        ]
+      ],
+      "small_orbit_variables": 20,
+      "coefficient_rank": 14,
+      "augmented_rank": 15,
+      "affine_dimension": 6,
+      "particular": null,
+      "kernel_masks": [
+        255,
+        61440,
+        69905,
+        139810,
+        279620,
+        555127
+      ],
+      "inconsistent": true,
+      "affine_assignments_checked": 0,
+      "weight41_supports_checked": 0,
+      "binary_norm_one_weight41_supports": 0,
+      "pair_orbit_size": 120
+    },
+    {
+      "pair": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          6
+        ]
+      ],
+      "small_orbit_variables": 20,
+      "coefficient_rank": 14,
+      "augmented_rank": 15,
+      "affine_dimension": 6,
+      "particular": null,
+      "kernel_masks": [
+        255,
+        61440,
+        69905,
+        139810,
+        279620,
+        555127
+      ],
+      "inconsistent": true,
+      "affine_assignments_checked": 0,
+      "weight41_supports_checked": 0,
+      "binary_norm_one_weight41_supports": 0,
+      "pair_orbit_size": 60
+    }
+  ],
+  "surviving_weight41_binary_supports": 0,
+  "Gaussian_circulant_CW385_weight41_excluded": true,
+  "all_phase120_weighing_matrices_or_Butson1499_sources_excluded": false,
+  "fifth_root_coefficients_not_reduced_to_binary_support": true
+}

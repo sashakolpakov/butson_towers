@@ -1,0 +1,63 @@
+{
+  "schema": "hadamard.even-circulant-full-PAF-probe.v1",
+  "external_watchdog_triggered": false,
+  "worker_reaped": true,
+  "worker_returncode": 0,
+  "probe": {
+    "prime": 1499,
+    "source_order": 2998,
+    "phase": 24,
+    "target_real_orders": [
+      23984,
+      47968
+    ],
+    "multiplier_order": 14,
+    "sequence_orbits": 108,
+    "same_cubic_support": true,
+    "centers": [
+      0,
+      0
+    ],
+    "row_sector": [
+      "-41",
+      "-41-28omega"
+    ],
+    "row_sector_is_a_restriction": true,
+    "full_nonzero_orbit_PAF_constraints": 107,
+    "independent_real_field_coordinates": [
+      0,
+      1,
+      2,
+      5
+    ],
+    "distinct_orbit_pairs": 5778,
+    "model_variables": 60027,
+    "model_constraints": 60151,
+    "serialized_model_bytes": 9814450,
+    "model_build_seconds": 0.8413559170148801,
+    "positive_control": {
+      "known_control_only": true,
+      "source_order": 6,
+      "all_PAFs_and_full_source_Gram_verified": true,
+      "sign_lift_orders_with_full_Gram_verified": [
+        48,
+        96
+      ],
+      "q24_width8_alignment": "e -> -e modulo24",
+      "q24_to_q48_width16_alignment": "e -> 2e modulo48"
+    },
+    "solver_status": "UNKNOWN",
+    "workers": 1,
+    "native_time_limit_seconds": 45.0,
+    "wall_seconds": 45.080246625002474,
+    "branches": 119219,
+    "conflicts": 1892,
+    "raw_phase_residues_modulo_three": [
+      0,
+      2
+    ],
+    "width8_alignment": "conjugate all source entries",
+    "width16_alignment": "embed e -> 2e in phase48"
+  },
+  "post_run_control_replay": "Exact source and sign controls replayed after adding explicit alphabet-alignment validation; solver was not rerun."
+}

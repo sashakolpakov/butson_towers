@@ -1,0 +1,161 @@
+{
+  "schema": "hexagon-h7572-source-preparation-v1",
+  "origin": "https://hexagonmath.org",
+  "source_archive": "source.zip",
+  "source_archive_sha256": "a236a7ab84069ca9a9d85816d4ec872a93d0f3a3fe124fabaf40f2a947824ea5",
+  "source_archive_members": [
+    {
+      "path": "main.tex",
+      "bytes": 20232,
+      "sha256": "b9b860e21e2a1f317f57b5315aad67c2b67060d7c14922a2004580f091be263b"
+    },
+    {
+      "path": "anc/recipe.py",
+      "bytes": 9493,
+      "sha256": "a839a6052b2bd6b55170304318099e61cc62b1b9e3d525834a4d131bd9900ec8"
+    },
+    {
+      "path": "anc/t631.json",
+      "bytes": 47917,
+      "sha256": "c5497ef485a23f1c99385035eaf02472b4dad4dee9d906d0d6b2aeb2f3680871"
+    },
+    {
+      "path": "anc/certificate.json",
+      "bytes": 13741,
+      "sha256": "5c37e95c97ded5025b7b5bd92b9c994a09f419426a04e564872eda4b19f899b1"
+    },
+    {
+      "path": "anc/novelty.json",
+      "bytes": 5134,
+      "sha256": "829843ade6a51400ab7c4d75cbc90fd824991da2bbb6e404320dc75de0e0bdb2"
+    },
+    {
+      "path": "anc/independent-sequences.json",
+      "bytes": 1878,
+      "sha256": "c1ca2b0a7ba5e17249e6992f546e29bfa32cdfdeafdc5715fbc282f6f9fbccb7"
+    },
+    {
+      "path": "anc/independent-full-npz-audit.json",
+      "bytes": 995,
+      "sha256": "a0d113c0d47c6acc8c8616e31590cab75071ca3389dce7ea8b9d229bbddbe388"
+    },
+    {
+      "path": "anc/independent-scalar-frame-audit.json",
+      "bytes": 2819,
+      "sha256": "a6ebe4eac2ae9691fb5890a2a53d8a84882cb80d36f3cb0c9a523933442cb004"
+    },
+    {
+      "path": "anc/frame-reuse.json",
+      "bytes": 20890,
+      "sha256": "1e2dfc6aa7f5c6b8d278e43904549176d806fe1efb2a39b250175024a2300370"
+    },
+    {
+      "path": "anc/reuse.py",
+      "bytes": 5851,
+      "sha256": "84503df0b23df273e976f968f48281699eb42d33e378df02c277d00a81223d92"
+    },
+    {
+      "path": "anc/t127/t127.json",
+      "bytes": 10545,
+      "sha256": "4a415276e4c1f0360fe4e6bc6ca88d24955cda2b5c5297dbc44a6d63a0bf7a2b"
+    },
+    {
+      "path": "anc/t127/recipe.py",
+      "bytes": 10040,
+      "sha256": "a48c93678cc6b4a82a7c87f6c955cb4fd736c91ccbc25aee5c59554f0a556056"
+    },
+    {
+      "path": "anc/t127/certificate.json",
+      "bytes": 10780,
+      "sha256": "e2349b3185207d50aa66862d191afc93592b84ea9548ae14aeb4b1ee1a5eaed3"
+    },
+    {
+      "path": "anc/t127/independent-audit.json",
+      "bytes": 3097,
+      "sha256": "ca77c1cbab84e6d82ed482ea5c55a53d39c394adc8a48c5d5eb8e9876a9a4d56"
+    },
+    {
+      "path": "anc/t127/novelty.json",
+      "bytes": 11976,
+      "sha256": "bb77855a822ab955d6061b159bf56370dfbd88e3d4fa32119e851a57a20e3bb9"
+    },
+    {
+      "path": "anc/williamson_scalar_endpoints.py",
+      "bytes": 22215,
+      "sha256": "990d193441cc3c64366826495190db39862e78d970ec6cae87dc9594805e1270"
+    },
+    {
+      "path": "anc/williamson_spence_family.py",
+      "bytes": 19631,
+      "sha256": "4ecae4bb17fa18a0a0f06a8018d952a36ac209c9ca813312a25efbee0e38995a"
+    },
+    {
+      "path": "anc/williamson_cyclotomic_trace_audit.py",
+      "bytes": 12360,
+      "sha256": "90c6129d79cc6b07409c04a43ce373de9d9294a48f672a618a97e05917a5575e"
+    },
+    {
+      "path": "anc/williamson_inputs.json",
+      "bytes": 22585,
+      "sha256": "242f554cf113c68ab882e147c3b2702b7bb62e68b66ad36b16c92b6c194f8560"
+    },
+    {
+      "path": "anc/williamson_order_status.json",
+      "bytes": 28033,
+      "sha256": "74dd93f23c72a9d2bb828eaf7b7ca0b190b32e9000dd97bb99b6a7da095a49ea"
+    },
+    {
+      "path": "anc/williamson_family_order_status.json",
+      "bytes": 25670,
+      "sha256": "cba7867ea88f9f22f0319fc4c2d6af71f23d617b3446fce02d3ff2791c82208b"
+    },
+    {
+      "path": "anc/williamson-scalar-endpoints.json",
+      "bytes": 165408,
+      "sha256": "346b1e57671605d8cc0dcafa415f8cabe62154feb18d653a67c3f59188f7dc38"
+    },
+    {
+      "path": "anc/williamson-scalar-known-control.json",
+      "bytes": 9041,
+      "sha256": "3075adff1d23d28169b6cd5b1678ebc282651888e8c280644c5c35d3c2254fa2"
+    },
+    {
+      "path": "anc/williamson-family-endpoints.json",
+      "bytes": 203162,
+      "sha256": "758dc7bf6c269e89f3142332789d468d17ac31fa5dbfa362278ca49fc76d2ca6"
+    },
+    {
+      "path": "anc/williamson-spence-family.json",
+      "bytes": 24352,
+      "sha256": "0ab2ac65129b6c8ac7ee97396847bcc000515473ba03b34a2da3c27715ede0ed"
+    },
+    {
+      "path": "anc/williamson-cyclotomic-trace-audit.json",
+      "bytes": 46815,
+      "sha256": "3ac485aabd5191df41061c369cfd6d51833e9c7cb1683e6c0aeeb30e8a21ab4a"
+    },
+    {
+      "path": "anc/manifest.json",
+      "bytes": 5173,
+      "sha256": "9ca8f67be21c97a9742fb03cd4111951345894b61ea47b7f4bcd60b427121b6c"
+    }
+  ],
+  "upload_request": {
+    "kind": "source-archive",
+    "filename": "source.zip",
+    "relativePath": "source.zip",
+    "contentType": "application/zip",
+    "sizeBytes": 113102
+  },
+  "entry_point_after_expansion": "main.tex",
+  "reference_pdf": "announcement.pdf",
+  "reference_pdf_sha256": "88638d172f419c62f39be19bdaf0283e35e5a74cb2d0134b91f2f389ff8da83f",
+  "pages": 5,
+  "metadata_file": "metadata.template.json",
+  "metadata_sha256": "32d633081d5c41197d8a8a88c71d00573587e4243aa67d1fd2b51b6e62dc0e89",
+  "api_contract": "api-contract.json",
+  "api_schema_sha256": "4cc8635cc8d6c440b52009d41c8fa285f647297d54e1b74bcc7ed69f9d258df8",
+  "api_schema_version": "1.13.0-beta",
+  "credential_included": false,
+  "copyrighted_primary_source_copies_included": false
+}

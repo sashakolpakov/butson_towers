@@ -1,0 +1,311 @@
+{
+  "schema": "gaussian-weighing-phases-v1",
+  "target": "fixed-support CW(55,41)",
+  "positive_control": {
+    "length": 4,
+    "weight": 4,
+    "support_positions": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "row_sum": [
+      2,
+      0
+    ],
+    "compression": null,
+    "preflight": {
+      "length": 4,
+      "weight": 4,
+      "support_positions": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "row_sum": [
+        2,
+        0
+      ],
+      "support_overlap_counts": [
+        4,
+        4,
+        4,
+        4
+      ],
+      "compression": null,
+      "necessary_conditions_pass": true,
+      "failures": []
+    },
+    "solver_seconds_limit": 1.0,
+    "solver_workers": 1,
+    "solver_seed": 41055,
+    "phase_variable_count": 4,
+    "pair_difference_variable_count": 6,
+    "enforced_shifts": [
+      1,
+      2
+    ],
+    "complete_gaussian_weighing_matrix_constructed": true,
+    "source_or_corner_constructed": false,
+    "status": "OPTIMAL",
+    "solver_called": true,
+    "phase_exponents_with_null_zeros": [
+      3,
+      0,
+      1,
+      0
+    ],
+    "gaussian_sequence": [
+      [
+        0,
+        -1
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        1,
+        0
+      ]
+    ],
+    "independent_verification": {
+      "all_entries_zero_or_Gaussian_units": true,
+      "exact_support_verified": true,
+      "all_periodic_autocorrelations": [
+        [
+          4,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "full_circulant_Gram_equals_weight_I": true,
+      "row_sum": [
+        2,
+        0
+      ],
+      "compression_verified": false,
+      "Butson_source_or_corner_completion_claimed": false
+    }
+  },
+  "odd_length_sparse_control": {
+    "length": 7,
+    "weight": 4,
+    "support_positions": [
+      0,
+      1,
+      2,
+      4
+    ],
+    "row_sum": [
+      2,
+      0
+    ],
+    "compression": null,
+    "preflight": {
+      "length": 7,
+      "weight": 4,
+      "support_positions": [
+        0,
+        1,
+        2,
+        4
+      ],
+      "row_sum": [
+        2,
+        0
+      ],
+      "support_overlap_counts": [
+        4,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "compression": null,
+      "necessary_conditions_pass": true,
+      "failures": []
+    },
+    "solver_seconds_limit": 1.0,
+    "solver_workers": 1,
+    "solver_seed": 41055,
+    "phase_variable_count": 4,
+    "pair_difference_variable_count": 6,
+    "enforced_shifts": [
+      1,
+      2,
+      3
+    ],
+    "complete_gaussian_weighing_matrix_constructed": true,
+    "source_or_corner_constructed": false,
+    "status": "OPTIMAL",
+    "solver_called": true,
+    "phase_exponents_with_null_zeros": [
+      2,
+      0,
+      0,
+      null,
+      0,
+      null,
+      null
+    ],
+    "gaussian_sequence": [
+      [
+        -1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        1,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    "independent_verification": {
+      "all_entries_zero_or_Gaussian_units": true,
+      "exact_support_verified": true,
+      "all_periodic_autocorrelations": [
+        [
+          4,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ],
+        [
+          0,
+          0
+        ]
+      ],
+      "full_circulant_Gram_equals_weight_I": true,
+      "row_sum": [
+        2,
+        0
+      ],
+      "compression_verified": false,
+      "Butson_source_or_corner_completion_claimed": false
+    }
+  },
+  "negative_support_parity_control": {
+    "length": 5,
+    "weight": 5,
+    "support_positions": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "row_sum": [
+      1,
+      2
+    ],
+    "compression": null,
+    "preflight": {
+      "length": 5,
+      "weight": 5,
+      "support_positions": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "row_sum": [
+        1,
+        2
+      ],
+      "support_overlap_counts": [
+        5,
+        5,
+        5,
+        5,
+        5
+      ],
+      "compression": null,
+      "necessary_conditions_pass": false,
+      "failures": [
+        {
+          "kind": "odd_support_autocorrelation",
+          "shifts": [
+            1,
+            2,
+            3,
+            4
+          ]
+        }
+      ]
+    },
+    "solver_seconds_limit": 1.0,
+    "solver_workers": 1,
+    "solver_seed": 41055,
+    "phase_variable_count": 5,
+    "pair_difference_variable_count": 10,
+    "enforced_shifts": [
+      1,
+      2
+    ],
+    "complete_gaussian_weighing_matrix_constructed": false,
+    "source_or_corner_constructed": false,
+    "status": "EXCLUDED_BY_EXACT_PREFLIGHT",
+    "solver_called": false
+  },
+  "solver_limit_per_support_seconds": 5,
+  "solver_workers": 1,
+  "unknown_status_is_not_an_exclusion": true,
+  "large_weighing_matrix_or_source_claimed_by_controls": false
+}

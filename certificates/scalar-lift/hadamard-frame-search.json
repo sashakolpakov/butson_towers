@@ -1,0 +1,93 @@
+{
+  "schema": "active-hadamard-frame-search-controls-v1",
+  "method": "exact SL2 parity axis generation, affine mod4 sign solve, bit-parallel mod8 filtering, full integer endpoint verification",
+  "self_test": {
+    "parity_map": {
+      "color_map_rank": 60,
+      "determinant_map_rank": 15,
+      "full_quadratic_coefficients_checked": 1831,
+      "exact_identity": "Cabs mod2=L(p*b1+q*b0+1), L invertible"
+    },
+    "complete_T19_axis_patterns": 90,
+    "small_control_scope": "p19,m3,k3,origin/first-head positive,DC(4,1,1,1)",
+    "complete_T19_solution_set_size": 150,
+    "small_endpoint_order": 228,
+    "small_endpoint_integer_Gram_verified": true,
+    "target_affine_masks_checked": 8192,
+    "target_complete_mod8_survivor_set_size": 1,
+    "planted_T631_retained": true,
+    "independent_prime_repeat_parity_map": {
+      "color_map_rank": 36,
+      "determinant_map_rank": 9,
+      "full_quadratic_coefficients_checked": 667,
+      "exact_identity": "Cabs mod2=L(p*b1+q*b0+1), L invertible"
+    },
+    "independent_prime_repeat_endpoint_order": 3252,
+    "independent_prime_repeat_full_integer_Gram_verified": true,
+    "independent_prime_repeat_packed_sha256": "599b87c00f75a0b29118443f8d5fcaab9073056452c55bc1071c173910aef4fd"
+  },
+  "deterministic_631_table_sha256": "b6c7507dc7efb2d1cedb39f92828dced72fbd69dbb6183157c61c216a3227729",
+  "successful_frozen_sign_kernel_sha256": "28d3ce519e1ac9066b070b835f6a82badbd1d300e298c15f4e1e9d9f736b1d87",
+  "successful_frozen_sampler_sha256": "d5b1b14202e52e39fddb5cf81d91cdd3a271d4bdf4f3230beed62afb93de09aa",
+  "source_sha256": {
+    "experiments/scalar_lift/hadamard_frame_search.py": "486cdef73d1e10ae81644d6a0d21e1a85257f8d5c93e79a6ff812dbfdcdacc79",
+    "experiments/scalar_lift/hadamard_frame_search.cpp": "0b8ccb45d64354a4d37ec72d3f3ea71be45200a380757654ec3f5ffa8acc4c4d"
+  },
+  "bounded_independent_631_repeat": {
+    "schema": "field-parity-mod8-sign-search-v1",
+    "p": 631,
+    "m": 21,
+    "mu": 458,
+    "pid": 36902,
+    "seed": 2026112421,
+    "field_parameters_sampled": 8206848,
+    "head_gauge_passed": 2051782,
+    "axis_patterns_sign_lifted": 1562644,
+    "affine_sign_assignments_covered": 12801220608,
+    "mod8_passed": 392241,
+    "DC_passed_after_mod8": 156214,
+    "mod4_inconsistent": 92,
+    "rank_limit_skipped": 0,
+    "head_filter_rejected": 489138,
+    "seconds": 45.0008,
+    "head_filter": [
+      5,
+      7,
+      9
+    ],
+    "is_endpoint": false,
+    "new_order_claimed": false
+  },
+  "repeat_endpoint_found": false,
+  "repeat_new_order_claimed": false,
+  "repeat_new_equivalence_class_claimed": false,
+  "completed_h7572_bundle": "artifacts/hadamard-7572/certificate.json",
+  "completed_h7572_bundle_unchanged": true,
+  "independent_prime_repeat_certificate": "certificates/scalar-lift/hadamard-frame-p271.json",
+  "validated_additional_parity_map": "certificates/scalar-lift/hadamard-frame-p547.json",
+  "retained_map_sha256": {
+    "certificates/scalar-lift/hadamard-frame-p127.json": "bd892f6bb0e928691f68c32bfc15927d31f07519ffa943c451d714b26e824c20",
+    "certificates/scalar-lift/hadamard-frame-p13-headless.json": "618ec0277f7596de172a13128ee4e0f274c86092a0d36536a8760cc008e54154",
+    "certificates/scalar-lift/hadamard-frame-p1453.json": "a179c1b049742bb76fbdc7306d82fa3ff533300b4e5d87cb32d79d7c1d072d69",
+    "certificates/scalar-lift/hadamard-frame-p271.json": "312528cd202efb4e8509c49dc1727f8a08a999cb55d4b3856d2259e60b61b35e",
+    "certificates/scalar-lift/hadamard-frame-p307.json": "acf97190fb99b6cb7c75910fcba9f1f96d273cbdeee10324f1af03091ccaf654",
+    "certificates/scalar-lift/hadamard-frame-p397.json": "5f1de422784c8ed7a777480bf86b2521a0168957b7dc1164e1cebe921c871bc6",
+    "certificates/scalar-lift/hadamard-frame-p547.json": "899c07b7a76932dae1c120617f1d3cf9b3bdcf963e75de7d15297e079c1beb78",
+    "certificates/scalar-lift/hadamard-frame-p919.json": "b5c5e44c55331f1194194a23a00350dc716bc9cde4465b3403b257a8fb5f1fb6"
+  },
+  "completed_additional_prime_repeat_certificate": "certificates/scalar-lift/hadamard-frame-p547.json",
+  "historical_source_sha256": {
+    "experiments/scalar_lift/hadamard_frame_search.py": "30e05b19a75482f31e96175eeebb2a710f7045d67557ca7a71183f87b8d79d96",
+    "experiments/scalar_lift/hadamard_frame_search.cpp": "4e73a6dcb4318f5d72ad5af30ab88320824c5a8834c73fe3828a7b999e8135c7"
+  },
+  "historical_source_scope": "initial public extraction before degree17/22 extensions; original selftest and discovery summaries retained",
+  "active_source_scope": "current public code with hashes captured before build and native execution",
+  "current_controls": [
+    "certificates/scalar-lift/hadamard-frame-degree17.json",
+    "certificates/scalar-lift/hadamard-frame-degree22.json",
+    "certificates/scalar-lift/hadamard-frame-headless.json",
+    "certificates/scalar-lift/hadamard-frame-fieldhood.json"
+  ],
+  "target_scan": "certificates/scalar-lift/hadamard-frame-target-scan.json",
+  "terminal_campaign_certificate": "certificates/scalar-lift/hadamard-frame-campaign-20261124.json"
+}

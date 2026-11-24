@@ -1,0 +1,288 @@
+{
+  "schema": "periodic-t127-literature-audit-v1",
+  "checked_utc": "2026-11-24T19:47:56.077309+00:00",
+  "subject": "Completed periodic circulant T-matrix quadruple of order 127; ingredient status is separate from real Hadamard order status.",
+  "existence_certificate": "certificates/scalar-lift/hadamard-frame-p127.json",
+  "witness_metadata": {
+    "p": 127,
+    "mu": 22,
+    "multiplier_order": 9,
+    "states": [
+      0,
+      0,
+      4,
+      0,
+      1,
+      6,
+      2,
+      3,
+      6,
+      1,
+      0,
+      3,
+      5,
+      4,
+      3
+    ],
+    "row_sums": [
+      10,
+      3,
+      3,
+      3
+    ],
+    "row_weights": [
+      46,
+      27,
+      27,
+      27
+    ],
+    "generating_rows_int8_row_major_sha256": "20b1f1b8fea1cfdc18e18a9f26dfb57b2d61ff15a3ecf61ee150f47c68082237",
+    "defining_identity": "sum_i T_i*T_i^T=127I_127",
+    "entry_formula": "T_i[x,y]=b_i[(y-x)mod127]",
+    "entry_alphabet": [
+      -1,
+      0,
+      1
+    ],
+    "supports_partition_all_positions": true
+  },
+  "scoped_status": "New periodic T-matrices of order 127.",
+  "recommended_writeup_sentence": "We construct new periodic T-matrices of order 127, listed as the smallest open T-matrix order in Egan–Kotsireas–London–Ó Catháin v2, Table 3 (3 November 2026).",
+  "aperiodic_T_sequence_claimed": false,
+  "Williamson_type_127_equated_to_T127": false,
+  "new_Hadamard_order_claimed": false,
+  "known_real_control": {
+    "order": 1524,
+    "positive_knownness": "PaleyI",
+    "q": 1523,
+    "q_prime": true,
+    "q_mod4": 3,
+    "source_frame_width": 508,
+    "source_order": 3,
+    "source_gram_scale": 3,
+    "frame_gram_scale": 508,
+    "endpoint_gram_scale": 1524,
+    "order_status": "known"
+  },
+  "primary_records": {
+    "survey2026": {
+      "url": "https://arxiv.org/html/2610.27175v2#S4.T3",
+      "version": "v2",
+      "version_date": "2026-11-03",
+      "explicit_status": "T-matrices: smallest open order 127.",
+      "definition_location": "Section 4, definitions immediately before Table 3.",
+      "periodic_definition": "Four circulant {0,+1,-1} matrices with disjoint supports and summed Gram tI; equivalently, their generating rows have summed periodic autocorrelations t at zero and zero at all other shifts.",
+      "aperiodic_distinction": "T-sequences impose nonperiodic autocorrelation; the survey lists their smallest open length as 97.",
+      "local_pdf_snapshot": "artifacts/scalar-frontier/novelty-7572-20261124/survey-v2.pdf"
+    },
+    "kumar": {
+      "url": "https://github.com/vatskishan03/Hadamard/blob/d885022144ba6bf4efa8315e14871a3736947527/t-matrices/README.md",
+      "head": "d885022144ba6bf4efa8315e14871a3736947527",
+      "head_commit_date": "2026-11-06T08:49:29Z",
+      "main_tree_complete": true,
+      "main_tree_path_count": 3329,
+      "literal_stored_T_orders": [
+        9,
+        11,
+        15,
+        17,
+        19,
+        21,
+        23,
+        25,
+        29,
+        31,
+        33,
+        35,
+        37,
+        41,
+        43,
+        47,
+        49,
+        53,
+        55,
+        59,
+        67,
+        71,
+        73,
+        97,
+        101,
+        103,
+        107,
+        109,
+        113,
+        131,
+        151,
+        163,
+        181,
+        197
+      ],
+      "T127_witness_in_this_tree": false,
+      "absence_used_as_nonexistence_proof": false
+    },
+    "jones": {
+      "url": "https://github.com/JD-Jones-ASES/Hadamard-T/blob/4213419f9adb1aabf54934183cb2d8d87b8a07f8/README.md",
+      "head": "4213419f9adb1aabf54934183cb2d8d87b8a07f8",
+      "head_commit_date": "2026-10-12T10:34:53Z",
+      "main_tree_complete": true,
+      "main_tree_path_count": 45,
+      "literal_T_data_files": [
+        "data/T101.json",
+        "data/T103.json",
+        "data/T113.json",
+        "data/T131-literature-route.json",
+        "data/T131-multiplier-tier.json",
+        "data/T163.json",
+        "data/T181.json",
+        "data/T3-control.json"
+      ],
+      "noncontrol_bank_orders": [
+        101,
+        103,
+        113,
+        131,
+        163,
+        181
+      ],
+      "T127_witness_in_this_tree": false,
+      "absence_used_as_nonexistence_proof": false
+    },
+    "math74": {
+      "url": "https://www.math74.com/Hadamard/",
+      "program_version": 58,
+      "program_date": "2026-10",
+      "scope": "Ordinary Hadamard orders 1 to 10000; this index publishes no T-matrix ingredient catalog.",
+      "T127_status_deduced_from_this_index": false
+    },
+    "xia2017": {
+      "url": "https://documents.uow.edu.au/~jennie/WEB/WEB17/Xtb32_6mp1.pdf",
+      "doi": "10.17654/MS101081731",
+      "publication_year": 2017,
+      "full_author_manuscript_read": true,
+      "scope": "Conditional T-property construction over prime powers 6m+1=a²+3b²; printed computed examples and Table 1 extend through order 79. This is not an unconditional T-matrix existence theorem for all such prime powers.",
+      "T127_or_T631_recipe_in_cases_read": false
+    },
+    "xia2024": {
+      "url": "https://toc.ui.ac.ir/article_27062.html",
+      "pdf_url": "https://toc.ui.ac.ir/article_27062_c8e585f002d7d36b07ebc0cab4ddbe16.pdf",
+      "doi": "10.22108/toc.2022.133659.1989",
+      "publication_date": "2024-03-01",
+      "full_published_paper_read": true,
+      "scope": "Composition theorems using strongly disjoint or suitable existing T-matrix inputs. The stated input sets S1, S2 and S3 do not provide a T127 or T631 construction.",
+      "T127_or_T631_recipe_in_cases_read": false
+    }
+  },
+  "private_snapshots": [
+    {
+      "path": "artifacts/scalar-frontier/t127-records-20261124/jones-head.json",
+      "sha256": "707330c3fe59fc511916be217ca517020f0774c5dc61663d73fe1534401b19fc",
+      "distribution": "private_or_ignored_snapshot; no third-party full-text copy in clean certificate directory"
+    },
+    {
+      "path": "artifacts/scalar-frontier/t127-records-20261124/jones-meta.json",
+      "sha256": "2de503a10766da676062c1827f1f69b3bd2190b17b44044b82c3b570b2471342",
+      "distribution": "private_or_ignored_snapshot; no third-party full-text copy in clean certificate directory"
+    },
+    {
+      "path": "artifacts/scalar-frontier/t127-records-20261124/jones-readme.txt",
+      "sha256": "af6ccce84ee14e3bbc78316341066ff3953a657d365441a1a814d27ed8b5d4c0",
+      "distribution": "private_or_ignored_snapshot; no third-party full-text copy in clean certificate directory"
+    },
+    {
+      "path": "artifacts/scalar-frontier/t127-records-20261124/jones-tree.json",
+      "sha256": "430d376bc456c31d641495212d5a7f2ce57b19c74f592f87c84b04e1adc2177b",
+      "distribution": "private_or_ignored_snapshot; no third-party full-text copy in clean certificate directory"
+    },
+    {
+      "path": "artifacts/scalar-frontier/t127-records-20261124/kumar-NOVELTY.md",
+      "sha256": "03c7afa9070b71d6f5aa931771c19e24f3c7ccdcd1b2a23db4ffcd37868bfd78",
+      "distribution": "private_or_ignored_snapshot; no third-party full-text copy in clean certificate directory"
+    },
+    {
+      "path": "artifacts/scalar-frontier/t127-records-20261124/kumar-head.json",
+      "sha256": "4ac33433481ba98cfb072d494c70ee8e6872a93682532fcafac4695216edf11f",
+      "distribution": "private_or_ignored_snapshot; no third-party full-text copy in clean certificate directory"
+    },
+    {
+      "path": "artifacts/scalar-frontier/t127-records-20261124/kumar-meta.json",
+      "sha256": "43142e34aa751e5778c77370fdab33b8bc9f629dfa7eebbe3ba4745bcf5f2731",
+      "distribution": "private_or_ignored_snapshot; no third-party full-text copy in clean certificate directory"
+    },
+    {
+      "path": "artifacts/scalar-frontier/t127-records-20261124/kumar-search_data_cati_pasechnik_table4.txt",
+      "sha256": "d36c77f5facb5e43da1040c73e388536f3a74db5009527da750534fbd93f6a2d",
+      "distribution": "private_or_ignored_snapshot; no third-party full-text copy in clean certificate directory"
+    },
+    {
+      "path": "artifacts/scalar-frontier/t127-records-20261124/kumar-search_frontier_scan.py",
+      "sha256": "c106fe44b43b8a28d577acca1855e3436bd82d88ff6a0b8103001331c31309e0",
+      "distribution": "private_or_ignored_snapshot; no third-party full-text copy in clean certificate directory"
+    },
+    {
+      "path": "artifacts/scalar-frontier/t127-records-20261124/kumar-search_listgen_README.md",
+      "sha256": "0c74536e7937837f41e09098043948b160c19f3686bd599d64580f182fb1a90a",
+      "distribution": "private_or_ignored_snapshot; no third-party full-text copy in clean certificate directory"
+    },
+    {
+      "path": "artifacts/scalar-frontier/t127-records-20261124/kumar-search_listgen_lg_lib.py",
+      "sha256": "b2d8fb6d2a4d6cd409500b2b672d48db84756eaf812c18031aca6d3faaa0d08f",
+      "distribution": "private_or_ignored_snapshot; no third-party full-text copy in clean certificate directory"
+    },
+    {
+      "path": "artifacts/scalar-frontier/t127-records-20261124/kumar-t-matrices_README.md",
+      "sha256": "b18d5dd23a1febfcaeffb74b84062a7eb720e6c8ed314ccf9bd764ef14590f37",
+      "distribution": "private_or_ignored_snapshot; no third-party full-text copy in clean certificate directory"
+    },
+    {
+      "path": "artifacts/scalar-frontier/t127-records-20261124/kumar-tree.json",
+      "sha256": "af94f21129da1e302533311657d7b6b1800d6fc9e7f13362ce527a770787e981",
+      "distribution": "private_or_ignored_snapshot; no third-party full-text copy in clean certificate directory"
+    },
+    {
+      "path": "artifacts/scalar-frontier/t127-records-20261124/math74.html",
+      "sha256": "ff305e1feea0a949bc569ed9d434812648ab32ba3153f0586c8e35638186e380",
+      "distribution": "private_or_ignored_snapshot; no third-party full-text copy in clean certificate directory"
+    },
+    {
+      "path": "artifacts/scalar-frontier/t127-records-20261124/xia2017-tmatrices-6mp1.pdf",
+      "sha256": "6b4e4a0d63060497a6f7cea9536358c30fa6108a1ec1463a2993e186fe154f0d",
+      "distribution": "private_or_ignored_snapshot; no third-party full-text copy in clean certificate directory"
+    },
+    {
+      "path": "artifacts/scalar-frontier/t127-records-20261124/xia2017-tmatrices-6mp1.txt",
+      "sha256": "d13644d2da7b4c7d96070cf9601b5e2365c017ffa18f667fe25425121e94856b",
+      "distribution": "private_or_ignored_snapshot; no third-party full-text copy in clean certificate directory"
+    },
+    {
+      "path": "artifacts/scalar-frontier/t127-records-20261124/xia2024-composite.pdf",
+      "sha256": "f69f2ae7554cd3e550f2103f69dfb0d0351cf0e6d799608f14ab7846d199101b",
+      "distribution": "private_or_ignored_snapshot; no third-party full-text copy in clean certificate directory"
+    },
+    {
+      "path": "artifacts/scalar-frontier/t127-records-20261124/xia2024-composite.txt",
+      "sha256": "e7c2c823f0a000f2c916241ed00e83cfa1ef24324f1826f4994dae893bb62a02",
+      "distribution": "private_or_ignored_snapshot; no third-party full-text copy in clean certificate directory"
+    },
+    {
+      "path": "artifacts/scalar-frontier/t127-records-20261124/xia2024-doi.html",
+      "sha256": "3cea29fd1690168c55f82d351f194a3ac5bedf05503ac1ba4f87cc390630add9",
+      "distribution": "private_or_ignored_snapshot; no third-party full-text copy in clean certificate directory"
+    }
+  ],
+  "checks": {
+    "source_metadata_matches_completed_certificate": true,
+    "Paley1523_primality_exactly_checked": true,
+    "both_repository_trees_nontruncated": true,
+    "no_T127_claim_in_audited_banks": true,
+    "no_nonexistence_claim": true,
+    "no_change_to_immutable_H7572_bundle": true
+  },
+  "status_updated_utc": "2026-11-24T20:32:21.170804+00:00",
+  "status_convention_ref": "docs/HADAMARD_HIGHER_ORDER_RECORDS.md#higher-order-records-and-repeat-target-audit",
+  "historical_status_snapshot": {
+    "manifest": "artifacts/scalar-frontier/status-ledger-before-author-convention-20261124/manifest.json",
+    "sha256": "d654ab532dd92f16b7b4fabfdd37d3f28cd386ce8323cd1459969e68271d18e4"
+  },
+  "ingredient_status": "new_to_best_author_knowledge",
+  "new_ingredient_claimed": true
+}

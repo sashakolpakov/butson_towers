@@ -1,0 +1,91 @@
+{
+  "schema": "hadamard-frame-degree17-controls-v1",
+  "source_scope": "historical degree17 prototype source binding; controls rerun by current public regression",
+  "maximum_sampler_field_degree": 17,
+  "color_coordinate_storage_bits": 128,
+  "generic_native_sign_coordinate_limit": 63,
+  "map_certificates": [
+    "certificates/scalar-lift/hadamard-frame-p307.json",
+    "certificates/scalar-lift/hadamard-frame-p919.json"
+  ],
+  "complete_quadratic_coefficient_checks_per_map": 2347,
+  "native_and_independent_controls": {
+    "targets": {
+      "307": {
+        "parameter_examples_checked": 64,
+        "examples_with_color_bits_above64": 63,
+        "samples_checked_all_expanded_parities": 8,
+        "affine_masks_checked": 32768,
+        "all_mod8_survivor_masks_equal_direct_integer_quadratic_Gram": true,
+        "mod8_survivors": 0,
+        "native_nullity": 15
+      },
+      "919": {
+        "parameter_examples_checked": 64,
+        "examples_with_color_bits_above64": 58,
+        "samples_checked_all_expanded_parities": 8,
+        "affine_masks_checked": 32768,
+        "all_mod8_survivor_masks_equal_direct_integer_quadratic_Gram": true,
+        "mod8_survivors": 1,
+        "native_nullity": 15
+      }
+    },
+    "seconds": 0.9848812089767307
+  },
+  "focused_regression_tests": {
+    "command": "PYTHONPATH=src:. .native-env/bin/python -m pytest -q tests/test_hadamard_frame_search.py",
+    "result": "6passed"
+  },
+  "bounded_calibrations": [
+    {
+      "schema": "field-parity-mod8-sign-search-v1",
+      "p": 919,
+      "m": 27,
+      "mu": 207,
+      "field_degree": 17,
+      "pid": 31199,
+      "seed": 20261126919,
+      "field_parameters_sampled": 690688,
+      "head_gauge_passed": 171955,
+      "axis_patterns_sign_lifted": 171955,
+      "affine_sign_assignments_covered": 5635309568,
+      "mod8_passed": 43261,
+      "DC_passed_after_mod8": 14993,
+      "mod4_inconsistent": 2,
+      "rank_limit_skipped": 0,
+      "head_filter_rejected": 0,
+      "seconds": 10.0008,
+      "head_filter": [],
+      "T_sequence_verified": false,
+      "new_order_claimed": false
+    },
+    {
+      "schema": "field-parity-mod8-sign-search-v1",
+      "p": 307,
+      "m": 9,
+      "mu": 287,
+      "field_degree": 17,
+      "pid": 31189,
+      "seed": 20261126307,
+      "field_parameters_sampled": 319488,
+      "head_gauge_passed": 79319,
+      "axis_patterns_sign_lifted": 79319,
+      "affine_sign_assignments_covered": 2599550976,
+      "mod8_passed": 19823,
+      "DC_passed_after_mod8": 5838,
+      "mod4_inconsistent": 3,
+      "rank_limit_skipped": 0,
+      "head_filter_rejected": 0,
+      "seconds": 5.00064,
+      "head_filter": [],
+      "T_sequence_verified": false,
+      "new_order_claimed": false
+    }
+  ],
+  "no_new_endpoint_claimed": true,
+  "current_active_control_certificate": "certificates/scalar-lift/hadamard-frame-degree22.json",
+  "historical_source_sha256": {
+    "experiments/scalar_lift/hadamard_frame_search.py": "9ebba34b06ab7fb5a9e76778dd9b6ab429bff0ee9612a35f9561461115785c97",
+    "experiments/scalar_lift/hadamard_frame_search.cpp": "35a60b45817d3679a6069288b6e2a30fd849687010a5b4727984c7115932b785"
+  }
+}

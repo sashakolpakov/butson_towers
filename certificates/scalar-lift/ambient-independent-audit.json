@@ -1,0 +1,152 @@
+{
+  "schema": "ambient-independent-audit-v1",
+  "small_direct_check": {
+    "period_degree": 3,
+    "conductor": 31,
+    "direct_polynomial": "1+x+...+x^30",
+    "all_generator_times_basis_products_checked": 3,
+    "all_trace_metric_entries_checked": 9,
+    "multiplication": [
+      [
+        -7,
+        4,
+        2
+      ],
+      [
+        -6,
+        2,
+        4
+      ],
+      [
+        -8,
+        4,
+        4
+      ]
+    ],
+    "trace_metric": [
+      [
+        21,
+        -10,
+        -10
+      ],
+      [
+        -10,
+        21,
+        -10
+      ],
+      [
+        -10,
+        -10,
+        21
+      ]
+    ],
+    "characteristic_polynomial_coefficients": [
+      1,
+      1,
+      -10,
+      -8
+    ],
+    "characteristic_polynomial_irreducible": true
+  },
+  "actual_period_fields": [
+    {
+      "period_degree": 179,
+      "prime_conductor": 268501,
+      "unit_action_exact": true,
+      "trace": -1,
+      "trace_square": 267001,
+      "trace_variance": 47793178,
+      "primitive_by_prime_degree_and_nonzero_variance": true,
+      "sum_of_all_conjugate_operators_is_minus_identity": true,
+      "trace_basis_odd_denominator": 240308395,
+      "trace_basis_identity_modulo_two": true,
+      "trace_basis_is_2_adically_integral": true,
+      "algebraic_integrality_of_trace_basis_claimed": false,
+      "literal_multiplication_sha256": "7f4498c6dfb2ce022075e257964ce2465e7319cd8bfdb1bd1cfd23cab1e72fd7"
+    },
+    {
+      "period_degree": 223,
+      "prime_conductor": 189997,
+      "unit_action_exact": true,
+      "trace": -1,
+      "trace_square": 189145,
+      "trace_variance": 42179334,
+      "primitive_by_prime_degree_and_nonzero_variance": true,
+      "sum_of_all_conjugate_operators_is_minus_identity": true,
+      "trace_basis_odd_denominator": 720278627,
+      "trace_basis_identity_modulo_two": true,
+      "trace_basis_is_2_adically_integral": true,
+      "algebraic_integrality_of_trace_basis_claimed": false,
+      "literal_multiplication_sha256": "cd3d4066ec0e10da06a777615b968c4a88d7c7fe92ac15d10900336d7d1fe8af"
+    }
+  ],
+  "independent_pure_tower_check": {
+    "small_period_degree": 3,
+    "source": "catalogue-p7-q12",
+    "source_sha256": "9d0465a2350a4b8a206e82c04cfbf61085aecb612baa7285ec79e6669508c201",
+    "six_literal_stages": [
+      {
+        "path": 0,
+        "matrix_order": 21,
+        "lower_cyclotomic_label": 12,
+        "period_restricted": true,
+        "every_literal_entry_reconstructed": true,
+        "full_regular_representation_weighted_Gram_verified": true,
+        "unchanged_Gram_scale": 7,
+        "right_frame_inserted": false
+      },
+      {
+        "path": 0,
+        "matrix_order": 42,
+        "lower_cyclotomic_label": 6,
+        "period_restricted": true,
+        "every_literal_entry_reconstructed": true,
+        "full_regular_representation_weighted_Gram_verified": true,
+        "unchanged_Gram_scale": 7,
+        "right_frame_inserted": false
+      },
+      {
+        "path": 0,
+        "matrix_order": 84,
+        "lower_cyclotomic_label": 1,
+        "period_restricted": true,
+        "every_literal_entry_reconstructed": true,
+        "full_regular_representation_weighted_Gram_verified": true,
+        "unchanged_Gram_scale": 7,
+        "right_frame_inserted": false
+      },
+      {
+        "path": 1,
+        "matrix_order": 14,
+        "lower_cyclotomic_label": 6,
+        "period_restricted": false,
+        "every_literal_entry_reconstructed": true,
+        "full_regular_representation_weighted_Gram_verified": true,
+        "unchanged_Gram_scale": 7,
+        "right_frame_inserted": false
+      },
+      {
+        "path": 1,
+        "matrix_order": 28,
+        "lower_cyclotomic_label": 1,
+        "period_restricted": false,
+        "every_literal_entry_reconstructed": true,
+        "full_regular_representation_weighted_Gram_verified": true,
+        "unchanged_Gram_scale": 7,
+        "right_frame_inserted": false
+      },
+      {
+        "path": 1,
+        "matrix_order": 84,
+        "lower_cyclotomic_label": 1,
+        "period_restricted": true,
+        "every_literal_entry_reconstructed": true,
+        "full_regular_representation_weighted_Gram_verified": true,
+        "unchanged_Gram_scale": 7,
+        "right_frame_inserted": false
+      }
+    ]
+  },
+  "scope": "Independent algebra checks on the period fields, not a sign-frame or endpoint proof",
+  "new_real_Hadamard_constructed": false
+}

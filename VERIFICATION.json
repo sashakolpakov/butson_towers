@@ -1,0 +1,156 @@
+{
+  "schema": "butson-towers-migration-verification-v1",
+  "checked_utc": "2026-11-24T21:58:41.215188+00:00",
+  "python": {
+    "version": "3.12.13",
+    "migrated_test_files": 71,
+    "tests_passed": 307,
+    "source_checkout_independent": true,
+    "runtime_independent_of_original_repository": true
+  },
+  "formal": {
+    "lean_toolchain": "leanprover/lean4:v4.32.0",
+    "mathlib_revision": "81a5d257c8e410db227a6665ed08f64fea08e997",
+    "lake_build_passed": true,
+    "theorem_count": 16,
+    "theorems": [
+      {
+        "theorem": "ButsonTowers.inverse_metric_adjoint",
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "theorem": "ButsonTowers.framed_zero",
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "theorem": "ButsonTowers.frame_pair_transport",
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "theorem": "ButsonTowers.frame_sum_transport",
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "theorem": "ButsonTowers.weighted_pair_transport",
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "theorem": "ButsonTowers.weighted_sum_transport",
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "theorem": "ButsonTowers.weighted_gram_block",
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "theorem": "ButsonTowers.frame_gram_block",
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "theorem": "ButsonTowers.framed_matrix_flat",
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "theorem": "ButsonTowers.framed_matrix_gram",
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "theorem": "ButsonTowers.framed_matrix_hadamard",
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "theorem": "ButsonTowers.Spence.doubled_minus_norm",
+        "axioms": [
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "theorem": "ButsonTowers.Spence.doubled_plus_norm",
+        "axioms": [
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "theorem": "ButsonTowers.Spence.sum_squares_from_strong_norms",
+        "axioms": [
+          "Quot.sound",
+          "propext"
+        ]
+      },
+      {
+        "theorem": "ButsonTowers.Spence.strong_norm_induction",
+        "axioms": [
+          "propext"
+        ]
+      },
+      {
+        "theorem": "ButsonTowers.Spence.entry_step_sign",
+        "axioms": [
+          "Classical.choice",
+          "Quot.sound",
+          "propext"
+        ]
+      }
+    ],
+    "project_axioms_or_placeholders": false,
+    "concrete_finite_witnesses_formally_integrated": false
+  },
+  "release": {
+    "source_zip_sha256": "a236a7ab84069ca9a9d85816d4ec872a93d0f3a3fe124fabaf40f2a947824ea5",
+    "source_zip_byte_identical_to_original": true,
+    "remote_draft_created": false,
+    "submitted": false
+  },
+  "private_configuration": {
+    "excluded_from_git": true,
+    "excluded_from_submission_archive": true,
+    "mode": "0600"
+  },
+  "final_location_verified": false
+}

@@ -1,0 +1,69 @@
+{
+  "scope": "One bounded exact skew-support periodic T-sequence chart; not the full SL2 parity family",
+  "prime": 491,
+  "multiplier_order": 7,
+  "block_order": 1964,
+  "explicit_mod_four_XOR_cuts": true,
+  "algebraic_source_3_and_13_output_orders": [
+    5892,
+    25532
+  ],
+  "native_limit_seconds": 45.0,
+  "wall_limit_seconds": 60.0,
+  "elapsed_seconds": 45.804306541976985,
+  "worker_pid": 29115,
+  "worker_exit_code": 0,
+  "worker_reaped": true,
+  "external_watchdog_triggered": false,
+  "events": [
+    {
+      "stage": "worker_started",
+      "elapsed_seconds": 2.2920139599591494e-06,
+      "pid": 29115
+    },
+    {
+      "stage": "model_ready",
+      "elapsed_seconds": 0.040326249989448115,
+      "prime": 491,
+      "multiplier_order": 7,
+      "block_order": 1964,
+      "algebraic_source_3_and_13_output_orders": [
+        5892,
+        25532
+      ],
+      "negation_pairs_eight_state_variables": 35,
+      "pair_interactions": 595,
+      "nonzero_integer_correlation_equations": 35,
+      "sign_net_types_on_axes2_and3": [
+        [
+          1,
+          3
+        ]
+      ],
+      "total_model_variables": 2522,
+      "total_model_constraints": 1930,
+      "origin_support": "axis0 singleton; axis1 empty",
+      "all_nonzero_support_orientations_and_signs_unknown": true,
+      "parity_layer_satisfied_identically": true,
+      "explicit_mod_four_XOR_cuts": true,
+      "order_4p_scalar_operator_prescribed": false,
+      "number_of_original_multiplier_orbits": 71
+    },
+    {
+      "stage": "solver_finished",
+      "elapsed_seconds": 45.05082725000102,
+      "solver_status": "UNKNOWN",
+      "solver_wall_seconds": 45.007690000000004,
+      "branches": 329320,
+      "conflicts": 7327,
+      "witness": null
+    }
+  ],
+  "diagnostics": [],
+  "solver_status": "UNKNOWN",
+  "exact_design_constructed": false,
+  "inconclusive": true,
+  "mathematical_nonexistence_certificate_produced": false,
+  "new_real_Hadamard_order_claimed": false,
+  "witness": null
+}

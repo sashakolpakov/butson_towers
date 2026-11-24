@@ -1,0 +1,533 @@
+{
+  "schema": "phase120-relative-tower-v1",
+  "target_source_order": 1499,
+  "base_field": "Q(zeta8)",
+  "top_field": "Q(zeta120)",
+  "raw_entry_alphabet": "omega^a theta^b eta^c; a0..1,b1..4,c0..7",
+  "source_layers": "eight disjoint sparse mu8 matrices A[a,b]; exactly one nonzero per position",
+  "Gram_basis": "omega^a theta^b; a0..1,b0..3",
+  "target_Gram_coefficients": "C[0,0]=1499I; all other seven C=0 over Q(zeta8)",
+  "tower_edges": [
+    {
+      "restriction_order": [
+        3,
+        5
+      ],
+      "field_conductors": [
+        120,
+        40,
+        8
+      ],
+      "relative_degrees": [
+        2,
+        4
+      ],
+      "source_order_retained": 1499,
+      "source_root_alphabet_conductor_retained_separately": 120,
+      "intermediate_coefficients_are_not_assumed_Butson": true,
+      "canonical_basis_order": "omega^a theta^b, a0..1,b0..3",
+      "tower_to_canonical_basis_permutation": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "cubic_companion": [
+        [
+          0,
+          -1
+        ],
+        [
+          1,
+          -1
+        ]
+      ],
+      "fifth_companion": [
+        [
+          0,
+          0,
+          0,
+          -1
+        ],
+        [
+          1,
+          0,
+          0,
+          -1
+        ],
+        [
+          0,
+          1,
+          0,
+          -1
+        ],
+        [
+          0,
+          0,
+          1,
+          -1
+        ]
+      ],
+      "canonical_Hermitian_trace_metric": [
+        [
+          8,
+          -2,
+          -2,
+          -2,
+          -4,
+          1,
+          1,
+          1
+        ],
+        [
+          -2,
+          8,
+          -2,
+          -2,
+          1,
+          -4,
+          1,
+          1
+        ],
+        [
+          -2,
+          -2,
+          8,
+          -2,
+          1,
+          1,
+          -4,
+          1
+        ],
+        [
+          -2,
+          -2,
+          -2,
+          8,
+          1,
+          1,
+          1,
+          -4
+        ],
+        [
+          -4,
+          1,
+          1,
+          1,
+          8,
+          -2,
+          -2,
+          -2
+        ],
+        [
+          1,
+          -4,
+          1,
+          1,
+          -2,
+          8,
+          -2,
+          -2
+        ],
+        [
+          1,
+          1,
+          -4,
+          1,
+          -2,
+          -2,
+          8,
+          -2
+        ],
+        [
+          1,
+          1,
+          1,
+          -4,
+          -2,
+          -2,
+          -2,
+          8
+        ]
+      ],
+      "fifteen_times_inverse_metric": [
+        [
+          4,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        [
+          2,
+          4,
+          2,
+          2,
+          1,
+          2,
+          1,
+          1
+        ],
+        [
+          2,
+          2,
+          4,
+          2,
+          1,
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          2,
+          2,
+          4,
+          1,
+          1,
+          1,
+          2
+        ],
+        [
+          2,
+          1,
+          1,
+          1,
+          4,
+          2,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          1,
+          1,
+          2,
+          4,
+          2,
+          2
+        ],
+        [
+          1,
+          1,
+          2,
+          1,
+          2,
+          2,
+          4,
+          2
+        ],
+        [
+          1,
+          1,
+          1,
+          2,
+          2,
+          2,
+          2,
+          4
+        ]
+      ],
+      "all_fifteen_odd_root_metric_adjoints_verified": true
+    },
+    {
+      "restriction_order": [
+        5,
+        3
+      ],
+      "field_conductors": [
+        120,
+        24,
+        8
+      ],
+      "relative_degrees": [
+        4,
+        2
+      ],
+      "source_order_retained": 1499,
+      "source_root_alphabet_conductor_retained_separately": 120,
+      "intermediate_coefficients_are_not_assumed_Butson": true,
+      "canonical_basis_order": "omega^a theta^b, a0..1,b0..3",
+      "tower_to_canonical_basis_permutation": [
+        0,
+        4,
+        1,
+        5,
+        2,
+        6,
+        3,
+        7
+      ],
+      "cubic_companion": [
+        [
+          0,
+          -1
+        ],
+        [
+          1,
+          -1
+        ]
+      ],
+      "fifth_companion": [
+        [
+          0,
+          0,
+          0,
+          -1
+        ],
+        [
+          1,
+          0,
+          0,
+          -1
+        ],
+        [
+          0,
+          1,
+          0,
+          -1
+        ],
+        [
+          0,
+          0,
+          1,
+          -1
+        ]
+      ],
+      "canonical_Hermitian_trace_metric": [
+        [
+          8,
+          -2,
+          -2,
+          -2,
+          -4,
+          1,
+          1,
+          1
+        ],
+        [
+          -2,
+          8,
+          -2,
+          -2,
+          1,
+          -4,
+          1,
+          1
+        ],
+        [
+          -2,
+          -2,
+          8,
+          -2,
+          1,
+          1,
+          -4,
+          1
+        ],
+        [
+          -2,
+          -2,
+          -2,
+          8,
+          1,
+          1,
+          1,
+          -4
+        ],
+        [
+          -4,
+          1,
+          1,
+          1,
+          8,
+          -2,
+          -2,
+          -2
+        ],
+        [
+          1,
+          -4,
+          1,
+          1,
+          -2,
+          8,
+          -2,
+          -2
+        ],
+        [
+          1,
+          1,
+          -4,
+          1,
+          -2,
+          -2,
+          8,
+          -2
+        ],
+        [
+          1,
+          1,
+          1,
+          -4,
+          -2,
+          -2,
+          -2,
+          8
+        ]
+      ],
+      "fifteen_times_inverse_metric": [
+        [
+          4,
+          2,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        [
+          2,
+          4,
+          2,
+          2,
+          1,
+          2,
+          1,
+          1
+        ],
+        [
+          2,
+          2,
+          4,
+          2,
+          1,
+          1,
+          2,
+          1
+        ],
+        [
+          2,
+          2,
+          2,
+          4,
+          1,
+          1,
+          1,
+          2
+        ],
+        [
+          2,
+          1,
+          1,
+          1,
+          4,
+          2,
+          2,
+          2
+        ],
+        [
+          1,
+          2,
+          1,
+          1,
+          2,
+          4,
+          2,
+          2
+        ],
+        [
+          1,
+          1,
+          2,
+          1,
+          2,
+          2,
+          4,
+          2
+        ],
+        [
+          1,
+          1,
+          1,
+          2,
+          2,
+          2,
+          2,
+          4
+        ]
+      ],
+      "all_fifteen_odd_root_metric_adjoints_verified": true
+    }
+  ],
+  "controls": [
+    {
+      "name": "existing_order15_verification_control",
+      "verification_control_order": 15,
+      "eight_layer_support_sizes": [
+        [
+          30,
+          0,
+          60,
+          60
+        ],
+        [
+          15,
+          0,
+          30,
+          30
+        ]
+      ],
+      "literal_entry_partition_and_reconstruction_verified": true,
+      "all_eight_K_Gram_equations_verified": true,
+      "both_sequential_restrictions_equal_direct_coefficients": true,
+      "independent_full_upper_row_and_column_Grams_verified": true,
+      "collapse_conditions": {
+        "cubic_collapse_exact_defect_3UV_dagger_verified": true,
+        "fifth_collapse_two_dyadic_Gram_congruences_mod5_verified": true,
+        "collapsed_matrices_asserted_Hadamard": false
+      }
+    },
+    {
+      "name": "existing_coupled_order35_verification_control",
+      "verification_control_order": 35,
+      "eight_layer_support_sizes": [
+        [
+          220,
+          220,
+          0,
+          110
+        ],
+        [
+          270,
+          270,
+          0,
+          135
+        ]
+      ],
+      "literal_entry_partition_and_reconstruction_verified": true,
+      "all_eight_K_Gram_equations_verified": true,
+      "both_sequential_restrictions_equal_direct_coefficients": true,
+      "independent_full_upper_row_and_column_Grams_verified": true,
+      "collapse_conditions": {
+        "cubic_collapse_exact_defect_3UV_dagger_verified": true,
+        "fifth_collapse_two_dyadic_Gram_congruences_mod5_verified": true,
+        "collapsed_matrices_asserted_Hadamard": false
+      }
+    }
+  ],
+  "target_mod3_scalar": 2,
+  "target_mod5_scalar": 4,
+  "individual_layers_assumed_Butson": false,
+  "target_source_constructed": false,
+  "new_order_or_new_lift_width_claimed": false
+}

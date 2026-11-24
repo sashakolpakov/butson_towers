@@ -1,0 +1,288 @@
+{
+  "F16_intertwiner_dimension": 8,
+  "F2_variables_before_trace": 32,
+  "trace_equation_rank": 12,
+  "trace_one_affine_dimension": 20,
+  "E10": [
+    [
+      13,
+      13,
+      7,
+      7,
+      13,
+      7,
+      6,
+      11,
+      11,
+      6
+    ],
+    [
+      13,
+      7,
+      7,
+      13,
+      13,
+      6,
+      11,
+      11,
+      6,
+      7
+    ],
+    [
+      7,
+      7,
+      13,
+      13,
+      13,
+      11,
+      11,
+      6,
+      7,
+      6
+    ],
+    [
+      7,
+      13,
+      13,
+      13,
+      7,
+      11,
+      6,
+      7,
+      6,
+      11
+    ],
+    [
+      13,
+      13,
+      13,
+      7,
+      7,
+      6,
+      7,
+      6,
+      11,
+      11
+    ],
+    [
+      7,
+      6,
+      11,
+      11,
+      6,
+      10,
+      11,
+      12,
+      12,
+      11
+    ],
+    [
+      6,
+      11,
+      11,
+      6,
+      7,
+      11,
+      12,
+      12,
+      11,
+      10
+    ],
+    [
+      11,
+      11,
+      6,
+      7,
+      6,
+      12,
+      12,
+      11,
+      10,
+      11
+    ],
+    [
+      11,
+      6,
+      7,
+      6,
+      11,
+      12,
+      11,
+      10,
+      11,
+      12
+    ],
+    [
+      6,
+      7,
+      6,
+      11,
+      11,
+      11,
+      10,
+      11,
+      12,
+      12
+    ]
+  ],
+  "E10_unitary_and_exact_sum_alphabet_verified": true,
+  "Jordan_audit": [
+    {
+      "matrix": "D_dagger",
+      "spectrum": [
+        {
+          "rho_exponent": 0,
+          "eigenspace_dimension": 0,
+          "generalized_eigenspace_dimension": 0
+        },
+        {
+          "rho_exponent": 1,
+          "eigenspace_dimension": 1,
+          "generalized_eigenspace_dimension": 2
+        },
+        {
+          "rho_exponent": 2,
+          "eigenspace_dimension": 1,
+          "generalized_eigenspace_dimension": 2
+        },
+        {
+          "rho_exponent": 3,
+          "eigenspace_dimension": 0,
+          "generalized_eigenspace_dimension": 0
+        },
+        {
+          "rho_exponent": 4,
+          "eigenspace_dimension": 1,
+          "generalized_eigenspace_dimension": 1
+        }
+      ]
+    },
+    {
+      "matrix": "D_dagger_Frobenius_squared",
+      "spectrum": [
+        {
+          "rho_exponent": 0,
+          "eigenspace_dimension": 0,
+          "generalized_eigenspace_dimension": 0
+        },
+        {
+          "rho_exponent": 1,
+          "eigenspace_dimension": 0,
+          "generalized_eigenspace_dimension": 0
+        },
+        {
+          "rho_exponent": 2,
+          "eigenspace_dimension": 1,
+          "generalized_eigenspace_dimension": 2
+        },
+        {
+          "rho_exponent": 3,
+          "eigenspace_dimension": 1,
+          "generalized_eigenspace_dimension": 1
+        },
+        {
+          "rho_exponent": 4,
+          "eigenspace_dimension": 1,
+          "generalized_eigenspace_dimension": 2
+        }
+      ]
+    }
+  ],
+  "binary_parameters_exhausted": 1048576,
+  "projector_family": {
+    "rank_one_Hermitian_projectors_exhausted": 12,
+    "projectors_with_all_E_entries_in_sum_alphabet": [
+      [
+        [
+          12,
+          1
+        ],
+        [
+          1,
+          13
+        ]
+      ],
+      [
+        [
+          13,
+          1
+        ],
+        [
+          1,
+          12
+        ]
+      ]
+    ],
+    "the_two_admitted_modules_are_block_swap_conjugate": true,
+    "other_residue_morphism_families_excluded": false
+  },
+  "survivor_counts_after_each_entry": [
+    524288,
+    262144,
+    131072,
+    131072,
+    131072,
+    65536,
+    32768,
+    16384,
+    10240,
+    6400,
+    3968,
+    3200,
+    2432,
+    1856,
+    1856,
+    1856,
+    1856,
+    1856,
+    1856,
+    1856,
+    1856,
+    1856,
+    1856,
+    1856,
+    1856,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0,
+    0
+  ],
+  "first_impossible_entry": {
+    "zero_based_row_and_column": [
+      5,
+      0
+    ],
+    "previously_surviving_parameters": 1856,
+    "attained_values_and_counts": {
+      "5": 928,
+      "9": 928
+    }
+  },
+  "root_valued_boundaries": 0,
+  "boundary_rank_counts": {},
+  "isotropic_boundary_count": 0,
+  "witnesses": [],
+  "other_E10_matrices_excluded": false,
+  "cyclotomic_source_constructed": false
+}

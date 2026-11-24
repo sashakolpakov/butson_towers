@@ -1,0 +1,123 @@
+{
+  "schema": "independent-actual-npz-scalar-frame-audit-v1",
+  "verifier": "Extracts literal P and Q blocks from actual NPZ; own exact Python bit-count and cyclotomic-pair arithmetic; no construction/verifier imports",
+  "order": 7572,
+  "source_exponents": [
+    [
+      3,
+      1,
+      1
+    ],
+    [
+      1,
+      3,
+      1
+    ],
+    [
+      1,
+      1,
+      3
+    ]
+  ],
+  "source_exact_Gram": [
+    [
+      [
+        3,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      [
+        0,
+        0
+      ],
+      [
+        3,
+        0
+      ],
+      [
+        0,
+        0
+      ]
+    ],
+    [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        0
+      ],
+      [
+        3,
+        0
+      ]
+    ]
+  ],
+  "source_used_alphabet": [
+    1,
+    3
+  ],
+  "source_exponent_hash_encoding": "row-major signed little-endian int64",
+  "source_sha256": "4060d60ac464927b501cdbfd3103bb7755541c3c67ea94ef1eee8d809ca88241",
+  "all_nine_actual_NPZ_blocks_match_source_images": true,
+  "used_entry_images": {
+    "1": "Q",
+    "3": "-P"
+  },
+  "P_packed_sha256": "6797e67ca52723c3a0d787ab10099742dbe765f806b937d69b01e656f6a42110",
+  "Q_packed_sha256": "3f0b69cc4a2ab3b5f1a0d2f4d13e6e5f51247ad1741f59be3156e092d988ef36",
+  "block_order": 2524,
+  "P_full_integer_Gram_scale": 2524,
+  "Q_full_integer_Gram_scale": 2524,
+  "symmetric_cross_Gram_identity": "P Q^T + Q P^T = 2524 I",
+  "symmetric_cross_Gram_fully_verified": true,
+  "independent_unordered_row_pairs_checked_per_identity": 3184026,
+  "actual_frame_entry_alphabet": [
+    -1,
+    1
+  ],
+  "canonical_trace_basis": [
+    "1",
+    "zeta_6"
+  ],
+  "canonical_trace_metric": [
+    [
+      2,
+      1
+    ],
+    [
+      1,
+      2
+    ]
+  ],
+  "source_gram_scale": 3,
+  "field_degree": 2,
+  "module_rank": 1262,
+  "rational_dimension": 2524,
+  "frame_gram_scale": 2524,
+  "endpoint_order": 7572,
+  "endpoint_gram_scale": 7572,
+  "scalar_action": "R=Q P^T/2524",
+  "scalar_action_proof": [
+    "P P^T=Q Q^T=2524 I implies R R^T=I and R P=Q.",
+    "P Q^T+Q P^T=2524 I implies R+R^T=I.",
+    "Multiplying R+R^T=I by R gives R^2-R+I=0.",
+    "x^2-x+1 is irreducible over Q, so R defines a faithful Q(zeta6) action with conjugation R^T=I-R.",
+    "The rational dimension2524 is therefore field degree2 times module rank1262.",
+    "F=P has F F^T=2524 I. The actual source alphabet {zeta6,zeta6^3} maps to {Q,-P}, both literal sign blocks.",
+    "The exact source Gram scale3 times frame Gram scale2524 equals endpoint order and Gram scale7572."
+  ],
+  "trace_form_audit": "For S=2R-I, S^T=-S and S^2=-3I; h(u,v)=u^T v/2-(u^T S v)sqrt(-3)/6 is Hermitian, linear in its second argument for this scalar action, and Tr(h)=u^T v.",
+  "elapsed_seconds": 2.0055920840241015,
+  "new_order_claimed": false
+}

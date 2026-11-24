@@ -1,0 +1,124 @@
+{
+  "schema": "scalar-restriction-progress-v1",
+  "only_child_operation": "scalar restriction",
+  "new_sources_constructed": false,
+  "frame_solver_run": false,
+  "weighted_runs": [
+    {
+      "report": "weighted-scalar-only-tree.json",
+      "nodes": 104,
+      "depths": {
+        "0": 2,
+        "1": 16,
+        "2": 38,
+        "3": 36,
+        "4": 12
+      },
+      "rational_endpoints": 52,
+      "all_integral": true,
+      "all_sign_endpoints": 0,
+      "pending": 0,
+      "storage_bytes": 2082754
+    },
+    {
+      "report": "weighted-retained-registry-tree.json",
+      "nodes": 368,
+      "depths": {
+        "0": 18,
+        "1": 82,
+        "2": 138,
+        "3": 102,
+        "4": 28
+      },
+      "rational_endpoints": 184,
+      "all_integral": true,
+      "all_sign_endpoints": 0,
+      "pending": 0,
+      "storage_bytes": 8244273
+    },
+    {
+      "report": "weighted-additional-inputs-tree.json",
+      "nodes": 12,
+      "depths": {
+        "0": 4,
+        "1": 6,
+        "2": 2
+      },
+      "rational_endpoints": 6,
+      "all_integral": true,
+      "all_sign_endpoints": 0,
+      "pending": 0,
+      "storage_bytes": 105467
+    }
+  ],
+  "weighted_nodes_total": 484,
+  "total_storage_bytes": 10432494,
+  "total_storage_bytes_scope": "weighted_runs only; period-field bundles are separate",
+  "uniform_sign_obstruction_manifest": "scalar-restriction-all-sources.json",
+  "scope": "weighted_runs lists full cyclotomic divisor fields and literal tower coordinate bases; the separately recorded period-field run includes seven proper abelian subfields but not arbitrary joint bases",
+  "new_Hadamard_order_found": false,
+  "all_registered_tasks_finished": true,
+  "fixed_input_order_audit": "restriction-fixed-input-order-audit.json",
+  "fixed_input_order_audit_scope": "the original 20 fixed input/ambient combinations only",
+  "fixed_input_order_classifications": {
+    "already_verified_real_order": 16,
+    "forbidden_real_order": 2,
+    "uniform_sign_map_excluded": 2
+  },
+  "additional_input_acquisitions": [
+    "catalogue-source-acquisition.json",
+    "nine-source-acquisition.json"
+  ],
+  "period_field_run": {
+    "report": "ambient-field-candidates.json",
+    "independent_audit": "ambient-independent-audit.json",
+    "real_period_degrees": [167, 179, 191, 223, 283, 347, 359],
+    "source_field_recipes": 12,
+    "source_to_rational_paths": 24,
+    "literal_nodes": 84,
+    "literal_duplicates": 0,
+    "pending_declared_recipes": 0,
+    "target_orders": [4676, 6876, 7924, 8684, 9308, 9716, 10052, 11596],
+    "sign_endpoints": 0,
+    "product_basis_family_has_structural_zeros": true,
+    "supplementary_norm_frames_are_not_pure_restriction_stages": true
+  },
+  "broad_phase_campaign": {
+    "status_snapshot": "broad-search-status.json",
+    "documentation": "../../docs/BROAD_SCALAR_RESTRICTION_RUN.md",
+    "input_phases_are_not_restricted_to_six": true,
+    "per_run_matrix_counts_must_not_be_added_as_equivalence_classes": true
+  },
+  "mixed_basis_followup": {
+    "shared_input_output_basis_Hadamard_endpoints_excluded_by_determinant": true,
+    "basis_audit": "../../docs/MIXED_RESTRICTION_BASIS_AUDIT.md",
+    "shared_basis_run": {
+      "report": "mixed-basis-restriction.json",
+      "node_visits": 90,
+      "literal_distinct_nodes": 70,
+      "exact_duplicates": 20,
+      "pending": 0,
+      "sign_endpoints": 0
+    },
+    "published_input_acquisition": "alpoge-published-h716.json",
+    "published_intermediate_audit": "alpoge-miyamoto-pair-audit.json",
+    "unequal_basis_reflection_run": {
+      "report": "alpoge-mixed-basis-probe.json",
+      "candidates": 130,
+      "distinct_partners": 130,
+      "sign_partners": 0,
+      "minimum_basis_deviation_ranks_668_716": [84, 89]
+    },
+    "unequal_basis_global_run": {
+      "report": "alpoge-global-basis-probe.json",
+      "candidates": 128,
+      "distinct_partners": 128,
+      "literal_duplicates": 0,
+      "all_candidates_clear_low_rank_gate": true,
+      "sign_partners": 0,
+      "pending": 0
+    },
+    "full_source_entry_accessors_saved": true,
+    "arbitrary_unequal_basis_restrictions_excluded": false
+  }
+}

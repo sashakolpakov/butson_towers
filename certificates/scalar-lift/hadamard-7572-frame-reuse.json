@@ -1,0 +1,841 @@
+{
+  "schema": "completed-h7572-frame-reuse-v1",
+  "frame_proof": {
+    "rational_dimension": 2524,
+    "field": "Q(zeta_6)/Q",
+    "field_degree": 2,
+    "module_rank": 1262,
+    "conjugation": "zeta_6 -> 1-zeta_6; scalar-action transpose",
+    "canonical_trace_basis": [
+      "1",
+      "zeta_6"
+    ],
+    "canonical_trace_metric": [
+      [
+        2,
+        1
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "actual_Euclidean_coordinate_trace_form": "h(u,v)=u^T*v/2-(u^T*S*v)*sqrt(-3)/6, S=2R-I; Tr(h)=u^T*v",
+    "scalar_action": "R=Q*P^T/2524",
+    "scalar_action_identities": [
+      "R*R^T=I",
+      "R+R^T=I",
+      "R^2-R+I=0"
+    ],
+    "frame": "F=P",
+    "frame_gram_scale": 2524,
+    "full_P_integer_Gram_verified": true,
+    "full_Q_integer_Gram_verified": true,
+    "full_symmetric_cross_identity_verified": true,
+    "unordered_row_pairs_checked_per_identity": 3184026,
+    "P_packed_sha256": "6797e67ca52723c3a0d787ab10099742dbe765f806b937d69b01e656f6a42110",
+    "Q_packed_sha256": "3f0b69cc4a2ab3b5f1a0d2f4d13e6e5f51247ad1741f59be3156e092d988ef36",
+    "actual_frame_and_used_image_alphabet": [
+      -1,
+      1
+    ],
+    "flat_entry_images": {
+      "0": "P",
+      "1": "Q",
+      "3": "-P",
+      "4": "-Q"
+    },
+    "unused_nonflat_images": {
+      "2": "Q-P",
+      "5": "P-Q"
+    },
+    "immutable_recipe": "artifacts/hadamard-7572/recipe.py",
+    "immutable_recipe_sha256": "a839a6052b2bd6b55170304318099e61cc62b1b9e3d525834a4d131bd9900ec8",
+    "immutable_sequences_sha256": "c5497ef485a23f1c99385035eaf02472b4dad4dee9d906d0d6b2aeb2f3680871"
+  },
+  "outputs": [
+    {
+      "source_id": "catalogue-p7-q6",
+      "source_order": 7,
+      "source_phase": 6,
+      "source_hash": "da0f5b96daca8fa67e0236320694fabfab46e41fa25ff459f004a43e2187787a",
+      "exponents": [
+        [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          4,
+          0,
+          4,
+          4,
+          1
+        ],
+        [
+          0,
+          4,
+          1,
+          4,
+          0,
+          4,
+          1
+        ],
+        [
+          1,
+          0,
+          4,
+          3,
+          0,
+          3,
+          4
+        ],
+        [
+          1,
+          4,
+          0,
+          0,
+          3,
+          3,
+          4
+        ],
+        [
+          1,
+          4,
+          4,
+          3,
+          3,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          4,
+          4,
+          0,
+          4
+        ]
+      ],
+      "source_used_alphabet": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "source_gram_scale": 7,
+      "source_gauges_and_exact_proofs": {
+        "raw_source_data": "experiments/scalar_lift/catalogue_inputs/P7.json",
+        "raw_source_data_sha256": "a3175e0481fd0f067a3647d69ff889d3e1911f6cbdfdca6cb333d73eac51eb61",
+        "raw_source_full_Gram": {
+          "order": 7,
+          "phase": 6,
+          "row_and_column_Grams_verified": true,
+          "source_gram_scale": 7,
+          "exponent_sha256": "2238e9899a7edb7c4298e300151624dbf4817198238b2ca0389998b22d743e23"
+        },
+        "row_exponent_shifts_mod6": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0
+        ],
+        "column_exponent_shifts_mod6": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0
+        ],
+        "global_exponent_shift_mod6": 0,
+        "literal_reconstruction": "(raw[i,j]+row[i]+column[j]+global_shift) mod6",
+        "gauged_source_full_Gram": {
+          "order": 7,
+          "phase": 6,
+          "row_and_column_Grams_verified": true,
+          "source_gram_scale": 7,
+          "exponent_sha256": "da0f5b96daca8fa67e0236320694fabfab46e41fa25ff459f004a43e2187787a"
+        },
+        "gauged_source_matches_active_verified_registry": true,
+        "active_source_proof": {
+          "order": 7,
+          "phase": 6,
+          "exponent_sha256": "da0f5b96daca8fa67e0236320694fabfab46e41fa25ff459f004a43e2187787a",
+          "full_Gram_verified": true,
+          "verification": "complete exact column Gram; square invertibility gives the row Gram",
+          "acquisition": {
+            "data_file": "experiments/scalar_lift/catalogue_inputs/P7.json",
+            "data_sha256": "a3175e0481fd0f067a3647d69ff889d3e1911f6cbdfdca6cb333d73eac51eb61",
+            "new_source_construction_operation": false,
+            "scope": "This fixed starting input; subsequent operations are scalar restrictions",
+            "fixed_starting_gauge": {
+              "exists": true,
+              "visited_row_prefixes": 8,
+              "row_shifts": [
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0
+              ],
+              "column_shifts": [
+                0,
+                0,
+                0,
+                1,
+                1,
+                1,
+                0
+              ],
+              "scope": "All sixth-root row/column gauges and permutations of this fixed matrix"
+            }
+          },
+          "alphabet_gate": {
+            "phase": 6,
+            "used_alphabet": [
+              0,
+              1,
+              3,
+              4
+            ],
+            "scope": "every uniform Q-linear map of the actual scalar alphabet to equally sized sign blocks, including all scalar-restriction towers, uniform input/output basis choices, and representation multiplicities",
+            "nonuniform_coordinate_maps_excluded": false,
+            "source_row_column_gauges_searched": false,
+            "field_towers_or_bases_enumerated": false,
+            "status": "SKIP",
+            "excluded": false,
+            "reason": "no odd integer relation",
+            "complete_for_odd_integer_relations": true,
+            "profiles_checked": 20,
+            "embedding_modulus": 30,
+            "sign_flattenability_proved": false
+          }
+        }
+      },
+      "frame_width": 2524,
+      "frame_gram_scale": 2524,
+      "output_order": 17668,
+      "output_gram_scale": 17668,
+      "actual_endpoint_alphabet": [
+        -1,
+        1
+      ],
+      "literal_entry_recipe": "divmod(i,2524)=(r,a), divmod(j,2524)=(c,b); exponent=source[r,c]; return P[a,b],Q[a,b],-P[a,b],-Q[a,b] for exponent0,1,3,4",
+      "full_endpoint_Gram_proof": "B(z)=rho(z)P; sum_k B(Hik) B(Hjk)^T =2524*rho(sum_k Hik*conjugate(Hjk))=2524*n*delta_ij*I",
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "all_used_entry_images_verified_sign": true,
+      "full_dense_endpoint_Gram_performed": false,
+      "literal_endpoint_sampled_rows": [
+        0,
+        2523,
+        2524,
+        2525,
+        17667
+      ],
+      "all_25_sampled_integer_row_products_verified": true,
+      "new_order_status": "new_to_best_of_authors_knowledge",
+      "prior_construction_identified": false,
+      "new_Hadamard_order_claimed": true,
+      "new_order_claim": "To the best of the author's knowledge, 17668 is a new real Hadamard order.",
+      "new_equivalence_class_claimed": false,
+      "literal_recipe_sha256": "f7b4405058dfbc5fb83cc2e8f156941146c520841d5004ae6a4ac082047410dc"
+    },
+    {
+      "source_id": "aalto-9-6-000",
+      "source_order": 9,
+      "source_phase": 6,
+      "source_hash": "737720eabbad166c05975163d385826b3dd8f235713b70ad28a639629b56199b",
+      "exponents": [
+        [
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          1,
+          3,
+          3,
+          4,
+          4,
+          4
+        ],
+        [
+          1,
+          1,
+          4,
+          0,
+          0,
+          1,
+          4,
+          0,
+          3
+        ],
+        [
+          1,
+          1,
+          0,
+          4,
+          0,
+          4,
+          1,
+          3,
+          3
+        ],
+        [
+          1,
+          3,
+          0,
+          0,
+          4,
+          1,
+          0,
+          4,
+          1
+        ],
+        [
+          0,
+          3,
+          1,
+          4,
+          1,
+          3,
+          4,
+          0,
+          1
+        ],
+        [
+          1,
+          4,
+          4,
+          1,
+          0,
+          4,
+          3,
+          3,
+          0
+        ],
+        [
+          1,
+          4,
+          0,
+          3,
+          4,
+          0,
+          3,
+          1,
+          4
+        ],
+        [
+          0,
+          4,
+          3,
+          3,
+          1,
+          1,
+          0,
+          4,
+          4
+        ]
+      ],
+      "source_used_alphabet": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "source_gram_scale": 9,
+      "source_gauges_and_exact_proofs": {
+        "raw_source_data": "experiments/scalar_lift/broad_catalogue_inputs/BH-9-6.txt",
+        "raw_source_data_sha256": "e6b0c65c17700e3d9a5141b5ba74e025cbbde9d39809a25b89c98ef1083ff5a7",
+        "raw_source_full_Gram": {
+          "order": 9,
+          "phase": 6,
+          "row_and_column_Grams_verified": true,
+          "source_gram_scale": 9,
+          "exponent_sha256": "57a5d5773eb9c2081d576aff7910d9793365c14b244fdb23106a28ed572d7b28"
+        },
+        "row_exponent_shifts_mod6": [
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0
+        ],
+        "column_exponent_shifts_mod6": [
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          1,
+          1,
+          0
+        ],
+        "global_exponent_shift_mod6": 0,
+        "literal_reconstruction": "(raw[i,j]+row[i]+column[j]+global_shift) mod6",
+        "gauged_source_full_Gram": {
+          "order": 9,
+          "phase": 6,
+          "row_and_column_Grams_verified": true,
+          "source_gram_scale": 9,
+          "exponent_sha256": "737720eabbad166c05975163d385826b3dd8f235713b70ad28a639629b56199b"
+        },
+        "gauged_source_matches_active_verified_registry": true,
+        "active_source_proof": {
+          "order": 9,
+          "phase": 6,
+          "exponent_sha256": "737720eabbad166c05975163d385826b3dd8f235713b70ad28a639629b56199b",
+          "full_Gram_verified": true,
+          "verification": "complete exact column Gram; square invertibility gives the row Gram",
+          "alphabet_gate": {
+            "phase": 6,
+            "used_alphabet": [
+              0,
+              1,
+              3,
+              4
+            ],
+            "scope": "every uniform Q-linear map of the actual scalar alphabet to equally sized sign blocks, including all scalar-restriction towers, uniform input/output basis choices, and representation multiplicities",
+            "nonuniform_coordinate_maps_excluded": false,
+            "source_row_column_gauges_searched": false,
+            "field_towers_or_bases_enumerated": false,
+            "status": "SKIP",
+            "excluded": false,
+            "reason": "no odd integer relation",
+            "complete_for_odd_integer_relations": true,
+            "profiles_checked": 20,
+            "embedding_modulus": 30,
+            "sign_flattenability_proved": false
+          },
+          "monomial_gauge_audit": {
+            "exists": true,
+            "row_shifts": [
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              0
+            ],
+            "column_shifts": [
+              0,
+              0,
+              1,
+              1,
+              1,
+              0,
+              1,
+              1,
+              0
+            ],
+            "missing_antipodal_residues": [
+              2
+            ],
+            "visited_row_prefixes": 10,
+            "complete_over_all_row_column_root_gauges": true,
+            "higher_root_alphabet_gauges_covered": false
+          },
+          "acquisition": {
+            "catalogue": "https://wiki.aalto.fi/spaces/Butson/pages/120482304/Matrices%2Bup%2Bto%2Bmonomial%2Bequivalence",
+            "dataset_url": "https://wiki.aalto.fi/download/attachments/120482261/BH-9-6.txt",
+            "dataset_sha256": "e6b0c65c17700e3d9a5141b5ba74e025cbbde9d39809a25b89c98ef1083ff5a7",
+            "class_index_zero_based": 0,
+            "raw_source_full_Gram": {
+              "order": 9,
+              "phase": 6,
+              "exponent_sha256": "57a5d5773eb9c2081d576aff7910d9793365c14b244fdb23106a28ed572d7b28",
+              "full_Gram_verified": true,
+              "verification": "complete exact column Gram; square invertibility gives the row Gram"
+            },
+            "raw_source_sha256": "57a5d5773eb9c2081d576aff7910d9793365c14b244fdb23106a28ed572d7b28",
+            "global_anchor_subtracted_after_gauge": 0,
+            "source_construction_search_performed": false,
+            "tree_edge_added": false
+          }
+        }
+      },
+      "frame_width": 2524,
+      "frame_gram_scale": 2524,
+      "output_order": 22716,
+      "output_gram_scale": 22716,
+      "actual_endpoint_alphabet": [
+        -1,
+        1
+      ],
+      "literal_entry_recipe": "divmod(i,2524)=(r,a), divmod(j,2524)=(c,b); exponent=source[r,c]; return P[a,b],Q[a,b],-P[a,b],-Q[a,b] for exponent0,1,3,4",
+      "full_endpoint_Gram_proof": "B(z)=rho(z)P; sum_k B(Hik) B(Hjk)^T =2524*rho(sum_k Hik*conjugate(Hjk))=2524*n*delta_ij*I",
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "all_used_entry_images_verified_sign": true,
+      "full_dense_endpoint_Gram_performed": false,
+      "literal_endpoint_sampled_rows": [
+        0,
+        2523,
+        2524,
+        2525,
+        22715
+      ],
+      "all_25_sampled_integer_row_products_verified": true,
+      "new_order_status": "new_to_best_of_authors_knowledge",
+      "prior_construction_identified": false,
+      "new_Hadamard_order_claimed": true,
+      "new_order_claim": "To the best of the author's knowledge, 22716 is a new real Hadamard order.",
+      "new_equivalence_class_claimed": false,
+      "literal_recipe_sha256": "463d995c7ed111e819890d66ad3eae01516d02b1e73b973fc358d7bcb8f3fbe8"
+    },
+    {
+      "source_id": "unreal13-q6",
+      "source_order": 13,
+      "source_phase": 6,
+      "source_hash": "b92f18ce3195f80497beb80db1c1ce804b558ec6485dfe6ec762a0ddd393b59f",
+      "exponents": [
+        [
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          4,
+          4,
+          4,
+          3,
+          3,
+          3
+        ],
+        [
+          1,
+          1,
+          1,
+          3,
+          4,
+          4,
+          4,
+          0,
+          0,
+          0,
+          3,
+          3,
+          0
+        ],
+        [
+          1,
+          3,
+          3,
+          4,
+          0,
+          0,
+          3,
+          0,
+          4,
+          4,
+          1,
+          1,
+          0
+        ],
+        [
+          1,
+          3,
+          3,
+          0,
+          4,
+          4,
+          0,
+          3,
+          0,
+          0,
+          1,
+          1,
+          4
+        ],
+        [
+          1,
+          3,
+          0,
+          0,
+          1,
+          3,
+          4,
+          4,
+          1,
+          3,
+          0,
+          4,
+          0
+        ],
+        [
+          1,
+          4,
+          0,
+          3,
+          0,
+          3,
+          1,
+          3,
+          4,
+          0,
+          4,
+          0,
+          1
+        ],
+        [
+          1,
+          4,
+          0,
+          4,
+          3,
+          1,
+          0,
+          0,
+          3,
+          1,
+          0,
+          3,
+          4
+        ],
+        [
+          1,
+          4,
+          0,
+          1,
+          4,
+          0,
+          3,
+          1,
+          0,
+          3,
+          4,
+          0,
+          3
+        ],
+        [
+          1,
+          0,
+          3,
+          0,
+          3,
+          1,
+          4,
+          4,
+          3,
+          1,
+          4,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          4,
+          3,
+          3,
+          0,
+          1,
+          3,
+          0,
+          4,
+          0,
+          4,
+          1
+        ],
+        [
+          1,
+          0,
+          4,
+          4,
+          1,
+          3,
+          0,
+          0,
+          1,
+          3,
+          3,
+          0,
+          4
+        ],
+        [
+          1,
+          0,
+          4,
+          1,
+          0,
+          4,
+          3,
+          1,
+          3,
+          0,
+          0,
+          4,
+          3
+        ]
+      ],
+      "source_used_alphabet": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "source_gram_scale": 13,
+      "source_gauges_and_exact_proofs": {
+        "raw_source_data": "experiments/scalar_lift/bh13_6_seed.json",
+        "raw_source_data_sha256": "8ff8f10160828e8cc0372ecb045fca397aaf5c44c8f0db06d7aad1ebcb8cf003",
+        "raw_source_full_Gram": {
+          "order": 13,
+          "phase": 6,
+          "row_and_column_Grams_verified": true,
+          "source_gram_scale": 13,
+          "exponent_sha256": "10091086757fcc1d78fea5a8eee0d7c8e7699274d0d5cee6d3e22f3b76095566"
+        },
+        "row_exponent_shifts_mod6": [
+          0,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        "column_exponent_shifts_mod6": [
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        "global_exponent_shift_mod6": 5,
+        "literal_reconstruction": "(raw[i,j]+row[i]+column[j]+global_shift) mod6",
+        "gauged_source_full_Gram": {
+          "order": 13,
+          "phase": 6,
+          "row_and_column_Grams_verified": true,
+          "source_gram_scale": 13,
+          "exponent_sha256": "b92f18ce3195f80497beb80db1c1ce804b558ec6485dfe6ec762a0ddd393b59f"
+        },
+        "gauged_source_matches_active_verified_registry": true,
+        "active_source_proof": {
+          "order": 13,
+          "phase": 6,
+          "exponent_sha256": "b92f18ce3195f80497beb80db1c1ce804b558ec6485dfe6ec762a0ddd393b59f",
+          "full_Gram_verified": true,
+          "verification": "complete exact column Gram; square invertibility gives the row Gram",
+          "global_exponent_shift_from_unreal_source": -1,
+          "inverse_shift_for_original_unreal_substitution": 1,
+          "declared_allowed_exponents": [
+            0,
+            1,
+            3,
+            4
+          ]
+        }
+      },
+      "frame_width": 2524,
+      "frame_gram_scale": 2524,
+      "output_order": 32812,
+      "output_gram_scale": 32812,
+      "actual_endpoint_alphabet": [
+        -1,
+        1
+      ],
+      "literal_entry_recipe": "divmod(i,2524)=(r,a), divmod(j,2524)=(c,b); exponent=source[r,c]; return P[a,b],Q[a,b],-P[a,b],-Q[a,b] for exponent0,1,3,4",
+      "full_endpoint_Gram_proof": "B(z)=rho(z)P; sum_k B(Hik) B(Hjk)^T =2524*rho(sum_k Hik*conjugate(Hjk))=2524*n*delta_ij*I",
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "all_used_entry_images_verified_sign": true,
+      "full_dense_endpoint_Gram_performed": false,
+      "literal_endpoint_sampled_rows": [
+        0,
+        2523,
+        2524,
+        2525,
+        32811
+      ],
+      "all_25_sampled_integer_row_products_verified": true,
+      "new_order_status": "new_to_best_of_authors_knowledge",
+      "prior_construction_identified": false,
+      "new_Hadamard_order_claimed": true,
+      "new_order_claim": "To the best of the author's knowledge, 32812 is a new real Hadamard order.",
+      "new_equivalence_class_claimed": false,
+      "literal_recipe_sha256": "fa3b43e33c31fd33566df7fbcf0268aa59d3baf9e2fe5088970a04b1dfd67cc1"
+    }
+  ],
+  "output_orders": [
+    17668,
+    22716,
+    32812
+  ],
+  "novelty_convention": {
+    "known": "an identified prior construction gives this real Hadamard order",
+    "new_to_best_of_authors_knowledge": "a completed endpoint for which the author knows no prior construction",
+    "new_order_claims_are_qualified_by_authors_knowledge": true,
+    "absolute_priority_claimed": false,
+    "equivalence_class_novelty_claimed": false
+  },
+  "all_three_are_completed_literal_sign_endpoint_recipes": true,
+  "large_endpoint_matrices_allocated": false,
+  "new_real_orders_claimed": true,
+  "new_real_orders_claimed_to_best_of_authors_knowledge": [
+    17668,
+    22716,
+    32812
+  ],
+  "new_equivalence_classes_claimed": false
+}

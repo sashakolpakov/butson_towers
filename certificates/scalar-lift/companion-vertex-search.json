@@ -1,0 +1,105 @@
+{
+  "schema": "rational-vertex-exact-binary-companion-row-search-v1",
+  "new_files_only": true,
+  "source_sha256": "a166ec961fcc405f29e163621f002042c2744ecff9ed90205b333a8a62af4201",
+  "report_path": "search-state/companion-vertex-20261123/report.json",
+  "random_objectives": 10,
+  "anchors": [
+    668,
+    892
+  ],
+  "parent_rows": 16,
+  "equations_including_quota": 33,
+  "exact_rational_vertices": 10,
+  "fractional_variables_each": [
+    33,
+    33,
+    33,
+    33,
+    33,
+    33,
+    33,
+    33,
+    33,
+    33
+  ],
+  "all_vertices_replayed_with_rational_arithmetic": true,
+  "first_binary_windows": 30,
+  "exact_local_mod2_infeasibility_certificates": 5,
+  "parity_breaking_released_windows": 5,
+  "parity_breaking_results": [
+    "NOT_SOLVED",
+    "NOT_SOLVED",
+    "NOT_SOLVED",
+    "NOT_SOLVED",
+    "NOT_SOLVED"
+  ],
+  "new_17th_row_found": false,
+  "continuous_global_obstruction_found": false,
+  "all_unresolved_windows_remain_open": true,
+  "search_cpu_seconds": 16.738447999999998,
+  "exact_control_replay_cpu_seconds": 0.6740010000000001,
+  "planted_controls": [
+    {
+      "order": 668,
+      "fractional_count": 31,
+      "free_sites": 268,
+      "status": "OPTIMAL",
+      "full_partial_Gram_and_cross_Gram_proof": {
+        "rows": 16,
+        "order": 668,
+        "packed_complete_partial_Gram_verified": true,
+        "packed_complete_partial_cross_Gram_verified": true,
+        "sign_sha256": "9a49f4fa07da180948b8c697528ff5f26ff1a893ec9ef776c0b1df7e694facf0"
+      }
+    },
+    {
+      "order": 892,
+      "fractional_count": 31,
+      "free_sites": 342,
+      "status": "OPTIMAL",
+      "full_partial_Gram_and_cross_Gram_proof": {
+        "rows": 16,
+        "order": 892,
+        "packed_complete_partial_Gram_verified": true,
+        "packed_complete_partial_cross_Gram_verified": true,
+        "sign_sha256": "33fa6a516badd7aacbc0537249447e748d9618e03f65f2eed09c2f9f03607c96"
+      }
+    }
+  ],
+  "tests_passed": 4,
+  "GLOP": "Glop solver v9.15.6755",
+  "SCIP": "SCIP 10.0.0 [LP solver: SoPlex 8.0.0]",
+  "production_files_mutated": false,
+  "artifact_hashes": {
+    "search-state/companion-vertex-20261123/h668-verified-planted-control.npz": "a50b6dfeacdab75429b6c70ce4695cbd1d43a9c63f66ee79910656a0916b5f38",
+    "search-state/companion-vertex-20261123/h892-verified-planted-control.npz": "60dfbdab79f9571790379c0df1f2d29fe5f531fb923cb6d4fad7877de1b90eec",
+    "search-state/companion-vertex-20261123/report.json": "20860778b1472aba4b341580d5f5a9e6142d439803af83af8922025e6f333efe",
+    "search-state/companion-vertex-20261123/focused-snapshot.json": "8d47cdbcf581fe7006fa2b45d0132e66ed71ee246bf6222fc42c01e91e5b60af",
+    "search-state/companion-vertex-20261123/h668-parent.npz": "3b41b78ef34142a1d4acb662b531695986dec316e2f30590c36b2235d524e6d0",
+    "search-state/companion-vertex-20261123/parity-released-results.json": "91c1ffbb620f83da09c6322e6817c6542bb9a2517f5c1c1d3a96d65f277b99c7",
+    "search-state/companion-vertex-20261123/exact-replay.json": "deb53dfee89fe5906753937bc676c6029716f980d56e6a7525f3ca851a29117d",
+    "search-state/companion-vertex-20261123/modular-certificates.json": "631d11255b2f7ffd56e80db7c50529dd77687ea01626cc031e0582ad87922195",
+    "search-state/companion-vertex-20261123/h892-parent.npz": "55b9adace95d647d5fb2b34fe63c804d8204381f8053ca15c538332cdb4e0b48",
+    "search-state/companion-vertex-20261123/h668-objective-002/result.json": "698d8a7d622895d320878645bb82327ed22e9325386e6702d017d959519c377c",
+    "search-state/companion-vertex-20261123/h668-objective-002/vertex.npz": "adc985683aa5c08f157e8ec9a8c459f869d06a23b672b2aad9625a8e7e4d4621",
+    "search-state/companion-vertex-20261123/h892-objective-003/result.json": "ca4907a069255bba3769c1962014fbef07048b62eed52ccac1253c18ee2d3e69",
+    "search-state/companion-vertex-20261123/h892-objective-003/vertex.npz": "f8a768ff2dec55f330754afac69d1f345042aa766f1e758ef993150def3e0038",
+    "search-state/companion-vertex-20261123/h668-objective-004/result.json": "e008b5b734d30461dca179795fede5b3d3cb44d5505eb15ba177cb58e60f26c2",
+    "search-state/companion-vertex-20261123/h668-objective-004/vertex.npz": "b3c963b461fd1139ac92539c958f3e1d5318c4212744905be3c3961348b59543",
+    "search-state/companion-vertex-20261123/h892-objective-005/result.json": "655205be29952b249034cedbf63d7b719e55aa579ba43f8aff32f0d66d2d2488",
+    "search-state/companion-vertex-20261123/h892-objective-005/vertex.npz": "75a87621289067196f9b8198c86c7bd14dfe71dd8f12f51bd73a4a66406f1f3c",
+    "search-state/companion-vertex-20261123/h892-objective-007/result.json": "8cbaa35fed36550df1dd152596a8a65925d19fb912e26194d28331581dc25883",
+    "search-state/companion-vertex-20261123/h892-objective-007/vertex.npz": "65b2f3411cb2937e81ab95c6ea13219cd2908be43d33fd51defcf8ceeea2d2f5",
+    "search-state/companion-vertex-20261123/h892-objective-009/result.json": "3bb0e0dc0c7cc865253839dda041c40ff3c7818cced2d05953537c84836078b8",
+    "search-state/companion-vertex-20261123/h892-objective-009/vertex.npz": "6b8cc103989d738822a4b68a8a1107b3e56f50b77cf22dc3f812f2d9c7aac1cf",
+    "search-state/companion-vertex-20261123/h668-objective-008/result.json": "662a8d4af4efa24ec25d9583261f9dc387c588b678604db65e7eae43c3119607",
+    "search-state/companion-vertex-20261123/h668-objective-008/vertex.npz": "c0aca955e2c9d0a5702a602fc8f3c2effcc89c98d856d07141729ce49221a853",
+    "search-state/companion-vertex-20261123/h668-objective-006/result.json": "76bbf1ad9e570f27d64848531db15052aa2d0a783ee32ac96fa15ab1eb4104b8",
+    "search-state/companion-vertex-20261123/h668-objective-006/vertex.npz": "a4e1349ec0e46218d1534a8e61b8df555d93ca0734784731117404ddbc63952c",
+    "search-state/companion-vertex-20261123/h892-objective-001/result.json": "b7feaeb8ba1fb77a1e45af851d9c2881f8e4ca77cee5a1d4400d272035397623",
+    "search-state/companion-vertex-20261123/h892-objective-001/vertex.npz": "745135de04859a1b781c7ffe56feb499d1384541ab41180766dfddc5a9146148",
+    "search-state/companion-vertex-20261123/h668-objective-000/result.json": "d68dc63ab5fffc82f4b3e4ad4d8fe97456efd9c5f261be32594b5ef7b52c8139",
+    "search-state/companion-vertex-20261123/h668-objective-000/vertex.npz": "9c59fa592dd588faf08ff9db1529bf4cd8fb59127830f2a6e06d46e97f9c637a"
+  }
+}

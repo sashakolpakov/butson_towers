@@ -1,0 +1,8 @@
+{
+  "length7_assignments_exhausted": 512,
+  "length7_parity_survivors": 64,
+  "length7_exact_Williamson_solutions": 60,
+  "small_CP_solution_set_equals_independent_enumeration": true,
+  "direct_group_convolution_matches_every_parity_prediction": true,
+  "known_order48_sign_control_Gram_verified": true
+}

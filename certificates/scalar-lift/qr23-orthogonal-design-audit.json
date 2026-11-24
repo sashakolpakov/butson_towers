@@ -1,0 +1,268 @@
+{
+  "scope": "Scalar triples on supports of one real orthogonal design, with two singleton exceptions",
+  "Paley_designs": {
+    "orders_and_types": [
+      [
+        64,
+        [
+          1,
+          1,
+          62
+        ]
+      ],
+      [
+        64,
+        [
+          1,
+          1,
+          31,
+          31
+        ]
+      ]
+    ],
+    "exact_Gram_and_anticommutation_verified": true,
+    "matrix_sha256": {
+      "C32": "ec70012d4bf590bdce51b0cd7f542959161ae4b2a6f6bab3bf08af562fcaf9a1",
+      "P": "94c9b4b290923e7bde29bc6f3865201183021e97c91ceb5e0ca867bc96bbecb0",
+      "Q": "ae44e2f77e451474122897fdc1058a6bf226db8787abda6c72ef8784c1c836ce",
+      "R": "fbe305848e7807ddbd4281dd3d10a500458ed90079254ff984ed8a6ee384ca72",
+      "S": "d9f4d20f1a956ff4d0f520ab76996bcd318847722f6d588918c5118d57841208"
+    },
+    "regular_weight_gcds": [
+      62,
+      31
+    ],
+    "scalar_phase_substitutions_excluded": true
+  },
+  "local_classifications": [
+    {
+      "phase": 24,
+      "energy9_triples": 32,
+      "trace_energy2_triples": 192,
+      "exact_energy2_triples": 32,
+      "energy9_alpha_norm": "13/4",
+      "energy9_beta_norm": "1/4",
+      "energy9_alpha_beta_commutator": "+/-(omega-conjugate(omega))",
+      "exact_energy2_requires_quarter_turn": true,
+      "exact_nonaligning_exception_pairs_checked": 1024
+    },
+    {
+      "phase": 48,
+      "energy9_triples": 64,
+      "trace_energy2_triples": 896,
+      "exact_energy2_triples": 64,
+      "energy9_alpha_norm": "13/4",
+      "energy9_beta_norm": "1/4",
+      "energy9_alpha_beta_commutator": "+/-(omega-conjugate(omega))",
+      "exact_energy2_requires_quarter_turn": true,
+      "exact_nonaligning_exception_pairs_checked": 0
+    },
+    {
+      "phase": 96,
+      "energy9_triples": 128,
+      "trace_energy2_triples": 3840,
+      "exact_energy2_triples": 128,
+      "energy9_alpha_norm": "13/4",
+      "energy9_beta_norm": "1/4",
+      "energy9_alpha_beta_commutator": "+/-(omega-conjugate(omega))",
+      "exact_energy2_requires_quarter_turn": true,
+      "exact_nonaligning_exception_pairs_checked": 0
+    }
+  ],
+  "conjugation_character_collisions": {
+    "2": [],
+    "3": [
+      [
+        [
+          0
+        ],
+        [
+          1,
+          2
+        ]
+      ],
+      [
+        [
+          1
+        ],
+        [
+          0,
+          2
+        ]
+      ],
+      [
+        [
+          2
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    ],
+    "4": [],
+    "5": [],
+    "6": [],
+    "7": [],
+    "8": [],
+    "9": [],
+    "10": [],
+    "11": [],
+    "12": [],
+    "13": []
+  },
+  "regular_four_support_weights_with_square_product": [
+    [
+      31,
+      31
+    ]
+  ],
+  "nonintegral_exception_phase_ratio": {
+    "Eisenstein_numerator": [
+      8,
+      -7
+    ],
+    "denominator": 13
+  },
+  "OD_64_1_1_1_61_exists_by_primary_theorem": {
+    "author": "Peter J. Robinson",
+    "year": 1977,
+    "title": "Using product designs to construct orthogonal designs",
+    "doi": "10.1017/S0004972700023327",
+    "results": [
+      "Corollary 3.3",
+      "Corollary 4.4"
+    ],
+    "explicit_matrix_reconstructed_here": false
+  },
+  "row_local_positive_assignments": [
+    {
+      "phase": 24,
+      "triple_types": [
+        {
+          "multiplicity": 1,
+          "exponents": [
+            0,
+            6,
+            6
+          ]
+        },
+        {
+          "multiplicity": 1,
+          "exponents": [
+            0,
+            12,
+            16
+          ]
+        },
+        {
+          "multiplicity": 1,
+          "exponents": [
+            0,
+            16,
+            4
+          ]
+        },
+        {
+          "multiplicity": 61,
+          "exponents": [
+            0,
+            0,
+            12
+          ]
+        }
+      ],
+      "exact_weighted_row_norm": 1499,
+      "diagonal_amicability_verified": true,
+      "off_diagonal_equations_solved": false,
+      "source_matrix_constructed": false
+    },
+    {
+      "phase": 48,
+      "triple_types": [
+        {
+          "multiplicity": 1,
+          "exponents": [
+            0,
+            12,
+            12
+          ]
+        },
+        {
+          "multiplicity": 1,
+          "exponents": [
+            0,
+            24,
+            16
+          ]
+        },
+        {
+          "multiplicity": 1,
+          "exponents": [
+            0,
+            16,
+            40
+          ]
+        },
+        {
+          "multiplicity": 61,
+          "exponents": [
+            0,
+            0,
+            24
+          ]
+        }
+      ],
+      "exact_weighted_row_norm": 1499,
+      "diagonal_amicability_verified": true,
+      "off_diagonal_equations_solved": false,
+      "source_matrix_constructed": false
+    },
+    {
+      "phase": 96,
+      "triple_types": [
+        {
+          "multiplicity": 1,
+          "exponents": [
+            0,
+            24,
+            24
+          ]
+        },
+        {
+          "multiplicity": 1,
+          "exponents": [
+            0,
+            48,
+            64
+          ]
+        },
+        {
+          "multiplicity": 1,
+          "exponents": [
+            0,
+            64,
+            16
+          ]
+        },
+        {
+          "multiplicity": 61,
+          "exponents": [
+            0,
+            0,
+            48
+          ]
+        }
+      ],
+      "exact_weighted_row_norm": 1499,
+      "diagonal_amicability_verified": true,
+      "off_diagonal_equations_solved": false,
+      "source_matrix_constructed": false
+    }
+  ],
+  "original_repeated_adjoint_border_application": "excluded by the universal odd-border obstruction at t=3",
+  "generic_Fourier_algebra_remains_valid": true,
+  "all_entrywise_phase_assignments_excluded": false,
+  "general_length23_chart_excluded": false,
+  "new_source_order_constructed": false
+}

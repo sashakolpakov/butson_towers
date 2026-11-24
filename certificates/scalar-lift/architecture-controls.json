@@ -1,0 +1,252 @@
+{
+  "schema": "hadamard-architecture-controls-v1",
+  "frontier_search_performed": false,
+  "complex_complementary_source_control": {
+    "length": 3,
+    "first_sequence_exponents_mod4": [
+      0,
+      0,
+      2
+    ],
+    "second_sequence_exponents_mod4": [
+      0,
+      1,
+      0
+    ],
+    "source_order": 6,
+    "source_phase": 4,
+    "source_Gram_checked_exactly": true,
+    "known_real_endpoint_order": 12,
+    "full_real_sign_Gram_checked_exactly": true,
+    "new_order_claimed": false
+  },
+  "twelfth_skew_pair_control": {
+    "width": 4,
+    "signed_permutation_J": [
+      [
+        0,
+        -1,
+        0,
+        0
+      ],
+      [
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        -1
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ]
+    ],
+    "skew_cross_Gram_verified": true,
+    "primitive_twelfth_polynomial_verified": true,
+    "R_cubed_equals_J_verified": true,
+    "equivalent_sextic_pair_F_minus_JG_verified": true,
+    "broader_than_sextic_pair_plus_J_claimed": false
+  },
+  "fixed_frame_alternating_code_controls": [
+    {
+      "width": 12,
+      "prime": 3,
+      "fixed_frame_code_dimension": 6,
+      "alternating_form_rank": 4,
+      "factorization_A_mod_prime_equals_V_K_Vtranspose_verified": true,
+      "skew_integer_C_square_equals_minus_3r_squared_I_verified": true,
+      "off_diagonal_odd_entry_absolute_bound": 4,
+      "number_of_entries_with_each_bounded_lift_count": {
+        "1": 54,
+        "2": 12
+      },
+      "each_off_diagonal_residue_has_at_most_two_lifts": true
+    },
+    {
+      "width": 28,
+      "prime": 7,
+      "fixed_frame_code_dimension": 14,
+      "alternating_form_rank": 6,
+      "factorization_A_mod_prime_equals_V_K_Vtranspose_verified": true,
+      "skew_integer_C_square_equals_minus_3r_squared_I_verified": true,
+      "off_diagonal_odd_entry_absolute_bound": 11,
+      "number_of_entries_with_each_bounded_lift_count": {
+        "2": 138,
+        "1": 240
+      },
+      "each_off_diagonal_residue_has_at_most_two_lifts": true
+    }
+  ],
+  "sextic_control": {
+    "width": 12,
+    "action_denominator": 6,
+    "exhaustively_tested_sign_vectors": 4096,
+    "simultaneously_flat_vectors": 32,
+    "known_complete_frame_satisfies_affine_code": true,
+    "rank_of_twice_action_mod_two": 1,
+    "eisenstein_saturation_index_at_two": 2
+  },
+  "fifth_root_control": {
+    "width": 8,
+    "action_denominator": 2,
+    "used_action_exponents_relative_to_frame": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "exhaustively_tested_sign_vectors": 256,
+    "simultaneously_flat_vectors": 16,
+    "antipodal_directions": 8,
+    "all_antipodal_directions_mutually_orthogonal": true,
+    "known_complete_frame_verified": true,
+    "twice_real_subfield_action": [
+      [
+        -2,
+        0,
+        0,
+        0,
+        -1,
+        -1,
+        -1,
+        -1
+      ],
+      [
+        0,
+        -2,
+        0,
+        0,
+        1,
+        -1,
+        1,
+        -1
+      ],
+      [
+        0,
+        0,
+        -2,
+        0,
+        1,
+        -1,
+        -1,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        -2,
+        1,
+        1,
+        -1,
+        -1
+      ],
+      [
+        -1,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        -1,
+        -1,
+        -1,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        -1,
+        1,
+        -1,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        -1,
+        -1,
+        1,
+        -1,
+        0,
+        0,
+        0,
+        0
+      ]
+    ],
+    "real_subfield_polynomial": "T^2+T-I=0, where displayed matrix is 2T",
+    "cross_Gram_is_not_scalar": true,
+    "unused_fifth_image_entry_values": [
+      -2,
+      0,
+      2
+    ]
+  },
+  "cyclotomic_quotient_ring_control": {
+    "source_order": 5,
+    "source_phase": 5,
+    "source_exponents": [
+      [
+        2,
+        3,
+        1,
+        1,
+        3
+      ],
+      [
+        3,
+        2,
+        3,
+        1,
+        1
+      ],
+      [
+        1,
+        3,
+        2,
+        3,
+        1
+      ],
+      [
+        1,
+        1,
+        3,
+        2,
+        3
+      ],
+      [
+        3,
+        1,
+        1,
+        3,
+        2
+      ]
+    ],
+    "source_formula": "(i-j)^2+2 modulo5",
+    "used_source_phases": [
+      1,
+      2,
+      3
+    ],
+    "Gram_identity_modulo_Phi5_checked_exactly": true,
+    "off_diagonal_free_polynomial_is_not_zero": true,
+    "known_real_endpoint_order": 40,
+    "full_real_sign_Gram_checked_exactly": true,
+    "new_order_claimed": false
+  }
+}

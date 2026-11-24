@@ -1,0 +1,92 @@
+{
+  "scope": "Necessary phases for new flat columns; none constructed by this audit",
+  "order": 716,
+  "phase_definitions": "s=w^T x, t=w^T y, y=(I+N/179)x/2",
+  "phase_congruence": "s+t=0 modulo 3",
+  "new_phase_pairs": [
+    [
+      -4,
+      -2
+    ],
+    [
+      -4,
+      4
+    ],
+    [
+      -2,
+      -4
+    ],
+    [
+      -2,
+      2
+    ],
+    [
+      2,
+      -2
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      4,
+      -4
+    ],
+    [
+      4,
+      2
+    ]
+  ],
+  "new_phase_pairs_up_to_global_sign": [
+    [
+      2,
+      -2
+    ],
+    [
+      2,
+      4
+    ],
+    [
+      4,
+      -4
+    ],
+    [
+      4,
+      2
+    ]
+  ],
+  "old_sector_residual_nonzero_mod3_count": 537,
+  "old_sector_residual_first_nonzero_index": 0,
+  "old_sector_residual_first_value": 5,
+  "all_new_phase_columns_lie_outside_transported_positive_eigenspace": true,
+  "all_flat_columns_in_old_sector_are_old_sign_transports": true,
+  "old_sign_transports_span_dimension": 359,
+  "full_frame_requires_at_least_this_many_new_phase_columns": 357,
+  "full_frame_can_have_at_most_this_many_new_phase_columns": 537,
+  "full_frame_new_phase_column_count_multiple_of": 3,
+  "full_frame_phase_count_identity": "3*n6+n12+4*n48=537; n0=179+2*n6+3*n48",
+  "phase_quadratic_values": [
+    {
+      "s": 2,
+      "t": -2,
+      "s_squared_plus_t_squared_minus_st": 12
+    },
+    {
+      "s": 2,
+      "t": 4,
+      "s_squared_plus_t_squared_minus_st": 12
+    },
+    {
+      "s": 4,
+      "t": -4,
+      "s_squared_plus_t_squared_minus_st": 48
+    },
+    {
+      "s": 4,
+      "t": 2,
+      "s_squared_plus_t_squared_minus_st": 12
+    }
+  ],
+  "new_phase_column_constructed": false,
+  "full_frame_constructed_or_excluded": false
+}

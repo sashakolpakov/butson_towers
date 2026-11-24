@@ -1,0 +1,475 @@
+{
+  "schema": "independent-q12-nine-pattern-gauge-audit-v1",
+  "all_nine_patterns": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      0,
+      5
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      2,
+      3
+    ],
+    [
+      2,
+      5
+    ],
+    [
+      4,
+      1
+    ],
+    [
+      4,
+      3
+    ],
+    [
+      4,
+      5
+    ]
+  ],
+  "reduced_patterns": [
+    [
+      0,
+      1
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      0,
+      5
+    ]
+  ],
+  "coverage_proof": "global even phase shift -e sends (e,o) to (0,o-e); row0 gauge can independently be set0 by opposite uniform row/column shifts",
+  "source_count": 69,
+  "all_comparisons_match": true,
+  "complete_same_alphabet_gauge_feasibility_count": 19,
+  "records": [
+    {
+      "id": "aalto-7-12-000",
+      "full_nine_forbidden_patterns_transposed_CSP_exists": true,
+      "matches_reduced_three_pattern_CSP": true,
+      "visited_prefixes": 8
+    },
+    {
+      "id": "aalto-7-12-001",
+      "full_nine_forbidden_patterns_transposed_CSP_exists": true,
+      "matches_reduced_three_pattern_CSP": true,
+      "visited_prefixes": 8
+    },
+    {
+      "id": "aalto-7-12-002",
+      "full_nine_forbidden_patterns_transposed_CSP_exists": true,
+      "matches_reduced_three_pattern_CSP": true,
+      "visited_prefixes": 8
+    },
+    {
+      "id": "aalto-7-12-003",
+      "full_nine_forbidden_patterns_transposed_CSP_exists": true,
+      "matches_reduced_three_pattern_CSP": true,
+      "visited_prefixes": 8
+    },
+    {
+      "id": "aalto-9-12-000",
+      "full_nine_forbidden_patterns_transposed_CSP_exists": true,
+      "matches_reduced_three_pattern_CSP": true,
+      "visited_prefixes": 10
+    },
+    {
+      "id": "aalto-9-12-001",
+      "full_nine_forbidden_patterns_transposed_CSP_exists": true,
+      "matches_reduced_three_pattern_CSP": true,
+      "visited_prefixes": 11
+    },
+    {
+      "id": "aalto-9-12-002",
+      "full_nine_forbidden_patterns_transposed_CSP_exists": true,
+      "matches_reduced_three_pattern_CSP": true,
+      "visited_prefixes": 10
+    },
+    {
+      "id": "aalto-9-12-003",
+      "full_nine_forbidden_patterns_transposed_CSP_exists": true,
+      "matches_reduced_three_pattern_CSP": true,
+      "visited_prefixes": 10
+    },
+    {
+      "id": "aalto-9-12-004",
+      "full_nine_forbidden_patterns_transposed_CSP_exists": true,
+      "matches_reduced_three_pattern_CSP": true,
+      "visited_prefixes": 11
+    },
+    {
+      "id": "aalto-9-12-005",
+      "full_nine_forbidden_patterns_transposed_CSP_exists": true,
+      "matches_reduced_three_pattern_CSP": true,
+      "visited_prefixes": 11
+    },
+    {
+      "id": "aalto-9-12-006",
+      "full_nine_forbidden_patterns_transposed_CSP_exists": true,
+      "matches_reduced_three_pattern_CSP": true,
+      "visited_prefixes": 10
+    },
+    {
+      "id": "aalto-9-12-007",
+      "full_nine_forbidden_patterns_transposed_CSP_exists": true,
+      "matches_reduced_three_pattern_CSP": true,
+      "visited_prefixes": 10
+    },
+    {
+      "id": "aalto-9-12-008",
+      "full_nine_forbidden_patterns_transposed_CSP_exists": true,
+      "matches_reduced_three_pattern_CSP": true,
+      "visited_prefixes": 10
+    },
+    {
+      "id": "aalto-9-12-009",
+      "full_nine_forbidden_patterns_transposed_CSP_exists": true,
+      "matches_reduced_three_pattern_CSP": true,
+      "visited_prefixes": 10
+    },
+    {
+      "id": "aalto-9-12-010",
+      "full_nine_forbidden_patterns_transposed_CSP_exists": true,
+      "matches_reduced_three_pattern_CSP": true,
+      "visited_prefixes": 10
+    },
+    {
+      "id": "aalto-9-12-011",
+      "full_nine_forbidden_patterns_transposed_CSP_exists": true,
+      "matches_reduced_three_pattern_CSP": true,
+      "visited_prefixes": 10
+    },
+    {
+      "id": "aalto-9-12-012",
+      "full_nine_forbidden_patterns_transposed_CSP_exists": false,
+      "matches_reduced_three_pattern_CSP": true,
+      "visited_prefixes": 720
+    },
+    {
+      "id": "aalto-9-12-013",
+      "full_nine_forbidden_patterns_transposed_CSP_exists": false,
+      "matches_reduced_three_pattern_CSP": true,
+      "visited_prefixes": 720
+    },
+    {
+      "id": "aalto-9-12-014",
+      "full_nine_forbidden_patterns_transposed_CSP_exists": false,
+      "matches_reduced_three_pattern_CSP": true,
+      "visited_prefixes": 612
+    },
+    {
+      "id": "aalto-9-12-015",
+      "full_nine_forbidden_patterns_transposed_CSP_exists": false,
+      "matches_reduced_three_pattern_CSP": true,
+      "visited_prefixes": 612
+    },
+    {
+      "id": "aalto-9-12-016",
+      "full_nine_forbidden_patterns_transposed_CSP_exists": false,
+      "matches_reduced_three_pattern_CSP": true,
+      "visited_prefixes": 612
+    },
+    {
+      "id": "aalto-9-12-017",
+      "full_nine_forbidden_patterns_transposed_CSP_exists": false,
+      "matches_reduced_three_pattern_CSP": true,
+      "visited_prefixes": 612
+    },
+    {
+      "id": "aalto-9-12-018",
+      "full_nine_forbidden_patterns_transposed_CSP_exists": false,
+      "matches_reduced_three_pattern_CSP": true,
+      "visited_prefixes": 612
+    },
+    {
+      "id": "aalto-9-12-019",
+      "full_nine_forbidden_patterns_transposed_CSP_exists": false,
+      "matches_reduced_three_pattern_CSP": true,
+      "visited_prefixes": 612
+    },
+    {
+      "id": "aalto-9-12-020",
+      "full_nine_forbidden_patterns_transposed_CSP_exists": false,
+      "matches_reduced_three_pattern_CSP": true,
+      "visited_prefixes": 612
+    },
+    {
+      "id": "aalto-9-12-021",
+      "full_nine_forbidden_patterns_transposed_CSP_exists": false,
+      "matches_reduced_three_pattern_CSP": true,
+      "visited_prefixes": 612
+    },
+    {
+      "id": "aalto-9-12-022",
+      "full_nine_forbidden_patterns_transposed_CSP_exists": false,
+      "matches_reduced_three_pattern_CSP": true,
+      "visited_prefixes": 612
+    },
+    {
+      "id": "aalto-9-12-023",
+      "full_nine_forbidden_patterns_transposed_CSP_exists": false,
+      "matches_reduced_three_pattern_CSP": true,
+      "visited_prefixes": 612
+    },
+    {
+      "id": "aalto-9-12-024",
+      "full_nine_forbidden_patterns_transposed_CSP_exists": false,
+      "matches_reduced_three_pattern_CSP": true,
+      "visited_prefixes": 612
+    },
+    {
+      "id": "aalto-9-12-025",
+      "full_nine_forbidden_patterns_transposed_CSP_exists": false,
+      "matches_reduced_three_pattern_CSP": true,
+      "visited_prefixes": 612
+    },
+    {
+      "id": "aalto-9-12-026",
+      "full_nine_forbidden_patterns_transposed_CSP_exists": false,
+      "matches_reduced_three_pattern_CSP": true,
+      "visited_prefixes": 396
+    },
+    {
+      "id": "aalto-9-12-027",
+      "full_nine_forbidden_patterns_transposed_CSP_exists": false,
+      "matches_reduced_three_pattern_CSP": true,
+      "visited_prefixes": 396
+    },
+    {
+      "id": "aalto-9-12-028",
+      "full_nine_forbidden_patterns_transposed_CSP_exists": false,
+      "matches_reduced_three_pattern_CSP": true,
+      "visited_prefixes": 396
+    },
+    {
+      "id": "aalto-9-12-029",
+      "full_nine_forbidden_patterns_transposed_CSP_exists": false,
+      "matches_reduced_three_pattern_CSP": true,
+      "visited_prefixes": 612
+    },
+    {
+      "id": "aalto-9-12-030",
+      "full_nine_forbidden_patterns_transposed_CSP_exists": false,
+      "matches_reduced_three_pattern_CSP": true,
+      "visited_prefixes": 612
+    },
+    {
+      "id": "aalto-9-12-031",
+      "full_nine_forbidden_patterns_transposed_CSP_exists": false,
+      "matches_reduced_three_pattern_CSP": true,
+      "visited_prefixes": 612
+    },
+    {
+      "id": "aalto-9-12-032",
+      "full_nine_forbidden_patterns_transposed_CSP_exists": false,
+      "matches_reduced_three_pattern_CSP": true,
+      "visited_prefixes": 396
+    },
+    {
+      "id": "aalto-9-12-033",
+      "full_nine_forbidden_patterns_transposed_CSP_exists": false,
+      "matches_reduced_three_pattern_CSP": true,
+      "visited_prefixes": 396
+    },
+    {
+      "id": "aalto-9-12-034",
+      "full_nine_forbidden_patterns_transposed_CSP_exists": false,
+      "matches_reduced_three_pattern_CSP": true,
+      "visited_prefixes": 396
+    },
+    {
+      "id": "aalto-9-12-035",
+      "full_nine_forbidden_patterns_transposed_CSP_exists": false,
+      "matches_reduced_three_pattern_CSP": true,
+      "visited_prefixes": 396
+    },
+    {
+      "id": "aalto-9-12-036",
+      "full_nine_forbidden_patterns_transposed_CSP_exists": false,
+      "matches_reduced_three_pattern_CSP": true,
+      "visited_prefixes": 396
+    },
+    {
+      "id": "aalto-9-12-037",
+      "full_nine_forbidden_patterns_transposed_CSP_exists": false,
+      "matches_reduced_three_pattern_CSP": true,
+      "visited_prefixes": 396
+    },
+    {
+      "id": "aalto-9-12-038",
+      "full_nine_forbidden_patterns_transposed_CSP_exists": false,
+      "matches_reduced_three_pattern_CSP": true,
+      "visited_prefixes": 396
+    },
+    {
+      "id": "aalto-9-12-039",
+      "full_nine_forbidden_patterns_transposed_CSP_exists": false,
+      "matches_reduced_three_pattern_CSP": true,
+      "visited_prefixes": 396
+    },
+    {
+      "id": "aalto-9-12-040",
+      "full_nine_forbidden_patterns_transposed_CSP_exists": false,
+      "matches_reduced_three_pattern_CSP": true,
+      "visited_prefixes": 396
+    },
+    {
+      "id": "aalto-9-12-041",
+      "full_nine_forbidden_patterns_transposed_CSP_exists": false,
+      "matches_reduced_three_pattern_CSP": true,
+      "visited_prefixes": 396
+    },
+    {
+      "id": "aalto-9-12-042",
+      "full_nine_forbidden_patterns_transposed_CSP_exists": false,
+      "matches_reduced_three_pattern_CSP": true,
+      "visited_prefixes": 396
+    },
+    {
+      "id": "aalto-9-12-043",
+      "full_nine_forbidden_patterns_transposed_CSP_exists": false,
+      "matches_reduced_three_pattern_CSP": true,
+      "visited_prefixes": 396
+    },
+    {
+      "id": "aalto-9-12-044",
+      "full_nine_forbidden_patterns_transposed_CSP_exists": false,
+      "matches_reduced_three_pattern_CSP": true,
+      "visited_prefixes": 612
+    },
+    {
+      "id": "aalto-9-12-045",
+      "full_nine_forbidden_patterns_transposed_CSP_exists": false,
+      "matches_reduced_three_pattern_CSP": true,
+      "visited_prefixes": 612
+    },
+    {
+      "id": "aalto-9-12-046",
+      "full_nine_forbidden_patterns_transposed_CSP_exists": false,
+      "matches_reduced_three_pattern_CSP": true,
+      "visited_prefixes": 612
+    },
+    {
+      "id": "aalto-9-12-047",
+      "full_nine_forbidden_patterns_transposed_CSP_exists": false,
+      "matches_reduced_three_pattern_CSP": true,
+      "visited_prefixes": 612
+    },
+    {
+      "id": "aalto-9-12-048",
+      "full_nine_forbidden_patterns_transposed_CSP_exists": false,
+      "matches_reduced_three_pattern_CSP": true,
+      "visited_prefixes": 612
+    },
+    {
+      "id": "aalto-9-12-049",
+      "full_nine_forbidden_patterns_transposed_CSP_exists": false,
+      "matches_reduced_three_pattern_CSP": true,
+      "visited_prefixes": 612
+    },
+    {
+      "id": "aalto-9-12-050",
+      "full_nine_forbidden_patterns_transposed_CSP_exists": false,
+      "matches_reduced_three_pattern_CSP": true,
+      "visited_prefixes": 612
+    },
+    {
+      "id": "aalto-9-12-051",
+      "full_nine_forbidden_patterns_transposed_CSP_exists": false,
+      "matches_reduced_three_pattern_CSP": true,
+      "visited_prefixes": 612
+    },
+    {
+      "id": "aalto-9-12-052",
+      "full_nine_forbidden_patterns_transposed_CSP_exists": false,
+      "matches_reduced_three_pattern_CSP": true,
+      "visited_prefixes": 612
+    },
+    {
+      "id": "aalto-9-12-053",
+      "full_nine_forbidden_patterns_transposed_CSP_exists": false,
+      "matches_reduced_three_pattern_CSP": true,
+      "visited_prefixes": 612
+    },
+    {
+      "id": "aalto-9-12-054",
+      "full_nine_forbidden_patterns_transposed_CSP_exists": false,
+      "matches_reduced_three_pattern_CSP": true,
+      "visited_prefixes": 612
+    },
+    {
+      "id": "aalto-9-12-055",
+      "full_nine_forbidden_patterns_transposed_CSP_exists": false,
+      "matches_reduced_three_pattern_CSP": true,
+      "visited_prefixes": 612
+    },
+    {
+      "id": "aalto-9-12-056",
+      "full_nine_forbidden_patterns_transposed_CSP_exists": false,
+      "matches_reduced_three_pattern_CSP": true,
+      "visited_prefixes": 396
+    },
+    {
+      "id": "aalto-9-12-057",
+      "full_nine_forbidden_patterns_transposed_CSP_exists": false,
+      "matches_reduced_three_pattern_CSP": true,
+      "visited_prefixes": 396
+    },
+    {
+      "id": "aalto-9-12-058",
+      "full_nine_forbidden_patterns_transposed_CSP_exists": false,
+      "matches_reduced_three_pattern_CSP": true,
+      "visited_prefixes": 396
+    },
+    {
+      "id": "aalto-9-12-059",
+      "full_nine_forbidden_patterns_transposed_CSP_exists": false,
+      "matches_reduced_three_pattern_CSP": true,
+      "visited_prefixes": 396
+    },
+    {
+      "id": "aalto-9-12-060",
+      "full_nine_forbidden_patterns_transposed_CSP_exists": false,
+      "matches_reduced_three_pattern_CSP": true,
+      "visited_prefixes": 396
+    },
+    {
+      "id": "aalto-9-12-061",
+      "full_nine_forbidden_patterns_transposed_CSP_exists": false,
+      "matches_reduced_three_pattern_CSP": true,
+      "visited_prefixes": 396
+    },
+    {
+      "id": "aalto-9-12-062",
+      "full_nine_forbidden_patterns_transposed_CSP_exists": true,
+      "matches_reduced_three_pattern_CSP": true,
+      "visited_prefixes": 30
+    },
+    {
+      "id": "aalto-9-12-063",
+      "full_nine_forbidden_patterns_transposed_CSP_exists": true,
+      "matches_reduced_three_pattern_CSP": true,
+      "visited_prefixes": 33
+    },
+    {
+      "id": "aalto-9-12-064",
+      "full_nine_forbidden_patterns_transposed_CSP_exists": true,
+      "matches_reduced_three_pattern_CSP": true,
+      "visited_prefixes": 14
+    }
+  ]
+}

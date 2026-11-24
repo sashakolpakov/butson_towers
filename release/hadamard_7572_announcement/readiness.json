@@ -1,0 +1,11 @@
+{
+  "ready_to_create_private_draft": true,
+  "ready_for_submission": true,
+  "missing_metadata_fields": [],
+  "invalid_metadata_fields": [],
+  "paper_pages": 5,
+  "local_typesetting_passed": true,
+  "credential_excluded_from_archive": true,
+  "remote_draft_created": false,
+  "api_commit_performed": false
+}

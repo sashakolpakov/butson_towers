@@ -1,0 +1,467 @@
+{
+  "schema": "published-gs-uniform-OD-reuse-audit-v1",
+  "inputs": [
+    {
+      "input": "artifacts/published-alpoge-gs-inputs/h892.npz",
+      "matrix_binary_sha256": "9fd89d7bd8433c56c0c98ad0fecc02098b3c85157744d99e3beeae7c61dbdf2f",
+      "order": 892,
+      "core_row_sums": [
+        11,
+        11,
+        11,
+        23
+      ],
+      "T_matrix_chart": {
+        "matched": false,
+        "pair_tests": 198916,
+        "scope": "all independent cyclic shifts, reversals and block signs; first shift/reversal fixed by common coordinate equivalence"
+      },
+      "signed_permutations_checked": 384,
+      "zero_frequency_survivors": 0,
+      "OD_pair_cells": []
+    },
+    {
+      "input": "artifacts/published-alpoge-gs-inputs/h1132.npz",
+      "matrix_binary_sha256": "9040530c312559710244cd1e50eccedb7e4d42f4392e43d24fe3fa22c3c1f10e",
+      "order": 1132,
+      "core_row_sums": [
+        19,
+        19,
+        19,
+        7
+      ],
+      "T_matrix_chart": {
+        "matched": false,
+        "pair_tests": 320356,
+        "scope": "all independent cyclic shifts, reversals and block signs; first shift/reversal fixed by common coordinate equivalence"
+      },
+      "signed_permutations_checked": 384,
+      "zero_frequency_survivors": 0,
+      "OD_pair_cells": []
+    },
+    {
+      "input": "artifacts/published-alpoge-gs-inputs/h1244.npz",
+      "matrix_binary_sha256": "28204a4ff964330664ee9406ba9a5fe4d4d91ef0ae1f6bbced8508721cb3c058",
+      "order": 1244,
+      "core_row_sums": [
+        21,
+        19,
+        21,
+        1
+      ],
+      "T_matrix_chart": {
+        "matched": false,
+        "pair_tests": 386884,
+        "scope": "all independent cyclic shifts, reversals and block signs; first shift/reversal fixed by common coordinate equivalence"
+      },
+      "signed_permutations_checked": 384,
+      "zero_frequency_survivors": 0,
+      "OD_pair_cells": []
+    },
+    {
+      "input": "artifacts/published-alpoge-gs-inputs/h1948.npz",
+      "matrix_binary_sha256": "c44ef6bf392f548f3a44f7ceca736e7a1bb3410c3ef6908c372184a5c26ff2c6",
+      "order": 1948,
+      "core_row_sums": [
+        17,
+        1,
+        17,
+        37
+      ],
+      "T_matrix_chart": {
+        "matched": false,
+        "pair_tests": 948676,
+        "scope": "all independent cyclic shifts, reversals and block signs; first shift/reversal fixed by common coordinate equivalence"
+      },
+      "signed_permutations_checked": 384,
+      "zero_frequency_survivors": 0,
+      "OD_pair_cells": []
+    },
+    {
+      "input": "artifacts/published-alpoge-gs-inputs/h1964.npz",
+      "matrix_binary_sha256": "f32f2bfb21dafd0dca24467b4712f603cd9667f9814e31d04565a9fe8c84e111",
+      "order": 1964,
+      "core_row_sums": [
+        29,
+        27,
+        15,
+        13
+      ],
+      "T_matrix_chart": {
+        "matched": false,
+        "pair_tests": 964324,
+        "scope": "all independent cyclic shifts, reversals and block signs; first shift/reversal fixed by common coordinate equivalence"
+      },
+      "signed_permutations_checked": 384,
+      "zero_frequency_survivors": 8,
+      "OD_pair_cells": [
+        {
+          "permutation": [
+            0,
+            2,
+            3,
+            1
+          ],
+          "signs": [
+            1,
+            -1,
+            1,
+            1
+          ],
+          "matched": false,
+          "unique_term_counts": [
+            737,
+            982,
+            982,
+            982
+          ],
+          "pair_order": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "left_pairs": 723734,
+          "left_fingerprint_buckets": 723734,
+          "duplicate_left_vectors": 0,
+          "distinct_exact_vector_fingerprint_collisions_retained": 0,
+          "right_pairs_exactly_fingerprinted": 964324
+        },
+        {
+          "permutation": [
+            0,
+            3,
+            1,
+            2
+          ],
+          "signs": [
+            1,
+            1,
+            -1,
+            1
+          ],
+          "matched": false,
+          "unique_term_counts": [
+            737,
+            982,
+            982,
+            982
+          ],
+          "pair_order": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "left_pairs": 723734,
+          "left_fingerprint_buckets": 723734,
+          "duplicate_left_vectors": 0,
+          "distinct_exact_vector_fingerprint_collisions_retained": 0,
+          "right_pairs_exactly_fingerprinted": 964324
+        },
+        {
+          "permutation": [
+            1,
+            2,
+            0,
+            3
+          ],
+          "signs": [
+            1,
+            -1,
+            1,
+            1
+          ],
+          "matched": false,
+          "unique_term_counts": [
+            982,
+            982,
+            982,
+            737
+          ],
+          "pair_order": [
+            0,
+            3,
+            1,
+            2
+          ],
+          "left_pairs": 723734,
+          "left_fingerprint_buckets": 723734,
+          "duplicate_left_vectors": 0,
+          "distinct_exact_vector_fingerprint_collisions_retained": 0,
+          "right_pairs_exactly_fingerprinted": 964324
+        },
+        {
+          "permutation": [
+            1,
+            3,
+            2,
+            0
+          ],
+          "signs": [
+            1,
+            1,
+            1,
+            -1
+          ],
+          "matched": false,
+          "unique_term_counts": [
+            982,
+            982,
+            737,
+            982
+          ],
+          "pair_order": [
+            0,
+            2,
+            1,
+            3
+          ],
+          "left_pairs": 723734,
+          "left_fingerprint_buckets": 723734,
+          "duplicate_left_vectors": 0,
+          "distinct_exact_vector_fingerprint_collisions_retained": 0,
+          "right_pairs_exactly_fingerprinted": 964324
+        },
+        {
+          "permutation": [
+            2,
+            0,
+            1,
+            3
+          ],
+          "signs": [
+            1,
+            1,
+            -1,
+            1
+          ],
+          "matched": false,
+          "unique_term_counts": [
+            982,
+            982,
+            982,
+            737
+          ],
+          "pair_order": [
+            0,
+            3,
+            1,
+            2
+          ],
+          "left_pairs": 723734,
+          "left_fingerprint_buckets": 723734,
+          "duplicate_left_vectors": 0,
+          "distinct_exact_vector_fingerprint_collisions_retained": 0,
+          "right_pairs_exactly_fingerprinted": 964324
+        },
+        {
+          "permutation": [
+            2,
+            1,
+            3,
+            0
+          ],
+          "signs": [
+            1,
+            1,
+            1,
+            -1
+          ],
+          "matched": false,
+          "unique_term_counts": [
+            982,
+            737,
+            982,
+            982
+          ],
+          "pair_order": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "left_pairs": 723734,
+          "left_fingerprint_buckets": 723734,
+          "duplicate_left_vectors": 0,
+          "distinct_exact_vector_fingerprint_collisions_retained": 0,
+          "right_pairs_exactly_fingerprinted": 964324
+        },
+        {
+          "permutation": [
+            3,
+            0,
+            2,
+            1
+          ],
+          "signs": [
+            -1,
+            1,
+            1,
+            1
+          ],
+          "matched": false,
+          "unique_term_counts": [
+            982,
+            982,
+            737,
+            982
+          ],
+          "pair_order": [
+            0,
+            2,
+            1,
+            3
+          ],
+          "left_pairs": 723734,
+          "left_fingerprint_buckets": 723734,
+          "duplicate_left_vectors": 0,
+          "distinct_exact_vector_fingerprint_collisions_retained": 0,
+          "right_pairs_exactly_fingerprinted": 964324
+        },
+        {
+          "permutation": [
+            3,
+            1,
+            0,
+            2
+          ],
+          "signs": [
+            -1,
+            1,
+            1,
+            1
+          ],
+          "matched": false,
+          "unique_term_counts": [
+            982,
+            737,
+            982,
+            982
+          ],
+          "pair_order": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "left_pairs": 723734,
+          "left_fingerprint_buckets": 723734,
+          "duplicate_left_vectors": 0,
+          "distinct_exact_vector_fingerprint_collisions_retained": 0,
+          "right_pairs_exactly_fingerprinted": 964324
+        }
+      ]
+    },
+    {
+      "input": "artifacts/published-h764-inputs/h764-0.npz",
+      "matrix_binary_sha256": "a65bbe3377f9c9fc8cfd352f153be3c3892c4b46a9869ec5d1e092d92ee2ec9b",
+      "order": 764,
+      "core_row_sums": [
+        21,
+        11,
+        11,
+        -9
+      ],
+      "T_matrix_chart": {
+        "matched": false,
+        "pair_tests": 145924,
+        "scope": "all independent cyclic shifts, reversals and block signs; first shift/reversal fixed by common coordinate equivalence"
+      },
+      "signed_permutations_checked": 384,
+      "zero_frequency_survivors": 0,
+      "OD_pair_cells": []
+    },
+    {
+      "input": "artifacts/published-h764-inputs/h764-1.npz",
+      "matrix_binary_sha256": "a0bc1f0b7f44675bed64b1d19620903810cdc3adda8744a07ebb5a8a50052b39",
+      "order": 764,
+      "core_row_sums": [
+        21,
+        11,
+        11,
+        -9
+      ],
+      "T_matrix_chart": {
+        "matched": false,
+        "pair_tests": 145924,
+        "scope": "all independent cyclic shifts, reversals and block signs; first shift/reversal fixed by common coordinate equivalence"
+      },
+      "signed_permutations_checked": 384,
+      "zero_frequency_survivors": 0,
+      "OD_pair_cells": []
+    }
+  ],
+  "primary_T_conversion": "https://toc.ui.ac.ir/article_27062_c8e585f002d7d36b07ebc0cab4ddbe16.pdf, Equations2.6\u20132.9",
+  "OD_pair_condition": "For F=GS(a),G=GS(b), GS polarization gives FG^T+GF^T=I4 tensor sum_i(C_ai C_bi^T+C_bi C_ai^T). The target is dI, equivalent to OD(d;d/4,3d/4).",
+  "hash_completeness": "Every distinct exact vector is retained in its128-bit fingerprint bucket; all lookup matches require exact vector equality. Hash collisions cannot cause a missed witness.",
+  "general_OD_nonexistence_claimed": false,
+  "positive_control": {
+    "order": 12,
+    "weights": [
+      3,
+      9
+    ],
+    "full_Gram_and_mask_identities": [
+      true,
+      true,
+      true,
+      true,
+      true,
+      true,
+      true
+    ],
+    "literal_GS_cores": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        -1,
+        -1,
+        1
+      ],
+      [
+        -1,
+        1,
+        -1
+      ],
+      [
+        -1,
+        1,
+        1
+      ]
+    ],
+    "G_permutation": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "G_signs": [
+      1,
+      -1,
+      -1,
+      -1
+    ],
+    "G_reversals_and_shifts": [
+      [
+        0,
+        0
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        1
+      ],
+      [
+        0,
+        1
+      ]
+    ]
+  }
+}

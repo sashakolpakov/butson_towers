@@ -1,0 +1,71 @@
+{
+  "scope": "One bounded exact periodic one-hot quadruple search; a restricted joint GS design chart",
+  "prime": 491,
+  "multiplier_order": 7,
+  "block_order": 1964,
+  "algebraic_source_3_and_13_output_orders": [
+    5892,
+    25532
+  ],
+  "native_limit_seconds": 45.0,
+  "wall_limit_seconds": 60.0,
+  "elapsed_seconds": 45.55394574999809,
+  "worker_pid": 32416,
+  "worker_exit_code": 0,
+  "worker_reaped": true,
+  "external_watchdog_triggered": false,
+  "events": [
+    {
+      "stage": "worker_started",
+      "elapsed_seconds": 1.91599247045815e-06,
+      "pid": 32416
+    },
+    {
+      "stage": "model_ready",
+      "elapsed_seconds": 0.042034832993522286,
+      "prime": 491,
+      "multiplier_order": 7,
+      "block_order": 1964,
+      "design_type": [
+        1473,
+        491
+      ],
+      "algebraic_source_3_and_13_output_orders": [
+        5892,
+        25532
+      ],
+      "one_hot_eight_state_orbit_variables": 71,
+      "independent_nonzero_shift_classes": 35,
+      "row_sum_types": [
+        [
+          1,
+          0,
+          7,
+          21
+        ]
+      ],
+      "total_model_variables": 2844,
+      "total_model_constraints": 2597,
+      "all_one_hot_sequences_unknown": true,
+      "generator_sequence_relation": "a=D*b with fixed skew conference D4",
+      "order_4p_scalar_operator_prescribed": false,
+      "objective": "exact feasibility; every autocorrelation residual is zero"
+    },
+    {
+      "stage": "solver_finished",
+      "elapsed_seconds": 45.04528941598255,
+      "solver_status": "UNKNOWN",
+      "solver_wall_seconds": 45.002003,
+      "branches": 1730382,
+      "conflicts": 8390,
+      "witness": null
+    }
+  ],
+  "diagnostics": [],
+  "solver_status": "UNKNOWN",
+  "exact_design_constructed": false,
+  "inconclusive": true,
+  "mathematical_nonexistence_certificate_produced": false,
+  "new_real_Hadamard_order_claimed": false,
+  "witness": null
+}

@@ -1,0 +1,65 @@
+{
+  "phase": 24,
+  "source_order": 1499,
+  "orbit_length": 93,
+  "unknown_root_phases": 152,
+  "pair_phase_differences": 1228,
+  "self_correlation_shift_representatives": [
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      3
+    ]
+  ],
+  "paired_half_shift_representatives": [
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      1
+    ],
+    [
+      1,
+      0
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      3
+    ]
+  ],
+  "all_group_shifts_enforced_by_exact_orbit_compression": true,
+  "field_coefficient_dimension": 8,
+  "maximum_non_antipodal_triplets": 5,
+  "scope": "One moving-orbit row and its swapped-half row; not a complete source",
+  "model_variables": 13744,
+  "model_constraints": 12510,
+  "status": "UNKNOWN",
+  "wall_seconds": 40.018785,
+  "branches": 1557841,
+  "conflicts": 6194,
+  "full_source_constructed": false,
+  "owned_watchdog": {
+    "seconds": 55,
+    "timed_out": false,
+    "process_reaped": true,
+    "exit_code": 0,
+    "elapsed_seconds": 40.642511459009256
+  }
+}

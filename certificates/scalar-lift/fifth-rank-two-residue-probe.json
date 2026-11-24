@@ -1,0 +1,32 @@
+{
+  "status": "UNKNOWN",
+  "model_statistics": {
+    "zero_sum_subset_lengths": {
+      "5": 45,
+      "6": 45,
+      "11": 10
+    },
+    "native_variables": 2627,
+    "native_constraints": 4727
+  },
+  "model_build_seconds": 0.013259916013339534,
+  "solver_wall_seconds": 60.001067000000006,
+  "branches": 3322399,
+  "conflicts": 786793,
+  "native_limit_seconds": 60.0,
+  "workers": 1,
+  "source_orders": [
+    1499,
+    2999
+  ],
+  "core_order": 11,
+  "scope": "Only this fixed F16 coefficient-residue chart",
+  "characteristic_zero_source_constructed": false,
+  "new_real_Hadamard_constructed": false,
+  "external_watchdog_triggered": false,
+  "worker_reaped": true,
+  "watchdog_seconds_including_model_build": 90,
+  "owned_worker_wall_seconds": 60.47015358300996,
+  "problem_snapshot": "certificates/scalar-lift/fifth-rank-two-residue-problem.json",
+  "problem_sha256": "76f38dbe0b6aae80018de5f9bac37c4c60c9b4960bc2d02586b8a9031a6527bd"
+}

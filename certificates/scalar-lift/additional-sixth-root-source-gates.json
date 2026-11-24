@@ -1,0 +1,346 @@
+{
+  "schema": "complete-fixed-sixth-root-source-palette-gates-v1",
+  "target_scalar_frame": {
+    "field": "Q(zeta_6)/Q",
+    "field_degree": 2,
+    "module_rank": 1262,
+    "rational_dimension": 2524,
+    "entry_images": {
+      "0": "P",
+      "1": "Q",
+      "3": "-P",
+      "4": "-Q"
+    },
+    "excluded_images": {
+      "2": "Q-P",
+      "5": "P-Q"
+    },
+    "frame_gram_scale": 2524,
+    "trace_metric": [
+      [
+        2,
+        1
+      ],
+      [
+        1,
+        2
+      ]
+    ]
+  },
+  "prime_square_primary_source": {
+    "author": "Ferenc Szollosi",
+    "title": "Construction, classification and parametrization of complex Hadamard matrices",
+    "url": "https://arxiv.org/pdf/1110.5590",
+    "location": "Theorem1.4.41, printedp30",
+    "attribution_in_primary_source": "Craigen and Szollosi",
+    "formula": "H=P tensor P+J tensor I+omega*I tensor J, P the Paley character matrix, omega=zeta6^2",
+    "actual_palette": [
+      0,
+      1,
+      2,
+      3
+    ],
+    "cubic_color_pattern": "p diagonal blocks of sizep with diagonal1,offdiagonal2; off-block colors0",
+    "general_gate": "For every odd prime p>=5, select4 outer blocks and2 inner indices. This contains the checked8x8 obstruction, so no sixth-root monomial gauge places this fixed source in the admitted palette.",
+    "different_BH_representatives_at_same_orders_excluded": false,
+    "general_nonuniform_scalar_maps_excluded": false
+  },
+  "independent_finite_obstruction": {
+    "cubic_exponents": [
+      [
+        1,
+        2,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        2,
+        1,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        2,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        1,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        1,
+        2,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        2,
+        1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        2,
+        1
+      ]
+    ],
+    "all_fixed_first_row_gauges_checked": 2187,
+    "compatible_gauges": 0,
+    "first_failed_column_histogram": [
+      1932,
+      187,
+      64,
+      2,
+      2,
+      0,
+      0,
+      0
+    ],
+    "proof": "Fix row0 shift0 by global row/column compensation. For every other ternary row gauge, some column contains all3 residues; no column shift can omit a residue.",
+    "scope": "all sixth-root row/column phase gauges, including permutations of this fixed pattern"
+  },
+  "complete_prime_square_source_checks": [
+    {
+      "prime": 5,
+      "source_order": 25,
+      "source_full_Gram": {
+        "order": 25,
+        "phase": 6,
+        "source_gram_scale": 25,
+        "all_row_Gram_entries_checked": 625,
+        "all_column_Gram_entries_checked": 625,
+        "coefficient_basis": [
+          "1",
+          "zeta_6"
+        ],
+        "exact_row_and_column_Gram": "25 I",
+        "exponent_sha256": "283da2d781f450553af727b58ee47a050ef9efe799f69a1bc428c28ae1943694"
+      },
+      "actual_exponent_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "obstruction_row_and_column_indices": [
+        0,
+        1,
+        5,
+        6,
+        10,
+        11,
+        15,
+        16
+      ],
+      "compatible_sixth_root_gauge_exists": false,
+      "rejected_only_for_fixed_T631_palette": true
+    },
+    {
+      "prime": 7,
+      "source_order": 49,
+      "source_full_Gram": {
+        "order": 49,
+        "phase": 6,
+        "source_gram_scale": 49,
+        "all_row_Gram_entries_checked": 2401,
+        "all_column_Gram_entries_checked": 2401,
+        "coefficient_basis": [
+          "1",
+          "zeta_6"
+        ],
+        "exact_row_and_column_Gram": "49 I",
+        "exponent_sha256": "a53496b13d978306f42e58a05fa5447f72135231c1559ec3f6d0564b1595207b"
+      },
+      "actual_exponent_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "obstruction_row_and_column_indices": [
+        0,
+        1,
+        7,
+        8,
+        14,
+        15,
+        21,
+        22
+      ],
+      "compatible_sixth_root_gauge_exists": false,
+      "rejected_only_for_fixed_T631_palette": true
+    },
+    {
+      "prime": 11,
+      "source_order": 121,
+      "source_full_Gram": {
+        "order": 121,
+        "phase": 6,
+        "source_gram_scale": 121,
+        "all_row_Gram_entries_checked": 14641,
+        "all_column_Gram_entries_checked": 14641,
+        "coefficient_basis": [
+          "1",
+          "zeta_6"
+        ],
+        "exact_row_and_column_Gram": "121 I",
+        "exponent_sha256": "47b8925a31b18f3c5b7ff38c94310559efa7891b99600aa9782ff1da9a2698ab"
+      },
+      "actual_exponent_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "obstruction_row_and_column_indices": [
+        0,
+        1,
+        11,
+        12,
+        22,
+        23,
+        33,
+        34
+      ],
+      "compatible_sixth_root_gauge_exists": false,
+      "rejected_only_for_fixed_T631_palette": true
+    }
+  ],
+  "positive_control_order9": {
+    "full_Gram": {
+      "order": 9,
+      "phase": 6,
+      "source_gram_scale": 9,
+      "all_row_Gram_entries_checked": 81,
+      "all_column_Gram_entries_checked": 81,
+      "coefficient_basis": [
+        "1",
+        "zeta_6"
+      ],
+      "exact_row_and_column_Gram": "9 I",
+      "exponent_sha256": "98a5a7406ea506a55edbda086dfa80d6172077afb9ce864317559749fc32c67c"
+    },
+    "admitted_gauge": {
+      "exists": true,
+      "visited_row_prefixes": 10,
+      "row_shifts": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        1,
+        2,
+        2,
+        2
+      ],
+      "column_shifts": [
+        2,
+        2,
+        2,
+        1,
+        1,
+        1,
+        0,
+        0,
+        0
+      ],
+      "scope": "All sixth-root row/column gauges and permutations of this fixed matrix"
+    }
+  },
+  "fixed_order19_source": {
+    "author": "Ferenc Szollosi",
+    "title": "A note on the existence of BH(19,6) matrices",
+    "primary_url": "https://ajc.maths.uq.edu.au/pdf/55/ajc_v55_p031.pdf",
+    "location": "printedp33, literal W19 exponent matrix",
+    "row_strings": [
+      "3011005435321135430",
+      "0013314245151433150",
+      "0014242432413314510",
+      "1242124424503511340",
+      "2543204201424153130",
+      "0354504531345341310",
+      "5435323011001135430",
+      "4245150013311433150",
+      "2432410014243314510",
+      "4424501242123511340",
+      "4201422543204153130",
+      "4531340354505341310",
+      "5533215533210000113",
+      "5231535231530013010",
+      "3355123355121300010",
+      "1325351325350101041",
+      "2513532513531041100",
+      "3152353152351010401",
+      "0000000000004110100"
+    ],
+    "full_Gram": {
+      "order": 19,
+      "phase": 6,
+      "source_gram_scale": 19,
+      "all_row_Gram_entries_checked": 361,
+      "all_column_Gram_entries_checked": 361,
+      "coefficient_basis": [
+        "1",
+        "zeta_6"
+      ],
+      "exact_row_and_column_Gram": "19 I",
+      "exponent_sha256": "a6f308b7540bf95ee65f33eb34f9221ba0e119bd0be3e9da0c1633bf301c23c1"
+    },
+    "complete_sixth_root_gauge_test": {
+      "exists": false,
+      "visited_row_prefixes": 5,
+      "row_shifts": null,
+      "column_shifts": null,
+      "scope": "All sixth-root row/column gauges and permutations of this fixed matrix"
+    },
+    "scope": "This fixed published W19 only; other order19 Butson matrices are not excluded"
+  },
+  "new_endpoint_constructed": false,
+  "new_Hadamard_order_claimed": false,
+  "implementation_sha256": "6814434e6da6094bf32bfb20d2a3e3a8676b998acd6164b1e7950a3a209fa13f"
+}

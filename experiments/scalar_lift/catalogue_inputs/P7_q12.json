@@ -1,0 +1,78 @@
+{
+  "name": "P7_q12",
+  "order": 7,
+  "phase": 12,
+  "exponents": [
+    [
+      1,
+      1,
+      2,
+      1,
+      2,
+      2,
+      2
+    ],
+    [
+      1,
+      1,
+      2,
+      5,
+      8,
+      8,
+      10
+    ],
+    [
+      2,
+      4,
+      11,
+      10,
+      4,
+      10,
+      7
+    ],
+    [
+      1,
+      5,
+      8,
+      1,
+      11,
+      5,
+      10
+    ],
+    [
+      2,
+      8,
+      1,
+      8,
+      10,
+      4,
+      5
+    ],
+    [
+      2,
+      10,
+      7,
+      7,
+      4,
+      2,
+      10
+    ],
+    [
+      2,
+      10,
+      7,
+      1,
+      8,
+      10,
+      4
+    ]
+  ],
+  "existing_certificate": "certificates/scalar-lift/inverse-dense-lifts.json",
+  "existing_class_certificate": "certificates/finite-butson/bh7-24.json",
+  "existing_class_certificate_sha256": "73d4511de10069e5ff52a59139083228a545089a183a1ae80dc1978bc75d5963",
+  "class_index": 3,
+  "published_family": "P7(p)",
+  "published_parameter": "p=1/12",
+  "published_source": "P7.json",
+  "provenance_scope": "Exact monomial equivalence to the published P7(1/12) is replayed, not inferred from order and phase."
+}

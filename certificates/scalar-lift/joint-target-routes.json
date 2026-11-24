@@ -1,0 +1,295 @@
+{
+  "scope": "Necessary arithmetic routes for varying row/column bases; no source or lift existence assertion",
+  "snapshot_sha256": "acb90db9d91ad05cc748691d30a16965ae29044d53d0b01c94cb99dadf3d6280",
+  "snapshot_target_count": 85,
+  "maximum_block_order": 128,
+  "uniform_common_frame_alphabet_filter_applied": false,
+  "all_other_filters": [
+    "cyclotomic degree",
+    "Hermitian trace determinant square class",
+    "dyadic metric",
+    "source vanishing-sum length",
+    "source determinant norm"
+  ],
+  "reopened_routes": [
+    {
+      "target_order": 2676,
+      "source_order": 223,
+      "block_order": 12,
+      "reopened_coefficient_fields": [
+        {
+          "phase": 18,
+          "field_degree": 6,
+          "rational_field_multiplicity": 2,
+          "passes_degree_trace_determinant_dyadic_and_source_norm_tests": true,
+          "common_frame_restriction_excludes_this_field_entirely": false,
+          "common_frame_restriction_otherwise_requires_used_alphabet_reduction": true,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 36,
+          "field_degree": 12,
+          "rational_field_multiplicity": 1,
+          "passes_degree_trace_determinant_dyadic_and_source_norm_tests": true,
+          "common_frame_restriction_excludes_this_field_entirely": false,
+          "common_frame_restriction_otherwise_requires_used_alphabet_reduction": true,
+          "source_witness_available_in_this_audit": false
+        }
+      ]
+    },
+    {
+      "target_order": 4460,
+      "source_order": 223,
+      "block_order": 20,
+      "reopened_coefficient_fields": [
+        {
+          "phase": 22,
+          "field_degree": 10,
+          "rational_field_multiplicity": 2,
+          "passes_degree_trace_determinant_dyadic_and_source_norm_tests": true,
+          "common_frame_restriction_excludes_this_field_entirely": true,
+          "common_frame_restriction_otherwise_requires_used_alphabet_reduction": false,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 44,
+          "field_degree": 20,
+          "rational_field_multiplicity": 1,
+          "passes_degree_trace_determinant_dyadic_and_source_norm_tests": true,
+          "common_frame_restriction_excludes_this_field_entirely": true,
+          "common_frame_restriction_otherwise_requires_used_alphabet_reduction": false,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 66,
+          "field_degree": 20,
+          "rational_field_multiplicity": 1,
+          "passes_degree_trace_determinant_dyadic_and_source_norm_tests": true,
+          "common_frame_restriction_excludes_this_field_entirely": false,
+          "common_frame_restriction_otherwise_requires_used_alphabet_reduction": true,
+          "source_witness_available_in_this_audit": false
+        }
+      ]
+    },
+    {
+      "target_order": 6852,
+      "source_order": 571,
+      "block_order": 12,
+      "reopened_coefficient_fields": [
+        {
+          "phase": 18,
+          "field_degree": 6,
+          "rational_field_multiplicity": 2,
+          "passes_degree_trace_determinant_dyadic_and_source_norm_tests": true,
+          "common_frame_restriction_excludes_this_field_entirely": false,
+          "common_frame_restriction_otherwise_requires_used_alphabet_reduction": true,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 36,
+          "field_degree": 12,
+          "rational_field_multiplicity": 1,
+          "passes_degree_trace_determinant_dyadic_and_source_norm_tests": true,
+          "common_frame_restriction_excludes_this_field_entirely": false,
+          "common_frame_restriction_otherwise_requires_used_alphabet_reduction": true,
+          "source_witness_available_in_this_audit": false
+        }
+      ]
+    },
+    {
+      "target_order": 6876,
+      "source_order": 191,
+      "block_order": 36,
+      "reopened_coefficient_fields": [
+        {
+          "phase": 38,
+          "field_degree": 18,
+          "rational_field_multiplicity": 2,
+          "passes_degree_trace_determinant_dyadic_and_source_norm_tests": true,
+          "common_frame_restriction_excludes_this_field_entirely": true,
+          "common_frame_restriction_otherwise_requires_used_alphabet_reduction": false,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 76,
+          "field_degree": 36,
+          "rational_field_multiplicity": 1,
+          "passes_degree_trace_determinant_dyadic_and_source_norm_tests": true,
+          "common_frame_restriction_excludes_this_field_entirely": true,
+          "common_frame_restriction_otherwise_requires_used_alphabet_reduction": false,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 114,
+          "field_degree": 36,
+          "rational_field_multiplicity": 1,
+          "passes_degree_trace_determinant_dyadic_and_source_norm_tests": true,
+          "common_frame_restriction_excludes_this_field_entirely": true,
+          "common_frame_restriction_otherwise_requires_used_alphabet_reduction": false,
+          "source_witness_available_in_this_audit": false
+        }
+      ]
+    },
+    {
+      "target_order": 7572,
+      "source_order": 631,
+      "block_order": 12,
+      "reopened_coefficient_fields": [
+        {
+          "phase": 18,
+          "field_degree": 6,
+          "rational_field_multiplicity": 2,
+          "passes_degree_trace_determinant_dyadic_and_source_norm_tests": true,
+          "common_frame_restriction_excludes_this_field_entirely": false,
+          "common_frame_restriction_otherwise_requires_used_alphabet_reduction": true,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 36,
+          "field_degree": 12,
+          "rational_field_multiplicity": 1,
+          "passes_degree_trace_determinant_dyadic_and_source_norm_tests": true,
+          "common_frame_restriction_excludes_this_field_entirely": false,
+          "common_frame_restriction_otherwise_requires_used_alphabet_reduction": true,
+          "source_witness_available_in_this_audit": false
+        }
+      ]
+    },
+    {
+      "target_order": 7716,
+      "source_order": 643,
+      "block_order": 12,
+      "reopened_coefficient_fields": [
+        {
+          "phase": 18,
+          "field_degree": 6,
+          "rational_field_multiplicity": 2,
+          "passes_degree_trace_determinant_dyadic_and_source_norm_tests": true,
+          "common_frame_restriction_excludes_this_field_entirely": false,
+          "common_frame_restriction_otherwise_requires_used_alphabet_reduction": true,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 36,
+          "field_degree": 12,
+          "rational_field_multiplicity": 1,
+          "passes_degree_trace_determinant_dyadic_and_source_norm_tests": true,
+          "common_frame_restriction_excludes_this_field_entirely": false,
+          "common_frame_restriction_otherwise_requires_used_alphabet_reduction": true,
+          "source_witness_available_in_this_audit": false
+        }
+      ]
+    },
+    {
+      "target_order": 8380,
+      "source_order": 419,
+      "block_order": 20,
+      "reopened_coefficient_fields": [
+        {
+          "phase": 22,
+          "field_degree": 10,
+          "rational_field_multiplicity": 2,
+          "passes_degree_trace_determinant_dyadic_and_source_norm_tests": true,
+          "common_frame_restriction_excludes_this_field_entirely": true,
+          "common_frame_restriction_otherwise_requires_used_alphabet_reduction": false,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 44,
+          "field_degree": 20,
+          "rational_field_multiplicity": 1,
+          "passes_degree_trace_determinant_dyadic_and_source_norm_tests": true,
+          "common_frame_restriction_excludes_this_field_entirely": true,
+          "common_frame_restriction_otherwise_requires_used_alphabet_reduction": false,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 66,
+          "field_degree": 20,
+          "rational_field_multiplicity": 1,
+          "passes_degree_trace_determinant_dyadic_and_source_norm_tests": true,
+          "common_frame_restriction_excludes_this_field_entirely": true,
+          "common_frame_restriction_otherwise_requires_used_alphabet_reduction": false,
+          "source_witness_available_in_this_audit": false
+        }
+      ]
+    },
+    {
+      "target_order": 8860,
+      "source_order": 443,
+      "block_order": 20,
+      "reopened_coefficient_fields": [
+        {
+          "phase": 22,
+          "field_degree": 10,
+          "rational_field_multiplicity": 2,
+          "passes_degree_trace_determinant_dyadic_and_source_norm_tests": true,
+          "common_frame_restriction_excludes_this_field_entirely": true,
+          "common_frame_restriction_otherwise_requires_used_alphabet_reduction": false,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 44,
+          "field_degree": 20,
+          "rational_field_multiplicity": 1,
+          "passes_degree_trace_determinant_dyadic_and_source_norm_tests": true,
+          "common_frame_restriction_excludes_this_field_entirely": true,
+          "common_frame_restriction_otherwise_requires_used_alphabet_reduction": false,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 66,
+          "field_degree": 20,
+          "rational_field_multiplicity": 1,
+          "passes_degree_trace_determinant_dyadic_and_source_norm_tests": true,
+          "common_frame_restriction_excludes_this_field_entirely": true,
+          "common_frame_restriction_otherwise_requires_used_alphabet_reduction": false,
+          "source_witness_available_in_this_audit": false
+        }
+      ]
+    },
+    {
+      "target_order": 9260,
+      "source_order": 463,
+      "block_order": 20,
+      "reopened_coefficient_fields": [
+        {
+          "phase": 22,
+          "field_degree": 10,
+          "rational_field_multiplicity": 2,
+          "passes_degree_trace_determinant_dyadic_and_source_norm_tests": true,
+          "common_frame_restriction_excludes_this_field_entirely": true,
+          "common_frame_restriction_otherwise_requires_used_alphabet_reduction": false,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 44,
+          "field_degree": 20,
+          "rational_field_multiplicity": 1,
+          "passes_degree_trace_determinant_dyadic_and_source_norm_tests": true,
+          "common_frame_restriction_excludes_this_field_entirely": true,
+          "common_frame_restriction_otherwise_requires_used_alphabet_reduction": false,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 66,
+          "field_degree": 20,
+          "rational_field_multiplicity": 1,
+          "passes_degree_trace_determinant_dyadic_and_source_norm_tests": true,
+          "common_frame_restriction_excludes_this_field_entirely": false,
+          "common_frame_restriction_otherwise_requires_used_alphabet_reduction": true,
+          "source_witness_available_in_this_audit": false
+        }
+      ]
+    }
+  ],
+  "fresh_literature_search_date": "2026-11-22",
+  "primary_sources_checked": [
+    "https://arxiv.org/html/2610.27175v2#S4.T5",
+    "https://generalised.si/research/hadamard-matrices",
+    "https://arxiv.org/abs/2609.22754",
+    "https://www.renyi.hu/conferences/hadamard2017/Slides/Szollosi.pdf"
+  ],
+  "source_search_result": "No explicit source witness for these reopened routes was located; this is not a nonexistence claim",
+  "new_real_hadamard_order_claimed": false
+}

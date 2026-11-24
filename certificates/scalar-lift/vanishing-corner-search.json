@@ -1,0 +1,1753 @@
+{
+  "schema": "vanishing-corner-search-v1",
+  "source_order": 1499,
+  "corner_order": 585,
+  "conditional_real_order": 47968,
+  "packet_catalogue": {
+    "schema": "vanishing-packet-collisions-v1",
+    "phase": 120,
+    "target_source_order": 1499,
+    "corner_order": 585,
+    "labelled_scalar_block_patterns": 512,
+    "exact_Gram_profiles": 496,
+    "pair_records": 123256,
+    "stage": "complete",
+    "stop_reason": "COMPLETE",
+    "next_pair": [
+      496,
+      496
+    ],
+    "next_scan_id": 123257,
+    "fingerprint_matches_examined": 22464,
+    "exact_collisions_seen_before_deduplication": 22463,
+    "distinct_packet_relations": {
+      "balanced": 6390,
+      "corner_defect": 1140
+    },
+    "database_bytes": 5996544,
+    "positive_controls": {
+      "known_balanced_quartet": {
+        "target_kind": "balanced",
+        "profile_indices": [
+          458,
+          67,
+          274,
+          149
+        ],
+        "patterns": [
+          {
+            "fifth_colors": [
+              3,
+              4,
+              2,
+              2,
+              3
+            ],
+            "signs": [
+              1,
+              -1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "fifth_colors": [
+              3,
+              4,
+              2,
+              2,
+              3
+            ],
+            "signs": [
+              1,
+              -1,
+              1,
+              -1,
+              -1
+            ]
+          },
+          {
+            "fifth_colors": [
+              3,
+              4,
+              2,
+              2,
+              3
+            ],
+            "signs": [
+              1,
+              -1,
+              -1,
+              1,
+              1
+            ]
+          },
+          {
+            "fifth_colors": [
+              3,
+              4,
+              2,
+              2,
+              3
+            ],
+            "signs": [
+              1,
+              -1,
+              -1,
+              -1,
+              -1
+            ]
+          }
+        ],
+        "exact_signature": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "both_full_physical_Gram_identities_verified": true,
+        "all100_root_entries_admitted": true,
+        "indecomposable_positive_packet_deviation_relation": true,
+        "scalar_minimal_vanishing_sum_claimed": false,
+        "full_corner_or_Butson_source_constructed": false
+      },
+      "known_actual_corner_defect": {
+        "target_kind": "corner_defect",
+        "profile_indices": [
+          291,
+          130,
+          142,
+          479
+        ],
+        "patterns": [
+          {
+            "fifth_colors": [
+              2,
+              3,
+              1,
+              1,
+              3
+            ],
+            "signs": [
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "fifth_colors": [
+              2,
+              4,
+              1,
+              1,
+              4
+            ],
+            "signs": [
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "fifth_colors": [
+              3,
+              3,
+              1,
+              1,
+              3
+            ],
+            "signs": [
+              1,
+              -1,
+              -1,
+              -1,
+              -1
+            ]
+          },
+          {
+            "fifth_colors": [
+              3,
+              3,
+              2,
+              2,
+              3
+            ],
+            "signs": [
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          }
+        ],
+        "exact_signature": [
+          4,
+          0,
+          -6,
+          0,
+          4,
+          0,
+          4,
+          0,
+          -6,
+          0
+        ],
+        "both_full_physical_Gram_identities_verified": true,
+        "all100_root_entries_admitted": true,
+        "indecomposable_positive_packet_deviation_relation": null,
+        "scalar_minimal_vanishing_sum_claimed": false,
+        "full_corner_or_Butson_source_constructed": false
+      }
+    },
+    "sampled_relations_with_full_Gram_verification": [
+      {
+        "target_kind": "balanced",
+        "profile_indices": [
+          0,
+          114,
+          411,
+          431
+        ],
+        "patterns": [
+          {
+            "fifth_colors": [
+              3,
+              3,
+              1,
+              2,
+              4
+            ],
+            "signs": [
+              1,
+              -1,
+              -1,
+              -1,
+              -1
+            ]
+          },
+          {
+            "fifth_colors": [
+              2,
+              4,
+              1,
+              1,
+              3
+            ],
+            "signs": [
+              1,
+              1,
+              -1,
+              1,
+              1
+            ]
+          },
+          {
+            "fifth_colors": [
+              2,
+              4,
+              1,
+              1,
+              3
+            ],
+            "signs": [
+              1,
+              -1,
+              -1,
+              -1,
+              1
+            ]
+          },
+          {
+            "fifth_colors": [
+              3,
+              3,
+              1,
+              2,
+              4
+            ],
+            "signs": [
+              1,
+              1,
+              -1,
+              1,
+              -1
+            ]
+          }
+        ],
+        "exact_signature": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "both_full_physical_Gram_identities_verified": true,
+        "all100_root_entries_admitted": true,
+        "indecomposable_positive_packet_deviation_relation": true,
+        "scalar_minimal_vanishing_sum_claimed": false,
+        "full_corner_or_Butson_source_constructed": false
+      },
+      {
+        "target_kind": "balanced",
+        "profile_indices": [
+          0,
+          141,
+          399,
+          431
+        ],
+        "patterns": [
+          {
+            "fifth_colors": [
+              3,
+              3,
+              1,
+              2,
+              4
+            ],
+            "signs": [
+              1,
+              -1,
+              -1,
+              -1,
+              -1
+            ]
+          },
+          {
+            "fifth_colors": [
+              3,
+              3,
+              2,
+              2,
+              4
+            ],
+            "signs": [
+              1,
+              -1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "fifth_colors": [
+              3,
+              3,
+              2,
+              2,
+              4
+            ],
+            "signs": [
+              1,
+              -1,
+              -1,
+              -1,
+              1
+            ]
+          },
+          {
+            "fifth_colors": [
+              3,
+              3,
+              1,
+              2,
+              4
+            ],
+            "signs": [
+              1,
+              1,
+              -1,
+              1,
+              -1
+            ]
+          }
+        ],
+        "exact_signature": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "both_full_physical_Gram_identities_verified": true,
+        "all100_root_entries_admitted": true,
+        "indecomposable_positive_packet_deviation_relation": true,
+        "scalar_minimal_vanishing_sum_claimed": false,
+        "full_corner_or_Butson_source_constructed": false
+      },
+      {
+        "target_kind": "balanced",
+        "profile_indices": [
+          0,
+          145,
+          284,
+          468
+        ],
+        "patterns": [
+          {
+            "fifth_colors": [
+              3,
+              3,
+              1,
+              2,
+              4
+            ],
+            "signs": [
+              1,
+              -1,
+              -1,
+              -1,
+              -1
+            ]
+          },
+          {
+            "fifth_colors": [
+              3,
+              3,
+              1,
+              1,
+              3
+            ],
+            "signs": [
+              1,
+              -1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "fifth_colors": [
+              2,
+              3,
+              1,
+              2,
+              3
+            ],
+            "signs": [
+              1,
+              -1,
+              -1,
+              1,
+              1
+            ]
+          },
+          {
+            "fifth_colors": [
+              2,
+              4,
+              2,
+              1,
+              3
+            ],
+            "signs": [
+              1,
+              -1,
+              1,
+              1,
+              -1
+            ]
+          }
+        ],
+        "exact_signature": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "both_full_physical_Gram_identities_verified": true,
+        "all100_root_entries_admitted": true,
+        "indecomposable_positive_packet_deviation_relation": true,
+        "scalar_minimal_vanishing_sum_claimed": false,
+        "full_corner_or_Butson_source_constructed": false
+      },
+      {
+        "target_kind": "balanced",
+        "profile_indices": [
+          0,
+          152,
+          331,
+          455
+        ],
+        "patterns": [
+          {
+            "fifth_colors": [
+              3,
+              3,
+              1,
+              2,
+              4
+            ],
+            "signs": [
+              1,
+              -1,
+              -1,
+              -1,
+              -1
+            ]
+          },
+          {
+            "fifth_colors": [
+              2,
+              4,
+              2,
+              2,
+              4
+            ],
+            "signs": [
+              1,
+              -1,
+              -1,
+              -1,
+              -1
+            ]
+          },
+          {
+            "fifth_colors": [
+              2,
+              4,
+              1,
+              2,
+              3
+            ],
+            "signs": [
+              1,
+              1,
+              -1,
+              -1,
+              1
+            ]
+          },
+          {
+            "fifth_colors": [
+              2,
+              4,
+              1,
+              2,
+              4
+            ],
+            "signs": [
+              1,
+              -1,
+              -1,
+              1,
+              -1
+            ]
+          }
+        ],
+        "exact_signature": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "both_full_physical_Gram_identities_verified": true,
+        "all100_root_entries_admitted": true,
+        "indecomposable_positive_packet_deviation_relation": true,
+        "scalar_minimal_vanishing_sum_claimed": false,
+        "full_corner_or_Butson_source_constructed": false
+      },
+      {
+        "target_kind": "balanced",
+        "profile_indices": [
+          0,
+          154,
+          393,
+          431
+        ],
+        "patterns": [
+          {
+            "fifth_colors": [
+              3,
+              3,
+              1,
+              2,
+              4
+            ],
+            "signs": [
+              1,
+              -1,
+              -1,
+              -1,
+              -1
+            ]
+          },
+          {
+            "fifth_colors": [
+              2,
+              3,
+              1,
+              2,
+              3
+            ],
+            "signs": [
+              1,
+              1,
+              1,
+              -1,
+              1
+            ]
+          },
+          {
+            "fifth_colors": [
+              2,
+              3,
+              1,
+              2,
+              3
+            ],
+            "signs": [
+              1,
+              1,
+              -1,
+              -1,
+              1
+            ]
+          },
+          {
+            "fifth_colors": [
+              3,
+              3,
+              1,
+              2,
+              4
+            ],
+            "signs": [
+              1,
+              1,
+              -1,
+              1,
+              -1
+            ]
+          }
+        ],
+        "exact_signature": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "both_full_physical_Gram_identities_verified": true,
+        "all100_root_entries_admitted": true,
+        "indecomposable_positive_packet_deviation_relation": true,
+        "scalar_minimal_vanishing_sum_claimed": false,
+        "full_corner_or_Butson_source_constructed": false
+      },
+      {
+        "target_kind": "balanced",
+        "profile_indices": [
+          0,
+          155,
+          331,
+          454
+        ],
+        "patterns": [
+          {
+            "fifth_colors": [
+              3,
+              3,
+              1,
+              2,
+              4
+            ],
+            "signs": [
+              1,
+              -1,
+              -1,
+              -1,
+              -1
+            ]
+          },
+          {
+            "fifth_colors": [
+              3,
+              3,
+              1,
+              1,
+              4
+            ],
+            "signs": [
+              1,
+              -1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "fifth_colors": [
+              2,
+              4,
+              1,
+              2,
+              3
+            ],
+            "signs": [
+              1,
+              1,
+              -1,
+              -1,
+              1
+            ]
+          },
+          {
+            "fifth_colors": [
+              3,
+              4,
+              1,
+              1,
+              4
+            ],
+            "signs": [
+              1,
+              -1,
+              1,
+              1,
+              -1
+            ]
+          }
+        ],
+        "exact_signature": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "both_full_physical_Gram_identities_verified": true,
+        "all100_root_entries_admitted": true,
+        "indecomposable_positive_packet_deviation_relation": true,
+        "scalar_minimal_vanishing_sum_claimed": false,
+        "full_corner_or_Butson_source_constructed": false
+      },
+      {
+        "target_kind": "balanced",
+        "profile_indices": [
+          0,
+          155,
+          332,
+          453
+        ],
+        "patterns": [
+          {
+            "fifth_colors": [
+              3,
+              3,
+              1,
+              2,
+              4
+            ],
+            "signs": [
+              1,
+              -1,
+              -1,
+              -1,
+              -1
+            ]
+          },
+          {
+            "fifth_colors": [
+              3,
+              3,
+              1,
+              1,
+              4
+            ],
+            "signs": [
+              1,
+              -1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "fifth_colors": [
+              3,
+              4,
+              1,
+              2,
+              3
+            ],
+            "signs": [
+              1,
+              -1,
+              1,
+              1,
+              -1
+            ]
+          },
+          {
+            "fifth_colors": [
+              3,
+              4,
+              2,
+              2,
+              3
+            ],
+            "signs": [
+              1,
+              1,
+              -1,
+              -1,
+              1
+            ]
+          }
+        ],
+        "exact_signature": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "both_full_physical_Gram_identities_verified": true,
+        "all100_root_entries_admitted": true,
+        "indecomposable_positive_packet_deviation_relation": true,
+        "scalar_minimal_vanishing_sum_claimed": false,
+        "full_corner_or_Butson_source_constructed": false
+      },
+      {
+        "target_kind": "balanced",
+        "profile_indices": [
+          0,
+          155,
+          390,
+          431
+        ],
+        "patterns": [
+          {
+            "fifth_colors": [
+              3,
+              3,
+              1,
+              2,
+              4
+            ],
+            "signs": [
+              1,
+              -1,
+              -1,
+              -1,
+              -1
+            ]
+          },
+          {
+            "fifth_colors": [
+              3,
+              3,
+              1,
+              1,
+              4
+            ],
+            "signs": [
+              1,
+              -1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "fifth_colors": [
+              3,
+              3,
+              1,
+              1,
+              4
+            ],
+            "signs": [
+              1,
+              -1,
+              -1,
+              -1,
+              1
+            ]
+          },
+          {
+            "fifth_colors": [
+              3,
+              3,
+              1,
+              2,
+              4
+            ],
+            "signs": [
+              1,
+              1,
+              -1,
+              1,
+              -1
+            ]
+          }
+        ],
+        "exact_signature": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "both_full_physical_Gram_identities_verified": true,
+        "all100_root_entries_admitted": true,
+        "indecomposable_positive_packet_deviation_relation": true,
+        "scalar_minimal_vanishing_sum_claimed": false,
+        "full_corner_or_Butson_source_constructed": false
+      },
+      {
+        "target_kind": "corner_defect",
+        "profile_indices": [
+          100,
+          265,
+          265,
+          470
+        ],
+        "patterns": [
+          {
+            "fifth_colors": [
+              2,
+              3,
+              1,
+              1,
+              4
+            ],
+            "signs": [
+              1,
+              -1,
+              1,
+              -1,
+              1
+            ]
+          },
+          {
+            "fifth_colors": [
+              3,
+              3,
+              1,
+              1,
+              4
+            ],
+            "signs": [
+              1,
+              1,
+              1,
+              -1,
+              -1
+            ]
+          },
+          {
+            "fifth_colors": [
+              3,
+              3,
+              1,
+              1,
+              4
+            ],
+            "signs": [
+              1,
+              1,
+              1,
+              -1,
+              -1
+            ]
+          },
+          {
+            "fifth_colors": [
+              2,
+              3,
+              1,
+              1,
+              4
+            ],
+            "signs": [
+              1,
+              -1,
+              1,
+              1,
+              -1
+            ]
+          }
+        ],
+        "exact_signature": [
+          4,
+          0,
+          -6,
+          0,
+          4,
+          0,
+          4,
+          0,
+          -6,
+          0
+        ],
+        "both_full_physical_Gram_identities_verified": true,
+        "all100_root_entries_admitted": true,
+        "indecomposable_positive_packet_deviation_relation": null,
+        "scalar_minimal_vanishing_sum_claimed": false,
+        "full_corner_or_Butson_source_constructed": false
+      },
+      {
+        "target_kind": "corner_defect",
+        "profile_indices": [
+          104,
+          106,
+          353,
+          478
+        ],
+        "patterns": [
+          {
+            "fifth_colors": [
+              2,
+              4,
+              1,
+              1,
+              3
+            ],
+            "signs": [
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "fifth_colors": [
+              2,
+              3,
+              1,
+              1,
+              4
+            ],
+            "signs": [
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "fifth_colors": [
+              3,
+              4,
+              1,
+              1,
+              4
+            ],
+            "signs": [
+              1,
+              -1,
+              -1,
+              -1,
+              -1
+            ]
+          },
+          {
+            "fifth_colors": [
+              2,
+              3,
+              2,
+              2,
+              3
+            ],
+            "signs": [
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          }
+        ],
+        "exact_signature": [
+          4,
+          0,
+          -6,
+          0,
+          4,
+          0,
+          4,
+          0,
+          -6,
+          0
+        ],
+        "both_full_physical_Gram_identities_verified": true,
+        "all100_root_entries_admitted": true,
+        "indecomposable_positive_packet_deviation_relation": null,
+        "scalar_minimal_vanishing_sum_claimed": false,
+        "full_corner_or_Butson_source_constructed": false
+      },
+      {
+        "target_kind": "corner_defect",
+        "profile_indices": [
+          128,
+          131,
+          308,
+          479
+        ],
+        "patterns": [
+          {
+            "fifth_colors": [
+              2,
+              4,
+              1,
+              2,
+              4
+            ],
+            "signs": [
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "fifth_colors": [
+              2,
+              4,
+              2,
+              1,
+              4
+            ],
+            "signs": [
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "fifth_colors": [
+              2,
+              3,
+              2,
+              2,
+              3
+            ],
+            "signs": [
+              1,
+              -1,
+              -1,
+              -1,
+              -1
+            ]
+          },
+          {
+            "fifth_colors": [
+              3,
+              3,
+              2,
+              2,
+              3
+            ],
+            "signs": [
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          }
+        ],
+        "exact_signature": [
+          4,
+          0,
+          -6,
+          0,
+          4,
+          0,
+          4,
+          0,
+          -6,
+          0
+        ],
+        "both_full_physical_Gram_identities_verified": true,
+        "all100_root_entries_admitted": true,
+        "indecomposable_positive_packet_deviation_relation": null,
+        "scalar_minimal_vanishing_sum_claimed": false,
+        "full_corner_or_Butson_source_constructed": false
+      },
+      {
+        "target_kind": "corner_defect",
+        "profile_indices": [
+          130,
+          130,
+          306,
+          479
+        ],
+        "patterns": [
+          {
+            "fifth_colors": [
+              2,
+              4,
+              1,
+              1,
+              4
+            ],
+            "signs": [
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "fifth_colors": [
+              2,
+              4,
+              1,
+              1,
+              4
+            ],
+            "signs": [
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "fifth_colors": [
+              3,
+              3,
+              2,
+              2,
+              3
+            ],
+            "signs": [
+              1,
+              -1,
+              -1,
+              -1,
+              -1
+            ]
+          },
+          {
+            "fifth_colors": [
+              3,
+              3,
+              2,
+              2,
+              3
+            ],
+            "signs": [
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          }
+        ],
+        "exact_signature": [
+          4,
+          0,
+          -6,
+          0,
+          4,
+          0,
+          4,
+          0,
+          -6,
+          0
+        ],
+        "both_full_physical_Gram_identities_verified": true,
+        "all100_root_entries_admitted": true,
+        "indecomposable_positive_packet_deviation_relation": null,
+        "scalar_minimal_vanishing_sum_claimed": false,
+        "full_corner_or_Butson_source_constructed": false
+      },
+      {
+        "target_kind": "corner_defect",
+        "profile_indices": [
+          130,
+          130,
+          308,
+          478
+        ],
+        "patterns": [
+          {
+            "fifth_colors": [
+              2,
+              4,
+              1,
+              1,
+              4
+            ],
+            "signs": [
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "fifth_colors": [
+              2,
+              4,
+              1,
+              1,
+              4
+            ],
+            "signs": [
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "fifth_colors": [
+              2,
+              3,
+              2,
+              2,
+              3
+            ],
+            "signs": [
+              1,
+              -1,
+              -1,
+              -1,
+              -1
+            ]
+          },
+          {
+            "fifth_colors": [
+              2,
+              3,
+              2,
+              2,
+              3
+            ],
+            "signs": [
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          }
+        ],
+        "exact_signature": [
+          4,
+          0,
+          -6,
+          0,
+          4,
+          0,
+          4,
+          0,
+          -6,
+          0
+        ],
+        "both_full_physical_Gram_identities_verified": true,
+        "all100_root_entries_admitted": true,
+        "indecomposable_positive_packet_deviation_relation": null,
+        "scalar_minimal_vanishing_sum_claimed": false,
+        "full_corner_or_Butson_source_constructed": false
+      },
+      {
+        "target_kind": "corner_defect",
+        "profile_indices": [
+          130,
+          142,
+          291,
+          479
+        ],
+        "patterns": [
+          {
+            "fifth_colors": [
+              2,
+              4,
+              1,
+              1,
+              4
+            ],
+            "signs": [
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "fifth_colors": [
+              3,
+              3,
+              1,
+              1,
+              3
+            ],
+            "signs": [
+              1,
+              -1,
+              -1,
+              -1,
+              -1
+            ]
+          },
+          {
+            "fifth_colors": [
+              2,
+              3,
+              1,
+              1,
+              3
+            ],
+            "signs": [
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "fifth_colors": [
+              3,
+              3,
+              2,
+              2,
+              3
+            ],
+            "signs": [
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          }
+        ],
+        "exact_signature": [
+          4,
+          0,
+          -6,
+          0,
+          4,
+          0,
+          4,
+          0,
+          -6,
+          0
+        ],
+        "both_full_physical_Gram_identities_verified": true,
+        "all100_root_entries_admitted": true,
+        "indecomposable_positive_packet_deviation_relation": null,
+        "scalar_minimal_vanishing_sum_claimed": false,
+        "full_corner_or_Butson_source_constructed": false
+      },
+      {
+        "target_kind": "corner_defect",
+        "profile_indices": [
+          130,
+          308,
+          412,
+          414
+        ],
+        "patterns": [
+          {
+            "fifth_colors": [
+              2,
+              4,
+              1,
+              1,
+              4
+            ],
+            "signs": [
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "fifth_colors": [
+              2,
+              3,
+              2,
+              2,
+              3
+            ],
+            "signs": [
+              1,
+              -1,
+              -1,
+              -1,
+              -1
+            ]
+          },
+          {
+            "fifth_colors": [
+              2,
+              4,
+              2,
+              2,
+              3
+            ],
+            "signs": [
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "fifth_colors": [
+              2,
+              3,
+              2,
+              2,
+              4
+            ],
+            "signs": [
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          }
+        ],
+        "exact_signature": [
+          4,
+          0,
+          -6,
+          0,
+          4,
+          0,
+          4,
+          0,
+          -6,
+          0
+        ],
+        "both_full_physical_Gram_identities_verified": true,
+        "all100_root_entries_admitted": true,
+        "indecomposable_positive_packet_deviation_relation": null,
+        "scalar_minimal_vanishing_sum_claimed": false,
+        "full_corner_or_Butson_source_constructed": false
+      },
+      {
+        "target_kind": "corner_defect",
+        "profile_indices": [
+          142,
+          350,
+          401,
+          403
+        ],
+        "patterns": [
+          {
+            "fifth_colors": [
+              3,
+              3,
+              1,
+              1,
+              3
+            ],
+            "signs": [
+              1,
+              -1,
+              -1,
+              -1,
+              -1
+            ]
+          },
+          {
+            "fifth_colors": [
+              2,
+              4,
+              2,
+              2,
+              4
+            ],
+            "signs": [
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "fifth_colors": [
+              3,
+              4,
+              2,
+              2,
+              3
+            ],
+            "signs": [
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          },
+          {
+            "fifth_colors": [
+              3,
+              3,
+              2,
+              2,
+              4
+            ],
+            "signs": [
+              1,
+              1,
+              1,
+              1,
+              1
+            ]
+          }
+        ],
+        "exact_signature": [
+          4,
+          0,
+          -6,
+          0,
+          4,
+          0,
+          4,
+          0,
+          -6,
+          0
+        ],
+        "both_full_physical_Gram_identities_verified": true,
+        "all100_root_entries_admitted": true,
+        "indecomposable_positive_packet_deviation_relation": null,
+        "scalar_minimal_vanishing_sum_claimed": false,
+        "full_corner_or_Butson_source_constructed": false
+      }
+    ],
+    "balanced_relations_exclude_zero_profiles_and_proper_balanced_subcollections": true,
+    "corner_defect_relations_need113_baseline_blocks_for117_packet_metric": true,
+    "fingerprints_are_only_indices_all_hits_exactly_checked": true,
+    "other_palettes_or_longer_relations_exhausted": false,
+    "complete_corner_or_new_source_constructed": false
+  },
+  "balanced_quartets": 6390,
+  "planned_corner_candidates": 12057776640,
+  "progress": {
+    "catalogue_imported": true,
+    "complete_corner_metrics": 0,
+    "exact_entry_rejections": 6206855,
+    "full_Gram_checks": 0,
+    "last_exact_rejection": {
+      "actual": [
+        [
+          -8,
+          12,
+          -8,
+          6
+        ],
+        [
+          1,
+          1,
+          5,
+          8
+        ]
+      ],
+      "expected": [
+        [
+          -260,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0
+        ]
+      ],
+      "pair": [
+        0,
+        18
+      ],
+      "recipe": {
+        "cycles": 9,
+        "layout": "consecutive",
+        "offset": 0,
+        "relation_id": 2164,
+        "stride": 7,
+        "variant": "conjugate"
+      },
+      "sector": 0,
+      "stage": "exact_entry_rejection"
+    },
+    "next_recipe": 6206855
+  },
+  "stop_reason": "time_budget",
+  "database_bytes": 180224,
+  "scope": "canonical representative of each balanced quartet, repeated 1..28 times on cyclic supports with invertible stride and common offset; four outer variants and two layouts",
+  "all_labelled_realizations_or_noncyclic_placements_searched": false,
+  "complete_Butson_source_constructed": false,
+  "corner_hit_still_requires_root_split_and_source_Gram": true
+}

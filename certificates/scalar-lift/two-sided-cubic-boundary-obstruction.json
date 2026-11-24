@@ -1,0 +1,741 @@
+{
+  "schema": "two-sided-cubic-fixed-boundary-obstruction-v1",
+  "routes": [
+    {
+      "source_order": 1499,
+      "phase": 24,
+      "boundary_vector": [
+        0,
+        1,
+        1
+      ],
+      "actual_frame_sha256": "1993cfb97311dee2259e1184097a382b8da1131296f3efd9cd666739bdb3f7bf",
+      "actual_border_sha256": "a10281bfbfb35fa6513d56773f2717126b94e7f031ebe4828df77776aa3addc2",
+      "transports": [
+        {
+          "transport_index": 0,
+          "entry_sum_integrality": {
+            "phase": 24,
+            "all_odd_parameters_including_sign_variants": 4,
+            "entrywise_even_integral_cyclotomic_differences_checked": 576,
+            "transported_X_plus_Y_equals_old_X_plus_Y_modulo_two": true
+          },
+          "boundary_half_Gram_constant_sha256": "baf91c3e966cde45989f71889af8051ccf88bbcff5dfc9c731ecc8c183b7da34",
+          "rows_outside_the_allowed_core_sign_boundary_span": 470,
+          "first_exact_obstruction": {
+            "core_row": 3,
+            "equal_boundary_mask_value": 1,
+            "border_columns": [
+              1,
+              2
+            ],
+            "F4_half_Gram_constants": [
+              0,
+              1
+            ]
+          },
+          "direct_cyclotomic_witness_check": {
+            "full_core_columns_checked": 748,
+            "full_border_columns_checked": 3,
+            "direct_integer_cyclotomic_Gram_even": true,
+            "independent_relative_basis_audit": {
+              "phase": 24,
+              "relative_degree": 4,
+              "integral_basis_change_determinant": 1,
+              "all_root_functionals_verified_in_independent_cyclotomic_basis": 24,
+              "eta_power_r_maps_to_minus_one_while_product_of_evaluations_is_one": true
+            },
+            "complete_boundary_row_equals_structured_half_Gram": true
+          },
+          "equal_mask_column_differences_unchanged_from_padded_seed": true,
+          "fixed_actual_boundary_core_sign_completion": "EXCLUDED"
+        },
+        {
+          "transport_index": 1,
+          "entry_sum_integrality": {
+            "phase": 24,
+            "all_odd_parameters_including_sign_variants": 4,
+            "entrywise_even_integral_cyclotomic_differences_checked": 576,
+            "transported_X_plus_Y_equals_old_X_plus_Y_modulo_two": true
+          },
+          "boundary_half_Gram_constant_sha256": "9baf39b972527d6dd8918c7ffe14c67b9585e21e1a6a35846cc3d2449423908d",
+          "rows_outside_the_allowed_core_sign_boundary_span": 470,
+          "first_exact_obstruction": {
+            "core_row": 3,
+            "equal_boundary_mask_value": 1,
+            "border_columns": [
+              1,
+              2
+            ],
+            "F4_half_Gram_constants": [
+              2,
+              3
+            ]
+          },
+          "direct_cyclotomic_witness_check": {
+            "full_core_columns_checked": 748,
+            "full_border_columns_checked": 3,
+            "direct_integer_cyclotomic_Gram_even": true,
+            "independent_relative_basis_audit": {
+              "phase": 24,
+              "relative_degree": 4,
+              "integral_basis_change_determinant": 1,
+              "all_root_functionals_verified_in_independent_cyclotomic_basis": 24,
+              "eta_power_r_maps_to_minus_one_while_product_of_evaluations_is_one": true
+            },
+            "complete_boundary_row_equals_structured_half_Gram": true
+          },
+          "equal_mask_column_differences_unchanged_from_padded_seed": true,
+          "fixed_actual_boundary_core_sign_completion": "EXCLUDED"
+        },
+        {
+          "transport_index": 2,
+          "entry_sum_integrality": {
+            "phase": 24,
+            "all_odd_parameters_including_sign_variants": 4,
+            "entrywise_even_integral_cyclotomic_differences_checked": 576,
+            "transported_X_plus_Y_equals_old_X_plus_Y_modulo_two": true
+          },
+          "boundary_half_Gram_constant_sha256": "999169f4a762a9a299fdf4a5586e2275497edd36d1d0655d6a4f467a086689f1",
+          "rows_outside_the_allowed_core_sign_boundary_span": 470,
+          "first_exact_obstruction": {
+            "core_row": 3,
+            "equal_boundary_mask_value": 1,
+            "border_columns": [
+              1,
+              2
+            ],
+            "F4_half_Gram_constants": [
+              0,
+              1
+            ]
+          },
+          "direct_cyclotomic_witness_check": {
+            "full_core_columns_checked": 748,
+            "full_border_columns_checked": 3,
+            "direct_integer_cyclotomic_Gram_even": true,
+            "independent_relative_basis_audit": {
+              "phase": 24,
+              "relative_degree": 4,
+              "integral_basis_change_determinant": 1,
+              "all_root_functionals_verified_in_independent_cyclotomic_basis": 24,
+              "eta_power_r_maps_to_minus_one_while_product_of_evaluations_is_one": true
+            },
+            "complete_boundary_row_equals_structured_half_Gram": true
+          },
+          "equal_mask_column_differences_unchanged_from_padded_seed": true,
+          "fixed_actual_boundary_core_sign_completion": "EXCLUDED"
+        },
+        {
+          "transport_index": 3,
+          "entry_sum_integrality": {
+            "phase": 24,
+            "all_odd_parameters_including_sign_variants": 4,
+            "entrywise_even_integral_cyclotomic_differences_checked": 576,
+            "transported_X_plus_Y_equals_old_X_plus_Y_modulo_two": true
+          },
+          "boundary_half_Gram_constant_sha256": "847879b72b2d1bf41734c49e9769abb87c187083c360a1a79da65ce8dd451a1e",
+          "rows_outside_the_allowed_core_sign_boundary_span": 470,
+          "first_exact_obstruction": {
+            "core_row": 3,
+            "equal_boundary_mask_value": 1,
+            "border_columns": [
+              1,
+              2
+            ],
+            "F4_half_Gram_constants": [
+              1,
+              0
+            ]
+          },
+          "direct_cyclotomic_witness_check": {
+            "full_core_columns_checked": 748,
+            "full_border_columns_checked": 3,
+            "direct_integer_cyclotomic_Gram_even": true,
+            "independent_relative_basis_audit": {
+              "phase": 24,
+              "relative_degree": 4,
+              "integral_basis_change_determinant": 1,
+              "all_root_functionals_verified_in_independent_cyclotomic_basis": 24,
+              "eta_power_r_maps_to_minus_one_while_product_of_evaluations_is_one": true
+            },
+            "complete_boundary_row_equals_structured_half_Gram": true
+          },
+          "equal_mask_column_differences_unchanged_from_padded_seed": true,
+          "fixed_actual_boundary_core_sign_completion": "EXCLUDED"
+        },
+        {
+          "transport_index": 4,
+          "entry_sum_integrality": {
+            "phase": 24,
+            "all_odd_parameters_including_sign_variants": 4,
+            "entrywise_even_integral_cyclotomic_differences_checked": 576,
+            "transported_X_plus_Y_equals_old_X_plus_Y_modulo_two": true
+          },
+          "boundary_half_Gram_constant_sha256": "dfbc61e45a9bfbab260fdf6ddda848183571b075480f193cd858209dcaf7f087",
+          "rows_outside_the_allowed_core_sign_boundary_span": 470,
+          "first_exact_obstruction": {
+            "core_row": 3,
+            "equal_boundary_mask_value": 1,
+            "border_columns": [
+              1,
+              2
+            ],
+            "F4_half_Gram_constants": [
+              2,
+              3
+            ]
+          },
+          "direct_cyclotomic_witness_check": {
+            "full_core_columns_checked": 748,
+            "full_border_columns_checked": 3,
+            "direct_integer_cyclotomic_Gram_even": true,
+            "independent_relative_basis_audit": {
+              "phase": 24,
+              "relative_degree": 4,
+              "integral_basis_change_determinant": 1,
+              "all_root_functionals_verified_in_independent_cyclotomic_basis": 24,
+              "eta_power_r_maps_to_minus_one_while_product_of_evaluations_is_one": true
+            },
+            "complete_boundary_row_equals_structured_half_Gram": true
+          },
+          "equal_mask_column_differences_unchanged_from_padded_seed": true,
+          "fixed_actual_boundary_core_sign_completion": "EXCLUDED"
+        },
+        {
+          "transport_index": 5,
+          "entry_sum_integrality": {
+            "phase": 24,
+            "all_odd_parameters_including_sign_variants": 4,
+            "entrywise_even_integral_cyclotomic_differences_checked": 576,
+            "transported_X_plus_Y_equals_old_X_plus_Y_modulo_two": true
+          },
+          "boundary_half_Gram_constant_sha256": "876d8631a0cf608c526473965a76b5698c80ee2cd9fd34e161c7f5c4868660f1",
+          "rows_outside_the_allowed_core_sign_boundary_span": 470,
+          "first_exact_obstruction": {
+            "core_row": 3,
+            "equal_boundary_mask_value": 1,
+            "border_columns": [
+              1,
+              2
+            ],
+            "F4_half_Gram_constants": [
+              2,
+              3
+            ]
+          },
+          "direct_cyclotomic_witness_check": {
+            "full_core_columns_checked": 748,
+            "full_border_columns_checked": 3,
+            "direct_integer_cyclotomic_Gram_even": true,
+            "independent_relative_basis_audit": {
+              "phase": 24,
+              "relative_degree": 4,
+              "integral_basis_change_determinant": 1,
+              "all_root_functionals_verified_in_independent_cyclotomic_basis": 24,
+              "eta_power_r_maps_to_minus_one_while_product_of_evaluations_is_one": true
+            },
+            "complete_boundary_row_equals_structured_half_Gram": true
+          },
+          "equal_mask_column_differences_unchanged_from_padded_seed": true,
+          "fixed_actual_boundary_core_sign_completion": "EXCLUDED"
+        },
+        {
+          "transport_index": 6,
+          "entry_sum_integrality": {
+            "phase": 24,
+            "all_odd_parameters_including_sign_variants": 4,
+            "entrywise_even_integral_cyclotomic_differences_checked": 576,
+            "transported_X_plus_Y_equals_old_X_plus_Y_modulo_two": true
+          },
+          "boundary_half_Gram_constant_sha256": "2a2ce539236429a2a9a0bb04ff852c417249667f992b621bf2302f4d23d107eb",
+          "rows_outside_the_allowed_core_sign_boundary_span": 470,
+          "first_exact_obstruction": {
+            "core_row": 3,
+            "equal_boundary_mask_value": 1,
+            "border_columns": [
+              1,
+              2
+            ],
+            "F4_half_Gram_constants": [
+              2,
+              3
+            ]
+          },
+          "direct_cyclotomic_witness_check": {
+            "full_core_columns_checked": 748,
+            "full_border_columns_checked": 3,
+            "direct_integer_cyclotomic_Gram_even": true,
+            "independent_relative_basis_audit": {
+              "phase": 24,
+              "relative_degree": 4,
+              "integral_basis_change_determinant": 1,
+              "all_root_functionals_verified_in_independent_cyclotomic_basis": 24,
+              "eta_power_r_maps_to_minus_one_while_product_of_evaluations_is_one": true
+            },
+            "complete_boundary_row_equals_structured_half_Gram": true
+          },
+          "equal_mask_column_differences_unchanged_from_padded_seed": true,
+          "fixed_actual_boundary_core_sign_completion": "EXCLUDED"
+        },
+        {
+          "transport_index": 7,
+          "entry_sum_integrality": {
+            "phase": 24,
+            "all_odd_parameters_including_sign_variants": 4,
+            "entrywise_even_integral_cyclotomic_differences_checked": 576,
+            "transported_X_plus_Y_equals_old_X_plus_Y_modulo_two": true
+          },
+          "boundary_half_Gram_constant_sha256": "396cf0341adc434a07a2867fb7e63d56fb9ce2f70179cc4309a0a344bcdfaebc",
+          "rows_outside_the_allowed_core_sign_boundary_span": 470,
+          "first_exact_obstruction": {
+            "core_row": 3,
+            "equal_boundary_mask_value": 1,
+            "border_columns": [
+              1,
+              2
+            ],
+            "F4_half_Gram_constants": [
+              1,
+              0
+            ]
+          },
+          "direct_cyclotomic_witness_check": {
+            "full_core_columns_checked": 748,
+            "full_border_columns_checked": 3,
+            "direct_integer_cyclotomic_Gram_even": true,
+            "independent_relative_basis_audit": {
+              "phase": 24,
+              "relative_degree": 4,
+              "integral_basis_change_determinant": 1,
+              "all_root_functionals_verified_in_independent_cyclotomic_basis": 24,
+              "eta_power_r_maps_to_minus_one_while_product_of_evaluations_is_one": true
+            },
+            "complete_boundary_row_equals_structured_half_Gram": true
+          },
+          "equal_mask_column_differences_unchanged_from_padded_seed": true,
+          "fixed_actual_boundary_core_sign_completion": "EXCLUDED"
+        },
+        {
+          "transport_index": 8,
+          "entry_sum_integrality": {
+            "phase": 24,
+            "all_odd_parameters_including_sign_variants": 4,
+            "entrywise_even_integral_cyclotomic_differences_checked": 576,
+            "transported_X_plus_Y_equals_old_X_plus_Y_modulo_two": true
+          },
+          "boundary_half_Gram_constant_sha256": "f532655ad1df425646fa8a245bd4b0d9872a25974d82aea118024470106bc237",
+          "rows_outside_the_allowed_core_sign_boundary_span": 470,
+          "first_exact_obstruction": {
+            "core_row": 3,
+            "equal_boundary_mask_value": 1,
+            "border_columns": [
+              1,
+              2
+            ],
+            "F4_half_Gram_constants": [
+              2,
+              3
+            ]
+          },
+          "direct_cyclotomic_witness_check": {
+            "full_core_columns_checked": 748,
+            "full_border_columns_checked": 3,
+            "direct_integer_cyclotomic_Gram_even": true,
+            "independent_relative_basis_audit": {
+              "phase": 24,
+              "relative_degree": 4,
+              "integral_basis_change_determinant": 1,
+              "all_root_functionals_verified_in_independent_cyclotomic_basis": 24,
+              "eta_power_r_maps_to_minus_one_while_product_of_evaluations_is_one": true
+            },
+            "complete_boundary_row_equals_structured_half_Gram": true
+          },
+          "equal_mask_column_differences_unchanged_from_padded_seed": true,
+          "fixed_actual_boundary_core_sign_completion": "EXCLUDED"
+        }
+      ]
+    },
+    {
+      "source_order": 2999,
+      "phase": 48,
+      "boundary_vector": [
+        1,
+        1,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "actual_frame_sha256": "ad2e3fd5122d68e16c15eb99061fc1f19eedb9a85c5858b1c158f3bad1a72362",
+      "actual_border_sha256": "60a80483dea03675c0ce29a09a5c2041fb25738014f3eb89036f5ffe8c08c24d",
+      "transports": [
+        {
+          "transport_index": 0,
+          "entry_sum_integrality": {
+            "phase": 48,
+            "all_odd_parameters_including_sign_variants": 8,
+            "entrywise_even_integral_cyclotomic_differences_checked": 1152,
+            "transported_X_plus_Y_equals_old_X_plus_Y_modulo_two": true
+          },
+          "boundary_half_Gram_constant_sha256": "abd5fdbd93caa95fe16dc5cd4af38a75bf9ab3859dee3c78046c9e3b32a1f4a4",
+          "rows_outside_the_allowed_core_sign_boundary_span": 1495,
+          "first_exact_obstruction": {
+            "core_row": 0,
+            "equal_boundary_mask_value": 0,
+            "border_columns": [
+              2,
+              5,
+              6
+            ],
+            "F4_half_Gram_constants": [
+              2,
+              0,
+              3
+            ]
+          },
+          "direct_cyclotomic_witness_check": {
+            "full_core_columns_checked": 1496,
+            "full_border_columns_checked": 7,
+            "direct_integer_cyclotomic_Gram_even": true,
+            "independent_relative_basis_audit": {
+              "phase": 48,
+              "relative_degree": 8,
+              "integral_basis_change_determinant": 1,
+              "all_root_functionals_verified_in_independent_cyclotomic_basis": 48,
+              "eta_power_r_maps_to_minus_one_while_product_of_evaluations_is_one": true
+            },
+            "complete_boundary_row_equals_structured_half_Gram": true
+          },
+          "equal_mask_column_differences_unchanged_from_padded_seed": true,
+          "fixed_actual_boundary_core_sign_completion": "EXCLUDED"
+        },
+        {
+          "transport_index": 1,
+          "entry_sum_integrality": {
+            "phase": 48,
+            "all_odd_parameters_including_sign_variants": 8,
+            "entrywise_even_integral_cyclotomic_differences_checked": 1152,
+            "transported_X_plus_Y_equals_old_X_plus_Y_modulo_two": true
+          },
+          "boundary_half_Gram_constant_sha256": "9d2ac1b0000a18ee57218fc56faf5608faf5c775e2f6fd0368d5acd36b3bbd68",
+          "rows_outside_the_allowed_core_sign_boundary_span": 1495,
+          "first_exact_obstruction": {
+            "core_row": 0,
+            "equal_boundary_mask_value": 0,
+            "border_columns": [
+              2,
+              5,
+              6
+            ],
+            "F4_half_Gram_constants": [
+              2,
+              0,
+              3
+            ]
+          },
+          "direct_cyclotomic_witness_check": {
+            "full_core_columns_checked": 1496,
+            "full_border_columns_checked": 7,
+            "direct_integer_cyclotomic_Gram_even": true,
+            "independent_relative_basis_audit": {
+              "phase": 48,
+              "relative_degree": 8,
+              "integral_basis_change_determinant": 1,
+              "all_root_functionals_verified_in_independent_cyclotomic_basis": 48,
+              "eta_power_r_maps_to_minus_one_while_product_of_evaluations_is_one": true
+            },
+            "complete_boundary_row_equals_structured_half_Gram": true
+          },
+          "equal_mask_column_differences_unchanged_from_padded_seed": true,
+          "fixed_actual_boundary_core_sign_completion": "EXCLUDED"
+        },
+        {
+          "transport_index": 2,
+          "entry_sum_integrality": {
+            "phase": 48,
+            "all_odd_parameters_including_sign_variants": 8,
+            "entrywise_even_integral_cyclotomic_differences_checked": 1152,
+            "transported_X_plus_Y_equals_old_X_plus_Y_modulo_two": true
+          },
+          "boundary_half_Gram_constant_sha256": "200e5e5491916e3046e7cb00c02969529d40f3757cad6d21aad3acee41045219",
+          "rows_outside_the_allowed_core_sign_boundary_span": 1495,
+          "first_exact_obstruction": {
+            "core_row": 0,
+            "equal_boundary_mask_value": 0,
+            "border_columns": [
+              2,
+              5,
+              6
+            ],
+            "F4_half_Gram_constants": [
+              1,
+              3,
+              0
+            ]
+          },
+          "direct_cyclotomic_witness_check": {
+            "full_core_columns_checked": 1496,
+            "full_border_columns_checked": 7,
+            "direct_integer_cyclotomic_Gram_even": true,
+            "independent_relative_basis_audit": {
+              "phase": 48,
+              "relative_degree": 8,
+              "integral_basis_change_determinant": 1,
+              "all_root_functionals_verified_in_independent_cyclotomic_basis": 48,
+              "eta_power_r_maps_to_minus_one_while_product_of_evaluations_is_one": true
+            },
+            "complete_boundary_row_equals_structured_half_Gram": true
+          },
+          "equal_mask_column_differences_unchanged_from_padded_seed": true,
+          "fixed_actual_boundary_core_sign_completion": "EXCLUDED"
+        },
+        {
+          "transport_index": 3,
+          "entry_sum_integrality": {
+            "phase": 48,
+            "all_odd_parameters_including_sign_variants": 8,
+            "entrywise_even_integral_cyclotomic_differences_checked": 1152,
+            "transported_X_plus_Y_equals_old_X_plus_Y_modulo_two": true
+          },
+          "boundary_half_Gram_constant_sha256": "b6dd8abee854297314f906cc098ad6f4579a5200d76083afd8aff3228f05600a",
+          "rows_outside_the_allowed_core_sign_boundary_span": 1495,
+          "first_exact_obstruction": {
+            "core_row": 0,
+            "equal_boundary_mask_value": 0,
+            "border_columns": [
+              2,
+              5,
+              6
+            ],
+            "F4_half_Gram_constants": [
+              1,
+              3,
+              0
+            ]
+          },
+          "direct_cyclotomic_witness_check": {
+            "full_core_columns_checked": 1496,
+            "full_border_columns_checked": 7,
+            "direct_integer_cyclotomic_Gram_even": true,
+            "independent_relative_basis_audit": {
+              "phase": 48,
+              "relative_degree": 8,
+              "integral_basis_change_determinant": 1,
+              "all_root_functionals_verified_in_independent_cyclotomic_basis": 48,
+              "eta_power_r_maps_to_minus_one_while_product_of_evaluations_is_one": true
+            },
+            "complete_boundary_row_equals_structured_half_Gram": true
+          },
+          "equal_mask_column_differences_unchanged_from_padded_seed": true,
+          "fixed_actual_boundary_core_sign_completion": "EXCLUDED"
+        },
+        {
+          "transport_index": 4,
+          "entry_sum_integrality": {
+            "phase": 48,
+            "all_odd_parameters_including_sign_variants": 8,
+            "entrywise_even_integral_cyclotomic_differences_checked": 1152,
+            "transported_X_plus_Y_equals_old_X_plus_Y_modulo_two": true
+          },
+          "boundary_half_Gram_constant_sha256": "6ad45e7102e62db8a5a7482553c58af6b02933866d8acb9d3669c4f97f8f4be5",
+          "rows_outside_the_allowed_core_sign_boundary_span": 1495,
+          "first_exact_obstruction": {
+            "core_row": 0,
+            "equal_boundary_mask_value": 0,
+            "border_columns": [
+              2,
+              5,
+              6
+            ],
+            "F4_half_Gram_constants": [
+              1,
+              3,
+              0
+            ]
+          },
+          "direct_cyclotomic_witness_check": {
+            "full_core_columns_checked": 1496,
+            "full_border_columns_checked": 7,
+            "direct_integer_cyclotomic_Gram_even": true,
+            "independent_relative_basis_audit": {
+              "phase": 48,
+              "relative_degree": 8,
+              "integral_basis_change_determinant": 1,
+              "all_root_functionals_verified_in_independent_cyclotomic_basis": 48,
+              "eta_power_r_maps_to_minus_one_while_product_of_evaluations_is_one": true
+            },
+            "complete_boundary_row_equals_structured_half_Gram": true
+          },
+          "equal_mask_column_differences_unchanged_from_padded_seed": true,
+          "fixed_actual_boundary_core_sign_completion": "EXCLUDED"
+        },
+        {
+          "transport_index": 5,
+          "entry_sum_integrality": {
+            "phase": 48,
+            "all_odd_parameters_including_sign_variants": 8,
+            "entrywise_even_integral_cyclotomic_differences_checked": 1152,
+            "transported_X_plus_Y_equals_old_X_plus_Y_modulo_two": true
+          },
+          "boundary_half_Gram_constant_sha256": "0e5f1e5e521bf55cd95e3d09f80e1a57dd371af02c6ae27956a8d4521a169fc1",
+          "rows_outside_the_allowed_core_sign_boundary_span": 1495,
+          "first_exact_obstruction": {
+            "core_row": 0,
+            "equal_boundary_mask_value": 0,
+            "border_columns": [
+              2,
+              5,
+              6
+            ],
+            "F4_half_Gram_constants": [
+              1,
+              3,
+              0
+            ]
+          },
+          "direct_cyclotomic_witness_check": {
+            "full_core_columns_checked": 1496,
+            "full_border_columns_checked": 7,
+            "direct_integer_cyclotomic_Gram_even": true,
+            "independent_relative_basis_audit": {
+              "phase": 48,
+              "relative_degree": 8,
+              "integral_basis_change_determinant": 1,
+              "all_root_functionals_verified_in_independent_cyclotomic_basis": 48,
+              "eta_power_r_maps_to_minus_one_while_product_of_evaluations_is_one": true
+            },
+            "complete_boundary_row_equals_structured_half_Gram": true
+          },
+          "equal_mask_column_differences_unchanged_from_padded_seed": true,
+          "fixed_actual_boundary_core_sign_completion": "EXCLUDED"
+        },
+        {
+          "transport_index": 6,
+          "entry_sum_integrality": {
+            "phase": 48,
+            "all_odd_parameters_including_sign_variants": 8,
+            "entrywise_even_integral_cyclotomic_differences_checked": 1152,
+            "transported_X_plus_Y_equals_old_X_plus_Y_modulo_two": true
+          },
+          "boundary_half_Gram_constant_sha256": "e0306068fdd2a8873265c25e4fb937fead2b72ca73afb166579a253fe114d2a3",
+          "rows_outside_the_allowed_core_sign_boundary_span": 1495,
+          "first_exact_obstruction": {
+            "core_row": 0,
+            "equal_boundary_mask_value": 0,
+            "border_columns": [
+              2,
+              5,
+              6
+            ],
+            "F4_half_Gram_constants": [
+              2,
+              0,
+              3
+            ]
+          },
+          "direct_cyclotomic_witness_check": {
+            "full_core_columns_checked": 1496,
+            "full_border_columns_checked": 7,
+            "direct_integer_cyclotomic_Gram_even": true,
+            "independent_relative_basis_audit": {
+              "phase": 48,
+              "relative_degree": 8,
+              "integral_basis_change_determinant": 1,
+              "all_root_functionals_verified_in_independent_cyclotomic_basis": 48,
+              "eta_power_r_maps_to_minus_one_while_product_of_evaluations_is_one": true
+            },
+            "complete_boundary_row_equals_structured_half_Gram": true
+          },
+          "equal_mask_column_differences_unchanged_from_padded_seed": true,
+          "fixed_actual_boundary_core_sign_completion": "EXCLUDED"
+        },
+        {
+          "transport_index": 7,
+          "entry_sum_integrality": {
+            "phase": 48,
+            "all_odd_parameters_including_sign_variants": 8,
+            "entrywise_even_integral_cyclotomic_differences_checked": 1152,
+            "transported_X_plus_Y_equals_old_X_plus_Y_modulo_two": true
+          },
+          "boundary_half_Gram_constant_sha256": "b4d5476028ecf6cc7a53e676135bb5f199c561bdbf9ca31dc02464f72baa2052",
+          "rows_outside_the_allowed_core_sign_boundary_span": 1495,
+          "first_exact_obstruction": {
+            "core_row": 0,
+            "equal_boundary_mask_value": 0,
+            "border_columns": [
+              2,
+              5,
+              6
+            ],
+            "F4_half_Gram_constants": [
+              2,
+              0,
+              3
+            ]
+          },
+          "direct_cyclotomic_witness_check": {
+            "full_core_columns_checked": 1496,
+            "full_border_columns_checked": 7,
+            "direct_integer_cyclotomic_Gram_even": true,
+            "independent_relative_basis_audit": {
+              "phase": 48,
+              "relative_degree": 8,
+              "integral_basis_change_determinant": 1,
+              "all_root_functionals_verified_in_independent_cyclotomic_basis": 48,
+              "eta_power_r_maps_to_minus_one_while_product_of_evaluations_is_one": true
+            },
+            "complete_boundary_row_equals_structured_half_Gram": true
+          },
+          "equal_mask_column_differences_unchanged_from_padded_seed": true,
+          "fixed_actual_boundary_core_sign_completion": "EXCLUDED"
+        },
+        {
+          "transport_index": 8,
+          "entry_sum_integrality": {
+            "phase": 48,
+            "all_odd_parameters_including_sign_variants": 8,
+            "entrywise_even_integral_cyclotomic_differences_checked": 1152,
+            "transported_X_plus_Y_equals_old_X_plus_Y_modulo_two": true
+          },
+          "boundary_half_Gram_constant_sha256": "2b50e2e914b2c23a07e8d10f308cb3e94f6c9e6f00020c323d4b2c1d32055416",
+          "rows_outside_the_allowed_core_sign_boundary_span": 1495,
+          "first_exact_obstruction": {
+            "core_row": 0,
+            "equal_boundary_mask_value": 0,
+            "border_columns": [
+              2,
+              5,
+              6
+            ],
+            "F4_half_Gram_constants": [
+              1,
+              3,
+              0
+            ]
+          },
+          "direct_cyclotomic_witness_check": {
+            "full_core_columns_checked": 1496,
+            "full_border_columns_checked": 7,
+            "direct_integer_cyclotomic_Gram_even": true,
+            "independent_relative_basis_audit": {
+              "phase": 48,
+              "relative_degree": 8,
+              "integral_basis_change_determinant": 1,
+              "all_root_functionals_verified_in_independent_cyclotomic_basis": 48,
+              "eta_power_r_maps_to_minus_one_while_product_of_evaluations_is_one": true
+            },
+            "complete_boundary_row_equals_structured_half_Gram": true
+          },
+          "equal_mask_column_differences_unchanged_from_padded_seed": true,
+          "fixed_actual_boundary_core_sign_completion": "EXCLUDED"
+        }
+      ]
+    }
+  ],
+  "underlying_complete_modulo_two_families_remain_valid": true,
+  "alternative_admissible_boundaries_not_excluded_here": true,
+  "arbitrary_source_nonexistence_claimed": false,
+  "native_probe_run": false
+}

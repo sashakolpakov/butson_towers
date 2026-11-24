@@ -1,0 +1,202 @@
+{
+  "schema": "published-unbordered-alpoge-gs-acquisition-v1",
+  "inputs": [
+    {
+      "schema": "published-unbordered-alpoge-gs-input-v1",
+      "source_url": "https://hexagonmath.org/pdf/2611.00637v1",
+      "source_tex_url": "https://hexagonmath.org/api/v1/works/2611.00637v1/source?path=hadamard-revised.tex",
+      "source_tex_sha256": "b40d2420405ce96ac56f154cb36adb071c7f67fa2f6b7bd7a23e5ae3b485e15f",
+      "extracted_data_sha256": "8d1967f7585091fa5e266722bc7e57ca5d9ccaf1146c8472c472f061957daee2",
+      "source_location": "TableA1, Table3, section6.1 unbordered recipe",
+      "source_license": "CC0-1.0",
+      "order": 892,
+      "prime_core_order": 223,
+      "multiplier_size": 3,
+      "primitive_generator": 3,
+      "literal_orbit_words": [
+        "---+-+++-++----++++--+-+--+++-+-+---++--+---++++++-++--+-+---+-+-+---++++++",
+        "--+---+-++--++-++--+++-+++-+-+-++++--++-+---+---+----++--+++-++--+--+++-+++",
+        "---+--++-++++-++-+++++--++--+-++-++-++-+-+-++--+++-+--+--+-++--+-+------+-+",
+        "-+++-+--+-------+-+++-++++--+-+---++----++++---+++++-+-++++-+-+--+-+++-++++"
+      ],
+      "core_row_sums": [
+        11,
+        11,
+        11,
+        23
+      ],
+      "symmetric_core_blocks": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "all_nonzero_periodic_autocorrelation_sums_zero": true,
+      "full_integer_sign_Gram_verified": true,
+      "independent_bit_distance_Gram_verified": true,
+      "matrix_binary_sha256": "9fd89d7bd8433c56c0c98ad0fecc02098b3c85157744d99e3beeae7c61dbdf2f",
+      "new_source_or_frame_search_performed": false,
+      "tree_edge_added": false,
+      "compatible_nonreal_scalar_action_supplied": false,
+      "new_Hadamard_order_claimed": false
+    },
+    {
+      "schema": "published-unbordered-alpoge-gs-input-v1",
+      "source_url": "https://hexagonmath.org/pdf/2611.00637v1",
+      "source_tex_url": "https://hexagonmath.org/api/v1/works/2611.00637v1/source?path=hadamard-revised.tex",
+      "source_tex_sha256": "b40d2420405ce96ac56f154cb36adb071c7f67fa2f6b7bd7a23e5ae3b485e15f",
+      "extracted_data_sha256": "8d1967f7585091fa5e266722bc7e57ca5d9ccaf1146c8472c472f061957daee2",
+      "source_location": "TableA1, Table3, section6.1 unbordered recipe",
+      "source_license": "CC0-1.0",
+      "order": 1132,
+      "prime_core_order": 283,
+      "multiplier_size": 3,
+      "primitive_generator": 3,
+      "literal_orbit_words": [
+        "+++---+++-+-++--++-+-+-++-++----++-----+-++-++--+++-+-+--++++-++-+--+++---++++-++---+--++-+--++",
+        "++-+-+----+-++-++++-++--+-+-++-++-+-+++-++-+-++----++-+--+++-++-+----++++-++-+-++---+---+--+-++",
+        "+---++--+-+++++++++-+++-+-+++--++-+++--++-+-+-+++---+++--++++--+-++--+---+--------+--+--++++--+",
+        "+---+----+---+--++-+-+---++-+++++--+-+++++++--+++-+-++-++---+++----+--+--+--++-++--++++++----++"
+      ],
+      "core_row_sums": [
+        19,
+        19,
+        19,
+        7
+      ],
+      "symmetric_core_blocks": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "all_nonzero_periodic_autocorrelation_sums_zero": true,
+      "full_integer_sign_Gram_verified": true,
+      "independent_bit_distance_Gram_verified": true,
+      "matrix_binary_sha256": "9040530c312559710244cd1e50eccedb7e4d42f4392e43d24fe3fa22c3c1f10e",
+      "new_source_or_frame_search_performed": false,
+      "tree_edge_added": false,
+      "compatible_nonreal_scalar_action_supplied": false,
+      "new_Hadamard_order_claimed": false
+    },
+    {
+      "schema": "published-unbordered-alpoge-gs-input-v1",
+      "source_url": "https://hexagonmath.org/pdf/2611.00637v1",
+      "source_tex_url": "https://hexagonmath.org/api/v1/works/2611.00637v1/source?path=hadamard-revised.tex",
+      "source_tex_sha256": "b40d2420405ce96ac56f154cb36adb071c7f67fa2f6b7bd7a23e5ae3b485e15f",
+      "extracted_data_sha256": "8d1967f7585091fa5e266722bc7e57ca5d9ccaf1146c8472c472f061957daee2",
+      "source_location": "TableA1, Table3, section6.1 unbordered recipe",
+      "source_license": "CC0-1.0",
+      "order": 1244,
+      "prime_core_order": 311,
+      "multiplier_size": 5,
+      "primitive_generator": 17,
+      "literal_orbit_words": [
+        "+--++-+-++------++++-++-+--++-++--++-+-+--++-+-++--++-+-+++-+-+",
+        "-------+++--+----+++++--++---+-+----++++++-+++++++-++-++-++--+-",
+        "++++++++-----+-+-+-+-+--+-++---+-+++++++--+-+++---------+++-+++",
+        "++--++---++---+--+++----++---++-+---+-+-+-+-+-+-+-+++++--++-+++"
+      ],
+      "core_row_sums": [
+        21,
+        19,
+        21,
+        1
+      ],
+      "symmetric_core_blocks": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "all_nonzero_periodic_autocorrelation_sums_zero": true,
+      "full_integer_sign_Gram_verified": true,
+      "independent_bit_distance_Gram_verified": true,
+      "matrix_binary_sha256": "28204a4ff964330664ee9406ba9a5fe4d4d91ef0ae1f6bbced8508721cb3c058",
+      "new_source_or_frame_search_performed": false,
+      "tree_edge_added": false,
+      "compatible_nonreal_scalar_action_supplied": false,
+      "new_Hadamard_order_claimed": false
+    },
+    {
+      "schema": "published-unbordered-alpoge-gs-input-v1",
+      "source_url": "https://hexagonmath.org/pdf/2611.00637v1",
+      "source_tex_url": "https://hexagonmath.org/api/v1/works/2611.00637v1/source?path=hadamard-revised.tex",
+      "source_tex_sha256": "b40d2420405ce96ac56f154cb36adb071c7f67fa2f6b7bd7a23e5ae3b485e15f",
+      "extracted_data_sha256": "8d1967f7585091fa5e266722bc7e57ca5d9ccaf1146c8472c472f061957daee2",
+      "source_location": "TableA1, Table3, section6.1 unbordered recipe",
+      "source_license": "CC0-1.0",
+      "order": 1948,
+      "prime_core_order": 487,
+      "multiplier_size": 9,
+      "primitive_generator": 3,
+      "literal_orbit_words": [
+        "--++--+--+--++-+-+++++--++---++-++---+++++++--+--+---+-",
+        "++-++--++--++--+-+-+-+-+-++-++-++++-----+---+-+-+-+++--",
+        "------++-+++-++---++-++-++---+--+-+++--++-+++---++-++-+",
+        "+++------+++-++-++++--+--+-+++--+-+---+-+-++-+-+++-++-+"
+      ],
+      "core_row_sums": [
+        17,
+        1,
+        17,
+        37
+      ],
+      "symmetric_core_blocks": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "all_nonzero_periodic_autocorrelation_sums_zero": true,
+      "full_integer_sign_Gram_verified": true,
+      "independent_bit_distance_Gram_verified": true,
+      "matrix_binary_sha256": "c44ef6bf392f548f3a44f7ceca736e7a1bb3410c3ef6908c372184a5c26ff2c6",
+      "new_source_or_frame_search_performed": false,
+      "tree_edge_added": false,
+      "compatible_nonreal_scalar_action_supplied": false,
+      "new_Hadamard_order_claimed": false
+    },
+    {
+      "schema": "published-unbordered-alpoge-gs-input-v1",
+      "source_url": "https://hexagonmath.org/pdf/2611.00637v1",
+      "source_tex_url": "https://hexagonmath.org/api/v1/works/2611.00637v1/source?path=hadamard-revised.tex",
+      "source_tex_sha256": "b40d2420405ce96ac56f154cb36adb071c7f67fa2f6b7bd7a23e5ae3b485e15f",
+      "extracted_data_sha256": "8d1967f7585091fa5e266722bc7e57ca5d9ccaf1146c8472c472f061957daee2",
+      "source_location": "TableA1, Table3, section6.1 unbordered recipe",
+      "source_license": "CC0-1.0",
+      "order": 1964,
+      "prime_core_order": 491,
+      "multiplier_size": 7,
+      "primitive_generator": 2,
+      "literal_orbit_words": [
+        "+++++++------+++-++-+-++-+--++--++-+++++----++--++-+-+---++--+--+++--+-",
+        "--++-+-++--++++-+-+-+++-+-++---+-+-++++---+---+++--+++++---+--++-----++",
+        "+++-+--++-+---+++-++-+++----+-++++-++-+-+-++----+-++++------++++----+-+",
+        "-+-+--+++-+++-+-+++-+-+-++--++-----+-++++--++--++++--+++-+----+----+--+"
+      ],
+      "core_row_sums": [
+        29,
+        27,
+        15,
+        13
+      ],
+      "symmetric_core_blocks": [
+        false,
+        false,
+        false,
+        false
+      ],
+      "all_nonzero_periodic_autocorrelation_sums_zero": true,
+      "full_integer_sign_Gram_verified": true,
+      "independent_bit_distance_Gram_verified": true,
+      "matrix_binary_sha256": "f32f2bfb21dafd0dca24467b4712f603cd9667f9814e31d04565a9fe8c84e111",
+      "new_source_or_frame_search_performed": false,
+      "tree_edge_added": false,
+      "compatible_nonreal_scalar_action_supplied": false,
+      "new_Hadamard_order_claimed": false
+    }
+  ],
+  "published_frames_acquired": 5,
+  "new_Hadamard_order_claimed": false
+}

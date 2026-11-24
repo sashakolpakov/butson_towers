@@ -1,0 +1,47 @@
+{
+  "scope": "Operator-free necessary trace cuts and based-holonomy checks on known-order controls",
+  "identity": "tr(W_ij W_kj^T W_kl W_il^T)=d^3*c_q(e_ij-e_kj+e_kl-e_il)/phi(q)",
+  "rational_cyclotomic_action_required": true,
+  "controls": [
+    {
+      "source_order": 3,
+      "block_order": 4,
+      "ambient_cyclotomic_phase": 3,
+      "all_ordered_plaquettes_checked": 81,
+      "nondegenerate_ordered_plaquettes_checked": 36,
+      "integer_four_block_trace_counts": {
+        "-32": 36,
+        "64": 45
+      },
+      "all_based_holonomies_commute": true,
+      "primitive_cell_recovering_action": [
+        1,
+        1
+      ],
+      "recovered_cyclotomic_and_source_power_relations_checked": true,
+      "trace_constraints_alone_claimed_sufficient": false
+    },
+    {
+      "source_order": 7,
+      "block_order": 4,
+      "ambient_cyclotomic_phase": 6,
+      "all_ordered_plaquettes_checked": 2401,
+      "nondegenerate_ordered_plaquettes_checked": 1764,
+      "integer_four_block_trace_counts": {
+        "-64": 384,
+        "-32": 708,
+        "32": 456,
+        "64": 853
+      },
+      "all_based_holonomies_commute": true,
+      "primitive_cell_recovering_action": [
+        2,
+        1
+      ],
+      "recovered_cyclotomic_and_source_power_relations_checked": true,
+      "trace_constraints_alone_claimed_sufficient": false
+    }
+  ],
+  "trace_constraints_alone_sufficient": false,
+  "new_Hadamard_order_claimed": false
+}

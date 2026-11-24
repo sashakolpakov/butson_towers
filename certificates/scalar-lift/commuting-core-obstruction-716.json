@@ -1,0 +1,7128 @@
+{
+  "scope": "Every skew conference core of order 179, including non-Paley cores",
+  "proof_document": "docs/COMMUTING_CORE_OBSTRUCTION.md",
+  "core_order": 179,
+  "target_order": 716,
+  "commuting_cases_excluded": 28,
+  "cyclic_core_required": false,
+  "prime_core_order_required": false,
+  "Fourier_uncertainty_required": false,
+  "flat_column_span_dimension_upper_bound": 360,
+  "full_frame_dimension_required": 716,
+  "commuting_cases": [
+    {
+      "core_order": 179,
+      "target_order": 716,
+      "E": [
+        [
+          0,
+          11,
+          -7,
+          3
+        ],
+        [
+          -11,
+          0,
+          -3,
+          -7
+        ],
+        [
+          7,
+          3,
+          0,
+          -11
+        ],
+        [
+          -3,
+          7,
+          11,
+          0
+        ]
+      ],
+      "D": [
+        [
+          0,
+          -1,
+          -1,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          -1,
+          0,
+          -1
+        ],
+        [
+          -1,
+          -1,
+          1,
+          0
+        ]
+      ],
+      "common_D_row_product_kappa": 1,
+      "negative_parity_Hadamard_basis": [
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          -1,
+          1
+        ]
+      ],
+      "negative_parity_alphabet": [
+        {
+          "quartet": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "coordinate": [
+            -1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            -1,
+            1,
+            1
+          ],
+          "coordinate": [
+            0,
+            -1,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            1,
+            -1,
+            1
+          ],
+          "coordinate": [
+            0,
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            1,
+            1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            -1,
+            -1,
+            1
+          ],
+          "coordinate": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            -1,
+            1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            1,
+            -1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "coordinate": [
+            1,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "four_times_transformed_E": [
+        [
+          0,
+          28,
+          -12,
+          -44
+        ],
+        [
+          -28,
+          0,
+          -44,
+          12
+        ],
+        [
+          12,
+          44,
+          0,
+          28
+        ],
+        [
+          44,
+          -12,
+          -28,
+          0
+        ]
+      ],
+      "all_flat_columns_lie_in_positive_eigenspace_for_every_skew_core": true,
+      "flat_column_span_dimension_upper_bound": 360,
+      "full_frame_excluded_for_every_skew_core": true,
+      "B_index": 0,
+      "D_index": 3,
+      "B": [
+        [
+          1,
+          4,
+          14,
+          18
+        ],
+        [
+          4,
+          21,
+          4,
+          -8
+        ],
+        [
+          14,
+          4,
+          -15,
+          10
+        ],
+        [
+          18,
+          -8,
+          10,
+          -7
+        ]
+      ]
+    },
+    {
+      "core_order": 179,
+      "target_order": 716,
+      "E": [
+        [
+          0,
+          -11,
+          7,
+          -3
+        ],
+        [
+          11,
+          0,
+          3,
+          7
+        ],
+        [
+          -7,
+          -3,
+          0,
+          11
+        ],
+        [
+          3,
+          -7,
+          -11,
+          0
+        ]
+      ],
+      "D": [
+        [
+          0,
+          1,
+          1,
+          -1
+        ],
+        [
+          -1,
+          0,
+          -1,
+          -1
+        ],
+        [
+          -1,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          -1,
+          0
+        ]
+      ],
+      "common_D_row_product_kappa": -1,
+      "negative_parity_Hadamard_basis": [
+        [
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          -1,
+          1
+        ]
+      ],
+      "negative_parity_alphabet": [
+        {
+          "quartet": [
+            -1,
+            -1,
+            -1,
+            1
+          ],
+          "coordinate": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            -1,
+            1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            1,
+            -1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            1,
+            1,
+            1
+          ],
+          "coordinate": [
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            -1,
+            -1,
+            -1
+          ],
+          "coordinate": [
+            -1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            -1,
+            1,
+            1
+          ],
+          "coordinate": [
+            0,
+            -1,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            1,
+            -1,
+            1
+          ],
+          "coordinate": [
+            0,
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            1,
+            1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            0,
+            0,
+            -1
+          ]
+        }
+      ],
+      "four_times_transformed_E": [
+        [
+          0,
+          -12,
+          -44,
+          28
+        ],
+        [
+          12,
+          0,
+          -28,
+          -44
+        ],
+        [
+          44,
+          28,
+          0,
+          12
+        ],
+        [
+          -28,
+          44,
+          -12,
+          0
+        ]
+      ],
+      "all_flat_columns_lie_in_positive_eigenspace_for_every_skew_core": true,
+      "flat_column_span_dimension_upper_bound": 360,
+      "full_frame_excluded_for_every_skew_core": true,
+      "B_index": 0,
+      "D_index": 12,
+      "B": [
+        [
+          1,
+          4,
+          14,
+          18
+        ],
+        [
+          4,
+          21,
+          4,
+          -8
+        ],
+        [
+          14,
+          4,
+          -15,
+          10
+        ],
+        [
+          18,
+          -8,
+          10,
+          -7
+        ]
+      ]
+    },
+    {
+      "core_order": 179,
+      "target_order": 716,
+      "E": [
+        [
+          0,
+          -9,
+          -7,
+          7
+        ],
+        [
+          9,
+          0,
+          -7,
+          -7
+        ],
+        [
+          7,
+          7,
+          0,
+          9
+        ],
+        [
+          -7,
+          7,
+          -9,
+          0
+        ]
+      ],
+      "D": [
+        [
+          0,
+          -1,
+          1,
+          -1
+        ],
+        [
+          1,
+          0,
+          -1,
+          -1
+        ],
+        [
+          -1,
+          1,
+          0,
+          -1
+        ],
+        [
+          1,
+          1,
+          1,
+          0
+        ]
+      ],
+      "common_D_row_product_kappa": 1,
+      "negative_parity_Hadamard_basis": [
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          -1,
+          1
+        ]
+      ],
+      "negative_parity_alphabet": [
+        {
+          "quartet": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "coordinate": [
+            -1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            -1,
+            1,
+            1
+          ],
+          "coordinate": [
+            0,
+            -1,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            1,
+            -1,
+            1
+          ],
+          "coordinate": [
+            0,
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            1,
+            1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            -1,
+            -1,
+            1
+          ],
+          "coordinate": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            -1,
+            1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            1,
+            -1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "coordinate": [
+            1,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "four_times_transformed_E": [
+        [
+          0,
+          28,
+          -28,
+          36
+        ],
+        [
+          -28,
+          0,
+          36,
+          28
+        ],
+        [
+          28,
+          -36,
+          0,
+          28
+        ],
+        [
+          -36,
+          -28,
+          -28,
+          0
+        ]
+      ],
+      "all_flat_columns_lie_in_positive_eigenspace_for_every_skew_core": true,
+      "flat_column_span_dimension_upper_bound": 360,
+      "full_frame_excluded_for_every_skew_core": true,
+      "B_index": 2,
+      "D_index": 4,
+      "B": [
+        [
+          5,
+          0,
+          16,
+          16
+        ],
+        [
+          0,
+          -23,
+          2,
+          -2
+        ],
+        [
+          16,
+          2,
+          9,
+          -14
+        ],
+        [
+          16,
+          -2,
+          -14,
+          9
+        ]
+      ]
+    },
+    {
+      "core_order": 179,
+      "target_order": 716,
+      "E": [
+        [
+          0,
+          9,
+          7,
+          -7
+        ],
+        [
+          -9,
+          0,
+          7,
+          7
+        ],
+        [
+          -7,
+          -7,
+          0,
+          -9
+        ],
+        [
+          7,
+          -7,
+          9,
+          0
+        ]
+      ],
+      "D": [
+        [
+          0,
+          1,
+          -1,
+          1
+        ],
+        [
+          -1,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          -1,
+          0,
+          1
+        ],
+        [
+          -1,
+          -1,
+          -1,
+          0
+        ]
+      ],
+      "common_D_row_product_kappa": -1,
+      "negative_parity_Hadamard_basis": [
+        [
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          -1,
+          1
+        ]
+      ],
+      "negative_parity_alphabet": [
+        {
+          "quartet": [
+            -1,
+            -1,
+            -1,
+            1
+          ],
+          "coordinate": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            -1,
+            1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            1,
+            -1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            1,
+            1,
+            1
+          ],
+          "coordinate": [
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            -1,
+            -1,
+            -1
+          ],
+          "coordinate": [
+            -1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            -1,
+            1,
+            1
+          ],
+          "coordinate": [
+            0,
+            -1,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            1,
+            -1,
+            1
+          ],
+          "coordinate": [
+            0,
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            1,
+            1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            0,
+            0,
+            -1
+          ]
+        }
+      ],
+      "four_times_transformed_E": [
+        [
+          0,
+          -28,
+          36,
+          28
+        ],
+        [
+          28,
+          0,
+          -28,
+          36
+        ],
+        [
+          -36,
+          28,
+          0,
+          28
+        ],
+        [
+          -28,
+          -36,
+          -28,
+          0
+        ]
+      ],
+      "all_flat_columns_lie_in_positive_eigenspace_for_every_skew_core": true,
+      "flat_column_span_dimension_upper_bound": 360,
+      "full_frame_excluded_for_every_skew_core": true,
+      "B_index": 2,
+      "D_index": 11,
+      "B": [
+        [
+          5,
+          0,
+          16,
+          16
+        ],
+        [
+          0,
+          -23,
+          2,
+          -2
+        ],
+        [
+          16,
+          2,
+          9,
+          -14
+        ],
+        [
+          16,
+          -2,
+          -14,
+          9
+        ]
+      ]
+    },
+    {
+      "core_order": 179,
+      "target_order": 716,
+      "E": [
+        [
+          0,
+          -9,
+          7,
+          -7
+        ],
+        [
+          9,
+          0,
+          -7,
+          -7
+        ],
+        [
+          -7,
+          7,
+          0,
+          -9
+        ],
+        [
+          7,
+          7,
+          9,
+          0
+        ]
+      ],
+      "D": [
+        [
+          0,
+          -1,
+          -1,
+          1
+        ],
+        [
+          1,
+          0,
+          -1,
+          -1
+        ],
+        [
+          1,
+          1,
+          0,
+          1
+        ],
+        [
+          -1,
+          1,
+          -1,
+          0
+        ]
+      ],
+      "common_D_row_product_kappa": 1,
+      "negative_parity_Hadamard_basis": [
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          -1,
+          1
+        ]
+      ],
+      "negative_parity_alphabet": [
+        {
+          "quartet": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "coordinate": [
+            -1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            -1,
+            1,
+            1
+          ],
+          "coordinate": [
+            0,
+            -1,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            1,
+            -1,
+            1
+          ],
+          "coordinate": [
+            0,
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            1,
+            1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            -1,
+            -1,
+            1
+          ],
+          "coordinate": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            -1,
+            1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            1,
+            -1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "coordinate": [
+            1,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "four_times_transformed_E": [
+        [
+          0,
+          28,
+          36,
+          -28
+        ],
+        [
+          -28,
+          0,
+          28,
+          36
+        ],
+        [
+          -36,
+          -28,
+          0,
+          -28
+        ],
+        [
+          28,
+          -36,
+          28,
+          0
+        ]
+      ],
+      "all_flat_columns_lie_in_positive_eigenspace_for_every_skew_core": true,
+      "flat_column_span_dimension_upper_bound": 360,
+      "full_frame_excluded_for_every_skew_core": true,
+      "B_index": 3,
+      "D_index": 2,
+      "B": [
+        [
+          5,
+          0,
+          16,
+          16
+        ],
+        [
+          0,
+          -23,
+          -2,
+          2
+        ],
+        [
+          16,
+          -2,
+          9,
+          -14
+        ],
+        [
+          16,
+          2,
+          -14,
+          9
+        ]
+      ]
+    },
+    {
+      "core_order": 179,
+      "target_order": 716,
+      "E": [
+        [
+          0,
+          9,
+          -7,
+          7
+        ],
+        [
+          -9,
+          0,
+          7,
+          7
+        ],
+        [
+          7,
+          -7,
+          0,
+          9
+        ],
+        [
+          -7,
+          -7,
+          -9,
+          0
+        ]
+      ],
+      "D": [
+        [
+          0,
+          1,
+          1,
+          -1
+        ],
+        [
+          -1,
+          0,
+          1,
+          1
+        ],
+        [
+          -1,
+          -1,
+          0,
+          -1
+        ],
+        [
+          1,
+          -1,
+          1,
+          0
+        ]
+      ],
+      "common_D_row_product_kappa": -1,
+      "negative_parity_Hadamard_basis": [
+        [
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          -1,
+          1
+        ]
+      ],
+      "negative_parity_alphabet": [
+        {
+          "quartet": [
+            -1,
+            -1,
+            -1,
+            1
+          ],
+          "coordinate": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            -1,
+            1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            1,
+            -1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            1,
+            1,
+            1
+          ],
+          "coordinate": [
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            -1,
+            -1,
+            -1
+          ],
+          "coordinate": [
+            -1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            -1,
+            1,
+            1
+          ],
+          "coordinate": [
+            0,
+            -1,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            1,
+            -1,
+            1
+          ],
+          "coordinate": [
+            0,
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            1,
+            1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            0,
+            0,
+            -1
+          ]
+        }
+      ],
+      "four_times_transformed_E": [
+        [
+          0,
+          -28,
+          28,
+          36
+        ],
+        [
+          28,
+          0,
+          36,
+          -28
+        ],
+        [
+          -28,
+          -36,
+          0,
+          -28
+        ],
+        [
+          -36,
+          28,
+          28,
+          0
+        ]
+      ],
+      "all_flat_columns_lie_in_positive_eigenspace_for_every_skew_core": true,
+      "flat_column_span_dimension_upper_bound": 360,
+      "full_frame_excluded_for_every_skew_core": true,
+      "B_index": 3,
+      "D_index": 13,
+      "B": [
+        [
+          5,
+          0,
+          16,
+          16
+        ],
+        [
+          0,
+          -23,
+          -2,
+          2
+        ],
+        [
+          16,
+          -2,
+          9,
+          -14
+        ],
+        [
+          16,
+          2,
+          -14,
+          9
+        ]
+      ]
+    },
+    {
+      "core_order": 179,
+      "target_order": 716,
+      "E": [
+        [
+          0,
+          -7,
+          11,
+          -3
+        ],
+        [
+          7,
+          0,
+          -3,
+          -11
+        ],
+        [
+          -11,
+          3,
+          0,
+          -7
+        ],
+        [
+          3,
+          11,
+          7,
+          0
+        ]
+      ],
+      "D": [
+        [
+          0,
+          -1,
+          -1,
+          1
+        ],
+        [
+          1,
+          0,
+          -1,
+          -1
+        ],
+        [
+          1,
+          1,
+          0,
+          1
+        ],
+        [
+          -1,
+          1,
+          -1,
+          0
+        ]
+      ],
+      "common_D_row_product_kappa": 1,
+      "negative_parity_Hadamard_basis": [
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          -1,
+          1
+        ]
+      ],
+      "negative_parity_alphabet": [
+        {
+          "quartet": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "coordinate": [
+            -1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            -1,
+            1,
+            1
+          ],
+          "coordinate": [
+            0,
+            -1,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            1,
+            -1,
+            1
+          ],
+          "coordinate": [
+            0,
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            1,
+            1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            -1,
+            -1,
+            1
+          ],
+          "coordinate": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            -1,
+            1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            1,
+            -1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "coordinate": [
+            1,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "four_times_transformed_E": [
+        [
+          0,
+          12,
+          28,
+          -44
+        ],
+        [
+          -12,
+          0,
+          44,
+          28
+        ],
+        [
+          -28,
+          -44,
+          0,
+          -12
+        ],
+        [
+          44,
+          -28,
+          12,
+          0
+        ]
+      ],
+      "all_flat_columns_lie_in_positive_eigenspace_for_every_skew_core": true,
+      "flat_column_span_dimension_upper_bound": 360,
+      "full_frame_excluded_for_every_skew_core": true,
+      "B_index": 7,
+      "D_index": 2,
+      "B": [
+        [
+          7,
+          8,
+          10,
+          18
+        ],
+        [
+          8,
+          -21,
+          4,
+          4
+        ],
+        [
+          10,
+          4,
+          15,
+          -14
+        ],
+        [
+          18,
+          4,
+          -14,
+          -1
+        ]
+      ]
+    },
+    {
+      "core_order": 179,
+      "target_order": 716,
+      "E": [
+        [
+          0,
+          7,
+          -11,
+          3
+        ],
+        [
+          -7,
+          0,
+          3,
+          11
+        ],
+        [
+          11,
+          -3,
+          0,
+          7
+        ],
+        [
+          -3,
+          -11,
+          -7,
+          0
+        ]
+      ],
+      "D": [
+        [
+          0,
+          1,
+          1,
+          -1
+        ],
+        [
+          -1,
+          0,
+          1,
+          1
+        ],
+        [
+          -1,
+          -1,
+          0,
+          -1
+        ],
+        [
+          1,
+          -1,
+          1,
+          0
+        ]
+      ],
+      "common_D_row_product_kappa": -1,
+      "negative_parity_Hadamard_basis": [
+        [
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          -1,
+          1
+        ]
+      ],
+      "negative_parity_alphabet": [
+        {
+          "quartet": [
+            -1,
+            -1,
+            -1,
+            1
+          ],
+          "coordinate": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            -1,
+            1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            1,
+            -1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            1,
+            1,
+            1
+          ],
+          "coordinate": [
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            -1,
+            -1,
+            -1
+          ],
+          "coordinate": [
+            -1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            -1,
+            1,
+            1
+          ],
+          "coordinate": [
+            0,
+            -1,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            1,
+            -1,
+            1
+          ],
+          "coordinate": [
+            0,
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            1,
+            1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            0,
+            0,
+            -1
+          ]
+        }
+      ],
+      "four_times_transformed_E": [
+        [
+          0,
+          -44,
+          12,
+          28
+        ],
+        [
+          44,
+          0,
+          28,
+          -12
+        ],
+        [
+          -12,
+          -28,
+          0,
+          -44
+        ],
+        [
+          -28,
+          12,
+          44,
+          0
+        ]
+      ],
+      "all_flat_columns_lie_in_positive_eigenspace_for_every_skew_core": true,
+      "flat_column_span_dimension_upper_bound": 360,
+      "full_frame_excluded_for_every_skew_core": true,
+      "B_index": 7,
+      "D_index": 13,
+      "B": [
+        [
+          7,
+          8,
+          10,
+          18
+        ],
+        [
+          8,
+          -21,
+          4,
+          4
+        ],
+        [
+          10,
+          4,
+          15,
+          -14
+        ],
+        [
+          18,
+          4,
+          -14,
+          -1
+        ]
+      ]
+    },
+    {
+      "core_order": 179,
+      "target_order": 716,
+      "E": [
+        [
+          0,
+          13,
+          -3,
+          1
+        ],
+        [
+          -13,
+          0,
+          -1,
+          -3
+        ],
+        [
+          3,
+          1,
+          0,
+          -13
+        ],
+        [
+          -1,
+          3,
+          13,
+          0
+        ]
+      ],
+      "D": [
+        [
+          0,
+          -1,
+          -1,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          -1,
+          0,
+          -1
+        ],
+        [
+          -1,
+          -1,
+          1,
+          0
+        ]
+      ],
+      "common_D_row_product_kappa": 1,
+      "negative_parity_Hadamard_basis": [
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          -1,
+          1
+        ]
+      ],
+      "negative_parity_alphabet": [
+        {
+          "quartet": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "coordinate": [
+            -1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            -1,
+            1,
+            1
+          ],
+          "coordinate": [
+            0,
+            -1,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            1,
+            -1,
+            1
+          ],
+          "coordinate": [
+            0,
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            1,
+            1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            -1,
+            -1,
+            1
+          ],
+          "coordinate": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            -1,
+            1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            1,
+            -1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "coordinate": [
+            1,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "four_times_transformed_E": [
+        [
+          0,
+          12,
+          -4,
+          -52
+        ],
+        [
+          -12,
+          0,
+          -52,
+          4
+        ],
+        [
+          4,
+          52,
+          0,
+          12
+        ],
+        [
+          52,
+          -4,
+          -12,
+          0
+        ]
+      ],
+      "all_flat_columns_lie_in_positive_eigenspace_for_every_skew_core": true,
+      "flat_column_span_dimension_upper_bound": 360,
+      "full_frame_excluded_for_every_skew_core": true,
+      "B_index": 8,
+      "D_index": 3,
+      "B": [
+        [
+          9,
+          2,
+          14,
+          16
+        ],
+        [
+          2,
+          17,
+          10,
+          -12
+        ],
+        [
+          14,
+          10,
+          -15,
+          4
+        ],
+        [
+          16,
+          -12,
+          4,
+          -11
+        ]
+      ]
+    },
+    {
+      "core_order": 179,
+      "target_order": 716,
+      "E": [
+        [
+          0,
+          -13,
+          3,
+          -1
+        ],
+        [
+          13,
+          0,
+          1,
+          3
+        ],
+        [
+          -3,
+          -1,
+          0,
+          13
+        ],
+        [
+          1,
+          -3,
+          -13,
+          0
+        ]
+      ],
+      "D": [
+        [
+          0,
+          1,
+          1,
+          -1
+        ],
+        [
+          -1,
+          0,
+          -1,
+          -1
+        ],
+        [
+          -1,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          -1,
+          0
+        ]
+      ],
+      "common_D_row_product_kappa": -1,
+      "negative_parity_Hadamard_basis": [
+        [
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          -1,
+          1
+        ]
+      ],
+      "negative_parity_alphabet": [
+        {
+          "quartet": [
+            -1,
+            -1,
+            -1,
+            1
+          ],
+          "coordinate": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            -1,
+            1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            1,
+            -1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            1,
+            1,
+            1
+          ],
+          "coordinate": [
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            -1,
+            -1,
+            -1
+          ],
+          "coordinate": [
+            -1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            -1,
+            1,
+            1
+          ],
+          "coordinate": [
+            0,
+            -1,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            1,
+            -1,
+            1
+          ],
+          "coordinate": [
+            0,
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            1,
+            1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            0,
+            0,
+            -1
+          ]
+        }
+      ],
+      "four_times_transformed_E": [
+        [
+          0,
+          -4,
+          -52,
+          12
+        ],
+        [
+          4,
+          0,
+          -12,
+          -52
+        ],
+        [
+          52,
+          12,
+          0,
+          4
+        ],
+        [
+          -12,
+          52,
+          -4,
+          0
+        ]
+      ],
+      "all_flat_columns_lie_in_positive_eigenspace_for_every_skew_core": true,
+      "flat_column_span_dimension_upper_bound": 360,
+      "full_frame_excluded_for_every_skew_core": true,
+      "B_index": 8,
+      "D_index": 12,
+      "B": [
+        [
+          9,
+          2,
+          14,
+          16
+        ],
+        [
+          2,
+          17,
+          10,
+          -12
+        ],
+        [
+          14,
+          10,
+          -15,
+          4
+        ],
+        [
+          16,
+          -12,
+          4,
+          -11
+        ]
+      ]
+    },
+    {
+      "core_order": 179,
+      "target_order": 716,
+      "E": [
+        [
+          0,
+          -7,
+          9,
+          -7
+        ],
+        [
+          7,
+          0,
+          -7,
+          -9
+        ],
+        [
+          -9,
+          7,
+          0,
+          -7
+        ],
+        [
+          7,
+          9,
+          7,
+          0
+        ]
+      ],
+      "D": [
+        [
+          0,
+          -1,
+          -1,
+          1
+        ],
+        [
+          1,
+          0,
+          -1,
+          -1
+        ],
+        [
+          1,
+          1,
+          0,
+          1
+        ],
+        [
+          -1,
+          1,
+          -1,
+          0
+        ]
+      ],
+      "common_D_row_product_kappa": 1,
+      "negative_parity_Hadamard_basis": [
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          -1,
+          1
+        ]
+      ],
+      "negative_parity_alphabet": [
+        {
+          "quartet": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "coordinate": [
+            -1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            -1,
+            1,
+            1
+          ],
+          "coordinate": [
+            0,
+            -1,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            1,
+            -1,
+            1
+          ],
+          "coordinate": [
+            0,
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            1,
+            1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            -1,
+            -1,
+            1
+          ],
+          "coordinate": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            -1,
+            1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            1,
+            -1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "coordinate": [
+            1,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "four_times_transformed_E": [
+        [
+          0,
+          28,
+          28,
+          -36
+        ],
+        [
+          -28,
+          0,
+          36,
+          28
+        ],
+        [
+          -28,
+          -36,
+          0,
+          -28
+        ],
+        [
+          36,
+          -28,
+          28,
+          0
+        ]
+      ],
+      "all_flat_columns_lie_in_positive_eigenspace_for_every_skew_core": true,
+      "flat_column_span_dimension_upper_bound": 360,
+      "full_frame_excluded_for_every_skew_core": true,
+      "B_index": 9,
+      "D_index": 2,
+      "B": [
+        [
+          9,
+          2,
+          14,
+          16
+        ],
+        [
+          2,
+          -23,
+          2,
+          0
+        ],
+        [
+          14,
+          2,
+          9,
+          -16
+        ],
+        [
+          16,
+          0,
+          -16,
+          5
+        ]
+      ]
+    },
+    {
+      "core_order": 179,
+      "target_order": 716,
+      "E": [
+        [
+          0,
+          7,
+          -9,
+          7
+        ],
+        [
+          -7,
+          0,
+          7,
+          9
+        ],
+        [
+          9,
+          -7,
+          0,
+          7
+        ],
+        [
+          -7,
+          -9,
+          -7,
+          0
+        ]
+      ],
+      "D": [
+        [
+          0,
+          1,
+          1,
+          -1
+        ],
+        [
+          -1,
+          0,
+          1,
+          1
+        ],
+        [
+          -1,
+          -1,
+          0,
+          -1
+        ],
+        [
+          1,
+          -1,
+          1,
+          0
+        ]
+      ],
+      "common_D_row_product_kappa": -1,
+      "negative_parity_Hadamard_basis": [
+        [
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          -1,
+          1
+        ]
+      ],
+      "negative_parity_alphabet": [
+        {
+          "quartet": [
+            -1,
+            -1,
+            -1,
+            1
+          ],
+          "coordinate": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            -1,
+            1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            1,
+            -1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            1,
+            1,
+            1
+          ],
+          "coordinate": [
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            -1,
+            -1,
+            -1
+          ],
+          "coordinate": [
+            -1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            -1,
+            1,
+            1
+          ],
+          "coordinate": [
+            0,
+            -1,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            1,
+            -1,
+            1
+          ],
+          "coordinate": [
+            0,
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            1,
+            1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            0,
+            0,
+            -1
+          ]
+        }
+      ],
+      "four_times_transformed_E": [
+        [
+          0,
+          -36,
+          28,
+          28
+        ],
+        [
+          36,
+          0,
+          28,
+          -28
+        ],
+        [
+          -28,
+          -28,
+          0,
+          -36
+        ],
+        [
+          -28,
+          28,
+          36,
+          0
+        ]
+      ],
+      "all_flat_columns_lie_in_positive_eigenspace_for_every_skew_core": true,
+      "flat_column_span_dimension_upper_bound": 360,
+      "full_frame_excluded_for_every_skew_core": true,
+      "B_index": 9,
+      "D_index": 13,
+      "B": [
+        [
+          9,
+          2,
+          14,
+          16
+        ],
+        [
+          2,
+          -23,
+          2,
+          0
+        ],
+        [
+          14,
+          2,
+          9,
+          -16
+        ],
+        [
+          16,
+          0,
+          -16,
+          5
+        ]
+      ]
+    },
+    {
+      "core_order": 179,
+      "target_order": 716,
+      "E": [
+        [
+          0,
+          13,
+          -3,
+          -1
+        ],
+        [
+          -13,
+          0,
+          1,
+          -3
+        ],
+        [
+          3,
+          -1,
+          0,
+          -13
+        ],
+        [
+          1,
+          3,
+          13,
+          0
+        ]
+      ],
+      "D": [
+        [
+          0,
+          -1,
+          -1,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          -1,
+          0,
+          -1
+        ],
+        [
+          -1,
+          -1,
+          1,
+          0
+        ]
+      ],
+      "common_D_row_product_kappa": 1,
+      "negative_parity_Hadamard_basis": [
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          -1,
+          1
+        ]
+      ],
+      "negative_parity_alphabet": [
+        {
+          "quartet": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "coordinate": [
+            -1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            -1,
+            1,
+            1
+          ],
+          "coordinate": [
+            0,
+            -1,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            1,
+            -1,
+            1
+          ],
+          "coordinate": [
+            0,
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            1,
+            1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            -1,
+            -1,
+            1
+          ],
+          "coordinate": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            -1,
+            1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            1,
+            -1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "coordinate": [
+            1,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "four_times_transformed_E": [
+        [
+          0,
+          12,
+          4,
+          -52
+        ],
+        [
+          -12,
+          0,
+          -52,
+          -4
+        ],
+        [
+          -4,
+          52,
+          0,
+          12
+        ],
+        [
+          52,
+          4,
+          -12,
+          0
+        ]
+      ],
+      "all_flat_columns_lie_in_positive_eigenspace_for_every_skew_core": true,
+      "flat_column_span_dimension_upper_bound": 360,
+      "full_frame_excluded_for_every_skew_core": true,
+      "B_index": 12,
+      "D_index": 3,
+      "B": [
+        [
+          11,
+          4,
+          12,
+          16
+        ],
+        [
+          4,
+          15,
+          10,
+          -14
+        ],
+        [
+          12,
+          10,
+          -17,
+          2
+        ],
+        [
+          16,
+          -14,
+          2,
+          -9
+        ]
+      ]
+    },
+    {
+      "core_order": 179,
+      "target_order": 716,
+      "E": [
+        [
+          0,
+          -13,
+          3,
+          1
+        ],
+        [
+          13,
+          0,
+          -1,
+          3
+        ],
+        [
+          -3,
+          1,
+          0,
+          13
+        ],
+        [
+          -1,
+          -3,
+          -13,
+          0
+        ]
+      ],
+      "D": [
+        [
+          0,
+          1,
+          1,
+          -1
+        ],
+        [
+          -1,
+          0,
+          -1,
+          -1
+        ],
+        [
+          -1,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          -1,
+          0
+        ]
+      ],
+      "common_D_row_product_kappa": -1,
+      "negative_parity_Hadamard_basis": [
+        [
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          -1,
+          1
+        ]
+      ],
+      "negative_parity_alphabet": [
+        {
+          "quartet": [
+            -1,
+            -1,
+            -1,
+            1
+          ],
+          "coordinate": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            -1,
+            1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            1,
+            -1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            1,
+            1,
+            1
+          ],
+          "coordinate": [
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            -1,
+            -1,
+            -1
+          ],
+          "coordinate": [
+            -1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            -1,
+            1,
+            1
+          ],
+          "coordinate": [
+            0,
+            -1,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            1,
+            -1,
+            1
+          ],
+          "coordinate": [
+            0,
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            1,
+            1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            0,
+            0,
+            -1
+          ]
+        }
+      ],
+      "four_times_transformed_E": [
+        [
+          0,
+          4,
+          -52,
+          12
+        ],
+        [
+          -4,
+          0,
+          -12,
+          -52
+        ],
+        [
+          52,
+          12,
+          0,
+          -4
+        ],
+        [
+          -12,
+          52,
+          4,
+          0
+        ]
+      ],
+      "all_flat_columns_lie_in_positive_eigenspace_for_every_skew_core": true,
+      "flat_column_span_dimension_upper_bound": 360,
+      "full_frame_excluded_for_every_skew_core": true,
+      "B_index": 12,
+      "D_index": 12,
+      "B": [
+        [
+          11,
+          4,
+          12,
+          16
+        ],
+        [
+          4,
+          15,
+          10,
+          -14
+        ],
+        [
+          12,
+          10,
+          -17,
+          2
+        ],
+        [
+          16,
+          -14,
+          2,
+          -9
+        ]
+      ]
+    },
+    {
+      "core_order": 179,
+      "target_order": 716,
+      "E": [
+        [
+          0,
+          13,
+          -1,
+          -3
+        ],
+        [
+          -13,
+          0,
+          3,
+          -1
+        ],
+        [
+          1,
+          -3,
+          0,
+          -13
+        ],
+        [
+          3,
+          1,
+          13,
+          0
+        ]
+      ],
+      "D": [
+        [
+          0,
+          -1,
+          -1,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          -1,
+          0,
+          -1
+        ],
+        [
+          -1,
+          -1,
+          1,
+          0
+        ]
+      ],
+      "common_D_row_product_kappa": 1,
+      "negative_parity_Hadamard_basis": [
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          -1,
+          1
+        ]
+      ],
+      "negative_parity_alphabet": [
+        {
+          "quartet": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "coordinate": [
+            -1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            -1,
+            1,
+            1
+          ],
+          "coordinate": [
+            0,
+            -1,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            1,
+            -1,
+            1
+          ],
+          "coordinate": [
+            0,
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            1,
+            1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            -1,
+            -1,
+            1
+          ],
+          "coordinate": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            -1,
+            1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            1,
+            -1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "coordinate": [
+            1,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "four_times_transformed_E": [
+        [
+          0,
+          4,
+          12,
+          -52
+        ],
+        [
+          -4,
+          0,
+          -52,
+          -12
+        ],
+        [
+          -12,
+          52,
+          0,
+          4
+        ],
+        [
+          52,
+          12,
+          -4,
+          0
+        ]
+      ],
+      "all_flat_columns_lie_in_positive_eigenspace_for_every_skew_core": true,
+      "flat_column_span_dimension_upper_bound": 360,
+      "full_frame_excluded_for_every_skew_core": true,
+      "B_index": 13,
+      "D_index": 3,
+      "B": [
+        [
+          15,
+          4,
+          10,
+          14
+        ],
+        [
+          4,
+          11,
+          12,
+          -16
+        ],
+        [
+          10,
+          12,
+          -17,
+          -2
+        ],
+        [
+          14,
+          -16,
+          -2,
+          -9
+        ]
+      ]
+    },
+    {
+      "core_order": 179,
+      "target_order": 716,
+      "E": [
+        [
+          0,
+          -13,
+          1,
+          3
+        ],
+        [
+          13,
+          0,
+          -3,
+          1
+        ],
+        [
+          -1,
+          3,
+          0,
+          13
+        ],
+        [
+          -3,
+          -1,
+          -13,
+          0
+        ]
+      ],
+      "D": [
+        [
+          0,
+          1,
+          1,
+          -1
+        ],
+        [
+          -1,
+          0,
+          -1,
+          -1
+        ],
+        [
+          -1,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          -1,
+          0
+        ]
+      ],
+      "common_D_row_product_kappa": -1,
+      "negative_parity_Hadamard_basis": [
+        [
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          -1,
+          1
+        ]
+      ],
+      "negative_parity_alphabet": [
+        {
+          "quartet": [
+            -1,
+            -1,
+            -1,
+            1
+          ],
+          "coordinate": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            -1,
+            1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            1,
+            -1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            1,
+            1,
+            1
+          ],
+          "coordinate": [
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            -1,
+            -1,
+            -1
+          ],
+          "coordinate": [
+            -1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            -1,
+            1,
+            1
+          ],
+          "coordinate": [
+            0,
+            -1,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            1,
+            -1,
+            1
+          ],
+          "coordinate": [
+            0,
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            1,
+            1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            0,
+            0,
+            -1
+          ]
+        }
+      ],
+      "four_times_transformed_E": [
+        [
+          0,
+          12,
+          -52,
+          4
+        ],
+        [
+          -12,
+          0,
+          -4,
+          -52
+        ],
+        [
+          52,
+          4,
+          0,
+          -12
+        ],
+        [
+          -4,
+          52,
+          12,
+          0
+        ]
+      ],
+      "all_flat_columns_lie_in_positive_eigenspace_for_every_skew_core": true,
+      "flat_column_span_dimension_upper_bound": 360,
+      "full_frame_excluded_for_every_skew_core": true,
+      "B_index": 13,
+      "D_index": 12,
+      "B": [
+        [
+          15,
+          4,
+          10,
+          14
+        ],
+        [
+          4,
+          11,
+          12,
+          -16
+        ],
+        [
+          10,
+          12,
+          -17,
+          -2
+        ],
+        [
+          14,
+          -16,
+          -2,
+          -9
+        ]
+      ]
+    },
+    {
+      "core_order": 179,
+      "target_order": 716,
+      "E": [
+        [
+          0,
+          -3,
+          11,
+          -7
+        ],
+        [
+          3,
+          0,
+          -7,
+          -11
+        ],
+        [
+          -11,
+          7,
+          0,
+          -3
+        ],
+        [
+          7,
+          11,
+          3,
+          0
+        ]
+      ],
+      "D": [
+        [
+          0,
+          -1,
+          -1,
+          1
+        ],
+        [
+          1,
+          0,
+          -1,
+          -1
+        ],
+        [
+          1,
+          1,
+          0,
+          1
+        ],
+        [
+          -1,
+          1,
+          -1,
+          0
+        ]
+      ],
+      "common_D_row_product_kappa": 1,
+      "negative_parity_Hadamard_basis": [
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          -1,
+          1
+        ]
+      ],
+      "negative_parity_alphabet": [
+        {
+          "quartet": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "coordinate": [
+            -1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            -1,
+            1,
+            1
+          ],
+          "coordinate": [
+            0,
+            -1,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            1,
+            -1,
+            1
+          ],
+          "coordinate": [
+            0,
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            1,
+            1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            -1,
+            -1,
+            1
+          ],
+          "coordinate": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            -1,
+            1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            1,
+            -1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "coordinate": [
+            1,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "four_times_transformed_E": [
+        [
+          0,
+          28,
+          12,
+          -44
+        ],
+        [
+          -28,
+          0,
+          44,
+          12
+        ],
+        [
+          -12,
+          -44,
+          0,
+          -28
+        ],
+        [
+          44,
+          -12,
+          28,
+          0
+        ]
+      ],
+      "all_flat_columns_lie_in_positive_eigenspace_for_every_skew_core": true,
+      "flat_column_span_dimension_upper_bound": 360,
+      "full_frame_excluded_for_every_skew_core": true,
+      "B_index": 14,
+      "D_index": 2,
+      "B": [
+        [
+          15,
+          4,
+          10,
+          14
+        ],
+        [
+          4,
+          -21,
+          8,
+          -4
+        ],
+        [
+          10,
+          8,
+          7,
+          -18
+        ],
+        [
+          14,
+          -4,
+          -18,
+          -1
+        ]
+      ]
+    },
+    {
+      "core_order": 179,
+      "target_order": 716,
+      "E": [
+        [
+          0,
+          3,
+          -11,
+          7
+        ],
+        [
+          -3,
+          0,
+          7,
+          11
+        ],
+        [
+          11,
+          -7,
+          0,
+          3
+        ],
+        [
+          -7,
+          -11,
+          -3,
+          0
+        ]
+      ],
+      "D": [
+        [
+          0,
+          1,
+          1,
+          -1
+        ],
+        [
+          -1,
+          0,
+          1,
+          1
+        ],
+        [
+          -1,
+          -1,
+          0,
+          -1
+        ],
+        [
+          1,
+          -1,
+          1,
+          0
+        ]
+      ],
+      "common_D_row_product_kappa": -1,
+      "negative_parity_Hadamard_basis": [
+        [
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          -1,
+          1
+        ]
+      ],
+      "negative_parity_alphabet": [
+        {
+          "quartet": [
+            -1,
+            -1,
+            -1,
+            1
+          ],
+          "coordinate": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            -1,
+            1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            1,
+            -1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            1,
+            1,
+            1
+          ],
+          "coordinate": [
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            -1,
+            -1,
+            -1
+          ],
+          "coordinate": [
+            -1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            -1,
+            1,
+            1
+          ],
+          "coordinate": [
+            0,
+            -1,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            1,
+            -1,
+            1
+          ],
+          "coordinate": [
+            0,
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            1,
+            1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            0,
+            0,
+            -1
+          ]
+        }
+      ],
+      "four_times_transformed_E": [
+        [
+          0,
+          -44,
+          28,
+          12
+        ],
+        [
+          44,
+          0,
+          12,
+          -28
+        ],
+        [
+          -28,
+          -12,
+          0,
+          -44
+        ],
+        [
+          -12,
+          28,
+          44,
+          0
+        ]
+      ],
+      "all_flat_columns_lie_in_positive_eigenspace_for_every_skew_core": true,
+      "flat_column_span_dimension_upper_bound": 360,
+      "full_frame_excluded_for_every_skew_core": true,
+      "B_index": 14,
+      "D_index": 13,
+      "B": [
+        [
+          15,
+          4,
+          10,
+          14
+        ],
+        [
+          4,
+          -21,
+          8,
+          -4
+        ],
+        [
+          10,
+          8,
+          7,
+          -18
+        ],
+        [
+          14,
+          -4,
+          -18,
+          -1
+        ]
+      ]
+    },
+    {
+      "core_order": 179,
+      "target_order": 716,
+      "E": [
+        [
+          0,
+          13,
+          1,
+          -3
+        ],
+        [
+          -13,
+          0,
+          3,
+          1
+        ],
+        [
+          -1,
+          -3,
+          0,
+          -13
+        ],
+        [
+          3,
+          -1,
+          13,
+          0
+        ]
+      ],
+      "D": [
+        [
+          0,
+          -1,
+          -1,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          -1,
+          0,
+          -1
+        ],
+        [
+          -1,
+          -1,
+          1,
+          0
+        ]
+      ],
+      "common_D_row_product_kappa": 1,
+      "negative_parity_Hadamard_basis": [
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          -1,
+          1
+        ]
+      ],
+      "negative_parity_alphabet": [
+        {
+          "quartet": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "coordinate": [
+            -1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            -1,
+            1,
+            1
+          ],
+          "coordinate": [
+            0,
+            -1,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            1,
+            -1,
+            1
+          ],
+          "coordinate": [
+            0,
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            1,
+            1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            -1,
+            -1,
+            1
+          ],
+          "coordinate": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            -1,
+            1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            1,
+            -1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "coordinate": [
+            1,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "four_times_transformed_E": [
+        [
+          0,
+          -4,
+          12,
+          -52
+        ],
+        [
+          4,
+          0,
+          -52,
+          -12
+        ],
+        [
+          -12,
+          52,
+          0,
+          -4
+        ],
+        [
+          52,
+          12,
+          4,
+          0
+        ]
+      ],
+      "all_flat_columns_lie_in_positive_eigenspace_for_every_skew_core": true,
+      "flat_column_span_dimension_upper_bound": 360,
+      "full_frame_excluded_for_every_skew_core": true,
+      "B_index": 15,
+      "D_index": 3,
+      "B": [
+        [
+          17,
+          2,
+          10,
+          12
+        ],
+        [
+          2,
+          9,
+          14,
+          -16
+        ],
+        [
+          10,
+          14,
+          -15,
+          -4
+        ],
+        [
+          12,
+          -16,
+          -4,
+          -11
+        ]
+      ]
+    },
+    {
+      "core_order": 179,
+      "target_order": 716,
+      "E": [
+        [
+          0,
+          -13,
+          -1,
+          3
+        ],
+        [
+          13,
+          0,
+          -3,
+          -1
+        ],
+        [
+          1,
+          3,
+          0,
+          13
+        ],
+        [
+          -3,
+          1,
+          -13,
+          0
+        ]
+      ],
+      "D": [
+        [
+          0,
+          1,
+          1,
+          -1
+        ],
+        [
+          -1,
+          0,
+          -1,
+          -1
+        ],
+        [
+          -1,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          -1,
+          0
+        ]
+      ],
+      "common_D_row_product_kappa": -1,
+      "negative_parity_Hadamard_basis": [
+        [
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          -1,
+          1
+        ]
+      ],
+      "negative_parity_alphabet": [
+        {
+          "quartet": [
+            -1,
+            -1,
+            -1,
+            1
+          ],
+          "coordinate": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            -1,
+            1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            1,
+            -1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            1,
+            1,
+            1
+          ],
+          "coordinate": [
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            -1,
+            -1,
+            -1
+          ],
+          "coordinate": [
+            -1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            -1,
+            1,
+            1
+          ],
+          "coordinate": [
+            0,
+            -1,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            1,
+            -1,
+            1
+          ],
+          "coordinate": [
+            0,
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            1,
+            1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            0,
+            0,
+            -1
+          ]
+        }
+      ],
+      "four_times_transformed_E": [
+        [
+          0,
+          12,
+          -52,
+          -4
+        ],
+        [
+          -12,
+          0,
+          4,
+          -52
+        ],
+        [
+          52,
+          -4,
+          0,
+          -12
+        ],
+        [
+          4,
+          52,
+          12,
+          0
+        ]
+      ],
+      "all_flat_columns_lie_in_positive_eigenspace_for_every_skew_core": true,
+      "flat_column_span_dimension_upper_bound": 360,
+      "full_frame_excluded_for_every_skew_core": true,
+      "B_index": 15,
+      "D_index": 12,
+      "B": [
+        [
+          17,
+          2,
+          10,
+          12
+        ],
+        [
+          2,
+          9,
+          14,
+          -16
+        ],
+        [
+          10,
+          14,
+          -15,
+          -4
+        ],
+        [
+          12,
+          -16,
+          -4,
+          -11
+        ]
+      ]
+    },
+    {
+      "core_order": 179,
+      "target_order": 716,
+      "E": [
+        [
+          0,
+          11,
+          3,
+          -7
+        ],
+        [
+          -11,
+          0,
+          7,
+          3
+        ],
+        [
+          -3,
+          -7,
+          0,
+          -11
+        ],
+        [
+          7,
+          -3,
+          11,
+          0
+        ]
+      ],
+      "D": [
+        [
+          0,
+          -1,
+          -1,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          -1,
+          0,
+          -1
+        ],
+        [
+          -1,
+          -1,
+          1,
+          0
+        ]
+      ],
+      "common_D_row_product_kappa": 1,
+      "negative_parity_Hadamard_basis": [
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          -1,
+          1
+        ]
+      ],
+      "negative_parity_alphabet": [
+        {
+          "quartet": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "coordinate": [
+            -1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            -1,
+            1,
+            1
+          ],
+          "coordinate": [
+            0,
+            -1,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            1,
+            -1,
+            1
+          ],
+          "coordinate": [
+            0,
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            1,
+            1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            -1,
+            -1,
+            1
+          ],
+          "coordinate": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            -1,
+            1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            1,
+            -1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "coordinate": [
+            1,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "four_times_transformed_E": [
+        [
+          0,
+          -12,
+          28,
+          -44
+        ],
+        [
+          12,
+          0,
+          -44,
+          -28
+        ],
+        [
+          -28,
+          44,
+          0,
+          -12
+        ],
+        [
+          44,
+          28,
+          12,
+          0
+        ]
+      ],
+      "all_flat_columns_lie_in_positive_eigenspace_for_every_skew_core": true,
+      "flat_column_span_dimension_upper_bound": 360,
+      "full_frame_excluded_for_every_skew_core": true,
+      "B_index": 16,
+      "D_index": 3,
+      "B": [
+        [
+          21,
+          4,
+          4,
+          8
+        ],
+        [
+          4,
+          1,
+          14,
+          -18
+        ],
+        [
+          4,
+          14,
+          -15,
+          -10
+        ],
+        [
+          8,
+          -18,
+          -10,
+          -7
+        ]
+      ]
+    },
+    {
+      "core_order": 179,
+      "target_order": 716,
+      "E": [
+        [
+          0,
+          -11,
+          -3,
+          7
+        ],
+        [
+          11,
+          0,
+          -7,
+          -3
+        ],
+        [
+          3,
+          7,
+          0,
+          11
+        ],
+        [
+          -7,
+          3,
+          -11,
+          0
+        ]
+      ],
+      "D": [
+        [
+          0,
+          1,
+          1,
+          -1
+        ],
+        [
+          -1,
+          0,
+          -1,
+          -1
+        ],
+        [
+          -1,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          -1,
+          0
+        ]
+      ],
+      "common_D_row_product_kappa": -1,
+      "negative_parity_Hadamard_basis": [
+        [
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          -1,
+          1
+        ]
+      ],
+      "negative_parity_alphabet": [
+        {
+          "quartet": [
+            -1,
+            -1,
+            -1,
+            1
+          ],
+          "coordinate": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            -1,
+            1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            1,
+            -1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            1,
+            1,
+            1
+          ],
+          "coordinate": [
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            -1,
+            -1,
+            -1
+          ],
+          "coordinate": [
+            -1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            -1,
+            1,
+            1
+          ],
+          "coordinate": [
+            0,
+            -1,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            1,
+            -1,
+            1
+          ],
+          "coordinate": [
+            0,
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            1,
+            1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            0,
+            0,
+            -1
+          ]
+        }
+      ],
+      "four_times_transformed_E": [
+        [
+          0,
+          28,
+          -44,
+          -12
+        ],
+        [
+          -28,
+          0,
+          12,
+          -44
+        ],
+        [
+          44,
+          -12,
+          0,
+          -28
+        ],
+        [
+          12,
+          44,
+          28,
+          0
+        ]
+      ],
+      "all_flat_columns_lie_in_positive_eigenspace_for_every_skew_core": true,
+      "flat_column_span_dimension_upper_bound": 360,
+      "full_frame_excluded_for_every_skew_core": true,
+      "B_index": 16,
+      "D_index": 12,
+      "B": [
+        [
+          21,
+          4,
+          4,
+          8
+        ],
+        [
+          4,
+          1,
+          14,
+          -18
+        ],
+        [
+          4,
+          14,
+          -15,
+          -10
+        ],
+        [
+          8,
+          -18,
+          -10,
+          -7
+        ]
+      ]
+    },
+    {
+      "core_order": 179,
+      "target_order": 716,
+      "E": [
+        [
+          0,
+          3,
+          11,
+          -7
+        ],
+        [
+          -3,
+          0,
+          -7,
+          -11
+        ],
+        [
+          -11,
+          7,
+          0,
+          3
+        ],
+        [
+          7,
+          11,
+          -3,
+          0
+        ]
+      ],
+      "D": [
+        [
+          0,
+          -1,
+          -1,
+          1
+        ],
+        [
+          1,
+          0,
+          -1,
+          -1
+        ],
+        [
+          1,
+          1,
+          0,
+          1
+        ],
+        [
+          -1,
+          1,
+          -1,
+          0
+        ]
+      ],
+      "common_D_row_product_kappa": 1,
+      "negative_parity_Hadamard_basis": [
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          -1,
+          1
+        ]
+      ],
+      "negative_parity_alphabet": [
+        {
+          "quartet": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "coordinate": [
+            -1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            -1,
+            1,
+            1
+          ],
+          "coordinate": [
+            0,
+            -1,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            1,
+            -1,
+            1
+          ],
+          "coordinate": [
+            0,
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            1,
+            1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            -1,
+            -1,
+            1
+          ],
+          "coordinate": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            -1,
+            1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            1,
+            -1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "coordinate": [
+            1,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "four_times_transformed_E": [
+        [
+          0,
+          28,
+          -12,
+          -44
+        ],
+        [
+          -28,
+          0,
+          44,
+          -12
+        ],
+        [
+          12,
+          -44,
+          0,
+          -28
+        ],
+        [
+          44,
+          12,
+          28,
+          0
+        ]
+      ],
+      "all_flat_columns_lie_in_positive_eigenspace_for_every_skew_core": true,
+      "flat_column_span_dimension_upper_bound": 360,
+      "full_frame_excluded_for_every_skew_core": true,
+      "B_index": 17,
+      "D_index": 2,
+      "B": [
+        [
+          21,
+          4,
+          4,
+          8
+        ],
+        [
+          4,
+          -15,
+          14,
+          -10
+        ],
+        [
+          4,
+          14,
+          1,
+          -18
+        ],
+        [
+          8,
+          -10,
+          -18,
+          -7
+        ]
+      ]
+    },
+    {
+      "core_order": 179,
+      "target_order": 716,
+      "E": [
+        [
+          0,
+          -3,
+          -11,
+          7
+        ],
+        [
+          3,
+          0,
+          7,
+          11
+        ],
+        [
+          11,
+          -7,
+          0,
+          -3
+        ],
+        [
+          -7,
+          -11,
+          3,
+          0
+        ]
+      ],
+      "D": [
+        [
+          0,
+          1,
+          1,
+          -1
+        ],
+        [
+          -1,
+          0,
+          1,
+          1
+        ],
+        [
+          -1,
+          -1,
+          0,
+          -1
+        ],
+        [
+          1,
+          -1,
+          1,
+          0
+        ]
+      ],
+      "common_D_row_product_kappa": -1,
+      "negative_parity_Hadamard_basis": [
+        [
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          -1,
+          1
+        ]
+      ],
+      "negative_parity_alphabet": [
+        {
+          "quartet": [
+            -1,
+            -1,
+            -1,
+            1
+          ],
+          "coordinate": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            -1,
+            1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            1,
+            -1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            1,
+            1,
+            1
+          ],
+          "coordinate": [
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            -1,
+            -1,
+            -1
+          ],
+          "coordinate": [
+            -1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            -1,
+            1,
+            1
+          ],
+          "coordinate": [
+            0,
+            -1,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            1,
+            -1,
+            1
+          ],
+          "coordinate": [
+            0,
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            1,
+            1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            0,
+            0,
+            -1
+          ]
+        }
+      ],
+      "four_times_transformed_E": [
+        [
+          0,
+          -44,
+          28,
+          -12
+        ],
+        [
+          44,
+          0,
+          -12,
+          -28
+        ],
+        [
+          -28,
+          12,
+          0,
+          -44
+        ],
+        [
+          12,
+          28,
+          44,
+          0
+        ]
+      ],
+      "all_flat_columns_lie_in_positive_eigenspace_for_every_skew_core": true,
+      "flat_column_span_dimension_upper_bound": 360,
+      "full_frame_excluded_for_every_skew_core": true,
+      "B_index": 17,
+      "D_index": 13,
+      "B": [
+        [
+          21,
+          4,
+          4,
+          8
+        ],
+        [
+          4,
+          -15,
+          14,
+          -10
+        ],
+        [
+          4,
+          14,
+          1,
+          -18
+        ],
+        [
+          8,
+          -10,
+          -18,
+          -7
+        ]
+      ]
+    },
+    {
+      "core_order": 179,
+      "target_order": 716,
+      "E": [
+        [
+          0,
+          9,
+          7,
+          -7
+        ],
+        [
+          -9,
+          0,
+          7,
+          7
+        ],
+        [
+          -7,
+          -7,
+          0,
+          -9
+        ],
+        [
+          7,
+          -7,
+          9,
+          0
+        ]
+      ],
+      "D": [
+        [
+          0,
+          -1,
+          -1,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          -1,
+          0,
+          -1
+        ],
+        [
+          -1,
+          -1,
+          1,
+          0
+        ]
+      ],
+      "common_D_row_product_kappa": 1,
+      "negative_parity_Hadamard_basis": [
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          -1,
+          1
+        ]
+      ],
+      "negative_parity_alphabet": [
+        {
+          "quartet": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "coordinate": [
+            -1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            -1,
+            1,
+            1
+          ],
+          "coordinate": [
+            0,
+            -1,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            1,
+            -1,
+            1
+          ],
+          "coordinate": [
+            0,
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            1,
+            1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            -1,
+            -1,
+            1
+          ],
+          "coordinate": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            -1,
+            1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            1,
+            -1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "coordinate": [
+            1,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "four_times_transformed_E": [
+        [
+          0,
+          -28,
+          28,
+          -36
+        ],
+        [
+          28,
+          0,
+          -36,
+          -28
+        ],
+        [
+          -28,
+          36,
+          0,
+          -28
+        ],
+        [
+          36,
+          28,
+          28,
+          0
+        ]
+      ],
+      "all_flat_columns_lie_in_positive_eigenspace_for_every_skew_core": true,
+      "flat_column_span_dimension_upper_bound": 360,
+      "full_frame_excluded_for_every_skew_core": true,
+      "B_index": 18,
+      "D_index": 3,
+      "B": [
+        [
+          23,
+          0,
+          2,
+          2
+        ],
+        [
+          0,
+          -5,
+          16,
+          -16
+        ],
+        [
+          2,
+          16,
+          -9,
+          -14
+        ],
+        [
+          2,
+          -16,
+          -14,
+          -9
+        ]
+      ]
+    },
+    {
+      "core_order": 179,
+      "target_order": 716,
+      "E": [
+        [
+          0,
+          -9,
+          -7,
+          7
+        ],
+        [
+          9,
+          0,
+          -7,
+          -7
+        ],
+        [
+          7,
+          7,
+          0,
+          9
+        ],
+        [
+          -7,
+          7,
+          -9,
+          0
+        ]
+      ],
+      "D": [
+        [
+          0,
+          1,
+          1,
+          -1
+        ],
+        [
+          -1,
+          0,
+          -1,
+          -1
+        ],
+        [
+          -1,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          -1,
+          0
+        ]
+      ],
+      "common_D_row_product_kappa": -1,
+      "negative_parity_Hadamard_basis": [
+        [
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          -1,
+          1
+        ]
+      ],
+      "negative_parity_alphabet": [
+        {
+          "quartet": [
+            -1,
+            -1,
+            -1,
+            1
+          ],
+          "coordinate": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            -1,
+            1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            1,
+            -1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            1,
+            1,
+            1
+          ],
+          "coordinate": [
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            -1,
+            -1,
+            -1
+          ],
+          "coordinate": [
+            -1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            -1,
+            1,
+            1
+          ],
+          "coordinate": [
+            0,
+            -1,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            1,
+            -1,
+            1
+          ],
+          "coordinate": [
+            0,
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            1,
+            1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            0,
+            0,
+            -1
+          ]
+        }
+      ],
+      "four_times_transformed_E": [
+        [
+          0,
+          28,
+          -36,
+          -28
+        ],
+        [
+          -28,
+          0,
+          28,
+          -36
+        ],
+        [
+          36,
+          -28,
+          0,
+          -28
+        ],
+        [
+          28,
+          36,
+          28,
+          0
+        ]
+      ],
+      "all_flat_columns_lie_in_positive_eigenspace_for_every_skew_core": true,
+      "flat_column_span_dimension_upper_bound": 360,
+      "full_frame_excluded_for_every_skew_core": true,
+      "B_index": 18,
+      "D_index": 12,
+      "B": [
+        [
+          23,
+          0,
+          2,
+          2
+        ],
+        [
+          0,
+          -5,
+          16,
+          -16
+        ],
+        [
+          2,
+          16,
+          -9,
+          -14
+        ],
+        [
+          2,
+          -16,
+          -14,
+          -9
+        ]
+      ]
+    },
+    {
+      "core_order": 179,
+      "target_order": 716,
+      "E": [
+        [
+          0,
+          9,
+          -7,
+          7
+        ],
+        [
+          -9,
+          0,
+          7,
+          7
+        ],
+        [
+          7,
+          -7,
+          0,
+          9
+        ],
+        [
+          -7,
+          -7,
+          -9,
+          0
+        ]
+      ],
+      "D": [
+        [
+          0,
+          -1,
+          1,
+          -1
+        ],
+        [
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          -1,
+          -1,
+          0,
+          1
+        ],
+        [
+          1,
+          -1,
+          -1,
+          0
+        ]
+      ],
+      "common_D_row_product_kappa": 1,
+      "negative_parity_Hadamard_basis": [
+        [
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          -1,
+          1
+        ]
+      ],
+      "negative_parity_alphabet": [
+        {
+          "quartet": [
+            -1,
+            -1,
+            -1,
+            -1
+          ],
+          "coordinate": [
+            -1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            -1,
+            1,
+            1
+          ],
+          "coordinate": [
+            0,
+            -1,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            1,
+            -1,
+            1
+          ],
+          "coordinate": [
+            0,
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            1,
+            1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            0,
+            0,
+            -1
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            -1,
+            -1,
+            1
+          ],
+          "coordinate": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            -1,
+            1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            1,
+            -1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            1,
+            1,
+            1
+          ],
+          "coordinate": [
+            1,
+            0,
+            0,
+            0
+          ]
+        }
+      ],
+      "four_times_transformed_E": [
+        [
+          0,
+          -28,
+          -36,
+          28
+        ],
+        [
+          28,
+          0,
+          -28,
+          -36
+        ],
+        [
+          36,
+          28,
+          0,
+          28
+        ],
+        [
+          -28,
+          36,
+          -28,
+          0
+        ]
+      ],
+      "all_flat_columns_lie_in_positive_eigenspace_for_every_skew_core": true,
+      "flat_column_span_dimension_upper_bound": 360,
+      "full_frame_excluded_for_every_skew_core": true,
+      "B_index": 21,
+      "D_index": 5,
+      "B": [
+        [
+          23,
+          0,
+          2,
+          2
+        ],
+        [
+          0,
+          -5,
+          -16,
+          16
+        ],
+        [
+          2,
+          -16,
+          -9,
+          -14
+        ],
+        [
+          2,
+          16,
+          -14,
+          -9
+        ]
+      ]
+    },
+    {
+      "core_order": 179,
+      "target_order": 716,
+      "E": [
+        [
+          0,
+          -9,
+          7,
+          -7
+        ],
+        [
+          9,
+          0,
+          -7,
+          -7
+        ],
+        [
+          -7,
+          7,
+          0,
+          -9
+        ],
+        [
+          7,
+          7,
+          9,
+          0
+        ]
+      ],
+      "D": [
+        [
+          0,
+          1,
+          -1,
+          1
+        ],
+        [
+          -1,
+          0,
+          -1,
+          -1
+        ],
+        [
+          1,
+          1,
+          0,
+          -1
+        ],
+        [
+          -1,
+          1,
+          1,
+          0
+        ]
+      ],
+      "common_D_row_product_kappa": -1,
+      "negative_parity_Hadamard_basis": [
+        [
+          -1,
+          -1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          -1,
+          1
+        ]
+      ],
+      "negative_parity_alphabet": [
+        {
+          "quartet": [
+            -1,
+            -1,
+            -1,
+            1
+          ],
+          "coordinate": [
+            0,
+            0,
+            0,
+            1
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            -1,
+            1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            0,
+            1,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            1,
+            -1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            1,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            -1,
+            1,
+            1,
+            1
+          ],
+          "coordinate": [
+            1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            -1,
+            -1,
+            -1
+          ],
+          "coordinate": [
+            -1,
+            0,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            -1,
+            1,
+            1
+          ],
+          "coordinate": [
+            0,
+            -1,
+            0,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            1,
+            -1,
+            1
+          ],
+          "coordinate": [
+            0,
+            0,
+            -1,
+            0
+          ]
+        },
+        {
+          "quartet": [
+            1,
+            1,
+            1,
+            -1
+          ],
+          "coordinate": [
+            0,
+            0,
+            0,
+            -1
+          ]
+        }
+      ],
+      "four_times_transformed_E": [
+        [
+          0,
+          28,
+          -28,
+          -36
+        ],
+        [
+          -28,
+          0,
+          -36,
+          28
+        ],
+        [
+          28,
+          36,
+          0,
+          28
+        ],
+        [
+          36,
+          -28,
+          -28,
+          0
+        ]
+      ],
+      "all_flat_columns_lie_in_positive_eigenspace_for_every_skew_core": true,
+      "flat_column_span_dimension_upper_bound": 360,
+      "full_frame_excluded_for_every_skew_core": true,
+      "B_index": 21,
+      "D_index": 10,
+      "B": [
+        [
+          23,
+          0,
+          2,
+          2
+        ],
+        [
+          0,
+          -5,
+          -16,
+          16
+        ],
+        [
+          2,
+          -16,
+          -9,
+          -14
+        ],
+        [
+          2,
+          16,
+          -14,
+          -9
+        ]
+      ]
+    }
+  ],
+  "arbitrary_scalar_towers_excluded": false,
+  "real_Hadamard_order_716_nonexistence_claimed": false
+}

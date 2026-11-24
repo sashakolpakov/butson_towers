@@ -1,0 +1,559 @@
+{
+  "schema": "rectangular-balanced-packet-cycles-v1",
+  "target_source_order": 1499,
+  "corner_order": 585,
+  "balanced_cycle": {
+    "patterns": [
+      {
+        "fifth_colors": [
+          3,
+          4,
+          2,
+          2,
+          3
+        ],
+        "signs": [
+          1,
+          -1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "fifth_colors": [
+          3,
+          4,
+          2,
+          2,
+          3
+        ],
+        "signs": [
+          1,
+          -1,
+          1,
+          -1,
+          -1
+        ]
+      },
+      {
+        "fifth_colors": [
+          3,
+          4,
+          2,
+          2,
+          3
+        ],
+        "signs": [
+          1,
+          -1,
+          -1,
+          1,
+          1
+        ]
+      },
+      {
+        "fifth_colors": [
+          3,
+          4,
+          2,
+          2,
+          3
+        ],
+        "signs": [
+          1,
+          -1,
+          -1,
+          -1,
+          -1
+        ]
+      }
+    ],
+    "five_spectral_norm_sums": [
+      [
+        20,
+        0,
+        0,
+        0
+      ],
+      [
+        20,
+        0,
+        0,
+        0
+      ],
+      [
+        20,
+        0,
+        0,
+        0
+      ],
+      [
+        20,
+        0,
+        0,
+        0
+      ],
+      [
+        20,
+        0,
+        0,
+        0
+      ]
+    ],
+    "sum_row_Grams": "20 I5",
+    "sum_column_Grams": "20 I5",
+    "all100_scalar_entries_admitted": true,
+    "independent_full_physical_Gram_verified": true
+  },
+  "maximum_disjoint_cycles": 28,
+  "field_basis": "zeta6^a zeta5^b, 0<=a<2, 0<=b<4",
+  "sector_order": 117,
+  "support_pair_product_array_materialized": false,
+  "finite_choices_checked": 8,
+  "choices": [
+    {
+      "balanced_cycles": 1,
+      "baseline_blocks_per_packet": 110,
+      "original_three_defect_shifts": [
+        0,
+        1,
+        2
+      ],
+      "balanced_replacement_shifts": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "boundary_packet_selection": "consecutive",
+      "known_BH117_variant": "original",
+      "independent_full_corner_controls": {
+        "all342225_root_entries_admitted": true,
+        "sixteen_independent_full_length585_Gram_entries_checked": true
+      },
+      "both_complete_diagonal_packet_Grams_match": true,
+      "all_cross_packet_Grams_match": false,
+      "status": "EXCLUDED_THIS_SUBSTITUTION_CHOICE",
+      "first_exact_cross_packet_residual": {
+        "side": "D Dstar",
+        "sector": 0,
+        "outer_row": 0,
+        "outer_column": 1,
+        "residual_coefficients_in_zeta6_zeta5_basis": [
+          [
+            -3,
+            4,
+            6,
+            7
+          ],
+          [
+            -8,
+            -1,
+            -4,
+            -1
+          ]
+        ]
+      }
+    },
+    {
+      "balanced_cycles": 1,
+      "baseline_blocks_per_packet": 110,
+      "original_three_defect_shifts": [
+        0,
+        1,
+        2
+      ],
+      "balanced_replacement_shifts": [
+        3,
+        4,
+        5,
+        6
+      ],
+      "boundary_packet_selection": "tripling_7_of_9",
+      "known_BH117_variant": "original",
+      "independent_full_corner_controls": {
+        "all342225_root_entries_admitted": true,
+        "sixteen_independent_full_length585_Gram_entries_checked": true
+      },
+      "both_complete_diagonal_packet_Grams_match": true,
+      "all_cross_packet_Grams_match": false,
+      "status": "EXCLUDED_THIS_SUBSTITUTION_CHOICE",
+      "first_exact_cross_packet_residual": {
+        "side": "D Dstar",
+        "sector": 0,
+        "outer_row": 0,
+        "outer_column": 1,
+        "residual_coefficients_in_zeta6_zeta5_basis": [
+          [
+            127,
+            4,
+            6,
+            7
+          ],
+          [
+            2,
+            -1,
+            -4,
+            -1
+          ]
+        ]
+      }
+    },
+    {
+      "balanced_cycles": 2,
+      "baseline_blocks_per_packet": 106,
+      "original_three_defect_shifts": [
+        0,
+        1,
+        2
+      ],
+      "balanced_replacement_shifts": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "boundary_packet_selection": "consecutive",
+      "known_BH117_variant": "original",
+      "independent_full_corner_controls": {
+        "all342225_root_entries_admitted": true,
+        "sixteen_independent_full_length585_Gram_entries_checked": true
+      },
+      "both_complete_diagonal_packet_Grams_match": true,
+      "all_cross_packet_Grams_match": false,
+      "status": "EXCLUDED_THIS_SUBSTITUTION_CHOICE",
+      "first_exact_cross_packet_residual": {
+        "side": "D Dstar",
+        "sector": 0,
+        "outer_row": 0,
+        "outer_column": 1,
+        "residual_coefficients_in_zeta6_zeta5_basis": [
+          [
+            0,
+            8,
+            4,
+            8
+          ],
+          [
+            -8,
+            -3,
+            -2,
+            -5
+          ]
+        ]
+      }
+    },
+    {
+      "balanced_cycles": 2,
+      "baseline_blocks_per_packet": 106,
+      "original_three_defect_shifts": [
+        0,
+        1,
+        2
+      ],
+      "balanced_replacement_shifts": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10
+      ],
+      "boundary_packet_selection": "tripling_7_of_9",
+      "known_BH117_variant": "original",
+      "independent_full_corner_controls": {
+        "all342225_root_entries_admitted": true,
+        "sixteen_independent_full_length585_Gram_entries_checked": true
+      },
+      "both_complete_diagonal_packet_Grams_match": true,
+      "all_cross_packet_Grams_match": false,
+      "status": "EXCLUDED_THIS_SUBSTITUTION_CHOICE",
+      "first_exact_cross_packet_residual": {
+        "side": "D Dstar",
+        "sector": 0,
+        "outer_row": 0,
+        "outer_column": 1,
+        "residual_coefficients_in_zeta6_zeta5_basis": [
+          [
+            130,
+            8,
+            4,
+            8
+          ],
+          [
+            2,
+            -3,
+            -2,
+            -5
+          ]
+        ]
+      }
+    },
+    {
+      "balanced_cycles": 4,
+      "baseline_blocks_per_packet": 98,
+      "original_three_defect_shifts": [
+        0,
+        1,
+        2
+      ],
+      "balanced_replacement_shifts": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "boundary_packet_selection": "consecutive",
+      "known_BH117_variant": "original",
+      "independent_full_corner_controls": {
+        "all342225_root_entries_admitted": true,
+        "sixteen_independent_full_length585_Gram_entries_checked": true
+      },
+      "both_complete_diagonal_packet_Grams_match": true,
+      "all_cross_packet_Grams_match": false,
+      "status": "EXCLUDED_THIS_SUBSTITUTION_CHOICE",
+      "first_exact_cross_packet_residual": {
+        "side": "D Dstar",
+        "sector": 0,
+        "outer_row": 0,
+        "outer_column": 1,
+        "residual_coefficients_in_zeta6_zeta5_basis": [
+          [
+            1,
+            12,
+            14,
+            11
+          ],
+          [
+            -10,
+            -5,
+            -8,
+            -3
+          ]
+        ]
+      }
+    },
+    {
+      "balanced_cycles": 4,
+      "baseline_blocks_per_packet": 98,
+      "original_three_defect_shifts": [
+        0,
+        1,
+        2
+      ],
+      "balanced_replacement_shifts": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18
+      ],
+      "boundary_packet_selection": "tripling_7_of_9",
+      "known_BH117_variant": "original",
+      "independent_full_corner_controls": {
+        "all342225_root_entries_admitted": true,
+        "sixteen_independent_full_length585_Gram_entries_checked": true
+      },
+      "both_complete_diagonal_packet_Grams_match": true,
+      "all_cross_packet_Grams_match": false,
+      "status": "EXCLUDED_THIS_SUBSTITUTION_CHOICE",
+      "first_exact_cross_packet_residual": {
+        "side": "D Dstar",
+        "sector": 0,
+        "outer_row": 0,
+        "outer_column": 1,
+        "residual_coefficients_in_zeta6_zeta5_basis": [
+          [
+            131,
+            12,
+            14,
+            11
+          ],
+          [
+            0,
+            -5,
+            -8,
+            -3
+          ]
+        ]
+      }
+    },
+    {
+      "balanced_cycles": 8,
+      "baseline_blocks_per_packet": 82,
+      "original_three_defect_shifts": [
+        0,
+        1,
+        2
+      ],
+      "balanced_replacement_shifts": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "boundary_packet_selection": "consecutive",
+      "known_BH117_variant": "original",
+      "independent_full_corner_controls": {
+        "all342225_root_entries_admitted": true,
+        "sixteen_independent_full_length585_Gram_entries_checked": true
+      },
+      "both_complete_diagonal_packet_Grams_match": true,
+      "all_cross_packet_Grams_match": false,
+      "status": "EXCLUDED_THIS_SUBSTITUTION_CHOICE",
+      "first_exact_cross_packet_residual": {
+        "side": "D Dstar",
+        "sector": 0,
+        "outer_row": 0,
+        "outer_column": 1,
+        "residual_coefficients_in_zeta6_zeta5_basis": [
+          [
+            -4,
+            8,
+            16,
+            8
+          ],
+          [
+            -6,
+            -3,
+            -8,
+            -5
+          ]
+        ]
+      }
+    },
+    {
+      "balanced_cycles": 8,
+      "baseline_blocks_per_packet": 82,
+      "original_three_defect_shifts": [
+        0,
+        1,
+        2
+      ],
+      "balanced_replacement_shifts": [
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34
+      ],
+      "boundary_packet_selection": "tripling_7_of_9",
+      "known_BH117_variant": "original",
+      "independent_full_corner_controls": {
+        "all342225_root_entries_admitted": true,
+        "sixteen_independent_full_length585_Gram_entries_checked": true
+      },
+      "both_complete_diagonal_packet_Grams_match": true,
+      "all_cross_packet_Grams_match": false,
+      "status": "EXCLUDED_THIS_SUBSTITUTION_CHOICE",
+      "first_exact_cross_packet_residual": {
+        "side": "D Dstar",
+        "sector": 0,
+        "outer_row": 0,
+        "outer_column": 1,
+        "residual_coefficients_in_zeta6_zeta5_basis": [
+          [
+            126,
+            8,
+            16,
+            8
+          ],
+          [
+            4,
+            -3,
+            -8,
+            -5
+          ]
+        ]
+      }
+    }
+  ],
+  "complete_corner_metrics_found": 0,
+  "other_permutations_or_cycle_choices_excluded": false,
+  "complete_source_or_new_real_Hadamard_constructed": false
+}

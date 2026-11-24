@@ -1,0 +1,808 @@
+{
+  "schema": "finite-odd-C3-prime-DC-chart-scan-v1",
+  "scan_scope": {
+    "prime_min": 7,
+    "prime_max": 20000,
+    "multiplier": "all positive odd multiples of3 dividingp\u22121",
+    "nonorigin_orbit_max": 50,
+    "origin": "positive axis0",
+    "required_DC": "head=1+m*H; tail=(m/3)*T; head\u00b2+3*tail\u00b2=p",
+    "normalization": "tail positive; head either sign"
+  },
+  "number_of_positive_DC_parameter_charts": 28,
+  "largest_prime_surviving": 1951,
+  "global_prime_bound_for_this_orbit_budget": {
+    "formula": "p\u22641+3*N*(N+2)/4",
+    "N": 50,
+    "maximum_p": 1951,
+    "proof": [
+      "N=(p\u22121)/m is even becausep,m areodd. Writehead=1+mH,tail=mT/3. ThenN=2H+m(H\u00b2+T\u00b2/3).",
+      "The DC equation modulotwo forcesH\u2261T mod2. T\u22600 becausea primep cannotbehead\u00b2.",
+      "For m\u22653, same-parity integersH,T withT\u22600 satisfy3mH\u00b2+mT\u00b2+6H+6\u22124m\u22650. ForH=\u22121 this followsfromT\u00b2\u22651;forH=0fromT\u00b2\u22654;forH=1it hasextra12;for|H|\u22652usem\u22653 andthe quadraticlowerbound.",
+      "Hence4m\u22643(N+2), andp=1+mN\u22641+3N(N+2)/4. EqualityatN50 occursforH\u22121,T1,m39,p1951."
+    ]
+  },
+  "charts": [
+    {
+      "p": 7,
+      "m": 3,
+      "N": 2,
+      "head": -2,
+      "tail": 1,
+      "head_net": -1,
+      "tail_net": 1,
+      "ord4": 3,
+      "e": 1,
+      "factors": 1,
+      "orders": {
+        "3": 84,
+        "7": 196,
+        "9": 252,
+        "13": 364
+      },
+      "turyn_WT_gate": {
+        "q": 13,
+        "q_factorization": {
+          "13": 1
+        },
+        "q_is_prime_power": true,
+        "q_mod4": 1,
+        "WT_p_and_all_four_endpoint_orders_already_known_by_Turyn_Cooper_Wallis": true
+      }
+    },
+    {
+      "p": 13,
+      "m": 3,
+      "N": 4,
+      "head": 1,
+      "tail": 2,
+      "head_net": 0,
+      "tail_net": 2,
+      "ord4": 6,
+      "e": 2,
+      "factors": 1,
+      "orders": {
+        "3": 156,
+        "7": 364,
+        "9": 468,
+        "13": 676
+      },
+      "turyn_WT_gate": {
+        "q": 25,
+        "q_factorization": {
+          "5": 2
+        },
+        "q_is_prime_power": true,
+        "q_mod4": 1,
+        "WT_p_and_all_four_endpoint_orders_already_known_by_Turyn_Cooper_Wallis": true
+      }
+    },
+    {
+      "p": 19,
+      "m": 3,
+      "N": 6,
+      "head": 4,
+      "tail": 1,
+      "head_net": 1,
+      "tail_net": 1,
+      "ord4": 9,
+      "e": 3,
+      "factors": 1,
+      "orders": {
+        "3": 228,
+        "7": 532,
+        "9": 684,
+        "13": 988
+      },
+      "turyn_WT_gate": {
+        "q": 37,
+        "q_factorization": {
+          "37": 1
+        },
+        "q_is_prime_power": true,
+        "q_mod4": 1,
+        "WT_p_and_all_four_endpoint_orders_already_known_by_Turyn_Cooper_Wallis": true
+      }
+    },
+    {
+      "p": 31,
+      "m": 3,
+      "N": 10,
+      "head": -2,
+      "tail": 3,
+      "head_net": -1,
+      "tail_net": 3,
+      "ord4": 5,
+      "e": 5,
+      "factors": 1,
+      "orders": {
+        "3": 372,
+        "7": 868,
+        "9": 1116,
+        "13": 1612
+      },
+      "turyn_WT_gate": {
+        "q": 61,
+        "q_factorization": {
+          "61": 1
+        },
+        "q_is_prime_power": true,
+        "q_mod4": 1,
+        "WT_p_and_all_four_endpoint_orders_already_known_by_Turyn_Cooper_Wallis": true
+      }
+    },
+    {
+      "p": 37,
+      "m": 3,
+      "N": 12,
+      "head": -5,
+      "tail": 2,
+      "head_net": -2,
+      "tail_net": 2,
+      "ord4": 18,
+      "e": 6,
+      "factors": 1,
+      "orders": {
+        "3": 444,
+        "7": 1036,
+        "9": 1332,
+        "13": 1924
+      },
+      "turyn_WT_gate": {
+        "q": 73,
+        "q_factorization": {
+          "73": 1
+        },
+        "q_is_prime_power": true,
+        "q_mod4": 1,
+        "WT_p_and_all_four_endpoint_orders_already_known_by_Turyn_Cooper_Wallis": true
+      }
+    },
+    {
+      "p": 43,
+      "m": 3,
+      "N": 14,
+      "head": 4,
+      "tail": 3,
+      "head_net": 1,
+      "tail_net": 3,
+      "ord4": 7,
+      "e": 7,
+      "factors": 1,
+      "orders": {
+        "3": 516,
+        "7": 1204,
+        "9": 1548,
+        "13": 2236
+      },
+      "turyn_WT_gate": {
+        "q": 85,
+        "q_factorization": {
+          "5": 1,
+          "17": 1
+        },
+        "q_is_prime_power": false,
+        "q_mod4": 1,
+        "WT_p_and_all_four_endpoint_orders_already_known_by_Turyn_Cooper_Wallis": false
+      }
+    },
+    {
+      "p": 61,
+      "m": 3,
+      "N": 20,
+      "head": 7,
+      "tail": 2,
+      "head_net": 2,
+      "tail_net": 2,
+      "ord4": 30,
+      "e": 10,
+      "factors": 1,
+      "orders": {
+        "3": 732,
+        "7": 1708,
+        "9": 2196,
+        "13": 3172
+      },
+      "turyn_WT_gate": {
+        "q": 121,
+        "q_factorization": {
+          "11": 2
+        },
+        "q_is_prime_power": true,
+        "q_mod4": 1,
+        "WT_p_and_all_four_endpoint_orders_already_known_by_Turyn_Cooper_Wallis": true
+      }
+    },
+    {
+      "p": 67,
+      "m": 3,
+      "N": 22,
+      "head": -8,
+      "tail": 1,
+      "head_net": -3,
+      "tail_net": 1,
+      "ord4": 33,
+      "e": 11,
+      "factors": 1,
+      "orders": {
+        "3": 804,
+        "7": 1876,
+        "9": 2412,
+        "13": 3484
+      },
+      "turyn_WT_gate": {
+        "q": 133,
+        "q_factorization": {
+          "7": 1,
+          "19": 1
+        },
+        "q_is_prime_power": false,
+        "q_mod4": 1,
+        "WT_p_and_all_four_endpoint_orders_already_known_by_Turyn_Cooper_Wallis": false
+      }
+    },
+    {
+      "p": 73,
+      "m": 3,
+      "N": 24,
+      "head": -5,
+      "tail": 4,
+      "head_net": -2,
+      "tail_net": 4,
+      "ord4": 9,
+      "e": 3,
+      "factors": 4,
+      "orders": {
+        "3": 876,
+        "7": 2044,
+        "9": 2628,
+        "13": 3796
+      },
+      "turyn_WT_gate": {
+        "q": 145,
+        "q_factorization": {
+          "5": 1,
+          "29": 1
+        },
+        "q_is_prime_power": false,
+        "q_mod4": 1,
+        "WT_p_and_all_four_endpoint_orders_already_known_by_Turyn_Cooper_Wallis": false
+      }
+    },
+    {
+      "p": 79,
+      "m": 3,
+      "N": 26,
+      "head": -2,
+      "tail": 5,
+      "head_net": -1,
+      "tail_net": 5,
+      "ord4": 39,
+      "e": 13,
+      "factors": 1,
+      "orders": {
+        "3": 948,
+        "7": 2212,
+        "9": 2844,
+        "13": 4108
+      },
+      "turyn_WT_gate": {
+        "q": 157,
+        "q_factorization": {
+          "157": 1
+        },
+        "q_is_prime_power": true,
+        "q_mod4": 1,
+        "WT_p_and_all_four_endpoint_orders_already_known_by_Turyn_Cooper_Wallis": true
+      }
+    },
+    {
+      "p": 97,
+      "m": 3,
+      "N": 32,
+      "head": 7,
+      "tail": 4,
+      "head_net": 2,
+      "tail_net": 4,
+      "ord4": 24,
+      "e": 8,
+      "factors": 2,
+      "orders": {
+        "3": 1164,
+        "7": 2716,
+        "9": 3492,
+        "13": 5044
+      },
+      "turyn_WT_gate": {
+        "q": 193,
+        "q_factorization": {
+          "193": 1
+        },
+        "q_is_prime_power": true,
+        "q_mod4": 1,
+        "WT_p_and_all_four_endpoint_orders_already_known_by_Turyn_Cooper_Wallis": true
+      }
+    },
+    {
+      "p": 103,
+      "m": 3,
+      "N": 34,
+      "head": 10,
+      "tail": 1,
+      "head_net": 3,
+      "tail_net": 1,
+      "ord4": 51,
+      "e": 17,
+      "factors": 1,
+      "orders": {
+        "3": 1236,
+        "7": 2884,
+        "9": 3708,
+        "13": 5356
+      },
+      "turyn_WT_gate": {
+        "q": 205,
+        "q_factorization": {
+          "5": 1,
+          "41": 1
+        },
+        "q_is_prime_power": false,
+        "q_mod4": 1,
+        "WT_p_and_all_four_endpoint_orders_already_known_by_Turyn_Cooper_Wallis": false
+      }
+    },
+    {
+      "p": 109,
+      "m": 3,
+      "N": 36,
+      "head": 1,
+      "tail": 6,
+      "head_net": 0,
+      "tail_net": 6,
+      "ord4": 18,
+      "e": 6,
+      "factors": 3,
+      "orders": {
+        "3": 1308,
+        "7": 3052,
+        "9": 3924,
+        "13": 5668
+      },
+      "turyn_WT_gate": {
+        "q": 217,
+        "q_factorization": {
+          "7": 1,
+          "31": 1
+        },
+        "q_is_prime_power": false,
+        "q_mod4": 1,
+        "WT_p_and_all_four_endpoint_orders_already_known_by_Turyn_Cooper_Wallis": false
+      }
+    },
+    {
+      "p": 109,
+      "m": 9,
+      "N": 12,
+      "head": 1,
+      "tail": 6,
+      "head_net": 0,
+      "tail_net": 2,
+      "ord4": 18,
+      "e": 2,
+      "factors": 3,
+      "orders": {
+        "3": 1308,
+        "7": 3052,
+        "9": 3924,
+        "13": 5668
+      },
+      "turyn_WT_gate": {
+        "q": 217,
+        "q_factorization": {
+          "7": 1,
+          "31": 1
+        },
+        "q_is_prime_power": false,
+        "q_mod4": 1,
+        "WT_p_and_all_four_endpoint_orders_already_known_by_Turyn_Cooper_Wallis": false
+      }
+    },
+    {
+      "p": 127,
+      "m": 3,
+      "N": 42,
+      "head": 10,
+      "tail": 3,
+      "head_net": 3,
+      "tail_net": 3,
+      "ord4": 7,
+      "e": 7,
+      "factors": 3,
+      "orders": {
+        "3": 1524,
+        "7": 3556,
+        "9": 4572,
+        "13": 6604
+      },
+      "turyn_WT_gate": {
+        "q": 253,
+        "q_factorization": {
+          "11": 1,
+          "23": 1
+        },
+        "q_is_prime_power": false,
+        "q_mod4": 1,
+        "WT_p_and_all_four_endpoint_orders_already_known_by_Turyn_Cooper_Wallis": false
+      }
+    },
+    {
+      "p": 127,
+      "m": 9,
+      "N": 14,
+      "head": 10,
+      "tail": 3,
+      "head_net": 1,
+      "tail_net": 1,
+      "ord4": 7,
+      "e": 7,
+      "factors": 1,
+      "orders": {
+        "3": 1524,
+        "7": 3556,
+        "9": 4572,
+        "13": 6604
+      },
+      "turyn_WT_gate": {
+        "q": 253,
+        "q_factorization": {
+          "11": 1,
+          "23": 1
+        },
+        "q_is_prime_power": false,
+        "q_mod4": 1,
+        "WT_p_and_all_four_endpoint_orders_already_known_by_Turyn_Cooper_Wallis": false
+      }
+    },
+    {
+      "p": 139,
+      "m": 3,
+      "N": 46,
+      "head": -8,
+      "tail": 5,
+      "head_net": -3,
+      "tail_net": 5,
+      "ord4": 69,
+      "e": 23,
+      "factors": 1,
+      "orders": {
+        "3": 1668,
+        "7": 3892,
+        "9": 5004,
+        "13": 7228
+      },
+      "turyn_WT_gate": {
+        "q": 277,
+        "q_factorization": {
+          "277": 1
+        },
+        "q_is_prime_power": true,
+        "q_mod4": 1,
+        "WT_p_and_all_four_endpoint_orders_already_known_by_Turyn_Cooper_Wallis": true
+      }
+    },
+    {
+      "p": 151,
+      "m": 3,
+      "N": 50,
+      "head": -2,
+      "tail": 7,
+      "head_net": -1,
+      "tail_net": 7,
+      "ord4": 15,
+      "e": 5,
+      "factors": 5,
+      "orders": {
+        "3": 1812,
+        "7": 4228,
+        "9": 5436,
+        "13": 7852
+      },
+      "turyn_WT_gate": {
+        "q": 301,
+        "q_factorization": {
+          "7": 1,
+          "43": 1
+        },
+        "q_is_prime_power": false,
+        "q_mod4": 1,
+        "WT_p_and_all_four_endpoint_orders_already_known_by_Turyn_Cooper_Wallis": false
+      }
+    },
+    {
+      "p": 271,
+      "m": 15,
+      "N": 18,
+      "head": -14,
+      "tail": 5,
+      "head_net": -1,
+      "tail_net": 1,
+      "ord4": 135,
+      "e": 9,
+      "factors": 1,
+      "orders": {
+        "3": 3252,
+        "7": 7588,
+        "9": 9756,
+        "13": 14092
+      },
+      "turyn_WT_gate": {
+        "q": 541,
+        "q_factorization": {
+          "541": 1
+        },
+        "q_is_prime_power": true,
+        "q_mod4": 1,
+        "WT_p_and_all_four_endpoint_orders_already_known_by_Turyn_Cooper_Wallis": true
+      }
+    },
+    {
+      "p": 307,
+      "m": 9,
+      "N": 34,
+      "head": -8,
+      "tail": 9,
+      "head_net": -1,
+      "tail_net": 3,
+      "ord4": 51,
+      "e": 17,
+      "factors": 1,
+      "orders": {
+        "3": 3684,
+        "7": 8596,
+        "9": 11052,
+        "13": 15964
+      },
+      "turyn_WT_gate": {
+        "q": 613,
+        "q_factorization": {
+          "613": 1
+        },
+        "q_is_prime_power": true,
+        "q_mod4": 1,
+        "WT_p_and_all_four_endpoint_orders_already_known_by_Turyn_Cooper_Wallis": true
+      }
+    },
+    {
+      "p": 331,
+      "m": 15,
+      "N": 22,
+      "head": 16,
+      "tail": 5,
+      "head_net": 1,
+      "tail_net": 1,
+      "ord4": 15,
+      "e": 1,
+      "factors": 11,
+      "orders": {
+        "3": 3972,
+        "7": 9268,
+        "9": 11916,
+        "13": 17212
+      },
+      "turyn_WT_gate": {
+        "q": 661,
+        "q_factorization": {
+          "661": 1
+        },
+        "q_is_prime_power": true,
+        "q_mod4": 1,
+        "WT_p_and_all_four_endpoint_orders_already_known_by_Turyn_Cooper_Wallis": true
+      }
+    },
+    {
+      "p": 397,
+      "m": 9,
+      "N": 44,
+      "head": -17,
+      "tail": 6,
+      "head_net": -2,
+      "tail_net": 2,
+      "ord4": 22,
+      "e": 22,
+      "factors": 1,
+      "orders": {
+        "3": 4764,
+        "7": 11116,
+        "9": 14292,
+        "13": 20644
+      },
+      "turyn_WT_gate": {
+        "q": 793,
+        "q_factorization": {
+          "13": 1,
+          "61": 1
+        },
+        "q_is_prime_power": false,
+        "q_mod4": 1,
+        "WT_p_and_all_four_endpoint_orders_already_known_by_Turyn_Cooper_Wallis": false
+      }
+    },
+    {
+      "p": 433,
+      "m": 9,
+      "N": 48,
+      "head": 1,
+      "tail": 12,
+      "head_net": 0,
+      "tail_net": 4,
+      "ord4": 36,
+      "e": 4,
+      "factors": 6,
+      "orders": {
+        "3": 5196,
+        "7": 12124,
+        "9": 15588,
+        "13": 22516
+      },
+      "turyn_WT_gate": {
+        "q": 865,
+        "q_factorization": {
+          "5": 1,
+          "173": 1
+        },
+        "q_is_prime_power": false,
+        "q_mod4": 1,
+        "WT_p_and_all_four_endpoint_orders_already_known_by_Turyn_Cooper_Wallis": false
+      }
+    },
+    {
+      "p": 547,
+      "m": 21,
+      "N": 26,
+      "head": -20,
+      "tail": 7,
+      "head_net": -1,
+      "tail_net": 1,
+      "ord4": 273,
+      "e": 13,
+      "factors": 1,
+      "orders": {
+        "3": 6564,
+        "7": 15316,
+        "9": 19692,
+        "13": 28444
+      },
+      "turyn_WT_gate": {
+        "q": 1093,
+        "q_factorization": {
+          "1093": 1
+        },
+        "q_is_prime_power": true,
+        "q_mod4": 1,
+        "WT_p_and_all_four_endpoint_orders_already_known_by_Turyn_Cooper_Wallis": true
+      }
+    },
+    {
+      "p": 631,
+      "m": 21,
+      "N": 30,
+      "head": 22,
+      "tail": 7,
+      "head_net": 1,
+      "tail_net": 1,
+      "ord4": 45,
+      "e": 15,
+      "factors": 1,
+      "orders": {
+        "3": 7572,
+        "7": 17668,
+        "9": 22716,
+        "13": 32812
+      },
+      "turyn_WT_gate": {
+        "q": 1261,
+        "q_factorization": {
+          "13": 1,
+          "97": 1
+        },
+        "q_is_prime_power": false,
+        "q_mod4": 1,
+        "WT_p_and_all_four_endpoint_orders_already_known_by_Turyn_Cooper_Wallis": false
+      }
+    },
+    {
+      "p": 919,
+      "m": 27,
+      "N": 34,
+      "head": -26,
+      "tail": 9,
+      "head_net": -1,
+      "tail_net": 1,
+      "ord4": 153,
+      "e": 17,
+      "factors": 1,
+      "orders": {
+        "3": 11028,
+        "7": 25732,
+        "9": 33084,
+        "13": 47788
+      },
+      "turyn_WT_gate": {
+        "q": 1837,
+        "q_factorization": {
+          "11": 1,
+          "167": 1
+        },
+        "q_is_prime_power": false,
+        "q_mod4": 1,
+        "WT_p_and_all_four_endpoint_orders_already_known_by_Turyn_Cooper_Wallis": false
+      }
+    },
+    {
+      "p": 1453,
+      "m": 33,
+      "N": 44,
+      "head": 1,
+      "tail": 22,
+      "head_net": 0,
+      "tail_net": 2,
+      "ord4": 726,
+      "e": 22,
+      "factors": 1,
+      "orders": {
+        "3": 17436,
+        "7": 40684,
+        "9": 52308,
+        "13": 75556
+      },
+      "turyn_WT_gate": {
+        "q": 2905,
+        "q_factorization": {
+          "5": 1,
+          "7": 1,
+          "83": 1
+        },
+        "q_is_prime_power": false,
+        "q_mod4": 1,
+        "WT_p_and_all_four_endpoint_orders_already_known_by_Turyn_Cooper_Wallis": false
+      }
+    },
+    {
+      "p": 1951,
+      "m": 39,
+      "N": 50,
+      "head": -38,
+      "tail": 13,
+      "head_net": -1,
+      "tail_net": 1,
+      "ord4": 975,
+      "e": 25,
+      "factors": 1,
+      "orders": {
+        "3": 23412,
+        "7": 54628,
+        "9": 70236,
+        "13": 101452
+      },
+      "turyn_WT_gate": {
+        "q": 3901,
+        "q_factorization": {
+          "47": 1,
+          "83": 1
+        },
+        "q_is_prime_power": false,
+        "q_mod4": 1,
+        "WT_p_and_all_four_endpoint_orders_already_known_by_Turyn_Cooper_Wallis": false
+      }
+    }
+  ],
+  "primary_knownness_gate": {
+    "Turyn": "WT((q+1)/2) existsforprimepowerq\u22611 mod4; setq=2p\u22121",
+    "Cooper_Wallis": "KnownT matricesoforders3,7,9,13 andWT(p) giveHadamardorders4*p*w",
+    "primary_reference": "https://arxiv.org/html/2610.27175v2#S2.SS1",
+    "product_reference": "https://arxiv.org/html/2610.27175v2#S4"
+  },
+  "necessary_conditions_only": true,
+  "no_endpoint_or_Hadamard_nonexistence_claim_from_scan": true,
+  "unlisted_orders_not_assumed_unknown": true
+}

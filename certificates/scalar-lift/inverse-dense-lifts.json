@@ -1,0 +1,1843 @@
+{
+  "scope": "Target-first inverse lift for exact dense sign outputs",
+  "snapshot_sha256": "acb90db9d91ad05cc748691d30a16965ae29044d53d0b01c94cb99dadf3d6280",
+  "historical_order_count": 95,
+  "candidate_count_after_reported_exclusions": 85,
+  "candidate_status_scope": "dated snapshot, not an independent current priority claim",
+  "available_source_routes_sorted_by_block_order": [
+    {
+      "target_order": 4676,
+      "source_order": 7,
+      "block_order": 668,
+      "source_available": true,
+      "block_pair_constructed": false
+    },
+    {
+      "target_order": 8684,
+      "source_order": 13,
+      "block_order": 668,
+      "source_available": true,
+      "block_pair_constructed": false
+    },
+    {
+      "target_order": 9308,
+      "source_order": 13,
+      "block_order": 716,
+      "source_available": true,
+      "block_pair_constructed": false
+    },
+    {
+      "target_order": 6876,
+      "source_order": 9,
+      "block_order": 764,
+      "source_available": true,
+      "block_pair_constructed": false
+    },
+    {
+      "target_order": 2676,
+      "source_order": 3,
+      "block_order": 892,
+      "source_available": true,
+      "block_pair_constructed": false
+    },
+    {
+      "target_order": 7924,
+      "source_order": 7,
+      "block_order": 1132,
+      "source_available": true,
+      "block_pair_constructed": false
+    },
+    {
+      "target_order": 9716,
+      "source_order": 7,
+      "block_order": 1388,
+      "source_available": true,
+      "block_pair_constructed": false
+    },
+    {
+      "target_order": 5028,
+      "source_order": 3,
+      "block_order": 1676,
+      "source_available": true,
+      "block_pair_constructed": false
+    },
+    {
+      "target_order": 5748,
+      "source_order": 3,
+      "block_order": 1916,
+      "source_available": true,
+      "block_pair_constructed": false
+    },
+    {
+      "target_order": 5892,
+      "source_order": 3,
+      "block_order": 1964,
+      "source_available": true,
+      "block_pair_constructed": false
+    },
+    {
+      "target_order": 6852,
+      "source_order": 3,
+      "block_order": 2284,
+      "source_available": true,
+      "block_pair_constructed": false
+    },
+    {
+      "target_order": 6876,
+      "source_order": 3,
+      "block_order": 2292,
+      "source_available": true,
+      "block_pair_constructed": false
+    },
+    {
+      "target_order": 7572,
+      "source_order": 3,
+      "block_order": 2524,
+      "source_available": true,
+      "block_pair_constructed": false
+    },
+    {
+      "target_order": 7716,
+      "source_order": 3,
+      "block_order": 2572,
+      "source_available": true,
+      "block_pair_constructed": false
+    }
+  ],
+  "verified_unreal_source_orders_used_in_inverse_map": [
+    3,
+    7,
+    9,
+    13
+  ],
+  "shared_required_block_pairs": [
+    {
+      "block_order": 668,
+      "candidate_target_orders": [
+        4676,
+        8684
+      ],
+      "source_orders": [
+        7,
+        13
+      ],
+      "pair_constructed": false
+    },
+    {
+      "block_order": 716,
+      "candidate_target_orders": [
+        9308
+      ],
+      "source_orders": [
+        13
+      ],
+      "pair_constructed": false
+    },
+    {
+      "block_order": 764,
+      "candidate_target_orders": [
+        6876
+      ],
+      "source_orders": [
+        9
+      ],
+      "pair_constructed": false
+    },
+    {
+      "block_order": 892,
+      "candidate_target_orders": [
+        2676
+      ],
+      "source_orders": [
+        3
+      ],
+      "pair_constructed": false
+    },
+    {
+      "block_order": 1132,
+      "candidate_target_orders": [
+        7924
+      ],
+      "source_orders": [
+        7
+      ],
+      "pair_constructed": false
+    },
+    {
+      "block_order": 1388,
+      "candidate_target_orders": [
+        9716
+      ],
+      "source_orders": [
+        7
+      ],
+      "pair_constructed": false
+    },
+    {
+      "block_order": 1676,
+      "candidate_target_orders": [
+        5028
+      ],
+      "source_orders": [
+        3
+      ],
+      "pair_constructed": false
+    },
+    {
+      "block_order": 1916,
+      "candidate_target_orders": [
+        5748
+      ],
+      "source_orders": [
+        3
+      ],
+      "pair_constructed": false
+    },
+    {
+      "block_order": 1964,
+      "candidate_target_orders": [
+        5892
+      ],
+      "source_orders": [
+        3
+      ],
+      "pair_constructed": false
+    },
+    {
+      "block_order": 2284,
+      "candidate_target_orders": [
+        6852
+      ],
+      "source_orders": [
+        3
+      ],
+      "pair_constructed": false
+    },
+    {
+      "block_order": 2292,
+      "candidate_target_orders": [
+        6876
+      ],
+      "source_orders": [
+        3
+      ],
+      "pair_constructed": false
+    },
+    {
+      "block_order": 2524,
+      "candidate_target_orders": [
+        7572
+      ],
+      "source_orders": [
+        3
+      ],
+      "pair_constructed": false
+    },
+    {
+      "block_order": 2572,
+      "candidate_target_orders": [
+        7716
+      ],
+      "source_orders": [
+        3
+      ],
+      "pair_constructed": false
+    }
+  ],
+  "prime_block_operator_requirements": [
+    {
+      "block_order": 668,
+      "odd_prime": 167,
+      "operator_must_be_dense": true,
+      "allowed_reduced_denominators": [
+        2,
+        334
+      ],
+      "maximum_denominator_two_entries_per_row": 3,
+      "minimum_denominator_twice_prime_entries_per_row": 665,
+      "half_integral_operator_excluded": true,
+      "necessary_only": true
+    },
+    {
+      "block_order": 716,
+      "odd_prime": 179,
+      "operator_must_be_dense": true,
+      "allowed_reduced_denominators": [
+        2,
+        358
+      ],
+      "maximum_denominator_two_entries_per_row": 3,
+      "minimum_denominator_twice_prime_entries_per_row": 713,
+      "half_integral_operator_excluded": true,
+      "necessary_only": true
+    },
+    {
+      "block_order": 764,
+      "odd_prime": 191,
+      "operator_must_be_dense": true,
+      "allowed_reduced_denominators": [
+        2,
+        382
+      ],
+      "maximum_denominator_two_entries_per_row": 3,
+      "minimum_denominator_twice_prime_entries_per_row": 761,
+      "half_integral_operator_excluded": true,
+      "necessary_only": true
+    },
+    {
+      "block_order": 892,
+      "odd_prime": 223,
+      "operator_must_be_dense": true,
+      "allowed_reduced_denominators": [
+        2,
+        446
+      ],
+      "maximum_denominator_two_entries_per_row": 3,
+      "minimum_denominator_twice_prime_entries_per_row": 889,
+      "half_integral_operator_excluded": true,
+      "necessary_only": true
+    },
+    {
+      "block_order": 1132,
+      "odd_prime": 283,
+      "operator_must_be_dense": true,
+      "allowed_reduced_denominators": [
+        2,
+        566
+      ],
+      "maximum_denominator_two_entries_per_row": 3,
+      "minimum_denominator_twice_prime_entries_per_row": 1129,
+      "half_integral_operator_excluded": true,
+      "necessary_only": true
+    },
+    {
+      "block_order": 1388,
+      "odd_prime": 347,
+      "operator_must_be_dense": true,
+      "allowed_reduced_denominators": [
+        2,
+        694
+      ],
+      "maximum_denominator_two_entries_per_row": 3,
+      "minimum_denominator_twice_prime_entries_per_row": 1385,
+      "half_integral_operator_excluded": true,
+      "necessary_only": true
+    },
+    {
+      "block_order": 1676,
+      "odd_prime": 419,
+      "operator_must_be_dense": true,
+      "allowed_reduced_denominators": [
+        2,
+        838
+      ],
+      "maximum_denominator_two_entries_per_row": 3,
+      "minimum_denominator_twice_prime_entries_per_row": 1673,
+      "half_integral_operator_excluded": true,
+      "necessary_only": true
+    },
+    {
+      "block_order": 1916,
+      "odd_prime": 479,
+      "operator_must_be_dense": true,
+      "allowed_reduced_denominators": [
+        2,
+        958
+      ],
+      "maximum_denominator_two_entries_per_row": 3,
+      "minimum_denominator_twice_prime_entries_per_row": 1913,
+      "half_integral_operator_excluded": true,
+      "necessary_only": true
+    },
+    {
+      "block_order": 1964,
+      "odd_prime": 491,
+      "operator_must_be_dense": true,
+      "allowed_reduced_denominators": [
+        2,
+        982
+      ],
+      "maximum_denominator_two_entries_per_row": 3,
+      "minimum_denominator_twice_prime_entries_per_row": 1961,
+      "half_integral_operator_excluded": true,
+      "necessary_only": true
+    },
+    {
+      "block_order": 2284,
+      "odd_prime": 571,
+      "operator_must_be_dense": true,
+      "allowed_reduced_denominators": [
+        2,
+        1142
+      ],
+      "maximum_denominator_two_entries_per_row": 3,
+      "minimum_denominator_twice_prime_entries_per_row": 2281,
+      "half_integral_operator_excluded": true,
+      "necessary_only": true
+    },
+    {
+      "block_order": 2524,
+      "odd_prime": 631,
+      "operator_must_be_dense": true,
+      "allowed_reduced_denominators": [
+        2,
+        1262
+      ],
+      "maximum_denominator_two_entries_per_row": 3,
+      "minimum_denominator_twice_prime_entries_per_row": 2521,
+      "half_integral_operator_excluded": true,
+      "necessary_only": true
+    },
+    {
+      "block_order": 2572,
+      "odd_prime": 643,
+      "operator_must_be_dense": true,
+      "allowed_reduced_denominators": [
+        2,
+        1286
+      ],
+      "maximum_denominator_two_entries_per_row": 3,
+      "minimum_denominator_twice_prime_entries_per_row": 2569,
+      "half_integral_operator_excluded": true,
+      "necessary_only": true
+    }
+  ],
+  "selected_target": {
+    "real_order": 4676,
+    "factorization": "7 * 668",
+    "source_order": 7,
+    "block_order": 668,
+    "selected_source_name": "bh7-18:class-0",
+    "source_matrix_constructed": true,
+    "block_matrix_of_required_order_verified": true,
+    "required_block_pair_constructed": false,
+    "target_matrix_constructed": false,
+    "missing_identity": "P Q^T + Q P^T = 668 I, with P,Q real Hadamard blocks",
+    "required_operator_arithmetic": {
+      "block_order": 668,
+      "odd_prime": 167,
+      "operator_must_be_dense": true,
+      "allowed_reduced_denominators": [
+        2,
+        334
+      ],
+      "maximum_denominator_two_entries_per_row": 3,
+      "minimum_denominator_twice_prime_entries_per_row": 665,
+      "half_integral_operator_excluded": true,
+      "necessary_only": true
+    }
+  },
+  "order_seven_alphabet_inventory": [
+    {
+      "effective_phase": 6,
+      "cyclotomic_degree": 2,
+      "ambient_phase": 18,
+      "fixed_alphabet_class_count": 2,
+      "representation_degree_divides_block_order": true,
+      "certificate": "certificates/finite-butson/bh7-18.json"
+    },
+    {
+      "effective_phase": 7,
+      "cyclotomic_degree": 6,
+      "ambient_phase": 42,
+      "fixed_alphabet_class_count": 1,
+      "representation_degree_divides_block_order": false,
+      "certificate": "certificates/finite-butson/bh7-42.json"
+    },
+    {
+      "effective_phase": 12,
+      "cyclotomic_degree": 4,
+      "ambient_phase": 24,
+      "fixed_alphabet_class_count": 2,
+      "representation_degree_divides_block_order": true,
+      "certificate": "certificates/finite-butson/bh7-24.json"
+    },
+    {
+      "effective_phase": 18,
+      "cyclotomic_degree": 6,
+      "ambient_phase": 18,
+      "fixed_alphabet_class_count": 2,
+      "representation_degree_divides_block_order": false,
+      "certificate": "certificates/finite-butson/bh7-18.json"
+    },
+    {
+      "effective_phase": 24,
+      "cyclotomic_degree": 8,
+      "ambient_phase": 24,
+      "fixed_alphabet_class_count": 2,
+      "representation_degree_divides_block_order": false,
+      "certificate": "certificates/finite-butson/bh7-24.json"
+    },
+    {
+      "effective_phase": 30,
+      "cyclotomic_degree": 8,
+      "ambient_phase": 30,
+      "fixed_alphabet_class_count": 4,
+      "representation_degree_divides_block_order": false,
+      "certificate": "certificates/finite-butson/bh7-30.json"
+    },
+    {
+      "effective_phase": 36,
+      "cyclotomic_degree": 12,
+      "ambient_phase": 36,
+      "fixed_alphabet_class_count": 2,
+      "representation_degree_divides_block_order": false,
+      "certificate": "certificates/finite-butson/bh7-36.json"
+    },
+    {
+      "effective_phase": 42,
+      "cyclotomic_degree": 12,
+      "ambient_phase": 42,
+      "fixed_alphabet_class_count": 6,
+      "representation_degree_divides_block_order": false,
+      "certificate": "certificates/finite-butson/bh7-42.json"
+    },
+    {
+      "effective_phase": 48,
+      "cyclotomic_degree": 16,
+      "ambient_phase": 48,
+      "fixed_alphabet_class_count": 4,
+      "representation_degree_divides_block_order": false,
+      "certificate": "certificates/finite-butson/bh7-48.json"
+    }
+  ],
+  "compatible_torsion_points": [
+    {
+      "name": "bh7-18:class-0",
+      "certificate": "certificates/finite-butson/bh7-18.json",
+      "certificate_sha256": "24c072d470a327e6392b7d2066564ffdbc5d762388aef1874dcdaaf0c00fa566",
+      "class_index": 0,
+      "phase": 6,
+      "source_order": 7,
+      "row_phase_shifts": [
+        0,
+        0,
+        0,
+        1,
+        1,
+        0,
+        0
+      ],
+      "column_phase_shifts": [
+        1,
+        1,
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "gauge_row_cases_checked": 37,
+      "exponents": [
+        [
+          1,
+          1,
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          2,
+          4,
+          4,
+          4,
+          5
+        ],
+        [
+          1,
+          2,
+          5,
+          1,
+          1,
+          4,
+          4
+        ],
+        [
+          2,
+          4,
+          2,
+          1,
+          5,
+          2,
+          4
+        ],
+        [
+          2,
+          5,
+          1,
+          5,
+          1,
+          4,
+          2
+        ],
+        [
+          1,
+          5,
+          4,
+          2,
+          4,
+          5,
+          2
+        ],
+        [
+          1,
+          5,
+          4,
+          5,
+          2,
+          1,
+          5
+        ]
+      ],
+      "source_gram_exactly_verified": true,
+      "entry_domain": "mu_6 minus mu_2",
+      "source_entries_use_entire_domain": true
+    },
+    {
+      "name": "bh7-18:class-1",
+      "certificate": "certificates/finite-butson/bh7-18.json",
+      "certificate_sha256": "24c072d470a327e6392b7d2066564ffdbc5d762388aef1874dcdaaf0c00fa566",
+      "class_index": 1,
+      "phase": 6,
+      "source_order": 7,
+      "row_phase_shifts": [
+        0,
+        0,
+        1,
+        0,
+        0,
+        1,
+        1
+      ],
+      "column_phase_shifts": [
+        1,
+        2,
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      "gauge_row_cases_checked": 86,
+      "exponents": [
+        [
+          1,
+          2,
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          2,
+          2,
+          4,
+          4,
+          4,
+          5
+        ],
+        [
+          2,
+          4,
+          1,
+          1,
+          2,
+          5,
+          4
+        ],
+        [
+          1,
+          4,
+          5,
+          2,
+          5,
+          2,
+          5
+        ],
+        [
+          1,
+          5,
+          1,
+          5,
+          4,
+          1,
+          2
+        ],
+        [
+          2,
+          1,
+          5,
+          5,
+          2,
+          1,
+          5
+        ],
+        [
+          2,
+          1,
+          5,
+          2,
+          4,
+          5,
+          2
+        ]
+      ],
+      "source_gram_exactly_verified": true,
+      "entry_domain": "mu_6 minus mu_2",
+      "source_entries_use_entire_domain": true
+    },
+    {
+      "name": "bh7-24:class-2",
+      "certificate": "certificates/finite-butson/bh7-24.json",
+      "certificate_sha256": "73d4511de10069e5ff52a59139083228a545089a183a1ae80dc1978bc75d5963",
+      "class_index": 2,
+      "phase": 12,
+      "source_order": 7,
+      "row_phase_shifts": [
+        0,
+        0,
+        0,
+        2,
+        2,
+        0,
+        0
+      ],
+      "column_phase_shifts": [
+        2,
+        2,
+        1,
+        1,
+        1,
+        1,
+        2
+      ],
+      "gauge_row_cases_checked": 73,
+      "exponents": [
+        [
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          2
+        ],
+        [
+          2,
+          2,
+          1,
+          5,
+          7,
+          7,
+          10
+        ],
+        [
+          2,
+          4,
+          7,
+          11,
+          2,
+          8,
+          8
+        ],
+        [
+          4,
+          8,
+          1,
+          11,
+          10,
+          4,
+          8
+        ],
+        [
+          4,
+          10,
+          11,
+          7,
+          2,
+          8,
+          4
+        ],
+        [
+          2,
+          10,
+          5,
+          2,
+          8,
+          10,
+          5
+        ],
+        [
+          2,
+          10,
+          5,
+          8,
+          4,
+          2,
+          11
+        ]
+      ],
+      "source_gram_exactly_verified": true,
+      "entry_domain": "mu_12 minus mu_4",
+      "source_entries_use_entire_domain": true
+    },
+    {
+      "name": "bh7-24:class-3",
+      "certificate": "certificates/finite-butson/bh7-24.json",
+      "certificate_sha256": "73d4511de10069e5ff52a59139083228a545089a183a1ae80dc1978bc75d5963",
+      "class_index": 3,
+      "phase": 12,
+      "source_order": 7,
+      "row_phase_shifts": [
+        0,
+        0,
+        1,
+        0,
+        1,
+        1,
+        1
+      ],
+      "column_phase_shifts": [
+        1,
+        1,
+        2,
+        1,
+        2,
+        2,
+        2
+      ],
+      "gauge_row_cases_checked": 95,
+      "exponents": [
+        [
+          1,
+          1,
+          2,
+          1,
+          2,
+          2,
+          2
+        ],
+        [
+          1,
+          1,
+          2,
+          5,
+          8,
+          8,
+          10
+        ],
+        [
+          2,
+          4,
+          11,
+          10,
+          4,
+          10,
+          7
+        ],
+        [
+          1,
+          5,
+          8,
+          1,
+          11,
+          5,
+          10
+        ],
+        [
+          2,
+          8,
+          1,
+          8,
+          10,
+          4,
+          5
+        ],
+        [
+          2,
+          10,
+          7,
+          7,
+          4,
+          2,
+          10
+        ],
+        [
+          2,
+          10,
+          7,
+          1,
+          8,
+          10,
+          4
+        ]
+      ],
+      "source_gram_exactly_verified": true,
+      "entry_domain": "mu_12 minus mu_4",
+      "source_entries_use_entire_domain": true
+    }
+  ],
+  "additional_verified_unreal_sixth_root_sources": [
+    {
+      "name": "unreal-order-nine-by-tripling",
+      "source_order": 9,
+      "phase": 6,
+      "construction": "A'=B tensor J3, B'=A tensor I3+B tensor C3; source order 3",
+      "known_family_reference": "https://link.springer.com/article/10.1007/s10623-015-0045-y",
+      "exponents": [
+        [
+          4,
+          4,
+          2,
+          5,
+          1,
+          5,
+          5,
+          1,
+          5
+        ],
+        [
+          2,
+          4,
+          4,
+          5,
+          5,
+          1,
+          5,
+          5,
+          1
+        ],
+        [
+          4,
+          2,
+          4,
+          1,
+          5,
+          5,
+          1,
+          5,
+          5
+        ],
+        [
+          5,
+          1,
+          5,
+          4,
+          4,
+          2,
+          5,
+          1,
+          5
+        ],
+        [
+          5,
+          5,
+          1,
+          2,
+          4,
+          4,
+          5,
+          5,
+          1
+        ],
+        [
+          1,
+          5,
+          5,
+          4,
+          2,
+          4,
+          1,
+          5,
+          5
+        ],
+        [
+          5,
+          1,
+          5,
+          5,
+          1,
+          5,
+          4,
+          4,
+          2
+        ],
+        [
+          5,
+          5,
+          1,
+          5,
+          5,
+          1,
+          2,
+          4,
+          4
+        ],
+        [
+          1,
+          5,
+          5,
+          1,
+          5,
+          5,
+          4,
+          2,
+          4
+        ]
+      ],
+      "source_gram_exactly_verified": true,
+      "entry_domain": "mu_6 minus mu_2"
+    },
+    {
+      "name": "catalogue-M13A-unreal-gauge",
+      "source_order": 13,
+      "phase": 6,
+      "source_url": "https://raw.githubusercontent.com/matrix-toolbox/chm/main/CHM/M13A.m",
+      "seed": "experiments/scalar_lift/bh13_6_seed.json",
+      "seed_sha256": "8ff8f10160828e8cc0372ecb045fca397aaf5c44c8f0db06d7aad1ebcb8cf003",
+      "row_phase_shifts": [
+        0,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "column_phase_shifts": [
+        1,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2,
+        2
+      ],
+      "exponents": [
+        [
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        [
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          5,
+          5,
+          5,
+          4,
+          4,
+          4
+        ],
+        [
+          2,
+          2,
+          2,
+          4,
+          5,
+          5,
+          5,
+          1,
+          1,
+          1,
+          4,
+          4,
+          1
+        ],
+        [
+          2,
+          4,
+          4,
+          5,
+          1,
+          1,
+          4,
+          1,
+          5,
+          5,
+          2,
+          2,
+          1
+        ],
+        [
+          2,
+          4,
+          4,
+          1,
+          5,
+          5,
+          1,
+          4,
+          1,
+          1,
+          2,
+          2,
+          5
+        ],
+        [
+          2,
+          4,
+          1,
+          1,
+          2,
+          4,
+          5,
+          5,
+          2,
+          4,
+          1,
+          5,
+          1
+        ],
+        [
+          2,
+          5,
+          1,
+          4,
+          1,
+          4,
+          2,
+          4,
+          5,
+          1,
+          5,
+          1,
+          2
+        ],
+        [
+          2,
+          5,
+          1,
+          5,
+          4,
+          2,
+          1,
+          1,
+          4,
+          2,
+          1,
+          4,
+          5
+        ],
+        [
+          2,
+          5,
+          1,
+          2,
+          5,
+          1,
+          4,
+          2,
+          1,
+          4,
+          5,
+          1,
+          4
+        ],
+        [
+          2,
+          1,
+          4,
+          1,
+          4,
+          2,
+          5,
+          5,
+          4,
+          2,
+          5,
+          1,
+          1
+        ],
+        [
+          2,
+          1,
+          5,
+          4,
+          4,
+          1,
+          2,
+          4,
+          1,
+          5,
+          1,
+          5,
+          2
+        ],
+        [
+          2,
+          1,
+          5,
+          5,
+          2,
+          4,
+          1,
+          1,
+          2,
+          4,
+          4,
+          1,
+          5
+        ],
+        [
+          2,
+          1,
+          5,
+          2,
+          1,
+          5,
+          4,
+          2,
+          4,
+          1,
+          1,
+          5,
+          4
+        ]
+      ],
+      "source_gram_exactly_verified": true,
+      "entry_domain": "mu_6 minus mu_2"
+    }
+  ],
+  "twelfth_root_branch_requires_at_least_the_sixth_root_pair": true,
+  "inverse_theorem": {
+    "necessary_and_sufficient_block_conditions": "PP^T=QQ^T=dI and PQ^T+QP^T=dI, with all entries +/-1",
+    "representation": "rho(zeta_6)=Q P^T/d",
+    "frame": "Z=P-Q",
+    "substitution": {
+      "1": "P",
+      "2": "Q",
+      "4": "-P",
+      "5": "-Q"
+    },
+    "output": "real Hadamard of order dn for every admitted BH(n,6)"
+  },
+  "verified_known_668_blocks": {
+    "source_url": "https://hadamard-668.vercel.app/hadamard-668.pdf",
+    "source_data_sha256": "4bd4f2e3621608fd8faa2b07aae7e9597c7e11f87522031b1115af51719a440f",
+    "base_binary_sha256": "19f435b31eb6561dd97356b761e9b0f174824e42c215c33fbafc20f9b1b20744",
+    "switched_binary_sha256": "08428eb6779986c50ee2997584daa5c87e00520cc1e6f62d7793dc519f85ea45",
+    "published_hashes_match": true,
+    "pair_conditions": {
+      "block_order": 668,
+      "first_is_hadamard": true,
+      "second_is_hadamard": true,
+      "diagonal_angle_condition": false,
+      "cross_symmetric_identity": false,
+      "required_diagonal_row_distance": "668/4",
+      "observed_diagonal_row_distance_counts": {
+        "0": 498,
+        "4": 166,
+        "166": 4
+      },
+      "valid": false
+    },
+    "hall_variant_binary_sha256": [
+      "19f435b31eb6561dd97356b761e9b0f174824e42c215c33fbafc20f9b1b20744",
+      "08428eb6779986c50ee2997584daa5c87e00520cc1e6f62d7793dc519f85ea45",
+      "5d60ea6cf7d851f1467f1bebdce6dce6f79fe68d8998a11fe62759f8ec6d6cd6",
+      "5ed78ccb8070c4d4bd48716808100263e714b544014dd197c782cf62c0a68978",
+      "dc7946617cda6a1160adf0eb80b6b01407c282969482e73805755acd39c77a46",
+      "45417e232b5e7e7c140c456ce420a38f98ed2223c43865cf831e6cc32599e351",
+      "3bf712d7687332f94a85fa79ce1d883daa7648b9d03e8b575564d41179bcae4d",
+      "6173119cad4b5a3643aa2a418f7dea22f5a6d8838fc4e8d9dfb63934baa42e32",
+      "32810f3aa082ca0034e18075d70a33cf243d02736c5447f5385774bd61b112b8",
+      "e10b1ffdd1f369ed5242b329fed15f60979e33b618f20b57e2afdcfeb845b89a",
+      "5d446b7064c44b337834d16706fa51bb215ca72283cc36571ccb20ce73d0f785",
+      "32de4f9c822be43949035882a4652bf9c471d0309bd8c6f660cb80e669a8f1e6",
+      "9cf8283201bb316b38d69e51c2b0c43e14c3ceb8349d0b757488dfacbaa472b5",
+      "cb7fd4991cb34b3bbaa208f410ccfaf9a276b6f44e71b11f1009af0b1d667a8b",
+      "88293242c0e0bf8b491943ef1f8d34595b33719d7cdf72515df350b0a8f9815c",
+      "979e17fdfb6ef5f8a8b5e4e01be03427cb634b60de566aee9feeb93285fb6464"
+    ],
+    "all_sixteen_variants_exactly_hadamard": true,
+    "row_negative_count_parity": 0,
+    "all_labelled_hall_pairs_excluded_by_row_parity": true,
+    "minimum_one_sided_column_sign_changes_necessary_without_column_permutation": 163,
+    "exclusion_scope": "also independent signed row permutations and shared column operations; independent column operations are not ruled out"
+  },
+  "control_block_pair": {
+    "P": [
+      [
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        -1,
+        1,
+        1,
+        -1
+      ],
+      [
+        -1,
+        -1,
+        1,
+        1
+      ],
+      [
+        -1,
+        1,
+        -1,
+        1
+      ]
+    ],
+    "Q": [
+      [
+        -1,
+        1,
+        1,
+        1
+      ],
+      [
+        -1,
+        -1,
+        1,
+        -1
+      ],
+      [
+        -1,
+        -1,
+        -1,
+        1
+      ],
+      [
+        -1,
+        1,
+        -1,
+        -1
+      ]
+    ],
+    "conditions": {
+      "block_order": 4,
+      "first_is_hadamard": true,
+      "second_is_hadamard": true,
+      "diagonal_angle_condition": true,
+      "cross_symmetric_identity": true,
+      "required_diagonal_row_distance": "4/4",
+      "observed_diagonal_row_distance_counts": {
+        "1": 4
+      },
+      "valid": true
+    }
+  },
+  "denominator_six_control_block_pair": {
+    "P": [
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        1,
+        -1,
+        -1,
+        -1,
+        1,
+        -1
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        -1,
+        1,
+        -1,
+        -1,
+        1,
+        1,
+        -1,
+        -1
+      ],
+      [
+        1,
+        1,
+        1,
+        -1,
+        1,
+        1,
+        -1,
+        1,
+        -1,
+        -1,
+        -1,
+        1
+      ],
+      [
+        -1,
+        -1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        -1,
+        1,
+        -1,
+        1
+      ],
+      [
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        1,
+        -1,
+        -1,
+        1,
+        -1,
+        1,
+        1
+      ],
+      [
+        1,
+        -1,
+        -1,
+        1,
+        1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        -1
+      ],
+      [
+        -1,
+        1,
+        1,
+        -1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        -1
+      ],
+      [
+        1,
+        1,
+        -1,
+        1,
+        1,
+        -1,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        1
+      ],
+      [
+        1,
+        -1,
+        1,
+        1,
+        -1,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        1,
+        1
+      ],
+      [
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        -1,
+        -1,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        -1,
+        1,
+        1,
+        1,
+        -1,
+        -1,
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        -1,
+        -1,
+        -1,
+        1,
+        1,
+        -1,
+        -1,
+        1,
+        1,
+        1
+      ]
+    ],
+    "Q": [
+      [
+        -1,
+        1,
+        1,
+        1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        1,
+        -1
+      ],
+      [
+        1,
+        -1,
+        1,
+        -1,
+        -1,
+        1,
+        -1,
+        -1,
+        -1,
+        1,
+        -1,
+        -1
+      ],
+      [
+        1,
+        1,
+        -1,
+        -1,
+        1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        -1,
+        1
+      ],
+      [
+        -1,
+        1,
+        1,
+        -1,
+        1,
+        1,
+        1,
+        -1,
+        -1,
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        -1,
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        -1,
+        1,
+        1,
+        1,
+        -1,
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        1,
+        -1,
+        1,
+        1,
+        -1,
+        1,
+        1,
+        -1,
+        1,
+        -1
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        1,
+        -1,
+        -1
+      ],
+      [
+        1,
+        1,
+        1,
+        1,
+        -1,
+        1,
+        1,
+        1,
+        -1,
+        -1,
+        -1,
+        1
+      ],
+      [
+        1,
+        -1,
+        1,
+        -1,
+        -1,
+        -1,
+        1,
+        -1,
+        1,
+        -1,
+        1,
+        1
+      ],
+      [
+        -1,
+        1,
+        1,
+        -1,
+        -1,
+        -1,
+        -1,
+        1,
+        1,
+        1,
+        -1,
+        1
+      ],
+      [
+        1,
+        1,
+        -1,
+        -1,
+        -1,
+        -1,
+        1,
+        1,
+        -1,
+        1,
+        1,
+        -1
+      ]
+    ],
+    "conditions": {
+      "block_order": 12,
+      "first_is_hadamard": true,
+      "second_is_hadamard": true,
+      "diagonal_angle_condition": true,
+      "cross_symmetric_identity": true,
+      "required_diagonal_row_distance": "12/4",
+      "observed_diagonal_row_distance_counts": {
+        "3": 12
+      },
+      "valid": true
+    },
+    "operator_arithmetic": {
+      "block_order": 12,
+      "operator": "Q P^T / d",
+      "zero_entries": 0,
+      "reduced_denominator_counts_per_row": [
+        {
+          "2": 3,
+          "6": 9
+        },
+        {
+          "2": 3,
+          "6": 9
+        },
+        {
+          "2": 3,
+          "6": 9
+        },
+        {
+          "2": 3,
+          "6": 9
+        },
+        {
+          "2": 3,
+          "6": 9
+        },
+        {
+          "2": 3,
+          "6": 9
+        },
+        {
+          "2": 3,
+          "6": 9
+        },
+        {
+          "2": 3,
+          "6": 9
+        },
+        {
+          "2": 3,
+          "6": 9
+        },
+        {
+          "2": 3,
+          "6": 9
+        },
+        {
+          "2": 3,
+          "6": 9
+        },
+        {
+          "2": 3,
+          "6": 9
+        }
+      ]
+    },
+    "prime_block_bound": {
+      "block_order": 12,
+      "odd_prime": 3,
+      "operator_must_be_dense": true,
+      "allowed_reduced_denominators": [
+        2,
+        6
+      ],
+      "maximum_denominator_two_entries_per_row": 3,
+      "minimum_denominator_twice_prime_entries_per_row": 9,
+      "half_integral_operator_excluded": true,
+      "necessary_only": true
+    },
+    "arithmetic_bound_attained_in_every_row": true,
+    "field_equations_exactly_verified": true
+  },
+  "known_order_controls": [
+    {
+      "name": "order-three source",
+      "real_order": 12,
+      "dense_integer_grams_valid": true,
+      "known_order_control": true
+    },
+    {
+      "name": "bh7-18:class-0",
+      "real_order": 28,
+      "dense_integer_grams_valid": true,
+      "known_order_control": true
+    },
+    {
+      "name": "bh7-18:class-1",
+      "real_order": 28,
+      "dense_integer_grams_valid": true,
+      "known_order_control": true
+    },
+    {
+      "name": "unreal-order-nine-by-tripling",
+      "real_order": 36,
+      "dense_integer_grams_valid": true,
+      "known_order_control": true
+    },
+    {
+      "name": "catalogue-M13A-unreal-gauge",
+      "real_order": 52,
+      "dense_integer_grams_valid": true,
+      "known_order_control": true
+    },
+    {
+      "name": "order-three source",
+      "block_order": 12,
+      "real_order": 36,
+      "dense_integer_grams_valid": true,
+      "known_order_control": true
+    },
+    {
+      "name": "bh7-18:class-0",
+      "block_order": 12,
+      "real_order": 84,
+      "dense_integer_grams_valid": true,
+      "known_order_control": true
+    },
+    {
+      "name": "unreal-order-nine-by-tripling",
+      "block_order": 12,
+      "real_order": 108,
+      "dense_integer_grams_valid": true,
+      "known_order_control": true
+    },
+    {
+      "name": "catalogue-M13A-unreal-gauge",
+      "block_order": 12,
+      "real_order": 156,
+      "dense_integer_grams_valid": true,
+      "known_order_control": true
+    }
+  ],
+  "new_real_hadamard_order_claimed": false
+}

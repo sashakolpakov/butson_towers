@@ -1,0 +1,530 @@
+{
+  "schema": "cyclotomic-tree-gates-v1",
+  "target_source_order": 1499,
+  "complete_source_gates": [
+    {
+      "source_order": 1499,
+      "root_conductor": 120,
+      "canonical_field_conductor": 120,
+      "root_alphabet_conductor_preserved": 120,
+      "applies_only_to_complete_Butson_sources": true,
+      "excluded": false,
+      "status": "NO_OBSTRUCTION_FROM_THESE_TESTS",
+      "obstructions": [],
+      "prime_checks": [
+        {
+          "prime": 1499,
+          "valuation_in_n": 1,
+          "valuation_in_n_to_n": 1499,
+          "unramified": true,
+          "self_conjugacy_witness": null,
+          "status": "NO_OBSTRUCTION_FROM_THIS_PRIME"
+        }
+      ],
+      "ramified_primes_not_tested": [],
+      "existence_asserted": false,
+      "applicable_to_sparse_or_weighted_restriction_coefficients": false
+    },
+    {
+      "source_order": 1499,
+      "root_conductor": 60,
+      "canonical_field_conductor": 60,
+      "root_alphabet_conductor_preserved": 60,
+      "applies_only_to_complete_Butson_sources": true,
+      "excluded": true,
+      "status": "EXCLUDED_BY_NECESSARY_CONDITION",
+      "obstructions": [
+        {
+          "kind": "unramified_self_conjugate_determinant_norm",
+          "prime": 1499,
+          "valuation_in_n": 1,
+          "valuation_in_n_to_n": 1499,
+          "unramified": true,
+          "self_conjugacy_witness": {
+            "field_modulus": 60,
+            "Frobenius_power": 1,
+            "residue": 59,
+            "conjugation_is_identity": false
+          },
+          "status": "ODD_SELF_CONJUGATE_NORM_VALUATION",
+          "proof": "det(H)*conj(det(H))=n^n; a conjugation-fixed unramified prime ideal has even valuation on the left and the recorded odd valuation on the right."
+        }
+      ],
+      "prime_checks": [
+        {
+          "prime": 1499,
+          "valuation_in_n": 1,
+          "valuation_in_n_to_n": 1499,
+          "unramified": true,
+          "self_conjugacy_witness": {
+            "field_modulus": 60,
+            "Frobenius_power": 1,
+            "residue": 59,
+            "conjugation_is_identity": false
+          },
+          "status": "ODD_SELF_CONJUGATE_NORM_VALUATION"
+        }
+      ],
+      "ramified_primes_not_tested": [],
+      "existence_asserted": false,
+      "applicable_to_sparse_or_weighted_restriction_coefficients": false
+    },
+    {
+      "source_order": 1499,
+      "root_conductor": 40,
+      "canonical_field_conductor": 40,
+      "root_alphabet_conductor_preserved": 40,
+      "applies_only_to_complete_Butson_sources": true,
+      "excluded": false,
+      "status": "NO_OBSTRUCTION_FROM_THESE_TESTS",
+      "obstructions": [],
+      "prime_checks": [
+        {
+          "prime": 1499,
+          "valuation_in_n": 1,
+          "valuation_in_n_to_n": 1499,
+          "unramified": true,
+          "self_conjugacy_witness": null,
+          "status": "NO_OBSTRUCTION_FROM_THIS_PRIME"
+        }
+      ],
+      "ramified_primes_not_tested": [],
+      "existence_asserted": false,
+      "applicable_to_sparse_or_weighted_restriction_coefficients": false
+    },
+    {
+      "source_order": 1499,
+      "root_conductor": 24,
+      "canonical_field_conductor": 24,
+      "root_alphabet_conductor_preserved": 24,
+      "applies_only_to_complete_Butson_sources": true,
+      "excluded": false,
+      "status": "NO_OBSTRUCTION_FROM_THESE_TESTS",
+      "obstructions": [],
+      "prime_checks": [
+        {
+          "prime": 1499,
+          "valuation_in_n": 1,
+          "valuation_in_n_to_n": 1499,
+          "unramified": true,
+          "self_conjugacy_witness": null,
+          "status": "NO_OBSTRUCTION_FROM_THIS_PRIME"
+        }
+      ],
+      "ramified_primes_not_tested": [],
+      "existence_asserted": false,
+      "applicable_to_sparse_or_weighted_restriction_coefficients": false
+    },
+    {
+      "source_order": 1499,
+      "root_conductor": 20,
+      "canonical_field_conductor": 20,
+      "root_alphabet_conductor_preserved": 20,
+      "applies_only_to_complete_Butson_sources": true,
+      "excluded": true,
+      "status": "EXCLUDED_BY_NECESSARY_CONDITION",
+      "obstructions": [
+        {
+          "kind": "unramified_self_conjugate_determinant_norm",
+          "prime": 1499,
+          "valuation_in_n": 1,
+          "valuation_in_n_to_n": 1499,
+          "unramified": true,
+          "self_conjugacy_witness": {
+            "field_modulus": 20,
+            "Frobenius_power": 1,
+            "residue": 19,
+            "conjugation_is_identity": false
+          },
+          "status": "ODD_SELF_CONJUGATE_NORM_VALUATION",
+          "proof": "det(H)*conj(det(H))=n^n; a conjugation-fixed unramified prime ideal has even valuation on the left and the recorded odd valuation on the right."
+        }
+      ],
+      "prime_checks": [
+        {
+          "prime": 1499,
+          "valuation_in_n": 1,
+          "valuation_in_n_to_n": 1499,
+          "unramified": true,
+          "self_conjugacy_witness": {
+            "field_modulus": 20,
+            "Frobenius_power": 1,
+            "residue": 19,
+            "conjugation_is_identity": false
+          },
+          "status": "ODD_SELF_CONJUGATE_NORM_VALUATION"
+        }
+      ],
+      "ramified_primes_not_tested": [],
+      "existence_asserted": false,
+      "applicable_to_sparse_or_weighted_restriction_coefficients": false
+    },
+    {
+      "source_order": 1499,
+      "root_conductor": 12,
+      "canonical_field_conductor": 12,
+      "root_alphabet_conductor_preserved": 12,
+      "applies_only_to_complete_Butson_sources": true,
+      "excluded": true,
+      "status": "EXCLUDED_BY_NECESSARY_CONDITION",
+      "obstructions": [
+        {
+          "kind": "unramified_self_conjugate_determinant_norm",
+          "prime": 1499,
+          "valuation_in_n": 1,
+          "valuation_in_n_to_n": 1499,
+          "unramified": true,
+          "self_conjugacy_witness": {
+            "field_modulus": 12,
+            "Frobenius_power": 1,
+            "residue": 11,
+            "conjugation_is_identity": false
+          },
+          "status": "ODD_SELF_CONJUGATE_NORM_VALUATION",
+          "proof": "det(H)*conj(det(H))=n^n; a conjugation-fixed unramified prime ideal has even valuation on the left and the recorded odd valuation on the right."
+        }
+      ],
+      "prime_checks": [
+        {
+          "prime": 1499,
+          "valuation_in_n": 1,
+          "valuation_in_n_to_n": 1499,
+          "unramified": true,
+          "self_conjugacy_witness": {
+            "field_modulus": 12,
+            "Frobenius_power": 1,
+            "residue": 11,
+            "conjugation_is_identity": false
+          },
+          "status": "ODD_SELF_CONJUGATE_NORM_VALUATION"
+        }
+      ],
+      "ramified_primes_not_tested": [],
+      "existence_asserted": false,
+      "applicable_to_sparse_or_weighted_restriction_coefficients": false
+    },
+    {
+      "source_order": 1499,
+      "root_conductor": 8,
+      "canonical_field_conductor": 8,
+      "root_alphabet_conductor_preserved": 8,
+      "applies_only_to_complete_Butson_sources": true,
+      "excluded": true,
+      "status": "EXCLUDED_BY_NECESSARY_CONDITION",
+      "obstructions": [
+        {
+          "kind": "odd_order_dyadic_alphabet",
+          "proof": "Modulo the prime above2 every dyadic root is1; an odd-length row inner product cannot vanish."
+        }
+      ],
+      "prime_checks": [
+        {
+          "prime": 1499,
+          "valuation_in_n": 1,
+          "valuation_in_n_to_n": 1499,
+          "unramified": true,
+          "self_conjugacy_witness": null,
+          "status": "NO_OBSTRUCTION_FROM_THIS_PRIME"
+        }
+      ],
+      "ramified_primes_not_tested": [],
+      "existence_asserted": false,
+      "applicable_to_sparse_or_weighted_restriction_coefficients": false
+    },
+    {
+      "source_order": 1499,
+      "root_conductor": 30,
+      "canonical_field_conductor": 15,
+      "root_alphabet_conductor_preserved": 30,
+      "applies_only_to_complete_Butson_sources": true,
+      "excluded": true,
+      "status": "EXCLUDED_BY_NECESSARY_CONDITION",
+      "obstructions": [
+        {
+          "kind": "unramified_self_conjugate_determinant_norm",
+          "prime": 1499,
+          "valuation_in_n": 1,
+          "valuation_in_n_to_n": 1499,
+          "unramified": true,
+          "self_conjugacy_witness": {
+            "field_modulus": 15,
+            "Frobenius_power": 1,
+            "residue": 14,
+            "conjugation_is_identity": false
+          },
+          "status": "ODD_SELF_CONJUGATE_NORM_VALUATION",
+          "proof": "det(H)*conj(det(H))=n^n; a conjugation-fixed unramified prime ideal has even valuation on the left and the recorded odd valuation on the right."
+        }
+      ],
+      "prime_checks": [
+        {
+          "prime": 1499,
+          "valuation_in_n": 1,
+          "valuation_in_n_to_n": 1499,
+          "unramified": true,
+          "self_conjugacy_witness": {
+            "field_modulus": 15,
+            "Frobenius_power": 1,
+            "residue": 14,
+            "conjugation_is_identity": false
+          },
+          "status": "ODD_SELF_CONJUGATE_NORM_VALUATION"
+        }
+      ],
+      "ramified_primes_not_tested": [],
+      "existence_asserted": false,
+      "applicable_to_sparse_or_weighted_restriction_coefficients": false
+    }
+  ],
+  "restriction_metadata": [
+    {
+      "source_order_retained": 1499,
+      "original_root_alphabet_conductor": 120,
+      "original_root_alphabet_must_be_inherited_unchanged": true,
+      "coefficient_field_conductor_as_requested": 120,
+      "original_canonical_field_conductor": 120,
+      "coefficient_canonical_field_conductor": 120,
+      "original_field_degree": 32,
+      "coefficient_field_degree": 32,
+      "relative_degree": 1,
+      "basis_kind": "SAME_FIELD_OR_IDENTITY_WITH_ORIGINAL_ROOT_ALPHABET",
+      "lower_complete_Butson_source_asserted": false,
+      "apply_complete_source_gate_to_this_coefficient_node": false,
+      "reconstruction_requires_original_admitted_block_alphabet": true,
+      "restriction_requires_adjoint_trace_metric": true
+    },
+    {
+      "source_order_retained": 1499,
+      "original_root_alphabet_conductor": 120,
+      "original_root_alphabet_must_be_inherited_unchanged": true,
+      "coefficient_field_conductor_as_requested": 60,
+      "original_canonical_field_conductor": 120,
+      "coefficient_canonical_field_conductor": 60,
+      "original_field_degree": 32,
+      "coefficient_field_degree": 16,
+      "relative_degree": 2,
+      "basis_kind": "BINOMIAL_POWER_BASIS",
+      "lower_complete_Butson_source_asserted": false,
+      "apply_complete_source_gate_to_this_coefficient_node": false,
+      "reconstruction_requires_original_admitted_block_alphabet": true,
+      "restriction_requires_adjoint_trace_metric": true
+    },
+    {
+      "source_order_retained": 1499,
+      "original_root_alphabet_conductor": 120,
+      "original_root_alphabet_must_be_inherited_unchanged": true,
+      "coefficient_field_conductor_as_requested": 40,
+      "original_canonical_field_conductor": 120,
+      "coefficient_canonical_field_conductor": 40,
+      "original_field_degree": 32,
+      "coefficient_field_degree": 16,
+      "relative_degree": 2,
+      "basis_kind": "COPRIME_PRIME_CYCLOTOMIC_BASIS",
+      "lower_complete_Butson_source_asserted": false,
+      "apply_complete_source_gate_to_this_coefficient_node": false,
+      "reconstruction_requires_original_admitted_block_alphabet": true,
+      "restriction_requires_adjoint_trace_metric": true
+    },
+    {
+      "source_order_retained": 1499,
+      "original_root_alphabet_conductor": 120,
+      "original_root_alphabet_must_be_inherited_unchanged": true,
+      "coefficient_field_conductor_as_requested": 24,
+      "original_canonical_field_conductor": 120,
+      "coefficient_canonical_field_conductor": 24,
+      "original_field_degree": 32,
+      "coefficient_field_degree": 8,
+      "relative_degree": 4,
+      "basis_kind": "COPRIME_PRIME_CYCLOTOMIC_BASIS",
+      "lower_complete_Butson_source_asserted": false,
+      "apply_complete_source_gate_to_this_coefficient_node": false,
+      "reconstruction_requires_original_admitted_block_alphabet": true,
+      "restriction_requires_adjoint_trace_metric": true
+    },
+    {
+      "source_order_retained": 1499,
+      "original_root_alphabet_conductor": 120,
+      "original_root_alphabet_must_be_inherited_unchanged": true,
+      "coefficient_field_conductor_as_requested": 8,
+      "original_canonical_field_conductor": 120,
+      "coefficient_canonical_field_conductor": 8,
+      "original_field_degree": 32,
+      "coefficient_field_degree": 4,
+      "relative_degree": 8,
+      "basis_kind": "COMPOSITE_RESTRICTION_REQUIRES_EXPLICIT_BASIS",
+      "lower_complete_Butson_source_asserted": false,
+      "apply_complete_source_gate_to_this_coefficient_node": false,
+      "reconstruction_requires_original_admitted_block_alphabet": true,
+      "restriction_requires_adjoint_trace_metric": true
+    }
+  ],
+  "same_field_different_alphabet_control": {
+    "source_order_retained": 1499,
+    "original_root_alphabet_conductor": 30,
+    "original_root_alphabet_must_be_inherited_unchanged": true,
+    "coefficient_field_conductor_as_requested": 15,
+    "original_canonical_field_conductor": 15,
+    "coefficient_canonical_field_conductor": 15,
+    "original_field_degree": 8,
+    "coefficient_field_degree": 8,
+    "relative_degree": 1,
+    "basis_kind": "SAME_FIELD_OR_IDENTITY_WITH_ORIGINAL_ROOT_ALPHABET",
+    "lower_complete_Butson_source_asserted": false,
+    "apply_complete_source_gate_to_this_coefficient_node": false,
+    "reconstruction_requires_original_admitted_block_alphabet": true,
+    "restriction_requires_adjoint_trace_metric": true
+  },
+  "nonexclusion_controls": [
+    {
+      "source_order": 15,
+      "root_conductor": 120,
+      "canonical_field_conductor": 120,
+      "root_alphabet_conductor_preserved": 120,
+      "applies_only_to_complete_Butson_sources": true,
+      "excluded": false,
+      "status": "NO_OBSTRUCTION_FROM_THESE_TESTS",
+      "obstructions": [],
+      "prime_checks": [
+        {
+          "prime": 3,
+          "valuation_in_n": 1,
+          "valuation_in_n_to_n": 15,
+          "status": "RAMIFIED_CASE_NOT_TESTED"
+        },
+        {
+          "prime": 5,
+          "valuation_in_n": 1,
+          "valuation_in_n_to_n": 15,
+          "status": "RAMIFIED_CASE_NOT_TESTED"
+        }
+      ],
+      "ramified_primes_not_tested": [
+        3,
+        5
+      ],
+      "existence_asserted": false,
+      "applicable_to_sparse_or_weighted_restriction_coefficients": false
+    },
+    {
+      "source_order": 35,
+      "root_conductor": 120,
+      "canonical_field_conductor": 120,
+      "root_alphabet_conductor_preserved": 120,
+      "applies_only_to_complete_Butson_sources": true,
+      "excluded": false,
+      "status": "NO_OBSTRUCTION_FROM_THESE_TESTS",
+      "obstructions": [],
+      "prime_checks": [
+        {
+          "prime": 5,
+          "valuation_in_n": 1,
+          "valuation_in_n_to_n": 35,
+          "status": "RAMIFIED_CASE_NOT_TESTED"
+        },
+        {
+          "prime": 7,
+          "valuation_in_n": 1,
+          "valuation_in_n_to_n": 35,
+          "unramified": true,
+          "self_conjugacy_witness": null,
+          "status": "NO_OBSTRUCTION_FROM_THIS_PRIME"
+        }
+      ],
+      "ramified_primes_not_tested": [
+        5
+      ],
+      "existence_asserted": false,
+      "applicable_to_sparse_or_weighted_restriction_coefficients": false
+    },
+    {
+      "source_order": 7,
+      "root_conductor": 12,
+      "canonical_field_conductor": 12,
+      "root_alphabet_conductor_preserved": 12,
+      "applies_only_to_complete_Butson_sources": true,
+      "excluded": false,
+      "status": "NO_OBSTRUCTION_FROM_THESE_TESTS",
+      "obstructions": [],
+      "prime_checks": [
+        {
+          "prime": 7,
+          "valuation_in_n": 1,
+          "valuation_in_n_to_n": 7,
+          "unramified": true,
+          "self_conjugacy_witness": null,
+          "status": "NO_OBSTRUCTION_FROM_THIS_PRIME"
+        }
+      ],
+      "ramified_primes_not_tested": [],
+      "existence_asserted": false,
+      "applicable_to_sparse_or_weighted_restriction_coefficients": false
+    },
+    {
+      "source_order": 3,
+      "root_conductor": 3,
+      "canonical_field_conductor": 3,
+      "root_alphabet_conductor_preserved": 3,
+      "applies_only_to_complete_Butson_sources": true,
+      "excluded": false,
+      "status": "NO_OBSTRUCTION_FROM_THESE_TESTS",
+      "obstructions": [],
+      "prime_checks": [
+        {
+          "prime": 3,
+          "valuation_in_n": 1,
+          "valuation_in_n_to_n": 3,
+          "status": "RAMIFIED_CASE_NOT_TESTED"
+        }
+      ],
+      "ramified_primes_not_tested": [
+        3
+      ],
+      "existence_asserted": false,
+      "applicable_to_sparse_or_weighted_restriction_coefficients": false
+    },
+    {
+      "source_order": 4,
+      "root_conductor": 3,
+      "canonical_field_conductor": 3,
+      "root_alphabet_conductor_preserved": 3,
+      "applies_only_to_complete_Butson_sources": true,
+      "excluded": false,
+      "status": "NO_OBSTRUCTION_FROM_THESE_TESTS",
+      "obstructions": [],
+      "prime_checks": [
+        {
+          "prime": 2,
+          "valuation_in_n": 2,
+          "valuation_in_n_to_n": 8,
+          "unramified": true,
+          "self_conjugacy_witness": {
+            "field_modulus": 3,
+            "Frobenius_power": 1,
+            "residue": 2,
+            "conjugation_is_identity": false
+          },
+          "status": "NO_OBSTRUCTION_FROM_THIS_PRIME"
+        }
+      ],
+      "ramified_primes_not_tested": [],
+      "existence_asserted": false,
+      "applicable_to_sparse_or_weighted_restriction_coefficients": false
+    },
+    {
+      "source_order": 1,
+      "root_conductor": 1,
+      "canonical_field_conductor": 1,
+      "root_alphabet_conductor_preserved": 1,
+      "applies_only_to_complete_Butson_sources": true,
+      "excluded": false,
+      "status": "NO_OBSTRUCTION_FROM_THESE_TESTS",
+      "obstructions": [],
+      "prime_checks": [],
+      "ramified_primes_not_tested": [],
+      "existence_asserted": false,
+      "applicable_to_sparse_or_weighted_restriction_coefficients": false
+    }
+  ],
+  "ramified_determinant_cases_deliberately_not_pruned": true,
+  "passing_a_gate_asserts_existence": false
+}

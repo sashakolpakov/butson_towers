@@ -1,0 +1,37 @@
+[build-system]
+requires = ["setuptools>=77"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "butson-towers"
+version = "0.1.0"
+description = "Exact scalar restrictions, transported trace forms and flat Hadamard endpoints"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "MIT"
+authors = [{name = "Alexander Kolpakov"}]
+dependencies = ["numpy>=1.26", "sympy>=1.12"]
+
+[project.optional-dependencies]
+search = ["ortools>=9.10"]
+native = ["python-flint>=0.7"]
+dev = ["pytest>=8", "setuptools>=77"]
+
+[project.urls]
+"Starting reference" = "https://arxiv.org/abs/2610.28394"
+"Scalar-embedding reference" = "https://arxiv.org/abs/1904.10771"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.setuptools.package-data]
+hadamard = ["py.typed"]
+
+[tool.pytest.ini_options]
+addopts = "-ra"
+testpaths = ["tests"]
+markers = [
+  "native: requires optional native dependencies",
+  "pari: requires optional cypari2/PARI",
+  "singular: requires a standalone Singular executable",
+]

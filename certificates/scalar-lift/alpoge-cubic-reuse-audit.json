@@ -1,0 +1,51 @@
+{
+  "schema": "published-h716-natural-cubic-chart-audit-v1",
+  "source_matrix_binary_sha256": "88aac92b04ab2d664d81cf8872c4543c1657755f4008d129826cf9e7561078ee",
+  "row_partition": "channel f contains border row f followed by its178 core rows",
+  "scalar_action": "R=(I+L_i+L_j+L_k)/2 tensor I_179",
+  "twice_local_action": [
+    [
+      1,
+      -1,
+      -1,
+      -1
+    ],
+    [
+      1,
+      1,
+      -1,
+      1
+    ],
+    [
+      1,
+      1,
+      1,
+      -1
+    ],
+    [
+      1,
+      -1,
+      1,
+      1
+    ]
+  ],
+  "scalar_action_is_orthogonal": true,
+  "scalar_polynomial_R_squared_minus_R_plus_I": true,
+  "complete_image_entry_counts": {
+    "-2": 32478,
+    "-1": 127016,
+    "0": 192000,
+    "1": 129640,
+    "2": 31522
+  },
+  "complete_quartet_product_counts": {
+    "-1": 64000,
+    "1": 64164
+  },
+  "image_is_integer": true,
+  "image_Gram_scale": 716,
+  "image_all_signs": false,
+  "all_signed_row_quartetings_excluded_by_closed_quadruple_parity": true,
+  "arbitrary_dense_rational_scalar_operator_excluded": false,
+  "new_source_construction_or_tree_edge_performed": false
+}

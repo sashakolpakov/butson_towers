@@ -1,0 +1,326 @@
+{
+  "classification_reused": "docs/VANISHING_KNOWN_CATALOGUE.md",
+  "complete_scope": "odd integer relations for conductors supported on primes2,3,5",
+  "new_source_or_Hadamard_constructed": false,
+  "nonuniform_coordinate_maps_excluded": false,
+  "proof": "docs/SCALAR_RESTRICTION_OBSTRUCTIONS.md",
+  "schema": "uniform-scalar-restriction-obstructions-v1",
+  "sources": [
+    {
+      "actual_root_occurrences": [
+        {
+          "actual_entry_exponent": 0,
+          "coefficient": 1,
+          "column": 0,
+          "exponent": 0,
+          "row": 0
+        },
+        {
+          "actual_entry_exponent": 4,
+          "coefficient": -1,
+          "column": 73,
+          "exponent": 4,
+          "row": 0
+        },
+        {
+          "actual_entry_exponent": 20,
+          "coefficient": -1,
+          "column": 1,
+          "exponent": 20,
+          "row": 0
+        }
+      ],
+      "alphabet_gate": {
+        "complete_for_odd_integer_relations": true,
+        "embedding_modulus": 120,
+        "excluded": true,
+        "field_towers_or_bases_enumerated": false,
+        "minimal_positive_atom": [
+          0,
+          40,
+          80
+        ],
+        "nonuniform_coordinate_maps_excluded": false,
+        "phase": 24,
+        "profiles_checked": 1,
+        "reason": "exact integer scalar relation has odd coefficient sum",
+        "relation": {
+          "coefficient_sum": -1,
+          "odd_coefficient_sum": true,
+          "signed_weight": 3,
+          "terms": [
+            {
+              "coefficient": 1,
+              "exponent": 0
+            },
+            {
+              "coefficient": -1,
+              "exponent": 4
+            },
+            {
+              "coefficient": -1,
+              "exponent": 20
+            }
+          ],
+          "zero_integral_vector": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "scope": "every uniform Q-linear map of the actual scalar alphabet to equally sized sign blocks, including all scalar-restriction towers, uniform input/output basis choices, and representation multiplicities",
+        "source_row_column_gauges_searched": false,
+        "status": "EXCLUDED",
+        "used_alphabet": [
+          0,
+          3,
+          4,
+          6,
+          9,
+          12,
+          15,
+          18,
+          20,
+          21
+        ]
+      },
+      "full_source_Gram_previously_verified": true,
+      "order": 5329,
+      "phase": 24,
+      "source_hash": "9fb43c3f1b634271b97b3555cfcf82df70c45a8479e6bf3ae450e2b7fe65fd39",
+      "source_id": "character-73",
+      "source_proof_sha256": "196a7741373e731c401a396008848cd61daa85823257f90a1b9dde58de2ea35a"
+    },
+    {
+      "actual_root_occurrences": [
+        {
+          "actual_entry_exponent": 0,
+          "coefficient": 1,
+          "column": 0,
+          "exponent": 0,
+          "row": 0
+        },
+        {
+          "actual_entry_exponent": 20,
+          "coefficient": -1,
+          "column": 241,
+          "exponent": 20,
+          "row": 0
+        },
+        {
+          "actual_entry_exponent": 100,
+          "coefficient": -1,
+          "column": 1,
+          "exponent": 100,
+          "row": 0
+        }
+      ],
+      "alphabet_gate": {
+        "complete_for_odd_integer_relations": true,
+        "embedding_modulus": 120,
+        "excluded": true,
+        "field_towers_or_bases_enumerated": false,
+        "minimal_positive_atom": [
+          0,
+          40,
+          80
+        ],
+        "nonuniform_coordinate_maps_excluded": false,
+        "phase": 120,
+        "profiles_checked": 1,
+        "reason": "exact integer scalar relation has odd coefficient sum",
+        "relation": {
+          "coefficient_sum": -1,
+          "odd_coefficient_sum": true,
+          "signed_weight": 3,
+          "terms": [
+            {
+              "coefficient": 1,
+              "exponent": 0
+            },
+            {
+              "coefficient": -1,
+              "exponent": 20
+            },
+            {
+              "coefficient": -1,
+              "exponent": 100
+            }
+          ],
+          "zero_integral_vector": [
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0,
+            0
+          ]
+        },
+        "scope": "every uniform Q-linear map of the actual scalar alphabet to equally sized sign blocks, including all scalar-restriction towers, uniform input/output basis choices, and representation multiplicities",
+        "source_row_column_gauges_searched": false,
+        "status": "EXCLUDED",
+        "used_alphabet": [
+          0,
+          3,
+          6,
+          9,
+          12,
+          15,
+          18,
+          20,
+          21,
+          24,
+          27,
+          30,
+          33,
+          36,
+          39,
+          42,
+          45,
+          48,
+          51,
+          54,
+          57,
+          60,
+          63,
+          66,
+          69,
+          72,
+          75,
+          78,
+          81,
+          84,
+          87,
+          90,
+          93,
+          96,
+          99,
+          100,
+          102,
+          105,
+          108,
+          111,
+          114,
+          117
+        ]
+      },
+      "full_source_Gram_previously_verified": true,
+      "order": 58081,
+      "phase": 120,
+      "source_hash": "2727bcce79fb6b53f12e9806de9a7780c800fda608cac5da062c439707b59efe",
+      "source_id": "character-241",
+      "source_proof_sha256": "32b35f16941de61443c34ac0b04c3ac3dadc429a39b741eb265607d37e1a6d4a"
+    },
+    {
+      "actual_root_occurrences": [],
+      "alphabet_gate": {
+        "complete_for_odd_integer_relations": true,
+        "embedding_modulus": 120,
+        "excluded": false,
+        "field_towers_or_bases_enumerated": false,
+        "nonuniform_coordinate_maps_excluded": false,
+        "phase": 8,
+        "profiles_checked": 30,
+        "reason": "no odd integer relation",
+        "scope": "every uniform Q-linear map of the actual scalar alphabet to equally sized sign blocks, including all scalar-restriction towers, uniform input/output basis choices, and representation multiplicities",
+        "sign_flattenability_proved": false,
+        "source_row_column_gauges_searched": false,
+        "status": "SKIP",
+        "used_alphabet": [
+          0,
+          1,
+          2,
+          4,
+          5,
+          6
+        ]
+      },
+      "full_source_Gram_previously_verified": true,
+      "order": 1000,
+      "phase": 8,
+      "source_hash": "8d81fa6b5d50e1998266752391643abbd0bb90a862a86a3f463a177567529ff7",
+      "source_id": "conference-1000-q8",
+      "source_proof_sha256": "1c0ef7fed352ea24639e1fe8ced06774093dddfb4f5e31678af25ae127f8b77a"
+    },
+    {
+      "actual_root_occurrences": [],
+      "alphabet_gate": {
+        "complete_for_odd_integer_relations": true,
+        "embedding_modulus": 120,
+        "excluded": false,
+        "field_towers_or_bases_enumerated": false,
+        "nonuniform_coordinate_maps_excluded": false,
+        "phase": 120,
+        "profiles_checked": 120,
+        "reason": "no odd integer relation",
+        "scope": "every uniform Q-linear map of the actual scalar alphabet to equally sized sign blocks, including all scalar-restriction towers, uniform input/output basis choices, and representation multiplicities",
+        "sign_flattenability_proved": false,
+        "source_row_column_gauges_searched": false,
+        "status": "SKIP",
+        "used_alphabet": [
+          10,
+          15,
+          22,
+          25,
+          27,
+          30,
+          34,
+          37,
+          39,
+          42,
+          49,
+          54,
+          70,
+          75,
+          82,
+          85,
+          87,
+          90,
+          94,
+          97,
+          99,
+          102,
+          109,
+          114
+        ]
+      },
+      "full_source_Gram_previously_verified": true,
+      "order": 35,
+      "phase": 120,
+      "source_hash": "638d35e54741708bf48f798fbe79956a8b93173e40d556d154d87f84e9ec90ea",
+      "source_id": "common120-35",
+      "source_proof_sha256": "b1f155263dc6084b745eb6df594a4b2b82eae83763fbf744fcd2c5000c7a9d6f"
+    }
+  ]
+}

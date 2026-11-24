@@ -1,0 +1,335 @@
+{
+  "schema": "larger-exact-orbit-completion-certificate-v1",
+  "target_real_order": 4792,
+  "source_order": 1198,
+  "phase": 6,
+  "multiplier_order": 13,
+  "profile": [
+    1,
+    -26,
+    14,
+    13
+  ],
+  "actual_frozen_full_energy": 9841,
+  "compressed_energy": 1514,
+  "search_hashes": {
+    "experiments/scalar_lift/cyclotomic_orbit_two_move.cpp": "271d5983b148ae473e6918106090e361fe43f078186662261114a70c2e937a51",
+    "experiments/scalar_lift/cyclotomic_orbit_two_move.py": "2cda2b37f0dce90fac31bdcc0a6ca3fcaec4c6499181fa19c34fe787e8b8813c",
+    "experiments/scalar_lift/cyclotomic_orbit_two_move_base.inc": "c58115ceeeb90c4fb6976202d07868812040958137960f1cb044425a9b333e19",
+    "experiments/scalar_lift/cyclotomic_orbit_window.py": "14865ee6bd2004d37d39915f1899afe5e82636a4ad597e648202eefd21765384",
+    "experiments/scalar_lift/quaternary_pair_search.cpp": "36c3d0d02c6284164dee918387e84f24295bc5bb8fdc5c85177863c3ff5024e8",
+    "artifacts/uniform-od-search/cyclotomic_orbit_two_move-v1.cpp": "65b56796c7dfecd10d8d1f845eed97877718c4739d62ed9481c52748dfecae00",
+    "artifacts/uniform-od-search/cyclotomic_orbit_two_move-v2.cpp": "540cb39222865c139526a503cdb845bed9197982138086e031a138a19a70d1e5",
+    "artifacts/uniform-od-search/cyclotomic_orbit_two_move-v1": "d1479a1668b777812c1e6c2038932662eef98b8be5c23eca38798563097ead51",
+    "artifacts/uniform-od-search/cyclotomic_orbit_two_move-v2": "9dc1fddfade8dcd955223010a7152ac7d2f26bdcaa9be6c34634eceee3bfed20",
+    "artifacts/uniform-od-search/cyclotomic_orbit_two_move": "5f265fb697c325cbc0d047a73b1b260105747d6ae46f88781961c324fe2f8a38"
+  },
+  "actual_neighborhood_runs": [
+    {
+      "path": "search-state/orbit-two-move-20261123-case3/result.json",
+      "sha256": "b549f8a90ea8476c51a0f2ba300e3f2a676e07ddf01b65f07c985cc7c3f215ea",
+      "before": 9841,
+      "after": 9841,
+      "stats": {
+        "schema": "orbit-two-move-row-nearest-pairs-v1",
+        "input_compressed_energy": 1514,
+        "output_compressed_energy": 1514,
+        "cpu_seconds": 0.681618,
+        "wall_seconds": 0.6817205,
+        "maximum_candidate_data_bytes": 1039350,
+        "budget_hit": false,
+        "all_unretained_joint_products_exhausted": false,
+        "rounds": [
+          {
+            "before_energy": 1514,
+            "after_energy": 1514,
+            "first_move_candidates": [
+              1325,
+              1324
+            ],
+            "row_compositions_evaluated": [
+              1755857,
+              1753672
+            ],
+            "full_two_move_row_neighborhoods_exhausted": [
+              true,
+              true
+            ],
+            "minimum_row_only_energy_changes": [
+              0,
+              0
+            ],
+            "distinct_retained_candidates": [
+              1025,
+              1025
+            ],
+            "retained_pair_distances_evaluated": 1050625,
+            "retained_product_exhausted": true,
+            "selected_row_only_energy_changes": [
+              0,
+              0
+            ]
+          }
+        ],
+        "native_checkpoint_parent_mutated": false,
+        "new_design_claimed": false
+      }
+    },
+    {
+      "path": "search-state/orbit-two-move-20261123-case3-wide/result.json",
+      "sha256": "96782ffc4ad3e0e7de86311cbacdd13633969d78a18fb88836db71878b0e3c38",
+      "before": 9841,
+      "after": 9841,
+      "stats": {
+        "schema": "orbit-two-move-row-nearest-pairs-v1",
+        "input_compressed_energy": 1514,
+        "output_compressed_energy": 1514,
+        "cpu_seconds": 3.04538,
+        "wall_seconds": 3.045846958,
+        "maximum_candidate_data_bytes": 8307702,
+        "budget_hit": false,
+        "all_unretained_joint_products_exhausted": false,
+        "rounds": [
+          {
+            "before_energy": 1514,
+            "after_energy": 1514,
+            "first_move_candidates": [
+              1325,
+              1324
+            ],
+            "row_compositions_evaluated": [
+              1755857,
+              1753672
+            ],
+            "full_two_move_row_neighborhoods_exhausted": [
+              true,
+              true
+            ],
+            "minimum_row_only_energy_changes": [
+              0,
+              0
+            ],
+            "distinct_retained_candidates": [
+              8193,
+              8193
+            ],
+            "retained_pair_distances_evaluated": 67125249,
+            "retained_product_exhausted": true,
+            "selected_row_only_energy_changes": [
+              0,
+              0
+            ]
+          }
+        ],
+        "native_checkpoint_parent_mutated": false,
+        "new_design_claimed": false
+      }
+    },
+    {
+      "path": "search-state/orbit-two-move-20261123-case3-deep/result.json",
+      "sha256": "0f5451e52797d351ecda2b28dc9bba1c891fb55c5fb7b823f1ab0ef0b6eedc57",
+      "before": 9841,
+      "after": 9841,
+      "stats": {
+        "schema": "orbit-two-move-row-nearest-pairs-v1",
+        "input_compressed_energy": 1514,
+        "output_compressed_energy": 1514,
+        "cpu_seconds": 3.330761,
+        "wall_seconds": 3.332243083,
+        "maximum_candidate_data_bytes": 4154358,
+        "budget_hit": false,
+        "maximum_move_depth": 6,
+        "beam_width": 128,
+        "all_unretained_joint_products_exhausted": false,
+        "rounds": [
+          {
+            "before_energy": 1514,
+            "after_energy": 1514,
+            "first_move_candidates": [
+              1325,
+              1324
+            ],
+            "row_compositions_evaluated": [
+              1755857,
+              1753672
+            ],
+            "full_two_move_row_neighborhoods_exhausted": [
+              true,
+              true
+            ],
+            "minimum_row_only_energy_changes": [
+              0,
+              0
+            ],
+            "deeper_beam_move_evaluations": [
+              679080,
+              680628
+            ],
+            "beam_depth_reached": [
+              6,
+              6
+            ],
+            "distinct_retained_candidates": [
+              4097,
+              4097
+            ],
+            "retained_pair_distances_evaluated": 16785409,
+            "retained_product_exhausted": true,
+            "selected_row_only_energy_changes": [
+              0,
+              0
+            ]
+          }
+        ],
+        "native_checkpoint_parent_mutated": false,
+        "new_design_claimed": false
+      }
+    },
+    {
+      "path": "search-state/orbit-two-move-20261123-case3-balanced/result.json",
+      "sha256": "4dd4409db11db7a0880eb1e8ec48105daf2f1b926f18307f53c17a5c3017e5fb",
+      "before": 9841,
+      "after": 9841,
+      "stats": {
+        "schema": "orbit-two-move-row-nearest-pairs-v1",
+        "input_compressed_energy": 1514,
+        "output_compressed_energy": 1514,
+        "cpu_seconds": 10.031318,
+        "wall_seconds": 10.03484046,
+        "maximum_candidate_data_bytes": 8438790,
+        "budget_hit": false,
+        "maximum_move_depth": 8,
+        "beam_width": 256,
+        "balanced_half_defect_ranking": true,
+        "all_unretained_joint_products_exhausted": false,
+        "rounds": [
+          {
+            "before_energy": 1514,
+            "after_energy": 1514,
+            "first_move_candidates": [
+              1325,
+              1324
+            ],
+            "row_compositions_evaluated": [
+              1755857,
+              1753672
+            ],
+            "full_two_move_row_neighborhoods_exhausted": [
+              true,
+              true
+            ],
+            "minimum_row_only_energy_changes": [
+              0,
+              0
+            ],
+            "deeper_beam_move_evaluations": [
+              2037152,
+              2042916
+            ],
+            "beam_depth_reached": [
+              8,
+              8
+            ],
+            "distinct_retained_candidates": [
+              8193,
+              8193
+            ],
+            "retained_pair_distances_evaluated": 67125249,
+            "retained_product_exhausted": true,
+            "selected_row_only_energy_changes": [
+              0,
+              0
+            ]
+          }
+        ],
+        "native_checkpoint_parent_mutated": false,
+        "new_design_claimed": false
+      }
+    }
+  ],
+  "local_exact_solver_windows": [
+    {
+      "directory": "search-state/orbit-two-move-20261123-case3/window-energy24",
+      "status": "FEASIBLE",
+      "mode": "energy",
+      "free_variables": 24,
+      "cpu_seconds": 9.988869,
+      "zero_excluded_in_window": false,
+      "after": {
+        "all_expanded_shifts_and_invariance_verified": true,
+        "best_energy": 1514,
+        "source_order": 1198,
+        "endpoint_order": 4792,
+        "actual_variables": 92,
+        "full_half_shift_energy": 9841,
+        "new_order_claimed": false
+      },
+      "files": {
+        "response.txt": "2690b4e0f3642d2a1a76a48179c976c5da08557374d29454e382d331a1f52595",
+        "result.json": "8539162c08c5fcdf8c524d32810372fa075d8436f536bfb167a4a52e315c5ced",
+        "candidate-native.json": "8b82b98846a50ef21ac5063b1dcec5f0d6650eb3a09f217be0ce5a56d5d7db5a",
+        "parent-report.json": "bd831710582d484c02f6926719bc9c610c975a05940ed0c14620514db260ee23",
+        "model.pbtxt": "1f8267f99aace363256b8e4e8b8da9ffd59c75424f1773f387a52c51b32f7566",
+        "solver.log": "a679c47f9cb8ee1c7d9a13bfe54ca92fa3c7b8a2f75b0ccd294f1e340db1f374"
+      }
+    },
+    {
+      "directory": "search-state/orbit-two-move-20261123-case3/window-zero16",
+      "status": "INFEASIBLE",
+      "mode": "zero",
+      "free_variables": 16,
+      "cpu_seconds": 0.14305899999999994,
+      "zero_excluded_in_window": true,
+      "after": null,
+      "files": {
+        "response.txt": "f3efe349c65226d6313d184161391ed8ad7b3a4e10a0e7a96a9382155f973aab",
+        "result.json": "071fb71fdb407ff0c98fe90f34d4d4e122afe75b711954ff2392eb7714d78dae",
+        "parent-report.json": "bd831710582d484c02f6926719bc9c610c975a05940ed0c14620514db260ee23",
+        "model.pbtxt": "48439194c9ea7f887e44614e3e7f55d6c43f93fcb72e47001c37ba454dca603a",
+        "solver.log": "d91ec9615e1aa53d5d09637964c6a1327afae0a80142cd85bb3a06605d845e95"
+      }
+    },
+    {
+      "directory": "search-state/orbit-two-move-20261123-case3/window-zero16-targeted",
+      "status": "INFEASIBLE",
+      "mode": "zero",
+      "free_variables": 16,
+      "cpu_seconds": 0.34479099999999996,
+      "zero_excluded_in_window": true,
+      "after": null,
+      "files": {
+        "response.txt": "895b831c1a11abe770b0c7e40ed0ecd0dabea0a23a9105388f2c4929cfa2c179",
+        "result.json": "36c2be1a865700dd475d0d73afff40526a50a9e735ed9a38b7c3c3a880265f89",
+        "parent-report.json": "bd831710582d484c02f6926719bc9c610c975a05940ed0c14620514db260ee23",
+        "model.pbtxt": "bfc3353967074bed316c184d4803d632a00f70b1fd2075abf6c199218bea10f9",
+        "solver.log": "368814cf084bb87d6c8b3b231283e4ca49f992aa7bd9d95c8316196ae0980bec"
+      }
+    }
+  ],
+  "actual_native_cpu_seconds": 17.089077,
+  "actual_CP_solver_cpu_seconds": 10.476719,
+  "new_unknown_Hadamard_constructed": false,
+  "large_state_improved": false,
+  "each_entire_two_move_row_neighborhood_excludes_improvement": true,
+  "all_retained_pair_products_exhausted": true,
+  "entire_joint_two_move_by_two_move_product_exhausted": false,
+  "deeper_beam_levels_exhaustive": false,
+  "independent_UNSAT_proof_checker_used": false,
+  "positive_p7_m3_profiles_control_energies": [
+    [
+      24,
+      0
+    ],
+    [
+      6,
+      0
+    ]
+  ],
+  "positive_controls_have_full_H56_proofs": true,
+  "tests_passed": 6,
+  "independent_read_only_code_audit_found_no_substantive_bug": true,
+  "live_production_files_mutated": false,
+  "neighborhoods_overlap_not_deduplicated": true,
+  "captured_original_orbit_source_sha256": "b909d48f71dbf50d5fe50fde25b368d4693a0671205695954b2f0981e6b471cc",
+  "base_snapshot_reconstructs_captured_source_except_main_rename": true
+}

@@ -1,0 +1,707 @@
+{
+  "schema": "verified-literal-williamson-inputs-v1",
+  "source_reference": {
+    "id": "sage_official_literal_table",
+    "url": "https://github.com/sagemath/sage/blob/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py#L577",
+    "raw_url": "https://raw.githubusercontent.com/sagemath/sage/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py",
+    "commit": "8de8dad7bcb38e1baa43508cbe944bf04a2d0401",
+    "commit_date": "2026-11-14",
+    "source_sha256": "15b018c9d25cfbe1a45f98ee1421b338beb2b39077c6777e6bc33bc0fbd4b01d",
+    "function": "williamson_type_quadruples_smallcases",
+    "documentation_url": "https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/matrices/hadamard_matrix.html#sage.combinat.matrices.hadamard_matrix.williamson_type_quadruples_smallcases",
+    "documented_original_sources": "Sage attributes orders 3,5,...,29,37,43 to [Ha83], and 31,33,39,41,45,49,51,55,57,61,63 to [Lon2013]."
+  },
+  "symbol_encoding": {
+    "+": 1,
+    "-": -1
+  },
+  "entries": [
+    {
+      "order": 1,
+      "first_rows_pm": [
+        "+",
+        "+",
+        "+",
+        "+"
+      ],
+      "circulant_entry_formula": "M_k[i,j]=first_rows[k][(j-i) mod w]",
+      "source_reference": "sage_official_literal_table",
+      "original_reference_key": "trivial",
+      "row_sums": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "first_rows_int8_row_major_sha256": "27ecd0a598e76f8a2fd264d427df0a119903e8eae384e478902541756f089dd1",
+      "verification": {
+        "full_summed_integer_Gram": "4 I_1",
+        "full_pairwise_amicability_checked": true,
+        "all_entries_are_signs": true,
+        "all_four_symmetric": true
+      }
+    },
+    {
+      "order": 3,
+      "first_rows_pm": [
+        "+++",
+        "+--",
+        "+--",
+        "+--"
+      ],
+      "circulant_entry_formula": "M_k[i,j]=first_rows[k][(j-i) mod w]",
+      "source_reference": "sage_official_literal_table",
+      "original_reference_key": "Ha83",
+      "row_sums": [
+        3,
+        -1,
+        -1,
+        -1
+      ],
+      "first_rows_int8_row_major_sha256": "7fe7ffe6ccac570f04ed305e09cbf24ea834394b81bc3ae799552fab399fd2df",
+      "verification": {
+        "full_summed_integer_Gram": "12 I_3",
+        "full_pairwise_amicability_checked": true,
+        "all_entries_are_signs": true,
+        "all_four_symmetric": true
+      }
+    },
+    {
+      "order": 5,
+      "first_rows_pm": [
+        "+-++-",
+        "++--+",
+        "+----",
+        "+----"
+      ],
+      "circulant_entry_formula": "M_k[i,j]=first_rows[k][(j-i) mod w]",
+      "source_reference": "sage_official_literal_table",
+      "original_reference_key": "Ha83",
+      "row_sums": [
+        1,
+        1,
+        -3,
+        -3
+      ],
+      "first_rows_int8_row_major_sha256": "5e15c1638cbff7f4e8a36f5a5c6eaadfabda994fdc29309d776e97841c4c2278",
+      "verification": {
+        "full_summed_integer_Gram": "20 I_5",
+        "full_pairwise_amicability_checked": true,
+        "all_entries_are_signs": true,
+        "all_four_symmetric": true
+      }
+    },
+    {
+      "order": 7,
+      "first_rows_pm": [
+        "+--++--",
+        "+-+--+-",
+        "++----+",
+        "+------"
+      ],
+      "circulant_entry_formula": "M_k[i,j]=first_rows[k][(j-i) mod w]",
+      "source_reference": "sage_official_literal_table",
+      "original_reference_key": "Ha83",
+      "row_sums": [
+        -1,
+        -1,
+        -1,
+        -5
+      ],
+      "first_rows_int8_row_major_sha256": "c37f26fa0f5ebde9ca04e8ce4da0ff6c10a7c644ba41633de9382659b8fcb624",
+      "verification": {
+        "full_summed_integer_Gram": "28 I_7",
+        "full_pairwise_amicability_checked": true,
+        "all_entries_are_signs": true,
+        "all_four_symmetric": true
+      }
+    },
+    {
+      "order": 9,
+      "first_rows_pm": [
+        "+---++---",
+        "+--+--+--",
+        "+-+----+-",
+        "++------+"
+      ],
+      "circulant_entry_formula": "M_k[i,j]=first_rows[k][(j-i) mod w]",
+      "source_reference": "sage_official_literal_table",
+      "original_reference_key": "Ha83",
+      "row_sums": [
+        -3,
+        -3,
+        -3,
+        -3
+      ],
+      "first_rows_int8_row_major_sha256": "f99ead7f1b67fa7f751b30d686656f5ed8b6178e0af27a0dc863abdb3f484e29",
+      "verification": {
+        "full_summed_integer_Gram": "36 I_9",
+        "full_pairwise_amicability_checked": true,
+        "all_entries_are_signs": true,
+        "all_four_symmetric": true
+      }
+    },
+    {
+      "order": 11,
+      "first_rows_pm": [
+        "++--------+",
+        "++-+-++-+-+",
+        "++-++--++-+",
+        "+-++----++-"
+      ],
+      "circulant_entry_formula": "M_k[i,j]=first_rows[k][(j-i) mod w]",
+      "source_reference": "sage_official_literal_table",
+      "original_reference_key": "Ha83",
+      "row_sums": [
+        -5,
+        3,
+        3,
+        -1
+      ],
+      "first_rows_int8_row_major_sha256": "3c3a907732388c240d9bb6ef7d1b2567ca0ccc30f9b1070a7cf4c4d4df75c44e",
+      "verification": {
+        "full_summed_integer_Gram": "44 I_11",
+        "full_pairwise_amicability_checked": true,
+        "all_entries_are_signs": true,
+        "all_four_symmetric": true
+      }
+    },
+    {
+      "order": 13,
+      "first_rows_pm": [
+        "++++-+--+-+++",
+        "+---+-++-+---",
+        "++---+--+---+",
+        "++---+--+---+"
+      ],
+      "circulant_entry_formula": "M_k[i,j]=first_rows[k][(j-i) mod w]",
+      "source_reference": "sage_official_literal_table",
+      "original_reference_key": "Ha83",
+      "row_sums": [
+        5,
+        -3,
+        -3,
+        -3
+      ],
+      "first_rows_int8_row_major_sha256": "058f283db7fbb6c95cf35647c962e43688da2c29272bc1680a548a5d546cd8c0",
+      "verification": {
+        "full_summed_integer_Gram": "52 I_13",
+        "full_pairwise_amicability_checked": true,
+        "all_entries_are_signs": true,
+        "all_four_symmetric": true
+      }
+    },
+    {
+      "order": 15,
+      "first_rows_pm": [
+        "+-+---++++---+-",
+        "++-++------++-+",
+        "++-++++--++++-+",
+        "++-++-+--+-++-+"
+      ],
+      "circulant_entry_formula": "M_k[i,j]=first_rows[k][(j-i) mod w]",
+      "source_reference": "sage_official_literal_table",
+      "original_reference_key": "Ha83",
+      "row_sums": [
+        -1,
+        -1,
+        7,
+        3
+      ],
+      "first_rows_int8_row_major_sha256": "991c5797b6ee8a4d471144ff9df3fe017fc6696db05a1ff12078675f87b6ba4a",
+      "verification": {
+        "full_summed_integer_Gram": "60 I_15",
+        "full_pairwise_amicability_checked": true,
+        "all_entries_are_signs": true,
+        "all_four_symmetric": true
+      }
+    },
+    {
+      "order": 17,
+      "first_rows_pm": [
+        "+---+++----+++---",
+        "++-+---+--+---+-+",
+        "+--+-++++++++-+--",
+        "+-++-+++--+++-++-"
+      ],
+      "circulant_entry_formula": "M_k[i,j]=first_rows[k][(j-i) mod w]",
+      "source_reference": "sage_official_literal_table",
+      "original_reference_key": "Ha83",
+      "row_sums": [
+        -3,
+        -3,
+        5,
+        5
+      ],
+      "first_rows_int8_row_major_sha256": "c4f2b0312348d225f1c8086369eaf34f75f7c09bd56ed8ec22b64ca9683dfc55",
+      "verification": {
+        "full_summed_integer_Gram": "68 I_17",
+        "full_pairwise_amicability_checked": true,
+        "all_entries_are_signs": true,
+        "all_four_symmetric": true
+      }
+    },
+    {
+      "order": 19,
+      "first_rows_pm": [
+        "++--+++-+--+-+++--+",
+        "++-++--+-++-+--++-+",
+        "+-+---++++++++---+-",
+        "++--+-++++++++-+--+"
+      ],
+      "circulant_entry_formula": "M_k[i,j]=first_rows[k][(j-i) mod w]",
+      "source_reference": "sage_official_literal_table",
+      "original_reference_key": "Ha83",
+      "row_sums": [
+        3,
+        3,
+        3,
+        7
+      ],
+      "first_rows_int8_row_major_sha256": "b8c7175fa8ec12e7394ef6aa53e1bbc0e084fd830da75ed20e33ce6dbd5b5990",
+      "verification": {
+        "full_summed_integer_Gram": "76 I_19",
+        "full_pairwise_amicability_checked": true,
+        "all_entries_are_signs": true,
+        "all_four_symmetric": true
+      }
+    },
+    {
+      "order": 21,
+      "first_rows_pm": [
+        "+--++++---++---++++--",
+        "++++-+---+--+---+-+++",
+        "++--+-+-++--++-+-+--+",
+        "++-+++++-+--+-+++++-+"
+      ],
+      "circulant_entry_formula": "M_k[i,j]=first_rows[k][(j-i) mod w]",
+      "source_reference": "sage_official_literal_table",
+      "original_reference_key": "Ha83",
+      "row_sums": [
+        1,
+        1,
+        1,
+        9
+      ],
+      "first_rows_int8_row_major_sha256": "7734972e0611b864466321bdc2ce84da32daa35ab020415aa722d3da4ea7d24c",
+      "verification": {
+        "full_summed_integer_Gram": "84 I_21",
+        "full_pairwise_amicability_checked": true,
+        "all_entries_are_signs": true,
+        "all_four_symmetric": true
+      }
+    },
+    {
+      "order": 23,
+      "first_rows_pm": [
+        "++---+---+-++-+---+---+",
+        "+-++-++--++++++--++-++-",
+        "+++---++-+-++-+-++---++",
+        "+++-+++-+------+-+++-++"
+      ],
+      "circulant_entry_formula": "M_k[i,j]=first_rows[k][(j-i) mod w]",
+      "source_reference": "sage_official_literal_table",
+      "original_reference_key": "Ha83",
+      "row_sums": [
+        -5,
+        7,
+        3,
+        3
+      ],
+      "first_rows_int8_row_major_sha256": "91d383f8f9a86c519c2c0984353243638024d6bdf96b3544eaaa44335df8158c",
+      "verification": {
+        "full_summed_integer_Gram": "92 I_23",
+        "full_pairwise_amicability_checked": true,
+        "all_entries_are_signs": true,
+        "all_four_symmetric": true
+      }
+    },
+    {
+      "order": 25,
+      "first_rows_pm": [
+        "++++-+-+-+--++--+-+-+-+++",
+        "++--+--+-++++++++-+--+--+",
+        "+++--+--++++--++++--+--++",
+        "+-+--+++--++++++--+++--+-"
+      ],
+      "circulant_entry_formula": "M_k[i,j]=first_rows[k][(j-i) mod w]",
+      "source_reference": "sage_official_literal_table",
+      "original_reference_key": "Ha83",
+      "row_sums": [
+        5,
+        5,
+        5,
+        5
+      ],
+      "first_rows_int8_row_major_sha256": "f5687d6e35658986a3060518627e2e2f4c89489663ca554041f7f3c3f915c103",
+      "verification": {
+        "full_summed_integer_Gram": "100 I_25",
+        "full_pairwise_amicability_checked": true,
+        "all_entries_are_signs": true,
+        "all_four_symmetric": true
+      }
+    },
+    {
+      "order": 27,
+      "first_rows_pm": [
+        "+--+--+-+++--++--+++-+--+--",
+        "+++-++-+---++--++---+-++-++",
+        "+---+++++-+-++++-+-+++++---",
+        "+---+++++-+-++++-+-+++++---"
+      ],
+      "circulant_entry_formula": "M_k[i,j]=first_rows[k][(j-i) mod w]",
+      "source_reference": "sage_official_literal_table",
+      "original_reference_key": "Ha83",
+      "row_sums": [
+        -1,
+        3,
+        7,
+        7
+      ],
+      "first_rows_int8_row_major_sha256": "e4bad648170186f8ea925062a392b98c6f5abae8e68f496c937fc335654ce1c6",
+      "verification": {
+        "full_summed_integer_Gram": "108 I_27",
+        "full_pairwise_amicability_checked": true,
+        "all_entries_are_signs": true,
+        "all_four_symmetric": true
+      }
+    },
+    {
+      "order": 29,
+      "first_rows_pm": [
+        "+++---++--+-+----+-+--++---++",
+        "+-+---++--+-++++++-+--++---+-",
+        "++++-++-+---++++++---+-++-+++",
+        "++--+--+-+++-++++-+++-+--+--+"
+      ],
+      "circulant_entry_formula": "M_k[i,j]=first_rows[k][(j-i) mod w]",
+      "source_reference": "sage_official_literal_table",
+      "original_reference_key": "Ha83",
+      "row_sums": [
+        -3,
+        1,
+        9,
+        5
+      ],
+      "first_rows_int8_row_major_sha256": "13b39bcebd785df988efc17390134476258e4222e360bcddceebf72890c252ab",
+      "verification": {
+        "full_summed_integer_Gram": "116 I_29",
+        "full_pairwise_amicability_checked": true,
+        "all_entries_are_signs": true,
+        "all_four_symmetric": true
+      }
+    },
+    {
+      "order": 31,
+      "first_rows_pm": [
+        "++++++-+--+---++++---+--+-+++++",
+        "+--++---+-+-++----++-+-+---++--",
+        "+--++---+-+-++----++-+-+---++--",
+        "+-----+-++-+++----+++-++-+-----"
+      ],
+      "circulant_entry_formula": "M_k[i,j]=first_rows[k][(j-i) mod w]",
+      "source_reference": "sage_official_literal_table",
+      "original_reference_key": "Lon2013",
+      "row_sums": [
+        7,
+        -5,
+        -5,
+        -5
+      ],
+      "first_rows_int8_row_major_sha256": "f8125f78a48903cf0cd984450be62d72509287d484935b57746be569ddb21977",
+      "verification": {
+        "full_summed_integer_Gram": "124 I_31",
+        "full_pairwise_amicability_checked": true,
+        "all_entries_are_signs": true,
+        "all_four_symmetric": true
+      }
+    },
+    {
+      "order": 33,
+      "first_rows_pm": [
+        "++++++-+-+-+++------+++-+-+-+++++",
+        "++-+-++-+----+++--+++----+-++-+-+",
+        "++--++-+++-+--+-++-+--+-+++-++--+",
+        "+--++--+++++-++----++-+++++--++--"
+      ],
+      "circulant_entry_formula": "M_k[i,j]=first_rows[k][(j-i) mod w]",
+      "source_reference": "sage_official_literal_table",
+      "original_reference_key": "Lon2013",
+      "row_sums": [
+        9,
+        1,
+        5,
+        5
+      ],
+      "first_rows_int8_row_major_sha256": "49b668db311bbfee23cfd00db80c2f69a48e1f301f41d43f77f52f5556decf69",
+      "verification": {
+        "full_summed_integer_Gram": "132 I_33",
+        "full_pairwise_amicability_checked": true,
+        "all_entries_are_signs": true,
+        "all_four_symmetric": true
+      }
+    },
+    {
+      "order": 37,
+      "first_rows_pm": [
+        "+--+-+-+-++---+--++++--+---++-+-+-+--",
+        "+---++-++--+-+-++----++-+-+--++-++---",
+        "+++++-+-----++----++----++-----+-++++",
+        "+--+++-+-----+----++----+-----+-+++--"
+      ],
+      "circulant_entry_formula": "M_k[i,j]=first_rows[k][(j-i) mod w]",
+      "source_reference": "sage_official_literal_table",
+      "original_reference_key": "Ha83",
+      "row_sums": [
+        -3,
+        -3,
+        -3,
+        -11
+      ],
+      "first_rows_int8_row_major_sha256": "020f4eb5786052254458165c47dbcf8c3648f1e68dfaeefd28525ce3f2521aca",
+      "verification": {
+        "full_summed_integer_Gram": "148 I_37",
+        "full_pairwise_amicability_checked": true,
+        "all_entries_are_signs": true,
+        "all_four_symmetric": true
+      }
+    },
+    {
+      "order": 39,
+      "first_rows_pm": [
+        "+++--+-+-----+--++----++--+-----+-+--++",
+        "+++--++-+---+-+--+----+--+-+---+-++--++",
+        "++++---+--++----+-+--+-+----++--+---+++",
+        "+---++-+-+-----+++-++-+++-----+-+-++---"
+      ],
+      "circulant_entry_formula": "M_k[i,j]=first_rows[k][(j-i) mod w]",
+      "source_reference": "sage_official_literal_table",
+      "original_reference_key": "Lon2013",
+      "row_sums": [
+        -9,
+        -5,
+        -5,
+        -5
+      ],
+      "first_rows_int8_row_major_sha256": "7de0645faddd7297b108ea796040b68f92dfda762718b97cbbdf3f36eab1111a",
+      "verification": {
+        "full_summed_integer_Gram": "156 I_39",
+        "full_pairwise_amicability_checked": true,
+        "all_entries_are_signs": true,
+        "all_four_symmetric": true
+      }
+    },
+    {
+      "order": 41,
+      "first_rows_pm": [
+        "++++--+-++++-++--++----++--++-++++-+--+++",
+        "++++--+-++++-++--++----++--++-++++-+--+++",
+        "+++-++-+-+-+-----+++--+++-----+-+-+-++-++",
+        "+--+--+-+-+-+++++---++---+++++-+-+-+--+--"
+      ],
+      "circulant_entry_formula": "M_k[i,j]=first_rows[k][(j-i) mod w]",
+      "source_reference": "sage_official_literal_table",
+      "original_reference_key": "Lon2013",
+      "row_sums": [
+        9,
+        9,
+        1,
+        1
+      ],
+      "first_rows_int8_row_major_sha256": "08eb71c85fe4867eb0e45c2a3c7d630a138b3cd3a14b7d6aeede2983fddb658b",
+      "verification": {
+        "full_summed_integer_Gram": "164 I_41",
+        "full_pairwise_amicability_checked": true,
+        "all_entries_are_signs": true,
+        "all_four_symmetric": true
+      }
+    },
+    {
+      "order": 43,
+      "first_rows_pm": [
+        "++---++++-+--+--++--------++--+--+-++++---+",
+        "+++-+-++--+-+-++++-+----+-++++-+-+--++-+-++",
+        "++-++++++----+-+--++-++-++--+-+----++++++-+",
+        "+---++--++++-+-+++-++--++-+++-+-++++--++---"
+      ],
+      "circulant_entry_formula": "M_k[i,j]=first_rows[k][(j-i) mod w]",
+      "source_reference": "sage_official_literal_table",
+      "original_reference_key": "Ha83",
+      "row_sums": [
+        -5,
+        7,
+        7,
+        7
+      ],
+      "first_rows_int8_row_major_sha256": "09a0e3c52c7a48a357cb2b31f0a3df468dba1f618e8a4734fd000b4aa604ddd4",
+      "verification": {
+        "full_summed_integer_Gram": "172 I_43",
+        "full_pairwise_amicability_checked": true,
+        "all_entries_are_signs": true,
+        "all_four_symmetric": true
+      }
+    },
+    {
+      "order": 49,
+      "first_rows_pm": [
+        "++++-++-+---++-+++---++-++-++---+++-++---+-++-+++",
+        "++++-++-+---++-+++---++-++-++---+++-++---+-++-+++",
+        "+----+-++++--+-+++-+-+++--+++-+-+++-+--++++-+----",
+        "+++++-+----++-+---+-+---++---+-+---+-++----+-++++"
+      ],
+      "circulant_entry_formula": "M_k[i,j]=first_rows[k][(j-i) mod w]",
+      "source_reference": "sage_official_literal_table",
+      "original_reference_key": "Lon2013",
+      "row_sums": [
+        9,
+        9,
+        5,
+        -3
+      ],
+      "first_rows_int8_row_major_sha256": "1308bc907821e4b3bed9ead79d718f81e31e423fa8be4f03b9877bb30b2a040a",
+      "verification": {
+        "full_summed_integer_Gram": "196 I_49",
+        "full_pairwise_amicability_checked": true,
+        "all_entries_are_signs": true,
+        "all_four_symmetric": true
+      }
+    },
+    {
+      "order": 51,
+      "first_rows_pm": [
+        "+---+++-++-+-+++--+++++--++--+++++--+++-+-++-+++---",
+        "----+++-++-+-+++--+++++--++--+++++--+++-+-++-+++---",
+        "-+--+----+-+++-+-+++++--+--+--+++++-+-+++-+----+--+",
+        "-+--+----+-+++-+-+++++--+--+--+++++-+-+++-+----+--+"
+      ],
+      "circulant_entry_formula": "M_k[i,j]=first_rows[k][(j-i) mod w]",
+      "source_reference": "sage_official_literal_table",
+      "original_reference_key": "Lon2013",
+      "row_sums": [
+        11,
+        9,
+        1,
+        1
+      ],
+      "first_rows_int8_row_major_sha256": "a9401b26e3ee28381889dc63d2e92baa4e4cde032d09150d5d9490c291af9bd0",
+      "verification": {
+        "full_summed_integer_Gram": "204 I_51",
+        "full_pairwise_amicability_checked": true,
+        "all_entries_are_signs": true,
+        "all_four_symmetric": true
+      }
+    },
+    {
+      "order": 55,
+      "first_rows_pm": [
+        "+-+--+-+-++--+-+++++-+++--++++--+++-+++++-+--++-+-+--+-",
+        "--+--+-+-++--+-+++++-+++--++++--+++-+++++-+--++-+-+--+-",
+        "+++----++-++--++----+-+-++++++++-+-+----++--++-++----++",
+        "+++----++-++--++----+-+-++++++++-+-+----++--++-++----++"
+      ],
+      "circulant_entry_formula": "M_k[i,j]=first_rows[k][(j-i) mod w]",
+      "source_reference": "sage_official_literal_table",
+      "original_reference_key": "Lon2013",
+      "row_sums": [
+        11,
+        9,
+        3,
+        3
+      ],
+      "first_rows_int8_row_major_sha256": "914518d6bda74f14ea949f2176a49cc5025f4b8f692e4cedc85f322f3ebf8006",
+      "verification": {
+        "full_summed_integer_Gram": "220 I_55",
+        "full_pairwise_amicability_checked": true,
+        "all_entries_are_signs": true,
+        "all_four_symmetric": true
+      }
+    },
+    {
+      "order": 57,
+      "first_rows_pm": [
+        "+---++-+--++++-+++-++---+-++++++-+---++-+++-++++--+-++---",
+        "----++-+--++++-+++-++---+-++++++-+---++-+++-++++--+-++---",
+        "--+-+-+++--+--+-++---+++++-++++-+++++---++-+--+--+++-+-+-",
+        "--+-+-+++--+--+-++---+++++-++++-+++++---++-+--+--+++-+-+-"
+      ],
+      "circulant_entry_formula": "M_k[i,j]=first_rows[k][(j-i) mod w]",
+      "source_reference": "sage_official_literal_table",
+      "original_reference_key": "Lon2013",
+      "row_sums": [
+        9,
+        7,
+        7,
+        7
+      ],
+      "first_rows_int8_row_major_sha256": "45db03f6349fe2b3e6408b04f9d1ea4b11b9004782120a1b96c1a33829fdcd85",
+      "verification": {
+        "full_summed_integer_Gram": "228 I_57",
+        "full_pairwise_amicability_checked": true,
+        "all_entries_are_signs": true,
+        "all_four_symmetric": true
+      }
+    },
+    {
+      "order": 61,
+      "first_rows_pm": [
+        "++--+--++--+-+-++++--+-----+------+-----+--++++-+-+--++--+--+",
+        "++--+--++--+-+-++++--+-----+------+-----+--++++-+-+--++--+--+",
+        "+---+-+-++++---++--+-++-+---++++++---+-++-+--++---++++-+-+---",
+        "++++-+-+----+++--++-+--+-+++------+++-+--+-++--+++----+-+-+++"
+      ],
+      "circulant_entry_formula": "M_k[i,j]=first_rows[k][(j-i) mod w]",
+      "source_reference": "sage_official_literal_table",
+      "original_reference_key": "Lon2013",
+      "row_sums": [
+        -11,
+        -11,
+        1,
+        1
+      ],
+      "first_rows_int8_row_major_sha256": "342cc7335f227401368904af6ee0318b595b7bf0e730fd7526e7eedb9f526f47",
+      "verification": {
+        "full_summed_integer_Gram": "244 I_61",
+        "full_pairwise_amicability_checked": true,
+        "all_entries_are_signs": true,
+        "all_four_symmetric": true
+      }
+    },
+    {
+      "order": 63,
+      "first_rows_pm": [
+        "++-+++--++-++--+--+-++-+-+++--------+++-+-++-+--+--++-++--+++-+",
+        "-+-+++--++-++--+--+-++-+-+++--------+++-+-++-+--+--++-++--+++-+",
+        "++++-++-+-++++-+---+---+++---++++++---+++---+---+-++++-+-++-+++",
+        "++++-++-+-++++-+---+---+++---++++++---+++---+---+-++++-+-++-+++"
+      ],
+      "circulant_entry_formula": "M_k[i,j]=first_rows[k][(j-i) mod w]",
+      "source_reference": "sage_official_literal_table",
+      "original_reference_key": "Lon2013",
+      "row_sums": [
+        3,
+        1,
+        11,
+        11
+      ],
+      "first_rows_int8_row_major_sha256": "0228b6820163b5ae464bd9e3ff4f62a9468d0a6fd4ea6e9f92f37bc5bb85b67e",
+      "verification": {
+        "full_summed_integer_Gram": "252 I_63",
+        "full_pairwise_amicability_checked": true,
+        "all_entries_are_signs": true,
+        "all_four_symmetric": true
+      }
+    }
+  ],
+  "rejected_literal_entries": [
+    {
+      "key_order": 45,
+      "actual_word_lengths": [
+        43,
+        43,
+        43,
+        43
+      ],
+      "reason": "Literal word lengths differ from the dictionary key; omitted without repair."
+    }
+  ]
+}

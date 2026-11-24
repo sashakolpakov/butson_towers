@@ -1,0 +1,102 @@
+{
+  "schema": "real-GS-scalar-chart-audit-v1",
+  "existing_control_source": "tests/test_joint_gs_223.py:test_goethals_seidel_gram_and_design_to_pair_identities",
+  "a_sequences": [
+    [
+      0,
+      1,
+      1
+    ],
+    [
+      -1,
+      0,
+      1
+    ],
+    [
+      -1,
+      -1,
+      0
+    ],
+    [
+      -1,
+      1,
+      -1
+    ]
+  ],
+  "b_sequences": [
+    [
+      1,
+      0,
+      0
+    ],
+    [
+      0,
+      1,
+      0
+    ],
+    [
+      0,
+      0,
+      1
+    ],
+    [
+      0,
+      0,
+      0
+    ]
+  ],
+  "formal_GS_design": "D(x,y)D(x,y)^T=(9x^2+3y^2)I12 for commuting involution-fixed x,y",
+  "all_three_real_polynomial_Gram_coefficients_checked": true,
+  "complementary_supports_checked": true,
+  "F_sha256": "2b7fec3dffb42f5a54edf95be478c0c477f0ce6c34e50d885c4c3c9e9c2f351e",
+  "G_sha256": "ea2d84bc06b073e584e08db717299e7637bc67a94f7a13b6762b1e2f40f52174",
+  "recovered_R_definition": "R=G F^T/12",
+  "R_orthogonal_and_R_squared_minus_R_plus_I_checked": true,
+  "complete_scalar_restriction_controls": [
+    {
+      "source_id": "unreal3-q6",
+      "source_hash": "4060d60ac464927b501cdbfd3103bb7755541c3c67ea94ef1eee8d809ca88241",
+      "source_Gram_replayed": true,
+      "matrix_order": 36,
+      "full_sign_Gram_checked": true,
+      "matrix_sha256": "12712df9803d494c5fb61530205cf227bbbdfd4a5001df4d149f45eeb1b7daeb",
+      "new_order_claimed": false
+    },
+    {
+      "source_id": "catalogue-p7-q6",
+      "source_hash": "da0f5b96daca8fa67e0236320694fabfab46e41fa25ff459f004a43e2187787a",
+      "source_Gram_replayed": true,
+      "matrix_order": 84,
+      "full_sign_Gram_checked": true,
+      "matrix_sha256": "d36a7304f93f566e7a2f4e8b03d6d4e2768a3bf36e4636c99f2bf918727d0d39",
+      "new_order_claimed": false
+    },
+    {
+      "source_id": "unreal13-q6",
+      "source_hash": "b92f18ce3195f80497beb80db1c1ce804b558ec6485dfe6ec762a0ddd393b59f",
+      "source_Gram_replayed": true,
+      "matrix_order": 156,
+      "full_sign_Gram_checked": true,
+      "matrix_sha256": "853d1009d15e8af85b0447f75cec9e0f14b0fc8999b20e6693f2da8617e7d5ea",
+      "new_order_claimed": false
+    }
+  ],
+  "naive_complex_GS_counterexample": {
+    "four_length_one_inputs": [
+      "1",
+      "i",
+      "1",
+      "1"
+    ],
+    "entries_are_fourth_roots": true,
+    "all_diagonal_Gram_entries": 4,
+    "nonzero_offdiagonal_Gram_witness": {
+      "row": 0,
+      "column": 1,
+      "value": "2i"
+    }
+  },
+  "solver_or_source_search_run": false,
+  "new_tree_edge_added": false,
+  "new_Hadamard_order_claimed": false
+}

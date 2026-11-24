@@ -1,0 +1,163 @@
+{
+  "schema": "exact-scalar-frame-campaign-20261124-v1",
+  "checked_utc": "2026-11-24T20:01:31.837487+00:00",
+  "completed_new_periodic_T127_witness": {
+    "certificate": "artifacts/t-matrices-127/certificate.json",
+    "certificate_sha256": "e2349b3185207d50aa66862d191afc93592b84ea9548ae14aeb4b1ee1a5eaed3",
+    "periodic_order": 127,
+    "states": [
+      0,
+      0,
+      4,
+      0,
+      1,
+      6,
+      2,
+      3,
+      6,
+      1,
+      0,
+      3,
+      5,
+      4,
+      3
+    ],
+    "all127_correlations_and_full_T_matrix_Grams_verified": true,
+    "independent_actual_H1524_row_pairs_verified": 1160526,
+    "known_Hadamard_control_order": 1524,
+    "new_real_Hadamard_order_claimed": false,
+    "new_periodic_T_order_claimed": true,
+    "novelty_scope": "The completed periodic T-matrices of order 127 are new to the best of the author's knowledge; 127 is explicitly listed as the smallest open T-matrix order in the 3 November 2026 survey, Table 3. The H1524 endpoint remains a known-order control."
+  },
+  "longer_bounded_runs": [
+    {
+      "name": "p919-a",
+      "p": 919,
+      "m": 27,
+      "mu": 207,
+      "seed": 20261124919,
+      "recorded_native_wall_seconds": 1800,
+      "sampling_scope": "single-SL2 axis sampler; first nonorigin head and its required sign fixed; all feasible head counts",
+      "field_parameters_sampled": 102719488,
+      "axes_sent_to_sign_lifting": 25674476,
+      "sum_of_affine_sign_kernel_cardinalities": 841430794240,
+      "mod8_survivors": 6421332,
+      "exact_DC_survivors": 2221933,
+      "rank_limit_skipped": 0,
+      "endpoint_found": false,
+      "historical_input_sha256": {
+        "experiments/scalar_lift/hadamard_frame_search.py": "9ebba34b06ab7fb5a9e76778dd9b6ab429bff0ee9612a35f9561461115785c97",
+        "experiments/scalar_lift/hadamard_frame_search.cpp": "35a60b45817d3679a6069288b6e2a30fd849687010a5b4727984c7115932b785",
+        "certificates/scalar-lift/hadamard-frame-p919.json": "b5c5e44c55331f1194194a23a00350dc716bc9cde4465b3403b257a8fb5f1fb6"
+      },
+      "original_report": "artifacts/scalar-frontier/campaign-20261124/p919-a/seed-20261124919.json",
+      "original_report_sha256": "b88e36089166c37155fbb4754e6f99312bf4943e06bc741840e970a0cf4e3335"
+    },
+    {
+      "name": "p919-b",
+      "p": 919,
+      "m": 27,
+      "mu": 207,
+      "seed": 20261124920,
+      "recorded_native_wall_seconds": 1800,
+      "sampling_scope": "single-SL2 axis sampler; first nonorigin head and its required sign fixed; all feasible head counts",
+      "field_parameters_sampled": 102577920,
+      "axes_sent_to_sign_lifting": 25640465,
+      "sum_of_affine_sign_kernel_cardinalities": 840314322944,
+      "mod8_survivors": 6410494,
+      "exact_DC_survivors": 2218450,
+      "rank_limit_skipped": 0,
+      "endpoint_found": false,
+      "historical_input_sha256": {
+        "experiments/scalar_lift/hadamard_frame_search.py": "9ebba34b06ab7fb5a9e76778dd9b6ab429bff0ee9612a35f9561461115785c97",
+        "experiments/scalar_lift/hadamard_frame_search.cpp": "35a60b45817d3679a6069288b6e2a30fd849687010a5b4727984c7115932b785",
+        "certificates/scalar-lift/hadamard-frame-p919.json": "b5c5e44c55331f1194194a23a00350dc716bc9cde4465b3403b257a8fb5f1fb6"
+      },
+      "original_report": "artifacts/scalar-frontier/campaign-20261124/p919-b/seed-20261124920.json",
+      "original_report_sha256": "c6ff982fe4a989661d9d13babcd417ffecb6b567d6b106ab3822163f6044cf5a"
+    },
+    {
+      "name": "p397-a",
+      "p": 397,
+      "m": 9,
+      "mu": 79,
+      "seed": 20261124397,
+      "recorded_native_wall_seconds": 1200,
+      "sampling_scope": "single-SL2 axis sampler; first nonorigin head and its required sign fixed; all feasible head counts",
+      "field_parameters_sampled": 10737664,
+      "axes_sent_to_sign_lifting": 2685153,
+      "sum_of_affine_sign_kernel_cardinalities": 2815589089280,
+      "mod8_survivors": 707188,
+      "exact_DC_survivors": 163831,
+      "rank_limit_skipped": 0,
+      "endpoint_found": false,
+      "historical_input_sha256": {
+        "artifacts/scalar-frontier/degree22-engine/hadamard_frame_search.py": "98b9037f5978dfd802899240671e08bfbc48c1faadef58887475825c3d6e1ce5",
+        "artifacts/scalar-frontier/degree22-engine/hadamard_frame_search.cpp": "e9bcfe9509b009d57ff428cda30685124628e6860b58218840dd14fb84c8725b",
+        "certificates/scalar-lift/hadamard-frame-p397.json": "5f1de422784c8ed7a777480bf86b2521a0168957b7dc1164e1cebe921c871bc6"
+      },
+      "original_report": "artifacts/scalar-frontier/campaign-20261124/p397-a/seed-20261124397.json",
+      "original_report_sha256": "4d69ec4b6ee4bf501261b3922183ce22474e8b4bdb12d5940838606a61ffaedd"
+    },
+    {
+      "name": "p1453-headless",
+      "p": 1453,
+      "m": 33,
+      "mu": 1321,
+      "seed": 202611261454,
+      "recorded_native_wall_seconds": 600.001,
+      "sampling_scope": "zero nonorigin heads; first tail color1/signpositive; uniform nonzero SL2 first rows with all admissible w enumerated",
+      "sampler_points_are_iid": false,
+      "uniform_nonzero_SL2_rows": 78085,
+      "sum_of_conditional_w_space_cardinalities": 81878056960,
+      "axes_sent_to_sign_lifting": 695235,
+      "sum_of_affine_sign_kernel_cardinalities": 1458011373568,
+      "mod8_survivors": 696661,
+      "exact_DC_survivors": 166311,
+      "endpoint_found": false,
+      "historical_input_sha256": {
+        "artifacts/scalar-frontier/headless1453-engine/kernel.cpp": "aa14495bcb6804fb1886089870b977daed6e89c80c9c16a59f7f3efe7d09f4aa",
+        "artifacts/scalar-frontier/headless1453-engine/headless.cpp": "4fca4334cce4de0d159da23ea8f0b0c04446522c085341d3bf89a72d1a8983a8"
+      },
+      "original_report": "artifacts/scalar-frontier/headless1453-engine/search1453-600s.json",
+      "original_report_sha256": "b0b88a968c93cd844ac8118cee69fabd32d6c9c0feb907bb71b7aa89795cd0d5"
+    }
+  ],
+  "totals": {
+    "recorded_native_wall_seconds_summed_across_streams": 5400.001,
+    "axis_words_sent_to_sign_lifting": 54695329,
+    "sum_of_affine_sign_kernel_cardinalities": 5955345580032,
+    "mod8_survivors": 14235675,
+    "exact_DC_survivors": 4770525
+  },
+  "counter_semantics": "Kernel-cardinality sums describe affine spaces offered to packed filters, not full integer evaluations. Sampling is with replacement and the headless generator is not iid. Timings are native wall durations, not CPU time or all research costs.",
+  "new_real_Hadamard_orders_found_in_this_campaign": [],
+  "search_space_exhausted": false,
+  "nonexistence_claimed": false,
+  "additional_completed_real_recipe_orders": [
+    17668,
+    22716,
+    32812,
+    98436,
+    295308,
+    885924
+  ],
+  "additional_recipe_novelty": "The completed real Hadamard orders 17668, 22716, 32812, 98436 and 295308 are new to the best of the author's knowledge; 885924 is known by a prior Paley construction.",
+  "additional_new_real_Hadamard_orders_to_best_author_knowledge": [
+    17668,
+    22716,
+    32812,
+    98436,
+    295308
+  ],
+  "additional_known_real_Hadamard_orders": [
+    885924
+  ],
+  "status_reviewed_date": "2026-11-24",
+  "primary_record_audit": "certificates/scalar-lift/higher-order-records.json",
+  "active_source_sha256_at_campaign_close": {
+    "experiments/scalar_lift/hadamard_frame_search.py": "486cdef73d1e10ae81644d6a0d21e1a85257f8d5c93e79a6ff812dbfdcdacc79",
+    "experiments/scalar_lift/hadamard_frame_search.cpp": "0b8ccb45d64354a4d37ec72d3f3ea71be45200a380757654ec3f5ffa8acc4c4d"
+  },
+  "external_publication_or_API_submission_performed": false
+}

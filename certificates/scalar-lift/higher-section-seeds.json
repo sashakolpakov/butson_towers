@@ -1,0 +1,44 @@
+{
+  "manifest": "artifacts/higher-section-seeds/manifest.json",
+  "manifest_sha256": "08f6fdf3873e577c6e64f3c2789c322b644094b6bf5bb97256918a3b22b24570",
+  "source_sha256": "cee7b23b44fc06449b0efe8c8feae7e03c1f69ccabb9d647cb913ae6d08d8eba",
+  "preparation_cpu_seconds": 6.443461,
+  "artifact_replay_cpu_seconds": 5.65714,
+  "artifact_replays": [
+    {
+      "period": 1319,
+      "all_literal_residual_matrices_replayed": true,
+      "energy": 212478976
+    },
+    {
+      "period": 1439,
+      "all_literal_residual_matrices_replayed": true,
+      "energy": 257117184
+    },
+    {
+      "period": 1499,
+      "all_literal_residual_matrices_replayed": true,
+      "energy": 269632512
+    },
+    {
+      "period": 1567,
+      "all_literal_residual_matrices_replayed": true,
+      "energy": 296324096
+    },
+    {
+      "period": 2999,
+      "all_literal_residual_matrices_replayed": true,
+      "energy": 1129094144
+    },
+    {
+      "period": 2995,
+      "all_literal_residual_matrices_replayed": true,
+      "energy": 3562218496
+    }
+  ],
+  "new_Hadamard_order_claimed": false,
+  "tests": "tests/test_higher_section_seeds.py:3 passed in0.34s",
+  "ruff_passed": true,
+  "documentation": "docs/HIGHER_SECTION_SEEDS.md",
+  "preparation_and_replay_cpu_seconds": 12.100601000000001
+}

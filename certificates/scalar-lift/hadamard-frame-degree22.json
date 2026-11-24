@@ -1,0 +1,95 @@
+{
+  "schema": "hadamard-frame-degree22-isolated-controls-v1",
+  "source_scope": "current public degree22-validated engine, accepted field degree bound25,128-bit colors, conditional headless mode",
+  "parameter_map": "certificates/scalar-lift/hadamard-frame-p397.json",
+  "map_quadratic_coefficients_verified": 3917,
+  "native_controls": {
+    "p": 397,
+    "parameter_examples_checked": 64,
+    "new_native_inverses_equal_independent_field_exponentiation": true,
+    "samples_checked_all_expanded_parities": 8,
+    "affine_kernel_dimension": 20,
+    "affine_masks_checked": 1048576,
+    "quadratic_coefficients_recomputed_from_expanded_integer_correlations": 211,
+    "complete_mod8_survivor_masks_equal_expanded_quadratic_truth_table": true,
+    "complete_mod8_survivor_masks_equal_old_kernel": true,
+    "mod8_survivors": 2,
+    "truth_table_seconds": 0.5533487080247141
+  },
+  "old_kernel_vs_new_filter_pool": {
+    "axis_patterns": 19,
+    "sum_of_affine_kernel_sizes": 19922944,
+    "mod8_survivors": 2,
+    "all_survivor_sets_equal": true
+  },
+  "old_positive_controls": {
+    "parity_map": {
+      "color_map_rank": 60,
+      "determinant_map_rank": 15,
+      "full_quadratic_coefficients_checked": 1831,
+      "exact_identity": "Cabs mod2=L(p*b1+q*b0+1), L invertible"
+    },
+    "complete_T19_axis_patterns": 90,
+    "small_control_scope": "p19,m3,k3,origin/first-head positive,DC(4,1,1,1)",
+    "complete_T19_solution_set_size": 150,
+    "small_endpoint_order": 228,
+    "small_endpoint_integer_Gram_verified": true,
+    "target_affine_masks_checked": 8192,
+    "target_complete_mod8_survivor_set_size": 1,
+    "planted_T631_retained": true,
+    "independent_prime_repeat_parity_map": {
+      "color_map_rank": 36,
+      "determinant_map_rank": 9,
+      "full_quadratic_coefficients_checked": 667,
+      "exact_identity": "Cabs mod2=L(p*b1+q*b0+1), L invertible"
+    },
+    "independent_prime_repeat_endpoint_order": 3252,
+    "independent_prime_repeat_full_integer_Gram_verified": true,
+    "independent_prime_repeat_packed_sha256": "599b87c00f75a0b29118443f8d5fcaab9073056452c55bc1071c173910aef4fd"
+  },
+  "bounded_calibration": {
+    "schema": "field-parity-mod8-sign-search-v1",
+    "p": 397,
+    "m": 9,
+    "mu": 79,
+    "field_degree": 22,
+    "pid": 71050,
+    "seed": 20261126397,
+    "field_parameters_sampled": 90112,
+    "head_gauge_passed": 22745,
+    "axis_patterns_sign_lifted": 22745,
+    "affine_sign_assignments_covered": 23849861120,
+    "mod8_passed": 5934,
+    "DC_passed_after_mod8": 1336,
+    "mod4_inconsistent": 0,
+    "rank_limit_skipped": 0,
+    "head_filter_rejected": 0,
+    "seconds": 10.0202,
+    "head_filter": [],
+    "T_sequence_verified": false,
+    "new_order_claimed": false
+  },
+  "no_new_endpoint_claimed": true,
+  "validated_isolated_source_sha256": {
+    "artifacts/scalar-frontier/degree22-engine/hadamard_frame_search.py": "98b9037f5978dfd802899240671e08bfbc48c1faadef58887475825c3d6e1ce5",
+    "artifacts/scalar-frontier/degree22-engine/hadamard_frame_search.cpp": "e9bcfe9509b009d57ff428cda30685124628e6860b58218840dd14fb84c8725b"
+  },
+  "source_sha256": {
+    "experiments/scalar_lift/hadamard_frame_search.py": "486cdef73d1e10ae81644d6a0d21e1a85257f8d5c93e79a6ff812dbfdcdacc79",
+    "experiments/scalar_lift/hadamard_frame_search.cpp": "0b8ccb45d64354a4d37ec72d3f3ea71be45200a380757654ec3f5ffa8acc4c4d"
+  },
+  "largest_validated_target_field_degree": 22,
+  "accepted_sampler_degree_bound": 25,
+  "fieldhood_certificate": "certificates/scalar-lift/hadamard-frame-fieldhood.json",
+  "focused_regression": {
+    "result": "11passed",
+    "seconds": 18.44,
+    "includes": [
+      "deterministicT127+fullH1524",
+      "millionmaskdegree22positivefilter",
+      "completeheadlessp13class+fullH156",
+      "all4194304wactual1453pair",
+      "prebuildsourcecapturemutationregression"
+    ]
+  }
+}

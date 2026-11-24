@@ -1,0 +1,1181 @@
+{
+  "schema": "fixed-large-butson-descendants-v1",
+  "outputs": [
+    {
+      "tree": {
+        "schema": "large-butson-descendant-v1",
+        "source_descriptor": {
+          "kind": "character_difference_table",
+          "prime": 73,
+          "order": 5329,
+          "phase": 24,
+          "first_order": 2,
+          "second_order": 8,
+          "gamma": 0,
+          "array_sha256": "4d6987bb3ce8e110f067ecadaa8ac4652ab9e4e5bc336f5ea858b1a88dbbcbe9",
+          "entry_formula": "coefficient[(column0-row0) mod prime,(column1-row1) mod prime]"
+        },
+        "source_hash": "57db86d2ad7cfcd114e7546bc1a0bc9c23bef9c3f47ccfb53c2017c5004bd255",
+        "steps": [
+          [
+            2,
+            "primary"
+          ],
+          [
+            2,
+            "primary"
+          ]
+        ],
+        "stages": [
+          {
+            "order": 5329,
+            "phase": 24,
+            "width": 1,
+            "used_alphabet": [
+              0,
+              3,
+              4,
+              6,
+              9,
+              12,
+              15,
+              18,
+              20,
+              21
+            ],
+            "matrix_hash": "4d68095fe54137f4af8b3e0dfdc68c5bd1828a29d2e820e4286a17b720bec2ff",
+            "complete_block_table_sha256": "088889b8071756d3559dc2172e525644f0be09d4b3fb26a697070bddcb805338",
+            "twenty_literal_entries": [
+              [
+                0,
+                11,
+                20
+              ],
+              [
+                280,
+                19,
+                9
+              ],
+              [
+                560,
+                29,
+                3
+              ],
+              [
+                841,
+                41,
+                6
+              ],
+              [
+                1121,
+                55,
+                21
+              ],
+              [
+                1402,
+                71,
+                3
+              ],
+              [
+                1682,
+                89,
+                21
+              ],
+              [
+                1962,
+                109,
+                15
+              ],
+              [
+                2243,
+                131,
+                15
+              ],
+              [
+                2523,
+                155,
+                12
+              ],
+              [
+                2804,
+                181,
+                3
+              ],
+              [
+                3084,
+                209,
+                3
+              ],
+              [
+                3365,
+                239,
+                21
+              ],
+              [
+                3645,
+                271,
+                12
+              ],
+              [
+                3925,
+                305,
+                21
+              ],
+              [
+                4206,
+                341,
+                12
+              ],
+              [
+                4486,
+                379,
+                18
+              ],
+              [
+                4767,
+                419,
+                12
+              ],
+              [
+                5047,
+                461,
+                21
+              ],
+              [
+                5328,
+                505,
+                3
+              ]
+            ],
+            "sample_sha256": "3acd054e2c0acb647408ce5244c162eda6831a2862c4ad74315a8a626a09e6f4",
+            "complete_Gram": "H H*=H* H=5329 I",
+            "Gram_entries_proved": 28398241,
+            "real_sign_endpoint": false
+          },
+          {
+            "order": 10658,
+            "phase": 12,
+            "width": 2,
+            "used_alphabet": [
+              0,
+              2,
+              3,
+              4,
+              6,
+              8,
+              9,
+              10
+            ],
+            "matrix_hash": "caf0ee522b3956ef1bee5427e7e99740e3ccd48592ab63777557d238fd59e583",
+            "complete_block_table_sha256": "e4d0a9aa0fc424559c011ebeb08b0eda3c89318199eba06bd6bdcff040096c05",
+            "twenty_literal_entries": [
+              [
+                0,
+                11,
+                10
+              ],
+              [
+                560,
+                19,
+                6
+              ],
+              [
+                1121,
+                29,
+                9
+              ],
+              [
+                1682,
+                41,
+                6
+              ],
+              [
+                2243,
+                55,
+                0
+              ],
+              [
+                2804,
+                71,
+                9
+              ],
+              [
+                3365,
+                89,
+                0
+              ],
+              [
+                3926,
+                109,
+                6
+              ],
+              [
+                4487,
+                131,
+                9
+              ],
+              [
+                5048,
+                155,
+                9
+              ],
+              [
+                5608,
+                181,
+                6
+              ],
+              [
+                6169,
+                209,
+                3
+              ],
+              [
+                6730,
+                239,
+                3
+              ],
+              [
+                7291,
+                271,
+                9
+              ],
+              [
+                7852,
+                305,
+                0
+              ],
+              [
+                8413,
+                341,
+                3
+              ],
+              [
+                8974,
+                379,
+                0
+              ],
+              [
+                9535,
+                419,
+                6
+              ],
+              [
+                10096,
+                461,
+                2
+              ],
+              [
+                10657,
+                505,
+                6
+              ]
+            ],
+            "sample_sha256": "d1ccdae13206e3a5c90b5694a3b62f86785fe91330d76a49eb4b88afd76738f2",
+            "complete_Gram": "H H*=H* H=10658 I",
+            "Gram_entries_proved": 113592964,
+            "real_sign_endpoint": false
+          },
+          {
+            "order": 21316,
+            "phase": 6,
+            "width": 4,
+            "used_alphabet": [
+              0,
+              1,
+              2,
+              3,
+              4,
+              5
+            ],
+            "matrix_hash": "563f7f331308b6e3ec69918b36941a2b2ce035170247e48ca4f515e7d0f3382a",
+            "complete_block_table_sha256": "6cdafd0c05e5eb1ed671ca39b8664da7525a015832a241c79678a35a882adec9",
+            "twenty_literal_entries": [
+              [
+                0,
+                11,
+                5
+              ],
+              [
+                1121,
+                19,
+                3
+              ],
+              [
+                2243,
+                29,
+                3
+              ],
+              [
+                3365,
+                41,
+                0
+              ],
+              [
+                4487,
+                55,
+                0
+              ],
+              [
+                5609,
+                71,
+                3
+              ],
+              [
+                6731,
+                89,
+                3
+              ],
+              [
+                7852,
+                109,
+                3
+              ],
+              [
+                8974,
+                131,
+                3
+              ],
+              [
+                10096,
+                155,
+                0
+              ],
+              [
+                11218,
+                181,
+                3
+              ],
+              [
+                12340,
+                209,
+                0
+              ],
+              [
+                13462,
+                239,
+                0
+              ],
+              [
+                14583,
+                271,
+                3
+              ],
+              [
+                15705,
+                305,
+                0
+              ],
+              [
+                16827,
+                341,
+                0
+              ],
+              [
+                17949,
+                379,
+                3
+              ],
+              [
+                19071,
+                419,
+                3
+              ],
+              [
+                20193,
+                461,
+                3
+              ],
+              [
+                21315,
+                505,
+                0
+              ]
+            ],
+            "sample_sha256": "428c3a45f619f7c1283405f9632e0cd913aa26ae21ea69688bfbc584c13b4b39",
+            "complete_Gram": "H H*=H* H=21316 I",
+            "Gram_entries_proved": 454371856,
+            "real_sign_endpoint": false
+          }
+        ],
+        "matrix_hash": "563f7f331308b6e3ec69918b36941a2b2ce035170247e48ca4f515e7d0f3382a",
+        "order": 21316,
+        "phase": 6,
+        "dense_large_matrices_materialized": false,
+        "only_scalar_restrictions_used": true,
+        "new_Hadamard_order_claimed": false
+      },
+      "proof": {
+        "source": {
+          "order": 5329,
+          "phase": 24,
+          "full_Gram_verified": true,
+          "source_metadata": {
+            "prime": 73,
+            "order": 5329,
+            "phase": 24,
+            "character_orders": [
+              2,
+              8
+            ],
+            "gamma_exponent": 0,
+            "primitive_root": 5,
+            "coefficient_array_shape": [
+              73,
+              73
+            ],
+            "coefficient_array_sha256": "4d6987bb3ce8e110f067ecadaa8ac4652ab9e4e5bc336f5ea858b1a88dbbcbe9",
+            "used_exponents": [
+              0,
+              3,
+              4,
+              6,
+              9,
+              12,
+              15,
+              18,
+              20,
+              21
+            ],
+            "dense_order_squared_matrix_materialized": false
+          },
+          "formal_Gram": {
+            "character_checks": [
+              {
+                "character_order": 2,
+                "zero_sum_verified": true,
+                "all_cyclic_lags_verified": 73,
+                "correlations_sha256": "ed12e1f100e340a3a3518eb3b8c4f1371ab9c98c5cb9ae30cdf3301d2f997760",
+                "exact_group_ring_identity": "AA*=q*delta-J"
+              },
+              {
+                "character_order": 8,
+                "zero_sum_verified": true,
+                "all_cyclic_lags_verified": 73,
+                "correlations_sha256": "e7e99e48743ac25063b8f9ff814b02f4c9977aeadf7e143def9805d8fc1ebc83",
+                "exact_group_ring_identity": "AA*=q*delta-J"
+              }
+            ],
+            "axes_Gram_coefficients": [
+              0,
+              73,
+              73,
+              -1
+            ],
+            "interior_Gram_coefficients": [
+              5329,
+              -73,
+              -73,
+              1
+            ],
+            "mixed_terms_zero_by_character_sums": true,
+            "complete_Gram_identity": "H H*=H* H=5329 I_5329",
+            "all_matrix_Gram_entries_proved_by_group_ring_identity": true,
+            "number_of_Gram_entries_covered": 28398241
+          }
+        },
+        "scalar_edges": [
+          {
+            "upper_phase": 24,
+            "lower_phase": 12,
+            "prime": 2,
+            "relative_field_degree": 2,
+            "order_multiplier": 2,
+            "generator_mode": "primary",
+            "generator_upper_exponent": 3,
+            "generator_order": 8,
+            "xi_lower_exponent": 3,
+            "coprime_part": 3,
+            "lower_field_conductor": 12,
+            "lower_root_alphabet_retained": 12,
+            "Phi_upper_of_represented_primitive_root_exact_zero": true,
+            "all_scalar_multiplication_and_adjoint_identities_checked": 24,
+            "complete_Fourier_Gram_checked": true,
+            "all_literal_root_blocks_checked": 24,
+            "cross_Gram_identity": "B_e B_f* = p rho(zeta_upper^(e-f))",
+            "cross_Grams_proved": 576,
+            "quadratic_pair_enumeration_needed": false,
+            "block_table_sha256": "e4d0a9aa0fc424559c011ebeb08b0eda3c89318199eba06bd6bdcff040096c05"
+          },
+          {
+            "upper_phase": 12,
+            "lower_phase": 6,
+            "prime": 2,
+            "relative_field_degree": 2,
+            "order_multiplier": 2,
+            "generator_mode": "primary",
+            "generator_upper_exponent": 3,
+            "generator_order": 4,
+            "xi_lower_exponent": 3,
+            "coprime_part": 3,
+            "lower_field_conductor": 3,
+            "lower_root_alphabet_retained": 6,
+            "Phi_upper_of_represented_primitive_root_exact_zero": true,
+            "all_scalar_multiplication_and_adjoint_identities_checked": 12,
+            "complete_Fourier_Gram_checked": true,
+            "all_literal_root_blocks_checked": 12,
+            "cross_Gram_identity": "B_e B_f* = p rho(zeta_upper^(e-f))",
+            "cross_Grams_proved": 144,
+            "quadratic_pair_enumeration_needed": false,
+            "block_table_sha256": "bedb1f0393c6ed51c8c35dc2cde08dc70208663eae66616554534522afa7176b"
+          }
+        ],
+        "stage_Grams_inherited_exactly": true,
+        "every_phase_actually_used_audited_through_literal_tables": true,
+        "matrix_hash": "563f7f331308b6e3ec69918b36941a2b2ce035170247e48ca4f515e7d0f3382a",
+        "order": 21316,
+        "phase": 6
+      },
+      "actual_matrix_files": [
+        {
+          "path": "artifacts/large-butson-descendants/bh-10658-q12.npz",
+          "bytes": 3440,
+          "file_sha256": "22ce5cc94baa83f20b015a5319116217df02bdcc4457927faa006a03b4d74c6d",
+          "matrix_hash": "caf0ee522b3956ef1bee5427e7e99740e3ccd48592ab63777557d238fd59e583",
+          "order": 10658,
+          "phase": 12
+        },
+        {
+          "path": "artifacts/large-butson-descendants/bh-21316-q6.npz",
+          "bytes": 4160,
+          "file_sha256": "e808dcd504d77a4144ed52ff8e17fe77813d29187c23a5b8baaa337c46c9e453",
+          "matrix_hash": "563f7f331308b6e3ec69918b36941a2b2ce035170247e48ca4f515e7d0f3382a",
+          "order": 21316,
+          "phase": 6
+        }
+      ]
+    },
+    {
+      "tree": {
+        "schema": "large-butson-descendant-v1",
+        "source_descriptor": {
+          "kind": "character_difference_table",
+          "prime": 241,
+          "order": 58081,
+          "phase": 120,
+          "first_order": 2,
+          "second_order": 40,
+          "gamma": 0,
+          "array_sha256": "e0dc4c8e284b434e569db066c9f2df769f81574224c2ad30e79f32fb220a44cf",
+          "entry_formula": "coefficient[(column0-row0) mod prime,(column1-row1) mod prime]"
+        },
+        "source_hash": "4db77050e52ad08de7ad365a9c8cf31318fcb98155a44b59d4eda9730ecaa62a",
+        "steps": [
+          [
+            2,
+            "primary"
+          ],
+          [
+            2,
+            "primary"
+          ]
+        ],
+        "stages": [
+          {
+            "order": 58081,
+            "phase": 120,
+            "width": 1,
+            "used_alphabet": [
+              0,
+              3,
+              6,
+              9,
+              12,
+              15,
+              18,
+              20,
+              21,
+              24,
+              27,
+              30,
+              33,
+              36,
+              39,
+              42,
+              45,
+              48,
+              51,
+              54,
+              57,
+              60,
+              63,
+              66,
+              69,
+              72,
+              75,
+              78,
+              81,
+              84,
+              87,
+              90,
+              93,
+              96,
+              99,
+              100,
+              102,
+              105,
+              108,
+              111,
+              114,
+              117
+            ],
+            "matrix_hash": "4442bd5b87ecce67ef263aa86c937d27355953258ae77dcdd3247f0a80e528ca",
+            "complete_block_table_sha256": "fc256ff91ecfd419717ef3077f33d0d67c0cd9056b3975a8f9a3b4c2ba50bb10",
+            "twenty_literal_entries": [
+              [
+                0,
+                11,
+                100
+              ],
+              [
+                3056,
+                19,
+                36
+              ],
+              [
+                6113,
+                29,
+                114
+              ],
+              [
+                9170,
+                41,
+                42
+              ],
+              [
+                12227,
+                55,
+                96
+              ],
+              [
+                15284,
+                71,
+                30
+              ],
+              [
+                18341,
+                89,
+                0
+              ],
+              [
+                21397,
+                109,
+                114
+              ],
+              [
+                24454,
+                131,
+                42
+              ],
+              [
+                27511,
+                155,
+                24
+              ],
+              [
+                30568,
+                181,
+                9
+              ],
+              [
+                33625,
+                209,
+                24
+              ],
+              [
+                36682,
+                239,
+                21
+              ],
+              [
+                39738,
+                271,
+                21
+              ],
+              [
+                42795,
+                305,
+                9
+              ],
+              [
+                45852,
+                341,
+                45
+              ],
+              [
+                48909,
+                379,
+                45
+              ],
+              [
+                51966,
+                419,
+                78
+              ],
+              [
+                55023,
+                461,
+                96
+              ],
+              [
+                58080,
+                505,
+                96
+              ]
+            ],
+            "sample_sha256": "a694a35d8c776dd01e1099bc22b766912817fe7e07ab6a901acf1447da4b4184",
+            "complete_Gram": "H H*=H* H=58081 I",
+            "Gram_entries_proved": 3373402561,
+            "real_sign_endpoint": false
+          },
+          {
+            "order": 116162,
+            "phase": 60,
+            "width": 2,
+            "used_alphabet": [
+              0,
+              3,
+              6,
+              9,
+              10,
+              12,
+              15,
+              18,
+              20,
+              21,
+              24,
+              27,
+              30,
+              33,
+              36,
+              39,
+              40,
+              42,
+              45,
+              48,
+              50,
+              51,
+              54,
+              57
+            ],
+            "matrix_hash": "37b9ee00d02148c3b5fef3055f5b96453b0fe390497dcddc23e7e4e29363d416",
+            "complete_block_table_sha256": "0af6336e79b1372db33b5730be64251405c225ca041387d256ddb41ee918debd",
+            "twenty_literal_entries": [
+              [
+                0,
+                11,
+                50
+              ],
+              [
+                6113,
+                19,
+                6
+              ],
+              [
+                12227,
+                29,
+                27
+              ],
+              [
+                18341,
+                41,
+                15
+              ],
+              [
+                24454,
+                55,
+                12
+              ],
+              [
+                30568,
+                71,
+                3
+              ],
+              [
+                36682,
+                89,
+                15
+              ],
+              [
+                42796,
+                109,
+                9
+              ],
+              [
+                48909,
+                131,
+                33
+              ],
+              [
+                55023,
+                155,
+                42
+              ],
+              [
+                61137,
+                181,
+                24
+              ],
+              [
+                67251,
+                209,
+                45
+              ],
+              [
+                73364,
+                239,
+                6
+              ],
+              [
+                79478,
+                271,
+                27
+              ],
+              [
+                85592,
+                305,
+                48
+              ],
+              [
+                91706,
+                341,
+                24
+              ],
+              [
+                97819,
+                379,
+                15
+              ],
+              [
+                103933,
+                419,
+                36
+              ],
+              [
+                110047,
+                461,
+                36
+              ],
+              [
+                116161,
+                505,
+                33
+              ]
+            ],
+            "sample_sha256": "d0da15a751efa0d5e0f0f940453f2c379b493e020c89f6a4ab7189f5be05cb5e",
+            "complete_Gram": "H H*=H* H=116162 I",
+            "Gram_entries_proved": 13493610244,
+            "real_sign_endpoint": false
+          },
+          {
+            "order": 232324,
+            "phase": 30,
+            "width": 4,
+            "used_alphabet": [
+              0,
+              3,
+              5,
+              6,
+              9,
+              10,
+              12,
+              15,
+              18,
+              20,
+              21,
+              24,
+              25,
+              27
+            ],
+            "matrix_hash": "4753a31de0066d6ea9000877113084f23a863fc907741e2ea8f037a7a22ba15a",
+            "complete_block_table_sha256": "e3175f8b9960848770a0a8e6f0b611607518e5ba1632642e6a37dbad7474472d",
+            "twenty_literal_entries": [
+              [
+                0,
+                11,
+                25
+              ],
+              [
+                12227,
+                19,
+                6
+              ],
+              [
+                24455,
+                29,
+                21
+              ],
+              [
+                36682,
+                41,
+                0
+              ],
+              [
+                48910,
+                55,
+                27
+              ],
+              [
+                61137,
+                71,
+                21
+              ],
+              [
+                73365,
+                89,
+                24
+              ],
+              [
+                85592,
+                109,
+                3
+              ],
+              [
+                97820,
+                131,
+                12
+              ],
+              [
+                110047,
+                155,
+                15
+              ],
+              [
+                122275,
+                181,
+                6
+              ],
+              [
+                134502,
+                209,
+                21
+              ],
+              [
+                146730,
+                239,
+                3
+              ],
+              [
+                158957,
+                271,
+                21
+              ],
+              [
+                171185,
+                305,
+                0
+              ],
+              [
+                183412,
+                341,
+                0
+              ],
+              [
+                195640,
+                379,
+                12
+              ],
+              [
+                207867,
+                419,
+                18
+              ],
+              [
+                220095,
+                461,
+                21
+              ],
+              [
+                232323,
+                505,
+                24
+              ]
+            ],
+            "sample_sha256": "8b4290b592f9dbbf62010716c64651f91aef2c9e4a419dc962e22a4b394a9078",
+            "complete_Gram": "H H*=H* H=232324 I",
+            "Gram_entries_proved": 53974440976,
+            "real_sign_endpoint": false
+          }
+        ],
+        "matrix_hash": "4753a31de0066d6ea9000877113084f23a863fc907741e2ea8f037a7a22ba15a",
+        "order": 232324,
+        "phase": 30,
+        "dense_large_matrices_materialized": false,
+        "only_scalar_restrictions_used": true,
+        "new_Hadamard_order_claimed": false
+      },
+      "proof": {
+        "source": {
+          "order": 58081,
+          "phase": 120,
+          "full_Gram_verified": true,
+          "source_metadata": {
+            "prime": 241,
+            "order": 58081,
+            "phase": 120,
+            "character_orders": [
+              2,
+              40
+            ],
+            "gamma_exponent": 0,
+            "primitive_root": 7,
+            "coefficient_array_shape": [
+              241,
+              241
+            ],
+            "coefficient_array_sha256": "e0dc4c8e284b434e569db066c9f2df769f81574224c2ad30e79f32fb220a44cf",
+            "used_exponents": [
+              0,
+              3,
+              6,
+              9,
+              12,
+              15,
+              18,
+              20,
+              21,
+              24,
+              27,
+              30,
+              33,
+              36,
+              39,
+              42,
+              45,
+              48,
+              51,
+              54,
+              57,
+              60,
+              63,
+              66,
+              69,
+              72,
+              75,
+              78,
+              81,
+              84,
+              87,
+              90,
+              93,
+              96,
+              99,
+              100,
+              102,
+              105,
+              108,
+              111,
+              114,
+              117
+            ],
+            "dense_order_squared_matrix_materialized": false
+          },
+          "formal_Gram": {
+            "character_checks": [
+              {
+                "character_order": 2,
+                "zero_sum_verified": true,
+                "all_cyclic_lags_verified": 241,
+                "correlations_sha256": "6baf3fb6fd52552735ff2bb74b5ad7a5e1b13a90ec1598623fb995469c2d2b45",
+                "exact_group_ring_identity": "AA*=q*delta-J"
+              },
+              {
+                "character_order": 40,
+                "zero_sum_verified": true,
+                "all_cyclic_lags_verified": 241,
+                "correlations_sha256": "c6deac94a70a3a2905bd151a1374ce27a7e6dd693742fd82a62e334f01f23d41",
+                "exact_group_ring_identity": "AA*=q*delta-J"
+              }
+            ],
+            "axes_Gram_coefficients": [
+              0,
+              241,
+              241,
+              -1
+            ],
+            "interior_Gram_coefficients": [
+              58081,
+              -241,
+              -241,
+              1
+            ],
+            "mixed_terms_zero_by_character_sums": true,
+            "complete_Gram_identity": "H H*=H* H=58081 I_58081",
+            "all_matrix_Gram_entries_proved_by_group_ring_identity": true,
+            "number_of_Gram_entries_covered": 3373402561
+          }
+        },
+        "scalar_edges": [
+          {
+            "upper_phase": 120,
+            "lower_phase": 60,
+            "prime": 2,
+            "relative_field_degree": 2,
+            "order_multiplier": 2,
+            "generator_mode": "primary",
+            "generator_upper_exponent": 15,
+            "generator_order": 8,
+            "xi_lower_exponent": 15,
+            "coprime_part": 15,
+            "lower_field_conductor": 60,
+            "lower_root_alphabet_retained": 60,
+            "Phi_upper_of_represented_primitive_root_exact_zero": true,
+            "all_scalar_multiplication_and_adjoint_identities_checked": 120,
+            "complete_Fourier_Gram_checked": true,
+            "all_literal_root_blocks_checked": 120,
+            "cross_Gram_identity": "B_e B_f* = p rho(zeta_upper^(e-f))",
+            "cross_Grams_proved": 14400,
+            "quadratic_pair_enumeration_needed": false,
+            "block_table_sha256": "0af6336e79b1372db33b5730be64251405c225ca041387d256ddb41ee918debd"
+          },
+          {
+            "upper_phase": 60,
+            "lower_phase": 30,
+            "prime": 2,
+            "relative_field_degree": 2,
+            "order_multiplier": 2,
+            "generator_mode": "primary",
+            "generator_upper_exponent": 15,
+            "generator_order": 4,
+            "xi_lower_exponent": 15,
+            "coprime_part": 15,
+            "lower_field_conductor": 15,
+            "lower_root_alphabet_retained": 30,
+            "Phi_upper_of_represented_primitive_root_exact_zero": true,
+            "all_scalar_multiplication_and_adjoint_identities_checked": 60,
+            "complete_Fourier_Gram_checked": true,
+            "all_literal_root_blocks_checked": 60,
+            "cross_Gram_identity": "B_e B_f* = p rho(zeta_upper^(e-f))",
+            "cross_Grams_proved": 3600,
+            "quadratic_pair_enumeration_needed": false,
+            "block_table_sha256": "10f5792f39126ce7f3d93d878bbf5b92a5d9093d70b640ff7de94dc152c17de6"
+          }
+        ],
+        "stage_Grams_inherited_exactly": true,
+        "every_phase_actually_used_audited_through_literal_tables": true,
+        "matrix_hash": "4753a31de0066d6ea9000877113084f23a863fc907741e2ea8f037a7a22ba15a",
+        "order": 232324,
+        "phase": 30
+      },
+      "actual_matrix_files": [
+        {
+          "path": "artifacts/large-butson-descendants/bh-116162-q60.npz",
+          "bytes": 5289,
+          "file_sha256": "bb83b48bec21699a3dcb833ea5f01b4ad98602c2ffb847276c9d9169548e7604",
+          "matrix_hash": "37b9ee00d02148c3b5fef3055f5b96453b0fe390497dcddc23e7e4e29363d416",
+          "order": 116162,
+          "phase": 60
+        },
+        {
+          "path": "artifacts/large-butson-descendants/bh-232324-q30.npz",
+          "bytes": 6606,
+          "file_sha256": "c06626d9ff241bf6cbe8ef54e2cbade1514850f0e1a80ba67c7f208c869a944b",
+          "matrix_hash": "4753a31de0066d6ea9000877113084f23a863fc907741e2ea8f037a7a22ba15a",
+          "order": 232324,
+          "phase": 30
+        }
+      ]
+    }
+  ],
+  "only_existing_sources_and_scalar_restrictions": true,
+  "new_real_Hadamard_claimed": false
+}

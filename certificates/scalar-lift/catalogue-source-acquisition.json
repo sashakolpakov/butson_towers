@@ -1,0 +1,959 @@
+{
+  "schema": "catalogue-source-acquisition-v1",
+  "catalogue_commit": "34328f8ff1083607e058bed04e3f55e09a1f9bc1",
+  "retained_inputs": [
+    {
+      "id": "catalogue-p7-q6",
+      "order": 7,
+      "phase": 6,
+      "source_hash": "da0f5b96daca8fa67e0236320694fabfab46e41fa25ff459f004a43e2187787a",
+      "used_alphabet": [
+        0,
+        1,
+        3,
+        4
+      ],
+      "dense_exponents_available": true,
+      "proof": {
+        "order": 7,
+        "phase": 6,
+        "exponent_sha256": "da0f5b96daca8fa67e0236320694fabfab46e41fa25ff459f004a43e2187787a",
+        "full_Gram_verified": true,
+        "verification": "complete exact column Gram; square invertibility gives the row Gram",
+        "acquisition": {
+          "data_file": "experiments/scalar_lift/catalogue_inputs/P7.json",
+          "data_sha256": "a3175e0481fd0f067a3647d69ff889d3e1911f6cbdfdca6cb333d73eac51eb61",
+          "new_source_construction_operation": false,
+          "scope": "This fixed starting input; subsequent operations are scalar restrictions",
+          "fixed_starting_gauge": {
+            "exists": true,
+            "visited_row_prefixes": 8,
+            "row_shifts": [
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0
+            ],
+            "column_shifts": [
+              0,
+              0,
+              0,
+              1,
+              1,
+              1,
+              0
+            ],
+            "scope": "All sixth-root row/column gauges and permutations of this fixed matrix"
+          }
+        },
+        "alphabet_gate": {
+          "phase": 6,
+          "used_alphabet": [
+            0,
+            1,
+            3,
+            4
+          ],
+          "scope": "every uniform Q-linear map of the actual scalar alphabet to equally sized sign blocks, including all scalar-restriction towers, uniform input/output basis choices, and representation multiplicities",
+          "nonuniform_coordinate_maps_excluded": false,
+          "source_row_column_gauges_searched": false,
+          "field_towers_or_bases_enumerated": false,
+          "status": "SKIP",
+          "excluded": false,
+          "reason": "no odd integer relation",
+          "complete_for_odd_integer_relations": true,
+          "profiles_checked": 20,
+          "embedding_modulus": 30,
+          "sign_flattenability_proved": false
+        }
+      },
+      "exponents": [
+        [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          4,
+          0,
+          4,
+          4,
+          1
+        ],
+        [
+          0,
+          4,
+          1,
+          4,
+          0,
+          4,
+          1
+        ],
+        [
+          1,
+          0,
+          4,
+          3,
+          0,
+          3,
+          4
+        ],
+        [
+          1,
+          4,
+          0,
+          0,
+          3,
+          3,
+          4
+        ],
+        [
+          1,
+          4,
+          4,
+          3,
+          3,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          1,
+          4,
+          4,
+          0,
+          4
+        ]
+      ],
+      "frontier_factor_routes": [
+        {
+          "target_order": 4676,
+          "required_total_width": 668,
+          "normalized_uniform_sign_block_gate": {
+            "width": 668,
+            "passes": true,
+            "required_identity": "B_e B_e^T = width*I for every used scalar block",
+            "scope": "Uniform orthogonal scalar action and a frame F with FF^T=width*I",
+            "general_weighted_or_nonuniform_scalar_maps_excluded": false
+          },
+          "ambient_field_and_sign_frame_constructed": false
+        },
+        {
+          "target_order": 7924,
+          "required_total_width": 1132,
+          "normalized_uniform_sign_block_gate": {
+            "width": 1132,
+            "passes": true,
+            "required_identity": "B_e B_e^T = width*I for every used scalar block",
+            "scope": "Uniform orthogonal scalar action and a frame F with FF^T=width*I",
+            "general_weighted_or_nonuniform_scalar_maps_excluded": false
+          },
+          "ambient_field_and_sign_frame_constructed": false
+        },
+        {
+          "target_order": 9716,
+          "required_total_width": 1388,
+          "normalized_uniform_sign_block_gate": {
+            "width": 1388,
+            "passes": true,
+            "required_identity": "B_e B_e^T = width*I for every used scalar block",
+            "scope": "Uniform orthogonal scalar action and a frame F with FF^T=width*I",
+            "general_weighted_or_nonuniform_scalar_maps_excluded": false
+          },
+          "ambient_field_and_sign_frame_constructed": false
+        },
+        {
+          "target_order": 10052,
+          "required_total_width": 1436,
+          "normalized_uniform_sign_block_gate": {
+            "width": 1436,
+            "passes": true,
+            "required_identity": "B_e B_e^T = width*I for every used scalar block",
+            "scope": "Uniform orthogonal scalar action and a frame F with FF^T=width*I",
+            "general_weighted_or_nonuniform_scalar_maps_excluded": false
+          },
+          "ambient_field_and_sign_frame_constructed": false
+        }
+      ]
+    },
+    {
+      "id": "catalogue-p7-q12",
+      "order": 7,
+      "phase": 12,
+      "source_hash": "9d0465a2350a4b8a206e82c04cfbf61085aecb612baa7285ec79e6669508c201",
+      "used_alphabet": [
+        1,
+        2,
+        4,
+        5,
+        7,
+        8,
+        10,
+        11
+      ],
+      "dense_exponents_available": true,
+      "proof": {
+        "order": 7,
+        "phase": 12,
+        "exponent_sha256": "9d0465a2350a4b8a206e82c04cfbf61085aecb612baa7285ec79e6669508c201",
+        "full_Gram_verified": true,
+        "verification": "complete exact column Gram; square invertibility gives the row Gram",
+        "acquisition": {
+          "data_file": "experiments/scalar_lift/catalogue_inputs/P7_q12.json",
+          "data_sha256": "7ca52937355e5cf87a951e4188f2333b76f41b07aa3507dbb988af34c00aee8b",
+          "new_source_construction_operation": false,
+          "scope": "This fixed starting input; subsequent operations are scalar restrictions",
+          "published_family_equivalence": {
+            "published_parameter": "1/12",
+            "published_specialization_exponents": [
+              [
+                0,
+                0,
+                0,
+                0,
+                0,
+                0,
+                0
+              ],
+              [
+                0,
+                3,
+                9,
+                10,
+                6,
+                6,
+                2
+              ],
+              [
+                0,
+                9,
+                3,
+                6,
+                10,
+                6,
+                2
+              ],
+              [
+                0,
+                10,
+                6,
+                1,
+                7,
+                2,
+                6
+              ],
+              [
+                0,
+                6,
+                10,
+                7,
+                1,
+                2,
+                6
+              ],
+              [
+                0,
+                6,
+                6,
+                2,
+                2,
+                8,
+                10
+              ],
+              [
+                0,
+                2,
+                2,
+                6,
+                6,
+                10,
+                8
+              ]
+            ],
+            "exact_monomial_equivalence_verified": true,
+            "canonical_key": [
+              7,
+              12,
+              [
+                0,
+                0,
+                4,
+                6,
+                6,
+                8,
+                2,
+                8,
+                8,
+                1,
+                7,
+                4,
+                4,
+                6,
+                0,
+                9,
+                3,
+                8,
+                6,
+                10,
+                6,
+                7,
+                1,
+                2,
+                8,
+                4,
+                5,
+                1,
+                11,
+                7,
+                8,
+                4,
+                11,
+                5,
+                7,
+                1
+              ]
+            ],
+            "primitive_cross_ratio": {
+              "rows": [
+                0,
+                2
+              ],
+              "columns": [
+                0,
+                4
+              ],
+              "exponent": 1,
+              "root_order": 12,
+              "invariant_under_row_column_phase_gauges": true
+            },
+            "not_equivalent_to_a_sixth_root_matrix": true
+          }
+        },
+        "alphabet_gate": {
+          "phase": 12,
+          "used_alphabet": [
+            1,
+            2,
+            4,
+            5,
+            7,
+            8,
+            10,
+            11
+          ],
+          "scope": "every uniform Q-linear map of the actual scalar alphabet to equally sized sign blocks, including all scalar-restriction towers, uniform input/output basis choices, and representation multiplicities",
+          "nonuniform_coordinate_maps_excluded": false,
+          "source_row_column_gauges_searched": false,
+          "field_towers_or_bases_enumerated": false,
+          "status": "SKIP",
+          "excluded": false,
+          "reason": "no odd integer relation",
+          "complete_for_odd_integer_relations": true,
+          "profiles_checked": 40,
+          "embedding_modulus": 60,
+          "sign_flattenability_proved": false
+        }
+      },
+      "exponents": [
+        [
+          1,
+          1,
+          2,
+          1,
+          2,
+          2,
+          2
+        ],
+        [
+          1,
+          1,
+          2,
+          5,
+          8,
+          8,
+          10
+        ],
+        [
+          2,
+          4,
+          11,
+          10,
+          4,
+          10,
+          7
+        ],
+        [
+          1,
+          5,
+          8,
+          1,
+          11,
+          5,
+          10
+        ],
+        [
+          2,
+          8,
+          1,
+          8,
+          10,
+          4,
+          5
+        ],
+        [
+          2,
+          10,
+          7,
+          7,
+          4,
+          2,
+          10
+        ],
+        [
+          2,
+          10,
+          7,
+          1,
+          8,
+          10,
+          4
+        ]
+      ],
+      "frontier_factor_routes": [
+        {
+          "target_order": 4676,
+          "required_total_width": 668,
+          "normalized_uniform_sign_block_gate": {
+            "width": 668,
+            "passes": true,
+            "required_identity": "B_e B_e^T = width*I for every used scalar block",
+            "scope": "Uniform orthogonal scalar action and a frame F with FF^T=width*I",
+            "general_weighted_or_nonuniform_scalar_maps_excluded": false
+          },
+          "ambient_field_and_sign_frame_constructed": false
+        },
+        {
+          "target_order": 7924,
+          "required_total_width": 1132,
+          "normalized_uniform_sign_block_gate": {
+            "width": 1132,
+            "passes": true,
+            "required_identity": "B_e B_e^T = width*I for every used scalar block",
+            "scope": "Uniform orthogonal scalar action and a frame F with FF^T=width*I",
+            "general_weighted_or_nonuniform_scalar_maps_excluded": false
+          },
+          "ambient_field_and_sign_frame_constructed": false
+        },
+        {
+          "target_order": 9716,
+          "required_total_width": 1388,
+          "normalized_uniform_sign_block_gate": {
+            "width": 1388,
+            "passes": true,
+            "required_identity": "B_e B_e^T = width*I for every used scalar block",
+            "scope": "Uniform orthogonal scalar action and a frame F with FF^T=width*I",
+            "general_weighted_or_nonuniform_scalar_maps_excluded": false
+          },
+          "ambient_field_and_sign_frame_constructed": false
+        },
+        {
+          "target_order": 10052,
+          "required_total_width": 1436,
+          "normalized_uniform_sign_block_gate": {
+            "width": 1436,
+            "passes": true,
+            "required_identity": "B_e B_e^T = width*I for every used scalar block",
+            "scope": "Uniform orthogonal scalar action and a frame F with FF^T=width*I",
+            "general_weighted_or_nonuniform_scalar_maps_excluded": false
+          },
+          "ambient_field_and_sign_frame_constructed": false
+        }
+      ]
+    },
+    {
+      "id": "catalogue-d14-q4",
+      "order": 14,
+      "phase": 4,
+      "source_hash": "7729e8d138ffbbcbff98bef57963ede4d4924326c408d0988797eebb69e5380f",
+      "used_alphabet": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "dense_exponents_available": true,
+      "proof": {
+        "order": 14,
+        "phase": 4,
+        "exponent_sha256": "7729e8d138ffbbcbff98bef57963ede4d4924326c408d0988797eebb69e5380f",
+        "full_Gram_verified": true,
+        "verification": "complete exact column Gram; square invertibility gives the row Gram",
+        "acquisition": {
+          "data_file": "experiments/scalar_lift/catalogue_inputs/D14.json",
+          "data_sha256": "d786cad69ab0787cfb5c2925894deac68988a9d8c3d4d543c3a64fd445307c65",
+          "new_source_construction_operation": false,
+          "scope": "This fixed starting input; subsequent operations are scalar restrictions"
+        },
+        "alphabet_gate": {
+          "phase": 4,
+          "used_alphabet": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "scope": "every uniform Q-linear map of the actual scalar alphabet to equally sized sign blocks, including all scalar-restriction towers, uniform input/output basis choices, and representation multiplicities",
+          "nonuniform_coordinate_maps_excluded": false,
+          "source_row_column_gauges_searched": false,
+          "field_towers_or_bases_enumerated": false,
+          "status": "SKIP",
+          "excluded": false,
+          "reason": "no odd integer relation",
+          "complete_for_odd_integer_relations": true,
+          "profiles_checked": 20,
+          "embedding_modulus": 60,
+          "sign_flattenability_proved": false
+        }
+      },
+      "exponents": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          2,
+          1,
+          3,
+          1,
+          1,
+          3,
+          3,
+          3,
+          3,
+          1,
+          1,
+          3,
+          1
+        ],
+        [
+          0,
+          1,
+          2,
+          1,
+          3,
+          1,
+          1,
+          3,
+          3,
+          3,
+          3,
+          1,
+          1,
+          3
+        ],
+        [
+          0,
+          3,
+          1,
+          2,
+          1,
+          3,
+          1,
+          1,
+          3,
+          3,
+          3,
+          3,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          3,
+          1,
+          2,
+          1,
+          3,
+          1,
+          1,
+          3,
+          3,
+          3,
+          3,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          3,
+          1,
+          2,
+          1,
+          3,
+          1,
+          1,
+          3,
+          3,
+          3,
+          3
+        ],
+        [
+          0,
+          3,
+          1,
+          1,
+          3,
+          1,
+          2,
+          1,
+          3,
+          1,
+          1,
+          3,
+          3,
+          3
+        ],
+        [
+          0,
+          3,
+          3,
+          1,
+          1,
+          3,
+          1,
+          2,
+          1,
+          3,
+          1,
+          1,
+          3,
+          3
+        ],
+        [
+          0,
+          3,
+          3,
+          3,
+          1,
+          1,
+          3,
+          1,
+          2,
+          1,
+          3,
+          1,
+          1,
+          3
+        ],
+        [
+          0,
+          3,
+          3,
+          3,
+          3,
+          1,
+          1,
+          3,
+          1,
+          2,
+          1,
+          3,
+          1,
+          1
+        ],
+        [
+          0,
+          1,
+          3,
+          3,
+          3,
+          3,
+          1,
+          1,
+          3,
+          1,
+          2,
+          1,
+          3,
+          1
+        ],
+        [
+          0,
+          1,
+          1,
+          3,
+          3,
+          3,
+          3,
+          1,
+          1,
+          3,
+          1,
+          2,
+          1,
+          3
+        ],
+        [
+          0,
+          3,
+          1,
+          1,
+          3,
+          3,
+          3,
+          3,
+          1,
+          1,
+          3,
+          1,
+          2,
+          1
+        ],
+        [
+          0,
+          1,
+          3,
+          1,
+          1,
+          3,
+          3,
+          3,
+          3,
+          1,
+          1,
+          3,
+          1,
+          2
+        ]
+      ],
+      "frontier_factor_routes": [
+        {
+          "target_order": 4676,
+          "required_total_width": 334,
+          "normalized_uniform_sign_block_gate": {
+            "width": 334,
+            "passes": false,
+            "required_identity": "B_e B_e^T = width*I for every used scalar block",
+            "scope": "Uniform orthogonal scalar action and a frame F with FF^T=width*I",
+            "general_weighted_or_nonuniform_scalar_maps_excluded": false
+          },
+          "ambient_field_and_sign_frame_constructed": false
+        },
+        {
+          "target_order": 7924,
+          "required_total_width": 566,
+          "normalized_uniform_sign_block_gate": {
+            "width": 566,
+            "passes": false,
+            "required_identity": "B_e B_e^T = width*I for every used scalar block",
+            "scope": "Uniform orthogonal scalar action and a frame F with FF^T=width*I",
+            "general_weighted_or_nonuniform_scalar_maps_excluded": false
+          },
+          "ambient_field_and_sign_frame_constructed": false
+        },
+        {
+          "target_order": 9716,
+          "required_total_width": 694,
+          "normalized_uniform_sign_block_gate": {
+            "width": 694,
+            "passes": false,
+            "required_identity": "B_e B_e^T = width*I for every used scalar block",
+            "scope": "Uniform orthogonal scalar action and a frame F with FF^T=width*I",
+            "general_weighted_or_nonuniform_scalar_maps_excluded": false
+          },
+          "ambient_field_and_sign_frame_constructed": false
+        },
+        {
+          "target_order": 10052,
+          "required_total_width": 718,
+          "normalized_uniform_sign_block_gate": {
+            "width": 718,
+            "passes": false,
+            "required_identity": "B_e B_e^T = width*I for every used scalar block",
+            "scope": "Uniform orthogonal scalar action and a frame F with FF^T=width*I",
+            "general_weighted_or_nonuniform_scalar_maps_excluded": false
+          },
+          "ambient_field_and_sign_frame_constructed": false
+        }
+      ]
+    }
+  ],
+  "rejected_uniform_alphabet_candidates": [
+    {
+      "name": "M13B",
+      "source_url": "https://raw.githubusercontent.com/matrix-toolbox/chm/34328f8ff1083607e058bed04e3f55e09a1f9bc1/CHM/M13B.m",
+      "full_Gram": {
+        "order": 13,
+        "phase": 6,
+        "exponent_sha256": "c7cd0d2f22a220f749c107cc3ef27b663243fb0dda76900fdd8e718cdc3c01e8",
+        "full_Gram_verified": true,
+        "verification": "complete exact column Gram; square invertibility gives the row Gram"
+      },
+      "raw_alphabet_gate": {
+        "phase": 6,
+        "used_alphabet": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "scope": "every uniform Q-linear map of the actual scalar alphabet to equally sized sign blocks, including all scalar-restriction towers, uniform input/output basis choices, and representation multiplicities",
+        "nonuniform_coordinate_maps_excluded": false,
+        "source_row_column_gauges_searched": false,
+        "field_towers_or_bases_enumerated": false,
+        "status": "EXCLUDED",
+        "excluded": true,
+        "relation": {
+          "terms": [
+            {
+              "exponent": 0,
+              "coefficient": 1
+            },
+            {
+              "exponent": 2,
+              "coefficient": 1
+            },
+            {
+              "exponent": 4,
+              "coefficient": 1
+            }
+          ],
+          "zero_integral_vector": [
+            0,
+            0
+          ],
+          "coefficient_sum": 3,
+          "odd_coefficient_sum": true,
+          "signed_weight": 3
+        },
+        "embedding_modulus": 30,
+        "minimal_positive_atom": [
+          0,
+          10,
+          20
+        ],
+        "profiles_checked": 1,
+        "complete_for_odd_integer_relations": true,
+        "reason": "exact integer scalar relation has odd coefficient sum"
+      },
+      "two_cubic_coset_gauge": {
+        "exists": false,
+        "visited_row_prefixes": 6,
+        "row_shifts": null,
+        "column_shifts": null,
+        "scope": "All sixth-root row/column gauges and permutations of this fixed matrix"
+      },
+      "signed_three_class_relation": {
+        "exhaustive_gauge_scope": "Sixth-root gauges only; larger-field gauges not tested",
+        "argument": "Every gauge uses all three exponent classes modulo3. Choosing one root from each class and changing their integer coefficient signs yields a rotated 1+zeta3+zeta3^2=0.",
+        "coefficient_sum_is_odd": true
+      },
+      "general_nonuniform_scalar_maps_excluded": false
+    },
+    {
+      "name": "M13C",
+      "source_url": "https://raw.githubusercontent.com/matrix-toolbox/chm/34328f8ff1083607e058bed04e3f55e09a1f9bc1/CHM/M13C.m",
+      "full_Gram": {
+        "order": 13,
+        "phase": 6,
+        "exponent_sha256": "a7e716d093b8907ecbf23a3e97facddf773bef8518788c8e04a68c8c7305cbca",
+        "full_Gram_verified": true,
+        "verification": "complete exact column Gram; square invertibility gives the row Gram"
+      },
+      "raw_alphabet_gate": {
+        "phase": 6,
+        "used_alphabet": [
+          0,
+          1,
+          2,
+          3,
+          4,
+          5
+        ],
+        "scope": "every uniform Q-linear map of the actual scalar alphabet to equally sized sign blocks, including all scalar-restriction towers, uniform input/output basis choices, and representation multiplicities",
+        "nonuniform_coordinate_maps_excluded": false,
+        "source_row_column_gauges_searched": false,
+        "field_towers_or_bases_enumerated": false,
+        "status": "EXCLUDED",
+        "excluded": true,
+        "relation": {
+          "terms": [
+            {
+              "exponent": 0,
+              "coefficient": 1
+            },
+            {
+              "exponent": 2,
+              "coefficient": 1
+            },
+            {
+              "exponent": 4,
+              "coefficient": 1
+            }
+          ],
+          "zero_integral_vector": [
+            0,
+            0
+          ],
+          "coefficient_sum": 3,
+          "odd_coefficient_sum": true,
+          "signed_weight": 3
+        },
+        "embedding_modulus": 30,
+        "minimal_positive_atom": [
+          0,
+          10,
+          20
+        ],
+        "profiles_checked": 1,
+        "complete_for_odd_integer_relations": true,
+        "reason": "exact integer scalar relation has odd coefficient sum"
+      },
+      "two_cubic_coset_gauge": {
+        "exists": false,
+        "visited_row_prefixes": 8,
+        "row_shifts": null,
+        "column_shifts": null,
+        "scope": "All sixth-root row/column gauges and permutations of this fixed matrix"
+      },
+      "signed_three_class_relation": {
+        "exhaustive_gauge_scope": "Sixth-root gauges only; larger-field gauges not tested",
+        "argument": "Every gauge uses all three exponent classes modulo3. Choosing one root from each class and changing their integer coefficient signs yields a rotated 1+zeta3+zeta3^2=0.",
+        "coefficient_sum_is_odd": true
+      },
+      "general_nonuniform_scalar_maps_excluded": false
+    }
+  ],
+  "frontier_file": "certificates/scalar-lift/forward-novelty-frontier-2026-11-22.json",
+  "frontier_sha256": "602ba627a52cbb6f8ad57c38c9ac4390e562cf85b827ca979c8f92c1b3016d8d",
+  "largest_matching_frontier_order": 10052,
+  "new_Hadamard_order_constructed": false,
+  "scope": "Exact acquisition and necessary factor/alphabet tests; no target sign frame"
+}

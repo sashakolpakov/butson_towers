@@ -1,0 +1,129 @@
+{
+  "schema": "quadratic-source-inverse-v1",
+  "edges": [
+    {
+      "upper_root_alphabet": 120,
+      "lower_root_alphabet": 60,
+      "upper_field_conductor": 120,
+      "lower_field_conductor": 60,
+      "field_degree_ratio": 2,
+      "odd_part": 15,
+      "upper_dyadic_order": 8,
+      "eta_upper_exponent": 15,
+      "xi_lower_exponent": 15,
+      "linear_block_gate_sufficient_for_root_reconstruction": true,
+      "exact_two_block_gate_always_required_by_API": true,
+      "normalized_linear_candidates": 2,
+      "normalized_exact_image_blocks": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            30
+          ]
+        ],
+        [
+          [
+            0,
+            30
+          ],
+          [
+            45,
+            45
+          ]
+        ]
+      ],
+      "linear_gate_false_positive_count": 0,
+      "linear_false_positive_example": null,
+      "all_scalar_roots_round_trip": true,
+      "all_cubic_and_fifth_colors_preserved": true,
+      "linear_plus_local_Gram_is_exact_on_all_normalized_root_blocks": true
+    },
+    {
+      "upper_root_alphabet": 60,
+      "lower_root_alphabet": 30,
+      "upper_field_conductor": 60,
+      "lower_field_conductor": 15,
+      "field_degree_ratio": 2,
+      "odd_part": 15,
+      "upper_dyadic_order": 4,
+      "eta_upper_exponent": 15,
+      "xi_lower_exponent": 15,
+      "linear_block_gate_sufficient_for_root_reconstruction": false,
+      "exact_two_block_gate_always_required_by_API": true,
+      "normalized_linear_candidates": 30,
+      "normalized_exact_image_blocks": [
+        [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            15
+          ]
+        ],
+        [
+          [
+            0,
+            15
+          ],
+          [
+            15,
+            15
+          ]
+        ]
+      ],
+      "linear_gate_false_positive_count": 28,
+      "linear_false_positive_example": [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          15
+        ]
+      ],
+      "all_scalar_roots_round_trip": true,
+      "all_cubic_and_fifth_colors_preserved": true,
+      "linear_plus_local_Gram_is_exact_on_all_normalized_root_blocks": true
+    }
+  ],
+  "complete_known_control_orders_and_root_phases": [
+    [
+      15,
+      120
+    ],
+    [
+      30,
+      60
+    ],
+    [
+      60,
+      30
+    ]
+  ],
+  "all_control_Grams_and_inverse_blocks_verified": true,
+  "phase30_field_conductor15_does_not_remove_negative_roots": true,
+  "actual_high_branch_prune": {
+    "source_order": 2998,
+    "input_order": 1000,
+    "phase": 60,
+    "status": "EXCLUDED_NORMAL_CORNER_ROW_SUM_NORM",
+    "prime_witnesses": [
+      {
+        "prime": 1499,
+        "residue_mod_root_phase": 59,
+        "valuation_of_corner_row_sum_norm": 1
+      }
+    ],
+    "proof": "Normal D commutes with J, so D1=lambda1 and lambda*conjugate(lambda)=source_order. Each self-conjugate unramified prime has even valuation in such a norm.",
+    "independent_boundary_frames_also_covered": true,
+    "arbitrary_Butson_source_nonexistence_claimed": false
+  },
+  "source1499_constructed": false
+}

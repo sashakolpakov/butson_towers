@@ -1,0 +1,433 @@
+% Short announcement prepared for HexagonMath.
+% Submission declarations are recorded separately from the mathematical source.
+\documentclass[10pt]{article}
+\usepackage[margin=0.9in]{geometry}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage[T1]{fontenc}
+\usepackage{hyperref}
+\newtheorem{theorem}{Theorem}
+\newcommand{\F}{\mathbb F}
+\newcommand{\Q}{\mathbb Q}
+\newcommand{\Tr}{\operatorname{Tr}}
+\newcommand{\GS}{\operatorname{GS}}
+\title{New Hadamard orders and infinite families\\by restriction of scalars}
+\author{Alexander Kolpakov}
+\date{24 November 2026}
+\begin{document}
+\maketitle
+
+\begin{abstract}
+We give an explicit real Hadamard matrix of order $7572=12\cdot631$.
+The construction starts with four periodic T-sequences of length $631$,
+specified by 31 signed orbit states. They give a compatible sign frame for
+a rational action of $\Q(\zeta_6)$, and a complete $BH(3,6)$ source then
+produces the claimed matrix. The source Gram scale is $3$, the frame scale
+is $2524$, and their product is the endpoint order. All sequence
+correlations and all row inner products of the order-$7572$ matrix have been verified by exact
+integer calculations, including an independent check of the saved matrix.
+The same frame gives orders $17668$, $22716$, $32812$, $98436$ and
+$295308$. A further restriction from products of cyclotomic fields gives
+eight additional new orders and explicit infinite families. Their weighted
+sources are complete orthogonal designs; their restricted entries are signs.
+Four first expanded family members give further new orders, bringing the
+total to eighteen, all new to the best of the author's knowledge.
+The method also gives new periodic circulant T-matrices of order $127$,
+listed as the smallest open T-matrix order in the 2026 survey.
+Our literature comparison is dated 24 November 2026.
+\end{abstract}
+
+\begin{theorem}
+There exists a matrix $H\in\{-1,1\}^{7572\times7572}$ such that
+$HH^{\mathsf T}=7572I$.
+\end{theorem}
+
+The scalar-transfer framework is classical; see, for example, Egan and
+\'{O}~Cath\'ain~\cite{morphisms} and Compton, Craigen and de~Launey~\cite{unreal}.
+The twisted length-$631$ search chart is
+recorded in the existing search notes~\cite{frontier}. The contribution here
+is the completed integer witness and its verified flat scalar frame.
+
+\paragraph{The finite witness.}
+Put $p=631$ and $\mu=458\in\mathbb Z_p^*$, of order $21$.
+Let $C$ fix channel $0$ and cyclically permute channels $1,2,3$.
+Enumerate the origin first, followed by the nonzero multiplication-by-$\mu$
+orbits, taking the least unused residue as the next representative.
+The states, in that order, are
+\begin{center}\small\ttfamily
+0 0 5 4 4 0 7 0 7 2 3 0 1 2 6 1\\
+4 2 0 1 1 4 3 4 7 3 3 5 6 2 7
+\end{center}
+A state $2j+\varepsilon$ at representative $r$ means
+$b(\mu^k r)=(-1)^\varepsilon C^k e_j$, where $e_j$ is the $j$th standard
+basis vector of $\mathbb Z^4$; the first state gives $b(0)=e_0$.
+This specifies all four sequences $b_0,\ldots,b_3$ without a search.
+They have disjoint support, exactly one signed nonzero entry at each
+position, and row sums $(22,7,7,7)$.
+A direct integer calculation from these states gives all $631$ identities
+\begin{equation}\label{eq:T}
+ \sum_{i=0}^3\sum_{x\in\mathbb Z_p} b_i(x)b_i(x+s)
+       =p\,\delta_{s,0}\qquad(s\in\mathbb Z_p).
+\end{equation}
+The complete sequences and a standalone replay of this finite calculation
+are supplied with the matrix. These are periodic T-sequences; no
+aperiodic correlation assertion is required.
+
+\paragraph{Sign frames.}
+Let
+\[
+ D=\begin{pmatrix}
+ 0&1&1&1\\-1&0&1&-1\\-1&-1&0&1\\-1&1&-1&0
+ \end{pmatrix},\qquad a(x)=Db(x).
+\]
+Then $D^{\mathsf T}=-D$ and $D^{\mathsf T}D=3I$.
+Consequently the summed periodic autocorrelation of $a$ is
+$3p\delta_{s,0}$ and the summed symmetric mixed correlation of $a,b$
+vanishes. Their supports complement each other at every entry, and each
+nonzero entry is a sign.
+
+Here is the precise Goethals--Seidel convention used. For four sequences
+$f_i$, let $X_i$ be the circulant with $(X_i)_{uv}=f_i(v-u)$,
+and let $J_{uv}=1$ when $u+v=p-1$, with zero entries otherwise. Define
+\[
+\GS(f)=\begin{pmatrix}
+X_0&X_1J&X_2J&X_3J\\
+-X_1J&X_0&-X_3^{\mathsf T}J&X_2^{\mathsf T}J\\
+-X_2J&X_3^{\mathsf T}J&X_0&-X_1^{\mathsf T}J\\
+-X_3J&-X_2^{\mathsf T}J&X_1^{\mathsf T}J&X_0
+\end{pmatrix}.
+\]
+Put $U=\GS(a)$, $V=\GS(b)$ and $d=4p=2524$.
+The circulant and reversal identities, together with \eqref{eq:T}, give
+\[
+ UU^{\mathsf T}=3pI,\quad VV^{\mathsf T}=pI,\quad
+ UV^{\mathsf T}+VU^{\mathsf T}=0.
+\]
+Thus the literal sign matrices $P=U-V$ and $Q=U+V$ satisfy
+\begin{equation}\label{eq:frame}
+ PP^{\mathsf T}=QQ^{\mathsf T}=dI,\qquad
+ PQ^{\mathsf T}+QP^{\mathsf T}=dI.
+\end{equation}
+
+\paragraph{Scalar action and transported metric.}
+Set $R=QP^{\mathsf T}/d$. Equation~\eqref{eq:frame} implies
+\[
+ RR^{\mathsf T}=I,\qquad R^{\mathsf T}=I-R,\qquad
+ R^2-R+I=0,\qquad RP=Q.
+\]
+Hence $\rho(\zeta_6)=R$ defines a faithful $\Q(\zeta_6)$ action on
+$\Q^d$, with $\rho(\overline z)=\rho(z)^{\mathsf T}$.
+The field degree is $2$ and the module rank is $1262$; the rational
+dimension is $2524$.
+Its rational entry alphabet is specified exactly by
+$R_{ij}=(d-2\operatorname{Ham}(Q_i,P_j))/d$ and recorded in the certificate.
+To specify the incoming metric explicitly, put $S=2R-I$ and
+$\xi=\sqrt{-3}$. The Hermitian form, linear in its second argument,
+\[
+ h(u,v)=\frac{u^{\mathsf T}v}{2}
+         -\frac{u^{\mathsf T}Sv}{6}\,\xi
+\]
+satisfies $\Tr_{\Q(\zeta_6)/\Q}h(u,v)=u^{\mathsf T}v$.
+Indeed $S^{\mathsf T}=-S$ and $S^2=-3I$.
+The canonical field basis $(1,\zeta_6)$ has trace metric
+$\left(\begin{smallmatrix}2&1\\1&2\end{smallmatrix}\right)$;
+the displayed $h$ specifies its realization in the actual coordinates.
+
+Take the complete Butson source
+\[
+ M=\begin{pmatrix}-1&\zeta_6&\zeta_6\\
+ \zeta_6&-1&\zeta_6\\\zeta_6&\zeta_6&-1\end{pmatrix},
+ \qquad MM^*=3I_3.
+\]
+Its used alphabet is exactly $\{-1,\zeta_6\}$.
+Restriction through $\rho$ preserves the Gram scale $3$ in the
+transported metric; the intermediate blocks may be nonflat.
+The frame $F=P$ has $FF^{\mathsf T}=dI$, and the used symbols have flat
+images $-F=-P$ and $\rho(\zeta_6)F=Q$.
+Therefore
+\[
+ H=\rho(M)\operatorname{diag}(P,P,P)
+   =\begin{pmatrix}-P&Q&Q\\Q&-P&Q\\Q&Q&-P\end{pmatrix}
+   \in\{-1,1\}^{3d\times3d},\qquad
+ HH^{\mathsf T}=3dI=7572I.
+\]
+This proves the theorem. The source scale $3$, frame scale $2524$ and
+expanded order $7572$ are distinct quantities until the final calculation.
+No flatness assertion is needed for unused roots: for example
+$\rho(\zeta_6^2)F=Q-P=2V$ has zeros and entries of magnitude two.
+
+\paragraph{Further completed scalar endpoints.}
+The same action and frame admit the four-symbol alphabet
+$\mathcal A=\{1,\zeta_6,-1,-\zeta_6\}$, with images $P,Q,-P,-Q$.
+Consequently, for any complete $N\in\mathcal A^{n\times n}$ with
+$NN^*=nI$, the literal blocks $\rho(N_{ij})P$ form a real Hadamard
+matrix of order $2524n$. Indeed, their $(i,j)$ Gram block is exactly
+$2524\rho(\sum_kN_{ik}\overline{N_{jk}})=2524n\delta_{ij}I$.
+The retained gauges of the published sources $P_7$, the first $BH(9,6)$
+catalogue representative, and $M_{13}A$~\cite{catalogue,aalto}, followed
+by the triplings below, give the following completed constructions.
+Here ``known'' means that an earlier construction was located; ``new''
+means new to the best of the author's knowledge.
+\begin{center}
+\begin{tabular}{ccl}
+Source order/scale & Endpoint order/scale & Order status\\\hline
+$3$ & $7572$ & New\\
+$7$ & $17668$ & New\\
+$9$ & $22716$ & New\\
+$13$ & $32812$ & New\\
+$39$ & $98436$ & New\\
+$117$ & $295308$ & New\\
+$351$ & $885924$ & Known (Paley)
+\end{tabular}
+\end{center}
+Every used exponent is in $\{0,1,3,4\}$, and both complete source Grams
+are checked over $\mathbb Q(\zeta_6)$. The ancillary files specify the
+gauged sources and every endpoint entry, without storing the large matrices.
+
+The known unreal-source tripling rule~\cite{unreal} extends the order-$13$ source.
+Write an unreal source as $(A+\sqrt{-3}B)/2$, with $A,B$ sign matrices.
+For $C=\left(\begin{smallmatrix}0&1&-1\\-1&0&1\\1&-1&0\end{smallmatrix}\right)$,
+put $A'=B\otimes J_3$ and $B'=A\otimes I_3+B\otimes C$.
+The identities $CC^{\mathsf T}=3I-J_3$ and $CJ_3=0$ verify the
+order-$3n$ unreal source. Multiplication by $\zeta_6^{-1}$ gives palette
+$\mathcal A$ again. Starting at order $13$ yields real orders
+$32812\cdot3^k$ for every $k\geq0$; the cases $k=1,2$ give
+$98436$ and $295308$ and have also been checked as complete finite sources.
+The next case, $885924$ ($k=3$), is known by Paley's construction since
+$885923$ is prime.
+
+\paragraph{Further cyclotomic scalar restrictions.}
+The same periodic T631 witness yields four disjoint coefficient matrices
+$X_0,\ldots,X_3$ of order $4p$, with $p=631$, by applying $\GS$ to
+\[
+b,\quad(-b_1,b_0,b_3,-b_2),\quad
+(-b_2,-b_3,b_0,b_1),\quad(-b_3,b_2,-b_1,b_0).
+\]
+The T identities and commuting-circulant GS identity give
+$X_jX_j^{\mathsf T}=pI$ and
+$X_iX_j^{\mathsf T}+X_jX_i^{\mathsf T}=0$ for $i\ne j$.
+Their supports partition every matrix position. Thus
+$D(x)=\sum_jX_jx_j$ is a complete orthogonal design with Gram
+$p\sum_j x_j^2I$ for commuting self-adjoint variables.
+
+Take a verified symmetric circulant Williamson quadruple $A_j$ of order
+$w$, with first rows $a_j$ and $\sum_j A_j^2=4wI$.
+In $K_w=\Q[c]/(c^w-1)$ put
+$f_j=\sum_k a_j[k]c^k$ and $\bar c=c^{-1}$.
+Then $\bar f_j=f_j$ and $\sum_jf_j^2=4w$.
+The weighted source $D(f)$ has order $4p$, alphabet the used polynomials
+$\pm f_j$, and Gram scale $4pw$; it is not asserted to be Butson.
+The algebra is the product $\prod_{d\mid w}\Q(\zeta_d)$, with positive
+trace functional $\tau(a)=[c^0]a=w^{-1}\sum_{d\mid w}\Tr(a_d)$.
+Its metric in the basis $\beta_k=c^{-k}$ is exactly $I_w$.
+Multiplication gives $\rho(f_j)=A_j$, with conjugation transported by
+transpose. Restriction, with terminal frame $I_w$, therefore gives
+\[
+ H_w=\sum_{j=0}^3X_j\otimes A_j,\qquad
+ H_wH_w^{\mathsf T}=4pwI.
+\]
+Each block position selects one signed $A_j$, proving all entries are signs.
+This recovers the Cooper--Wallis construction~\cite{cooperwallis} as a
+weighted scalar restriction. The ancillary table supplies 27 literal
+quadruples from the pinned Sage implementation~\cite{sage}; every complete
+source Gram and amicability identity is checked. Eight further orders are new:
+\begin{center}
+\begin{tabular}{rr@{\qquad}rr}
+$w$ & $4pw$ & $w$ & $4pw$\\\hline
+$17$ & $42908$ & $23$ & $58052$\\
+$29$ & $73196$ & $31$ & $78244$\\
+$37$ & $93388$ & $43$ & $108532$\\
+$51$ & $128724$ & $61$ & $153964$
+\end{tabular}
+\end{center}
+The other inputs are marked known when a prior construction was located;
+in particular $w=33$ gives the known Paley block-product order $83292$.
+
+\paragraph{Constructive infinite families.}
+Spence's recurrence~\cite{spence} applies to suitable sign quadruples
+$(D,E,F,G)$ of order $(q+1)/2$, for a prime power $q\equiv1\pmod4$.
+Let $Q$ be the symmetric Paley matrix of order $q$, so
+$Q^2=qI-J$ and $QJ=0$. For each pair $(U,V)=(D,E),(F,G)$ set
+\[
+ U'=\tfrac12(U-V)\otimes J+\tfrac12(U+V)\otimes(Q+I),\quad
+ V'=\tfrac12(U-V)\otimes J+\tfrac12(U+V)\otimes(Q-I).
+\]
+The retained starters satisfy
+$M_0=(D-E)^2+(F-G)^2=4I$ and
+$P_0=(D+E)^2+(F+G)^2=4qI$.
+The recurrence gives $M'=P\otimes I$ and
+$P'=qP\otimes I+(qM-P)\otimes J$; hence
+$M_r=4q^rI$, $P_r=4q^{r+1}I$, and the four squared components sum to
+$4w_rI$, where $w_r=(q+1)q^r/2$.
+Symmetry and commutativity persist. Exactly one of $(u-v)/2,(u+v)/2$
+is nonzero for paired signs, so every new component entry is a sign.
+
+Explicit starters and entry recursions are supplied for
+$q=13,17,61,101,121$. They are group-circulant on
+$C_{(q+1)/2}\times(\F_q,+)^r$.
+The same normalized group-algebra trace has metric $I_{w_r}$ in the
+inverse-group basis, and the scalar proof above gives the five families
+\[
+17668\cdot13^r,\quad22716\cdot17^r,\quad78244\cdot61^r,\quad
+128724\cdot101^r,\quad153964\cdot121^r\qquad(r\geq0).
+\]
+Every first expanded source is verified coefficientwise by an exact
+integer transform with a proved coefficient bound. The ancillary recipes
+give entry and row access without allocating the full endpoints.
+Their first expanded orders $229684$, $386172$, $4772884$ and $13001124$
+are new. The fifth, $18629644$, is known by Paley II with prime $9314821$.
+
+\paragraph{How the witness was found.}
+The successful search separated orbit axes from signs, using an auxiliary
+finite field in characteristic two. This field is unrelated to the
+characteristic-zero scalar action above.
+Encode the four axis labels by $0,1,\omega,\omega^2\in\F_4$, so that
+$c(\mu x)=\omega c(x)$. The parity of a signed correlation depends only
+on these labels.
+There is a bijection between all such axis words with the required
+correlation parities and $\mathrm{SL}_2(\F_{2^{15}})$.
+Here is a brief derivation.
+Since $\operatorname{ord}_{631}(2)=45$ and
+$\langle4,\mu\rangle$ is the quadratic-residue subgroup, the Fourier
+coefficients have two nonzero-frequency orbits, based at $1$ and $-1$.
+In $\F_{2^{90}}$, choose a primitive $631$st root $\zeta$ and an element
+$t$ of order $27$, with $\omega=t^{18}$.
+The Fourier rules $z_{4k}=z_k^4$ and $z_{\mu k}=\omega^{-1}z_k$,
+with $4^{15}=\mu^{14}\pmod {631}$ and $t^{2^{30}}=\omega t$,
+give $z_1=t\alpha$ and $z_{-1}=t\beta$, for
+$\alpha,\beta\in\F_{2^{30}}$.
+The $2^{45}$-Frobenius fixes $\zeta$ and sends $t$ to $t^{-1}$.
+The indicator identity $[c=d]=1+(c+d)^3$ reduces the full parity condition
+to $\overline\alpha\beta+\alpha\overline\beta=1$, where the bar is
+the relative $2^{15}$-Frobenius; the zero-frequency condition is automatic.
+Writing $\alpha=u+\omega v$ and $\beta=r+\omega s$ over
+$K=\F_{2^{15}}$ gives just
+\[
+ us+vr=1,\qquad
+ \begin{pmatrix}u&r\\v&s\end{pmatrix}\in\mathrm{SL}_2(K).
+\]
+The fixed inverse Fourier transform is an invertible binary map on
+$60$ coordinates. Thus the parameter space has
+$(2^{30}-1)2^{15}$ points, and uniform sampling requires no parity
+rejection.
+
+For a fixed axis word the exact correlation in shift class $\ell$ has
+the form
+\[
+ C_\ell(x)=C_\ell(0)-2\sum_{i<j}W_{\ell,ij}(x_i\mathbin\oplus x_j),
+\]
+where $x_i$ is the orbit sign bit and $W_{\ell,ij}$ is an integer weight.
+Extend $W$ symmetrically with zero diagonal.
+Modulo four these are linear equations in the bits, with coefficient
+$\sum_j W_{\ell,ij}$ at $x_i$ and right side $C_\ell(0)/2$ over $\F_2$.
+On the resulting
+affine kernel, $C_\ell/4$ modulo two is quadratic, allowing a packed
+modulo-eight filter. Exact DC counts and all integer correlations are
+tested on its survivors.
+The winning single-thread stream, restricted to nonorigin head counts
+$5,7,9$, found the stated head-count-$9$ witness after $2347.74$ seconds.
+It sign-lifted $52\,029\,943$ sampled axis words; the sum of their
+affine-kernel sizes was $426\,230\,308\,864$, processed by packed filters
+until the first exact zero. It passed $5\,202\,822$ assignments through
+the exact DC filter.
+These are measurements of that stream, not a bound on rediscovery time.
+
+\begin{theorem}\label{thm:T127}
+There exist four circulant $\{0,\pm1\}$-matrices $T_i$ of order $127$
+with pairwise disjoint support and
+$\sum_{i=0}^3T_iT_i^{\mathsf T}=127I$.
+\end{theorem}
+For a deterministic witness, use the same orbit convention with length
+$127$, multiplier $22$ of order $9$, and the $15$ states
+\begin{center}\small\ttfamily
+0 0 4 0 1 6 2 3 6 1 0 3 5 4 3
+\end{center}
+The resulting one-hot sequences have row sums $(10,3,3,3)$ and weights
+$(46,27,27,27)$. Direct integer calculation gives \eqref{eq:T} with
+$p=127$, proving Theorem~\ref{thm:T127} by taking their circulants.
+The independent verification checks every shift. The corresponding
+scalar frame has rational dimension and Gram scale $508$, field degree
+$2$, and module rank $254$. With the same trace metric, source and actual
+used alphabet, it gives a fully checked $H1524$, an already known order.
+The search used $\mathrm{SL}_2(\mathbb F_{128})$ and found this witness
+after $73$ axis lifts; all $407$ coefficients of the binary parity identity
+were checked. These periodic T-matrices are new to the best of the author's
+knowledge. Table~3 of the survey~\cite{survey} explicitly lists $127$ as
+its smallest open T-matrix order.
+Its complete data and separate archive-free verifier are included in the
+ancillary subdirectory \texttt{anc/t127/}.
+
+\paragraph{Exact verification and availability.}
+The standalone Python/NumPy recipe reconstructs the matrix from the states,
+checks every expanded correlation, the complete identities
+\eqref{eq:frame}, and every endpoint row inner product.
+A separate verifier read the actual packed matrix and checked all
+$28\,663\,806$ distinct row pairs by integer bit counts; every Hamming
+distance is $3786$. The packed rows have $7572$ used bits, little-endian
+within each byte, and zero padding. Their SHA256 is
+\begin{center}\scriptsize\ttfamily
+bc3cb6fca9243a6ef01c82de2a446080c8866e0f30d76c0f23ef0508ae5e2e9b
+\end{center}
+The matrix, sequence data, recipe and independent audits are retained in
+\texttt{artifacts/hadamard-7572/}.
+All data needed to reconstruct $H7572$ are given above: the orbit
+states and the literal block conventions determine every entry.
+The primary survey's Table~5 lists $p=631$ in its unresolved $4\cdot3p$
+row~\cite{survey}; the other two records explicitly list $7572$ as
+unresolved~\cite{explorer,frontier}. For the remaining orders marked
+new above, the literature search located no earlier construction.
+
+\paragraph{Computational assistance.}
+The scalar-reduction viewpoint and projective-flatness formulation were
+proposed by the author. The search implementation, computations, automated
+cross-checks and initial text were developed with OpenAI Codex and its
+automated collaborators.
+
+\begin{thebibliography}{10}\small\raggedright
+\bibitem{cooperwallis}
+J.~Cooper and J.~Wallis,
+\emph{A construction for Hadamard arrays}, Bull. Austral. Math. Soc.\ 7 (1972), 269--277.
+\url{https://doi.org/10.1017/S0004972700045019}.
+\bibitem{sage}
+The Sage Developers, \emph{Williamson-type quadruples, small cases},
+\texttt{hadamard\_matrix.py}, commit \texttt{8de8dad7}, 14 November 2026.
+\url{https://github.com/sagemath/sage/blob/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py}.
+\bibitem{spence}
+E.~Spence, \emph{An infinite family of Williamson matrices},
+J. Austral. Math. Soc. Ser. A\ 24 (1977), 252--256, Theorem~4.
+\url{https://doi.org/10.1017/S1446788700020255}.
+\bibitem{morphisms}
+R.~Egan and P.~\'{O}~Cath\'ain,
+\emph{Morphisms of Butson classes}, Linear Algebra Appl.\ 577 (2019), 78--93.
+\url{https://arxiv.org/abs/1707.08815v3}.
+\bibitem{catalogue}
+W.~Bruzda, W.~Tadej and K.~\.{Z}yczkowski,
+\emph{Complex Hadamard Matrices catalogue}, sources $P_7$ and $M_{13}A$.
+The latter is attributed to R.~Nicoar\u{a}, A.~LaClair, N.~Geist and
+A.~Wintenberg, May 2016.
+\url{https://github.com/matrix-toolbox/chm}.
+\bibitem{aalto}
+\emph{Butson Hadamard matrices up to monomial equivalence},
+Aalto University, dataset $BH(9,6)$, representative $0$.
+\url{https://wiki.aalto.fi/download/attachments/120482261/BH-9-6.txt}.
+\bibitem{unreal}
+B.~Compton, R.~Craigen and W.~de~Launey,
+\emph{Unreal $BH(n,6)$'s and Hadamard matrices},
+Des. Codes Cryptogr.\ 79 (2016), 219--229.
+\url{https://doi.org/10.1007/s10623-015-0045-y}.
+\bibitem{survey}
+R.~Egan, I.~S.~Kotsireas, S.~London and P.~\'{O}~Cath\'ain,
+\emph{Recent progress in the construction of Hadamard matrices},
+arXiv:2610.27175v2, revised 3 November 2026, Tables~3 and~5.
+\url{https://arxiv.org/abs/2610.27175v2}.
+\bibitem{explorer}
+\emph{Hadamard Matrix Explorer: Unknown Orders},
+7001--8000 row, consulted 24 November 2026.
+\url{https://www.math74.com/Hadamard/unknown.html}.
+\bibitem{frontier}
+\texttt{vatskishan03/Hadamard}, \emph{Unresolved orders},
+\texttt{FRONTIER.md} and \texttt{search/NOTES.md}, Section~6, commit \texttt{d885022144ba6bf4efa8315e14871a3736947527},
+6 November 2026, consulted 24 November 2026.
+\url{https://github.com/vatskishan03/Hadamard/blob/d885022144ba6bf4efa8315e14871a3736947527/FRONTIER.md}.
+\url{https://github.com/vatskishan03/Hadamard/blob/d885022144ba6bf4efa8315e14871a3736947527/search/NOTES.md}.
+\end{thebibliography}
+\end{document}

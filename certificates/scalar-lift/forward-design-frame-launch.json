@@ -1,0 +1,86 @@
+{
+  "command": [
+    "/Users/sasha/hadamard/.native-env/bin/python",
+    "-m",
+    "experiments.scalar_lift.forward_design_frame_search",
+    "--database",
+    "/Users/sasha/hadamard/experiments/scalar_lift/search-state/forward-frame-t223.sqlite3",
+    "--seconds",
+    "3598.0",
+    "--report",
+    "/Users/sasha/hadamard/certificates/scalar-lift/forward-design-frame-search.json",
+    "--max-db-mib",
+    "256"
+  ],
+  "conductor": null,
+  "database": "/Users/sasha/hadamard/experiments/scalar_lift/search-state/forward-frame-t223.sqlite3",
+  "database_lock": "/Users/sasha/hadamard/experiments/scalar_lift/search-state/forward-frame-t223.sqlite3.vanishing-job.lock",
+  "elapsed_seconds": 28.861346332996618,
+  "engine": "forward-frame",
+  "engine_seconds": 3598.0,
+  "half_weight": null,
+  "heartbeat_at": 1795397853.2947571,
+  "mathematical_completion_claimed": false,
+  "max_db_mib": 256,
+  "niceness": 10,
+  "python": "/Users/sasha/hadamard/.native-env/bin/python",
+  "report": "/Users/sasha/hadamard/certificates/scalar-lift/forward-design-frame-search.json",
+  "requested_at": 1795397824.410471,
+  "schema": "hadamard.vanishing-search-job.v1",
+  "seconds": 3600.0,
+  "started_at": 1795397824.433562,
+  "state": "running",
+  "supervisor_identity": {
+    "birth": 1795397824410755,
+    "boot": "darwin-epoch-microseconds",
+    "pid": 94159
+  },
+  "supervisor_log": "/Users/sasha/hadamard/runs/forward-frame/supervisor-fdb0926a122f4700ac9f4556352f4201.log",
+  "token": "fdb0926a122f4700ac9f4556352f4201",
+  "worker_log": "/Users/sasha/hadamard/runs/forward-frame/worker-fdb0926a122f4700ac9f4556352f4201.log",
+  "worker_pid": 94162,
+  "supervisor_alive": true,
+  "worker_alive": true,
+  "job_lock_held": true,
+  "database_lock_held": true,
+  "database_bytes_now": 299008,
+  "engine_progress": {
+    "progress": {
+      "cell_statuses": {
+        "open": 1,
+        "pending": 191
+      },
+      "evaluations": 1,
+      "last_attempt": {
+        "cell": {
+          "fixed_orbit_states": [
+            [
+              2,
+              0
+            ],
+            [
+              3,
+              1
+            ]
+          ],
+          "multiplier": 3,
+          "prime": 223,
+          "row_sums": [
+            -14,
+            3,
+            3,
+            3
+          ]
+        },
+        "cell_id": "082abe8c961c060aafb0ecc1229d1f36a9543dc968bf27009c099aeed864a85b",
+        "seed": 0
+      },
+      "last_solver_status": "UNKNOWN"
+    }
+  },
+  "worker_niceness": {
+    "applied": false,
+    "error": "[Errno 1] Operation not permitted",
+    "requested_increment": 10
+  }
+}

@@ -1,0 +1,125 @@
+{
+  "schema": "mixed-cubic-first-ramification-v1",
+  "coefficient_ring": "F4[pi]/(pi^2), pi=1-zeta_d, d in{16,32}",
+  "entry_expansion": "omega^c zeta_d^b = omega^c(1+(b mod2)pi)",
+  "conjugation": "omega->omega^2, pi->pi modulo pi^2",
+  "known_dense_F4_residues_remain_unitary": true,
+  "oracle": {
+    "exact_core_formula_controls": [
+      {
+        "s": 2,
+        "all_linear_basis_vectors_checked": 8,
+        "constant_coefficient_system_rank": 6,
+        "kernel_dimension": 2,
+        "kernel_is_common_column_phase_bits": true
+      },
+      {
+        "s": 4,
+        "all_linear_basis_vectors_checked": 32,
+        "constant_coefficient_system_rank": 28,
+        "kernel_dimension": 4,
+        "kernel_is_common_column_phase_bits": true
+      },
+      {
+        "s": 6,
+        "all_linear_basis_vectors_checked": 72,
+        "constant_coefficient_system_rank": 66,
+        "kernel_dimension": 6,
+        "kernel_is_common_column_phase_bits": true
+      }
+    ],
+    "full_boundary_derivatives_checked": 20
+  },
+  "targets": [
+    {
+      "source_order": 1499,
+      "phase": 96,
+      "dyadic_phase_order": 32,
+      "core_dimension": 748,
+      "border_order": 3,
+      "boundary_support_sha256": "91e904d6731d86adefee757019bdb1347d4b24d6a928a615a848e0e44539eb31",
+      "actual_upper_and_lower_boundary_first_bits_equal_A": true,
+      "actual_border_first_bits_are_zero": true,
+      "nonzero_A_entries": 744,
+      "A_rank_one_factor_weights": [
+        372,
+        2
+      ],
+      "A_row_and_column_parities_even": true,
+      "A_Atranspose_zero_and_A_Ctranspose_equals_A": true,
+      "K_equals_J_plus_I_is_invertible_over_F2": true,
+      "core_derivative_forces_bX_equals_bY_equals_ones_times_dtranspose": true,
+      "remaining_cross_equation": "K diag(d) A + A + omega^2 (Kd) ones^T = 0",
+      "independent_F2_coefficients_force_Kd_zero_then_d_zero_then_A_zero": true,
+      "contradiction_coordinate": [
+        0,
+        1
+      ],
+      "no_root_phase_lift_modulo_pi_squared_for_this_fixed_boundary_and_core_support": true,
+      "conditional_real_lift_order": 47968,
+      "general_Butson_source_order_excluded": false
+    },
+    {
+      "source_order": 2999,
+      "phase": 48,
+      "dyadic_phase_order": 16,
+      "core_dimension": 1496,
+      "border_order": 7,
+      "boundary_support_sha256": "dad926d940626f038efa02dddef8762b36402b8c92e949eafaf2e014c97d9f45",
+      "actual_upper_and_lower_boundary_first_bits_equal_A": true,
+      "actual_border_first_bits_are_zero": true,
+      "nonzero_A_entries": 2992,
+      "A_rank_one_factor_weights": [
+        748,
+        4
+      ],
+      "A_row_and_column_parities_even": true,
+      "A_Atranspose_zero_and_A_Ctranspose_equals_A": true,
+      "K_equals_J_plus_I_is_invertible_over_F2": true,
+      "core_derivative_forces_bX_equals_bY_equals_ones_times_dtranspose": true,
+      "remaining_cross_equation": "K diag(d) A + A + omega^2 (Kd) ones^T = 0",
+      "independent_F2_coefficients_force_Kd_zero_then_d_zero_then_A_zero": true,
+      "contradiction_coordinate": [
+        0,
+        0
+      ],
+      "no_root_phase_lift_modulo_pi_squared_for_this_fixed_boundary_and_core_support": true,
+      "conditional_real_lift_order": 47984,
+      "general_Butson_source_order_excluded": false
+    },
+    {
+      "source_order": 2999,
+      "phase": 96,
+      "dyadic_phase_order": 32,
+      "core_dimension": 1496,
+      "border_order": 7,
+      "boundary_support_sha256": "dad926d940626f038efa02dddef8762b36402b8c92e949eafaf2e014c97d9f45",
+      "actual_upper_and_lower_boundary_first_bits_equal_A": true,
+      "actual_border_first_bits_are_zero": true,
+      "nonzero_A_entries": 2992,
+      "A_rank_one_factor_weights": [
+        748,
+        4
+      ],
+      "A_row_and_column_parities_even": true,
+      "A_Atranspose_zero_and_A_Ctranspose_equals_A": true,
+      "K_equals_J_plus_I_is_invertible_over_F2": true,
+      "core_derivative_forces_bX_equals_bY_equals_ones_times_dtranspose": true,
+      "remaining_cross_equation": "K diag(d) A + A + omega^2 (Kd) ones^T = 0",
+      "independent_F2_coefficients_force_Kd_zero_then_d_zero_then_A_zero": true,
+      "contradiction_coordinate": [
+        0,
+        0
+      ],
+      "no_root_phase_lift_modulo_pi_squared_for_this_fixed_boundary_and_core_support": true,
+      "conditional_real_lift_order": 95968,
+      "general_Butson_source_order_excluded": false
+    }
+  ],
+  "row_Gram_alone_is_inconsistent": true,
+  "column_Gram_follows_from_row_Gram_for_square_matrices_over_this_commutative_ring": true,
+  "second_layer_search_needed": false,
+  "native_probe_run": false,
+  "larger_source_constructed": false,
+  "scope": "The specified repeated X/Y dense cubic support with the saved primitive mixed boundaries only."
+}

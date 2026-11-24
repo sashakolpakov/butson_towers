@@ -1,0 +1,285 @@
+{
+  "schema": "complete-cyclotomic-algebra-scalar-endpoints-v1",
+  "T_design": {
+    "T_source": {
+      "order": 127,
+      "actual_alphabet": [
+        -1,
+        0,
+        1
+      ],
+      "supports_partition_every_position": true,
+      "all_periodic_shifts_checked": 127,
+      "summed_circulant_Gram_scale": 127,
+      "generating_rows_int8_sha256": "20b1f1b8fea1cfdc18e18a9f26dfb57b2d61ff15a3ecf61ee150f47c68082237",
+      "row_sums": [
+        10,
+        3,
+        3,
+        3
+      ]
+    },
+    "orthogonal_design_order": 508,
+    "variable_count": 4,
+    "variable_weights": [
+      127,
+      127,
+      127,
+      127
+    ],
+    "source_identity": "D(x)D(x)^T=p*(x0^2+x1^2+x2^2+x3^2)*I_(4p)",
+    "construction": "D(x)=GS(L(x)b), with the literal L table retained below",
+    "L_variable_and_sign": [
+      [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          2,
+          -1
+        ],
+        [
+          3,
+          -1
+        ]
+      ],
+      [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          2,
+          -1
+        ]
+      ],
+      [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          -1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      [
+        [
+          3,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    ],
+    "GS_convention": "The standalone gs function in this recipe; reversal has J_uv=1 when u+v=p-1",
+    "all_polynomial_periodic_Gram_coefficients_checked": 1270,
+    "full_polynomial_Gram_verified": true,
+    "all_circulant_blocks_commute": true,
+    "coefficient_matrices_entry_alphabet": [
+      -1,
+      0,
+      1
+    ],
+    "coefficient_matrices_disjoint_and_cover_every_entry": true,
+    "coefficient_matrices_int8_sha256": [
+      "01fb5d70ceda43457ef5c6a00c49efe73d8cf46e6f3791f7d07f7927f6e639ce",
+      "ae5ba8befa19072fc4c8353e98e4a53dd6dca037f72f687e880832e449652c48",
+      "91719accdb447a600be7a7492918500e70f1ec64b906934e4c9f192109b348f3",
+      "8eebc4bf5c577fb4737b38da97b5385f36adabacfbe1208976c898c3186a53f5"
+    ],
+    "full_dense_coefficient_matrix_products_performed": false,
+    "literal_T_source": "artifacts/t-matrices-127/t127.json",
+    "literal_T_source_sha256": "4a415276e4c1f0360fe4e6bc6ca88d24955cda2b5c5297dbc44a6d63a0bf7a2b",
+    "orbit_states": [
+      0,
+      0,
+      4,
+      0,
+      1,
+      6,
+      2,
+      3,
+      6,
+      1,
+      0,
+      3,
+      5,
+      4,
+      3
+    ],
+    "multiplier": 22,
+    "multiplier_order": 9
+  },
+  "outputs": [
+    {
+      "p": 127,
+      "w": 17,
+      "output_order": 8636,
+      "Williamson_source": {
+        "order": 17,
+        "first_rows_pm": [
+          "+---+++----+++---",
+          "++-+---+--+---+-+",
+          "+--+-++++++++-+--",
+          "+-++-+++--+++-++-"
+        ],
+        "actual_used_scalar_polynomials": "f_j(c)=sum_k first_rows[j][k]*c^k",
+        "all_f_j_self_adjoint": true,
+        "all_pairwise_amicability_identities_verified": true,
+        "full_integer_Gram_verified": true,
+        "cyclic_algebra_norm_relation_verified": true,
+        "exact_norm_relation": "sum_j f_j(c)^2=68 in Q[c]/(c^17-1)",
+        "row_sums": [
+          -3,
+          -3,
+          5,
+          5
+        ],
+        "first_rows_int8_sha256": "c4f2b0312348d225f1c8086369eaf34f75f7c09bd56ed8ec22b64ca9683dfc55",
+        "entry_images_are_literal_sign_circulants": true,
+        "input_file": "experiments/scalar_lift/williamson_inputs.json",
+        "input_file_sha256": "242f554cf113c68ab882e147c3b2702b7bb62e68b66ad36b16c92b6c194f8560",
+        "primary_source": {
+          "id": "sage_official_literal_table",
+          "url": "https://github.com/sagemath/sage/blob/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py#L577",
+          "raw_url": "https://raw.githubusercontent.com/sagemath/sage/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py",
+          "commit": "8de8dad7bcb38e1baa43508cbe944bf04a2d0401",
+          "commit_date": "2026-11-14",
+          "source_sha256": "15b018c9d25cfbe1a45f98ee1421b338beb2b39077c6777e6bc33bc0fbd4b01d",
+          "function": "williamson_type_quadruples_smallcases",
+          "documentation_url": "https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/matrices/hadamard_matrix.html#sage.combinat.matrices.hadamard_matrix.williamson_type_quadruples_smallcases",
+          "documented_original_sources": "Sage attributes orders 3,5,...,29,37,43 to [Ha83], and 31,33,39,41,45,49,51,55,57,61,63 to [Lon2013]."
+        }
+      },
+      "scalar_algebra": {
+        "algebra": "Q[c]/(c^17-1)",
+        "algebra_is_single_number_field": false,
+        "number_field_factors": [
+          {
+            "conductor": 1,
+            "field_degree": 1,
+            "module_rank": 1
+          },
+          {
+            "conductor": 17,
+            "field_degree": 16,
+            "module_rank": 1
+          }
+        ],
+        "rational_dimension": 17,
+        "coordinate_basis": "beta_j=c^(-j), 0<=j<w",
+        "conjugation": "c -> c^(-1)",
+        "trace_functional": "tau(a)=[c^0]a=(1/17)*sum_(d|17) Tr_Q(zeta_d)/Q(a_d)",
+        "trace_metric": "I_17",
+        "metric_entry_formula": "G_ij=tau(conjugate(beta_i)*beta_j)=delta_ij",
+        "multiplication_action": "rho(f)[r,s]=f_coefficients[(s-r) mod w]",
+        "adjoint_identity": "rho(conjugate(f))=rho(f)^T",
+        "endpoint_frame": "I_17",
+        "endpoint_frame_Gram_scale": 1
+      },
+      "weighted_source_order": 508,
+      "weighted_source_Gram_scale": 8636,
+      "weighted_source_is_Butson": false,
+      "weighted_source_used_alphabet": "{+f_j(c),-f_j(c):0<=j<4}, with literal polynomials recorded above",
+      "actual_used_source_polynomials_pm": [
+        "++-+---+--+---+-+",
+        "+-++-+++--+++-++-",
+        "+--+-++++++++-+--",
+        "+---+++----+++---",
+        "-+++---++++---+++",
+        "-++-+--------+-++",
+        "-+--+---++---+--+",
+        "--+-+++-++-+++-+-"
+      ],
+      "actual_used_source_polynomial_count": 8,
+      "source_identity": "D(f)D(f)*=127*sum_j f_j(c)^2*I=8636I",
+      "rational_dimension_after_restriction": 8636,
+      "endpoint_Gram_scale": 8636,
+      "endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "endpoint_recipe": "H=sum_(j=0)^3 X_j tensor rho(f_j); X_j are the four disjoint GS orthogonal-design coefficients",
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "all_used_scalar_images_verified_sign_circulants": true,
+      "literal_entry_and_row_recipe_available": true,
+      "dense_endpoint_allocated": false,
+      "complete_dense_endpoint_Gram_performed": false,
+      "literal_row_controls": {
+        "row_indices": [
+          0,
+          1,
+          16,
+          17,
+          4318,
+          8635
+        ],
+        "all_selected_full_rows_are_signs": true,
+        "all_selected_row_pairs_checked_by_exact_bit_counts": true,
+        "complete_Gram_proof": "Full polynomial OD identity and complete exact Williamson norm relation; row checks are interface controls."
+      },
+      "reported_order_status": {
+        "p": 127,
+        "w": 17,
+        "order": 8636,
+        "status": "known",
+        "checked_utc": "2026-11-24 21:25:01 UTC",
+        "prior_construction": {
+          "family": "Cooper-Wallis with swapped classical ingredients",
+          "reference_url": "https://doi.org/10.1017/S0004972700045019",
+          "parameters": {
+            "known_T_order": 17,
+            "known_Williamson_type_order": 127,
+            "output_order": 8636
+          },
+          "ingredient_reference_url": "https://arxiv.org/html/0912.5091#S3",
+          "additional_reference_url": "https://arxiv.org/html/2610.27175v2#S4.T3",
+          "reference_detail": "The2009 paper records prior WT127 from good matrices and explicitly lists2159=17*127 among corrected known odd parts. Classical T17 gives H8636; this does not use the new periodic T127."
+        }
+      }
+    }
+  ],
+  "all_outputs_are_completed_literal_sign_matrix_recipes": true,
+  "restriction_scope": "Restriction of scalars from the finite etale algebra Q[C_w], explicitly factored into cyclotomic number fields; weighted source entries are not called Butson roots.",
+  "implementation_sha256": "990d193441cc3c64366826495190db39862e78d970ec6cae87dc9594805e1270",
+  "reconstruction_dependencies": [
+    "Python>=3.10",
+    "NumPy",
+    "neighboring literal T and Williamson input JSON files"
+  ],
+  "Williamson_input_sha256": "242f554cf113c68ab882e147c3b2702b7bb62e68b66ad36b16c92b6c194f8560",
+  "status_record": "experiments/scalar_lift/williamson_order_status.json",
+  "status_record_sha256": "74dd93f23c72a9d2bb828eaf7b7ca0b190b32e9000dd97bb99b6a7da095a49ea"
+}

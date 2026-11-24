@@ -1,0 +1,108 @@
+{
+  "schema": "real-hadamard-7572-primary-novelty-audit-v1",
+  "checked_utc": "2026-11-24T17:11:59+00:00",
+  "order": 7572,
+  "order_calculations": [
+    "12*631=7572",
+    "4*1893=7572"
+  ],
+  "primary_records": [
+    {
+      "kind": "primary_research_survey",
+      "title": "Recent progress in the construction of Hadamard matrices",
+      "authors": [
+        "Ronan Egan",
+        "Ilias S. Kotsireas",
+        "Stephen London",
+        "Pádraig Ó Catháin"
+      ],
+      "url": "https://arxiv.org/html/2610.27175v2#S4.T5",
+      "pdf_url": "https://arxiv.org/pdf/2610.27175v2",
+      "arxiv_version": "2610.27175v2",
+      "revision_utc": "2026-11-03T19:52:34Z",
+      "location": "Table 5, printed page 10, row n=4·3p",
+      "primary_stated_status": "No Hadamard matrix known at 4·3p for p=631; this is order 7572.",
+      "relevant_prime_entry": 631,
+      "order_calculation": "4*3*631=7572",
+      "checked_pdf_and_html": true,
+      "snapshot": {
+        "sha256": "4b575c3055fcd8c2c2419d30f669b2c55d749351ecbbba50da8d6dedc5072322",
+        "bytes": 609237,
+        "private_snapshot_path": "artifacts/scalar-frontier/novelty-7572-20261124/survey-v2.pdf",
+        "included_in_clean_bundle": false
+      }
+    },
+    {
+      "kind": "primary_construction_database",
+      "title": "Hadamard Matrix Explorer: Unknown Orders",
+      "url": "https://www.math74.com/Hadamard/unknown.html",
+      "location": "7001–8000 row",
+      "primary_stated_status": "Order 7572 is explicitly listed among orders for which the program holds no construction.",
+      "order_explicitly_listed": 7572,
+      "retrieval": "Direct HTTPS download; exact current HTML retained privately.",
+      "snapshot": {
+        "sha256": "8e396b54c8ed7cfa1e7a2dcd2fb2d5b57fdaff791398ef1ceab1c7383d5faaf5",
+        "bytes": 2028,
+        "private_snapshot_path": "artifacts/scalar-frontier/novelty-7572-20261124/math74-unknown.html",
+        "included_in_clean_bundle": false
+      }
+    },
+    {
+      "kind": "primary_research_repository",
+      "title": "New Hadamard matrices: Unresolved orders",
+      "url": "https://raw.githubusercontent.com/vatskishan03/Hadamard/main/FRONTIER.md",
+      "pinned_url": "https://github.com/vatskishan03/Hadamard/blob/d885022144ba6bf4efa8315e14871a3736947527/FRONTIER.md",
+      "location": "Unresolved-order table, row 7572 / 1893",
+      "primary_stated_status": "Real Hadamard order 7572, with odd part 1893, remains in the unresolved-order table.",
+      "order_explicitly_listed": 7572,
+      "odd_part": 1893,
+      "frontier_head_commit": "d885022144ba6bf4efa8315e14871a3736947527",
+      "frontier_head_commit_utc": "2026-11-06T08:49:29Z",
+      "frontier_file_last_modified_commit": "0a73016a2a6e80bfd4a36b530ad1e5ed02387947",
+      "frontier_file_last_modified_commit_utc": "2026-11-02T14:02:06Z",
+      "snapshot": {
+        "sha256": "e67e681689e3a02a3426d8c70800244bb7e2b6eb0f024987fa7ca0ff63f0e9bd",
+        "bytes": 22547,
+        "private_snapshot_path": "artifacts/scalar-frontier/novelty-7572-20261124/frontier.md",
+        "included_in_clean_bundle": false
+      },
+      "private_head_metadata": {
+        "sha256": "dfac3f212df048fb42b2e1101232b20fd443d19dd186a2a88e4b67daa172daca",
+        "bytes": 65282,
+        "private_snapshot_path": "artifacts/scalar-frontier/novelty-7572-20261124/frontier-main-commit.json",
+        "included_in_clean_bundle": false
+      },
+      "private_last_modified_metadata": {
+        "sha256": "972c7098d303912e6f005899a6927112c5051a97ff1459a35e50a81e83f24c31",
+        "bytes": 5542,
+        "private_snapshot_path": "artifacts/scalar-frontier/novelty-7572-20261124/frontier-last-commit.json",
+        "included_in_clean_bundle": false
+      }
+    }
+  ],
+  "all_three_primary_records_explicitly_record_order_unknown": true,
+  "conclusion": "Relative to these audited primary records, the verified real Hadamard matrix of order 7572 settles a previously unresolved order.",
+  "claim_scope": "Novelty of the real matrix order relative to the named, dated public primary records; distinctness of equivalence classes is not the basis of this conclusion.",
+  "absolute_publication_priority_claimed": false,
+  "method_priority_claimed": false,
+  "new_equivalence_class_claimed": false,
+  "unpublished_or_unindexed_constructions_excluded": false,
+  "search_cross_checks": {
+    "primary_repositories_reviewed": [
+      "vatskishan03/Hadamard",
+      "JD-Jones-ASES/Hadamard-T",
+      "JD-Jones-ASES/Hadamard-M",
+      "Middletownbooks/Hadamard"
+    ],
+    "order_and_equivalent_labels_checked": [
+      "7572",
+      "1893=3*631",
+      "periodic T-matrices of order 631"
+    ],
+    "result": "No conflicting construction was located in these checks; the affirmative prior-unknown claims above are the principal evidence."
+  },
+  "global_unknown_order_count_not_claimed": true,
+  "source_count_note": "The survey landing abstract, its body table, the live database and repository use differing total counts; the explicit order-7572 entries agree.",
+  "copyrighted_source_copies_in_clean_bundle": false,
+  "private_snapshots_are_research_evidence_only": true
+}

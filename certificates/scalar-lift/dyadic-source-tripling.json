@@ -1,0 +1,349 @@
+{
+  "scope": "Coefficientwise extension of known tripling; known-source controls only",
+  "phase_controls": [
+    {
+      "input": {
+        "source_order": 3,
+        "phase": 24,
+        "restricted_alphabet_and_exact_Gram_checked": true,
+        "source_sha256": "3ba037e97457bd9f40e2de5f00c751ef8895cf1c6dfdf2a2e27399740c57e567",
+        "factorization": {
+          "dyadic_phase": 8,
+          "cube_root_exponent_in_full_phase": 16,
+          "A_nonzero_entries": 6,
+          "C_nonzero_entries": 3,
+          "CA_star_equals_AC_star": true,
+          "AA_star_plus_CC_star_minus_AC_star_equals_mI": true,
+          "verification_ring": "Z[x]/(x^4+1)"
+        }
+      },
+      "output": {
+        "source_order": 9,
+        "phase": 24,
+        "restricted_alphabet_and_exact_Gram_checked": true,
+        "source_sha256": "dcab67d7e2bd2ac682cf6828dd965e1043fc9339825e6eb1debd59ecf0530c57",
+        "factorization": {
+          "dyadic_phase": 8,
+          "cube_root_exponent_in_full_phase": 16,
+          "A_nonzero_entries": 45,
+          "C_nonzero_entries": 36,
+          "CA_star_equals_AC_star": true,
+          "AA_star_plus_CC_star_minus_AC_star_equals_mI": true,
+          "verification_ring": "Z[x]/(x^4+1)"
+        },
+        "real_lift_control": {
+          "order": 72,
+          "all_entries_are_signs": true,
+          "full_integer_Gram_checked": true,
+          "binary_sha256": "329e66ff837b15b8f4384c75c2ef60dbdab92abf9545ffd6058b87b0a66cb56c"
+        }
+      }
+    },
+    {
+      "input": {
+        "source_order": 3,
+        "phase": 48,
+        "restricted_alphabet_and_exact_Gram_checked": true,
+        "source_sha256": "c5ea3d834638594c895bc5f1edc77f7725f26e5c1484cca7e3df24501b7e2d43",
+        "factorization": {
+          "dyadic_phase": 16,
+          "cube_root_exponent_in_full_phase": 16,
+          "A_nonzero_entries": 6,
+          "C_nonzero_entries": 3,
+          "CA_star_equals_AC_star": true,
+          "AA_star_plus_CC_star_minus_AC_star_equals_mI": true,
+          "verification_ring": "Z[x]/(x^8+1)"
+        }
+      },
+      "output": {
+        "source_order": 9,
+        "phase": 48,
+        "restricted_alphabet_and_exact_Gram_checked": true,
+        "source_sha256": "0357ae170007fe79e0f184b023e20412417dc1ee36974ff3122a9a274c2d216d",
+        "factorization": {
+          "dyadic_phase": 16,
+          "cube_root_exponent_in_full_phase": 16,
+          "A_nonzero_entries": 45,
+          "C_nonzero_entries": 36,
+          "CA_star_equals_AC_star": true,
+          "AA_star_plus_CC_star_minus_AC_star_equals_mI": true,
+          "verification_ring": "Z[x]/(x^8+1)"
+        },
+        "real_lift_control": {
+          "order": 144,
+          "all_entries_are_signs": true,
+          "full_integer_Gram_checked": true,
+          "binary_sha256": "8268ea755cdf218e5cd43f712dab82c3e6c3db0cb72752f1e011f1e79764ae31"
+        }
+      }
+    },
+    {
+      "input": {
+        "source_order": 3,
+        "phase": 96,
+        "restricted_alphabet_and_exact_Gram_checked": true,
+        "source_sha256": "f68dc14f8a496abe703f23c68f0b913bdb7302779a1296d5a488e7ed8e6a42bc",
+        "factorization": {
+          "dyadic_phase": 32,
+          "cube_root_exponent_in_full_phase": 64,
+          "A_nonzero_entries": 6,
+          "C_nonzero_entries": 3,
+          "CA_star_equals_AC_star": true,
+          "AA_star_plus_CC_star_minus_AC_star_equals_mI": true,
+          "verification_ring": "Z[x]/(x^16+1)"
+        }
+      },
+      "output": {
+        "source_order": 9,
+        "phase": 96,
+        "restricted_alphabet_and_exact_Gram_checked": true,
+        "source_sha256": "872fca6ac87e09015dd232f6f624e73f4f7b15b9d29bf405ba07c52aa179c962",
+        "factorization": {
+          "dyadic_phase": 32,
+          "cube_root_exponent_in_full_phase": 64,
+          "A_nonzero_entries": 45,
+          "C_nonzero_entries": 36,
+          "CA_star_equals_AC_star": true,
+          "AA_star_plus_CC_star_minus_AC_star_equals_mI": true,
+          "verification_ring": "Z[x]/(x^16+1)"
+        },
+        "real_lift_control": {
+          "order": 288,
+          "all_entries_are_signs": true,
+          "full_integer_Gram_checked": true,
+          "binary_sha256": "6ad0168adc6fcc5399874590ac5e3f1bb6b9007644e4499c1d8c8ac31561900d"
+        }
+      }
+    }
+  ],
+  "interleaved_field_and_assembly_tower": [
+    {
+      "source_order": 3,
+      "phase": 24,
+      "restricted_alphabet_and_exact_Gram_checked": true,
+      "source_sha256": "3ba037e97457bd9f40e2de5f00c751ef8895cf1c6dfdf2a2e27399740c57e567",
+      "factorization": {
+        "dyadic_phase": 8,
+        "cube_root_exponent_in_full_phase": 16,
+        "A_nonzero_entries": 6,
+        "C_nonzero_entries": 3,
+        "CA_star_equals_AC_star": true,
+        "AA_star_plus_CC_star_minus_AC_star_equals_mI": true,
+        "verification_ring": "Z[x]/(x^4+1)"
+      }
+    },
+    {
+      "operation": "triple",
+      "source_order": 9,
+      "phase": 24,
+      "restricted_alphabet_and_exact_Gram_checked": true,
+      "source_sha256": "dcab67d7e2bd2ac682cf6828dd965e1043fc9339825e6eb1debd59ecf0530c57",
+      "factorization": {
+        "dyadic_phase": 8,
+        "cube_root_exponent_in_full_phase": 16,
+        "A_nonzero_entries": 45,
+        "C_nonzero_entries": 36,
+        "CA_star_equals_AC_star": true,
+        "AA_star_plus_CC_star_minus_AC_star_equals_mI": true,
+        "verification_ring": "Z[x]/(x^4+1)"
+      }
+    },
+    {
+      "operation": "extend",
+      "source_order": 9,
+      "phase": 48,
+      "restricted_alphabet_and_exact_Gram_checked": true,
+      "source_sha256": "eccee91d146b6ce95194833dee77dbc561ea97524de77032c0744a0f8c6f8d27",
+      "factorization": {
+        "dyadic_phase": 16,
+        "cube_root_exponent_in_full_phase": 16,
+        "A_nonzero_entries": 36,
+        "C_nonzero_entries": 45,
+        "CA_star_equals_AC_star": true,
+        "AA_star_plus_CC_star_minus_AC_star_equals_mI": true,
+        "verification_ring": "Z[x]/(x^8+1)"
+      }
+    },
+    {
+      "operation": "triple",
+      "source_order": 27,
+      "phase": 48,
+      "restricted_alphabet_and_exact_Gram_checked": true,
+      "source_sha256": "8a812dc9ad71f47915a834a5d2cea8757a8b71a05f6ece620acee81b5a301491",
+      "factorization": {
+        "dyadic_phase": 16,
+        "cube_root_exponent_in_full_phase": 16,
+        "A_nonzero_entries": 351,
+        "C_nonzero_entries": 378,
+        "CA_star_equals_AC_star": true,
+        "AA_star_plus_CC_star_minus_AC_star_equals_mI": true,
+        "verification_ring": "Z[x]/(x^8+1)"
+      }
+    },
+    {
+      "operation": "extend",
+      "source_order": 27,
+      "phase": 96,
+      "restricted_alphabet_and_exact_Gram_checked": true,
+      "source_sha256": "8add463aea77e925bc8247fac29fb4d5dc2fa2b9166dec1e1253d317d6fbd8fe",
+      "factorization": {
+        "dyadic_phase": 32,
+        "cube_root_exponent_in_full_phase": 64,
+        "A_nonzero_entries": 378,
+        "C_nonzero_entries": 351,
+        "CA_star_equals_AC_star": true,
+        "AA_star_plus_CC_star_minus_AC_star_equals_mI": true,
+        "verification_ring": "Z[x]/(x^16+1)"
+      },
+      "real_lift_control": {
+        "order": 864,
+        "all_entries_are_signs": true,
+        "full_integer_Gram_checked": true,
+        "binary_sha256": "eb6c4ff3a90e245eec1d35a0673c83adfb13129dec5bed0d959a9f010e39bb08"
+      }
+    }
+  ],
+  "order_thirteen_input": {
+    "source_order": 13,
+    "phase": 96,
+    "restricted_alphabet_and_exact_Gram_checked": true,
+    "source_sha256": "4e0ecd9c42e294e250507a0846b6c0a6001b604d047107bfdbdbcd6f8a44087a",
+    "factorization": {
+      "dyadic_phase": 32,
+      "cube_root_exponent_in_full_phase": 64,
+      "A_nonzero_entries": 85,
+      "C_nonzero_entries": 84,
+      "CA_star_equals_AC_star": true,
+      "AA_star_plus_CC_star_minus_AC_star_equals_mI": true,
+      "verification_ring": "Z[x]/(x^16+1)"
+    }
+  },
+  "order_thirty_nine_output": {
+    "source_order": 39,
+    "phase": 96,
+    "restricted_alphabet_and_exact_Gram_checked": true,
+    "source_sha256": "3adf7c33c91a77e76bd0076cf5a6c5a5544517a58ad6cf610e38c8cc8d7d751a",
+    "factorization": {
+      "dyadic_phase": 32,
+      "cube_root_exponent_in_full_phase": 64,
+      "A_nonzero_entries": 762,
+      "C_nonzero_entries": 759,
+      "CA_star_equals_AC_star": true,
+      "AA_star_plus_CC_star_minus_AC_star_equals_mI": true,
+      "verification_ring": "Z[x]/(x^16+1)"
+    },
+    "real_lift_control": {
+      "order": 1248,
+      "all_entries_are_signs": true,
+      "full_integer_Gram_checked": true,
+      "binary_sha256": "80a940cb2666784a2f609ee5c48acad48ff10298c6486d16b08d483854d3dcef"
+    }
+  },
+  "non_sextic_control": {
+    "input": {
+      "source_order": 7,
+      "phase": 96,
+      "restricted_alphabet_and_exact_Gram_checked": true,
+      "source_sha256": "5c850667e9c7da49293661e4b650e4941e449d2dc391ed0517624d36321a1da5",
+      "factorization": {
+        "dyadic_phase": 32,
+        "cube_root_exponent_in_full_phase": 64,
+        "A_nonzero_entries": 27,
+        "C_nonzero_entries": 22,
+        "CA_star_equals_AC_star": true,
+        "AA_star_plus_CC_star_minus_AC_star_equals_mI": true,
+        "verification_ring": "Z[x]/(x^16+1)"
+      },
+      "cross_ratio_witness": {
+        "rows": [
+          0,
+          2
+        ],
+        "columns": [
+          0,
+          4
+        ],
+        "exponent": 8,
+        "root_order": 12,
+        "excludes_equivalence_to_sixth_root_source": true
+      }
+    },
+    "output": {
+      "source_order": 21,
+      "phase": 96,
+      "restricted_alphabet_and_exact_Gram_checked": true,
+      "source_sha256": "baf88ed2f1fc919b5ecd366e7084311443fd8daa57a2239d53bcc1bd96a6da13",
+      "factorization": {
+        "dyadic_phase": 32,
+        "cube_root_exponent_in_full_phase": 64,
+        "A_nonzero_entries": 228,
+        "C_nonzero_entries": 213,
+        "CA_star_equals_AC_star": true,
+        "AA_star_plus_CC_star_minus_AC_star_equals_mI": true,
+        "verification_ring": "Z[x]/(x^16+1)"
+      },
+      "real_lift_control": {
+        "order": 672,
+        "all_entries_are_signs": true,
+        "full_integer_Gram_checked": true,
+        "binary_sha256": "da800683b41a40bee09f9ed1ce9f253918680cc92f6c284318ecba7c33bdb7e9"
+      },
+      "cross_ratio_witness": {
+        "rows": [
+          0,
+          6
+        ],
+        "columns": [
+          0,
+          12
+        ],
+        "exponent": 56,
+        "root_order": 12,
+        "excludes_equivalence_to_sixth_root_source": true
+      }
+    },
+    "originality_claimed": false
+  },
+  "conditional_high_families": [
+    {
+      "missing_source_order": 1499,
+      "phase": 96,
+      "real_lift_width": 32,
+      "first_three_real_orders_if_source_exists": [
+        47968,
+        143904,
+        431712
+      ],
+      "seed_constructed": false,
+      "every_positive_tripling_descendant_already_known": true,
+      "descendant_novelty_status": "Known via Paley H17988 and H(8*3^r); see restricted-tripling-frontier.json"
+    },
+    {
+      "missing_source_order": 2999,
+      "phase": 48,
+      "real_lift_width": 16,
+      "first_three_real_orders_if_source_exists": [
+        47984,
+        143952,
+        431856
+      ],
+      "seed_constructed": false,
+      "every_positive_tripling_descendant_already_known": null,
+      "descendant_novelty_status": "Unknown-order status not established"
+    },
+    {
+      "missing_source_order": 2999,
+      "phase": 96,
+      "real_lift_width": 32,
+      "first_three_real_orders_if_source_exists": [
+        95968,
+        287904,
+        863712
+      ],
+      "seed_constructed": false,
+      "every_positive_tripling_descendant_already_known": null,
+      "descendant_novelty_status": "Unknown-order status not established"
+    }
+  ],
+  "new_real_Hadamard_order_constructed": false
+}

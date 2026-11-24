@@ -1,0 +1,25 @@
+{
+  "source_url": "https://ajc.maths.uq.edu.au/pdf/55/ajc_v55_p031.pdf",
+  "source_title": "A note on the existence of BH(19,6) matrices",
+  "author": "Ferenc Szollosi",
+  "publication": "Australasian Journal of Combinatorics 55 (2013), 31-34",
+  "location": "W19, page 33",
+  "phase": 6,
+  "exponent_rows": [
+    "3011005435321135430", "0013314245151433150", "0014242432413314510",
+    "1242124424503511340", "2543204201424153130", "0354504531345341310",
+    "5435323011001135430", "4245150013311433150", "2432410014243314510",
+    "4424501242123511340", "4201422543204153130", "4531340354505341310",
+    "5533215533210000113", "5231535231530013010", "3355123355121300010",
+    "1325351325350101041", "2513532513531041100", "3152353152351010401",
+    "0000000000004110100"
+  ],
+  "unreal_gauge_obstruction": {
+    "row_indices_zero_based": [16, 17, 18],
+    "column_indices_zero_based": [8, 10, 11, 15, 17, 18],
+    "first_row_shift_modulo_three": 0,
+    "lexicographic_remaining_row_shifts": "(0,0),(0,1),(0,2),(1,0),(1,1),(1,2),(2,0),(2,1),(2,2)",
+    "rejecting_column_for_each_assignment": [8, 10, 15, 10, 18, 8, 15, 17, 11],
+    "claim": "Every row gauge has a selected column containing all three exponent residues modulo three; no column gauge can avoid real sixth roots. Row/column permutations do not change this obstruction."
+  }
+}

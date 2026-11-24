@@ -1,0 +1,394 @@
+{
+  "scope": "Direct tripling, binary tensors and width8/16/32 sign lifts; no global novelty claim",
+  "frontier_provenance": {
+    "primary_url": "https://raw.githubusercontent.com/vatskishan03/Hadamard/d885022/FRONTIER.md",
+    "commit": "d885022",
+    "retrieved_date": "2026-11-22",
+    "low_snapshot_sha256": "a5522644cc5ccfddb72edcb406fa175114d3d28db7dec15ace77babbdf0241a3",
+    "high_audit_sha256": "af10ffdb4d72fda478f8510ffcecf518a99fe99e0872c76e85221672e940cb0e",
+    "primary_four_times_odd_count": 120,
+    "derived_higher_order_count_before_corrections": 37,
+    "removed_as_already_known": [
+      47920
+    ],
+    "active_higher_order_count": 36,
+    "active_orders_above_20000": [
+      20344,
+      21368,
+      21416,
+      21464,
+      21496,
+      21592,
+      23032,
+      23096,
+      23224,
+      23512,
+      23960,
+      23984,
+      23992,
+      25072,
+      42928,
+      46064,
+      46192,
+      47968,
+      47984,
+      95968
+    ],
+    "active_combined_target_count": 156,
+    "maximum": 95968
+  },
+  "source_independent_divisibility_proof": {
+    "every_low_target_has_v2_equal_two": true,
+    "every_higher_target_is_coprime_to_three": true,
+    "every_tripled_output_at_these_widths_is_divisible_by_24": true,
+    "active_targets_divisible_by_24": [],
+    "all_possible_direct_routes_independent_of_seed": []
+  },
+  "locally_verified_unreal_sources": [
+    {
+      "order": 3,
+      "phase": 6,
+      "sha256": "58cc229725c2d9ae03299f342b6e96fc2480c615800c912e478b24a78d01cfe0"
+    },
+    {
+      "order": 7,
+      "phase": 6,
+      "sha256": "c249184123218f5b4949ff27ad88aed12dba26cb8ccde2bb415d5fc9972083fd"
+    },
+    {
+      "order": 13,
+      "phase": 6,
+      "sha256": "f90c0940d343957ff837351785852aa07b98ce642082bfb976e16893d4fef8c2"
+    }
+  ],
+  "published_source_family": {
+    "primary_url": "https://link.springer.com/article/10.1007/s10623-015-0045-y",
+    "formula": "unreal BH(3^k h m,6), h a real Hadamard order, m in{1,7,10,13}",
+    "explicit_bounded_subfamily_scope": "h=2^a, at least one tripling, widths8/16/32",
+    "bound": 95968,
+    "output_count": 149,
+    "outputs": [
+      24,
+      48,
+      72,
+      96,
+      144,
+      168,
+      192,
+      216,
+      240,
+      288,
+      312,
+      336,
+      384,
+      432,
+      480,
+      504,
+      576,
+      624,
+      648,
+      672,
+      720,
+      768,
+      864,
+      936,
+      960,
+      1008,
+      1152,
+      1248,
+      1296,
+      1344,
+      1440,
+      1512,
+      1536,
+      1728,
+      1872,
+      1920,
+      1944,
+      2016,
+      2160,
+      2304,
+      2496,
+      2592,
+      2688,
+      2808,
+      2880,
+      3024,
+      3072,
+      3456,
+      3744,
+      3840,
+      3888,
+      4032,
+      4320,
+      4536,
+      4608,
+      4992,
+      5184,
+      5376,
+      5616,
+      5760,
+      5832,
+      6048,
+      6144,
+      6480,
+      6912,
+      7488,
+      7680,
+      7776,
+      8064,
+      8424,
+      8640,
+      9072,
+      9216,
+      9984,
+      10368,
+      10752,
+      11232,
+      11520,
+      11664,
+      12096,
+      12288,
+      12960,
+      13608,
+      13824,
+      14976,
+      15360,
+      15552,
+      16128,
+      16848,
+      17280,
+      17496,
+      18144,
+      18432,
+      19440,
+      19968,
+      20736,
+      21504,
+      22464,
+      23040,
+      23328,
+      24192,
+      24576,
+      25272,
+      25920,
+      27216,
+      27648,
+      29952,
+      30720,
+      31104,
+      32256,
+      33696,
+      34560,
+      34992,
+      36288,
+      36864,
+      38880,
+      39936,
+      40824,
+      41472,
+      43008,
+      44928,
+      46080,
+      46656,
+      48384,
+      49152,
+      50544,
+      51840,
+      52488,
+      54432,
+      55296,
+      58320,
+      59904,
+      61440,
+      62208,
+      64512,
+      67392,
+      69120,
+      69984,
+      72576,
+      73728,
+      75816,
+      77760,
+      79872,
+      81648,
+      82944,
+      86016,
+      89856,
+      92160,
+      93312
+    ],
+    "frontier_intersection": [],
+    "seed10_explicit_matrix_locally_verified": false
+  },
+  "first_descendants_of_missing_prime_sources": [
+    {
+      "order": 35976,
+      "quadruple_length": 4497,
+      "covered_by_published_quadruple_constructions": false,
+      "in_S2": false,
+      "in_S2D": false,
+      "direct_S2_witness": null,
+      "novelty_claimed": false,
+      "classical_families": {
+        "Paley_and_all_doublings_witnesses": [
+          {
+            "base_order": 17988,
+            "type": "I",
+            "q": 17987
+          }
+        ],
+        "current_complex_Golay_sum_witnesses": [],
+        "scope": "These two explicit families only; not an exhaustive literature or construction classification"
+      },
+      "covered_by_at_least_one_checked_published_family": true,
+      "in_attributed_active_frontier": false,
+      "unknown_status_inferred_from_family_miss": false
+    },
+    {
+      "order": 71952,
+      "quadruple_length": 8994,
+      "covered_by_published_quadruple_constructions": false,
+      "in_S2": false,
+      "in_S2D": false,
+      "direct_S2_witness": null,
+      "novelty_claimed": false,
+      "classical_families": {
+        "Paley_and_all_doublings_witnesses": [
+          {
+            "base_order": 17988,
+            "type": "I",
+            "q": 17987
+          }
+        ],
+        "current_complex_Golay_sum_witnesses": [],
+        "scope": "These two explicit families only; not an exhaustive literature or construction classification"
+      },
+      "covered_by_at_least_one_checked_published_family": true,
+      "in_attributed_active_frontier": false,
+      "unknown_status_inferred_from_family_miss": false
+    },
+    {
+      "order": 71976,
+      "quadruple_length": 8997,
+      "covered_by_published_quadruple_constructions": false,
+      "in_S2": false,
+      "in_S2D": false,
+      "direct_S2_witness": null,
+      "novelty_claimed": false,
+      "classical_families": {
+        "Paley_and_all_doublings_witnesses": [],
+        "current_complex_Golay_sum_witnesses": [],
+        "scope": "These two explicit families only; not an exhaustive literature or construction classification"
+      },
+      "covered_by_at_least_one_checked_published_family": false,
+      "in_attributed_active_frontier": false,
+      "unknown_status_inferred_from_family_miss": false
+    },
+    {
+      "order": 143904,
+      "quadruple_length": 17988,
+      "covered_by_published_quadruple_constructions": true,
+      "in_S2": true,
+      "in_S2D": true,
+      "direct_S2_witness": {
+        "kind": "Golay_product_of_sum",
+        "multiplier": 1,
+        "summand_lengths": [
+          2500,
+          15488
+        ]
+      },
+      "novelty_claimed": false,
+      "classical_families": {
+        "Paley_and_all_doublings_witnesses": [
+          {
+            "base_order": 17988,
+            "type": "I",
+            "q": 17987
+          }
+        ],
+        "current_complex_Golay_sum_witnesses": [
+          [
+            2500,
+            15488
+          ]
+        ],
+        "scope": "These two explicit families only; not an exhaustive literature or construction classification"
+      },
+      "covered_by_at_least_one_checked_published_family": true,
+      "in_attributed_active_frontier": false,
+      "unknown_status_inferred_from_family_miss": false
+    },
+    {
+      "order": 143952,
+      "quadruple_length": 17994,
+      "covered_by_published_quadruple_constructions": false,
+      "in_S2": false,
+      "in_S2D": false,
+      "direct_S2_witness": null,
+      "novelty_claimed": false,
+      "classical_families": {
+        "Paley_and_all_doublings_witnesses": [],
+        "current_complex_Golay_sum_witnesses": [],
+        "scope": "These two explicit families only; not an exhaustive literature or construction classification"
+      },
+      "covered_by_at_least_one_checked_published_family": false,
+      "in_attributed_active_frontier": false,
+      "unknown_status_inferred_from_family_miss": false
+    },
+    {
+      "order": 287904,
+      "quadruple_length": 35988,
+      "covered_by_published_quadruple_constructions": false,
+      "in_S2": false,
+      "in_S2D": false,
+      "direct_S2_witness": null,
+      "novelty_claimed": false,
+      "classical_families": {
+        "Paley_and_all_doublings_witnesses": [],
+        "current_complex_Golay_sum_witnesses": [],
+        "scope": "These two explicit families only; not an exhaustive literature or construction classification"
+      },
+      "covered_by_at_least_one_checked_published_family": false,
+      "in_attributed_active_frontier": false,
+      "unknown_status_inferred_from_family_miss": false
+    }
+  ],
+  "entire_1499_tripled_families_already_known": [
+    {
+      "sign_block_width": 16,
+      "source_order": 1499,
+      "tripling_exponents": "all k>=1",
+      "factorization": "23984*3^k = 17988*(4*3^(k-1))",
+      "first_factor": {
+        "order": 17988,
+        "Paley_I_prime": 17987
+      },
+      "second_factor_family": "H(4*3^r), r>=0",
+      "second_factor_justification": "Published unreal BH(3^r,6), width4 lift and optional doubling",
+      "every_order_already_constructible_independently_of_missing_source": true
+    },
+    {
+      "sign_block_width": 32,
+      "source_order": 1499,
+      "tripling_exponents": "all k>=1",
+      "factorization": "47968*3^k = 17988*(8*3^(k-1))",
+      "first_factor": {
+        "order": 17988,
+        "Paley_I_prime": 17987
+      },
+      "second_factor_family": "H(8*3^r), r>=0",
+      "second_factor_justification": "Published unreal BH(3^r,6), width4 lift and optional doubling",
+      "every_order_already_constructible_independently_of_missing_source": true
+    }
+  ],
+  "real_Kronecker_comparison": {
+    "literal_original_real_matrix_tensor_order_three_factor": "impossible: no real Hadamard of order3",
+    "arbitrary_factorization_or_matrix_inequivalence_proved": false,
+    "binary_source_special_case": "A real source H_n factors out, giving H_n tensor H_(3d), up to ordering",
+    "existing_sextic_sources": "Their order families already follow from the published sextic tripling and doubling"
+  },
+  "large_missing_sources_constructed": false,
+  "new_real_Hadamard_order_constructed": false
+}

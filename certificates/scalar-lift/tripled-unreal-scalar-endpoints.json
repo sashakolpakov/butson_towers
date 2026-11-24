@@ -1,0 +1,887 @@
+{
+  "schema": "completed-tripled-unreal-scalar-endpoint-recipes-v1",
+  "seed": {
+    "raw_seed_file": "experiments/scalar_lift/bh13_6_seed.json",
+    "raw_seed_file_sha256": "8ff8f10160828e8cc0372ecb045fca397aaf5c44c8f0db06d7aad1ebcb8cf003",
+    "primary_literal_source_url": "https://raw.githubusercontent.com/matrix-toolbox/chm/main/CHM/M13A.m",
+    "catalogue_url": "https://github.com/matrix-toolbox/chm/blob/main/catalogue/1306B.html",
+    "catalogue_attribution": "R. Nicoara, A. LaClair, N. Geist and A. Wintenberg, May 2016",
+    "raw_exponents": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        5,
+        5,
+        4,
+        4,
+        4,
+        4,
+        2,
+        2,
+        2,
+        1,
+        1,
+        1
+      ],
+      [
+        0,
+        5,
+        5,
+        1,
+        2,
+        2,
+        2,
+        4,
+        4,
+        4,
+        1,
+        1,
+        4
+      ],
+      [
+        0,
+        1,
+        1,
+        2,
+        4,
+        4,
+        1,
+        4,
+        2,
+        2,
+        5,
+        5,
+        4
+      ],
+      [
+        0,
+        1,
+        1,
+        4,
+        2,
+        2,
+        4,
+        1,
+        4,
+        4,
+        5,
+        5,
+        2
+      ],
+      [
+        0,
+        1,
+        4,
+        4,
+        5,
+        1,
+        2,
+        2,
+        5,
+        1,
+        4,
+        2,
+        4
+      ],
+      [
+        0,
+        2,
+        4,
+        1,
+        4,
+        1,
+        5,
+        1,
+        2,
+        4,
+        2,
+        4,
+        5
+      ],
+      [
+        0,
+        2,
+        4,
+        2,
+        1,
+        5,
+        4,
+        4,
+        1,
+        5,
+        4,
+        1,
+        2
+      ],
+      [
+        0,
+        2,
+        4,
+        5,
+        2,
+        4,
+        1,
+        5,
+        4,
+        1,
+        2,
+        4,
+        1
+      ],
+      [
+        0,
+        4,
+        1,
+        4,
+        1,
+        5,
+        2,
+        2,
+        1,
+        5,
+        2,
+        4,
+        4
+      ],
+      [
+        0,
+        4,
+        2,
+        1,
+        1,
+        4,
+        5,
+        1,
+        4,
+        2,
+        4,
+        2,
+        5
+      ],
+      [
+        0,
+        4,
+        2,
+        2,
+        5,
+        1,
+        4,
+        4,
+        5,
+        1,
+        1,
+        4,
+        2
+      ],
+      [
+        0,
+        4,
+        2,
+        5,
+        4,
+        2,
+        1,
+        5,
+        1,
+        4,
+        4,
+        2,
+        1
+      ]
+    ],
+    "raw_full_Gram": {
+      "order": 13,
+      "phase": 6,
+      "source_gram_scale": 13,
+      "all_row_Gram_entries_checked": 169,
+      "all_column_Gram_entries_checked": 169,
+      "coefficient_basis": [
+        "1",
+        "zeta_6"
+      ],
+      "exact_row_and_column_Gram": "13 I",
+      "exponent_sha256": "10091086757fcc1d78fea5a8eee0d7c8e7699274d0d5cee6d3e22f3b76095566"
+    },
+    "unreal_row_shifts_mod6": [
+      0,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "unreal_column_shifts_mod6": [
+      1,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2,
+      2
+    ],
+    "unreal_exponent_alphabet": [
+      1,
+      2,
+      4,
+      5
+    ],
+    "unreal_full_Gram": {
+      "order": 13,
+      "phase": 6,
+      "source_gram_scale": 13,
+      "all_row_Gram_entries_checked": 169,
+      "all_column_Gram_entries_checked": 169,
+      "coefficient_basis": [
+        "1",
+        "zeta_6"
+      ],
+      "exact_row_and_column_Gram": "13 I",
+      "exponent_sha256": "356dbb0c1e9acdfe1b4d859c778fc05bdc6c192c09462bc3a45bc44914cf8bc9"
+    }
+  },
+  "known_source_family_primary_reference": {
+    "authors": "B. Compton, R. Craigen, W. de Launey",
+    "title": "Unreal BH(n,6)'s and Hadamard matrices",
+    "journal": "Designs, Codes and Cryptography79(2016),219-229",
+    "url": "https://link.springer.com/article/10.1007/s10623-015-0045-y",
+    "publisher_stated_family": "n=3^k*h*m, k>=0, h a real Hadamard order, m in{1,7,10,13}",
+    "specific_family_used_here": "unreal BH(13*3^k,6), then global sixth-root gauge-1",
+    "method_priority_claimed": false
+  },
+  "independent_tripling_proof": {
+    "input": "U=(A+sqrt(-3)B)/2, A,B sign matrices; AA^T+3BB^T=4nI and AB^T=BA^T",
+    "C3": [
+      [
+        0,
+        1,
+        -1
+      ],
+      [
+        -1,
+        0,
+        1
+      ],
+      [
+        1,
+        -1,
+        0
+      ]
+    ],
+    "J3": [
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        1
+      ]
+    ],
+    "tensor_identities": "C^T=-C, CC^T=3I-J, CJ=JC=0, J^2=3J",
+    "recurrence": "A'=B tensor J; B'=A tensor I+B tensor C",
+    "output_entries": "A',B' are signs, so(A'+sqrt(-3)B')/2 has only unreal sixth-root entries",
+    "Gram_expansion": "A'A'^T+3B'B'^T=3(AA^T+3BB^T) tensor I=12nI",
+    "cross_expansion": "A'B'^T-B'A'^T=(BA^T-AB^T) tensor J=0",
+    "family_rule": "all source orders13*3^k; endpoint orders32812*3^k, k>=0",
+    "actual_complete_source_Gram_executions": [
+      39,
+      117,
+      351
+    ]
+  },
+  "fixed_frame": {
+    "rational_dimension": 2524,
+    "field": "Q(zeta_6)/Q",
+    "field_degree": 2,
+    "module_rank": 1262,
+    "conjugation": "zeta_6 -> 1-zeta_6; scalar-action transpose",
+    "canonical_trace_basis": [
+      "1",
+      "zeta_6"
+    ],
+    "canonical_trace_metric": [
+      [
+        2,
+        1
+      ],
+      [
+        1,
+        2
+      ]
+    ],
+    "actual_Euclidean_coordinate_trace_form": "h(u,v)=u^T*v/2-(u^T*S*v)*sqrt(-3)/6, S=2R-I; Tr(h)=u^T*v",
+    "scalar_action": "R=Q*P^T/2524",
+    "scalar_action_identities": [
+      "R*R^T=I",
+      "R+R^T=I",
+      "R^2-R+I=0"
+    ],
+    "frame": "F=P",
+    "frame_gram_scale": 2524,
+    "full_P_integer_Gram_verified": true,
+    "full_Q_integer_Gram_verified": true,
+    "full_symmetric_cross_identity_verified": true,
+    "unordered_row_pairs_checked_per_identity": 3184026,
+    "P_packed_sha256": "6797e67ca52723c3a0d787ab10099742dbe765f806b937d69b01e656f6a42110",
+    "Q_packed_sha256": "3f0b69cc4a2ab3b5f1a0d2f4d13e6e5f51247ad1741f59be3156e092d988ef36",
+    "actual_frame_and_used_image_alphabet": [
+      -1,
+      1
+    ],
+    "flat_entry_images": {
+      "0": "P",
+      "1": "Q",
+      "3": "-P",
+      "4": "-Q"
+    },
+    "unused_nonflat_images": {
+      "2": "Q-P",
+      "5": "P-Q"
+    },
+    "immutable_recipe": "artifacts/hadamard-7572/recipe.py",
+    "immutable_recipe_sha256": "a839a6052b2bd6b55170304318099e61cc62b1b9e3d525834a4d131bd9900ec8",
+    "immutable_sequences_sha256": "c5497ef485a23f1c99385035eaf02472b4dad4dee9d906d0d6b2aeb2f3680871"
+  },
+  "actual_scalar_action_entry_alphabet": {
+    "integer_numerators": [
+      -1262,
+      -758,
+      -730,
+      -726,
+      -718,
+      -714,
+      -710,
+      -702,
+      -698,
+      -694,
+      -690,
+      -686,
+      -682,
+      -678,
+      -674,
+      -670,
+      -666,
+      -662,
+      -658,
+      -654,
+      -650,
+      -646,
+      -642,
+      -638,
+      -634,
+      -630,
+      -626,
+      -622,
+      -618,
+      -614,
+      -610,
+      -606,
+      -602,
+      -598,
+      -594,
+      -590,
+      -586,
+      -582,
+      -578,
+      -574,
+      -570,
+      -566,
+      -562,
+      -558,
+      -554,
+      -550,
+      -546,
+      -538,
+      -534,
+      -518,
+      -506,
+      -146,
+      -142,
+      -138,
+      -134,
+      -130,
+      -126,
+      -122,
+      -118,
+      -114,
+      -110,
+      -106,
+      -102,
+      -98,
+      -94,
+      -90,
+      -86,
+      -82,
+      -78,
+      -74,
+      -70,
+      -66,
+      -62,
+      -58,
+      -54,
+      -50,
+      -46,
+      -42,
+      -38,
+      -34,
+      -30,
+      -26,
+      -22,
+      -18,
+      -14,
+      -10,
+      -6,
+      -2,
+      2,
+      6,
+      10,
+      14,
+      18,
+      22,
+      26,
+      30,
+      34,
+      38,
+      42,
+      46,
+      50,
+      54,
+      58,
+      62,
+      66,
+      70,
+      74,
+      78,
+      82,
+      86,
+      90,
+      94,
+      98,
+      102,
+      106,
+      110,
+      114,
+      118,
+      122,
+      126,
+      130,
+      134,
+      138,
+      142,
+      146,
+      506,
+      518,
+      534,
+      538,
+      546,
+      550,
+      554,
+      558,
+      562,
+      566,
+      570,
+      574,
+      578,
+      582,
+      586,
+      590,
+      594,
+      598,
+      602,
+      606,
+      610,
+      614,
+      618,
+      622,
+      626,
+      630,
+      634,
+      638,
+      642,
+      646,
+      650,
+      654,
+      658,
+      662,
+      666,
+      670,
+      674,
+      678,
+      682,
+      686,
+      690,
+      694,
+      698,
+      702,
+      710,
+      714,
+      718,
+      726,
+      730,
+      758,
+      1262
+    ],
+    "common_denominator": 2524
+  },
+  "actual_intermediate_entry_alphabet": "{0,1,-1} union the recorded rational R-entry alphabet and its negatives",
+  "actual_used_scalar_images": {
+    "0": "P",
+    "1": "Q",
+    "3": "-P",
+    "4": "-Q"
+  },
+  "immutable_frame_certificate": "artifacts/hadamard-7572/certificate.json",
+  "immutable_frame_certificate_sha256": "5c37e95c97ded5025b7b5bd92b9c994a09f419426a04e564872eda4b19f899b1",
+  "complete_endpoint_recipes": [
+    {
+      "source": {
+        "order": 39,
+        "phase": 6,
+        "source_gram_scale": 39,
+        "all_row_Gram_entries_checked": 1521,
+        "all_column_Gram_entries_checked": 1521,
+        "coefficient_basis": [
+          "1",
+          "zeta_6"
+        ],
+        "exact_row_and_column_Gram": "39 I",
+        "exponent_sha256": "c045c5be566a2d3078027015072833dce8eec195d60d1c02e3eb8e226400b445",
+        "construction": "known unreal seed13 followed by exact tensor triplings",
+        "tripling_count": 1,
+        "all_intermediate_full_Grams": [
+          {
+            "tripling": 1,
+            "order": 39,
+            "phase": 6,
+            "source_gram_scale": 39,
+            "all_row_Gram_entries_checked": 1521,
+            "all_column_Gram_entries_checked": 1521,
+            "coefficient_basis": [
+              "1",
+              "zeta_6"
+            ],
+            "exact_row_and_column_Gram": "39 I",
+            "exponent_sha256": "a2cdf97d7dab729e4cfc1acc191f16f359bc84a2917b00369fd4fa687de12a01"
+          }
+        ],
+        "raw_unreal_exponent_alphabet": [
+          1,
+          2,
+          4,
+          5
+        ],
+        "global_gauge_mod6": 5,
+        "actual_exponent_alphabet": [
+          0,
+          1,
+          3,
+          4
+        ],
+        "retained_registry_id": "cubic13-q24-t1",
+        "retained_registry_phase": 24,
+        "retained_registry_hash": "a4a5371359a2137c8103d06d18123f141e2794a3a91dd0a6c942392d4e86e377",
+        "registry_to_source_gauge": "e6=((e24-6) mod24)/4",
+        "complete_source_constructed_and_verified": true,
+        "source_priority_claimed": false
+      },
+      "endpoint_order": 98436,
+      "source_gram_scale": 39,
+      "frame_gram_scale": 2524,
+      "endpoint_gram_scale": 98436,
+      "actual_endpoint_alphabet": [
+        -1,
+        1
+      ],
+      "literal_entry_and_row_recipe_available": true,
+      "endpoint_Gram_proved_exactly": true,
+      "proof": "B(z)=rho(z)P; sum_k B(h_ik)B(h_jk)^T=2524*rho(sum_k h_ik*conjugate(h_jk))=2524*n*delta_ij*I",
+      "dense_endpoint_allocated": false,
+      "dense_endpoint_Gram_multiplication_performed": false,
+      "literal_row_controls": {
+        "row_indices": [
+          0,
+          1,
+          2523,
+          2524,
+          98435
+        ],
+        "all_selected_rows_have_only_signs": true,
+        "selected_pairwise_integer_Grams_verified": true,
+        "scope": "literal interface controls; the complete endpoint Gram is proved algebraically"
+      },
+      "ordinary_real_Hadamard_Kronecker_product": false,
+      "Kronecker_reason": "order>4 and exactly two factors2; two nontrivial real Hadamard orders cannot have this product",
+      "known_order": false,
+      "prior_construction_identified": false,
+      "novelty_status": "new_to_best_of_authors_knowledge",
+      "known_order_construction": null,
+      "new_Hadamard_order_claimed": true,
+      "new_order_claim": "To the best of the author's knowledge, 98436 is a new real Hadamard order.",
+      "new_equivalence_class_claimed": false
+    },
+    {
+      "source": {
+        "order": 117,
+        "phase": 6,
+        "source_gram_scale": 117,
+        "all_row_Gram_entries_checked": 13689,
+        "all_column_Gram_entries_checked": 13689,
+        "coefficient_basis": [
+          "1",
+          "zeta_6"
+        ],
+        "exact_row_and_column_Gram": "117 I",
+        "exponent_sha256": "efa1a7f539515146f0b2f6ba2380d54bb1e100f6551dc09d859cf385a675d83e",
+        "construction": "known unreal seed13 followed by exact tensor triplings",
+        "tripling_count": 2,
+        "all_intermediate_full_Grams": [
+          {
+            "tripling": 1,
+            "order": 39,
+            "phase": 6,
+            "source_gram_scale": 39,
+            "all_row_Gram_entries_checked": 1521,
+            "all_column_Gram_entries_checked": 1521,
+            "coefficient_basis": [
+              "1",
+              "zeta_6"
+            ],
+            "exact_row_and_column_Gram": "39 I",
+            "exponent_sha256": "a2cdf97d7dab729e4cfc1acc191f16f359bc84a2917b00369fd4fa687de12a01"
+          },
+          {
+            "tripling": 2,
+            "order": 117,
+            "phase": 6,
+            "source_gram_scale": 117,
+            "all_row_Gram_entries_checked": 13689,
+            "all_column_Gram_entries_checked": 13689,
+            "coefficient_basis": [
+              "1",
+              "zeta_6"
+            ],
+            "exact_row_and_column_Gram": "117 I",
+            "exponent_sha256": "938bf8520596a344e06fbab11d09a7228ca93e7a79cdd93556553a5b8882ce3e"
+          }
+        ],
+        "raw_unreal_exponent_alphabet": [
+          1,
+          2,
+          4,
+          5
+        ],
+        "global_gauge_mod6": 5,
+        "actual_exponent_alphabet": [
+          0,
+          1,
+          3,
+          4
+        ],
+        "retained_registry_id": "cubic13-q24-t2",
+        "retained_registry_phase": 24,
+        "retained_registry_hash": "278e509fac2337b60a0094bb2a2313ce0d2d8f2482660f8fd730682e7e77189a",
+        "registry_to_source_gauge": "e6=((e24-6) mod24)/4",
+        "complete_source_constructed_and_verified": true,
+        "source_priority_claimed": false
+      },
+      "endpoint_order": 295308,
+      "source_gram_scale": 117,
+      "frame_gram_scale": 2524,
+      "endpoint_gram_scale": 295308,
+      "actual_endpoint_alphabet": [
+        -1,
+        1
+      ],
+      "literal_entry_and_row_recipe_available": true,
+      "endpoint_Gram_proved_exactly": true,
+      "proof": "B(z)=rho(z)P; sum_k B(h_ik)B(h_jk)^T=2524*rho(sum_k h_ik*conjugate(h_jk))=2524*n*delta_ij*I",
+      "dense_endpoint_allocated": false,
+      "dense_endpoint_Gram_multiplication_performed": false,
+      "literal_row_controls": {
+        "row_indices": [
+          0,
+          1,
+          2523,
+          2524,
+          295307
+        ],
+        "all_selected_rows_have_only_signs": true,
+        "selected_pairwise_integer_Grams_verified": true,
+        "scope": "literal interface controls; the complete endpoint Gram is proved algebraically"
+      },
+      "ordinary_real_Hadamard_Kronecker_product": false,
+      "Kronecker_reason": "order>4 and exactly two factors2; two nontrivial real Hadamard orders cannot have this product",
+      "known_order": false,
+      "prior_construction_identified": false,
+      "novelty_status": "new_to_best_of_authors_knowledge",
+      "known_order_construction": null,
+      "new_Hadamard_order_claimed": true,
+      "new_order_claim": "To the best of the author's knowledge, 295308 is a new real Hadamard order.",
+      "new_equivalence_class_claimed": false
+    },
+    {
+      "source": {
+        "order": 351,
+        "phase": 6,
+        "source_gram_scale": 351,
+        "all_row_Gram_entries_checked": 123201,
+        "all_column_Gram_entries_checked": 123201,
+        "coefficient_basis": [
+          "1",
+          "zeta_6"
+        ],
+        "exact_row_and_column_Gram": "351 I",
+        "exponent_sha256": "7dae634635bbc48828dcc62f401c7b7110b886bfe4062c660959a85ef11fe775",
+        "construction": "known unreal seed13 followed by exact tensor triplings",
+        "tripling_count": 3,
+        "all_intermediate_full_Grams": [
+          {
+            "tripling": 1,
+            "order": 39,
+            "phase": 6,
+            "source_gram_scale": 39,
+            "all_row_Gram_entries_checked": 1521,
+            "all_column_Gram_entries_checked": 1521,
+            "coefficient_basis": [
+              "1",
+              "zeta_6"
+            ],
+            "exact_row_and_column_Gram": "39 I",
+            "exponent_sha256": "a2cdf97d7dab729e4cfc1acc191f16f359bc84a2917b00369fd4fa687de12a01"
+          },
+          {
+            "tripling": 2,
+            "order": 117,
+            "phase": 6,
+            "source_gram_scale": 117,
+            "all_row_Gram_entries_checked": 13689,
+            "all_column_Gram_entries_checked": 13689,
+            "coefficient_basis": [
+              "1",
+              "zeta_6"
+            ],
+            "exact_row_and_column_Gram": "117 I",
+            "exponent_sha256": "938bf8520596a344e06fbab11d09a7228ca93e7a79cdd93556553a5b8882ce3e"
+          },
+          {
+            "tripling": 3,
+            "order": 351,
+            "phase": 6,
+            "source_gram_scale": 351,
+            "all_row_Gram_entries_checked": 123201,
+            "all_column_Gram_entries_checked": 123201,
+            "coefficient_basis": [
+              "1",
+              "zeta_6"
+            ],
+            "exact_row_and_column_Gram": "351 I",
+            "exponent_sha256": "1cd659cd2440dcde39b1ea3527205def3656a27e122eba099d2b6aaceb8cd110"
+          }
+        ],
+        "raw_unreal_exponent_alphabet": [
+          1,
+          2,
+          4,
+          5
+        ],
+        "global_gauge_mod6": 5,
+        "actual_exponent_alphabet": [
+          0,
+          1,
+          3,
+          4
+        ],
+        "retained_registry_id": "cubic13-q24-t3",
+        "retained_registry_phase": 24,
+        "retained_registry_hash": "30f3dde8f25182cf42f4b5470a68bc43e314b1c7138025938dd63c1b3406324c",
+        "registry_to_source_gauge": "e6=((e24-6) mod24)/4",
+        "complete_source_constructed_and_verified": true,
+        "source_priority_claimed": false
+      },
+      "endpoint_order": 885924,
+      "source_gram_scale": 351,
+      "frame_gram_scale": 2524,
+      "endpoint_gram_scale": 885924,
+      "actual_endpoint_alphabet": [
+        -1,
+        1
+      ],
+      "literal_entry_and_row_recipe_available": true,
+      "endpoint_Gram_proved_exactly": true,
+      "proof": "B(z)=rho(z)P; sum_k B(h_ik)B(h_jk)^T=2524*rho(sum_k h_ik*conjugate(h_jk))=2524*n*delta_ij*I",
+      "dense_endpoint_allocated": false,
+      "dense_endpoint_Gram_multiplication_performed": false,
+      "literal_row_controls": {
+        "row_indices": [
+          0,
+          1,
+          2523,
+          2524,
+          885923
+        ],
+        "all_selected_rows_have_only_signs": true,
+        "selected_pairwise_integer_Grams_verified": true,
+        "scope": "literal interface controls; the complete endpoint Gram is proved algebraically"
+      },
+      "ordinary_real_Hadamard_Kronecker_product": false,
+      "Kronecker_reason": "order>4 and exactly two factors2; two nontrivial real Hadamard orders cannot have this product",
+      "known_order": true,
+      "prior_construction_identified": true,
+      "novelty_status": "known",
+      "known_order_construction": {
+        "method": "Paley I",
+        "prime_power": 885923
+      },
+      "new_Hadamard_order_claimed": false,
+      "new_order_claim": null,
+      "new_equivalence_class_claimed": false
+    }
+  ],
+  "novelty_convention": {
+    "known": "an identified prior construction gives this real Hadamard order",
+    "new_to_best_of_authors_knowledge": "a completed endpoint for which the author knows no prior construction",
+    "new_order_claims_are_qualified_by_authors_knowledge": true,
+    "absolute_priority_claimed": false,
+    "equivalence_class_novelty_claimed": false
+  },
+  "new_real_orders_claimed_to_best_of_authors_knowledge": [
+    98436,
+    295308
+  ],
+  "novelty_scope": "Completed real Hadamard orders98436 and295308 are new to the best of the author's knowledge. Order885924 is known by Paley I at prime885923. No family-wide order novelty, source-method priority or equivalence-class novelty is claimed.",
+  "implementation_sha256": "7510f5eebdb85a3cd1ce7ede7f5488c25bcfb81e72909e22b41532d199af06fc"
+}

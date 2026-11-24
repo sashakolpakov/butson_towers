@@ -1,0 +1,26 @@
+{
+  "schema": "sextic-skew-completion-control-v1",
+  "frontier_matrix_constructed": false,
+  "width": 12,
+  "odd_prime": 3,
+  "frame_code_rank": 6,
+  "alternating_form_rank": 4,
+  "off_diagonal_entry_bound": 4,
+  "ambiguous_skew_entries": 12,
+  "raw_binary_completions": 4096,
+  "parity_graph_cycle_rank": 1,
+  "parity_feasible_completions": 2,
+  "exact_sextic_sign_pairs": 1,
+  "expected_pair_recovered": true,
+  "solution_sign_sha256": [
+    "cd882b433909eb5b439514272be2b40d2d5d322db4b41b7f4c0cc109220d35cc"
+  ],
+  "larger_control": {
+    "width": 28,
+    "ambiguous_skew_entries": 138,
+    "parity_graph_cycle_rank": 111,
+    "known_exact_completion_verified": true,
+    "all_completions_enumerated": false,
+    "graph_parity_alone_is_insufficient_for_scaling": true
+  }
+}

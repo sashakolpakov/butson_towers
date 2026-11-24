@@ -1,0 +1,1363 @@
+{
+  "631:1": {
+    "p": 631,
+    "w": 1,
+    "order": 2524,
+    "status": "known",
+    "prior_construction": {
+      "family": "Goethals-Seidel supplementary difference sets",
+      "reference_url": "https://arxiv.org/abs/1301.3671v2",
+      "parameters": {
+        "cyclic_group_order": 631,
+        "Hadamard_order": 2524
+      },
+      "reference_detail": "Djokovic, Golubitsky and Kotsireas (2013), explicit ordinary and skew Hadamard matrices of order2524."
+    },
+    "checked_utc": "2026-11-24 21:25:01 UTC",
+    "williamson_input_sha256": "27ecd0a598e76f8a2fd264d427df0a119903e8eae384e478902541756f089dd1",
+    "arithmetic_checks": {
+      "N_minus1_factorization": [
+        [
+          3,
+          1
+        ],
+        [
+          29,
+          2
+        ]
+      ],
+      "N_over2_minus1_factorization": [
+        [
+          13,
+          1
+        ],
+        [
+          97,
+          1
+        ]
+      ],
+      "N_over4_minus2_factorization": [
+        [
+          17,
+          1
+        ],
+        [
+          37,
+          1
+        ]
+      ],
+      "N_over4_minus2_mod8": 5
+    }
+  },
+  "631:3": {
+    "p": 631,
+    "w": 3,
+    "order": 7572,
+    "status": "new_to_best_of_authors_knowledge",
+    "prior_construction": null,
+    "checked_utc": "2026-11-24 21:25:01 UTC",
+    "williamson_input_sha256": "7fe7ffe6ccac570f04ed305e09cbf24ea834394b81bc3ae799552fab399fd2df",
+    "arithmetic_checks": {
+      "N_minus1_factorization": [
+        [
+          67,
+          1
+        ],
+        [
+          113,
+          1
+        ]
+      ],
+      "N_over2_minus1_factorization": [
+        [
+          5,
+          1
+        ],
+        [
+          757,
+          1
+        ]
+      ],
+      "N_over4_minus2_factorization": [
+        [
+          31,
+          1
+        ],
+        [
+          61,
+          1
+        ]
+      ],
+      "N_over4_minus2_mod8": 3
+    },
+    "previously_completed_project_order": true
+  },
+  "631:5": {
+    "p": 631,
+    "w": 5,
+    "order": 12620,
+    "status": "known",
+    "prior_construction": {
+      "family": "Paley I",
+      "reference_url": "https://doi.org/10.1002/sapm1933121311",
+      "supporting_reference_url": "https://arxiv.org/html/2610.27175v2#S2.Thm2",
+      "parameters": {
+        "q": 12619,
+        "q_is_prime": true,
+        "q_mod4": 3,
+        "output_order": 12620
+      }
+    },
+    "checked_utc": "2026-11-24 21:25:01 UTC",
+    "williamson_input_sha256": "5e15c1638cbff7f4e8a36f5a5c6eaadfabda994fdc29309d776e97841c4c2278",
+    "arithmetic_checks": {
+      "N_minus1_factorization": [
+        [
+          12619,
+          1
+        ]
+      ],
+      "N_over2_minus1_factorization": [
+        [
+          3,
+          2
+        ],
+        [
+          701,
+          1
+        ]
+      ],
+      "N_over4_minus2_factorization": [
+        [
+          3,
+          1
+        ],
+        [
+          1051,
+          1
+        ]
+      ],
+      "N_over4_minus2_mod8": 1
+    }
+  },
+  "631:7": {
+    "p": 631,
+    "w": 7,
+    "order": 17668,
+    "status": "new_to_best_of_authors_knowledge",
+    "prior_construction": null,
+    "checked_utc": "2026-11-24 21:25:01 UTC",
+    "williamson_input_sha256": "c37f26fa0f5ebde9ca04e8ce4da0ff6c10a7c644ba41633de9382659b8fcb624",
+    "arithmetic_checks": {
+      "N_minus1_factorization": [
+        [
+          3,
+          2
+        ],
+        [
+          13,
+          1
+        ],
+        [
+          151,
+          1
+        ]
+      ],
+      "N_over2_minus1_factorization": [
+        [
+          11,
+          2
+        ],
+        [
+          73,
+          1
+        ]
+      ],
+      "N_over4_minus2_factorization": [
+        [
+          5,
+          1
+        ],
+        [
+          883,
+          1
+        ]
+      ],
+      "N_over4_minus2_mod8": 7
+    },
+    "previously_completed_project_order": true
+  },
+  "631:9": {
+    "p": 631,
+    "w": 9,
+    "order": 22716,
+    "status": "new_to_best_of_authors_knowledge",
+    "prior_construction": null,
+    "checked_utc": "2026-11-24 21:25:01 UTC",
+    "williamson_input_sha256": "f99ead7f1b67fa7f751b30d686656f5ed8b6178e0af27a0dc863abdb3f484e29",
+    "arithmetic_checks": {
+      "N_minus1_factorization": [
+        [
+          5,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          59,
+          1
+        ]
+      ],
+      "N_over2_minus1_factorization": [
+        [
+          41,
+          1
+        ],
+        [
+          277,
+          1
+        ]
+      ],
+      "N_over4_minus2_factorization": [
+        [
+          7,
+          1
+        ],
+        [
+          811,
+          1
+        ]
+      ],
+      "N_over4_minus2_mod8": 5
+    },
+    "previously_completed_project_order": true
+  },
+  "631:11": {
+    "p": 631,
+    "w": 11,
+    "order": 27764,
+    "status": "known",
+    "prior_construction": {
+      "family": "Paley I",
+      "reference_url": "https://doi.org/10.1002/sapm1933121311",
+      "supporting_reference_url": "https://arxiv.org/html/2610.27175v2#S2.Thm2",
+      "parameters": {
+        "q": 27763,
+        "q_is_prime": true,
+        "q_mod4": 3,
+        "output_order": 27764
+      }
+    },
+    "checked_utc": "2026-11-24 21:25:01 UTC",
+    "williamson_input_sha256": "3c3a907732388c240d9bb6ef7d1b2567ca0ccc30f9b1070a7cf4c4d4df75c44e",
+    "arithmetic_checks": {
+      "N_minus1_factorization": [
+        [
+          27763,
+          1
+        ]
+      ],
+      "N_over2_minus1_factorization": [
+        [
+          3,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          661,
+          1
+        ]
+      ],
+      "N_over4_minus2_factorization": [
+        [
+          3,
+          3
+        ],
+        [
+          257,
+          1
+        ]
+      ],
+      "N_over4_minus2_mod8": 3
+    }
+  },
+  "631:13": {
+    "p": 631,
+    "w": 13,
+    "order": 32812,
+    "status": "new_to_best_of_authors_knowledge",
+    "prior_construction": null,
+    "checked_utc": "2026-11-24 21:25:01 UTC",
+    "williamson_input_sha256": "058f283db7fbb6c95cf35647c962e43688da2c29272bc1680a548a5d546cd8c0",
+    "arithmetic_checks": {
+      "N_minus1_factorization": [
+        [
+          3,
+          1
+        ],
+        [
+          10937,
+          1
+        ]
+      ],
+      "N_over2_minus1_factorization": [
+        [
+          5,
+          1
+        ],
+        [
+          17,
+          1
+        ],
+        [
+          193,
+          1
+        ]
+      ],
+      "N_over4_minus2_factorization": [
+        [
+          59,
+          1
+        ],
+        [
+          139,
+          1
+        ]
+      ],
+      "N_over4_minus2_mod8": 1
+    },
+    "previously_completed_project_order": true
+  },
+  "631:15": {
+    "p": 631,
+    "w": 15,
+    "order": 37860,
+    "status": "known",
+    "prior_construction": {
+      "family": "Paley sixteen-block product with classical T-matrices",
+      "reference_url": "https://arxiv.org/html/2610.27175v2#S4.T4",
+      "parameters": {
+        "s": 3155,
+        "t": 3,
+        "q": 12619,
+        "q_is_prime": true,
+        "q_mod8": 3,
+        "Paley_base_order": 12620,
+        "known_T_order": 3,
+        "output_order": 37860
+      },
+      "ingredient_reference_url": "https://arxiv.org/html/2610.27175v2#S4.T3",
+      "reference_detail": "Table4 Paley and Miyamoto blocks: H(4st) for T(t) and prime-power4s-1 congruent3 mod8. Here t=3 or5 has classical T-sequences."
+    },
+    "checked_utc": "2026-11-24 21:25:01 UTC",
+    "williamson_input_sha256": "991c5797b6ee8a4d471144ff9df3fe017fc6696db05a1ff12078675f87b6ba4a",
+    "arithmetic_checks": {
+      "N_minus1_factorization": [
+        [
+          17,
+          2
+        ],
+        [
+          131,
+          1
+        ]
+      ],
+      "N_over2_minus1_factorization": [
+        [
+          23,
+          1
+        ],
+        [
+          823,
+          1
+        ]
+      ],
+      "N_over4_minus2_factorization": [
+        [
+          9463,
+          1
+        ]
+      ],
+      "N_over4_minus2_mod8": 7
+    }
+  },
+  "631:17": {
+    "p": 631,
+    "w": 17,
+    "order": 42908,
+    "status": "new_to_best_of_authors_knowledge",
+    "prior_construction": null,
+    "checked_utc": "2026-11-24 21:25:01 UTC",
+    "williamson_input_sha256": "c4f2b0312348d225f1c8086369eaf34f75f7c09bd56ed8ec22b64ca9683dfc55",
+    "arithmetic_checks": {
+      "N_minus1_factorization": [
+        [
+          107,
+          1
+        ],
+        [
+          401,
+          1
+        ]
+      ],
+      "N_over2_minus1_factorization": [
+        [
+          3,
+          1
+        ],
+        [
+          7151,
+          1
+        ]
+      ],
+      "N_over4_minus2_factorization": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          13,
+          1
+        ]
+      ],
+      "N_over4_minus2_mod8": 5
+    }
+  },
+  "631:19": {
+    "p": 631,
+    "w": 19,
+    "order": 47956,
+    "status": "known",
+    "prior_construction": {
+      "family": "Paley II",
+      "reference_url": "https://doi.org/10.1002/sapm1933121311",
+      "supporting_reference_url": "https://arxiv.org/html/2610.27175v2#S2.Thm2",
+      "parameters": {
+        "q": 23977,
+        "q_is_prime": true,
+        "q_mod4": 1,
+        "output_order": 47956
+      }
+    },
+    "checked_utc": "2026-11-24 21:25:01 UTC",
+    "williamson_input_sha256": "b8c7175fa8ec12e7394ef6aa53e1bbc0e084fd830da75ed20e33ce6dbd5b5990",
+    "arithmetic_checks": {
+      "N_minus1_factorization": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          1
+        ],
+        [
+          23,
+          1
+        ],
+        [
+          139,
+          1
+        ]
+      ],
+      "N_over2_minus1_factorization": [
+        [
+          23977,
+          1
+        ]
+      ],
+      "N_over4_minus2_factorization": [
+        [
+          11987,
+          1
+        ]
+      ],
+      "N_over4_minus2_mod8": 3
+    }
+  },
+  "631:21": {
+    "p": 631,
+    "w": 21,
+    "order": 53004,
+    "status": "known",
+    "prior_construction": {
+      "family": "Paley I",
+      "reference_url": "https://doi.org/10.1002/sapm1933121311",
+      "supporting_reference_url": "https://arxiv.org/html/2610.27175v2#S2.Thm2",
+      "parameters": {
+        "q": 53003,
+        "q_is_prime": true,
+        "q_mod4": 3,
+        "output_order": 53004
+      }
+    },
+    "checked_utc": "2026-11-24 21:25:01 UTC",
+    "williamson_input_sha256": "7734972e0611b864466321bdc2ce84da32daa35ab020415aa722d3da4ea7d24c",
+    "arithmetic_checks": {
+      "N_minus1_factorization": [
+        [
+          53003,
+          1
+        ]
+      ],
+      "N_over2_minus1_factorization": [
+        [
+          26501,
+          1
+        ]
+      ],
+      "N_over4_minus2_factorization": [
+        [
+          13249,
+          1
+        ]
+      ],
+      "N_over4_minus2_mod8": 1
+    }
+  },
+  "631:23": {
+    "p": 631,
+    "w": 23,
+    "order": 58052,
+    "status": "new_to_best_of_authors_knowledge",
+    "prior_construction": null,
+    "checked_utc": "2026-11-24 21:25:01 UTC",
+    "williamson_input_sha256": "91d383f8f9a86c519c2c0984353243638024d6bdf96b3544eaaa44335df8158c",
+    "arithmetic_checks": {
+      "N_minus1_factorization": [
+        [
+          7,
+          1
+        ],
+        [
+          8293,
+          1
+        ]
+      ],
+      "N_over2_minus1_factorization": [
+        [
+          3,
+          3
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          43,
+          1
+        ]
+      ],
+      "N_over4_minus2_factorization": [
+        [
+          3,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          691,
+          1
+        ]
+      ],
+      "N_over4_minus2_mod8": 7
+    }
+  },
+  "631:25": {
+    "p": 631,
+    "w": 25,
+    "order": 63100,
+    "status": "known",
+    "prior_construction": {
+      "family": "Paley sixteen-block product with classical T-matrices",
+      "reference_url": "https://arxiv.org/html/2610.27175v2#S4.T4",
+      "parameters": {
+        "s": 3155,
+        "t": 5,
+        "q": 12619,
+        "q_is_prime": true,
+        "q_mod8": 3,
+        "Paley_base_order": 12620,
+        "known_T_order": 5,
+        "output_order": 63100
+      },
+      "ingredient_reference_url": "https://arxiv.org/html/2610.27175v2#S4.T3",
+      "reference_detail": "Table4 Paley and Miyamoto blocks: H(4st) for T(t) and prime-power4s-1 congruent3 mod8. Here t=3 or5 has classical T-sequences."
+    },
+    "checked_utc": "2026-11-24 21:25:01 UTC",
+    "williamson_input_sha256": "f5687d6e35658986a3060518627e2e2f4c89489663ca554041f7f3c3f915c103",
+    "arithmetic_checks": {
+      "N_minus1_factorization": [
+        [
+          3,
+          4
+        ],
+        [
+          19,
+          1
+        ],
+        [
+          41,
+          1
+        ]
+      ],
+      "N_over2_minus1_factorization": [
+        [
+          7,
+          1
+        ],
+        [
+          4507,
+          1
+        ]
+      ],
+      "N_over4_minus2_factorization": [
+        [
+          15773,
+          1
+        ]
+      ],
+      "N_over4_minus2_mod8": 5
+    }
+  },
+  "631:27": {
+    "p": 631,
+    "w": 27,
+    "order": 68148,
+    "status": "known",
+    "prior_construction": {
+      "family": "Paley I",
+      "reference_url": "https://doi.org/10.1002/sapm1933121311",
+      "supporting_reference_url": "https://arxiv.org/html/2610.27175v2#S2.Thm2",
+      "parameters": {
+        "q": 68147,
+        "q_is_prime": true,
+        "q_mod4": 3,
+        "output_order": 68148
+      }
+    },
+    "checked_utc": "2026-11-24 21:25:01 UTC",
+    "williamson_input_sha256": "e4bad648170186f8ea925062a392b98c6f5abae8e68f496c937fc335654ce1c6",
+    "arithmetic_checks": {
+      "N_minus1_factorization": [
+        [
+          68147,
+          1
+        ]
+      ],
+      "N_over2_minus1_factorization": [
+        [
+          13,
+          1
+        ],
+        [
+          2621,
+          1
+        ]
+      ],
+      "N_over4_minus2_factorization": [
+        [
+          5,
+          1
+        ],
+        [
+          3407,
+          1
+        ]
+      ],
+      "N_over4_minus2_mod8": 3
+    }
+  },
+  "631:29": {
+    "p": 631,
+    "w": 29,
+    "order": 73196,
+    "status": "new_to_best_of_authors_knowledge",
+    "prior_construction": null,
+    "checked_utc": "2026-11-24 21:25:01 UTC",
+    "williamson_input_sha256": "13b39bcebd785df988efc17390134476258e4222e360bcddceebf72890c252ab",
+    "arithmetic_checks": {
+      "N_minus1_factorization": [
+        [
+          5,
+          1
+        ],
+        [
+          14639,
+          1
+        ]
+      ],
+      "N_over2_minus1_factorization": [
+        [
+          3,
+          1
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          1109,
+          1
+        ]
+      ],
+      "N_over4_minus2_factorization": [
+        [
+          3,
+          2
+        ],
+        [
+          19,
+          1
+        ],
+        [
+          107,
+          1
+        ]
+      ],
+      "N_over4_minus2_mod8": 1
+    }
+  },
+  "631:31": {
+    "p": 631,
+    "w": 31,
+    "order": 78244,
+    "status": "new_to_best_of_authors_knowledge",
+    "prior_construction": null,
+    "checked_utc": "2026-11-24 21:25:01 UTC",
+    "williamson_input_sha256": "f8125f78a48903cf0cd984450be62d72509287d484935b57746be569ddb21977",
+    "arithmetic_checks": {
+      "N_minus1_factorization": [
+        [
+          3,
+          1
+        ],
+        [
+          11,
+          1
+        ],
+        [
+          2371,
+          1
+        ]
+      ],
+      "N_over2_minus1_factorization": [
+        [
+          19,
+          1
+        ],
+        [
+          29,
+          1
+        ],
+        [
+          71,
+          1
+        ]
+      ],
+      "N_over4_minus2_factorization": [
+        [
+          19559,
+          1
+        ]
+      ],
+      "N_over4_minus2_mod8": 7
+    }
+  },
+  "631:33": {
+    "p": 631,
+    "w": 33,
+    "order": 83292,
+    "status": "known",
+    "prior_construction": {
+      "family": "Paley sixteen-block product with classical T-matrices",
+      "reference_url": "https://arxiv.org/html/2610.27175v2#S4.T4",
+      "parameters": {
+        "s": 6941,
+        "t": 3,
+        "q": 27763,
+        "q_is_prime": true,
+        "q_mod8": 3,
+        "Paley_base_order": 27764,
+        "known_T_order": 3,
+        "output_order": 83292
+      },
+      "ingredient_reference_url": "https://arxiv.org/html/2610.27175v2#S4.T3",
+      "reference_detail": "Table4 Paley and Miyamoto blocks: H(4st) for T(t) and prime-power4s-1 congruent3 mod8. Here t=3 or5 has classical T-sequences."
+    },
+    "checked_utc": "2026-11-24 21:25:01 UTC",
+    "williamson_input_sha256": "49b668db311bbfee23cfd00db80c2f69a48e1f301f41d43f77f52f5556decf69",
+    "arithmetic_checks": {
+      "N_minus1_factorization": [
+        [
+          13,
+          1
+        ],
+        [
+          43,
+          1
+        ],
+        [
+          149,
+          1
+        ]
+      ],
+      "N_over2_minus1_factorization": [
+        [
+          5,
+          1
+        ],
+        [
+          8329,
+          1
+        ]
+      ],
+      "N_over4_minus2_factorization": [
+        [
+          47,
+          1
+        ],
+        [
+          443,
+          1
+        ]
+      ],
+      "N_over4_minus2_mod8": 5
+    }
+  },
+  "631:37": {
+    "p": 631,
+    "w": 37,
+    "order": 93388,
+    "status": "new_to_best_of_authors_knowledge",
+    "prior_construction": null,
+    "checked_utc": "2026-11-24 21:25:01 UTC",
+    "williamson_input_sha256": "020f4eb5786052254458165c47dbcf8c3648f1e68dfaeefd28525ce3f2521aca",
+    "arithmetic_checks": {
+      "N_minus1_factorization": [
+        [
+          3,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          4447,
+          1
+        ]
+      ],
+      "N_over2_minus1_factorization": [
+        [
+          53,
+          1
+        ],
+        [
+          881,
+          1
+        ]
+      ],
+      "N_over4_minus2_factorization": [
+        [
+          5,
+          1
+        ],
+        [
+          7,
+          1
+        ],
+        [
+          23,
+          1
+        ],
+        [
+          29,
+          1
+        ]
+      ],
+      "N_over4_minus2_mod8": 1
+    }
+  },
+  "631:39": {
+    "p": 631,
+    "w": 39,
+    "order": 98436,
+    "status": "new_to_best_of_authors_knowledge",
+    "prior_construction": null,
+    "checked_utc": "2026-11-24 21:25:01 UTC",
+    "williamson_input_sha256": "7de0645faddd7297b108ea796040b68f92dfda762718b97cbbdf3f36eab1111a",
+    "arithmetic_checks": {
+      "N_minus1_factorization": [
+        [
+          5,
+          1
+        ],
+        [
+          19687,
+          1
+        ]
+      ],
+      "N_over2_minus1_factorization": [
+        [
+          7,
+          1
+        ],
+        [
+          79,
+          1
+        ],
+        [
+          89,
+          1
+        ]
+      ],
+      "N_over4_minus2_factorization": [
+        [
+          11,
+          1
+        ],
+        [
+          2237,
+          1
+        ]
+      ],
+      "N_over4_minus2_mod8": 7
+    },
+    "previously_completed_project_order": true
+  },
+  "631:41": {
+    "p": 631,
+    "w": 41,
+    "order": 103484,
+    "status": "known",
+    "prior_construction": {
+      "family": "Paley I",
+      "reference_url": "https://doi.org/10.1002/sapm1933121311",
+      "supporting_reference_url": "https://arxiv.org/html/2610.27175v2#S2.Thm2",
+      "parameters": {
+        "q": 103483,
+        "q_is_prime": true,
+        "q_mod4": 3,
+        "output_order": 103484
+      }
+    },
+    "checked_utc": "2026-11-24 21:25:01 UTC",
+    "williamson_input_sha256": "08eb71c85fe4867eb0e45c2a3c7d630a138b3cd3a14b7d6aeede2983fddb658b",
+    "arithmetic_checks": {
+      "N_minus1_factorization": [
+        [
+          103483,
+          1
+        ]
+      ],
+      "N_over2_minus1_factorization": [
+        [
+          3,
+          2
+        ],
+        [
+          5749,
+          1
+        ]
+      ],
+      "N_over4_minus2_factorization": [
+        [
+          3,
+          1
+        ],
+        [
+          8623,
+          1
+        ]
+      ],
+      "N_over4_minus2_mod8": 5
+    }
+  },
+  "631:43": {
+    "p": 631,
+    "w": 43,
+    "order": 108532,
+    "status": "new_to_best_of_authors_knowledge",
+    "prior_construction": null,
+    "checked_utc": "2026-11-24 21:25:01 UTC",
+    "williamson_input_sha256": "09a0e3c52c7a48a357cb2b31f0a3df468dba1f618e8a4734fd000b4aa604ddd4",
+    "arithmetic_checks": {
+      "N_minus1_factorization": [
+        [
+          3,
+          2
+        ],
+        [
+          31,
+          1
+        ],
+        [
+          389,
+          1
+        ]
+      ],
+      "N_over2_minus1_factorization": [
+        [
+          5,
+          1
+        ],
+        [
+          10853,
+          1
+        ]
+      ],
+      "N_over4_minus2_factorization": [
+        [
+          13,
+          1
+        ],
+        [
+          2087,
+          1
+        ]
+      ],
+      "N_over4_minus2_mod8": 3
+    }
+  },
+  "631:49": {
+    "p": 631,
+    "w": 49,
+    "order": 123676,
+    "status": "known",
+    "prior_construction": {
+      "family": "Paley II",
+      "reference_url": "https://doi.org/10.1002/sapm1933121311",
+      "supporting_reference_url": "https://arxiv.org/html/2610.27175v2#S2.Thm2",
+      "parameters": {
+        "q": 61837,
+        "q_is_prime": true,
+        "q_mod4": 1,
+        "output_order": 123676
+      }
+    },
+    "checked_utc": "2026-11-24 21:25:01 UTC",
+    "williamson_input_sha256": "1308bc907821e4b3bed9ead79d718f81e31e423fa8be4f03b9877bb30b2a040a",
+    "arithmetic_checks": {
+      "N_minus1_factorization": [
+        [
+          3,
+          1
+        ],
+        [
+          5,
+          2
+        ],
+        [
+          17,
+          1
+        ],
+        [
+          97,
+          1
+        ]
+      ],
+      "N_over2_minus1_factorization": [
+        [
+          61837,
+          1
+        ]
+      ],
+      "N_over4_minus2_factorization": [
+        [
+          43,
+          1
+        ],
+        [
+          719,
+          1
+        ]
+      ],
+      "N_over4_minus2_mod8": 5
+    }
+  },
+  "631:51": {
+    "p": 631,
+    "w": 51,
+    "order": 128724,
+    "status": "new_to_best_of_authors_knowledge",
+    "prior_construction": null,
+    "checked_utc": "2026-11-24 21:25:01 UTC",
+    "williamson_input_sha256": "a9401b26e3ee28381889dc63d2e92baa4e4cde032d09150d5d9490c291af9bd0",
+    "arithmetic_checks": {
+      "N_minus1_factorization": [
+        [
+          7,
+          2
+        ],
+        [
+          37,
+          1
+        ],
+        [
+          71,
+          1
+        ]
+      ],
+      "N_over2_minus1_factorization": [
+        [
+          11,
+          1
+        ],
+        [
+          5851,
+          1
+        ]
+      ],
+      "N_over4_minus2_factorization": [
+        [
+          7,
+          1
+        ],
+        [
+          4597,
+          1
+        ]
+      ],
+      "N_over4_minus2_mod8": 3
+    }
+  },
+  "631:55": {
+    "p": 631,
+    "w": 55,
+    "order": 138820,
+    "status": "known",
+    "prior_construction": {
+      "family": "Paley sixteen-block product with classical T-matrices",
+      "reference_url": "https://arxiv.org/html/2610.27175v2#S4.T4",
+      "parameters": {
+        "s": 6941,
+        "t": 5,
+        "q": 27763,
+        "q_is_prime": true,
+        "q_mod8": 3,
+        "Paley_base_order": 27764,
+        "known_T_order": 5,
+        "output_order": 138820
+      },
+      "ingredient_reference_url": "https://arxiv.org/html/2610.27175v2#S4.T3",
+      "reference_detail": "Table4 Paley and Miyamoto blocks: H(4st) for T(t) and prime-power4s-1 congruent3 mod8. Here t=3 or5 has classical T-sequences."
+    },
+    "checked_utc": "2026-11-24 21:25:01 UTC",
+    "williamson_input_sha256": "914518d6bda74f14ea949f2176a49cc5025f4b8f692e4cedc85f322f3ebf8006",
+    "arithmetic_checks": {
+      "N_minus1_factorization": [
+        [
+          3,
+          1
+        ],
+        [
+          46273,
+          1
+        ]
+      ],
+      "N_over2_minus1_factorization": [
+        [
+          31,
+          1
+        ],
+        [
+          2239,
+          1
+        ]
+      ],
+      "N_over4_minus2_factorization": [
+        [
+          34703,
+          1
+        ]
+      ],
+      "N_over4_minus2_mod8": 7
+    }
+  },
+  "631:57": {
+    "p": 631,
+    "w": 57,
+    "order": 143868,
+    "status": "known",
+    "prior_construction": {
+      "family": "Paley II",
+      "reference_url": "https://doi.org/10.1002/sapm1933121311",
+      "supporting_reference_url": "https://arxiv.org/html/2610.27175v2#S2.Thm2",
+      "parameters": {
+        "q": 71933,
+        "q_is_prime": true,
+        "q_mod4": 1,
+        "output_order": 143868
+      }
+    },
+    "checked_utc": "2026-11-24 21:25:01 UTC",
+    "williamson_input_sha256": "45db03f6349fe2b3e6408b04f9d1ea4b11b9004782120a1b96c1a33829fdcd85",
+    "arithmetic_checks": {
+      "N_minus1_factorization": [
+        [
+          47,
+          1
+        ],
+        [
+          3061,
+          1
+        ]
+      ],
+      "N_over2_minus1_factorization": [
+        [
+          71933,
+          1
+        ]
+      ],
+      "N_over4_minus2_factorization": [
+        [
+          5,
+          1
+        ],
+        [
+          7193,
+          1
+        ]
+      ],
+      "N_over4_minus2_mod8": 5
+    }
+  },
+  "631:61": {
+    "p": 631,
+    "w": 61,
+    "order": 153964,
+    "status": "new_to_best_of_authors_knowledge",
+    "prior_construction": null,
+    "checked_utc": "2026-11-24 21:25:01 UTC",
+    "williamson_input_sha256": "342cc7335f227401368904af6ee0318b595b7bf0e730fd7526e7eedb9f526f47",
+    "arithmetic_checks": {
+      "N_minus1_factorization": [
+        [
+          3,
+          2
+        ],
+        [
+          17107,
+          1
+        ]
+      ],
+      "N_over2_minus1_factorization": [
+        [
+          23,
+          1
+        ],
+        [
+          3347,
+          1
+        ]
+      ],
+      "N_over4_minus2_factorization": [
+        [
+          11,
+          1
+        ],
+        [
+          3499,
+          1
+        ]
+      ],
+      "N_over4_minus2_mod8": 1
+    }
+  },
+  "631:63": {
+    "p": 631,
+    "w": 63,
+    "order": 159012,
+    "status": "known",
+    "prior_construction": {
+      "family": "Paley sixteen-block product with classical T-matrices",
+      "reference_url": "https://arxiv.org/html/2610.27175v2#S4.T4",
+      "parameters": {
+        "s": 13251,
+        "t": 3,
+        "q": 53003,
+        "q_is_prime": true,
+        "q_mod8": 3,
+        "Paley_base_order": 53004,
+        "known_T_order": 3,
+        "output_order": 159012
+      },
+      "ingredient_reference_url": "https://arxiv.org/html/2610.27175v2#S4.T3",
+      "reference_detail": "Table4 Paley and Miyamoto blocks: H(4st) for T(t) and prime-power4s-1 congruent3 mod8. Here t=3 or5 has classical T-sequences."
+    },
+    "checked_utc": "2026-11-24 21:25:01 UTC",
+    "williamson_input_sha256": "0228b6820163b5ae464bd9e3ff4f62a9468d0a6fd4ea6e9f92f37bc5bb85b67e",
+    "arithmetic_checks": {
+      "N_minus1_factorization": [
+        [
+          19,
+          1
+        ],
+        [
+          8369,
+          1
+        ]
+      ],
+      "N_over2_minus1_factorization": [
+        [
+          5,
+          1
+        ],
+        [
+          15901,
+          1
+        ]
+      ],
+      "N_over4_minus2_factorization": [
+        [
+          127,
+          1
+        ],
+        [
+          313,
+          1
+        ]
+      ],
+      "N_over4_minus2_mod8": 7
+    }
+  },
+  "127:17": {
+    "p": 127,
+    "w": 17,
+    "order": 8636,
+    "status": "known",
+    "checked_utc": "2026-11-24 21:25:01 UTC",
+    "prior_construction": {
+      "family": "Cooper-Wallis with swapped classical ingredients",
+      "reference_url": "https://doi.org/10.1017/S0004972700045019",
+      "parameters": {
+        "known_T_order": 17,
+        "known_Williamson_type_order": 127,
+        "output_order": 8636
+      },
+      "ingredient_reference_url": "https://arxiv.org/html/0912.5091#S3",
+      "additional_reference_url": "https://arxiv.org/html/2610.27175v2#S4.T3",
+      "reference_detail": "The2009 paper records prior WT127 from good matrices and explicitly lists2159=17*127 among corrected known odd parts. Classical T17 gives H8636; this does not use the new periodic T127."
+    }
+  }
+}

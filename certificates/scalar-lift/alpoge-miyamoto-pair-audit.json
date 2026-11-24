@@ -1,0 +1,100 @@
+{
+  "schema": "alpoge-intrinsic-miyamoto-pair-audit-v1",
+  "source_tex_url": "https://hexagonmath.org/api/v1/works/2611.00637v1/source?path=hadamard-revised.tex",
+  "source_section": "4.3 Miyamoto decomposition, TableA2 seeds",
+  "scope": "Only the printed intrinsic half-sum/half-difference decomposition",
+  "audits": [
+    {
+      "source_order": 668,
+      "r": 167,
+      "w": 83,
+      "literal_hex": [
+        "155B13CDEF8E5C05AB2DBD549D86420DCB803565B4",
+        "F11284B6FCD2BB559C1F01DDAD692052576AB383E0",
+        "F53A7B8376405BBC8F38E158B08F91100B7791E71C",
+        "1D67B459F8C0B34ECEE6BC530974C0E01668D9DCD4"
+      ],
+      "small_pair_order": 332,
+      "small_S_Gram": "r I - 2 I_4 tensor J_w",
+      "small_T_Gram": "r I",
+      "small_S_Gram_exact": true,
+      "small_T_Gram_exact": true,
+      "support_sizes_T": [
+        44,
+        39,
+        41,
+        43
+      ],
+      "full_pair_disjoint_and_sum_equals_published_H": true,
+      "full_pair_cross_Gram_zero": true,
+      "full_pair_Gram_sum": "668 I",
+      "full_pair_Grams_are_scaled_orthogonal_projections": true,
+      "full_pair_exact_ranks_S_T": [
+        336,
+        332
+      ],
+      "full_S_row_weight_counts": {
+        "334": 664,
+        "668": 4
+      },
+      "full_T_row_weight_counts": {
+        "0": 4,
+        "334": 664
+      },
+      "required_cubic_weights_3r_r": [
+        501,
+        167
+      ],
+      "full_pair_is_OD_order4r_weights3r_r": false,
+      "failure": "intrinsic halves have deficient ranks and nonconstant diagonal weights",
+      "all_other_decompositions_or_dense_basis_changes_excluded": false
+    },
+    {
+      "source_order": 716,
+      "r": 179,
+      "w": 89,
+      "literal_hex": [
+        "6370A5D5F65EAF7C823604CE47AD9504D157BE511B024",
+        "1C3826C46D2311AC3EADBA71E3EC1DC96988D61F56DD0",
+        "7F530ED2DD2826F0F1CCBAC05678969162137878E65D4",
+        "FFF4473346A7786A13B7920005DC665CAABC3509DBC90"
+      ],
+      "small_pair_order": 356,
+      "small_S_Gram": "r I - 2 I_4 tensor J_w",
+      "small_T_Gram": "r I",
+      "small_S_Gram_exact": true,
+      "small_T_Gram_exact": true,
+      "support_sizes_T": [
+        46,
+        43,
+        45,
+        45
+      ],
+      "full_pair_disjoint_and_sum_equals_published_H": true,
+      "full_pair_cross_Gram_zero": true,
+      "full_pair_Gram_sum": "716 I",
+      "full_pair_Grams_are_scaled_orthogonal_projections": true,
+      "full_pair_exact_ranks_S_T": [
+        360,
+        356
+      ],
+      "full_S_row_weight_counts": {
+        "358": 712,
+        "716": 4
+      },
+      "full_T_row_weight_counts": {
+        "0": 4,
+        "358": 712
+      },
+      "required_cubic_weights_3r_r": [
+        537,
+        179
+      ],
+      "full_pair_is_OD_order4r_weights3r_r": false,
+      "failure": "intrinsic halves have deficient ranks and nonconstant diagonal weights",
+      "all_other_decompositions_or_dense_basis_changes_excluded": false
+    }
+  ],
+  "new_search_or_construction_tree_edges": false,
+  "new_Hadamard_order_claimed": false
+}

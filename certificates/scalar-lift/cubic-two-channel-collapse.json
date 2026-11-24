@@ -1,0 +1,1215 @@
+{
+  "schema": "cubic-two-channel-collapse-v1",
+  "scope": "Selected modular continuations, with every remaining phase and sign choice allowed",
+  "earliest_excluded_saved_residues": [
+    {
+      "source_order": 1499,
+      "phase": 96,
+      "fixed_dyadic_exponents_modulo": 8,
+      "selected_saved_assignment": {
+        "core_shift": 0,
+        "saved_constant_higher_core_bits": [
+          0,
+          0
+        ],
+        "verified_assignment_system_hashes": [
+          "bf604e94548f458d8c24ec0b9658d35c04255159c1cbfa85bfa3a17ef35d4c34",
+          "17db302be0a702226398fed119322b6d33e01c1d5052e8023baeeab24dc6d40b"
+        ]
+      },
+      "actual_phase_metadata": {
+        "core_size": 748,
+        "border_size": 3,
+        "core_W_value_counts": [
+          557272,
+          2232
+        ],
+        "core_W_uint8_sha256": "06fa1cc553b7f5f5f8b0e242eb9ef9dba283b3d09a3b397ed97a869ed82776c7",
+        "boundary_dyadic_exponent_counts": [
+          1124,
+          372,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          376,
+          372,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "border_dyadic_exponent_counts": [
+          9,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "actual_border_dyadic_exponents": [
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0
+          ]
+        ]
+      },
+      "same_unitary_gauge_on_rows_and_columns": {
+        "core_dyadic_exponent": 0,
+        "border_dyadic_exponent": 0
+      },
+      "all_source_positions_checked": 2247001,
+      "gauged_relative_exponent_class_counts": [
+        2239561,
+        7440,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "all_remaining_phase_bits_and_signs_absorbed_into_lower_roots": true,
+      "lower_root_phase": 12,
+      "field_independence": {
+        "upper_field_degree": 32,
+        "lower_field_degree": 4,
+        "relative_degree": 8,
+        "eta_in_upper_root_exponents": 3,
+        "relative_channels_checked": [
+          -1,
+          0,
+          1
+        ],
+        "exact_rational_rank": 12,
+        "expected_rational_rank": 12,
+        "independent_minor_row_indices": [
+          0,
+          3,
+          5,
+          8,
+          11,
+          13,
+          16,
+          19,
+          21,
+          24,
+          27,
+          29
+        ],
+        "independent_minor_determinant": 1
+      },
+      "conditional_collapsed_source": "BH(1499,12)",
+      "lower_source_arithmetic": {
+        "prime": 1499,
+        "lower_phase": 12,
+        "prime_residue": 11,
+        "prime_equals_minus_one_mod_lower_phase": true,
+        "complete_irreducible_quadratic_factorization_ascending": [
+          [
+            1,
+            518,
+            1
+          ],
+          [
+            1,
+            981,
+            1
+          ]
+        ],
+        "each_prime_factor_fixed_by_reciprocal_conjugation": true,
+        "determinant_valuation_equation": "2*v_P(det H)=1499",
+        "right_hand_side_is_odd": true,
+        "lower_Butson_excluded_by_this_test": true
+      },
+      "fixed_residue_has_no_characteristic_zero_completion": true,
+      "nonequivariant_remaining_bits_also_excluded": true,
+      "other_residues_or_all_sources_at_original_phase_excluded": false
+    },
+    {
+      "source_order": 2999,
+      "phase": 48,
+      "fixed_dyadic_exponents_modulo": 4,
+      "selected_saved_assignment": {
+        "core_shift": 2,
+        "saved_constant_higher_core_bits": [
+          1
+        ],
+        "verified_assignment_system_hashes": [
+          "0a7c5f6b3c5bde3ab928375b133857d85dfca1935c0502b1a89a8caddf1b60fa"
+        ]
+      },
+      "actual_phase_metadata": {
+        "core_size": 1496,
+        "border_size": 7,
+        "core_W_value_counts": [
+          2233552,
+          4464
+        ],
+        "core_W_uint8_sha256": "10f939354a5e0328dd596ac5a7682e1d4c4cde685718a27f0ff5b1ca1f373388",
+        "boundary_dyadic_exponent_counts": [
+          3748,
+          1488,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3748,
+          1488,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "border_dyadic_exponent_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          23,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          26,
+          0
+        ],
+        "actual_border_dyadic_exponents": [
+          [
+            14,
+            6,
+            14,
+            14,
+            14,
+            6,
+            14
+          ],
+          [
+            14,
+            6,
+            14,
+            6,
+            6,
+            6,
+            14
+          ],
+          [
+            6,
+            14,
+            14,
+            14,
+            6,
+            14,
+            6
+          ],
+          [
+            6,
+            6,
+            6,
+            14,
+            6,
+            14,
+            6
+          ],
+          [
+            14,
+            14,
+            6,
+            14,
+            6,
+            14,
+            6
+          ],
+          [
+            14,
+            6,
+            14,
+            6,
+            14,
+            6,
+            6
+          ],
+          [
+            14,
+            6,
+            14,
+            6,
+            14,
+            14,
+            14
+          ]
+        ]
+      },
+      "same_unitary_gauge_on_rows_and_columns": {
+        "core_dyadic_exponent": -1,
+        "border_dyadic_exponent": 1
+      },
+      "all_source_positions_checked": 8994001,
+      "gauged_relative_exponent_class_counts": [
+        8973169,
+        20832,
+        0,
+        0
+      ],
+      "all_remaining_phase_bits_and_signs_absorbed_into_lower_roots": true,
+      "lower_root_phase": 12,
+      "field_independence": {
+        "upper_field_degree": 16,
+        "lower_field_degree": 4,
+        "relative_degree": 4,
+        "eta_in_upper_root_exponents": 3,
+        "relative_channels_checked": [
+          -1,
+          0,
+          1
+        ],
+        "exact_rational_rank": 12,
+        "expected_rational_rank": 12,
+        "independent_minor_row_indices": [
+          0,
+          1,
+          3,
+          4,
+          5,
+          7,
+          8,
+          9,
+          11,
+          12,
+          13,
+          15
+        ],
+        "independent_minor_determinant": 1
+      },
+      "conditional_collapsed_source": "BH(2999,12)",
+      "lower_source_arithmetic": {
+        "prime": 2999,
+        "lower_phase": 12,
+        "prime_residue": 11,
+        "prime_equals_minus_one_mod_lower_phase": true,
+        "complete_irreducible_quadratic_factorization_ascending": [
+          [
+            1,
+            342,
+            1
+          ],
+          [
+            1,
+            2657,
+            1
+          ]
+        ],
+        "each_prime_factor_fixed_by_reciprocal_conjugation": true,
+        "determinant_valuation_equation": "2*v_P(det H)=2999",
+        "right_hand_side_is_odd": true,
+        "lower_Butson_excluded_by_this_test": true
+      },
+      "fixed_residue_has_no_characteristic_zero_completion": true,
+      "nonequivariant_remaining_bits_also_excluded": true,
+      "other_residues_or_all_sources_at_original_phase_excluded": false
+    },
+    {
+      "source_order": 2999,
+      "phase": 96,
+      "fixed_dyadic_exponents_modulo": 4,
+      "selected_saved_assignment": {
+        "core_shift": 2,
+        "saved_constant_higher_core_bits": [
+          1
+        ],
+        "verified_assignment_system_hashes": [
+          "0a7c5f6b3c5bde3ab928375b133857d85dfca1935c0502b1a89a8caddf1b60fa"
+        ]
+      },
+      "actual_phase_metadata": {
+        "core_size": 1496,
+        "border_size": 7,
+        "core_W_value_counts": [
+          2233552,
+          4464
+        ],
+        "core_W_uint8_sha256": "10f939354a5e0328dd596ac5a7682e1d4c4cde685718a27f0ff5b1ca1f373388",
+        "boundary_dyadic_exponent_counts": [
+          3748,
+          1488,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3748,
+          1488,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "border_dyadic_exponent_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          23,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          26,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "actual_border_dyadic_exponents": [
+          [
+            26,
+            10,
+            26,
+            26,
+            26,
+            10,
+            26
+          ],
+          [
+            26,
+            10,
+            26,
+            10,
+            10,
+            10,
+            26
+          ],
+          [
+            10,
+            26,
+            26,
+            26,
+            10,
+            26,
+            10
+          ],
+          [
+            10,
+            10,
+            10,
+            26,
+            10,
+            26,
+            10
+          ],
+          [
+            26,
+            26,
+            10,
+            26,
+            10,
+            26,
+            10
+          ],
+          [
+            26,
+            10,
+            26,
+            10,
+            26,
+            10,
+            10
+          ],
+          [
+            26,
+            10,
+            26,
+            10,
+            26,
+            26,
+            26
+          ]
+        ]
+      },
+      "same_unitary_gauge_on_rows_and_columns": {
+        "core_dyadic_exponent": -1,
+        "border_dyadic_exponent": 1
+      },
+      "all_source_positions_checked": 8994001,
+      "gauged_relative_exponent_class_counts": [
+        8973169,
+        20832,
+        0,
+        0
+      ],
+      "all_remaining_phase_bits_and_signs_absorbed_into_lower_roots": true,
+      "lower_root_phase": 24,
+      "field_independence": {
+        "upper_field_degree": 32,
+        "lower_field_degree": 8,
+        "relative_degree": 4,
+        "eta_in_upper_root_exponents": 3,
+        "relative_channels_checked": [
+          -1,
+          0,
+          1
+        ],
+        "exact_rational_rank": 24,
+        "expected_rational_rank": 24,
+        "independent_minor_row_indices": [
+          0,
+          1,
+          3,
+          4,
+          5,
+          7,
+          8,
+          9,
+          11,
+          12,
+          13,
+          15,
+          16,
+          17,
+          19,
+          20,
+          21,
+          23,
+          24,
+          25,
+          27,
+          28,
+          29,
+          31
+        ],
+        "independent_minor_determinant": 1
+      },
+      "conditional_collapsed_source": "BH(2999,24)",
+      "lower_source_arithmetic": {
+        "prime": 2999,
+        "lower_phase": 24,
+        "prime_residue": 23,
+        "prime_equals_minus_one_mod_lower_phase": true,
+        "complete_irreducible_quadratic_factorization_ascending": [
+          [
+            1,
+            156,
+            1
+          ],
+          [
+            1,
+            942,
+            1
+          ],
+          [
+            1,
+            2057,
+            1
+          ],
+          [
+            1,
+            2843,
+            1
+          ]
+        ],
+        "each_prime_factor_fixed_by_reciprocal_conjugation": true,
+        "determinant_valuation_equation": "2*v_P(det H)=2999",
+        "right_hand_side_is_odd": true,
+        "lower_Butson_excluded_by_this_test": true
+      },
+      "fixed_residue_has_no_characteristic_zero_completion": true,
+      "nonequivariant_remaining_bits_also_excluded": true,
+      "other_residues_or_all_sources_at_original_phase_excluded": false
+    }
+  ],
+  "additional_pi8_audits": [
+    {
+      "source_order": 2999,
+      "phase": 48,
+      "fixed_dyadic_exponents_modulo": 8,
+      "selected_saved_assignment": {
+        "core_shift": 2,
+        "saved_constant_higher_core_bits": [
+          1,
+          0
+        ],
+        "verified_assignment_system_hashes": [
+          "0a7c5f6b3c5bde3ab928375b133857d85dfca1935c0502b1a89a8caddf1b60fa",
+          "68fb097b8e90b9f1347680ff5e17fd8e4171de9dcee6ad2f80f6793e4cad05c9"
+        ]
+      },
+      "actual_phase_metadata": {
+        "core_size": 1496,
+        "border_size": 7,
+        "core_W_value_counts": [
+          2233552,
+          4464
+        ],
+        "core_W_uint8_sha256": "10f939354a5e0328dd596ac5a7682e1d4c4cde685718a27f0ff5b1ca1f373388",
+        "boundary_dyadic_exponent_counts": [
+          3748,
+          1488,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3748,
+          1488,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "border_dyadic_exponent_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          23,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          26,
+          0
+        ],
+        "actual_border_dyadic_exponents": [
+          [
+            14,
+            6,
+            14,
+            14,
+            14,
+            6,
+            14
+          ],
+          [
+            14,
+            6,
+            14,
+            6,
+            6,
+            6,
+            14
+          ],
+          [
+            6,
+            14,
+            14,
+            14,
+            6,
+            14,
+            6
+          ],
+          [
+            6,
+            6,
+            6,
+            14,
+            6,
+            14,
+            6
+          ],
+          [
+            14,
+            14,
+            6,
+            14,
+            6,
+            14,
+            6
+          ],
+          [
+            14,
+            6,
+            14,
+            6,
+            14,
+            6,
+            6
+          ],
+          [
+            14,
+            6,
+            14,
+            6,
+            14,
+            14,
+            14
+          ]
+        ]
+      },
+      "same_unitary_gauge_on_rows_and_columns": {
+        "core_dyadic_exponent": -1,
+        "border_dyadic_exponent": 1
+      },
+      "all_source_positions_checked": 8994001,
+      "gauged_relative_exponent_class_counts": [
+        8973169,
+        20832,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "all_remaining_phase_bits_and_signs_absorbed_into_lower_roots": true,
+      "lower_root_phase": 6,
+      "field_independence": {
+        "upper_field_degree": 16,
+        "lower_field_degree": 2,
+        "relative_degree": 8,
+        "eta_in_upper_root_exponents": 3,
+        "relative_channels_checked": [
+          -1,
+          0,
+          1
+        ],
+        "exact_rational_rank": 6,
+        "expected_rational_rank": 6,
+        "independent_minor_row_indices": [
+          0,
+          3,
+          5,
+          8,
+          11,
+          13
+        ],
+        "independent_minor_determinant": -1
+      },
+      "conditional_collapsed_source": "BH(2999,6)",
+      "lower_source_arithmetic": {
+        "prime": 2999,
+        "lower_phase": 6,
+        "prime_residue": 5,
+        "prime_equals_minus_one_mod_lower_phase": true,
+        "complete_irreducible_quadratic_factorization_ascending": [
+          [
+            1,
+            2998,
+            1
+          ]
+        ],
+        "each_prime_factor_fixed_by_reciprocal_conjugation": true,
+        "determinant_valuation_equation": "2*v_P(det H)=2999",
+        "right_hand_side_is_odd": true,
+        "lower_Butson_excluded_by_this_test": true
+      },
+      "fixed_residue_has_no_characteristic_zero_completion": true,
+      "nonequivariant_remaining_bits_also_excluded": true,
+      "other_residues_or_all_sources_at_original_phase_excluded": false
+    },
+    {
+      "source_order": 2999,
+      "phase": 96,
+      "fixed_dyadic_exponents_modulo": 8,
+      "selected_saved_assignment": {
+        "core_shift": 6,
+        "saved_constant_higher_core_bits": [
+          1,
+          1
+        ],
+        "verified_assignment_system_hashes": [
+          "0a7c5f6b3c5bde3ab928375b133857d85dfca1935c0502b1a89a8caddf1b60fa",
+          "8281339c8077de8c1245365b0f26ef726ec7498e2992c3b7255bd1d88a1d29a0"
+        ]
+      },
+      "actual_phase_metadata": {
+        "core_size": 1496,
+        "border_size": 7,
+        "core_W_value_counts": [
+          2233552,
+          4464
+        ],
+        "core_W_uint8_sha256": "10f939354a5e0328dd596ac5a7682e1d4c4cde685718a27f0ff5b1ca1f373388",
+        "boundary_dyadic_exponent_counts": [
+          3748,
+          1488,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          3748,
+          1488,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "border_dyadic_exponent_counts": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          23,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          26,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "actual_border_dyadic_exponents": [
+          [
+            26,
+            10,
+            26,
+            26,
+            26,
+            10,
+            26
+          ],
+          [
+            26,
+            10,
+            26,
+            10,
+            10,
+            10,
+            26
+          ],
+          [
+            10,
+            26,
+            26,
+            26,
+            10,
+            26,
+            10
+          ],
+          [
+            10,
+            10,
+            10,
+            26,
+            10,
+            26,
+            10
+          ],
+          [
+            26,
+            26,
+            10,
+            26,
+            10,
+            26,
+            10
+          ],
+          [
+            26,
+            10,
+            26,
+            10,
+            26,
+            10,
+            10
+          ],
+          [
+            26,
+            10,
+            26,
+            10,
+            26,
+            26,
+            26
+          ]
+        ]
+      },
+      "same_unitary_gauge_on_rows_and_columns": {
+        "core_dyadic_exponent": -3,
+        "border_dyadic_exponent": 3
+      },
+      "all_source_positions_checked": 8994001,
+      "gauged_relative_exponent_class_counts": [
+        8973169,
+        20832,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "all_remaining_phase_bits_and_signs_absorbed_into_lower_roots": true,
+      "lower_root_phase": 12,
+      "field_independence": {
+        "upper_field_degree": 32,
+        "lower_field_degree": 4,
+        "relative_degree": 8,
+        "eta_in_upper_root_exponents": 3,
+        "relative_channels_checked": [
+          -1,
+          0,
+          1
+        ],
+        "exact_rational_rank": 12,
+        "expected_rational_rank": 12,
+        "independent_minor_row_indices": [
+          0,
+          3,
+          5,
+          8,
+          11,
+          13,
+          16,
+          19,
+          21,
+          24,
+          27,
+          29
+        ],
+        "independent_minor_determinant": 1
+      },
+      "conditional_collapsed_source": "BH(2999,12)",
+      "lower_source_arithmetic": {
+        "prime": 2999,
+        "lower_phase": 12,
+        "prime_residue": 11,
+        "prime_equals_minus_one_mod_lower_phase": true,
+        "complete_irreducible_quadratic_factorization_ascending": [
+          [
+            1,
+            342,
+            1
+          ],
+          [
+            1,
+            2657,
+            1
+          ]
+        ],
+        "each_prime_factor_fixed_by_reciprocal_conjugation": true,
+        "determinant_valuation_equation": "2*v_P(det H)=2999",
+        "right_hand_side_is_odd": true,
+        "lower_Butson_excluded_by_this_test": true
+      },
+      "fixed_residue_has_no_characteristic_zero_completion": true,
+      "nonequivariant_remaining_bits_also_excluded": true,
+      "other_residues_or_all_sources_at_original_phase_excluded": false
+    }
+  ],
+  "earlier_1499_pi4_negative_control": {
+    "source_order": 1499,
+    "phase": 96,
+    "fixed_dyadic_exponents_modulo": 4,
+    "selected_saved_assignment": {
+      "core_shift": 0,
+      "saved_constant_higher_core_bits": [
+        0
+      ],
+      "verified_assignment_system_hashes": [
+        "bf604e94548f458d8c24ec0b9658d35c04255159c1cbfa85bfa3a17ef35d4c34"
+      ]
+    },
+    "actual_phase_metadata": {
+      "core_size": 748,
+      "border_size": 3,
+      "core_W_value_counts": [
+        557272,
+        2232
+      ],
+      "core_W_uint8_sha256": "06fa1cc553b7f5f5f8b0e242eb9ef9dba283b3d09a3b397ed97a869ed82776c7",
+      "boundary_dyadic_exponent_counts": [
+        1124,
+        372,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        376,
+        372,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "border_dyadic_exponent_counts": [
+        9,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      "actual_border_dyadic_exponents": [
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0
+        ]
+      ]
+    },
+    "same_unitary_gauge_on_rows_and_columns": {
+      "core_dyadic_exponent": 0,
+      "border_dyadic_exponent": 0
+    },
+    "all_source_positions_checked": 2247001,
+    "gauged_relative_exponent_class_counts": [
+      2239561,
+      7440,
+      0,
+      0
+    ],
+    "all_remaining_phase_bits_and_signs_absorbed_into_lower_roots": true,
+    "lower_root_phase": 24,
+    "field_independence": {
+      "upper_field_degree": 32,
+      "lower_field_degree": 8,
+      "relative_degree": 4,
+      "eta_in_upper_root_exponents": 3,
+      "relative_channels_checked": [
+        -1,
+        0,
+        1
+      ],
+      "exact_rational_rank": 24,
+      "expected_rational_rank": 24,
+      "independent_minor_row_indices": [
+        0,
+        1,
+        3,
+        4,
+        5,
+        7,
+        8,
+        9,
+        11,
+        12,
+        13,
+        15,
+        16,
+        17,
+        19,
+        20,
+        21,
+        23,
+        24,
+        25,
+        27,
+        28,
+        29,
+        31
+      ],
+      "independent_minor_determinant": 1
+    },
+    "conditional_collapsed_source": "BH(1499,24)",
+    "lower_source_arithmetic": {
+      "prime": 1499,
+      "lower_phase": 24,
+      "prime_residue": 11,
+      "prime_equals_minus_one_mod_lower_phase": false,
+      "lower_Butson_excluded_by_this_test": false
+    },
+    "fixed_residue_has_no_characteristic_zero_completion": false,
+    "nonequivariant_remaining_bits_also_excluded": false,
+    "other_residues_or_all_sources_at_original_phase_excluded": false
+  },
+  "positive_modular_Gram_certificates_remain_correct": true,
+  "first_pi2_template_with_other_higher_bits_excluded": false,
+  "new_solver_or_native_probe_run": false
+}

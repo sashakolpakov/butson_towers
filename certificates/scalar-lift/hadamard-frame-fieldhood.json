@@ -1,0 +1,139 @@
+{
+  "schema": "exact-binary-field-rabin-witnesses-v1",
+  "arithmetic": "binarypolynomialremainderandgcd, no floatingpoint",
+  "fields": {
+    "13": {
+      "field_degree": 2,
+      "monic_binary_modulus": 7,
+      "degree_prime_divisors": [
+        2
+      ],
+      "rabin_gcd_witnesses": {
+        "1": {
+          "x_pow_2_to_index_mod_f": 3,
+          "gcd_with_f_after_xor_x": 1
+        }
+      },
+      "x_pow_2_to_degree_mod_f": 2,
+      "irreducible": true
+    },
+    "127": {
+      "field_degree": 7,
+      "monic_binary_modulus": 167,
+      "degree_prime_divisors": [
+        7
+      ],
+      "rabin_gcd_witnesses": {
+        "1": {
+          "x_pow_2_to_index_mod_f": 4,
+          "gcd_with_f_after_xor_x": 1
+        }
+      },
+      "x_pow_2_to_degree_mod_f": 2,
+      "irreducible": true
+    },
+    "271": {
+      "field_degree": 9,
+      "monic_binary_modulus": 661,
+      "degree_prime_divisors": [
+        3
+      ],
+      "rabin_gcd_witnesses": {
+        "3": {
+          "x_pow_2_to_index_mod_f": 256,
+          "gcd_with_f_after_xor_x": 1
+        }
+      },
+      "x_pow_2_to_degree_mod_f": 2,
+      "irreducible": true
+    },
+    "307": {
+      "field_degree": 17,
+      "monic_binary_modulus": 171945,
+      "degree_prime_divisors": [
+        17
+      ],
+      "rabin_gcd_witnesses": {
+        "1": {
+          "x_pow_2_to_index_mod_f": 4,
+          "gcd_with_f_after_xor_x": 1
+        }
+      },
+      "x_pow_2_to_degree_mod_f": 2,
+      "irreducible": true
+    },
+    "397": {
+      "field_degree": 22,
+      "monic_binary_modulus": 7820825,
+      "degree_prime_divisors": [
+        2,
+        11
+      ],
+      "rabin_gcd_witnesses": {
+        "2": {
+          "x_pow_2_to_index_mod_f": 16,
+          "gcd_with_f_after_xor_x": 1
+        },
+        "11": {
+          "x_pow_2_to_index_mod_f": 515916,
+          "gcd_with_f_after_xor_x": 1
+        }
+      },
+      "x_pow_2_to_degree_mod_f": 2,
+      "irreducible": true
+    },
+    "547": {
+      "field_degree": 13,
+      "monic_binary_modulus": 13501,
+      "degree_prime_divisors": [
+        13
+      ],
+      "rabin_gcd_witnesses": {
+        "1": {
+          "x_pow_2_to_index_mod_f": 4,
+          "gcd_with_f_after_xor_x": 1
+        }
+      },
+      "x_pow_2_to_degree_mod_f": 2,
+      "irreducible": true
+    },
+    "919": {
+      "field_degree": 17,
+      "monic_binary_modulus": 172687,
+      "degree_prime_divisors": [
+        17
+      ],
+      "rabin_gcd_witnesses": {
+        "1": {
+          "x_pow_2_to_index_mod_f": 4,
+          "gcd_with_f_after_xor_x": 1
+        }
+      },
+      "x_pow_2_to_degree_mod_f": 2,
+      "irreducible": true
+    },
+    "1453": {
+      "field_degree": 22,
+      "monic_binary_modulus": 4843281,
+      "degree_prime_divisors": [
+        2,
+        11
+      ],
+      "rabin_gcd_witnesses": {
+        "2": {
+          "x_pow_2_to_index_mod_f": 16,
+          "gcd_with_f_after_xor_x": 1
+        },
+        "11": {
+          "x_pow_2_to_index_mod_f": 3918152,
+          "gcd_with_f_after_xor_x": 1
+        }
+      },
+      "x_pow_2_to_degree_mod_f": 2,
+      "irreducible": true
+    }
+  },
+  "largest_certified_map_degree": 22,
+  "accepted_engine_degree_bound": 25,
+  "no_degree25_target_map_certified": true
+}

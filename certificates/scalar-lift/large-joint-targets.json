@@ -1,0 +1,447 @@
+{
+  "scope": "Large unresolved targets, verified sources, and conditional construction routes only",
+  "frontier": {
+    "url": "https://github.com/vatskishan03/Hadamard/blob/d885022/FRONTIER.md",
+    "commit": "d885022",
+    "retrieved_utc_date": "2026-11-22",
+    "status": "Listed unresolved in the retrieved frontier; not a proof of global novelty"
+  },
+  "verified_sources": [
+    {
+      "order": 3,
+      "phase": 6,
+      "exponents": [
+        [
+          4,
+          2,
+          2
+        ],
+        [
+          2,
+          4,
+          2
+        ],
+        [
+          2,
+          2,
+          4
+        ]
+      ],
+      "sha256": "58cc229725c2d9ae03299f342b6e96fc2480c615800c912e478b24a78d01cfe0",
+      "exact_source_Gram_and_used_alphabet_verified": true
+    },
+    {
+      "order": 7,
+      "phase": 6,
+      "exponents": [
+        [
+          1,
+          1,
+          2,
+          2,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          2,
+          4,
+          4,
+          4,
+          5
+        ],
+        [
+          1,
+          2,
+          5,
+          1,
+          1,
+          4,
+          4
+        ],
+        [
+          2,
+          4,
+          2,
+          1,
+          5,
+          2,
+          4
+        ],
+        [
+          2,
+          5,
+          1,
+          5,
+          1,
+          4,
+          2
+        ],
+        [
+          1,
+          5,
+          4,
+          2,
+          4,
+          5,
+          2
+        ],
+        [
+          1,
+          5,
+          4,
+          5,
+          2,
+          1,
+          5
+        ]
+      ],
+      "sha256": "c249184123218f5b4949ff27ad88aed12dba26cb8ccde2bb415d5fc9972083fd",
+      "exact_source_Gram_and_used_alphabet_verified": true
+    },
+    {
+      "order": 13,
+      "phase": 6,
+      "exponents": [
+        [
+          1,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2,
+          2
+        ],
+        [
+          2,
+          2,
+          2,
+          1,
+          1,
+          1,
+          1,
+          5,
+          5,
+          5,
+          4,
+          4,
+          4
+        ],
+        [
+          2,
+          2,
+          2,
+          4,
+          5,
+          5,
+          5,
+          1,
+          1,
+          1,
+          4,
+          4,
+          1
+        ],
+        [
+          2,
+          4,
+          4,
+          5,
+          1,
+          1,
+          4,
+          1,
+          5,
+          5,
+          2,
+          2,
+          1
+        ],
+        [
+          2,
+          4,
+          4,
+          1,
+          5,
+          5,
+          1,
+          4,
+          1,
+          1,
+          2,
+          2,
+          5
+        ],
+        [
+          2,
+          4,
+          1,
+          1,
+          2,
+          4,
+          5,
+          5,
+          2,
+          4,
+          1,
+          5,
+          1
+        ],
+        [
+          2,
+          5,
+          1,
+          4,
+          1,
+          4,
+          2,
+          4,
+          5,
+          1,
+          5,
+          1,
+          2
+        ],
+        [
+          2,
+          5,
+          1,
+          5,
+          4,
+          2,
+          1,
+          1,
+          4,
+          2,
+          1,
+          4,
+          5
+        ],
+        [
+          2,
+          5,
+          1,
+          2,
+          5,
+          1,
+          4,
+          2,
+          1,
+          4,
+          5,
+          1,
+          4
+        ],
+        [
+          2,
+          1,
+          4,
+          1,
+          4,
+          2,
+          5,
+          5,
+          4,
+          2,
+          5,
+          1,
+          1
+        ],
+        [
+          2,
+          1,
+          5,
+          4,
+          4,
+          1,
+          2,
+          4,
+          1,
+          5,
+          1,
+          5,
+          2
+        ],
+        [
+          2,
+          1,
+          5,
+          5,
+          2,
+          4,
+          1,
+          1,
+          2,
+          4,
+          4,
+          1,
+          5
+        ],
+        [
+          2,
+          1,
+          5,
+          2,
+          1,
+          5,
+          4,
+          2,
+          4,
+          1,
+          1,
+          5,
+          4
+        ]
+      ],
+      "sha256": "f90c0940d343957ff837351785852aa07b98ce642082bfb976e16893d4fef8c2",
+      "exact_source_Gram_and_used_alphabet_verified": true
+    }
+  ],
+  "routes": [
+    {
+      "target_order": 2676,
+      "block_order": 892,
+      "source_order": 3,
+      "missing_common_frame": {
+        "orthogonal_design_order": 892,
+        "orthogonal_design_type": [
+          669,
+          223
+        ]
+      },
+      "listed_unresolved_in_retrieved_frontier": true,
+      "source_verified": true,
+      "required_frame_constructed": false,
+      "target_constructed": false,
+      "structured_search": {
+        "chart": "four complementary circulant sequences with entries in {+x,-x,+y,-y}",
+        "multiplier_subgroup_order": 3,
+        "four_state_orbit_variables_before_origin_gauges": 300,
+        "nontrivial_coefficient_correlation_equations": 111,
+        "scalar_operator_prescribed": false
+      },
+      "unstructured_pair_model_boolean_variable_count": 1420260240
+    },
+    {
+      "target_order": 5892,
+      "block_order": 1964,
+      "source_order": 3,
+      "missing_common_frame": {
+        "orthogonal_design_order": 1964,
+        "orthogonal_design_type": [
+          1473,
+          491
+        ]
+      },
+      "listed_unresolved_in_retrieved_frontier": true,
+      "source_verified": true,
+      "required_frame_constructed": false,
+      "target_constructed": false,
+      "structured_search": {
+        "chart": "four complementary circulant sequences with entries in {+x,-x,+y,-y}",
+        "multiplier_subgroup_order": 7,
+        "four_state_orbit_variables_before_origin_gauges": 284,
+        "nontrivial_coefficient_correlation_equations": 105,
+        "scalar_operator_prescribed": false
+      },
+      "unstructured_pair_model_boolean_variable_count": 15155315984
+    },
+    {
+      "target_order": 11596,
+      "block_order": 892,
+      "source_order": 13,
+      "missing_common_frame": {
+        "orthogonal_design_order": 892,
+        "orthogonal_design_type": [
+          669,
+          223
+        ]
+      },
+      "listed_unresolved_in_retrieved_frontier": true,
+      "source_verified": true,
+      "required_frame_constructed": false,
+      "target_constructed": false,
+      "structured_search": {
+        "chart": "four complementary circulant sequences with entries in {+x,-x,+y,-y}",
+        "multiplier_subgroup_order": 3,
+        "four_state_orbit_variables_before_origin_gauges": 300,
+        "nontrivial_coefficient_correlation_equations": 111,
+        "scalar_operator_prescribed": false
+      },
+      "unstructured_pair_model_boolean_variable_count": 1420260240
+    },
+    {
+      "target_order": 4676,
+      "block_order": 668,
+      "source_order": 7,
+      "missing_common_frame": {
+        "orthogonal_design_order": 668,
+        "orthogonal_design_type": [
+          501,
+          167
+        ]
+      },
+      "listed_unresolved_in_retrieved_frontier": true,
+      "source_verified": true,
+      "required_frame_constructed": false,
+      "target_constructed": false,
+      "structured_search": null,
+      "unstructured_pair_model_boolean_variable_count": 596601488
+    },
+    {
+      "target_order": 8684,
+      "block_order": 668,
+      "source_order": 13,
+      "missing_common_frame": {
+        "orthogonal_design_order": 668,
+        "orthogonal_design_type": [
+          501,
+          167
+        ]
+      },
+      "listed_unresolved_in_retrieved_frontier": true,
+      "source_verified": true,
+      "required_frame_constructed": false,
+      "target_constructed": false,
+      "structured_search": null,
+      "unstructured_pair_model_boolean_variable_count": 596601488
+    },
+    {
+      "target_order": 9308,
+      "block_order": 716,
+      "source_order": 13,
+      "missing_common_frame": {
+        "orthogonal_design_order": 716,
+        "orthogonal_design_type": [
+          537,
+          179
+        ]
+      },
+      "listed_unresolved_in_retrieved_frontier": true,
+      "source_verified": true,
+      "required_frame_constructed": false,
+      "target_constructed": false,
+      "structured_search": null,
+      "unstructured_pair_model_boolean_variable_count": 734636048
+    }
+  ],
+  "conditional_descendant": {
+    "target_order": 10708,
+    "required_Hadamard_order": 2676,
+    "prime": 2677,
+    "construction": "Miyamoto I: H(q-1), q prime power congruent to 1 modulo 4, gives H(4q)",
+    "reference": "https://arxiv.org/html/2610.27175v2#S4.T4",
+    "listed_unresolved_in_retrieved_frontier": true,
+    "input_Hadamard_constructed": false,
+    "target_constructed": false
+  },
+  "new_real_Hadamard_order_constructed": false
+}

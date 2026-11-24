@@ -1,0 +1,31 @@
+{
+  "source_url": "https://hexagonmath.org/pdf/2611.00637v1",
+  "source_landing_url": "https://hexagonmath.org/2611.00637v1",
+  "source_identifier": "hexagon:2611.00637v1",
+  "source_author_as_printed": "CLAUDE",
+  "source_date_as_printed": "November 2026",
+  "source_deposit_date": "2026-11-19",
+  "source_contributors_as_listed": ["Erisa Hasani", "Abhinav Nellore", "Rachel Ward"],
+  "source_license_as_listed": "CC0 1.0",
+  "source_location": "Table A2, PDF page 25; reconstruction recipe Section 6.1, PDF page 18",
+  "source_peer_review_status_as_printed": "Preprint; not yet peer-reviewed",
+  "not_an_arxiv_identifier": true,
+  "supplementary_data_status_as_printed": "Reference [83]: Not publicly deposited",
+  "order": 668,
+  "label": "668-prime / width-12",
+  "group_moduli": [2, 2, 41],
+  "quotient_moduli": [2, 2],
+  "border_width": 12,
+  "core_hex": [
+    "00A3059FD76E4C22946CFE14C6E704348D0B6563C",
+    "807F63A73BF8D937C5EC292C743EFCAAAF9B9AE22",
+    "A6626A87798B65C3B11D6D57A99212F0BEE975A11",
+    "52474B747DBC5A4699AFA1D87EE88DD5B247BCA2B"
+  ],
+  "quotient_frame_columns_D_hex": ["5A53", "5AAC", "5569", "5596", "363A", "36C5", "3935", "39CA", "6C5C", "6CA3", "6366", "6399"],
+  "quotient_frame_rows_E_hex": ["55C9", "5AC6", "533C", "5C33", "3566", "3A69", "3393", "3C9C", "6655", "66AA", "695A", "69A5"],
+  "bit_convention": "Most significant bit first; bit 1 means -1; last group coordinate varies fastest",
+  "expected_core_row_sums": [14, -18, -2, -12],
+  "inequivalence_status": "Claimed in the source via 4-profiles; not independently verified by this extraction",
+  "new_order_claimed": false
+}

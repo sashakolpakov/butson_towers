@@ -1,0 +1,756 @@
+{
+  "schema": "fifth-global-residue-v1",
+  "field": "F2[rho]/(rho^4+rho^3+rho^2+rho+1)",
+  "joint_coefficient_conditions": {
+    "F4": [
+      0,
+      1,
+      12,
+      13
+    ],
+    "beta": 6,
+    "delta": 13,
+    "beta_fourth_equals_beta_plus_one": true,
+    "all_trace_zero_entries_decomposed": {
+      "0": [
+        0,
+        0
+      ],
+      "1": [
+        1,
+        0
+      ],
+      "6": [
+        0,
+        1
+      ],
+      "7": [
+        1,
+        1
+      ],
+      "10": [
+        12,
+        1
+      ],
+      "11": [
+        13,
+        1
+      ],
+      "12": [
+        12,
+        0
+      ],
+      "13": [
+        13,
+        0
+      ]
+    },
+    "entry_condition": "A inF4, B inF2; if B=0 then A!=1",
+    "unitary_conditions": [
+      "AB^T=BA^T",
+      "AA^T+AB^T+delta BB^T=I"
+    ],
+    "exact_coefficient_expansion_checks": [
+      2,
+      3,
+      5
+    ],
+    "odd_order_B_must_be_singular": true,
+    "four_impossible_matrix_trace_values": [
+      13,
+      13,
+      12,
+      12
+    ],
+    "rank_B_even_claimed": false
+  },
+  "single_rotated_D_stack": {
+    "core_orders": [
+      747,
+      1497
+    ],
+    "even_unrotated_D_copies": [
+      142,
+      292
+    ],
+    "rotated_D_copies": 1,
+    "equal_rho_one_rows": 32,
+    "gamma": 8,
+    "gamma_squared": 2,
+    "ordinary_boundary_Gram": [
+      [
+        8,
+        4,
+        15,
+        15,
+        4
+      ],
+      [
+        4,
+        8,
+        4,
+        15,
+        15
+      ],
+      [
+        15,
+        4,
+        8,
+        4,
+        15
+      ],
+      [
+        15,
+        15,
+        4,
+        8,
+        4
+      ],
+      [
+        4,
+        15,
+        15,
+        4,
+        8
+      ]
+    ],
+    "ordinary_Gram_defect_rank": 5,
+    "E_over_F4_excluded": true,
+    "necessary_binary_compression": "T^T B T=D G+G D^dagger, B=E+bar(E) binary, G=T^T T",
+    "compression_target": [
+      [
+        11,
+        0,
+        7,
+        7,
+        0
+      ],
+      [
+        0,
+        7,
+        7,
+        0,
+        11
+      ],
+      [
+        7,
+        7,
+        0,
+        11,
+        0
+      ],
+      [
+        7,
+        0,
+        11,
+        0,
+        7
+      ],
+      [
+        0,
+        11,
+        0,
+        7,
+        7
+      ]
+    ],
+    "target_rank_and_lower_bound_on_rank_B": 5,
+    "transformed_target": [
+      [
+        5,
+        5,
+        7,
+        7,
+        5
+      ],
+      [
+        5,
+        7,
+        7,
+        5,
+        5
+      ],
+      [
+        7,
+        7,
+        5,
+        5,
+        5
+      ],
+      [
+        7,
+        5,
+        5,
+        5,
+        7
+      ],
+      [
+        5,
+        5,
+        5,
+        7,
+        7
+      ]
+    ],
+    "binary_row_span_generators": "rows of D and gamma D; rho*one is the sum of D rows",
+    "forced_scalar_product_span": [
+      0,
+      1,
+      2,
+      3,
+      8,
+      9,
+      10,
+      11
+    ],
+    "transformed_target_values": [
+      5,
+      7
+    ],
+    "separating_functional": "coefficient of rho^2 in the polynomial basis",
+    "any_trace_zero_unitary_E_for_this_T_excluded": true,
+    "all_fifth_root_source_boundaries_excluded": false
+  },
+  "related_boundary_exclusions": {
+    "only_D_rows_rotated_by_gamma_and_B8_rows_kept_in_rho_coset": {
+      "all32_row_parity_patterns_excluded": true,
+      "parity_cases": [
+        {
+          "gamma_row_count_parities": [
+            0,
+            0,
+            0,
+            0,
+            0
+          ],
+          "target_diagonal": [
+            13,
+            12,
+            13,
+            13,
+            12
+          ]
+        },
+        {
+          "gamma_row_count_parities": [
+            0,
+            0,
+            0,
+            0,
+            1
+          ],
+          "target_diagonal": [
+            13,
+            12,
+            13,
+            13,
+            7
+          ]
+        },
+        {
+          "gamma_row_count_parities": [
+            0,
+            0,
+            0,
+            1,
+            0
+          ],
+          "target_diagonal": [
+            13,
+            12,
+            13,
+            5,
+            12
+          ]
+        },
+        {
+          "gamma_row_count_parities": [
+            0,
+            0,
+            0,
+            1,
+            1
+          ],
+          "target_diagonal": [
+            13,
+            12,
+            13,
+            5,
+            7
+          ]
+        },
+        {
+          "gamma_row_count_parities": [
+            0,
+            0,
+            1,
+            0,
+            0
+          ],
+          "target_diagonal": [
+            13,
+            12,
+            5,
+            13,
+            12
+          ]
+        },
+        {
+          "gamma_row_count_parities": [
+            0,
+            0,
+            1,
+            0,
+            1
+          ],
+          "target_diagonal": [
+            13,
+            12,
+            5,
+            13,
+            7
+          ]
+        },
+        {
+          "gamma_row_count_parities": [
+            0,
+            0,
+            1,
+            1,
+            0
+          ],
+          "target_diagonal": [
+            13,
+            12,
+            5,
+            5,
+            12
+          ]
+        },
+        {
+          "gamma_row_count_parities": [
+            0,
+            0,
+            1,
+            1,
+            1
+          ],
+          "target_diagonal": [
+            13,
+            12,
+            5,
+            5,
+            7
+          ]
+        },
+        {
+          "gamma_row_count_parities": [
+            0,
+            1,
+            0,
+            0,
+            0
+          ],
+          "target_diagonal": [
+            13,
+            7,
+            13,
+            13,
+            12
+          ]
+        },
+        {
+          "gamma_row_count_parities": [
+            0,
+            1,
+            0,
+            0,
+            1
+          ],
+          "target_diagonal": [
+            13,
+            7,
+            13,
+            13,
+            7
+          ]
+        },
+        {
+          "gamma_row_count_parities": [
+            0,
+            1,
+            0,
+            1,
+            0
+          ],
+          "target_diagonal": [
+            13,
+            7,
+            13,
+            5,
+            12
+          ]
+        },
+        {
+          "gamma_row_count_parities": [
+            0,
+            1,
+            0,
+            1,
+            1
+          ],
+          "target_diagonal": [
+            13,
+            7,
+            13,
+            5,
+            7
+          ]
+        },
+        {
+          "gamma_row_count_parities": [
+            0,
+            1,
+            1,
+            0,
+            0
+          ],
+          "target_diagonal": [
+            13,
+            7,
+            5,
+            13,
+            12
+          ]
+        },
+        {
+          "gamma_row_count_parities": [
+            0,
+            1,
+            1,
+            0,
+            1
+          ],
+          "target_diagonal": [
+            13,
+            7,
+            5,
+            13,
+            7
+          ]
+        },
+        {
+          "gamma_row_count_parities": [
+            0,
+            1,
+            1,
+            1,
+            0
+          ],
+          "target_diagonal": [
+            13,
+            7,
+            5,
+            5,
+            12
+          ]
+        },
+        {
+          "gamma_row_count_parities": [
+            0,
+            1,
+            1,
+            1,
+            1
+          ],
+          "target_diagonal": [
+            13,
+            7,
+            5,
+            5,
+            7
+          ]
+        },
+        {
+          "gamma_row_count_parities": [
+            1,
+            0,
+            0,
+            0,
+            0
+          ],
+          "target_diagonal": [
+            5,
+            12,
+            13,
+            13,
+            12
+          ]
+        },
+        {
+          "gamma_row_count_parities": [
+            1,
+            0,
+            0,
+            0,
+            1
+          ],
+          "target_diagonal": [
+            5,
+            12,
+            13,
+            13,
+            7
+          ]
+        },
+        {
+          "gamma_row_count_parities": [
+            1,
+            0,
+            0,
+            1,
+            0
+          ],
+          "target_diagonal": [
+            5,
+            12,
+            13,
+            5,
+            12
+          ]
+        },
+        {
+          "gamma_row_count_parities": [
+            1,
+            0,
+            0,
+            1,
+            1
+          ],
+          "target_diagonal": [
+            5,
+            12,
+            13,
+            5,
+            7
+          ]
+        },
+        {
+          "gamma_row_count_parities": [
+            1,
+            0,
+            1,
+            0,
+            0
+          ],
+          "target_diagonal": [
+            5,
+            12,
+            5,
+            13,
+            12
+          ]
+        },
+        {
+          "gamma_row_count_parities": [
+            1,
+            0,
+            1,
+            0,
+            1
+          ],
+          "target_diagonal": [
+            5,
+            12,
+            5,
+            13,
+            7
+          ]
+        },
+        {
+          "gamma_row_count_parities": [
+            1,
+            0,
+            1,
+            1,
+            0
+          ],
+          "target_diagonal": [
+            5,
+            12,
+            5,
+            5,
+            12
+          ]
+        },
+        {
+          "gamma_row_count_parities": [
+            1,
+            0,
+            1,
+            1,
+            1
+          ],
+          "target_diagonal": [
+            5,
+            12,
+            5,
+            5,
+            7
+          ]
+        },
+        {
+          "gamma_row_count_parities": [
+            1,
+            1,
+            0,
+            0,
+            0
+          ],
+          "target_diagonal": [
+            5,
+            7,
+            13,
+            13,
+            12
+          ]
+        },
+        {
+          "gamma_row_count_parities": [
+            1,
+            1,
+            0,
+            0,
+            1
+          ],
+          "target_diagonal": [
+            5,
+            7,
+            13,
+            13,
+            7
+          ]
+        },
+        {
+          "gamma_row_count_parities": [
+            1,
+            1,
+            0,
+            1,
+            0
+          ],
+          "target_diagonal": [
+            5,
+            7,
+            13,
+            5,
+            12
+          ]
+        },
+        {
+          "gamma_row_count_parities": [
+            1,
+            1,
+            0,
+            1,
+            1
+          ],
+          "target_diagonal": [
+            5,
+            7,
+            13,
+            5,
+            7
+          ]
+        },
+        {
+          "gamma_row_count_parities": [
+            1,
+            1,
+            1,
+            0,
+            0
+          ],
+          "target_diagonal": [
+            5,
+            7,
+            5,
+            13,
+            12
+          ]
+        },
+        {
+          "gamma_row_count_parities": [
+            1,
+            1,
+            1,
+            0,
+            1
+          ],
+          "target_diagonal": [
+            5,
+            7,
+            5,
+            13,
+            7
+          ]
+        },
+        {
+          "gamma_row_count_parities": [
+            1,
+            1,
+            1,
+            1,
+            0
+          ],
+          "target_diagonal": [
+            5,
+            7,
+            5,
+            5,
+            12
+          ]
+        },
+        {
+          "gamma_row_count_parities": [
+            1,
+            1,
+            1,
+            1,
+            1
+          ],
+          "target_diagonal": [
+            5,
+            7,
+            5,
+            5,
+            7
+          ]
+        }
+      ],
+      "scope": "odd count of row-gauged D blocks; an even count of rho*one rows"
+    },
+    "only_one_B8_block_rotated_to_rho_squared_without_D_rotation": {
+      "row_generators_after_right_multiplying_D_inverse": "I5 and rho*one",
+      "forced_scalar_product_span": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "target_values": [
+        12,
+        13
+      ],
+      "excluded": true
+    },
+    "simultaneous_D_and_B8_rotations_excluded": false
+  },
+  "all_dyadic_lifts_of_these_residue_stacks_excluded": true,
+  "global_fifth_source_nonexistence_claimed": false,
+  "new_source_or_Hadamard_matrix_constructed": false
+}

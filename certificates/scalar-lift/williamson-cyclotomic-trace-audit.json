@@ -1,0 +1,2167 @@
+{
+  "schema": "independent-williamson-cyclotomic-trace-audit-v1",
+  "implementation": "experiments/scalar_lift/williamson_cyclotomic_trace_audit.py",
+  "implementation_sha256": "90c6129d79cc6b07409c04a43ce373de9d9294a48f672a618a97e05917a5575e",
+  "literal_Williamson_input": "experiments/scalar_lift/williamson_inputs.json",
+  "literal_Williamson_input_sha256": "242f554cf113c68ab882e147c3b2702b7bb62e68b66ad36b16c92b6c194f8560",
+  "source_algebra": "Q[C_w]=product_{d|w} Q(zeta_d), not a field",
+  "involution": "c -> c^(-1); factor-wise complex conjugation",
+  "normalized_trace": "tau(a)=coefficient_1(a)=(1/w)*sum_{d|w}Tr_Q(zeta_d)/Q(a_d)",
+  "group_basis": "1,c^(-1),...,c^(-(w-1))",
+  "group_trace_metric": "I_w",
+  "factor_trace_metrics": "G_d[i,j]=(1/w)*RamanujanSum_d(j-i)",
+  "general_source": "D_T(f_0(c),...,f_3(c))=sum_j X_j*f_j(c)",
+  "source_class": "complete weighted design over a commutative semisimple algebra; not a Butson source",
+  "OD_formula": "D_T(x)=GS((t0*x0-t1*x1-t2*x2-t3*x3, t1*x0+t0*x1-t3*x2+t2*x3, t2*x0+t3*x1+t0*x2-t1*x3, t3*x0-t2*x1+t1*x2+t0*x3))",
+  "general_OD_derivation": "The displayed real4x4 rotation L(x) has L(x)^T*L(x)=sum_j x_j^2*I. Hence sum_i V_i*V_i^T=sum_j x_j^2*sum_i T_i*T_i^T=p*sum_j x_j^2*I. The Goethals-Seidel identity for commuting real circulants gives GS(V)GS(V)^T=I4 tensor sum_i V_i*V_i^T. Coefficient comparison gives the ten OD identities for every periodic T tuple.",
+  "general_Gram_proof": "XiXi^T=pI and XiXj^T+XjXi^T=0; self-conjugate commuting Williamson polynomials give D_T(f)D_T(f)^*=p*sum_j f_j*f_j^*=4pwI",
+  "general_flatness_proof": "The Xi supports partition every matrix position, so every algebra-valued entry is +/-one f_j; rho(f_j) is its literal sign circulant.",
+  "restriction_order_and_scale": "source order4p over Q[C_w], scalar dimensionw, endpoint order4pw and Gram scale4pw",
+  "OD_small_control": {
+    "p": 7,
+    "multiplier": 2,
+    "multiplier_order": 3,
+    "states": [
+      0,
+      1,
+      2
+    ],
+    "literal_T_rows": [
+      [
+        1,
+        -1,
+        -1,
+        0,
+        -1,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        1,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0,
+        0,
+        1,
+        0
+      ]
+    ],
+    "all_7_periodic_correlations_verified": true,
+    "rational_dimension": 28,
+    "disjoint_complete_coefficient_supports": true,
+    "coefficient_weight": 7,
+    "all_10_OD_Gram_coefficients_verified": true,
+    "real_4x4_rotation_coefficient_matrices": [
+      [
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ]
+      ],
+      [
+        [
+          0,
+          -1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          -1,
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          0,
+          -1,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          -1
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          0,
+          0
+        ]
+      ],
+      [
+        [
+          0,
+          0,
+          0,
+          -1
+        ],
+        [
+          0,
+          0,
+          1,
+          0
+        ],
+        [
+          0,
+          -1,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          0,
+          0
+        ]
+      ]
+    ],
+    "all_10_formal_rotation_norm_coefficients_verified": true,
+    "brief_quaternion_scope_control": {
+      "U_j": "X_j X_0^T/7",
+      "U1_U2_equals_either_sign_of_U3": false,
+      "trace_U1_U2_U3": -4,
+      "conclusion": "the OD identities alone do not identify this GS action with a Hamilton representation"
+    }
+  },
+  "finite_independent_controls": [
+    {
+      "williamson_order": 5,
+      "literal_first_rows_pm": [
+        "+-++-",
+        "++--+",
+        "+----",
+        "+----"
+      ],
+      "all_Williamson_symmetry_and_full_Gram_entries_verified": true,
+      "CRT_factors": [
+        {
+          "cyclotomic_index": 1,
+          "field_degree": 1,
+          "field": "Q(zeta_1)",
+          "cyclotomic_polynomial": "z - 1",
+          "basis": [
+            "zeta_1^0"
+          ],
+          "trace_metric_numerator": [
+            [
+              1
+            ]
+          ],
+          "trace_metric_denominator": 5,
+          "actual_source_entry_coordinates": [
+            [
+              -3
+            ],
+            [
+              -1
+            ],
+            [
+              1
+            ],
+            [
+              3
+            ]
+          ],
+          "zero_is_in_actual_source_alphabet": false,
+          "zero_preserved_by_the_restriction": true,
+          "actual_restricted_scalar_entry_alphabet": [
+            -3,
+            -1,
+            1,
+            3
+          ],
+          "all_used_source_actions_verified": true,
+          "conjugation_is_trace_adjoint_verified": true,
+          "complete_factor_norm_verified": "sum_j f_j*conjugate(f_j)=20",
+          "module_rank": 28,
+          "rational_dimension": 28,
+          "weighted_source_Gram_scale": 140
+        },
+        {
+          "cyclotomic_index": 5,
+          "field_degree": 4,
+          "field": "Q(zeta_5)",
+          "cyclotomic_polynomial": "z**4 + z**3 + z**2 + z + 1",
+          "basis": [
+            "zeta_5^0",
+            "zeta_5^1",
+            "zeta_5^2",
+            "zeta_5^3"
+          ],
+          "trace_metric_numerator": [
+            [
+              4,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              -1,
+              4,
+              -1,
+              -1
+            ],
+            [
+              -1,
+              -1,
+              4,
+              -1
+            ],
+            [
+              -1,
+              -1,
+              -1,
+              4
+            ]
+          ],
+          "trace_metric_denominator": 5,
+          "actual_source_entry_coordinates": [
+            [
+              -2,
+              0,
+              -2,
+              -2
+            ],
+            [
+              -2,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              -2,
+              -2
+            ],
+            [
+              0,
+              0,
+              2,
+              2
+            ],
+            [
+              2,
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              0,
+              2,
+              2
+            ]
+          ],
+          "zero_is_in_actual_source_alphabet": false,
+          "zero_preserved_by_the_restriction": true,
+          "actual_restricted_scalar_entry_alphabet": [
+            -2,
+            0,
+            2
+          ],
+          "all_used_source_actions_verified": true,
+          "conjugation_is_trace_adjoint_verified": true,
+          "complete_factor_norm_verified": "sum_j f_j*conjugate(f_j)=20",
+          "module_rank": 28,
+          "rational_dimension": 112,
+          "weighted_source_Gram_scale": 140
+        }
+      ],
+      "CRT_map_basis": "group basis beta_j=c^(-j) to factor power bases",
+      "all_actual_polynomial_actions_verified": true,
+      "S_transpose_G_CRT_S_equals_group_identity": true,
+      "normalizing_denominator": 5,
+      "total_algebra_dimension": 5,
+      "weighted_source_order_over_group_algebra": 28,
+      "source_and_endpoint_Gram_scale": 140,
+      "endpoint_order": 140,
+      "endpoint_alphabet": [
+        -1,
+        1
+      ],
+      "all_endpoint_Gram_entries_checked": 19600,
+      "endpoint_int8_row_major_sha256": "4dc941b3a2e38b8d88fcb06ec4555d13e5b8ecbcd484d10c6d30a64b9de09764"
+    },
+    {
+      "williamson_order": 9,
+      "literal_first_rows_pm": [
+        "+---++---",
+        "+--+--+--",
+        "+-+----+-",
+        "++------+"
+      ],
+      "all_Williamson_symmetry_and_full_Gram_entries_verified": true,
+      "CRT_factors": [
+        {
+          "cyclotomic_index": 1,
+          "field_degree": 1,
+          "field": "Q(zeta_1)",
+          "cyclotomic_polynomial": "z - 1",
+          "basis": [
+            "zeta_1^0"
+          ],
+          "trace_metric_numerator": [
+            [
+              1
+            ]
+          ],
+          "trace_metric_denominator": 9,
+          "actual_source_entry_coordinates": [
+            [
+              -3
+            ],
+            [
+              3
+            ]
+          ],
+          "zero_is_in_actual_source_alphabet": false,
+          "zero_preserved_by_the_restriction": true,
+          "actual_restricted_scalar_entry_alphabet": [
+            -3,
+            3
+          ],
+          "all_used_source_actions_verified": true,
+          "conjugation_is_trace_adjoint_verified": true,
+          "complete_factor_norm_verified": "sum_j f_j*conjugate(f_j)=36",
+          "module_rank": 28,
+          "rational_dimension": 28,
+          "weighted_source_Gram_scale": 252
+        },
+        {
+          "cyclotomic_index": 3,
+          "field_degree": 2,
+          "field": "Q(zeta_3)",
+          "cyclotomic_polynomial": "z**2 + z + 1",
+          "basis": [
+            "zeta_3^0",
+            "zeta_3^1"
+          ],
+          "trace_metric_numerator": [
+            [
+              2,
+              -1
+            ],
+            [
+              -1,
+              2
+            ]
+          ],
+          "trace_metric_denominator": 9,
+          "actual_source_entry_coordinates": [
+            [
+              -6,
+              0
+            ],
+            [
+              0,
+              0
+            ],
+            [
+              6,
+              0
+            ]
+          ],
+          "zero_is_in_actual_source_alphabet": true,
+          "zero_preserved_by_the_restriction": true,
+          "actual_restricted_scalar_entry_alphabet": [
+            -6,
+            0,
+            6
+          ],
+          "all_used_source_actions_verified": true,
+          "conjugation_is_trace_adjoint_verified": true,
+          "complete_factor_norm_verified": "sum_j f_j*conjugate(f_j)=36",
+          "module_rank": 28,
+          "rational_dimension": 56,
+          "weighted_source_Gram_scale": 252
+        },
+        {
+          "cyclotomic_index": 9,
+          "field_degree": 6,
+          "field": "Q(zeta_9)",
+          "cyclotomic_polynomial": "z**6 + z**3 + 1",
+          "basis": [
+            "zeta_9^0",
+            "zeta_9^1",
+            "zeta_9^2",
+            "zeta_9^3",
+            "zeta_9^4",
+            "zeta_9^5"
+          ],
+          "trace_metric_numerator": [
+            [
+              6,
+              0,
+              0,
+              -3,
+              0,
+              0
+            ],
+            [
+              0,
+              6,
+              0,
+              0,
+              -3,
+              0
+            ],
+            [
+              0,
+              0,
+              6,
+              0,
+              0,
+              -3
+            ],
+            [
+              -3,
+              0,
+              0,
+              6,
+              0,
+              0
+            ],
+            [
+              0,
+              -3,
+              0,
+              0,
+              6,
+              0
+            ],
+            [
+              0,
+              0,
+              -3,
+              0,
+              0,
+              6
+            ]
+          ],
+          "trace_metric_denominator": 9,
+          "actual_source_entry_coordinates": [
+            [
+              -2,
+              -2,
+              2,
+              0,
+              0,
+              2
+            ],
+            [
+              -2,
+              0,
+              0,
+              0,
+              -2,
+              -2
+            ],
+            [
+              -2,
+              2,
+              -2,
+              0,
+              2,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              2,
+              -2,
+              2,
+              0,
+              -2,
+              0
+            ],
+            [
+              2,
+              0,
+              0,
+              0,
+              2,
+              2
+            ],
+            [
+              2,
+              2,
+              -2,
+              0,
+              0,
+              -2
+            ]
+          ],
+          "zero_is_in_actual_source_alphabet": true,
+          "zero_preserved_by_the_restriction": true,
+          "actual_restricted_scalar_entry_alphabet": [
+            -2,
+            0,
+            2
+          ],
+          "all_used_source_actions_verified": true,
+          "conjugation_is_trace_adjoint_verified": true,
+          "complete_factor_norm_verified": "sum_j f_j*conjugate(f_j)=36",
+          "module_rank": 28,
+          "rational_dimension": 168,
+          "weighted_source_Gram_scale": 252
+        }
+      ],
+      "CRT_map_basis": "group basis beta_j=c^(-j) to factor power bases",
+      "all_actual_polynomial_actions_verified": true,
+      "S_transpose_G_CRT_S_equals_group_identity": true,
+      "normalizing_denominator": 9,
+      "total_algebra_dimension": 9,
+      "weighted_source_order_over_group_algebra": 28,
+      "source_and_endpoint_Gram_scale": 252,
+      "endpoint_order": 252,
+      "endpoint_alphabet": [
+        -1,
+        1
+      ],
+      "all_endpoint_Gram_entries_checked": 63504,
+      "endpoint_int8_row_major_sha256": "d3d308a83b3aeefc702ab5496cb401b59994b8c9869d9a425fede616d8b8dfe1"
+    },
+    {
+      "williamson_order": 15,
+      "literal_first_rows_pm": [
+        "+-+---++++---+-",
+        "++-++------++-+",
+        "++-++++--++++-+",
+        "++-++-+--+-++-+"
+      ],
+      "all_Williamson_symmetry_and_full_Gram_entries_verified": true,
+      "CRT_factors": [
+        {
+          "cyclotomic_index": 1,
+          "field_degree": 1,
+          "field": "Q(zeta_1)",
+          "cyclotomic_polynomial": "z - 1",
+          "basis": [
+            "zeta_1^0"
+          ],
+          "trace_metric_numerator": [
+            [
+              1
+            ]
+          ],
+          "trace_metric_denominator": 15,
+          "actual_source_entry_coordinates": [
+            [
+              -7
+            ],
+            [
+              -3
+            ],
+            [
+              -1
+            ],
+            [
+              1
+            ],
+            [
+              3
+            ],
+            [
+              7
+            ]
+          ],
+          "zero_is_in_actual_source_alphabet": false,
+          "zero_preserved_by_the_restriction": true,
+          "actual_restricted_scalar_entry_alphabet": [
+            -7,
+            -3,
+            -1,
+            1,
+            3,
+            7
+          ],
+          "all_used_source_actions_verified": true,
+          "conjugation_is_trace_adjoint_verified": true,
+          "complete_factor_norm_verified": "sum_j f_j*conjugate(f_j)=60",
+          "module_rank": 28,
+          "rational_dimension": 28,
+          "weighted_source_Gram_scale": 420
+        },
+        {
+          "cyclotomic_index": 3,
+          "field_degree": 2,
+          "field": "Q(zeta_3)",
+          "cyclotomic_polynomial": "z**2 + z + 1",
+          "basis": [
+            "zeta_3^0",
+            "zeta_3^1"
+          ],
+          "trace_metric_numerator": [
+            [
+              2,
+              -1
+            ],
+            [
+              -1,
+              2
+            ]
+          ],
+          "trace_metric_denominator": 15,
+          "actual_source_entry_coordinates": [
+            [
+              -6,
+              0
+            ],
+            [
+              -4,
+              0
+            ],
+            [
+              -2,
+              0
+            ],
+            [
+              2,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              6,
+              0
+            ]
+          ],
+          "zero_is_in_actual_source_alphabet": false,
+          "zero_preserved_by_the_restriction": true,
+          "actual_restricted_scalar_entry_alphabet": [
+            -6,
+            -4,
+            -2,
+            0,
+            2,
+            4,
+            6
+          ],
+          "all_used_source_actions_verified": true,
+          "conjugation_is_trace_adjoint_verified": true,
+          "complete_factor_norm_verified": "sum_j f_j*conjugate(f_j)=60",
+          "module_rank": 28,
+          "rational_dimension": 56,
+          "weighted_source_Gram_scale": 420
+        },
+        {
+          "cyclotomic_index": 5,
+          "field_degree": 4,
+          "field": "Q(zeta_5)",
+          "cyclotomic_polynomial": "z**4 + z**3 + z**2 + z + 1",
+          "basis": [
+            "zeta_5^0",
+            "zeta_5^1",
+            "zeta_5^2",
+            "zeta_5^3"
+          ],
+          "trace_metric_numerator": [
+            [
+              4,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              -1,
+              4,
+              -1,
+              -1
+            ],
+            [
+              -1,
+              -1,
+              4,
+              -1
+            ],
+            [
+              -1,
+              -1,
+              -1,
+              4
+            ]
+          ],
+          "trace_metric_denominator": 15,
+          "actual_source_entry_coordinates": [
+            [
+              -4,
+              0,
+              -4,
+              -4
+            ],
+            [
+              -2,
+              0,
+              -2,
+              -2
+            ],
+            [
+              0,
+              0,
+              -4,
+              -4
+            ],
+            [
+              0,
+              0,
+              -2,
+              -2
+            ],
+            [
+              0,
+              0,
+              2,
+              2
+            ],
+            [
+              0,
+              0,
+              4,
+              4
+            ],
+            [
+              2,
+              0,
+              2,
+              2
+            ],
+            [
+              4,
+              0,
+              4,
+              4
+            ]
+          ],
+          "zero_is_in_actual_source_alphabet": false,
+          "zero_preserved_by_the_restriction": true,
+          "actual_restricted_scalar_entry_alphabet": [
+            -4,
+            -2,
+            0,
+            2,
+            4
+          ],
+          "all_used_source_actions_verified": true,
+          "conjugation_is_trace_adjoint_verified": true,
+          "complete_factor_norm_verified": "sum_j f_j*conjugate(f_j)=60",
+          "module_rank": 28,
+          "rational_dimension": 112,
+          "weighted_source_Gram_scale": 420
+        },
+        {
+          "cyclotomic_index": 15,
+          "field_degree": 8,
+          "field": "Q(zeta_15)",
+          "cyclotomic_polynomial": "z**8 - z**7 + z**5 - z**4 + z**3 - z + 1",
+          "basis": [
+            "zeta_15^0",
+            "zeta_15^1",
+            "zeta_15^2",
+            "zeta_15^3",
+            "zeta_15^4",
+            "zeta_15^5",
+            "zeta_15^6",
+            "zeta_15^7"
+          ],
+          "trace_metric_numerator": [
+            [
+              8,
+              1,
+              1,
+              -2,
+              1,
+              -4,
+              -2,
+              1
+            ],
+            [
+              1,
+              8,
+              1,
+              1,
+              -2,
+              1,
+              -4,
+              -2
+            ],
+            [
+              1,
+              1,
+              8,
+              1,
+              1,
+              -2,
+              1,
+              -4
+            ],
+            [
+              -2,
+              1,
+              1,
+              8,
+              1,
+              1,
+              -2,
+              1
+            ],
+            [
+              1,
+              -2,
+              1,
+              1,
+              8,
+              1,
+              1,
+              -2
+            ],
+            [
+              -4,
+              1,
+              -2,
+              1,
+              1,
+              8,
+              1,
+              1
+            ],
+            [
+              -2,
+              -4,
+              1,
+              -2,
+              1,
+              1,
+              8,
+              1
+            ],
+            [
+              1,
+              -2,
+              -4,
+              1,
+              -2,
+              1,
+              1,
+              8
+            ]
+          ],
+          "trace_metric_denominator": 15,
+          "actual_source_entry_coordinates": [
+            [
+              -4,
+              0,
+              4,
+              -4,
+              0,
+              0,
+              0,
+              4
+            ],
+            [
+              -2,
+              0,
+              2,
+              -2,
+              0,
+              0,
+              0,
+              2
+            ],
+            [
+              0,
+              0,
+              -4,
+              4,
+              0,
+              0,
+              0,
+              -4
+            ],
+            [
+              0,
+              0,
+              -2,
+              2,
+              0,
+              0,
+              0,
+              -2
+            ],
+            [
+              0,
+              0,
+              2,
+              -2,
+              0,
+              0,
+              0,
+              2
+            ],
+            [
+              0,
+              0,
+              4,
+              -4,
+              0,
+              0,
+              0,
+              4
+            ],
+            [
+              2,
+              0,
+              -2,
+              2,
+              0,
+              0,
+              0,
+              -2
+            ],
+            [
+              4,
+              0,
+              -4,
+              4,
+              0,
+              0,
+              0,
+              -4
+            ]
+          ],
+          "zero_is_in_actual_source_alphabet": false,
+          "zero_preserved_by_the_restriction": true,
+          "actual_restricted_scalar_entry_alphabet": [
+            -4,
+            -2,
+            0,
+            2,
+            4
+          ],
+          "all_used_source_actions_verified": true,
+          "conjugation_is_trace_adjoint_verified": true,
+          "complete_factor_norm_verified": "sum_j f_j*conjugate(f_j)=60",
+          "module_rank": 28,
+          "rational_dimension": 224,
+          "weighted_source_Gram_scale": 420
+        }
+      ],
+      "CRT_map_basis": "group basis beta_j=c^(-j) to factor power bases",
+      "all_actual_polynomial_actions_verified": true,
+      "S_transpose_G_CRT_S_equals_group_identity": true,
+      "normalizing_denominator": 15,
+      "total_algebra_dimension": 15,
+      "weighted_source_order_over_group_algebra": 28,
+      "source_and_endpoint_Gram_scale": 420,
+      "endpoint_order": 420,
+      "endpoint_alphabet": [
+        -1,
+        1
+      ],
+      "all_endpoint_Gram_entries_checked": 176400,
+      "endpoint_int8_row_major_sha256": "3dbbabbdc1583fbfeff7710988f8364311bfb6bebd93695fa77a64e2901c925b"
+    },
+    {
+      "williamson_order": 17,
+      "literal_first_rows_pm": [
+        "+---+++----+++---",
+        "++-+---+--+---+-+",
+        "+--+-++++++++-+--",
+        "+-++-+++--+++-++-"
+      ],
+      "all_Williamson_symmetry_and_full_Gram_entries_verified": true,
+      "CRT_factors": [
+        {
+          "cyclotomic_index": 1,
+          "field_degree": 1,
+          "field": "Q(zeta_1)",
+          "cyclotomic_polynomial": "z - 1",
+          "basis": [
+            "zeta_1^0"
+          ],
+          "trace_metric_numerator": [
+            [
+              1
+            ]
+          ],
+          "trace_metric_denominator": 17,
+          "actual_source_entry_coordinates": [
+            [
+              -5
+            ],
+            [
+              -3
+            ],
+            [
+              3
+            ],
+            [
+              5
+            ]
+          ],
+          "zero_is_in_actual_source_alphabet": false,
+          "zero_preserved_by_the_restriction": true,
+          "actual_restricted_scalar_entry_alphabet": [
+            -5,
+            -3,
+            3,
+            5
+          ],
+          "all_used_source_actions_verified": true,
+          "conjugation_is_trace_adjoint_verified": true,
+          "complete_factor_norm_verified": "sum_j f_j*conjugate(f_j)=68",
+          "module_rank": 28,
+          "rational_dimension": 28,
+          "weighted_source_Gram_scale": 476
+        },
+        {
+          "cyclotomic_index": 17,
+          "field_degree": 16,
+          "field": "Q(zeta_17)",
+          "cyclotomic_polynomial": "z**16 + z**15 + z**14 + z**13 + z**12 + z**11 + z**10 + z**9 + z**8 + z**7 + z**6 + z**5 + z**4 + z**3 + z**2 + z + 1",
+          "basis": [
+            "zeta_17^0",
+            "zeta_17^1",
+            "zeta_17^2",
+            "zeta_17^3",
+            "zeta_17^4",
+            "zeta_17^5",
+            "zeta_17^6",
+            "zeta_17^7",
+            "zeta_17^8",
+            "zeta_17^9",
+            "zeta_17^10",
+            "zeta_17^11",
+            "zeta_17^12",
+            "zeta_17^13",
+            "zeta_17^14",
+            "zeta_17^15"
+          ],
+          "trace_metric_numerator": [
+            [
+              16,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              -1,
+              16,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              -1,
+              -1,
+              16,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              -1,
+              -1,
+              -1,
+              16,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              -1,
+              -1,
+              -1,
+              -1,
+              16,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              16,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              16,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              16,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              16,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              16,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              16,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              16,
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              16,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              16,
+              -1,
+              -1
+            ],
+            [
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              16,
+              -1
+            ],
+            [
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              16
+            ]
+          ],
+          "trace_metric_denominator": 17,
+          "actual_source_entry_coordinates": [
+            [
+              -2,
+              0,
+              -2,
+              -2,
+              0,
+              -2,
+              -2,
+              -2,
+              0,
+              0,
+              -2,
+              -2,
+              -2,
+              0,
+              -2,
+              -2
+            ],
+            [
+              -2,
+              0,
+              0,
+              -2,
+              0,
+              -2,
+              -2,
+              -2,
+              -2,
+              -2,
+              -2,
+              -2,
+              -2,
+              0,
+              -2,
+              0
+            ],
+            [
+              -2,
+              0,
+              0,
+              0,
+              -2,
+              -2,
+              -2,
+              0,
+              0,
+              0,
+              0,
+              -2,
+              -2,
+              -2,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              -2,
+              0,
+              -2,
+              -2,
+              -2,
+              0,
+              -2,
+              -2,
+              0,
+              -2,
+              -2,
+              -2,
+              0,
+              -2
+            ],
+            [
+              0,
+              0,
+              2,
+              0,
+              2,
+              2,
+              2,
+              0,
+              2,
+              2,
+              0,
+              2,
+              2,
+              2,
+              0,
+              2
+            ],
+            [
+              2,
+              0,
+              0,
+              0,
+              2,
+              2,
+              2,
+              0,
+              0,
+              0,
+              0,
+              2,
+              2,
+              2,
+              0,
+              0
+            ],
+            [
+              2,
+              0,
+              0,
+              2,
+              0,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              2,
+              0,
+              2,
+              0
+            ],
+            [
+              2,
+              0,
+              2,
+              2,
+              0,
+              2,
+              2,
+              2,
+              0,
+              0,
+              2,
+              2,
+              2,
+              0,
+              2,
+              2
+            ]
+          ],
+          "zero_is_in_actual_source_alphabet": false,
+          "zero_preserved_by_the_restriction": true,
+          "actual_restricted_scalar_entry_alphabet": [
+            -2,
+            0,
+            2
+          ],
+          "all_used_source_actions_verified": true,
+          "conjugation_is_trace_adjoint_verified": true,
+          "complete_factor_norm_verified": "sum_j f_j*conjugate(f_j)=68",
+          "module_rank": 28,
+          "rational_dimension": 448,
+          "weighted_source_Gram_scale": 476
+        }
+      ],
+      "CRT_map_basis": "group basis beta_j=c^(-j) to factor power bases",
+      "all_actual_polynomial_actions_verified": true,
+      "S_transpose_G_CRT_S_equals_group_identity": true,
+      "normalizing_denominator": 17,
+      "total_algebra_dimension": 17,
+      "weighted_source_order_over_group_algebra": 28,
+      "source_and_endpoint_Gram_scale": 476,
+      "endpoint_order": 476,
+      "endpoint_alphabet": [
+        -1,
+        1
+      ],
+      "all_endpoint_Gram_entries_checked": 226576,
+      "endpoint_int8_row_major_sha256": "759857d2f5268a0751c72aa6b4c0fbf089808b5fafc6766a6c27e871aea9c665"
+    },
+    {
+      "williamson_order": 21,
+      "literal_first_rows_pm": [
+        "+--++++---++---++++--",
+        "++++-+---+--+---+-+++",
+        "++--+-+-++--++-+-+--+",
+        "++-+++++-+--+-+++++-+"
+      ],
+      "all_Williamson_symmetry_and_full_Gram_entries_verified": true,
+      "CRT_factors": [
+        {
+          "cyclotomic_index": 1,
+          "field_degree": 1,
+          "field": "Q(zeta_1)",
+          "cyclotomic_polynomial": "z - 1",
+          "basis": [
+            "zeta_1^0"
+          ],
+          "trace_metric_numerator": [
+            [
+              1
+            ]
+          ],
+          "trace_metric_denominator": 21,
+          "actual_source_entry_coordinates": [
+            [
+              -9
+            ],
+            [
+              -1
+            ],
+            [
+              1
+            ],
+            [
+              9
+            ]
+          ],
+          "zero_is_in_actual_source_alphabet": false,
+          "zero_preserved_by_the_restriction": true,
+          "actual_restricted_scalar_entry_alphabet": [
+            -9,
+            -1,
+            1,
+            9
+          ],
+          "all_used_source_actions_verified": true,
+          "conjugation_is_trace_adjoint_verified": true,
+          "complete_factor_norm_verified": "sum_j f_j*conjugate(f_j)=84",
+          "module_rank": 28,
+          "rational_dimension": 28,
+          "weighted_source_Gram_scale": 588
+        },
+        {
+          "cyclotomic_index": 3,
+          "field_degree": 2,
+          "field": "Q(zeta_3)",
+          "cyclotomic_polynomial": "z**2 + z + 1",
+          "basis": [
+            "zeta_3^0",
+            "zeta_3^1"
+          ],
+          "trace_metric_numerator": [
+            [
+              2,
+              -1
+            ],
+            [
+              -1,
+              2
+            ]
+          ],
+          "trace_metric_denominator": 21,
+          "actual_source_entry_coordinates": [
+            [
+              -6,
+              0
+            ],
+            [
+              -4,
+              0
+            ],
+            [
+              4,
+              0
+            ],
+            [
+              6,
+              0
+            ]
+          ],
+          "zero_is_in_actual_source_alphabet": false,
+          "zero_preserved_by_the_restriction": true,
+          "actual_restricted_scalar_entry_alphabet": [
+            -6,
+            -4,
+            0,
+            4,
+            6
+          ],
+          "all_used_source_actions_verified": true,
+          "conjugation_is_trace_adjoint_verified": true,
+          "complete_factor_norm_verified": "sum_j f_j*conjugate(f_j)=84",
+          "module_rank": 28,
+          "rational_dimension": 56,
+          "weighted_source_Gram_scale": 588
+        },
+        {
+          "cyclotomic_index": 7,
+          "field_degree": 6,
+          "field": "Q(zeta_7)",
+          "cyclotomic_polynomial": "z**6 + z**5 + z**4 + z**3 + z**2 + z + 1",
+          "basis": [
+            "zeta_7^0",
+            "zeta_7^1",
+            "zeta_7^2",
+            "zeta_7^3",
+            "zeta_7^4",
+            "zeta_7^5"
+          ],
+          "trace_metric_numerator": [
+            [
+              6,
+              -1,
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              -1,
+              6,
+              -1,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              -1,
+              -1,
+              6,
+              -1,
+              -1,
+              -1
+            ],
+            [
+              -1,
+              -1,
+              -1,
+              6,
+              -1,
+              -1
+            ],
+            [
+              -1,
+              -1,
+              -1,
+              -1,
+              6,
+              -1
+            ],
+            [
+              -1,
+              -1,
+              -1,
+              -1,
+              -1,
+              6
+            ]
+          ],
+          "trace_metric_denominator": 21,
+          "actual_source_entry_coordinates": [
+            [
+              -4,
+              0,
+              -4,
+              -4,
+              -4,
+              -4
+            ],
+            [
+              -2,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              -4,
+              0,
+              0,
+              -4
+            ],
+            [
+              0,
+              0,
+              0,
+              -4,
+              -4,
+              0
+            ],
+            [
+              0,
+              0,
+              0,
+              4,
+              4,
+              0
+            ],
+            [
+              0,
+              0,
+              4,
+              0,
+              0,
+              4
+            ],
+            [
+              2,
+              0,
+              0,
+              0,
+              0,
+              0
+            ],
+            [
+              4,
+              0,
+              4,
+              4,
+              4,
+              4
+            ]
+          ],
+          "zero_is_in_actual_source_alphabet": false,
+          "zero_preserved_by_the_restriction": true,
+          "actual_restricted_scalar_entry_alphabet": [
+            -4,
+            -2,
+            0,
+            2,
+            4
+          ],
+          "all_used_source_actions_verified": true,
+          "conjugation_is_trace_adjoint_verified": true,
+          "complete_factor_norm_verified": "sum_j f_j*conjugate(f_j)=84",
+          "module_rank": 28,
+          "rational_dimension": 168,
+          "weighted_source_Gram_scale": 588
+        },
+        {
+          "cyclotomic_index": 21,
+          "field_degree": 12,
+          "field": "Q(zeta_21)",
+          "cyclotomic_polynomial": "z**12 - z**11 + z**9 - z**8 + z**6 - z**4 + z**3 - z + 1",
+          "basis": [
+            "zeta_21^0",
+            "zeta_21^1",
+            "zeta_21^2",
+            "zeta_21^3",
+            "zeta_21^4",
+            "zeta_21^5",
+            "zeta_21^6",
+            "zeta_21^7",
+            "zeta_21^8",
+            "zeta_21^9",
+            "zeta_21^10",
+            "zeta_21^11"
+          ],
+          "trace_metric_numerator": [
+            [
+              12,
+              1,
+              1,
+              -2,
+              1,
+              1,
+              -2,
+              -6,
+              1,
+              -2,
+              1,
+              1
+            ],
+            [
+              1,
+              12,
+              1,
+              1,
+              -2,
+              1,
+              1,
+              -2,
+              -6,
+              1,
+              -2,
+              1
+            ],
+            [
+              1,
+              1,
+              12,
+              1,
+              1,
+              -2,
+              1,
+              1,
+              -2,
+              -6,
+              1,
+              -2
+            ],
+            [
+              -2,
+              1,
+              1,
+              12,
+              1,
+              1,
+              -2,
+              1,
+              1,
+              -2,
+              -6,
+              1
+            ],
+            [
+              1,
+              -2,
+              1,
+              1,
+              12,
+              1,
+              1,
+              -2,
+              1,
+              1,
+              -2,
+              -6
+            ],
+            [
+              1,
+              1,
+              -2,
+              1,
+              1,
+              12,
+              1,
+              1,
+              -2,
+              1,
+              1,
+              -2
+            ],
+            [
+              -2,
+              1,
+              1,
+              -2,
+              1,
+              1,
+              12,
+              1,
+              1,
+              -2,
+              1,
+              1
+            ],
+            [
+              -6,
+              -2,
+              1,
+              1,
+              -2,
+              1,
+              1,
+              12,
+              1,
+              1,
+              -2,
+              1
+            ],
+            [
+              1,
+              -6,
+              -2,
+              1,
+              1,
+              -2,
+              1,
+              1,
+              12,
+              1,
+              1,
+              -2
+            ],
+            [
+              -2,
+              1,
+              -6,
+              -2,
+              1,
+              1,
+              -2,
+              1,
+              1,
+              12,
+              1,
+              1
+            ],
+            [
+              1,
+              -2,
+              1,
+              -6,
+              -2,
+              1,
+              1,
+              -2,
+              1,
+              1,
+              12,
+              1
+            ],
+            [
+              1,
+              1,
+              -2,
+              1,
+              -6,
+              -2,
+              1,
+              1,
+              -2,
+              1,
+              1,
+              12
+            ]
+          ],
+          "trace_metric_denominator": 21,
+          "actual_source_entry_coordinates": [
+            [
+              -4,
+              -2,
+              2,
+              -4,
+              2,
+              2,
+              0,
+              -2,
+              2,
+              0,
+              -2,
+              4
+            ],
+            [
+              -2,
+              2,
+              2,
+              0,
+              0,
+              -2,
+              -2,
+              0,
+              2,
+              2,
+              0,
+              0
+            ],
+            [
+              0,
+              -2,
+              0,
+              4,
+              -4,
+              0,
+              2,
+              0,
+              -2,
+              0,
+              2,
+              -2
+            ],
+            [
+              0,
+              -2,
+              4,
+              0,
+              -2,
+              0,
+              0,
+              -2,
+              2,
+              2,
+              0,
+              2
+            ],
+            [
+              0,
+              2,
+              -4,
+              0,
+              2,
+              0,
+              0,
+              2,
+              -2,
+              -2,
+              0,
+              -2
+            ],
+            [
+              0,
+              2,
+              0,
+              -4,
+              4,
+              0,
+              -2,
+              0,
+              2,
+              0,
+              -2,
+              2
+            ],
+            [
+              2,
+              -2,
+              -2,
+              0,
+              0,
+              2,
+              2,
+              0,
+              -2,
+              -2,
+              0,
+              0
+            ],
+            [
+              4,
+              2,
+              -2,
+              4,
+              -2,
+              -2,
+              0,
+              2,
+              -2,
+              0,
+              2,
+              -4
+            ]
+          ],
+          "zero_is_in_actual_source_alphabet": false,
+          "zero_preserved_by_the_restriction": true,
+          "actual_restricted_scalar_entry_alphabet": [
+            -4,
+            -2,
+            0,
+            2,
+            4
+          ],
+          "all_used_source_actions_verified": true,
+          "conjugation_is_trace_adjoint_verified": true,
+          "complete_factor_norm_verified": "sum_j f_j*conjugate(f_j)=84",
+          "module_rank": 28,
+          "rational_dimension": 336,
+          "weighted_source_Gram_scale": 588
+        }
+      ],
+      "CRT_map_basis": "group basis beta_j=c^(-j) to factor power bases",
+      "all_actual_polynomial_actions_verified": true,
+      "S_transpose_G_CRT_S_equals_group_identity": true,
+      "normalizing_denominator": 21,
+      "total_algebra_dimension": 21,
+      "weighted_source_order_over_group_algebra": 28,
+      "source_and_endpoint_Gram_scale": 588,
+      "endpoint_order": 588,
+      "endpoint_alphabet": [
+        -1,
+        1
+      ],
+      "all_endpoint_Gram_entries_checked": 345744,
+      "endpoint_int8_row_major_sha256": "dce2ccaebf14615ceb0f6d2a604b2e6150be92d96228952e4e97e579f8b6bc7b"
+    }
+  ],
+  "no_large_endpoint_allocated": true,
+  "novelty_or_nonexistence_claimed_by_this_audit": false
+}

@@ -1,0 +1,28 @@
+{
+  "schema": "hadamard.real-order-frontier-snapshot.v1",
+  "scope": "Historical candidates from Table 5, not a claim that every entry remains open today",
+  "survey": {
+    "title": "Recent progress in the construction of Hadamard matrices",
+    "url": "https://arxiv.org/html/2610.27175v2#S4.T5",
+    "retrieved": "2026-11-21",
+    "note": "The retrieved HTML and PDF Table 5 contain 95 entries; the abstract landing page reports 85. This manifest explicitly records the full-text table rather than resolving that discrepancy by assumption.",
+    "groups": [
+      {"multiplier": 4, "primes": [599,643,719,739,751,839,859,863,907,947,971,1019,1031,1039,1051,1087,1103,1187,1223,1259,1283,1291,1319,1327,1367,1423,1427,1439,1451,1471,1487,1499,1543,1559,1567,1571,1579,1583,1619,1663,1667,1699,1747,1783,1787,1831,1847,1871,1879,1907,1979,1987,2027,2039,2063,2083,2087,2099,2203,2207,2251,2287,2339,2347,2371,2383,2399,2423,2459]},
+      {"multiplier": 12, "primes": [223,419,479,491,571,631,643]},
+      {"multiplier": 20, "primes": [191,223,359,419,443,463]},
+      {"multiplier": 28, "primes": [167,283,347]},
+      {"multiplier": 36, "primes": [191]},
+      {"multiplier": 44, "primes": [179]},
+      {"multiplier": 52, "primes": [167,179]},
+      {"multiplier": 8, "primes": [599,719,739,839,1031,1087]}
+    ]
+  },
+  "later_reported_constructions_intersecting_snapshot": {
+    "url": "https://generalised.si/research/hadamard-matrices",
+    "retrieved": "2026-11-21",
+    "orders": [2572,3356,3436,3820,4204,5912,6796,8248,8696],
+    "status": "Published explicit-construction claims and cited earlier constructions, not independently replayed by this pilot; suppress these targets and their doublings from the candidate queue",
+    "additional_corrections": "The source identifies 5912 as constructed in the repository and 8248 and 8696 as following from Kamali-Kharaghani and Seberry-Yamada. Together with doubling 3356 to 6712, the nine explicit exclusions account for the ten-order discrepancy between the survey table and the reported Explorer list."
+  },
+  "priority_status": "A candidate that survives this filter still requires a current literature and database audit before a novelty claim"
+}

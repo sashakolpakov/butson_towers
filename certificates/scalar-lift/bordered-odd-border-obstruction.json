@@ -1,0 +1,196 @@
+{
+  "schema": "bordered-odd-border-obstruction-v2",
+  "theorem": {
+    "alphabet": "mu_(2^k) union omega*mu_(2^k)",
+    "even_core_order": "n even, n>=2",
+    "boundary": "T and T* are the off-block matrices; T is automatically dyadic",
+    "odd_border": "arbitrary t-by-t block D, t odd and t>=3, in the same alphabet",
+    "complete_source_Gram_has_no_solution": true,
+    "requires_full_column_rank_T": false,
+    "requires_D_to_be_Butson": false,
+    "bottom_Gram_forces_D_residue_unitary": true,
+    "common_characteristic_factor_integral": "Its coefficients lie in K and are algebraic integers as symmetric functions of eigenvalues of integral R; hence they lie in O_K. Monic division gives integral quotients.",
+    "border_equation_and_bottom_residue_force_rank_T_at_most": 1,
+    "rank_one_coupling_fails_positive_Gram_energy": true,
+    "applies_to_every_dyadic_extension": true,
+    "requires_repeated_X_Y_core": false,
+    "requires_C3_C5_or_circulant_symmetry": false,
+    "does_not_exclude_other_source_assemblies": true
+  },
+  "even_core_residue_controls": [
+    {
+      "even_core_order": 2,
+      "characteristic_polynomial_mod_two": "x^n"
+    },
+    {
+      "even_core_order": 4,
+      "characteristic_polynomial_mod_two": "x^n"
+    },
+    {
+      "even_core_order": 8,
+      "characteristic_polynomial_mod_two": "x^n"
+    }
+  ],
+  "all_order_three_residue_supports": {
+    "all512_binary_supports_enumerated": true,
+    "unitary_two_coset_residue_supports": 12,
+    "all_have_nonnilpotent_dyadic_support": true,
+    "all_zero_eigenvalue_multiplicities_at_most_one": true,
+    "parity_zero_cases": 6,
+    "parity_one_cases": 6
+  },
+  "verified_border_controls": [
+    {
+      "border_order": 3,
+      "cubic_support_row_and_column_parity": 1,
+      "both_binary_Gram_identities_verified": true,
+      "dyadic_support_characteristic_polynomial_mod_two_descending": [
+        1,
+        0,
+        1,
+        0
+      ],
+      "dyadic_support_nilpotent": false,
+      "zero_eigenvalue_multiplicity": 1,
+      "restriction_to_one_perp_invertible": true,
+      "adjoint_border_obstruction_applies": true,
+      "phase": 24
+    },
+    {
+      "border_order": 7,
+      "cubic_support_row_and_column_parity": 1,
+      "both_binary_Gram_identities_verified": true,
+      "dyadic_support_characteristic_polynomial_mod_two_descending": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "dyadic_support_nilpotent": false,
+      "zero_eigenvalue_multiplicity": 1,
+      "restriction_to_one_perp_invertible": true,
+      "adjoint_border_obstruction_applies": true,
+      "phase": 48
+    },
+    {
+      "border_order": 7,
+      "cubic_support_row_and_column_parity": 1,
+      "both_binary_Gram_identities_verified": true,
+      "dyadic_support_characteristic_polynomial_mod_two_descending": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        0
+      ],
+      "dyadic_support_nilpotent": false,
+      "zero_eigenvalue_multiplicity": 1,
+      "restriction_to_one_perp_invertible": true,
+      "adjoint_border_obstruction_applies": true,
+      "phase": 96
+    }
+  ],
+  "rank_one_energy_controls": [
+    {
+      "even_core_order": 2,
+      "odd_border_order": 3,
+      "rank_one_coupling_squared_singular_value": 6,
+      "source_Gram_upper_bound": 5,
+      "excess_energy": 1,
+      "rank_one_coupling_excluded": true
+    },
+    {
+      "even_core_order": 8,
+      "odd_border_order": 3,
+      "rank_one_coupling_squared_singular_value": 24,
+      "source_Gram_upper_bound": 11,
+      "excess_energy": 13,
+      "rank_one_coupling_excluded": true
+    },
+    {
+      "even_core_order": 16,
+      "odd_border_order": 3,
+      "rank_one_coupling_squared_singular_value": 48,
+      "source_Gram_upper_bound": 19,
+      "excess_energy": 29,
+      "rank_one_coupling_excluded": true
+    },
+    {
+      "even_core_order": 1496,
+      "odd_border_order": 3,
+      "rank_one_coupling_squared_singular_value": 4488,
+      "source_Gram_upper_bound": 1499,
+      "excess_energy": 2989,
+      "rank_one_coupling_excluded": true
+    },
+    {
+      "even_core_order": 2992,
+      "odd_border_order": 7,
+      "rank_one_coupling_squared_singular_value": 20944,
+      "source_Gram_upper_bound": 2999,
+      "excess_energy": 17945,
+      "rank_one_coupling_excluded": true
+    },
+    {
+      "even_core_order": 12,
+      "odd_border_order": 1,
+      "rank_one_coupling_squared_singular_value": 12,
+      "source_Gram_upper_bound": 13,
+      "excess_energy": -1,
+      "rank_one_coupling_excluded": false
+    }
+  ],
+  "uniform_cubic_twist_with_dyadic_T": {
+    "twist": "lambda=omega*eta with eta dyadic",
+    "requires_T_dyadic": true,
+    "left_residue": "J_m J_(m,t)=0",
+    "right_residue": "J_(m,t) J_t=J_(m,t)",
+    "all_odd_border_orders_including_one_excluded": true,
+    "mixed_coset_T_excluded_by_this_argument": false
+  },
+  "positive_border_one_control": {
+    "residue_audit": {
+      "border_order": 1,
+      "cubic_support_row_and_column_parity": 1,
+      "both_binary_Gram_identities_verified": true,
+      "dyadic_support_characteristic_polynomial_mod_two_descending": [
+        1,
+        0
+      ],
+      "dyadic_support_nilpotent": true,
+      "zero_eigenvalue_multiplicity": 1,
+      "restriction_to_one_perp_invertible": false,
+      "adjoint_border_obstruction_applies": false
+    },
+    "known_source_order": 13,
+    "full_Gram_verified": true
+  },
+  "excluded_proposed_routes": [
+    {
+      "source_order": 1499,
+      "border_order": 3,
+      "phase": 96,
+      "real_target_order": 47968
+    },
+    {
+      "source_order": 2999,
+      "border_order": 7,
+      "phase": 48,
+      "real_target_order": 47984
+    },
+    {
+      "source_order": 2999,
+      "border_order": 7,
+      "phase": 96,
+      "real_target_order": 95968
+    }
+  ],
+  "new_source_or_real_Hadamard_order_constructed": false
+}

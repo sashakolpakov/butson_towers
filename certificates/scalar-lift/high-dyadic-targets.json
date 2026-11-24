@@ -1,0 +1,3210 @@
+{
+  "schema": "hadamard.higher-dyadic-target-audit.v2",
+  "provenance": {
+    "primary_url": "https://github.com/vatskishan03/Hadamard/blob/d885022/FRONTIER.md",
+    "commit": "d885022",
+    "primary_account_publication_date": "2026-11-16",
+    "retrieved_date": "2026-11-22",
+    "location": "Corrected m>=4 lists after the 2026 closure updates",
+    "status_scope": "Historical table claims retained; known published quadruple constructions removed from active targets; no global priority proof"
+  },
+  "corrected_minimum_known_exponents": {
+    "4": [
+      599,
+      719,
+      1319,
+      1439,
+      1579,
+      1783,
+      1979,
+      1987,
+      2207,
+      2251,
+      2287,
+      2339,
+      2371,
+      2399,
+      2543,
+      2671,
+      2677,
+      2687,
+      2699,
+      2903,
+      2939
+    ],
+    "5": [
+      1567,
+      2683,
+      2879,
+      2887,
+      2995
+    ],
+    "6": [
+      1499,
+      2999
+    ]
+  },
+  "derived_orders_with_exponent_at_least_three": [
+    {
+      "order": 4792,
+      "odd_part": 599,
+      "exponent": 3,
+      "source_reported_least_known_exponent": 4
+    },
+    {
+      "order": 5752,
+      "odd_part": 719,
+      "exponent": 3,
+      "source_reported_least_known_exponent": 4
+    },
+    {
+      "order": 10552,
+      "odd_part": 1319,
+      "exponent": 3,
+      "source_reported_least_known_exponent": 4
+    },
+    {
+      "order": 11512,
+      "odd_part": 1439,
+      "exponent": 3,
+      "source_reported_least_known_exponent": 4
+    },
+    {
+      "order": 11992,
+      "odd_part": 1499,
+      "exponent": 3,
+      "source_reported_least_known_exponent": 6
+    },
+    {
+      "order": 12536,
+      "odd_part": 1567,
+      "exponent": 3,
+      "source_reported_least_known_exponent": 5
+    },
+    {
+      "order": 12632,
+      "odd_part": 1579,
+      "exponent": 3,
+      "source_reported_least_known_exponent": 4
+    },
+    {
+      "order": 14264,
+      "odd_part": 1783,
+      "exponent": 3,
+      "source_reported_least_known_exponent": 4
+    },
+    {
+      "order": 15832,
+      "odd_part": 1979,
+      "exponent": 3,
+      "source_reported_least_known_exponent": 4
+    },
+    {
+      "order": 15896,
+      "odd_part": 1987,
+      "exponent": 3,
+      "source_reported_least_known_exponent": 4
+    },
+    {
+      "order": 17656,
+      "odd_part": 2207,
+      "exponent": 3,
+      "source_reported_least_known_exponent": 4
+    },
+    {
+      "order": 18008,
+      "odd_part": 2251,
+      "exponent": 3,
+      "source_reported_least_known_exponent": 4
+    },
+    {
+      "order": 18296,
+      "odd_part": 2287,
+      "exponent": 3,
+      "source_reported_least_known_exponent": 4
+    },
+    {
+      "order": 18712,
+      "odd_part": 2339,
+      "exponent": 3,
+      "source_reported_least_known_exponent": 4
+    },
+    {
+      "order": 18968,
+      "odd_part": 2371,
+      "exponent": 3,
+      "source_reported_least_known_exponent": 4
+    },
+    {
+      "order": 19192,
+      "odd_part": 2399,
+      "exponent": 3,
+      "source_reported_least_known_exponent": 4
+    },
+    {
+      "order": 20344,
+      "odd_part": 2543,
+      "exponent": 3,
+      "source_reported_least_known_exponent": 4
+    },
+    {
+      "order": 21368,
+      "odd_part": 2671,
+      "exponent": 3,
+      "source_reported_least_known_exponent": 4
+    },
+    {
+      "order": 21416,
+      "odd_part": 2677,
+      "exponent": 3,
+      "source_reported_least_known_exponent": 4
+    },
+    {
+      "order": 21464,
+      "odd_part": 2683,
+      "exponent": 3,
+      "source_reported_least_known_exponent": 5
+    },
+    {
+      "order": 21496,
+      "odd_part": 2687,
+      "exponent": 3,
+      "source_reported_least_known_exponent": 4
+    },
+    {
+      "order": 21592,
+      "odd_part": 2699,
+      "exponent": 3,
+      "source_reported_least_known_exponent": 4
+    },
+    {
+      "order": 23032,
+      "odd_part": 2879,
+      "exponent": 3,
+      "source_reported_least_known_exponent": 5
+    },
+    {
+      "order": 23096,
+      "odd_part": 2887,
+      "exponent": 3,
+      "source_reported_least_known_exponent": 5
+    },
+    {
+      "order": 23224,
+      "odd_part": 2903,
+      "exponent": 3,
+      "source_reported_least_known_exponent": 4
+    },
+    {
+      "order": 23512,
+      "odd_part": 2939,
+      "exponent": 3,
+      "source_reported_least_known_exponent": 4
+    },
+    {
+      "order": 23960,
+      "odd_part": 2995,
+      "exponent": 3,
+      "source_reported_least_known_exponent": 5
+    },
+    {
+      "order": 23984,
+      "odd_part": 1499,
+      "exponent": 4,
+      "source_reported_least_known_exponent": 6
+    },
+    {
+      "order": 23992,
+      "odd_part": 2999,
+      "exponent": 3,
+      "source_reported_least_known_exponent": 6
+    },
+    {
+      "order": 25072,
+      "odd_part": 1567,
+      "exponent": 4,
+      "source_reported_least_known_exponent": 5
+    },
+    {
+      "order": 42928,
+      "odd_part": 2683,
+      "exponent": 4,
+      "source_reported_least_known_exponent": 5
+    },
+    {
+      "order": 46064,
+      "odd_part": 2879,
+      "exponent": 4,
+      "source_reported_least_known_exponent": 5
+    },
+    {
+      "order": 46192,
+      "odd_part": 2887,
+      "exponent": 4,
+      "source_reported_least_known_exponent": 5
+    },
+    {
+      "order": 47920,
+      "odd_part": 2995,
+      "exponent": 4,
+      "source_reported_least_known_exponent": 5
+    },
+    {
+      "order": 47968,
+      "odd_part": 1499,
+      "exponent": 5,
+      "source_reported_least_known_exponent": 6
+    },
+    {
+      "order": 47984,
+      "odd_part": 2999,
+      "exponent": 4,
+      "source_reported_least_known_exponent": 6
+    },
+    {
+      "order": 95968,
+      "odd_part": 2999,
+      "exponent": 5,
+      "source_reported_least_known_exponent": 6
+    }
+  ],
+  "historical_source_listed_orders_above_20000": [
+    {
+      "order": 20344,
+      "odd_part": 2543,
+      "exponent": 3,
+      "source_reported_least_known_exponent": 4,
+      "independent_family_check": {
+        "Paley_and_all_doublings_witnesses": [],
+        "current_complex_Golay_sum_witnesses": [],
+        "scope": "These two explicit families only; not an exhaustive literature or construction classification"
+      }
+    },
+    {
+      "order": 21368,
+      "odd_part": 2671,
+      "exponent": 3,
+      "source_reported_least_known_exponent": 4,
+      "independent_family_check": {
+        "Paley_and_all_doublings_witnesses": [],
+        "current_complex_Golay_sum_witnesses": [],
+        "scope": "These two explicit families only; not an exhaustive literature or construction classification"
+      }
+    },
+    {
+      "order": 21416,
+      "odd_part": 2677,
+      "exponent": 3,
+      "source_reported_least_known_exponent": 4,
+      "independent_family_check": {
+        "Paley_and_all_doublings_witnesses": [],
+        "current_complex_Golay_sum_witnesses": [],
+        "scope": "These two explicit families only; not an exhaustive literature or construction classification"
+      }
+    },
+    {
+      "order": 21464,
+      "odd_part": 2683,
+      "exponent": 3,
+      "source_reported_least_known_exponent": 5,
+      "independent_family_check": {
+        "Paley_and_all_doublings_witnesses": [],
+        "current_complex_Golay_sum_witnesses": [],
+        "scope": "These two explicit families only; not an exhaustive literature or construction classification"
+      }
+    },
+    {
+      "order": 21496,
+      "odd_part": 2687,
+      "exponent": 3,
+      "source_reported_least_known_exponent": 4,
+      "independent_family_check": {
+        "Paley_and_all_doublings_witnesses": [],
+        "current_complex_Golay_sum_witnesses": [],
+        "scope": "These two explicit families only; not an exhaustive literature or construction classification"
+      }
+    },
+    {
+      "order": 21592,
+      "odd_part": 2699,
+      "exponent": 3,
+      "source_reported_least_known_exponent": 4,
+      "independent_family_check": {
+        "Paley_and_all_doublings_witnesses": [],
+        "current_complex_Golay_sum_witnesses": [],
+        "scope": "These two explicit families only; not an exhaustive literature or construction classification"
+      }
+    },
+    {
+      "order": 23032,
+      "odd_part": 2879,
+      "exponent": 3,
+      "source_reported_least_known_exponent": 5,
+      "independent_family_check": {
+        "Paley_and_all_doublings_witnesses": [],
+        "current_complex_Golay_sum_witnesses": [],
+        "scope": "These two explicit families only; not an exhaustive literature or construction classification"
+      }
+    },
+    {
+      "order": 23096,
+      "odd_part": 2887,
+      "exponent": 3,
+      "source_reported_least_known_exponent": 5,
+      "independent_family_check": {
+        "Paley_and_all_doublings_witnesses": [],
+        "current_complex_Golay_sum_witnesses": [],
+        "scope": "These two explicit families only; not an exhaustive literature or construction classification"
+      }
+    },
+    {
+      "order": 23224,
+      "odd_part": 2903,
+      "exponent": 3,
+      "source_reported_least_known_exponent": 4,
+      "independent_family_check": {
+        "Paley_and_all_doublings_witnesses": [],
+        "current_complex_Golay_sum_witnesses": [],
+        "scope": "These two explicit families only; not an exhaustive literature or construction classification"
+      }
+    },
+    {
+      "order": 23512,
+      "odd_part": 2939,
+      "exponent": 3,
+      "source_reported_least_known_exponent": 4,
+      "independent_family_check": {
+        "Paley_and_all_doublings_witnesses": [],
+        "current_complex_Golay_sum_witnesses": [],
+        "scope": "These two explicit families only; not an exhaustive literature or construction classification"
+      }
+    },
+    {
+      "order": 23960,
+      "odd_part": 2995,
+      "exponent": 3,
+      "source_reported_least_known_exponent": 5,
+      "independent_family_check": {
+        "Paley_and_all_doublings_witnesses": [],
+        "current_complex_Golay_sum_witnesses": [],
+        "scope": "These two explicit families only; not an exhaustive literature or construction classification"
+      }
+    },
+    {
+      "order": 23984,
+      "odd_part": 1499,
+      "exponent": 4,
+      "source_reported_least_known_exponent": 6,
+      "independent_family_check": {
+        "Paley_and_all_doublings_witnesses": [],
+        "current_complex_Golay_sum_witnesses": [],
+        "scope": "These two explicit families only; not an exhaustive literature or construction classification"
+      }
+    },
+    {
+      "order": 23992,
+      "odd_part": 2999,
+      "exponent": 3,
+      "source_reported_least_known_exponent": 6,
+      "independent_family_check": {
+        "Paley_and_all_doublings_witnesses": [],
+        "current_complex_Golay_sum_witnesses": [],
+        "scope": "These two explicit families only; not an exhaustive literature or construction classification"
+      }
+    },
+    {
+      "order": 25072,
+      "odd_part": 1567,
+      "exponent": 4,
+      "source_reported_least_known_exponent": 5,
+      "independent_family_check": {
+        "Paley_and_all_doublings_witnesses": [],
+        "current_complex_Golay_sum_witnesses": [],
+        "scope": "These two explicit families only; not an exhaustive literature or construction classification"
+      }
+    },
+    {
+      "order": 42928,
+      "odd_part": 2683,
+      "exponent": 4,
+      "source_reported_least_known_exponent": 5,
+      "independent_family_check": {
+        "Paley_and_all_doublings_witnesses": [],
+        "current_complex_Golay_sum_witnesses": [],
+        "scope": "These two explicit families only; not an exhaustive literature or construction classification"
+      }
+    },
+    {
+      "order": 46064,
+      "odd_part": 2879,
+      "exponent": 4,
+      "source_reported_least_known_exponent": 5,
+      "independent_family_check": {
+        "Paley_and_all_doublings_witnesses": [],
+        "current_complex_Golay_sum_witnesses": [],
+        "scope": "These two explicit families only; not an exhaustive literature or construction classification"
+      }
+    },
+    {
+      "order": 46192,
+      "odd_part": 2887,
+      "exponent": 4,
+      "source_reported_least_known_exponent": 5,
+      "independent_family_check": {
+        "Paley_and_all_doublings_witnesses": [],
+        "current_complex_Golay_sum_witnesses": [],
+        "scope": "These two explicit families only; not an exhaustive literature or construction classification"
+      }
+    },
+    {
+      "order": 47920,
+      "odd_part": 2995,
+      "exponent": 4,
+      "source_reported_least_known_exponent": 5,
+      "independent_family_check": {
+        "Paley_and_all_doublings_witnesses": [],
+        "current_complex_Golay_sum_witnesses": [],
+        "scope": "These two explicit families only; not an exhaustive literature or construction classification"
+      }
+    },
+    {
+      "order": 47968,
+      "odd_part": 1499,
+      "exponent": 5,
+      "source_reported_least_known_exponent": 6,
+      "independent_family_check": {
+        "Paley_and_all_doublings_witnesses": [],
+        "current_complex_Golay_sum_witnesses": [],
+        "scope": "These two explicit families only; not an exhaustive literature or construction classification"
+      }
+    },
+    {
+      "order": 47984,
+      "odd_part": 2999,
+      "exponent": 4,
+      "source_reported_least_known_exponent": 6,
+      "independent_family_check": {
+        "Paley_and_all_doublings_witnesses": [],
+        "current_complex_Golay_sum_witnesses": [],
+        "scope": "These two explicit families only; not an exhaustive literature or construction classification"
+      }
+    },
+    {
+      "order": 95968,
+      "odd_part": 2999,
+      "exponent": 5,
+      "source_reported_least_known_exponent": 6,
+      "independent_family_check": {
+        "Paley_and_all_doublings_witnesses": [],
+        "current_complex_Golay_sum_witnesses": [],
+        "scope": "These two explicit families only; not an exhaustive literature or construction classification"
+      }
+    }
+  ],
+  "historical_source_listed_high_order_count": 21,
+  "source_listed_unresolved_orders_above_20000": [
+    {
+      "order": 20344,
+      "odd_part": 2543,
+      "exponent": 3,
+      "source_reported_least_known_exponent": 4,
+      "independent_family_check": {
+        "Paley_and_all_doublings_witnesses": [],
+        "current_complex_Golay_sum_witnesses": [],
+        "scope": "These two explicit families only; not an exhaustive literature or construction classification"
+      }
+    },
+    {
+      "order": 21368,
+      "odd_part": 2671,
+      "exponent": 3,
+      "source_reported_least_known_exponent": 4,
+      "independent_family_check": {
+        "Paley_and_all_doublings_witnesses": [],
+        "current_complex_Golay_sum_witnesses": [],
+        "scope": "These two explicit families only; not an exhaustive literature or construction classification"
+      }
+    },
+    {
+      "order": 21416,
+      "odd_part": 2677,
+      "exponent": 3,
+      "source_reported_least_known_exponent": 4,
+      "independent_family_check": {
+        "Paley_and_all_doublings_witnesses": [],
+        "current_complex_Golay_sum_witnesses": [],
+        "scope": "These two explicit families only; not an exhaustive literature or construction classification"
+      }
+    },
+    {
+      "order": 21464,
+      "odd_part": 2683,
+      "exponent": 3,
+      "source_reported_least_known_exponent": 5,
+      "independent_family_check": {
+        "Paley_and_all_doublings_witnesses": [],
+        "current_complex_Golay_sum_witnesses": [],
+        "scope": "These two explicit families only; not an exhaustive literature or construction classification"
+      }
+    },
+    {
+      "order": 21496,
+      "odd_part": 2687,
+      "exponent": 3,
+      "source_reported_least_known_exponent": 4,
+      "independent_family_check": {
+        "Paley_and_all_doublings_witnesses": [],
+        "current_complex_Golay_sum_witnesses": [],
+        "scope": "These two explicit families only; not an exhaustive literature or construction classification"
+      }
+    },
+    {
+      "order": 21592,
+      "odd_part": 2699,
+      "exponent": 3,
+      "source_reported_least_known_exponent": 4,
+      "independent_family_check": {
+        "Paley_and_all_doublings_witnesses": [],
+        "current_complex_Golay_sum_witnesses": [],
+        "scope": "These two explicit families only; not an exhaustive literature or construction classification"
+      }
+    },
+    {
+      "order": 23032,
+      "odd_part": 2879,
+      "exponent": 3,
+      "source_reported_least_known_exponent": 5,
+      "independent_family_check": {
+        "Paley_and_all_doublings_witnesses": [],
+        "current_complex_Golay_sum_witnesses": [],
+        "scope": "These two explicit families only; not an exhaustive literature or construction classification"
+      }
+    },
+    {
+      "order": 23096,
+      "odd_part": 2887,
+      "exponent": 3,
+      "source_reported_least_known_exponent": 5,
+      "independent_family_check": {
+        "Paley_and_all_doublings_witnesses": [],
+        "current_complex_Golay_sum_witnesses": [],
+        "scope": "These two explicit families only; not an exhaustive literature or construction classification"
+      }
+    },
+    {
+      "order": 23224,
+      "odd_part": 2903,
+      "exponent": 3,
+      "source_reported_least_known_exponent": 4,
+      "independent_family_check": {
+        "Paley_and_all_doublings_witnesses": [],
+        "current_complex_Golay_sum_witnesses": [],
+        "scope": "These two explicit families only; not an exhaustive literature or construction classification"
+      }
+    },
+    {
+      "order": 23512,
+      "odd_part": 2939,
+      "exponent": 3,
+      "source_reported_least_known_exponent": 4,
+      "independent_family_check": {
+        "Paley_and_all_doublings_witnesses": [],
+        "current_complex_Golay_sum_witnesses": [],
+        "scope": "These two explicit families only; not an exhaustive literature or construction classification"
+      }
+    },
+    {
+      "order": 23960,
+      "odd_part": 2995,
+      "exponent": 3,
+      "source_reported_least_known_exponent": 5,
+      "independent_family_check": {
+        "Paley_and_all_doublings_witnesses": [],
+        "current_complex_Golay_sum_witnesses": [],
+        "scope": "These two explicit families only; not an exhaustive literature or construction classification"
+      }
+    },
+    {
+      "order": 23984,
+      "odd_part": 1499,
+      "exponent": 4,
+      "source_reported_least_known_exponent": 6,
+      "independent_family_check": {
+        "Paley_and_all_doublings_witnesses": [],
+        "current_complex_Golay_sum_witnesses": [],
+        "scope": "These two explicit families only; not an exhaustive literature or construction classification"
+      }
+    },
+    {
+      "order": 23992,
+      "odd_part": 2999,
+      "exponent": 3,
+      "source_reported_least_known_exponent": 6,
+      "independent_family_check": {
+        "Paley_and_all_doublings_witnesses": [],
+        "current_complex_Golay_sum_witnesses": [],
+        "scope": "These two explicit families only; not an exhaustive literature or construction classification"
+      }
+    },
+    {
+      "order": 25072,
+      "odd_part": 1567,
+      "exponent": 4,
+      "source_reported_least_known_exponent": 5,
+      "independent_family_check": {
+        "Paley_and_all_doublings_witnesses": [],
+        "current_complex_Golay_sum_witnesses": [],
+        "scope": "These two explicit families only; not an exhaustive literature or construction classification"
+      }
+    },
+    {
+      "order": 42928,
+      "odd_part": 2683,
+      "exponent": 4,
+      "source_reported_least_known_exponent": 5,
+      "independent_family_check": {
+        "Paley_and_all_doublings_witnesses": [],
+        "current_complex_Golay_sum_witnesses": [],
+        "scope": "These two explicit families only; not an exhaustive literature or construction classification"
+      }
+    },
+    {
+      "order": 46064,
+      "odd_part": 2879,
+      "exponent": 4,
+      "source_reported_least_known_exponent": 5,
+      "independent_family_check": {
+        "Paley_and_all_doublings_witnesses": [],
+        "current_complex_Golay_sum_witnesses": [],
+        "scope": "These two explicit families only; not an exhaustive literature or construction classification"
+      }
+    },
+    {
+      "order": 46192,
+      "odd_part": 2887,
+      "exponent": 4,
+      "source_reported_least_known_exponent": 5,
+      "independent_family_check": {
+        "Paley_and_all_doublings_witnesses": [],
+        "current_complex_Golay_sum_witnesses": [],
+        "scope": "These two explicit families only; not an exhaustive literature or construction classification"
+      }
+    },
+    {
+      "order": 47968,
+      "odd_part": 1499,
+      "exponent": 5,
+      "source_reported_least_known_exponent": 6,
+      "independent_family_check": {
+        "Paley_and_all_doublings_witnesses": [],
+        "current_complex_Golay_sum_witnesses": [],
+        "scope": "These two explicit families only; not an exhaustive literature or construction classification"
+      }
+    },
+    {
+      "order": 47984,
+      "odd_part": 2999,
+      "exponent": 4,
+      "source_reported_least_known_exponent": 6,
+      "independent_family_check": {
+        "Paley_and_all_doublings_witnesses": [],
+        "current_complex_Golay_sum_witnesses": [],
+        "scope": "These two explicit families only; not an exhaustive literature or construction classification"
+      }
+    },
+    {
+      "order": 95968,
+      "odd_part": 2999,
+      "exponent": 5,
+      "source_reported_least_known_exponent": 6,
+      "independent_family_check": {
+        "Paley_and_all_doublings_witnesses": [],
+        "current_complex_Golay_sum_witnesses": [],
+        "scope": "These two explicit families only; not an exhaustive literature or construction classification"
+      }
+    }
+  ],
+  "active_high_target_count_after_published_closure_audit": 20,
+  "historical_primary_claims_contradicted_by_published_constructions": [
+    {
+      "order": 47920,
+      "quadruple_length": 5990,
+      "covered_by_published_quadruple_constructions": true,
+      "in_S2": true,
+      "in_S2D": true,
+      "direct_S2_witness": {
+        "kind": "Golay_product_of_sum",
+        "multiplier": 5,
+        "summand_lengths": [
+          550,
+          648
+        ]
+      },
+      "novelty_claimed": false
+    }
+  ],
+  "published_quadruple_closure_audit": {
+    "primary_source": "https://arxiv.org/html/2401.15381v1",
+    "publication_date": "2024-01-27",
+    "used_results": "Corollaries 1,3,4,5; Proposition 2 and its stated E/F recursion; Proposition 4",
+    "length_bound": 11996,
+    "coverage_counts": {
+      "positive_Golay_lengths": 287,
+      "S2": 7823,
+      "base_sequence_sums_B": 242,
+      "E_fixed_point": 5088,
+      "F_fixed_point": 7318,
+      "S2D": 8573,
+      "with_Corollary4_closure": 8573
+    },
+    "covered_lengths_sha256": "384c5e9267743463be893bf1a770da1387f831acfa714258bd20a3fc4b12a7b8",
+    "orders": [
+      {
+        "order": 20344,
+        "quadruple_length": 2543,
+        "covered_by_published_quadruple_constructions": false,
+        "in_S2": false,
+        "in_S2D": false,
+        "direct_S2_witness": null,
+        "novelty_claimed": false
+      },
+      {
+        "order": 21368,
+        "quadruple_length": 2671,
+        "covered_by_published_quadruple_constructions": false,
+        "in_S2": false,
+        "in_S2D": false,
+        "direct_S2_witness": null,
+        "novelty_claimed": false
+      },
+      {
+        "order": 21416,
+        "quadruple_length": 2677,
+        "covered_by_published_quadruple_constructions": false,
+        "in_S2": false,
+        "in_S2D": false,
+        "direct_S2_witness": null,
+        "novelty_claimed": false
+      },
+      {
+        "order": 21464,
+        "quadruple_length": 2683,
+        "covered_by_published_quadruple_constructions": false,
+        "in_S2": false,
+        "in_S2D": false,
+        "direct_S2_witness": null,
+        "novelty_claimed": false
+      },
+      {
+        "order": 21496,
+        "quadruple_length": 2687,
+        "covered_by_published_quadruple_constructions": false,
+        "in_S2": false,
+        "in_S2D": false,
+        "direct_S2_witness": null,
+        "novelty_claimed": false
+      },
+      {
+        "order": 21592,
+        "quadruple_length": 2699,
+        "covered_by_published_quadruple_constructions": false,
+        "in_S2": false,
+        "in_S2D": false,
+        "direct_S2_witness": null,
+        "novelty_claimed": false
+      },
+      {
+        "order": 23032,
+        "quadruple_length": 2879,
+        "covered_by_published_quadruple_constructions": false,
+        "in_S2": false,
+        "in_S2D": false,
+        "direct_S2_witness": null,
+        "novelty_claimed": false
+      },
+      {
+        "order": 23096,
+        "quadruple_length": 2887,
+        "covered_by_published_quadruple_constructions": false,
+        "in_S2": false,
+        "in_S2D": false,
+        "direct_S2_witness": null,
+        "novelty_claimed": false
+      },
+      {
+        "order": 23224,
+        "quadruple_length": 2903,
+        "covered_by_published_quadruple_constructions": false,
+        "in_S2": false,
+        "in_S2D": false,
+        "direct_S2_witness": null,
+        "novelty_claimed": false
+      },
+      {
+        "order": 23512,
+        "quadruple_length": 2939,
+        "covered_by_published_quadruple_constructions": false,
+        "in_S2": false,
+        "in_S2D": false,
+        "direct_S2_witness": null,
+        "novelty_claimed": false
+      },
+      {
+        "order": 23960,
+        "quadruple_length": 2995,
+        "covered_by_published_quadruple_constructions": false,
+        "in_S2": false,
+        "in_S2D": false,
+        "direct_S2_witness": null,
+        "novelty_claimed": false
+      },
+      {
+        "order": 23984,
+        "quadruple_length": 2998,
+        "covered_by_published_quadruple_constructions": false,
+        "in_S2": false,
+        "in_S2D": false,
+        "direct_S2_witness": null,
+        "novelty_claimed": false
+      },
+      {
+        "order": 23992,
+        "quadruple_length": 2999,
+        "covered_by_published_quadruple_constructions": false,
+        "in_S2": false,
+        "in_S2D": false,
+        "direct_S2_witness": null,
+        "novelty_claimed": false
+      },
+      {
+        "order": 25072,
+        "quadruple_length": 3134,
+        "covered_by_published_quadruple_constructions": false,
+        "in_S2": false,
+        "in_S2D": false,
+        "direct_S2_witness": null,
+        "novelty_claimed": false
+      },
+      {
+        "order": 42928,
+        "quadruple_length": 5366,
+        "covered_by_published_quadruple_constructions": false,
+        "in_S2": false,
+        "in_S2D": false,
+        "direct_S2_witness": null,
+        "novelty_claimed": false
+      },
+      {
+        "order": 46064,
+        "quadruple_length": 5758,
+        "covered_by_published_quadruple_constructions": false,
+        "in_S2": false,
+        "in_S2D": false,
+        "direct_S2_witness": null,
+        "novelty_claimed": false
+      },
+      {
+        "order": 46192,
+        "quadruple_length": 5774,
+        "covered_by_published_quadruple_constructions": false,
+        "in_S2": false,
+        "in_S2D": false,
+        "direct_S2_witness": null,
+        "novelty_claimed": false
+      },
+      {
+        "order": 47920,
+        "quadruple_length": 5990,
+        "covered_by_published_quadruple_constructions": true,
+        "in_S2": true,
+        "in_S2D": true,
+        "direct_S2_witness": {
+          "kind": "Golay_product_of_sum",
+          "multiplier": 5,
+          "summand_lengths": [
+            550,
+            648
+          ]
+        },
+        "novelty_claimed": false
+      },
+      {
+        "order": 47968,
+        "quadruple_length": 5996,
+        "covered_by_published_quadruple_constructions": false,
+        "in_S2": false,
+        "in_S2D": false,
+        "direct_S2_witness": null,
+        "novelty_claimed": false
+      },
+      {
+        "order": 47984,
+        "quadruple_length": 5998,
+        "covered_by_published_quadruple_constructions": false,
+        "in_S2": false,
+        "in_S2D": false,
+        "direct_S2_witness": null,
+        "novelty_claimed": false
+      },
+      {
+        "order": 95968,
+        "quadruple_length": 11996,
+        "covered_by_published_quadruple_constructions": false,
+        "in_S2": false,
+        "in_S2D": false,
+        "direct_S2_witness": null,
+        "novelty_claimed": false
+      }
+    ],
+    "global_nonexistence_or_novelty_inferred_from_misses": false
+  },
+  "maximum_source_listed_unresolved_order": 95968,
+  "source_listed_unresolved_order_above_100000_found": false,
+  "all_higher_fields_kept": true,
+  "common_frame_alphabet_filter_applied": false,
+  "odd_source_dyadic_block_routes": [
+    {
+      "target": 11992,
+      "source": 1499,
+      "block": 8,
+      "listed_unresolved_in_primary_snapshot": true,
+      "surviving_fields": [
+        {
+          "phase": 24,
+          "field_degree": 8,
+          "source_witness_available_in_this_audit": false
+        }
+      ]
+    },
+    {
+      "target": 23984,
+      "source": 1499,
+      "block": 16,
+      "listed_unresolved_in_primary_snapshot": true,
+      "surviving_fields": [
+        {
+          "phase": 24,
+          "field_degree": 8,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 40,
+          "field_degree": 16,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 48,
+          "field_degree": 16,
+          "source_witness_available_in_this_audit": false
+        }
+      ]
+    },
+    {
+      "target": 47968,
+      "source": 1499,
+      "block": 32,
+      "listed_unresolved_in_primary_snapshot": true,
+      "surviving_fields": [
+        {
+          "phase": 24,
+          "field_degree": 8,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 40,
+          "field_degree": 16,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 48,
+          "field_degree": 16,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 68,
+          "field_degree": 32,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 80,
+          "field_degree": 32,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 96,
+          "field_degree": 32,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 102,
+          "field_degree": 32,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 120,
+          "field_degree": 32,
+          "source_witness_available_in_this_audit": false
+        }
+      ]
+    },
+    {
+      "target": 23992,
+      "source": 2999,
+      "block": 8,
+      "listed_unresolved_in_primary_snapshot": true,
+      "surviving_fields": []
+    },
+    {
+      "target": 47984,
+      "source": 2999,
+      "block": 16,
+      "listed_unresolved_in_primary_snapshot": true,
+      "surviving_fields": [
+        {
+          "phase": 48,
+          "field_degree": 16,
+          "source_witness_available_in_this_audit": false
+        }
+      ]
+    },
+    {
+      "target": 95968,
+      "source": 2999,
+      "block": 32,
+      "listed_unresolved_in_primary_snapshot": true,
+      "surviving_fields": [
+        {
+          "phase": 48,
+          "field_degree": 16,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 68,
+          "field_degree": 32,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 80,
+          "field_degree": 32,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 96,
+          "field_degree": 32,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 102,
+          "field_degree": 32,
+          "source_witness_available_in_this_audit": false
+        }
+      ]
+    }
+  ],
+  "full_factor_routes_for_five_priority_high_targets": [
+    {
+      "target": 23960,
+      "block": 4,
+      "source": 5990,
+      "surviving_fields": [
+        {
+          "phase": 4,
+          "field_degree": 2,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 6,
+          "field_degree": 2,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 8,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 12,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        }
+      ]
+    },
+    {
+      "target": 23960,
+      "block": 20,
+      "source": 1198,
+      "surviving_fields": [
+        {
+          "phase": 4,
+          "field_degree": 2,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 6,
+          "field_degree": 2,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 8,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 12,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 22,
+          "field_degree": 10,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 44,
+          "field_degree": 20,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 66,
+          "field_degree": 20,
+          "source_witness_available_in_this_audit": false
+        }
+      ]
+    },
+    {
+      "target": 23960,
+      "block": 40,
+      "source": 599,
+      "surviving_fields": [
+        {
+          "phase": 22,
+          "field_degree": 10,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 44,
+          "field_degree": 20,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 66,
+          "field_degree": 20,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 88,
+          "field_degree": 40,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 110,
+          "field_degree": 40,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 132,
+          "field_degree": 40,
+          "source_witness_available_in_this_audit": false
+        }
+      ]
+    },
+    {
+      "target": 23960,
+      "block": 2396,
+      "source": 10,
+      "surviving_fields": [
+        {
+          "phase": 4,
+          "field_degree": 2,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 6,
+          "field_degree": 2,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 8,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 12,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        }
+      ]
+    },
+    {
+      "target": 23960,
+      "block": 4792,
+      "source": 5,
+      "surviving_fields": [
+        {
+          "phase": 10,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 12,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 20,
+          "field_degree": 8,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 24,
+          "field_degree": 8,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 30,
+          "field_degree": 8,
+          "source_witness_available_in_this_audit": false
+        }
+      ]
+    },
+    {
+      "target": 23960,
+      "block": 11980,
+      "source": 2,
+      "surviving_fields": [
+        {
+          "phase": 2,
+          "field_degree": 1,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 4,
+          "field_degree": 2,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 6,
+          "field_degree": 2,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 8,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 12,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 22,
+          "field_degree": 10,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 44,
+          "field_degree": 20,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 66,
+          "field_degree": 20,
+          "source_witness_available_in_this_audit": false
+        }
+      ]
+    },
+    {
+      "target": 47920,
+      "block": 4,
+      "source": 11980,
+      "surviving_fields": [
+        {
+          "phase": 2,
+          "field_degree": 1,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 4,
+          "field_degree": 2,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 6,
+          "field_degree": 2,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 8,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 12,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        }
+      ]
+    },
+    {
+      "target": 47920,
+      "block": 8,
+      "source": 5990,
+      "surviving_fields": [
+        {
+          "phase": 4,
+          "field_degree": 2,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 6,
+          "field_degree": 2,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 8,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 10,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 12,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 16,
+          "field_degree": 8,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 20,
+          "field_degree": 8,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 24,
+          "field_degree": 8,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 30,
+          "field_degree": 8,
+          "source_witness_available_in_this_audit": false
+        }
+      ]
+    },
+    {
+      "target": 47920,
+      "block": 16,
+      "source": 2995,
+      "surviving_fields": [
+        {
+          "phase": 48,
+          "field_degree": 16,
+          "source_witness_available_in_this_audit": false
+        }
+      ]
+    },
+    {
+      "target": 47920,
+      "block": 20,
+      "source": 2396,
+      "surviving_fields": [
+        {
+          "phase": 2,
+          "field_degree": 1,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 4,
+          "field_degree": 2,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 6,
+          "field_degree": 2,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 8,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 12,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 22,
+          "field_degree": 10,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 44,
+          "field_degree": 20,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 66,
+          "field_degree": 20,
+          "source_witness_available_in_this_audit": false
+        }
+      ]
+    },
+    {
+      "target": 47920,
+      "block": 40,
+      "source": 1198,
+      "surviving_fields": [
+        {
+          "phase": 4,
+          "field_degree": 2,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 6,
+          "field_degree": 2,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 8,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 10,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 12,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 16,
+          "field_degree": 8,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 20,
+          "field_degree": 8,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 22,
+          "field_degree": 10,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 24,
+          "field_degree": 8,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 30,
+          "field_degree": 8,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 44,
+          "field_degree": 20,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 50,
+          "field_degree": 20,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 66,
+          "field_degree": 20,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 88,
+          "field_degree": 40,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 100,
+          "field_degree": 40,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 110,
+          "field_degree": 40,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 132,
+          "field_degree": 40,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 150,
+          "field_degree": 40,
+          "source_witness_available_in_this_audit": false
+        }
+      ]
+    },
+    {
+      "target": 47920,
+      "block": 80,
+      "source": 599,
+      "surviving_fields": [
+        {
+          "phase": 22,
+          "field_degree": 10,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 44,
+          "field_degree": 20,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 48,
+          "field_degree": 16,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 66,
+          "field_degree": 20,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 88,
+          "field_degree": 40,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 110,
+          "field_degree": 40,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 132,
+          "field_degree": 40,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 176,
+          "field_degree": 80,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 220,
+          "field_degree": 80,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 264,
+          "field_degree": 80,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 330,
+          "field_degree": 80,
+          "source_witness_available_in_this_audit": false
+        }
+      ]
+    },
+    {
+      "target": 47920,
+      "block": 2396,
+      "source": 20,
+      "surviving_fields": [
+        {
+          "phase": 2,
+          "field_degree": 1,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 4,
+          "field_degree": 2,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 6,
+          "field_degree": 2,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 8,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 12,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        }
+      ]
+    },
+    {
+      "target": 47920,
+      "block": 4792,
+      "source": 10,
+      "surviving_fields": [
+        {
+          "phase": 4,
+          "field_degree": 2,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 6,
+          "field_degree": 2,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 8,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 10,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 12,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 16,
+          "field_degree": 8,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 20,
+          "field_degree": 8,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 24,
+          "field_degree": 8,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 30,
+          "field_degree": 8,
+          "source_witness_available_in_this_audit": false
+        }
+      ]
+    },
+    {
+      "target": 47920,
+      "block": 9584,
+      "source": 5,
+      "surviving_fields": [
+        {
+          "phase": 10,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 12,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 20,
+          "field_degree": 8,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 24,
+          "field_degree": 8,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 30,
+          "field_degree": 8,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 40,
+          "field_degree": 16,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 48,
+          "field_degree": 16,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 60,
+          "field_degree": 16,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 28758,
+          "field_degree": 9584,
+          "source_witness_available_in_this_audit": false
+        }
+      ]
+    },
+    {
+      "target": 47920,
+      "block": 11980,
+      "source": 4,
+      "surviving_fields": [
+        {
+          "phase": 2,
+          "field_degree": 1,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 4,
+          "field_degree": 2,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 6,
+          "field_degree": 2,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 8,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 12,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 22,
+          "field_degree": 10,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 44,
+          "field_degree": 20,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 66,
+          "field_degree": 20,
+          "source_witness_available_in_this_audit": false
+        }
+      ]
+    },
+    {
+      "target": 47920,
+      "block": 23960,
+      "source": 2,
+      "surviving_fields": [
+        {
+          "phase": 2,
+          "field_degree": 1,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 4,
+          "field_degree": 2,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 6,
+          "field_degree": 2,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 8,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 10,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 12,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 16,
+          "field_degree": 8,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 20,
+          "field_degree": 8,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 22,
+          "field_degree": 10,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 24,
+          "field_degree": 8,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 30,
+          "field_degree": 8,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 44,
+          "field_degree": 20,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 50,
+          "field_degree": 20,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 66,
+          "field_degree": 20,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 88,
+          "field_degree": 40,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 100,
+          "field_degree": 40,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 110,
+          "field_degree": 40,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 132,
+          "field_degree": 40,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 150,
+          "field_degree": 40,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 23962,
+          "field_degree": 11980,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 47924,
+          "field_degree": 23960,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 71886,
+          "field_degree": 23960,
+          "source_witness_available_in_this_audit": false
+        }
+      ]
+    },
+    {
+      "target": 47968,
+      "block": 4,
+      "source": 11992,
+      "surviving_fields": [
+        {
+          "phase": 2,
+          "field_degree": 1,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 4,
+          "field_degree": 2,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 6,
+          "field_degree": 2,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 8,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 12,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        }
+      ]
+    },
+    {
+      "target": 47968,
+      "block": 8,
+      "source": 5996,
+      "surviving_fields": [
+        {
+          "phase": 2,
+          "field_degree": 1,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 4,
+          "field_degree": 2,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 6,
+          "field_degree": 2,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 8,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 10,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 12,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 16,
+          "field_degree": 8,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 20,
+          "field_degree": 8,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 24,
+          "field_degree": 8,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 30,
+          "field_degree": 8,
+          "source_witness_available_in_this_audit": false
+        }
+      ]
+    },
+    {
+      "target": 47968,
+      "block": 16,
+      "source": 2998,
+      "surviving_fields": [
+        {
+          "phase": 4,
+          "field_degree": 2,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 6,
+          "field_degree": 2,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 8,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 10,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 12,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 16,
+          "field_degree": 8,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 20,
+          "field_degree": 8,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 24,
+          "field_degree": 8,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 30,
+          "field_degree": 8,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 32,
+          "field_degree": 16,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 40,
+          "field_degree": 16,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 48,
+          "field_degree": 16,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 60,
+          "field_degree": 16,
+          "source_witness_available_in_this_audit": false
+        }
+      ]
+    },
+    {
+      "target": 47968,
+      "block": 32,
+      "source": 1499,
+      "surviving_fields": [
+        {
+          "phase": 24,
+          "field_degree": 8,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 40,
+          "field_degree": 16,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 48,
+          "field_degree": 16,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 68,
+          "field_degree": 32,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 80,
+          "field_degree": 32,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 96,
+          "field_degree": 32,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 102,
+          "field_degree": 32,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 120,
+          "field_degree": 32,
+          "source_witness_available_in_this_audit": false
+        }
+      ]
+    },
+    {
+      "target": 47968,
+      "block": 5996,
+      "source": 8,
+      "surviving_fields": [
+        {
+          "phase": 2,
+          "field_degree": 1,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 4,
+          "field_degree": 2,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 6,
+          "field_degree": 2,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 8,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 12,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        }
+      ]
+    },
+    {
+      "target": 47968,
+      "block": 11992,
+      "source": 4,
+      "surviving_fields": [
+        {
+          "phase": 2,
+          "field_degree": 1,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 4,
+          "field_degree": 2,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 6,
+          "field_degree": 2,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 8,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 10,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 12,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 16,
+          "field_degree": 8,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 20,
+          "field_degree": 8,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 24,
+          "field_degree": 8,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 30,
+          "field_degree": 8,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 5998,
+          "field_degree": 2998,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 11996,
+          "field_degree": 5996,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 17994,
+          "field_degree": 5996,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 23992,
+          "field_degree": 11992,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 29990,
+          "field_degree": 11992,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 35988,
+          "field_degree": 11992,
+          "source_witness_available_in_this_audit": false
+        }
+      ]
+    },
+    {
+      "target": 47968,
+      "block": 23984,
+      "source": 2,
+      "surviving_fields": [
+        {
+          "phase": 2,
+          "field_degree": 1,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 4,
+          "field_degree": 2,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 6,
+          "field_degree": 2,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 8,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 10,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 12,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 16,
+          "field_degree": 8,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 20,
+          "field_degree": 8,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 24,
+          "field_degree": 8,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 30,
+          "field_degree": 8,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 32,
+          "field_degree": 16,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 40,
+          "field_degree": 16,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 48,
+          "field_degree": 16,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 60,
+          "field_degree": 16,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 5998,
+          "field_degree": 2998,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 11996,
+          "field_degree": 5996,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 17994,
+          "field_degree": 5996,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 23992,
+          "field_degree": 11992,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 29990,
+          "field_degree": 11992,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 35988,
+          "field_degree": 11992,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 47984,
+          "field_degree": 23984,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 59980,
+          "field_degree": 23984,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 71976,
+          "field_degree": 23984,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 89970,
+          "field_degree": 23984,
+          "source_witness_available_in_this_audit": false
+        }
+      ]
+    },
+    {
+      "target": 47984,
+      "block": 4,
+      "source": 11996,
+      "surviving_fields": [
+        {
+          "phase": 2,
+          "field_degree": 1,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 4,
+          "field_degree": 2,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 6,
+          "field_degree": 2,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 8,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 12,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        }
+      ]
+    },
+    {
+      "target": 47984,
+      "block": 8,
+      "source": 5998,
+      "surviving_fields": [
+        {
+          "phase": 4,
+          "field_degree": 2,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 6,
+          "field_degree": 2,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 8,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 10,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 12,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 16,
+          "field_degree": 8,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 20,
+          "field_degree": 8,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 24,
+          "field_degree": 8,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 30,
+          "field_degree": 8,
+          "source_witness_available_in_this_audit": false
+        }
+      ]
+    },
+    {
+      "target": 47984,
+      "block": 16,
+      "source": 2999,
+      "surviving_fields": [
+        {
+          "phase": 48,
+          "field_degree": 16,
+          "source_witness_available_in_this_audit": false
+        }
+      ]
+    },
+    {
+      "target": 47984,
+      "block": 11996,
+      "source": 4,
+      "surviving_fields": [
+        {
+          "phase": 2,
+          "field_degree": 1,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 4,
+          "field_degree": 2,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 6,
+          "field_degree": 2,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 8,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 12,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        }
+      ]
+    },
+    {
+      "target": 47984,
+      "block": 23992,
+      "source": 2,
+      "surviving_fields": [
+        {
+          "phase": 2,
+          "field_degree": 1,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 4,
+          "field_degree": 2,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 6,
+          "field_degree": 2,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 8,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 10,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 12,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 16,
+          "field_degree": 8,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 20,
+          "field_degree": 8,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 24,
+          "field_degree": 8,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 30,
+          "field_degree": 8,
+          "source_witness_available_in_this_audit": false
+        }
+      ]
+    },
+    {
+      "target": 95968,
+      "block": 4,
+      "source": 23992,
+      "surviving_fields": [
+        {
+          "phase": 2,
+          "field_degree": 1,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 4,
+          "field_degree": 2,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 6,
+          "field_degree": 2,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 8,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 12,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        }
+      ]
+    },
+    {
+      "target": 95968,
+      "block": 8,
+      "source": 11996,
+      "surviving_fields": [
+        {
+          "phase": 2,
+          "field_degree": 1,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 4,
+          "field_degree": 2,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 6,
+          "field_degree": 2,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 8,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 10,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 12,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 16,
+          "field_degree": 8,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 20,
+          "field_degree": 8,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 24,
+          "field_degree": 8,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 30,
+          "field_degree": 8,
+          "source_witness_available_in_this_audit": false
+        }
+      ]
+    },
+    {
+      "target": 95968,
+      "block": 16,
+      "source": 5998,
+      "surviving_fields": [
+        {
+          "phase": 4,
+          "field_degree": 2,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 6,
+          "field_degree": 2,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 8,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 10,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 12,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 16,
+          "field_degree": 8,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 20,
+          "field_degree": 8,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 24,
+          "field_degree": 8,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 30,
+          "field_degree": 8,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 32,
+          "field_degree": 16,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 40,
+          "field_degree": 16,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 48,
+          "field_degree": 16,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 60,
+          "field_degree": 16,
+          "source_witness_available_in_this_audit": false
+        }
+      ]
+    },
+    {
+      "target": 95968,
+      "block": 32,
+      "source": 2999,
+      "surviving_fields": [
+        {
+          "phase": 48,
+          "field_degree": 16,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 68,
+          "field_degree": 32,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 80,
+          "field_degree": 32,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 96,
+          "field_degree": 32,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 102,
+          "field_degree": 32,
+          "source_witness_available_in_this_audit": false
+        }
+      ]
+    },
+    {
+      "target": 95968,
+      "block": 11996,
+      "source": 8,
+      "surviving_fields": [
+        {
+          "phase": 2,
+          "field_degree": 1,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 4,
+          "field_degree": 2,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 6,
+          "field_degree": 2,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 8,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 12,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        }
+      ]
+    },
+    {
+      "target": 95968,
+      "block": 23992,
+      "source": 4,
+      "surviving_fields": [
+        {
+          "phase": 2,
+          "field_degree": 1,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 4,
+          "field_degree": 2,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 6,
+          "field_degree": 2,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 8,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 10,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 12,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 16,
+          "field_degree": 8,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 20,
+          "field_degree": 8,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 24,
+          "field_degree": 8,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 30,
+          "field_degree": 8,
+          "source_witness_available_in_this_audit": false
+        }
+      ]
+    },
+    {
+      "target": 95968,
+      "block": 47984,
+      "source": 2,
+      "surviving_fields": [
+        {
+          "phase": 2,
+          "field_degree": 1,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 4,
+          "field_degree": 2,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 6,
+          "field_degree": 2,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 8,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 10,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 12,
+          "field_degree": 4,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 16,
+          "field_degree": 8,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 20,
+          "field_degree": 8,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 24,
+          "field_degree": 8,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 30,
+          "field_degree": 8,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 32,
+          "field_degree": 16,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 40,
+          "field_degree": 16,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 48,
+          "field_degree": 16,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 60,
+          "field_degree": 16,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 47986,
+          "field_degree": 23992,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 95972,
+          "field_degree": 47984,
+          "source_witness_available_in_this_audit": false
+        },
+        {
+          "phase": 143958,
+          "field_degree": 47984,
+          "source_witness_available_in_this_audit": false
+        }
+      ]
+    }
+  ],
+  "shared_existing_missing_frame": {
+    "order": 892,
+    "source_outputs": [
+      2676,
+      11596
+    ],
+    "Miyamoto_and_double_output_listed_unresolved": 21416,
+    "higher_outputs_without_checked_novelty_status": [
+      42836,
+      46388
+    ]
+  },
+  "Miyamoto_chains": [
+    {
+      "initial": 2676,
+      "steps": [
+        {
+          "input": 2676,
+          "q": 2677,
+          "q_is_prime": true,
+          "output": 10708,
+          "listed_unresolved_in_used_primary_snapshot": true,
+          "global_novelty_claimed": false
+        },
+        {
+          "input": 10708,
+          "q": 10709,
+          "q_is_prime": true,
+          "output": 42836,
+          "listed_unresolved_in_used_primary_snapshot": false,
+          "global_novelty_claimed": false
+        }
+      ],
+      "stopping_q": 42837,
+      "stopping_q_factorization": {
+        "3": 1,
+        "109": 1,
+        "131": 1
+      }
+    },
+    {
+      "initial": 11596,
+      "steps": [
+        {
+          "input": 11596,
+          "q": 11597,
+          "q_is_prime": true,
+          "output": 46388,
+          "listed_unresolved_in_used_primary_snapshot": false,
+          "global_novelty_claimed": false
+        }
+      ],
+      "stopping_q": 46389,
+      "stopping_q_factorization": {
+        "3": 1,
+        "7": 1,
+        "47": 2
+      }
+    },
+    {
+      "initial": 5892,
+      "steps": [],
+      "stopping_q": 5893,
+      "stopping_q_factorization": {
+        "71": 1,
+        "83": 1
+      }
+    }
+  ],
+  "new_known_source_route": {
+    "target": 47920,
+    "source_order": 5,
+    "block": 9584,
+    "source_phase": 5,
+    "target_already_known_by_published_quadruple_construction": true,
+    "active_unknown_order_target": false,
+    "historical_alternative_route_retained_for_provenance": true,
+    "source_exponents": [
+      [
+        0,
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      [
+        0,
+        2,
+        4,
+        1,
+        3
+      ],
+      [
+        0,
+        3,
+        1,
+        4,
+        2
+      ],
+      [
+        0,
+        4,
+        3,
+        2,
+        1
+      ]
+    ],
+    "chirped_source_exponents": [
+      [
+        1,
+        4,
+        3,
+        3,
+        4
+      ],
+      [
+        4,
+        3,
+        3,
+        4,
+        1
+      ],
+      [
+        3,
+        3,
+        4,
+        1,
+        4
+      ],
+      [
+        3,
+        4,
+        1,
+        4,
+        3
+      ],
+      [
+        4,
+        1,
+        4,
+        3,
+        3
+      ]
+    ],
+    "both_source_Grams_verified": true,
+    "chirped_used_alphabet": [
+      1,
+      3,
+      4
+    ],
+    "boundary_Hadamard_availability": {
+      "primary_url": "https://www.math74.com/Hadamard/09/index.html",
+      "live_retrieved_date": "2026-11-22",
+      "version": "58, October2026",
+      "construction": "CHK(550,648)",
+      "construction_arithmetic_replayed": true,
+      "full_order9584_matrix_locally_verified": false,
+      "search_required_to_fix_this_boundary_matrix": false
+    },
+    "rational_action_coordinate_example": {
+      "dimension": 8,
+      "denominator": 36,
+      "numerator": [
+        [
+          -19,
+          29,
+          -7,
+          -3,
+          -3,
+          -3,
+          -3,
+          -3
+        ],
+        [
+          -19,
+          -7,
+          29,
+          -3,
+          -3,
+          -3,
+          -3,
+          -3
+        ],
+        [
+          -13,
+          -1,
+          -1,
+          15,
+          15,
+          15,
+          15,
+          15
+        ],
+        [
+          -9,
+          -9,
+          -9,
+          -9,
+          27,
+          -9,
+          -9,
+          -9
+        ],
+        [
+          -9,
+          -9,
+          -9,
+          -9,
+          -9,
+          27,
+          -9,
+          -9
+        ],
+        [
+          -9,
+          -9,
+          -9,
+          -9,
+          -9,
+          -9,
+          27,
+          -9
+        ],
+        [
+          -9,
+          -9,
+          -9,
+          -9,
+          -9,
+          -9,
+          -9,
+          27
+        ],
+        [
+          -9,
+          -9,
+          -9,
+          27,
+          -9,
+          -9,
+          -9,
+          -9
+        ]
+      ],
+      "orthogonality_and_Phi5_verified": true,
+      "search_required_to_use_this_action_or_metric_class": false
+    },
+    "number_of_copies_at_block9584": 1198,
+    "joint_action_and_row_column_bases_remain_unknown": true,
+    "known_partial_block8_morphism_does_not_supply_the_block9584_frame": true,
+    "common_frame_caveat": "Five dephased powers cannot all be flat since they sum to0; the chirped source avoids this obstruction and known partial lifts exist",
+    "target_constructed": false
+  },
+  "recent_source_family_divisibility": {
+    "even_sources_18_34_62_82_146_dividing_any_derived_order": [],
+    "odd_prime_square_dividing_any_derived_order": [],
+    "verified_odd_sources_3_7_9_13_19_dividing_any_derived_order": []
+  },
+  "closure_check_references": [
+    "https://arxiv.org/html/2610.27175v2#S4.T4",
+    "https://github.com/vatskishan03/Hadamard/blob/d885022/search/NOTES.md#106-what-multiplication-theorems-can-still-reach-n--2027-and-turyns-conference-matrix-of-order-2026",
+    "https://arxiv.org/abs/2401.15381"
+  ],
+  "live_Explorer_scope": {
+    "url": "https://www.math74.com/Hadamard/unknown.html",
+    "version": "58, October2026",
+    "maximum_order": 10000,
+    "cannot_support_larger_order_priority_claims": true
+  },
+  "new_real_Hadamard_constructed": false
+}

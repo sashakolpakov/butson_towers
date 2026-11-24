@@ -1,0 +1,27 @@
+{
+  "name": "M13A",
+  "source_order": 13,
+  "phase": 6,
+  "source_url": "https://raw.githubusercontent.com/matrix-toolbox/chm/main/CHM/M13A.m",
+  "catalogue_url": "https://github.com/matrix-toolbox/chm/blob/main/catalogue/1306B.html",
+  "catalogue_authors": "Wojciech Bruzda, Wojciech Tadej, Karol Zyczkowski",
+  "catalogue_attribution": "R. Nicoara, A. LaClair, N. Geist and A. Wintenberg, May 2016",
+  "retrieved": "2026-11-21",
+  "exponents": [
+    [0,0,0,0,0,0,0,0,0,0,0,0,0],
+    [0,5,5,4,4,4,4,2,2,2,1,1,1],
+    [0,5,5,1,2,2,2,4,4,4,1,1,4],
+    [0,1,1,2,4,4,1,4,2,2,5,5,4],
+    [0,1,1,4,2,2,4,1,4,4,5,5,2],
+    [0,1,4,4,5,1,2,2,5,1,4,2,4],
+    [0,2,4,1,4,1,5,1,2,4,2,4,5],
+    [0,2,4,2,1,5,4,4,1,5,4,1,2],
+    [0,2,4,5,2,4,1,5,4,1,2,4,1],
+    [0,4,1,4,1,5,2,2,1,5,2,4,4],
+    [0,4,2,1,1,4,5,1,4,2,4,2,5],
+    [0,4,2,2,5,1,4,4,5,1,1,4,2],
+    [0,4,2,5,4,2,1,5,1,4,4,2,1]
+  ],
+  "unreal_row_phase_shifts": [0,1,1,1,1,1,1,1,1,1,1,1,1],
+  "unreal_column_phase_shifts": [1,2,2,2,2,2,2,2,2,2,2,2,2]
+}

@@ -1,0 +1,2762 @@
+{
+  "scope": "Prime cyclic Paley core only; integral commuting four-dimensional quaternion factors",
+  "prime": 179,
+  "order": 716,
+  "theorem_reference": "https://arxiv.org/abs/math/0308286",
+  "proof_document": "docs/COMMUTING_UNCERTAINTY.md",
+  "external_theorem": "For nonzero complex f on Z/p: |supp f|+|supp Fourier(f)| >= p+1",
+  "verified_cyclic_Paley_skew_core_identities": true,
+  "spectral_support_bounds": {
+    "Fourier_basis_convention": "f_k(j)=zeta**(k*j)",
+    "Gauss_sum_convention": "g=sum_a chi(a)*zeta**a; g squared=-p",
+    "E_sector": "eigenvalue g; projector (I+E/g)/2",
+    "positive_allowed_frequencies": [
+      0,
+      2,
+      6,
+      7,
+      8,
+      10,
+      11,
+      18,
+      21,
+      23,
+      24,
+      26,
+      28,
+      30,
+      32,
+      33,
+      34,
+      35,
+      37,
+      38,
+      40,
+      41,
+      44,
+      50,
+      53,
+      54,
+      55,
+      58,
+      62,
+      63,
+      69,
+      71,
+      72,
+      73,
+      78,
+      79,
+      84,
+      86,
+      90,
+      91,
+      92,
+      94,
+      96,
+      97,
+      98,
+      99,
+      102,
+      103,
+      104,
+      105,
+      109,
+      111,
+      112,
+      113,
+      114,
+      115,
+      118,
+      119,
+      120,
+      122,
+      123,
+      127,
+      128,
+      130,
+      131,
+      132,
+      133,
+      134,
+      136,
+      137,
+      140,
+      143,
+      148,
+      150,
+      152,
+      154,
+      157,
+      159,
+      160,
+      162,
+      163,
+      164,
+      165,
+      166,
+      167,
+      170,
+      174,
+      175,
+      176,
+      178
+    ],
+    "negative_allowed_frequencies": [
+      1,
+      3,
+      4,
+      5,
+      9,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      19,
+      20,
+      22,
+      25,
+      27,
+      29,
+      31,
+      36,
+      39,
+      42,
+      43,
+      45,
+      46,
+      47,
+      48,
+      49,
+      51,
+      52,
+      56,
+      57,
+      59,
+      60,
+      61,
+      64,
+      65,
+      66,
+      67,
+      68,
+      70,
+      74,
+      75,
+      76,
+      77,
+      80,
+      81,
+      82,
+      83,
+      85,
+      87,
+      88,
+      89,
+      93,
+      95,
+      100,
+      101,
+      106,
+      107,
+      108,
+      110,
+      116,
+      117,
+      121,
+      124,
+      125,
+      126,
+      129,
+      135,
+      138,
+      139,
+      141,
+      142,
+      144,
+      145,
+      146,
+      147,
+      149,
+      151,
+      153,
+      155,
+      156,
+      158,
+      161,
+      168,
+      169,
+      171,
+      172,
+      173,
+      177
+    ],
+    "positive_frequency_count": 90,
+    "negative_frequency_count": 89,
+    "minimum_nonzero_positive_time_support": 90,
+    "minimum_nonzero_negative_time_support": 91,
+    "minimum_disjoint_support_total_if_both_parts_nonzero": 181,
+    "available_cyclic_positions": 179
+  },
+  "constant_tensor_cases_examined": 352,
+  "commuting_cases_excluded_by_theorem": 28,
+  "all_flat_columns_lie_in_positive_eigenspace": true,
+  "flat_column_span_dimension_upper_bound": 360,
+  "full_frame_dimension_required": 716,
+  "commuting_cases": [
+    {
+      "prime": 179,
+      "order": 716,
+      "E": [
+        [
+          0,
+          11,
+          -7,
+          3
+        ],
+        [
+          -11,
+          0,
+          -3,
+          -7
+        ],
+        [
+          7,
+          3,
+          0,
+          -11
+        ],
+        [
+          -3,
+          7,
+          11,
+          0
+        ]
+      ],
+      "D": [
+        [
+          0,
+          -1,
+          -1,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          -1,
+          0,
+          -1
+        ],
+        [
+          -1,
+          -1,
+          1,
+          0
+        ]
+      ],
+      "common_D_row_product_kappa": 1,
+      "verified_local_cube_states": 16,
+      "required_constant_quartet_product": -1,
+      "positive_eigenspace_dimension": 360,
+      "negative_eigenspace_dimension": 356,
+      "flat_column_span_dimension_upper_bound": 360,
+      "full_frame_excluded_for_cyclic_Paley_core": true,
+      "B_index": 0,
+      "D_index": 3,
+      "B": [
+        [
+          1,
+          4,
+          14,
+          18
+        ],
+        [
+          4,
+          21,
+          4,
+          -8
+        ],
+        [
+          14,
+          4,
+          -15,
+          10
+        ],
+        [
+          18,
+          -8,
+          10,
+          -7
+        ]
+      ]
+    },
+    {
+      "prime": 179,
+      "order": 716,
+      "E": [
+        [
+          0,
+          -11,
+          7,
+          -3
+        ],
+        [
+          11,
+          0,
+          3,
+          7
+        ],
+        [
+          -7,
+          -3,
+          0,
+          11
+        ],
+        [
+          3,
+          -7,
+          -11,
+          0
+        ]
+      ],
+      "D": [
+        [
+          0,
+          1,
+          1,
+          -1
+        ],
+        [
+          -1,
+          0,
+          -1,
+          -1
+        ],
+        [
+          -1,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          -1,
+          0
+        ]
+      ],
+      "common_D_row_product_kappa": -1,
+      "verified_local_cube_states": 16,
+      "required_constant_quartet_product": 1,
+      "positive_eigenspace_dimension": 360,
+      "negative_eigenspace_dimension": 356,
+      "flat_column_span_dimension_upper_bound": 360,
+      "full_frame_excluded_for_cyclic_Paley_core": true,
+      "B_index": 0,
+      "D_index": 12,
+      "B": [
+        [
+          1,
+          4,
+          14,
+          18
+        ],
+        [
+          4,
+          21,
+          4,
+          -8
+        ],
+        [
+          14,
+          4,
+          -15,
+          10
+        ],
+        [
+          18,
+          -8,
+          10,
+          -7
+        ]
+      ]
+    },
+    {
+      "prime": 179,
+      "order": 716,
+      "E": [
+        [
+          0,
+          -9,
+          -7,
+          7
+        ],
+        [
+          9,
+          0,
+          -7,
+          -7
+        ],
+        [
+          7,
+          7,
+          0,
+          9
+        ],
+        [
+          -7,
+          7,
+          -9,
+          0
+        ]
+      ],
+      "D": [
+        [
+          0,
+          -1,
+          1,
+          -1
+        ],
+        [
+          1,
+          0,
+          -1,
+          -1
+        ],
+        [
+          -1,
+          1,
+          0,
+          -1
+        ],
+        [
+          1,
+          1,
+          1,
+          0
+        ]
+      ],
+      "common_D_row_product_kappa": 1,
+      "verified_local_cube_states": 16,
+      "required_constant_quartet_product": -1,
+      "positive_eigenspace_dimension": 360,
+      "negative_eigenspace_dimension": 356,
+      "flat_column_span_dimension_upper_bound": 360,
+      "full_frame_excluded_for_cyclic_Paley_core": true,
+      "B_index": 2,
+      "D_index": 4,
+      "B": [
+        [
+          5,
+          0,
+          16,
+          16
+        ],
+        [
+          0,
+          -23,
+          2,
+          -2
+        ],
+        [
+          16,
+          2,
+          9,
+          -14
+        ],
+        [
+          16,
+          -2,
+          -14,
+          9
+        ]
+      ]
+    },
+    {
+      "prime": 179,
+      "order": 716,
+      "E": [
+        [
+          0,
+          9,
+          7,
+          -7
+        ],
+        [
+          -9,
+          0,
+          7,
+          7
+        ],
+        [
+          -7,
+          -7,
+          0,
+          -9
+        ],
+        [
+          7,
+          -7,
+          9,
+          0
+        ]
+      ],
+      "D": [
+        [
+          0,
+          1,
+          -1,
+          1
+        ],
+        [
+          -1,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          -1,
+          0,
+          1
+        ],
+        [
+          -1,
+          -1,
+          -1,
+          0
+        ]
+      ],
+      "common_D_row_product_kappa": -1,
+      "verified_local_cube_states": 16,
+      "required_constant_quartet_product": 1,
+      "positive_eigenspace_dimension": 360,
+      "negative_eigenspace_dimension": 356,
+      "flat_column_span_dimension_upper_bound": 360,
+      "full_frame_excluded_for_cyclic_Paley_core": true,
+      "B_index": 2,
+      "D_index": 11,
+      "B": [
+        [
+          5,
+          0,
+          16,
+          16
+        ],
+        [
+          0,
+          -23,
+          2,
+          -2
+        ],
+        [
+          16,
+          2,
+          9,
+          -14
+        ],
+        [
+          16,
+          -2,
+          -14,
+          9
+        ]
+      ]
+    },
+    {
+      "prime": 179,
+      "order": 716,
+      "E": [
+        [
+          0,
+          -9,
+          7,
+          -7
+        ],
+        [
+          9,
+          0,
+          -7,
+          -7
+        ],
+        [
+          -7,
+          7,
+          0,
+          -9
+        ],
+        [
+          7,
+          7,
+          9,
+          0
+        ]
+      ],
+      "D": [
+        [
+          0,
+          -1,
+          -1,
+          1
+        ],
+        [
+          1,
+          0,
+          -1,
+          -1
+        ],
+        [
+          1,
+          1,
+          0,
+          1
+        ],
+        [
+          -1,
+          1,
+          -1,
+          0
+        ]
+      ],
+      "common_D_row_product_kappa": 1,
+      "verified_local_cube_states": 16,
+      "required_constant_quartet_product": -1,
+      "positive_eigenspace_dimension": 360,
+      "negative_eigenspace_dimension": 356,
+      "flat_column_span_dimension_upper_bound": 360,
+      "full_frame_excluded_for_cyclic_Paley_core": true,
+      "B_index": 3,
+      "D_index": 2,
+      "B": [
+        [
+          5,
+          0,
+          16,
+          16
+        ],
+        [
+          0,
+          -23,
+          -2,
+          2
+        ],
+        [
+          16,
+          -2,
+          9,
+          -14
+        ],
+        [
+          16,
+          2,
+          -14,
+          9
+        ]
+      ]
+    },
+    {
+      "prime": 179,
+      "order": 716,
+      "E": [
+        [
+          0,
+          9,
+          -7,
+          7
+        ],
+        [
+          -9,
+          0,
+          7,
+          7
+        ],
+        [
+          7,
+          -7,
+          0,
+          9
+        ],
+        [
+          -7,
+          -7,
+          -9,
+          0
+        ]
+      ],
+      "D": [
+        [
+          0,
+          1,
+          1,
+          -1
+        ],
+        [
+          -1,
+          0,
+          1,
+          1
+        ],
+        [
+          -1,
+          -1,
+          0,
+          -1
+        ],
+        [
+          1,
+          -1,
+          1,
+          0
+        ]
+      ],
+      "common_D_row_product_kappa": -1,
+      "verified_local_cube_states": 16,
+      "required_constant_quartet_product": 1,
+      "positive_eigenspace_dimension": 360,
+      "negative_eigenspace_dimension": 356,
+      "flat_column_span_dimension_upper_bound": 360,
+      "full_frame_excluded_for_cyclic_Paley_core": true,
+      "B_index": 3,
+      "D_index": 13,
+      "B": [
+        [
+          5,
+          0,
+          16,
+          16
+        ],
+        [
+          0,
+          -23,
+          -2,
+          2
+        ],
+        [
+          16,
+          -2,
+          9,
+          -14
+        ],
+        [
+          16,
+          2,
+          -14,
+          9
+        ]
+      ]
+    },
+    {
+      "prime": 179,
+      "order": 716,
+      "E": [
+        [
+          0,
+          -7,
+          11,
+          -3
+        ],
+        [
+          7,
+          0,
+          -3,
+          -11
+        ],
+        [
+          -11,
+          3,
+          0,
+          -7
+        ],
+        [
+          3,
+          11,
+          7,
+          0
+        ]
+      ],
+      "D": [
+        [
+          0,
+          -1,
+          -1,
+          1
+        ],
+        [
+          1,
+          0,
+          -1,
+          -1
+        ],
+        [
+          1,
+          1,
+          0,
+          1
+        ],
+        [
+          -1,
+          1,
+          -1,
+          0
+        ]
+      ],
+      "common_D_row_product_kappa": 1,
+      "verified_local_cube_states": 16,
+      "required_constant_quartet_product": -1,
+      "positive_eigenspace_dimension": 360,
+      "negative_eigenspace_dimension": 356,
+      "flat_column_span_dimension_upper_bound": 360,
+      "full_frame_excluded_for_cyclic_Paley_core": true,
+      "B_index": 7,
+      "D_index": 2,
+      "B": [
+        [
+          7,
+          8,
+          10,
+          18
+        ],
+        [
+          8,
+          -21,
+          4,
+          4
+        ],
+        [
+          10,
+          4,
+          15,
+          -14
+        ],
+        [
+          18,
+          4,
+          -14,
+          -1
+        ]
+      ]
+    },
+    {
+      "prime": 179,
+      "order": 716,
+      "E": [
+        [
+          0,
+          7,
+          -11,
+          3
+        ],
+        [
+          -7,
+          0,
+          3,
+          11
+        ],
+        [
+          11,
+          -3,
+          0,
+          7
+        ],
+        [
+          -3,
+          -11,
+          -7,
+          0
+        ]
+      ],
+      "D": [
+        [
+          0,
+          1,
+          1,
+          -1
+        ],
+        [
+          -1,
+          0,
+          1,
+          1
+        ],
+        [
+          -1,
+          -1,
+          0,
+          -1
+        ],
+        [
+          1,
+          -1,
+          1,
+          0
+        ]
+      ],
+      "common_D_row_product_kappa": -1,
+      "verified_local_cube_states": 16,
+      "required_constant_quartet_product": 1,
+      "positive_eigenspace_dimension": 360,
+      "negative_eigenspace_dimension": 356,
+      "flat_column_span_dimension_upper_bound": 360,
+      "full_frame_excluded_for_cyclic_Paley_core": true,
+      "B_index": 7,
+      "D_index": 13,
+      "B": [
+        [
+          7,
+          8,
+          10,
+          18
+        ],
+        [
+          8,
+          -21,
+          4,
+          4
+        ],
+        [
+          10,
+          4,
+          15,
+          -14
+        ],
+        [
+          18,
+          4,
+          -14,
+          -1
+        ]
+      ]
+    },
+    {
+      "prime": 179,
+      "order": 716,
+      "E": [
+        [
+          0,
+          13,
+          -3,
+          1
+        ],
+        [
+          -13,
+          0,
+          -1,
+          -3
+        ],
+        [
+          3,
+          1,
+          0,
+          -13
+        ],
+        [
+          -1,
+          3,
+          13,
+          0
+        ]
+      ],
+      "D": [
+        [
+          0,
+          -1,
+          -1,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          -1,
+          0,
+          -1
+        ],
+        [
+          -1,
+          -1,
+          1,
+          0
+        ]
+      ],
+      "common_D_row_product_kappa": 1,
+      "verified_local_cube_states": 16,
+      "required_constant_quartet_product": -1,
+      "positive_eigenspace_dimension": 360,
+      "negative_eigenspace_dimension": 356,
+      "flat_column_span_dimension_upper_bound": 360,
+      "full_frame_excluded_for_cyclic_Paley_core": true,
+      "B_index": 8,
+      "D_index": 3,
+      "B": [
+        [
+          9,
+          2,
+          14,
+          16
+        ],
+        [
+          2,
+          17,
+          10,
+          -12
+        ],
+        [
+          14,
+          10,
+          -15,
+          4
+        ],
+        [
+          16,
+          -12,
+          4,
+          -11
+        ]
+      ]
+    },
+    {
+      "prime": 179,
+      "order": 716,
+      "E": [
+        [
+          0,
+          -13,
+          3,
+          -1
+        ],
+        [
+          13,
+          0,
+          1,
+          3
+        ],
+        [
+          -3,
+          -1,
+          0,
+          13
+        ],
+        [
+          1,
+          -3,
+          -13,
+          0
+        ]
+      ],
+      "D": [
+        [
+          0,
+          1,
+          1,
+          -1
+        ],
+        [
+          -1,
+          0,
+          -1,
+          -1
+        ],
+        [
+          -1,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          -1,
+          0
+        ]
+      ],
+      "common_D_row_product_kappa": -1,
+      "verified_local_cube_states": 16,
+      "required_constant_quartet_product": 1,
+      "positive_eigenspace_dimension": 360,
+      "negative_eigenspace_dimension": 356,
+      "flat_column_span_dimension_upper_bound": 360,
+      "full_frame_excluded_for_cyclic_Paley_core": true,
+      "B_index": 8,
+      "D_index": 12,
+      "B": [
+        [
+          9,
+          2,
+          14,
+          16
+        ],
+        [
+          2,
+          17,
+          10,
+          -12
+        ],
+        [
+          14,
+          10,
+          -15,
+          4
+        ],
+        [
+          16,
+          -12,
+          4,
+          -11
+        ]
+      ]
+    },
+    {
+      "prime": 179,
+      "order": 716,
+      "E": [
+        [
+          0,
+          -7,
+          9,
+          -7
+        ],
+        [
+          7,
+          0,
+          -7,
+          -9
+        ],
+        [
+          -9,
+          7,
+          0,
+          -7
+        ],
+        [
+          7,
+          9,
+          7,
+          0
+        ]
+      ],
+      "D": [
+        [
+          0,
+          -1,
+          -1,
+          1
+        ],
+        [
+          1,
+          0,
+          -1,
+          -1
+        ],
+        [
+          1,
+          1,
+          0,
+          1
+        ],
+        [
+          -1,
+          1,
+          -1,
+          0
+        ]
+      ],
+      "common_D_row_product_kappa": 1,
+      "verified_local_cube_states": 16,
+      "required_constant_quartet_product": -1,
+      "positive_eigenspace_dimension": 360,
+      "negative_eigenspace_dimension": 356,
+      "flat_column_span_dimension_upper_bound": 360,
+      "full_frame_excluded_for_cyclic_Paley_core": true,
+      "B_index": 9,
+      "D_index": 2,
+      "B": [
+        [
+          9,
+          2,
+          14,
+          16
+        ],
+        [
+          2,
+          -23,
+          2,
+          0
+        ],
+        [
+          14,
+          2,
+          9,
+          -16
+        ],
+        [
+          16,
+          0,
+          -16,
+          5
+        ]
+      ]
+    },
+    {
+      "prime": 179,
+      "order": 716,
+      "E": [
+        [
+          0,
+          7,
+          -9,
+          7
+        ],
+        [
+          -7,
+          0,
+          7,
+          9
+        ],
+        [
+          9,
+          -7,
+          0,
+          7
+        ],
+        [
+          -7,
+          -9,
+          -7,
+          0
+        ]
+      ],
+      "D": [
+        [
+          0,
+          1,
+          1,
+          -1
+        ],
+        [
+          -1,
+          0,
+          1,
+          1
+        ],
+        [
+          -1,
+          -1,
+          0,
+          -1
+        ],
+        [
+          1,
+          -1,
+          1,
+          0
+        ]
+      ],
+      "common_D_row_product_kappa": -1,
+      "verified_local_cube_states": 16,
+      "required_constant_quartet_product": 1,
+      "positive_eigenspace_dimension": 360,
+      "negative_eigenspace_dimension": 356,
+      "flat_column_span_dimension_upper_bound": 360,
+      "full_frame_excluded_for_cyclic_Paley_core": true,
+      "B_index": 9,
+      "D_index": 13,
+      "B": [
+        [
+          9,
+          2,
+          14,
+          16
+        ],
+        [
+          2,
+          -23,
+          2,
+          0
+        ],
+        [
+          14,
+          2,
+          9,
+          -16
+        ],
+        [
+          16,
+          0,
+          -16,
+          5
+        ]
+      ]
+    },
+    {
+      "prime": 179,
+      "order": 716,
+      "E": [
+        [
+          0,
+          13,
+          -3,
+          -1
+        ],
+        [
+          -13,
+          0,
+          1,
+          -3
+        ],
+        [
+          3,
+          -1,
+          0,
+          -13
+        ],
+        [
+          1,
+          3,
+          13,
+          0
+        ]
+      ],
+      "D": [
+        [
+          0,
+          -1,
+          -1,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          -1,
+          0,
+          -1
+        ],
+        [
+          -1,
+          -1,
+          1,
+          0
+        ]
+      ],
+      "common_D_row_product_kappa": 1,
+      "verified_local_cube_states": 16,
+      "required_constant_quartet_product": -1,
+      "positive_eigenspace_dimension": 360,
+      "negative_eigenspace_dimension": 356,
+      "flat_column_span_dimension_upper_bound": 360,
+      "full_frame_excluded_for_cyclic_Paley_core": true,
+      "B_index": 12,
+      "D_index": 3,
+      "B": [
+        [
+          11,
+          4,
+          12,
+          16
+        ],
+        [
+          4,
+          15,
+          10,
+          -14
+        ],
+        [
+          12,
+          10,
+          -17,
+          2
+        ],
+        [
+          16,
+          -14,
+          2,
+          -9
+        ]
+      ]
+    },
+    {
+      "prime": 179,
+      "order": 716,
+      "E": [
+        [
+          0,
+          -13,
+          3,
+          1
+        ],
+        [
+          13,
+          0,
+          -1,
+          3
+        ],
+        [
+          -3,
+          1,
+          0,
+          13
+        ],
+        [
+          -1,
+          -3,
+          -13,
+          0
+        ]
+      ],
+      "D": [
+        [
+          0,
+          1,
+          1,
+          -1
+        ],
+        [
+          -1,
+          0,
+          -1,
+          -1
+        ],
+        [
+          -1,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          -1,
+          0
+        ]
+      ],
+      "common_D_row_product_kappa": -1,
+      "verified_local_cube_states": 16,
+      "required_constant_quartet_product": 1,
+      "positive_eigenspace_dimension": 360,
+      "negative_eigenspace_dimension": 356,
+      "flat_column_span_dimension_upper_bound": 360,
+      "full_frame_excluded_for_cyclic_Paley_core": true,
+      "B_index": 12,
+      "D_index": 12,
+      "B": [
+        [
+          11,
+          4,
+          12,
+          16
+        ],
+        [
+          4,
+          15,
+          10,
+          -14
+        ],
+        [
+          12,
+          10,
+          -17,
+          2
+        ],
+        [
+          16,
+          -14,
+          2,
+          -9
+        ]
+      ]
+    },
+    {
+      "prime": 179,
+      "order": 716,
+      "E": [
+        [
+          0,
+          13,
+          -1,
+          -3
+        ],
+        [
+          -13,
+          0,
+          3,
+          -1
+        ],
+        [
+          1,
+          -3,
+          0,
+          -13
+        ],
+        [
+          3,
+          1,
+          13,
+          0
+        ]
+      ],
+      "D": [
+        [
+          0,
+          -1,
+          -1,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          -1,
+          0,
+          -1
+        ],
+        [
+          -1,
+          -1,
+          1,
+          0
+        ]
+      ],
+      "common_D_row_product_kappa": 1,
+      "verified_local_cube_states": 16,
+      "required_constant_quartet_product": -1,
+      "positive_eigenspace_dimension": 360,
+      "negative_eigenspace_dimension": 356,
+      "flat_column_span_dimension_upper_bound": 360,
+      "full_frame_excluded_for_cyclic_Paley_core": true,
+      "B_index": 13,
+      "D_index": 3,
+      "B": [
+        [
+          15,
+          4,
+          10,
+          14
+        ],
+        [
+          4,
+          11,
+          12,
+          -16
+        ],
+        [
+          10,
+          12,
+          -17,
+          -2
+        ],
+        [
+          14,
+          -16,
+          -2,
+          -9
+        ]
+      ]
+    },
+    {
+      "prime": 179,
+      "order": 716,
+      "E": [
+        [
+          0,
+          -13,
+          1,
+          3
+        ],
+        [
+          13,
+          0,
+          -3,
+          1
+        ],
+        [
+          -1,
+          3,
+          0,
+          13
+        ],
+        [
+          -3,
+          -1,
+          -13,
+          0
+        ]
+      ],
+      "D": [
+        [
+          0,
+          1,
+          1,
+          -1
+        ],
+        [
+          -1,
+          0,
+          -1,
+          -1
+        ],
+        [
+          -1,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          -1,
+          0
+        ]
+      ],
+      "common_D_row_product_kappa": -1,
+      "verified_local_cube_states": 16,
+      "required_constant_quartet_product": 1,
+      "positive_eigenspace_dimension": 360,
+      "negative_eigenspace_dimension": 356,
+      "flat_column_span_dimension_upper_bound": 360,
+      "full_frame_excluded_for_cyclic_Paley_core": true,
+      "B_index": 13,
+      "D_index": 12,
+      "B": [
+        [
+          15,
+          4,
+          10,
+          14
+        ],
+        [
+          4,
+          11,
+          12,
+          -16
+        ],
+        [
+          10,
+          12,
+          -17,
+          -2
+        ],
+        [
+          14,
+          -16,
+          -2,
+          -9
+        ]
+      ]
+    },
+    {
+      "prime": 179,
+      "order": 716,
+      "E": [
+        [
+          0,
+          -3,
+          11,
+          -7
+        ],
+        [
+          3,
+          0,
+          -7,
+          -11
+        ],
+        [
+          -11,
+          7,
+          0,
+          -3
+        ],
+        [
+          7,
+          11,
+          3,
+          0
+        ]
+      ],
+      "D": [
+        [
+          0,
+          -1,
+          -1,
+          1
+        ],
+        [
+          1,
+          0,
+          -1,
+          -1
+        ],
+        [
+          1,
+          1,
+          0,
+          1
+        ],
+        [
+          -1,
+          1,
+          -1,
+          0
+        ]
+      ],
+      "common_D_row_product_kappa": 1,
+      "verified_local_cube_states": 16,
+      "required_constant_quartet_product": -1,
+      "positive_eigenspace_dimension": 360,
+      "negative_eigenspace_dimension": 356,
+      "flat_column_span_dimension_upper_bound": 360,
+      "full_frame_excluded_for_cyclic_Paley_core": true,
+      "B_index": 14,
+      "D_index": 2,
+      "B": [
+        [
+          15,
+          4,
+          10,
+          14
+        ],
+        [
+          4,
+          -21,
+          8,
+          -4
+        ],
+        [
+          10,
+          8,
+          7,
+          -18
+        ],
+        [
+          14,
+          -4,
+          -18,
+          -1
+        ]
+      ]
+    },
+    {
+      "prime": 179,
+      "order": 716,
+      "E": [
+        [
+          0,
+          3,
+          -11,
+          7
+        ],
+        [
+          -3,
+          0,
+          7,
+          11
+        ],
+        [
+          11,
+          -7,
+          0,
+          3
+        ],
+        [
+          -7,
+          -11,
+          -3,
+          0
+        ]
+      ],
+      "D": [
+        [
+          0,
+          1,
+          1,
+          -1
+        ],
+        [
+          -1,
+          0,
+          1,
+          1
+        ],
+        [
+          -1,
+          -1,
+          0,
+          -1
+        ],
+        [
+          1,
+          -1,
+          1,
+          0
+        ]
+      ],
+      "common_D_row_product_kappa": -1,
+      "verified_local_cube_states": 16,
+      "required_constant_quartet_product": 1,
+      "positive_eigenspace_dimension": 360,
+      "negative_eigenspace_dimension": 356,
+      "flat_column_span_dimension_upper_bound": 360,
+      "full_frame_excluded_for_cyclic_Paley_core": true,
+      "B_index": 14,
+      "D_index": 13,
+      "B": [
+        [
+          15,
+          4,
+          10,
+          14
+        ],
+        [
+          4,
+          -21,
+          8,
+          -4
+        ],
+        [
+          10,
+          8,
+          7,
+          -18
+        ],
+        [
+          14,
+          -4,
+          -18,
+          -1
+        ]
+      ]
+    },
+    {
+      "prime": 179,
+      "order": 716,
+      "E": [
+        [
+          0,
+          13,
+          1,
+          -3
+        ],
+        [
+          -13,
+          0,
+          3,
+          1
+        ],
+        [
+          -1,
+          -3,
+          0,
+          -13
+        ],
+        [
+          3,
+          -1,
+          13,
+          0
+        ]
+      ],
+      "D": [
+        [
+          0,
+          -1,
+          -1,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          -1,
+          0,
+          -1
+        ],
+        [
+          -1,
+          -1,
+          1,
+          0
+        ]
+      ],
+      "common_D_row_product_kappa": 1,
+      "verified_local_cube_states": 16,
+      "required_constant_quartet_product": -1,
+      "positive_eigenspace_dimension": 360,
+      "negative_eigenspace_dimension": 356,
+      "flat_column_span_dimension_upper_bound": 360,
+      "full_frame_excluded_for_cyclic_Paley_core": true,
+      "B_index": 15,
+      "D_index": 3,
+      "B": [
+        [
+          17,
+          2,
+          10,
+          12
+        ],
+        [
+          2,
+          9,
+          14,
+          -16
+        ],
+        [
+          10,
+          14,
+          -15,
+          -4
+        ],
+        [
+          12,
+          -16,
+          -4,
+          -11
+        ]
+      ]
+    },
+    {
+      "prime": 179,
+      "order": 716,
+      "E": [
+        [
+          0,
+          -13,
+          -1,
+          3
+        ],
+        [
+          13,
+          0,
+          -3,
+          -1
+        ],
+        [
+          1,
+          3,
+          0,
+          13
+        ],
+        [
+          -3,
+          1,
+          -13,
+          0
+        ]
+      ],
+      "D": [
+        [
+          0,
+          1,
+          1,
+          -1
+        ],
+        [
+          -1,
+          0,
+          -1,
+          -1
+        ],
+        [
+          -1,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          -1,
+          0
+        ]
+      ],
+      "common_D_row_product_kappa": -1,
+      "verified_local_cube_states": 16,
+      "required_constant_quartet_product": 1,
+      "positive_eigenspace_dimension": 360,
+      "negative_eigenspace_dimension": 356,
+      "flat_column_span_dimension_upper_bound": 360,
+      "full_frame_excluded_for_cyclic_Paley_core": true,
+      "B_index": 15,
+      "D_index": 12,
+      "B": [
+        [
+          17,
+          2,
+          10,
+          12
+        ],
+        [
+          2,
+          9,
+          14,
+          -16
+        ],
+        [
+          10,
+          14,
+          -15,
+          -4
+        ],
+        [
+          12,
+          -16,
+          -4,
+          -11
+        ]
+      ]
+    },
+    {
+      "prime": 179,
+      "order": 716,
+      "E": [
+        [
+          0,
+          11,
+          3,
+          -7
+        ],
+        [
+          -11,
+          0,
+          7,
+          3
+        ],
+        [
+          -3,
+          -7,
+          0,
+          -11
+        ],
+        [
+          7,
+          -3,
+          11,
+          0
+        ]
+      ],
+      "D": [
+        [
+          0,
+          -1,
+          -1,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          -1,
+          0,
+          -1
+        ],
+        [
+          -1,
+          -1,
+          1,
+          0
+        ]
+      ],
+      "common_D_row_product_kappa": 1,
+      "verified_local_cube_states": 16,
+      "required_constant_quartet_product": -1,
+      "positive_eigenspace_dimension": 360,
+      "negative_eigenspace_dimension": 356,
+      "flat_column_span_dimension_upper_bound": 360,
+      "full_frame_excluded_for_cyclic_Paley_core": true,
+      "B_index": 16,
+      "D_index": 3,
+      "B": [
+        [
+          21,
+          4,
+          4,
+          8
+        ],
+        [
+          4,
+          1,
+          14,
+          -18
+        ],
+        [
+          4,
+          14,
+          -15,
+          -10
+        ],
+        [
+          8,
+          -18,
+          -10,
+          -7
+        ]
+      ]
+    },
+    {
+      "prime": 179,
+      "order": 716,
+      "E": [
+        [
+          0,
+          -11,
+          -3,
+          7
+        ],
+        [
+          11,
+          0,
+          -7,
+          -3
+        ],
+        [
+          3,
+          7,
+          0,
+          11
+        ],
+        [
+          -7,
+          3,
+          -11,
+          0
+        ]
+      ],
+      "D": [
+        [
+          0,
+          1,
+          1,
+          -1
+        ],
+        [
+          -1,
+          0,
+          -1,
+          -1
+        ],
+        [
+          -1,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          -1,
+          0
+        ]
+      ],
+      "common_D_row_product_kappa": -1,
+      "verified_local_cube_states": 16,
+      "required_constant_quartet_product": 1,
+      "positive_eigenspace_dimension": 360,
+      "negative_eigenspace_dimension": 356,
+      "flat_column_span_dimension_upper_bound": 360,
+      "full_frame_excluded_for_cyclic_Paley_core": true,
+      "B_index": 16,
+      "D_index": 12,
+      "B": [
+        [
+          21,
+          4,
+          4,
+          8
+        ],
+        [
+          4,
+          1,
+          14,
+          -18
+        ],
+        [
+          4,
+          14,
+          -15,
+          -10
+        ],
+        [
+          8,
+          -18,
+          -10,
+          -7
+        ]
+      ]
+    },
+    {
+      "prime": 179,
+      "order": 716,
+      "E": [
+        [
+          0,
+          3,
+          11,
+          -7
+        ],
+        [
+          -3,
+          0,
+          -7,
+          -11
+        ],
+        [
+          -11,
+          7,
+          0,
+          3
+        ],
+        [
+          7,
+          11,
+          -3,
+          0
+        ]
+      ],
+      "D": [
+        [
+          0,
+          -1,
+          -1,
+          1
+        ],
+        [
+          1,
+          0,
+          -1,
+          -1
+        ],
+        [
+          1,
+          1,
+          0,
+          1
+        ],
+        [
+          -1,
+          1,
+          -1,
+          0
+        ]
+      ],
+      "common_D_row_product_kappa": 1,
+      "verified_local_cube_states": 16,
+      "required_constant_quartet_product": -1,
+      "positive_eigenspace_dimension": 360,
+      "negative_eigenspace_dimension": 356,
+      "flat_column_span_dimension_upper_bound": 360,
+      "full_frame_excluded_for_cyclic_Paley_core": true,
+      "B_index": 17,
+      "D_index": 2,
+      "B": [
+        [
+          21,
+          4,
+          4,
+          8
+        ],
+        [
+          4,
+          -15,
+          14,
+          -10
+        ],
+        [
+          4,
+          14,
+          1,
+          -18
+        ],
+        [
+          8,
+          -10,
+          -18,
+          -7
+        ]
+      ]
+    },
+    {
+      "prime": 179,
+      "order": 716,
+      "E": [
+        [
+          0,
+          -3,
+          -11,
+          7
+        ],
+        [
+          3,
+          0,
+          7,
+          11
+        ],
+        [
+          11,
+          -7,
+          0,
+          -3
+        ],
+        [
+          -7,
+          -11,
+          3,
+          0
+        ]
+      ],
+      "D": [
+        [
+          0,
+          1,
+          1,
+          -1
+        ],
+        [
+          -1,
+          0,
+          1,
+          1
+        ],
+        [
+          -1,
+          -1,
+          0,
+          -1
+        ],
+        [
+          1,
+          -1,
+          1,
+          0
+        ]
+      ],
+      "common_D_row_product_kappa": -1,
+      "verified_local_cube_states": 16,
+      "required_constant_quartet_product": 1,
+      "positive_eigenspace_dimension": 360,
+      "negative_eigenspace_dimension": 356,
+      "flat_column_span_dimension_upper_bound": 360,
+      "full_frame_excluded_for_cyclic_Paley_core": true,
+      "B_index": 17,
+      "D_index": 13,
+      "B": [
+        [
+          21,
+          4,
+          4,
+          8
+        ],
+        [
+          4,
+          -15,
+          14,
+          -10
+        ],
+        [
+          4,
+          14,
+          1,
+          -18
+        ],
+        [
+          8,
+          -10,
+          -18,
+          -7
+        ]
+      ]
+    },
+    {
+      "prime": 179,
+      "order": 716,
+      "E": [
+        [
+          0,
+          9,
+          7,
+          -7
+        ],
+        [
+          -9,
+          0,
+          7,
+          7
+        ],
+        [
+          -7,
+          -7,
+          0,
+          -9
+        ],
+        [
+          7,
+          -7,
+          9,
+          0
+        ]
+      ],
+      "D": [
+        [
+          0,
+          -1,
+          -1,
+          1
+        ],
+        [
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          1,
+          -1,
+          0,
+          -1
+        ],
+        [
+          -1,
+          -1,
+          1,
+          0
+        ]
+      ],
+      "common_D_row_product_kappa": 1,
+      "verified_local_cube_states": 16,
+      "required_constant_quartet_product": -1,
+      "positive_eigenspace_dimension": 360,
+      "negative_eigenspace_dimension": 356,
+      "flat_column_span_dimension_upper_bound": 360,
+      "full_frame_excluded_for_cyclic_Paley_core": true,
+      "B_index": 18,
+      "D_index": 3,
+      "B": [
+        [
+          23,
+          0,
+          2,
+          2
+        ],
+        [
+          0,
+          -5,
+          16,
+          -16
+        ],
+        [
+          2,
+          16,
+          -9,
+          -14
+        ],
+        [
+          2,
+          -16,
+          -14,
+          -9
+        ]
+      ]
+    },
+    {
+      "prime": 179,
+      "order": 716,
+      "E": [
+        [
+          0,
+          -9,
+          -7,
+          7
+        ],
+        [
+          9,
+          0,
+          -7,
+          -7
+        ],
+        [
+          7,
+          7,
+          0,
+          9
+        ],
+        [
+          -7,
+          7,
+          -9,
+          0
+        ]
+      ],
+      "D": [
+        [
+          0,
+          1,
+          1,
+          -1
+        ],
+        [
+          -1,
+          0,
+          -1,
+          -1
+        ],
+        [
+          -1,
+          1,
+          0,
+          1
+        ],
+        [
+          1,
+          1,
+          -1,
+          0
+        ]
+      ],
+      "common_D_row_product_kappa": -1,
+      "verified_local_cube_states": 16,
+      "required_constant_quartet_product": 1,
+      "positive_eigenspace_dimension": 360,
+      "negative_eigenspace_dimension": 356,
+      "flat_column_span_dimension_upper_bound": 360,
+      "full_frame_excluded_for_cyclic_Paley_core": true,
+      "B_index": 18,
+      "D_index": 12,
+      "B": [
+        [
+          23,
+          0,
+          2,
+          2
+        ],
+        [
+          0,
+          -5,
+          16,
+          -16
+        ],
+        [
+          2,
+          16,
+          -9,
+          -14
+        ],
+        [
+          2,
+          -16,
+          -14,
+          -9
+        ]
+      ]
+    },
+    {
+      "prime": 179,
+      "order": 716,
+      "E": [
+        [
+          0,
+          9,
+          -7,
+          7
+        ],
+        [
+          -9,
+          0,
+          7,
+          7
+        ],
+        [
+          7,
+          -7,
+          0,
+          9
+        ],
+        [
+          -7,
+          -7,
+          -9,
+          0
+        ]
+      ],
+      "D": [
+        [
+          0,
+          -1,
+          1,
+          -1
+        ],
+        [
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          -1,
+          -1,
+          0,
+          1
+        ],
+        [
+          1,
+          -1,
+          -1,
+          0
+        ]
+      ],
+      "common_D_row_product_kappa": 1,
+      "verified_local_cube_states": 16,
+      "required_constant_quartet_product": -1,
+      "positive_eigenspace_dimension": 360,
+      "negative_eigenspace_dimension": 356,
+      "flat_column_span_dimension_upper_bound": 360,
+      "full_frame_excluded_for_cyclic_Paley_core": true,
+      "B_index": 21,
+      "D_index": 5,
+      "B": [
+        [
+          23,
+          0,
+          2,
+          2
+        ],
+        [
+          0,
+          -5,
+          -16,
+          16
+        ],
+        [
+          2,
+          -16,
+          -9,
+          -14
+        ],
+        [
+          2,
+          16,
+          -14,
+          -9
+        ]
+      ]
+    },
+    {
+      "prime": 179,
+      "order": 716,
+      "E": [
+        [
+          0,
+          -9,
+          7,
+          -7
+        ],
+        [
+          9,
+          0,
+          -7,
+          -7
+        ],
+        [
+          -7,
+          7,
+          0,
+          -9
+        ],
+        [
+          7,
+          7,
+          9,
+          0
+        ]
+      ],
+      "D": [
+        [
+          0,
+          1,
+          -1,
+          1
+        ],
+        [
+          -1,
+          0,
+          -1,
+          -1
+        ],
+        [
+          1,
+          1,
+          0,
+          -1
+        ],
+        [
+          -1,
+          1,
+          1,
+          0
+        ]
+      ],
+      "common_D_row_product_kappa": -1,
+      "verified_local_cube_states": 16,
+      "required_constant_quartet_product": 1,
+      "positive_eigenspace_dimension": 360,
+      "negative_eigenspace_dimension": 356,
+      "flat_column_span_dimension_upper_bound": 360,
+      "full_frame_excluded_for_cyclic_Paley_core": true,
+      "B_index": 21,
+      "D_index": 10,
+      "B": [
+        [
+          23,
+          0,
+          2,
+          2
+        ],
+        [
+          0,
+          -5,
+          -16,
+          16
+        ],
+        [
+          2,
+          -16,
+          -9,
+          -14
+        ],
+        [
+          2,
+          16,
+          -14,
+          -9
+        ]
+      ]
+    }
+  ],
+  "arbitrary_noncyclic_conference_cores_excluded": false,
+  "arbitrary_scalar_towers_excluded": false,
+  "real_Hadamard_order_716_nonexistence_claimed": false,
+  "new_real_hadamard_order_claimed": false
+}

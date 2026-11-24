@@ -1,0 +1,24 @@
+{
+  "source_order": 19,
+  "phase": 24,
+  "unknown_root_phases": 48,
+  "exact_Gram_equation_patterns": 33,
+  "unknown_phase_pairs": 296,
+  "all171_row_pair_equations_included": true,
+  "hint_is_nonbinding": true,
+  "scope": "Complete C3 fixed corner required by the1499,2+5*37 chart",
+  "model_variables": 3493,
+  "model_constraints": 3372,
+  "status": "UNKNOWN",
+  "wall_seconds": 40.002114000000006,
+  "branches": 1635285,
+  "conflicts": 20687,
+  "full1499_source_constructed": false,
+  "owned_watchdog": {
+    "seconds": 55,
+    "timed_out": false,
+    "process_reaped": true,
+    "exit_code": 0,
+    "elapsed_seconds": 40.505859625001904
+  }
+}

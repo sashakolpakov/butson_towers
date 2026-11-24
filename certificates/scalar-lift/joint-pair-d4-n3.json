@@ -1,0 +1,338 @@
+{
+  "scope": "Bounded joint common-frame incidence prototype; source and pair equations decouple in this chart",
+  "block_order": 4,
+  "source_order": 3,
+  "scalar_operator_prescribed": false,
+  "searched_from_scratch_without_matrix_hints": true,
+  "native_limit_seconds": 20.0,
+  "wall_limit_seconds": 30.0,
+  "elapsed_seconds": 0.30631533401901834,
+  "workers": 1,
+  "seed": 0,
+  "owned_worker_pid": 53736,
+  "worker_exit_code": 0,
+  "worker_reaped": true,
+  "external_watchdog_triggered": false,
+  "events": [
+    {
+      "stage": "worker_started",
+      "elapsed_seconds": 1.5840050764381886e-06,
+      "pid": 53736
+    },
+    {
+      "stage": "model_ready",
+      "elapsed_seconds": 0.204076541995164,
+      "block_order": 4,
+      "source_order": 3,
+      "variable_count": 171,
+      "constraint_count": 167,
+      "both_sign_matrices_unknown": true,
+      "source_unknown": true,
+      "scalar_operator_prescribed": false,
+      "matrix_seed_or_solution_hint_used": false,
+      "source_and_pair_equations_decouple_in_this_chart": true,
+      "pair_gauges": "P first row/column positive; Q first row negative in its first d/4 positions",
+      "source_gauges": "first row and column exponents in {0,1}, using signs only"
+    },
+    {
+      "stage": "solver_finished",
+      "elapsed_seconds": 0.2147471669886727,
+      "block_order": 4,
+      "source_order": 3,
+      "variable_count": 171,
+      "constraint_count": 167,
+      "both_sign_matrices_unknown": true,
+      "source_unknown": true,
+      "scalar_operator_prescribed": false,
+      "matrix_seed_or_solution_hint_used": false,
+      "source_and_pair_equations_decouple_in_this_chart": true,
+      "pair_gauges": "P first row/column positive; Q first row negative in its first d/4 positions",
+      "source_gauges": "first row and column exponents in {0,1}, using signs only",
+      "solver_status": "OPTIMAL",
+      "conflicts": 3,
+      "branches": 1310,
+      "solver_wall_seconds": 0.009837,
+      "exact_pair_constructed": true,
+      "exact_source_and_real_lift_constructed": true,
+      "witness": {
+        "P": [
+          [
+            1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            -1,
+            -1,
+            1
+          ],
+          [
+            1,
+            1,
+            -1,
+            -1
+          ],
+          [
+            1,
+            -1,
+            1,
+            -1
+          ]
+        ],
+        "Q": [
+          [
+            -1,
+            1,
+            1,
+            1
+          ],
+          [
+            1,
+            1,
+            -1,
+            1
+          ],
+          [
+            1,
+            1,
+            1,
+            -1
+          ],
+          [
+            1,
+            -1,
+            1,
+            1
+          ]
+        ],
+        "block_order": 4,
+        "R_common_numerator_Q_P_transpose": [
+          [
+            2,
+            -2,
+            -2,
+            -2
+          ],
+          [
+            2,
+            2,
+            2,
+            -2
+          ],
+          [
+            2,
+            -2,
+            2,
+            2
+          ],
+          [
+            2,
+            2,
+            -2,
+            2
+          ]
+        ],
+        "R_common_denominator": 4,
+        "recovered_C": [
+          [
+            0,
+            -1,
+            -1,
+            -1
+          ],
+          [
+            1,
+            0,
+            1,
+            -1
+          ],
+          [
+            1,
+            -1,
+            0,
+            1
+          ],
+          [
+            1,
+            1,
+            -1,
+            0
+          ]
+        ],
+        "orthogonal_design_type": [
+          3,
+          1
+        ],
+        "exact_sign_Gram_and_cross_Gram_verified": true,
+        "exact_Phi6_and_orthogonality_verified": true,
+        "source_exponents": [
+          [
+            0,
+            1,
+            1
+          ],
+          [
+            1,
+            0,
+            4
+          ],
+          [
+            1,
+            4,
+            0
+          ]
+        ],
+        "real_lift_order": 12,
+        "exact_source_and_real_lift_verified": true,
+        "source_order": 3,
+        "source_mask_equations_verified": true,
+        "real_lift_binary_sha256": "a1666e0c7229d7443ceece8516bedc9c420f9cd70038e8960dd5bd3d0a8aa236"
+      }
+    }
+  ],
+  "diagnostics": [],
+  "solver_status": "OPTIMAL",
+  "inconclusive": false,
+  "exact_pair_constructed": true,
+  "exact_source_and_real_lift_constructed": true,
+  "witness": {
+    "P": [
+      [
+        1,
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        -1,
+        -1,
+        1
+      ],
+      [
+        1,
+        1,
+        -1,
+        -1
+      ],
+      [
+        1,
+        -1,
+        1,
+        -1
+      ]
+    ],
+    "Q": [
+      [
+        -1,
+        1,
+        1,
+        1
+      ],
+      [
+        1,
+        1,
+        -1,
+        1
+      ],
+      [
+        1,
+        1,
+        1,
+        -1
+      ],
+      [
+        1,
+        -1,
+        1,
+        1
+      ]
+    ],
+    "block_order": 4,
+    "R_common_numerator_Q_P_transpose": [
+      [
+        2,
+        -2,
+        -2,
+        -2
+      ],
+      [
+        2,
+        2,
+        2,
+        -2
+      ],
+      [
+        2,
+        -2,
+        2,
+        2
+      ],
+      [
+        2,
+        2,
+        -2,
+        2
+      ]
+    ],
+    "R_common_denominator": 4,
+    "recovered_C": [
+      [
+        0,
+        -1,
+        -1,
+        -1
+      ],
+      [
+        1,
+        0,
+        1,
+        -1
+      ],
+      [
+        1,
+        -1,
+        0,
+        1
+      ],
+      [
+        1,
+        1,
+        -1,
+        0
+      ]
+    ],
+    "orthogonal_design_type": [
+      3,
+      1
+    ],
+    "exact_sign_Gram_and_cross_Gram_verified": true,
+    "exact_Phi6_and_orthogonality_verified": true,
+    "source_exponents": [
+      [
+        0,
+        1,
+        1
+      ],
+      [
+        1,
+        0,
+        4
+      ],
+      [
+        1,
+        4,
+        0
+      ]
+    ],
+    "real_lift_order": 12,
+    "exact_source_and_real_lift_verified": true,
+    "source_order": 3,
+    "source_mask_equations_verified": true,
+    "real_lift_binary_sha256": "a1666e0c7229d7443ceece8516bedc9c420f9cd70038e8960dd5bd3d0a8aa236"
+  },
+  "mathematical_nonexistence_certificate_produced": false,
+  "new_real_hadamard_order_claimed": false
+}

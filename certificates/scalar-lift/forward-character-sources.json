@@ -1,0 +1,722 @@
+{
+  "schema": "forward-character-sources-v1",
+  "primary_source": "https://arxiv.org/pdf/2609.22754",
+  "primary_result": "Ong--Schmidt Corollary 4.4, submitted 19 September 2026",
+  "required_character_parity_condition": null,
+  "known_source_constructions": [
+    {
+      "prime": 73,
+      "order": 5329,
+      "phase": 24,
+      "character_orders": [
+        2,
+        8
+      ],
+      "gamma_exponent": 0,
+      "primitive_root": 5,
+      "coefficient_array_shape": [
+        73,
+        73
+      ],
+      "coefficient_array_sha256": "4d6987bb3ce8e110f067ecadaa8ac4652ab9e4e5bc336f5ea858b1a88dbbcbe9",
+      "used_exponents": [
+        0,
+        3,
+        4,
+        6,
+        9,
+        12,
+        15,
+        18,
+        20,
+        21
+      ],
+      "dense_order_squared_matrix_materialized": false,
+      "formal_Gram": {
+        "character_checks": [
+          {
+            "character_order": 2,
+            "zero_sum_verified": true,
+            "all_cyclic_lags_verified": 73,
+            "correlations_sha256": "ed12e1f100e340a3a3518eb3b8c4f1371ab9c98c5cb9ae30cdf3301d2f997760",
+            "exact_group_ring_identity": "AA*=q*delta-J"
+          },
+          {
+            "character_order": 8,
+            "zero_sum_verified": true,
+            "all_cyclic_lags_verified": 73,
+            "correlations_sha256": "e7e99e48743ac25063b8f9ff814b02f4c9977aeadf7e143def9805d8fc1ebc83",
+            "exact_group_ring_identity": "AA*=q*delta-J"
+          }
+        ],
+        "axes_Gram_coefficients": [
+          0,
+          73,
+          73,
+          -1
+        ],
+        "interior_Gram_coefficients": [
+          5329,
+          -73,
+          -73,
+          1
+        ],
+        "mixed_terms_zero_by_character_sums": true,
+        "complete_Gram_identity": "H H*=H* H=5329 I_5329",
+        "all_matrix_Gram_entries_proved_by_group_ring_identity": true,
+        "number_of_Gram_entries_covered": 28398241
+      },
+      "literal_controls": {
+        "all_group_shifts_checked": false,
+        "literal_checks": [
+          {
+            "shift": [
+              0,
+              0
+            ],
+            "constant_coefficient": 5329
+          },
+          {
+            "shift": [
+              1,
+              0
+            ],
+            "constant_coefficient": 0
+          },
+          {
+            "shift": [
+              0,
+              1
+            ],
+            "constant_coefficient": 0
+          },
+          {
+            "shift": [
+              1,
+              1
+            ],
+            "constant_coefficient": 0
+          },
+          {
+            "shift": [
+              2,
+              3
+            ],
+            "constant_coefficient": 0
+          },
+          {
+            "shift": [
+              72,
+              71
+            ],
+            "constant_coefficient": 0
+          }
+        ]
+      },
+      "genuine_phase": {
+        "rows": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "columns": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            5
+          ]
+        ],
+        "entry_exponents": [
+          [
+            0,
+            3
+          ],
+          [
+            20,
+            0
+          ]
+        ],
+        "cross_ratio_exponent": 1,
+        "cross_ratio_order": 24,
+        "full_cyclotomic_phase_is_gauge_invariant": true
+      },
+      "uniform_sign_gate": {
+        "exponents": [
+          4,
+          20,
+          0
+        ],
+        "coefficients": [
+          1,
+          1,
+          -1
+        ],
+        "exact_relation": "zeta6+zeta6^-1-1=0",
+        "odd_length": 3,
+        "uniform_Q_linear_final_sign_map_excluded_for_raw_source": true,
+        "all_gamma_and_global_root_rotations_covered": true,
+        "arbitrary_row_column_gauges_or_nonuniform_maps_excluded": false
+      },
+      "current_cubic_alphabet_gate": {
+        "both_literal_eight_by_eight_templates_checked": true,
+        "normalized_interior_cubic_color": 0,
+        "arbitrary_root_row_column_gauge_to_current_two_cubic_cosets": "EXCLUDED",
+        "other_partial_frames_or_nonuniform_descent_maps_excluded": false
+      },
+      "complete_exponent_descent_states": [
+        {
+          "order": 5329,
+          "phase": 24
+        },
+        {
+          "order": 10658,
+          "phase": 12
+        },
+        {
+          "order": 21316,
+          "phase": 6
+        }
+      ],
+      "completed_real_Hadamard_descent": false
+    },
+    {
+      "prime": 241,
+      "order": 58081,
+      "phase": 120,
+      "character_orders": [
+        2,
+        40
+      ],
+      "gamma_exponent": 0,
+      "primitive_root": 7,
+      "coefficient_array_shape": [
+        241,
+        241
+      ],
+      "coefficient_array_sha256": "e0dc4c8e284b434e569db066c9f2df769f81574224c2ad30e79f32fb220a44cf",
+      "used_exponents": [
+        0,
+        3,
+        6,
+        9,
+        12,
+        15,
+        18,
+        20,
+        21,
+        24,
+        27,
+        30,
+        33,
+        36,
+        39,
+        42,
+        45,
+        48,
+        51,
+        54,
+        57,
+        60,
+        63,
+        66,
+        69,
+        72,
+        75,
+        78,
+        81,
+        84,
+        87,
+        90,
+        93,
+        96,
+        99,
+        100,
+        102,
+        105,
+        108,
+        111,
+        114,
+        117
+      ],
+      "dense_order_squared_matrix_materialized": false,
+      "formal_Gram": {
+        "character_checks": [
+          {
+            "character_order": 2,
+            "zero_sum_verified": true,
+            "all_cyclic_lags_verified": 241,
+            "correlations_sha256": "6baf3fb6fd52552735ff2bb74b5ad7a5e1b13a90ec1598623fb995469c2d2b45",
+            "exact_group_ring_identity": "AA*=q*delta-J"
+          },
+          {
+            "character_order": 40,
+            "zero_sum_verified": true,
+            "all_cyclic_lags_verified": 241,
+            "correlations_sha256": "c6deac94a70a3a2905bd151a1374ce27a7e6dd693742fd82a62e334f01f23d41",
+            "exact_group_ring_identity": "AA*=q*delta-J"
+          }
+        ],
+        "axes_Gram_coefficients": [
+          0,
+          241,
+          241,
+          -1
+        ],
+        "interior_Gram_coefficients": [
+          58081,
+          -241,
+          -241,
+          1
+        ],
+        "mixed_terms_zero_by_character_sums": true,
+        "complete_Gram_identity": "H H*=H* H=58081 I_58081",
+        "all_matrix_Gram_entries_proved_by_group_ring_identity": true,
+        "number_of_Gram_entries_covered": 3373402561
+      },
+      "literal_controls": {
+        "all_group_shifts_checked": false,
+        "literal_checks": [
+          {
+            "shift": [
+              0,
+              0
+            ],
+            "constant_coefficient": 58081
+          },
+          {
+            "shift": [
+              1,
+              0
+            ],
+            "constant_coefficient": 0
+          },
+          {
+            "shift": [
+              0,
+              1
+            ],
+            "constant_coefficient": 0
+          },
+          {
+            "shift": [
+              1,
+              1
+            ],
+            "constant_coefficient": 0
+          },
+          {
+            "shift": [
+              2,
+              3
+            ],
+            "constant_coefficient": 0
+          },
+          {
+            "shift": [
+              240,
+              239
+            ],
+            "constant_coefficient": 0
+          }
+        ]
+      },
+      "genuine_phase": {
+        "rows": [
+          [
+            0,
+            0
+          ],
+          [
+            0,
+            1
+          ]
+        ],
+        "columns": [
+          [
+            0,
+            0
+          ],
+          [
+            1,
+            7
+          ]
+        ],
+        "entry_exponents": [
+          [
+            0,
+            3
+          ],
+          [
+            100,
+            36
+          ]
+        ],
+        "cross_ratio_exponent": 53,
+        "cross_ratio_order": 120,
+        "full_cyclotomic_phase_is_gauge_invariant": true
+      },
+      "uniform_sign_gate": {
+        "exponents": [
+          20,
+          100,
+          0
+        ],
+        "coefficients": [
+          1,
+          1,
+          -1
+        ],
+        "exact_relation": "zeta6+zeta6^-1-1=0",
+        "odd_length": 3,
+        "uniform_Q_linear_final_sign_map_excluded_for_raw_source": true,
+        "all_gamma_and_global_root_rotations_covered": true,
+        "arbitrary_row_column_gauges_or_nonuniform_maps_excluded": false
+      },
+      "current_cubic_alphabet_gate": {
+        "both_literal_eight_by_eight_templates_checked": true,
+        "normalized_interior_cubic_color": 0,
+        "arbitrary_root_row_column_gauge_to_current_two_cubic_cosets": "EXCLUDED",
+        "other_partial_frames_or_nonuniform_descent_maps_excluded": false
+      },
+      "complete_exponent_descent_states": [
+        {
+          "order": 58081,
+          "phase": 120
+        },
+        {
+          "order": 116162,
+          "phase": 60
+        },
+        {
+          "order": 232324,
+          "phase": 30
+        }
+      ],
+      "completed_real_Hadamard_descent": false
+    }
+  ],
+  "cubic_gauge_census": [
+    {
+      "grid_shape": [
+        4,
+        2
+      ],
+      "normalized_interior_cubic_color": 0,
+      "row_gauges_exhausted": 2187,
+      "feasible_row_gauges": 0,
+      "complete_row_column_gauges": 0,
+      "witness": null
+    },
+    {
+      "grid_shape": [
+        4,
+        2
+      ],
+      "normalized_interior_cubic_color": 1,
+      "row_gauges_exhausted": 2187,
+      "feasible_row_gauges": 0,
+      "complete_row_column_gauges": 0,
+      "witness": null
+    },
+    {
+      "grid_shape": [
+        4,
+        2
+      ],
+      "normalized_interior_cubic_color": 2,
+      "row_gauges_exhausted": 2187,
+      "feasible_row_gauges": 2,
+      "complete_row_column_gauges": 2,
+      "witness": {
+        "row_gauge": [
+          0,
+          1,
+          0,
+          1,
+          0,
+          1,
+          0,
+          1
+        ],
+        "column_gauge": [
+          0,
+          2,
+          0,
+          2,
+          0,
+          2,
+          0,
+          2
+        ]
+      }
+    },
+    {
+      "grid_shape": [
+        2,
+        4
+      ],
+      "normalized_interior_cubic_color": 0,
+      "row_gauges_exhausted": 2187,
+      "feasible_row_gauges": 0,
+      "complete_row_column_gauges": 0,
+      "witness": null
+    },
+    {
+      "grid_shape": [
+        2,
+        4
+      ],
+      "normalized_interior_cubic_color": 1,
+      "row_gauges_exhausted": 2187,
+      "feasible_row_gauges": 2,
+      "complete_row_column_gauges": 2,
+      "witness": {
+        "row_gauge": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          1
+        ],
+        "column_gauge": [
+          1,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ]
+      }
+    },
+    {
+      "grid_shape": [
+        2,
+        4
+      ],
+      "normalized_interior_cubic_color": 2,
+      "row_gauges_exhausted": 2187,
+      "feasible_row_gauges": 0,
+      "complete_row_column_gauges": 0,
+      "witness": null
+    }
+  ],
+  "small_control": {
+    "prime": 5,
+    "order": 25,
+    "phase": 12,
+    "character_orders": [
+      2,
+      4
+    ],
+    "gamma_exponent": 0,
+    "primitive_root": 2,
+    "coefficient_array_shape": [
+      5,
+      5
+    ],
+    "coefficient_array_sha256": "a5a7c57483b2e6f2bd40e5e487b414f87bb05a7d3d649b70e6e2dc55f1188463",
+    "used_exponents": [
+      0,
+      2,
+      3,
+      6,
+      9,
+      10
+    ],
+    "dense_order_squared_matrix_materialized": true,
+    "full_dense_order25_Gram_verified": true,
+    "all_group_shifts_checked": true,
+    "literal_checks": [
+      {
+        "shift": [
+          0,
+          0
+        ],
+        "constant_coefficient": 25
+      },
+      {
+        "shift": [
+          0,
+          1
+        ],
+        "constant_coefficient": 0
+      },
+      {
+        "shift": [
+          0,
+          2
+        ],
+        "constant_coefficient": 0
+      },
+      {
+        "shift": [
+          0,
+          3
+        ],
+        "constant_coefficient": 0
+      },
+      {
+        "shift": [
+          0,
+          4
+        ],
+        "constant_coefficient": 0
+      },
+      {
+        "shift": [
+          1,
+          0
+        ],
+        "constant_coefficient": 0
+      },
+      {
+        "shift": [
+          1,
+          1
+        ],
+        "constant_coefficient": 0
+      },
+      {
+        "shift": [
+          1,
+          2
+        ],
+        "constant_coefficient": 0
+      },
+      {
+        "shift": [
+          1,
+          3
+        ],
+        "constant_coefficient": 0
+      },
+      {
+        "shift": [
+          1,
+          4
+        ],
+        "constant_coefficient": 0
+      },
+      {
+        "shift": [
+          2,
+          0
+        ],
+        "constant_coefficient": 0
+      },
+      {
+        "shift": [
+          2,
+          1
+        ],
+        "constant_coefficient": 0
+      },
+      {
+        "shift": [
+          2,
+          2
+        ],
+        "constant_coefficient": 0
+      },
+      {
+        "shift": [
+          2,
+          3
+        ],
+        "constant_coefficient": 0
+      },
+      {
+        "shift": [
+          2,
+          4
+        ],
+        "constant_coefficient": 0
+      },
+      {
+        "shift": [
+          3,
+          0
+        ],
+        "constant_coefficient": 0
+      },
+      {
+        "shift": [
+          3,
+          1
+        ],
+        "constant_coefficient": 0
+      },
+      {
+        "shift": [
+          3,
+          2
+        ],
+        "constant_coefficient": 0
+      },
+      {
+        "shift": [
+          3,
+          3
+        ],
+        "constant_coefficient": 0
+      },
+      {
+        "shift": [
+          3,
+          4
+        ],
+        "constant_coefficient": 0
+      },
+      {
+        "shift": [
+          4,
+          0
+        ],
+        "constant_coefficient": 0
+      },
+      {
+        "shift": [
+          4,
+          1
+        ],
+        "constant_coefficient": 0
+      },
+      {
+        "shift": [
+          4,
+          2
+        ],
+        "constant_coefficient": 0
+      },
+      {
+        "shift": [
+          4,
+          3
+        ],
+        "constant_coefficient": 0
+      },
+      {
+        "shift": [
+          4,
+          4
+        ],
+        "constant_coefficient": 0
+      }
+    ]
+  },
+  "new_Butson_order_claimed": false,
+  "new_real_Hadamard_order_claimed": false
+}

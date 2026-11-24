@@ -1,0 +1,859 @@
+{
+  "schema": "rectangular-fifth-packets-v1",
+  "source_order": 1499,
+  "input_order": 585,
+  "known_input": {
+    "order": 585,
+    "phase": 120,
+    "construction": "BH117 tensor chirped BH5, with independent cubic and fifth colors",
+    "factor117_exact_Gram": {
+      "order": 117,
+      "all_row_pairs_checked": 6786,
+      "exact_unreal_component_Gram_verified": true
+    },
+    "factor5_complete_exact_Gram_verified": true,
+    "complete_585_Gram_verified_by_tensor_identity": true,
+    "all_raw_cubic_fifth_alphabet_entries_verified": true,
+    "cubic_colors": [
+      0,
+      1
+    ],
+    "fifth_colors": [
+      1,
+      3,
+      4
+    ],
+    "source_exponent_sha256": "94cc1bd8c7697752eecae22bd6c8888a8d8d373662a2a4ad976a8815b2b09dce"
+  },
+  "metric_witness": {
+    "selected_norm": 329,
+    "selected_scalar_formula": "18+i*sqrt5",
+    "selected_scalar_subfield_conductor": 20,
+    "selected_scalar_subfield_coefficients": [
+      18,
+      0,
+      0,
+      2,
+      0,
+      -1,
+      0,
+      2
+    ],
+    "fifth_root_formula_for_sqrt5": "1+2*zeta5+2*zeta5^(-1)",
+    "source_norm": 1499,
+    "source_scalar_formula": "21+23*(zeta8+zeta8^3)",
+    "both_scalar_norms_verified": true,
+    "automorphism_fixing_phase24_exponent": 73,
+    "that_automorphism_changes_witness_to_distinct_conjugate": true,
+    "scalar_metric_is_not_a_root_completion": true,
+    "phase24_metric_obstruction": {
+      "metric_order": 457,
+      "prime": 47,
+      "prime_residue_mod24": 23,
+      "determinant_norm_prime_valuation": 457,
+      "self_conjugate_prime_has_even_norm_valuation": true,
+      "all_integral_metric_matrices_over_Q_zeta24_excluded": true,
+      "unit_root_row_and_column_gauges_do_not_remove_this_requirement": true
+    }
+  },
+  "packet_counts": {
+    "fully_selected": 91,
+    "partly_selected": 1,
+    "fully_omitted": 25
+  },
+  "two_exact_row_selections": [
+    {
+      "full_packet_rows": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        25,
+        26,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        34,
+        35,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        43,
+        44,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        52,
+        53,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        61,
+        62,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        70,
+        71,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        79,
+        80,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        88,
+        89,
+        90
+      ],
+      "exceptional_packet": 91,
+      "partial_fifth_rows": [
+        1,
+        4
+      ]
+    },
+    {
+      "full_packet_rows": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        18,
+        19,
+        20,
+        21,
+        22,
+        23,
+        24,
+        27,
+        28,
+        29,
+        30,
+        31,
+        32,
+        33,
+        36,
+        37,
+        38,
+        39,
+        40,
+        41,
+        42,
+        45,
+        46,
+        47,
+        48,
+        49,
+        50,
+        51,
+        54,
+        55,
+        56,
+        57,
+        58,
+        59,
+        60,
+        63,
+        64,
+        65,
+        66,
+        67,
+        68,
+        69,
+        72,
+        73,
+        74,
+        75,
+        76,
+        77,
+        78,
+        81,
+        82,
+        83,
+        84,
+        85,
+        86,
+        87,
+        90,
+        91,
+        92,
+        93,
+        94,
+        95,
+        96,
+        99,
+        100,
+        101,
+        102,
+        103,
+        104,
+        105,
+        108,
+        109,
+        110,
+        111,
+        112,
+        113,
+        114
+      ],
+      "exceptional_packet": 7,
+      "partial_fifth_rows": [
+        1,
+        4
+      ]
+    }
+  ],
+  "exceptional_selection_census": [
+    {
+      "partial_fifth_rows": [
+        0,
+        1
+      ],
+      "right_norm329_multiplicities": [
+        92,
+        91,
+        91,
+        91,
+        92
+      ],
+      "left_norm329_multiplicities": [
+        92,
+        92,
+        91,
+        91,
+        91
+      ],
+      "status": "EXCLUDED_SECTOR_SPECTRUM_MISMATCH"
+    },
+    {
+      "partial_fifth_rows": [
+        0,
+        2
+      ],
+      "right_norm329_multiplicities": [
+        92,
+        91,
+        91,
+        92,
+        91
+      ],
+      "left_norm329_multiplicities": [
+        92,
+        91,
+        92,
+        91,
+        91
+      ],
+      "status": "EXCLUDED_SECTOR_SPECTRUM_MISMATCH"
+    },
+    {
+      "partial_fifth_rows": [
+        0,
+        3
+      ],
+      "right_norm329_multiplicities": [
+        92,
+        91,
+        92,
+        91,
+        91
+      ],
+      "left_norm329_multiplicities": [
+        92,
+        91,
+        91,
+        92,
+        91
+      ],
+      "status": "EXCLUDED_SECTOR_SPECTRUM_MISMATCH"
+    },
+    {
+      "partial_fifth_rows": [
+        0,
+        4
+      ],
+      "right_norm329_multiplicities": [
+        92,
+        92,
+        91,
+        91,
+        91
+      ],
+      "left_norm329_multiplicities": [
+        92,
+        91,
+        91,
+        91,
+        92
+      ],
+      "status": "EXCLUDED_SECTOR_SPECTRUM_MISMATCH"
+    },
+    {
+      "partial_fifth_rows": [
+        1,
+        2
+      ],
+      "right_norm329_multiplicities": [
+        91,
+        91,
+        91,
+        92,
+        92
+      ],
+      "left_norm329_multiplicities": [
+        91,
+        92,
+        92,
+        91,
+        91
+      ],
+      "status": "EXCLUDED_SECTOR_SPECTRUM_MISMATCH"
+    },
+    {
+      "partial_fifth_rows": [
+        1,
+        3
+      ],
+      "right_norm329_multiplicities": [
+        91,
+        91,
+        92,
+        91,
+        92
+      ],
+      "left_norm329_multiplicities": [
+        91,
+        92,
+        91,
+        92,
+        91
+      ],
+      "status": "EXCLUDED_SECTOR_SPECTRUM_MISMATCH"
+    },
+    {
+      "partial_fifth_rows": [
+        1,
+        4
+      ],
+      "right_norm329_multiplicities": [
+        91,
+        92,
+        91,
+        91,
+        92
+      ],
+      "left_norm329_multiplicities": [
+        91,
+        92,
+        91,
+        91,
+        92
+      ],
+      "status": "SURVIVES_SECTOR_SPECTRUM_GATE"
+    },
+    {
+      "partial_fifth_rows": [
+        2,
+        3
+      ],
+      "right_norm329_multiplicities": [
+        91,
+        91,
+        92,
+        92,
+        91
+      ],
+      "left_norm329_multiplicities": [
+        91,
+        91,
+        92,
+        92,
+        91
+      ],
+      "status": "SURVIVES_SECTOR_SPECTRUM_GATE"
+    },
+    {
+      "partial_fifth_rows": [
+        2,
+        4
+      ],
+      "right_norm329_multiplicities": [
+        91,
+        92,
+        91,
+        92,
+        91
+      ],
+      "left_norm329_multiplicities": [
+        91,
+        91,
+        92,
+        91,
+        92
+      ],
+      "status": "EXCLUDED_SECTOR_SPECTRUM_MISMATCH"
+    },
+    {
+      "partial_fifth_rows": [
+        3,
+        4
+      ],
+      "right_norm329_multiplicities": [
+        91,
+        92,
+        92,
+        91,
+        91
+      ],
+      "left_norm329_multiplicities": [
+        91,
+        91,
+        91,
+        92,
+        92
+      ],
+      "status": "EXCLUDED_SECTOR_SPECTRUM_MISMATCH"
+    }
+  ],
+  "corner_coefficient_alphabet": {
+    "coefficient_fifth_colors": [
+      [
+        2,
+        3
+      ],
+      [
+        3,
+        4
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    "coefficient_root_domains": [
+      [
+        3,
+        7,
+        12,
+        13,
+        18,
+        22,
+        27,
+        28,
+        33,
+        37,
+        42,
+        43,
+        48,
+        52,
+        57,
+        58,
+        63,
+        67,
+        72,
+        73,
+        78,
+        82,
+        87,
+        88,
+        93,
+        97,
+        102,
+        103,
+        108,
+        112,
+        117,
+        118
+      ],
+      [
+        1,
+        6,
+        7,
+        12,
+        16,
+        21,
+        22,
+        27,
+        31,
+        36,
+        37,
+        42,
+        46,
+        51,
+        52,
+        57,
+        61,
+        66,
+        67,
+        72,
+        76,
+        81,
+        82,
+        87,
+        91,
+        96,
+        97,
+        102,
+        106,
+        111,
+        112,
+        117
+      ],
+      [
+        3,
+        4,
+        9,
+        13,
+        18,
+        19,
+        24,
+        28,
+        33,
+        34,
+        39,
+        43,
+        48,
+        49,
+        54,
+        58,
+        63,
+        64,
+        69,
+        73,
+        78,
+        79,
+        84,
+        88,
+        93,
+        94,
+        99,
+        103,
+        108,
+        109,
+        114,
+        118
+      ],
+      [
+        3,
+        4,
+        9,
+        13,
+        18,
+        19,
+        24,
+        28,
+        33,
+        34,
+        39,
+        43,
+        48,
+        49,
+        54,
+        58,
+        63,
+        64,
+        69,
+        73,
+        78,
+        79,
+        84,
+        88,
+        93,
+        94,
+        99,
+        103,
+        108,
+        109,
+        114,
+        118
+      ],
+      [
+        1,
+        6,
+        7,
+        12,
+        16,
+        21,
+        22,
+        27,
+        31,
+        36,
+        37,
+        42,
+        46,
+        51,
+        52,
+        57,
+        61,
+        66,
+        67,
+        72,
+        76,
+        81,
+        82,
+        87,
+        91,
+        96,
+        97,
+        102,
+        106,
+        111,
+        112,
+        117
+      ]
+    ],
+    "all600_coefficient_orbits_checked": true,
+    "corner_root_variables": 68445,
+    "root_choices_per_coefficient": 32,
+    "unrestricted_corner_entry_count": 342225,
+    "each_selected_coefficient_guarantees_all_five_corner_entries_admitted": true
+  },
+  "finite_signed_block_spectral_census": {
+    "signed_color_patterns_enumerated": 512,
+    "distinct_spectral_norm_types": 496,
+    "distinct_two_pattern_sums": 102436,
+    "baseline_pattern": {
+      "fifth_colors": [
+        2,
+        3,
+        1,
+        1,
+        3
+      ],
+      "signs": [
+        1,
+        1,
+        1,
+        1,
+        1
+      ]
+    },
+    "baseline_blocks": 114,
+    "exceptional_patterns": [
+      {
+        "fifth_colors": [
+          2,
+          4,
+          1,
+          1,
+          4
+        ],
+        "signs": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      },
+      {
+        "fifth_colors": [
+          3,
+          3,
+          1,
+          1,
+          3
+        ],
+        "signs": [
+          1,
+          -1,
+          -1,
+          -1,
+          -1
+        ]
+      },
+      {
+        "fifth_colors": [
+          3,
+          3,
+          2,
+          2,
+          3
+        ],
+        "signs": [
+          1,
+          1,
+          1,
+          1,
+          1
+        ]
+      }
+    ],
+    "resulting_sector_squared_norms": [
+      589,
+      579,
+      589,
+      589,
+      579
+    ],
+    "native_solver_used": false,
+    "full_corner_or_cross_packet_orthogonality_claimed": false
+  },
+  "actual_row_packet_controls": [
+    {
+      "actual_corner_shape": [
+        585,
+        585
+      ],
+      "constructed_row_packet_shape": [
+        5,
+        585
+      ],
+      "exact_target_submatrix": "(1499 I - 2 T_R* T_R)[0:5,0:5]",
+      "all25_cyclotomic_Gram_entries_verified": true,
+      "all2925_corner_entries_admitted": true,
+      "row_packet_sha256": "c5ee5491207e30c9724f5e8840a46b66954f7241db63d04ad9dfa01895808e36",
+      "cross_packet_Grams_column_Gram_and_E_F_still_unsolved": true
+    },
+    {
+      "actual_corner_shape": [
+        585,
+        585
+      ],
+      "constructed_row_packet_shape": [
+        5,
+        585
+      ],
+      "exact_target_submatrix": "(1499 I - 2 T_R* T_R)[0:5,0:5]",
+      "all25_cyclotomic_Gram_entries_verified": true,
+      "all2925_corner_entries_admitted": true,
+      "row_packet_sha256": "c5ee5491207e30c9724f5e8840a46b66954f7241db63d04ad9dfa01895808e36",
+      "cross_packet_Grams_column_Gram_and_E_F_still_unsolved": true
+    }
+  ],
+  "exact_core_support": {
+    "selected_fifth_sector_sizes": [
+      91,
+      92,
+      91,
+      91,
+      92
+    ],
+    "E_can_be_nonzero_only_between_fifth_classes_j_and_minus_j": true,
+    "potentially_nonzero_E_entries": 41771,
+    "forced_E_zero_entries": 167078,
+    "outside_those_blocks_exact_root_condition": "Y=-X and F=2X",
+    "minimum_nonzero_E_entries_per_row_from_norm329": 83,
+    "sector_entry_count_bound_passes": true,
+    "within_sector_F_row_squared_norms": [
+      35,
+      39,
+      35,
+      35,
+      39
+    ]
+  },
+  "Fourier_support_control": {
+    "all125_Fourier_shift_entries_checked": true,
+    "all250_partial_projector_Fourier_entries_checked": true,
+    "E_support_derived_from_linear_corner_formula_not_assumed": true
+  },
+  "exact_sector_target_digests": [
+    {
+      "right_Gram_sha256": "6b767cfaeb8520bb692a4b162a0cd5678fe92dcd2be442c1ddf1a8c6b29c561c",
+      "left_Gram_sha256": "f2b1c3a1652650c9598384dff9da8c491aaf6cdcfb90fc65a5be9ef7af34b271",
+      "right_norm329_multiplicities": [
+        91,
+        92,
+        91,
+        91,
+        92
+      ],
+      "left_norm329_multiplicities": [
+        91,
+        92,
+        91,
+        91,
+        92
+      ]
+    },
+    {
+      "right_Gram_sha256": "f1940f2a63d39d2ec34ee4daa7450f09394127f9d3bd54a162bdd1f353255845",
+      "left_Gram_sha256": "802cb2c29340efe1f8a69d8288fad0c94285ea9efb662e96533d9eaf6961c2e2",
+      "right_norm329_multiplicities": [
+        91,
+        92,
+        91,
+        91,
+        92
+      ],
+      "left_norm329_multiplicities": [
+        91,
+        92,
+        91,
+        91,
+        92
+      ]
+    }
+  ],
+  "corner_family_is_a_restriction_not_without_loss_of_generality": true,
+  "complete_corner_source_or_new_Hadamard_constructed": false
+}

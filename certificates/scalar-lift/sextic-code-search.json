@@ -1,0 +1,43 @@
+{
+  "schema": "sextic-code-search-replay-v1",
+  "reports": [
+    {
+      "path": "search-state/sextic-code-search-20261123/report.json",
+      "sha256": "d564fc4b5d701068348e02a0f51cee0143e4a609deb74f38a83dcf218a0b3eb2"
+    },
+    {
+      "path": "search-state/sextic-code-search-20261123/conditional-report.json",
+      "sha256": "1c88a634f0806d9e9e9d68ccfdbde423c866675b4c4f9a977354d0a9e3006050"
+    },
+    {
+      "path": "search-state/sextic-code-search-20261123/extension-16/conditional-report.json",
+      "sha256": "7a4cdb190f28a1a4cab4c24a5128b6b4d43b18fbca007342ef46887234d29534"
+    },
+    {
+      "path": "search-state/sextic-code-search-20261123/native-extension/conditional-report.json",
+      "sha256": "31c96e3eced3956ac7fc4bb79030da903eabdb6462637a521b3c66c9c0fe6029"
+    },
+    {
+      "path": "search-state/sextic-code-search-20261123/native-repair-extension/conditional-report.json",
+      "sha256": "81c6012fd75b52186a5e7f5205b7948d4244fe2aa68e824944091c84c39fc734"
+    }
+  ],
+  "summary": {
+    "literal_base_forms_verified": 121,
+    "scaled_forms_checked": 23950,
+    "first_row_norm_exclusions": 23932,
+    "later_row_exclusions": 18,
+    "retained_partial_companions": 9,
+    "largest_prefix_by_order": {
+      "668": 12,
+      "892": 12
+    },
+    "dead_prefix_models_reproved": 1,
+    "native_subset_residuals_checked": 7,
+    "native_exact_two_swap_rows": 3
+  },
+  "distinct_projective_forms": 121,
+  "frontier_matrix_constructed": false,
+  "all_global_alternating_forms_excluded": false,
+  "replay_cpu_seconds": 3.493134
+}

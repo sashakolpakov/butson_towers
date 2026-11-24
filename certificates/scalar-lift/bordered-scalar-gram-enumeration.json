@@ -1,0 +1,109 @@
+{
+  "scope": "Finite exact obstruction to scalar cubic-component Gram only",
+  "proof": "docs/BORDERED_CUBIC_GRAM.md",
+  "all_fields_are_real_subfields_of_dyadic_cyclotomic_fields": true,
+  "arithmetic": "integer coefficient arithmetic and exact fraction-free determinants",
+  "routes": [
+    {
+      "source_order": 2999,
+      "border_size": 7,
+      "source_phase": 48,
+      "real_field_degree": 4,
+      "real_field_generator_order": 16,
+      "all_embedding_lambda_upper_bound": "28/3",
+      "trace_ball_slices": [
+        {
+          "mean_coefficient": 1,
+          "squared_radius_bound": "25/6",
+          "integer_radius_squared": 4,
+          "tuple_count": 33
+        },
+        {
+          "mean_coefficient": 3,
+          "squared_radius_bound": "19/2",
+          "integer_radius_squared": 9,
+          "tuple_count": 123
+        },
+        {
+          "mean_coefficient": 5,
+          "squared_radius_bound": "65/6",
+          "integer_radius_squared": 10,
+          "tuple_count": 147
+        },
+        {
+          "mean_coefficient": 7,
+          "squared_radius_bound": "49/6",
+          "integer_radius_squared": 8,
+          "tuple_count": 93
+        },
+        {
+          "mean_coefficient": 9,
+          "squared_radius_bound": "3/2",
+          "integer_radius_squared": 1,
+          "tuple_count": 7
+        }
+      ],
+      "all_tuples_enumerated": 403,
+      "tuples_by_smallest_real_field_degree": {
+        "1": 5,
+        "2": 22,
+        "4": 376
+      },
+      "discriminant_norm_square_survivors": [],
+      "tuple_and_norm_stream_sha256": "5ac5e77cb2ec60617a2263a5f913b48997b6f415e671847c6e63e735445af7cc",
+      "all_algebraic_scalar_cubic_Grams_excluded": true,
+      "full_bordered_completion_excluded": false
+    },
+    {
+      "source_order": 2999,
+      "border_size": 7,
+      "source_phase": 96,
+      "real_field_degree": 8,
+      "real_field_generator_order": 32,
+      "all_embedding_lambda_upper_bound": "28/3",
+      "trace_ball_slices": [
+        {
+          "mean_coefficient": 1,
+          "squared_radius_bound": "25/6",
+          "integer_radius_squared": 4,
+          "tuple_count": 953
+        },
+        {
+          "mean_coefficient": 3,
+          "squared_radius_bound": "19/2",
+          "integer_radius_squared": 9,
+          "tuple_count": 12435
+        },
+        {
+          "mean_coefficient": 5,
+          "squared_radius_bound": "65/6",
+          "integer_radius_squared": 10,
+          "tuple_count": 16859
+        },
+        {
+          "mean_coefficient": 7,
+          "squared_radius_bound": "49/6",
+          "integer_radius_squared": 8,
+          "tuple_count": 8893
+        },
+        {
+          "mean_coefficient": 9,
+          "squared_radius_bound": "3/2",
+          "integer_radius_squared": 1,
+          "tuple_count": 15
+        }
+      ],
+      "all_tuples_enumerated": 39155,
+      "tuples_by_smallest_real_field_degree": {
+        "1": 5,
+        "2": 22,
+        "4": 376,
+        "8": 38752
+      },
+      "discriminant_norm_square_survivors": [],
+      "tuple_and_norm_stream_sha256": "48a7b4570017d0a701a50144ee6d207523e161120a466119016650c2bc336937",
+      "all_algebraic_scalar_cubic_Grams_excluded": true,
+      "full_bordered_completion_excluded": false
+    }
+  ]
+}

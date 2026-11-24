@@ -1,0 +1,1188 @@
+{
+  "family:13:1": {
+    "p": 631,
+    "q": 13,
+    "r": 1,
+    "williamson_source_order": 91,
+    "order": 229684,
+    "status": "new_to_best_of_authors_knowledge",
+    "prior_construction": null,
+    "checked_utc": "2026-11-24 21:31:41 UTC",
+    "source_proof_reference": {
+      "path": "certificates/scalar-lift/williamson-spence-family.json",
+      "member_array": "first_expanded_members",
+      "member_selector": {
+        "q": 13,
+        "r": 1
+      },
+      "literal_first_rows_int8_row_major_sha256": "17f3b227fb81c0a6c26d7cdfe38925c5facaf0eeabce59a86898c272d38d2e99",
+      "complete_exact_source_norm_checks": {
+        "all_group_coefficients_per_identity_checked": 91,
+        "complete_identities_checked": [
+          "sum_j A_j^2=4wI",
+          "(D-E)^2+(F-G)^2=4q^rI",
+          "(D+E)^2+(F+G)^2=4q^(r+1)I"
+        ],
+        "method": "integer NTT of Kronecker-encoded multivariate polynomials, followed by exact group folding",
+        "modulus": 998244353,
+        "NTT_length": 512,
+        "absolute_integer_coefficient_bound": 728,
+        "bound_strictly_below_modulus": true,
+        "all_polynomials_self_conjugate": true,
+        "integer_exactness": "target residual coefficients have magnitude at most8w<modulus; zero residues therefore prove zero integers"
+      },
+      "construction_reference_url": "https://doi.org/10.1017/S1446788700020255",
+      "construction_reference_location": "Theorem4, printedp254; all four recurrence lines checked against the PDF image"
+    },
+    "arithmetic_checks": {
+      "N_minus1_factorization": [
+        [
+          3,
+          1
+        ],
+        [
+          76561,
+          1
+        ]
+      ],
+      "N_over2_minus1_factorization": [
+        [
+          41,
+          1
+        ],
+        [
+          2801,
+          1
+        ]
+      ],
+      "N_over4_minus2_factorization": [
+        [
+          67,
+          1
+        ],
+        [
+          857,
+          1
+        ]
+      ],
+      "all_divisor_product_checks_with_631_not_dividing_t": [
+        {
+          "t": 1,
+          "s": 57421,
+          "Turyn_WT_q": 114841,
+          "Turyn_WT_q_factorization": [
+            [
+              41,
+              1
+            ],
+            [
+              2801,
+              1
+            ]
+          ],
+          "Paley16_q": 229683,
+          "Paley16_q_factorization": [
+            [
+              3,
+              1
+            ],
+            [
+              76561,
+              1
+            ]
+          ]
+        },
+        {
+          "t": 7,
+          "s": 8203,
+          "Turyn_WT_q": 16405,
+          "Turyn_WT_q_factorization": [
+            [
+              5,
+              1
+            ],
+            [
+              17,
+              1
+            ],
+            [
+              193,
+              1
+            ]
+          ],
+          "Paley16_q": 32811,
+          "Paley16_q_factorization": [
+            [
+              3,
+              1
+            ],
+            [
+              10937,
+              1
+            ]
+          ]
+        },
+        {
+          "t": 13,
+          "s": 4417,
+          "Turyn_WT_q": 8833,
+          "Turyn_WT_q_factorization": [
+            [
+              11,
+              2
+            ],
+            [
+              73,
+              1
+            ]
+          ],
+          "Paley16_q": 17667,
+          "Paley16_q_factorization": [
+            [
+              3,
+              2
+            ],
+            [
+              13,
+              1
+            ],
+            [
+              151,
+              1
+            ]
+          ]
+        },
+        {
+          "t": 91,
+          "s": 631,
+          "Turyn_WT_q": 1261,
+          "Turyn_WT_q_factorization": [
+            [
+              13,
+              1
+            ],
+            [
+              97,
+              1
+            ]
+          ],
+          "Paley16_q": 2523,
+          "Paley16_q_factorization": [
+            [
+              3,
+              1
+            ],
+            [
+              29,
+              2
+            ]
+          ]
+        }
+      ],
+      "prime_power_product_gate_survivors": []
+    }
+  },
+  "family:17:1": {
+    "p": 631,
+    "q": 17,
+    "r": 1,
+    "williamson_source_order": 153,
+    "order": 386172,
+    "status": "new_to_best_of_authors_knowledge",
+    "prior_construction": null,
+    "checked_utc": "2026-11-24 21:31:41 UTC",
+    "source_proof_reference": {
+      "path": "certificates/scalar-lift/williamson-spence-family.json",
+      "member_array": "first_expanded_members",
+      "member_selector": {
+        "q": 17,
+        "r": 1
+      },
+      "literal_first_rows_int8_row_major_sha256": "c55a25f30f518364e784692b02dba436bdf147955517c2e886cdc4fc202c178e",
+      "complete_exact_source_norm_checks": {
+        "all_group_coefficients_per_identity_checked": 153,
+        "complete_identities_checked": [
+          "sum_j A_j^2=4wI",
+          "(D-E)^2+(F-G)^2=4q^rI",
+          "(D+E)^2+(F+G)^2=4q^(r+1)I"
+        ],
+        "method": "integer NTT of Kronecker-encoded multivariate polynomials, followed by exact group folding",
+        "modulus": 998244353,
+        "NTT_length": 1024,
+        "absolute_integer_coefficient_bound": 1224,
+        "bound_strictly_below_modulus": true,
+        "all_polynomials_self_conjugate": true,
+        "integer_exactness": "target residual coefficients have magnitude at most8w<modulus; zero residues therefore prove zero integers"
+      },
+      "construction_reference_url": "https://doi.org/10.1017/S1446788700020255",
+      "construction_reference_location": "Theorem4, printedp254; all four recurrence lines checked against the PDF image"
+    },
+    "arithmetic_checks": {
+      "N_minus1_factorization": [
+        [
+          89,
+          1
+        ],
+        [
+          4339,
+          1
+        ]
+      ],
+      "N_over2_minus1_factorization": [
+        [
+          5,
+          1
+        ],
+        [
+          23,
+          2
+        ],
+        [
+          73,
+          1
+        ]
+      ],
+      "N_over4_minus2_factorization": [
+        [
+          29,
+          1
+        ],
+        [
+          3329,
+          1
+        ]
+      ],
+      "all_divisor_product_checks_with_631_not_dividing_t": [
+        {
+          "t": 1,
+          "s": 96543,
+          "Turyn_WT_q": 193085,
+          "Turyn_WT_q_factorization": [
+            [
+              5,
+              1
+            ],
+            [
+              23,
+              2
+            ],
+            [
+              73,
+              1
+            ]
+          ],
+          "Paley16_q": 386171,
+          "Paley16_q_factorization": [
+            [
+              89,
+              1
+            ],
+            [
+              4339,
+              1
+            ]
+          ]
+        },
+        {
+          "t": 3,
+          "s": 32181,
+          "Turyn_WT_q": 64361,
+          "Turyn_WT_q_factorization": [
+            [
+              11,
+              1
+            ],
+            [
+              5851,
+              1
+            ]
+          ],
+          "Paley16_q": 128723,
+          "Paley16_q_factorization": [
+            [
+              7,
+              2
+            ],
+            [
+              37,
+              1
+            ],
+            [
+              71,
+              1
+            ]
+          ]
+        },
+        {
+          "t": 9,
+          "s": 10727,
+          "Turyn_WT_q": 21453,
+          "Turyn_WT_q_factorization": [
+            [
+              3,
+              1
+            ],
+            [
+              7151,
+              1
+            ]
+          ],
+          "Paley16_q": 42907,
+          "Paley16_q_factorization": [
+            [
+              107,
+              1
+            ],
+            [
+              401,
+              1
+            ]
+          ]
+        },
+        {
+          "t": 17,
+          "s": 5679,
+          "Turyn_WT_q": 11357,
+          "Turyn_WT_q_factorization": [
+            [
+              41,
+              1
+            ],
+            [
+              277,
+              1
+            ]
+          ],
+          "Paley16_q": 22715,
+          "Paley16_q_factorization": [
+            [
+              5,
+              1
+            ],
+            [
+              7,
+              1
+            ],
+            [
+              11,
+              1
+            ],
+            [
+              59,
+              1
+            ]
+          ]
+        },
+        {
+          "t": 51,
+          "s": 1893,
+          "Turyn_WT_q": 3785,
+          "Turyn_WT_q_factorization": [
+            [
+              5,
+              1
+            ],
+            [
+              757,
+              1
+            ]
+          ],
+          "Paley16_q": 7571,
+          "Paley16_q_factorization": [
+            [
+              67,
+              1
+            ],
+            [
+              113,
+              1
+            ]
+          ]
+        },
+        {
+          "t": 153,
+          "s": 631,
+          "Turyn_WT_q": 1261,
+          "Turyn_WT_q_factorization": [
+            [
+              13,
+              1
+            ],
+            [
+              97,
+              1
+            ]
+          ],
+          "Paley16_q": 2523,
+          "Paley16_q_factorization": [
+            [
+              3,
+              1
+            ],
+            [
+              29,
+              2
+            ]
+          ]
+        }
+      ],
+      "prime_power_product_gate_survivors": []
+    }
+  },
+  "family:61:1": {
+    "p": 631,
+    "q": 61,
+    "r": 1,
+    "williamson_source_order": 1891,
+    "order": 4772884,
+    "status": "new_to_best_of_authors_knowledge",
+    "prior_construction": null,
+    "checked_utc": "2026-11-24 21:31:41 UTC",
+    "source_proof_reference": {
+      "path": "certificates/scalar-lift/williamson-spence-family.json",
+      "member_array": "first_expanded_members",
+      "member_selector": {
+        "q": 61,
+        "r": 1
+      },
+      "literal_first_rows_int8_row_major_sha256": "8cc4b0c20f8be6a2e1275f6bd4c7fef5a31a63fb752875ffc8e56d57077e216f",
+      "complete_exact_source_norm_checks": {
+        "all_group_coefficients_per_identity_checked": 1891,
+        "complete_identities_checked": [
+          "sum_j A_j^2=4wI",
+          "(D-E)^2+(F-G)^2=4q^rI",
+          "(D+E)^2+(F+G)^2=4q^(r+1)I"
+        ],
+        "method": "integer NTT of Kronecker-encoded multivariate polynomials, followed by exact group folding",
+        "modulus": 998244353,
+        "NTT_length": 8192,
+        "absolute_integer_coefficient_bound": 15128,
+        "bound_strictly_below_modulus": true,
+        "all_polynomials_self_conjugate": true,
+        "integer_exactness": "target residual coefficients have magnitude at most8w<modulus; zero residues therefore prove zero integers"
+      },
+      "construction_reference_url": "https://doi.org/10.1017/S1446788700020255",
+      "construction_reference_location": "Theorem4, printedp254; all four recurrence lines checked against the PDF image"
+    },
+    "arithmetic_checks": {
+      "N_minus1_factorization": [
+        [
+          3,
+          1
+        ],
+        [
+          1590961,
+          1
+        ]
+      ],
+      "N_over2_minus1_factorization": [
+        [
+          443,
+          1
+        ],
+        [
+          5387,
+          1
+        ]
+      ],
+      "N_over4_minus2_factorization": [
+        [
+          19,
+          1
+        ],
+        [
+          62801,
+          1
+        ]
+      ],
+      "all_divisor_product_checks_with_631_not_dividing_t": [
+        {
+          "t": 1,
+          "s": 1193221,
+          "Turyn_WT_q": 2386441,
+          "Turyn_WT_q_factorization": [
+            [
+              443,
+              1
+            ],
+            [
+              5387,
+              1
+            ]
+          ],
+          "Paley16_q": 4772883,
+          "Paley16_q_factorization": [
+            [
+              3,
+              1
+            ],
+            [
+              1590961,
+              1
+            ]
+          ]
+        },
+        {
+          "t": 31,
+          "s": 38491,
+          "Turyn_WT_q": 76981,
+          "Turyn_WT_q_factorization": [
+            [
+              23,
+              1
+            ],
+            [
+              3347,
+              1
+            ]
+          ],
+          "Paley16_q": 153963,
+          "Paley16_q_factorization": [
+            [
+              3,
+              2
+            ],
+            [
+              17107,
+              1
+            ]
+          ]
+        },
+        {
+          "t": 61,
+          "s": 19561,
+          "Turyn_WT_q": 39121,
+          "Turyn_WT_q_factorization": [
+            [
+              19,
+              1
+            ],
+            [
+              29,
+              1
+            ],
+            [
+              71,
+              1
+            ]
+          ],
+          "Paley16_q": 78243,
+          "Paley16_q_factorization": [
+            [
+              3,
+              1
+            ],
+            [
+              11,
+              1
+            ],
+            [
+              2371,
+              1
+            ]
+          ]
+        },
+        {
+          "t": 1891,
+          "s": 631,
+          "Turyn_WT_q": 1261,
+          "Turyn_WT_q_factorization": [
+            [
+              13,
+              1
+            ],
+            [
+              97,
+              1
+            ]
+          ],
+          "Paley16_q": 2523,
+          "Paley16_q_factorization": [
+            [
+              3,
+              1
+            ],
+            [
+              29,
+              2
+            ]
+          ]
+        }
+      ],
+      "prime_power_product_gate_survivors": []
+    }
+  },
+  "family:101:1": {
+    "p": 631,
+    "q": 101,
+    "r": 1,
+    "williamson_source_order": 5151,
+    "order": 13001124,
+    "status": "new_to_best_of_authors_knowledge",
+    "prior_construction": null,
+    "checked_utc": "2026-11-24 21:31:41 UTC",
+    "source_proof_reference": {
+      "path": "certificates/scalar-lift/williamson-spence-family.json",
+      "member_array": "first_expanded_members",
+      "member_selector": {
+        "q": 101,
+        "r": 1
+      },
+      "literal_first_rows_int8_row_major_sha256": "678dc101901c2c5046b727627313a3de6b08802100c2d5f8544ab0c734756e21",
+      "complete_exact_source_norm_checks": {
+        "all_group_coefficients_per_identity_checked": 5151,
+        "complete_identities_checked": [
+          "sum_j A_j^2=4wI",
+          "(D-E)^2+(F-G)^2=4q^rI",
+          "(D+E)^2+(F+G)^2=4q^(r+1)I"
+        ],
+        "method": "integer NTT of Kronecker-encoded multivariate polynomials, followed by exact group folding",
+        "modulus": 998244353,
+        "NTT_length": 32768,
+        "absolute_integer_coefficient_bound": 41208,
+        "bound_strictly_below_modulus": true,
+        "all_polynomials_self_conjugate": true,
+        "integer_exactness": "target residual coefficients have magnitude at most8w<modulus; zero residues therefore prove zero integers"
+      },
+      "construction_reference_url": "https://doi.org/10.1017/S1446788700020255",
+      "construction_reference_location": "Theorem4, printedp254; all four recurrence lines checked against the PDF image"
+    },
+    "arithmetic_checks": {
+      "N_minus1_factorization": [
+        [
+          173,
+          1
+        ],
+        [
+          223,
+          1
+        ],
+        [
+          337,
+          1
+        ]
+      ],
+      "N_over2_minus1_factorization": [
+        [
+          59,
+          1
+        ],
+        [
+          239,
+          1
+        ],
+        [
+          461,
+          1
+        ]
+      ],
+      "N_over4_minus2_factorization": [
+        [
+          257,
+          1
+        ],
+        [
+          12647,
+          1
+        ]
+      ],
+      "all_divisor_product_checks_with_631_not_dividing_t": [
+        {
+          "t": 1,
+          "s": 3250281,
+          "Turyn_WT_q": 6500561,
+          "Turyn_WT_q_factorization": [
+            [
+              59,
+              1
+            ],
+            [
+              239,
+              1
+            ],
+            [
+              461,
+              1
+            ]
+          ],
+          "Paley16_q": 13001123,
+          "Paley16_q_factorization": [
+            [
+              173,
+              1
+            ],
+            [
+              223,
+              1
+            ],
+            [
+              337,
+              1
+            ]
+          ]
+        },
+        {
+          "t": 3,
+          "s": 1083427,
+          "Turyn_WT_q": 2166853,
+          "Turyn_WT_q_factorization": [
+            [
+              13,
+              1
+            ],
+            [
+              23,
+              1
+            ],
+            [
+              7247,
+              1
+            ]
+          ],
+          "Paley16_q": 4333707,
+          "Paley16_q_factorization": [
+            [
+              3,
+              2
+            ],
+            [
+              7,
+              2
+            ],
+            [
+              31,
+              1
+            ],
+            [
+              317,
+              1
+            ]
+          ]
+        },
+        {
+          "t": 17,
+          "s": 191193,
+          "Turyn_WT_q": 382385,
+          "Turyn_WT_q_factorization": [
+            [
+              5,
+              1
+            ],
+            [
+              31,
+              1
+            ],
+            [
+              2467,
+              1
+            ]
+          ],
+          "Paley16_q": 764771,
+          "Paley16_q_factorization": [
+            [
+              7,
+              1
+            ],
+            [
+              109253,
+              1
+            ]
+          ]
+        },
+        {
+          "t": 51,
+          "s": 63731,
+          "Turyn_WT_q": 127461,
+          "Turyn_WT_q_factorization": [
+            [
+              3,
+              1
+            ],
+            [
+              42487,
+              1
+            ]
+          ],
+          "Paley16_q": 254923,
+          "Paley16_q_factorization": [
+            [
+              19,
+              1
+            ],
+            [
+              13417,
+              1
+            ]
+          ]
+        },
+        {
+          "t": 101,
+          "s": 32181,
+          "Turyn_WT_q": 64361,
+          "Turyn_WT_q_factorization": [
+            [
+              11,
+              1
+            ],
+            [
+              5851,
+              1
+            ]
+          ],
+          "Paley16_q": 128723,
+          "Paley16_q_factorization": [
+            [
+              7,
+              2
+            ],
+            [
+              37,
+              1
+            ],
+            [
+              71,
+              1
+            ]
+          ]
+        },
+        {
+          "t": 303,
+          "s": 10727,
+          "Turyn_WT_q": 21453,
+          "Turyn_WT_q_factorization": [
+            [
+              3,
+              1
+            ],
+            [
+              7151,
+              1
+            ]
+          ],
+          "Paley16_q": 42907,
+          "Paley16_q_factorization": [
+            [
+              107,
+              1
+            ],
+            [
+              401,
+              1
+            ]
+          ]
+        },
+        {
+          "t": 1717,
+          "s": 1893,
+          "Turyn_WT_q": 3785,
+          "Turyn_WT_q_factorization": [
+            [
+              5,
+              1
+            ],
+            [
+              757,
+              1
+            ]
+          ],
+          "Paley16_q": 7571,
+          "Paley16_q_factorization": [
+            [
+              67,
+              1
+            ],
+            [
+              113,
+              1
+            ]
+          ]
+        },
+        {
+          "t": 5151,
+          "s": 631,
+          "Turyn_WT_q": 1261,
+          "Turyn_WT_q_factorization": [
+            [
+              13,
+              1
+            ],
+            [
+              97,
+              1
+            ]
+          ],
+          "Paley16_q": 2523,
+          "Paley16_q_factorization": [
+            [
+              3,
+              1
+            ],
+            [
+              29,
+              2
+            ]
+          ]
+        }
+      ],
+      "prime_power_product_gate_survivors": []
+    }
+  },
+  "family:121:1": {
+    "p": 631,
+    "q": 121,
+    "r": 1,
+    "williamson_source_order": 7381,
+    "order": 18629644,
+    "status": "known",
+    "prior_construction": {
+      "family": "Paley II",
+      "reference_url": "https://doi.org/10.1002/sapm1933121311",
+      "supporting_reference_url": "https://arxiv.org/html/2610.27175v2#S2.Thm2",
+      "parameters": {
+        "q": 9314821,
+        "q_is_prime": true,
+        "q_mod4": 1,
+        "output_order": 18629644
+      }
+    },
+    "checked_utc": "2026-11-24 21:31:41 UTC",
+    "source_proof_reference": {
+      "path": "certificates/scalar-lift/williamson-spence-family.json",
+      "member_array": "first_expanded_members",
+      "member_selector": {
+        "q": 121,
+        "r": 1
+      },
+      "literal_first_rows_int8_row_major_sha256": "a275751048a86786e89ce0d71c664c9b713eeb632b48e97b2137a92cc012ea3d",
+      "complete_exact_source_norm_checks": {
+        "all_group_coefficients_per_identity_checked": 7381,
+        "complete_identities_checked": [
+          "sum_j A_j^2=4wI",
+          "(D-E)^2+(F-G)^2=4q^rI",
+          "(D+E)^2+(F+G)^2=4q^(r+1)I"
+        ],
+        "method": "integer NTT of Kronecker-encoded multivariate polynomials, followed by exact group folding",
+        "modulus": 998244353,
+        "NTT_length": 65536,
+        "absolute_integer_coefficient_bound": 59048,
+        "bound_strictly_below_modulus": true,
+        "all_polynomials_self_conjugate": true,
+        "integer_exactness": "target residual coefficients have magnitude at most8w<modulus; zero residues therefore prove zero integers"
+      },
+      "construction_reference_url": "https://doi.org/10.1017/S1446788700020255",
+      "construction_reference_location": "Theorem4, printedp254; all four recurrence lines checked against the PDF image"
+    },
+    "arithmetic_checks": {
+      "N_minus1_factorization": [
+        [
+          3,
+          1
+        ],
+        [
+          223,
+          1
+        ],
+        [
+          27847,
+          1
+        ]
+      ],
+      "N_over2_minus1_factorization": [
+        [
+          9314821,
+          1
+        ]
+      ],
+      "N_over4_minus2_factorization": [
+        [
+          31,
+          1
+        ],
+        [
+          150239,
+          1
+        ]
+      ],
+      "all_divisor_product_checks_with_631_not_dividing_t": [
+        {
+          "t": 1,
+          "s": 4657411,
+          "Turyn_WT_q": 9314821,
+          "Turyn_WT_q_factorization": [
+            [
+              9314821,
+              1
+            ]
+          ],
+          "Paley16_q": 18629643,
+          "Paley16_q_factorization": [
+            [
+              3,
+              1
+            ],
+            [
+              223,
+              1
+            ],
+            [
+              27847,
+              1
+            ]
+          ]
+        },
+        {
+          "t": 11,
+          "s": 423401,
+          "Turyn_WT_q": 846801,
+          "Turyn_WT_q_factorization": [
+            [
+              3,
+              3
+            ],
+            [
+              79,
+              1
+            ],
+            [
+              397,
+              1
+            ]
+          ],
+          "Paley16_q": 1693603,
+          "Paley16_q_factorization": [
+            [
+              19,
+              1
+            ],
+            [
+              89137,
+              1
+            ]
+          ]
+        },
+        {
+          "t": 61,
+          "s": 76351,
+          "Turyn_WT_q": 152701,
+          "Turyn_WT_q_factorization": [
+            [
+              311,
+              1
+            ],
+            [
+              491,
+              1
+            ]
+          ],
+          "Paley16_q": 305403,
+          "Paley16_q_factorization": [
+            [
+              3,
+              1
+            ],
+            [
+              7,
+              1
+            ],
+            [
+              14543,
+              1
+            ]
+          ]
+        },
+        {
+          "t": 121,
+          "s": 38491,
+          "Turyn_WT_q": 76981,
+          "Turyn_WT_q_factorization": [
+            [
+              23,
+              1
+            ],
+            [
+              3347,
+              1
+            ]
+          ],
+          "Paley16_q": 153963,
+          "Paley16_q_factorization": [
+            [
+              3,
+              2
+            ],
+            [
+              17107,
+              1
+            ]
+          ]
+        },
+        {
+          "t": 671,
+          "s": 6941,
+          "Turyn_WT_q": 13881,
+          "Turyn_WT_q_factorization": [
+            [
+              3,
+              1
+            ],
+            [
+              7,
+              1
+            ],
+            [
+              661,
+              1
+            ]
+          ],
+          "Paley16_q": 27763,
+          "Paley16_q_factorization": [
+            [
+              27763,
+              1
+            ]
+          ]
+        },
+        {
+          "t": 7381,
+          "s": 631,
+          "Turyn_WT_q": 1261,
+          "Turyn_WT_q_factorization": [
+            [
+              13,
+              1
+            ],
+            [
+              97,
+              1
+            ]
+          ],
+          "Paley16_q": 2523,
+          "Paley16_q_factorization": [
+            [
+              3,
+              1
+            ],
+            [
+              29,
+              2
+            ]
+          ]
+        }
+      ],
+      "prime_power_product_gate_survivors": [
+        {
+          "family": "Turyn_WT_q",
+          "t": 1,
+          "s": 4657411,
+          "q": 9314821
+        },
+        {
+          "family": "Paley16_q",
+          "t": 671,
+          "s": 6941,
+          "q": 27763
+        }
+      ]
+    }
+  }
+}
