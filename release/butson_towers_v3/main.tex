@@ -107,12 +107,14 @@ The four integer-valued coordinate functions of $b$ are denoted
 $b_0,b_1,b_2,b_3$: explicitly, $b(x)=\sum_{j=0}^3b_j(x)e_j$.
 
 For $p=631$ put $\mu=458$ and $m=21$; for $p=127$ put $\mu=22$ and
-$m=9$. The following modular equalities show that $\mu$ has order $m$:
+$m=9$. To verify the order, we compute $\mu^m$ and $\mu^{m/\ell}$
+for each prime divisor $\ell$ of $m$. The powers in the table are reduced
+modulo $p$; a dash marks $\ell\nmid m$.
 \[
-\begin{array}{c|ccc}
-p&\mu^m&\mu^{m/3}&\mu^{m/7}\,\ (7\mid m)\\\hline
-631&1&587&269\\
-127&1&107&\text{not applicable}
+\begin{array}{c|c|ccc}
+p&m&\mu^m&\mu^{m/3}&\mu^{m/7}\\\hline
+631&21&1&587&269\\
+127&9&1&107&\text{---}
 \end{array}
 \]
 Indeed, a proper divisor of $21$ divides $7$ or $3$, and a proper divisor

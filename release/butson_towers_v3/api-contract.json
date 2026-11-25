@@ -3,7 +3,7 @@
   "schema_url": "https://hexagonmath.org/api/v1/openapi.json",
   "schema_version": "1.13.0-beta",
   "schema_sha256": "4cc8635cc8d6c440b52009d41c8fa285f647297d54e1b74bcc7ed69f9d258df8",
-  "checked_utc": "2026-11-24T18:52:03.399385+00:00",
+  "checked_utc": "2026-11-25T14:27:15.739651+00:00",
   "metadata_schema": "SubmissionMetadata",
   "metadata_required_fields": [
     "title",
@@ -51,5 +51,8 @@
   "upload_kind": "source-archive",
   "source_archive_maximum_bytes": 104857600,
   "individual_text_maximum_bytes": 4194304,
-  "authenticated_requests_performed": false
+  "authenticated_requests_performed": true,
+  "live_validation_notes": [
+    "The API rejects legacy authors[].contributorKind=person and authors[].organizationId=null; the prepared request omits those redundant fields without changing the saved administrative choices."
+  ]
 }

@@ -1,11 +1,12 @@
 {
-  "ready_to_create_private_draft": true,
-  "ready_for_submission": true,
+  "ready_to_create_private_draft": false,
+  "ready_for_submission": false,
   "missing_metadata_fields": [],
   "invalid_metadata_fields": [],
   "paper_pages": 22,
   "local_typesetting_passed": true,
   "credential_excluded_from_archive": true,
-  "remote_draft_created": false,
-  "api_commit_performed": false
+  "remote_draft_created": true,
+  "api_commit_performed": true,
+  "matching_remote_submission_status": "under_review"
 }

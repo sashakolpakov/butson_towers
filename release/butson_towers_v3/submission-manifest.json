@@ -4,12 +4,12 @@
   "release": "butson_towers_v3",
   "supersedes_local_release": "butson_towers_v2",
   "source_archive": "source.zip",
-  "source_archive_sha256": "e7d3c86fd2b4752cfb328a5eff6d4728bacb552900d31d2e2c18e13fe3919138",
+  "source_archive_sha256": "588ed6614f0ea7f89d80c4d573e7e38ea6dd7a23d0996ee03eadfd5080bd73cb",
   "source_archive_members": [
     {
       "path": "main.tex",
-      "bytes": 78484,
-      "sha256": "9ca3db33c2adb560bee64d8c75209205b3edc73aa09cba71d100058e94cd6e74"
+      "bytes": 78578,
+      "sha256": "5545cd98820a75371a8885f8076cfaa635d25d8eb11c725cc611810543668199"
     },
     {
       "path": "anc/recipe.py",
@@ -177,14 +177,14 @@
     "filename": "source.zip",
     "relativePath": "source.zip",
     "contentType": "application/zip",
-    "sizeBytes": 140354
+    "sizeBytes": 140395
   },
   "entry_point_after_expansion": "main.tex",
   "reference_pdf": "announcement.pdf",
-  "reference_pdf_sha256": "ab2c6d72fdaa36a6fb1e7bec76d68e04f98489383a563562d1dc31659c4256d6",
+  "reference_pdf_sha256": "24255b88f812d642d4fdc362f77ebb2108433ea25228159f329a7b5251361ee7",
   "pages": 22,
   "metadata_file": "metadata.template.json",
-  "metadata_sha256": "744b38b9b4bed3327b73bc8876597e284f01d9fc923eaf880907159bea4f956d",
+  "metadata_sha256": "dea6ecf4f9e138a6ae3cb09536c9537c63dd2acbba6f895ec9383dea6c9e5ef1",
   "api_contract": "api-contract.json",
   "api_schema_sha256": "4cc8635cc8d6c440b52009d41c8fa285f647297d54e1b74bcc7ed69f9d258df8",
   "api_schema_version": "1.13.0-beta",

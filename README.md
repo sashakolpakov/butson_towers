@@ -1,113 +1,159 @@
 # Butson Towers
 
-Exact scalar restrictions of verified Butson-related designs, with transported
-trace metrics and certified flat endpoints.
+**Eighteen new Hadamard orders, six new infinite families, and reproducible
+Lean proofs.** This repository accompanies Alexander Kolpakov's manuscript
+*Butson towers and high-rank Hadamard matrices*.
 
-Start with a complete source and its exact Gram identity. Restrict scalars
-through number fields or products of number fields, carrying conjugation,
-the metric, the actual entry alphabet and the Gram scale. Intermediate
-matrices may be weighted and nonflat. A final compatible frame and entry
-test certify a real Hadamard or lower-field Butson endpoint.
+[Read the paper (PDF)](release/butson_towers_v3/announcement.pdf) ·
+[LaTeX source](manuscript/hadamard_7572_announcement.tex) ·
+[Source and reconstruction package](release/butson_towers_v3/source.zip) ·
+[Lean proofs](formal/ButsonTowers/Endpoints.lean)
 
-Read the [foundations and attribution](docs/FOUNDATIONS.md),
-[scalar-reduction identities](docs/SCALAR_REDUCTION.md), and
-[active engine guide](experiments/scalar_lift/README.md).
+The paper was submitted to HexagonMath on **25 November 2026** and is
+**under review**. The [submission record](release/butson_towers_v3/submission-status.json)
+binds the submitted package to its file hashes.
 
-## Completed results
+## Results
 
-The main construction campaign has **38 distinct completed real Hadamard
-orders: 18 new to the best of the author's knowledge and 20 known recovered
-orders**, following the [dated literature ledger](docs/HADAMARD_HIGHER_ORDER_RECORDS.md).
-The new orders are
+A real Hadamard matrix of order $n$ has entries in $\{1,-1\}$ and satisfies
+$HH^{\mathsf T}=nI_n$. It has rank $n$.
+The eighteen new orders are
 
 **7572, 17668, 22716, 32812, 42908, 58052, 73196, 78244, 93388, 98436,
-108532, 128724, 153964, 229684, 295308, 386172, 4772884 and 13001124.**
+108532, 128724, 153964, 229684, 295308, 386172, 4772884, 13001124.**
 
-The complete [H7572 construction](docs/HADAMARD_7572.md) supplies periodic
-T-matrices of order 631, a compatible rational sixth-root action and a sign
-frame of width 2524. Further complete sources give
-[frame-reuse endpoints](docs/SCALAR_REDUCTION_REPEAT_TARGETS.md),
-[unreal-source tripling endpoints](docs/TRIPLED_UNREAL_SCALAR_ENDPOINTS.md), and
-[Williamson scalar endpoints](docs/WILLIAMSON_ORDER_RECORDS.md).
-Large outputs have literal entry recipes and complete algebraic Gram proofs;
-they do not require large dense matrix files.
+Here and in the paper, “new” means new to the best of the author's knowledge;
+prior constructions located are recorded in the [dated literature ledger](docs/HADAMARD_HIGHER_ORDER_RECORDS.md).
 
-The **six new infinite families** comprise the
-[five Spence-source families](docs/SPENCE_SCALAR_FAMILIES.md) and the
-[unreal-source tripling family](docs/TRIPLED_UNREAL_SCALAR_ENDPOINTS.md).
-Their classical source recurrences combine with the new T631 design to
-give literal Hadamard matrices for every integer `r>=0`:
+The six families give a matrix for **every integer $r\geq0$**:
 
-| Source recurrence | Real Hadamard rank |
+| Hadamard order | Source recurrence |
 |---|---|
-| Spence, q=13 | `17668*13^r` |
-| Spence, q=17 | `22716*17^r` |
-| Unreal-source tripling | `32812*3^r` |
-| Spence, q=61 | `78244*61^r` |
-| Spence, q=101 | `128724*101^r` |
-| Spence, q=121 | `153964*121^r` |
+| $17668\cdot13^r$ | Spence, $q=13$ |
+| $22716\cdot17^r$ | Spence, $q=17$ |
+| $32812\cdot3^r$ | Sixth-root source tripling |
+| $78244\cdot61^r$ | Spence, $q=61$ |
+| $128724\cdot101^r$ | Spence, $q=101$ |
+| $153964\cdot121^r$ | Spence, $q=121$ |
 
-Each output family contains a new base rank. Individually known members,
-including 885924 and 18629644, are identified in the ledger.
+Each family has a new initial order. Individual known members, including
+885924 and 18629644, are identified in the ledger. The construction campaign
+also recovers **20 known orders**, for **38 distinct completed orders** in total.
+There is a separate new [periodic T-matrix construction of order 127](artifacts/t-matrices-127/README.md).
 
-There is also a separate new [periodic T127 ingredient](artifacts/t-matrices-127/README.md).
-Its real endpoint H1524 is a known-order control. The
-[search analysis](docs/HADAMARD_FRAME_SEARCH.md) explains the finite-field
-parity coordinates and exact modular sign lifts. These are existence
-results, with their scope recorded in [the results index](docs/RESULTS_SCOPE.md).
+## Construction
 
-## Foundations
+The main finite input is an explicitly specified function on
+$\mathbb Z/631\mathbb Z$ taking values in the eight signed standard basis
+vectors of $\mathbb Z^4$. Its four coordinates have disjoint supports and
+an exact summed periodic correlation identity. These data produce four
+matrices with entries $0,1,-1$. At each position, exactly one of the four
+matrices has a nonzero entry. Their proved Gram identities allow substitution
+of the verified source matrices, including those generated by the recurrences,
+to obtain the eighteen orders and six families.
 
-The immediate starting reference for this project was Egan–Ó Catháin,
-[*On complete morphisms of Butson Hadamard matrices*](https://arxiv.org/abs/2610.28394),
-20 October 2026. The older foundations include their
-[*Morphisms of Butson classes*](https://arxiv.org/abs/1707.08815), 27 July 2017,
-and Ó Catháin–Swartz,
-[*Homomorphisms of matrix algebras and constructions of Butson-Hadamard matrices*](https://arxiv.org/abs/1904.10771),
-24 April 2019. The [foundations note](docs/FOUNDATIONS.md) distinguishes
-these contributions from the present constructions.
+The same input supplies a rational action of the sixth roots used in a
+Butson source. Restricting scalars preserves orthogonality with its trace
+metric. The final sign entries and the equality between Gram scale and
+expanded order are proved separately. Intermediate matrices may have
+unequal entry magnitudes.
 
-“Butson Towers” is this project's descriptive name. Intermediate stages
-need not have Butson entries, and a tower may include a product of
-cyclotomic fields with its exact reconstruction map.
+“Butson towers” is our name for chains of these scalar restrictions.
+Five output families use Spence's classical source recurrence; the sixth
+uses classical sixth-root source tripling. The
+[foundations note](docs/FOUNDATIONS.md) gives the earlier scalar-morphism
+references and attribution. The immediate starting reference was
+[Egan–Ó Catháin, *On complete morphisms of Butson Hadamard matrices*](https://doi.org/10.1002/jcd.70047).
 
-## Verification and formalization
+Every finite input and recurrence needed for the results is printed in the
+**22-page paper**. Large matrices have exact entry recipes and algebraic
+proofs, so verification does not require storing their dense expansions.
 
-The completed constructions have executable exact proofs, source hashes,
-literal matrix recipes and certificates. The [active engine guide](experiments/scalar_lift/README.md)
-gives the replay commands. Run the repository suite with
+## Reproduce the calculations
+
+For the repository tools, use **Python 3.11 or later**:
 
 ```sh
+git clone https://github.com/sashakolpakov/butson_towers.git
+cd butson_towers
+python3 -m venv .venv
+. .venv/bin/activate
+python -m pip install -e .
+python scripts/verify_manuscript_data.py
+python scripts/check_lean_literal_data.py
+```
+
+The first check uses only Python's standard library and verifies the literal
+finite inputs in the manuscript. The second compares the public construction
+data with the Lean literals. To replay the complete submitted source archive
+in a fresh temporary directory:
+
+```sh
+python release/butson_towers_v3/verify.py
+```
+
+This reconstructs the order 7572 matrix, checks all **28,663,806** distinct
+row pairs, and replays the finite sources, recurrences and trace audit.
+The archive also works independently of this repository; its
+[README](release/butson_towers_v3/README.md) lists the standalone commands.
+
+To run the full repository test suite, install the additional test and
+search dependencies:
+
+```sh
+python -m pip install -e '.[dev,native,search]'
 ./scripts/run_tests.sh
 ```
 
-The [Lean project](docs/FORMALIZATION.md) proves the **eighteen announced
-ranks and all six infinite families**, from literal finite witnesses.
-It verifies T127/T631 correlations in the kernel, the regular scalar
-action, orthogonal-design substitution, the actual Spence recurrence,
-and the order-13 cubic recurrence. Build and audit all final statements
-with `./scripts/check_formal.sh`.
-A separate [Lean reproducibility package](release/lean_verification/README.md)
-contains the locked sources, checksum verifier and successful extracted replay.
+The [recorded audit](release/butson_towers_v3/audit.json) reports 326 passing
+tests and 4 passing subtests.
 
-## Manuscript and HexagonMath tooling
+## Verify the Lean proofs
 
-The current manuscript is **Butson towers and high-rank Hadamard matrices**.
-The [detailed PDF and source package](release/butson_towers_v3/README.md)
-include the eighteen new ranks, all six families and the completed Lean
-verification. The [manuscript-to-Lean audit](docs/MANUSCRIPT_LEAN_AUDIT.md)
-records the checked proof correspondence. The [original announcement](release/hadamard_7572_announcement/README.md)
-is retained as a frozen earlier revision. The mathematical source is
-[manuscript/hadamard_7572_announcement.tex](manuscript/hadamard_7572_announcement.tex).
-Local administrative
-defaults live in `hexagon_parameters.local`; credentials live separately
-in `hexagon_key.local`. Both files remain private, outside Git and release
-archives. Local preparation and saved defaults do not authorize a remote
-draft, submission or publication.
+The formal development proves **all eighteen existence statements and all
+six families for every nonnegative parameter**, from literal finite witnesses.
+It checks signs, correlations, source norms, the matrix constructions and
+all recurrence steps. The
+[paper-to-Lean audit](docs/MANUSCRIPT_LEAN_AUDIT.md) follows the actual proof
+chain and records its conventions and scope.
 
-Audit the Git index, reachable history and release ZIPs without printing
-private values:
+With elan/Lake installed, run:
 
 ```sh
-.venv/bin/python scripts/check_private_files.py --root .
+./scripts/check_formal.sh
 ```
+
+The project pins **Lean 4.32.0** and mathlib revision
+`81a5d257c8e410db227a6665ed08f64fea08e997`. The axiom audit checks 85
+selected statements from the original development and 10 additional
+sixth-root matrix identities. Only Lean's standard `propext`,
+`Classical.choice` and `Quot.sound` occur.
+
+Two source-only packages provide isolated reproduction instructions and
+fresh extracted verification records:
+
+- [Complete existence development](release/lean_verification/README.md).
+- [Ten sixth-root matrix identities](release/lean_sixth_root_pair/README.md).
+
+The [formalization guide](docs/FORMALIZATION.md) gives the named theorems,
+dependency setup and exact scope.
+
+## Find your way around
+
+| Location | Contents |
+|---|---|
+| [`manuscript/`](manuscript/) | Mathematical source of the paper |
+| [`formal/ButsonTowers/`](formal/ButsonTowers/) | Lean constructions, finite witnesses and endpoint theorems |
+| [`artifacts/hadamard-7572/`](artifacts/hadamard-7572/) | Original order 7572 matrix, recipe and independent audits |
+| [`release/butson_towers_v3/`](release/butson_towers_v3/) | Submitted PDF, source package and verification records |
+| [`docs/`](docs/) | Construction proofs, literature checks and research notes |
+| [`experiments/scalar_lift/`](experiments/scalar_lift/) | Active construction and search implementations |
+
+Earlier article releases, matrix bundles and the original Lean archive are
+preserved. Credentials and saved submission parameters stay in ignored
+`.local` files and are excluded from public source packages.
+
+## Licenses
+
+The [code license](LICENSE) is MIT. The HexagonMath manuscript submission
+uses **CC BY-SA 4.0**, as recorded in its public metadata.

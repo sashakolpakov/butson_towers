@@ -1,5 +1,9 @@
 # Butson towers and high-rank Hadamard matrices
 
+Submitted to HexagonMath on 25 November 2026; currently under review.
+The [submission record](submission-status.json) retains the exact package hashes;
+the private receipt remains in the ignored local directory.
+
 [Read the detailed manuscript](announcement.pdf) or download the
 [TeX source and exact reconstruction recipes](source.zip).
 The [canonical manuscript](../../manuscript/hadamard_7572_announcement.tex)
@@ -72,7 +76,7 @@ submission or publication.
 
 The [paper-to-Lean audit](../../docs/MANUSCRIPT_LEAN_AUDIT.md) checks the
 actual proof chain in manuscript order. A fresh baseline kernel replay
-checked85 selected statements; a separate
+checked 85 selected statements; a separate
 [sixth-root matrix supplement](../lean_sixth_root_pair/README.md) checks
 ten added identities. The general finite-field character proof and the
 particular cyclotomic/Hermitian realization have the explicit scope

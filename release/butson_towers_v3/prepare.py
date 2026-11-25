@@ -58,12 +58,28 @@ def write_json(path, value):
     path.write_text(json.dumps(value, indent=2, ensure_ascii=False) + "\n")
 
 
+def api_compatible_metadata(metadata):
+    """Drop obsolete person/null author tags rejected by the live API."""
+    result = dict(metadata)
+    authors = []
+    for original in result.get("authors", []):
+        author = dict(original)
+        if "contributorKind" in author or "organizationId" in author:
+            if author.get("contributorKind") not in (None, "person") or author.get("organizationId") is not None:
+                raise ValueError("Unsupported legacy non-person author metadata")
+            author.pop("contributorKind", None)
+            author.pop("organizationId", None)
+        authors.append(author)
+    result["authors"] = authors
+    return result
+
+
 def apply_administrative_defaults(metadata, path=None):
     """Apply only fixed public request fields from the private local file."""
     path = ROOT / "hexagon_parameters.local" if path is None else Path(path)
     result = dict(metadata)
     if not path.exists():
-        return result
+        return api_compatible_metadata(result)
     if path.stat().st_mode & 0o777 != 0o600:
         raise ValueError("The private Hexagon parameter file must have mode 0600")
     record = json.loads(path.read_text())
@@ -79,7 +95,7 @@ def apply_administrative_defaults(metadata, path=None):
         result["provenance"] = paper_provenance
     elif paper_provenance:
         result["provenance"] = fixed_provenance + "\n\n" + paper_provenance
-    return result
+    return api_compatible_metadata(result)
 
 
 def main():
@@ -266,13 +282,20 @@ def main():
         "formal_proof_packet": proof_sources,
         "credential_included": False, "copyrighted_primary_source_copies_included": False,
     })
+    submitted_path = HERE / "submission-status.json"
+    submitted = json.loads(submitted_path.read_text()) if submitted_path.exists() else {}
+    current_submitted = (
+        submitted.get("source_archive_sha256") == digest(archive.read_bytes())
+        and submitted.get("prepared_metadata_sha256") == digest(metadata_path.read_bytes())
+    )
     write_json(HERE / "readiness.json", {
-        "ready_to_create_private_draft": ready,
-        "ready_for_submission": ready and metadata.get("rightsConfirmed") is True,
+        "ready_to_create_private_draft": ready and not current_submitted,
+        "ready_for_submission": ready and metadata.get("rightsConfirmed") is True and not current_submitted,
         "missing_metadata_fields": missing, "invalid_metadata_fields": invalid,
         "paper_pages": build["pages"], "local_typesetting_passed": True,
-        "credential_excluded_from_archive": True, "remote_draft_created": False,
-        "api_commit_performed": False,
+        "credential_excluded_from_archive": True, "remote_draft_created": current_submitted,
+        "api_commit_performed": current_submitted,
+        "matching_remote_submission_status": submitted.get("status") if current_submitted else None,
     })
     if ready:
         write_json(HERE / "draft-request.json", metadata)
@@ -286,7 +309,7 @@ def main():
     if not ready and (HERE / "draft-headers.json").exists():
         (HERE / "draft-headers.json").unlink()
     print(json.dumps({"archive": str(archive.relative_to(ROOT)), "members": len(files),
-                      "ready_to_create_private_draft": ready, "missing_metadata_fields": missing}))
+                      "ready_to_create_private_draft": ready and not current_submitted, "missing_metadata_fields": missing}))
 
 
 if __name__ == "__main__":

@@ -1,6 +1,6 @@
 {
   "schema": "butson-towers-announcement-extracted-replay-v3",
-  "source_zip_sha256": "e7d3c86fd2b4752cfb328a5eff6d4728bacb552900d31d2e2c18e13fe3919138",
+  "source_zip_sha256": "588ed6614f0ea7f89d80c4d573e7e38ea6dd7a23d0996ee03eadfd5080bd73cb",
   "source_and_metadata_synchronized": true,
   "all_archive_members_verified": true,
   "all_replays_used_only_extracted_archive_files": true,
@@ -73,5 +73,5 @@
   "fresh_baseline_kernel_theorems": 85,
   "additional_sixth_root_matrix_kernel_theorems": 10,
   "remote_requests_performed": false,
-  "elapsed_seconds": 15.71
+  "elapsed_seconds": 14.4
 }
