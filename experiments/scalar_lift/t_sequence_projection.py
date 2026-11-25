@@ -172,7 +172,9 @@ def search(data,heads,head_net,tail_net,assignment,seconds,seed,beta,output,rest
         b=base.expand(initial,data)
         if not np.array_equal(b.sum(axis=1),engine.target):raise ValueError('initial sign counts differ')
     iterate=np.fft.fft(b,axis=1)
-    while time.monotonic()-start<seconds:
+    # Even a deadline shorter than initialization must produce one verified
+    # candidate, so the caller can retain a valid final checkpoint.
+    while best is None or time.monotonic()-start<seconds:
         first=engine.spectral(iterate) if orientation=='spectral-first' else None
         reflected=2*first-iterate if first is not None else iterate
         states,b=engine.discrete(np.fft.ifft(reflected,axis=1).real)

@@ -79,3 +79,13 @@ def test_DR_exact_integer_control_is_checked_at_every_shift(assignment,tmp_path,
     bad=verify(damaged,data,np.array([-2,3,3,3]))
     assert bad['best_energy']>0
     assert not bad['exact_T_design']
+
+
+def test_deadline_shorter_than_initialization_retains_exact_checkpoint(assignment,tmp_path):
+    data=frame.chart(31,3,5)
+    result=search(data,None,-1,3,assignment,1e-12,20261125,.5,
+                  tmp_path/'tiny-deadline.json')
+    assert result['all_expanded_shift_correlations_checked']
+    assert result['row_sums']==[-2,3,3,3]
+    assert result['best_energy']>=0
+    assert (tmp_path/'tiny-deadline.json').exists()
