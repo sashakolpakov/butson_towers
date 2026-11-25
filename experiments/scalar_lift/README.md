@@ -10,6 +10,7 @@ matrix recipe. General weighted nodes are useful outputs in their own right.
 | New real H7572: exact T631, scalar frame, saved matrix and full integer verification | [Standalone recipe and certificate](../../artifacts/hadamard-7572/README.md) |
 | New periodic T127, full T identities and known-order H1524 scalar control | [Standalone recipe and dated scope](../../artifacts/t-matrices-127/README.md) |
 | Active SL2 parity-axis generation, exact mod4/mod8 sign lifting, finite pool controls and completed endpoint verification | `hadamard_frame_search`; [method and replay](../../docs/HADAMARD_FRAME_SEARCH.md) |
+| Search for length-223 periodic T-matrices, targeting missing order 2676 first | `large_parity_map`, `quadratic_sign_lift`, `low_order_campaign`; [target, exact checks and replay](../../docs/LOW_ORDER_SEARCH.md) |
 | New real orders 17668/22716/32812 from the verified width-2524 frame and further admitted Butson sources | `reuse_hadamard_7572_frame` |
 | Apply all four admitted source orders to a newly completed prime frame | `reuse_hadamard_frame` |
 | New real orders 98436/295308 and known order 885924 from complete unreal-source triplings | `tripled_unreal_scalar_endpoints`; [proof and scope](../../docs/TRIPLED_UNREAL_SCALAR_ENDPOINTS.md) |
@@ -63,6 +64,6 @@ and root/sign entries have been proved. The
 [completed results and status convention](../../docs/HADAMARD_HIGHER_ORDER_RECORDS.md)
 record **38 completed real orders in the main campaign: 18 new and 20 known
 recovered orders**, plus the separate new periodic T127 ingredient. The
-five infinite constructions have individually audited finite members;
+six infinite constructions have individually audited finite members;
 their entire order sets are not labelled new. Earlier source inventories
 and reference chains retain their separate known-order control scope.

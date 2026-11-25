@@ -41,6 +41,10 @@ Each family has a new initial order. Individual known members, including
 also recovers **20 known orders**, for **38 distinct completed orders** in total.
 There is a separate new [periodic T-matrix construction of order 127](artifacts/t-matrices-127/README.md).
 
+Current [construction searches](docs/LOW_ORDER_SEARCH.md) target missing
+order **2676** first, through length-223 periodic T-matrices. Search candidates
+are kept separate from the completed results above.
+
 ## Construction
 
 The main finite input is an explicitly specified function on

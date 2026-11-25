@@ -1,0 +1,73 @@
+{
+  "schema": "bounded-t223-search-audit-v1",
+  "date": "2026-11-25",
+  "target_order": 2676,
+  "construction_stage": "incomplete_search",
+  "completed_new_order_claimed": false,
+  "parity_map": "t223-parity-map.json",
+  "parity_map_sha256": "c9b823c7a4c3f2b497f4767b902a2527e11caadbbfc1754ae55473fdbfac1004",
+  "batches": [
+    {
+      "seed": 20261125223,
+      "heads": [
+        5
+      ],
+      "wall_limit_seconds": 900.0,
+      "elapsed_seconds": 900.046683124965,
+      "completed_fixed_patterns": 360,
+      "affine_assignments_covered": 1547516772352,
+      "mod8_roots": 5,
+      "count_survivors": 2,
+      "sampled_patterns": 361,
+      "verified_solutions": 0,
+      "full_run_report_sha256": "964442819347c543be9c767d582b16de93239c56ad43692da3400770500af942"
+    },
+    {
+      "seed": 20261125224,
+      "heads": [
+        7
+      ],
+      "wall_limit_seconds": 900.0,
+      "elapsed_seconds": 900.0762665419606,
+      "completed_fixed_patterns": 282,
+      "affine_assignments_covered": 1818262241280,
+      "mod8_roots": 11,
+      "count_survivors": 1,
+      "sampled_patterns": 283,
+      "verified_solutions": 0,
+      "full_run_report_sha256": "abc417aab5e4dd6cc35ca820e6408f79d0d4f4acd6da0194bf1dd42b12a6da2e"
+    },
+    {
+      "seed": 20261125225,
+      "heads": [
+        9
+      ],
+      "wall_limit_seconds": 900.0,
+      "elapsed_seconds": 900.1964347920148,
+      "completed_fixed_patterns": 224,
+      "affine_assignments_covered": 1686812753920,
+      "mod8_roots": 18,
+      "count_survivors": 4,
+      "sampled_patterns": 225,
+      "verified_solutions": 0,
+      "full_run_report_sha256": "9204623835f93e8919a6ed4f5292086dea9d9a1a187e477d94eacee18a05355e"
+    }
+  ],
+  "totals": {
+    "completed_fixed_patterns": 866,
+    "affine_assignments_covered": 5052591767552,
+    "mod8_roots": 34,
+    "count_survivors": 7,
+    "verified_solutions": 0
+  },
+  "fixed_count_projection_trials": 32,
+  "free_count_local_seconds": 180,
+  "best_local_correlation_energy": 42,
+  "all_nonzero_candidates_remain_incomplete": true,
+  "tests": {
+    "passed": 359,
+    "subtests_passed": 4,
+    "duration_seconds": 143.96
+  },
+  "scope": "The sampled patterns and recorded gauges only. These runs establish neither nonexistence nor a new Hadamard matrix."
+}
