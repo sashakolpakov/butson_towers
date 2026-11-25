@@ -1,0 +1,12 @@
+{
+  "schema": "butson-towers-proof-source-pointer-v1",
+  "repository": "https://github.com/sashakolpakov/butson_towers",
+  "proof_commit": "686acf90ee40f037ff05d4b815550c4b59bd8b2b",
+  "source_package_url": "https://github.com/sashakolpakov/butson_towers/raw/686acf90ee40f037ff05d4b815550c4b59bd8b2b/release/lean_verification/butson-towers-lean-repro.zip",
+  "source_package_sha256": "b27770540ea701604c5246876df712c798545856751b4f4169446f10641f5ade",
+  "source_package_readme_url": "https://github.com/sashakolpakov/butson_towers/blob/686acf90ee40f037ff05d4b815550c4b59bd8b2b/release/lean_verification/README.md",
+  "included_kernel_verification": "lean-verification.json",
+  "scope": "All eighteen announced ranks and six all-iteration output families (five from Spence recurrence and one from unreal tripling) have Lean existence theorems from literal finite witnesses.",
+  "retrieval_required_for_Lean_replay": true,
+  "reason_separate": "The Hexagon source archive retains the Python/JSON ancillary format of the recorded API contract; the separately downloadable source-only Lean packet is pinned here by commit and SHA256."
+}

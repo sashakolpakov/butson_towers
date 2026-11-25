@@ -93,9 +93,10 @@ contains the locked sources, checksum verifier and successful extracted replay.
 ## Manuscript and HexagonMath tooling
 
 The current manuscript is **Butson towers and high-rank Hadamard matrices**.
-The [six-page PDF and source package](release/butson_towers_v2/README.md)
+The [detailed PDF and source package](release/butson_towers_v3/README.md)
 include the eighteen new ranks, all six families and the completed Lean
-verification. The [original announcement](release/hadamard_7572_announcement/README.md)
+verification. The [manuscript-to-Lean audit](docs/MANUSCRIPT_LEAN_AUDIT.md)
+records the checked proof correspondence. The [original announcement](release/hadamard_7572_announcement/README.md)
 is retained as a frozen earlier revision. The mathematical source is
 [manuscript/hadamard_7572_announcement.tex](manuscript/hadamard_7572_announcement.tex).
 Local administrative

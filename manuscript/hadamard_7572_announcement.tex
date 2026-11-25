@@ -1,5 +1,4 @@
-% Short announcement prepared for HexagonMath.
-% Submission declarations are recorded separately from the mathematical source.
+% Detailed mathematical revision; submission declarations are separate.
 \documentclass[10pt]{article}
 \usepackage[margin=0.9in]{geometry}
 \usepackage{amsmath,amssymb,amsthm}
@@ -8,10 +7,13 @@
 \hypersetup{pdftitle={Butson towers and high-rank Hadamard matrices},
   pdfauthor={Alexander Kolpakov}}
 \newtheorem{theorem}{Theorem}
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
 \newcommand{\F}{\mathbb F}
 \newcommand{\Q}{\mathbb Q}
 \newcommand{\Tr}{\operatorname{Tr}}
 \newcommand{\GS}{\operatorname{GS}}
+\newcommand{\Circ}{\operatorname{Circ}}
 \title{Butson towers and high-rank Hadamard matrices}
 \author{Alexander Kolpakov}
 \date{25 November 2026}
@@ -28,10 +30,15 @@ is $1$ or $-1$. Explicit recipes and reproducible formal proofs establish
 every listed rank and every member of the six families.
 \end{abstract}
 
-A real Hadamard matrix of order $n$ is a sign matrix $H$ satisfying
-$HH^{\mathsf T}=nI$. It has full rank, so its rank and order coincide.
-Throughout this paper, ``new'' means new to the best of the author's
-knowledge; individually known ranks are identified below.
+\section{Results and conventions}
+
+A \emph{sign matrix} is a real matrix with entries in $\{1,-1\}$.
+A real Hadamard matrix of order $n$ is an $n\times n$ sign matrix $H$
+satisfying $HH^{\mathsf T}=nI_n$, where $I_n$ is the identity matrix.
+This identity implies $H^{-1}=H^{\mathsf T}/n$, so the rank of $H$ is $n$.
+We use rank and order accordingly. Throughout the paper, ``new'' means
+new to the best of the author's knowledge. Known individual orders in the
+infinite families are identified in Section~\ref{sec:conclusion}.
 
 \begin{theorem}\label{thm:main}
 Real Hadamard matrices exist at each of the eighteen ranks listed in the
@@ -45,382 +52,1725 @@ abstract, and at every rank in the following six families:
 \]
 \end{theorem}
 
-\paragraph{Butson towers and the new ingredients.}
-We call a finite chain of scalar restrictions a \emph{Butson tower} when it
-starts from a complete Butson-related orthogonal source and carries its
-scalar action, conjugation and trace metric through each restriction.
-A single restriction is included in this terminology. Intermediate
-matrices may be weighted; the final root or sign alphabet is checked
-separately using a compatible frame. Products of number fields are allowed,
-with all factors and trace weights retained.
+Here are the conventions used in the proof. A bar denotes complex
+conjugation, and $A^*=\overline A^{\mathsf T}$ is the conjugate transpose
+of a matrix. A square complex matrix of order $n$ is \emph{flat} in this
+paper if every entry has absolute value $1$. A Butson matrix
+$\mathrm{BH}(n,k)$ is a flat matrix $B$ whose entries are $k$th roots of
+unity and for which $BB^*=nI_n$.
+For an arbitrary matrix satisfying $BB^*=wI_n$, we call $w$ its
+\emph{Gram scale}; the equality $w=n$ is a separate assertion.
+Matrices and vectors are indexed starting at $0$.
+The symbol $\delta_{x,y}$ is $1$ if $x=y$ and $0$ otherwise.
+For a prime $p$, $\F_p=\mathbb Z/p\mathbb Z$ is represented by
+$0,\ldots,p-1$, with arithmetic reduced modulo $p$.
 
-Our starting point was the recent work of Egan and
-\'{O}~Cath\'ain~\cite{complete-morphisms}; earlier scalar-morphism
-constructions include~\cite{morphisms,matrix-homomorphisms,unreal}.
-The new ingredients here are the complete periodic design of length $631$
-and its flat scalar frame, together with a periodic T-matrix witness of
-order $127$. The first gives all eighteen new ranks in
-Theorem~\ref{thm:main} and the six new output families. Five of these,
-called our \emph{Spence families}, use Spence's classical recurrence for
-their source matrices. The sixth uses the classical unreal-source
-tripling rule. The recurrence sources and the resulting families of real
-Hadamard matrices are distinguished throughout. The finite-field search
-uses the length-$631$ twisted chart recorded in~\cite{frontier}.
+We use \emph{Butson tower} as a descriptive name for a finite chain of
+restrictions of scalars applied to a matrix with a proved Gram identity,
+starting with a Butson matrix or one of the explicitly defined weighted
+sources below. At each step the scalar action, involution and trace form
+are retained. A single restriction is allowed. Flatness is required only
+of the final matrix, and is proved from its entries. This terminology
+does not assert priority for restriction of scalars or Butson morphisms.
+Our immediate starting reference was Egan and \'{O}~Cath\'ain's recent
+work~\cite{complete-morphisms}; see also the earlier
+constructions~\cite{morphisms,matrix-homomorphisms,unreal}.
 
-\paragraph{The finite witness.}
-Put $p=631$ and $\mu=458\in\mathbb Z_p^*$, of order $21$.
-Let $C$ fix channel $0$ and cyclically permute channels $1,2,3$.
-Enumerate the origin first, followed by the nonzero multiplication-by-$\mu$
-orbits, taking the least unused residue as the next representative.
-The states, in that order, are
-\begin{center}\small\ttfamily
-0 0 5 4 4 0 7 0 7 2 3 0 1 2 6 1\\
-4 2 0 1 1 4 3 4 7 3 3 5 6 2 7
-\end{center}
-A state $2j+\varepsilon$ at representative $r$ means
-$b(\mu^k r)=(-1)^\varepsilon C^k e_j$, where $e_j$ is the $j$th standard
-basis vector of $\mathbb Z^4$; the first state gives $b(0)=e_0$.
-This specifies all four sequences $b_0,\ldots,b_3$ without a search.
-They have disjoint support, exactly one signed nonzero entry at each
-position, and row sums $(22,7,7,7)$.
-A direct integer calculation from these states gives all $631$ identities
-\begin{equation}\label{eq:T}
- \sum_{i=0}^3\sum_{x\in\mathbb Z_p} b_i(x)b_i(x+s)
-       =p\,\delta_{s,0}\qquad(s\in\mathbb Z_p).
+The new finite ingredient is a vector-valued function on $\F_{631}$
+with the correlation identity proved in Section~\ref{sec:finite}.
+It gives both a sixth-root scalar action and four matrices that allow
+substitution of commuting sign matrices. The same construction on
+$\F_{127}$ gives periodic T-matrices of order $127$.
+Five infinite families use Spence's classical recurrence for the
+\emph{source} matrices; we call the resulting five real output families
+our Spence families. The sixth uses the classical tripling construction
+for an explicitly specified sixth-root source. All finite initial data and all
+recurrence identities needed here are given below.
+
+\section{Two finite correlation identities}\label{sec:finite}
+
+Let $e_0,e_1,e_2,e_3$ be the standard column vectors of $\mathbb Z^4$.
+Define the permutation matrix $\Pi$ by
+\[
+ \Pi e_0=e_0,\quad \Pi e_1=e_2,\quad
+ \Pi e_2=e_3,\quad \Pi e_3=e_1,
+ \qquad
+ \Pi=\begin{pmatrix}1&0&0&0\\0&0&0&1\\0&1&0&0\\0&0&1&0\end{pmatrix}.
+\]
+Thus $\Pi^3=I_4$ and $\Pi^{\mathsf T}\Pi=I_4$.
+We specify two functions
+\[
+ b\colon\F_p\longrightarrow\{e_0,-e_0,e_1,-e_1,e_2,-e_2,e_3,-e_3\},
+ \qquad p\in\{631,127\}.
+\]
+The four integer-valued coordinate functions of $b$ are denoted
+$b_0,b_1,b_2,b_3$: explicitly, $b(x)=\sum_{j=0}^3b_j(x)e_j$.
+
+For $p=631$ put $\mu=458$ and $m=21$; for $p=127$ put $\mu=22$ and
+$m=9$. The following modular equalities show that $\mu$ has order $m$:
+\[
+\begin{array}{c|ccc}
+p&\mu^m&\mu^{m/3}&\mu^{m/7}\,\ (7\mid m)\\\hline
+631&1&587&269\\
+127&1&107&\text{not applicable}
+\end{array}
+\]
+Indeed, a proper divisor of $21$ divides $7$ or $3$, and a proper divisor
+of $9$ divides $3$. None of the displayed smaller powers is $1$.
+Both $631$ and $127$ are prime; trial division by the primes at most their
+square roots proves this, and the integer check in the appendix includes
+these divisions.
+
+For $r\ne0$, write
+$\mathcal O(r)=\{r,\mu r,\ldots,\mu^{m-1}r\}$.
+These sets partition $\F_p\setminus\{0\}$. Each has $m$ elements:
+$\mu^kr=\mu^\ell r$ implies $\mu^{k-\ell}=1$.
+The next two tables list one representative $r$ from each set and the
+value $b(r)$; the separate row $r=0$ specifies $b(0)$.
+They give every value of $b$ through the rule
+\begin{equation}\label{eq:b-extension}
+ b(\mu^k r)=\Pi^k b(r)\quad(0\leq k<m),\qquad b(0)=e_0.
 \end{equation}
-The complete sequences and a standalone replay of this finite calculation
-are supplied with the matrix. These are periodic T-sequences; no
-aperiodic correlation assertion is required.
+This rule is well defined: the representative sets are disjoint, and
+$\Pi^m=I_4$ because $3\mid m$.
 
-\paragraph{Sign frames.}
-Let
+\begin{center}\small
+\begin{tabular}{rr@{\quad}rr@{\quad}rr@{\quad}rr}
+\multicolumn{8}{c}{$p=631$}\\
+$r$&$b(r)$&$r$&$b(r)$&$r$&$b(r)$&$r$&$b(r)$\\\hline
+$0$&$e_{0}$&$1$&$e_{0}$&$2$&$-e_{2}$&$3$&$e_{2}$\\
+$4$&$e_{2}$&$5$&$e_{0}$&$6$&$-e_{3}$&$7$&$e_{0}$\\
+$8$&$-e_{3}$&$9$&$e_{1}$&$10$&$-e_{1}$&$12$&$e_{0}$\\
+$13$&$-e_{0}$&$14$&$e_{1}$&$17$&$e_{3}$&$18$&$-e_{0}$\\
+$20$&$e_{2}$&$23$&$e_{1}$&$24$&$e_{0}$&$25$&$-e_{0}$\\
+$26$&$-e_{0}$&$27$&$e_{2}$&$28$&$-e_{1}$&$35$&$e_{2}$\\
+$36$&$-e_{3}$&$46$&$-e_{1}$&$50$&$-e_{1}$&$52$&$-e_{2}$\\
+$56$&$e_{3}$&$70$&$e_{1}$&$140$&$-e_{3}$&&\\
+\end{tabular}\end{center}
+
+\begin{center}\small
+\begin{tabular}{rr@{\quad}rr@{\quad}rr@{\quad}rr}
+\multicolumn{8}{c}{$p=127$}\\
+$r$&$b(r)$&$r$&$b(r)$&$r$&$b(r)$&$r$&$b(r)$\\\hline
+$0$&$e_{0}$&$1$&$e_{0}$&$2$&$e_{2}$&$3$&$e_{0}$\\
+$4$&$-e_{0}$&$5$&$e_{3}$&$8$&$e_{1}$&$10$&$-e_{1}$\\
+$11$&$e_{3}$&$13$&$-e_{0}$&$16$&$e_{0}$&$20$&$-e_{1}$\\
+$23$&$-e_{2}$&$33$&$e_{2}$&$39$&$-e_{1}$&&\\
+\end{tabular}\end{center}
+
+For $s\in\F_p$, define the integer
+\begin{equation}\label{eq:c-def}
+ c(s)=\sum_{x\in\F_p} b(x)^{\mathsf T}b(x+s)
+     =\sum_{j=0}^3\sum_{x\in\F_p}b_j(x)b_j(x+s).
+\end{equation}
+Substituting $x=\mu y$ and using \eqref{eq:b-extension} gives
 \[
- D=\begin{pmatrix}
+ c(\mu s)=\sum_y (\Pi b(y))^{\mathsf T}\Pi b(y+s)=c(s).
+\]
+Also $c(-s)=c(s)$, by replacing $x$ with $x+s$ and transposing a scalar.
+Since $m$ is odd, $-1\notin\langle\mu\rangle$. The subgroup
+$\langle\mu,-1\rangle$ therefore has $2m$ elements, and its multiplication
+orbits on nonzero shifts have $2m$ elements each.
+It suffices to calculate $c(s)$ on the $15$ or $7$ representatives below.
+
+For each such $s$, let $P_s$ count the residues $x$ for which
+$b(x)=b(x+s)$, and let $N_s$ count those for which $b(x)=-b(x+s)$.
+The dot product of two signed standard basis vectors is $1$ in the first
+case, $-1$ in the second case, and $0$ in all other cases.
+Thus $c(s)=P_s-N_s$. Here is the complete calculation on shift orbits:
+\[
+\begin{array}{c|rrrrrrrrrrrrrrr}
+p=631:\ s&1&2&3&5&6&7&9&13&14&17&18&25&26&27&35\\\hline
+P_s&76&78&87&85&78&73&85&83&86&79&73&88&73&81&69\\
+N_s&76&78&87&85&78&73&85&83&86&79&73&88&73&81&69
+\end{array}
+\]
+\[
+\begin{array}{c|rrrrrrr}
+p=127:\ s&1&2&3&4&5&8&10\\\hline
+P_s&15&18&20&18&16&12&17\\
+N_s&15&18&20&18&16&12&17
+\end{array}
+\]
+Every summand in $c(0)$ is $1$, so $c(0)=p$. This proves
+\begin{equation}\label{eq:T}
+ c(s)=p\delta_{s,0}\qquad(s\in\F_p).
+\end{equation}
+The appendix gives an integer program containing the complete input and
+checking every summand, every residue and every shift. In particular the
+finite arithmetic here does not depend on a saved matrix or an external
+search result.
+
+\section{Circulants and the four-matrix construction}\label{sec:design}
+
+\subsection{Circulants and reversal}
+Let $G$ be a finite abelian group, written additively. For a function
+$f\colon G\to\mathbb R$, define its circulant matrix $L_f$ by
+\[
+ (L_f)_{u,v}=f(v-u)\qquad(u,v\in G).
+\]
+For $G=\mathbb Z/w\mathbb Z$ we also write $\Circ(f)=L_f$.
+Define $f^-(x)=f(-x)$ and the convolution
+$(f*g)(z)=\sum_{x\in G}f(x)g(z-x)$.
+Computing the entries of the matrix products gives
+\[
+ L_f^{\mathsf T}=L_{f^-},\qquad
+ L_fL_g=L_{f*g}=L_gL_f,
+\]
+since $(L_fL_g)_{u,v}=\sum_x f(x)g(v-u-x)$, and substituting
+$x\mapsto v-u-x$ interchanges $f,g$.
+The row Gram has entries
+\begin{equation}\label{eq:circulant-gram}
+ (L_fL_f^{\mathsf T})_{u,v}
+ =\sum_{x\in G}f(x)f(x+v-u).
+\end{equation}
+To obtain this formula from the matrix product, one can substitute
+$x=t-v$ and then use commutativity of multiplication in $\mathbb R$.
+
+Fix any $t\in G$. Let $\mathcal J$ be the permutation matrix
+$\mathcal J_{u,v}=\delta_{u+v,t}$. The permutation $u\mapsto t-u$ is its own inverse,
+so $\mathcal J^{\mathsf T}=\mathcal J$ and $\mathcal J^2=I$. Moreover
+\[
+ (\mathcal JL_f\mathcal J)_{u,v}=f((t-v)-(t-u))=f(u-v),
+ \qquad \mathcal JL_f\mathcal J=L_f^{\mathsf T}.
+\]
+For the saved length-$p$ constructions we take $G=\F_p$ additively and
+$t=-1$, so the literal convention is $\mathcal J_{u,v}=1$ when $u+v=p-1$.
+
+For four functions $f_0,f_1,f_2,f_3$ on the same group, set
+$A=L_{f_0}, B=L_{f_1}, C=L_{f_2}, D=L_{f_3}$ and define
+\begin{equation}\label{eq:GS}
+ \GS(f)=\begin{pmatrix}
+ A&B\mathcal J&C\mathcal J&D\mathcal J\\
+ -B\mathcal J&A&-D^{\mathsf T}\mathcal J&C^{\mathsf T}\mathcal J\\
+ -C\mathcal J&D^{\mathsf T}\mathcal J&A&-B^{\mathsf T}\mathcal J\\
+ -D\mathcal J&-C^{\mathsf T}\mathcal J&B^{\mathsf T}\mathcal J&A
+ \end{pmatrix}.
+\end{equation}
+Every block has order $|G|$.
+The transpose of a circulant is again a circulant, so all of
+$A,B,C,D,A^{\mathsf T},B^{\mathsf T},C^{\mathsf T},D^{\mathsf T}$ commute.
+Using this and $\mathcal JX\mathcal J=X^{\mathsf T}$, each diagonal block of
+$\GS(f)\GS(f)^{\mathsf T}$ is
+$N=AA^{\mathsf T}+BB^{\mathsf T}+CC^{\mathsf T}+DD^{\mathsf T}$.
+For completeness its six upper off-diagonal blocks, in row order, are
+\[
+\begin{array}{c|l}
+(0,1)&(BA-AB)\mathcal J+DC-CD\\
+(0,2)&(CA-AC)\mathcal J+BD-DB\\
+(0,3)&(DA-AD)\mathcal J+CB-BC\\
+(1,2)&(AD^{\mathsf T}-D^{\mathsf T}A)\mathcal J+BC^{\mathsf T}-C^{\mathsf T}B\\
+(1,3)&(C^{\mathsf T}A-AC^{\mathsf T})\mathcal J+BD^{\mathsf T}-D^{\mathsf T}B\\
+(2,3)&(AB^{\mathsf T}-B^{\mathsf T}A)\mathcal J+CD^{\mathsf T}-D^{\mathsf T}C
+\end{array}
+\]
+All six vanish; the lower blocks are their transposes. We have proved
+\begin{equation}\label{eq:GS-Gram}
+ \GS(f)\GS(f)^{\mathsf T}
+ =I_4\otimes\sum_{j=0}^3L_{f_j}L_{f_j}^{\mathsf T}.
+\end{equation}
+Here $A\otimes B$ is the Kronecker product, with entry
+$A_{i,j}B_{u,v}$ at row $(i,u)$ and column $(j,v)$.
+The product rule $(A\otimes B)(C\otimes D)=AC\otimes BD$ follows by
+summing independently over the two middle indices.
+
+Taking $f=b$ from Section~\ref{sec:finite}, equations
+\eqref{eq:circulant-gram} and \eqref{eq:T} imply
+$\sum_jL_{b_j}L_{b_j}^{\mathsf T}=pI_p$.
+The four matrices $L_{b_j}$ have pairwise disjoint supports, and exactly
+one of them is $1$ or $-1$ at each position: their entries there are the
+four coordinates of the same $b(v-u)$.
+These are the defining properties of the \emph{periodic T-matrices}
+used in this paper. In particular they prove the asserted T-matrix
+existence for both $p=631$ and $p=127$.
+
+\subsection{Four coefficient matrices with disjoint supports}
+For $x=(x_0,x_1,x_2,x_3)^{\mathsf T}\in\mathbb R^4$ define
+\[
+ M(x)=\begin{pmatrix}
+ x_0&-x_1&-x_2&-x_3\\
+ x_1&x_0&x_3&-x_2\\
+ x_2&-x_3&x_0&x_1\\
+ x_3&x_2&-x_1&x_0
+ \end{pmatrix}.
+\]
+Each column has squared length $\sum_jx_j^2$. The dot products of column
+$0$ with columns $1,2,3$ are respectively
+\[
+ -x_0x_1+x_1x_0-x_2x_3+x_3x_2,\quad
+ -x_0x_2+x_1x_3+x_2x_0-x_3x_1,\quad
+ -x_0x_3-x_1x_2+x_2x_1+x_3x_0.
+\]
+Those of column pairs $(1,2),(1,3),(2,3)$ are
+\[
+ x_1x_2+x_0x_3-x_3x_0-x_2x_1,\quad
+ x_1x_3-x_0x_2-x_3x_1+x_2x_0,\quad
+ x_2x_3-x_3x_2+x_0x_1-x_1x_0.
+\]
+Thus $M(x)^{\mathsf T}M(x)=(\sum_jx_j^2)I_4$.
+Set $f^x(u)=M(x)b(u)$, a vector of four functions on $\F_p$.
+Then for every shift $s$,
+\[
+ \sum_u f^x(u)^{\mathsf T}f^x(u+s)
+ =\sum_u b(u)^{\mathsf T}M(x)^{\mathsf T}M(x)b(u+s)
+ =p\Bigl(\sum_jx_j^2\Bigr)\delta_{s,0}.
+\]
+By \eqref{eq:GS-Gram}, the matrix $\GS(f^x)$ therefore has Gram
+$p(\sum_jx_j^2)I_{4p}$. It is linear in $x$, so define its four
+coefficient matrices by
+\[
+ X_j=\GS(f^{e_j}),\qquad \GS(f^x)=\sum_{j=0}^3x_jX_j.
+\]
+Putting $x=e_j$ proves $X_jX_j^{\mathsf T}=pI_{4p}$. Putting
+$x=e_i+e_j$ for $i\ne j$ and subtracting the two individual identities
+proves
+\begin{equation}\label{eq:X-identities}
+ X_jX_j^{\mathsf T}=pI_{4p},\qquad
+ X_iX_j^{\mathsf T}+X_jX_i^{\mathsf T}=0\quad(i\ne j).
+\end{equation}
+There is also an entrywise property that does not follow merely from
+these Gram identities. Since $b(u)$ is a signed standard basis vector,
+$f^x(u)$ is a signed column of $M(x)$. Every entry of every such column
+is exactly one of $x_0,-x_0,\ldots,x_3,-x_3$. Every entry of
+$\GS(f^x)$ is, by \eqref{eq:GS}, a signed entry of one of these vectors.
+Consequently at every position exactly one $X_j$ is nonzero, and that
+entry is $1$ or $-1$. This proves the required disjoint-support assertion
+as well as the fact that their supports cover all matrix positions.
+
+\begin{proposition}\label{prop:substitution}
+Suppose $A_0,A_1,A_2,A_3$ are sign matrices of order $w$ satisfying
+\[
+ \sum_{j=0}^3A_jA_j^{\mathsf T}=4wI_w,\qquad
+ A_iA_j^{\mathsf T}=A_jA_i^{\mathsf T}\quad(i\ne j).
+\]
+Then $H=\sum_{j=0}^3X_j\otimes A_j$ is a real Hadamard matrix of order
+$4pw$, for either of the two values of $p$ above.
+\end{proposition}
+\begin{proof}
+At each position of $H$ there is exactly one nonzero summand, the product
+of a sign in an $X_j$ and a sign in $A_j$. Thus $H$ is a sign matrix.
+In its Gram product, the two terms belonging to $i<j$ have sum
+\[
+ X_iX_j^{\mathsf T}\otimes A_iA_j^{\mathsf T}
+ +X_jX_i^{\mathsf T}\otimes A_jA_i^{\mathsf T}
+ =(X_iX_j^{\mathsf T}+X_jX_i^{\mathsf T})\otimes A_iA_j^{\mathsf T}=0.
+\]
+The diagonal terms sum to
+$pI_{4p}\otimes\sum_jA_jA_j^{\mathsf T}=4pwI_{4pw}$.
+The Gram scale equals the displayed order, as required.
+\end{proof}
+
+\subsection{The same construction as restriction of scalars}\label{sec:group-algebra}
+The Williamson and Spence source matrices used below are circulants on
+finite abelian groups.
+Here is the exact algebra, basis, involution and trace in their scalar
+interpretation. For a finite abelian group $G$ of order $w$, let
+$\Q[G]$ be the vector space with basis symbols $c_g$ for $g\in G$,
+with multiplication $c_gc_h=c_{g+h}$ and identity $c_0$.
+Extend this multiplication bilinearly. It is a commutative algebra.
+Define the involution $c_g^*=c_{-g}$, extended $\Q$-linearly, and
+$\tau(\sum_g a_gc_g)=a_0$.
+
+Use the ordered basis $\beta_g=c_{-g}$, where an ordering of $G$ is fixed.
+For $a=\sum_g a_gc_g$, let $\rho(a)$ be the matrix of multiplication
+by $a$ in this basis. The coefficient of $\beta_u=c_{-u}$ in
+$a\beta_v=\sum_g a_gc_{g-v}$ is $a_{v-u}$. Therefore
+\begin{equation}\label{eq:regular-action}
+ \rho(a)_{u,v}=a_{v-u},\quad
+ \rho(ab)=\rho(a)\rho(b),\quad
+ \rho(a^*)=\rho(a)^{\mathsf T}.
+\end{equation}
+The first identity proves the third; the second follows because the
+composition of multiplication by $b$ and by $a$ is multiplication by
+$ab$. The action is faithful, since multiplication by $a$ applied to
+$c_0$ recovers $a$.
+Its trace is $\Tr(\rho(a))=wa_0$, so $\tau$ is the normalized regular
+trace. Moreover
+\[
+ \tau(\beta_u^*\beta_v)=\delta_{u,v}.
+\]
+Thus the trace metric in this declared basis is exactly $I_w$.
+No unmentioned change of basis or rescaling is used.
+
+Suppose $f_j=\sum_{g\in G}a_j(g)c_g$ satisfy
+\[
+ f_if_j^*=f_jf_i^*,\qquad
+ \sum_{j=0}^3f_jf_j^*=4w c_0,\qquad a_j(g)\in\{1,-1\}.
+\]
+The matrix $S=\sum_jX_jf_j$ has order $4p$ over $\Q[G]$.
+By \eqref{eq:X-identities}, precisely the same paired-term calculation
+as in Proposition~\ref{prop:substitution} gives
+$SS^*=4pwI_{4p}$, where the matrix involution transposes entries and
+applies $*$ to each entry. Its entries are signed copies of the four
+explicit elements $f_j$, by the support property of $X_j$.
+Applying $\rho$ entrywise replaces them with the sign circulants
+$\rho(f_j)$ and gives a rational matrix of order $4pw$ with Gram
+$4pwI_{4pw}$. This is restriction of scalars from $\Q[G]$ to $\Q$.
+The source order is $4p$, its Gram scale is $4pw$, the scalar dimension is
+$w$, the trace metric is $I_w$, and its actual entries have just been
+specified. These are distinct pieces of the construction.
+For symmetric commuting sign circulants $A_j=L_{a_j}$ satisfying
+$\sum_j A_jA_j^{\mathsf T}=4wI_w$, their multiplication
+and transpose identities show, by faithfulness of $\rho$, exactly the
+three hypotheses on $f_j$ above.
+
+
+\section{Two sign matrices for sixth-root scalars}\label{sec:sign-pair}
+
+For this section take $p=631$, although the argument also works for $127$.
+Define the integer matrix
+\[
+ \Delta=\begin{pmatrix}
  0&1&1&1\\-1&0&1&-1\\-1&-1&0&1\\-1&1&-1&0
- \end{pmatrix},\qquad a(x)=Db(x).
+ \end{pmatrix},\qquad a(u)=\Delta b(u).
 \]
-Then $D^{\mathsf T}=-D$ and $D^{\mathsf T}D=3I$.
-Consequently the summed periodic autocorrelation of $a$ is
-$3p\delta_{s,0}$ and the summed symmetric mixed correlation of $a,b$
-vanishes. Their supports complement each other at every entry, and each
-nonzero entry is a sign.
-
-Here is the precise Goethals--Seidel convention used. For four sequences
-$f_i$, let $X_i$ be the circulant with $(X_i)_{uv}=f_i(v-u)$,
-and let $J_{uv}=1$ when $u+v=p-1$, with zero entries otherwise. Define
+Its transpose is $-\Delta$. Its columns have squared length $3$, and
+their six pairwise dot products are $0$, giving
+$\Delta^{\mathsf T}\Delta=3I_4$.
+It follows from \eqref{eq:T} that
 \[
-\GS(f)=\begin{pmatrix}
-X_0&X_1J&X_2J&X_3J\\
--X_1J&X_0&-X_3^{\mathsf T}J&X_2^{\mathsf T}J\\
--X_2J&X_3^{\mathsf T}J&X_0&-X_1^{\mathsf T}J\\
--X_3J&-X_2^{\mathsf T}J&X_1^{\mathsf T}J&X_0
-\end{pmatrix}.
+ \sum_u a(u)^{\mathsf T}a(u+s)=3p\delta_{s,0}.
 \]
-Put $U=\GS(a)$, $V=\GS(b)$ and $d=4p=2524$.
-The circulant and reversal identities, together with \eqref{eq:T}, give
+Also, for every $s$,
 \[
- UU^{\mathsf T}=3pI,\quad VV^{\mathsf T}=pI,\quad
+ \sum_u\bigl(a(u)^{\mathsf T}b(u+s)+b(u)^{\mathsf T}a(u+s)\bigr)
+ =\sum_u b(u)^{\mathsf T}(\Delta^{\mathsf T}+\Delta)b(u+s)=0.
+\]
+Consequently the summed correlation of $a+t b$, for any real number $t$,
+is $(3+t^2)p\delta_{s,0}$. Put
+\[
+ U=\GS(a),\qquad V=\GS(b),\qquad d=4p=2524.
+\]
+Linearity of \eqref{eq:GS} gives $\GS(a+t b)=U+tV$.
+Equation~\eqref{eq:GS-Gram}, first with $a$, then with $b$, and then with
+$a+b$, proves respectively
+\[
+ UU^{\mathsf T}=3pI_d,\qquad VV^{\mathsf T}=pI_d,\qquad
  UV^{\mathsf T}+VU^{\mathsf T}=0.
 \]
-Thus the literal sign matrices $P=U-V$ and $Q=U+V$ satisfy
+At each residue $u$, the vector $b(u)$ is a signed column of $I_4$,
+and $a(u)$ is the same signed column of $\Delta$.
+That column of $\Delta$ is zero in precisely the coordinate occupied by
+$b(u)$ and is a sign in its other three coordinates.
+Thus $a_i(u)$ and $b_i(u)$ have complementary supports, and each nonzero
+entry is a sign. Since the block layout of $\GS$ acts on $a$ and $b$
+in exactly the same positions, the same assertion holds entrywise for
+$U,V$. Therefore
+\[
+ P=U-V,\qquad Q=U+V
+\]
+are both sign matrices. Expanding their products yields
 \begin{equation}\label{eq:frame}
- PP^{\mathsf T}=QQ^{\mathsf T}=dI,\qquad
- PQ^{\mathsf T}+QP^{\mathsf T}=dI.
+ \begin{split}
+ PP^{\mathsf T}=QQ^{\mathsf T}
+ &=UU^{\mathsf T}+VV^{\mathsf T}=4pI_d=dI_d,\\
+ PQ^{\mathsf T}+QP^{\mathsf T}
+ &=2(UU^{\mathsf T}-VV^{\mathsf T})=4pI_d=dI_d.
+ \end{split}
 \end{equation}
+These are the three precise properties of $P,Q$ needed for the scalar
+action. Their construction specifies every entry as an integer sign.
 
-\paragraph{Scalar action and transported metric.}
-Set $R=QP^{\mathsf T}/d$. Equation~\eqref{eq:frame} implies
+
+% Standalone replacement fragments for the scalar-restriction and cubic sections.
+% Requires amsmath, amssymb, amsthm and a lemma environment in the main preamble.
+% References eq:frame from the preceding construction of P,Q.
+% No external data are needed to prove any finite seed identity below.
+
+\section{Restriction of scalars and the final entry condition}
+\label{sec:restriction}
+
+We also use $N^*=\overline N^{\mathsf T}$ when the entries lie in an
+algebra equipped with an involution $z\mapsto\bar z$.
+Here an involution is a $\Q$-linear map satisfying
+$\overline{xy}=\bar x\bar y$ and $\overline{\bar x}=x$.
+We write $J_m$ for the matrix of order $m$ all of whose entries are $1$.
+The Kronecker product is indexed by pairs:
 \[
- RR^{\mathsf T}=I,\qquad R^{\mathsf T}=I-R,\qquad
- R^2-R+I=0,\qquad RP=Q.
+ (X\otimes Y)_{(i,a),(j,b)}=X_{ij}Y_{ab}.
 \]
-Hence $\rho(\zeta_6)=R$ defines a faithful $\Q(\zeta_6)$ action on
-$\Q^d$, with $\rho(\overline z)=\rho(z)^{\mathsf T}$.
-The field degree is $2$ and the module rank is $1262$; the rational
-dimension is $2524$.
-Its rational entry alphabet is specified exactly by
-$R_{ij}=(d-2\operatorname{Ham}(Q_i,P_j))/d$ and recorded in the certificate.
-To specify the incoming metric explicitly, put $S=2R-I$ and
-$\xi=\sqrt{-3}$. The Hermitian form, linear in its second argument,
+In particular, $I_n\otimes G$ is the block diagonal matrix with $n$
+copies of $G$.
+
+\begin{lemma}[The metric under restriction of scalars]
+\label{lem:trace-restriction}
+Let $K$ be a commutative $\Q$-algebra of finite dimension $m$, with an
+involution, and let $\tau:K\longrightarrow\Q$ be a $\Q$-linear map
+satisfying $\tau(\bar z)=\tau(z)$. Choose a basis
+$\beta_0,\ldots,\beta_{m-1}$ of $K$ over $\Q$. Define
 \[
+ G_{ab}=\tau(\overline{\beta_a}\beta_b),\qquad
+ z\beta_b=\sum_{a=0}^{m-1}\rho(z)_{ab}\beta_a.
+\]
+Suppose that $G$ is invertible. Then
+\begin{equation}\label{eq:trace-adjoint}
+ \rho(z)^{\mathsf T}G=G\rho(\bar z),\qquad
+ \rho(\bar z)G^{-1}=G^{-1}\rho(z)^{\mathsf T}.
+\end{equation}
+If $N\in K^{n\times n}$ satisfies $NN^*=wI_n$ for $w\in\Q$, the
+rational block matrix $X=(\rho(N_{ij}))_{i,j=0}^{n-1}$, of order $mn$,
+satisfies
+\begin{equation}\label{eq:inverse-metric-gram}
+ X(I_n\otimes G^{-1})X^{\mathsf T}
+       =w(I_n\otimes G^{-1}).
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+For $u=\sum_a x_a\beta_a$ and $v=\sum_b y_b\beta_b$, with rational
+coordinate columns $x,y$, expansion of the two sums gives
+\[
+ x^{\mathsf T}Gy=\tau(\bar u v).
+\]
+The form is symmetric because
+$\tau(\bar v u)=\tau(\overline{\bar v u})=\tau(\bar u v)$.
+Multiplication by $z$ sends $x$ to $\rho(z)x$. Consequently
+\[
+ x^{\mathsf T}\rho(z)^{\mathsf T}Gy
+ =\tau(\overline{zu}\,v)
+ =\tau(\bar u\bar z v)
+ =x^{\mathsf T}G\rho(\bar z)y.
+\]
+Taking $x$ and $y$ to be coordinate basis vectors proves the first
+identity in \eqref{eq:trace-adjoint}. Multiplying it on the left and
+right by $G^{-1}$ gives the second identity. This is why the inverse
+metric occurs in the row Gram identity \eqref{eq:inverse-metric-gram}.
+
+The definition of multiplication coordinates gives
+$\rho(ab)=\rho(a)\rho(b)$, $\rho(a+b)=\rho(a)+\rho(b)$ and
+$\rho(q)=qI_m$ for $q\in\Q$. Indeed, each equality follows by applying
+both sides to the coordinates of each $\beta_b$.
+Thus the $(i,j)$ block of the left side of
+\eqref{eq:inverse-metric-gram} is
+\begin{align*}
+ \sum_k\rho(N_{ik})G^{-1}\rho(N_{jk})^{\mathsf T}
+ &=\sum_k\rho(N_{ik})\rho(\overline{N_{jk}})G^{-1}\\
+ &=\rho\!\left(\sum_k N_{ik}\overline{N_{jk}}\right)G^{-1}
+ =w\delta_{ij}G^{-1}.
+\end{align*}
+Here $\delta_{ij}$ is $1$ when $i=j$ and $0$ otherwise. These are
+exactly the blocks of the right side.
+\end{proof}
+
+For a number field $K\subset\mathbb C$ stable under complex
+conjugation, one may take $\tau=\Tr_{K/\Q}$, the trace of the rational
+linear map $x\mapsto zx$ when evaluated at $z$. The same lemma applies
+to products of number fields and to other explicitly specified trace
+normalizations, provided that the displayed $G$ is invertible.
+
+Successive restrictions agree with direct restriction in the product
+basis. More precisely, let $\Q\subset K\subset L$ be finite field
+extensions, all stable under complex conjugation, with bases
+$(\beta_a)$ of $K/\Q$ and $(\gamma_b)$ of $L/K$.
+Then $(\beta_a\gamma_b)_{b,a}$, ordered first by $b$ and then by $a$,
+is a basis of $L/\Q$. If multiplication
+by $z\in L$ has matrix $(c_{bd}(z))$ in the $K$-basis $(\gamma_b)$,
+its rational matrix in this product basis has $(b,d)$ block
+$\rho_K(c_{bd}(z))$. This follows by expanding
+\[
+ z\beta_a\gamma_d=\sum_b\beta_a c_{bd}(z)\gamma_b
+\]
+once more in the basis $(\beta_a)$.
+Taking diagonal entries of the rational block matrix proves
+\[
+ \Tr_{L/\Q}(z)
+ =\sum_b\Tr_{K/\Q}(c_{bb}(z))
+ =\Tr_{K/\Q}\!\left(\Tr_{L/K}(z)\right).
+\]
+Applying this identity to $\overline{\beta_a\gamma_b}\,
+\beta_c\gamma_d$ also identifies the trace metrics at the two stages.
+For a square matrix $N$ with $NN^*=wI$ and $w\ne0$, the right inverse
+$N^*/w$ is also its inverse, so $N^*N=wI$.
+This column form of the initial identity permits transfer of a
+Hermitian form at each step. If an intermediate step carries a
+nonidentity form, its entire matrix is transferred. Given a
+Hermitian matrix $E=(E_{ij})\in M_n(L)$, use the $L/K$ basis
+$(\gamma_b)$ above to define a matrix over $K$ by
+\[
+ \widehat E_{(i,b),(j,d)}
+       =\Tr_{L/K}(\bar\gamma_b E_{ij}\gamma_d).
+\]
+For vectors $u_i=\sum_bx_{ib}\gamma_b$ and
+$v_j=\sum_dy_{jd}\gamma_d$, expansion of the sums gives
+\[
+ x^*\widehat E y=\Tr_{L/K}(u^*Ev).
+\]
+Conjugation commutes with this trace: in the conjugate basis
+$(\bar\gamma_b)$, the multiplication matrix of $\bar z$ is the
+entrywise conjugate of that of $z$ in $(\gamma_b)$, and the matrix
+trace is independent of the chosen basis. It follows that
+$\widehat E^*=\widehat E$. If $T\in M_n(L)$ obeys
+$T^*ET=wE$ for $w\in K$, and $\widehat T$ is its multiplication
+matrix on the $K$-coordinate vectors, the same expansion proves
+\[
+ x^*\widehat T^*\widehat E\widehat T y
+ =\Tr_{L/K}((Tu)^*E(Tv))
+ =w\Tr_{L/K}(u^*Ev)=wx^*\widehat E y.
+\]
+This proves $\widehat T^*\widehat E\widehat T=w\widehat E$ by
+taking coordinate basis vectors for $x,y$.
+Restriction once more from $K$ to $\Q$ gives entries
+\begin{align*}
+ &\Tr_{K/\Q}\!\left(\bar\beta_a\beta_c
+       \Tr_{L/K}(\bar\gamma_b E_{ij}\gamma_d)\right)\\
+ &\hspace{2em}=\Tr_{L/\Q}\!\left(
+       \overline{\beta_a\gamma_b}E_{ij}\beta_c\gamma_d\right),
+\end{align*}
+by the trace transitivity just proved. These are exactly the entries
+of the form obtained by direct restriction in the product basis.
+For products of number fields, perform these calculations in each
+component and sum with the specified trace weights. Every displayed
+formula for the transferred form is linear in the trace. These rules
+retain the full form through the Butson towers defined in the
+introduction.
+
+The next lemma states the additional entry condition that we use at the
+last step. It permits an arbitrary rational representation, including a
+direct sum of several copies of the regular representation above.
+
+\begin{lemma}[Obtaining a sign matrix]
+\label{lem:sign-restriction}
+Let $n,d$ be positive integers, let $K$ be as above, and let
+$\rho:K\longrightarrow M_d(\Q)$ be a
+unital $\Q$-algebra homomorphism such that
+$\rho(\bar z)=\rho(z)^{\mathsf T}$. Suppose that $N\in K^{n\times n}$
+satisfies $NN^*=wI_n$, and that $F\in\Q^{d\times d}$ satisfies
+$FF^{\mathsf T}=cI_d$ for $c\in\Q$. Form the matrix $H$ of order $dn$ with blocks
+\[
+ H_{ij}=\rho(N_{ij})F.
+\]
+Then $HH^{\mathsf T}=cwI_{dn}$. If every entry of every block
+$\rho(N_{ij})F$ is a sign and $cw=dn$, then $H$ is a real Hadamard
+matrix of order $dn$.
+\end{lemma}
+
+\begin{proof}
+For each $i,j$, the $(i,j)$ block of the row Gram matrix is
+\begin{align*}
+ \sum_k H_{ik}H_{jk}^{\mathsf T}
+ &=\sum_k\rho(N_{ik})FF^{\mathsf T}\rho(N_{jk})^{\mathsf T}\\
+ &=c\sum_k\rho(N_{ik})\rho(\overline{N_{jk}})\\
+ &=c\rho\!\left(\sum_kN_{ik}\overline{N_{jk}}\right)
+ =cw\delta_{ij}I_d.
+\end{align*}
+The assumed entry condition gives $H_{ab}\in\{-1,1\}$ for every
+position $(a,b)$, and $cw=dn$ gives the required Gram scale.
+\end{proof}
+
+In particular, for every scalar $z$ that actually occurs in $N$, the
+final entry condition is the finite collection of equations
+\[
+ \bigl(\rho(z)F\bigr)_{ab}^{2}=1
+       \qquad(0\leq a,b<d).
+\]
+Over $\Q$ each of these equations is equivalent to the corresponding
+entry being $1$ or $-1$, since $t^2-1=(t-1)(t+1)$. This gives explicit
+polynomial conditions for final flatness after restriction of scalars.
+
+\section{The sixth-root action furnished by the \texorpdfstring{length-$631$}{length-631} construction}
+\label{sec:sixth-root-action}
+
+Keep the sign matrices $P,Q$ of order $d=2524$ obtained above. They
+satisfy \eqref{eq:frame}. Put
+\[
+ \xi=\sqrt{-3}=\mathrm i\sqrt3,\qquad
+ \zeta=\zeta_6=\frac{1+\xi}{2},\qquad
+ K=\Q(\zeta)=\Q(\xi).
+\]
+Thus $\bar\zeta=1-\zeta$, $\zeta^2-\zeta+1=0$ and $\zeta^3=-1$.
+The polynomial $t^2-t+1$ is irreducible over $\Q$: a rational root
+$r$ would satisfy $(2r-1)^2=-3$, which is impossible in the ordered
+field $\Q$. Consequently every element of $K$ has a unique expression
+$a+b\zeta$ with $a,b\in\Q$.
+
+Define
+\[
+ R=\frac1d QP^{\mathsf T}.
+\]
+Every entry is rational, explicitly
+\[
+ R_{ij}=\frac1d\sum_{k=0}^{d-1}Q_{ik}P_{jk}.
+\]
+This formula is also an exact recipe for every entry of the scalar
+action; it requires only the two previously defined sign matrices.
+
+\begin{lemma}\label{lem:sixth-root-action}
+The formula $\rho(a+b\zeta)=aI_d+bR$ defines an injective unital
+$\Q$-algebra homomorphism $\rho:K\longrightarrow M_d(\Q)$ satisfying
+\[
+ \rho(\bar z)=\rho(z)^{\mathsf T},\qquad \rho(\zeta)P=Q.
+\]
+\end{lemma}
+
+\begin{proof}
+The identity $PP^{\mathsf T}=dI_d$ implies
+$P^{-1}=P^{\mathsf T}/d$, hence also $P^{\mathsf T}P=dI_d$.
+Using all three identities in \eqref{eq:frame}, we obtain
+\begin{align*}
+ RR^{\mathsf T}
+ &=d^{-2}QP^{\mathsf T}PQ^{\mathsf T}
+   =d^{-1}QQ^{\mathsf T}=I_d,\\
+ R+R^{\mathsf T}
+ &=d^{-1}(QP^{\mathsf T}+PQ^{\mathsf T})=I_d,\\
+ RP&=d^{-1}QP^{\mathsf T}P=Q.
+\end{align*}
+Substituting $R^{\mathsf T}=I_d-R$ into $RR^{\mathsf T}=I_d$ gives
+$R^2-R+I_d=0$.
+
+The relation $\zeta^2=\zeta-1$ gives
+\[
+ (a+b\zeta)(c+e\zeta)
+       =(ac-be)+(ae+bc+be)\zeta.
+\]
+Expansion using $R^2=R-I_d$ gives exactly the same coefficients for
+$(aI_d+bR)(cI_d+eR)$. Thus $\rho$ preserves multiplication; its
+additivity, rational linearity and value $\rho(1)=I_d$ follow directly
+from the definition. To check injectivity, suppose $aI_d+bR=0$.
+If $b\ne0$, then $R=-(a/b)I_d$, so $-a/b$ would be a rational root
+of $t^2-t+1$, which was excluded above. Hence $b=0$, and then $a=0$.
+Finally,
+\[
+ \rho(\overline{a+b\zeta})
+ =(a+b)I_d-bR=aI_d+bR^{\mathsf T}
+ =\rho(a+b\zeta)^{\mathsf T}.
+\]
+\end{proof}
+
+For clarity, the field extension here has degree $2$, whereas the
+representation has rational dimension $2524$. It makes $\Q^d$ into a
+vector space over $K$ by $z\cdot v=\rho(z)v$. The dimension formula
+$\dim_\Q\Q^d=[K:\Q]\dim_K\Q^d$ gives $\dim_K\Q^d=1262$.
+
+The trace metric can also be given directly in these actual
+$2524$ rational coordinates. Put $S=2R-I_d$. The proved identities give
+\[
+ S^{\mathsf T}=-S,\qquad
+ S^2=4R^2-4R+I_d=-3I_d,
+\]
+so multiplication by $\xi=2\zeta-1$ is represented by $S$.
+For $u,v\in\Q^d$ define
+\begin{equation}\label{eq:actual-hermitian-form}
  h(u,v)=\frac{u^{\mathsf T}v}{2}
-         -\frac{u^{\mathsf T}Sv}{6}\,\xi
-\]
-satisfies $\Tr_{\Q(\zeta_6)/\Q}h(u,v)=u^{\mathsf T}v$.
-Indeed $S^{\mathsf T}=-S$ and $S^2=-3I$.
-The canonical field basis $(1,\zeta_6)$ has trace metric
-$\left(\begin{smallmatrix}2&1\\1&2\end{smallmatrix}\right)$;
-the displayed $h$ specifies its realization in the actual coordinates.
-
-Take the complete Butson source
+                 -\frac{u^{\mathsf T}Sv}{6}\,\xi.
+\end{equation}
+This is a Hermitian form over $K$, conjugate linear in its first
+argument and linear in its second argument. Here are the required
+checks. The skew symmetry of $S$ gives
+$h(v,u)=\overline{h(u,v)}$. If $s=u^{\mathsf T}v$ and
+$t=u^{\mathsf T}Sv$, then
 \[
- M=\begin{pmatrix}-1&\zeta_6&\zeta_6\\
- \zeta_6&-1&\zeta_6\\\zeta_6&\zeta_6&-1\end{pmatrix},
- \qquad MM^*=3I_3.
+ h(u,Sv)=\frac t2+\frac s2\xi
+       =\xi\left(\frac s2-\frac t6\xi\right)
+       =\xi h(u,v).
 \]
-Its used alphabet is exactly $\{-1,\zeta_6\}$.
-Restriction through $\rho$ preserves the Gram scale $3$ in the
-transported metric; the intermediate blocks may be nonflat.
-The frame $F=P$ has $FF^{\mathsf T}=dI$, and the used symbols have flat
-images $-F=-P$ and $\rho(\zeta_6)F=Q$.
-Therefore
+Together with rational bilinearity and $K=\Q+\Q\xi$, this proves
+$K$-linearity in the second argument. Conjugate symmetry then proves
+conjugate linearity in the first. Since
+$\Tr_{K/\Q}(a+b\xi)=2a$ and $u^{\mathsf T}Su=0$, we obtain
 \[
- H=\rho(M)\operatorname{diag}(P,P,P)
-   =\begin{pmatrix}-P&Q&Q\\Q&-P&Q\\Q&Q&-P\end{pmatrix}
-   \in\{-1,1\}^{3d\times3d},\qquad
- HH^{\mathsf T}=3dI=7572I.
+ \Tr_{K/\Q}h(u,v)=u^{\mathsf T}v,
+ \qquad h(u,u)=\frac12u^{\mathsf T}u>0\quad(u\ne0).
 \]
-This proves the rank-$7572$ case of Theorem~\ref{thm:main}. The source scale $3$, frame scale $2524$ and
-expanded order $7572$ are distinct quantities until the final calculation.
-No flatness assertion is needed for unused roots: for example
-$\rho(\zeta_6^2)F=Q-P=2V$ has zeros and entries of magnitude two.
+Thus this trace form is exactly the ordinary Euclidean form in the
+coordinates used to construct $P,Q$. For comparison, on $K$ itself
+the basis $(1,\zeta)$ gives
+\[
+ G=\begin{pmatrix}
+ \Tr(1)&\Tr(\zeta)\\
+ \Tr(\bar\zeta)&\Tr(\bar\zeta\zeta)
+ \end{pmatrix}
+ =\begin{pmatrix}2&1\\1&2\end{pmatrix},\qquad
+ \rho_{\rm reg}(\zeta)=\begin{pmatrix}0&-1\\1&1\end{pmatrix}.
+\]
+Here $\rho_{\rm reg}$ is the multiplication matrix in the specified
+two-element basis, rather than the representation $\rho$ of order
+$2524$.
 
-\paragraph{Further completed scalar endpoints.}
-The same action and frame admit the four-symbol alphabet
-$\mathcal A=\{1,\zeta_6,-1,-\zeta_6\}$, with images $P,Q,-P,-Q$.
-Consequently, for any complete $N\in\mathcal A^{n\times n}$ with
-$NN^*=nI$, the literal blocks $\rho(N_{ij})P$ form a real Hadamard
-matrix of order $2524n$. Indeed, their $(i,j)$ Gram block is exactly
-$2524\rho(\sum_kN_{ik}\overline{N_{jk}})=2524n\delta_{ij}I$.
-The retained gauges of the published sources $P_7$, the first $BH(9,6)$
-catalogue representative, and $M_{13}A$~\cite{catalogue,aalto}, followed
-by the triplings below, give the following completed constructions.
-Individually known ranks are marked in the table.
-\begin{center}
-\begin{tabular}{ccl}
-Source order/scale & Endpoint order/scale & Order status\\\hline
-$3$ & $7572$ & New\\
-$7$ & $17668$ & New\\
-$9$ & $22716$ & New\\
-$13$ & $32812$ & New\\
-$39$ & $98436$ & New\\
-$117$ & $295308$ & New\\
-$351$ & $885924$ & Known (Paley)
+Now take
+\[
+ M=\begin{pmatrix}
+ -1&\zeta&\zeta\\
+ \zeta&-1&\zeta\\
+ \zeta&\zeta&-1
+ \end{pmatrix}.
+\]
+Each row has squared norm $3$. The Hermitian product of two different
+rows is $1-\zeta-\bar\zeta=0$. Hence $MM^*=3I_3$.
+Its two entries have the sign matrix images
+\[
+ \rho(-1)P=-P,\qquad \rho(\zeta)P=Q.
+\]
+Lemma~\ref{lem:sign-restriction}, with $F=P$ and $c=d$, therefore gives
+\[
+ H=\begin{pmatrix}-P&Q&Q\\Q&-P&Q\\Q&Q&-P\end{pmatrix},
+ \qquad HH^{\mathsf T}=3dI_{3d}=7572I_{7572}.
+\]
+One can check this last Gram directly as well: a diagonal block is
+$PP^{\mathsf T}+2QQ^{\mathsf T}=3dI_d$, and an off-diagonal block is
+$-PQ^{\mathsf T}-QP^{\mathsf T}+QQ^{\mathsf T}=0$.
+
+More generally, each of the four scalars
+\begin{equation}\label{eq:four-scalars}
+ 1,\quad\zeta,\quad-1,\quad-\zeta
+\end{equation}
+has a sign matrix image after multiplication by $P$, namely
+$P,Q,-P,-Q$, respectively. Any matrix $N$ of order $n$ with entries
+in \eqref{eq:four-scalars} and $NN^*=nI_n$ therefore gives a real
+Hadamard matrix of order $2524n$ by the block formula
+$H_{ij}=\rho(N_{ij})P$.
+These statements concern exactly the four specified scalars.
+For example, the remaining sixth root $\zeta^2$ gives
+\[
+ \rho(\zeta^2)P=(R-I_d)P=Q-P=2V,
+\]
+where $P=U-V$ and $Q=U+V$ as above. The entries of $V$ lie in
+$\{0,1,-1\}$, and $VV^{\mathsf T}=pI_d$ gives exactly $p$ nonzero
+entries in each row of length $4p$. Thus $2V$ has both zero entries and
+entries of absolute value $2$.
+
+\section{An explicit cubic family}
+\label{sec:cubic-family}
+
+We now prove the existence of matrices of every order
+$32812\cdot3^r$, for all integers $r\geq0$. The source recurrence is
+the classical sixth-root tripling construction~\cite{unreal}. Both its
+finite starting point and its induction step are given here.
+
+\begin{lemma}[The starting pair of order $13$]\label{lem:seed13}
+There are sign matrices $A_0,B_0$ of order $13$ satisfying
+\begin{equation}\label{eq:cubic-pair}
+ A_0B_0^{\mathsf T}=B_0A_0^{\mathsf T},\qquad
+ A_0A_0^{\mathsf T}+3B_0B_0^{\mathsf T}=52I_{13}.
+\end{equation}
+\end{lemma}
+
+\begin{proof}
+Table~\ref{tab:seed13} specifies their rows in order $0,\ldots,12$:
+each $+$ means the integer $1$ and each $-$ means the integer $-1$.
+The corresponding sixth-root source is the known order-$13$ example
+$M_{13A}^{(0)}$ up to multiplication of rows and columns by sixth roots of
+unity~\cite{catalogue}. The existence proof here uses only the displayed
+integer entries. For the last column, let $L$ be the symmetric matrix
+with zero diagonal whose entries above the diagonal are $1$ at the
+listed indices and $0$ at the unlisted indices.
+
+\begin{table}[htbp]
+\centering\small
+\setlength{\tabcolsep}{5pt}
+\begin{tabular}{rlll}
+$i$&row $i$ of $A_0$&row $i$ of $B_0$&$\{j>i:L_{ij}=1\}$\\\hline
+$0$ &\texttt{+------------}&\texttt{+++++++++++++}&$\varnothing$\\
+$1$ &\texttt{---+++++++---}&\texttt{+++++++------}&$2,3,5,6,9,10$\\
+$2$ &\texttt{----++++++--+}&\texttt{+++----+++--+}&$4,5,8,9,12$\\
+$3$ &\texttt{---+++-+++--+}&\texttt{+---++-+--+++}&$4,6,7,10,11$\\
+$4$ &\texttt{---++++-++--+}&\texttt{+--+--+-++++-}&$7,8,11,12$\\
+$5$ &\texttt{--++--++--+++}&\texttt{+-+++---+-+-+}&$9,10,11,12$\\
+$6$ &\texttt{-++-+---++++-}&\texttt{+-+-+-+--+-++}&$7,8,9,10$\\
+$7$ &\texttt{-+++--++--+-+}&\texttt{+-+--+++-++--}&$8,9,11$\\
+$8$ &\texttt{-++-++--+-++-}&\texttt{+-++-+-++--+-}&$9,12$\\
+$9$ &\texttt{-+-+--++--+++}&\texttt{++-+-+---+-++}&$\varnothing$\\
+$10$&\texttt{-++--+--++++-}&\texttt{++---++-+-+-+}&$11,12$\\
+$11$&\texttt{-+++--++---++}&\texttt{++--+-+++--+-}&$12$\\
+$12$&\texttt{-++-++---+++-}&\texttt{++-++--+-++--}&$\varnothing$\\\hline
+\end{tabular}
+\caption{The order-$13$ sign pair and the upper triangular entries of
+the auxiliary symmetric matrix $L$.}
+\label{tab:seed13}
+\end{table}
+
+To record the entire calculation compactly, let $E$ be the symmetric
+$13\times13$ matrix whose entry $E_{ij}$ is $1$ precisely when $i\ne j$
+and $i,j$ belong to the same one of the three sets
+\[
+ \{1,2,3,4\},\qquad\{5,7,9,11\},\qquad\{6,8,10,12\},
+\]
+and is $0$ otherwise. Finally, let $e_0=(1,0,\ldots,0)^{\mathsf T}
+\in\Q^{13}$. Taking the dot products of the displayed rows gives
+\begin{align}
+ A_0A_0^{\mathsf T}&=16I_{13}-3J_{13}+12E,\label{eq:seed-a-gram}\\
+ B_0B_0^{\mathsf T}&=12I_{13}+J_{13}-4E,\label{eq:seed-b-gram}\\
+ A_0B_0^{\mathsf T}&=J_{13}-12e_0e_0^{\mathsf T}-4L.
+ \label{eq:seed-ab-gram}
+\end{align}
+All entries in these identities are specified by the table. The exact
+rule for performing every check is
+\[
+ (XY^{\mathsf T})_{ij}=\sum_{k=0}^{12}X_{ik}Y_{jk},
+       \qquad X,Y\in\{A_0,B_0\}.
+\]
+For example, the $(0,0)$ entries in the three products are
+$13,13,-11$, since row $0$ of $A_0$ has one plus sign and twelve
+minus signs, whereas row $0$ of $B_0$ consists entirely of plus signs.
+For distinct indices, the first two right sides give respectively
+$(9,-3)$ when $E_{ij}=1$ and $(-3,1)$ when $E_{ij}=0$.
+The last right side has off-diagonal entry $-3$ precisely at the
+pairs listed in the last column of the table, and $1$ at all other
+pairs. These statements enumerate all row products.
+In particular \eqref{eq:seed-ab-gram} is symmetric. Adding
+\eqref{eq:seed-a-gram} and three times \eqref{eq:seed-b-gram} cancels
+both $E$ and $J_{13}$ and leaves $(16+36)I_{13}=52I_{13}$.
+This proves \eqref{eq:cubic-pair}.
+
+For a short independent way to repeat the finite calculation, let
+\texttt{A} and \texttt{B} be the two arrays of integer rows printed in
+the table. The following loop uses only integer addition and
+multiplication and checks all $169$ entries of both required identities:
+\begin{verbatim}
+def dot(x, y):
+    return sum(a*b for a, b in zip(x, y))
+for i in range(13):
+    for j in range(13):
+        assert dot(A[i], B[j]) == dot(B[i], A[j])
+        assert dot(A[i], A[j]) + 3*dot(B[i], B[j]) == 52*(i == j)
+\end{verbatim}
+\end{proof}
+
+\begin{lemma}[The tripling step]\label{lem:tripling-step}
+Suppose that $A,B$ are sign matrices of order $n$ satisfying
+\begin{equation}\label{eq:general-cubic-pair}
+ AB^{\mathsf T}=BA^{\mathsf T},\qquad
+ AA^{\mathsf T}+3BB^{\mathsf T}=4nI_n.
+\end{equation}
+Define
+\[
+ C=\begin{pmatrix}0&1&-1\\-1&0&1\\1&-1&0\end{pmatrix},
+ \qquad A'=B\otimes J_3,
+ \qquad B'=A\otimes I_3+B\otimes C.
+\]
+Then $A',B'$ are sign matrices of order $3n$ and satisfy
+\[
+ A'B'^{\mathsf T}=B'A'^{\mathsf T},\qquad
+ A'A'^{\mathsf T}+3B'B'^{\mathsf T}=4(3n)I_{3n}.
+\]
+\end{lemma}
+
+\begin{proof}
+Both matrices are indexed by
+$\{0,\ldots,n-1\}\times\{0,1,2\}$. Their entries are
+\[
+ A'_{(i,a),(j,b)}=B_{ij},\qquad
+ B'_{(i,a),(j,b)}=A_{ij}\delta_{ab}+B_{ij}C_{ab}.
+\]
+The first entry is a sign. In the second formula, if $a=b$ the entry
+is $A_{ij}$, and if $a\ne b$ it is $C_{ab}B_{ij}$ with
+$C_{ab}\in\{-1,1\}$. Thus every entry of $B'$ is also a sign.
+
+Direct multiplication of the displayed $3\times3$ matrices gives
+\[
+ C^{\mathsf T}=-C,\quad
+ CC^{\mathsf T}=
+ \begin{pmatrix}2&-1&-1\\-1&2&-1\\-1&-1&2\end{pmatrix}
+ =3I_3-J_3,\quad
+ CJ_3=J_3C=0,\quad J_3^2=3J_3.
+\]
+The vanishing products with $J_3$ also follow from the zero row sums
+and zero column sums of $C$. We use the identities
+$(X\otimes Y)^{\mathsf T}=X^{\mathsf T}\otimes Y^{\mathsf T}$ and
+$(X\otimes Y)(Z\otimes W)=XZ\otimes YW$; both follow by expanding a
+matrix entry and separating the two finite summation indices.
+Consequently
+\begin{align*}
+ A'B'^{\mathsf T}
+ &=BA^{\mathsf T}\otimes J_3
+    +BB^{\mathsf T}\otimes J_3C^{\mathsf T}
+  =BA^{\mathsf T}\otimes J_3,\\
+ B'A'^{\mathsf T}
+ &=AB^{\mathsf T}\otimes J_3
+    +BB^{\mathsf T}\otimes CJ_3
+  =AB^{\mathsf T}\otimes J_3.
+\end{align*}
+They are equal by \eqref{eq:general-cubic-pair}. The two norm
+expansions are
+\begin{align*}
+ A'A'^{\mathsf T}&=3BB^{\mathsf T}\otimes J_3,\\
+ B'B'^{\mathsf T}
+ &=AA^{\mathsf T}\otimes I_3
+   +AB^{\mathsf T}\otimes C^{\mathsf T}
+   +BA^{\mathsf T}\otimes C
+   +BB^{\mathsf T}\otimes CC^{\mathsf T}\\
+ &=AA^{\mathsf T}\otimes I_3
+   +BB^{\mathsf T}\otimes(3I_3-J_3).
+\end{align*}
+In the last equality, the two mixed terms cancel because
+$C^{\mathsf T}=-C$ and $AB^{\mathsf T}=BA^{\mathsf T}$.
+It follows that
+\begin{align*}
+ A'A'^{\mathsf T}+3B'B'^{\mathsf T}
+ &=3(AA^{\mathsf T}+3BB^{\mathsf T})\otimes I_3\\
+ &=12n(I_n\otimes I_3)=4(3n)I_{3n}.
+\end{align*}
+\end{proof}
+
+Starting with the literal pair $A_0,B_0$ in Table~\ref{tab:seed13},
+apply Lemma~\ref{lem:tripling-step} $r$ times, and call the result
+$A_r,B_r$. Induction gives sign matrices of order $n_r=13\cdot3^r$
+with
+\[
+ A_rB_r^{\mathsf T}=B_rA_r^{\mathsf T},\qquad
+ A_rA_r^{\mathsf T}+3B_rB_r^{\mathsf T}=4n_rI_{n_r}
+ \qquad(r\geq0).
+\]
+These equations also give an alternative, entirely real final step.
+The quadruple $(A_r,B_r,B_r,B_r)$ satisfies the hypotheses of
+Proposition~\ref{prop:substitution}: its norm is the displayed weighted
+norm, its distinct mixed products are either the proved equality
+$A_rB_r^{\mathsf T}=B_rA_r^{\mathsf T}$ or an equality with both sides
+$B_rB_r^{\mathsf T}$. Hence
+\[
+ \widetilde H_r=X_0\otimes A_r+(X_1+X_2+X_3)\otimes B_r
+\]
+is a real Hadamard matrix of order $2524n_r=32812\cdot3^r$.
+This is the recurrence-to-endpoint route used in the Lean existence
+proof. The following sixth-root description gives the scalar viewpoint
+directly; it proves the same existence statement without asserting that
+the two displayed representatives are equal.
+
+The equations for $A_r,B_r$ give the sixth-root source as follows.
+Put
+\[
+ W_r=\frac{A_r+\xi B_r}{2},\qquad N_r=\zeta^{-1}W_r.
+\]
+Since $A_r,B_r$ are real matrices and $\bar\xi=-\xi$, multiplication
+gives
+\begin{align*}
+ W_rW_r^*
+ &=\frac14\left(A_rA_r^{\mathsf T}+3B_rB_r^{\mathsf T}
+       +\xi(B_rA_r^{\mathsf T}-A_rB_r^{\mathsf T})\right)\\
+ &=n_rI_{n_r}.
+\end{align*}
+Each entry of $W_r$ is one of
+$\zeta,\bar\zeta,-\zeta,-\bar\zeta$, because its real and imaginary
+parts are respectively $\pm1/2$ and $\pm\sqrt3/2$.
+Also $\bar\zeta/\zeta=-\zeta$, as follows from
+$\zeta^3=-1$ and $\bar\zeta=\zeta^{-1}$. It follows that every entry
+of $N_r$ belongs to the four scalars \eqref{eq:four-scalars}.
+Multiplication by $\zeta^{-1}$ has absolute value $1$, so
+$N_rN_r^*=n_rI_{n_r}$ as well. Finally the explicit blocks
+\[
+ H^{(r)}_{ij}=\rho\bigl((N_r)_{ij}\bigr)P
+\]
+are all $P,Q,-P$ or $-Q$ and form a real Hadamard matrix of order
+\[
+ d n_r=2524\cdot13\cdot3^r=32812\cdot3^r.
+\]
+This proves the sixth infinite family for every $r\geq0$, and gives
+the individual orders $32812$, $98436$ and $295308$ at $r=0,1,2$.
+
+
+\section{Thirteen finite commuting quadruples}\label{sec:williamson}
+
+We now take $p=631$. A Williamson quadruple of order $w$ means here four
+symmetric, pairwise commuting sign matrices $A_0,A_1,A_2,A_3$ satisfying
+$\sum_j A_j^2=4wI_w$. Symmetry and commutation imply
+$A_iA_j^{\mathsf T}=A_iA_j=A_jA_i=A_jA_i^{\mathsf T}$, so
+Proposition~\ref{prop:substitution} applies.
+The following thirteen quadruples are taken from the explicit small-order
+Sage table~\cite{sage}. They are known sources; the new orders result from
+combining them with the length-$631$ construction.
+
+For each order $w$, the following table gives the four first rows of the
+circulants, in the order $A_0,A_1,A_2,A_3$.
+Each word is read from left to right at indices $0,\ldots,w-1$;
+$+$ means $1$ and $-$ means $-1$.
+\begin{center}\scriptsize
+\begin{tabular}{rl}
+$w$&four first rows, in order\\\hline
+$3$&\texttt{+++}\\
+&\texttt{+--}\\
+&\texttt{+--}\\
+&\texttt{+--}\\
+\hline
+$7$&\texttt{+--++--}\\
+&\texttt{+-+--+-}\\
+&\texttt{++----+}\\
+&\texttt{+------}\\
+\hline
+$9$&\texttt{+---++---}\\
+&\texttt{+--+--+--}\\
+&\texttt{+-+----+-}\\
+&\texttt{++------+}\\
+\hline
+$13$&\texttt{++++-+--+-+++}\\
+&\texttt{+---+-++-+---}\\
+&\texttt{++---+--+---+}\\
+&\texttt{++---+--+---+}\\
+\hline
+$17$&\texttt{+---+++----+++---}\\
+&\texttt{++-+---+--+---+-+}\\
+&\texttt{+--+-++++++++-+--}\\
+&\texttt{+-++-+++--+++-++-}\\
+\hline
+$23$&\texttt{++---+---+-++-+---+---+}\\
+&\texttt{+-++-++--++++++--++-++-}\\
+&\texttt{+++---++-+-++-+-++---++}\\
+&\texttt{+++-+++-+------+-+++-++}\\
+\hline
+$29$&\texttt{+++---++--+-+----+-+--++---++}\\
+&\texttt{+-+---++--+-++++++-+--++---+-}\\
+&\texttt{++++-++-+---++++++---+-++-+++}\\
+&\texttt{++--+--+-+++-++++-+++-+--+--+}\\
+\hline
+$31$&\texttt{++++++-+--+---++++---+--+-+++++}\\
+&\texttt{+--++---+-+-++----++-+-+---++--}\\
+&\texttt{+--++---+-+-++----++-+-+---++--}\\
+&\texttt{+-----+-++-+++----+++-++-+-----}\\
+\hline
+$37$&\texttt{+--+-+-+-++---+--++++--+---++-+-+-+--}\\
+&\texttt{+---++-++--+-+-++----++-+-+--++-++---}\\
+&\texttt{+++++-+-----++----++----++-----+-++++}\\
+&\texttt{+--+++-+-----+----++----+-----+-+++--}\\
+\hline
+$39$&\texttt{+++--+-+-----+--++----++--+-----+-+--++}\\
+&\texttt{+++--++-+---+-+--+----+--+-+---+-++--++}\\
+&\texttt{++++---+--++----+-+--+-+----++--+---+++}\\
+&\texttt{+---++-+-+-----+++-++-+++-----+-+-++---}\\
+\hline
+$43$&\texttt{++---++++-+--+--++--------++--+--+-++++---+}\\
+&\texttt{+++-+-++--+-+-++++-+----+-++++-+-+--++-+-++}\\
+&\texttt{++-++++++----+-+--++-++-++--+-+----++++++-+}\\
+&\texttt{+---++--++++-+-+++-++--++-+++-+-++++--++---}\\
+\hline
+$51$&\texttt{+---+++-++-+-+++--+++++--++--+++++--+++-+-++-+++---}\\
+&\texttt{----+++-++-+-+++--+++++--++--+++++--+++-+-++-+++---}\\
+&\texttt{-+--+----+-+++-+-+++++--+--+--+++++-+-+++-+----+--+}\\
+&\texttt{-+--+----+-+++-+-+++++--+--+--+++++-+-+++-+----+--+}\\
+\hline
+$61$&\texttt{++--+--++--+-+-++++--+-----+------+-----+--++++-+-+--++--+--+}\\
+&\texttt{++--+--++--+-+-++++--+-----+------+-----+--++++-+-+--++--+--+}\\
+&\texttt{+---+-+-++++---++--+-++-+---++++++---+-++-+--++---++++-+-+---}\\
+&\texttt{++++-+-+----+++--++-+--+-+++------+++-+--+-++--+++----+-+-+++}\\
+\hline
+\end{tabular}\end{center}
+
+For every word $h$ in the table, $h(-x)=h(x)$, with arguments reduced
+modulo its order $w$. Hence its circulant is symmetric. Commutativity was
+proved in Section~\ref{sec:design}. If $h_0,h_1,h_2,h_3$ are the four
+integer rows, the remaining condition is precisely
+\[
+ \sum_{j=0}^3\sum_{x=0}^{w-1}h_j(x)h_j(x+s)
+ =\begin{cases}4w&s=0,\\0&1\leq s<w.\end{cases}
+\]
+Indeed these are the entries of the sum of the four row Grams by
+\eqref{eq:circulant-gram}. The zero-shift value follows by counting the
+$4w$ squared signs. All nonzero-shift sums are $0$ for every one of the
+thirteen rows of orders in the table. The complete finite arithmetic is
+the following loop, where \texttt{W[w]} is the tuple of four printed words
+of order \texttt{w}:
+\begin{verbatim}
+for w, words in W.items():
+    assert len(words) == 4
+    assert all(len(h) == w and set(h) <= {'+', '-'} for h in words)
+    rows = [[1 if z == '+' else -1 for z in h] for h in words]
+    assert all(h[x] == h[-x % w] for h in rows for x in range(w))
+    for s in range(w):
+        c = sum(h[x] * h[(x+s) % w] for h in rows for x in range(w))
+        assert c == (4*w if s == 0 else 0)
+\end{verbatim}
+Every loop index and every input in this check has been specified above.
+The complete standalone file in the ancillary material contains the
+literal assignment as well as the check.
+Thus the thirteen quadruples give the following thirteen ranks:
+\[
+\begin{array}{r|r@{\qquad}r|r@{\qquad}r|r}
+w&2524w&w&2524w&w&2524w\\\hline
+3&7572&7&17668&9&22716\\
+13&32812&17&42908&23&58052\\
+29&73196&31&78244&37&93388\\
+39&98436&43&108532&51&128724\\
+61&153964&&&&
+\end{array}
+\]
+The two constructions of rank $7572$ given here prove the same existence
+statement; they need not produce equivalent matrices.
+
+
+\section{Five infinite families from Spence's recurrence}\label{sec:spence-rigorous}
+
+We use the classical recurrence in Spence's Theorem~4~\cite{spence}.
+We specify five initial quadruples explicitly, prove that they meet its
+hypotheses, and combine the resulting sources with the length-$631$
+construction to obtain the five families below.
+
+A \emph{sign matrix} is a real matrix whose entries belong to $\{1,-1\}$.
+A matrix $A$ is symmetric if $A^{\mathsf T}=A$, and two square matrices
+commute if $AB=BA$. Fix
+\[
+ q\in\{13,17,61,101,121\},\qquad w_0=(q+1)/2.
+\]
+We first specify four symmetric, pairwise commuting sign matrices
+$D_0,E_0,F_0,G_0$ of order $w_0$ and prove the two identities
+\begin{equation}\label{eq:spence-starter-strong}
+ (D_0-E_0)^2+(F_0-G_0)^2=4I_{w_0},\qquad
+ (D_0+E_0)^2+(F_0+G_0)^2=4qI_{w_0}.
+\end{equation}
+Both identities are required. The weaker condition that the sum of the
+four squares is $4w_0I_{w_0}$ would not suffice for the induction.
+
+\subsection{The initial matrices}
+
+For a row $h\colon\mathbb Z/w\mathbb Z\to\mathbb Z$, define its circulant
+matrix by
+\[
+ \operatorname{Circ}(h)_{i,j}=h(j-i)
+ \qquad(i,j\in\mathbb Z/w\mathbb Z).
+\]
+All row arguments in this subsection are reduced modulo $w$.
+The following table gives the first rows $d,e,f,g$ of
+$D_0,E_0,F_0,G_0$. A $+$ means $1$, a $-$ means $-1$, and each word lists
+the entries at $0,1,\ldots,w_0-1$, in that order.
+
+\begin{center}\scriptsize
+\begin{tabular}{rcl}
+$q$&row&entries\\\hline
+$13$&$d$&\texttt{+-++++-}\\
+$13$&$e$&\texttt{+-++++-}\\
+$13$&$f$&\texttt{+--++--}\\
+$13$&$g$&\texttt{---++--}\\
+\hline
+$17$&$d$&\texttt{+--++++--}\\
+$17$&$e$&\texttt{+--++++--}\\
+$17$&$f$&\texttt{+-+----+-}\\
+$17$&$g$&\texttt{--+----+-}\\
+\hline
+$61$&$d$&\texttt{++++++-+--+---++++---+--+-+++++}\\
+$61$&$e$&\texttt{-+++++-+--+---++++---+--+-+++++}\\
+$61$&$f$&\texttt{+--++---+-+-++----++-+-+---++--}\\
+$61$&$g$&\texttt{+--++---+-+-++----++-+-+---++--}\\
+\hline
+$101$&$d$&\texttt{+---+++-++-+-+++--+++++--++--+++++--+++-+-++-+++---}\\
+$101$&$e$&\texttt{----+++-++-+-+++--+++++--++--+++++--+++-+-++-+++---}\\
+$101$&$f$&\texttt{-+--+----+-+++-+-+++++--+--+--+++++-+-+++-+----+--+}\\
+$101$&$g$&\texttt{-+--+----+-+++-+-+++++--+--+--+++++-+-+++-+----+--+}\\
+\hline
+$121$&$d$&\texttt{++--+--++--+-+-++++--+-----+------+-----+--++++-+-+--++--+--+}\\
+$121$&$e$&\texttt{++--+--++--+-+-++++--+-----+------+-----+--++++-+-+--++--+--+}\\
+$121$&$f$&\texttt{+---+-+-++++---++--+-++-+---++++++---+-++-+--++---++++-+-+---}\\
+$121$&$g$&\texttt{----+-+-++++---++--+-++-+---++++++---+-++-+--++---++++-+-+---}\\
+\hline
 \end{tabular}
 \end{center}
-Every used exponent is in $\{0,1,3,4\}$, and all complete source Grams
-are checked over $\mathbb Q(\zeta_6)$. The ancillary files specify the
-gauged sources and every endpoint entry, without storing the large matrices.
 
-The known unreal-source tripling rule~\cite{unreal} extends the order-$13$ source.
-Write an unreal source as $(A+\sqrt{-3}B)/2$, with $A,B$ sign matrices.
-For $C=\left(\begin{smallmatrix}0&1&-1\\-1&0&1\\1&-1&0\end{smallmatrix}\right)$,
-put $A'=B\otimes J_3$ and $B'=A\otimes I_3+B\otimes C$.
-The identities $CC^{\mathsf T}=3I-J_3$ and $CJ_3=0$ verify the
-order-$3n$ unreal source. Multiplication by $\zeta_6^{-1}$ gives palette
-$\mathcal A$ again. Starting at order $13$ yields real orders
-$32812\cdot3^k$ for every $k\geq0$; the cases $k=1,2$ give
-$98436$ and $295308$ and have also been checked as complete finite sources.
-The next case, $885924$ ($k=3$), is known by Paley's construction since
-$885923$ is prime.
-
-\paragraph{Further cyclotomic scalar restrictions.}
-The same periodic T631 witness yields four disjoint coefficient matrices
-$X_0,\ldots,X_3$ of order $4p$, with $p=631$, by applying $\GS$ to
+Every printed entry is a sign, and each row satisfies $h(-x)=h(x)$.
+Consequently every initial matrix is symmetric. To check commutativity
+without any spectral assumptions, for arbitrary rows $h,k$ observe that
 \[
-b,\quad(-b_1,b_0,b_3,-b_2),\quad
-(-b_2,-b_3,b_0,b_1),\quad(-b_3,b_2,-b_1,b_0).
+ \bigl(\operatorname{Circ}(h)\operatorname{Circ}(k)\bigr)_{i,j}
+ =\sum_{t\in\mathbb Z/w\mathbb Z}h(t)k(j-i-t).
 \]
-The T identities and commuting-circulant GS identity give
-$X_jX_j^{\mathsf T}=pI$ and
-$X_iX_j^{\mathsf T}+X_jX_i^{\mathsf T}=0$ for $i\ne j$.
-Their supports partition every matrix position. Thus
-$D(x)=\sum_jX_jx_j$ is a complete orthogonal design with Gram
-$p\sum_j x_j^2I$ for commuting self-adjoint variables.
+Replacing $t$ by $j-i-t$ interchanges $h$ and $k$. Thus any two circulant
+matrices of this order commute.
 
-Take a verified symmetric circulant Williamson quadruple $A_j$ of order
-$w$, with first rows $a_j$ and $\sum_j A_j^2=4wI$.
-In $K_w=\Q[c]/(c^w-1)$ put
-$f_j=\sum_k a_j[k]c^k$ and $\bar c=c^{-1}$.
-Then $\bar f_j=f_j$ and $\sum_jf_j^2=4w$.
-The weighted source $D(f)$ has order $4p$, alphabet the used polynomials
-$\pm f_j$, and Gram scale $4pw$; it is not asserted to be Butson.
-The algebra is the product $\prod_{d\mid w}\Q(\zeta_d)$, with positive
-trace functional $\tau(a)=[c^0]a=w^{-1}\sum_{d\mid w}\Tr(a_d)$.
-Its metric in the basis $\beta_k=c^{-k}$ is exactly $I_w$.
-Multiplication gives $\rho(f_j)=A_j$, with conjugation transported by
-transpose. Restriction, with terminal frame $I_w$, therefore gives
+In each of the five cases, one of $d-e,f-g$ is zero and the other is
+$2\delta_0$, where $\delta_0(0)=1$ and $\delta_0(x)=0$ for $x\ne0$.
+Since $\operatorname{Circ}(\delta_0)=I$, this proves the first identity in
+\eqref{eq:spence-starter-strong}. For the second, put
 \[
- H_w=\sum_{j=0}^3X_j\otimes A_j,\qquad
- H_wH_w^{\mathsf T}=4pwI.
+ u=(d+e)/2,\qquad v=(f+g)/2,\qquad
+ c(s)=\sum_{x=0}^{w_0-1}\bigl(u(x)u(x+s)+v(x)v(x+s)\bigr).
 \]
-Each block position selects one signed $A_j$, proving all entries are signs.
-This recovers the Cooper--Wallis construction~\cite{cooperwallis} as a
-weighted scalar restriction. The ancillary table supplies 27 literal
-quadruples from the pinned Sage implementation~\cite{sage}; every complete
-source Gram and amicability identity is checked. Eight further orders are new:
-\begin{center}
-\begin{tabular}{rr@{\qquad}rr}
-$w$ & $4pw$ & $w$ & $4pw$\\\hline
-$17$ & $42908$ & $23$ & $58052$\\
-$29$ & $73196$ & $31$ & $78244$\\
-$37$ & $93388$ & $43$ & $108532$\\
-$51$ & $128724$ & $61$ & $153964$
+The complete finite sums from the displayed rows are
+\[
+\begin{array}{c|r|r|c}
+ q&w_0&c(0)&(c(1),\ldots,c(w_0-1))\\\hline
+ 13&7&13&(0,\ldots,0)\\
+ 17&9&17&(0,\ldots,0)\\
+ 61&31&61&(0,\ldots,0)\\
+ 101&51&101&(0,\ldots,0)\\
+ 121&61&121&(0,\ldots,0)
+\end{array}
+\]
+Here the rightmost vector has exactly $w_0-1$ entries. For completeness,
+the following complete integer check reproduces these finite equalities,
+and checks the signs, symmetry and the difference rows at the same time.
+Its input consists precisely of the five quadruples of sign words printed above;
+the literal assignment is included to make the check independent of any
+external data file.
+\begin{verbatim}
+starters = {
+    13: (
+        '+-++++-',
+        '+-++++-',
+        '+--++--',
+        '---++--',
+    ),
+    17: (
+        '+--++++--',
+        '+--++++--',
+        '+-+----+-',
+        '--+----+-',
+    ),
+    61: (
+        '++++++-+--+---++++---+--+-+++++',
+        '-+++++-+--+---++++---+--+-+++++',
+        '+--++---+-+-++----++-+-+---++--',
+        '+--++---+-+-++----++-+-+---++--',
+    ),
+    101: (
+        '+---+++-++-+-+++--+++++--++--+++++--+++-+-++-+++---',
+        '----+++-++-+-+++--+++++--++--+++++--+++-+-++-+++---',
+        '-+--+----+-+++-+-+++++--+--+--+++++-+-+++-+----+--+',
+        '-+--+----+-+++-+-+++++--+--+--+++++-+-+++-+----+--+',
+    ),
+    121: (
+        '++--+--++--+-+-++++--+-----+------+-----+--++++-+-+--++--+--+',
+        '++--+--++--+-+-++++--+-----+------+-----+--++++-+-+--++--+--+',
+        '+---+-+-++++---++--+-++-+---++++++---+-++-+--++---++++-+-+---',
+        '----+-+-++++---++--+-++-+---++++++---+-++-+--++---++++-+-+---',
+    ),
+}
+for q, words in starters.items():
+    w = (q + 1) // 2
+    assert len(words) == 4
+    assert all(len(h) == w and set(h) <= {'+', '-'} for h in words)
+    a = [[1 if z == '+' else -1 for z in h] for h in words]
+    assert all(h[x] == h[-x % w] for h in a for x in range(w))
+    minus = [[a[0][x] - a[1][x] for x in range(w)],
+             [a[2][x] - a[3][x] for x in range(w)]]
+    plus = [[a[0][x] + a[1][x] for x in range(w)],
+            [a[2][x] + a[3][x] for x in range(w)]]
+    for s in range(w):
+        def corr(rows):
+            return sum(h[x] * h[(x+s) % w]
+                       for h in rows for x in range(w))
+        assert corr(minus) == (4 if s == 0 else 0)
+        assert corr(plus) == (4*q if s == 0 else 0)
+\end{verbatim}
+There is no rounding in these sums. To see exactly why they prove the
+matrix identities, for any row $h$ one has
+\[
+ \bigl(\operatorname{Circ}(h)\operatorname{Circ}(h)^{\mathsf T}\bigr)_{i,j}
+ =\sum_{x=0}^{w-1}h(x)h(x+j-i).
+\]
+The rows $d\pm e$ and $f\pm g$ are symmetric, so their circulants equal
+their transposes. The two checked correlation vectors therefore give
+\eqref{eq:spence-starter-strong}, entry by entry. The same literal rows
+and finite integer equalities are checked independently by the Lean kernel
+in \texttt{Data/StrongStarters.lean}.
+
+\subsection{The character matrices used in the recurrence}
+
+We define a field $\mathbb F_q$ and a character matrix $K_q$ for each
+of the five values of $q$. For $q=13,17,61,101$, take
+$\mathbb F_q=\mathbb Z/q\mathbb Z$. For $q=121$, take
+\[
+ \mathbb F_{121}=\mathbb F_{11}[u]/(u^2-2).
+\]
+The nonzero squares modulo $11$ are $1,3,4,5,9$. Thus $2$ is not a
+square modulo $11$, $u^2-2$ is irreducible, and this quotient is a field.
+Its elements are uniquely $a+bu$ with $0\leq a,b<11$, and its arithmetic is
+\[
+ (a+bu)(c+du)=(ac+2bd)+(ad+bc)u,
+\]
+with coefficients reduced modulo $11$. When numerical indices are needed,
+index $a+bu$ by the integer $a+11b$. Subtraction of indices in the field
+means componentwise subtraction modulo $11$, not subtraction modulo $121$.
+
+For any of these fields, define its quadratic character
+$\chi_q\colon\mathbb F_q\to\{0,1,-1\}$ by $\chi_q(0)=0$, with
+$\chi_q(z)=1$ if $z$ is a nonzero square, and $\chi_q(z)=-1$ otherwise.
+Set
+\[
+ (K_q)_{x,y}=\chi_q(y-x)\qquad(x,y\in\mathbb F_q),
+ \qquad (J_q)_{x,y}=1.
+\]
+The following are the first rows of $K_q$ in the residue order
+$0,1,\ldots,q-1$ for the four prime values. The meaning of the signs is
+as above, and $0$ denotes the zero entry.
+\begin{center}\scriptsize
+\begin{tabular}{rl}
+$q$&$\bigl(\chi_q(0),\ldots,\chi_q(q-1)\bigr)$\\\hline
+$13$&\texttt{0+-++----++-+}\\
+$17$&\texttt{0++-+---++---+-++}\\
+$61$&\texttt{0+-+++---+--+++++--++-+--+-+------+-+--+-++--+++++--+---+++-+}\\
+$101$&\texttt{0+--+++--+---++-++-+++++++----++-+--++-----+-+-+-+--+-+-+-+-----++--+-++----+++++++-++-++---+--+++--+}\\
 \end{tabular}
 \end{center}
-The other inputs are marked known when a prior construction was located;
-in particular $w=33$ gives the known Paley block-product order $83292$.
-
-\paragraph{The five Spence families.}
-Spence's recurrence~\cite{spence} applies to suitable sign quadruples
-$(D,E,F,G)$ of order $(q+1)/2$, for a prime power $q\equiv1\pmod4$.
-Let $Q$ be the symmetric Paley matrix of order $q$, so
-$Q^2=qI-J$ and $QJ=0$. For each pair $(U,V)=(D,E),(F,G)$ set
-\[
- U'=\tfrac12(U-V)\otimes J+\tfrac12(U+V)\otimes(Q+I),\quad
- V'=\tfrac12(U-V)\otimes J+\tfrac12(U+V)\otimes(Q-I).
-\]
-The retained starters satisfy
-$M_0=(D-E)^2+(F-G)^2=4I$ and
-$P_0=(D+E)^2+(F+G)^2=4qI$.
-The recurrence gives $M'=P\otimes I$ and
-$P'=qP\otimes I+(qM-P)\otimes J$; hence
-$M_r=4q^rI$, $P_r=4q^{r+1}I$, and the four squared components sum to
-$4w_rI$, where $w_r=(q+1)q^r/2$.
-Symmetry and commutativity persist. Exactly one of $(u-v)/2,(u+v)/2$
-is nonzero for paired signs, so every new component entry is a sign.
-
-Explicit starters and entry recursions are supplied for
-$q=13,17,61,101,121$. They are group-circulant on
-$C_{(q+1)/2}\times(\F_q,+)^r$.
-The same normalized group-algebra trace has metric $I_{w_r}$ in the
-inverse-group basis. The classical source gives Hadamard rank $4w_r$;
-the new design supplies the odd multiplier $631$. Thus the scalar proof
-gives our five new Spence families
-\[
-17668\cdot13^r,\quad22716\cdot17^r,\quad78244\cdot61^r,\quad
-128724\cdot101^r,\quad153964\cdot121^r\qquad(r\geq0).
-\]
-Every first expanded source is verified coefficientwise by an exact
-integer transform with a proved coefficient bound. The ancillary recipes
-give entry and row access without allocating the full endpoints.
-Their first expanded orders $229684$, $386172$, $4772884$ and $13001124$
-are new. The fifth, $18629644$, is known by Paley II with prime $9314821$.
-Together with $32812\cdot3^r$, these are the six output families of
-Theorem~\ref{thm:main}; each has a new base rank. The known ranks
-$885924$ and $18629644$ illustrate that an individual member can already
-be available from a different construction.
-
-\paragraph{How the witness was found.}
-The successful search separated orbit axes from signs, using an auxiliary
-finite field in characteristic two. This field is unrelated to the
-characteristic-zero scalar action above.
-Encode the four axis labels by $0,1,\omega,\omega^2\in\F_4$, so that
-$c(\mu x)=\omega c(x)$. The parity of a signed correlation depends only
-on these labels.
-There is a bijection between all such axis words with the required
-correlation parities and $\mathrm{SL}_2(\F_{2^{15}})$.
-Here is a brief derivation.
-Since $\operatorname{ord}_{631}(2)=45$ and
-$\langle4,\mu\rangle$ is the quadratic-residue subgroup, the Fourier
-coefficients have two nonzero-frequency orbits, based at $1$ and $-1$.
-In $\F_{2^{90}}$, choose a primitive $631$st root $\zeta$ and an element
-$t$ of order $27$, with $\omega=t^{18}$.
-The Fourier rules $z_{4k}=z_k^4$ and $z_{\mu k}=\omega^{-1}z_k$,
-with $4^{15}=\mu^{14}\pmod {631}$ and $t^{2^{30}}=\omega t$,
-give $z_1=t\alpha$ and $z_{-1}=t\beta$, for
-$\alpha,\beta\in\F_{2^{30}}$.
-The $2^{45}$-Frobenius fixes $\zeta$ and sends $t$ to $t^{-1}$.
-The indicator identity $[c=d]=1+(c+d)^3$ reduces the full parity condition
-to $\overline\alpha\beta+\alpha\overline\beta=1$, where the bar is
-the relative $2^{15}$-Frobenius; the zero-frequency condition is automatic.
-Writing $\alpha=u+\omega v$ and $\beta=r+\omega s$ over
-$K=\F_{2^{15}}$ gives just
-\[
- us+vr=1,\qquad
- \begin{pmatrix}u&r\\v&s\end{pmatrix}\in\mathrm{SL}_2(K).
-\]
-The fixed inverse Fourier transform is an invertible binary map on
-$60$ coordinates. Thus the parameter space has
-$(2^{30}-1)2^{15}$ points, and uniform sampling requires no parity
-rejection.
-
-For a fixed axis word the exact correlation in shift class $\ell$ has
-the form
-\[
- C_\ell(x)=C_\ell(0)-2\sum_{i<j}W_{\ell,ij}(x_i\mathbin\oplus x_j),
-\]
-where $x_i$ is the orbit sign bit and $W_{\ell,ij}$ is an integer weight.
-Extend $W$ symmetrically with zero diagonal.
-Modulo four these are linear equations in the bits, with coefficient
-$\sum_j W_{\ell,ij}$ at $x_i$ and right side $C_\ell(0)/2$ over $\F_2$.
-On the resulting
-affine kernel, $C_\ell/4$ modulo two is quadratic, allowing a packed
-modulo-eight filter. Exact DC counts and all integer correlations are
-tested on its survivors.
-The winning single-thread stream, restricted to nonorigin head counts
-$5,7,9$, found the stated head-count-$9$ witness after $2347.74$ seconds.
-It sign-lifted $52\,029\,943$ sampled axis words; the sum of their
-affine-kernel sizes was $426\,230\,308\,864$, processed by packed filters
-until the first exact zero. It passed $5\,202\,822$ assignments through
-the exact DC filter.
-These are measurements of that stream, not a bound on rediscovery time.
-
-\begin{samepage}
-\begin{theorem}\label{thm:T127}
-There exist four circulant $\{0,\pm1\}$-matrices $T_i$ of order $127$
-with pairwise disjoint support and
-$\sum_{i=0}^3T_iT_i^{\mathsf T}=127I$.
-\end{theorem}
-For a deterministic witness, use the same orbit convention with length
-$127$, multiplier $22$ of order $9$, and the $15$ states
-\begin{center}\small\ttfamily
-0 0 4 0 1 6 2 3 6 1 0 3 5 4 3
+For $q=121$, the next table gives the eleven consecutive blocks in the
+first row; each block lists $\chi_{121}(a+bu)$ as $a$ runs from $0$ to $10$.
+\begin{center}\small
+\begin{tabular}{rc@{\qquad}rc}
+$b$&values&$b$&values\\\hline
+$0$&\texttt{0++++++++++}&$6$&\texttt{+-++----++-}\\
+$1$&\texttt{+---++++---}&$7$&\texttt{+-+--++--+-}\\
+$2$&\texttt{++-+----+-+}&$8$&\texttt{++--+--+--+}\\
+$3$&\texttt{++--+--+--+}&$9$&\texttt{++-+----+-+}\\
+$4$&\texttt{+-+--++--+-}&$10$&\texttt{+---++++---}\\
+$5$&\texttt{+-++----++-}&&\\
+\end{tabular}
 \end{center}
-\end{samepage}
-The resulting one-hot sequences have row sums $(10,3,3,3)$ and weights
-$(46,27,27,27)$. Direct integer calculation gives \eqref{eq:T} with
-$p=127$, proving Theorem~\ref{thm:T127} by taking their circulants.
-The independent verification checks every shift. The corresponding
-scalar frame has rational dimension and Gram scale $508$, field degree
-$2$, and module rank $254$. With the same trace metric, source and actual
-used alphabet, it gives a fully checked $H1524$, an already known order.
-The search used $\mathrm{SL}_2(\mathbb F_{128})$ and found this witness
-after $73$ axis lifts; all $407$ coefficients of the binary parity identity
-were checked. These periodic T-matrices are new to the best of the author's
-knowledge. Table~3 of the survey~\cite{survey} explicitly lists $127$ as
-its smallest open T-matrix order.
-Its complete data and separate archive-free verifier are included in the
-ancillary subdirectory \texttt{anc/t127/}.
+These blocks can also be obtained directly from the formula
+\begin{equation}\label{eq:spence-char121}
+ \chi_{121}(a+bu)=\chi_{11}(a^2-2b^2),
+\end{equation}
+where $\chi_{11}$ is given by the square list $1,3,4,5,9$.
+Here is a verification of that formula. The binomial theorem in
+characteristic $11$ gives $(a+bu)^{11}=a-bu$, because
+$u^{11}=2^5u=-u$. Hence
+\[
+ (a+bu)^{12}=a^2-2b^2.
+\]
+For a nonzero element $z$ of $\mathbb F_{121}$, the square subgroup has
+$60$ elements: the map $t\mapsto t^2$ has precisely the two preimages
+$t,-t$ at each nonzero square. All these squares satisfy $z^{60}=1$ by
+Lagrange's theorem. Since a nonzero polynomial of degree $60$ over a field
+has at most $60$ roots, these are exactly the roots of $z^{60}=1$.
+Also $z^{120}=1$, so $z^{60}$ is $1$ or $-1$. It follows that
+$\chi_{121}(z)=z^{60}$, interpreting these two field elements as the
+integer signs. The identical argument in $\mathbb F_{11}$ gives
+$\chi_{11}(t)=t^5$ for $t\ne0$. The displayed twelfth-power identity now
+proves \eqref{eq:spence-char121}; both sides also vanish at zero.
 
-\paragraph{Exact verification and availability.}
-The standalone Python/NumPy recipe reconstructs the matrix from the states,
-checks every expanded correlation, the complete identities
-\eqref{eq:frame}, and every endpoint row inner product.
-A separate verifier read the actual packed matrix and checked all
-$28\,663\,806$ distinct row pairs by integer bit counts; every Hamming
-distance is $3786$. The packed rows have $7572$ used bits, little-endian
-within each byte, and zero padding. Their SHA256 is
-\begin{center}\scriptsize\ttfamily
-bc3cb6fca9243a6ef01c82de2a446080c8866e0f30d76c0f23ef0508ae5e2e9b
-\end{center}
-The matrix, sequence data, recipe and independent audits are retained in
-\texttt{artifacts/hadamard-7572/}.
-All data needed to reconstruct $H7572$ are given above: the orbit
-states and the literal block conventions determine every entry.
-The primary survey's Table~5 lists $p=631$ in its unresolved $4\cdot3p$
-row~\cite{survey}; the other two records explicitly list $7572$ as
-unresolved~\cite{explorer,frontier}. For the remaining orders marked
-new above, the literature search located no earlier construction.
+We prove all the matrix identities needed in the recurrence:
+\begin{equation}\label{eq:spence-paley}
+ K_q^{\mathsf T}=K_q,\qquad
+ K_q^2=qI_q-J_q,\qquad
+ K_qJ_q=J_qK_q=0,\qquad J_q^2=qJ_q.
+\end{equation}
+The diagonal entries of $K_q$ are zero, and all its off-diagonal entries
+are signs, directly by the definition of $\chi_q$.
 
-\paragraph{Formal verification and reproducibility.}
-The existence statements of Theorem~\ref{thm:main}, including all six
-families for every nonnegative parameter, have been verified in
-Lean~4.32.0. The proofs use literal T127 and T631 data, $27$ Williamson
-quadruples, five strong recurrence starters, and the order-$13$ unreal
-pair. They establish the source norms, transported Gram identities,
-final sign entries and rank equalities. The formal statements certify
-existence; the saved rank-$7572$ representative has the independent full
-integer audit described above.
+First, the nonzero squares form a subgroup of index two in
+$\mathbb F_q^\times$, because the squaring map has two preimages at each
+nonzero square. Its two cosets show that $\chi_q(xy)=\chi_q(x)\chi_q(y)$,
+including the case in which one factor is zero. There are equally many
+nonzero squares and nonsquares, whence
+\[
+ \sum_{x\in\mathbb F_q}\chi_q(x)=0.
+\]
+Also $-1$ is a square in each field. Explicit square roots are
+$5,4,11,10$ for $q=13,17,61,101$, respectively, and $4u$ for $q=121$.
+Thus $\chi_q(-x)=\chi_q(x)$, proving the symmetry of $K_q$. The character
+sum proves that all row and column sums of $K_q$ vanish, which gives
+$K_qJ_q=J_qK_q=0$. Multiplication of the all-one matrix gives
+$J_q^2=qJ_q$.
 
-The public repository
-\url{https://github.com/sashakolpakov/butson_towers}
-contains the complete source-only Lean reproducibility package, with a
-pinned dependency lock and an audit of all $85$ selected statements.
-A fresh extracted replay passed using only Lean's standard axioms.
-The verified proof snapshot is commit \texttt{686acf9}; its reproducibility
-package is under \texttt{release/lean\_verification/}. The sequence data
-and executable ancillary recipes independently reproduce the constructions.
+For the remaining square identity, define
+\[
+ T(a)=\sum_{t\in\mathbb F_q}\chi_q(t)\chi_q(t+a).
+\]
+If $a=0$, all $q-1$ nonzero terms are $1$, so $T(0)=q-1$.
+If $a\ne0$, substituting $t=av$ and using multiplicativity gives
+\[
+ T(a)=\sum_{v\in\mathbb F_q}\chi_q(v(v+1)).
+\]
+For a fixed $v$, the number of $z\in\mathbb F_q$ satisfying
+$z^2=v(v+1)$ is $1+\chi_q(v(v+1))$. Therefore the total number of such
+pairs $(v,z)$ is $q+T(a)$. The invertible change of variables
+\[
+ x=2v+1,\qquad y=2z
+\]
+changes the equation into $(x-y)(x+y)=1$. Choosing any
+$c\in\mathbb F_q^\times$ gives exactly one solution by setting
+$x-y=c$, $x+y=c^{-1}$; division by $2$ is possible because the field has
+odd characteristic. There are $q-1$ choices, so $q+T(a)=q-1$ and
+$T(a)=-1$. Finally,
+\[
+ (K_qK_q^{\mathsf T})_{x,y}=T(y-x)
+ =\begin{cases}q-1&x=y,\\-1&x\ne y.\end{cases}
+\]
+This is $qI_q-J_q$. The already proved symmetry of $K_q$ finishes
+\eqref{eq:spence-paley}.
+
+\subsection{The recursion and its proof}
+
+Keep $q$ fixed. Starting with the four matrices already specified,
+construct $D_r,E_r,F_r,G_r$ recursively. Given a pair $(U,V)$ of matrices
+of order $w_r$, define two matrices of order $w_rq$ by
+\begin{equation}\label{eq:spence-pair-step}
+ \begin{split}
+ U'&=\tfrac12(U-V)\otimes J_q+
+       \tfrac12(U+V)\otimes(K_q+I_q),\\
+ V'&=\tfrac12(U-V)\otimes J_q+
+       \tfrac12(U+V)\otimes(K_q-I_q).
+ \end{split}
+\end{equation}
+Here $\otimes$ denotes the Kronecker product: the entry of $A\otimes B$
+at row $(i,x)$ and column $(j,y)$ is $A_{i,j}B_{x,y}$.
+Apply \eqref{eq:spence-pair-step} to $(D_r,E_r)$ to obtain
+$(D_{r+1},E_{r+1})$, and to $(F_r,G_r)$ to obtain
+$(F_{r+1},G_{r+1})$. The index sets are
+\[
+ \Omega_0=\mathbb Z/w_0\mathbb Z,\qquad
+ \Omega_{r+1}=\Omega_r\times\mathbb F_q,
+ \qquad w_r=|\Omega_r|=w_0q^r.
+\]
+The cardinality formula follows by induction: $|\Omega_0|=w_0$, and each
+step multiplies the cardinality by $q$.
+
+We next prove that all four matrices at every step are symmetric,
+pairwise commuting sign matrices and satisfy
+\begin{equation}\label{eq:spence-induction-norms}
+ \begin{split}
+ M_r&:=(D_r-E_r)^2+(F_r-G_r)^2=4q^rI_{w_r},\\
+ N_r&:=(D_r+E_r)^2+(F_r+G_r)^2=4q^{r+1}I_{w_r}.
+ \end{split}
+\end{equation}
+The initial case was proved above. We verify every assertion at the
+inductive step.
+
+For the entries, let $u,v\in\{1,-1\}$ be corresponding entries of $U,V$.
+If $u=-v$, then $(u+v)/2=0$ and $(u-v)/2=u$, so both new entries are $u$
+because every entry of $J_q$ is $1$. If $u=v$, then $(u-v)/2=0$ and
+$(u+v)/2=u$. Each entry of $K_q+I_q$ and of $K_q-I_q$ is a sign: off
+the diagonal it is the corresponding nonzero entry of $K_q$, and on the
+diagonal it is $1$ or $-1$, respectively. Thus both new entries are signs
+in this case as well. This proves that all four new matrices are sign
+matrices.
+
+The transpose of a Kronecker product is the product of the transposes of
+its two factors. All factors in \eqref{eq:spence-pair-step} are symmetric,
+so the new matrices are symmetric. For commutativity, use
+\[
+ (A\otimes B)(C\otimes D)=AC\otimes BD.
+\]
+Every first factor occurring in the four new matrices is a linear
+combination of the old four matrices, so these first factors commute by
+the induction hypothesis. Every second factor is a linear combination of
+$I_q,J_q,K_q$, which commute by \eqref{eq:spence-paley}. Hence any two
+Kronecker summands commute with each other, and expanding the products
+shows that the four new matrices commute pairwise.
+
+For the norms, adding and subtracting the two equations in
+\eqref{eq:spence-pair-step} gives
+\[
+ U'-V'=(U+V)\otimes I_q,\qquad
+ U'+V'=(U-V)\otimes J_q+(U+V)\otimes K_q.
+\]
+In the square of the last expression, both mixed terms vanish because
+$J_qK_q=K_qJ_q=0$. Thus, using \eqref{eq:spence-paley},
+\[
+ \begin{split}
+ (U'+V')^2
+ &=(U-V)^2\otimes qJ_q+(U+V)^2\otimes(qI_q-J_q)\\
+ &=q(U+V)^2\otimes I_q+
+       \bigl(q(U-V)^2-(U+V)^2\bigr)\otimes J_q.
+ \end{split}
+\]
+Applying these formulas to both pairs proves the exact recurrences
+\[
+ M_{r+1}=N_r\otimes I_q,\qquad
+ N_{r+1}=qN_r\otimes I_q+(qM_r-N_r)\otimes J_q.
+\]
+By the induction hypothesis $qM_r-N_r=0$. Therefore
+\[
+ M_{r+1}=4q^{r+1}I_{w_{r+1}},\qquad
+ N_{r+1}=4q^{r+2}I_{w_{r+1}},
+\]
+which proves \eqref{eq:spence-induction-norms} and completes the induction.
+
+Expanding the two squares for each pair gives
+$(U-V)^2+(U+V)^2=2U^2+2V^2$. Consequently
+\begin{equation}\label{eq:spence-total-norm}
+ \begin{split}
+ D_rD_r^{\mathsf T}+E_rE_r^{\mathsf T}
+   +F_rF_r^{\mathsf T}+G_rG_r^{\mathsf T}
+ &=\tfrac12(M_r+N_r)\\
+ &=2(q+1)q^rI_{w_r}=4w_rI_{w_r}.
+ \end{split}
+\end{equation}
+Moreover, any two of these matrices, say $A,B$, satisfy
+$AB^{\mathsf T}=AB=BA=BA^{\mathsf T}$, by symmetry and commutativity.
+These are exactly the norm and pairwise relations required by the
+four-matrix substitution proved earlier.
+
+For clarity, the index set can be regarded as the finite abelian group
+\[
+ \Omega_r=\mathbb Z/w_0\mathbb Z\times(\mathbb F_q,+)^r.
+\]
+All four matrices have the form $A_{x,y}=a(y-x)$ on this group.
+Indeed this is true for the initial circulants, and $I_q,J_q,K_q$ also
+have entries depending only on $y-x$; the Kronecker products and sums in
+the recursion preserve this property. In the case $q=121$, the additive
+factor is $(\mathbb Z/11\mathbb Z)^2$ at each step.
+
+\subsection{The resulting real Hadamard orders}
+
+Let $X_0,X_1,X_2,X_3$ be the four matrices of order $4p=2524$ from the
+length-$p=631$ construction. Recall the proved properties
+\[
+ X_iX_i^{\mathsf T}=pI_{4p},\qquad
+ X_iX_j^{\mathsf T}+X_jX_i^{\mathsf T}=0\quad(i\ne j),
+\]
+and that at each matrix position exactly one $X_i$ is nonzero, with value
+$1$ or $-1$. Put $(A_0,A_1,A_2,A_3)=(D_r,E_r,F_r,G_r)$ and define
+\[
+ H_{q,r}=\sum_{i=0}^3X_i\otimes A_i.
+\]
+At a given position there is precisely one nonzero summand, equal to a
+product of two signs. Thus every entry of $H_{q,r}$ is a sign. For each
+pair $i\ne j$, symmetry and commutativity give
+$A_iA_j^{\mathsf T}=A_jA_i^{\mathsf T}$, so the two corresponding terms
+in the Gram product cancel. The remaining terms, by
+\eqref{eq:spence-total-norm}, are
+\[
+ \begin{split}
+ H_{q,r}H_{q,r}^{\mathsf T}
+ &=pI_{4p}\otimes\sum_{i=0}^3A_iA_i^{\mathsf T}\\
+ &=4pw_rI_{4pw_r}.
+ \end{split}
+\]
+This is the defining identity for a real Hadamard matrix of order
+$4pw_r=1262(q+1)q^r$. In particular the five orders are
+\[
+\begin{array}{c|r|l}
+ q&w_0&4pw_r\\\hline
+ 13&7&17668\cdot13^r\\
+ 17&9&22716\cdot17^r\\
+ 61&31&78244\cdot61^r\\
+ 101&51&128724\cdot101^r\\
+ 121&61&153964\cdot121^r
+\end{array}
+\qquad(r\geq0).
+\]
+Each matrix is nonsingular, since its Gram matrix is a positive multiple
+of the identity, so its rank equals its displayed order. This proof applies
+to every nonnegative integer $r$; it does not require constructing a dense
+matrix or checking a finite initial segment of the family.
+
+
+\section{Completion of the theorem and known members}\label{sec:conclusion}
+
+\begin{proof}[Proof of Theorem~\ref{thm:main}]
+Section~\ref{sec:williamson} gives thirteen of the stated ranks, listed
+there as $2524w$. Section~\ref{sec:cubic-family} gives every rank
+$32812\cdot3^r$, including the additional rank $295308$ at $r=2$.
+Section~\ref{sec:spence-rigorous} gives the other five infinite families.
+Their first expanded members for $q=13,17,61,101$, respectively, are
+\[
+ 17668\cdot13=229684,\qquad 22716\cdot17=386172,
+\]
+\[
+ 78244\cdot61=4772884,\qquad128724\cdot101=13001124.
+\]
+These are the four remaining finite ranks. This accounts for all
+eighteen distinct integers in the abstract and all six families.
+Every construction proves both sign entries and the Gram identity
+with scale equal to the order. Nonsingularity, and hence the stated
+rank, follows from the inverse formula in Section~1.
+\end{proof}
+
+Each of the six families has a new initial rank. This assertion does not
+mean that every rank occurring in a family was previously unknown.
+For example, $32812\cdot3^3=885924$ is known by Paley's first construction,
+with prime parameter $885923$, and
+$153964\cdot121=18629644$ is known by Paley's second construction,
+with prime parameter $9314821$. We give the short verification of these
+positive identifications, so neither primality nor a database status is
+being used without an exact test.
+
+For an odd prime $t$, let $K_{x,y}=\chi_t(y-x)$ on $\F_t$, and let
+$J_t$ be the all-one matrix. The character-sum proof in
+Section~\ref{sec:spence-rigorous} applies without change to give
+$KK^{\mathsf T}=tI_t-J_t$ and $KJ_t=J_tK=0$.
+It does not use $\chi_t(-1)=1$ until symmetry is asserted.
+The squaring map has $(t-1)/2$ nonzero values. By Lagrange's theorem
+all are roots of $X^{(t-1)/2}-1$, and the degree bound for polynomial
+roots shows that these are precisely its roots. Therefore
+$\chi_t(a)=a^{(t-1)/2}$ for $a\ne0$, with the two values interpreted
+as the integer signs. In particular,
+$\chi_t(-1)=(-1)^{(t-1)/2}$.
+
+If $t\equiv3\pmod4$, then $K^{\mathsf T}=-K$.
+Let $\mathbf1$ denote the column of $t$ ones. The sign matrix
+\[
+ B=\begin{pmatrix}1&\mathbf1^{\mathsf T}\\
+                  \mathbf1&K-I_t\end{pmatrix}
+\]
+has order $t+1$. Its upper-left Gram entry is $t+1$, its off-diagonal
+Gram blocks vanish because the rows of $K-I_t$ sum to $-1$, and its
+lower-right Gram block is
+\[
+ J_t+(K-I_t)(K^{\mathsf T}-I_t)
+ =J_t+KK^{\mathsf T}+I_t=(t+1)I_t.
+\]
+This is Paley's first construction~\cite{paley}. Taking $t=885923$ gives order $885924$.
+
+If $t\equiv1\pmod4$, then $K^{\mathsf T}=K$ and the matrix
+\[
+ C=\begin{pmatrix}0&\mathbf1^{\mathsf T}\\\mathbf1&K\end{pmatrix}
+\]
+is symmetric, has zero diagonal and sign off-diagonal entries, and
+satisfies $C^2=tI_{t+1}$. Indeed the off-diagonal blocks vanish by
+$K\mathbf1=0$, and the lower-right block is
+$J_t+K^2=tI_t$. With $I=I_{t+1}$, form
+\[
+ B=\begin{pmatrix}C+I&C-I\\C-I&-C-I\end{pmatrix}.
+\]
+Both $C+I$ and $C-I$ are sign matrices. A diagonal Gram block of $B$
+is $(C+I)^2+(C-I)^2=2(t+1)I$, and an off-diagonal block is
+$(C+I)(C-I)-(C-I)(C+I)=0$. This proves Paley's second construction~\cite{paley}.
+The value $t=9314821$ gives order $2(t+1)=18629644$.
+The appendix includes the finite trial divisions proving the primality
+of both parameters.
+
+The length-$127$ construction gives a separate T-matrix result, not a
+new Hadamard order. For example, the order-$3$ quadruple in
+Section~\ref{sec:williamson} and Proposition~\ref{prop:substitution}
+give a Hadamard matrix of the known order $4\cdot127\cdot3=1524$.
+The dated survey~\cite{survey}, Table~3, lists $127$ as its smallest open
+\emph{periodic} T-matrix order. Its Table~5 lists $631$ in the unresolved
+$4\cdot3p$ row; the other records consulted on 24 November 2026 also
+list order $7572$ as unresolved~\cite{explorer,frontier}.
+The individual known/new labels for the other finite orders, together
+with the prior constructions located, are recorded in the repository's
+dated order ledgers. No nonexistence conclusion is inferred from a
+failed search or from the absence of a located construction.
+
+\section{Verification and availability}\label{sec:verification}
+
+The proofs above require only the printed finite inputs and the proved
+matrix identities. The finite computations are integer sums; they can
+be repeated by the included programs. In particular, no dense matrix of
+order $13001124$ needs to be stored or checked row by row: the source
+recurrence, sign-entry proof and block Gram calculation apply at that
+order as at every other parameter value.
+
+The public repository is
+\url{https://github.com/sashakolpakov/butson_towers}.
+Its ancillary material provides the integer checker
+\texttt{manuscript\_data.py}, reconstruction programs, complete finite
+data, order-status ledgers and independent exact audits.
+For the saved order-$7572$ representative, a separate integer audit
+checked all $\binom{7572}{2}=28\,663\,806$ distinct row pairs; their
+inner products are all zero. The archived matrix and its hashes are
+preserved in \texttt{artifacts/hadamard-7572/}.
+The search that produced the finite functions is not a premise of any
+existence proof here; the fixed functions are verified directly.
+
+The formal development uses Lean~4.32.0. Its pinned mathlib revision is
+\begin{center}\small\texttt{81a5d257c8e410db227a6665ed08f64fea08e997}.\end{center}
+It proves the eighteen existence statements and all six families for
+every nonnegative integer parameter, starting from literal finite
+witnesses. Its finite inputs include T127 and T631, $27$ Williamson
+quadruples (thirteen suffice here), the five strong starters, and the
+order-$13$ pair. Its construction proofs establish the exact Gram
+identities and final sign entries. Literature novelty is not a formal
+claim. The formal existence proof also does not assert equality with a
+particular saved packed representative; that representative has the
+independent audit just described.
+
+The core Lean reversal uses $u+v=0$. The checked convention lemmas
+identify the reversal $u+v=-1$ used here by simultaneous row and column
+translation by $316$ modulo $631$, or $64$ modulo $127$.
+The five character matrices are checked in Lean from their literal integer
+rows; their general character-sum derivation above is a separate proof.
+A manuscript-to-code correspondence audit is included in the repository.
+
+The original source-only reproducibility package is retained under
+\texttt{release/lean\_verification/}; the verified mathematical proof
+snapshot is commit \texttt{686acf9}. The package supplies its dependency
+lock and an audit of $85$ selected statements. A fresh extracted build
+passed, and the selected statements use only Lean's standard axioms
+\texttt{propext}, \texttt{Classical.choice} and \texttt{Quot.sound},
+as listed individually in the audit record. A separate source-only
+supplement under \texttt{release/lean\_sixth\_root\_pair/} checks the ten
+rational matrix identities for $R$, $S$ and the scalar coordinates.
+It assumes precisely the proved $P,Q$ identities and $d\ne0$; it does not
+formalize the particular cyclotomic field or Hermitian-form realization.
+Instructions in the packages
+reproduce the build and axiom check. The manuscript and executable
+reconstruction have their own versioned release, so improvements to
+exposition do not alter the frozen construction or proof archives.
 
 \paragraph{Computational assistance.}
 The scalar-reduction viewpoint and projective-flatness formulation were
@@ -428,13 +1778,98 @@ proposed by the author. The search implementation, computations, automated
 cross-checks and initial text were developed with OpenAI Codex and its
 automated collaborators.
 
-\begin{thebibliography}{10}\small\raggedright
+
+\appendix
+\section{Integer check for the two finite functions}\label{app:integer}
+
+Here is a complete standard-library Python check of \eqref{eq:T}, with
+all its finite inputs. In the input pairs $(r,t)$, the nonzero integer $t$
+stands for $\operatorname{sign}(t)e_{|t|-1}$ at representative $r$.
+This is merely a numerical encoding of the two tables in
+Section~\ref{sec:finite}. The variable \texttt{a} in the program is a
+coordinate index in $\{0,1,2,3\}$, and \texttt{b[u]} is the four-entry
+tuple representing $b(u)$. The inner loops in the final sum are exactly
+the two finite sums in \eqref{eq:c-def}.
+\begin{verbatim}
+T = {
+    631: (458, 21, [
+        (0, 1), (1, 1), (2, -3), (3, 3), (4, 3), (5, 1),
+        (6, -4), (7, 1), (8, -4), (9, 2), (10, -2), (12, 1),
+        (13, -1), (14, 2), (17, 4), (18, -1), (20, 3), (23, 2),
+        (24, 1), (25, -1), (26, -1), (27, 3), (28, -2), (35, 3),
+        (36, -4), (46, -2), (50, -2), (52, -3), (56, 4), (70, 2),
+        (140, -4),
+    ]),
+    127: (22, 9, [
+        (0, 1), (1, 1), (2, 3), (3, 1), (4, -1), (5, 4),
+        (8, 2), (10, -2), (11, 4), (13, -1), (16, 1), (20, -2),
+        (23, -3), (33, 3), (39, -2),
+    ]),
+}
+
+for p, (mu, m, data) in T.items():
+    assert pow(mu, m, p) == 1
+    assert all(pow(mu, k, p) != 1 for k in range(1, m))
+    b = [None] * p
+    b[0] = (1, 0, 0, 0)
+    assert data[0] == (0, 1)
+    for r, t in data[1:]:
+        assert 0 < r < p and 1 <= abs(t) <= 4
+        j, sign = abs(t)-1, (1 if t > 0 else -1)
+        for k in range(m):
+            u = (r * pow(mu, k, p)) % p
+            assert b[u] is None
+            a = 0 if j == 0 else 1 + (j-1+k) % 3
+            b[u] = tuple(sign if i == a else 0 for i in range(4))
+    assert all(v is not None and sum(z*z for z in v) == 1 for v in b)
+    for s in range(p):
+        c = sum(b[x][j] * b[(x+s) % p][j]
+                for x in range(p) for j in range(4))
+        assert c == (p if s == 0 else 0)
+\end{verbatim}
+The first assertions prove the precise multiplier orders. In the orbit
+loop, the assertion that no value has already been assigned checks
+disjointness of the listed orbits; the assertion after it checks coverage
+of all residues. The tuple formula implements $\Pi^k$ explicitly.
+The final loop proves the required correlation for every shift, including
+zero, without using the orbit reduction of shifts.
+
+For completeness the following trial-division function checks the two
+primes used to define the functions and the two primes used to identify
+known Paley orders in Section~\ref{sec:conclusion}:
+\begin{verbatim}
+def prime(n):
+    if n < 2:
+        return False
+    d = 2
+    while d*d <= n:
+        if n % d == 0:
+            return False
+        d += 1
+    return True
+assert all(prime(n) for n in (127, 631, 885923, 9314821))
+\end{verbatim}
+If an integer $n\geq2$ is composite, write $n=ab$ with $1<a\leq b$;
+then $a^2\leq n$. Thus checking all integers $2\leq d\leq\sqrt n$
+proves primality, which justifies the function. All operations above are
+integer additions, products, divisions with remainder, and finite loops.
+The ancillary file \texttt{anc/manuscript\_data.py} combines these checks
+with the thirteen quadruple checks, the five strong starter checks and
+the order-$13$ pair check.
+
+
+\begin{thebibliography}{10}\footnotesize\raggedright
+\setlength{\itemsep}{0pt}\setlength{\parsep}{0pt}
+\bibitem{paley}
+R.~E.~A.~C.~Paley, \emph{On Orthogonal Matrices},
+J. Math. Phys.\ 12 (1933), 311--320.
+\url{https://doi.org/10.1002/sapm1933121311}.
 \bibitem{cooperwallis}
 J.~Cooper and J.~Wallis,
 \emph{A construction for Hadamard arrays}, Bull. Austral. Math. Soc.\ 7 (1972), 269--277.
 \url{https://doi.org/10.1017/S0004972700045019}.
 \bibitem{sage}
-The Sage Developers, \emph{Williamson-type quadruples, small cases},
+The SageMath Developers, \emph{Williamson-type quadruples, small cases},
 \texttt{hadamard\_matrix.py}, commit \texttt{8de8dad7}, 14 November 2026.
 \url{https://github.com/sagemath/sage/blob/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py}.
 \bibitem{spence}
@@ -444,27 +1879,27 @@ J. Austral. Math. Soc. Ser. A\ 24 (1977), 252--256, Theorem~4.
 \bibitem{morphisms}
 R.~Egan and P.~\'{O}~Cath\'ain,
 \emph{Morphisms of Butson classes}, Linear Algebra Appl.\ 577 (2019), 78--93.
+\url{https://doi.org/10.1016/j.laa.2019.04.020}.
 \url{https://arxiv.org/abs/1707.08815v3}.
 \bibitem{complete-morphisms}
 R.~Egan and P.~\'{O}~Cath\'ain,
 \emph{On complete morphisms of Butson Hadamard matrices},
-arXiv:2610.28394v1, 20 October 2026.
+J. Combin. Des., Early View, 2 November 2026, 1--7.
+\url{https://doi.org/10.1002/jcd.70047}.
+Preprint arXiv:2610.28394v1, 20 October 2026.
 \url{https://arxiv.org/abs/2610.28394v1}.
 \bibitem{matrix-homomorphisms}
 P.~\'{O}~Cath\'ain and E.~Swartz,
 \emph{Homomorphisms of matrix algebras and constructions of Butson-Hadamard matrices},
-Discrete Math.\ 342 (2019), article 111606.
+Discrete Math.\ 342(12) (2019), article 111606.
+\url{https://doi.org/10.1016/j.disc.2019.111606}.
 \url{https://arxiv.org/abs/1904.10771v3}.
 \bibitem{catalogue}
 W.~Bruzda, W.~Tadej and K.~\.{Z}yczkowski,
-\emph{Complex Hadamard Matrices catalogue}, sources $P_7$ and $M_{13}A$.
+\emph{Complex Hadamard Matrices catalogue}, sources $P_7$ and $M_{13A}^{(0)}$.
 The latter is attributed to R.~Nicoar\u{a}, A.~LaClair, N.~Geist and
 A.~Wintenberg, May 2016.
-\url{https://github.com/matrix-toolbox/chm}.
-\bibitem{aalto}
-\emph{Butson Hadamard matrices up to monomial equivalence},
-Aalto University, dataset $BH(9,6)$, representative $0$.
-\url{https://wiki.aalto.fi/download/attachments/120482261/BH-9-6.txt}.
+\url{https://matrix-toolbox.github.io/chm/catalogue/1306B.html}.
 \bibitem{unreal}
 B.~Compton, R.~Craigen and W.~de~Launey,
 \emph{Unreal $BH(n,6)$'s and Hadamard matrices},
@@ -481,9 +1916,8 @@ arXiv:2610.27175v2, revised 3 November 2026, Tables~3 and~5.
 \url{https://www.math74.com/Hadamard/unknown.html}.
 \bibitem{frontier}
 \texttt{vatskishan03/Hadamard}, \emph{Unresolved orders},
-\texttt{FRONTIER.md} and \texttt{search/NOTES.md}, Section~6, commit \texttt{d885022144ba6bf4efa8315e14871a3736947527},
+\texttt{FRONTIER.md}, commit \texttt{d885022144ba6bf4efa8315e14871a3736947527},
 6 November 2026, consulted 24 November 2026.
 \url{https://github.com/vatskishan03/Hadamard/blob/d885022144ba6bf4efa8315e14871a3736947527/FRONTIER.md}.
-\url{https://github.com/vatskishan03/Hadamard/blob/d885022144ba6bf4efa8315e14871a3736947527/search/NOTES.md}.
 \end{thebibliography}
 \end{document}

@@ -1,0 +1,12 @@
+import ButsonTowers.SixthRootPair
+
+#print axioms ButsonTowers.SixthRootPair.transpose_mul_of_mul_transpose
+#print axioms ButsonTowers.SixthRootPair.action_mul_transpose
+#print axioms ButsonTowers.SixthRootPair.action_add_transpose
+#print axioms ButsonTowers.SixthRootPair.action_transpose
+#print axioms ButsonTowers.SixthRootPair.action_polynomial
+#print axioms ButsonTowers.SixthRootPair.action_mul_left
+#print axioms ButsonTowers.SixthRootPair.imaginaryAction_transpose
+#print axioms ButsonTowers.SixthRootPair.imaginaryAction_square
+#print axioms ButsonTowers.SixthRootPair.coordinateAction_mul
+#print axioms ButsonTowers.SixthRootPair.coordinateAction_conjugate

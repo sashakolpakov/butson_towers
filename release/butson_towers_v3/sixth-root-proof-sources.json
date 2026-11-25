@@ -1,0 +1,11 @@
+{
+  "schema": "butson-towers-sixth-root-proof-source-pointer-v1",
+  "repository": "https://github.com/sashakolpakov/butson_towers",
+  "source_package_url": "https://github.com/sashakolpakov/butson_towers/raw/main/release/lean_sixth_root_pair/butson-towers-sixth-root-pair.zip",
+  "source_package_sha256": "5e29b6e01242ec7fdbd22bf6a0422c6243aa64e00f4435228db00d0f6778548c",
+  "source_package_readme_url": "https://github.com/sashakolpakov/butson_towers/blob/main/release/lean_sixth_root_pair/README.md",
+  "included_kernel_verification": "sixth-root-verification.json",
+  "scope": "Ten rational matrix identities for R=QP^T/d, S=2R-I and scalar coordinates, conditional exactly on the stated paired-matrix identities and nonzero scale. The particular cyclotomic field/Hermitian instance is not constructed in Lean.",
+  "original_complete_endpoint_package": "proof-sources.json",
+  "verification_policy": "Source-only archive pinned by SHA256; exact Lean/mathlib/dependency lock and all ten axiom reports are checked by its included verifier."
+}

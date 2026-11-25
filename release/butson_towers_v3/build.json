@@ -1,0 +1,12 @@
+{
+  "source": "main.tex",
+  "source_sha256": "9ca3db33c2adb560bee64d8c75209205b3edc73aa09cba71d100058e94cd6e74",
+  "reference_pdf": "announcement.pdf",
+  "pdf_sha256": "ab2c6d72fdaa36a6fb1e7bec76d68e04f98489383a563562d1dc31659c4256d6",
+  "pages": 22,
+  "command": "latexmk -pdf -interaction=nonstopmode -halt-on-error -outdir=build main.tex",
+  "warnings": [],
+  "source_and_reference_pdf_checked": true,
+  "all_pages_visually_reviewed": true,
+  "visual_review_note": "All22 pages of this exact PDF were rendered and inspected; tables, equations, code and references fit without clipping."
+}
