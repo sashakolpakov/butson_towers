@@ -1,0 +1,39 @@
+{
+  "title": "Butson towers and high-rank Hadamard matrices",
+  "abstract": "We construct eighteen new real Hadamard matrices of ranks 7572, 17668, 22716, 32812, 42908, 58052, 73196, 78244, 93388, 98436, 108532, 128724, 153964, 229684, 295308, 386172, 4772884 and 13001124, and six new infinite families. The constructions preserve orthogonality and ensure that every final entry is 1 or -1. Explicit recipes and reproducible formal proofs establish every listed rank and every member of the six families.",
+  "subject": "math.CO",
+  "crossListSubjects": [],
+  "mscCodes": [
+    "05B20",
+    "15B34"
+  ],
+  "tags": [
+    "Hadamard matrices",
+    "Butson matrices",
+    "restriction of scalars",
+    "finite fields",
+    "computer-assisted proof"
+  ],
+  "authors": [
+    {
+      "name": "Alexander Kolpakov",
+      "orcid": "0000-0002-6764-8894",
+      "affiliation": null,
+      "contributorKind": "person",
+      "organizationId": null
+    }
+  ],
+  "submittingContributorIndex": 0,
+  "sponsorName": "Alexander Kolpakov",
+  "submittingOrganizationId": null,
+  "arxivId": null,
+  "authorshipMode": "mixed",
+  "humanUnderstanding": "some",
+  "provenance": "The author reviewed this manuscript to the extent expected of a referee. Ideas supplied by the author have known provenance; for ideas originating with the AI, the author cannot always trace how the model arrived at them. The human-understanding declaration is therefore some; the review is not a guarantee of correctness.\n\nThe author proposed the scalar-reduction viewpoint and projective-flatness formulation. OpenAI Codex and its automated collaborators developed the finite-field parameterization, search implementation, computations, automated cross-checks and initial text.",
+  "license": "CC BY-SA 4.0",
+  "correctnessConfirmed": true,
+  "communityInterestConfirmed": true,
+  "citationsConfirmed": true,
+  "rightsConfirmed": true,
+  "comments": "6 pages. Eighteen new real Hadamard ranks to the best of the author's knowledge; six new infinite output families; new periodic T-matrices of order 127. All announced ranks and six all-iteration families have complete Lean existence proofs from literal finite witnesses. Includes standalone Python/NumPy reconstruction, exact source and endpoint Gram proofs, an optional SymPy trace audit, and a pinned link to the separate source-only Lean reproducibility package. Known ranks are identified individually in the ancillary status records."
+}

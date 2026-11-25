@@ -5,47 +5,67 @@
 \usepackage{amsmath,amssymb,amsthm}
 \usepackage[T1]{fontenc}
 \usepackage{hyperref}
+\hypersetup{pdftitle={Butson towers and high-rank Hadamard matrices},
+  pdfauthor={Alexander Kolpakov}}
 \newtheorem{theorem}{Theorem}
 \newcommand{\F}{\mathbb F}
 \newcommand{\Q}{\mathbb Q}
 \newcommand{\Tr}{\operatorname{Tr}}
 \newcommand{\GS}{\operatorname{GS}}
-\title{New Hadamard orders and infinite families\\by restriction of scalars}
+\title{Butson towers and high-rank Hadamard matrices}
 \author{Alexander Kolpakov}
-\date{24 November 2026}
+\date{25 November 2026}
 \begin{document}
 \maketitle
 
 \begin{abstract}
-We give an explicit real Hadamard matrix of order $7572=12\cdot631$.
-The construction starts with four periodic T-sequences of length $631$,
-specified by 31 signed orbit states. They give a compatible sign frame for
-a rational action of $\Q(\zeta_6)$, and a complete $BH(3,6)$ source then
-produces the claimed matrix. The source Gram scale is $3$, the frame scale
-is $2524$, and their product is the endpoint order. All sequence
-correlations and all row inner products of the order-$7572$ matrix have been verified by exact
-integer calculations, including an independent check of the saved matrix.
-The same frame gives orders $17668$, $22716$, $32812$, $98436$ and
-$295308$. A further restriction from products of cyclotomic fields gives
-eight additional new orders and explicit infinite families. Their weighted
-sources are complete orthogonal designs; their restricted entries are signs.
-Four first expanded family members give further new orders, bringing the
-total to eighteen, all new to the best of the author's knowledge.
-The method also gives new periodic circulant T-matrices of order $127$,
-listed as the smallest open T-matrix order in the 2026 survey.
-Our literature comparison is dated 24 November 2026.
+We construct eighteen new real Hadamard matrices of ranks
+$7572$, $17668$, $22716$, $32812$, $42908$, $58052$, $73196$, $78244$,
+$93388$, $98436$, $108532$, $128724$, $153964$, $229684$, $295308$,
+$386172$, $4772884$ and $13001124$, and six new infinite families.
+The constructions preserve orthogonality and ensure that every final entry
+is $1$ or $-1$. Explicit recipes and reproducible formal proofs establish
+every listed rank and every member of the six families.
 \end{abstract}
 
-\begin{theorem}
-There exists a matrix $H\in\{-1,1\}^{7572\times7572}$ such that
-$HH^{\mathsf T}=7572I$.
+A real Hadamard matrix of order $n$ is a sign matrix $H$ satisfying
+$HH^{\mathsf T}=nI$. It has full rank, so its rank and order coincide.
+Throughout this paper, ``new'' means new to the best of the author's
+knowledge; individually known ranks are identified below.
+
+\begin{theorem}\label{thm:main}
+Real Hadamard matrices exist at each of the eighteen ranks listed in the
+abstract, and at every rank in the following six families:
+\[
+\begin{gathered}
+17668\cdot13^r,\qquad22716\cdot17^r,\qquad32812\cdot3^r,\\
+78244\cdot61^r,\qquad128724\cdot101^r,\qquad153964\cdot121^r
+\qquad(r\in\mathbb Z_{\geq0}).
+\end{gathered}
+\]
 \end{theorem}
 
-The scalar-transfer framework is classical; see, for example, Egan and
-\'{O}~Cath\'ain~\cite{morphisms} and Compton, Craigen and de~Launey~\cite{unreal}.
-The twisted length-$631$ search chart is
-recorded in the existing search notes~\cite{frontier}. The contribution here
-is the completed integer witness and its verified flat scalar frame.
+\paragraph{Butson towers and the new ingredients.}
+We call a finite chain of scalar restrictions a \emph{Butson tower} when it
+starts from a complete Butson-related orthogonal source and carries its
+scalar action, conjugation and trace metric through each restriction.
+A single restriction is included in this terminology. Intermediate
+matrices may be weighted; the final root or sign alphabet is checked
+separately using a compatible frame. Products of number fields are allowed,
+with all factors and trace weights retained.
+
+Our starting point was the recent work of Egan and
+\'{O}~Cath\'ain~\cite{complete-morphisms}; earlier scalar-morphism
+constructions include~\cite{morphisms,matrix-homomorphisms,unreal}.
+The new ingredients here are the complete periodic design of length $631$
+and its flat scalar frame, together with a periodic T-matrix witness of
+order $127$. The first gives all eighteen new ranks in
+Theorem~\ref{thm:main} and the six new output families. Five of these,
+called our \emph{Spence families}, use Spence's classical recurrence for
+their source matrices. The sixth uses the classical unreal-source
+tripling rule. The recurrence sources and the resulting families of real
+Hadamard matrices are distinguished throughout. The finite-field search
+uses the length-$631$ twisted chart recorded in~\cite{frontier}.
 
 \paragraph{The finite witness.}
 Put $p=631$ and $\mu=458\in\mathbb Z_p^*$, of order $21$.
@@ -150,7 +170,7 @@ Therefore
    \in\{-1,1\}^{3d\times3d},\qquad
  HH^{\mathsf T}=3dI=7572I.
 \]
-This proves the theorem. The source scale $3$, frame scale $2524$ and
+This proves the rank-$7572$ case of Theorem~\ref{thm:main}. The source scale $3$, frame scale $2524$ and
 expanded order $7572$ are distinct quantities until the final calculation.
 No flatness assertion is needed for unused roots: for example
 $\rho(\zeta_6^2)F=Q-P=2V$ has zeros and entries of magnitude two.
@@ -165,8 +185,7 @@ $2524\rho(\sum_kN_{ik}\overline{N_{jk}})=2524n\delta_{ij}I$.
 The retained gauges of the published sources $P_7$, the first $BH(9,6)$
 catalogue representative, and $M_{13}A$~\cite{catalogue,aalto}, followed
 by the triplings below, give the following completed constructions.
-Here ``known'' means that an earlier construction was located; ``new''
-means new to the best of the author's knowledge.
+Individually known ranks are marked in the table.
 \begin{center}
 \begin{tabular}{ccl}
 Source order/scale & Endpoint order/scale & Order status\\\hline
@@ -179,7 +198,7 @@ $117$ & $295308$ & New\\
 $351$ & $885924$ & Known (Paley)
 \end{tabular}
 \end{center}
-Every used exponent is in $\{0,1,3,4\}$, and both complete source Grams
+Every used exponent is in $\{0,1,3,4\}$, and all complete source Grams
 are checked over $\mathbb Q(\zeta_6)$. The ancillary files specify the
 gauged sources and every endpoint entry, without storing the large matrices.
 
@@ -242,7 +261,7 @@ $51$ & $128724$ & $61$ & $153964$
 The other inputs are marked known when a prior construction was located;
 in particular $w=33$ gives the known Paley block-product order $83292$.
 
-\paragraph{Constructive infinite families.}
+\paragraph{The five Spence families.}
 Spence's recurrence~\cite{spence} applies to suitable sign quadruples
 $(D,E,F,G)$ of order $(q+1)/2$, for a prime power $q\equiv1\pmod4$.
 Let $Q$ be the symmetric Paley matrix of order $q$, so
@@ -265,7 +284,9 @@ Explicit starters and entry recursions are supplied for
 $q=13,17,61,101,121$. They are group-circulant on
 $C_{(q+1)/2}\times(\F_q,+)^r$.
 The same normalized group-algebra trace has metric $I_{w_r}$ in the
-inverse-group basis, and the scalar proof above gives the five families
+inverse-group basis. The classical source gives Hadamard rank $4w_r$;
+the new design supplies the odd multiplier $631$. Thus the scalar proof
+gives our five new Spence families
 \[
 17668\cdot13^r,\quad22716\cdot17^r,\quad78244\cdot61^r,\quad
 128724\cdot101^r,\quad153964\cdot121^r\qquad(r\geq0).
@@ -275,6 +296,10 @@ integer transform with a proved coefficient bound. The ancillary recipes
 give entry and row access without allocating the full endpoints.
 Their first expanded orders $229684$, $386172$, $4772884$ and $13001124$
 are new. The fifth, $18629644$, is known by Paley II with prime $9314821$.
+Together with $32812\cdot3^r$, these are the six output families of
+Theorem~\ref{thm:main}; each has a new base rank. The known ranks
+$885924$ and $18629644$ illustrate that an individual member can already
+be available from a different construction.
 
 \paragraph{How the witness was found.}
 The successful search separated orbit axes from signs, using an auxiliary
@@ -331,6 +356,7 @@ until the first exact zero. It passed $5\,202\,822$ assignments through
 the exact DC filter.
 These are measurements of that stream, not a bound on rediscovery time.
 
+\begin{samepage}
 \begin{theorem}\label{thm:T127}
 There exist four circulant $\{0,\pm1\}$-matrices $T_i$ of order $127$
 with pairwise disjoint support and
@@ -341,6 +367,7 @@ $127$, multiplier $22$ of order $9$, and the $15$ states
 \begin{center}\small\ttfamily
 0 0 4 0 1 6 2 3 6 1 0 3 5 4 3
 \end{center}
+\end{samepage}
 The resulting one-hot sequences have row sums $(10,3,3,3)$ and weights
 $(46,27,27,27)$. Direct integer calculation gives \eqref{eq:T} with
 $p=127$, proving Theorem~\ref{thm:T127} by taking their circulants.
@@ -376,6 +403,25 @@ row~\cite{survey}; the other two records explicitly list $7572$ as
 unresolved~\cite{explorer,frontier}. For the remaining orders marked
 new above, the literature search located no earlier construction.
 
+\paragraph{Formal verification and reproducibility.}
+The existence statements of Theorem~\ref{thm:main}, including all six
+families for every nonnegative parameter, have been verified in
+Lean~4.32.0. The proofs use literal T127 and T631 data, $27$ Williamson
+quadruples, five strong recurrence starters, and the order-$13$ unreal
+pair. They establish the source norms, transported Gram identities,
+final sign entries and rank equalities. The formal statements certify
+existence; the saved rank-$7572$ representative has the independent full
+integer audit described above.
+
+The public repository
+\url{https://github.com/sashakolpakov/butson_towers}
+contains the complete source-only Lean reproducibility package, with a
+pinned dependency lock and an audit of all $85$ selected statements.
+A fresh extracted replay passed using only Lean's standard axioms.
+The verified proof snapshot is commit \texttt{686acf9}; its reproducibility
+package is under \texttt{release/lean\_verification/}. The sequence data
+and executable ancillary recipes independently reproduce the constructions.
+
 \paragraph{Computational assistance.}
 The scalar-reduction viewpoint and projective-flatness formulation were
 proposed by the author. The search implementation, computations, automated
@@ -399,6 +445,16 @@ J. Austral. Math. Soc. Ser. A\ 24 (1977), 252--256, Theorem~4.
 R.~Egan and P.~\'{O}~Cath\'ain,
 \emph{Morphisms of Butson classes}, Linear Algebra Appl.\ 577 (2019), 78--93.
 \url{https://arxiv.org/abs/1707.08815v3}.
+\bibitem{complete-morphisms}
+R.~Egan and P.~\'{O}~Cath\'ain,
+\emph{On complete morphisms of Butson Hadamard matrices},
+arXiv:2610.28394v1, 20 October 2026.
+\url{https://arxiv.org/abs/2610.28394v1}.
+\bibitem{matrix-homomorphisms}
+P.~\'{O}~Cath\'ain and E.~Swartz,
+\emph{Homomorphisms of matrix algebras and constructions of Butson-Hadamard matrices},
+Discrete Math.\ 342 (2019), article 111606.
+\url{https://arxiv.org/abs/1904.10771v3}.
 \bibitem{catalogue}
 W.~Bruzda, W.~Tadej and K.~\.{Z}yczkowski,
 \emph{Complex Hadamard Matrices catalogue}, sources $P_7$ and $M_{13}A$.

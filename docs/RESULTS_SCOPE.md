@@ -3,8 +3,9 @@
 Butson Towers contains existence constructions and exact scalar reductions.
 The main campaign has **38 distinct completed real Hadamard orders: 18 new
 to the best of the author's knowledge and 20 recovered known orders**.
-The new periodic T127 ingredient is counted separately. The five infinite
-families have complete construction recipes for every nonnegative parameter;
+The new periodic T127 ingredient is counted separately. The six infinite
+output families (five Spence-source families and one cubic family) have
+complete construction recipes for every nonnegative parameter;
 their finite audited members carry individual known/new labels.
 
 - [Complete status ledger](HADAMARD_HIGHER_ORDER_RECORDS.md)

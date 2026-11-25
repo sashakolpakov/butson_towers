@@ -32,20 +32,23 @@ frame of width 2524. Further complete sources give
 Large outputs have literal entry recipes and complete algebraic Gram proofs;
 they do not require large dense matrix files.
 
-The [five constructive infinite families](docs/SPENCE_SCALAR_FAMILIES.md)
-provide literal Hadamard matrices for every integer `r>=0` at orders
+The **six new infinite families** comprise the
+[five Spence-source families](docs/SPENCE_SCALAR_FAMILIES.md) and the
+[unreal-source tripling family](docs/TRIPLED_UNREAL_SCALAR_ENDPOINTS.md).
+Their classical source recurrences combine with the new T631 design to
+give literal Hadamard matrices for every integer `r>=0`:
 
-| Family parameter | Real endpoint order |
-|---:|---|
-| 13 | `17668*13^r` |
-| 17 | `22716*17^r` |
-| 61 | `78244*61^r` |
-| 101 | `128724*101^r` |
-| 121 | `153964*121^r` |
+| Source recurrence | Real Hadamard rank |
+|---|---|
+| Spence, q=13 | `17668*13^r` |
+| Spence, q=17 | `22716*17^r` |
+| Unreal-source tripling | `32812*3^r` |
+| Spence, q=61 | `78244*61^r` |
+| Spence, q=101 | `128724*101^r` |
+| Spence, q=121 | `153964*121^r` |
 
-Existence holds throughout each family. The finite members audited in the
-ledger have individual known/new labels; the infinite families do not
-claim every member's order as new.
+Each output family contains a new base rank. Individually known members,
+including 885924 and 18629644, are identified in the ledger.
 
 There is also a separate new [periodic T127 ingredient](artifacts/t-matrices-127/README.md).
 Its real endpoint H1524 is a known-order control. The
@@ -79,7 +82,7 @@ gives the replay commands. Run the repository suite with
 ```
 
 The [Lean project](docs/FORMALIZATION.md) proves the **eighteen announced
-orders and all five infinite families**, from literal finite witnesses.
+ranks and all six infinite families**, from literal finite witnesses.
 It verifies T127/T631 correlations in the kernel, the regular scalar
 action, orthogonal-design substitution, the actual Spence recurrence,
 and the order-13 cubic recurrence. Build and audit all final statements
@@ -89,8 +92,13 @@ contains the locked sources, checksum verifier and successful extracted replay.
 
 ## Manuscript and HexagonMath tooling
 
-The [announcement and source package](release/hadamard_7572_announcement/README.md)
-are maintained alongside the construction proofs. Local administrative
+The current manuscript is **Butson towers and high-rank Hadamard matrices**.
+The [six-page PDF and source package](release/butson_towers_v2/README.md)
+include the eighteen new ranks, all six families and the completed Lean
+verification. The [original announcement](release/hadamard_7572_announcement/README.md)
+is retained as a frozen earlier revision. The mathematical source is
+[manuscript/hadamard_7572_announcement.tex](manuscript/hadamard_7572_announcement.tex).
+Local administrative
 defaults live in `hexagon_parameters.local`; credentials live separately
 in `hexagon_key.local`. Both files remain private, outside Git and release
 archives. Local preparation and saved defaults do not authorize a remote

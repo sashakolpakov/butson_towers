@@ -121,5 +121,35 @@
     "memory_tests_passed": 104,
     "remaining_tests_passed": 551,
     "retained_and_verified": true
+  },
+  "manuscript_revision": {
+    "checked_utc": "2026-11-25T04:45:47.285669+00:00",
+    "title": "Butson towers and high-rank Hadamard matrices",
+    "canonical_source": "manuscript/hadamard_7572_announcement.tex",
+    "current_release": "release/butson_towers_v2",
+    "abstract_words": 64,
+    "new_real_Hadamard_rank_count": 18,
+    "new_output_family_count": 6,
+    "family_sources": {
+      "Spence": 5,
+      "unreal_tripling": 1
+    },
+    "rank_list_and_families_match_existing_Lean_theorems": true,
+    "source_sha256": "b4005fa952e2e96d0b38efa82c0838ff062dc4a06b84da832097d0165a195d8e",
+    "pdf_sha256": "2753ca4201f28e72cdc3e3446aab98e06167ba1b59d95f17b98fa7728db9e27b",
+    "source_zip_sha256": "74387e5b636efca864b3faf52e3fd9e1a36fa3da01b6e07cb635efc5e4223f43",
+    "pages": 6,
+    "typesetting_warnings": [],
+    "all_pages_visually_reviewed": true,
+    "extracted_archive_replay_passed": true,
+    "independent_archive_report": "release/butson_towers_v2/archive-verification.json",
+    "fixed_API_parameters_reused": true,
+    "remote_draft_created": false,
+    "submitted": false,
+    "original_construction_and_announcement_bundles_preserved": true,
+    "Lean_source_packet_unchanged": true,
+    "repository_tests_passed": 326,
+    "pytest_subtests_passed": 4,
+    "repository_suite_seconds": 111.93
   }
 }

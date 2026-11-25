@@ -1,0 +1,55 @@
+{
+  "origin": "https://hexagonmath.org",
+  "schema_url": "https://hexagonmath.org/api/v1/openapi.json",
+  "schema_version": "1.13.0-beta",
+  "schema_sha256": "4cc8635cc8d6c440b52009d41c8fa285f647297d54e1b74bcc7ed69f9d258df8",
+  "checked_utc": "2026-11-24T18:52:03.399385+00:00",
+  "metadata_schema": "SubmissionMetadata",
+  "metadata_required_fields": [
+    "title",
+    "abstract",
+    "subject",
+    "mscCodes",
+    "authorshipMode",
+    "authors",
+    "submittingContributorIndex",
+    "sponsorName",
+    "humanUnderstanding",
+    "correctnessConfirmed",
+    "communityInterestConfirmed",
+    "citationsConfirmed",
+    "license",
+    "rightsConfirmed"
+  ],
+  "licenses": [
+    "CC BY 4.0",
+    "CC BY-SA 4.0",
+    "CC0 1.0"
+  ],
+  "text_origin_values": [
+    "no-human-author-claimed",
+    "mixed",
+    "human"
+  ],
+  "human_understanding_values": [
+    "all",
+    "some",
+    "none"
+  ],
+  "new_manuscript_confirmations_required": [
+    "correctnessConfirmed",
+    "communityInterestConfirmed",
+    "citationsConfirmed",
+    "rightsConfirmed"
+  ],
+  "ancillary_source_zip_supported": true,
+  "ancillary_extensions_used": [
+    ".py",
+    ".json"
+  ],
+  "main_entry_point": "main.tex",
+  "upload_kind": "source-archive",
+  "source_archive_maximum_bytes": 104857600,
+  "individual_text_maximum_bytes": 4194304,
+  "authenticated_requests_performed": false
+}

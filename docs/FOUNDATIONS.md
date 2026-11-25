@@ -131,8 +131,8 @@ separate scopes.
 ## Formal verification status
 
 The [Lean development](FORMALIZATION.md) connects literal finite witnesses
-to the eighteen announced existence theorems and the five all-iteration
-families. It proves the regular action and trace metric, the complete
+to the eighteen announced existence theorems and all six output families:
+five Spence-source families and the cubic family. It proves the regular action and trace metric, the complete
 orthogonal-design construction, final sign entries and the exact matrix
 recurrences. Run `./scripts/check_formal.sh` for the build and fixed axiom
 audit; the [portable package](../release/lean_verification/README.md)

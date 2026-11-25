@@ -1,0 +1,12 @@
+{
+  "source": "main.tex",
+  "source_sha256": "b4005fa952e2e96d0b38efa82c0838ff062dc4a06b84da832097d0165a195d8e",
+  "reference_pdf": "announcement.pdf",
+  "pdf_sha256": "2753ca4201f28e72cdc3e3446aab98e06167ba1b59d95f17b98fa7728db9e27b",
+  "pages": 6,
+  "command": "latexmk -pdf -interaction=nonstopmode -halt-on-error -outdir=build main.tex",
+  "warnings": [],
+  "source_and_reference_pdf_checked": true,
+  "all_pages_visually_reviewed": true,
+  "visual_review_note": "All six pages of this exact PDF were rendered at 120 dpi and inspected: title, abstract, theorem, equations, tables and references fit within the page; no clipping or overlaps. T127 theorem, introduction and all 15 states appear together on page 5."
+}

@@ -13,15 +13,18 @@ executor gives literal entries for every integer `r>=0` in these families:
 | 101 | `51*101^r` | `128724*101^r` |
 | 121 | `61*121^r` | `153964*121^r` |
 
-This establishes constructive infinite families. It does not assert that
-every member has a previously unknown order. The completed endpoint ledger
-records the status of individual finite orders.
+These are the five Spence-source members of the project's six new output
+families. The sixth is the [cubic family](TRIPLED_UNREAL_SCALAR_ENDPOINTS.md)
+`32812*3^r`. Each output family has a new base rank; the completed endpoint
+ledger records individually known ranks within the families.
 
 The primary recurrence is Spence,
 [*An infinite family of Williamson matrices* (1977), Theorem 4, printed page 254](https://doi.org/10.1017/S1446788700020255).
 The executor checks all four recurrence formulas against the paper and
 independently verifies its required starter identities. The source method
-is known; the new frame supplies the endpoint multiplier 2524.
+is known; the new frame supplies the endpoint multiplier 2524 from the
+component dimension. Relative to the classical Hadamard rank `4*w_r`,
+the output rank `2524*w_r` has the new odd multiplier 631.
 
 ## Exact starters and induction
 
