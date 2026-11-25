@@ -1,4 +1,6 @@
-import Mathlib
+import Mathlib.Tactic.Ring
+import Mathlib.Tactic.LinearCombination
+import Mathlib.Tactic.NormNum
 
 /-!
 The exact algebraic core of Spence's recurrence.  The carrier is a

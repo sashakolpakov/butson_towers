@@ -1,157 +1,74 @@
 {
   "schema": "butson-towers-migration-verification-v1",
-  "checked_utc": "2026-11-24T21:58:41.215188+00:00",
+  "checked_utc": "2026-11-25T00:53:42.513703+00:00",
   "python": {
     "version": "3.12.13",
     "migrated_test_files": 73,
-    "tests_passed": 313,
-    "source_checkout_independent": true,
-    "runtime_independent_of_original_repository": true,
-    "complete_migrated_suite_passed": 307,
-    "additional_native_driver_checks_passed": 6,
+    "full_repository_suite_passed": 326,
+    "construction_checks_passed": 313,
     "privacy_regression_checks_passed": 13,
-    "total_unique_checks_verified": 326
+    "pytest_subtests_passed": 4,
+    "suite_seconds": 309.5,
+    "total_unique_checks_verified": 326,
+    "source_checkout_independent": true,
+    "runtime_independent_of_original_repository": true
   },
   "formal": {
     "lean_toolchain": "leanprover/lean4:v4.32.0",
     "mathlib_revision": "81a5d257c8e410db227a6665ed08f64fea08e997",
     "lake_build_passed": true,
-    "theorem_count": 16,
-    "theorems": [
-      {
-        "theorem": "ButsonTowers.inverse_metric_adjoint",
-        "axioms": [
-          "Classical.choice",
-          "Quot.sound",
-          "propext"
-        ]
-      },
-      {
-        "theorem": "ButsonTowers.framed_zero",
-        "axioms": [
-          "Classical.choice",
-          "Quot.sound",
-          "propext"
-        ]
-      },
-      {
-        "theorem": "ButsonTowers.frame_pair_transport",
-        "axioms": [
-          "Classical.choice",
-          "Quot.sound",
-          "propext"
-        ]
-      },
-      {
-        "theorem": "ButsonTowers.frame_sum_transport",
-        "axioms": [
-          "Classical.choice",
-          "Quot.sound",
-          "propext"
-        ]
-      },
-      {
-        "theorem": "ButsonTowers.weighted_pair_transport",
-        "axioms": [
-          "Classical.choice",
-          "Quot.sound",
-          "propext"
-        ]
-      },
-      {
-        "theorem": "ButsonTowers.weighted_sum_transport",
-        "axioms": [
-          "Classical.choice",
-          "Quot.sound",
-          "propext"
-        ]
-      },
-      {
-        "theorem": "ButsonTowers.weighted_gram_block",
-        "axioms": [
-          "Classical.choice",
-          "Quot.sound",
-          "propext"
-        ]
-      },
-      {
-        "theorem": "ButsonTowers.frame_gram_block",
-        "axioms": [
-          "Classical.choice",
-          "Quot.sound",
-          "propext"
-        ]
-      },
-      {
-        "theorem": "ButsonTowers.framed_matrix_flat",
-        "axioms": [
-          "Classical.choice",
-          "Quot.sound",
-          "propext"
-        ]
-      },
-      {
-        "theorem": "ButsonTowers.framed_matrix_gram",
-        "axioms": [
-          "Classical.choice",
-          "Quot.sound",
-          "propext"
-        ]
-      },
-      {
-        "theorem": "ButsonTowers.framed_matrix_hadamard",
-        "axioms": [
-          "Classical.choice",
-          "Quot.sound",
-          "propext"
-        ]
-      },
-      {
-        "theorem": "ButsonTowers.Spence.doubled_minus_norm",
-        "axioms": [
-          "Quot.sound",
-          "propext"
-        ]
-      },
-      {
-        "theorem": "ButsonTowers.Spence.doubled_plus_norm",
-        "axioms": [
-          "Quot.sound",
-          "propext"
-        ]
-      },
-      {
-        "theorem": "ButsonTowers.Spence.sum_squares_from_strong_norms",
-        "axioms": [
-          "Quot.sound",
-          "propext"
-        ]
-      },
-      {
-        "theorem": "ButsonTowers.Spence.strong_norm_induction",
-        "axioms": [
-          "propext"
-        ]
-      },
-      {
-        "theorem": "ButsonTowers.Spence.entry_step_sign",
-        "axioms": [
-          "Classical.choice",
-          "Quot.sound",
-          "propext"
-        ]
-      }
-    ],
+    "theorem_count": 85,
+    "axiom_report": "release/lean_verification/verification.json",
     "project_axioms_or_placeholders": false,
-    "concrete_finite_witnesses_formally_integrated": false,
-    "rechecked_after_relocation": true,
+    "concrete_finite_witnesses_formally_integrated": true,
+    "announced_orders": [
+      7572,
+      17668,
+      22716,
+      32812,
+      42908,
+      58052,
+      73196,
+      78244,
+      93388,
+      98436,
+      108532,
+      128724,
+      153964,
+      229684,
+      295308,
+      386172,
+      4772884,
+      13001124
+    ],
+    "spence_families": {
+      "13": "17668*13^r",
+      "17": "22716*17^r",
+      "61": "78244*61^r",
+      "101": "128724*101^r",
+      "121": "153964*121^r"
+    },
+    "additional_cubic_family": "32812*3^r",
+    "williamson_source_count": 27,
+    "periodic_t_witnesses": [
+      127,
+      631
+    ],
+    "t631_numeric_kernel_blocks": 32,
+    "literal_provenance_regeneration_passed": true,
     "reproducibility_package": {
       "archive": "release/lean_verification/butson-towers-lean-repro.zip",
-      "sha256": "e1bfc3ad04d104073497c349d88b86d8e57a68ba62c61a0c361e39da5dc21376",
-      "source_files": 13,
+      "sha256": "b27770540ea701604c5246876df712c798545856751b4f4169446f10641f5ade",
+      "payload_files": 54,
+      "fresh_project_modules_built": 42,
       "fresh_extracted_replay_passed": true,
       "dependency_pins_checked": 9,
-      "dependency_mode": "existing-pinned-cache"
+      "dependency_mode": "existing-pinned-cache",
+      "elapsed_seconds": 265.28,
+      "deterministic_rebuild_passed": true,
+      "extra_lean_source_rejection_passed": true,
+      "symlink_source_directory_rejection_passed": true,
+      "wrapped_axiom_parser_regressions_passed": true
     }
   },
   "release": {
@@ -162,9 +79,12 @@
   },
   "private_configuration": {
     "excluded_from_git": true,
-    "excluded_from_submission_archive": true,
+    "excluded_from_release_archives": true,
     "mode": "0600",
+    "audit_command": ".venv/bin/python scripts/check_private_files.py --root .",
+    "audit_index_scope": "staged publication tree",
     "audit": {
+      "ok": true,
       "checks": {
         "all_git_index_blobs_checked": true,
         "all_reachable_git_objects_checked": true,
@@ -177,26 +97,22 @@
       "counts": {
         "errors": 0,
         "findings": 0,
-        "git_blob_bytes_checked": 116197151,
-        "git_blobs_checked": 1132,
-        "git_index_blob_entries_checked": 1136,
-        "git_index_only_blobs_checked": 12,
-        "git_objects_checked": 1170,
+        "git_blob_bytes_checked": 116662268,
+        "git_blobs_checked": 1193,
+        "git_index_blob_entries_checked": 1219,
+        "git_index_only_blobs_checked": 61,
+        "git_objects_checked": 1239,
         "private_files_checked": 2,
-        "reachable_git_blobs_checked": 1120,
-        "reachable_git_objects_checked": 1158,
-        "reachable_git_trees_checked": 34,
+        "reachable_git_blobs_checked": 1132,
+        "reachable_git_objects_checked": 1178,
+        "reachable_git_trees_checked": 41,
         "release_archives_checked": 2,
-        "tracked_paths_checked": 1136,
-        "zip_archives_checked": 478,
-        "zip_expanded_bytes_checked": 147271718,
-        "zip_members_checked": 1097
-      },
-      "errors": [],
-      "findings": [],
-      "ok": true
-    },
-    "all_local_files_and_directories_excluded": true
+        "tracked_paths_checked": 1219,
+        "zip_archives_checked": 479,
+        "zip_expanded_bytes_checked": 147625313,
+        "zip_members_checked": 1151
+      }
+    }
   },
   "final_location_verified": true,
   "final_repository": "/Users/sasha/butson_towers",

@@ -130,9 +130,10 @@ separate scopes.
 
 ## Formal verification status
 
-Proof-assistant formalization is underway. The repository's completed
-matrix constructions currently have exact executable proofs and
-certificates; this does not by itself claim a completed proof-assistant
-formalization. Only an actual successful kernel check establishes the
-corresponding formal theorem. Its file, theorem and verification command
-must accompany any such claim.
+The [Lean development](FORMALIZATION.md) connects literal finite witnesses
+to the eighteen announced existence theorems and the five all-iteration
+families. It proves the regular action and trace metric, the complete
+orthogonal-design construction, final sign entries and the exact matrix
+recurrences. Run `./scripts/check_formal.sh` for the build and fixed axiom
+audit; the [portable package](../release/lean_verification/README.md)
+contains the proof sources and a reproducibility verifier.

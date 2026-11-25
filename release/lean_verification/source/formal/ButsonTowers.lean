@@ -1,2 +1,6 @@
 import ButsonTowers.ScalarFrame
 import ButsonTowers.Spence
+import ButsonTowers.TraceTowers
+import ButsonTowers.ReflectionConvention
+import ButsonTowers.FiniteGroupAlgebra
+import ButsonTowers.Endpoints

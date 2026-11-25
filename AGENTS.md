@@ -45,8 +45,11 @@ Use `docs/RESULTS_SCOPE.md` for the precise scope of a completed result.
 
 # Formalization status
 
-- Proof-assistant formalization is underway. Keep executable exact
-  verification and proof-assistant verification separately identified.
+- The eighteen announced orders and five Spence families have complete
+  Lean existence proofs from literal finite witnesses. See
+  `docs/FORMALIZATION.md` and the portable verification package for their
+  precise scope. Keep executable exact verification and proof-assistant
+  verification separately identified for subsequent results.
 - Claim a theorem as kernel checked only after its actual successful
   check. Record the theorem, file, command and result, and retain the
   scope of any imported assumptions.

@@ -1,11 +1,11 @@
 # Butson Towers: Lean verification package
 
-This source-only package verifies **sixteen general construction theorems**:
-weighted scalar Gram transport, complete framed-matrix Gram transport,
-separate sign flatness and scale/order conditions, and the algebraic Spence
-recurrences with their sign test. It does **not** claim that all concrete
-T witnesses or eighteen recorded matrix endpoints have been formally
-instantiated. See `docs/FORMALIZATION.md` for the exact boundary.
+This source-only package checks the **eighteen announced Hadamard orders
+and all members of five Spence families**, from literal finite witnesses.
+It includes kernel evaluations of both T correlations, all 27 Williamson
+sources, five Paley matrices, five strong starters and the order-13 unreal
+seed, connected to the general matrix construction proofs. See
+`docs/FORMALIZATION.md` for the named statements and conventions.
 
 The package pins Lean **4.32.0**, mathlib commit
 `81a5d257c8e410db227a6665ed08f64fea08e997`, and every transitive Git
@@ -25,9 +25,13 @@ The verifier runs the following in `formal/`, without changing the lock:
 
 ```sh
 lake exe cache get
-lake build
+python3 build.py
 lake env lean AuditAxioms.lean
 ```
+
+`build.py` schedules at most three independent local modules at once,
+then runs a final `lake build`. This bounds memory use during the finite
+kernel checks. Use `python3 build.py --jobs 1` for serial local checking.
 
 Lake automatically fetches missing dependency **source checkouts at the
 manifest-locked revisions** when loading the workspace. The first command
@@ -65,12 +69,12 @@ with `--lake /path/to/lake`; its Lean version is checked.
 
 `verify.py` checks all whitelisted file sizes and SHA256 digests, the exact
 toolchain and dependency revisions, a successful Lean build, and exactly
-the sixteen expected `#print axioms` reports. It accepts only the standard
+the exact expected `#print axioms` reports. It accepts only the standard
 axioms `propext`, `Classical.choice`, and `Quot.sound`. Missing or repeated
 reports, `sorryAx`, project axioms, and unrelated theorem names cause failure.
 The proof sources use no `sorry`, `admit`, project axiom or native evaluator.
 
-The final JSON reports `success:true` and `proof_theorems_checked:16`.
+The final JSON reports `success:true` and the number of checked theorem reports.
 The axiom-output parser has an independent small regression test:
 
 ```sh
@@ -79,7 +83,7 @@ python3 verify.py --self-test
 
 ## Package contents and rebuilding
 
-The payload is an explicit whitelist of the eight formal project files,
+The payload is an explicit whitelist of the complete formal project,
 the formalization scope document, this README, the verifier and packager,
 plus `MANIFEST.json`. No `.lake` directory, compiled proof, symlink,
 `.local` file, API credential or submission-parameter file is included.

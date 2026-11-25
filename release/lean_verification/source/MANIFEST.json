@@ -18,9 +18,78 @@
     "ButsonTowers.Spence.doubled_plus_norm",
     "ButsonTowers.Spence.sum_squares_from_strong_norms",
     "ButsonTowers.Spence.strong_norm_induction",
-    "ButsonTowers.Spence.entry_step_sign"
+    "ButsonTowers.Spence.entry_step_sign",
+    "ButsonTowers.TraceTowers.trace_metric_adjoint",
+    "ButsonTowers.TraceTowers.inverse_trace_metric_adjoint",
+    "ButsonTowers.TraceTowers.weighted_trace_gram_transport",
+    "ButsonTowers.TraceTowers.basis_gram_congruence",
+    "ButsonTowers.GroupAlgebra.regular_mul",
+    "ButsonTowers.GroupAlgebra.regular_involution",
+    "ButsonTowers.GroupAlgebra.regular_trace",
+    "ButsonTowers.GroupAlgebra.inverse_basis_trace_metric",
+    "ButsonTowers.GroupAlgebra.regularAlgHom_injective",
+    "ButsonTowers.GroupAlgebra.regular_star",
+    "ButsonTowers.GroupAlgebra.regularAlgHom_normalized_trace",
+    "ButsonTowers.GroupAlgebra.group_algebra_identity_trace_metric",
+    "ButsonTowers.GoethalsSeidel.gs_gram",
+    "ButsonTowers.OrthogonalDesign.coefficient_gram",
+    "ButsonTowers.OrthogonalDesign.coefficient_cross",
+    "ButsonTowers.OrthogonalDesign.coefficients_signed_partition",
+    "ButsonTowers.tensor_substitute_gram",
+    "ButsonTowers.tensor_substitute_flat",
+    "ButsonTowers.tensor_substitute_hadamard",
+    "ButsonTowers.SpenceMatrix.strong_step",
+    "ButsonTowers.SpenceMatrix.family_strong",
+    "ButsonTowers.SpenceMatrix.family_norm",
+    "ButsonTowers.SpenceMatrix.family_card",
+    "ButsonTowers.SpenceMatrix.family_hadamard",
+    "ButsonTowers.Unreal.next_amicable",
+    "ButsonTowers.Unreal.next_norm",
+    "ButsonTowers.Unreal.quad_amicable",
+    "ButsonTowers.hadamard_reindex",
+    "ButsonTowers.exists_from_t",
+    "ButsonTowers.spence_exists_from_t",
+    "ButsonTowers.Data.t127_codes_corr",
+    "ButsonTowers.Data.t127_corr",
+    "ButsonTowers.Data.t127_onehot",
+    "ButsonTowers.Data.t631_codes_corr",
+    "ButsonTowers.Data.t631_corr",
+    "ButsonTowers.Data.t631_onehot",
+    "ButsonTowers.Data.unreal13_norm",
+    "ButsonTowers.hadamard_7572",
+    "ButsonTowers.hadamard_17668",
+    "ButsonTowers.hadamard_22716",
+    "ButsonTowers.hadamard_32812",
+    "ButsonTowers.hadamard_42908",
+    "ButsonTowers.hadamard_58052",
+    "ButsonTowers.hadamard_73196",
+    "ButsonTowers.hadamard_78244",
+    "ButsonTowers.hadamard_93388",
+    "ButsonTowers.hadamard_98436",
+    "ButsonTowers.hadamard_108532",
+    "ButsonTowers.hadamard_128724",
+    "ButsonTowers.hadamard_153964",
+    "ButsonTowers.hadamard_229684",
+    "ButsonTowers.hadamard_295308",
+    "ButsonTowers.hadamard_386172",
+    "ButsonTowers.hadamard_4772884",
+    "ButsonTowers.hadamard_13001124",
+    "ButsonTowers.spence_family_13",
+    "ButsonTowers.spence_family_17",
+    "ButsonTowers.spence_family_61",
+    "ButsonTowers.spence_family_101",
+    "ButsonTowers.spence_family_121",
+    "ButsonTowers.unreal_cubic_family",
+    "ButsonTowers.announced_orders_exist",
+    "ButsonTowers.williamson_table_endpoints",
+    "ButsonTowers.GoethalsSeidel.python_reflection_127",
+    "ButsonTowers.GoethalsSeidel.python_reflection_631",
+    "ButsonTowers.GSAlgebra.blocks_gram",
+    "ButsonTowers.TraceTowers.finite_free_trace_transitivity",
+    "ButsonTowers.TraceTowers.tower_action_coordinates",
+    "ButsonTowers.TraceTowers.tower_trace_metric"
   ],
-  "scope": "partial formal construction kernel; not formal certification of every concrete matrix",
+  "scope": "formal existence of all eighteen announced orders and all members of five Spence families, from literal finite witnesses",
   "packaging_policy": "explicit public source whitelist; no .lake, symlinks, .local files, API credentials or submission parameters",
   "files": [
     {
@@ -45,43 +114,248 @@
     },
     {
       "path": "formal/ButsonTowers.lean",
-      "bytes": 59,
-      "sha256": "889247d8f33c3c95e8a1606b25f6c0a0e990cb0860724d34186a7f0041d769bc"
+      "bytes": 201,
+      "sha256": "56b24ba01296020e6cb796c67cb32ae91d1d9cb36d8f45ef80cff10143aae93e"
     },
     {
       "path": "formal/AuditAxioms.lean",
-      "bytes": 814,
-      "sha256": "fcfb9eb2a8f81155cd4735394752de3125b8e47d0a4bddd4770fdaa812b1f2d8"
+      "bytes": 4331,
+      "sha256": "6aae55b14b94e5da657135e3f8a89bee179a05e39ff182f8ab6fb833fd5699b9"
+    },
+    {
+      "path": "formal/build.py",
+      "bytes": 1829,
+      "sha256": "aca1da07939bdab0fe0c079bbd66100d38e1c7e9355b3081d4df9b36e445ec94"
+    },
+    {
+      "path": "formal/DATA_PROVENANCE.json",
+      "bytes": 7005,
+      "sha256": "d2dded23fc1f9e1852d8999b7759a0f64c859ee033a322b08fec73847675eb14"
+    },
+    {
+      "path": "formal/ButsonTowers/Construction.lean",
+      "bytes": 1816,
+      "sha256": "8008fefc36cc9f47442476d35e3412eb6bcbb01ed359c3459d14ffd9cb35ab66"
+    },
+    {
+      "path": "formal/ButsonTowers/Data/CorrRange.lean",
+      "bytes": 961,
+      "sha256": "ab4c2195894f7d936ba58c94d816cc9d5ca1f7c36f491ac9effa5798570d081e"
+    },
+    {
+      "path": "formal/ButsonTowers/Data/FiniteChecks.lean",
+      "bytes": 4092,
+      "sha256": "5da9b634c31f5fb16f314ea93a84a1351b05b57e9d9fa1f746b75a9abe483066"
+    },
+    {
+      "path": "formal/ButsonTowers/Data/LiteralTree.lean",
+      "bytes": 604,
+      "sha256": "7b94c2095c13794b4de78fe9dc0495db1ced1db23b6977dc251cb5259eb2e551"
+    },
+    {
+      "path": "formal/ButsonTowers/Data/Paley.lean",
+      "bytes": 3730,
+      "sha256": "2aac3cca93eae33110d4d600d46155638d35ece8fe34d17a6d58fd41fc78e398"
+    },
+    {
+      "path": "formal/ButsonTowers/Data/PaleyChecks.lean",
+      "bytes": 4032,
+      "sha256": "b92f6546766a088c9542687f33924de15a1f78c8e51bf66eafb27777545608c6"
+    },
+    {
+      "path": "formal/ButsonTowers/Data/PaleyPairChecks.lean",
+      "bytes": 4489,
+      "sha256": "4306a1052573c481e62e411471b8b58d64332eb64f8fb5a6a105872f4ff482a5"
+    },
+    {
+      "path": "formal/ButsonTowers/Data/RowChecks.lean",
+      "bytes": 4394,
+      "sha256": "5791e782eb30323b718657b6c8860dd7519221c6d623325e5780b79afe105243"
+    },
+    {
+      "path": "formal/ButsonTowers/Data/StrongChecks.lean",
+      "bytes": 1928,
+      "sha256": "34a05f5e08eaa12c38ae2efb82f6efb380aaf5f3d0979f495e1c12eeea878a4c"
+    },
+    {
+      "path": "formal/ButsonTowers/Data/StrongStarters.lean",
+      "bytes": 4092,
+      "sha256": "41a7895855604857f5b1089fadb486a814a0cf8253131ea588b8893964e1e090"
+    },
+    {
+      "path": "formal/ButsonTowers/Data/T127.lean",
+      "bytes": 1255,
+      "sha256": "670b2ac34b88d7132da361ac3a6541db8504d6cafc3aaa120b273c1b739c7721"
+    },
+    {
+      "path": "formal/ButsonTowers/Data/T631.lean",
+      "bytes": 1303,
+      "sha256": "27318be272421bd6c1e6a8f945695c66378aa72f20002e098817cfc6e1f9d25f"
+    },
+    {
+      "path": "formal/ButsonTowers/Data/T631Blocked.lean",
+      "bytes": 4322,
+      "sha256": "bf554fab939e6970dccd52ecf5239daae149f2e7b39349748a42a7396d683d30"
+    },
+    {
+      "path": "formal/ButsonTowers/Data/T631Blocks/Chunk0.lean",
+      "bytes": 993,
+      "sha256": "12495ad0cb79174d523f8ed905a7806c689ca749a478820f535aad46538ee1db"
+    },
+    {
+      "path": "formal/ButsonTowers/Data/T631Blocks/Chunk1.lean",
+      "bytes": 999,
+      "sha256": "9c9b7fb37b0c55ff30fcbb36b7f32486bdb0d7408a067cffda3131cc31e8c7c9"
+    },
+    {
+      "path": "formal/ButsonTowers/Data/T631Blocks/Chunk2.lean",
+      "bytes": 999,
+      "sha256": "103441dca853f65809f33ffc93cfb39a6be23462f1937072d3817b81e452a76e"
+    },
+    {
+      "path": "formal/ButsonTowers/Data/T631Blocks/Chunk3.lean",
+      "bytes": 999,
+      "sha256": "95f5e76d8c038a287887b2269771ba6dc0e7dd47a0568696dc1efb3406c7cd1e"
+    },
+    {
+      "path": "formal/ButsonTowers/Data/TreeLiterals.lean",
+      "bytes": 110294,
+      "sha256": "910e4c600a8e4303e85a952bf2097190dde9b8e6082611852268bcf54548b6ce"
+    },
+    {
+      "path": "formal/ButsonTowers/Data/Unreal13.lean",
+      "bytes": 10121,
+      "sha256": "78c14345ac74606b896b5d3490019b2230228d3194dc26219ccad3aff45e93a5"
+    },
+    {
+      "path": "formal/ButsonTowers/Data/Williamson/Chunk0.lean",
+      "bytes": 12780,
+      "sha256": "8fd6e6536726027a32ef6eb8a850ea4305802abb061c2fd5b89fa308b3577298"
+    },
+    {
+      "path": "formal/ButsonTowers/Data/Williamson/Chunk1.lean",
+      "bytes": 13012,
+      "sha256": "b11f8d7ed5aafb971b3cd82aa97b1a659e91c92fb54203bbcb16503b00e0f269"
+    },
+    {
+      "path": "formal/ButsonTowers/Data/Williamson/Chunk2.lean",
+      "bytes": 13015,
+      "sha256": "ec24cee84eb0fe8d3ba19208d2fc1dc8157597a611bcb91a04ec0c94d243ab74"
+    },
+    {
+      "path": "formal/ButsonTowers/Data/Williamson.lean",
+      "bytes": 129,
+      "sha256": "84d6c5f23be4701ec7bb69a08e8816db30c272bb04e7f5949e89bb479f17ad79"
+    },
+    {
+      "path": "formal/ButsonTowers/Endpoints.lean",
+      "bytes": 17925,
+      "sha256": "46768c758570ac1c6d22d35f918e8839f8e1686e16e2ca289bffd761c3dff1a9"
+    },
+    {
+      "path": "formal/ButsonTowers/Existence.lean",
+      "bytes": 968,
+      "sha256": "287ea0b390e39bd65434dd052c1c474d0164907f391731c4262260057517e68c"
+    },
+    {
+      "path": "formal/ButsonTowers/FiniteGroupAlgebra.lean",
+      "bytes": 5160,
+      "sha256": "25669aded793e7448d6768c16d4c5707d67b1db41dda04c575faab417c623ecf"
+    },
+    {
+      "path": "formal/ButsonTowers/GSAlgebra.lean",
+      "bytes": 1755,
+      "sha256": "6e8615ac36919a52859ab366737224a8b37e31f1e5a38e75d5a23c8d364d655e"
+    },
+    {
+      "path": "formal/ButsonTowers/GoethalsSeidel.lean",
+      "bytes": 1860,
+      "sha256": "1d3c0bc28976ea609f2ea49f19c9cb45338e2633bbb29bba8c99cac5a2195409"
+    },
+    {
+      "path": "formal/ButsonTowers/GoethalsSeidelCore.lean",
+      "bytes": 2821,
+      "sha256": "46f8c8be1e0a4510d162838b446074a710e3cf0429b373335d0baadadf704160"
+    },
+    {
+      "path": "formal/ButsonTowers/GoethalsSeidelEntry.lean",
+      "bytes": 3624,
+      "sha256": "ee25ef97f2bb5ca5f0358b40c9d9e93b8a64267125b227c8d68b7165e0bb53c9"
+    },
+    {
+      "path": "formal/ButsonTowers/GroupAlgebra.lean",
+      "bytes": 3760,
+      "sha256": "e0163e7d175c468f9351a016b01f31a03e1e73cc336a9ab5f2ac7e709cd7e577"
+    },
+    {
+      "path": "formal/ButsonTowers/OrthogonalDesign.lean",
+      "bytes": 2494,
+      "sha256": "efa72b2b75d59d784556b603523d48974308e8a8b7ec18ec34c52ad926d6a2bf"
+    },
+    {
+      "path": "formal/ButsonTowers/OrthogonalDesignCore.lean",
+      "bytes": 6483,
+      "sha256": "85bdbdfd961ca224ed56226c30750ad3d2f7f76dcf54d80bff7aff845c029a22"
+    },
+    {
+      "path": "formal/ButsonTowers/OrthogonalSubstitution.lean",
+      "bytes": 5001,
+      "sha256": "9ac107a1fc20cb965b005961c17d5330d83a1bc85ae7b2d771ed1b5e102336f4"
+    },
+    {
+      "path": "formal/ButsonTowers/ReflectionConvention.lean",
+      "bytes": 5432,
+      "sha256": "46f19bb9145d3c5682f53fbdbb5bd54549951a09f7d0de1f8f4f7d7995ebd864"
     },
     {
       "path": "formal/ButsonTowers/ScalarFrame.lean",
-      "bytes": 6479,
-      "sha256": "0dca555fed593010e202d48b18e200851c4ac374f810781e74d51dfd6f15b0cf"
+      "bytes": 6681,
+      "sha256": "0c22e7c82dfac86bfe9353bd6f16830f9af7e46ed30f0ebd16acc4b60de447bb"
     },
     {
       "path": "formal/ButsonTowers/Spence.lean",
-      "bytes": 2769,
-      "sha256": "5022bcd7197d1a3a45525dd16e5209e32638600d11cbbbe8b9a52b45ec3884fb"
+      "bytes": 2851,
+      "sha256": "76550551edb0f877d2c4e55d329f1f7661da473f5efdbe812938558586e05868"
+    },
+    {
+      "path": "formal/ButsonTowers/SpenceHadamard.lean",
+      "bytes": 1771,
+      "sha256": "cb7e43672b9ff1fe29e5111f5502e0065ec454995b1d5a9bf0e9ac4319ba6aea"
+    },
+    {
+      "path": "formal/ButsonTowers/SpenceMatrix.lean",
+      "bytes": 12707,
+      "sha256": "c01bdbdbf3d294cb2fa0918b000dbb6378e507f9009da7d5fe2f866404941ce0"
+    },
+    {
+      "path": "formal/ButsonTowers/TraceTowers.lean",
+      "bytes": 5880,
+      "sha256": "60fc34ea1d92bcd1e86a0fae530c71955f38628121ebf3314b448aa939d0528e"
+    },
+    {
+      "path": "formal/ButsonTowers/UnrealTripling.lean",
+      "bytes": 6089,
+      "sha256": "cf4c752b8303eec1b1396761920297d65799d5b39214424b9a9d9c4a6171a16a"
     },
     {
       "path": "docs/FORMALIZATION.md",
-      "bytes": 7887,
-      "sha256": "9581c656c253fa52b14798fb245c4aa07abf6d07d8732fd0a25a40868c9670a6"
+      "bytes": 5406,
+      "sha256": "e8f4c2ea47f9a70b4d018248133a3b63a23a2fdd65eba64aaf89d3a295464edd"
     },
     {
       "path": "README.md",
-      "bytes": 3984,
-      "sha256": "f01b6566d38880bff655436f2fef79fdeff551fadf7d019b99361c37c4a9b3fd"
+      "bytes": 4204,
+      "sha256": "bfe0b9dc2c56c4c8150d254b4ae47c1b90ec99b2a85a8212f27573eb26bf0112"
     },
     {
       "path": "verify.py",
-      "bytes": 10783,
-      "sha256": "0307e2f30ee103a8cf0717da699d96bf8fd57dd48a815590c58e29eaafe7bb99"
+      "bytes": 17027,
+      "sha256": "3ae87322778a40a4266960055f4ba8f439807cf360d2ae2d3fb565f015fe485b"
     },
     {
       "path": "build_package.py",
-      "bytes": 2838,
-      "sha256": "eb293e9bccd31e74ad84b1113af26e7d0dfd06f7089b4304e4ccc4fb1ae43646"
+      "bytes": 2873,
+      "sha256": "42129d8eef9b0bd68afb4d33677498d51f78041782246927cce529e358d37593"
     }
   ]
 }

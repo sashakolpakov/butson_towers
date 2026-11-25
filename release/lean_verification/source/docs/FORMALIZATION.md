@@ -1,143 +1,112 @@
-# Formal proof status and remaining kernel
+# Formal verification
 
-The Lean project in [`formal`](../formal) contains checked general
-construction theorems. It does **not yet formally certify the concrete
-T631/T127 witnesses, every source table, or the completed endpoint list**.
-Those objects retain their separate exact executable certificates.
+The Lean project proves existence of the eighteen Hadamard orders in the
+announcement and each member of its five Spence families. The statements
+construct rational sign matrices with the exact Gram identity and the
+specified positive order; no dense high-order Gram calculation is needed.
 
-## Checked now
+## Final statements
 
-[`ScalarFrame.lean`](../formal/ButsonTowers/ScalarFrame.lean) proves over a
-commutative rational star algebra, which may have zero divisors:
+`ButsonTowers.HadamardExists n` means that a matrix indexed by `Fin n`
+has entries in `{1,-1}` and satisfies `H * H.transpose = n • 1`, with
+`0 < n`. The named `hadamard_<order>` theorems and the five all-iteration
+family theorems are collected in `formal/ButsonTowers/Endpoints.lean`.
+Novelty labels belong to the dated literature ledger; the formal
+statements prove existence.
 
-* The inverse-metric adjoint identity from a metric and its two-sided inverse.
-* Weighted pair, sum, and Gram transport for an algebra representation.
-* Flat-frame pair and sum transport, and the **full expanded matrix Gram**.
-* Preservation of zero entries and a separate used-entry flatness implication.
-* A positive-order Hadamard conclusion that explicitly requires
-  `frame scale * incoming Gram scale = expanded matrix order`.
+The five families are
 
-In the Euclidean case, for a rational algebra homomorphism `rho` with
-`rho(star a)=transpose(rho a)` and a frame `F F^T=cI`, the proved identity is
+| Character order | Hadamard order, for every `r : ℕ` |
+|---|---|
+| 13 | `17668 * 13^r` |
+| 17 | `22716 * 17^r` |
+| 61 | `78244 * 61^r` |
+| 101 | `128724 * 101^r` |
+| 121 | `153964 * 121^r` |
 
-\[
-\sum_k(\rho(a_k)F)(\rho(b_k)F)^T
-=c\,\rho\left(\sum_k a_k\overline{b_k}\right).
-\]
+The finite data are literal Lean objects. Sound finite checkers connect
+integer computations to rational periodic correlations, matrix products
+and sign tests. Their successful evaluations are proved by kernel
+reduction, without an external evaluator. Balanced lookup trees make the
+T631 all-shift calculation practical. A source-file hash is never used as
+a mathematical premise.
 
-The theorem `framed_matrix_gram` expands this identity to all individual
-rows indexed by the product of the source and coordinate index types.
-`framed_matrix_hadamard` additionally requires literal sign images for the
-actual source entries and the scale/order equality. Neither property is
-inferred from the source Gram alone. The source need not be Butson.
+## Proof chain
 
-[`Spence.lean`](../formal/ButsonTowers/Spence.lean) proves:
+* `ScalarFrame.lean`: inverse-metric adjoints, weighted Gram transport,
+  full framed-matrix Grams, preservation of zero, separate flatness and
+  the final equality between Gram scale and expanded order.
+* `GroupAlgebra.lean` and `FiniteGroupAlgebra.lean`: the faithful rational
+  finite-abelian-group regular action, multiplication, inversion as
+  transpose, normalized trace and the identity trace metric in the
+  inverse-group basis.
+* `GoethalsSeidel.lean` and `OrthogonalDesign.lean`: the actual block-array
+  Gram identity, all four coefficient norms and six mixed identities,
+  and the disjoint complete signed supports furnished by a T tuple.
+  `ReflectionConvention.lean` identifies the reversal used in Python
+  by an explicit coordinate translation for periods 127 and 631.
+* `OrthogonalSubstitution.lean`: substituting an amicable sign quadruple
+  gives a sign matrix with the required Gram. The scale/order equality
+  remains explicit. Pairwise amicability suffices for the substituted
+  matrices.
+* `SpenceMatrix.lean` and `SpenceHadamard.lean`: the literal tensor
+  recurrence, sign entries, symmetry, commutativity, both strong norms,
+  and the growing index type and its cardinality at every iteration.
+* `UnrealTripling.lean`: the cubic recurrence for the order-13 unreal
+  pair, including signs, amicability and norm. Two iterations give the
+  order-117 substitution used for order 295308.
+* `Data/`: complete T127/T631 witnesses, all 27 Williamson quadruples,
+  five strong starters, five Paley matrices and the order-13 unreal pair.
+  For character order 121 the index group is `ZMod 11 × ZMod 11`.
+* `Existence.lean`, `Construction.lean` and `Endpoints.lean`: reindexing
+  the constructed matrices to `Fin n` and instantiating the concrete
+  sources in the final existence and family statements.
 
-* Both doubled Spence norm recurrences in an arbitrary **commutative ring**.
-  Doubling removes any implicit field or division-by-two assumption.
-* The sum-of-four-squares identity from the two strong norms.
-* Strong-norm induction, assuming the stated recurrence laws.
-* The exact rational pointwise sign test for the actual half-sum recurrence.
+The trace and basis-change identities in `TraceTowers.lean` provide the
+metric formulation of successive scalar restrictions. The endpoint
+proofs use the explicit regular representations, so they do not require
+a separate cyclotomic decomposition theorem or an unproved assertion
+that a group algebra is a field.
 
-These are sixteen proved theorems. No project axiom, `sorry`, `admit`, or
-native-evaluation certificate is used. The exact Spence matrix/group-ring
-realization and the concrete starter checks are not yet formalized.
+## Reproduction and trust record
 
-## Build and trust record
-
-The portable configuration pins Lean **4.32.0** and mathlib commit
-`81a5d257c8e410db227a6665ed08f64fea08e997`. The checked build reused an
-already installed matching mathlib cache; its local symlinks are ignored
-build state and are absent from the portable dependency manifest.
+The project pins Lean **4.32.0** and mathlib commit
+`81a5d257c8e410db227a6665ed08f64fea08e997`, with all nine dependency
+revisions locked. From the repository root:
 
 ```sh
-cd formal
-lake build
-lake env lean AuditAxioms.lean
+./scripts/check_formal.sh
 ```
 
-The second command prints the dependencies of all sixteen theorems.
-The reported axioms are subsets of Lean's standard
-`propext`, `Classical.choice`, and `Quot.sound`; there is no `sorryAx` or
-project-specific axiom. This is a partial mathematical formalization,
-not a claim that the Python verifiers or all recorded matrices have been
-translated into Lean.
+This builds the project and runs `formal/AuditAxioms.lean`. Its fixed list
+includes the finite T certificates, the construction theorems, every
+announced order and every family. The only permitted dependencies are
+Lean's standard `propext`, `Classical.choice` and `Quot.sound` axioms.
+There are no project-specific axioms, proof placeholders or native
+computation certificates. Every numeric T block certificate is axiom-free;
+the coverage and semantic bridges use only the standard axioms.
 
-## Minimal remaining theorems
+The [source-only reproducibility package](../release/lean_verification/README.md)
+contains the complete proof sources, dependency lock, exact audit list
+and a checksum verifier. Its recorded replay builds a fresh extraction
+using a matching pinned dependency cache. A cold download route and a
+full dependency source-build route are also provided.
 
-The following order keeps the trusted construction kernel small.
+## Conventions
 
-1. **Finite-group regular action.** For a finite abelian group `G`, define
-   convolution and inversion on rational coefficient functions and prove
-   `rho(f)[r,s]=f(s-r)` preserves addition, multiplication, the identity,
-   and the involution. Prove the identity-coefficient trace gives metric
-   `I` in the inverse-group basis. This directly instantiates the checked
-   frame theorems for the Williamson scalar restrictions.
-2. **T tuple to orthogonal design.** For four circulant coefficients prove
-   the Goethals--Seidel Gram identity using their commutativity and the
-   specified reversal matrix. Prove the literal four-variable rotation
-   satisfies `L(x)^T L(x)=(sum x_j^2)I`. A periodic T norm then gives all ten
-   OD coefficient identities; its one-hot support gives disjoint complete
-   coefficient supports.
-3. **OD substitution and flatness.** Prove substitution of self-adjoint
-   commuting group-ring elements into the OD preserves the displayed
-   weighted Gram. Prove that disjoint OD coefficient supports and sign
-   coefficient polynomials give only sign entries after regular
-   restriction. This connects the previous two steps to the existing
-   expanded Hadamard theorem.
-4. **Spence realization.** Define the tensor/group extension and identify
-   the actual half-sum outputs with the doubled algebraic expressions
-   already proved. Establish symmetry, commutativity and the two norm
-   recurrences from `Q^2=qI-J`, `J^2=qJ`, `JQ=0`. The pointwise sign lemma
-   and strong-norm induction then give every family member. The dimension
-   changes at each step must be represented by the actual group extension
-   or explicit algebra embeddings, rather than suppressed in the types.
-5. **Concrete witnesses.** Define the T631/T127 data and Spence starter
-   rows as literal Lean objects; prove their finite checkers sound, then
-   prove each checker returns true. Search may supply witnesses but must
-   not become an axiom. A stored hash binds files but is not a mathematical
-   proof of their Gram. The NTT modulus/bound argument likewise needs a
-   proved soundness theorem before its external result can replace a
-   formal correlation check.
-6. **General trace restriction and towers.** Given a finite free star
-   algebra, a star-compatible nondegenerate trace functional and a basis,
-   prove the multiplication adjoint relation for its trace Gram. Use the
-   checked inverse-metric lemma to obtain row-Gram transport. Prove trace
-   transitivity and basis congruence for successive restrictions. Extend
-   rational transpose to conjugate transpose over a lower star field.
-7. **Finite etale interpretation.** Prove the cyclic and finite-abelian
-   group algebra decompositions into cyclotomic fields, including repeated
-   factors, and identify the normalized trace and factor metrics. These
-   results justify the field-factor descriptions; they are not needed to
-   search again for any orthogonality identity.
+The regular representation has entries `rho(f)[i,j] = f(j-i)`; its
+involution inverts group elements. The normalized identity-coefficient
+trace gives metric `I`. An unnormalized regular trace would give `|G|I`.
+The group algebra may have zero divisors, and no field cancellation is
+used.
 
-## Semantic constraints to keep explicit
+For a metric identity `rho(a)^T G = G rho(star a)`, row-Gram transport
+uses `G^-1`. Nondegeneracy suffices for that identity; positivity and a
+flat endpoint require their own hypotheses. Weighted intermediates
+need not have root entries. The final sign proof and equality with the
+expanded order are separate from inherited orthogonality.
 
-* **Algebra versus field.** `Q[G]` is generally a product of fields, not a
-  single field. No cancellation of a possibly zero group-algebra element
-  is permitted. `q=121` uses the additive group `C11 x C11`, not `C121`.
-* **Metric direction.** With `rho(a)^T G=G rho(star a)`, row-Gram transport
-  uses `G^-1`: `A(I tensor G^-1)A^T=w(I tensor G^-1)`. The column convention
-  uses `G` and an incoming column Gram. These are distinct statements.
-* **Positivity.** A finite etale algebra with an arbitrary involution need
-  not have a positive trace form: swapping the factors of `Q x Q` gives
-  an indefinite form. The Gram transport only needs the advertised
-  nondegeneracy/adjoint identities. Positivity requires the correct CM or
-  Euclidean form and a separate proof.
-* **Trace normalization.** The group metric `I` uses normalized regular
-  trace. Unnormalized regular trace gives `|G|I`. In cyclotomic factor
-  power bases the normalized blocks are Ramanujan trace matrices divided
-  by `|G|`; their multiplicities must be retained.
-* **Dimension and scale.** The target action dimension is not automatically
-  a field degree. The sextic action of dimension2524 has field degree2 and
-  module rank1262. The incoming Gram scale is not multiplied by a field
-  degree merely because coordinates are expanded. The final equality
-  with expanded order is an explicit hypothesis of the checked theorem.
-* **Flatness and zeros.** A weighted intermediate need not have root
-  entries. Every used entry image needs its own exact alphabet test;
-  zeros remain zero under a linear scalar restriction.
-* **Noncommutative substitutions.** The four OD coefficient identities
-  alone do not identify a Hamilton quaternion action. The present
-  substitution proof uses commuting self-adjoint scalar coefficients.
-* **Novelty.** Priority and author-knowledge status belong to the dated
-  literature ledger, not to a mathematical existence theorem.
+The formal scope is the mathematical construction and its concrete
+witnesses. Literature priority, the correctness of search software and
+the cyclotomic factor descriptions are independent of these existence
+proofs.

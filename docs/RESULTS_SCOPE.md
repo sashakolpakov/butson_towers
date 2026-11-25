@@ -12,7 +12,7 @@ their finite audited members carry individual known/new labels.
 - [Original H7572 construction](HADAMARD_7572.md)
 - [Williamson restrictions and finite sources](WILLIAMSON_ORDER_RECORDS.md)
 - [Constructive infinite families](SPENCE_SCALAR_FAMILIES.md)
-- [Proof-assistant status and remaining obligations](FORMALIZATION.md)
+- [Lean proofs and reproducibility](FORMALIZATION.md)
 
 Exact algebraic Gram proofs establish every endpoint row inner product.
 Full dense endpoint audits are recorded separately where executed. Source

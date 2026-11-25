@@ -1,10 +1,12 @@
 #!/usr/bin/env python3
-"""Verify the pinned, partial Butson Towers Lean construction kernel."""
+"""Verify the pinned Butson Towers Lean existence proofs."""
 from __future__ import annotations
 
 import argparse
 import hashlib
 import json
+import os
+import time
 from pathlib import Path
 import re
 import shutil
@@ -15,21 +17,143 @@ TOOLCHAIN = "leanprover/lean4:v4.32.0"
 MATHLIB_REVISION = "81a5d257c8e410db227a6665ed08f64fea08e997"
 ALLOWED_AXIOMS = frozenset({"propext", "Classical.choice", "Quot.sound"})
 THEOREMS = (
-    "ButsonTowers.inverse_metric_adjoint", "ButsonTowers.framed_zero",
-    "ButsonTowers.frame_pair_transport", "ButsonTowers.frame_sum_transport",
-    "ButsonTowers.weighted_pair_transport", "ButsonTowers.weighted_sum_transport",
-    "ButsonTowers.weighted_gram_block", "ButsonTowers.frame_gram_block",
-    "ButsonTowers.framed_matrix_flat", "ButsonTowers.framed_matrix_gram",
-    "ButsonTowers.framed_matrix_hadamard",
-    "ButsonTowers.Spence.doubled_minus_norm", "ButsonTowers.Spence.doubled_plus_norm",
-    "ButsonTowers.Spence.sum_squares_from_strong_norms",
-    "ButsonTowers.Spence.strong_norm_induction", "ButsonTowers.Spence.entry_step_sign",
+    'ButsonTowers.inverse_metric_adjoint',
+    'ButsonTowers.framed_zero',
+    'ButsonTowers.frame_pair_transport',
+    'ButsonTowers.frame_sum_transport',
+    'ButsonTowers.weighted_pair_transport',
+    'ButsonTowers.weighted_sum_transport',
+    'ButsonTowers.weighted_gram_block',
+    'ButsonTowers.frame_gram_block',
+    'ButsonTowers.framed_matrix_flat',
+    'ButsonTowers.framed_matrix_gram',
+    'ButsonTowers.framed_matrix_hadamard',
+    'ButsonTowers.Spence.doubled_minus_norm',
+    'ButsonTowers.Spence.doubled_plus_norm',
+    'ButsonTowers.Spence.sum_squares_from_strong_norms',
+    'ButsonTowers.Spence.strong_norm_induction',
+    'ButsonTowers.Spence.entry_step_sign',
+    'ButsonTowers.TraceTowers.trace_metric_adjoint',
+    'ButsonTowers.TraceTowers.inverse_trace_metric_adjoint',
+    'ButsonTowers.TraceTowers.weighted_trace_gram_transport',
+    'ButsonTowers.TraceTowers.basis_gram_congruence',
+    'ButsonTowers.GroupAlgebra.regular_mul',
+    'ButsonTowers.GroupAlgebra.regular_involution',
+    'ButsonTowers.GroupAlgebra.regular_trace',
+    'ButsonTowers.GroupAlgebra.inverse_basis_trace_metric',
+    'ButsonTowers.GroupAlgebra.regularAlgHom_injective',
+    'ButsonTowers.GroupAlgebra.regular_star',
+    'ButsonTowers.GroupAlgebra.regularAlgHom_normalized_trace',
+    'ButsonTowers.GroupAlgebra.group_algebra_identity_trace_metric',
+    'ButsonTowers.GoethalsSeidel.gs_gram',
+    'ButsonTowers.OrthogonalDesign.coefficient_gram',
+    'ButsonTowers.OrthogonalDesign.coefficient_cross',
+    'ButsonTowers.OrthogonalDesign.coefficients_signed_partition',
+    'ButsonTowers.tensor_substitute_gram',
+    'ButsonTowers.tensor_substitute_flat',
+    'ButsonTowers.tensor_substitute_hadamard',
+    'ButsonTowers.SpenceMatrix.strong_step',
+    'ButsonTowers.SpenceMatrix.family_strong',
+    'ButsonTowers.SpenceMatrix.family_norm',
+    'ButsonTowers.SpenceMatrix.family_card',
+    'ButsonTowers.SpenceMatrix.family_hadamard',
+    'ButsonTowers.Unreal.next_amicable',
+    'ButsonTowers.Unreal.next_norm',
+    'ButsonTowers.Unreal.quad_amicable',
+    'ButsonTowers.hadamard_reindex',
+    'ButsonTowers.exists_from_t',
+    'ButsonTowers.spence_exists_from_t',
+    'ButsonTowers.Data.t127_codes_corr',
+    'ButsonTowers.Data.t127_corr',
+    'ButsonTowers.Data.t127_onehot',
+    'ButsonTowers.Data.t631_codes_corr',
+    'ButsonTowers.Data.t631_corr',
+    'ButsonTowers.Data.t631_onehot',
+    'ButsonTowers.Data.unreal13_norm',
+    'ButsonTowers.hadamard_7572',
+    'ButsonTowers.hadamard_17668',
+    'ButsonTowers.hadamard_22716',
+    'ButsonTowers.hadamard_32812',
+    'ButsonTowers.hadamard_42908',
+    'ButsonTowers.hadamard_58052',
+    'ButsonTowers.hadamard_73196',
+    'ButsonTowers.hadamard_78244',
+    'ButsonTowers.hadamard_93388',
+    'ButsonTowers.hadamard_98436',
+    'ButsonTowers.hadamard_108532',
+    'ButsonTowers.hadamard_128724',
+    'ButsonTowers.hadamard_153964',
+    'ButsonTowers.hadamard_229684',
+    'ButsonTowers.hadamard_295308',
+    'ButsonTowers.hadamard_386172',
+    'ButsonTowers.hadamard_4772884',
+    'ButsonTowers.hadamard_13001124',
+    'ButsonTowers.spence_family_13',
+    'ButsonTowers.spence_family_17',
+    'ButsonTowers.spence_family_61',
+    'ButsonTowers.spence_family_101',
+    'ButsonTowers.spence_family_121',
+    'ButsonTowers.unreal_cubic_family',
+    'ButsonTowers.announced_orders_exist',
+    'ButsonTowers.williamson_table_endpoints',
+    'ButsonTowers.GoethalsSeidel.python_reflection_127',
+    'ButsonTowers.GoethalsSeidel.python_reflection_631',
+    'ButsonTowers.GSAlgebra.blocks_gram',
+    'ButsonTowers.TraceTowers.finite_free_trace_transitivity',
+    'ButsonTowers.TraceTowers.tower_action_coordinates',
+    'ButsonTowers.TraceTowers.tower_trace_metric',
 )
 SOURCE_FILES = (
-    "formal/.gitignore", "formal/lean-toolchain", "formal/lakefile.toml",
-    "formal/lake-manifest.json", "formal/ButsonTowers.lean", "formal/AuditAxioms.lean",
-    "formal/ButsonTowers/ScalarFrame.lean", "formal/ButsonTowers/Spence.lean",
-    "docs/FORMALIZATION.md",
+    'formal/.gitignore',
+    'formal/lean-toolchain',
+    'formal/lakefile.toml',
+    'formal/lake-manifest.json',
+    'formal/ButsonTowers.lean',
+    'formal/AuditAxioms.lean',
+    'formal/build.py',
+    'formal/DATA_PROVENANCE.json',
+    'formal/ButsonTowers/Construction.lean',
+    'formal/ButsonTowers/Data/CorrRange.lean',
+    'formal/ButsonTowers/Data/FiniteChecks.lean',
+    'formal/ButsonTowers/Data/LiteralTree.lean',
+    'formal/ButsonTowers/Data/Paley.lean',
+    'formal/ButsonTowers/Data/PaleyChecks.lean',
+    'formal/ButsonTowers/Data/PaleyPairChecks.lean',
+    'formal/ButsonTowers/Data/RowChecks.lean',
+    'formal/ButsonTowers/Data/StrongChecks.lean',
+    'formal/ButsonTowers/Data/StrongStarters.lean',
+    'formal/ButsonTowers/Data/T127.lean',
+    'formal/ButsonTowers/Data/T631.lean',
+    'formal/ButsonTowers/Data/T631Blocked.lean',
+    'formal/ButsonTowers/Data/T631Blocks/Chunk0.lean',
+    'formal/ButsonTowers/Data/T631Blocks/Chunk1.lean',
+    'formal/ButsonTowers/Data/T631Blocks/Chunk2.lean',
+    'formal/ButsonTowers/Data/T631Blocks/Chunk3.lean',
+    'formal/ButsonTowers/Data/TreeLiterals.lean',
+    'formal/ButsonTowers/Data/Unreal13.lean',
+    'formal/ButsonTowers/Data/Williamson/Chunk0.lean',
+    'formal/ButsonTowers/Data/Williamson/Chunk1.lean',
+    'formal/ButsonTowers/Data/Williamson/Chunk2.lean',
+    'formal/ButsonTowers/Data/Williamson.lean',
+    'formal/ButsonTowers/Endpoints.lean',
+    'formal/ButsonTowers/Existence.lean',
+    'formal/ButsonTowers/FiniteGroupAlgebra.lean',
+    'formal/ButsonTowers/GSAlgebra.lean',
+    'formal/ButsonTowers/GoethalsSeidel.lean',
+    'formal/ButsonTowers/GoethalsSeidelCore.lean',
+    'formal/ButsonTowers/GoethalsSeidelEntry.lean',
+    'formal/ButsonTowers/GroupAlgebra.lean',
+    'formal/ButsonTowers/OrthogonalDesign.lean',
+    'formal/ButsonTowers/OrthogonalDesignCore.lean',
+    'formal/ButsonTowers/OrthogonalSubstitution.lean',
+    'formal/ButsonTowers/ReflectionConvention.lean',
+    'formal/ButsonTowers/ScalarFrame.lean',
+    'formal/ButsonTowers/Spence.lean',
+    'formal/ButsonTowers/SpenceHadamard.lean',
+    'formal/ButsonTowers/SpenceMatrix.lean',
+    'formal/ButsonTowers/TraceTowers.lean',
+    'formal/ButsonTowers/UnrealTripling.lean',
+    'docs/FORMALIZATION.md',
 )
 SUPPORT_FILES = ("README.md", "verify.py", "build_package.py")
 PAYLOAD_FILES = SOURCE_FILES + SUPPORT_FILES
@@ -82,9 +206,19 @@ def verify_payload(root):
             "every dependency must have a locked Git revision and a simple package name")
     require(next(p for p in packages if p["name"] == "mathlib")["rev"] == MATHLIB_REVISION,
             "locked mathlib revision mismatch")
+    expected_lean = {str(Path(p).relative_to("formal")) for p in SOURCE_FILES
+                     if p.startswith("formal/") and p.endswith(".lean")}
+    actual_lean = set()
+    for directory, subdirs, files in os.walk(formal, followlinks=False):
+        subdirs[:] = [name for name in subdirs if name != ".lake"]
+        require(not any((Path(directory) / name).is_symlink() for name in subdirs),
+                "unexpected symlinked formal source directory")
+        actual_lean.update(str((Path(directory) / name).relative_to(formal))
+                           for name in files if name.endswith(".lean"))
+    require(actual_lean == expected_lean, "formal Lean source set differs from the whitelist")
     audit = (formal / "AuditAxioms.lean").read_text()
     require(tuple(re.findall(r"^#print axioms (\S+)\s*$", audit, re.MULTILINE)) == THEOREMS,
-            "axiom audit does not name exactly the expected sixteen theorems")
+            "axiom audit does not name exactly the expected theorems")
     for relative in SOURCE_FILES:
         if relative.endswith(".lean"):
             text = (root / relative).read_text()
@@ -133,25 +267,30 @@ def link_cache(formal, directory, packages):
 
 def parse_axioms(output):
     reports = {}
-    for line in output.splitlines():
-        if not line.strip():
-            continue
-        match = re.fullmatch(r"'([^']+)' depends on axioms: \[([^\]]*)\]", line.strip())
-        empty = re.fullmatch(r"'([^']+)' does not depend on any axioms", line.strip())
-        require(match is not None or empty is not None, "unexpected axiom-audit output")
-        theorem = (match or empty).group(1)
+    pattern = re.compile(
+        r"'([^']+)'\s+(?:depends\s+on\s+axioms:\s*\[([^\]]*)\]"
+        r"|does\s+not\s+depend\s+on\s+any\s+axioms)")
+    position = 0
+    for match in pattern.finditer(output):
+        require(not output[position:match.start()].strip(), "unexpected axiom-audit output")
+        theorem = match.group(1)
         require(theorem in THEOREMS and theorem not in reports, "unexpected or duplicate audited theorem")
-        axioms = set(filter(None, (s.strip() for s in match.group(2).split(",")))) if match else set()
+        axioms = set(filter(None, (s.strip() for s in (match.group(2) or "").split(","))))
         require(axioms <= ALLOWED_AXIOMS, f"unsupported axiom in {theorem}")
         reports[theorem] = sorted(axioms)
+        position = match.end()
+    require(not output[position:].strip(), "unexpected trailing axiom-audit output")
     require(set(reports) == set(THEOREMS), "missing theorem axiom reports")
     return reports
 
 
 def self_test():
     valid = "\n".join(f"'{name}' depends on axioms: [propext, Quot.sound]" for name in THEOREMS)
-    require(len(parse_axioms(valid)) == 16, "valid parser fixture failed")
-    for invalid in ("\n".join(valid.splitlines()[:-1]), valid + "\n" + valid.splitlines()[0],
+    require(len(parse_axioms(valid)) == len(THEOREMS), "valid parser fixture failed")
+    wrapped = valid.replace("[propext, Quot.sound]", "[\n  propext,\n  Quot.sound\n]")
+    require(parse_axioms(wrapped) == parse_axioms(valid), "wrapped parser fixture failed")
+    for invalid in ("unexpected\n" + valid, valid + "\nunexpected",
+                    "\n".join(valid.splitlines()[:-1]), valid + "\n" + valid.splitlines()[0],
                     valid.replace("[propext, Quot.sound]", "[sorryAx]", 1),
                     valid.replace(THEOREMS[0], "Unrelated.theorem", 1)):
         try:
@@ -159,7 +298,7 @@ def self_test():
         except VerificationError:
             continue
         raise VerificationError("invalid parser fixture accepted")
-    print("Axiom-parser positive, missing, duplicate, foreign-axiom and foreign-theorem checks passed.")
+    print("Axiom-parser single-line, wrapped, missing, duplicate, foreign-axiom, foreign-theorem and extra-text checks passed.")
 
 
 def main():
@@ -174,6 +313,7 @@ def main():
     if args.self_test:
         self_test()
         return
+    started = time.monotonic()
     root = Path(__file__).resolve().parent
     packages = verify_payload(root)
     formal = root / "formal"
@@ -189,17 +329,20 @@ def main():
         # Materializes the locked sources without updating the manifest.
         run([lake, "--no-cache", "env", "lean", "--version"], formal)
     dependency_report = check_dependencies(formal / ".lake" / "packages", packages)
-    build_command = [lake] + (["--no-cache"] if args.from_source or args.cache_dir else []) + ["build"]
+    build_command = [sys.executable, formal / "build.py", "--lake", lake]
+    if args.from_source or args.cache_dir:
+        build_command.append("--no-cache")
     run(build_command, formal)
     audited = parse_axioms(run([lake, "env", "lean", "AuditAxioms.lean"], formal))
     verify_payload(root)  # The build must not rewrite the portable lock or proof sources.
     check_dependencies(formal / ".lake" / "packages", packages)
     report = {"schema": "verified-butson-towers-lean-kernel-v1", "success": True,
               "payload_manifest_sha256": digest((root / "MANIFEST.json").read_bytes()),
-              "scope": "sixteen general construction theorems; concrete matrices and all endpoint claims are not yet formally instantiated",
+              "scope": "concrete T127/T631 witnesses, all 27 Williamson sources, eighteen announced orders and five all-iteration Spence families",
               "lean_toolchain": TOOLCHAIN, "lake_version": version,
               "mathlib_revision": MATHLIB_REVISION, "dependency_pins": dependency_report,
               "proof_theorems_checked": len(audited), "axioms_by_theorem": audited,
+              "elapsed_seconds": round(time.monotonic() - started, 2),
               "project_axioms_or_placeholders_used": False,
               "dependency_mode": "existing-pinned-cache" if args.cache_dir else
                                  "source-build" if args.from_source else "official-cache-download"}

@@ -1,0 +1,237 @@
+{
+  "schema": "lean-literal-data-provenance-v1",
+  "scope": "Public data extraction and reproducible encoding only. Source hashes are not hypotheses or proof premises in Lean.",
+  "generator": "scripts/check_lean_literal_data.py",
+  "generator_dependencies": "Python standard library only",
+  "check_command": "python3 scripts/check_lean_literal_data.py",
+  "regenerate_command": "python3 scripts/check_lean_literal_data.py --write",
+  "literal_modules": [
+    "formal/ButsonTowers/Data/TreeLiterals.lean",
+    "formal/ButsonTowers/Data/Unreal13.lean"
+  ],
+  "representation": "Balanced binary literal trees with kernel-reducible natural/integer leaves. This avoids linear kernel lookup through Array list representations.",
+  "sources": [
+    {
+      "path": "artifacts/t-matrices-127/t127.json",
+      "sha256": "4a415276e4c1f0360fe4e6bc6ca88d24955cda2b5c5297dbc44a6d63a0bf7a2b"
+    },
+    {
+      "path": "artifacts/hadamard-7572/t631.json",
+      "sha256": "c5497ef485a23f1c99385035eaf02472b4dad4dee9d906d0d6b2aeb2f3680871"
+    },
+    {
+      "path": "experiments/scalar_lift/williamson_inputs.json",
+      "sha256": "242f554cf113c68ab882e147c3b2702b7bb62e68b66ad36b16c92b6c194f8560"
+    },
+    {
+      "path": "certificates/scalar-lift/williamson-spence-family.json",
+      "sha256": "0ab2ac65129b6c8ac7ee97396847bcc000515473ba03b34a2da3c27715ede0ed"
+    },
+    {
+      "path": "experiments/scalar_lift/bh13_6_seed.json",
+      "sha256": "8ff8f10160828e8cc0372ecb045fca397aaf5c44c8f0db06d7aad1ebcb8cf003"
+    }
+  ],
+  "transformations": {
+    "T127_T631": {
+      "input": "b_sequences, four complete signed one-hot rows",
+      "code_at_position_x": "2*channel + negative_bit, where channel is the unique nonzero row and negative_bit=1 for -1",
+      "decoding": "Data.unitCode recovers the four integer rows",
+      "formal_checks": "Bounds, signed one-hot shape and all periodic correlations are checked on the literal codes; generic soundness bridges to rational ZMod rows."
+    },
+    "Williamson27": {
+      "input": "entries.first_rows_pm",
+      "mapping": {
+        "+": 1,
+        "-": -1
+      },
+      "circulant_entry": "row[(j-i) mod w]",
+      "formal_checks": "Every sign, row symmetry, complete periodic summed Gram, matrix norm and amicability."
+    },
+    "Spence5": {
+      "input": "starters.literal_first_rows_pm in the family source certificate",
+      "q_parameters": [
+        13,
+        17,
+        61,
+        101,
+        121
+      ],
+      "q13_q17": "Conference-half starters recorded with D=E=S,F=I+R,G=-I+R.",
+      "q61_q101_q121": "The origin records retain the signed channel permutations of the underlying Williamson rows. The resulting literal rows are checked directly in Lean.",
+      "formal_checks": "Sign, symmetry, commuting regular matrices, minus norm4I and plus norm4qI."
+    },
+    "Paley5": {
+      "input": "Paley_parameters.literal_quadratic_character_first_row",
+      "q121_additive_group": "ZMod11 \u00d7 ZMod11; index a+11*b; group subtraction is componentwise, not cyclic modulo121.",
+      "other_additive_groups": "ZMod q",
+      "formal_checks": "Integer character-row identities are transported to the required rational Paley matrices."
+    },
+    "Unreal13": {
+      "input": "Raw exponents plus unreal_row_phase_shifts and unreal_column_phase_shifts, modulo6.",
+      "flattening": "row-major index13*i+j",
+      "A_by_exponent": {
+        "1": 1,
+        "2": -1,
+        "4": -1,
+        "5": 1
+      },
+      "B_by_exponent": {
+        "1": 1,
+        "2": 1,
+        "4": -1,
+        "5": -1
+      },
+      "interpretation": "U=(A+sqrt(-3)*B)/2",
+      "formal_checks": "All signs, A*B^T=B*A^T and A*A^T+3B*B^T=52I are proved for the literal matrices over integers, then transported to rationals."
+    }
+  },
+  "formal_scope": "The Lean existence theorems concern the explicitly defined literal constructions. Formal equality with the original packed H7572 binary is not claimed.",
+  "numerical_certificate_layout": {
+    "T127": "Direct kernel reduction of all127 periodic shifts using the balanced literal lookup.",
+    "T631": {
+      "shift_count": 631,
+      "blocks": [
+        {
+          "start": 0,
+          "count": 20
+        },
+        {
+          "start": 20,
+          "count": 20
+        },
+        {
+          "start": 40,
+          "count": 20
+        },
+        {
+          "start": 60,
+          "count": 20
+        },
+        {
+          "start": 80,
+          "count": 20
+        },
+        {
+          "start": 100,
+          "count": 20
+        },
+        {
+          "start": 120,
+          "count": 20
+        },
+        {
+          "start": 140,
+          "count": 20
+        },
+        {
+          "start": 160,
+          "count": 20
+        },
+        {
+          "start": 180,
+          "count": 20
+        },
+        {
+          "start": 200,
+          "count": 20
+        },
+        {
+          "start": 220,
+          "count": 20
+        },
+        {
+          "start": 240,
+          "count": 20
+        },
+        {
+          "start": 260,
+          "count": 20
+        },
+        {
+          "start": 280,
+          "count": 20
+        },
+        {
+          "start": 300,
+          "count": 20
+        },
+        {
+          "start": 320,
+          "count": 20
+        },
+        {
+          "start": 340,
+          "count": 20
+        },
+        {
+          "start": 360,
+          "count": 20
+        },
+        {
+          "start": 380,
+          "count": 20
+        },
+        {
+          "start": 400,
+          "count": 20
+        },
+        {
+          "start": 420,
+          "count": 20
+        },
+        {
+          "start": 440,
+          "count": 20
+        },
+        {
+          "start": 460,
+          "count": 20
+        },
+        {
+          "start": 480,
+          "count": 20
+        },
+        {
+          "start": 500,
+          "count": 20
+        },
+        {
+          "start": 520,
+          "count": 20
+        },
+        {
+          "start": 540,
+          "count": 20
+        },
+        {
+          "start": 560,
+          "count": 20
+        },
+        {
+          "start": 580,
+          "count": 20
+        },
+        {
+          "start": 600,
+          "count": 20
+        },
+        {
+          "start": 620,
+          "count": 11
+        }
+      ],
+      "kernel_leaf_modules": [
+        "ButsonTowers.Data.T631Blocks.Chunk0",
+        "ButsonTowers.Data.T631Blocks.Chunk1",
+        "ButsonTowers.Data.T631Blocks.Chunk2",
+        "ButsonTowers.Data.T631Blocks.Chunk3"
+      ],
+      "range_soundness_module": "ButsonTowers.Data.CorrRange",
+      "combined_certificate": "ButsonTowers.Data.t631_codes_corr_blocked",
+      "public_integer_and_rational_interface": "ButsonTowers.Data.T631",
+      "method": "Each closed range is proved with decide +kernel. A generic pointwise coverage lemma recombines all32 ranges; explicit arguments avoid evaluating the entire closed checker during assembly.",
+      "no_external_computation_or_hash_premises": true
+    }
+  }
+}

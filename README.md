@@ -78,14 +78,12 @@ gives the replay commands. Run the repository suite with
 ./scripts/run_tests.sh
 ```
 
-The [Lean project](docs/FORMALIZATION.md) currently proves **16 general
-theorems** for weighted Gram transport, complete framed-matrix Grams,
-flatness, scale/order compatibility and the Spence recurrence. Build it
-and audit its axioms with `./scripts/check_formal.sh`. The concrete finite
-witnesses and their complete connection to these theorems are the next
-formalization work; executable verification and kernel-checked proofs
-are recorded separately.
-
+The [Lean project](docs/FORMALIZATION.md) proves the **eighteen announced
+orders and all five infinite families**, from literal finite witnesses.
+It verifies T127/T631 correlations in the kernel, the regular scalar
+action, orthogonal-design substitution, the actual Spence recurrence,
+and the order-13 cubic recurrence. Build and audit all final statements
+with `./scripts/check_formal.sh`.
 A separate [Lean reproducibility package](release/lean_verification/README.md)
 contains the locked sources, checksum verifier and successful extracted replay.
 

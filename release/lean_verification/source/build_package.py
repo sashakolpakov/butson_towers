@@ -31,7 +31,7 @@ def main():
         files[relative] = path.read_bytes()
     manifest = {"schema": "butson-towers-lean-reproducibility-v1", "lean_toolchain": TOOLCHAIN,
                 "mathlib_revision": MATHLIB_REVISION, "expected_theorems": list(THEOREMS),
-                "scope": "partial formal construction kernel; not formal certification of every concrete matrix",
+                "scope": "formal existence of all eighteen announced orders and all members of five Spence families, from literal finite witnesses",
                 "packaging_policy": "explicit public source whitelist; no .lake, symlinks, .local files, API credentials or submission parameters",
                 "files": [{"path": path, "bytes": len(files[path]), "sha256": digest(files[path])}
                           for path in PAYLOAD_FILES]}

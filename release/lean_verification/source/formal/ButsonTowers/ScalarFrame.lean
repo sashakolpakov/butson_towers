@@ -1,4 +1,9 @@
-import Mathlib
+import Mathlib.Algebra.Star.Rat
+import Mathlib.LinearAlgebra.Matrix.Kronecker
+import Mathlib.LinearAlgebra.Matrix.ConjTranspose
+import Mathlib.Tactic.NoncommRing
+import Mathlib.Tactic.SimpRw
+import Mathlib.Tactic.Ext
 
 /-!
 Rational Euclidean frame transport.  The source may be a commutative
