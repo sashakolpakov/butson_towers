@@ -4,6 +4,11 @@ The first target is **2676**, followed by the remaining targets in increasing
 order. The submitted manuscript and its frozen construction/proof packages
 are preserved separately from this search.
 
+The construction is the manuscript's restriction of scalars with a certified
+flat endpoint. The exact search described here supplies a new compatible
+frame, using the same determinant-coordinate and sign-lifting method that
+found T631 and hence H7572.
+
 | Missing design | Direct target orders |
 |---|---|
 | Periodic T-matrices of length 223 | 2676, 4460, 11596 |
@@ -104,108 +109,62 @@ checks 64 assignments per word with bounded memory. Returned modular roots
 must satisfy the exact sign counts and every integer correlation, followed
 by an independent check at all 223 shifts.
 
-The CP-SAT and optional CryptoMiniSat implementations provide independent
-solver controls. Complete small controls include all 90 T19 coordinate
-patterns and 150 full sign solutions, the planted T127/T631 witnesses,
+The CP-SAT implementation provides an independent solver control. Complete
+small controls include all 90 T19 coordinate patterns and 150 full sign
+solutions, the planted T127/T631 witnesses,
 and a negative-coordinate-sum T31 witness. Native Boolean controls compare
 with complete enumeration and cover all 2^32 assignments of a planted
 32-variable test.
 
-## Run a bounded search
+## Run the exact campaign
 
 Use the repository Python environment with NumPy, SymPy and OR-Tools, and a
-Clang/GCC compiler supporting C++17. Generated runs belong in the ignored
-artifact store; each worker needs its own output directory.
+Clang/GCC compiler supporting C++17. Each worker needs its own ignored output
+directory. The runner freezes its source files and parity map before detaching.
+The native sampler checks its field arithmetic and binary coordinate map
+against the Python reference. Its tagged 256-bit generator state and draw
+count are saved in the same ledger as the search cursor.
 
 ```sh
-PYTHONPATH=src:. .venv/bin/python -m experiments.scalar_lift.large_parity_map \
-  --output /tmp/t223-parity-map.json
-PYTHONPATH=src:. .venv/bin/python -m experiments.scalar_lift.low_order_campaign \
+PYTHONPATH=src:. .venv/bin/python -m experiments.scalar_lift.exact_t_campaign \
   --config certificates/scalar-lift/t223-parity-map.json \
-  --output artifacts/scalar-frontier/low-order-search/h5 \
-  --seconds 900 --heads 5 --seed 20261125223
+  --output artifacts/scalar-frontier/low-order-search/exact223-h5 \
+  --seconds 259200 --heads 5,7,9 --branch-seconds 120 --nice 10 \
+  --sampler native --branch-policy all \
+  --seed 20261126001 --detach
 ```
 
-Here `--heads` is the number $h$ defined above. Use `--heads 7` or
-`--heads 9` for those other counts. The campaign enumerates
-the exact coordinate-zero sign choices, saves a checkpoint after each coordinate
-pattern, and writes a verified witness only after all expanded
-correlations vanish. Its reported affine-assignment count refers to the
-modular filter, with exact integer checks on survivors.
+Here `--heads` is the number $h$ defined above. The `all` branch policy
+checks every coordinate-zero sign assignment with the exact required count.
+The `affine` policy instead leaves these signs in the complete affine system.
+Use separate directories and seeds for independent workers.
+The counts listed by `--heads` are visited in turn. A complementary worker
+uses `--heads 15,17,19,21 --branch-policy affine`: it checks the full sign
+kernel once per coordinate pattern instead of separately preparing tens of
+thousands of exact coordinate-zero sign choices. `--sampler python` retains
+the original reference generator, with its own explicitly distinct stream.
 
-An independent
-[local search](../experiments/scalar_lift/t_sequence_local_search.py)
-changes the signed coordinate states while preserving exact counts. Its
-move set includes full-state swaps and balanced sign exchanges. Weighted
-objectives and exact
-[neighborhood repair](../experiments/scalar_lift/t_sequence_neighborhood.py)
-provide further searches around small correlation residuals. Every
-checkpoint records its actual residuals. Only a zero is a T-matrix witness.
+The SQLite ledger stores sampled coordinate patterns, completed branch
+checks and sampler state. Restarting with the same configuration and frozen
+sources resumes the ledger. An interrupted branch remains unfinished;
+`status.json` reports the actual completed work. Creating a `STOP` file in
+the worker directory requests a stop after the current branch returns.
+The run log and source manifest are kept beside the ledger.
 
-The local search can also change $h$: replacing an oppositely signed pair
-using coordinates $1,2,3$ by $(+e_0,-e_0)$ preserves all four coordinate
-sums, as does the reverse replacement. The two original coordinates may
-be different, because each nonzero-coordinate orbit contributes its sign
-once to each of the last three sums.
-
-The [Fourier projection search](../experiments/scalar_lift/t_sequence_projection.py)
-alternates a discrete assignment step with a spectral norm step. With the
-unnormalized Fourier transform
-$\widehat b(k)=\sum_x b(x)e^{-2\pi ikx/p}$, the desired correlation
-identity is equivalent to $\|\widehat b(k)\|^2=p$ at every frequency.
-The zero-frequency vector is fixed at $(-14,3,3,3)$. The discrete step
-maximizes the inner product with a signed-basis function having the exact
-orbit counts; it uses an assignment algorithm for fixed $h$, or an exact
-dynamic program when $h$ may vary. Floating point is used to choose search
-iterates. Every saved best candidate is rechecked using integer sums at
-all shifts, and only an exact zero is a completed design.
-
-Run a longer checkpointed projection campaign with:
-
-```sh
-PYTHONPATH=src:. .venv/bin/python -m experiments.scalar_lift.low_order_campaign \
-  --engine projection --config certificates/scalar-lift/t223-parity-map.json \
-  --output artifacts/scalar-frontier/low-order-search/projection \
-  --seconds 3600 --trial-seconds 60 --seed 22320261126
-```
-
-It varies the projection order, relaxation parameter and restart interval.
-Most trials start afresh; every fifth trial may use the retained best
-integer candidate. For a previous checkpoint, add `--initial PATH`.
-`campaign.json` records progress, `best.json` retains the best exact
-residuals, and `verified-witness.json` is written only after every
-correlation is zero. To run local search with changing coordinate counts,
-use `t_sequence_local_search --free-heads` and a fresh `--report PATH`.
+A candidate becomes a witness only after every expanded integer correlation
+vanishes and the exact coordinate sums hold. The worker then independently
+checks the orthogonal-design identities and the verified Williamson inputs,
+and writes literal endpoint recipes. Literature novelty and new Lean
+literals are assessed separately after a completed witness exists.
 
 Focused verification:
 
 ```sh
 PYTHONPATH=src:. .venv/bin/python -m pytest -q \
   tests/test_large_parity_map.py tests/test_quadratic_sign_lift.py \
-  tests/test_boolean_quadratic_sat.py tests/test_t_sequence_neighborhood.py \
-  tests/test_t_sequence_projection.py tests/test_t_sequence_local_search.py \
-  tests/test_low_order_campaign.py
+  tests/test_exact_t_campaign.py tests/test_exact_parity_sampler.py
 ```
 
 A timeout applies only to its run, and a fully checked coordinate pattern
 applies only to that pattern and its stated gauges. Neither excludes a
 T-design or a Hadamard matrix at the target order.
-
-## Bounded results, 25 November 2026
-
-Three 900-second sign-search batches at $h=5,7,9$ completed 360, 282,
-and 224 coordinate patterns respectively. Including their final partial
-patterns, the native filter covered 5,052,591,767,552 affine assignments.
-There were 34 modulo-eight roots and seven survivors of the exact count
-conditions; none satisfied every integer correlation. These are searches
-inside the multiplier-covariant chart defined above.
-
-The first 32 fixed-count Fourier trials also found no zero. The best local
-candidate has $E=\sum_{\ell=1}^{37}C(s_\ell)^2=42$, with largest absolute
-correlation two. Allowing coordinate-count changes visited $5\leq h\leq31$
-but did not improve it in a 180-second run. It is an incomplete candidate,
-and **no new order is claimed by these runs**.
-
-The full repository suite passed **359 tests and four subtests** after
-adding these engines. The submitted paper's 18 completed new orders and
-six families are unchanged.

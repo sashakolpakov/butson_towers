@@ -10,7 +10,7 @@ matrix recipe. General weighted nodes are useful outputs in their own right.
 | New real H7572: exact T631, scalar frame, saved matrix and full integer verification | [Standalone recipe and certificate](../../artifacts/hadamard-7572/README.md) |
 | New periodic T127, full T identities and known-order H1524 scalar control | [Standalone recipe and dated scope](../../artifacts/t-matrices-127/README.md) |
 | Active SL2 parity-axis generation, exact mod4/mod8 sign lifting, finite pool controls and completed endpoint verification | `hadamard_frame_search`; [method and replay](../../docs/HADAMARD_FRAME_SEARCH.md) |
-| Search for length-223 periodic T-matrices, targeting missing order 2676 first | `large_parity_map`, `quadratic_sign_lift`, `low_order_campaign`; [target, exact checks and replay](../../docs/LOW_ORDER_SEARCH.md) |
+| Search for length-223 periodic T-matrices, targeting missing order 2676 first | `large_parity_map`, `quadratic_sign_lift`, `exact_t_campaign`; [target, exact checks and replay](../../docs/LOW_ORDER_SEARCH.md) |
 | New real orders 17668/22716/32812 from the verified width-2524 frame and further admitted Butson sources | `reuse_hadamard_7572_frame` |
 | Apply all four admitted source orders to a newly completed prime frame | `reuse_hadamard_frame` |
 | New real orders 98436/295308 and known order 885924 from complete unreal-source triplings | `tripled_unreal_scalar_endpoints`; [proof and scope](../../docs/TRIPLED_UNREAL_SCALAR_ENDPOINTS.md) |
@@ -29,9 +29,8 @@ matrix recipe. General weighted nodes are useful outputs in their own right.
 | Ambient fields and alternate scalar bases | `ambient_field_candidates`, `pure_period_restriction`, `mixed_basis_restriction` |
 | Certified fixed endpoint frames and source-gauge admission | `forward_frame_search`, `forward_descent_search` |
 
-The remaining retained modules support these engines, source recipes or
-scoped scalar-basis audits. Their presence does not reactivate their old
-large-source completion charts. The superseded branches are preserved in
+The remaining modules supply exact source recipes and arithmetic for these
+constructions. Superseded search branches are recoverable from
 [Git history](../../docs/RESEARCH_HISTORY.md).
 The [complete norm-descent reference](../../docs/EXACT_NORM_DESCENT_EXECUTOR.md)
 also handles a nonidentity incoming Hermitian form. Its small dense controls

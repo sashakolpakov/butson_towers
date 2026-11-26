@@ -61,7 +61,7 @@ def test_complete_t19_sign_sets_and_quadratic_reduction():
     (127, 9, 22, 't-matrices-127'),
     (631, 21, 458, 'hadamard-7572'),
 ])
-def test_planted_signs_recovered_and_mod8_matches_integer_correlations(p, m, mu, folder):
+def test_planted_signs_recovered_and_mod8_matches_integer_correlations(p, m, mu, folder, tmp_path):
     states = json.loads((ROOT/'artifacts'/folder/f't{p}.json').read_text())['states']
     data = frame.chart(p, m, mu)
     axes = [state//2 for state in states]
@@ -81,6 +81,12 @@ def test_planted_signs_recovered_and_mod8_matches_integer_correlations(p, m, mu,
     assert [item['states'] for item in result['solutions']] == [states]
     assert result['solutions'][0]['expanded_verification'][
         'every_expanded_periodic_correlation_verified']
+    for block_variables in (6, 11):
+        native = lift.solve_bits(axes, data, seconds=5, workdir=tmp_path,
+                                 block_variables=block_variables)
+        assert native['complete_for_fixed_axes']
+        assert [item['states'] for item in native['solutions']] == [states]
+        assert native['native']['assignments_covered'] == 1 << dimension
 
 
 def test_binary_elimination_above_machine_word_width():
@@ -120,7 +126,8 @@ def test_native_streaming_mq_against_exhaustive_polynomials(tmp_path):
         pytest.skip('C++17 compiler unavailable')
     binary = lift.build_bits_binary(tmp_path)
     rng = random.Random(223)
-    for d, count in [(0, 1), (1, 2), (5, 9), (6, 10), (7, 12), (13, 14)]:
+    for d, count in [(0, 1), (1, 2), (5, 9), (6, 10), (7, 12),
+                     (13, 14), (13, 70), (13, 131)]:
         planted = rng.randrange(1 << d)
         equations = []
         for _ in range(count):
@@ -149,12 +156,17 @@ def test_native_streaming_mq_against_exhaustive_polynomials(tmp_path):
             lines.extend([f'{constant} {linear}', ' '.join(map(str, rows))])
         source, output = tmp_path/'input.txt', tmp_path/'output.json'
         source.write_text('\n'.join(lines)+'\n')
-        subprocess.run([str(binary), str(source), str(output), '5', '0'], check=True,
-                       stdout=subprocess.PIPE, stderr=subprocess.PIPE)
-        result = json.loads(output.read_text())
-        assert result['complete']
-        assert result['assignments_covered'] == 1 << d
-        assert set(result['roots']) == expected
+        # Exercise each block width and both sides of packed-equation word
+        # boundaries. Scalar enumeration supplies the complete expected set.
+        widths = range(6, 13) if d >= 13 else (11,)
+        for block_variables in widths:
+            subprocess.run([str(binary), str(source), str(output), '5', '0',
+                            str(block_variables)], check=True,
+                           stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+            result = json.loads(output.read_text())
+            assert result['complete']
+            assert result['assignments_covered'] == 1 << d
+            assert set(result['roots']) == expected
         assert planted in expected
 
 
@@ -198,3 +210,17 @@ def test_native_streaming_covers_all_32_bit_assignments(tmp_path):
     result = json.loads(output.read_text())
     assert result['complete'] and result['assignments_covered'] == 1 << dimension
     assert result['roots'] == [planted]
+
+
+def test_native_root_limit_is_reported_as_unfinished(tmp_path):
+    import subprocess
+    binary = lift.build_bits_binary(tmp_path)
+    source, output = tmp_path/'all-roots.txt', tmp_path/'limited.json'
+    source.write_text('15 1\n0 0\n'+' '.join(['0']*15)+'\n')
+    subprocess.run([str(binary), str(source), str(output), '5', '3', '11'],
+                   check=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    result = json.loads(output.read_text())
+    assert not result['complete']
+    assert result['root_limit_reached'] and not result['time_limit_reached']
+    assert result['roots'] == [0, 1, 2]
+    assert result['assignments_covered'] == 2048

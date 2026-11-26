@@ -82,33 +82,6 @@ PYTHONPATH=src:. ./.native-env/bin/python -m experiments.scalar_lift.forward_des
 ```
 
 The same command resumes. A source or frame catalogue change requires a new
-checkpoint identity, so a completed old cursor cannot silently omit added
-branches. For detached execution, use the existing supervised launcher
-with `--engine forward`. `status`, `stop`, and `reap` use its job directory.
-
-The source-first final-frame search uses a separate `forward-frame` engine
-and checkpoint. It fixes a verified sixth-root source and searches exact
-sign-frame equations. See its report for each disjoint partition and solver
-status. `UNKNOWN` is an open case, never a proof of infeasibility.
-
-The active bounded batch was launched with:
-
-```sh
-PYTHONPATH=src:. ./.native-env/bin/python -m experiments.scalar_lift.vanishing_search_job start \
-  --engine forward-frame --job-dir runs/forward-frame \
-  --database experiments/scalar_lift/search-state/forward-frame-t223.sqlite3 \
-  --seconds 3600 --max-db-mib 256 \
-  --report certificates/scalar-lift/forward-design-frame-search.json
-
-PYTHONPATH=src:. ./.native-env/bin/python -m experiments.scalar_lift.vanishing_search_job status \
-  --job-dir runs/forward-frame
-```
-
-It covers 192 disjoint cases, at most 15 native seconds per case, with one
-solver worker. Model construction and verification have their own overhead;
-the supervisor enforces the one-hour overall bound. The process may finish
-earlier when all scheduled attempts finish or an exact witness is verified.
-See [the frame equations and partition](FORWARD_DESIGN_FRAME_SEARCH.md).
-The SQLite checkpoint preserves case results and candidate witnesses; it
-does not serialize the CP solver's internal search tree. The batch runs on
-the local machine and does not prevent sleep.
+checkpoint identity, so a completed cursor cannot silently omit added branches.
+The current search for a new terminal frame is the
+[exact periodic T-matrix campaign](LOW_ORDER_SEARCH.md).

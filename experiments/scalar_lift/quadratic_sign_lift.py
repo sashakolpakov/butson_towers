@@ -406,14 +406,21 @@ def build_bits_binary(workdir):
 
 
 def solve_bits(axes, data, head_net=1, tail_net=1, first_negative=0,
-               seconds=10, max_roots=100000, workdir=None, fixed_signs=None):
-    """Enumerate MQ roots in native64-lane words, then test exact conditions.
+               seconds=10, max_roots=100000, workdir=None, fixed_signs=None,
+               block_variables=11):
+    """Enumerate MQ roots in native bit-sliced blocks, then test exact conditions.
 
     The forced extreme counts are included in the affine reduction. The
     remaining exact counts and all integer correlations are checked on
     each returned root, followed by an independent expanded verification.
-    No positive result relies only on the modular equations.
+    No positive result relies only on the modular equations. The optional
+    block size is 2**block_variables assignments, with 6..12 supported;
+    it changes throughput and root order but not the exhaustive search set.
     """
+    block_variables = operator.index(block_variables)
+    max_roots = operator.index(max_roots)
+    if seconds <= 0 or max_roots < 0 or not 6 <= block_variables <= 12:
+        raise ValueError('positive seconds, nonnegative root limit, and block variables in 6..12 are required')
     started = time.monotonic()
     try:
         system = prepare(axes, data, head_net, tail_net, first_negative,
@@ -440,7 +447,7 @@ def solve_bits(axes, data, head_net=1, tail_net=1, first_negative=0,
                       ' '.join(map(str, rows))]
         input_path.write_text('\n'.join(lines)+'\n')
         subprocess.run([str(binary), str(input_path), str(output_path),
-                        str(seconds), str(max_roots)], check=True,
+                        str(seconds), str(max_roots), str(block_variables)], check=True,
                        stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         native = json.loads(output_path.read_text())
     solutions = []
@@ -491,6 +498,8 @@ def main():
     parser.add_argument('--no-affine-links', action='store_true')
     parser.add_argument('--bits', action='store_true', help='streaming bit-sliced MQ enumeration')
     parser.add_argument('--native-workdir', type=Path)
+    parser.add_argument('--block-variables', type=int, choices=range(6, 13), default=11,
+                        help='native assignments per block are 2 to this power (default 11)')
     parser.add_argument('--mq-only', action='store_true',
                         help='enumerate count-constrained MQ candidates and test exact correlations lazily')
     parser.add_argument('--report', type=Path, required=True)
@@ -500,7 +509,8 @@ def main():
     data = frame.chart(args.p, args.m, args.mu)
     if args.bits:
         report = solve_bits(axes, data, args.head_net, args.tail_net, args.first_negative,
-                            args.seconds, workdir=args.native_workdir)
+                            args.seconds, workdir=args.native_workdir,
+                            block_variables=args.block_variables)
     else:
         report = solve(axes, data, args.head_net, args.tail_net, args.first_negative,
                        args.seconds, args.seed, args.all_solutions, args.max_solutions,

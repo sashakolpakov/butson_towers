@@ -22,3 +22,12 @@ The [historical inventory](https://github.com/sashakolpakov/complex-hadamard/blo
 records the retired paths and original checksums. Historical chart exclusions,
 known controls and incomplete searches keep their original mathematical scope.
 Ordinary work starts with [scalar reduction](SCALAR_REDUCTION.md).
+
+Subsequent unsuccessful local, Fourier, neighborhood and fixed-basis completion
+searches were removed from the construction repository as well. Their source
+and finite run records remain recoverable in
+[the preceding snapshot, 5b71ca4](https://github.com/sashakolpakov/butson_towers/tree/5b71ca4).
+This cleanup removes 228 obsolete files (about 40 MiB) from the working tree.
+The active
+[lower-order work](LOW_ORDER_SEARCH.md) uses exact determinant coordinates
+and modular sign lifting.

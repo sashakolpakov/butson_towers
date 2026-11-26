@@ -1,10 +1,8 @@
 # Broad input and scalar-restriction batch
 
-The [bound status snapshot](../certificates/scalar-lift/broad-search-status.json)
-collects the input proofs, completed matrix trees and basis experiments.
-**No previously unknown Hadamard order was constructed.** The useful new
-substrate is eighty additional starting representatives admitted by larger
-root gauges, together with more exact pruning rules for basis searches.
+Selected published inputs and completed scalar-restriction trees are retained
+as reproducible construction controls. Their source data, exact matrix recipes
+and verification reports are listed below.
 
 ## Inputs and target arithmetic
 
@@ -61,48 +59,13 @@ matrices have independently checked full sign Grams. Their orders are
 464 saved nodes replays, and `SavedNode.as_verified_source()` exposes its
 actual matrix for further work.
 
-## Large-order basis tests and new family exclusions
-
-Eight published Hadamard frames were used at widths668 (two matrices),716,
-764 (two matrices),892,1132 and1964. Each frame's full Gram was independently
-verified. **512 shared basis geometries** gave39,104 exact source/basis
-evaluations, covering198 routes from the original289-route preflight.
-Every actual used scalar was checked; no sign endpoint emerged. This
-finite experiment does not cover all1,374 expanded routes.
-
-The following stronger theorem now prunes all deeper Walsh-only branching.
-At width `d=4r`, odd `r>1`, a dyadic orthogonal operator mapping one sign
-Hadamard to another must be a signed permutation. A cyclotomic field action
-of a root having an odd-order factor cannot be such a permutation. A used
-ratio of roots is sufficient for this obstruction. Therefore these tests
-close the entire dyadic model, not merely the512 displayed geometries.
-New basis families must allow odd denominator primes from r.
-
-An additional exact audit tests the genuinely nondyadic global family
-
-`Q=F diag(epsilon) F^T/d`, for every `epsilon in {+1,-1}^d`.
-
-Finite-field kernel constraints, code-support connectivity and small
-residual sign searches exclude all such choices for the eight supplied
-frames and the four non-two-power root representatives1,2,4,5. The audit
-handles all`2^d` sign choices implicitly. It does not exclude arbitrary
-rational bases carrying the necessary denominator primes.
-
-The [denominator proof](NORMALIZATION_DENOMINATOR_GATE.md) and
-[odd-denominator family audit](ODD_DENOMINATOR_BASIS_AUDIT.md) state their
-precise scopes. The original fixed-field, same-basis determinant obstruction
-is separate: changing a shared basis alone can never supply the expanded
-Hadamard Gram.
-
 ## Replays
 
 ```sh
-PYTHONPATH=src:. ./.native-env/bin/python -m experiments.scalar_lift.broad_search_status --check certificates/scalar-lift/broad-search-status.json
 PYTHONPATH=src:. ./.native-env/bin/python -m experiments.scalar_lift.large_butson_factory --database search-state/broad-root-flat-all-inputs-v1.sqlite3 --all-verified --seconds 1 --report certificates/scalar-lift/broad-root-flat-all-inputs-tree.json
 PYTHONPATH=src:. ./.native-env/bin/python -m experiments.scalar_lift.large_butson_factory --database search-state/expanded-gauge-root-flat-v1.sqlite3 --expanded-only --seconds 1 --report certificates/scalar-lift/expanded-gauge-root-flat-tree.json
 ```
 
-The last two commands resume completed checkpoints without redoing matrix
-nodes. Their newly written reports must be followed by regenerating the
-status snapshot if any reporting metadata changed. Each cited component
-document also supplies its own full mathematical replay command.
+These commands resume completed checkpoints without redoing matrix nodes.
+The source-acquisition and partial-descent guides give the component replay
+commands and their exact scopes.

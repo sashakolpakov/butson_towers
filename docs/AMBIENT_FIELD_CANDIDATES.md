@@ -7,8 +7,7 @@ The [executed report](../certificates/scalar-lift/ambient-field-candidates.json)
 The subsequent [mixed-basis audit](https://github.com/sashakolpakov/complex-hadamard/blob/976cede671f40c810d593c8d5815e26e11a03ed6/docs/MIXED_RESTRICTION_BASIS_AUDIT.md) proves a
 stronger obstruction: every shared input/output basis change preserves a
 determinant incompatible with the expanded Hadamard order. Mixing factors
-alone cannot fix it. The [follow-up two-basis probe](ALPOGE_MIXED_BASIS_PROBE.md)
-therefore uses different input/output bases anchored at published H668/H716.
+alone cannot fix it. Unequal input and output frames lie outside that obstruction.
 
 The retained sources are the exact order-13 sixth-root input, the separately acquired order-7 sixth- and twelfth-root inputs, and the existing literal order-9 sixth-root input. Their full Grams and source hashes are replayed. These endpoints occur in the attributed bounded frontier snapshot. None of its retained orders above 20,000 is divisible by any of the fixed source orders 3, 7, 13, 15, 35. The actual order-15 and order-35 common-base inputs generate Q(zeta120); replacing their field by the sextic field would be invalid.
 

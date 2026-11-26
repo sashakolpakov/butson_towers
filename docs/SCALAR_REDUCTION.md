@@ -120,12 +120,10 @@ Individual finite orders carry the recorded status labels. The main
 campaign now has **38 completed real orders, 18 new and 20 known recovered
 orders**; the new periodic T127 ingredient is counted separately.
 
-Other frame widths remain incomplete. In the
-[sixth-root frame chart](GS_SCALAR_CHART_AUDIT.md#preserving-the-norms-before-imposing-flatness),
-width 892 would give orders 2676 and 11596; widths 668 and 716 would give
-4676/8684 and 9308 respectively. The Fourier parameterization preserves the
-norm identities through nonflat matrices, but the terminal flat pair is
-still missing. These remain conditional constructions, not new matrices.
+The [lower-order campaign](LOW_ORDER_SEARCH.md) seeks further periodic
+T-matrices, starting with length 223 and Hadamard order 2676. Length 167
+would supply orders 4676/8684, and length 179 would supply 7876/9308.
+These are exact construction targets awaiting a completed finite witness.
 
 The [projective flat-descent construction](PROJECTIVE_FLAT_DESCENT.md) now
 supplies explicit polynomial identities guaranteeing endpoint flatness

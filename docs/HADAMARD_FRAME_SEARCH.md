@@ -241,18 +241,19 @@ not infer new field maps automatically. The exact
 [compact target scan and bound](HADAMARD_FRAME_TARGET_SCAN.md) describe this
 parameter scope.
 
-The next unresolved length 223 would have 74 nonorigin orbits, a parity field
-`GF(2^37)`, and a much larger sign kernel. It exceeds the present word and
-finite-enumeration limits; changing the prime is insufficient. The compact
+Length 223 has 74 nonzero multiplication orbits, a parity field
+`GF(2^37)`, and a much larger sign kernel. It exceeds this original engine's
+word and finite-enumeration limits. The current
+[length-223 implementation](LOW_ORDER_SEARCH.md) supplies the larger exact
+map, native determinant sampler, sign filter and resumable campaign while
+retaining the same reduction chain. The compact
 length 919 chart is now ported: its 68-bit color map and all 32768 signs of
 a native kernel pass independent exact checks. The
 length 547 map has now been derived and passes all 1379 quadratic coefficient
 checks; its [52-column map and completed endpoint](../certificates/scalar-lift/hadamard-frame-p547.json)
 can be replayed with `--parity-map`. The deterministic planted-state test
 reconstructs H6564 and verifies its full integer Gram without repeating the
-stochastic search. Length 223 still needs a larger sign solver. The ported
-919 and 397 charts have completed bounded campaigns without a zero; those
-finite runs establish no nonexistence result.
+stochastic search.
 
 ## The even-degree port and conditional headless sampler
 
