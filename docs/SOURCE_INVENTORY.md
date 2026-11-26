@@ -184,3 +184,14 @@ For individual entry access, use `source(q,r).entry(channel,i,j)` or
 the full bounded-size NTT source replay; the recursive entry APIs also
 work beyond that replay bound. Formal existence statements and their
 axiom audits are recorded in [the formalization guide](FORMALIZATION.md).
+
+## Known orders and matrix identity
+
+The [separate prior-construction table](sphinx/known-orders.md) accounts for all
+31 recovered known orders. Positive prior existence does not decide matrix
+equivalence. Our order-885924 sixth-root representative has rank 246090 over
+$\mathbb F_3$, whereas the standard Paley matrix has rank 442962, proving
+inequivalence to that matrix (and to every skew representative). The other
+thirty comparisons remain unsettled. This comparison has a separate exact
+finite certificate; it does not alter the Lean existence package or the
+34-new-order count.

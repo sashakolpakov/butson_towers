@@ -9,6 +9,7 @@ complete construction recipes for every nonnegative parameter;
 their finite audited members carry individual known/new labels.
 
 - [Complete source inventory](SOURCE_INVENTORY.md)
+- [All recovered known orders and matrix comparisons](sphinx/known-orders.md)
 - [Machine-readable union of all completed orders](../certificates/scalar-lift/completed-order-inventory.json)
 - [Complete status ledger](HADAMARD_HIGHER_ORDER_RECORDS.md)
 - [Scalar action, trace metric and terminal flatness](SCALAR_REDUCTION.md)

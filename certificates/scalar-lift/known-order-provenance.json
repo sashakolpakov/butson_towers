@@ -1,0 +1,1916 @@
+{
+  "schema": "known-completed-order-positive-provenance-v1",
+  "producer": "scripts/audit_known_order_provenance.py",
+  "source_inventory": "certificates/scalar-lift/completed-order-inventory.json",
+  "inventory_checked_date": "2026-11-26",
+  "scope": "Positive prior existence-order provenance only. This audit checks ledger bindings, input hashes and integer construction hypotheses. Prior matrix existence is attributed to the cited constructions; those matrices are not reconstructed here. No matrix-equivalence test is performed by this audit.",
+  "known_order_count": 31,
+  "orders": [
+    1524,
+    2524,
+    3252,
+    6564,
+    8636,
+    12620,
+    27764,
+    37860,
+    47956,
+    53004,
+    63100,
+    68148,
+    83292,
+    88340,
+    103484,
+    113580,
+    123676,
+    138820,
+    143868,
+    159012,
+    164060,
+    239780,
+    335692,
+    456844,
+    885924,
+    3611844,
+    6564924,
+    11996572,
+    16257084,
+    18629644,
+    23859372
+  ],
+  "construction_counts": {
+    "Paley I": 12,
+    "Goethals–Seidel / cyclic SDS": 1,
+    "Cooper–Wallis / prior WT127": 1,
+    "Paley-block product": 7,
+    "Paley II": 5,
+    "Cooper–Wallis / Turyn–Whiteman": 5
+  },
+  "all_integer_hypotheses_passed": true,
+  "endpoint_selectors_checked": 32,
+  "endpoint_certificate_files_checked": 9,
+  "ledger_status_selectors_checked": 32,
+  "detailed_prior_proofs_checked": 32,
+  "rows": [
+    {
+      "order": 1524,
+      "prior_construction": "Paley I",
+      "parameters": {
+        "q": 1523
+      },
+      "reference_keys": [
+        "paley"
+      ],
+      "integer_hypotheses_checked": {
+        "q_is_prime": true,
+        "q_mod4_is3": true,
+        "order_identity": true
+      },
+      "note": "",
+      "prior_status_provenance": [
+        {
+          "path": "certificates/scalar-lift/higher-order-records.json",
+          "selector": "periodic_T127_record.ordinary_H1524_status",
+          "normalized_proof": {
+            "prior_construction": "Paley I",
+            "parameters": {
+              "q": 1523
+            },
+            "reference_keys": [
+              "paley"
+            ],
+            "integer_hypotheses_checked": {
+              "q_is_prime": true,
+              "q_mod4_is3": true,
+              "order_identity": true
+            },
+            "note": ""
+          }
+        }
+      ],
+      "our_positive_endpoint_certificates": [
+        {
+          "path": "certificates/scalar-lift/hadamard-frame-p127.json",
+          "selector": "known_order_positive_repeat.endpoint"
+        }
+      ],
+      "ledger_status_sources": [
+        {
+          "path": "certificates/scalar-lift/higher-order-records.json",
+          "selector": "completed_order_statuses[0]"
+        }
+      ],
+      "matrix_equivalence_tested_in_this_audit": false
+    },
+    {
+      "order": 2524,
+      "prior_construction": "Goethals–Seidel / cyclic SDS",
+      "parameters": {
+        "v": 631,
+        "block_sizes": [
+          315,
+          330,
+          330,
+          330
+        ],
+        "lambda": 674
+      },
+      "reference_keys": [
+        "djk2014"
+      ],
+      "integer_hypotheses_checked": {
+        "published_cyclic_group_order": true,
+        "order_identity": true,
+        "SDS_parameter_identity": true
+      },
+      "note": "Section 3.3 gives λ=674; the introduction has a typographical 647. Existence of the literal SDSs is taken from the cited paper, not inferred from the parameter identity. Its SDS inequivalence results do not compare the resulting Hadamard matrices with our representatives.",
+      "prior_status_provenance": [
+        {
+          "path": "experiments/scalar_lift/williamson_order_status.json",
+          "selector": "631:1",
+          "normalized_proof": {
+            "prior_construction": "Goethals–Seidel / cyclic SDS",
+            "parameters": {
+              "v": 631,
+              "block_sizes": [
+                315,
+                330,
+                330,
+                330
+              ],
+              "lambda": 674
+            },
+            "reference_keys": [
+              "djk2014"
+            ],
+            "integer_hypotheses_checked": {
+              "published_cyclic_group_order": true,
+              "order_identity": true,
+              "SDS_parameter_identity": true
+            },
+            "note": "Section 3.3 gives λ=674; the introduction has a typographical 647. Existence of the literal SDSs is taken from the cited paper, not inferred from the parameter identity. Its SDS inequivalence results do not compare the resulting Hadamard matrices with our representatives."
+          }
+        }
+      ],
+      "our_positive_endpoint_certificates": [
+        {
+          "path": "certificates/scalar-lift/williamson-scalar-endpoints.json",
+          "selector": "outputs[0]"
+        }
+      ],
+      "ledger_status_sources": [
+        {
+          "path": "certificates/scalar-lift/higher-order-records.json",
+          "selector": "completed_order_statuses[1]"
+        }
+      ],
+      "matrix_equivalence_tested_in_this_audit": false
+    },
+    {
+      "order": 3252,
+      "prior_construction": "Paley I",
+      "parameters": {
+        "q": 3251
+      },
+      "reference_keys": [
+        "paley"
+      ],
+      "integer_hypotheses_checked": {
+        "q_is_prime": true,
+        "q_mod4_is3": true,
+        "order_identity": true
+      },
+      "note": "",
+      "prior_status_provenance": [
+        {
+          "path": "certificates/scalar-lift/higher-order-records.json",
+          "selector": "repeat_endpoint_statuses[0].positive_knownness_proofs[1]",
+          "normalized_proof": {
+            "prior_construction": "Paley I",
+            "parameters": {
+              "q": 3251
+            },
+            "reference_keys": [
+              "paley"
+            ],
+            "integer_hypotheses_checked": {
+              "q_is_prime": true,
+              "q_mod4_is3": true,
+              "order_identity": true
+            },
+            "note": ""
+          }
+        }
+      ],
+      "our_positive_endpoint_certificates": [
+        {
+          "path": "certificates/scalar-lift/hadamard-frame-p271.json",
+          "selector": "known_order_positive_repeat.endpoint"
+        }
+      ],
+      "ledger_status_sources": [
+        {
+          "path": "certificates/scalar-lift/higher-order-records.json",
+          "selector": "completed_order_statuses[2]"
+        }
+      ],
+      "matrix_equivalence_tested_in_this_audit": false
+    },
+    {
+      "order": 6564,
+      "prior_construction": "Paley I",
+      "parameters": {
+        "q": 6563
+      },
+      "reference_keys": [
+        "paley"
+      ],
+      "integer_hypotheses_checked": {
+        "q_is_prime": true,
+        "q_mod4_is3": true,
+        "order_identity": true
+      },
+      "note": "",
+      "prior_status_provenance": [
+        {
+          "path": "certificates/scalar-lift/higher-order-records.json",
+          "selector": "repeat_endpoint_statuses[16].positive_knownness_proofs[1]",
+          "normalized_proof": {
+            "prior_construction": "Paley I",
+            "parameters": {
+              "q": 6563
+            },
+            "reference_keys": [
+              "paley"
+            ],
+            "integer_hypotheses_checked": {
+              "q_is_prime": true,
+              "q_mod4_is3": true,
+              "order_identity": true
+            },
+            "note": ""
+          }
+        }
+      ],
+      "our_positive_endpoint_certificates": [
+        {
+          "path": "certificates/scalar-lift/hadamard-frame-p547.json",
+          "selector": "known_order_positive_repeat.endpoint"
+        }
+      ],
+      "ledger_status_sources": [
+        {
+          "path": "certificates/scalar-lift/higher-order-records.json",
+          "selector": "completed_order_statuses[3]"
+        }
+      ],
+      "matrix_equivalence_tested_in_this_audit": false
+    },
+    {
+      "order": 8636,
+      "prior_construction": "Cooper–Wallis / prior WT127",
+      "parameters": {
+        "T_order": 17,
+        "Williamson_order": 127
+      },
+      "reference_keys": [
+        "cooperwallis",
+        "djokovic2009"
+      ],
+      "integer_hypotheses_checked": {
+        "order_identity": true,
+        "published_prior_WT127_with_T17": true,
+        "T_input_classical_odd_through19": true
+      },
+      "note": "",
+      "prior_status_provenance": [
+        {
+          "path": "experiments/scalar_lift/williamson_order_status.json",
+          "selector": "127:17",
+          "normalized_proof": {
+            "prior_construction": "Cooper–Wallis / prior WT127",
+            "parameters": {
+              "T_order": 17,
+              "Williamson_order": 127
+            },
+            "reference_keys": [
+              "cooperwallis",
+              "djokovic2009"
+            ],
+            "integer_hypotheses_checked": {
+              "order_identity": true,
+              "published_prior_WT127_with_T17": true,
+              "T_input_classical_odd_through19": true
+            },
+            "note": ""
+          }
+        }
+      ],
+      "our_positive_endpoint_certificates": [
+        {
+          "path": "certificates/scalar-lift/williamson-scalar-known-control.json",
+          "selector": "outputs[0]"
+        }
+      ],
+      "ledger_status_sources": [
+        {
+          "path": "certificates/scalar-lift/higher-order-records.json",
+          "selector": "completed_order_statuses[5]"
+        }
+      ],
+      "matrix_equivalence_tested_in_this_audit": false
+    },
+    {
+      "order": 12620,
+      "prior_construction": "Paley I",
+      "parameters": {
+        "q": 12619
+      },
+      "reference_keys": [
+        "paley"
+      ],
+      "integer_hypotheses_checked": {
+        "q_is_prime": true,
+        "q_mod4_is3": true,
+        "order_identity": true
+      },
+      "note": "",
+      "prior_status_provenance": [
+        {
+          "path": "experiments/scalar_lift/williamson_order_status.json",
+          "selector": "631:5",
+          "normalized_proof": {
+            "prior_construction": "Paley I",
+            "parameters": {
+              "q": 12619
+            },
+            "reference_keys": [
+              "paley"
+            ],
+            "integer_hypotheses_checked": {
+              "q_is_prime": true,
+              "q_mod4_is3": true,
+              "order_identity": true
+            },
+            "note": ""
+          }
+        }
+      ],
+      "our_positive_endpoint_certificates": [
+        {
+          "path": "certificates/scalar-lift/williamson-scalar-endpoints.json",
+          "selector": "outputs[2]"
+        }
+      ],
+      "ledger_status_sources": [
+        {
+          "path": "certificates/scalar-lift/higher-order-records.json",
+          "selector": "completed_order_statuses[6]"
+        }
+      ],
+      "matrix_equivalence_tested_in_this_audit": false
+    },
+    {
+      "order": 27764,
+      "prior_construction": "Paley I",
+      "parameters": {
+        "q": 27763
+      },
+      "reference_keys": [
+        "paley"
+      ],
+      "integer_hypotheses_checked": {
+        "q_is_prime": true,
+        "q_mod4_is3": true,
+        "order_identity": true
+      },
+      "note": "",
+      "prior_status_provenance": [
+        {
+          "path": "experiments/scalar_lift/williamson_order_status.json",
+          "selector": "631:11",
+          "normalized_proof": {
+            "prior_construction": "Paley I",
+            "parameters": {
+              "q": 27763
+            },
+            "reference_keys": [
+              "paley"
+            ],
+            "integer_hypotheses_checked": {
+              "q_is_prime": true,
+              "q_mod4_is3": true,
+              "order_identity": true
+            },
+            "note": ""
+          }
+        }
+      ],
+      "our_positive_endpoint_certificates": [
+        {
+          "path": "certificates/scalar-lift/williamson-scalar-endpoints.json",
+          "selector": "outputs[5]"
+        }
+      ],
+      "ledger_status_sources": [
+        {
+          "path": "certificates/scalar-lift/higher-order-records.json",
+          "selector": "completed_order_statuses[9]"
+        }
+      ],
+      "matrix_equivalence_tested_in_this_audit": false
+    },
+    {
+      "order": 37860,
+      "prior_construction": "Paley-block product",
+      "parameters": {
+        "q": 12619,
+        "s": 3155,
+        "T_order": 3
+      },
+      "reference_keys": [
+        "seberry-yamada-1990",
+        "survey",
+        "cooperwallis"
+      ],
+      "integer_hypotheses_checked": {
+        "q_is_prime": true,
+        "q_mod8_is3": true,
+        "base_order_identity": true,
+        "order_identity": true,
+        "T_input_classical_odd_through19": true
+      },
+      "note": "",
+      "prior_status_provenance": [
+        {
+          "path": "experiments/scalar_lift/williamson_order_status.json",
+          "selector": "631:15",
+          "normalized_proof": {
+            "prior_construction": "Paley-block product",
+            "parameters": {
+              "q": 12619,
+              "s": 3155,
+              "T_order": 3
+            },
+            "reference_keys": [
+              "seberry-yamada-1990",
+              "survey",
+              "cooperwallis"
+            ],
+            "integer_hypotheses_checked": {
+              "q_is_prime": true,
+              "q_mod8_is3": true,
+              "base_order_identity": true,
+              "order_identity": true,
+              "T_input_classical_odd_through19": true
+            },
+            "note": ""
+          }
+        },
+        {
+          "path": "experiments/scalar_lift/additional_spence_order_status.json",
+          "selector": "entries.family:5:1",
+          "normalized_proof": {
+            "prior_construction": "Paley-block product",
+            "parameters": {
+              "q": 12619,
+              "s": 3155,
+              "T_order": 3
+            },
+            "reference_keys": [
+              "seberry-yamada-1990",
+              "survey",
+              "cooperwallis"
+            ],
+            "integer_hypotheses_checked": {
+              "q_is_prime": true,
+              "q_mod8_is3": true,
+              "base_order_identity": true,
+              "order_identity": true,
+              "T_input_classical_odd_through19": true
+            },
+            "note": ""
+          }
+        }
+      ],
+      "our_positive_endpoint_certificates": [
+        {
+          "path": "certificates/scalar-lift/williamson-scalar-endpoints.json",
+          "selector": "outputs[7]"
+        },
+        {
+          "path": "certificates/scalar-lift/additional-spence-families.json",
+          "selector": "first_expanded_members[0]"
+        }
+      ],
+      "ledger_status_sources": [
+        {
+          "path": "certificates/scalar-lift/higher-order-records.json",
+          "selector": "completed_order_statuses[11]"
+        },
+        {
+          "path": "experiments/scalar_lift/additional_spence_order_status.json",
+          "selector": "entries.family:5:1"
+        }
+      ],
+      "matrix_equivalence_tested_in_this_audit": false
+    },
+    {
+      "order": 47956,
+      "prior_construction": "Paley II",
+      "parameters": {
+        "q": 23977
+      },
+      "reference_keys": [
+        "paley"
+      ],
+      "integer_hypotheses_checked": {
+        "q_is_prime": true,
+        "q_mod4_is1": true,
+        "order_identity": true
+      },
+      "note": "",
+      "prior_status_provenance": [
+        {
+          "path": "experiments/scalar_lift/williamson_order_status.json",
+          "selector": "631:19",
+          "normalized_proof": {
+            "prior_construction": "Paley II",
+            "parameters": {
+              "q": 23977
+            },
+            "reference_keys": [
+              "paley"
+            ],
+            "integer_hypotheses_checked": {
+              "q_is_prime": true,
+              "q_mod4_is1": true,
+              "order_identity": true
+            },
+            "note": ""
+          }
+        }
+      ],
+      "our_positive_endpoint_certificates": [
+        {
+          "path": "certificates/scalar-lift/williamson-scalar-endpoints.json",
+          "selector": "outputs[9]"
+        }
+      ],
+      "ledger_status_sources": [
+        {
+          "path": "certificates/scalar-lift/higher-order-records.json",
+          "selector": "completed_order_statuses[13]"
+        }
+      ],
+      "matrix_equivalence_tested_in_this_audit": false
+    },
+    {
+      "order": 53004,
+      "prior_construction": "Paley I",
+      "parameters": {
+        "q": 53003
+      },
+      "reference_keys": [
+        "paley"
+      ],
+      "integer_hypotheses_checked": {
+        "q_is_prime": true,
+        "q_mod4_is3": true,
+        "order_identity": true
+      },
+      "note": "",
+      "prior_status_provenance": [
+        {
+          "path": "experiments/scalar_lift/williamson_order_status.json",
+          "selector": "631:21",
+          "normalized_proof": {
+            "prior_construction": "Paley I",
+            "parameters": {
+              "q": 53003
+            },
+            "reference_keys": [
+              "paley"
+            ],
+            "integer_hypotheses_checked": {
+              "q_is_prime": true,
+              "q_mod4_is3": true,
+              "order_identity": true
+            },
+            "note": ""
+          }
+        }
+      ],
+      "our_positive_endpoint_certificates": [
+        {
+          "path": "certificates/scalar-lift/williamson-scalar-endpoints.json",
+          "selector": "outputs[10]"
+        }
+      ],
+      "ledger_status_sources": [
+        {
+          "path": "certificates/scalar-lift/higher-order-records.json",
+          "selector": "completed_order_statuses[14]"
+        }
+      ],
+      "matrix_equivalence_tested_in_this_audit": false
+    },
+    {
+      "order": 63100,
+      "prior_construction": "Paley-block product",
+      "parameters": {
+        "q": 12619,
+        "s": 3155,
+        "T_order": 5
+      },
+      "reference_keys": [
+        "seberry-yamada-1990",
+        "survey",
+        "cooperwallis"
+      ],
+      "integer_hypotheses_checked": {
+        "q_is_prime": true,
+        "q_mod8_is3": true,
+        "base_order_identity": true,
+        "order_identity": true,
+        "T_input_classical_odd_through19": true
+      },
+      "note": "",
+      "prior_status_provenance": [
+        {
+          "path": "experiments/scalar_lift/williamson_order_status.json",
+          "selector": "631:25",
+          "normalized_proof": {
+            "prior_construction": "Paley-block product",
+            "parameters": {
+              "q": 12619,
+              "s": 3155,
+              "T_order": 5
+            },
+            "reference_keys": [
+              "seberry-yamada-1990",
+              "survey",
+              "cooperwallis"
+            ],
+            "integer_hypotheses_checked": {
+              "q_is_prime": true,
+              "q_mod8_is3": true,
+              "base_order_identity": true,
+              "order_identity": true,
+              "T_input_classical_odd_through19": true
+            },
+            "note": ""
+          }
+        }
+      ],
+      "our_positive_endpoint_certificates": [
+        {
+          "path": "certificates/scalar-lift/williamson-scalar-endpoints.json",
+          "selector": "outputs[12]"
+        }
+      ],
+      "ledger_status_sources": [
+        {
+          "path": "certificates/scalar-lift/higher-order-records.json",
+          "selector": "completed_order_statuses[16]"
+        }
+      ],
+      "matrix_equivalence_tested_in_this_audit": false
+    },
+    {
+      "order": 68148,
+      "prior_construction": "Paley I",
+      "parameters": {
+        "q": 68147
+      },
+      "reference_keys": [
+        "paley"
+      ],
+      "integer_hypotheses_checked": {
+        "q_is_prime": true,
+        "q_mod4_is3": true,
+        "order_identity": true
+      },
+      "note": "",
+      "prior_status_provenance": [
+        {
+          "path": "experiments/scalar_lift/williamson_order_status.json",
+          "selector": "631:27",
+          "normalized_proof": {
+            "prior_construction": "Paley I",
+            "parameters": {
+              "q": 68147
+            },
+            "reference_keys": [
+              "paley"
+            ],
+            "integer_hypotheses_checked": {
+              "q_is_prime": true,
+              "q_mod4_is3": true,
+              "order_identity": true
+            },
+            "note": ""
+          }
+        }
+      ],
+      "our_positive_endpoint_certificates": [
+        {
+          "path": "certificates/scalar-lift/williamson-scalar-endpoints.json",
+          "selector": "outputs[13]"
+        }
+      ],
+      "ledger_status_sources": [
+        {
+          "path": "certificates/scalar-lift/higher-order-records.json",
+          "selector": "completed_order_statuses[17]"
+        }
+      ],
+      "matrix_equivalence_tested_in_this_audit": false
+    },
+    {
+      "order": 83292,
+      "prior_construction": "Paley-block product",
+      "parameters": {
+        "q": 27763,
+        "s": 6941,
+        "T_order": 3
+      },
+      "reference_keys": [
+        "seberry-yamada-1990",
+        "survey",
+        "cooperwallis"
+      ],
+      "integer_hypotheses_checked": {
+        "q_is_prime": true,
+        "q_mod8_is3": true,
+        "base_order_identity": true,
+        "order_identity": true,
+        "T_input_classical_odd_through19": true
+      },
+      "note": "",
+      "prior_status_provenance": [
+        {
+          "path": "experiments/scalar_lift/williamson_order_status.json",
+          "selector": "631:33",
+          "normalized_proof": {
+            "prior_construction": "Paley-block product",
+            "parameters": {
+              "q": 27763,
+              "s": 6941,
+              "T_order": 3
+            },
+            "reference_keys": [
+              "seberry-yamada-1990",
+              "survey",
+              "cooperwallis"
+            ],
+            "integer_hypotheses_checked": {
+              "q_is_prime": true,
+              "q_mod8_is3": true,
+              "base_order_identity": true,
+              "order_identity": true,
+              "T_input_classical_odd_through19": true
+            },
+            "note": ""
+          }
+        }
+      ],
+      "our_positive_endpoint_certificates": [
+        {
+          "path": "certificates/scalar-lift/williamson-scalar-endpoints.json",
+          "selector": "outputs[16]"
+        }
+      ],
+      "ledger_status_sources": [
+        {
+          "path": "certificates/scalar-lift/higher-order-records.json",
+          "selector": "completed_order_statuses[20]"
+        }
+      ],
+      "matrix_equivalence_tested_in_this_audit": false
+    },
+    {
+      "order": 88340,
+      "prior_construction": "Paley I",
+      "parameters": {
+        "q": 88339
+      },
+      "reference_keys": [
+        "paley"
+      ],
+      "integer_hypotheses_checked": {
+        "q_is_prime": true,
+        "q_mod4_is3": true,
+        "order_identity": true
+      },
+      "note": "",
+      "prior_status_provenance": [
+        {
+          "path": "experiments/scalar_lift/near_williamson_order_status.json",
+          "selector": "entries.35",
+          "normalized_proof": {
+            "prior_construction": "Paley I",
+            "parameters": {
+              "q": 88339
+            },
+            "reference_keys": [
+              "paley"
+            ],
+            "integer_hypotheses_checked": {
+              "q_is_prime": true,
+              "q_mod4_is3": true,
+              "order_identity": true
+            },
+            "note": ""
+          }
+        }
+      ],
+      "our_positive_endpoint_certificates": [
+        {
+          "path": "certificates/scalar-lift/near-williamson-scalar-endpoints.json",
+          "selector": "outputs[0]"
+        }
+      ],
+      "ledger_status_sources": [
+        {
+          "path": "experiments/scalar_lift/near_williamson_order_status.json",
+          "selector": "entries.35"
+        }
+      ],
+      "matrix_equivalence_tested_in_this_audit": false
+    },
+    {
+      "order": 103484,
+      "prior_construction": "Paley I",
+      "parameters": {
+        "q": 103483
+      },
+      "reference_keys": [
+        "paley"
+      ],
+      "integer_hypotheses_checked": {
+        "q_is_prime": true,
+        "q_mod4_is3": true,
+        "order_identity": true
+      },
+      "note": "",
+      "prior_status_provenance": [
+        {
+          "path": "experiments/scalar_lift/williamson_order_status.json",
+          "selector": "631:41",
+          "normalized_proof": {
+            "prior_construction": "Paley I",
+            "parameters": {
+              "q": 103483
+            },
+            "reference_keys": [
+              "paley"
+            ],
+            "integer_hypotheses_checked": {
+              "q_is_prime": true,
+              "q_mod4_is3": true,
+              "order_identity": true
+            },
+            "note": ""
+          }
+        }
+      ],
+      "our_positive_endpoint_certificates": [
+        {
+          "path": "certificates/scalar-lift/williamson-scalar-endpoints.json",
+          "selector": "outputs[19]"
+        }
+      ],
+      "ledger_status_sources": [
+        {
+          "path": "certificates/scalar-lift/higher-order-records.json",
+          "selector": "completed_order_statuses[23]"
+        }
+      ],
+      "matrix_equivalence_tested_in_this_audit": false
+    },
+    {
+      "order": 113580,
+      "prior_construction": "Paley-block product",
+      "parameters": {
+        "q": 12619,
+        "s": 3155,
+        "T_order": 9
+      },
+      "reference_keys": [
+        "seberry-yamada-1990",
+        "survey",
+        "cooperwallis"
+      ],
+      "integer_hypotheses_checked": {
+        "q_is_prime": true,
+        "q_mod8_is3": true,
+        "base_order_identity": true,
+        "order_identity": true,
+        "T_input_classical_odd_through19": true
+      },
+      "note": "",
+      "prior_status_provenance": [
+        {
+          "path": "experiments/scalar_lift/near_williamson_order_status.json",
+          "selector": "entries.45",
+          "normalized_proof": {
+            "prior_construction": "Paley-block product",
+            "parameters": {
+              "q": 12619,
+              "s": 3155,
+              "T_order": 9
+            },
+            "reference_keys": [
+              "seberry-yamada-1990",
+              "survey",
+              "cooperwallis"
+            ],
+            "integer_hypotheses_checked": {
+              "q_is_prime": true,
+              "q_mod8_is3": true,
+              "base_order_identity": true,
+              "order_identity": true,
+              "T_input_classical_odd_through19": true
+            },
+            "note": ""
+          }
+        }
+      ],
+      "our_positive_endpoint_certificates": [
+        {
+          "path": "certificates/scalar-lift/near-williamson-scalar-endpoints.json",
+          "selector": "outputs[1]"
+        }
+      ],
+      "ledger_status_sources": [
+        {
+          "path": "experiments/scalar_lift/near_williamson_order_status.json",
+          "selector": "entries.45"
+        }
+      ],
+      "matrix_equivalence_tested_in_this_audit": false
+    },
+    {
+      "order": 123676,
+      "prior_construction": "Paley II",
+      "parameters": {
+        "q": 61837
+      },
+      "reference_keys": [
+        "paley"
+      ],
+      "integer_hypotheses_checked": {
+        "q_is_prime": true,
+        "q_mod4_is1": true,
+        "order_identity": true
+      },
+      "note": "",
+      "prior_status_provenance": [
+        {
+          "path": "experiments/scalar_lift/williamson_order_status.json",
+          "selector": "631:49",
+          "normalized_proof": {
+            "prior_construction": "Paley II",
+            "parameters": {
+              "q": 61837
+            },
+            "reference_keys": [
+              "paley"
+            ],
+            "integer_hypotheses_checked": {
+              "q_is_prime": true,
+              "q_mod4_is1": true,
+              "order_identity": true
+            },
+            "note": ""
+          }
+        }
+      ],
+      "our_positive_endpoint_certificates": [
+        {
+          "path": "certificates/scalar-lift/williamson-scalar-endpoints.json",
+          "selector": "outputs[21]"
+        }
+      ],
+      "ledger_status_sources": [
+        {
+          "path": "certificates/scalar-lift/higher-order-records.json",
+          "selector": "completed_order_statuses[25]"
+        }
+      ],
+      "matrix_equivalence_tested_in_this_audit": false
+    },
+    {
+      "order": 138820,
+      "prior_construction": "Paley-block product",
+      "parameters": {
+        "q": 27763,
+        "s": 6941,
+        "T_order": 5
+      },
+      "reference_keys": [
+        "seberry-yamada-1990",
+        "survey",
+        "cooperwallis"
+      ],
+      "integer_hypotheses_checked": {
+        "q_is_prime": true,
+        "q_mod8_is3": true,
+        "base_order_identity": true,
+        "order_identity": true,
+        "T_input_classical_odd_through19": true
+      },
+      "note": "",
+      "prior_status_provenance": [
+        {
+          "path": "experiments/scalar_lift/williamson_order_status.json",
+          "selector": "631:55",
+          "normalized_proof": {
+            "prior_construction": "Paley-block product",
+            "parameters": {
+              "q": 27763,
+              "s": 6941,
+              "T_order": 5
+            },
+            "reference_keys": [
+              "seberry-yamada-1990",
+              "survey",
+              "cooperwallis"
+            ],
+            "integer_hypotheses_checked": {
+              "q_is_prime": true,
+              "q_mod8_is3": true,
+              "base_order_identity": true,
+              "order_identity": true,
+              "T_input_classical_odd_through19": true
+            },
+            "note": ""
+          }
+        }
+      ],
+      "our_positive_endpoint_certificates": [
+        {
+          "path": "certificates/scalar-lift/williamson-scalar-endpoints.json",
+          "selector": "outputs[23]"
+        }
+      ],
+      "ledger_status_sources": [
+        {
+          "path": "certificates/scalar-lift/higher-order-records.json",
+          "selector": "completed_order_statuses[27]"
+        }
+      ],
+      "matrix_equivalence_tested_in_this_audit": false
+    },
+    {
+      "order": 143868,
+      "prior_construction": "Paley II",
+      "parameters": {
+        "q": 71933
+      },
+      "reference_keys": [
+        "paley"
+      ],
+      "integer_hypotheses_checked": {
+        "q_is_prime": true,
+        "q_mod4_is1": true,
+        "order_identity": true
+      },
+      "note": "",
+      "prior_status_provenance": [
+        {
+          "path": "experiments/scalar_lift/williamson_order_status.json",
+          "selector": "631:57",
+          "normalized_proof": {
+            "prior_construction": "Paley II",
+            "parameters": {
+              "q": 71933
+            },
+            "reference_keys": [
+              "paley"
+            ],
+            "integer_hypotheses_checked": {
+              "q_is_prime": true,
+              "q_mod4_is1": true,
+              "order_identity": true
+            },
+            "note": ""
+          }
+        }
+      ],
+      "our_positive_endpoint_certificates": [
+        {
+          "path": "certificates/scalar-lift/williamson-scalar-endpoints.json",
+          "selector": "outputs[24]"
+        }
+      ],
+      "ledger_status_sources": [
+        {
+          "path": "certificates/scalar-lift/higher-order-records.json",
+          "selector": "completed_order_statuses[28]"
+        }
+      ],
+      "matrix_equivalence_tested_in_this_audit": false
+    },
+    {
+      "order": 159012,
+      "prior_construction": "Paley-block product",
+      "parameters": {
+        "q": 53003,
+        "s": 13251,
+        "T_order": 3
+      },
+      "reference_keys": [
+        "seberry-yamada-1990",
+        "survey",
+        "cooperwallis"
+      ],
+      "integer_hypotheses_checked": {
+        "q_is_prime": true,
+        "q_mod8_is3": true,
+        "base_order_identity": true,
+        "order_identity": true,
+        "T_input_classical_odd_through19": true
+      },
+      "note": "",
+      "prior_status_provenance": [
+        {
+          "path": "experiments/scalar_lift/williamson_order_status.json",
+          "selector": "631:63",
+          "normalized_proof": {
+            "prior_construction": "Paley-block product",
+            "parameters": {
+              "q": 53003,
+              "s": 13251,
+              "T_order": 3
+            },
+            "reference_keys": [
+              "seberry-yamada-1990",
+              "survey",
+              "cooperwallis"
+            ],
+            "integer_hypotheses_checked": {
+              "q_is_prime": true,
+              "q_mod8_is3": true,
+              "base_order_identity": true,
+              "order_identity": true,
+              "T_input_classical_odd_through19": true
+            },
+            "note": ""
+          }
+        }
+      ],
+      "our_positive_endpoint_certificates": [
+        {
+          "path": "certificates/scalar-lift/williamson-scalar-endpoints.json",
+          "selector": "outputs[26]"
+        }
+      ],
+      "ledger_status_sources": [
+        {
+          "path": "certificates/scalar-lift/higher-order-records.json",
+          "selector": "completed_order_statuses[30]"
+        }
+      ],
+      "matrix_equivalence_tested_in_this_audit": false
+    },
+    {
+      "order": 164060,
+      "prior_construction": "Paley-block product",
+      "parameters": {
+        "q": 12619,
+        "s": 3155,
+        "T_order": 13
+      },
+      "reference_keys": [
+        "seberry-yamada-1990",
+        "survey",
+        "cooperwallis"
+      ],
+      "integer_hypotheses_checked": {
+        "q_is_prime": true,
+        "q_mod8_is3": true,
+        "base_order_identity": true,
+        "order_identity": true,
+        "T_input_classical_odd_through19": true
+      },
+      "note": "",
+      "prior_status_provenance": [
+        {
+          "path": "experiments/scalar_lift/near_williamson_order_status.json",
+          "selector": "entries.65",
+          "normalized_proof": {
+            "prior_construction": "Paley-block product",
+            "parameters": {
+              "q": 12619,
+              "s": 3155,
+              "T_order": 13
+            },
+            "reference_keys": [
+              "seberry-yamada-1990",
+              "survey",
+              "cooperwallis"
+            ],
+            "integer_hypotheses_checked": {
+              "q_is_prime": true,
+              "q_mod8_is3": true,
+              "base_order_identity": true,
+              "order_identity": true,
+              "T_input_classical_odd_through19": true
+            },
+            "note": ""
+          }
+        }
+      ],
+      "our_positive_endpoint_certificates": [
+        {
+          "path": "certificates/scalar-lift/near-williamson-scalar-endpoints.json",
+          "selector": "outputs[5]"
+        }
+      ],
+      "ledger_status_sources": [
+        {
+          "path": "experiments/scalar_lift/near_williamson_order_status.json",
+          "selector": "entries.65"
+        }
+      ],
+      "matrix_equivalence_tested_in_this_audit": false
+    },
+    {
+      "order": 239780,
+      "prior_construction": "Paley I",
+      "parameters": {
+        "q": 239779
+      },
+      "reference_keys": [
+        "paley"
+      ],
+      "integer_hypotheses_checked": {
+        "q_is_prime": true,
+        "q_mod4_is3": true,
+        "order_identity": true
+      },
+      "note": "",
+      "prior_status_provenance": [
+        {
+          "path": "experiments/scalar_lift/near_williamson_order_status.json",
+          "selector": "entries.95",
+          "normalized_proof": {
+            "prior_construction": "Paley I",
+            "parameters": {
+              "q": 239779
+            },
+            "reference_keys": [
+              "paley"
+            ],
+            "integer_hypotheses_checked": {
+              "q_is_prime": true,
+              "q_mod4_is3": true,
+              "order_identity": true
+            },
+            "note": ""
+          }
+        }
+      ],
+      "our_positive_endpoint_certificates": [
+        {
+          "path": "certificates/scalar-lift/near-williamson-scalar-endpoints.json",
+          "selector": "outputs[12]"
+        }
+      ],
+      "ledger_status_sources": [
+        {
+          "path": "experiments/scalar_lift/near_williamson_order_status.json",
+          "selector": "entries.95"
+        }
+      ],
+      "matrix_equivalence_tested_in_this_audit": false
+    },
+    {
+      "order": 335692,
+      "prior_construction": "Cooper–Wallis / Turyn–Whiteman",
+      "parameters": {
+        "T_order": 7,
+        "Williamson_order": 11989,
+        "q": 23977
+      },
+      "reference_keys": [
+        "cooperwallis",
+        "turyn1972",
+        "whiteman1973"
+      ],
+      "integer_hypotheses_checked": {
+        "order_identity": true,
+        "q_is_prime": true,
+        "q_mod4_is1": true,
+        "Williamson_order_identity": true,
+        "T_input_classical_odd_through19": true
+      },
+      "note": "",
+      "prior_status_provenance": [
+        {
+          "path": "experiments/scalar_lift/near_williamson_order_status.json",
+          "selector": "entries.133",
+          "normalized_proof": {
+            "prior_construction": "Cooper–Wallis / Turyn–Whiteman",
+            "parameters": {
+              "T_order": 7,
+              "Williamson_order": 11989,
+              "q": 23977
+            },
+            "reference_keys": [
+              "cooperwallis",
+              "turyn1972",
+              "whiteman1973"
+            ],
+            "integer_hypotheses_checked": {
+              "order_identity": true,
+              "q_is_prime": true,
+              "q_mod4_is1": true,
+              "Williamson_order_identity": true,
+              "T_input_classical_odd_through19": true
+            },
+            "note": ""
+          }
+        }
+      ],
+      "our_positive_endpoint_certificates": [
+        {
+          "path": "certificates/scalar-lift/near-williamson-scalar-endpoints.json",
+          "selector": "outputs[17]"
+        }
+      ],
+      "ledger_status_sources": [
+        {
+          "path": "experiments/scalar_lift/near_williamson_order_status.json",
+          "selector": "entries.133"
+        }
+      ],
+      "matrix_equivalence_tested_in_this_audit": false
+    },
+    {
+      "order": 456844,
+      "prior_construction": "Paley II",
+      "parameters": {
+        "q": 228421
+      },
+      "reference_keys": [
+        "paley"
+      ],
+      "integer_hypotheses_checked": {
+        "q_is_prime": true,
+        "q_mod4_is1": true,
+        "order_identity": true
+      },
+      "note": "",
+      "prior_status_provenance": [
+        {
+          "path": "experiments/scalar_lift/near_williamson_order_status.json",
+          "selector": "entries.181",
+          "normalized_proof": {
+            "prior_construction": "Paley II",
+            "parameters": {
+              "q": 228421
+            },
+            "reference_keys": [
+              "paley"
+            ],
+            "integer_hypotheses_checked": {
+              "q_is_prime": true,
+              "q_mod4_is1": true,
+              "order_identity": true
+            },
+            "note": ""
+          }
+        }
+      ],
+      "our_positive_endpoint_certificates": [
+        {
+          "path": "certificates/scalar-lift/near-williamson-scalar-endpoints.json",
+          "selector": "outputs[18]"
+        }
+      ],
+      "ledger_status_sources": [
+        {
+          "path": "experiments/scalar_lift/near_williamson_order_status.json",
+          "selector": "entries.181"
+        }
+      ],
+      "matrix_equivalence_tested_in_this_audit": false
+    },
+    {
+      "order": 885924,
+      "prior_construction": "Paley I",
+      "parameters": {
+        "q": 885923
+      },
+      "reference_keys": [
+        "paley"
+      ],
+      "integer_hypotheses_checked": {
+        "q_is_prime": true,
+        "q_mod4_is3": true,
+        "order_identity": true
+      },
+      "note": "",
+      "prior_status_provenance": [
+        {
+          "path": "certificates/scalar-lift/tripled-unreal-scalar-endpoints.json",
+          "selector": "complete_endpoint_recipes[2].known_order_construction",
+          "normalized_proof": {
+            "prior_construction": "Paley I",
+            "parameters": {
+              "q": 885923
+            },
+            "reference_keys": [
+              "paley"
+            ],
+            "integer_hypotheses_checked": {
+              "q_is_prime": true,
+              "q_mod4_is3": true,
+              "order_identity": true
+            },
+            "note": ""
+          }
+        }
+      ],
+      "our_positive_endpoint_certificates": [
+        {
+          "path": "certificates/scalar-lift/tripled-unreal-scalar-endpoints.json",
+          "selector": "complete_endpoint_recipes[2]"
+        }
+      ],
+      "ledger_status_sources": [
+        {
+          "path": "certificates/scalar-lift/higher-order-records.json",
+          "selector": "completed_order_statuses[34]"
+        }
+      ],
+      "matrix_equivalence_tested_in_this_audit": false
+    },
+    {
+      "order": 3611844,
+      "prior_construction": "Cooper–Wallis / Turyn–Whiteman",
+      "parameters": {
+        "T_order": 9,
+        "Williamson_order": 100329,
+        "q": 200657
+      },
+      "reference_keys": [
+        "cooperwallis",
+        "turyn1972",
+        "whiteman1973"
+      ],
+      "integer_hypotheses_checked": {
+        "order_identity": true,
+        "q_is_prime": true,
+        "q_mod4_is1": true,
+        "Williamson_order_identity": true,
+        "T_input_classical_odd_through19": true
+      },
+      "note": "",
+      "prior_status_provenance": [
+        {
+          "path": "experiments/scalar_lift/additional_spence_order_status.json",
+          "selector": "entries.family:53:1",
+          "normalized_proof": {
+            "prior_construction": "Cooper–Wallis / Turyn–Whiteman",
+            "parameters": {
+              "T_order": 9,
+              "Williamson_order": 100329,
+              "q": 200657
+            },
+            "reference_keys": [
+              "cooperwallis",
+              "turyn1972",
+              "whiteman1973"
+            ],
+            "integer_hypotheses_checked": {
+              "order_identity": true,
+              "q_is_prime": true,
+              "q_mod4_is1": true,
+              "Williamson_order_identity": true,
+              "T_input_classical_odd_through19": true
+            },
+            "note": ""
+          }
+        }
+      ],
+      "our_positive_endpoint_certificates": [
+        {
+          "path": "certificates/scalar-lift/additional-spence-families.json",
+          "selector": "first_expanded_members[1]"
+        }
+      ],
+      "ledger_status_sources": [
+        {
+          "path": "experiments/scalar_lift/additional_spence_order_status.json",
+          "selector": "entries.family:53:1"
+        }
+      ],
+      "matrix_equivalence_tested_in_this_audit": false
+    },
+    {
+      "order": 6564924,
+      "prior_construction": "Cooper–Wallis / Turyn–Whiteman",
+      "parameters": {
+        "T_order": 9,
+        "Williamson_order": 182359,
+        "q": 364717
+      },
+      "reference_keys": [
+        "cooperwallis",
+        "turyn1972",
+        "whiteman1973"
+      ],
+      "integer_hypotheses_checked": {
+        "order_identity": true,
+        "q_is_prime": true,
+        "q_mod4_is1": true,
+        "Williamson_order_identity": true,
+        "T_input_classical_odd_through19": true
+      },
+      "note": "",
+      "prior_status_provenance": [
+        {
+          "path": "experiments/scalar_lift/additional_spence_order_status.json",
+          "selector": "entries.family:17:2",
+          "normalized_proof": {
+            "prior_construction": "Cooper–Wallis / Turyn–Whiteman",
+            "parameters": {
+              "T_order": 9,
+              "Williamson_order": 182359,
+              "q": 364717
+            },
+            "reference_keys": [
+              "cooperwallis",
+              "turyn1972",
+              "whiteman1973"
+            ],
+            "integer_hypotheses_checked": {
+              "order_identity": true,
+              "q_is_prime": true,
+              "q_mod4_is1": true,
+              "Williamson_order_identity": true,
+              "T_input_classical_odd_through19": true
+            },
+            "note": ""
+          }
+        }
+      ],
+      "our_positive_endpoint_certificates": [
+        {
+          "path": "certificates/scalar-lift/additional-spence-families.json",
+          "selector": "higher_original_family_members[3]"
+        }
+      ],
+      "ledger_status_sources": [
+        {
+          "path": "experiments/scalar_lift/additional_spence_order_status.json",
+          "selector": "entries.family:17:2"
+        }
+      ],
+      "matrix_equivalence_tested_in_this_audit": false
+    },
+    {
+      "order": 11996572,
+      "prior_construction": "Cooper–Wallis / Turyn–Whiteman",
+      "parameters": {
+        "T_order": 7,
+        "Williamson_order": 428449,
+        "q": 856897
+      },
+      "reference_keys": [
+        "cooperwallis",
+        "turyn1972",
+        "whiteman1973"
+      ],
+      "integer_hypotheses_checked": {
+        "order_identity": true,
+        "q_is_prime": true,
+        "q_mod4_is1": true,
+        "Williamson_order_identity": true,
+        "T_input_classical_odd_through19": true
+      },
+      "note": "",
+      "prior_status_provenance": [
+        {
+          "path": "experiments/scalar_lift/additional_spence_order_status.json",
+          "selector": "entries.family:97:1",
+          "normalized_proof": {
+            "prior_construction": "Cooper–Wallis / Turyn–Whiteman",
+            "parameters": {
+              "T_order": 7,
+              "Williamson_order": 428449,
+              "q": 856897
+            },
+            "reference_keys": [
+              "cooperwallis",
+              "turyn1972",
+              "whiteman1973"
+            ],
+            "integer_hypotheses_checked": {
+              "order_identity": true,
+              "q_is_prime": true,
+              "q_mod4_is1": true,
+              "Williamson_order_identity": true,
+              "T_input_classical_odd_through19": true
+            },
+            "note": ""
+          }
+        }
+      ],
+      "our_positive_endpoint_certificates": [
+        {
+          "path": "certificates/scalar-lift/additional-spence-families.json",
+          "selector": "first_expanded_members[2]"
+        }
+      ],
+      "ledger_status_sources": [
+        {
+          "path": "experiments/scalar_lift/additional_spence_order_status.json",
+          "selector": "entries.family:97:1"
+        }
+      ],
+      "matrix_equivalence_tested_in_this_audit": false
+    },
+    {
+      "order": 16257084,
+      "prior_construction": "Cooper–Wallis / Turyn–Whiteman",
+      "parameters": {
+        "T_order": 113,
+        "Williamson_order": 35967,
+        "q": 71933,
+        "T_source": "TT(38) → BS(75,38) → T113"
+      },
+      "reference_keys": [
+        "cooperwallis",
+        "turyn1972",
+        "whiteman1973",
+        "best2013",
+        "djokovic2009"
+      ],
+      "integer_hypotheses_checked": {
+        "order_identity": true,
+        "q_is_prime": true,
+        "q_mod4_is1": true,
+        "Williamson_order_identity": true,
+        "TT38_to_BS75_38_to_T113": true
+      },
+      "note": "",
+      "prior_status_provenance": [
+        {
+          "path": "experiments/scalar_lift/additional_spence_order_status.json",
+          "selector": "entries.family:113:1",
+          "normalized_proof": {
+            "prior_construction": "Cooper–Wallis / Turyn–Whiteman",
+            "parameters": {
+              "T_order": 113,
+              "Williamson_order": 35967,
+              "q": 71933,
+              "T_source": "TT(38) → BS(75,38) → T113"
+            },
+            "reference_keys": [
+              "cooperwallis",
+              "turyn1972",
+              "whiteman1973",
+              "best2013",
+              "djokovic2009"
+            ],
+            "integer_hypotheses_checked": {
+              "order_identity": true,
+              "q_is_prime": true,
+              "q_mod4_is1": true,
+              "Williamson_order_identity": true,
+              "TT38_to_BS75_38_to_T113": true
+            },
+            "note": ""
+          }
+        }
+      ],
+      "our_positive_endpoint_certificates": [
+        {
+          "path": "certificates/scalar-lift/additional-spence-families.json",
+          "selector": "first_expanded_members[4]"
+        }
+      ],
+      "ledger_status_sources": [
+        {
+          "path": "experiments/scalar_lift/additional_spence_order_status.json",
+          "selector": "entries.family:113:1"
+        }
+      ],
+      "matrix_equivalence_tested_in_this_audit": false
+    },
+    {
+      "order": 18629644,
+      "prior_construction": "Paley II",
+      "parameters": {
+        "q": 9314821
+      },
+      "reference_keys": [
+        "paley"
+      ],
+      "integer_hypotheses_checked": {
+        "q_is_prime": true,
+        "q_mod4_is1": true,
+        "order_identity": true
+      },
+      "note": "",
+      "prior_status_provenance": [
+        {
+          "path": "experiments/scalar_lift/williamson_family_order_status.json",
+          "selector": "family:121:1",
+          "normalized_proof": {
+            "prior_construction": "Paley II",
+            "parameters": {
+              "q": 9314821
+            },
+            "reference_keys": [
+              "paley"
+            ],
+            "integer_hypotheses_checked": {
+              "q_is_prime": true,
+              "q_mod4_is1": true,
+              "order_identity": true
+            },
+            "note": ""
+          }
+        }
+      ],
+      "our_positive_endpoint_certificates": [
+        {
+          "path": "certificates/scalar-lift/williamson-family-endpoints.json",
+          "selector": "outputs[4]"
+        }
+      ],
+      "ledger_status_sources": [
+        {
+          "path": "certificates/scalar-lift/higher-order-records.json",
+          "selector": "completed_order_statuses[37]"
+        }
+      ],
+      "matrix_equivalence_tested_in_this_audit": false
+    },
+    {
+      "order": 23859372,
+      "prior_construction": "Paley I",
+      "parameters": {
+        "q": 23859371
+      },
+      "reference_keys": [
+        "paley"
+      ],
+      "integer_hypotheses_checked": {
+        "q_is_prime": true,
+        "q_mod4_is3": true,
+        "order_identity": true
+      },
+      "note": "",
+      "prior_status_provenance": [
+        {
+          "path": "experiments/scalar_lift/additional_spence_order_status.json",
+          "selector": "entries.family:137:1",
+          "normalized_proof": {
+            "prior_construction": "Paley I",
+            "parameters": {
+              "q": 23859371
+            },
+            "reference_keys": [
+              "paley"
+            ],
+            "integer_hypotheses_checked": {
+              "q_is_prime": true,
+              "q_mod4_is3": true,
+              "order_identity": true
+            },
+            "note": ""
+          }
+        }
+      ],
+      "our_positive_endpoint_certificates": [
+        {
+          "path": "certificates/scalar-lift/additional-spence-families.json",
+          "selector": "first_expanded_members[5]"
+        }
+      ],
+      "ledger_status_sources": [
+        {
+          "path": "experiments/scalar_lift/additional_spence_order_status.json",
+          "selector": "entries.family:137:1"
+        }
+      ],
+      "matrix_equivalence_tested_in_this_audit": false
+    }
+  ],
+  "references": {
+    "paley": {
+      "authors": "R. E. A. C. Paley",
+      "title": "On Orthogonal Matrices",
+      "journal": "Journal of Mathematics and Physics",
+      "volume": "12",
+      "year": 1933,
+      "pages": "311–320",
+      "doi": "10.1002/sapm1933121311",
+      "url": "https://doi.org/10.1002/sapm1933121311"
+    },
+    "cooperwallis": {
+      "authors": "Joan Cooper and Jennifer Wallis",
+      "title": "A construction for Hadamard arrays",
+      "journal": "Bulletin of the Australian Mathematical Society",
+      "volume": "7",
+      "year": 1972,
+      "pages": "269–277",
+      "doi": "10.1017/S0004972700045019",
+      "url": "https://doi.org/10.1017/S0004972700045019",
+      "location": "Theorem 3 and Corollary 4, pp. 274–275; odd T inputs through 19"
+    },
+    "turyn1972": {
+      "authors": "R. J. Turyn",
+      "title": "An infinite class of Williamson matrices",
+      "journal": "Journal of Combinatorial Theory, Series A",
+      "volume": "12",
+      "year": 1972,
+      "pages": "319–321",
+      "doi": "10.1016/0097-3165(72)90095-7",
+      "url": "https://doi.org/10.1016/0097-3165(72)90095-7"
+    },
+    "whiteman1973": {
+      "authors": "A. L. Whiteman",
+      "title": "An infinite family of Hadamard matrices of Williamson type",
+      "journal": "Journal of Combinatorial Theory, Series A",
+      "volume": "14",
+      "year": 1973,
+      "pages": "334–340",
+      "doi": "10.1016/0097-3165(73)90010-1",
+      "url": "https://doi.org/10.1016/0097-3165(73)90010-1",
+      "location": "New proof of Turyn's WT((q+1)/2) theorem for prime powers q ≡ 1 mod 4"
+    },
+    "seberry-yamada-1990": {
+      "authors": "J. Seberry and M. Yamada",
+      "title": "On the products of Hadamard matrices, Williamson matrices and other orthogonal matrices using M-structures",
+      "journal": "Journal of Combinatorial Mathematics and Combinatorial Computing",
+      "volume": "7",
+      "year": 1990,
+      "pages": "97–137",
+      "url": "https://documents.uow.edu.au/~jennie/WEBPDF/139_1990.pdf",
+      "location": "Theorem 4, printed p. 105"
+    },
+    "survey": {
+      "authors": "R. Egan, I. S. Kotsireas, S. London and P. Ó Catháin",
+      "title": "Recent progress in the construction of Hadamard matrices",
+      "arxiv": "2610.27175v2",
+      "url": "https://arxiv.org/html/2610.27175v2#S4.T4",
+      "location": "Theorem 2, Tables 3–4 and the paragraph following Table 4: Paley's sixteen-block arrangement and its product with T-matrices"
+    },
+    "djk2014": {
+      "authors": "D. Ž. Đoković, O. Golubitsky and I. S. Kotsireas",
+      "title": "Some new orders of Hadamard and skew-Hadamard matrices",
+      "journal": "Journal of Combinatorial Designs",
+      "volume": "22",
+      "year": 2014,
+      "pages": "270–277",
+      "doi": "10.1002/jcd.21358",
+      "arxiv": "1301.3671v2",
+      "url": "https://arxiv.org/html/1301.3671v2#S3.SS3",
+      "location": "Section 3.3: explicit cyclic supplementary difference sets on Z/631Z"
+    },
+    "djokovic2009": {
+      "authors": "D. Ž. Đoković",
+      "title": "Hadamard matrices of small order and Yang conjecture",
+      "arxiv": "0912.5091",
+      "url": "https://arxiv.org/html/0912.5091#S3",
+      "location": "Section 2: BS(r,s) → T(r+s); Section 3: explicit 2159 = 17·127, with earlier WT127 from good matrices (1993)"
+    },
+    "best2013": {
+      "authors": "D. Best, D. Ž. Đoković, H. Kharaghani and H. Ramp",
+      "title": "Turyn-type sequences: Classification, Enumeration and Construction",
+      "journal": "Journal of Combinatorial Designs",
+      "volume": "21",
+      "year": 2013,
+      "pages": "24–35",
+      "doi": "10.1002/jcd.21318",
+      "arxiv": "1206.4107",
+      "url": "https://arxiv.org/html/1206.4107",
+      "location": "TT(38) exists; the introduction and Section 5 give TT(n) → BS(2n−1,n)"
+    }
+  },
+  "source_sha256": {
+    "certificates/scalar-lift/additional-spence-families.json": "d074b907d599817b5eaafd485f32dfe3a52cce6688669f4746acc6f405fa074e",
+    "certificates/scalar-lift/completed-order-inventory.json": "b138418bf7418e0a807f93cfe99eba4db176f87ca24bffaff4437bcac718f782",
+    "certificates/scalar-lift/hadamard-frame-p127.json": "bd892f6bb0e928691f68c32bfc15927d31f07519ffa943c451d714b26e824c20",
+    "certificates/scalar-lift/hadamard-frame-p271.json": "312528cd202efb4e8509c49dc1727f8a08a999cb55d4b3856d2259e60b61b35e",
+    "certificates/scalar-lift/hadamard-frame-p547.json": "899c07b7a76932dae1c120617f1d3cf9b3bdcf963e75de7d15297e079c1beb78",
+    "certificates/scalar-lift/higher-order-records.json": "ad565eea5ce13a8be29d71d05c0e61455b0b39e08bd7e4cd1d3a63cadbbbca88",
+    "certificates/scalar-lift/near-williamson-scalar-endpoints.json": "12622cb68a90c4e20b45d2c97fa29bed71407f1042ec6f1f84c0f06a92156cbd",
+    "certificates/scalar-lift/tripled-unreal-scalar-endpoints.json": "9d378b69f2c2479ac6d02e088c50cb279957a7ab81cef738253d19cbd27dcb8a",
+    "certificates/scalar-lift/williamson-family-endpoints.json": "758dc7bf6c269e89f3142332789d468d17ac31fa5dbfa362278ca49fc76d2ca6",
+    "certificates/scalar-lift/williamson-scalar-endpoints.json": "346b1e57671605d8cc0dcafa415f8cabe62154feb18d653a67c3f59188f7dc38",
+    "certificates/scalar-lift/williamson-scalar-known-control.json": "3075adff1d23d28169b6cd5b1678ebc282651888e8c280644c5c35d3c2254fa2",
+    "experiments/scalar_lift/additional_spence_order_status.json": "e1b4b58790c710719f625a2768cfda6cbb7db83512f31ddd9d79cb43425506da",
+    "experiments/scalar_lift/near_williamson_order_status.json": "6e171a284a7e2c5a88a3cbffea2d6d732640256992cb37c865cc8b7b1ac8ad21",
+    "experiments/scalar_lift/williamson_family_order_status.json": "cba7867ea88f9f22f0319fc4c2d6af71f23d617b3446fce02d3ff2791c82208b",
+    "experiments/scalar_lift/williamson_order_status.json": "74dd93f23c72a9d2bb828eaf7b7ca0b190b32e9000dd97bb99b6a7da095a49ea"
+  }
+}

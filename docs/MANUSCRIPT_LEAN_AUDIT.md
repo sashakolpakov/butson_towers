@@ -89,6 +89,22 @@ premise of any endpoint proof.
 This scope distinction does not weaken any of the thirty-four
 formal existence statements or nine stated all-parameter theorems.
 
+## Separate comparison at a known order
+
+The manuscript's new proposition at order 885924 concerns the specific
+sixth-root representative, rather than only existence at that order.
+Its rank over the field with three elements is 246090, whereas every skew
+Hadamard matrix at the same order has rank 442962. The frame-module proof
+is given in the manuscript; the rank-195 calculation on the order-702
+source action has a separate exact factorization certificate in
+`certificates/scalar-lift/known-order-paley-comparison.json`, replayed by
+`experiments/scalar_lift/known_order_comparisons.py`.
+
+This comparison and the prior-construction table of 31 known orders are
+outside the current Lean formalization. They do not add an axiom or a
+dependency to the existing 34-order/nine-family existence proof. No
+equivalence classification of the other thirty recovered orders is asserted.
+
 ## Finite input checks
 
 An independent review parsed the actual TeX tables and compared them with
@@ -122,7 +138,9 @@ its exact audited theorem list also contains `unreal_cubic_family`. The
 certified scope of that older package is six families. The current nine-family
 announcement is verified by the additional supplement without rewriting it.
  The current `./scripts/check_formal.sh` also checks the additional exact 48-report list
-(85 + 10 + 48 selected statements). The repository suite passed 326 tests and 4 subtests.
+(85 + 10 + 48 selected statements). The most recent full repository run
+passed 351 tests and 4 subtests; the subsequent comparison and
+provenance checks passed 15 focused tests.
 
 The original proof archive, original matrix
 bundles and earlier article releases remain unchanged.

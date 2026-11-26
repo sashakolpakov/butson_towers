@@ -9,6 +9,9 @@ with its earlier 18-order scope; the current PDF includes the later results.
 The finite claims are existence constructions; novelty labels refer to
 the dated literature ledger.
 
+All 31 positive prior constructions and the order-885924 matrix comparison
+are given separately in {ref}`known-orders`.
+
 The complete finite list is in the manuscript's main theorem and the
 {repo-file}`source inventory <docs/SOURCE_INVENTORY.md>`.
 

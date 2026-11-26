@@ -12,6 +12,9 @@ on:
       - 'pyproject.toml'
       - 'scripts/build_docs.sh'
       - 'scripts/verify_manuscript_data.py'
+      - 'scripts/audit_known_order_provenance.py'
+      - 'certificates/scalar-lift/known-order-provenance.json'
+      - 'certificates/scalar-lift/known-order-paley-comparison.json'
   workflow_dispatch:
 
 permissions:
@@ -56,6 +59,8 @@ jobs:
           python scripts/verify_manuscript_data.py
           python scripts/check_lean_literal_data.py
           python scripts/check_lean_additional_sources.py
+          python scripts/audit_known_order_provenance.py --check
+          python -m experiments.scalar_lift.known_order_comparisons --check certificates/scalar-lift/known-order-paley-comparison.json
           python release/additional_source_verification/source/verify.py --check-only
       - name: Build the current manuscript
         working-directory: manuscript

@@ -47,6 +47,10 @@ The nine families give a matrix for **every integer $r\geq0$**:
 Each family has a new initial order. Individual known members, including
 885924 and 18629644, are identified in the ledger. The construction campaign
 also recovers **31 known orders**, for **65 distinct completed orders** in total.
+The [separate known-order table](docs/sphinx/known-orders.md) gives positive
+prior constructions for all 31. Our order-885924 sixth-root representative is
+inequivalent to the standard Paley matrix: their ranks modulo 3 are 246090
+and 442962. Equivalence at the other recovered orders remains unsettled.
 There is a separate new [periodic T-matrix construction of order 127](artifacts/t-matrices-127/README.md).
 
 Current [construction searches](docs/LOW_ORDER_SEARCH.md) target missing

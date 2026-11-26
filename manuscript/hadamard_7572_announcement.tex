@@ -2,6 +2,7 @@
 \documentclass[10pt]{article}
 \usepackage[margin=0.9in]{geometry}
 \usepackage{amsmath,amssymb,amsthm}
+\usepackage{longtable}
 \usepackage[T1]{fontenc}
 \usepackage{hyperref}
 \hypersetup{pdftitle={Butson towers and high-rank Hadamard matrices},
@@ -25,7 +26,7 @@ We construct real Hadamard matrices of thirty-four new orders and give nine
 new infinite families.
 The constructions preserve orthogonality and ensure that every final entry
 is $1$ or $-1$. Explicit recipes and reproducible formal proofs establish
-every stated order and every member of the nine families.
+every new order and every member of the nine families.
 \end{abstract}
 
 \section{Results and conventions}
@@ -35,8 +36,9 @@ A real Hadamard matrix of order $n$ is an $n\times n$ sign matrix $H$
 satisfying $HH^{\mathsf T}=nI_n$, where $I_n$ is the identity matrix.
 This identity implies $H^{-1}=H^{\mathsf T}/n$, so the rank of $H$ is $n$.
 We use rank and order accordingly. Throughout the paper, ``new'' means
-new to the best of the author's knowledge. Known individual orders in the
-infinite families are identified in Section~\ref{sec:conclusion}.
+new to the best of the author's knowledge. Section~\ref{sec:known-orders}
+lists the known orders recovered by the retained constructions and
+distinguishes order existence from equivalence of matrices.
 
 \begin{theorem}\label{thm:main}
 Real Hadamard matrices exist at each of the following thirty-four new ranks:
@@ -1976,10 +1978,220 @@ The dated survey~\cite{survey}, Table~3, lists $127$ as its smallest open
 \emph{periodic} T-matrix order. Its Table~5 lists $631$ in the unresolved
 $4\cdot3p$ row; the other records consulted on 24 November 2026 also
 list order $7572$ as unresolved~\cite{explorer,frontier}.
-The individual known/new labels for the other finite orders, together
+The individual known/new labels for the finite orders, together
 with the prior constructions located, are recorded in the repository's
-dated order ledgers. No nonexistence conclusion is inferred from a
+dated order ledgers and the following separate table. No nonexistence conclusion is inferred from a
 failed search or from the absence of a located construction.
+
+
+\section{Recovered known orders and matrix equivalence}\label{sec:known-orders}
+
+\subsection{The thirty-one known orders}
+
+The retained source inventory also gives real Hadamard matrices at the
+thirty-one known orders in Table~\ref{tab:known-orders}. Repeated
+constructions at the same order are counted once. Together with the
+thirty-four new orders in Theorem~\ref{thm:main}, these give sixty-five
+distinct completed orders in the inventory. This is a finite inventory
+count, not a count of all orders in the infinite families.
+
+Here is the meaning of each construction in the table. Paley I has
+order $q+1$ for a prime $q\equiv3\pmod4$, and Paley II has order
+$2(q+1)$ for a prime $q\equiv1\pmod4$; their Gram calculations were
+given above. The Paley-block product uses $q\equiv3\pmod8$ and a
+classical T-matrix input of length $t$ to give order $(q+1)t$;
+see Seberry--Yamada, Theorem~4~\cite{seberry-yamada-1990}, and the
+Paley-block formulation in~\cite{survey}.
+The Cooper--Wallis construction combines T-matrices of length $t$
+with a Williamson-type quadruple of order $w$ to give order
+$4tw$~\cite{cooperwallis}. In the rows marked ``CW/TW'', the latter
+quadruple is supplied by the Turyn--Whiteman construction, with
+$w=(q+1)/2$ for the indicated prime $q\equiv1\pmod4$
+\cite{turyn1972,whiteman1973}.
+All T-matrix lengths $t\leq19$ used in the table are classical
+\cite{cooperwallis}. For $t=113$, Best et al., Corollary~5.1
+\cite{best2013}, construct the required T-sequences from base sequences
+of lengths $75,75,38,38$. Aperiodic T-sequences also satisfy the
+periodic correlation identity used here: at a nonzero shift $s$, the
+periodic sum is the sum of the two aperiodic correlations at shifts
+$s$ and $t-s$, both of which vanish.
+
+The order-$8636$ row uses a previously known Williamson-type quadruple
+of order $127$~\cite{djokovic2009}, not the new T-matrices of length
+$127$ proved in this paper. The order-$2524$ row refers to the cyclic
+supplementary difference sets and Goethals--Seidel construction of
+\DJ{}okovi\'c, Golubitsky and Kotsireas~\cite{djk2014}, Section~3.3.
+Their cyclic group has order $v=631$, and their block sizes are
+$315,330,330,330$ in $\mathbb Z/v\mathbb Z$;
+the common difference multiplicity is $674$.
+
+\begin{longtable}{rll}
+\caption{Recovered known orders and positive prior constructions.
+``CW'' denotes Cooper--Wallis; ``TW'' denotes Turyn--Whiteman.
+The parameters have the meanings specified above.}\label{tab:known-orders}\\
+Order & Prior construction & Parameters\\\hline
+\endfirsthead
+Order & Prior construction & Parameters\\\hline
+\endhead
+1524 & Paley I & $q=1523$ \\
+2524 & Cyclic difference sets & $v=631$ \\
+3252 & Paley I & $q=3251$ \\
+6564 & Paley I & $q=6563$ \\
+8636 & CW & $t=17,\ w=127$ \\
+12620 & Paley I & $q=12619$ \\
+27764 & Paley I & $q=27763$ \\
+37860 & Paley-block product & $q=12619,\ t=3$ \\
+47956 & Paley II & $q=23977$ \\
+53004 & Paley I & $q=53003$ \\
+63100 & Paley-block product & $q=12619,\ t=5$ \\
+68148 & Paley I & $q=68147$ \\
+83292 & Paley-block product & $q=27763,\ t=3$ \\
+88340 & Paley I & $q=88339$ \\
+103484 & Paley I & $q=103483$ \\
+113580 & Paley-block product & $q=12619,\ t=9$ \\
+123676 & Paley II & $q=61837$ \\
+138820 & Paley-block product & $q=27763,\ t=5$ \\
+143868 & Paley II & $q=71933$ \\
+159012 & Paley-block product & $q=53003,\ t=3$ \\
+164060 & Paley-block product & $q=12619,\ t=13$ \\
+239780 & Paley I & $q=239779$ \\
+335692 & CW/TW & $t=7,\ w=11989,\ q=23977$ \\
+456844 & Paley II & $q=228421$ \\
+885924 & Paley I & $q=885923$ \\
+3611844 & CW/TW & $t=9,\ w=100329,\ q=200657$ \\
+6564924 & CW/TW & $t=9,\ w=182359,\ q=364717$ \\
+11996572 & CW/TW & $t=7,\ w=428449,\ q=856897$ \\
+16257084 & CW/TW & $t=113,\ w=35967,\ q=71933$ \\
+18629644 & Paley II & $q=9314821$ \\
+23859372 & Paley I & $q=23859371$ \\
+\hline
+\end{longtable}
+
+The ancillary provenance checker verifies every integer order formula,
+prime parameter and congruence in this table, and binds each recovered
+order to its positive construction certificate. The table identifies
+prior existence at the same orders. It does not identify our matrices
+with the matrices from those earlier constructions.
+
+\subsection{An inequivalence at order \texorpdfstring{$885924$}{885924}}
+
+Two real Hadamard matrices $H,K$ of the same order are
+\emph{Hadamard equivalent} if $K=UHV$ for signed permutation matrices
+$U,V$. A signed permutation matrix has exactly one nonzero entry in
+every row and column, and that entry is $1$ or $-1$; multiplication by
+such matrices permutes and changes signs of rows and columns.
+Their reductions modulo $3$ are invertible, so equivalent matrices
+have the same rank over $\F_3$.
+For the order-$885924$ member, this invariant distinguishes the
+sixth-root representative $H^{(3)}$ of Section~\ref{sec:cubic-family}
+from the standard Paley matrix.
+
+\begin{proposition}\label{prop:inequivalent-paley}
+The matrix $H^{(3)}$ of order $885924$ has rank $246090$ over $\F_3$.
+Every skew Hadamard matrix of that order has rank $442962$ over $\F_3$.
+In particular, $H^{(3)}$ is not Hadamard equivalent to the Paley I
+matrix with prime parameter $885923$.
+\end{proposition}
+
+\begin{proof}
+Keep the integral sign matrices $P,Q$ and $d=2524$ from
+\eqref{eq:frame}. In the next calculation, rational matrices whose
+denominators are not divisible by $3$ can be reduced modulo $3$.
+The identity $PP^{\mathsf T}=dI$ implies that $P$ is invertible over
+$\F_3$, since $3$ does not divide $d$. Put $M=P+Q$.
+Equation~\eqref{eq:frame} gives
+\[
+ MM^{\mathsf T}=3dI_d.
+\]
+The row space of $M$ modulo $3$ is therefore totally isotropic for the
+nondegenerate standard bilinear form on $\F_3^d$: every two of its
+vectors have dot product zero. Its dimension $r$ is at most $d/2$,
+since that space is contained in its orthogonal complement, of
+dimension $d-r$.
+
+For the reverse inequality, taking determinants gives
+$(\det M)^2=(3d)^d$. If $v_3(a)$ denotes the exponent of $3$ in a
+nonzero integer $a$, this implies $v_3(\det M)=d/2$.
+An integral $d\times d$ matrix of rank $r$ modulo $3$ satisfies
+$3^{d-r}\mid\det M$. Indeed, perform Gaussian row elimination modulo
+$3$ and lift its operations to integer row operations. The operations
+are row swaps, multiplication of a row by $-1$, and addition of an
+integer multiple of one row to another. Their determinants are $1$ or
+$-1$, and the final $d-r$ rows have all entries divisible by $3$.
+Factoring $3$ from those rows proves the divisibility. Thus
+$d-r\leq v_3(\det M)=d/2$, and $r=d/2=1262$.
+
+Recall $R=QP^{-1}$, so $R^2-R+I=0$. Over $\F_3$ put
+$E=R+I=MP^{-1}$. Then $E^2=0$ and $\operatorname{rank}E=1262$.
+Its image and kernel both have dimension $1262$, and its image is
+contained in its kernel, so they are equal. Choose a basis $u_i$ of
+this space and choose $v_i$ with $Ev_i=u_i$. The vectors $u_i,v_i$
+are a basis of $\F_3^d$: applying $E$ to a linear relation first kills
+all coefficients of the $v_i$, and independence of the $u_i$ kills
+the rest. In this basis $E$ is a direct sum of $1262$ copies of
+$\left(\begin{smallmatrix}0&1\\0&0\end{smallmatrix}\right)$.
+Consequently the action of $\zeta$ is a direct sum of copies of
+$-I_2+\left(\begin{smallmatrix}0&1\\0&0\end{smallmatrix}\right)$.
+
+Let $A=A_3,B=B_3$ be obtained by three applications of
+Lemma~\ref{lem:tripling-step} to Table~\ref{tab:seed13}; their order
+is $351$. The sixth-root source is
+$N_3=\zeta^{-1}(A+\xi B)/2$, where $\xi=2\zeta-1$.
+On each two-dimensional summand write $\zeta=-1+\epsilon$, where
+$\epsilon^2=0$. Then $\xi=2\epsilon$ over $\F_3$.
+Multiplication by $\zeta^{-1}/2$ is invertible, so the regular action
+of $N_3$ has the same rank as $A+2\epsilon B$. In the ordered basis
+$(\epsilon,1)$, the latter has block matrix
+\[
+ \begin{pmatrix}A&2B\\0&A\end{pmatrix}.
+\]
+Conjugating by $\operatorname{diag}(2I_{351},I_{351})$ replaces
+$2B$ by $B$ over $\F_3$. Therefore it has the same rank as
+\begin{equation}\label{eq:source351-mod3}
+ T=\begin{pmatrix}A&B\\0&A\end{pmatrix}\in M_{702}(\F_3).
+\end{equation}
+The exact finite calculation gives $\operatorname{rank}T=195$.
+It is reproduced from the printed sign rows and the tripling formula
+by the ancillary checker. The checker constructs $195$ selected
+columns $U$ of $T$, a matrix $V$ and a left inverse $L$, and verifies
+$T=UV$ and $LU=I_{195}$ over $\F_3$; hence both rank bounds are
+checked. The selected column indices and factor hashes are recorded;
+the factors are regenerated by the specified elimination algorithm.
+The largest matrix
+in this calculation has order $702$.
+
+The actual real endpoint is
+$H^{(3)}=\rho(N_3)(I_{351}\otimes P)$. Its right factor is invertible
+modulo $3$, and the preceding decomposition of the scalar action
+therefore gives
+\[
+ \operatorname{rank}_{\F_3}H^{(3)}=1262\operatorname{rank}_{\F_3}T
+ =1262\cdot195=246090.
+\]
+
+A \emph{skew Hadamard matrix} $K$ of order $h$ satisfies
+$K+K^{\mathsf T}=2I_h$ as well as $KK^{\mathsf T}=hI_h$.
+When $3\mid h$, the latter identity implies
+$\operatorname{rank}_{\F_3}K\leq h/2$ by the same isotropic-space
+argument used above. The first identity gives the reverse bound:
+\[
+ h=\operatorname{rank}_{\F_3}(2I_h)
+ =\operatorname{rank}_{\F_3}(K+K^{\mathsf T})
+ \leq2\operatorname{rank}_{\F_3}K.
+\]
+Thus its rank is $h/2$. The Paley I matrix displayed above becomes
+skew after changing the signs of all rows other than the first.
+Indeed its first off-diagonal row and column then cancel in the sum
+with its transpose, and its lower-right block has diagonal $1$ and
+skew off-diagonal part. With $h=885924$ this gives rank $442962$.
+The two ranks differ, proving the assertion.
+\end{proof}
+
+This proves inequivalence to the specified prior construction, and even
+to any skew Hadamard representative. It does not classify all previously
+known equivalence classes at that order. For the other thirty recovered
+orders we have not settled whether the retained matrices are equivalent
+to earlier matrices.
 
 \section{Verification and availability}\label{sec:verification}
 
@@ -2011,7 +2223,9 @@ quadruples, twelve additional symmetric amicable quadruples, the eight
 strong starters used here, and the
 order-$13$ pair. Its construction proofs establish the exact Gram
 identities and final sign entries. Literature novelty is not a formal
-claim. The formal existence proof also does not assert equality with a
+claim. Proposition~\ref{prop:inequivalent-paley} uses the separate exact
+finite-field rank certificate; that comparison has not been formalized
+in Lean. The formal existence proof also does not assert equality with a
 particular saved packed representative; that representative has the
 independent audit just described.
 
@@ -2202,5 +2416,43 @@ arXiv:2610.27175v2, revised 3 November 2026, Tables~3 and~5.
 \texttt{FRONTIER.md}, commit \texttt{d885022144ba6bf4efa8315e14871a3736947527},
 6 November 2026, consulted 24 November 2026.
 \url{https://github.com/vatskishan03/Hadamard/blob/d885022144ba6bf4efa8315e14871a3736947527/FRONTIER.md}.
+\bibitem{turyn1972}
+R.~J.~Turyn, \emph{An infinite class of Williamson matrices},
+J. Combin. Theory Ser. A\ 12 (1972), 319--321.
+\url{https://doi.org/10.1016/0097-3165(72)90095-7}.
+
+\bibitem{whiteman1973}
+A.~L.~Whiteman,
+\emph{An infinite family of Hadamard matrices of Williamson type},
+J. Combin. Theory Ser. A\ 14 (1973), 334--340.
+\url{https://doi.org/10.1016/0097-3165(73)90010-1}.
+
+\bibitem{seberry-yamada-1990}
+J.~Seberry and M.~Yamada,
+\emph{On the products of Hadamard matrices, Williamson matrices and other
+orthogonal matrices using M-structures},
+J. Combin. Math. Combin. Comput.\ 7 (1990), 97--137, Theorem~4.
+\url{https://documents.uow.edu.au/~jennie/WEBPDF/139_1990.pdf}.
+
+\bibitem{djk2014}
+D.~\v{Z}.~\DJ{}okovi\'c, O.~Golubitsky and I.~S.~Kotsireas,
+\emph{Some new orders of Hadamard and skew-Hadamard matrices},
+J. Combin. Designs\ 22 (2014), 270--277, Section~3.3.
+\url{https://doi.org/10.1002/jcd.21358}.
+\url{https://arxiv.org/abs/1301.3671v2}.
+
+\bibitem{djokovic2009}
+D.~\v{Z}.~\DJ{}okovi\'c,
+\emph{Hadamard matrices of small order and Yang conjecture},
+arXiv:0912.5091, Sections~2--3.
+\url{https://arxiv.org/abs/0912.5091}.
+
+\bibitem{best2013}
+D.~Best, D.~\v{Z}.~\DJ{}okovi\'c, H.~Kharaghani and H.~Ramp,
+\emph{Turyn-type sequences: Classification, Enumeration and Construction},
+J. Combin. Designs\ 21 (2013), 24--35.
+\url{https://doi.org/10.1002/jcd.21318}.
+\url{https://arxiv.org/abs/1206.4107}.
+
 \end{thebibliography}
 \end{document}

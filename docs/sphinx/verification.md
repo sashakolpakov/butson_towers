@@ -21,15 +21,18 @@ From the repository root, the following checks do not repeat a search:
 ```sh
 python3 scripts/verify_manuscript_data.py
 python3 scripts/check_lean_literal_data.py
+python3 scripts/check_lean_additional_sources.py
 ```
 
 The first uses the Python standard library and carries the complete literal
 data in its own {repo-file}`source <scripts/verify_manuscript_data.py>`.
 It verifies the T127/T631 functions, the thirteen printed Williamson
-quadruples, the five strong starters, the finite character matrices and
+quadruples, the twelve additional compatible quadruples, the eight strong
+starters, the finite character matrices and
 the order-13 pair. All indices and inputs in those finite equalities are
 specified. The second checks agreement between the public construction
-data and the Lean literals. Its name does not mean that it invokes Lean.
+data and the original Lean literals. The third checks the additional Lean
+source literals. Neither literal-comparison script invokes Lean.
 
 The detailed proof correspondence is in
 {repo-file}`MANUSCRIPT_LEAN_AUDIT.md <docs/MANUSCRIPT_LEAN_AUDIT.md>`.
@@ -117,12 +120,27 @@ the recorded finite checks are in
 The general family theorem comes from induction, not from a finite
 transform experiment.
 
+## Comparing matrices at known orders
+
+The {ref}`known-order comparison <known-orders>` uses an exact rank
+certificate over $\mathbb F_3$ to distinguish our order-885924 scalar
+representative from the standard Paley matrix. Its largest matrix has order
+702; an algebraic frame decomposition gives the rank of the full endpoint.
+This finite-field comparison is a separate executable check and mathematical
+proof, outside the current Lean formalization. The other thirty known-order
+outputs have no equivalence classification asserted.
+
 ## What the Lean project proves
 
 `ButsonTowers.HadamardExists n` asserts a positive order $n$ and the
 existence of a rational matrix on `Fin n` with entries $1,-1$ and Gram
-$nI_n$. The named endpoint theorems and all six family statements are in
+$nI_n$. The original endpoint and family statements are in
 {repo-file}`Endpoints.lean <formal/ButsonTowers/Endpoints.lean>`.
+The additional orders and recurrences are in
+{repo-file}`AdditionalResults.lean <formal/ButsonTowers/AdditionalResults.lean>`,
+{repo-file}`NearWilliamsonEndpoints.lean <formal/ButsonTowers/NearWilliamsonEndpoints.lean>`
+and {repo-file}`AdditionalSpenceFamilies.lean <formal/ButsonTowers/AdditionalSpenceFamilies.lean>`.
+Together they prove the 34 announced orders and nine families.
 In particular the family parameters are universally quantified natural
 numbers.
 
@@ -134,7 +152,7 @@ The dependency chain connects:
    coefficient identities.
 3. Disjoint signed supports, amicable substitution and equality of final
    order and Gram scale.
-4. The five strong Spence recurrences and the unreal cubic recurrence,
+4. The eight strong Spence recurrences and the unreal cubic recurrence,
    including their signs, norms and index cardinalities for every iteration.
 
 The finite certificates use kernel reduction (`decide +kernel`). No
@@ -179,7 +197,7 @@ route. These checks do not rebuild the Lean compiler itself.
 ### Formal scope and representative conventions
 
 The paper's character identities have a general finite-field proof. Lean
-checks the five required finite matrices from literals. Its endpoint
+checks the eight required finite character matrices from literals. Its endpoint
 proofs therefore need no general quadratic-character theorem.
 
 The core formal GS reversal uses $u+v=0$; Python uses $u+v=-1$.
