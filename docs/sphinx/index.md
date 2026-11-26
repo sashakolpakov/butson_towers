@@ -5,6 +5,7 @@ This manual follows the construction from a finite signed-coordinate input to
 an exactly verified Hadamard matrix. Definitions, proofs, data layouts and
 executable checks appear together at the step where they are needed.
 
+[Read the manuscript (PDF)](https://sashakolpakov.github.io/butson_towers/butson-towers-paper.pdf) ·
 [Download the printable manual (PDF)](https://sashakolpakov.github.io/butson_towers/butson-towers-manual.pdf).
 
 Begin with {ref}`getting-started` to reconstruct a small complete example.

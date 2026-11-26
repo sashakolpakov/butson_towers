@@ -59,6 +59,12 @@ installs the pinned frontend, builds HTML, executes the small examples,
 builds the PDF and publishes only `docs/_build/html`. The PDF is copied into
 that directory for download. Sphinx's build caches stay outside the site.
 
+The same workflow checks the manuscript's literal finite inputs and builds
+the current LaTeX source with `latexmk -pdf`. It publishes that PDF as
+`butson-towers-paper.pdf`, alongside the manual. Changes to `manuscript/`
+also trigger publication. The submitted PDFs and their versioned source
+packages remain historical records with their original hashes.
+
 Deployment uses the repository's `github-pages` environment and GitHub's
 short-lived workflow token. It needs no repository API secret or local
 submission configuration. The repository's Pages source is GitHub Actions;

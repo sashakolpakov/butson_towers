@@ -6,10 +6,12 @@ on:
     paths:
       - '.github/workflows/docs.yml'
       - 'docs/**'
+      - 'manuscript/**'
       - 'experiments/**'
       - 'src/**'
       - 'pyproject.toml'
       - 'scripts/build_docs.sh'
+      - 'scripts/verify_manuscript_data.py'
   workflow_dispatch:
 
 permissions:
@@ -48,11 +50,17 @@ jobs:
           sudo apt-get update
           sudo apt-get install --no-install-recommends -y \
             texlive-xetex texlive-latex-extra texlive-fonts-recommended \
-            latexmk fonts-lmodern fonts-dejavu-core
-      - name: Build HTML, run examples and build PDF
+            latexmk fonts-lmodern fonts-dejavu-core cm-super-minimal
+      - name: Check the manuscript's finite inputs
+        run: python scripts/verify_manuscript_data.py
+      - name: Build the current manuscript
+        working-directory: manuscript
+        run: latexmk -pdf -interaction=nonstopmode -halt-on-error -outdir=build hadamard_7572_announcement.tex
+      - name: Build HTML, run examples and build the manual PDF
         run: |
           ./scripts/build_docs.sh all
           cp docs/_build/latex/butson-towers-manual.pdf docs/_build/html/
+          cp manuscript/build/hadamard_7572_announcement.pdf docs/_build/html/butson-towers-paper.pdf
       - name: Upload the documentation site
         uses: actions/upload-pages-artifact@fc324d3547104276b827a68afc52ff2a11cc49c9 # v5.0.0
         with:

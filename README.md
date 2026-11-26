@@ -4,9 +4,9 @@
 Lean proofs.** This repository accompanies Alexander Kolpakov's manuscript
 *Butson towers and high-rank Hadamard matrices*.
 
-[Read the paper (PDF)](release/butson_towers_v3/announcement.pdf) ·
+[Read the paper (PDF)](https://sashakolpakov.github.io/butson_towers/butson-towers-paper.pdf) ·
 [LaTeX source](manuscript/hadamard_7572_announcement.tex) ·
-[Source and reconstruction package](release/butson_towers_v3/source.zip) ·
+[Submitted source and reconstruction package](release/butson_towers_v3/source.zip) ·
 [Lean proofs](formal/ButsonTowers/Endpoints.lean)
 
 [Sphinx manual](https://sashakolpakov.github.io/butson_towers/) ·
@@ -16,6 +16,8 @@ Lean proofs.** This repository accompanies Alexander Kolpakov's manuscript
 The paper was submitted to HexagonMath on **25 November 2026** and is
 **under review**. The [submission record](release/butson_towers_v3/submission-status.json)
 binds the submitted package to its file hashes.
+The [submitted PDF](release/butson_towers_v3/announcement.pdf) is preserved;
+the paper link above follows the current manuscript revision.
 
 ## Results
 
