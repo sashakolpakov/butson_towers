@@ -1,7 +1,7 @@
 # Formal verification
 
-The Lean project proves existence of the eighteen Hadamard orders in the
-manuscript and every member of its six families: five from Spence sources
+The Lean project proves existence of the thirty-four Hadamard orders in the
+manuscript and every member of its nine stated families: eight from Spence sources
 and one from the cubic recurrence. The statements
 construct rational sign matrices with the exact Gram identity and the
 specified positive order; no dense high-order Gram calculation is needed.
@@ -10,21 +10,25 @@ specified positive order; no dense high-order Gram calculation is needed.
 
 `ButsonTowers.HadamardExists n` means that a matrix indexed by `Fin n`
 has entries in `{1,-1}` and satisfies `H * H.transpose = n • 1`, with
-`0 < n`. The named `hadamard_<order>` theorems and all six all-iteration
-family theorems are collected in `formal/ButsonTowers/Endpoints.lean`.
+`0 < n`. The named `hadamard_<order>` theorems and all nine stated all-iteration
+family theorems are collected in `Endpoints.lean`, `NearWilliamsonEndpoints.lean`,
+`AdditionalSpenceFamilies.lean` and `AdditionalResults.lean`.
 Novelty labels belong to the dated literature ledger; the formal
 statements prove existence.
 
-The six families are
+The nine stated families are
 
 | Character order | Hadamard order, for every `r : ℕ` |
 |---|---|
+| 5 | `7572 * 5^r` |
 | 13 | `17668 * 13^r` |
 | 17 | `22716 * 17^r` |
 | Cubic recurrence | `32812 * 3^r` |
 | 61 | `78244 * 61^r` |
 | 101 | `128724 * 101^r` |
 | 121 | `153964 * 121^r` |
+| 137 | `174156 * 137^r` |
+| 109, stage r+1 | `15131380 * 109^r` |
 
 The finite data are literal Lean objects. Sound finite checkers connect
 integer computations to rational periodic correlations, matrix products
@@ -63,8 +67,9 @@ rewritten proof in order and records the exact scope and conventions.
 * `UnrealTripling.lean`: the cubic recurrence for the order-13 unreal
   pair, including signs, amicability and norm. Two iterations give the
   order-117 substitution used for order 295308.
-* `Data/`: complete T127/T631 witnesses, all 27 Williamson quadruples,
-  five strong starters, five Paley matrices and the order-13 unreal pair.
+* `Data/`: complete T127/T631 witnesses, all 27 original Williamson inputs,
+  twelve additional compatible quadruples, eleven strong starters and their
+  Paley matrices, and the order-13 unreal pair.
   For character order 121 the index group is `ZMod 11 × ZMod 11`.
 * `Existence.lean`, `Construction.lean` and `Endpoints.lean`: reindexing
   the constructed matrices to `Fin n` and instantiating the concrete
@@ -86,17 +91,20 @@ revisions locked. From the repository root:
 ./scripts/check_formal.sh
 ```
 
-This builds the project, runs `formal/AuditAxioms.lean` for the original
-85 selected statements, and runs `formal/AuditSixthRootPair.lean` for the
-ten added rational matrix identities. Its fixed list
-includes the finite T certificates, the construction theorems, every
-announced order and every family. The only permitted dependencies are
+This builds the project and checks three exact axiom-report lists:
+85 original statements, ten rational sixth-root matrix identities, and
+48 additional source, endpoint and family statements. The 143 selected
+reports include the finite T certificates, construction theorems, every
+announced order and all announced families. The only permitted dependencies are
 Lean's standard `propext`, `Classical.choice` and `Quot.sound` axioms.
 There are no project-specific axioms, proof placeholders or native
 computation certificates. Every numeric T block certificate is axiom-free;
 the coverage and semantic bridges use only the standard axioms.
 
-The [source-only reproducibility package](../release/lean_verification/README.md)
+The [current source-only package](../release/additional_source_verification/README.md)
+contains all current proof dependencies, the literal input bindings and all
+three strict audit sets. The earlier
+[source-only reproducibility package](../release/lean_verification/README.md)
 contains the complete proof sources, dependency lock, exact audit list
 and a checksum verifier. Its recorded replay builds a fresh extraction
 using a matching pinned dependency cache. A cold download route and a
@@ -122,5 +130,5 @@ expanded order are separate from inherited orthogonality.
 
 The formal scope is the mathematical construction and its concrete
 witnesses. Literature priority, the correctness of search software and
-the cyclotomic factor descriptions are independent of these existence
+the general number-field factor descriptions are independent of these existence
 proofs.

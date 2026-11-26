@@ -13,8 +13,8 @@ executor gives literal entries for every integer `r>=0` in these families:
 | 101 | `51*101^r` | `128724*101^r` |
 | 121 | `61*121^r` | `153964*121^r` |
 
-These are the five Spence-source members of the project's six new output
-families. The sixth is the [cubic family](TRIPLED_UNREAL_SCALAR_ENDPOINTS.md)
+These are five of the eight Spence-source families in the current manuscript.
+The ninth stated output family is the [cubic family](TRIPLED_UNREAL_SCALAR_ENDPOINTS.md)
 `32812*3^r`. Each output family has a new base rank; the completed endpoint
 ledger records individually known ranks within the families.
 
@@ -25,6 +25,25 @@ independently verifies its required starter identities. The source method
 is known; the new frame supplies the endpoint multiplier 2524 from the
 component dimension. Relative to the classical Hadamard rank `4*w_r`,
 the output rank `2524*w_r` has the new odd multiplier 631.
+
+## Additional exact prime recurrences
+
+The [additional executor](../experiments/scalar_lift/additional_spence_families.py)
+keeps the earlier five-source records unchanged and adds checked starters
+at q=5,53,97,109,113,137. The manuscript states these additional families:
+
+| Parameter | Stated output family, r>=0 | Initial new order |
+|---:|---|---:|
+| 5 | `7572*5^r` | 7572 |
+| 137 | `174156*137^r` | 174156 |
+| 109 | `15131380*109^r` | 15131380 |
+
+The last formula uses recurrence stage r+1. Stage zero has the known
+order 138820; its first expansion is the new rank 15131380. The other
+three additional prime recurrences have formally proved existence too,
+but are retained as known-rank controls rather than claimed new families.
+The [additional source certificate](../certificates/scalar-lift/additional-spence-families.json)
+records every starter, all exact norms and the complete entry recipes.
 
 ## Exact starters and induction
 

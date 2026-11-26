@@ -1,0 +1,710 @@
+{
+  "schema": "literal-symmetric-amicable-inputs-v1",
+  "checked_utc": "2026-11-26T20:53:03.303841+00:00",
+  "primary_paper": "https://arxiv.org/abs/2605.08661v2",
+  "author_database": "https://www.cs.uleth.ca/~zaitsevv/nearwilliamson.html",
+  "scope": "Literal compatible sign quadruples; the endpoint executor independently checks their complete identities. Known and new endpoint orders are recorded separately.",
+  "acquisition_report_sha256": "589cd6a7e004f50d97db015abbef3c2fac7cbcfc93e68f6ca55cfe8a9673508e",
+  "entries": [
+    {
+      "width": 35,
+      "first_rows_pm": [
+        "+++-+-+-+++--+--+-++--++-++--++----",
+        "---------++++-++----++-++++--------",
+        "---+-++-+-+-++---++---++-+-+-++-+--",
+        "--+-+-++--+--+++----+++--+--++-+-+-"
+      ],
+      "first_matrix_reversed": true,
+      "circulant_convention": "M_i[x,y]=row_i[(y-x) modw], indices0..w-1",
+      "reversal_convention": "R[x,y]=1 iff x+y=w-1; all other entries0",
+      "literal_selection": {
+        "encoding": "one hexadecimal digit per column, negative bits A/B/C/D=8/4/2/1",
+        "selected_nonempty_line_1_based": 1,
+        "selected_line": "0209783d645ab6993a74de47d65de46ffff",
+        "published_file_quadruples": 1000,
+        "cyclic_shifts_to_symmetric_B_C_D": [
+          0,
+          9,
+          3,
+          20
+        ],
+        "shift_convention": "normalized row_i[k]=published row_i[(k-shift_i) modw]",
+        "published_decoded_first_rows_pm": [
+          "+++-+-+-+++--+--+-++--++-++--++----",
+          "++++-++----++-++++-----------------",
+          "+-++-+-+-++---++---++-+-+-++-+-----",
+          "+++--+--++-+-+---+-+-++--+--+++----"
+        ],
+        "all_published_quadruples_verified": false
+      },
+      "verification": {
+        "all_entries_pm1": true,
+        "all_published_summed_Gram_entries_before_normalization": true,
+        "B_C_D_symmetric": true,
+        "all_original_summed_Gram_entries": true,
+        "WT_all_four_symmetric": true,
+        "WT_pairwise_commuting": true,
+        "WT_pairwise_amicable": true,
+        "WT_all_summed_Gram_entries": true,
+        "Gram_scale": 140,
+        "WT_matrices_int8_row_major_sha256": "fb3c17e6749b4d7270b670fdf43496bfb864fdb9e070d45407418dd655e55258",
+        "literal_rows_int8_row_major_sha256": "66d346e49d60b31823416bec4238e32534e18c7e0909a3231723bf96678e8150"
+      },
+      "source": {
+        "url": "https://www.cs.uleth.ca/~zaitsevv/nw/db/NW35_first1000.txt",
+        "final_url": "https://www.cs.uleth.ca/~zaitsevv/nw/db/NW35_first1000.txt",
+        "sha256": "541c095607206c2e67d90cf92656faf5b2e87b8650e8efc3a508fdc5624ae7a3",
+        "bytes": 36000
+      }
+    },
+    {
+      "width": 45,
+      "first_rows_pm": [
+        "+++-+---++-++-+---++-+++-+-+--+-++--+++-+----",
+        "---++-+-+++++--------------------+++++-+-++--",
+        "+-+--++-+--++---+++-+----+-+++---++--+-++--+-",
+        "++--+-+-++-++--+---+++--+++---+--++-++-+-+--+"
+      ],
+      "first_matrix_reversed": true,
+      "circulant_convention": "M_i[x,y]=row_i[(y-x) modw], indices0..w-1",
+      "reversal_convention": "R[x,y]=1 iff x+y=w-1; all other entries0",
+      "literal_selection": {
+        "encoding": "one hexadecimal digit per column, negative bits A/B/C/D=8/4/2/1",
+        "selected_nonempty_line_1_based": 1,
+        "selected_line": "02091eae11f65f48be078303b4c6df6d47ee544f5efff",
+        "published_file_quadruples": 1000,
+        "cyclic_shifts_to_symmetric_B_C_D": [
+          0,
+          33,
+          25,
+          19
+        ],
+        "shift_convention": "normalized row_i[k]=published row_i[(k-shift_i) modw]",
+        "published_decoded_first_rows_pm": [
+          "+++-+---++-++-+---++-+++-+-+--+-++--+++-+----",
+          "+++++-+-++-----++-+-+++++--------------------",
+          "+-+++---++--+-++--+-+-+--++-+--++---+++-+----",
+          "+++--+++---+--++-++-+-+--+++--+-+-++-++--+---"
+        ],
+        "all_published_quadruples_verified": false
+      },
+      "verification": {
+        "all_entries_pm1": true,
+        "all_published_summed_Gram_entries_before_normalization": true,
+        "B_C_D_symmetric": true,
+        "all_original_summed_Gram_entries": true,
+        "WT_all_four_symmetric": true,
+        "WT_pairwise_commuting": true,
+        "WT_pairwise_amicable": true,
+        "WT_all_summed_Gram_entries": true,
+        "Gram_scale": 180,
+        "WT_matrices_int8_row_major_sha256": "80fa6e56419923468a1c4af5da2e01b28cd44e14cb1a361adfa8f0c073d61004",
+        "literal_rows_int8_row_major_sha256": "97cdebbc6a1878516431d411e07a5c8cadad89e1847598456e24b0c7f2558eb7"
+      },
+      "source": {
+        "url": "https://www.cs.uleth.ca/~zaitsevv/nw/db/NW45_first1000.txt",
+        "final_url": "https://www.cs.uleth.ca/~zaitsevv/nw/db/NW45_first1000.txt",
+        "sha256": "cb4b50d25b6c482ce36f6cf778ed2e3d055228e2ef5a01632ddafae0bb181707",
+        "bytes": 46000
+      }
+    },
+    {
+      "width": 47,
+      "first_rows_pm": [
+        "++-+-+++---+-+--+++-+-+---+--++-++-+--+-++-----",
+        "+-+---+++-++++--------------------++++-+++---+-",
+        "--+++-+----+++-++-+-+--++--+-+-++-+++----+-+++-",
+        "--+++--+--++-++---+--+-++-+--+---++-++--+--+++-"
+      ],
+      "first_matrix_reversed": true,
+      "circulant_convention": "M_i[x,y]=row_i[(y-x) modw], indices0..w-1",
+      "reversal_convention": "R[x,y]=1 iff x+y=w-1; all other entries0",
+      "literal_selection": {
+        "encoding": "one hexadecimal digit per column, negative bits A/B/C/D=8/4/2/1",
+        "selected_nonempty_line_1_based": 1,
+        "selected_line": "0092c130fde2c1fb464b1879883ee75f45d6fe4d47defff",
+        "published_file_quadruples": 1000,
+        "cyclic_shifts_to_symmetric_B_C_D": [
+          0,
+          34,
+          11,
+          33
+        ],
+        "shift_convention": "normalized row_i[k]=published row_i[(k-shift_i) modw]",
+        "published_decoded_first_rows_pm": [
+          "++-+-+++---+-+--+++-+-+---+--++-++-+--+-++-----",
+          "++++-+++---+-+-+---+++-++++--------------------",
+          "+++-++-+-+--++--+-+-++-+++----+-+++---+++-+----",
+          "++-++--+--+++---+++--+--++-++---+--+-++-+--+---"
+        ],
+        "all_published_quadruples_verified": false
+      },
+      "verification": {
+        "all_entries_pm1": true,
+        "all_published_summed_Gram_entries_before_normalization": true,
+        "B_C_D_symmetric": true,
+        "all_original_summed_Gram_entries": true,
+        "WT_all_four_symmetric": true,
+        "WT_pairwise_commuting": true,
+        "WT_pairwise_amicable": true,
+        "WT_all_summed_Gram_entries": true,
+        "Gram_scale": 188,
+        "WT_matrices_int8_row_major_sha256": "7cabf905e8e408a601ad5db3f0f4e47c0ffe24c7a1be493e30639694d80f148b",
+        "literal_rows_int8_row_major_sha256": "4b78981450b3cdd263e16fdccc064797433b897998762341d76cf40cc72d2eda"
+      },
+      "source": {
+        "url": "https://www.cs.uleth.ca/~zaitsevv/nw/db/NW47_first1000.txt",
+        "final_url": "https://www.cs.uleth.ca/~zaitsevv/nw/db/NW47_first1000.txt",
+        "sha256": "552ec602f53d469408b47a9ce3bd15d8519b3d5d61cc91a8a888926b7b8b407a",
+        "bytes": 48000
+      }
+    },
+    {
+      "width": 53,
+      "first_rows_pm": [
+        "++---++-++----+-+-+-+--++++++++--+-+-+-+----++-++----",
+        "+---++-+-+--++-+--++++++-++++-++++++--+-++--+-+-++---",
+        "+-++++--+---+-----++++-++----++-++++-----+---+--++++-",
+        "+---+-++---+-++---+----++-++-++----+---++-+---++-+---"
+      ],
+      "first_matrix_reversed": true,
+      "circulant_convention": "M_i[x,y]=row_i[(y-x) modw], indices0..w-1",
+      "reversal_convention": "R[x,y]=1 iff x+y=w-1; all other entries0",
+      "literal_selection": {
+        "encoding": "four lines of1/-, in A,B,C,D order"
+      },
+      "verification": {
+        "all_entries_pm1": true,
+        "all_published_summed_Gram_entries_before_normalization": true,
+        "B_C_D_symmetric": true,
+        "all_original_summed_Gram_entries": true,
+        "WT_all_four_symmetric": true,
+        "WT_pairwise_commuting": true,
+        "WT_pairwise_amicable": true,
+        "WT_all_summed_Gram_entries": true,
+        "Gram_scale": 212,
+        "WT_matrices_int8_row_major_sha256": "5531e414ffcb761b60bf5a4c2b17b73d21a05223ea6b519dc70a3fec2d569d88",
+        "literal_rows_int8_row_major_sha256": "d6a870dcd47de577a2c7c65cad1d292ba75c9bb2b8dbac6d2087c6cb846d33f7"
+      },
+      "source": {
+        "url": "https://www.cs.uleth.ca/~zaitsevv/nw/NW53.txt",
+        "final_url": "https://www.cs.uleth.ca/~zaitsevv/nw/NW53.txt",
+        "sha256": "82b5e53c3247730f679fec5ed8e2279e2ea6ad194cbb35c05ba8af0a85616937",
+        "bytes": 216
+      }
+    },
+    {
+      "width": 59,
+      "first_rows_pm": [
+        "++----++++---++--+---+-++-+++--+++-++-+---+--++---++++-----",
+        "+----++-++++-+-+++-+-++-+++-+--+-+++-++-+-+++-+-++++-++----",
+        "+--+----++++-+-+-+--+--+---++--++---+--+--+-+-+-++++----+--",
+        "+-----+---+-+--++++++--+---++++++---+--++++++--+-+---+-----"
+      ],
+      "first_matrix_reversed": true,
+      "circulant_convention": "M_i[x,y]=row_i[(y-x) modw], indices0..w-1",
+      "reversal_convention": "R[x,y]=1 iff x+y=w-1; all other entries0",
+      "literal_selection": {
+        "encoding": "four lines of1/-, in A,B,C,D order"
+      },
+      "verification": {
+        "all_entries_pm1": true,
+        "all_published_summed_Gram_entries_before_normalization": true,
+        "B_C_D_symmetric": true,
+        "all_original_summed_Gram_entries": true,
+        "WT_all_four_symmetric": true,
+        "WT_pairwise_commuting": true,
+        "WT_pairwise_amicable": true,
+        "WT_all_summed_Gram_entries": true,
+        "Gram_scale": 236,
+        "WT_matrices_int8_row_major_sha256": "d52817a4be4f7aa4052012cd56ee1da286b38a95bd0fe3be0a55a45a80886b1e",
+        "literal_rows_int8_row_major_sha256": "c8942f16d5384560bd22e984fffb372b6ea482e54e0460f5fe7614275ed7439d"
+      },
+      "source": {
+        "url": "https://www.cs.uleth.ca/~zaitsevv/nw/NW59.txt",
+        "final_url": "https://www.cs.uleth.ca/~zaitsevv/nw/NW59.txt",
+        "sha256": "edcc7413d9e6d72bb516bf758871c1d45f4221db62abb4518638f2cd5e5d58a3",
+        "bytes": 240
+      }
+    },
+    {
+      "width": 65,
+      "first_rows_pm": [
+        "++-+----++--+++-++----+-+--+-+---++++--++-+-----+--+++-++--+-+++-",
+        "++--+-++--+-----+-+---+++++++-++--++-+++++++---+-+-----+--++-+--+",
+        "++-+++-+--+++--+++++++---+--+-+----+-+--+---+++++++--+++--+-+++-+",
+        "+-+--++-++-+-+++---++++++--+-+-++++-+-+--++++++---+++-+-++-++--+-"
+      ],
+      "first_matrix_reversed": true,
+      "circulant_convention": "M_i[x,y]=row_i[(y-x) modw], indices0..w-1",
+      "reversal_convention": "R[x,y]=1 iff x+y=w-1; all other entries0",
+      "literal_selection": {
+        "encoding": "four lines of1/-, in A,B,C,D order"
+      },
+      "verification": {
+        "all_entries_pm1": true,
+        "all_published_summed_Gram_entries_before_normalization": true,
+        "B_C_D_symmetric": true,
+        "all_original_summed_Gram_entries": true,
+        "WT_all_four_symmetric": true,
+        "WT_pairwise_commuting": true,
+        "WT_pairwise_amicable": true,
+        "WT_all_summed_Gram_entries": true,
+        "Gram_scale": 260,
+        "WT_matrices_int8_row_major_sha256": "56ac2558d42dbeae30b9a2da94e8a2648fb7e28ae07de0392bcd11fe1ca8089f",
+        "literal_rows_int8_row_major_sha256": "f7592a2a7d7105f87b77ddc083a513c53b1ce870d60dfd4b058c3535954568d5"
+      },
+      "source": {
+        "url": "https://www.cs.uleth.ca/~zaitsevv/nw/NW65.txt",
+        "final_url": "https://www.cs.uleth.ca/~zaitsevv/nw/NW65.txt",
+        "sha256": "93ef91ef01754508944f14a12684adc9c3c65d79533faf113d2225d34a92e727",
+        "bytes": 264
+      }
+    },
+    {
+      "width": 67,
+      "first_rows_pm": [
+        "+-++-+-++--+---+--+++----+-++--+-++-+--+----+-+-+--+++++--++-+-+---",
+        "+--+--+++--++++++-++-----+---+--------+---+-----++-++++++--+++--+--",
+        "++--++---+-+++----++-+-+-+--+----++----+--+-+-+-++----+++-+---++--+",
+        "+-+-++------+++++---+----+-+--++-++-++--+-+----+---+++++------++-+-"
+      ],
+      "first_matrix_reversed": true,
+      "circulant_convention": "M_i[x,y]=row_i[(y-x) modw], indices0..w-1",
+      "reversal_convention": "R[x,y]=1 iff x+y=w-1; all other entries0",
+      "literal_selection": {
+        "encoding": "four lines of1/-, in A,B,C,D order"
+      },
+      "verification": {
+        "all_entries_pm1": true,
+        "all_published_summed_Gram_entries_before_normalization": true,
+        "B_C_D_symmetric": true,
+        "all_original_summed_Gram_entries": true,
+        "WT_all_four_symmetric": true,
+        "WT_pairwise_commuting": true,
+        "WT_pairwise_amicable": true,
+        "WT_all_summed_Gram_entries": true,
+        "Gram_scale": 268,
+        "WT_matrices_int8_row_major_sha256": "8f3ee065043a43bfd41d3d4f19cc64e0ff8163361a66f3eb0bd73be4dad314bb",
+        "literal_rows_int8_row_major_sha256": "edb93a64a3430aeac83ad5567c75284319c04de695774b1df56e63fe6e33faf3"
+      },
+      "source": {
+        "url": "https://www.cs.uleth.ca/~zaitsevv/nw/NW67.txt",
+        "final_url": "https://www.cs.uleth.ca/~zaitsevv/nw/NW67.txt",
+        "sha256": "429c347b25e2f4eaf0924b5761fff114ce489794ee86da2f30cf5e322e1733a2",
+        "bytes": 272
+      }
+    },
+    {
+      "width": 69,
+      "first_rows_pm": [
+        "+-----+-+--++-++-++++---+--++-+-+-++-+-+-++--+---++++-++-++--+-+-----",
+        "++++++-+-++--+--+----+++-++--+-+-+--+-+-+--++-+++----+--+--++-+-+++++",
+        "+++--++-----++++-+----++---+---+-+--+-+---+---++----+-++++-----++--++",
+        "+++--++-----++++-+----++---+---+-+--+-+---+---++----+-++++-----++--++"
+      ],
+      "first_matrix_reversed": false,
+      "circulant_convention": "M_i[x,y]=row_i[(y-x) modw], indices0..w-1",
+      "reversal_convention": "R[x,y]=1 iff x+y=w-1; all other entries0",
+      "literal_selection": {
+        "encoding": "four space-separated +/- rows, one quadruple per line",
+        "selected_nonempty_line_1_based": 1,
+        "dataset_DOI": "10.5281/zenodo.1195693",
+        "published_MD5": "8527b3c55a4851226a39b3f8181edd5a"
+      },
+      "verification": {
+        "all_entries_pm1": true,
+        "all_published_summed_Gram_entries_before_normalization": true,
+        "B_C_D_symmetric": true,
+        "all_original_summed_Gram_entries": true,
+        "WT_all_four_symmetric": true,
+        "WT_pairwise_commuting": true,
+        "WT_pairwise_amicable": true,
+        "WT_all_summed_Gram_entries": true,
+        "Gram_scale": 276,
+        "WT_matrices_int8_row_major_sha256": "869d00d9aee04fd176e76d694d4c85e888143f94a0a7f152b3d3fadf2fce311a",
+        "literal_rows_int8_row_major_sha256": "f2283a3ee736bcca9e52cc61c366a004c667fcbf198e0e78a8f6f3b713362f15"
+      },
+      "source": {
+        "url": "https://zenodo.org/records/1195693/files/williamson-69.txt?download=1",
+        "final_url": "https://zenodo.org/records/1195693/files/williamson-69.txt?download=1",
+        "sha256": "bfc68b4172d52e881fcd417d97b4a9b779b2dca57767fa54276fff0173f9f9f3",
+        "bytes": 280
+      }
+    },
+    {
+      "width": 73,
+      "first_rows_pm": [
+        "+-+-+++----+---+++++-------++---++-+-+--+-++++-++++++--+-+--++-+--+-+-++-",
+        "+-----++--+-+++--+-+++++-+---+++--++--++--+++---+-+++++-+--+++-+--++-----",
+        "+-+--++-------+-+-+++++--+--+-+--++----++--+-+--+--+++++-+-+-------++--+-",
+        "+---++-+--++-+++-+--+++---+-+++++++-++-+++++++-+---+++--+-+++-++--+-++---"
+      ],
+      "first_matrix_reversed": true,
+      "circulant_convention": "M_i[x,y]=row_i[(y-x) modw], indices0..w-1",
+      "reversal_convention": "R[x,y]=1 iff x+y=w-1; all other entries0",
+      "literal_selection": {
+        "encoding": "four lines of1/-, in A,B,C,D order"
+      },
+      "verification": {
+        "all_entries_pm1": true,
+        "all_published_summed_Gram_entries_before_normalization": true,
+        "B_C_D_symmetric": true,
+        "all_original_summed_Gram_entries": true,
+        "WT_all_four_symmetric": true,
+        "WT_pairwise_commuting": true,
+        "WT_pairwise_amicable": true,
+        "WT_all_summed_Gram_entries": true,
+        "Gram_scale": 292,
+        "WT_matrices_int8_row_major_sha256": "99b0474e98ee8b269d01c48b98d60cdf26ca93ceff4392d9f895a0adfca99581",
+        "literal_rows_int8_row_major_sha256": "b4b8cdc94e7c60c1de4728e916af1012960fd836a1de46ff2cbe60ffecda1973"
+      },
+      "source": {
+        "url": "https://www.cs.uleth.ca/~zaitsevv/nw/NW73.txt",
+        "final_url": "https://www.cs.uleth.ca/~zaitsevv/nw/NW73.txt",
+        "sha256": "94b4bf2b6c0ab6aa51a110c994dcef93a2ce5beeba9af3f5535b07580ec44ab7",
+        "bytes": 296
+      }
+    },
+    {
+      "width": 79,
+      "first_rows_pm": [
+        "+---+++---+--++-----+---+-----+--++-+++---------+----+--+-+++++--+----++++--+++",
+        "+-++--+++--+--+-+-----++++++-+--+--+++-++-+++--+--+-++++++-----+-+--+--+++--++-",
+        "++---+-++-+++-+++--++-++-+-+-+-++-+----------+-++-+-+-+-++-++--+++-+++-++-+---+",
+        "++-+--+---++---++-+-+-+-+++++---++++--+--+--++++---+++++-+-+-+-++---++---+--+-+"
+      ],
+      "first_matrix_reversed": true,
+      "circulant_convention": "M_i[x,y]=row_i[(y-x) modw], indices0..w-1",
+      "reversal_convention": "R[x,y]=1 iff x+y=w-1; all other entries0",
+      "literal_selection": {
+        "encoding": "four lines of1/-, in A,B,C,D order"
+      },
+      "verification": {
+        "all_entries_pm1": true,
+        "all_published_summed_Gram_entries_before_normalization": true,
+        "B_C_D_symmetric": true,
+        "all_original_summed_Gram_entries": true,
+        "WT_all_four_symmetric": true,
+        "WT_pairwise_commuting": true,
+        "WT_pairwise_amicable": true,
+        "WT_all_summed_Gram_entries": true,
+        "Gram_scale": 316,
+        "WT_matrices_int8_row_major_sha256": "f1dbab4bc71bf838082ae850b5344c247da342691eaf99da985b48fca372dd41",
+        "literal_rows_int8_row_major_sha256": "e638d229e1d3768a3377bc541dbad0618c30cbd326ecdac07ba55d82885a8332"
+      },
+      "source": {
+        "url": "https://www.cs.uleth.ca/~zaitsevv/nw/NW79.txt",
+        "final_url": "https://www.cs.uleth.ca/~zaitsevv/nw/NW79.txt",
+        "sha256": "7538d5a1ad9b3595e17f6752313ef533721e39bbd94e4459efaaa66e23601ecc",
+        "bytes": 320
+      }
+    },
+    {
+      "width": 91,
+      "first_rows_pm": [
+        "+---+-+-+--++++--+-++---+-+--+++-+++++--+-+------+-++-+++++-+-+-+--+----+++--+-++--+-+-+++-",
+        "+---++++++++--+-+++++++--+---++----+-++-+-+--++--+-+-++-+----++---+--+++++++-+--++++++++---",
+        "+++--++-++-++-+-++++-+++---++--+---++-+-+++------+++-+-++---+--++---+++-++++-+-++-++-++--++",
+        "+++++--++-+++-+-+--++-+-----++-+---++++--+++-++-+++--++++---+-++-----+-++--+-+-+++-++--++++"
+      ],
+      "first_matrix_reversed": true,
+      "circulant_convention": "M_i[x,y]=row_i[(y-x) modw], indices0..w-1",
+      "reversal_convention": "R[x,y]=1 iff x+y=w-1; all other entries0",
+      "literal_selection": {
+        "encoding": "four lines of1/-, in A,B,C,D order"
+      },
+      "verification": {
+        "all_entries_pm1": true,
+        "all_published_summed_Gram_entries_before_normalization": true,
+        "B_C_D_symmetric": true,
+        "all_original_summed_Gram_entries": true,
+        "WT_all_four_symmetric": true,
+        "WT_pairwise_commuting": true,
+        "WT_pairwise_amicable": true,
+        "WT_all_summed_Gram_entries": true,
+        "Gram_scale": 364,
+        "WT_matrices_int8_row_major_sha256": "20f7d4aa48746dd2b31427b440adca2e86a4b061957e92cf4099068196ae70f0",
+        "literal_rows_int8_row_major_sha256": "1b036567418c7367c446274359eb967a21244a1ba4dea15ec9944300a726d0a9"
+      },
+      "source": {
+        "url": "https://www.cs.uleth.ca/~zaitsevv/nw/NW91.txt",
+        "final_url": "https://www.cs.uleth.ca/~zaitsevv/nw/NW91.txt",
+        "sha256": "bc6943c87bce69fa0a6bbb2c6e964c3b44d667c4271c8894c28e928bef40880a",
+        "bytes": 368
+      }
+    },
+    {
+      "width": 93,
+      "first_rows_pm": [
+        "++--++-+--+-++--++++-+-+++-++--++++-++----+-+-+-++---++-+---++++++-+----+----++--++-+--++-+--",
+        "++-----++++-+-++++-+-++-+-+-------++-+-+-----+--+-----+-+-++-------+-+-++-+-++++-+-++++-----+",
+        "+---+---++--+-+---+++-++-+++-+--++-----+----++++++----+-----++--+-+++-++-+++---+-+--++---+---",
+        "++-+-+--++++-++------++--+--++---+----+++-+--+--+--+-+++----+---++--+--++------++-++++--+-+-+"
+      ],
+      "first_matrix_reversed": true,
+      "circulant_convention": "M_i[x,y]=row_i[(y-x) modw], indices0..w-1",
+      "reversal_convention": "R[x,y]=1 iff x+y=w-1; all other entries0",
+      "literal_selection": {
+        "encoding": "four lines of1/-, in A,B,C,D order"
+      },
+      "verification": {
+        "all_entries_pm1": true,
+        "all_published_summed_Gram_entries_before_normalization": true,
+        "B_C_D_symmetric": true,
+        "all_original_summed_Gram_entries": true,
+        "WT_all_four_symmetric": true,
+        "WT_pairwise_commuting": true,
+        "WT_pairwise_amicable": true,
+        "WT_all_summed_Gram_entries": true,
+        "Gram_scale": 372,
+        "WT_matrices_int8_row_major_sha256": "224983b54737580d5c8bf55c2c354bdc342ec90d15b2b93f4ebe8c7c9018f9cb",
+        "literal_rows_int8_row_major_sha256": "b32920dedd3ec81477b8fb138f6a3ced47b67bcc5487e879b52da9b716d25354"
+      },
+      "source": {
+        "url": "https://www.cs.uleth.ca/~zaitsevv/nw/NW93.txt",
+        "final_url": "https://www.cs.uleth.ca/~zaitsevv/nw/NW93.txt",
+        "sha256": "d935f2dcfa68e29e6fdce125bba77f9dfa807d35221c11c2f618bc03ae97d76f",
+        "bytes": 376
+      }
+    },
+    {
+      "width": 95,
+      "first_rows_pm": [
+        "+--+-++---+---++++---+---+-----+++-++-++-+++--++-++----++--+-++-++++--++++-+--+++++--+------++-",
+        "+++----++-+++-+++-+-+++-++++--+-----++---+-+-+----+-+-+---++-----+--++++-+++-+-+++-+++-++----++",
+        "++----+++-++++-+--+--+--++++-+-+--+--+-+-++---++++---++-+-+--+--+-+-++++--+--+--+-++++-+++----+",
+        "+++-++-+++-+-+----+++-++--+-+-+++--+---++-++++++++++++-++---+--+++-+-+--++-+++----+-+-+++-++-++"
+      ],
+      "first_matrix_reversed": true,
+      "circulant_convention": "M_i[x,y]=row_i[(y-x) modw], indices0..w-1",
+      "reversal_convention": "R[x,y]=1 iff x+y=w-1; all other entries0",
+      "literal_selection": {
+        "encoding": "four lines of1/-, in A,B,C,D order"
+      },
+      "verification": {
+        "all_entries_pm1": true,
+        "all_published_summed_Gram_entries_before_normalization": true,
+        "B_C_D_symmetric": true,
+        "all_original_summed_Gram_entries": true,
+        "WT_all_four_symmetric": true,
+        "WT_pairwise_commuting": true,
+        "WT_pairwise_amicable": true,
+        "WT_all_summed_Gram_entries": true,
+        "Gram_scale": 380,
+        "WT_matrices_int8_row_major_sha256": "9cbefa50eb3c57151a9f5ad9e5e2339ec77eadd08aa3ef3adae5ad7650fe94a7",
+        "literal_rows_int8_row_major_sha256": "3f3d0b57700f3a9edfbb5496b73a60eebe0e5d93ef40cd47edcf2e0e73c1d1fd"
+      },
+      "source": {
+        "url": "https://www.cs.uleth.ca/~zaitsevv/nw/NW95.txt",
+        "final_url": "https://www.cs.uleth.ca/~zaitsevv/nw/NW95.txt",
+        "sha256": "3633a8fc27c12ae724d50f1fe1ae090a6bd4cc6eebc70e5616935f0bef5adc78",
+        "bytes": 384
+      }
+    },
+    {
+      "width": 97,
+      "first_rows_pm": [
+        "+++-+-----+----+------++-++-++---++++++-++++-+-+-++---++-+-+-++---+--++--+--++-+-++----++--+-+--+",
+        "+--++-+--++-+++--++-++++----------++-+-+-+---++----++---+-+-+-++----------++++-++--+++-++--+-++--",
+        "++-----+---+----++-++++---+-++++-+---+---+--++++--++++--+---+---+-++++-+---++++-++----+---+-----+",
+        "+----++++----+--+---++-++-+--++-+-+-+-++-+-+----++----+-+-++-+-+-+-++--+-++-++---+--+----++++----"
+      ],
+      "first_matrix_reversed": true,
+      "circulant_convention": "M_i[x,y]=row_i[(y-x) modw], indices0..w-1",
+      "reversal_convention": "R[x,y]=1 iff x+y=w-1; all other entries0",
+      "literal_selection": {
+        "encoding": "four lines of1/-, in A,B,C,D order"
+      },
+      "verification": {
+        "all_entries_pm1": true,
+        "all_published_summed_Gram_entries_before_normalization": true,
+        "B_C_D_symmetric": true,
+        "all_original_summed_Gram_entries": true,
+        "WT_all_four_symmetric": true,
+        "WT_pairwise_commuting": true,
+        "WT_pairwise_amicable": true,
+        "WT_all_summed_Gram_entries": true,
+        "Gram_scale": 388,
+        "WT_matrices_int8_row_major_sha256": "35162e49152e38d943d1e4a13ca7d274324efce62237182c58b950a456942743",
+        "literal_rows_int8_row_major_sha256": "5cb6dd786c55c7a14fed106e0393879006c05e97b5a66ccd9bc380a966dbf4c2"
+      },
+      "source": {
+        "url": "https://www.cs.uleth.ca/~zaitsevv/nw/NW97.txt",
+        "final_url": "https://www.cs.uleth.ca/~zaitsevv/nw/NW97.txt",
+        "sha256": "32d20fb835af4b53e588d06f2ea05424ec17c56e9debc35d6dc494a41554f4d8",
+        "bytes": 392
+      }
+    },
+    {
+      "width": 103,
+      "first_rows_pm": [
+        "--+--+-+-++-++++++-++-+-+++--++-+++--+---++--+-++-++-+++-++--+++-----+-++++++-+++--++++---+-++--++++--+",
+        "+-+-++++++-+-+---++-+-++++-++++-++--+----++-+------++------+-++----+--++-++++-++++-+-++---+-+-++++++-+-",
+        "+-++--++-+-+-++--+-++--+-++++-+-++++--+-+++-------++++-------+++-+--++++-+-++++-+--++-+--++-+-+-++--++-",
+        "----+++++-+--++---+++-+++-++++---++-+---+---++--+-++++-+--++---+---+-++---++++-+++-+++---++--+-+++++---"
+      ],
+      "first_matrix_reversed": true,
+      "circulant_convention": "M_i[x,y]=row_i[(y-x) modw], indices0..w-1",
+      "reversal_convention": "R[x,y]=1 iff x+y=w-1; all other entries0",
+      "literal_selection": {
+        "encoding": "four lines of1/-, in A,B,C,D order"
+      },
+      "verification": {
+        "all_entries_pm1": true,
+        "all_published_summed_Gram_entries_before_normalization": true,
+        "B_C_D_symmetric": true,
+        "all_original_summed_Gram_entries": true,
+        "WT_all_four_symmetric": true,
+        "WT_pairwise_commuting": true,
+        "WT_pairwise_amicable": true,
+        "WT_all_summed_Gram_entries": true,
+        "Gram_scale": 412,
+        "WT_matrices_int8_row_major_sha256": "166b3cdce635ee81fb4b8672ab790af170296891387f4cee11d81dd744f51741",
+        "literal_rows_int8_row_major_sha256": "2915ede5e7b8e24c710dca17fbb4b2d5f10539da7f3e9ef66444d88d988a33cf"
+      },
+      "source": {
+        "url": "https://www.cs.uleth.ca/~zaitsevv/nw/NW103.txt",
+        "final_url": "https://www.cs.uleth.ca/~zaitsevv/nw/NW103.txt",
+        "sha256": "5555177c4b0a1d1e30b5bb7dfac31cab9a9c9da0b1c31eb7fbec8eefac3edd93",
+        "bytes": 416
+      }
+    },
+    {
+      "width": 109,
+      "first_rows_pm": [
+        "-+-+-+-+--+-+++++-++++----++++------+---+--+++-+--+----++++-++-+--++--+-+++--+-++-+++++-+---+++--++---+++-++-",
+        "+--+++-+-++-+-+-+-+-+-++++++++-++-++--+----++--+++----++----+++--++----+--++-++-++++++++-+-+-+-+-+-++-+-+++--",
+        "--+-+-+--+++--++++-++++-++-++--+--+++-++---+----+++++----+++++----+---++-+++--+--++-++-++++-++++--+++--+-+-+-",
+        "--+-+++++++++-+-++-+--+-+--+--++-++--+++-+++------+++----+++------+++-+++--++-++--+--+-+--+-++-+-+++++++++-+-"
+      ],
+      "first_matrix_reversed": true,
+      "circulant_convention": "M_i[x,y]=row_i[(y-x) modw], indices0..w-1",
+      "reversal_convention": "R[x,y]=1 iff x+y=w-1; all other entries0",
+      "literal_selection": {
+        "encoding": "four lines of1/-, in A,B,C,D order"
+      },
+      "verification": {
+        "all_entries_pm1": true,
+        "all_published_summed_Gram_entries_before_normalization": true,
+        "B_C_D_symmetric": true,
+        "all_original_summed_Gram_entries": true,
+        "WT_all_four_symmetric": true,
+        "WT_pairwise_commuting": true,
+        "WT_pairwise_amicable": true,
+        "WT_all_summed_Gram_entries": true,
+        "Gram_scale": 436,
+        "WT_matrices_int8_row_major_sha256": "fa69f70a6be8256094726deb8bdf054def8d960b6ed66ce251fae5975f369c83",
+        "literal_rows_int8_row_major_sha256": "f0ffd0c054f8f648ad859b1ebb81ed5e59a1eb4cae9887ee5c84535641c253b0"
+      },
+      "source": {
+        "url": "https://www.cs.uleth.ca/~zaitsevv/nw/NW109.txt",
+        "final_url": "https://www.cs.uleth.ca/~zaitsevv/nw/NW109.txt",
+        "sha256": "24e031fc41edf98a337d3a4aab0299706b5c77af4e002b750abc15b917e71dc8",
+        "bytes": 440
+      }
+    },
+    {
+      "width": 127,
+      "first_rows_pm": [
+        "+-+-----+++++++-++--+---+++-+-+-+-+++-++-++-+++--+++--+----++++++----+++++++---++-+-+--+--+--++-+-+-++--+++-++--++-+++--+++++-+",
+        "+-+-+------+---++++--+++-----+-+--+-++++++++-+++++++---++-++-+----+-++-++---+++++++-++++++++-+--+-+-----+++--++++---+------+-+-",
+        "+-+++-++-+--++++--+--+--+-+-++++---+--+++--++-++---+++-+-+--+-+--+-+--+-+-+++---++-++--+++--+---++++-+-+--+--+--++++--+-++-+++-",
+        "++-+++--+++----++-++++-+-+-+---+++-----+----+-+++-++-++-++--++-++-++--++-++-++-+++-+----+-----+++---+-+-+-++++-++----+++--+++-+"
+      ],
+      "first_matrix_reversed": true,
+      "circulant_convention": "M_i[x,y]=row_i[(y-x) modw], indices0..w-1",
+      "reversal_convention": "R[x,y]=1 iff x+y=w-1; all other entries0",
+      "literal_selection": {
+        "encoding": "four lines of1/-, in A,B,C,D order"
+      },
+      "verification": {
+        "all_entries_pm1": true,
+        "all_published_summed_Gram_entries_before_normalization": true,
+        "B_C_D_symmetric": true,
+        "all_original_summed_Gram_entries": true,
+        "WT_all_four_symmetric": true,
+        "WT_pairwise_commuting": true,
+        "WT_pairwise_amicable": true,
+        "WT_all_summed_Gram_entries": true,
+        "Gram_scale": 508,
+        "WT_matrices_int8_row_major_sha256": "266f292dff187c2c49285d9fec8da6f4ac1a9cafb6dc0f66e07b8edd9bf0650d",
+        "literal_rows_int8_row_major_sha256": "cbe69d8ad04b39b41b2b654a6ec0cf455e53b4479de7016a639c438c6683d637"
+      },
+      "source": {
+        "url": "https://www.cs.uleth.ca/~zaitsevv/nw/NW127.txt",
+        "final_url": "https://www.cs.uleth.ca/~zaitsevv/nw/NW127.txt",
+        "sha256": "f14442a96bf61d5c1447597d9a949508f290f1dd29491b21e98be05a7b10228c",
+        "bytes": 512
+      }
+    },
+    {
+      "width": 133,
+      "first_rows_pm": [
+        "+-+++-++-++-+++--++--+++++-+-+++-+--+--+----+--+-+++-++---+++++-++++--+-+--+-++-+-+--+----++-----++++++-+++--+++-----++-+-++---++-+++",
+        "--++-+-++-----++---+-++-+--+++++++-+++++--+--+-+-+-+-+-++++-+--++----++--+-++++-+-+-+-+-+--+--+++++-+++++++--+-++-+---++-----++-+-++-",
+        "-+++++--++-++-+---+++++-+++---+--+++++++----+++-+-+----+-+--+---++--++---+--+-+----+-+-+++----+++++++--+---+++-+++++---+-++-++--+++++",
+        "-+-+---+++-++--+-++-+----++--++-+++-++-+++---+++-++++++-+-----+-++--++-+-----+-++++++-+++---+++-++-+++-++--++----+-++-+--++-+++---+-+"
+      ],
+      "first_matrix_reversed": true,
+      "circulant_convention": "M_i[x,y]=row_i[(y-x) modw], indices0..w-1",
+      "reversal_convention": "R[x,y]=1 iff x+y=w-1; all other entries0",
+      "literal_selection": {
+        "encoding": "four lines of1/-, in A,B,C,D order"
+      },
+      "verification": {
+        "all_entries_pm1": true,
+        "all_published_summed_Gram_entries_before_normalization": true,
+        "B_C_D_symmetric": true,
+        "all_original_summed_Gram_entries": true,
+        "WT_all_four_symmetric": true,
+        "WT_pairwise_commuting": true,
+        "WT_pairwise_amicable": true,
+        "WT_all_summed_Gram_entries": true,
+        "Gram_scale": 532,
+        "WT_matrices_int8_row_major_sha256": "309b7a1e1a768bf15ea13423ea6c22c18b05a44dbae2d3a84a9fa1559a5bc1f5",
+        "literal_rows_int8_row_major_sha256": "3b179649e197a1b3030e73cbc96cee810f59cf711d466a9e8e8a8be1b1b06a5f"
+      },
+      "source": {
+        "url": "https://www.cs.uleth.ca/~zaitsevv/nw/NW133.txt",
+        "final_url": "https://www.cs.uleth.ca/~zaitsevv/nw/NW133.txt",
+        "sha256": "a723a49b119f75890783a888e6a3a789bd49cbb01016ad645293041931989450",
+        "bytes": 536
+      }
+    },
+    {
+      "width": 181,
+      "first_rows_pm": [
+        "+--+++++--++-++-++++-+-++-+-+-+++-++--+-+---+--+-+++-++--+++-+----++++-++---++-+-++-++-+++++++-+--+--+-+---++++++--+++++++-+---+-+---+-+--+++++-++---++----+++-+--+-+-+-----+++----++",
+        "+--+--+--++-+-----+-+--++---+----++-++-+-+-+-+++--+--+++--+---++-++-+++--+++++-++-+-+-----++-----+-+-++-+++++--+++-++-++---+--+++--+--+++-+-+-+-++-++----+---++--+-+-----+-++--+--+--",
+        "++----+-+-+-+++-------+--+-+++++-+----+++-+--+-++++-+++-+-+---++---+++-+--+-++--++--+--+------+--+--++--++-+--+-+++---++---+-+-+++-++++-+--+-+++----+-+++++-+--+-------+++-+-+-+----+",
+        "++--+++-+-++---++-+-+-+++--+++++--------++-++---++---+-++--++--++++-+--+-+++++------------++------------+++++-+--+-++++--++--++-+---++---++-++--------+++++--+++-+-+-++---++-+-+++--+"
+      ],
+      "first_matrix_reversed": true,
+      "circulant_convention": "M_i[x,y]=row_i[(y-x) modw], indices0..w-1",
+      "reversal_convention": "R[x,y]=1 iff x+y=w-1; all other entries0",
+      "literal_selection": {
+        "encoding": "four lines of1/-, in A,B,C,D order"
+      },
+      "verification": {
+        "all_entries_pm1": true,
+        "all_published_summed_Gram_entries_before_normalization": true,
+        "B_C_D_symmetric": true,
+        "all_original_summed_Gram_entries": true,
+        "WT_all_four_symmetric": true,
+        "WT_pairwise_commuting": true,
+        "WT_pairwise_amicable": true,
+        "WT_all_summed_Gram_entries": true,
+        "Gram_scale": 724,
+        "WT_matrices_int8_row_major_sha256": "6cafccf3fd56b20142faa2e77a38e1c5ba7874068641711b4660ace9a3298e08",
+        "literal_rows_int8_row_major_sha256": "405d4527339d4fa1ac8aafc03c92f5a4632f1089aafc0cc072145f33180fe9dd"
+      },
+      "source": {
+        "url": "https://www.cs.uleth.ca/~zaitsevv/nw/NW181.txt",
+        "final_url": "https://www.cs.uleth.ca/~zaitsevv/nw/NW181.txt",
+        "sha256": "ceade197ec6df950dce5c63f41a3542f3f74338689a00d71bc7ab9d308f8dcd8",
+        "bytes": 728
+      }
+    }
+  ]
+}

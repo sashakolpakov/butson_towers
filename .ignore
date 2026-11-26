@@ -10,3 +10,6 @@
 /MIGRATION.json
 /.venv/
 /formal/.lake/
+
+# Reproducibility copies duplicate the live sources; inspect a packet by path.
+/release/*/source/

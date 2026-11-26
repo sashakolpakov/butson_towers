@@ -54,7 +54,7 @@ Use `docs/RESULTS_SCOPE.md` for the precise scope of a completed result.
 
 # Formalization status
 
-- The eighteen announced orders and six output families (five Spence-source
+- The thirty-four announced orders and nine output families (eight Spence-source
   families and the cubic family) have complete Lean existence proofs from
   literal finite witnesses. See
   `docs/FORMALIZATION.md` and the portable verification package for their

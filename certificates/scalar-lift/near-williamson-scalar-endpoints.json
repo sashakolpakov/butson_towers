@@ -1,0 +1,4274 @@
+{
+  "schema": "complete-commutative-operator-scalar-endpoints-v1",
+  "T_design": {
+    "T_source": {
+      "order": 631,
+      "actual_alphabet": [
+        -1,
+        0,
+        1
+      ],
+      "supports_partition_every_position": true,
+      "all_periodic_shifts_checked": 631,
+      "summed_circulant_Gram_scale": 631,
+      "generating_rows_int8_sha256": "fe4855aee9e85fc10ba5ca13ce55e7afd037d310d7636067678629e3a6b47ea2",
+      "row_sums": [
+        22,
+        7,
+        7,
+        7
+      ]
+    },
+    "orthogonal_design_order": 2524,
+    "variable_count": 4,
+    "variable_weights": [
+      631,
+      631,
+      631,
+      631
+    ],
+    "source_identity": "D(x)D(x)^T=p*(x0^2+x1^2+x2^2+x3^2)*I_(4p)",
+    "construction": "D(x)=GS(L(x)b), with the literal L table retained below",
+    "L_variable_and_sign": [
+      [
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          2,
+          -1
+        ],
+        [
+          3,
+          -1
+        ]
+      ],
+      [
+        [
+          1,
+          1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          3,
+          1
+        ],
+        [
+          2,
+          -1
+        ]
+      ],
+      [
+        [
+          2,
+          1
+        ],
+        [
+          3,
+          -1
+        ],
+        [
+          0,
+          1
+        ],
+        [
+          1,
+          1
+        ]
+      ],
+      [
+        [
+          3,
+          1
+        ],
+        [
+          2,
+          1
+        ],
+        [
+          1,
+          -1
+        ],
+        [
+          0,
+          1
+        ]
+      ]
+    ],
+    "GS_convention": "The standalone gs function in this recipe; reversal has J_uv=1 when u+v=p-1",
+    "all_polynomial_periodic_Gram_coefficients_checked": 6310,
+    "full_polynomial_Gram_verified": true,
+    "all_circulant_blocks_commute": true,
+    "coefficient_matrices_entry_alphabet": [
+      -1,
+      0,
+      1
+    ],
+    "coefficient_matrices_disjoint_and_cover_every_entry": true,
+    "coefficient_matrices_int8_sha256": [
+      "2c113a74d199300eb90c297e7cc58cf63f19ee70bf4bf6596b99622e26d0330b",
+      "0a69f1ba5e00ae9852dfe298d26fdbdd870af8d2c514b764afeb9abcc1ad6542",
+      "d34628b2fac3cd0b546679224ef5661dccdbb88bb181c64ebcbe270e95555f18",
+      "413bf6e2044646fc92c36eb92cf4d609eb9cf4df78fb5ccbc5aa93512d265d97"
+    ],
+    "full_dense_coefficient_matrix_products_performed": false,
+    "literal_T_source": "artifacts/hadamard-7572/t631.json",
+    "literal_T_source_sha256": "c5497ef485a23f1c99385035eaf02472b4dad4dee9d906d0d6b2aeb2f3680871",
+    "orbit_states": [
+      0,
+      0,
+      5,
+      4,
+      4,
+      0,
+      7,
+      0,
+      7,
+      2,
+      3,
+      0,
+      1,
+      2,
+      6,
+      1,
+      4,
+      2,
+      0,
+      1,
+      1,
+      4,
+      3,
+      4,
+      7,
+      3,
+      3,
+      5,
+      6,
+      2,
+      7
+    ],
+    "multiplier": 458,
+    "multiplier_order": 21
+  },
+  "input_sha256": "be3da66fbf0517cde1e326e6a60c26acaeb03c0a1948b74bff78bcadad00957f",
+  "implementation_sha256": "3d9e971768f2b411e4db33e219a72775abd5ec40cd9b95d98a982a4e2792570f",
+  "outputs": [
+    {
+      "width": 35,
+      "output_order": 88340,
+      "source": {
+        "width": 35,
+        "literal_first_rows_pm": [
+          "+++-+-+-+++--+--+-++--++-++--++----",
+          "---------++++-++----++-++++--------",
+          "---+-++-+-+-++---++---++-+-+-++-+--",
+          "--+-+-++--+--+++----+++--+--++-+-+-"
+        ],
+        "first_matrix_reversed": true,
+        "circulant_entry": "C_j[r,s]=row_j[(s-r) mod w]",
+        "first_matrix_entry": "A_0[r,s]=row_0[(w-1-s-r) mod w]",
+        "all_four_sign_and_symmetric": true,
+        "all_six_complete_commutation_and_amicability_identities_checked": true,
+        "all_summed_integer_Gram_entries_checked": 1225,
+        "source_norm": "sum_j A_j A_j^T=140I_35",
+        "literal_rows_sha256": "66d346e49d60b31823416bec4238e32534e18c7e0909a3231723bf96678e8150",
+        "matrices_sha256": "fb3c17e6749b4d7270b670fdf43496bfb864fdb9e070d45407418dd655e55258",
+        "primary_literal_source": {
+          "url": "https://www.cs.uleth.ca/~zaitsevv/nw/db/NW35_first1000.txt",
+          "final_url": "https://www.cs.uleth.ca/~zaitsevv/nw/db/NW35_first1000.txt",
+          "sha256": "541c095607206c2e67d90cf92656faf5b2e87b8650e8efc3a508fdc5624ae7a3",
+          "bytes": 36000
+        }
+      },
+      "scalar_algebra": "Q[A_0,A_1,A_2,A_3] inside M_w(Q)",
+      "algebra_is_commutative_and_reduced": true,
+      "reason_reduced": "Its generators are commuting real symmetric matrices, hence simultaneously diagonalizable.",
+      "scalar_action": "the explicitly reconstructed matrices on V=Q^w",
+      "conjugation": "identity on the scalar algebra; its represented matrices are symmetric",
+      "module_metric": "I_35 in the standard basis of V",
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 88340,
+      "weighted_source_is_Butson": false,
+      "actual_source_alphabet": "the eight recorded operators +A_j,-A_j, with coincident operators identified",
+      "actual_used_operators": [
+        {
+          "source_index": 0,
+          "sign": -1,
+          "operator_int8_sha256": "8d2884331dfe9fc425af4e6c7ca2aa31ea412b9faf98e91d442e7d25db5e6980"
+        },
+        {
+          "source_index": 0,
+          "sign": 1,
+          "operator_int8_sha256": "845127a66487a330b17157b59304edd25f0d7d1ba086a754fd10bb752310983d"
+        },
+        {
+          "source_index": 1,
+          "sign": -1,
+          "operator_int8_sha256": "7b0af8fd36a1dd858b0ea83ceb5c1970586da8d9ac6a00a6900556e4cb42aac5"
+        },
+        {
+          "source_index": 1,
+          "sign": 1,
+          "operator_int8_sha256": "761721c7eb202afbe5600454af279892d17b238af21fe863d15272543d59ddfe"
+        },
+        {
+          "source_index": 2,
+          "sign": -1,
+          "operator_int8_sha256": "e534fcb2af9b061d854f4879c78e8dc0de08af1bcb3bac454553c85fcb2f484a"
+        },
+        {
+          "source_index": 2,
+          "sign": 1,
+          "operator_int8_sha256": "493b25322bb8c7361d94627048d8c1d2c35af0200920c4e0af61866b3aeee6e8"
+        },
+        {
+          "source_index": 3,
+          "sign": -1,
+          "operator_int8_sha256": "91c3f59e86a6baf71f3e5d98c7b8a25972e318f5ea1bf60fc4c8bbdf18c07bdf"
+        },
+        {
+          "source_index": 3,
+          "sign": 1,
+          "operator_int8_sha256": "e03f201ee47838fad1e6c92de356d0f6cc44e09f9fe61453519bfaf0a117334a"
+        }
+      ],
+      "distinct_used_operator_count": 8,
+      "terminal_frame": "I_35",
+      "terminal_frame_Gram_scale": 1,
+      "rational_order_after_scalar_action": 88340,
+      "endpoint_Gram_scale": 88340,
+      "endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "endpoint_recipe": "sum_j X_j tensor A_j, with the certified T631 signed partition X",
+      "complete_Gram_proof": "sum_i X_i X_i^T tensor A_i A_i^T =631 I tensor sum_i A_i A_i^T; cross terms cancel by the checked amicability identities",
+      "flatness_proof": "Each X position selects exactly one signed A_j block; every entry of each block is a sign.",
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "dense_endpoint_allocated": false,
+      "literal_entry_and_row_recipe_available": true,
+      "literal_row_controls": {
+        "row_indices": [
+          0,
+          1,
+          34,
+          35,
+          44170,
+          88339
+        ],
+        "all_selected_full_rows_are_signs": true,
+        "all_selected_row_pairs_checked_by_exact_bit_counts": true,
+        "complete_Gram_proof": "Full polynomial OD identity and complete exact Williamson norm relation; row checks are interface controls."
+      },
+      "order_status": {
+        "width": 35,
+        "order": 88340,
+        "status": "known",
+        "checked_date": "2026-11-26",
+        "arithmetic_checks": {
+          "N_minus1": {
+            "88339": 1
+          },
+          "N_over2_minus1": {
+            "3": 1,
+            "14723": 1
+          },
+          "Yamada_q": 22083,
+          "Yamada_q_mod8": 3,
+          "Yamada_q_factorization": {
+            "3": 1,
+            "17": 1,
+            "433": 1
+          },
+          "all_divisor_Turyn_and_Paley_block_gates": [
+            {
+              "family": "Paley sixteen-block product",
+              "t": 1,
+              "s": 22085,
+              "q": 88339,
+              "prime_power": true,
+              "congruence_passes": true,
+              "q_factorization": {
+                "88339": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Turyn Williamson input",
+              "t": 1,
+              "s": 22085,
+              "q": 44169,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "3": 1,
+                "14723": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Paley sixteen-block product",
+              "t": 5,
+              "s": 4417,
+              "q": 17667,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "3": 2,
+                "13": 1,
+                "151": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Turyn Williamson input",
+              "t": 5,
+              "s": 4417,
+              "q": 8833,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "11": 2,
+                "73": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Paley sixteen-block product",
+              "t": 7,
+              "s": 3155,
+              "q": 12619,
+              "prime_power": true,
+              "congruence_passes": true,
+              "q_factorization": {
+                "12619": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Turyn Williamson input",
+              "t": 7,
+              "s": 3155,
+              "q": 6309,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "3": 2,
+                "701": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Paley sixteen-block product",
+              "t": 35,
+              "s": 631,
+              "q": 2523,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "3": 1,
+                "29": 2
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Turyn Williamson input",
+              "t": 35,
+              "s": 631,
+              "q": 1261,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "13": 1,
+                "97": 1
+              },
+              "T_input_claimed_known": true
+            }
+          ]
+        },
+        "prior_construction": {
+          "family": "Paley I",
+          "parameters": {
+            "q": 88339
+          },
+          "primary_references": [
+            "https://doi.org/10.1002/sapm1933121311",
+            "https://doi.org/10.1017/S0004972700045019",
+            "https://documents.uow.edu.au/~jennie/WEBPDF/139_1990.pdf"
+          ]
+        }
+      }
+    },
+    {
+      "width": 45,
+      "output_order": 113580,
+      "source": {
+        "width": 45,
+        "literal_first_rows_pm": [
+          "+++-+---++-++-+---++-+++-+-+--+-++--+++-+----",
+          "---++-+-+++++--------------------+++++-+-++--",
+          "+-+--++-+--++---+++-+----+-+++---++--+-++--+-",
+          "++--+-+-++-++--+---+++--+++---+--++-++-+-+--+"
+        ],
+        "first_matrix_reversed": true,
+        "circulant_entry": "C_j[r,s]=row_j[(s-r) mod w]",
+        "first_matrix_entry": "A_0[r,s]=row_0[(w-1-s-r) mod w]",
+        "all_four_sign_and_symmetric": true,
+        "all_six_complete_commutation_and_amicability_identities_checked": true,
+        "all_summed_integer_Gram_entries_checked": 2025,
+        "source_norm": "sum_j A_j A_j^T=180I_45",
+        "literal_rows_sha256": "97cdebbc6a1878516431d411e07a5c8cadad89e1847598456e24b0c7f2558eb7",
+        "matrices_sha256": "80fa6e56419923468a1c4af5da2e01b28cd44e14cb1a361adfa8f0c073d61004",
+        "primary_literal_source": {
+          "url": "https://www.cs.uleth.ca/~zaitsevv/nw/db/NW45_first1000.txt",
+          "final_url": "https://www.cs.uleth.ca/~zaitsevv/nw/db/NW45_first1000.txt",
+          "sha256": "cb4b50d25b6c482ce36f6cf778ed2e3d055228e2ef5a01632ddafae0bb181707",
+          "bytes": 46000
+        }
+      },
+      "scalar_algebra": "Q[A_0,A_1,A_2,A_3] inside M_w(Q)",
+      "algebra_is_commutative_and_reduced": true,
+      "reason_reduced": "Its generators are commuting real symmetric matrices, hence simultaneously diagonalizable.",
+      "scalar_action": "the explicitly reconstructed matrices on V=Q^w",
+      "conjugation": "identity on the scalar algebra; its represented matrices are symmetric",
+      "module_metric": "I_45 in the standard basis of V",
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 113580,
+      "weighted_source_is_Butson": false,
+      "actual_source_alphabet": "the eight recorded operators +A_j,-A_j, with coincident operators identified",
+      "actual_used_operators": [
+        {
+          "source_index": 0,
+          "sign": -1,
+          "operator_int8_sha256": "3f96f9bc694745fd313930106233adcf87e3ceb47ea5f7fa827382cdfae283ed"
+        },
+        {
+          "source_index": 0,
+          "sign": 1,
+          "operator_int8_sha256": "61a641e40b10e4b9b8f75f346836f53b942aea14a7a4b954411a2a7ed6a1e773"
+        },
+        {
+          "source_index": 1,
+          "sign": -1,
+          "operator_int8_sha256": "262f9f1368231ddfa3f4739b1586a169206633db5d2356912f53a63858a51530"
+        },
+        {
+          "source_index": 1,
+          "sign": 1,
+          "operator_int8_sha256": "146a8afd20fafd633d39b340634b74da40ee5995111a25d244032bd4bd58c14e"
+        },
+        {
+          "source_index": 2,
+          "sign": -1,
+          "operator_int8_sha256": "4e5c7c596171b3907c9679fb12b82179ef718c37bc2dc02899b286f67a8db9ff"
+        },
+        {
+          "source_index": 2,
+          "sign": 1,
+          "operator_int8_sha256": "2fa86a534d6b0577a27aaa6d23f55b6ac79222094b278a875c2b60bbeb0b8e42"
+        },
+        {
+          "source_index": 3,
+          "sign": -1,
+          "operator_int8_sha256": "c3f00f33cd7646e7feb8e31ab908b2297dd98cef059a5a6a2ba104a94163bc77"
+        },
+        {
+          "source_index": 3,
+          "sign": 1,
+          "operator_int8_sha256": "c62374c09acbad09d1ceb941a7f41e13da38d64d6b068d12bf7e298d00e33f2e"
+        }
+      ],
+      "distinct_used_operator_count": 8,
+      "terminal_frame": "I_45",
+      "terminal_frame_Gram_scale": 1,
+      "rational_order_after_scalar_action": 113580,
+      "endpoint_Gram_scale": 113580,
+      "endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "endpoint_recipe": "sum_j X_j tensor A_j, with the certified T631 signed partition X",
+      "complete_Gram_proof": "sum_i X_i X_i^T tensor A_i A_i^T =631 I tensor sum_i A_i A_i^T; cross terms cancel by the checked amicability identities",
+      "flatness_proof": "Each X position selects exactly one signed A_j block; every entry of each block is a sign.",
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "dense_endpoint_allocated": false,
+      "literal_entry_and_row_recipe_available": true,
+      "literal_row_controls": {
+        "row_indices": [
+          0,
+          1,
+          44,
+          45,
+          56790,
+          113579
+        ],
+        "all_selected_full_rows_are_signs": true,
+        "all_selected_row_pairs_checked_by_exact_bit_counts": true,
+        "complete_Gram_proof": "Full polynomial OD identity and complete exact Williamson norm relation; row checks are interface controls."
+      },
+      "order_status": {
+        "width": 45,
+        "order": 113580,
+        "status": "known",
+        "checked_date": "2026-11-26",
+        "arithmetic_checks": {
+          "N_minus1": {
+            "53": 1,
+            "2143": 1
+          },
+          "N_over2_minus1": {
+            "109": 1,
+            "521": 1
+          },
+          "Yamada_q": 28393,
+          "Yamada_q_mod8": 1,
+          "Yamada_q_factorization": {
+            "28393": 1
+          },
+          "all_divisor_Turyn_and_Paley_block_gates": [
+            {
+              "family": "Paley sixteen-block product",
+              "t": 1,
+              "s": 28395,
+              "q": 113579,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "53": 1,
+                "2143": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Turyn Williamson input",
+              "t": 1,
+              "s": 28395,
+              "q": 56789,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "109": 1,
+                "521": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Paley sixteen-block product",
+              "t": 3,
+              "s": 9465,
+              "q": 37859,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "17": 2,
+                "131": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Turyn Williamson input",
+              "t": 3,
+              "s": 9465,
+              "q": 18929,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "23": 1,
+                "823": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Paley sixteen-block product",
+              "t": 5,
+              "s": 5679,
+              "q": 22715,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "5": 1,
+                "7": 1,
+                "11": 1,
+                "59": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Turyn Williamson input",
+              "t": 5,
+              "s": 5679,
+              "q": 11357,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "41": 1,
+                "277": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Paley sixteen-block product",
+              "t": 9,
+              "s": 3155,
+              "q": 12619,
+              "prime_power": true,
+              "congruence_passes": true,
+              "q_factorization": {
+                "12619": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Turyn Williamson input",
+              "t": 9,
+              "s": 3155,
+              "q": 6309,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "3": 2,
+                "701": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Paley sixteen-block product",
+              "t": 15,
+              "s": 1893,
+              "q": 7571,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "67": 1,
+                "113": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Turyn Williamson input",
+              "t": 15,
+              "s": 1893,
+              "q": 3785,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "5": 1,
+                "757": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Paley sixteen-block product",
+              "t": 45,
+              "s": 631,
+              "q": 2523,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "3": 1,
+                "29": 2
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Turyn Williamson input",
+              "t": 45,
+              "s": 631,
+              "q": 1261,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "13": 1,
+                "97": 1
+              },
+              "T_input_claimed_known": true
+            }
+          ]
+        },
+        "prior_construction": {
+          "family": "Paley sixteen-block product",
+          "parameters": {
+            "q": 12619,
+            "s": 3155,
+            "t": 9
+          },
+          "primary_references": [
+            "https://doi.org/10.1002/sapm1933121311",
+            "https://doi.org/10.1017/S0004972700045019",
+            "https://documents.uow.edu.au/~jennie/WEBPDF/139_1990.pdf"
+          ]
+        }
+      }
+    },
+    {
+      "width": 47,
+      "output_order": 118628,
+      "source": {
+        "width": 47,
+        "literal_first_rows_pm": [
+          "++-+-+++---+-+--+++-+-+---+--++-++-+--+-++-----",
+          "+-+---+++-++++--------------------++++-+++---+-",
+          "--+++-+----+++-++-+-+--++--+-+-++-+++----+-+++-",
+          "--+++--+--++-++---+--+-++-+--+---++-++--+--+++-"
+        ],
+        "first_matrix_reversed": true,
+        "circulant_entry": "C_j[r,s]=row_j[(s-r) mod w]",
+        "first_matrix_entry": "A_0[r,s]=row_0[(w-1-s-r) mod w]",
+        "all_four_sign_and_symmetric": true,
+        "all_six_complete_commutation_and_amicability_identities_checked": true,
+        "all_summed_integer_Gram_entries_checked": 2209,
+        "source_norm": "sum_j A_j A_j^T=188I_47",
+        "literal_rows_sha256": "4b78981450b3cdd263e16fdccc064797433b897998762341d76cf40cc72d2eda",
+        "matrices_sha256": "7cabf905e8e408a601ad5db3f0f4e47c0ffe24c7a1be493e30639694d80f148b",
+        "primary_literal_source": {
+          "url": "https://www.cs.uleth.ca/~zaitsevv/nw/db/NW47_first1000.txt",
+          "final_url": "https://www.cs.uleth.ca/~zaitsevv/nw/db/NW47_first1000.txt",
+          "sha256": "552ec602f53d469408b47a9ce3bd15d8519b3d5d61cc91a8a888926b7b8b407a",
+          "bytes": 48000
+        }
+      },
+      "scalar_algebra": "Q[A_0,A_1,A_2,A_3] inside M_w(Q)",
+      "algebra_is_commutative_and_reduced": true,
+      "reason_reduced": "Its generators are commuting real symmetric matrices, hence simultaneously diagonalizable.",
+      "scalar_action": "the explicitly reconstructed matrices on V=Q^w",
+      "conjugation": "identity on the scalar algebra; its represented matrices are symmetric",
+      "module_metric": "I_47 in the standard basis of V",
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 118628,
+      "weighted_source_is_Butson": false,
+      "actual_source_alphabet": "the eight recorded operators +A_j,-A_j, with coincident operators identified",
+      "actual_used_operators": [
+        {
+          "source_index": 0,
+          "sign": -1,
+          "operator_int8_sha256": "8c200c00b5ce25531986cfb0619b8486ca2ec60c5193f0513ed1b5527211f580"
+        },
+        {
+          "source_index": 0,
+          "sign": 1,
+          "operator_int8_sha256": "f5a6c760b199f0b3099c44bd5a4e89d2a1f6cc7f2893e91ebe0ce4798e598483"
+        },
+        {
+          "source_index": 1,
+          "sign": -1,
+          "operator_int8_sha256": "872d79d25a41d0a3fec6dafadc4f4f95033a4699da9d30c328b2a7b76365ea29"
+        },
+        {
+          "source_index": 1,
+          "sign": 1,
+          "operator_int8_sha256": "539c98dcc3885a970226e94f7b965c21ba4d9c736c6ebe6ee5b4d8b49e3f31fa"
+        },
+        {
+          "source_index": 2,
+          "sign": -1,
+          "operator_int8_sha256": "02a1ed89acd8e0305e014904db23d0ff6e6bedc5c736d751852af656f1e89bde"
+        },
+        {
+          "source_index": 2,
+          "sign": 1,
+          "operator_int8_sha256": "1419eb9f68e9df81f9057130a4890bde4f48156e3b87f584456498fa7e5b75f1"
+        },
+        {
+          "source_index": 3,
+          "sign": -1,
+          "operator_int8_sha256": "f955ea318a6319fd14a8d24c7b2f0aa0449772f7f450a9d800d86b57c4dd6b84"
+        },
+        {
+          "source_index": 3,
+          "sign": 1,
+          "operator_int8_sha256": "f69390c038d0b7a80fe7b3922b4953f5f3724332c76b4089dd5fafd5737e426c"
+        }
+      ],
+      "distinct_used_operator_count": 8,
+      "terminal_frame": "I_47",
+      "terminal_frame_Gram_scale": 1,
+      "rational_order_after_scalar_action": 118628,
+      "endpoint_Gram_scale": 118628,
+      "endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "endpoint_recipe": "sum_j X_j tensor A_j, with the certified T631 signed partition X",
+      "complete_Gram_proof": "sum_i X_i X_i^T tensor A_i A_i^T =631 I tensor sum_i A_i A_i^T; cross terms cancel by the checked amicability identities",
+      "flatness_proof": "Each X position selects exactly one signed A_j block; every entry of each block is a sign.",
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "dense_endpoint_allocated": false,
+      "literal_entry_and_row_recipe_available": true,
+      "literal_row_controls": {
+        "row_indices": [
+          0,
+          1,
+          46,
+          47,
+          59314,
+          118627
+        ],
+        "all_selected_full_rows_are_signs": true,
+        "all_selected_row_pairs_checked_by_exact_bit_counts": true,
+        "complete_Gram_proof": "Full polynomial OD identity and complete exact Williamson norm relation; row checks are interface controls."
+      },
+      "order_status": {
+        "width": 47,
+        "order": 118628,
+        "status": "new_to_best_of_authors_knowledge",
+        "checked_date": "2026-11-26",
+        "arithmetic_checks": {
+          "N_minus1": {
+            "313": 1,
+            "379": 1
+          },
+          "N_over2_minus1": {
+            "3": 1,
+            "17": 1,
+            "1163": 1
+          },
+          "Yamada_q": 29655,
+          "Yamada_q_mod8": 7,
+          "Yamada_q_factorization": {
+            "3": 2,
+            "5": 1,
+            "659": 1
+          },
+          "all_divisor_Turyn_and_Paley_block_gates": [
+            {
+              "family": "Paley sixteen-block product",
+              "t": 1,
+              "s": 29657,
+              "q": 118627,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "313": 1,
+                "379": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Turyn Williamson input",
+              "t": 1,
+              "s": 29657,
+              "q": 59313,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "3": 1,
+                "17": 1,
+                "1163": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Paley sixteen-block product",
+              "t": 47,
+              "s": 631,
+              "q": 2523,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "3": 1,
+                "29": 2
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Turyn Williamson input",
+              "t": 47,
+              "s": 631,
+              "q": 1261,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "13": 1,
+                "97": 1
+              },
+              "T_input_claimed_known": true
+            }
+          ]
+        },
+        "prior_construction": null
+      }
+    },
+    {
+      "width": 53,
+      "output_order": 133772,
+      "source": {
+        "width": 53,
+        "literal_first_rows_pm": [
+          "++---++-++----+-+-+-+--++++++++--+-+-+-+----++-++----",
+          "+---++-+-+--++-+--++++++-++++-++++++--+-++--+-+-++---",
+          "+-++++--+---+-----++++-++----++-++++-----+---+--++++-",
+          "+---+-++---+-++---+----++-++-++----+---++-+---++-+---"
+        ],
+        "first_matrix_reversed": true,
+        "circulant_entry": "C_j[r,s]=row_j[(s-r) mod w]",
+        "first_matrix_entry": "A_0[r,s]=row_0[(w-1-s-r) mod w]",
+        "all_four_sign_and_symmetric": true,
+        "all_six_complete_commutation_and_amicability_identities_checked": true,
+        "all_summed_integer_Gram_entries_checked": 2809,
+        "source_norm": "sum_j A_j A_j^T=212I_53",
+        "literal_rows_sha256": "d6a870dcd47de577a2c7c65cad1d292ba75c9bb2b8dbac6d2087c6cb846d33f7",
+        "matrices_sha256": "5531e414ffcb761b60bf5a4c2b17b73d21a05223ea6b519dc70a3fec2d569d88",
+        "primary_literal_source": {
+          "url": "https://www.cs.uleth.ca/~zaitsevv/nw/NW53.txt",
+          "final_url": "https://www.cs.uleth.ca/~zaitsevv/nw/NW53.txt",
+          "sha256": "82b5e53c3247730f679fec5ed8e2279e2ea6ad194cbb35c05ba8af0a85616937",
+          "bytes": 216
+        }
+      },
+      "scalar_algebra": "Q[A_0,A_1,A_2,A_3] inside M_w(Q)",
+      "algebra_is_commutative_and_reduced": true,
+      "reason_reduced": "Its generators are commuting real symmetric matrices, hence simultaneously diagonalizable.",
+      "scalar_action": "the explicitly reconstructed matrices on V=Q^w",
+      "conjugation": "identity on the scalar algebra; its represented matrices are symmetric",
+      "module_metric": "I_53 in the standard basis of V",
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 133772,
+      "weighted_source_is_Butson": false,
+      "actual_source_alphabet": "the eight recorded operators +A_j,-A_j, with coincident operators identified",
+      "actual_used_operators": [
+        {
+          "source_index": 0,
+          "sign": -1,
+          "operator_int8_sha256": "3b66b9742a1031ae0d68cb057628f77358723f39279dae71d7eaa569cdecec4d"
+        },
+        {
+          "source_index": 0,
+          "sign": 1,
+          "operator_int8_sha256": "2b7c92a40ee13364b61ae670c9661d728f513f71f07d2486b0fce8776b7aa9cf"
+        },
+        {
+          "source_index": 1,
+          "sign": -1,
+          "operator_int8_sha256": "2a30a17466d62a457fa459a4a95528eb1a509abfd98662a22d4e4af4f899ea18"
+        },
+        {
+          "source_index": 1,
+          "sign": 1,
+          "operator_int8_sha256": "9e3e5be151b33a54b8891a767f4235a813fd271779d45cd552c57451cc54ddaa"
+        },
+        {
+          "source_index": 2,
+          "sign": -1,
+          "operator_int8_sha256": "d3de48ad5f60a7b468e1b0020bd46e1053ea5b0931c60dad1d2552bfa8a32dea"
+        },
+        {
+          "source_index": 2,
+          "sign": 1,
+          "operator_int8_sha256": "d694dfa99203846a1f9e147d92fd9348ad79ba2291a1de9e9675635990cfb960"
+        },
+        {
+          "source_index": 3,
+          "sign": -1,
+          "operator_int8_sha256": "7657a82ec7f7076fb90a3f418f87542daf064868f5e80ae165750536e087f055"
+        },
+        {
+          "source_index": 3,
+          "sign": 1,
+          "operator_int8_sha256": "fdd0e2d9d06e3570000efbecaf68698941b56f7d98837d7f1b14e5572fcad29f"
+        }
+      ],
+      "distinct_used_operator_count": 8,
+      "terminal_frame": "I_53",
+      "terminal_frame_Gram_scale": 1,
+      "rational_order_after_scalar_action": 133772,
+      "endpoint_Gram_scale": 133772,
+      "endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "endpoint_recipe": "sum_j X_j tensor A_j, with the certified T631 signed partition X",
+      "complete_Gram_proof": "sum_i X_i X_i^T tensor A_i A_i^T =631 I tensor sum_i A_i A_i^T; cross terms cancel by the checked amicability identities",
+      "flatness_proof": "Each X position selects exactly one signed A_j block; every entry of each block is a sign.",
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "dense_endpoint_allocated": false,
+      "literal_entry_and_row_recipe_available": true,
+      "literal_row_controls": {
+        "row_indices": [
+          0,
+          1,
+          52,
+          53,
+          66886,
+          133771
+        ],
+        "all_selected_full_rows_are_signs": true,
+        "all_selected_row_pairs_checked_by_exact_bit_counts": true,
+        "complete_Gram_proof": "Full polynomial OD identity and complete exact Williamson norm relation; row checks are interface controls."
+      },
+      "order_status": {
+        "width": 53,
+        "order": 133772,
+        "status": "new_to_best_of_authors_knowledge",
+        "checked_date": "2026-11-26",
+        "arithmetic_checks": {
+          "N_minus1": {
+            "11": 1,
+            "12161": 1
+          },
+          "N_over2_minus1": {
+            "3": 1,
+            "5": 1,
+            "7": 3,
+            "13": 1
+          },
+          "Yamada_q": 33441,
+          "Yamada_q_mod8": 1,
+          "Yamada_q_factorization": {
+            "3": 1,
+            "71": 1,
+            "157": 1
+          },
+          "all_divisor_Turyn_and_Paley_block_gates": [
+            {
+              "family": "Paley sixteen-block product",
+              "t": 1,
+              "s": 33443,
+              "q": 133771,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "11": 1,
+                "12161": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Turyn Williamson input",
+              "t": 1,
+              "s": 33443,
+              "q": 66885,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "3": 1,
+                "5": 1,
+                "7": 3,
+                "13": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Paley sixteen-block product",
+              "t": 53,
+              "s": 631,
+              "q": 2523,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "3": 1,
+                "29": 2
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Turyn Williamson input",
+              "t": 53,
+              "s": 631,
+              "q": 1261,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "13": 1,
+                "97": 1
+              },
+              "T_input_claimed_known": true
+            }
+          ]
+        },
+        "prior_construction": null
+      }
+    },
+    {
+      "width": 59,
+      "output_order": 148916,
+      "source": {
+        "width": 59,
+        "literal_first_rows_pm": [
+          "++----++++---++--+---+-++-+++--+++-++-+---+--++---++++-----",
+          "+----++-++++-+-+++-+-++-+++-+--+-+++-++-+-+++-+-++++-++----",
+          "+--+----++++-+-+-+--+--+---++--++---+--+--+-+-+-++++----+--",
+          "+-----+---+-+--++++++--+---++++++---+--++++++--+-+---+-----"
+        ],
+        "first_matrix_reversed": true,
+        "circulant_entry": "C_j[r,s]=row_j[(s-r) mod w]",
+        "first_matrix_entry": "A_0[r,s]=row_0[(w-1-s-r) mod w]",
+        "all_four_sign_and_symmetric": true,
+        "all_six_complete_commutation_and_amicability_identities_checked": true,
+        "all_summed_integer_Gram_entries_checked": 3481,
+        "source_norm": "sum_j A_j A_j^T=236I_59",
+        "literal_rows_sha256": "c8942f16d5384560bd22e984fffb372b6ea482e54e0460f5fe7614275ed7439d",
+        "matrices_sha256": "d52817a4be4f7aa4052012cd56ee1da286b38a95bd0fe3be0a55a45a80886b1e",
+        "primary_literal_source": {
+          "url": "https://www.cs.uleth.ca/~zaitsevv/nw/NW59.txt",
+          "final_url": "https://www.cs.uleth.ca/~zaitsevv/nw/NW59.txt",
+          "sha256": "edcc7413d9e6d72bb516bf758871c1d45f4221db62abb4518638f2cd5e5d58a3",
+          "bytes": 240
+        }
+      },
+      "scalar_algebra": "Q[A_0,A_1,A_2,A_3] inside M_w(Q)",
+      "algebra_is_commutative_and_reduced": true,
+      "reason_reduced": "Its generators are commuting real symmetric matrices, hence simultaneously diagonalizable.",
+      "scalar_action": "the explicitly reconstructed matrices on V=Q^w",
+      "conjugation": "identity on the scalar algebra; its represented matrices are symmetric",
+      "module_metric": "I_59 in the standard basis of V",
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 148916,
+      "weighted_source_is_Butson": false,
+      "actual_source_alphabet": "the eight recorded operators +A_j,-A_j, with coincident operators identified",
+      "actual_used_operators": [
+        {
+          "source_index": 0,
+          "sign": -1,
+          "operator_int8_sha256": "1971206925e590d186a5d6de381dcac84ccf3b29070e83c51cb1419d0559a180"
+        },
+        {
+          "source_index": 0,
+          "sign": 1,
+          "operator_int8_sha256": "670adecd2feed9a7d40e2cc5d9c5b3421899013da56096c134027fdc3ae19bbf"
+        },
+        {
+          "source_index": 1,
+          "sign": -1,
+          "operator_int8_sha256": "51113b1b6eb2cb4e8fb832a6d13488ccaa4a409476e15e2af55a81bcd82e955f"
+        },
+        {
+          "source_index": 1,
+          "sign": 1,
+          "operator_int8_sha256": "5ce14fb105186de7c523ea38b69d69d446812b1955d4c34860df7cc05d1f8066"
+        },
+        {
+          "source_index": 2,
+          "sign": -1,
+          "operator_int8_sha256": "5238d7a195f88326256a6be3cb070c34bd6d3d17229f31fdba0648461d6fee62"
+        },
+        {
+          "source_index": 2,
+          "sign": 1,
+          "operator_int8_sha256": "9975fe6cdc0462db0a4613885f83e71bdbd3c8d06451d3b419e615f3dd196462"
+        },
+        {
+          "source_index": 3,
+          "sign": -1,
+          "operator_int8_sha256": "85d9958b9452614dff5701f7d1ac4a80e4238236c097b1bf1a67550fc4c364e1"
+        },
+        {
+          "source_index": 3,
+          "sign": 1,
+          "operator_int8_sha256": "6cbf317b7ba85b80cf6502fee5eb49bae51093e14cc81284bca17b73ffc4949b"
+        }
+      ],
+      "distinct_used_operator_count": 8,
+      "terminal_frame": "I_59",
+      "terminal_frame_Gram_scale": 1,
+      "rational_order_after_scalar_action": 148916,
+      "endpoint_Gram_scale": 148916,
+      "endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "endpoint_recipe": "sum_j X_j tensor A_j, with the certified T631 signed partition X",
+      "complete_Gram_proof": "sum_i X_i X_i^T tensor A_i A_i^T =631 I tensor sum_i A_i A_i^T; cross terms cancel by the checked amicability identities",
+      "flatness_proof": "Each X position selects exactly one signed A_j block; every entry of each block is a sign.",
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "dense_endpoint_allocated": false,
+      "literal_entry_and_row_recipe_available": true,
+      "literal_row_controls": {
+        "row_indices": [
+          0,
+          1,
+          58,
+          59,
+          74458,
+          148915
+        ],
+        "all_selected_full_rows_are_signs": true,
+        "all_selected_row_pairs_checked_by_exact_bit_counts": true,
+        "complete_Gram_proof": "Full polynomial OD identity and complete exact Williamson norm relation; row checks are interface controls."
+      },
+      "order_status": {
+        "width": 59,
+        "order": 148916,
+        "status": "new_to_best_of_authors_knowledge",
+        "checked_date": "2026-11-26",
+        "arithmetic_checks": {
+          "N_minus1": {
+            "5": 1,
+            "13": 1,
+            "29": 1,
+            "79": 1
+          },
+          "N_over2_minus1": {
+            "3": 2,
+            "8273": 1
+          },
+          "Yamada_q": 37227,
+          "Yamada_q_mod8": 3,
+          "Yamada_q_factorization": {
+            "3": 1,
+            "12409": 1
+          },
+          "all_divisor_Turyn_and_Paley_block_gates": [
+            {
+              "family": "Paley sixteen-block product",
+              "t": 1,
+              "s": 37229,
+              "q": 148915,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "5": 1,
+                "13": 1,
+                "29": 1,
+                "79": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Turyn Williamson input",
+              "t": 1,
+              "s": 37229,
+              "q": 74457,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "3": 2,
+                "8273": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Paley sixteen-block product",
+              "t": 59,
+              "s": 631,
+              "q": 2523,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "3": 1,
+                "29": 2
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Turyn Williamson input",
+              "t": 59,
+              "s": 631,
+              "q": 1261,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "13": 1,
+                "97": 1
+              },
+              "T_input_claimed_known": true
+            }
+          ]
+        },
+        "prior_construction": null
+      }
+    },
+    {
+      "width": 65,
+      "output_order": 164060,
+      "source": {
+        "width": 65,
+        "literal_first_rows_pm": [
+          "++-+----++--+++-++----+-+--+-+---++++--++-+-----+--+++-++--+-+++-",
+          "++--+-++--+-----+-+---+++++++-++--++-+++++++---+-+-----+--++-+--+",
+          "++-+++-+--+++--+++++++---+--+-+----+-+--+---+++++++--+++--+-+++-+",
+          "+-+--++-++-+-+++---++++++--+-+-++++-+-+--++++++---+++-+-++-++--+-"
+        ],
+        "first_matrix_reversed": true,
+        "circulant_entry": "C_j[r,s]=row_j[(s-r) mod w]",
+        "first_matrix_entry": "A_0[r,s]=row_0[(w-1-s-r) mod w]",
+        "all_four_sign_and_symmetric": true,
+        "all_six_complete_commutation_and_amicability_identities_checked": true,
+        "all_summed_integer_Gram_entries_checked": 4225,
+        "source_norm": "sum_j A_j A_j^T=260I_65",
+        "literal_rows_sha256": "f7592a2a7d7105f87b77ddc083a513c53b1ce870d60dfd4b058c3535954568d5",
+        "matrices_sha256": "56ac2558d42dbeae30b9a2da94e8a2648fb7e28ae07de0392bcd11fe1ca8089f",
+        "primary_literal_source": {
+          "url": "https://www.cs.uleth.ca/~zaitsevv/nw/NW65.txt",
+          "final_url": "https://www.cs.uleth.ca/~zaitsevv/nw/NW65.txt",
+          "sha256": "93ef91ef01754508944f14a12684adc9c3c65d79533faf113d2225d34a92e727",
+          "bytes": 264
+        }
+      },
+      "scalar_algebra": "Q[A_0,A_1,A_2,A_3] inside M_w(Q)",
+      "algebra_is_commutative_and_reduced": true,
+      "reason_reduced": "Its generators are commuting real symmetric matrices, hence simultaneously diagonalizable.",
+      "scalar_action": "the explicitly reconstructed matrices on V=Q^w",
+      "conjugation": "identity on the scalar algebra; its represented matrices are symmetric",
+      "module_metric": "I_65 in the standard basis of V",
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 164060,
+      "weighted_source_is_Butson": false,
+      "actual_source_alphabet": "the eight recorded operators +A_j,-A_j, with coincident operators identified",
+      "actual_used_operators": [
+        {
+          "source_index": 0,
+          "sign": -1,
+          "operator_int8_sha256": "ba4a22de135014f77ae7a393b44597f8184e155232d2539548a485ced2d5d4f9"
+        },
+        {
+          "source_index": 0,
+          "sign": 1,
+          "operator_int8_sha256": "f376201433e80c82124bc1b6a04a909464f58568056030592cdf64f8b14a5244"
+        },
+        {
+          "source_index": 1,
+          "sign": -1,
+          "operator_int8_sha256": "055f44ebea85128c277aff9c4a88e13909d0caa4225ea89272a32afdb504b9d3"
+        },
+        {
+          "source_index": 1,
+          "sign": 1,
+          "operator_int8_sha256": "2323e152309bdcfcdc99a5e3867799034aa936e10f206f683a9621fed0cbae58"
+        },
+        {
+          "source_index": 2,
+          "sign": -1,
+          "operator_int8_sha256": "04ed3935e0e1a42bcd4816a9de7f0ffc340abecc5338ff3625c1837a1ade004a"
+        },
+        {
+          "source_index": 2,
+          "sign": 1,
+          "operator_int8_sha256": "4312a5926b62cb9e8cf333cea5fa0e5c9ad6c218038a486f0dedb67f566413e1"
+        },
+        {
+          "source_index": 3,
+          "sign": -1,
+          "operator_int8_sha256": "7d6ec8b7076e3fe84a5b6dfb66a0e9325aca966486066f420b1238190511e806"
+        },
+        {
+          "source_index": 3,
+          "sign": 1,
+          "operator_int8_sha256": "085acbfb990dfe86db97e3085720c0be711927a7ca21e6751fc5da5701df85c9"
+        }
+      ],
+      "distinct_used_operator_count": 8,
+      "terminal_frame": "I_65",
+      "terminal_frame_Gram_scale": 1,
+      "rational_order_after_scalar_action": 164060,
+      "endpoint_Gram_scale": 164060,
+      "endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "endpoint_recipe": "sum_j X_j tensor A_j, with the certified T631 signed partition X",
+      "complete_Gram_proof": "sum_i X_i X_i^T tensor A_i A_i^T =631 I tensor sum_i A_i A_i^T; cross terms cancel by the checked amicability identities",
+      "flatness_proof": "Each X position selects exactly one signed A_j block; every entry of each block is a sign.",
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "dense_endpoint_allocated": false,
+      "literal_entry_and_row_recipe_available": true,
+      "literal_row_controls": {
+        "row_indices": [
+          0,
+          1,
+          64,
+          65,
+          82030,
+          164059
+        ],
+        "all_selected_full_rows_are_signs": true,
+        "all_selected_row_pairs_checked_by_exact_bit_counts": true,
+        "complete_Gram_proof": "Full polynomial OD identity and complete exact Williamson norm relation; row checks are interface controls."
+      },
+      "order_status": {
+        "width": 65,
+        "order": 164060,
+        "status": "known",
+        "checked_date": "2026-11-26",
+        "arithmetic_checks": {
+          "N_minus1": {
+            "7": 1,
+            "23": 1,
+            "1019": 1
+          },
+          "N_over2_minus1": {
+            "3": 1,
+            "37": 1,
+            "739": 1
+          },
+          "Yamada_q": 41013,
+          "Yamada_q_mod8": 5,
+          "Yamada_q_factorization": {
+            "3": 3,
+            "7": 2,
+            "31": 1
+          },
+          "all_divisor_Turyn_and_Paley_block_gates": [
+            {
+              "family": "Paley sixteen-block product",
+              "t": 1,
+              "s": 41015,
+              "q": 164059,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "7": 1,
+                "23": 1,
+                "1019": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Turyn Williamson input",
+              "t": 1,
+              "s": 41015,
+              "q": 82029,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "3": 1,
+                "37": 1,
+                "739": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Paley sixteen-block product",
+              "t": 5,
+              "s": 8203,
+              "q": 32811,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "3": 1,
+                "10937": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Turyn Williamson input",
+              "t": 5,
+              "s": 8203,
+              "q": 16405,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "5": 1,
+                "17": 1,
+                "193": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Paley sixteen-block product",
+              "t": 13,
+              "s": 3155,
+              "q": 12619,
+              "prime_power": true,
+              "congruence_passes": true,
+              "q_factorization": {
+                "12619": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Turyn Williamson input",
+              "t": 13,
+              "s": 3155,
+              "q": 6309,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "3": 2,
+                "701": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Paley sixteen-block product",
+              "t": 65,
+              "s": 631,
+              "q": 2523,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "3": 1,
+                "29": 2
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Turyn Williamson input",
+              "t": 65,
+              "s": 631,
+              "q": 1261,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "13": 1,
+                "97": 1
+              },
+              "T_input_claimed_known": true
+            }
+          ]
+        },
+        "prior_construction": {
+          "family": "Paley sixteen-block product",
+          "parameters": {
+            "q": 12619,
+            "s": 3155,
+            "t": 13
+          },
+          "primary_references": [
+            "https://doi.org/10.1002/sapm1933121311",
+            "https://doi.org/10.1017/S0004972700045019",
+            "https://documents.uow.edu.au/~jennie/WEBPDF/139_1990.pdf"
+          ]
+        }
+      }
+    },
+    {
+      "width": 67,
+      "output_order": 169108,
+      "source": {
+        "width": 67,
+        "literal_first_rows_pm": [
+          "+-++-+-++--+---+--+++----+-++--+-++-+--+----+-+-+--+++++--++-+-+---",
+          "+--+--+++--++++++-++-----+---+--------+---+-----++-++++++--+++--+--",
+          "++--++---+-+++----++-+-+-+--+----++----+--+-+-+-++----+++-+---++--+",
+          "+-+-++------+++++---+----+-+--++-++-++--+-+----+---+++++------++-+-"
+        ],
+        "first_matrix_reversed": true,
+        "circulant_entry": "C_j[r,s]=row_j[(s-r) mod w]",
+        "first_matrix_entry": "A_0[r,s]=row_0[(w-1-s-r) mod w]",
+        "all_four_sign_and_symmetric": true,
+        "all_six_complete_commutation_and_amicability_identities_checked": true,
+        "all_summed_integer_Gram_entries_checked": 4489,
+        "source_norm": "sum_j A_j A_j^T=268I_67",
+        "literal_rows_sha256": "edb93a64a3430aeac83ad5567c75284319c04de695774b1df56e63fe6e33faf3",
+        "matrices_sha256": "8f3ee065043a43bfd41d3d4f19cc64e0ff8163361a66f3eb0bd73be4dad314bb",
+        "primary_literal_source": {
+          "url": "https://www.cs.uleth.ca/~zaitsevv/nw/NW67.txt",
+          "final_url": "https://www.cs.uleth.ca/~zaitsevv/nw/NW67.txt",
+          "sha256": "429c347b25e2f4eaf0924b5761fff114ce489794ee86da2f30cf5e322e1733a2",
+          "bytes": 272
+        }
+      },
+      "scalar_algebra": "Q[A_0,A_1,A_2,A_3] inside M_w(Q)",
+      "algebra_is_commutative_and_reduced": true,
+      "reason_reduced": "Its generators are commuting real symmetric matrices, hence simultaneously diagonalizable.",
+      "scalar_action": "the explicitly reconstructed matrices on V=Q^w",
+      "conjugation": "identity on the scalar algebra; its represented matrices are symmetric",
+      "module_metric": "I_67 in the standard basis of V",
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 169108,
+      "weighted_source_is_Butson": false,
+      "actual_source_alphabet": "the eight recorded operators +A_j,-A_j, with coincident operators identified",
+      "actual_used_operators": [
+        {
+          "source_index": 0,
+          "sign": -1,
+          "operator_int8_sha256": "f0078afd63a11871ef0a4e055ef5e0f9cc8175ee678ecff376c02e49629ecb13"
+        },
+        {
+          "source_index": 0,
+          "sign": 1,
+          "operator_int8_sha256": "523d27c880a8910aad825741a49b5c6065b6556ceadc7d501b47aaa0fbb215c1"
+        },
+        {
+          "source_index": 1,
+          "sign": -1,
+          "operator_int8_sha256": "543a0844cc4af0167f5faf7e08b3fda571b5945915931f7ab63dc2b45e0376e2"
+        },
+        {
+          "source_index": 1,
+          "sign": 1,
+          "operator_int8_sha256": "d64acb22d46a1bca4313da096f566a733108d880089c032414fc33880835bb98"
+        },
+        {
+          "source_index": 2,
+          "sign": -1,
+          "operator_int8_sha256": "94688fe619699be40e6dabbacd4f7d9e8ffd329fdc4f762c9643d1bef619f624"
+        },
+        {
+          "source_index": 2,
+          "sign": 1,
+          "operator_int8_sha256": "2849db5f1df7d1fef3692f864a04eb49e40bbe4dcb4ac0940ee0d43d9136477a"
+        },
+        {
+          "source_index": 3,
+          "sign": -1,
+          "operator_int8_sha256": "6c41f82904271e519350368f1d76cccc0b00c5e7802a8fd0d4b4ce1d16ad60f1"
+        },
+        {
+          "source_index": 3,
+          "sign": 1,
+          "operator_int8_sha256": "5b94e4cd4132d2b09cbd14fcdb0d0fa254f1e5a38dff6f0e6629e1e2c118b560"
+        }
+      ],
+      "distinct_used_operator_count": 8,
+      "terminal_frame": "I_67",
+      "terminal_frame_Gram_scale": 1,
+      "rational_order_after_scalar_action": 169108,
+      "endpoint_Gram_scale": 169108,
+      "endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "endpoint_recipe": "sum_j X_j tensor A_j, with the certified T631 signed partition X",
+      "complete_Gram_proof": "sum_i X_i X_i^T tensor A_i A_i^T =631 I tensor sum_i A_i A_i^T; cross terms cancel by the checked amicability identities",
+      "flatness_proof": "Each X position selects exactly one signed A_j block; every entry of each block is a sign.",
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "dense_endpoint_allocated": false,
+      "literal_entry_and_row_recipe_available": true,
+      "literal_row_controls": {
+        "row_indices": [
+          0,
+          1,
+          66,
+          67,
+          84554,
+          169107
+        ],
+        "all_selected_full_rows_are_signs": true,
+        "all_selected_row_pairs_checked_by_exact_bit_counts": true,
+        "complete_Gram_proof": "Full polynomial OD identity and complete exact Williamson norm relation; row checks are interface controls."
+      },
+      "order_status": {
+        "width": 67,
+        "order": 169108,
+        "status": "new_to_best_of_authors_knowledge",
+        "checked_date": "2026-11-26",
+        "arithmetic_checks": {
+          "N_minus1": {
+            "3": 1,
+            "56369": 1
+          },
+          "N_over2_minus1": {
+            "7": 1,
+            "47": 1,
+            "257": 1
+          },
+          "Yamada_q": 42275,
+          "Yamada_q_mod8": 3,
+          "Yamada_q_factorization": {
+            "5": 2,
+            "19": 1,
+            "89": 1
+          },
+          "all_divisor_Turyn_and_Paley_block_gates": [
+            {
+              "family": "Paley sixteen-block product",
+              "t": 1,
+              "s": 42277,
+              "q": 169107,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "3": 1,
+                "56369": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Turyn Williamson input",
+              "t": 1,
+              "s": 42277,
+              "q": 84553,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "7": 1,
+                "47": 1,
+                "257": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Paley sixteen-block product",
+              "t": 67,
+              "s": 631,
+              "q": 2523,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "3": 1,
+                "29": 2
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Turyn Williamson input",
+              "t": 67,
+              "s": 631,
+              "q": 1261,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "13": 1,
+                "97": 1
+              },
+              "T_input_claimed_known": true
+            }
+          ]
+        },
+        "prior_construction": null
+      }
+    },
+    {
+      "width": 69,
+      "output_order": 174156,
+      "source": {
+        "width": 69,
+        "literal_first_rows_pm": [
+          "+-----+-+--++-++-++++---+--++-+-+-++-+-+-++--+---++++-++-++--+-+-----",
+          "++++++-+-++--+--+----+++-++--+-+-+--+-+-+--++-+++----+--+--++-+-+++++",
+          "+++--++-----++++-+----++---+---+-+--+-+---+---++----+-++++-----++--++",
+          "+++--++-----++++-+----++---+---+-+--+-+---+---++----+-++++-----++--++"
+        ],
+        "first_matrix_reversed": false,
+        "circulant_entry": "C_j[r,s]=row_j[(s-r) mod w]",
+        "first_matrix_entry": "A_0[r,s]=row_0[(s-r) mod w]",
+        "all_four_sign_and_symmetric": true,
+        "all_six_complete_commutation_and_amicability_identities_checked": true,
+        "all_summed_integer_Gram_entries_checked": 4761,
+        "source_norm": "sum_j A_j A_j^T=276I_69",
+        "literal_rows_sha256": "f2283a3ee736bcca9e52cc61c366a004c667fcbf198e0e78a8f6f3b713362f15",
+        "matrices_sha256": "869d00d9aee04fd176e76d694d4c85e888143f94a0a7f152b3d3fadf2fce311a",
+        "primary_literal_source": {
+          "url": "https://zenodo.org/records/1195693/files/williamson-69.txt?download=1",
+          "final_url": "https://zenodo.org/records/1195693/files/williamson-69.txt?download=1",
+          "sha256": "bfc68b4172d52e881fcd417d97b4a9b779b2dca57767fa54276fff0173f9f9f3",
+          "bytes": 280
+        }
+      },
+      "scalar_algebra": "Q[A_0,A_1,A_2,A_3] inside M_w(Q)",
+      "algebra_is_commutative_and_reduced": true,
+      "reason_reduced": "Its generators are commuting real symmetric matrices, hence simultaneously diagonalizable.",
+      "scalar_action": "the explicitly reconstructed matrices on V=Q^w",
+      "conjugation": "identity on the scalar algebra; its represented matrices are symmetric",
+      "module_metric": "I_69 in the standard basis of V",
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 174156,
+      "weighted_source_is_Butson": false,
+      "actual_source_alphabet": "the eight recorded operators +A_j,-A_j, with coincident operators identified",
+      "actual_used_operators": [
+        {
+          "source_index": 0,
+          "sign": -1,
+          "operator_int8_sha256": "e6edde60f23c3dc5440030a7a628961bf01711dc599b0494a12778192bcdc31f"
+        },
+        {
+          "source_index": 0,
+          "sign": 1,
+          "operator_int8_sha256": "d4645346a24b409ebbc1c4e9728b388fc0719c40fa34f95b0e7c4b566d4ad7ba"
+        },
+        {
+          "source_index": 1,
+          "sign": -1,
+          "operator_int8_sha256": "5b7af9e1fdc2f0030233a7f82b7a7d94a1f2837322a45bca73c0463b4d45084a"
+        },
+        {
+          "source_index": 1,
+          "sign": 1,
+          "operator_int8_sha256": "600670ab69ff12e23e79885662e977a2b9765a957501fc7fe142a88cc739b3cf"
+        },
+        {
+          "source_index": 2,
+          "sign": -1,
+          "operator_int8_sha256": "26d5a88b8832cc6466e8d6b93c26b4a48befc1eb713ed0213f27daa08e3aa120"
+        },
+        {
+          "source_index": 2,
+          "sign": 1,
+          "operator_int8_sha256": "d291e0188bdbb8eb1932c9abf8f2d8ae3630406719b317687e98a6193a43db0e"
+        },
+        {
+          "source_index": 3,
+          "sign": -1,
+          "operator_int8_sha256": "26d5a88b8832cc6466e8d6b93c26b4a48befc1eb713ed0213f27daa08e3aa120"
+        },
+        {
+          "source_index": 3,
+          "sign": 1,
+          "operator_int8_sha256": "d291e0188bdbb8eb1932c9abf8f2d8ae3630406719b317687e98a6193a43db0e"
+        }
+      ],
+      "distinct_used_operator_count": 6,
+      "terminal_frame": "I_69",
+      "terminal_frame_Gram_scale": 1,
+      "rational_order_after_scalar_action": 174156,
+      "endpoint_Gram_scale": 174156,
+      "endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "endpoint_recipe": "sum_j X_j tensor A_j, with the certified T631 signed partition X",
+      "complete_Gram_proof": "sum_i X_i X_i^T tensor A_i A_i^T =631 I tensor sum_i A_i A_i^T; cross terms cancel by the checked amicability identities",
+      "flatness_proof": "Each X position selects exactly one signed A_j block; every entry of each block is a sign.",
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "dense_endpoint_allocated": false,
+      "literal_entry_and_row_recipe_available": true,
+      "literal_row_controls": {
+        "row_indices": [
+          0,
+          1,
+          68,
+          69,
+          87078,
+          174155
+        ],
+        "all_selected_full_rows_are_signs": true,
+        "all_selected_row_pairs_checked_by_exact_bit_counts": true,
+        "complete_Gram_proof": "Full polynomial OD identity and complete exact Williamson norm relation; row checks are interface controls."
+      },
+      "order_status": {
+        "width": 69,
+        "order": 174156,
+        "status": "new_to_best_of_authors_knowledge",
+        "checked_date": "2026-11-26",
+        "arithmetic_checks": {
+          "N_minus1": {
+            "5": 1,
+            "61": 1,
+            "571": 1
+          },
+          "N_over2_minus1": {
+            "19": 1,
+            "4583": 1
+          },
+          "Yamada_q": 43537,
+          "Yamada_q_mod8": 1,
+          "Yamada_q_factorization": {
+            "13": 1,
+            "17": 1,
+            "197": 1
+          },
+          "all_divisor_Turyn_and_Paley_block_gates": [
+            {
+              "family": "Paley sixteen-block product",
+              "t": 1,
+              "s": 43539,
+              "q": 174155,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "5": 1,
+                "61": 1,
+                "571": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Turyn Williamson input",
+              "t": 1,
+              "s": 43539,
+              "q": 87077,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "19": 1,
+                "4583": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Paley sixteen-block product",
+              "t": 3,
+              "s": 14513,
+              "q": 58051,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "7": 1,
+                "8293": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Turyn Williamson input",
+              "t": 3,
+              "s": 14513,
+              "q": 29025,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "3": 3,
+                "5": 2,
+                "43": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Paley sixteen-block product",
+              "t": 23,
+              "s": 1893,
+              "q": 7571,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "67": 1,
+                "113": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Turyn Williamson input",
+              "t": 23,
+              "s": 1893,
+              "q": 3785,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "5": 1,
+                "757": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Paley sixteen-block product",
+              "t": 69,
+              "s": 631,
+              "q": 2523,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "3": 1,
+                "29": 2
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Turyn Williamson input",
+              "t": 69,
+              "s": 631,
+              "q": 1261,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "13": 1,
+                "97": 1
+              },
+              "T_input_claimed_known": true
+            }
+          ]
+        },
+        "prior_construction": null
+      }
+    },
+    {
+      "width": 73,
+      "output_order": 184252,
+      "source": {
+        "width": 73,
+        "literal_first_rows_pm": [
+          "+-+-+++----+---+++++-------++---++-+-+--+-++++-++++++--+-+--++-+--+-+-++-",
+          "+-----++--+-+++--+-+++++-+---+++--++--++--+++---+-+++++-+--+++-+--++-----",
+          "+-+--++-------+-+-+++++--+--+-+--++----++--+-+--+--+++++-+-+-------++--+-",
+          "+---++-+--++-+++-+--+++---+-+++++++-++-+++++++-+---+++--+-+++-++--+-++---"
+        ],
+        "first_matrix_reversed": true,
+        "circulant_entry": "C_j[r,s]=row_j[(s-r) mod w]",
+        "first_matrix_entry": "A_0[r,s]=row_0[(w-1-s-r) mod w]",
+        "all_four_sign_and_symmetric": true,
+        "all_six_complete_commutation_and_amicability_identities_checked": true,
+        "all_summed_integer_Gram_entries_checked": 5329,
+        "source_norm": "sum_j A_j A_j^T=292I_73",
+        "literal_rows_sha256": "b4b8cdc94e7c60c1de4728e916af1012960fd836a1de46ff2cbe60ffecda1973",
+        "matrices_sha256": "99b0474e98ee8b269d01c48b98d60cdf26ca93ceff4392d9f895a0adfca99581",
+        "primary_literal_source": {
+          "url": "https://www.cs.uleth.ca/~zaitsevv/nw/NW73.txt",
+          "final_url": "https://www.cs.uleth.ca/~zaitsevv/nw/NW73.txt",
+          "sha256": "94b4bf2b6c0ab6aa51a110c994dcef93a2ce5beeba9af3f5535b07580ec44ab7",
+          "bytes": 296
+        }
+      },
+      "scalar_algebra": "Q[A_0,A_1,A_2,A_3] inside M_w(Q)",
+      "algebra_is_commutative_and_reduced": true,
+      "reason_reduced": "Its generators are commuting real symmetric matrices, hence simultaneously diagonalizable.",
+      "scalar_action": "the explicitly reconstructed matrices on V=Q^w",
+      "conjugation": "identity on the scalar algebra; its represented matrices are symmetric",
+      "module_metric": "I_73 in the standard basis of V",
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 184252,
+      "weighted_source_is_Butson": false,
+      "actual_source_alphabet": "the eight recorded operators +A_j,-A_j, with coincident operators identified",
+      "actual_used_operators": [
+        {
+          "source_index": 0,
+          "sign": -1,
+          "operator_int8_sha256": "6457c72bc5005de8ffdcf2f6a76790968113b31e007a6eba13d226c874016595"
+        },
+        {
+          "source_index": 0,
+          "sign": 1,
+          "operator_int8_sha256": "06b650739d881387e41ffbe88318a898670ca8c99d76fb1a9984e3002c1c494b"
+        },
+        {
+          "source_index": 1,
+          "sign": -1,
+          "operator_int8_sha256": "d069562cc37f36dfb168d9eb7de393b5ef0f3627d5714716aee2eab583d0cf05"
+        },
+        {
+          "source_index": 1,
+          "sign": 1,
+          "operator_int8_sha256": "6dbdcd61beada0f7c36faa3f4ce18c2c1c657185008c944d4060ad21098516a5"
+        },
+        {
+          "source_index": 2,
+          "sign": -1,
+          "operator_int8_sha256": "9e9ec204d3bcfd6657909fbad25e18feb6bc7c9ba3e15345d4d13e053c266bf5"
+        },
+        {
+          "source_index": 2,
+          "sign": 1,
+          "operator_int8_sha256": "92184ffcc1587e2961ad11bd4fe128544bced10a6c30070c65be9871680aceb4"
+        },
+        {
+          "source_index": 3,
+          "sign": -1,
+          "operator_int8_sha256": "c1ee07657f7a05a9b2b72812990dd592a7b15056033f0542d64e25b8027cd0e3"
+        },
+        {
+          "source_index": 3,
+          "sign": 1,
+          "operator_int8_sha256": "f0c017d8a7cb7c5c0263c02dd31c6ba22b3c7f86d0095b0ebd1a44907b45cdd0"
+        }
+      ],
+      "distinct_used_operator_count": 8,
+      "terminal_frame": "I_73",
+      "terminal_frame_Gram_scale": 1,
+      "rational_order_after_scalar_action": 184252,
+      "endpoint_Gram_scale": 184252,
+      "endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "endpoint_recipe": "sum_j X_j tensor A_j, with the certified T631 signed partition X",
+      "complete_Gram_proof": "sum_i X_i X_i^T tensor A_i A_i^T =631 I tensor sum_i A_i A_i^T; cross terms cancel by the checked amicability identities",
+      "flatness_proof": "Each X position selects exactly one signed A_j block; every entry of each block is a sign.",
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "dense_endpoint_allocated": false,
+      "literal_entry_and_row_recipe_available": true,
+      "literal_row_controls": {
+        "row_indices": [
+          0,
+          1,
+          72,
+          73,
+          92126,
+          184251
+        ],
+        "all_selected_full_rows_are_signs": true,
+        "all_selected_row_pairs_checked_by_exact_bit_counts": true,
+        "complete_Gram_proof": "Full polynomial OD identity and complete exact Williamson norm relation; row checks are interface controls."
+      },
+      "order_status": {
+        "width": 73,
+        "order": 184252,
+        "status": "new_to_best_of_authors_knowledge",
+        "checked_date": "2026-11-26",
+        "arithmetic_checks": {
+          "N_minus1": {
+            "3": 1,
+            "61417": 1
+          },
+          "N_over2_minus1": {
+            "5": 3,
+            "11": 1,
+            "67": 1
+          },
+          "Yamada_q": 46061,
+          "Yamada_q_mod8": 5,
+          "Yamada_q_factorization": {
+            "46061": 1
+          },
+          "all_divisor_Turyn_and_Paley_block_gates": [
+            {
+              "family": "Paley sixteen-block product",
+              "t": 1,
+              "s": 46063,
+              "q": 184251,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "3": 1,
+                "61417": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Turyn Williamson input",
+              "t": 1,
+              "s": 46063,
+              "q": 92125,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "5": 3,
+                "11": 1,
+                "67": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Paley sixteen-block product",
+              "t": 73,
+              "s": 631,
+              "q": 2523,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "3": 1,
+                "29": 2
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Turyn Williamson input",
+              "t": 73,
+              "s": 631,
+              "q": 1261,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "13": 1,
+                "97": 1
+              },
+              "T_input_claimed_known": true
+            }
+          ]
+        },
+        "prior_construction": null,
+        "Yamada_unavailable_input": {
+          "order": 23032,
+          "condition": "skew Hadamard",
+          "record": "https://github.com/vatskishan03/Hadamard/blob/main/FRONTIER.md",
+          "detail": "Its underlying real order8*2879 remains unresolved in the dated frontier."
+        }
+      }
+    },
+    {
+      "width": 79,
+      "output_order": 199396,
+      "source": {
+        "width": 79,
+        "literal_first_rows_pm": [
+          "+---+++---+--++-----+---+-----+--++-+++---------+----+--+-+++++--+----++++--+++",
+          "+-++--+++--+--+-+-----++++++-+--+--+++-++-+++--+--+-++++++-----+-+--+--+++--++-",
+          "++---+-++-+++-+++--++-++-+-+-+-++-+----------+-++-+-+-+-++-++--+++-+++-++-+---+",
+          "++-+--+---++---++-+-+-+-+++++---++++--+--+--++++---+++++-+-+-+-++---++---+--+-+"
+        ],
+        "first_matrix_reversed": true,
+        "circulant_entry": "C_j[r,s]=row_j[(s-r) mod w]",
+        "first_matrix_entry": "A_0[r,s]=row_0[(w-1-s-r) mod w]",
+        "all_four_sign_and_symmetric": true,
+        "all_six_complete_commutation_and_amicability_identities_checked": true,
+        "all_summed_integer_Gram_entries_checked": 6241,
+        "source_norm": "sum_j A_j A_j^T=316I_79",
+        "literal_rows_sha256": "e638d229e1d3768a3377bc541dbad0618c30cbd326ecdac07ba55d82885a8332",
+        "matrices_sha256": "f1dbab4bc71bf838082ae850b5344c247da342691eaf99da985b48fca372dd41",
+        "primary_literal_source": {
+          "url": "https://www.cs.uleth.ca/~zaitsevv/nw/NW79.txt",
+          "final_url": "https://www.cs.uleth.ca/~zaitsevv/nw/NW79.txt",
+          "sha256": "7538d5a1ad9b3595e17f6752313ef533721e39bbd94e4459efaaa66e23601ecc",
+          "bytes": 320
+        }
+      },
+      "scalar_algebra": "Q[A_0,A_1,A_2,A_3] inside M_w(Q)",
+      "algebra_is_commutative_and_reduced": true,
+      "reason_reduced": "Its generators are commuting real symmetric matrices, hence simultaneously diagonalizable.",
+      "scalar_action": "the explicitly reconstructed matrices on V=Q^w",
+      "conjugation": "identity on the scalar algebra; its represented matrices are symmetric",
+      "module_metric": "I_79 in the standard basis of V",
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 199396,
+      "weighted_source_is_Butson": false,
+      "actual_source_alphabet": "the eight recorded operators +A_j,-A_j, with coincident operators identified",
+      "actual_used_operators": [
+        {
+          "source_index": 0,
+          "sign": -1,
+          "operator_int8_sha256": "46df2bcafd2bed90930b6172119e6509c8ef9f3af75f7fca0af998246c3e8eeb"
+        },
+        {
+          "source_index": 0,
+          "sign": 1,
+          "operator_int8_sha256": "9d50319fd2b689f032710b846a624a0f991cd4c81aa423e87e9c53d15bf08b46"
+        },
+        {
+          "source_index": 1,
+          "sign": -1,
+          "operator_int8_sha256": "6032c4214b8c0838821036e000669865323a6b6c432a83fb395df1e06a3e4542"
+        },
+        {
+          "source_index": 1,
+          "sign": 1,
+          "operator_int8_sha256": "7477061305fea09e7a0c71ef58214a01962d588c276c8fec7cc37971d6b81ea7"
+        },
+        {
+          "source_index": 2,
+          "sign": -1,
+          "operator_int8_sha256": "08ebd49d5299b280a7a6d945dbbeff070fe3cd382aeb1a69d3b10660f687bd13"
+        },
+        {
+          "source_index": 2,
+          "sign": 1,
+          "operator_int8_sha256": "796db3e6b2d2e23d9ce6c12747228bfc114f0a0aebb0ae6038154c6532dd0548"
+        },
+        {
+          "source_index": 3,
+          "sign": -1,
+          "operator_int8_sha256": "4700dfde74ce86ac378afb2da30a8267734e1da9198ed09e66a40704acace168"
+        },
+        {
+          "source_index": 3,
+          "sign": 1,
+          "operator_int8_sha256": "e33ab266ea0846d047e2c6a83aeb646424331bae61c913e1e0161f33133ad336"
+        }
+      ],
+      "distinct_used_operator_count": 8,
+      "terminal_frame": "I_79",
+      "terminal_frame_Gram_scale": 1,
+      "rational_order_after_scalar_action": 199396,
+      "endpoint_Gram_scale": 199396,
+      "endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "endpoint_recipe": "sum_j X_j tensor A_j, with the certified T631 signed partition X",
+      "complete_Gram_proof": "sum_i X_i X_i^T tensor A_i A_i^T =631 I tensor sum_i A_i A_i^T; cross terms cancel by the checked amicability identities",
+      "flatness_proof": "Each X position selects exactly one signed A_j block; every entry of each block is a sign.",
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "dense_endpoint_allocated": false,
+      "literal_entry_and_row_recipe_available": true,
+      "literal_row_controls": {
+        "row_indices": [
+          0,
+          1,
+          78,
+          79,
+          99698,
+          199395
+        ],
+        "all_selected_full_rows_are_signs": true,
+        "all_selected_row_pairs_checked_by_exact_bit_counts": true,
+        "complete_Gram_proof": "Full polynomial OD identity and complete exact Williamson norm relation; row checks are interface controls."
+      },
+      "order_status": {
+        "width": 79,
+        "order": 199396,
+        "status": "new_to_best_of_authors_knowledge",
+        "checked_date": "2026-11-26",
+        "arithmetic_checks": {
+          "N_minus1": {
+            "3": 3,
+            "5": 1,
+            "7": 1,
+            "211": 1
+          },
+          "N_over2_minus1": {
+            "13": 1,
+            "7669": 1
+          },
+          "Yamada_q": 49847,
+          "Yamada_q_mod8": 7,
+          "Yamada_q_factorization": {
+            "7": 1,
+            "7121": 1
+          },
+          "all_divisor_Turyn_and_Paley_block_gates": [
+            {
+              "family": "Paley sixteen-block product",
+              "t": 1,
+              "s": 49849,
+              "q": 199395,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "3": 3,
+                "5": 1,
+                "7": 1,
+                "211": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Turyn Williamson input",
+              "t": 1,
+              "s": 49849,
+              "q": 99697,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "13": 1,
+                "7669": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Paley sixteen-block product",
+              "t": 79,
+              "s": 631,
+              "q": 2523,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "3": 1,
+                "29": 2
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Turyn Williamson input",
+              "t": 79,
+              "s": 631,
+              "q": 1261,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "13": 1,
+                "97": 1
+              },
+              "T_input_claimed_known": true
+            }
+          ]
+        },
+        "prior_construction": null
+      }
+    },
+    {
+      "width": 91,
+      "output_order": 229684,
+      "source": {
+        "width": 91,
+        "literal_first_rows_pm": [
+          "+---+-+-+--++++--+-++---+-+--+++-+++++--+-+------+-++-+++++-+-+-+--+----+++--+-++--+-+-+++-",
+          "+---++++++++--+-+++++++--+---++----+-++-+-+--++--+-+-++-+----++---+--+++++++-+--++++++++---",
+          "+++--++-++-++-+-++++-+++---++--+---++-+-+++------+++-+-++---+--++---+++-++++-+-++-++-++--++",
+          "+++++--++-+++-+-+--++-+-----++-+---++++--+++-++-+++--++++---+-++-----+-++--+-+-+++-++--++++"
+        ],
+        "first_matrix_reversed": true,
+        "circulant_entry": "C_j[r,s]=row_j[(s-r) mod w]",
+        "first_matrix_entry": "A_0[r,s]=row_0[(w-1-s-r) mod w]",
+        "all_four_sign_and_symmetric": true,
+        "all_six_complete_commutation_and_amicability_identities_checked": true,
+        "all_summed_integer_Gram_entries_checked": 8281,
+        "source_norm": "sum_j A_j A_j^T=364I_91",
+        "literal_rows_sha256": "1b036567418c7367c446274359eb967a21244a1ba4dea15ec9944300a726d0a9",
+        "matrices_sha256": "20f7d4aa48746dd2b31427b440adca2e86a4b061957e92cf4099068196ae70f0",
+        "primary_literal_source": {
+          "url": "https://www.cs.uleth.ca/~zaitsevv/nw/NW91.txt",
+          "final_url": "https://www.cs.uleth.ca/~zaitsevv/nw/NW91.txt",
+          "sha256": "bc6943c87bce69fa0a6bbb2c6e964c3b44d667c4271c8894c28e928bef40880a",
+          "bytes": 368
+        }
+      },
+      "scalar_algebra": "Q[A_0,A_1,A_2,A_3] inside M_w(Q)",
+      "algebra_is_commutative_and_reduced": true,
+      "reason_reduced": "Its generators are commuting real symmetric matrices, hence simultaneously diagonalizable.",
+      "scalar_action": "the explicitly reconstructed matrices on V=Q^w",
+      "conjugation": "identity on the scalar algebra; its represented matrices are symmetric",
+      "module_metric": "I_91 in the standard basis of V",
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 229684,
+      "weighted_source_is_Butson": false,
+      "actual_source_alphabet": "the eight recorded operators +A_j,-A_j, with coincident operators identified",
+      "actual_used_operators": [
+        {
+          "source_index": 0,
+          "sign": -1,
+          "operator_int8_sha256": "dc500330b028dec1a8a204f17a5eb1b25a996aaac37d1e6f176744f2e2c28d99"
+        },
+        {
+          "source_index": 0,
+          "sign": 1,
+          "operator_int8_sha256": "74b83beb3388e9d0a8cfa1f17996a8e9cb217743ffc801b73470fa627520dfac"
+        },
+        {
+          "source_index": 1,
+          "sign": -1,
+          "operator_int8_sha256": "e820cbc13981e0da9de86ebb2b06d0df322bf602ae87d6fe2c7632f3adc69804"
+        },
+        {
+          "source_index": 1,
+          "sign": 1,
+          "operator_int8_sha256": "bab11edaa02700dcf36e526721661d5e429ebbd8417453c71c40acc02e3084c8"
+        },
+        {
+          "source_index": 2,
+          "sign": -1,
+          "operator_int8_sha256": "de2e2acac225e63833761a08c3baa63fd57143198f713cd45e761c65310a6bd7"
+        },
+        {
+          "source_index": 2,
+          "sign": 1,
+          "operator_int8_sha256": "d3058703dd47a14aa6bbec6cf7bd5645110a99434a1eb06d7edf6da62f5891f3"
+        },
+        {
+          "source_index": 3,
+          "sign": -1,
+          "operator_int8_sha256": "7c7437f9c5f60d424205f95ed80ceaf30bf53ccf909852c133ef6c387707994d"
+        },
+        {
+          "source_index": 3,
+          "sign": 1,
+          "operator_int8_sha256": "4643306a6564867b82d852ed1c1c65db1c19bcc5692993da6f71bd8f37de838a"
+        }
+      ],
+      "distinct_used_operator_count": 8,
+      "terminal_frame": "I_91",
+      "terminal_frame_Gram_scale": 1,
+      "rational_order_after_scalar_action": 229684,
+      "endpoint_Gram_scale": 229684,
+      "endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "endpoint_recipe": "sum_j X_j tensor A_j, with the certified T631 signed partition X",
+      "complete_Gram_proof": "sum_i X_i X_i^T tensor A_i A_i^T =631 I tensor sum_i A_i A_i^T; cross terms cancel by the checked amicability identities",
+      "flatness_proof": "Each X position selects exactly one signed A_j block; every entry of each block is a sign.",
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "dense_endpoint_allocated": false,
+      "literal_entry_and_row_recipe_available": true,
+      "literal_row_controls": {
+        "row_indices": [
+          0,
+          1,
+          90,
+          91,
+          114842,
+          229683
+        ],
+        "all_selected_full_rows_are_signs": true,
+        "all_selected_row_pairs_checked_by_exact_bit_counts": true,
+        "complete_Gram_proof": "Full polynomial OD identity and complete exact Williamson norm relation; row checks are interface controls."
+      },
+      "order_status": {
+        "width": 91,
+        "order": 229684,
+        "status": "new_to_best_of_authors_knowledge",
+        "checked_date": "2026-11-26",
+        "arithmetic_checks": {
+          "N_minus1": {
+            "3": 1,
+            "76561": 1
+          },
+          "N_over2_minus1": {
+            "41": 1,
+            "2801": 1
+          },
+          "Yamada_q": 57419,
+          "Yamada_q_mod8": 3,
+          "Yamada_q_factorization": {
+            "67": 1,
+            "857": 1
+          },
+          "all_divisor_Turyn_and_Paley_block_gates": [
+            {
+              "family": "Paley sixteen-block product",
+              "t": 1,
+              "s": 57421,
+              "q": 229683,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "3": 1,
+                "76561": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Turyn Williamson input",
+              "t": 1,
+              "s": 57421,
+              "q": 114841,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "41": 1,
+                "2801": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Paley sixteen-block product",
+              "t": 7,
+              "s": 8203,
+              "q": 32811,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "3": 1,
+                "10937": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Turyn Williamson input",
+              "t": 7,
+              "s": 8203,
+              "q": 16405,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "5": 1,
+                "17": 1,
+                "193": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Paley sixteen-block product",
+              "t": 13,
+              "s": 4417,
+              "q": 17667,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "3": 2,
+                "13": 1,
+                "151": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Turyn Williamson input",
+              "t": 13,
+              "s": 4417,
+              "q": 8833,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "11": 2,
+                "73": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Paley sixteen-block product",
+              "t": 91,
+              "s": 631,
+              "q": 2523,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "3": 1,
+                "29": 2
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Turyn Williamson input",
+              "t": 91,
+              "s": 631,
+              "q": 1261,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "13": 1,
+                "97": 1
+              },
+              "T_input_claimed_known": true
+            }
+          ]
+        },
+        "prior_construction": null,
+        "already_completed_project_order": true,
+        "earlier_recipe": "Spence source q13,r1"
+      }
+    },
+    {
+      "width": 93,
+      "output_order": 234732,
+      "source": {
+        "width": 93,
+        "literal_first_rows_pm": [
+          "++--++-+--+-++--++++-+-+++-++--++++-++----+-+-+-++---++-+---++++++-+----+----++--++-+--++-+--",
+          "++-----++++-+-++++-+-++-+-+-------++-+-+-----+--+-----+-+-++-------+-+-++-+-++++-+-++++-----+",
+          "+---+---++--+-+---+++-++-+++-+--++-----+----++++++----+-----++--+-+++-++-+++---+-+--++---+---",
+          "++-+-+--++++-++------++--+--++---+----+++-+--+--+--+-+++----+---++--+--++------++-++++--+-+-+"
+        ],
+        "first_matrix_reversed": true,
+        "circulant_entry": "C_j[r,s]=row_j[(s-r) mod w]",
+        "first_matrix_entry": "A_0[r,s]=row_0[(w-1-s-r) mod w]",
+        "all_four_sign_and_symmetric": true,
+        "all_six_complete_commutation_and_amicability_identities_checked": true,
+        "all_summed_integer_Gram_entries_checked": 8649,
+        "source_norm": "sum_j A_j A_j^T=372I_93",
+        "literal_rows_sha256": "b32920dedd3ec81477b8fb138f6a3ced47b67bcc5487e879b52da9b716d25354",
+        "matrices_sha256": "224983b54737580d5c8bf55c2c354bdc342ec90d15b2b93f4ebe8c7c9018f9cb",
+        "primary_literal_source": {
+          "url": "https://www.cs.uleth.ca/~zaitsevv/nw/NW93.txt",
+          "final_url": "https://www.cs.uleth.ca/~zaitsevv/nw/NW93.txt",
+          "sha256": "d935f2dcfa68e29e6fdce125bba77f9dfa807d35221c11c2f618bc03ae97d76f",
+          "bytes": 376
+        }
+      },
+      "scalar_algebra": "Q[A_0,A_1,A_2,A_3] inside M_w(Q)",
+      "algebra_is_commutative_and_reduced": true,
+      "reason_reduced": "Its generators are commuting real symmetric matrices, hence simultaneously diagonalizable.",
+      "scalar_action": "the explicitly reconstructed matrices on V=Q^w",
+      "conjugation": "identity on the scalar algebra; its represented matrices are symmetric",
+      "module_metric": "I_93 in the standard basis of V",
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 234732,
+      "weighted_source_is_Butson": false,
+      "actual_source_alphabet": "the eight recorded operators +A_j,-A_j, with coincident operators identified",
+      "actual_used_operators": [
+        {
+          "source_index": 0,
+          "sign": -1,
+          "operator_int8_sha256": "4d76fcf953f50d073577c8865c2af6de2f655ca281af358af387ee13a983ac16"
+        },
+        {
+          "source_index": 0,
+          "sign": 1,
+          "operator_int8_sha256": "a366d446d45f1a5f2449518f2a3b825ba60c134b25a03b443d88b5d90f83fd8c"
+        },
+        {
+          "source_index": 1,
+          "sign": -1,
+          "operator_int8_sha256": "3dbf9d67de61c5c50837422ead18043f330bfb6ca2c250b7b02749bfa12068a1"
+        },
+        {
+          "source_index": 1,
+          "sign": 1,
+          "operator_int8_sha256": "f10cf37492ff522d87cd51099b0308daeba2d655be5c0f5cc1e755c51e78f016"
+        },
+        {
+          "source_index": 2,
+          "sign": -1,
+          "operator_int8_sha256": "eef1122ada26e9430f78ffa6716c427e886a0c2674cb18193c18dfd8142fc606"
+        },
+        {
+          "source_index": 2,
+          "sign": 1,
+          "operator_int8_sha256": "83f3628e4002f9f3f87248f2573facec1eebe25a14ebb743afde7ca8df74b149"
+        },
+        {
+          "source_index": 3,
+          "sign": -1,
+          "operator_int8_sha256": "e28ded4f9e51dbed397257e30b11b67e091a6ca262ef75b724c042fd8cc216d3"
+        },
+        {
+          "source_index": 3,
+          "sign": 1,
+          "operator_int8_sha256": "84059b578abeb775576a231b2bf9541c822ef6200edf98cbe6e99b20288b2725"
+        }
+      ],
+      "distinct_used_operator_count": 8,
+      "terminal_frame": "I_93",
+      "terminal_frame_Gram_scale": 1,
+      "rational_order_after_scalar_action": 234732,
+      "endpoint_Gram_scale": 234732,
+      "endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "endpoint_recipe": "sum_j X_j tensor A_j, with the certified T631 signed partition X",
+      "complete_Gram_proof": "sum_i X_i X_i^T tensor A_i A_i^T =631 I tensor sum_i A_i A_i^T; cross terms cancel by the checked amicability identities",
+      "flatness_proof": "Each X position selects exactly one signed A_j block; every entry of each block is a sign.",
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "dense_endpoint_allocated": false,
+      "literal_entry_and_row_recipe_available": true,
+      "literal_row_controls": {
+        "row_indices": [
+          0,
+          1,
+          92,
+          93,
+          117366,
+          234731
+        ],
+        "all_selected_full_rows_are_signs": true,
+        "all_selected_row_pairs_checked_by_exact_bit_counts": true,
+        "complete_Gram_proof": "Full polynomial OD identity and complete exact Williamson norm relation; row checks are interface controls."
+      },
+      "order_status": {
+        "width": 93,
+        "order": 234732,
+        "status": "new_to_best_of_authors_knowledge",
+        "checked_date": "2026-11-26",
+        "arithmetic_checks": {
+          "N_minus1": {
+            "7": 1,
+            "33533": 1
+          },
+          "N_over2_minus1": {
+            "5": 1,
+            "23473": 1
+          },
+          "Yamada_q": 58681,
+          "Yamada_q_mod8": 1,
+          "Yamada_q_factorization": {
+            "7": 1,
+            "83": 1,
+            "101": 1
+          },
+          "all_divisor_Turyn_and_Paley_block_gates": [
+            {
+              "family": "Paley sixteen-block product",
+              "t": 1,
+              "s": 58683,
+              "q": 234731,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "7": 1,
+                "33533": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Turyn Williamson input",
+              "t": 1,
+              "s": 58683,
+              "q": 117365,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "5": 1,
+                "23473": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Paley sixteen-block product",
+              "t": 3,
+              "s": 19561,
+              "q": 78243,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "3": 1,
+                "11": 1,
+                "2371": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Turyn Williamson input",
+              "t": 3,
+              "s": 19561,
+              "q": 39121,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "19": 1,
+                "29": 1,
+                "71": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Paley sixteen-block product",
+              "t": 31,
+              "s": 1893,
+              "q": 7571,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "67": 1,
+                "113": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Turyn Williamson input",
+              "t": 31,
+              "s": 1893,
+              "q": 3785,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "5": 1,
+                "757": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Paley sixteen-block product",
+              "t": 93,
+              "s": 631,
+              "q": 2523,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "3": 1,
+                "29": 2
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Turyn Williamson input",
+              "t": 93,
+              "s": 631,
+              "q": 1261,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "13": 1,
+                "97": 1
+              },
+              "T_input_claimed_known": true
+            }
+          ]
+        },
+        "prior_construction": null
+      }
+    },
+    {
+      "width": 95,
+      "output_order": 239780,
+      "source": {
+        "width": 95,
+        "literal_first_rows_pm": [
+          "+--+-++---+---++++---+---+-----+++-++-++-+++--++-++----++--+-++-++++--++++-+--+++++--+------++-",
+          "+++----++-+++-+++-+-+++-++++--+-----++---+-+-+----+-+-+---++-----+--++++-+++-+-+++-+++-++----++",
+          "++----+++-++++-+--+--+--++++-+-+--+--+-+-++---++++---++-+-+--+--+-+-++++--+--+--+-++++-+++----+",
+          "+++-++-+++-+-+----+++-++--+-+-+++--+---++-++++++++++++-++---+--+++-+-+--++-+++----+-+-+++-++-++"
+        ],
+        "first_matrix_reversed": true,
+        "circulant_entry": "C_j[r,s]=row_j[(s-r) mod w]",
+        "first_matrix_entry": "A_0[r,s]=row_0[(w-1-s-r) mod w]",
+        "all_four_sign_and_symmetric": true,
+        "all_six_complete_commutation_and_amicability_identities_checked": true,
+        "all_summed_integer_Gram_entries_checked": 9025,
+        "source_norm": "sum_j A_j A_j^T=380I_95",
+        "literal_rows_sha256": "3f3d0b57700f3a9edfbb5496b73a60eebe0e5d93ef40cd47edcf2e0e73c1d1fd",
+        "matrices_sha256": "9cbefa50eb3c57151a9f5ad9e5e2339ec77eadd08aa3ef3adae5ad7650fe94a7",
+        "primary_literal_source": {
+          "url": "https://www.cs.uleth.ca/~zaitsevv/nw/NW95.txt",
+          "final_url": "https://www.cs.uleth.ca/~zaitsevv/nw/NW95.txt",
+          "sha256": "3633a8fc27c12ae724d50f1fe1ae090a6bd4cc6eebc70e5616935f0bef5adc78",
+          "bytes": 384
+        }
+      },
+      "scalar_algebra": "Q[A_0,A_1,A_2,A_3] inside M_w(Q)",
+      "algebra_is_commutative_and_reduced": true,
+      "reason_reduced": "Its generators are commuting real symmetric matrices, hence simultaneously diagonalizable.",
+      "scalar_action": "the explicitly reconstructed matrices on V=Q^w",
+      "conjugation": "identity on the scalar algebra; its represented matrices are symmetric",
+      "module_metric": "I_95 in the standard basis of V",
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 239780,
+      "weighted_source_is_Butson": false,
+      "actual_source_alphabet": "the eight recorded operators +A_j,-A_j, with coincident operators identified",
+      "actual_used_operators": [
+        {
+          "source_index": 0,
+          "sign": -1,
+          "operator_int8_sha256": "1eb3cfeddc36290c488035096345be632545ea41c003f25885f73e112b2f76eb"
+        },
+        {
+          "source_index": 0,
+          "sign": 1,
+          "operator_int8_sha256": "c76760aad9ee1d4683328bb4a576aac9fe101f662182c6bc80328a0bc861993e"
+        },
+        {
+          "source_index": 1,
+          "sign": -1,
+          "operator_int8_sha256": "dd95d91811a66b9fbfe1f1c6e431fe7e04adea04786422bbfcccb63b34e695ff"
+        },
+        {
+          "source_index": 1,
+          "sign": 1,
+          "operator_int8_sha256": "8225a13d43718f431daddbf8ab10414f0d4972131d1280a4acb884959230fa2a"
+        },
+        {
+          "source_index": 2,
+          "sign": -1,
+          "operator_int8_sha256": "c45bfcbaf82f243beafb01128552fe4a9fa1942ad6f9939165a5ed5e4bd8cb63"
+        },
+        {
+          "source_index": 2,
+          "sign": 1,
+          "operator_int8_sha256": "d82ffaa8c15ad818c45acfbba5b3afe3be63a33243de4a46404b3652e90b1968"
+        },
+        {
+          "source_index": 3,
+          "sign": -1,
+          "operator_int8_sha256": "d51664f7973593cca5dc6fc83745288674c979d18ecee57e1adb7990afa96e1b"
+        },
+        {
+          "source_index": 3,
+          "sign": 1,
+          "operator_int8_sha256": "0e44f27d998c099b6af94d2fe06de886c63d5802bad8e55d6e8e60976c59619d"
+        }
+      ],
+      "distinct_used_operator_count": 8,
+      "terminal_frame": "I_95",
+      "terminal_frame_Gram_scale": 1,
+      "rational_order_after_scalar_action": 239780,
+      "endpoint_Gram_scale": 239780,
+      "endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "endpoint_recipe": "sum_j X_j tensor A_j, with the certified T631 signed partition X",
+      "complete_Gram_proof": "sum_i X_i X_i^T tensor A_i A_i^T =631 I tensor sum_i A_i A_i^T; cross terms cancel by the checked amicability identities",
+      "flatness_proof": "Each X position selects exactly one signed A_j block; every entry of each block is a sign.",
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "dense_endpoint_allocated": false,
+      "literal_entry_and_row_recipe_available": true,
+      "literal_row_controls": {
+        "row_indices": [
+          0,
+          1,
+          94,
+          95,
+          119890,
+          239779
+        ],
+        "all_selected_full_rows_are_signs": true,
+        "all_selected_row_pairs_checked_by_exact_bit_counts": true,
+        "complete_Gram_proof": "Full polynomial OD identity and complete exact Williamson norm relation; row checks are interface controls."
+      },
+      "order_status": {
+        "width": 95,
+        "order": 239780,
+        "status": "known",
+        "checked_date": "2026-11-26",
+        "arithmetic_checks": {
+          "N_minus1": {
+            "239779": 1
+          },
+          "N_over2_minus1": {
+            "3": 2,
+            "7": 1,
+            "11": 1,
+            "173": 1
+          },
+          "Yamada_q": 59943,
+          "Yamada_q_mod8": 7,
+          "Yamada_q_factorization": {
+            "3": 1,
+            "13": 1,
+            "29": 1,
+            "53": 1
+          },
+          "all_divisor_Turyn_and_Paley_block_gates": [
+            {
+              "family": "Paley sixteen-block product",
+              "t": 1,
+              "s": 59945,
+              "q": 239779,
+              "prime_power": true,
+              "congruence_passes": true,
+              "q_factorization": {
+                "239779": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Turyn Williamson input",
+              "t": 1,
+              "s": 59945,
+              "q": 119889,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "3": 2,
+                "7": 1,
+                "11": 1,
+                "173": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Paley sixteen-block product",
+              "t": 5,
+              "s": 11989,
+              "q": 47955,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "3": 1,
+                "5": 1,
+                "23": 1,
+                "139": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Turyn Williamson input",
+              "t": 5,
+              "s": 11989,
+              "q": 23977,
+              "prime_power": true,
+              "congruence_passes": true,
+              "q_factorization": {
+                "23977": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Paley sixteen-block product",
+              "t": 19,
+              "s": 3155,
+              "q": 12619,
+              "prime_power": true,
+              "congruence_passes": true,
+              "q_factorization": {
+                "12619": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Turyn Williamson input",
+              "t": 19,
+              "s": 3155,
+              "q": 6309,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "3": 2,
+                "701": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Paley sixteen-block product",
+              "t": 95,
+              "s": 631,
+              "q": 2523,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "3": 1,
+                "29": 2
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Turyn Williamson input",
+              "t": 95,
+              "s": 631,
+              "q": 1261,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "13": 1,
+                "97": 1
+              },
+              "T_input_claimed_known": true
+            }
+          ]
+        },
+        "prior_construction": {
+          "family": "Paley I",
+          "parameters": {
+            "q": 239779
+          },
+          "primary_references": [
+            "https://doi.org/10.1002/sapm1933121311",
+            "https://doi.org/10.1017/S0004972700045019",
+            "https://documents.uow.edu.au/~jennie/WEBPDF/139_1990.pdf"
+          ]
+        }
+      }
+    },
+    {
+      "width": 97,
+      "output_order": 244828,
+      "source": {
+        "width": 97,
+        "literal_first_rows_pm": [
+          "+++-+-----+----+------++-++-++---++++++-++++-+-+-++---++-+-+-++---+--++--+--++-+-++----++--+-+--+",
+          "+--++-+--++-+++--++-++++----------++-+-+-+---++----++---+-+-+-++----------++++-++--+++-++--+-++--",
+          "++-----+---+----++-++++---+-++++-+---+---+--++++--++++--+---+---+-++++-+---++++-++----+---+-----+",
+          "+----++++----+--+---++-++-+--++-+-+-+-++-+-+----++----+-+-++-+-+-+-++--+-++-++---+--+----++++----"
+        ],
+        "first_matrix_reversed": true,
+        "circulant_entry": "C_j[r,s]=row_j[(s-r) mod w]",
+        "first_matrix_entry": "A_0[r,s]=row_0[(w-1-s-r) mod w]",
+        "all_four_sign_and_symmetric": true,
+        "all_six_complete_commutation_and_amicability_identities_checked": true,
+        "all_summed_integer_Gram_entries_checked": 9409,
+        "source_norm": "sum_j A_j A_j^T=388I_97",
+        "literal_rows_sha256": "5cb6dd786c55c7a14fed106e0393879006c05e97b5a66ccd9bc380a966dbf4c2",
+        "matrices_sha256": "35162e49152e38d943d1e4a13ca7d274324efce62237182c58b950a456942743",
+        "primary_literal_source": {
+          "url": "https://www.cs.uleth.ca/~zaitsevv/nw/NW97.txt",
+          "final_url": "https://www.cs.uleth.ca/~zaitsevv/nw/NW97.txt",
+          "sha256": "32d20fb835af4b53e588d06f2ea05424ec17c56e9debc35d6dc494a41554f4d8",
+          "bytes": 392
+        }
+      },
+      "scalar_algebra": "Q[A_0,A_1,A_2,A_3] inside M_w(Q)",
+      "algebra_is_commutative_and_reduced": true,
+      "reason_reduced": "Its generators are commuting real symmetric matrices, hence simultaneously diagonalizable.",
+      "scalar_action": "the explicitly reconstructed matrices on V=Q^w",
+      "conjugation": "identity on the scalar algebra; its represented matrices are symmetric",
+      "module_metric": "I_97 in the standard basis of V",
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 244828,
+      "weighted_source_is_Butson": false,
+      "actual_source_alphabet": "the eight recorded operators +A_j,-A_j, with coincident operators identified",
+      "actual_used_operators": [
+        {
+          "source_index": 0,
+          "sign": -1,
+          "operator_int8_sha256": "ed2ca00ce498b09dde2614024e772bdeafff80ea04dd378dea5c9657a631a399"
+        },
+        {
+          "source_index": 0,
+          "sign": 1,
+          "operator_int8_sha256": "a034c70da214d998c08228059367eadaeaacca72d111b284cafa66179b95b70f"
+        },
+        {
+          "source_index": 1,
+          "sign": -1,
+          "operator_int8_sha256": "41a6d936b5f03343f82de99d7704f087c680cf1fdff31e0a8d5461e094527a59"
+        },
+        {
+          "source_index": 1,
+          "sign": 1,
+          "operator_int8_sha256": "6cde2793cd9474c04e9e7809ec8b3da3bff06a94d0a9e3a6e777a7f199911bc6"
+        },
+        {
+          "source_index": 2,
+          "sign": -1,
+          "operator_int8_sha256": "279781fe83ff6118e0e149ab510c18e479a9806b2e879a91a716309749460ffe"
+        },
+        {
+          "source_index": 2,
+          "sign": 1,
+          "operator_int8_sha256": "8764c4fe2baf1f597c35d1ed9cba074d9a41566f8cdf8ae69f5a950e9ab5f664"
+        },
+        {
+          "source_index": 3,
+          "sign": -1,
+          "operator_int8_sha256": "cc7a6b304b871191fa0504c40c53720c4c1f91c637b58179d1182ad495a755c4"
+        },
+        {
+          "source_index": 3,
+          "sign": 1,
+          "operator_int8_sha256": "6dbf50959e13e629da317aebec9dd91b015ab2384a864547805a0fa5144f938f"
+        }
+      ],
+      "distinct_used_operator_count": 8,
+      "terminal_frame": "I_97",
+      "terminal_frame_Gram_scale": 1,
+      "rational_order_after_scalar_action": 244828,
+      "endpoint_Gram_scale": 244828,
+      "endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "endpoint_recipe": "sum_j X_j tensor A_j, with the certified T631 signed partition X",
+      "complete_Gram_proof": "sum_i X_i X_i^T tensor A_i A_i^T =631 I tensor sum_i A_i A_i^T; cross terms cancel by the checked amicability identities",
+      "flatness_proof": "Each X position selects exactly one signed A_j block; every entry of each block is a sign.",
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "dense_endpoint_allocated": false,
+      "literal_entry_and_row_recipe_available": true,
+      "literal_row_controls": {
+        "row_indices": [
+          0,
+          1,
+          96,
+          97,
+          122414,
+          244827
+        ],
+        "all_selected_full_rows_are_signs": true,
+        "all_selected_row_pairs_checked_by_exact_bit_counts": true,
+        "complete_Gram_proof": "Full polynomial OD identity and complete exact Williamson norm relation; row checks are interface controls."
+      },
+      "order_status": {
+        "width": 97,
+        "order": 244828,
+        "status": "new_to_best_of_authors_knowledge",
+        "checked_date": "2026-11-26",
+        "arithmetic_checks": {
+          "N_minus1": {
+            "3": 2,
+            "11": 1,
+            "2473": 1
+          },
+          "N_over2_minus1": {
+            "163": 1,
+            "751": 1
+          },
+          "Yamada_q": 61205,
+          "Yamada_q_mod8": 5,
+          "Yamada_q_factorization": {
+            "5": 1,
+            "12241": 1
+          },
+          "all_divisor_Turyn_and_Paley_block_gates": [
+            {
+              "family": "Paley sixteen-block product",
+              "t": 1,
+              "s": 61207,
+              "q": 244827,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "3": 2,
+                "11": 1,
+                "2473": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Turyn Williamson input",
+              "t": 1,
+              "s": 61207,
+              "q": 122413,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "163": 1,
+                "751": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Paley sixteen-block product",
+              "t": 97,
+              "s": 631,
+              "q": 2523,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "3": 1,
+                "29": 2
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Turyn Williamson input",
+              "t": 97,
+              "s": 631,
+              "q": 1261,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "13": 1,
+                "97": 1
+              },
+              "T_input_claimed_known": true
+            }
+          ]
+        },
+        "prior_construction": null
+      }
+    },
+    {
+      "width": 103,
+      "output_order": 259972,
+      "source": {
+        "width": 103,
+        "literal_first_rows_pm": [
+          "--+--+-+-++-++++++-++-+-+++--++-+++--+---++--+-++-++-+++-++--+++-----+-++++++-+++--++++---+-++--++++--+",
+          "+-+-++++++-+-+---++-+-++++-++++-++--+----++-+------++------+-++----+--++-++++-++++-+-++---+-+-++++++-+-",
+          "+-++--++-+-+-++--+-++--+-++++-+-++++--+-+++-------++++-------+++-+--++++-+-++++-+--++-+--++-+-+-++--++-",
+          "----+++++-+--++---+++-+++-++++---++-+---+---++--+-++++-+--++---+---+-++---++++-+++-+++---++--+-+++++---"
+        ],
+        "first_matrix_reversed": true,
+        "circulant_entry": "C_j[r,s]=row_j[(s-r) mod w]",
+        "first_matrix_entry": "A_0[r,s]=row_0[(w-1-s-r) mod w]",
+        "all_four_sign_and_symmetric": true,
+        "all_six_complete_commutation_and_amicability_identities_checked": true,
+        "all_summed_integer_Gram_entries_checked": 10609,
+        "source_norm": "sum_j A_j A_j^T=412I_103",
+        "literal_rows_sha256": "2915ede5e7b8e24c710dca17fbb4b2d5f10539da7f3e9ef66444d88d988a33cf",
+        "matrices_sha256": "166b3cdce635ee81fb4b8672ab790af170296891387f4cee11d81dd744f51741",
+        "primary_literal_source": {
+          "url": "https://www.cs.uleth.ca/~zaitsevv/nw/NW103.txt",
+          "final_url": "https://www.cs.uleth.ca/~zaitsevv/nw/NW103.txt",
+          "sha256": "5555177c4b0a1d1e30b5bb7dfac31cab9a9c9da0b1c31eb7fbec8eefac3edd93",
+          "bytes": 416
+        }
+      },
+      "scalar_algebra": "Q[A_0,A_1,A_2,A_3] inside M_w(Q)",
+      "algebra_is_commutative_and_reduced": true,
+      "reason_reduced": "Its generators are commuting real symmetric matrices, hence simultaneously diagonalizable.",
+      "scalar_action": "the explicitly reconstructed matrices on V=Q^w",
+      "conjugation": "identity on the scalar algebra; its represented matrices are symmetric",
+      "module_metric": "I_103 in the standard basis of V",
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 259972,
+      "weighted_source_is_Butson": false,
+      "actual_source_alphabet": "the eight recorded operators +A_j,-A_j, with coincident operators identified",
+      "actual_used_operators": [
+        {
+          "source_index": 0,
+          "sign": -1,
+          "operator_int8_sha256": "1c9f3327189e444303f43e89481011b932d4ce1f9b3df94c6fa85e0cfe2c76d5"
+        },
+        {
+          "source_index": 0,
+          "sign": 1,
+          "operator_int8_sha256": "a37de2d84b0bb9a30795c5c19464943d614e59a2304d9337439f569c89d60c0c"
+        },
+        {
+          "source_index": 1,
+          "sign": -1,
+          "operator_int8_sha256": "42ada2a402d2e37517e0e74b4c4297ef8186b5a5c05f4c94f9a7b1d5d979e5bf"
+        },
+        {
+          "source_index": 1,
+          "sign": 1,
+          "operator_int8_sha256": "43396e00863b59ec7992a75f85c5e325d948f4bb70555c4118de8e1a2a956677"
+        },
+        {
+          "source_index": 2,
+          "sign": -1,
+          "operator_int8_sha256": "822b77002e236bd11a0f2356b3c76c930ed7a298cf58886d290835b3de4cb206"
+        },
+        {
+          "source_index": 2,
+          "sign": 1,
+          "operator_int8_sha256": "741f1cd2a42e76298aeca44ad41355bee249becca3c6dbe2541bd633998d98ff"
+        },
+        {
+          "source_index": 3,
+          "sign": -1,
+          "operator_int8_sha256": "007dd5612b9c2c1d1bafc2a8b5a988814fec36a37d506707f0a4c845cb28f1fb"
+        },
+        {
+          "source_index": 3,
+          "sign": 1,
+          "operator_int8_sha256": "385d9393e63e07ed30b8c76b355d8ae75e81cdd579c1b0029748900c27dea4d5"
+        }
+      ],
+      "distinct_used_operator_count": 8,
+      "terminal_frame": "I_103",
+      "terminal_frame_Gram_scale": 1,
+      "rational_order_after_scalar_action": 259972,
+      "endpoint_Gram_scale": 259972,
+      "endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "endpoint_recipe": "sum_j X_j tensor A_j, with the certified T631 signed partition X",
+      "complete_Gram_proof": "sum_i X_i X_i^T tensor A_i A_i^T =631 I tensor sum_i A_i A_i^T; cross terms cancel by the checked amicability identities",
+      "flatness_proof": "Each X position selects exactly one signed A_j block; every entry of each block is a sign.",
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "dense_endpoint_allocated": false,
+      "literal_entry_and_row_recipe_available": true,
+      "literal_row_controls": {
+        "row_indices": [
+          0,
+          1,
+          102,
+          103,
+          129986,
+          259971
+        ],
+        "all_selected_full_rows_are_signs": true,
+        "all_selected_row_pairs_checked_by_exact_bit_counts": true,
+        "complete_Gram_proof": "Full polynomial OD identity and complete exact Williamson norm relation; row checks are interface controls."
+      },
+      "order_status": {
+        "width": 103,
+        "order": 259972,
+        "status": "new_to_best_of_authors_knowledge",
+        "checked_date": "2026-11-26",
+        "arithmetic_checks": {
+          "N_minus1": {
+            "3": 1,
+            "193": 1,
+            "449": 1
+          },
+          "N_over2_minus1": {
+            "5": 1,
+            "25997": 1
+          },
+          "Yamada_q": 64991,
+          "Yamada_q_mod8": 7,
+          "Yamada_q_factorization": {
+            "17": 1,
+            "3823": 1
+          },
+          "all_divisor_Turyn_and_Paley_block_gates": [
+            {
+              "family": "Paley sixteen-block product",
+              "t": 1,
+              "s": 64993,
+              "q": 259971,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "3": 1,
+                "193": 1,
+                "449": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Turyn Williamson input",
+              "t": 1,
+              "s": 64993,
+              "q": 129985,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "5": 1,
+                "25997": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Paley sixteen-block product",
+              "t": 103,
+              "s": 631,
+              "q": 2523,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "3": 1,
+                "29": 2
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Turyn Williamson input",
+              "t": 103,
+              "s": 631,
+              "q": 1261,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "13": 1,
+                "97": 1
+              },
+              "T_input_claimed_known": true
+            }
+          ]
+        },
+        "prior_construction": null
+      }
+    },
+    {
+      "width": 109,
+      "output_order": 275116,
+      "source": {
+        "width": 109,
+        "literal_first_rows_pm": [
+          "-+-+-+-+--+-+++++-++++----++++------+---+--+++-+--+----++++-++-+--++--+-+++--+-++-+++++-+---+++--++---+++-++-",
+          "+--+++-+-++-+-+-+-+-+-++++++++-++-++--+----++--+++----++----+++--++----+--++-++-++++++++-+-+-+-+-+-++-+-+++--",
+          "--+-+-+--+++--++++-++++-++-++--+--+++-++---+----+++++----+++++----+---++-+++--+--++-++-++++-++++--+++--+-+-+-",
+          "--+-+++++++++-+-++-+--+-+--+--++-++--+++-+++------+++----+++------+++-+++--++-++--+--+-+--+-++-+-+++++++++-+-"
+        ],
+        "first_matrix_reversed": true,
+        "circulant_entry": "C_j[r,s]=row_j[(s-r) mod w]",
+        "first_matrix_entry": "A_0[r,s]=row_0[(w-1-s-r) mod w]",
+        "all_four_sign_and_symmetric": true,
+        "all_six_complete_commutation_and_amicability_identities_checked": true,
+        "all_summed_integer_Gram_entries_checked": 11881,
+        "source_norm": "sum_j A_j A_j^T=436I_109",
+        "literal_rows_sha256": "f0ffd0c054f8f648ad859b1ebb81ed5e59a1eb4cae9887ee5c84535641c253b0",
+        "matrices_sha256": "fa69f70a6be8256094726deb8bdf054def8d960b6ed66ce251fae5975f369c83",
+        "primary_literal_source": {
+          "url": "https://www.cs.uleth.ca/~zaitsevv/nw/NW109.txt",
+          "final_url": "https://www.cs.uleth.ca/~zaitsevv/nw/NW109.txt",
+          "sha256": "24e031fc41edf98a337d3a4aab0299706b5c77af4e002b750abc15b917e71dc8",
+          "bytes": 440
+        }
+      },
+      "scalar_algebra": "Q[A_0,A_1,A_2,A_3] inside M_w(Q)",
+      "algebra_is_commutative_and_reduced": true,
+      "reason_reduced": "Its generators are commuting real symmetric matrices, hence simultaneously diagonalizable.",
+      "scalar_action": "the explicitly reconstructed matrices on V=Q^w",
+      "conjugation": "identity on the scalar algebra; its represented matrices are symmetric",
+      "module_metric": "I_109 in the standard basis of V",
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 275116,
+      "weighted_source_is_Butson": false,
+      "actual_source_alphabet": "the eight recorded operators +A_j,-A_j, with coincident operators identified",
+      "actual_used_operators": [
+        {
+          "source_index": 0,
+          "sign": -1,
+          "operator_int8_sha256": "c915f6781bf7be6ec833de9836abd19e4d0e8a66886bb67d941639dcabbf1f56"
+        },
+        {
+          "source_index": 0,
+          "sign": 1,
+          "operator_int8_sha256": "1a65ae13df2b8db37fe8f2c8dc0c8ab63ec2e4ae2a17c5a83d65e620b79e5e5d"
+        },
+        {
+          "source_index": 1,
+          "sign": -1,
+          "operator_int8_sha256": "ba4f1aad9709b76077d3fe9f9c15c8a17f8ac918d14abcf6415bf28f4f62571c"
+        },
+        {
+          "source_index": 1,
+          "sign": 1,
+          "operator_int8_sha256": "5b1a81ea487940692bad81a4fcb3276a19d8ba96ad65b4663a64ca1358df4286"
+        },
+        {
+          "source_index": 2,
+          "sign": -1,
+          "operator_int8_sha256": "a961003e882b33561977e8d015f2a10f2b32bec05c58e3ec68f2bb274a708b27"
+        },
+        {
+          "source_index": 2,
+          "sign": 1,
+          "operator_int8_sha256": "a609a9a689326616415777d1e04b573ebcf8f2b1a5d88858bed3b40ea32d3f3f"
+        },
+        {
+          "source_index": 3,
+          "sign": -1,
+          "operator_int8_sha256": "e35aad7dbe47846d11ceca7925dcb6179256a5f1de872c37d868e934970e042e"
+        },
+        {
+          "source_index": 3,
+          "sign": 1,
+          "operator_int8_sha256": "942eb60b68d059971c223ef84d4601f518fdc05efb44df8705a13442c7d91c29"
+        }
+      ],
+      "distinct_used_operator_count": 8,
+      "terminal_frame": "I_109",
+      "terminal_frame_Gram_scale": 1,
+      "rational_order_after_scalar_action": 275116,
+      "endpoint_Gram_scale": 275116,
+      "endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "endpoint_recipe": "sum_j X_j tensor A_j, with the certified T631 signed partition X",
+      "complete_Gram_proof": "sum_i X_i X_i^T tensor A_i A_i^T =631 I tensor sum_i A_i A_i^T; cross terms cancel by the checked amicability identities",
+      "flatness_proof": "Each X position selects exactly one signed A_j block; every entry of each block is a sign.",
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "dense_endpoint_allocated": false,
+      "literal_entry_and_row_recipe_available": true,
+      "literal_row_controls": {
+        "row_indices": [
+          0,
+          1,
+          108,
+          109,
+          137558,
+          275115
+        ],
+        "all_selected_full_rows_are_signs": true,
+        "all_selected_row_pairs_checked_by_exact_bit_counts": true,
+        "complete_Gram_proof": "Full polynomial OD identity and complete exact Williamson norm relation; row checks are interface controls."
+      },
+      "order_status": {
+        "width": 109,
+        "order": 275116,
+        "status": "new_to_best_of_authors_knowledge",
+        "checked_date": "2026-11-26",
+        "arithmetic_checks": {
+          "N_minus1": {
+            "3": 1,
+            "5": 1,
+            "18341": 1
+          },
+          "N_over2_minus1": {
+            "7": 1,
+            "43": 1,
+            "457": 1
+          },
+          "Yamada_q": 68777,
+          "Yamada_q_mod8": 1,
+          "Yamada_q_factorization": {
+            "68777": 1
+          },
+          "all_divisor_Turyn_and_Paley_block_gates": [
+            {
+              "family": "Paley sixteen-block product",
+              "t": 1,
+              "s": 68779,
+              "q": 275115,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "3": 1,
+                "5": 1,
+                "18341": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Turyn Williamson input",
+              "t": 1,
+              "s": 68779,
+              "q": 137557,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "7": 1,
+                "43": 1,
+                "457": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Paley sixteen-block product",
+              "t": 109,
+              "s": 631,
+              "q": 2523,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "3": 1,
+                "29": 2
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Turyn Williamson input",
+              "t": 109,
+              "s": 631,
+              "q": 1261,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "13": 1,
+                "97": 1
+              },
+              "T_input_claimed_known": true
+            }
+          ]
+        },
+        "prior_construction": null
+      }
+    },
+    {
+      "width": 127,
+      "output_order": 320548,
+      "source": {
+        "width": 127,
+        "literal_first_rows_pm": [
+          "+-+-----+++++++-++--+---+++-+-+-+-+++-++-++-+++--+++--+----++++++----+++++++---++-+-+--+--+--++-+-+-++--+++-++--++-+++--+++++-+",
+          "+-+-+------+---++++--+++-----+-+--+-++++++++-+++++++---++-++-+----+-++-++---+++++++-++++++++-+--+-+-----+++--++++---+------+-+-",
+          "+-+++-++-+--++++--+--+--+-+-++++---+--+++--++-++---+++-+-+--+-+--+-+--+-+-+++---++-++--+++--+---++++-+-+--+--+--++++--+-++-+++-",
+          "++-+++--+++----++-++++-+-+-+---+++-----+----+-+++-++-++-++--++-++-++--++-++-++-+++-+----+-----+++---+-+-+-++++-++----+++--+++-+"
+        ],
+        "first_matrix_reversed": true,
+        "circulant_entry": "C_j[r,s]=row_j[(s-r) mod w]",
+        "first_matrix_entry": "A_0[r,s]=row_0[(w-1-s-r) mod w]",
+        "all_four_sign_and_symmetric": true,
+        "all_six_complete_commutation_and_amicability_identities_checked": true,
+        "all_summed_integer_Gram_entries_checked": 16129,
+        "source_norm": "sum_j A_j A_j^T=508I_127",
+        "literal_rows_sha256": "cbe69d8ad04b39b41b2b654a6ec0cf455e53b4479de7016a639c438c6683d637",
+        "matrices_sha256": "266f292dff187c2c49285d9fec8da6f4ac1a9cafb6dc0f66e07b8edd9bf0650d",
+        "primary_literal_source": {
+          "url": "https://www.cs.uleth.ca/~zaitsevv/nw/NW127.txt",
+          "final_url": "https://www.cs.uleth.ca/~zaitsevv/nw/NW127.txt",
+          "sha256": "f14442a96bf61d5c1447597d9a949508f290f1dd29491b21e98be05a7b10228c",
+          "bytes": 512
+        }
+      },
+      "scalar_algebra": "Q[A_0,A_1,A_2,A_3] inside M_w(Q)",
+      "algebra_is_commutative_and_reduced": true,
+      "reason_reduced": "Its generators are commuting real symmetric matrices, hence simultaneously diagonalizable.",
+      "scalar_action": "the explicitly reconstructed matrices on V=Q^w",
+      "conjugation": "identity on the scalar algebra; its represented matrices are symmetric",
+      "module_metric": "I_127 in the standard basis of V",
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 320548,
+      "weighted_source_is_Butson": false,
+      "actual_source_alphabet": "the eight recorded operators +A_j,-A_j, with coincident operators identified",
+      "actual_used_operators": [
+        {
+          "source_index": 0,
+          "sign": -1,
+          "operator_int8_sha256": "be02dafd10fa99ec59495bd61c867b1939764516683e99cffa64c6a005964bf2"
+        },
+        {
+          "source_index": 0,
+          "sign": 1,
+          "operator_int8_sha256": "12e394669143529bbee3e9c10fc512aadb7af257fcf54696916cdf31b2ff4de3"
+        },
+        {
+          "source_index": 1,
+          "sign": -1,
+          "operator_int8_sha256": "ddaa1dc7ecb8e785c2fdc3390c78daac36b69b7e2f0800d59c90540314f15351"
+        },
+        {
+          "source_index": 1,
+          "sign": 1,
+          "operator_int8_sha256": "4cfc693a8ba8d84aa771f276876c84f12fe329be93169756707dd003efe18c2f"
+        },
+        {
+          "source_index": 2,
+          "sign": -1,
+          "operator_int8_sha256": "3995bcb165d91d4ca3486b7004855be3ffa14d435e60ae436c53eba59c2aecd0"
+        },
+        {
+          "source_index": 2,
+          "sign": 1,
+          "operator_int8_sha256": "a8a8761af6351ba0620f32151eae84e7e0ec658db588b2ee461917c0e44457d9"
+        },
+        {
+          "source_index": 3,
+          "sign": -1,
+          "operator_int8_sha256": "a6643a7cb5b60cc6768692a733fcf632f56184052d1ecd18a77de5511912d61d"
+        },
+        {
+          "source_index": 3,
+          "sign": 1,
+          "operator_int8_sha256": "b86b58a439eef4c098211b6a1cd3c68af47319e2b890b51ec752017c77758db0"
+        }
+      ],
+      "distinct_used_operator_count": 8,
+      "terminal_frame": "I_127",
+      "terminal_frame_Gram_scale": 1,
+      "rational_order_after_scalar_action": 320548,
+      "endpoint_Gram_scale": 320548,
+      "endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "endpoint_recipe": "sum_j X_j tensor A_j, with the certified T631 signed partition X",
+      "complete_Gram_proof": "sum_i X_i X_i^T tensor A_i A_i^T =631 I tensor sum_i A_i A_i^T; cross terms cancel by the checked amicability identities",
+      "flatness_proof": "Each X position selects exactly one signed A_j block; every entry of each block is a sign.",
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "dense_endpoint_allocated": false,
+      "literal_entry_and_row_recipe_available": true,
+      "literal_row_controls": {
+        "row_indices": [
+          0,
+          1,
+          126,
+          127,
+          160274,
+          320547
+        ],
+        "all_selected_full_rows_are_signs": true,
+        "all_selected_row_pairs_checked_by_exact_bit_counts": true,
+        "complete_Gram_proof": "Full polynomial OD identity and complete exact Williamson norm relation; row checks are interface controls."
+      },
+      "order_status": {
+        "width": 127,
+        "order": 320548,
+        "status": "new_to_best_of_authors_knowledge",
+        "checked_date": "2026-11-26",
+        "arithmetic_checks": {
+          "N_minus1": {
+            "3": 1,
+            "59": 1,
+            "1811": 1
+          },
+          "N_over2_minus1": {
+            "83": 1,
+            "1931": 1
+          },
+          "Yamada_q": 80135,
+          "Yamada_q_mod8": 7,
+          "Yamada_q_factorization": {
+            "5": 1,
+            "11": 1,
+            "31": 1,
+            "47": 1
+          },
+          "all_divisor_Turyn_and_Paley_block_gates": [
+            {
+              "family": "Paley sixteen-block product",
+              "t": 1,
+              "s": 80137,
+              "q": 320547,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "3": 1,
+                "59": 1,
+                "1811": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Turyn Williamson input",
+              "t": 1,
+              "s": 80137,
+              "q": 160273,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "83": 1,
+                "1931": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Paley sixteen-block product",
+              "t": 127,
+              "s": 631,
+              "q": 2523,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "3": 1,
+                "29": 2
+              },
+              "T_input_claimed_known": false
+            },
+            {
+              "family": "Turyn Williamson input",
+              "t": 127,
+              "s": 631,
+              "q": 1261,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "13": 1,
+                "97": 1
+              },
+              "T_input_claimed_known": false
+            }
+          ]
+        },
+        "prior_construction": null
+      }
+    },
+    {
+      "width": 133,
+      "output_order": 335692,
+      "source": {
+        "width": 133,
+        "literal_first_rows_pm": [
+          "+-+++-++-++-+++--++--+++++-+-+++-+--+--+----+--+-+++-++---+++++-++++--+-+--+-++-+-+--+----++-----++++++-+++--+++-----++-+-++---++-+++",
+          "--++-+-++-----++---+-++-+--+++++++-+++++--+--+-+-+-+-+-++++-+--++----++--+-++++-+-+-+-+-+--+--+++++-+++++++--+-++-+---++-----++-+-++-",
+          "-+++++--++-++-+---+++++-+++---+--+++++++----+++-+-+----+-+--+---++--++---+--+-+----+-+-+++----+++++++--+---+++-+++++---+-++-++--+++++",
+          "-+-+---+++-++--+-++-+----++--++-+++-++-+++---+++-++++++-+-----+-++--++-+-----+-++++++-+++---+++-++-+++-++--++----+-++-+--++-+++---+-+"
+        ],
+        "first_matrix_reversed": true,
+        "circulant_entry": "C_j[r,s]=row_j[(s-r) mod w]",
+        "first_matrix_entry": "A_0[r,s]=row_0[(w-1-s-r) mod w]",
+        "all_four_sign_and_symmetric": true,
+        "all_six_complete_commutation_and_amicability_identities_checked": true,
+        "all_summed_integer_Gram_entries_checked": 17689,
+        "source_norm": "sum_j A_j A_j^T=532I_133",
+        "literal_rows_sha256": "3b179649e197a1b3030e73cbc96cee810f59cf711d466a9e8e8a8be1b1b06a5f",
+        "matrices_sha256": "309b7a1e1a768bf15ea13423ea6c22c18b05a44dbae2d3a84a9fa1559a5bc1f5",
+        "primary_literal_source": {
+          "url": "https://www.cs.uleth.ca/~zaitsevv/nw/NW133.txt",
+          "final_url": "https://www.cs.uleth.ca/~zaitsevv/nw/NW133.txt",
+          "sha256": "a723a49b119f75890783a888e6a3a789bd49cbb01016ad645293041931989450",
+          "bytes": 536
+        }
+      },
+      "scalar_algebra": "Q[A_0,A_1,A_2,A_3] inside M_w(Q)",
+      "algebra_is_commutative_and_reduced": true,
+      "reason_reduced": "Its generators are commuting real symmetric matrices, hence simultaneously diagonalizable.",
+      "scalar_action": "the explicitly reconstructed matrices on V=Q^w",
+      "conjugation": "identity on the scalar algebra; its represented matrices are symmetric",
+      "module_metric": "I_133 in the standard basis of V",
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 335692,
+      "weighted_source_is_Butson": false,
+      "actual_source_alphabet": "the eight recorded operators +A_j,-A_j, with coincident operators identified",
+      "actual_used_operators": [
+        {
+          "source_index": 0,
+          "sign": -1,
+          "operator_int8_sha256": "9e5e72f5d2b74bacc3b658c39431a98333b1275babe10ed3b10f7045b9d1090a"
+        },
+        {
+          "source_index": 0,
+          "sign": 1,
+          "operator_int8_sha256": "b1627d8b21dee5655caa6d70c592f4340254f061f7d5274215b82dd5829f0a9a"
+        },
+        {
+          "source_index": 1,
+          "sign": -1,
+          "operator_int8_sha256": "1c634a95c2966c50ac15bbb6c5ba8d5208f017abc8decee968ff7ccc4c96e686"
+        },
+        {
+          "source_index": 1,
+          "sign": 1,
+          "operator_int8_sha256": "6e8694a369a6050410e805a519425889671f1c9e01077e64b16f88d691f185a9"
+        },
+        {
+          "source_index": 2,
+          "sign": -1,
+          "operator_int8_sha256": "b6e0b113a929c4e256b703a22827c483f844b947e508418e73a3dcd3fa746cef"
+        },
+        {
+          "source_index": 2,
+          "sign": 1,
+          "operator_int8_sha256": "16e40673cc769846fa3e30b11a4ab260abfc2366448288fb2537e4db8c4cdde0"
+        },
+        {
+          "source_index": 3,
+          "sign": -1,
+          "operator_int8_sha256": "1e276b9ef6618df818cc9f837ba880e3ddb856a6e0b258f78df1baeb1249f979"
+        },
+        {
+          "source_index": 3,
+          "sign": 1,
+          "operator_int8_sha256": "885f674923207552047d96978612a3b647d30bcbfc8975b788bc5e9aa358bb86"
+        }
+      ],
+      "distinct_used_operator_count": 8,
+      "terminal_frame": "I_133",
+      "terminal_frame_Gram_scale": 1,
+      "rational_order_after_scalar_action": 335692,
+      "endpoint_Gram_scale": 335692,
+      "endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "endpoint_recipe": "sum_j X_j tensor A_j, with the certified T631 signed partition X",
+      "complete_Gram_proof": "sum_i X_i X_i^T tensor A_i A_i^T =631 I tensor sum_i A_i A_i^T; cross terms cancel by the checked amicability identities",
+      "flatness_proof": "Each X position selects exactly one signed A_j block; every entry of each block is a sign.",
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "dense_endpoint_allocated": false,
+      "literal_entry_and_row_recipe_available": true,
+      "literal_row_controls": {
+        "row_indices": [
+          0,
+          1,
+          132,
+          133,
+          167846,
+          335691
+        ],
+        "all_selected_full_rows_are_signs": true,
+        "all_selected_row_pairs_checked_by_exact_bit_counts": true,
+        "complete_Gram_proof": "Full polynomial OD identity and complete exact Williamson norm relation; row checks are interface controls."
+      },
+      "order_status": {
+        "width": 133,
+        "order": 335692,
+        "status": "known",
+        "checked_date": "2026-11-26",
+        "arithmetic_checks": {
+          "N_minus1": {
+            "3": 3,
+            "12433": 1
+          },
+          "N_over2_minus1": {
+            "5": 1,
+            "33569": 1
+          },
+          "Yamada_q": 83921,
+          "Yamada_q_mod8": 1,
+          "Yamada_q_factorization": {
+            "83921": 1
+          },
+          "all_divisor_Turyn_and_Paley_block_gates": [
+            {
+              "family": "Paley sixteen-block product",
+              "t": 1,
+              "s": 83923,
+              "q": 335691,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "3": 3,
+                "12433": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Turyn Williamson input",
+              "t": 1,
+              "s": 83923,
+              "q": 167845,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "5": 1,
+                "33569": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Paley sixteen-block product",
+              "t": 7,
+              "s": 11989,
+              "q": 47955,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "3": 1,
+                "5": 1,
+                "23": 1,
+                "139": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Turyn Williamson input",
+              "t": 7,
+              "s": 11989,
+              "q": 23977,
+              "prime_power": true,
+              "congruence_passes": true,
+              "q_factorization": {
+                "23977": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Paley sixteen-block product",
+              "t": 19,
+              "s": 4417,
+              "q": 17667,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "3": 2,
+                "13": 1,
+                "151": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Turyn Williamson input",
+              "t": 19,
+              "s": 4417,
+              "q": 8833,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "11": 2,
+                "73": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Paley sixteen-block product",
+              "t": 133,
+              "s": 631,
+              "q": 2523,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "3": 1,
+                "29": 2
+              },
+              "T_input_claimed_known": false
+            },
+            {
+              "family": "Turyn Williamson input",
+              "t": 133,
+              "s": 631,
+              "q": 1261,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "13": 1,
+                "97": 1
+              },
+              "T_input_claimed_known": false
+            }
+          ]
+        },
+        "prior_construction": {
+          "family": "Cooper-Wallis with Turyn Williamson input",
+          "parameters": {
+            "q": 23977,
+            "Williamson_order": 11989,
+            "T_order": 7
+          },
+          "primary_references": [
+            "https://doi.org/10.1002/sapm1933121311",
+            "https://doi.org/10.1017/S0004972700045019",
+            "https://documents.uow.edu.au/~jennie/WEBPDF/139_1990.pdf"
+          ]
+        }
+      }
+    },
+    {
+      "width": 181,
+      "output_order": 456844,
+      "source": {
+        "width": 181,
+        "literal_first_rows_pm": [
+          "+--+++++--++-++-++++-+-++-+-+-+++-++--+-+---+--+-+++-++--+++-+----++++-++---++-+-++-++-+++++++-+--+--+-+---++++++--+++++++-+---+-+---+-+--+++++-++---++----+++-+--+-+-+-----+++----++",
+          "+--+--+--++-+-----+-+--++---+----++-++-+-+-+-+++--+--+++--+---++-++-+++--+++++-++-+-+-----++-----+-+-++-+++++--+++-++-++---+--+++--+--+++-+-+-+-++-++----+---++--+-+-----+-++--+--+--",
+          "++----+-+-+-+++-------+--+-+++++-+----+++-+--+-++++-+++-+-+---++---+++-+--+-++--++--+--+------+--+--++--++-+--+-+++---++---+-+-+++-++++-+--+-+++----+-+++++-+--+-------+++-+-+-+----+",
+          "++--+++-+-++---++-+-+-+++--+++++--------++-++---++---+-++--++--++++-+--+-+++++------------++------------+++++-+--+-++++--++--++-+---++---++-++--------+++++--+++-+-+-++---++-+-+++--+"
+        ],
+        "first_matrix_reversed": true,
+        "circulant_entry": "C_j[r,s]=row_j[(s-r) mod w]",
+        "first_matrix_entry": "A_0[r,s]=row_0[(w-1-s-r) mod w]",
+        "all_four_sign_and_symmetric": true,
+        "all_six_complete_commutation_and_amicability_identities_checked": true,
+        "all_summed_integer_Gram_entries_checked": 32761,
+        "source_norm": "sum_j A_j A_j^T=724I_181",
+        "literal_rows_sha256": "405d4527339d4fa1ac8aafc03c92f5a4632f1089aafc0cc072145f33180fe9dd",
+        "matrices_sha256": "6cafccf3fd56b20142faa2e77a38e1c5ba7874068641711b4660ace9a3298e08",
+        "primary_literal_source": {
+          "url": "https://www.cs.uleth.ca/~zaitsevv/nw/NW181.txt",
+          "final_url": "https://www.cs.uleth.ca/~zaitsevv/nw/NW181.txt",
+          "sha256": "ceade197ec6df950dce5c63f41a3542f3f74338689a00d71bc7ab9d308f8dcd8",
+          "bytes": 728
+        }
+      },
+      "scalar_algebra": "Q[A_0,A_1,A_2,A_3] inside M_w(Q)",
+      "algebra_is_commutative_and_reduced": true,
+      "reason_reduced": "Its generators are commuting real symmetric matrices, hence simultaneously diagonalizable.",
+      "scalar_action": "the explicitly reconstructed matrices on V=Q^w",
+      "conjugation": "identity on the scalar algebra; its represented matrices are symmetric",
+      "module_metric": "I_181 in the standard basis of V",
+      "weighted_source_order": 2524,
+      "weighted_source_Gram_scale": 456844,
+      "weighted_source_is_Butson": false,
+      "actual_source_alphabet": "the eight recorded operators +A_j,-A_j, with coincident operators identified",
+      "actual_used_operators": [
+        {
+          "source_index": 0,
+          "sign": -1,
+          "operator_int8_sha256": "4f4e5eeaf0171d6c46479a3e23b3e57b56431c08ef30c29e238aa67dbde0c770"
+        },
+        {
+          "source_index": 0,
+          "sign": 1,
+          "operator_int8_sha256": "1ccaa1baecf98a53b111e20947c42f4f2d1c9c8d5471acb530fd1286ae8300c4"
+        },
+        {
+          "source_index": 1,
+          "sign": -1,
+          "operator_int8_sha256": "048435c7dc6d3e68ea4ae02e1310b963f36f84f76467e2de7f40816f4c974350"
+        },
+        {
+          "source_index": 1,
+          "sign": 1,
+          "operator_int8_sha256": "98893c61b866bd18ced54ae625cdefb6d19aa1b8da4e7125d58dfd36fb2e67fd"
+        },
+        {
+          "source_index": 2,
+          "sign": -1,
+          "operator_int8_sha256": "c0a7684fbebec52c5fdd113057365a1107ea44806ba87c2ff38044283d1faa32"
+        },
+        {
+          "source_index": 2,
+          "sign": 1,
+          "operator_int8_sha256": "4c84fcb4d41af4cdae50e620f7b61e2b0d6ab6c81670582182e3a402805982c4"
+        },
+        {
+          "source_index": 3,
+          "sign": -1,
+          "operator_int8_sha256": "e0add2bab870aa3bd306a829a6903564ee5e4ae96d53066ebed4adb042b45081"
+        },
+        {
+          "source_index": 3,
+          "sign": 1,
+          "operator_int8_sha256": "ae7341aa64e98eadc05d1a80f1b17f0d83948ff2ea49f3ae16bf51f9e3eff93a"
+        }
+      ],
+      "distinct_used_operator_count": 8,
+      "terminal_frame": "I_181",
+      "terminal_frame_Gram_scale": 1,
+      "rational_order_after_scalar_action": 456844,
+      "endpoint_Gram_scale": 456844,
+      "endpoint_entry_alphabet": [
+        -1,
+        1
+      ],
+      "endpoint_recipe": "sum_j X_j tensor A_j, with the certified T631 signed partition X",
+      "complete_Gram_proof": "sum_i X_i X_i^T tensor A_i A_i^T =631 I tensor sum_i A_i A_i^T; cross terms cancel by the checked amicability identities",
+      "flatness_proof": "Each X position selects exactly one signed A_j block; every entry of each block is a sign.",
+      "complete_algebraic_endpoint_Gram_verified": true,
+      "dense_endpoint_allocated": false,
+      "literal_entry_and_row_recipe_available": true,
+      "literal_row_controls": {
+        "row_indices": [
+          0,
+          1,
+          180,
+          181,
+          228422,
+          456843
+        ],
+        "all_selected_full_rows_are_signs": true,
+        "all_selected_row_pairs_checked_by_exact_bit_counts": true,
+        "complete_Gram_proof": "Full polynomial OD identity and complete exact Williamson norm relation; row checks are interface controls."
+      },
+      "order_status": {
+        "width": 181,
+        "order": 456844,
+        "status": "known",
+        "checked_date": "2026-11-26",
+        "arithmetic_checks": {
+          "N_minus1": {
+            "3": 1,
+            "197": 1,
+            "773": 1
+          },
+          "N_over2_minus1": {
+            "228421": 1
+          },
+          "Yamada_q": 114209,
+          "Yamada_q_mod8": 1,
+          "Yamada_q_factorization": {
+            "19": 1,
+            "6011": 1
+          },
+          "all_divisor_Turyn_and_Paley_block_gates": [
+            {
+              "family": "Paley sixteen-block product",
+              "t": 1,
+              "s": 114211,
+              "q": 456843,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "3": 1,
+                "197": 1,
+                "773": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Turyn Williamson input",
+              "t": 1,
+              "s": 114211,
+              "q": 228421,
+              "prime_power": true,
+              "congruence_passes": true,
+              "q_factorization": {
+                "228421": 1
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Paley sixteen-block product",
+              "t": 181,
+              "s": 631,
+              "q": 2523,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "3": 1,
+                "29": 2
+              },
+              "T_input_claimed_known": true
+            },
+            {
+              "family": "Turyn Williamson input",
+              "t": 181,
+              "s": 631,
+              "q": 1261,
+              "prime_power": false,
+              "congruence_passes": true,
+              "q_factorization": {
+                "13": 1,
+                "97": 1
+              },
+              "T_input_claimed_known": true
+            }
+          ]
+        },
+        "prior_construction": {
+          "family": "Paley II",
+          "parameters": {
+            "q": 228421
+          },
+          "primary_references": [
+            "https://doi.org/10.1002/sapm1933121311",
+            "https://doi.org/10.1017/S0004972700045019",
+            "https://documents.uow.edu.au/~jennie/WEBPDF/139_1990.pdf"
+          ]
+        }
+      }
+    }
+  ],
+  "all_outputs_are_completed_literal_sign_matrix_recipes": true,
+  "scalar_factor_audit": "certificates/scalar-lift/near-williamson-scalar-algebras.json",
+  "scope": "The represented scalar algebra acts on the stated rational module. Its dimension is not assumed equal to the module dimension. Field factors, multiplicities and rational reconstruction are recorded in the separate exact algebra audit."
+}

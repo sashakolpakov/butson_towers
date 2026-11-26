@@ -105,8 +105,9 @@ give new orders 98436 and 295308 and the known order 885924. Their phase-24
 exponents are 4e+2; the global shift -6 followed by division by four gives
 the admitted sixth-root exponents e-1. The executor replays the complete
 inductive source proof, actual palettes and exact algebraic endpoint Grams
-through source order 351. The next finite execution at source order 1053,
-which would give H2657772, remains a target.
+through source order 351. The registered source of order 1053 would give
+H2657772, now positively identified as known by Paley I with prime parameter
+2657771. It is no longer a new-order target.
 
 ## Generalization of the successful parity coordinates
 

@@ -1,0 +1,266 @@
+{
+  "schema": "additional-spence-finite-order-status-v1",
+  "checked_date": "2026-11-26",
+  "scope": "The ten explicitly completed finite members in additional-spence-families.json; no novelty statement for every member of any family.",
+  "entries": {
+    "family:5:1": {
+      "q": 5,
+      "r": 1,
+      "source_order": 15,
+      "order": 37860,
+      "status": "known",
+      "checked_date": "2026-11-26",
+      "construction_certificate": {
+        "path": "certificates/scalar-lift/additional-spence-families.json",
+        "selector": "first_expanded_members[0]"
+      },
+      "prior_construction": {
+        "family": "Paley sixteen-block product",
+        "T_order": 3,
+        "s": 3155,
+        "prime_power_parameter": 12619,
+        "references": [
+          "https://arxiv.org/html/2610.27175v2#S4.T4",
+          "https://doi.org/10.1017/S0004972700045019"
+        ]
+      },
+      "literature_decision": "Positive earlier construction located."
+    },
+    "family:13:2": {
+      "q": 13,
+      "r": 2,
+      "source_order": 1183,
+      "order": 2985892,
+      "status": "new_to_best_of_authors_knowledge",
+      "checked_date": "2026-11-26",
+      "construction_certificate": {
+        "path": "certificates/scalar-lift/additional-spence-families.json",
+        "selector": "higher_original_family_members[0]"
+      },
+      "prior_construction": null,
+      "literature_decision": "No prior construction located; new to the best of the author's knowledge.",
+      "direct_parameter_factorizations": {
+        "N_minus1": {
+          "3": 1,
+          "947": 1,
+          "1051": 1
+        },
+        "N_over2_minus1": {
+          "5": 1,
+          "298589": 1
+        },
+        "Yamada_parameter": {
+          "11": 1,
+          "79": 1,
+          "859": 1
+        }
+      }
+    },
+    "family:53:1": {
+      "q": 53,
+      "r": 1,
+      "source_order": 1431,
+      "order": 3611844,
+      "status": "known",
+      "checked_date": "2026-11-26",
+      "construction_certificate": {
+        "path": "certificates/scalar-lift/additional-spence-families.json",
+        "selector": "first_expanded_members[1]"
+      },
+      "prior_construction": {
+        "family": "Cooper-Wallis with Turyn Williamson matrices",
+        "T_order": 9,
+        "Williamson_order": 100329,
+        "prime_power_parameter": 200657,
+        "references": [
+          "https://www.sciencedirect.com/science/article/pii/0097316573900101",
+          "https://doi.org/10.1017/S0004972700045019"
+        ]
+      },
+      "literature_decision": "Positive earlier construction located."
+    },
+    "family:17:2": {
+      "q": 17,
+      "r": 2,
+      "source_order": 2601,
+      "order": 6564924,
+      "status": "known",
+      "checked_date": "2026-11-26",
+      "construction_certificate": {
+        "path": "certificates/scalar-lift/additional-spence-families.json",
+        "selector": "higher_original_family_members[3]"
+      },
+      "prior_construction": {
+        "family": "Cooper-Wallis with Turyn Williamson matrices",
+        "T_order": 9,
+        "Williamson_order": 182359,
+        "prime_power_parameter": 364717,
+        "references": [
+          "https://www.sciencedirect.com/science/article/pii/0097316573900101",
+          "https://doi.org/10.1017/S0004972700045019"
+        ]
+      },
+      "literature_decision": "Positive earlier construction located."
+    },
+    "family:97:1": {
+      "q": 97,
+      "r": 1,
+      "source_order": 4753,
+      "order": 11996572,
+      "status": "known",
+      "checked_date": "2026-11-26",
+      "construction_certificate": {
+        "path": "certificates/scalar-lift/additional-spence-families.json",
+        "selector": "first_expanded_members[2]"
+      },
+      "prior_construction": {
+        "family": "Cooper-Wallis with Turyn Williamson matrices",
+        "T_order": 7,
+        "Williamson_order": 428449,
+        "prime_power_parameter": 856897,
+        "references": [
+          "https://www.sciencedirect.com/science/article/pii/0097316573900101",
+          "https://doi.org/10.1017/S0004972700045019"
+        ]
+      },
+      "literature_decision": "Positive earlier construction located."
+    },
+    "family:109:1": {
+      "q": 109,
+      "r": 1,
+      "source_order": 5995,
+      "order": 15131380,
+      "status": "new_to_best_of_authors_knowledge",
+      "checked_date": "2026-11-26",
+      "construction_certificate": {
+        "path": "certificates/scalar-lift/additional-spence-families.json",
+        "selector": "first_expanded_members[3]"
+      },
+      "prior_construction": null,
+      "literature_decision": "No prior construction located; new to the best of the author's knowledge.",
+      "direct_parameter_factorizations": {
+        "N_minus1": {
+          "3": 1,
+          "31": 1,
+          "162703": 1
+        },
+        "N_over2_minus1": {
+          "23": 1,
+          "41": 1,
+          "71": 1,
+          "113": 1
+        },
+        "Yamada_parameter": {
+          "19": 1,
+          "37": 1,
+          "5381": 1
+        }
+      }
+    },
+    "family:113:1": {
+      "q": 113,
+      "r": 1,
+      "source_order": 6441,
+      "order": 16257084,
+      "status": "known",
+      "checked_date": "2026-11-26",
+      "construction_certificate": {
+        "path": "certificates/scalar-lift/additional-spence-families.json",
+        "selector": "first_expanded_members[4]"
+      },
+      "prior_construction": {
+        "family": "Cooper-Wallis with Turyn Williamson matrices",
+        "T_order": 113,
+        "Williamson_order": 35967,
+        "prime_power_parameter": 71933,
+        "T_source": "TT(38) -> BS(75,38) -> T113",
+        "T_source_reference": "https://arxiv.org/abs/1206.4107",
+        "references": [
+          "https://www.sciencedirect.com/science/article/pii/0097316573900101",
+          "https://doi.org/10.1017/S0004972700045019"
+        ]
+      },
+      "literature_decision": "Positive earlier construction located."
+    },
+    "family:137:1": {
+      "q": 137,
+      "r": 1,
+      "source_order": 9453,
+      "order": 23859372,
+      "status": "known",
+      "checked_date": "2026-11-26",
+      "construction_certificate": {
+        "path": "certificates/scalar-lift/additional-spence-families.json",
+        "selector": "first_expanded_members[5]"
+      },
+      "prior_construction": {
+        "family": "Paley I",
+        "prime_power_parameter": 23859371,
+        "references": [
+          "https://doi.org/10.1002/sapm1933121311"
+        ]
+      },
+      "literature_decision": "Positive earlier construction located."
+    },
+    "family:13:3": {
+      "q": 13,
+      "r": 3,
+      "source_order": 15379,
+      "order": 38816596,
+      "status": "new_to_best_of_authors_knowledge",
+      "checked_date": "2026-11-26",
+      "construction_certificate": {
+        "path": "certificates/scalar-lift/additional-spence-families.json",
+        "selector": "higher_original_family_members[1]"
+      },
+      "prior_construction": null,
+      "literature_decision": "No prior construction located; new to the best of the author's knowledge.",
+      "direct_parameter_factorizations": {
+        "N_minus1": {
+          "3": 2,
+          "5": 1,
+          "47": 1,
+          "18353": 1
+        },
+        "N_over2_minus1": {
+          "23": 1,
+          "593": 1,
+          "1423": 1
+        },
+        "Yamada_parameter": {
+          "31": 1,
+          "313037": 1
+        }
+      }
+    },
+    "family:61:2": {
+      "q": 61,
+      "r": 2,
+      "source_order": 115351,
+      "order": 291145924,
+      "status": "new_to_best_of_authors_knowledge",
+      "checked_date": "2026-11-26",
+      "construction_certificate": {
+        "path": "certificates/scalar-lift/additional-spence-families.json",
+        "selector": "higher_original_family_members[2]"
+      },
+      "prior_construction": null,
+      "literature_decision": "No prior construction located; new to the best of the author's knowledge.",
+      "direct_parameter_factorizations": {
+        "N_minus1": {
+          "3": 2,
+          "983": 1,
+          "32909": 1
+        },
+        "N_over2_minus1": {
+          "2621": 1,
+          "55541": 1
+        },
+        "Yamada_parameter": {
+          "7669": 1,
+          "9491": 1
+        }
+      }
+    }
+  }
+}

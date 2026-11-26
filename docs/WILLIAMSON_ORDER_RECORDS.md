@@ -14,6 +14,11 @@ The [machine-readable status data](../experiments/scalar_lift/williamson_order_s
 give all 27 results and the prior construction parameters for each known
 order. They were checked on 24 November 2026.
 
+The [current source inventory](SOURCE_INVENTORY.md) extends these original
+27 inputs with 19 compatible quadruples, twelve of which add new orders.
+The new inputs can be symmetric back-circulants; their exact scalar algebra
+is audited separately rather than identified with a cyclic group algebra.
+
 ## Complete source and scalar-transfer proof
 
 Let `b=(b0,b1,b2,b3)` be the verified periodic T631 generating rows. Apply

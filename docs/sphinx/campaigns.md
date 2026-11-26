@@ -268,4 +268,4 @@ literal integer certificate and endpoint proof; a new-order label then
 requires the dated literature check. Its new Lean literal bridge must also
 be added and successfully checked before claiming formal verification of
 that new result. These stages do not alter the manuscript's already
-completed eighteen orders and six families.
+completed thirty-four new orders and nine stated families.

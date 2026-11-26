@@ -17,7 +17,9 @@ matrix recipe. General weighted nodes are useful outputs in their own right.
 | Apply all four admitted source orders to a newly completed prime frame | `reuse_hadamard_frame` |
 | New real orders 98436/295308 and known order 885924 from complete unreal-source triplings | `tripled_unreal_scalar_endpoints`; [proof and scope](../../docs/TRIPLED_UNREAL_SCALAR_ENDPOINTS.md) |
 | 27 exact Williamson sources restricted through cyclotomic group algebras; eight additional new real orders | `williamson_scalar_endpoints`; [inputs, completed orders and prior constructions](../../docs/WILLIAMSON_ORDER_RECORDS.md) |
+| 19 further compatible inputs; twelve additional new real orders with full field/module reconstruction | `near_williamson_scalar_endpoints`, `commutative_scalar_algebra`; [source inventory](../../docs/SOURCE_INVENTORY.md) |
 | Five literal Spence families for every integer r>=0; four additional new first expanded orders and known H18629644 | `williamson_spence_family`, `williamson_scalar_endpoints`; [induction and scalar proof](../../docs/SPENCE_SCALAR_FAMILIES.md) |
+| Six additional prime recurrences and higher finite members; three additional announced families | `additional_spence_families`; [current family scope](../../docs/SPENCE_SCALAR_FAMILIES.md) |
 | Fixed published order-19 and prime-square source palette checks | `additional_sixth_root_source_gates` |
 | Symbolic endpoint flatness, nonflat trace towers, real H768 examples and complex order-42/294 families | `projective_flat_descent` |
 | Small exact reference for carrying the complete operator and incoming form | `exact_norm_descent` |
@@ -63,8 +65,8 @@ These inventories preserve orthogonality with their recorded metric. Claim a
 Butson or real Hadamard endpoint only after the required ordinary Gram scale
 and root/sign entries have been proved. The
 [completed results and status convention](../../docs/HADAMARD_HIGHER_ORDER_RECORDS.md)
-record **38 completed real orders in the main campaign: 18 new and 20 known
+record **65 completed real orders in the main campaign: 34 new and 31 known
 recovered orders**, plus the separate new periodic T127 ingredient. The
-six infinite constructions have individually audited finite members;
+nine announced infinite constructions have individually audited finite members;
 their entire order sets are not labelled new. Earlier source inventories
 and reference chains retain their separate known-order control scope.

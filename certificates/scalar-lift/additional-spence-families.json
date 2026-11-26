@@ -1,0 +1,3859 @@
+{
+  "schema": "additional-spence-scalar-families-v1",
+  "implementation_sha256": "277a57ab3537e75974f75d834a93bd035313eb088e93c08596fb3e8b0c21c2f8",
+  "original_recurrence_implementation_sha256": "4ecae4bb17fa18a0a0f06a8018d952a36ac209c9ca813312a25efbee0e38995a",
+  "scope": "Six newly implemented classical source recurrences and exact finite scalar endpoints; finite-order novelty is classified separately.",
+  "construction_reference": "https://doi.org/10.1017/S1446788700020255",
+  "construction_reference_location": "Spence (1977), Theorem 4, printed p.254",
+  "original_five_parameter_registry_unchanged": [
+    13,
+    17,
+    61,
+    101,
+    121
+  ],
+  "families": [
+    {
+      "q": 5,
+      "base_source_order": 3,
+      "endpoint_order_formula": "7572*5^r",
+      "parameter_range": "all integers r>=0",
+      "literal_entry_recipe_complete": true
+    },
+    {
+      "q": 53,
+      "base_source_order": 27,
+      "endpoint_order_formula": "68148*53^r",
+      "parameter_range": "all integers r>=0",
+      "literal_entry_recipe_complete": true
+    },
+    {
+      "q": 97,
+      "base_source_order": 49,
+      "endpoint_order_formula": "123676*97^r",
+      "parameter_range": "all integers r>=0",
+      "literal_entry_recipe_complete": true
+    },
+    {
+      "q": 109,
+      "base_source_order": 55,
+      "endpoint_order_formula": "138820*109^r",
+      "parameter_range": "all integers r>=0",
+      "literal_entry_recipe_complete": true
+    },
+    {
+      "q": 113,
+      "base_source_order": 57,
+      "endpoint_order_formula": "143868*113^r",
+      "parameter_range": "all integers r>=0",
+      "literal_entry_recipe_complete": true
+    },
+    {
+      "q": 137,
+      "base_source_order": 69,
+      "endpoint_order_formula": "174156*137^r",
+      "parameter_range": "all integers r>=0",
+      "literal_entry_recipe_complete": true
+    }
+  ],
+  "strong_starters": [
+    {
+      "q": 5,
+      "order": 3,
+      "channel_permutation": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "channel_signs": [
+        1,
+        -1,
+        1,
+        1
+      ],
+      "input_file": "experiments/scalar_lift/williamson_inputs.json",
+      "input_file_sha256": "242f554cf113c68ab882e147c3b2702b7bb62e68b66ad36b16c92b6c194f8560",
+      "input_rows_int8_sha256": "7fe7ffe6ccac570f04ed305e09cbf24ea834394b81bc3ae799552fab399fd2df",
+      "literal_first_rows_pm": [
+        "+++",
+        "-++",
+        "+--",
+        "+--"
+      ],
+      "all_signs_symmetry_and_commutation_verified": true,
+      "complete_strong_minus_Gram_scale": 4,
+      "complete_strong_plus_Gram_scale": 20,
+      "complete_summed_Gram_scale": 12,
+      "primary_source": {
+        "id": "sage_official_literal_table",
+        "url": "https://github.com/sagemath/sage/blob/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py#L577",
+        "raw_url": "https://raw.githubusercontent.com/sagemath/sage/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py",
+        "commit": "8de8dad7bcb38e1baa43508cbe944bf04a2d0401",
+        "commit_date": "2026-11-14",
+        "source_sha256": "15b018c9d25cfbe1a45f98ee1421b338beb2b39077c6777e6bc33bc0fbd4b01d",
+        "function": "williamson_type_quadruples_smallcases",
+        "documentation_url": "https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/matrices/hadamard_matrix.html#sage.combinat.matrices.hadamard_matrix.williamson_type_quadruples_smallcases",
+        "documented_original_sources": "Sage attributes orders 3,5,...,29,37,43 to [Ha83], and 31,33,39,41,45,49,51,55,57,61,63 to [Lon2013]."
+      },
+      "primary_literal_selection": null
+    },
+    {
+      "q": 53,
+      "order": 27,
+      "channel_permutation": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "channel_signs": [
+        1,
+        -1,
+        1,
+        1
+      ],
+      "input_file": "experiments/scalar_lift/williamson_inputs.json",
+      "input_file_sha256": "242f554cf113c68ab882e147c3b2702b7bb62e68b66ad36b16c92b6c194f8560",
+      "input_rows_int8_sha256": "e4bad648170186f8ea925062a392b98c6f5abae8e68f496c937fc335654ce1c6",
+      "literal_first_rows_pm": [
+        "+--+--+-+++--++--+++-+--+--",
+        "---+--+-+++--++--+++-+--+--",
+        "+---+++++-+-++++-+-+++++---",
+        "+---+++++-+-++++-+-+++++---"
+      ],
+      "all_signs_symmetry_and_commutation_verified": true,
+      "complete_strong_minus_Gram_scale": 4,
+      "complete_strong_plus_Gram_scale": 212,
+      "complete_summed_Gram_scale": 108,
+      "primary_source": {
+        "id": "sage_official_literal_table",
+        "url": "https://github.com/sagemath/sage/blob/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py#L577",
+        "raw_url": "https://raw.githubusercontent.com/sagemath/sage/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py",
+        "commit": "8de8dad7bcb38e1baa43508cbe944bf04a2d0401",
+        "commit_date": "2026-11-14",
+        "source_sha256": "15b018c9d25cfbe1a45f98ee1421b338beb2b39077c6777e6bc33bc0fbd4b01d",
+        "function": "williamson_type_quadruples_smallcases",
+        "documentation_url": "https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/matrices/hadamard_matrix.html#sage.combinat.matrices.hadamard_matrix.williamson_type_quadruples_smallcases",
+        "documented_original_sources": "Sage attributes orders 3,5,...,29,37,43 to [Ha83], and 31,33,39,41,45,49,51,55,57,61,63 to [Lon2013]."
+      },
+      "primary_literal_selection": null
+    },
+    {
+      "q": 97,
+      "order": 49,
+      "channel_permutation": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "channel_signs": [
+        1,
+        1,
+        1,
+        -1
+      ],
+      "input_file": "experiments/scalar_lift/williamson_inputs.json",
+      "input_file_sha256": "242f554cf113c68ab882e147c3b2702b7bb62e68b66ad36b16c92b6c194f8560",
+      "input_rows_int8_sha256": "1308bc907821e4b3bed9ead79d718f81e31e423fa8be4f03b9877bb30b2a040a",
+      "literal_first_rows_pm": [
+        "++++-++-+---++-+++---++-++-++---+++-++---+-++-+++",
+        "++++-++-+---++-+++---++-++-++---+++-++---+-++-+++",
+        "+----+-++++--+-+++-+-+++--+++-+-+++-+--++++-+----",
+        "-----+-++++--+-+++-+-+++--+++-+-+++-+--++++-+----"
+      ],
+      "all_signs_symmetry_and_commutation_verified": true,
+      "complete_strong_minus_Gram_scale": 4,
+      "complete_strong_plus_Gram_scale": 388,
+      "complete_summed_Gram_scale": 196,
+      "primary_source": {
+        "id": "sage_official_literal_table",
+        "url": "https://github.com/sagemath/sage/blob/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py#L577",
+        "raw_url": "https://raw.githubusercontent.com/sagemath/sage/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py",
+        "commit": "8de8dad7bcb38e1baa43508cbe944bf04a2d0401",
+        "commit_date": "2026-11-14",
+        "source_sha256": "15b018c9d25cfbe1a45f98ee1421b338beb2b39077c6777e6bc33bc0fbd4b01d",
+        "function": "williamson_type_quadruples_smallcases",
+        "documentation_url": "https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/matrices/hadamard_matrix.html#sage.combinat.matrices.hadamard_matrix.williamson_type_quadruples_smallcases",
+        "documented_original_sources": "Sage attributes orders 3,5,...,29,37,43 to [Ha83], and 31,33,39,41,45,49,51,55,57,61,63 to [Lon2013]."
+      },
+      "primary_literal_selection": null
+    },
+    {
+      "q": 109,
+      "order": 55,
+      "channel_permutation": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "channel_signs": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "input_file": "experiments/scalar_lift/williamson_inputs.json",
+      "input_file_sha256": "242f554cf113c68ab882e147c3b2702b7bb62e68b66ad36b16c92b6c194f8560",
+      "input_rows_int8_sha256": "914518d6bda74f14ea949f2176a49cc5025f4b8f692e4cedc85f322f3ebf8006",
+      "literal_first_rows_pm": [
+        "+-+--+-+-++--+-+++++-+++--++++--+++-+++++-+--++-+-+--+-",
+        "--+--+-+-++--+-+++++-+++--++++--+++-+++++-+--++-+-+--+-",
+        "+++----++-++--++----+-+-++++++++-+-+----++--++-++----++",
+        "+++----++-++--++----+-+-++++++++-+-+----++--++-++----++"
+      ],
+      "all_signs_symmetry_and_commutation_verified": true,
+      "complete_strong_minus_Gram_scale": 4,
+      "complete_strong_plus_Gram_scale": 436,
+      "complete_summed_Gram_scale": 220,
+      "primary_source": {
+        "id": "sage_official_literal_table",
+        "url": "https://github.com/sagemath/sage/blob/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py#L577",
+        "raw_url": "https://raw.githubusercontent.com/sagemath/sage/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py",
+        "commit": "8de8dad7bcb38e1baa43508cbe944bf04a2d0401",
+        "commit_date": "2026-11-14",
+        "source_sha256": "15b018c9d25cfbe1a45f98ee1421b338beb2b39077c6777e6bc33bc0fbd4b01d",
+        "function": "williamson_type_quadruples_smallcases",
+        "documentation_url": "https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/matrices/hadamard_matrix.html#sage.combinat.matrices.hadamard_matrix.williamson_type_quadruples_smallcases",
+        "documented_original_sources": "Sage attributes orders 3,5,...,29,37,43 to [Ha83], and 31,33,39,41,45,49,51,55,57,61,63 to [Lon2013]."
+      },
+      "primary_literal_selection": null
+    },
+    {
+      "q": 113,
+      "order": 57,
+      "channel_permutation": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "channel_signs": [
+        1,
+        1,
+        1,
+        1
+      ],
+      "input_file": "experiments/scalar_lift/williamson_inputs.json",
+      "input_file_sha256": "242f554cf113c68ab882e147c3b2702b7bb62e68b66ad36b16c92b6c194f8560",
+      "input_rows_int8_sha256": "45db03f6349fe2b3e6408b04f9d1ea4b11b9004782120a1b96c1a33829fdcd85",
+      "literal_first_rows_pm": [
+        "+---++-+--++++-+++-++---+-++++++-+---++-+++-++++--+-++---",
+        "----++-+--++++-+++-++---+-++++++-+---++-+++-++++--+-++---",
+        "--+-+-+++--+--+-++---+++++-++++-+++++---++-+--+--+++-+-+-",
+        "--+-+-+++--+--+-++---+++++-++++-+++++---++-+--+--+++-+-+-"
+      ],
+      "all_signs_symmetry_and_commutation_verified": true,
+      "complete_strong_minus_Gram_scale": 4,
+      "complete_strong_plus_Gram_scale": 452,
+      "complete_summed_Gram_scale": 228,
+      "primary_source": {
+        "id": "sage_official_literal_table",
+        "url": "https://github.com/sagemath/sage/blob/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py#L577",
+        "raw_url": "https://raw.githubusercontent.com/sagemath/sage/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py",
+        "commit": "8de8dad7bcb38e1baa43508cbe944bf04a2d0401",
+        "commit_date": "2026-11-14",
+        "source_sha256": "15b018c9d25cfbe1a45f98ee1421b338beb2b39077c6777e6bc33bc0fbd4b01d",
+        "function": "williamson_type_quadruples_smallcases",
+        "documentation_url": "https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/matrices/hadamard_matrix.html#sage.combinat.matrices.hadamard_matrix.williamson_type_quadruples_smallcases",
+        "documented_original_sources": "Sage attributes orders 3,5,...,29,37,43 to [Ha83], and 31,33,39,41,45,49,51,55,57,61,63 to [Lon2013]."
+      },
+      "primary_literal_selection": null
+    },
+    {
+      "q": 137,
+      "order": 69,
+      "channel_permutation": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "channel_signs": [
+        1,
+        -1,
+        1,
+        1
+      ],
+      "input_file": "experiments/scalar_lift/near_williamson_inputs.json",
+      "input_file_sha256": "be3da66fbf0517cde1e326e6a60c26acaeb03c0a1948b74bff78bcadad00957f",
+      "input_rows_int8_sha256": "f2283a3ee736bcca9e52cc61c366a004c667fcbf198e0e78a8f6f3b713362f15",
+      "literal_first_rows_pm": [
+        "+-----+-+--++-++-++++---+--++-+-+-++-+-+-++--+---++++-++-++--+-+-----",
+        "------+-+--++-++-++++---+--++-+-+-++-+-+-++--+---++++-++-++--+-+-----",
+        "+++--++-----++++-+----++---+---+-+--+-+---+---++----+-++++-----++--++",
+        "+++--++-----++++-+----++---+---+-+--+-+---+---++----+-++++-----++--++"
+      ],
+      "all_signs_symmetry_and_commutation_verified": true,
+      "complete_strong_minus_Gram_scale": 4,
+      "complete_strong_plus_Gram_scale": 548,
+      "complete_summed_Gram_scale": 276,
+      "primary_source": {
+        "url": "https://zenodo.org/records/1195693/files/williamson-69.txt?download=1",
+        "final_url": "https://zenodo.org/records/1195693/files/williamson-69.txt?download=1",
+        "sha256": "bfc68b4172d52e881fcd417d97b4a9b779b2dca57767fa54276fff0173f9f9f3",
+        "bytes": 280
+      },
+      "primary_literal_selection": {
+        "encoding": "four space-separated +/- rows, one quadruple per line",
+        "selected_nonempty_line_1_based": 1,
+        "dataset_DOI": "10.5281/zenodo.1195693",
+        "published_MD5": "8527b3c55a4851226a39b3f8181edd5a"
+      }
+    }
+  ],
+  "Paley_checks": [
+    {
+      "q": 5,
+      "prime": 5,
+      "first_row_int8_sha256": "c0e832505ffe08c1afd084a554c5423d0029f3df16a0c85850f9a7f35b12e47b",
+      "complete_integer_symmetry_zero_sum_and_square_identities_verified": true
+    },
+    {
+      "q": 53,
+      "prime": 53,
+      "first_row_int8_sha256": "0b094c3fae4bc39af6b677f3942416c8d9e740537ccbc5690dc7d786d9f257dc",
+      "complete_integer_symmetry_zero_sum_and_square_identities_verified": true
+    },
+    {
+      "q": 97,
+      "prime": 97,
+      "first_row_int8_sha256": "3cc51808cac6b83c5fc2d72d0992a6fa3f93b12979f88df471ccd4ab49159e84",
+      "complete_integer_symmetry_zero_sum_and_square_identities_verified": true
+    },
+    {
+      "q": 109,
+      "prime": 109,
+      "first_row_int8_sha256": "fed96d89229a02fb70f98c9174322db8663bcccb6c14f7c0be56a0e1c4ce4c77",
+      "complete_integer_symmetry_zero_sum_and_square_identities_verified": true
+    },
+    {
+      "q": 113,
+      "prime": 113,
+      "first_row_int8_sha256": "c449f8f0431998adfce7ab282f610f325ce92012439e885f5e43dcc8dd71e032",
+      "complete_integer_symmetry_zero_sum_and_square_identities_verified": true
+    },
+    {
+      "q": 137,
+      "prime": 137,
+      "first_row_int8_sha256": "9f47a288a9499ec15e63d1417b0c548efe6aa26990765514a40a480a1b6d7de1",
+      "complete_integer_symmetry_zero_sum_and_square_identities_verified": true
+    }
+  ],
+  "first_expanded_members": [
+    {
+      "q": 5,
+      "r": 1,
+      "source_order": 15,
+      "group_dimensions": [
+        3,
+        5
+      ],
+      "strong_starter": {
+        "q": 5,
+        "order": 3,
+        "channel_permutation": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "channel_signs": [
+          1,
+          -1,
+          1,
+          1
+        ],
+        "input_file": "experiments/scalar_lift/williamson_inputs.json",
+        "input_file_sha256": "242f554cf113c68ab882e147c3b2702b7bb62e68b66ad36b16c92b6c194f8560",
+        "input_rows_int8_sha256": "7fe7ffe6ccac570f04ed305e09cbf24ea834394b81bc3ae799552fab399fd2df",
+        "literal_first_rows_pm": [
+          "+++",
+          "-++",
+          "+--",
+          "+--"
+        ],
+        "all_signs_symmetry_and_commutation_verified": true,
+        "complete_strong_minus_Gram_scale": 4,
+        "complete_strong_plus_Gram_scale": 20,
+        "complete_summed_Gram_scale": 12,
+        "primary_source": {
+          "id": "sage_official_literal_table",
+          "url": "https://github.com/sagemath/sage/blob/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py#L577",
+          "raw_url": "https://raw.githubusercontent.com/sagemath/sage/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py",
+          "commit": "8de8dad7bcb38e1baa43508cbe944bf04a2d0401",
+          "commit_date": "2026-11-14",
+          "source_sha256": "15b018c9d25cfbe1a45f98ee1421b338beb2b39077c6777e6bc33bc0fbd4b01d",
+          "function": "williamson_type_quadruples_smallcases",
+          "documentation_url": "https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/matrices/hadamard_matrix.html#sage.combinat.matrices.hadamard_matrix.williamson_type_quadruples_smallcases",
+          "documented_original_sources": "Sage attributes orders 3,5,...,29,37,43 to [Ha83], and 31,33,39,41,45,49,51,55,57,61,63 to [Lon2013]."
+        },
+        "primary_literal_selection": null
+      },
+      "source_recurrence_reference": "https://doi.org/10.1017/S1446788700020255",
+      "literal_first_rows_int8_row_major_sha256": "b33276704acf975ab74c16d4be6c51054362d5accfc372dd4316d760a90a6f32",
+      "actual_source_entry_alphabet": [
+        -1,
+        1
+      ],
+      "complete_exact_source_norm_checks": {
+        "all_group_coefficients_per_identity_checked": 15,
+        "complete_identities_checked": [
+          "sum_j A_j^2=4wI",
+          "(D-E)^2+(F-G)^2=4q^rI",
+          "(D+E)^2+(F+G)^2=4q^(r+1)I"
+        ],
+        "method": "integer NTT of Kronecker-encoded multivariate polynomials, followed by exact group folding",
+        "modulus": 998244353,
+        "NTT_length": 64,
+        "absolute_integer_coefficient_bound": 120,
+        "bound_strictly_below_modulus": true,
+        "all_polynomials_self_conjugate": true,
+        "integer_exactness": "target residual coefficients have magnitude at most8w<modulus; zero residues therefore prove zero integers"
+      },
+      "recurrence_trace": [
+        {
+          "r": 0,
+          "minus_Gram_scale": 4,
+          "plus_Gram_scale": 20,
+          "mixed_J_coefficient": 0,
+          "next_minus_Gram_scale": 20,
+          "next_plus_Gram_scale": 100
+        }
+      ],
+      "source_algebra": {
+        "algebra": "Q[G]",
+        "group": "C_3 x C_5",
+        "group_dimensions": [
+          3,
+          5
+        ],
+        "rational_dimension": 15,
+        "group_exponent": 15,
+        "cyclotomic_field_factors": [
+          {
+            "conductor": 1,
+            "field_degree": 1,
+            "multiplicity": 1
+          },
+          {
+            "conductor": 3,
+            "field_degree": 2,
+            "multiplicity": 1
+          },
+          {
+            "conductor": 5,
+            "field_degree": 4,
+            "multiplicity": 1
+          },
+          {
+            "conductor": 15,
+            "field_degree": 8,
+            "multiplicity": 1
+          }
+        ],
+        "conjugation": "g -> -g in the additive group",
+        "coordinate_basis": "beta_g=c^(-g), indexed by the recorded mixed-radix group coordinates",
+        "trace_functional": "tau(a)=[identity]a=(1/|G|)*sum_all_field_factors Tr(a_factor)",
+        "trace_metric": "I_15",
+        "multiplication_action": "rho(f)[r,s]=f_coefficients[s-r], with componentwise group subtraction",
+        "adjoint_identity": "rho(conjugate(f))=rho(f)^T",
+        "endpoint_frame_Gram_scale": 1
+      },
+      "source_entry_control_indices": [
+        0,
+        1,
+        7,
+        14
+      ],
+      "weighted_OD_source_order_over_algebra": 2524,
+      "weighted_OD_source_Gram_scale": 37860,
+      "T631_orthogonal_design_proof": {
+        "T_source": {
+          "order": 631,
+          "actual_alphabet": [
+            -1,
+            0,
+            1
+          ],
+          "supports_partition_every_position": true,
+          "all_periodic_shifts_checked": 631,
+          "summed_circulant_Gram_scale": 631,
+          "generating_rows_int8_sha256": "fe4855aee9e85fc10ba5ca13ce55e7afd037d310d7636067678629e3a6b47ea2",
+          "row_sums": [
+            22,
+            7,
+            7,
+            7
+          ]
+        },
+        "orthogonal_design_order": 2524,
+        "variable_count": 4,
+        "variable_weights": [
+          631,
+          631,
+          631,
+          631
+        ],
+        "source_identity": "D(x)D(x)^T=p*(x0^2+x1^2+x2^2+x3^2)*I_(4p)",
+        "construction": "D(x)=GS(L(x)b), with the literal L table retained below",
+        "L_variable_and_sign": [
+          [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              2,
+              -1
+            ],
+            [
+              3,
+              -1
+            ]
+          ],
+          [
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              2,
+              -1
+            ]
+          ],
+          [
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              -1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              3,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        ],
+        "GS_convention": "The standalone gs function in this recipe; reversal has J_uv=1 when u+v=p-1",
+        "all_polynomial_periodic_Gram_coefficients_checked": 6310,
+        "full_polynomial_Gram_verified": true,
+        "all_circulant_blocks_commute": true,
+        "coefficient_matrices_entry_alphabet": [
+          -1,
+          0,
+          1
+        ],
+        "coefficient_matrices_disjoint_and_cover_every_entry": true,
+        "coefficient_matrices_int8_sha256": [
+          "2c113a74d199300eb90c297e7cc58cf63f19ee70bf4bf6596b99622e26d0330b",
+          "0a69f1ba5e00ae9852dfe298d26fdbdd870af8d2c514b764afeb9abcc1ad6542",
+          "d34628b2fac3cd0b546679224ef5661dccdbb88bb181c64ebcbe270e95555f18",
+          "413bf6e2044646fc92c36eb92cf4d609eb9cf4df78fb5ccbc5aa93512d265d97"
+        ],
+        "full_dense_coefficient_matrix_products_performed": false,
+        "literal_T_source": "artifacts/hadamard-7572/t631.json",
+        "literal_T_source_sha256": "c5497ef485a23f1c99385035eaf02472b4dad4dee9d906d0d6b2aeb2f3680871",
+        "orbit_states": [
+          0,
+          0,
+          5,
+          4,
+          4,
+          0,
+          7,
+          0,
+          7,
+          2,
+          3,
+          0,
+          1,
+          2,
+          6,
+          1,
+          4,
+          2,
+          0,
+          1,
+          1,
+          4,
+          3,
+          4,
+          7,
+          3,
+          3,
+          5,
+          6,
+          2,
+          7
+        ],
+        "multiplier": 458,
+        "multiplier_order": 21
+      },
+      "endpoint_order": 37860,
+      "endpoint_Gram_scale": 37860,
+      "endpoint_entry_recipe": "sum_k X[k,i,j]*A[k,a,b], row=(i,a), column=(j,b)",
+      "endpoint_entry_control_indices": [
+        0,
+        1,
+        15,
+        18930,
+        37859
+      ],
+      "endpoint_entry_control_values": [
+        [
+          1,
+          1,
+          1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          1,
+          1,
+          -1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          -1,
+          1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          -1,
+          1,
+          1
+        ]
+      ],
+      "full_endpoint_Gram_verified_algebraically": true,
+      "endpoint_Gram_proof": "Complete T631 polynomial OD identity, exact commuting self-adjoint group-source norm, and disjoint sign supports.",
+      "full_dense_source_or_endpoint_allocation_performed": false,
+      "allocation_scope": "Only step zero uses dense starter components; all positive-step source norms use group rows and no dense endpoint is allocated.",
+      "finite_order_novelty_inferred": false
+    },
+    {
+      "q": 53,
+      "r": 1,
+      "source_order": 1431,
+      "group_dimensions": [
+        27,
+        53
+      ],
+      "strong_starter": {
+        "q": 53,
+        "order": 27,
+        "channel_permutation": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "channel_signs": [
+          1,
+          -1,
+          1,
+          1
+        ],
+        "input_file": "experiments/scalar_lift/williamson_inputs.json",
+        "input_file_sha256": "242f554cf113c68ab882e147c3b2702b7bb62e68b66ad36b16c92b6c194f8560",
+        "input_rows_int8_sha256": "e4bad648170186f8ea925062a392b98c6f5abae8e68f496c937fc335654ce1c6",
+        "literal_first_rows_pm": [
+          "+--+--+-+++--++--+++-+--+--",
+          "---+--+-+++--++--+++-+--+--",
+          "+---+++++-+-++++-+-+++++---",
+          "+---+++++-+-++++-+-+++++---"
+        ],
+        "all_signs_symmetry_and_commutation_verified": true,
+        "complete_strong_minus_Gram_scale": 4,
+        "complete_strong_plus_Gram_scale": 212,
+        "complete_summed_Gram_scale": 108,
+        "primary_source": {
+          "id": "sage_official_literal_table",
+          "url": "https://github.com/sagemath/sage/blob/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py#L577",
+          "raw_url": "https://raw.githubusercontent.com/sagemath/sage/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py",
+          "commit": "8de8dad7bcb38e1baa43508cbe944bf04a2d0401",
+          "commit_date": "2026-11-14",
+          "source_sha256": "15b018c9d25cfbe1a45f98ee1421b338beb2b39077c6777e6bc33bc0fbd4b01d",
+          "function": "williamson_type_quadruples_smallcases",
+          "documentation_url": "https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/matrices/hadamard_matrix.html#sage.combinat.matrices.hadamard_matrix.williamson_type_quadruples_smallcases",
+          "documented_original_sources": "Sage attributes orders 3,5,...,29,37,43 to [Ha83], and 31,33,39,41,45,49,51,55,57,61,63 to [Lon2013]."
+        },
+        "primary_literal_selection": null
+      },
+      "source_recurrence_reference": "https://doi.org/10.1017/S1446788700020255",
+      "literal_first_rows_int8_row_major_sha256": "be5048d03adb078165c568cbdd89013f846f043b7c69cf78465ff3913e451335",
+      "actual_source_entry_alphabet": [
+        -1,
+        1
+      ],
+      "complete_exact_source_norm_checks": {
+        "all_group_coefficients_per_identity_checked": 1431,
+        "complete_identities_checked": [
+          "sum_j A_j^2=4wI",
+          "(D-E)^2+(F-G)^2=4q^rI",
+          "(D+E)^2+(F+G)^2=4q^(r+1)I"
+        ],
+        "method": "integer NTT of Kronecker-encoded multivariate polynomials, followed by exact group folding",
+        "modulus": 998244353,
+        "NTT_length": 8192,
+        "absolute_integer_coefficient_bound": 11448,
+        "bound_strictly_below_modulus": true,
+        "all_polynomials_self_conjugate": true,
+        "integer_exactness": "target residual coefficients have magnitude at most8w<modulus; zero residues therefore prove zero integers"
+      },
+      "recurrence_trace": [
+        {
+          "r": 0,
+          "minus_Gram_scale": 4,
+          "plus_Gram_scale": 212,
+          "mixed_J_coefficient": 0,
+          "next_minus_Gram_scale": 212,
+          "next_plus_Gram_scale": 11236
+        }
+      ],
+      "source_algebra": {
+        "algebra": "Q[G]",
+        "group": "C_27 x C_53",
+        "group_dimensions": [
+          27,
+          53
+        ],
+        "rational_dimension": 1431,
+        "group_exponent": 1431,
+        "cyclotomic_field_factors": [
+          {
+            "conductor": 1,
+            "field_degree": 1,
+            "multiplicity": 1
+          },
+          {
+            "conductor": 3,
+            "field_degree": 2,
+            "multiplicity": 1
+          },
+          {
+            "conductor": 9,
+            "field_degree": 6,
+            "multiplicity": 1
+          },
+          {
+            "conductor": 27,
+            "field_degree": 18,
+            "multiplicity": 1
+          },
+          {
+            "conductor": 53,
+            "field_degree": 52,
+            "multiplicity": 1
+          },
+          {
+            "conductor": 159,
+            "field_degree": 104,
+            "multiplicity": 1
+          },
+          {
+            "conductor": 477,
+            "field_degree": 312,
+            "multiplicity": 1
+          },
+          {
+            "conductor": 1431,
+            "field_degree": 936,
+            "multiplicity": 1
+          }
+        ],
+        "conjugation": "g -> -g in the additive group",
+        "coordinate_basis": "beta_g=c^(-g), indexed by the recorded mixed-radix group coordinates",
+        "trace_functional": "tau(a)=[identity]a=(1/|G|)*sum_all_field_factors Tr(a_factor)",
+        "trace_metric": "I_1431",
+        "multiplication_action": "rho(f)[r,s]=f_coefficients[s-r], with componentwise group subtraction",
+        "adjoint_identity": "rho(conjugate(f))=rho(f)^T",
+        "endpoint_frame_Gram_scale": 1
+      },
+      "source_entry_control_indices": [
+        0,
+        1,
+        715,
+        1430
+      ],
+      "weighted_OD_source_order_over_algebra": 2524,
+      "weighted_OD_source_Gram_scale": 3611844,
+      "T631_orthogonal_design_proof": {
+        "T_source": {
+          "order": 631,
+          "actual_alphabet": [
+            -1,
+            0,
+            1
+          ],
+          "supports_partition_every_position": true,
+          "all_periodic_shifts_checked": 631,
+          "summed_circulant_Gram_scale": 631,
+          "generating_rows_int8_sha256": "fe4855aee9e85fc10ba5ca13ce55e7afd037d310d7636067678629e3a6b47ea2",
+          "row_sums": [
+            22,
+            7,
+            7,
+            7
+          ]
+        },
+        "orthogonal_design_order": 2524,
+        "variable_count": 4,
+        "variable_weights": [
+          631,
+          631,
+          631,
+          631
+        ],
+        "source_identity": "D(x)D(x)^T=p*(x0^2+x1^2+x2^2+x3^2)*I_(4p)",
+        "construction": "D(x)=GS(L(x)b), with the literal L table retained below",
+        "L_variable_and_sign": [
+          [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              2,
+              -1
+            ],
+            [
+              3,
+              -1
+            ]
+          ],
+          [
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              2,
+              -1
+            ]
+          ],
+          [
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              -1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              3,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        ],
+        "GS_convention": "The standalone gs function in this recipe; reversal has J_uv=1 when u+v=p-1",
+        "all_polynomial_periodic_Gram_coefficients_checked": 6310,
+        "full_polynomial_Gram_verified": true,
+        "all_circulant_blocks_commute": true,
+        "coefficient_matrices_entry_alphabet": [
+          -1,
+          0,
+          1
+        ],
+        "coefficient_matrices_disjoint_and_cover_every_entry": true,
+        "coefficient_matrices_int8_sha256": [
+          "2c113a74d199300eb90c297e7cc58cf63f19ee70bf4bf6596b99622e26d0330b",
+          "0a69f1ba5e00ae9852dfe298d26fdbdd870af8d2c514b764afeb9abcc1ad6542",
+          "d34628b2fac3cd0b546679224ef5661dccdbb88bb181c64ebcbe270e95555f18",
+          "413bf6e2044646fc92c36eb92cf4d609eb9cf4df78fb5ccbc5aa93512d265d97"
+        ],
+        "full_dense_coefficient_matrix_products_performed": false,
+        "literal_T_source": "artifacts/hadamard-7572/t631.json",
+        "literal_T_source_sha256": "c5497ef485a23f1c99385035eaf02472b4dad4dee9d906d0d6b2aeb2f3680871",
+        "orbit_states": [
+          0,
+          0,
+          5,
+          4,
+          4,
+          0,
+          7,
+          0,
+          7,
+          2,
+          3,
+          0,
+          1,
+          2,
+          6,
+          1,
+          4,
+          2,
+          0,
+          1,
+          1,
+          4,
+          3,
+          4,
+          7,
+          3,
+          3,
+          5,
+          6,
+          2,
+          7
+        ],
+        "multiplier": 458,
+        "multiplier_order": 21
+      },
+      "endpoint_order": 3611844,
+      "endpoint_Gram_scale": 3611844,
+      "endpoint_entry_recipe": "sum_k X[k,i,j]*A[k,a,b], row=(i,a), column=(j,b)",
+      "endpoint_entry_control_indices": [
+        0,
+        1,
+        1431,
+        1805922,
+        3611843
+      ],
+      "endpoint_entry_control_values": [
+        [
+          1,
+          1,
+          1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          1,
+          1,
+          -1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          -1
+        ],
+        [
+          1,
+          1,
+          -1,
+          1,
+          1
+        ],
+        [
+          1,
+          -1,
+          1,
+          -1,
+          1
+        ]
+      ],
+      "full_endpoint_Gram_verified_algebraically": true,
+      "endpoint_Gram_proof": "Complete T631 polynomial OD identity, exact commuting self-adjoint group-source norm, and disjoint sign supports.",
+      "full_dense_source_or_endpoint_allocation_performed": false,
+      "allocation_scope": "Only step zero uses dense starter components; all positive-step source norms use group rows and no dense endpoint is allocated.",
+      "finite_order_novelty_inferred": false
+    },
+    {
+      "q": 97,
+      "r": 1,
+      "source_order": 4753,
+      "group_dimensions": [
+        49,
+        97
+      ],
+      "strong_starter": {
+        "q": 97,
+        "order": 49,
+        "channel_permutation": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "channel_signs": [
+          1,
+          1,
+          1,
+          -1
+        ],
+        "input_file": "experiments/scalar_lift/williamson_inputs.json",
+        "input_file_sha256": "242f554cf113c68ab882e147c3b2702b7bb62e68b66ad36b16c92b6c194f8560",
+        "input_rows_int8_sha256": "1308bc907821e4b3bed9ead79d718f81e31e423fa8be4f03b9877bb30b2a040a",
+        "literal_first_rows_pm": [
+          "++++-++-+---++-+++---++-++-++---+++-++---+-++-+++",
+          "++++-++-+---++-+++---++-++-++---+++-++---+-++-+++",
+          "+----+-++++--+-+++-+-+++--+++-+-+++-+--++++-+----",
+          "-----+-++++--+-+++-+-+++--+++-+-+++-+--++++-+----"
+        ],
+        "all_signs_symmetry_and_commutation_verified": true,
+        "complete_strong_minus_Gram_scale": 4,
+        "complete_strong_plus_Gram_scale": 388,
+        "complete_summed_Gram_scale": 196,
+        "primary_source": {
+          "id": "sage_official_literal_table",
+          "url": "https://github.com/sagemath/sage/blob/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py#L577",
+          "raw_url": "https://raw.githubusercontent.com/sagemath/sage/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py",
+          "commit": "8de8dad7bcb38e1baa43508cbe944bf04a2d0401",
+          "commit_date": "2026-11-14",
+          "source_sha256": "15b018c9d25cfbe1a45f98ee1421b338beb2b39077c6777e6bc33bc0fbd4b01d",
+          "function": "williamson_type_quadruples_smallcases",
+          "documentation_url": "https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/matrices/hadamard_matrix.html#sage.combinat.matrices.hadamard_matrix.williamson_type_quadruples_smallcases",
+          "documented_original_sources": "Sage attributes orders 3,5,...,29,37,43 to [Ha83], and 31,33,39,41,45,49,51,55,57,61,63 to [Lon2013]."
+        },
+        "primary_literal_selection": null
+      },
+      "source_recurrence_reference": "https://doi.org/10.1017/S1446788700020255",
+      "literal_first_rows_int8_row_major_sha256": "73964e8cb9b0a990f6331344fb62dcb117b76022a00045ec6a4b4065b6ee47b6",
+      "actual_source_entry_alphabet": [
+        -1,
+        1
+      ],
+      "complete_exact_source_norm_checks": {
+        "all_group_coefficients_per_identity_checked": 4753,
+        "complete_identities_checked": [
+          "sum_j A_j^2=4wI",
+          "(D-E)^2+(F-G)^2=4q^rI",
+          "(D+E)^2+(F+G)^2=4q^(r+1)I"
+        ],
+        "method": "integer NTT of Kronecker-encoded multivariate polynomials, followed by exact group folding",
+        "modulus": 998244353,
+        "NTT_length": 32768,
+        "absolute_integer_coefficient_bound": 38024,
+        "bound_strictly_below_modulus": true,
+        "all_polynomials_self_conjugate": true,
+        "integer_exactness": "target residual coefficients have magnitude at most8w<modulus; zero residues therefore prove zero integers"
+      },
+      "recurrence_trace": [
+        {
+          "r": 0,
+          "minus_Gram_scale": 4,
+          "plus_Gram_scale": 388,
+          "mixed_J_coefficient": 0,
+          "next_minus_Gram_scale": 388,
+          "next_plus_Gram_scale": 37636
+        }
+      ],
+      "source_algebra": {
+        "algebra": "Q[G]",
+        "group": "C_49 x C_97",
+        "group_dimensions": [
+          49,
+          97
+        ],
+        "rational_dimension": 4753,
+        "group_exponent": 4753,
+        "cyclotomic_field_factors": [
+          {
+            "conductor": 1,
+            "field_degree": 1,
+            "multiplicity": 1
+          },
+          {
+            "conductor": 7,
+            "field_degree": 6,
+            "multiplicity": 1
+          },
+          {
+            "conductor": 49,
+            "field_degree": 42,
+            "multiplicity": 1
+          },
+          {
+            "conductor": 97,
+            "field_degree": 96,
+            "multiplicity": 1
+          },
+          {
+            "conductor": 679,
+            "field_degree": 576,
+            "multiplicity": 1
+          },
+          {
+            "conductor": 4753,
+            "field_degree": 4032,
+            "multiplicity": 1
+          }
+        ],
+        "conjugation": "g -> -g in the additive group",
+        "coordinate_basis": "beta_g=c^(-g), indexed by the recorded mixed-radix group coordinates",
+        "trace_functional": "tau(a)=[identity]a=(1/|G|)*sum_all_field_factors Tr(a_factor)",
+        "trace_metric": "I_4753",
+        "multiplication_action": "rho(f)[r,s]=f_coefficients[s-r], with componentwise group subtraction",
+        "adjoint_identity": "rho(conjugate(f))=rho(f)^T",
+        "endpoint_frame_Gram_scale": 1
+      },
+      "source_entry_control_indices": [
+        0,
+        1,
+        2376,
+        4752
+      ],
+      "weighted_OD_source_order_over_algebra": 2524,
+      "weighted_OD_source_Gram_scale": 11996572,
+      "T631_orthogonal_design_proof": {
+        "T_source": {
+          "order": 631,
+          "actual_alphabet": [
+            -1,
+            0,
+            1
+          ],
+          "supports_partition_every_position": true,
+          "all_periodic_shifts_checked": 631,
+          "summed_circulant_Gram_scale": 631,
+          "generating_rows_int8_sha256": "fe4855aee9e85fc10ba5ca13ce55e7afd037d310d7636067678629e3a6b47ea2",
+          "row_sums": [
+            22,
+            7,
+            7,
+            7
+          ]
+        },
+        "orthogonal_design_order": 2524,
+        "variable_count": 4,
+        "variable_weights": [
+          631,
+          631,
+          631,
+          631
+        ],
+        "source_identity": "D(x)D(x)^T=p*(x0^2+x1^2+x2^2+x3^2)*I_(4p)",
+        "construction": "D(x)=GS(L(x)b), with the literal L table retained below",
+        "L_variable_and_sign": [
+          [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              2,
+              -1
+            ],
+            [
+              3,
+              -1
+            ]
+          ],
+          [
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              2,
+              -1
+            ]
+          ],
+          [
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              -1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              3,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        ],
+        "GS_convention": "The standalone gs function in this recipe; reversal has J_uv=1 when u+v=p-1",
+        "all_polynomial_periodic_Gram_coefficients_checked": 6310,
+        "full_polynomial_Gram_verified": true,
+        "all_circulant_blocks_commute": true,
+        "coefficient_matrices_entry_alphabet": [
+          -1,
+          0,
+          1
+        ],
+        "coefficient_matrices_disjoint_and_cover_every_entry": true,
+        "coefficient_matrices_int8_sha256": [
+          "2c113a74d199300eb90c297e7cc58cf63f19ee70bf4bf6596b99622e26d0330b",
+          "0a69f1ba5e00ae9852dfe298d26fdbdd870af8d2c514b764afeb9abcc1ad6542",
+          "d34628b2fac3cd0b546679224ef5661dccdbb88bb181c64ebcbe270e95555f18",
+          "413bf6e2044646fc92c36eb92cf4d609eb9cf4df78fb5ccbc5aa93512d265d97"
+        ],
+        "full_dense_coefficient_matrix_products_performed": false,
+        "literal_T_source": "artifacts/hadamard-7572/t631.json",
+        "literal_T_source_sha256": "c5497ef485a23f1c99385035eaf02472b4dad4dee9d906d0d6b2aeb2f3680871",
+        "orbit_states": [
+          0,
+          0,
+          5,
+          4,
+          4,
+          0,
+          7,
+          0,
+          7,
+          2,
+          3,
+          0,
+          1,
+          2,
+          6,
+          1,
+          4,
+          2,
+          0,
+          1,
+          1,
+          4,
+          3,
+          4,
+          7,
+          3,
+          3,
+          5,
+          6,
+          2,
+          7
+        ],
+        "multiplier": 458,
+        "multiplier_order": 21
+      },
+      "endpoint_order": 11996572,
+      "endpoint_Gram_scale": 11996572,
+      "endpoint_entry_recipe": "sum_k X[k,i,j]*A[k,a,b], row=(i,a), column=(j,b)",
+      "endpoint_entry_control_indices": [
+        0,
+        1,
+        4753,
+        5998286,
+        11996571
+      ],
+      "endpoint_entry_control_values": [
+        [
+          1,
+          1,
+          1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          1,
+          1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          1,
+          1,
+          -1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          -1
+        ],
+        [
+          1,
+          1,
+          -1,
+          1,
+          1
+        ]
+      ],
+      "full_endpoint_Gram_verified_algebraically": true,
+      "endpoint_Gram_proof": "Complete T631 polynomial OD identity, exact commuting self-adjoint group-source norm, and disjoint sign supports.",
+      "full_dense_source_or_endpoint_allocation_performed": false,
+      "allocation_scope": "Only step zero uses dense starter components; all positive-step source norms use group rows and no dense endpoint is allocated.",
+      "finite_order_novelty_inferred": false
+    },
+    {
+      "q": 109,
+      "r": 1,
+      "source_order": 5995,
+      "group_dimensions": [
+        55,
+        109
+      ],
+      "strong_starter": {
+        "q": 109,
+        "order": 55,
+        "channel_permutation": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "channel_signs": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "input_file": "experiments/scalar_lift/williamson_inputs.json",
+        "input_file_sha256": "242f554cf113c68ab882e147c3b2702b7bb62e68b66ad36b16c92b6c194f8560",
+        "input_rows_int8_sha256": "914518d6bda74f14ea949f2176a49cc5025f4b8f692e4cedc85f322f3ebf8006",
+        "literal_first_rows_pm": [
+          "+-+--+-+-++--+-+++++-+++--++++--+++-+++++-+--++-+-+--+-",
+          "--+--+-+-++--+-+++++-+++--++++--+++-+++++-+--++-+-+--+-",
+          "+++----++-++--++----+-+-++++++++-+-+----++--++-++----++",
+          "+++----++-++--++----+-+-++++++++-+-+----++--++-++----++"
+        ],
+        "all_signs_symmetry_and_commutation_verified": true,
+        "complete_strong_minus_Gram_scale": 4,
+        "complete_strong_plus_Gram_scale": 436,
+        "complete_summed_Gram_scale": 220,
+        "primary_source": {
+          "id": "sage_official_literal_table",
+          "url": "https://github.com/sagemath/sage/blob/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py#L577",
+          "raw_url": "https://raw.githubusercontent.com/sagemath/sage/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py",
+          "commit": "8de8dad7bcb38e1baa43508cbe944bf04a2d0401",
+          "commit_date": "2026-11-14",
+          "source_sha256": "15b018c9d25cfbe1a45f98ee1421b338beb2b39077c6777e6bc33bc0fbd4b01d",
+          "function": "williamson_type_quadruples_smallcases",
+          "documentation_url": "https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/matrices/hadamard_matrix.html#sage.combinat.matrices.hadamard_matrix.williamson_type_quadruples_smallcases",
+          "documented_original_sources": "Sage attributes orders 3,5,...,29,37,43 to [Ha83], and 31,33,39,41,45,49,51,55,57,61,63 to [Lon2013]."
+        },
+        "primary_literal_selection": null
+      },
+      "source_recurrence_reference": "https://doi.org/10.1017/S1446788700020255",
+      "literal_first_rows_int8_row_major_sha256": "c7ec96f1861ee301f29fb866b2bae167aa08ac79b8de7c5605ebba917d552045",
+      "actual_source_entry_alphabet": [
+        -1,
+        1
+      ],
+      "complete_exact_source_norm_checks": {
+        "all_group_coefficients_per_identity_checked": 5995,
+        "complete_identities_checked": [
+          "sum_j A_j^2=4wI",
+          "(D-E)^2+(F-G)^2=4q^rI",
+          "(D+E)^2+(F+G)^2=4q^(r+1)I"
+        ],
+        "method": "integer NTT of Kronecker-encoded multivariate polynomials, followed by exact group folding",
+        "modulus": 998244353,
+        "NTT_length": 32768,
+        "absolute_integer_coefficient_bound": 47960,
+        "bound_strictly_below_modulus": true,
+        "all_polynomials_self_conjugate": true,
+        "integer_exactness": "target residual coefficients have magnitude at most8w<modulus; zero residues therefore prove zero integers"
+      },
+      "recurrence_trace": [
+        {
+          "r": 0,
+          "minus_Gram_scale": 4,
+          "plus_Gram_scale": 436,
+          "mixed_J_coefficient": 0,
+          "next_minus_Gram_scale": 436,
+          "next_plus_Gram_scale": 47524
+        }
+      ],
+      "source_algebra": {
+        "algebra": "Q[G]",
+        "group": "C_55 x C_109",
+        "group_dimensions": [
+          55,
+          109
+        ],
+        "rational_dimension": 5995,
+        "group_exponent": 5995,
+        "cyclotomic_field_factors": [
+          {
+            "conductor": 1,
+            "field_degree": 1,
+            "multiplicity": 1
+          },
+          {
+            "conductor": 5,
+            "field_degree": 4,
+            "multiplicity": 1
+          },
+          {
+            "conductor": 11,
+            "field_degree": 10,
+            "multiplicity": 1
+          },
+          {
+            "conductor": 55,
+            "field_degree": 40,
+            "multiplicity": 1
+          },
+          {
+            "conductor": 109,
+            "field_degree": 108,
+            "multiplicity": 1
+          },
+          {
+            "conductor": 545,
+            "field_degree": 432,
+            "multiplicity": 1
+          },
+          {
+            "conductor": 1199,
+            "field_degree": 1080,
+            "multiplicity": 1
+          },
+          {
+            "conductor": 5995,
+            "field_degree": 4320,
+            "multiplicity": 1
+          }
+        ],
+        "conjugation": "g -> -g in the additive group",
+        "coordinate_basis": "beta_g=c^(-g), indexed by the recorded mixed-radix group coordinates",
+        "trace_functional": "tau(a)=[identity]a=(1/|G|)*sum_all_field_factors Tr(a_factor)",
+        "trace_metric": "I_5995",
+        "multiplication_action": "rho(f)[r,s]=f_coefficients[s-r], with componentwise group subtraction",
+        "adjoint_identity": "rho(conjugate(f))=rho(f)^T",
+        "endpoint_frame_Gram_scale": 1
+      },
+      "source_entry_control_indices": [
+        0,
+        1,
+        2997,
+        5994
+      ],
+      "weighted_OD_source_order_over_algebra": 2524,
+      "weighted_OD_source_Gram_scale": 15131380,
+      "T631_orthogonal_design_proof": {
+        "T_source": {
+          "order": 631,
+          "actual_alphabet": [
+            -1,
+            0,
+            1
+          ],
+          "supports_partition_every_position": true,
+          "all_periodic_shifts_checked": 631,
+          "summed_circulant_Gram_scale": 631,
+          "generating_rows_int8_sha256": "fe4855aee9e85fc10ba5ca13ce55e7afd037d310d7636067678629e3a6b47ea2",
+          "row_sums": [
+            22,
+            7,
+            7,
+            7
+          ]
+        },
+        "orthogonal_design_order": 2524,
+        "variable_count": 4,
+        "variable_weights": [
+          631,
+          631,
+          631,
+          631
+        ],
+        "source_identity": "D(x)D(x)^T=p*(x0^2+x1^2+x2^2+x3^2)*I_(4p)",
+        "construction": "D(x)=GS(L(x)b), with the literal L table retained below",
+        "L_variable_and_sign": [
+          [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              2,
+              -1
+            ],
+            [
+              3,
+              -1
+            ]
+          ],
+          [
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              2,
+              -1
+            ]
+          ],
+          [
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              -1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              3,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        ],
+        "GS_convention": "The standalone gs function in this recipe; reversal has J_uv=1 when u+v=p-1",
+        "all_polynomial_periodic_Gram_coefficients_checked": 6310,
+        "full_polynomial_Gram_verified": true,
+        "all_circulant_blocks_commute": true,
+        "coefficient_matrices_entry_alphabet": [
+          -1,
+          0,
+          1
+        ],
+        "coefficient_matrices_disjoint_and_cover_every_entry": true,
+        "coefficient_matrices_int8_sha256": [
+          "2c113a74d199300eb90c297e7cc58cf63f19ee70bf4bf6596b99622e26d0330b",
+          "0a69f1ba5e00ae9852dfe298d26fdbdd870af8d2c514b764afeb9abcc1ad6542",
+          "d34628b2fac3cd0b546679224ef5661dccdbb88bb181c64ebcbe270e95555f18",
+          "413bf6e2044646fc92c36eb92cf4d609eb9cf4df78fb5ccbc5aa93512d265d97"
+        ],
+        "full_dense_coefficient_matrix_products_performed": false,
+        "literal_T_source": "artifacts/hadamard-7572/t631.json",
+        "literal_T_source_sha256": "c5497ef485a23f1c99385035eaf02472b4dad4dee9d906d0d6b2aeb2f3680871",
+        "orbit_states": [
+          0,
+          0,
+          5,
+          4,
+          4,
+          0,
+          7,
+          0,
+          7,
+          2,
+          3,
+          0,
+          1,
+          2,
+          6,
+          1,
+          4,
+          2,
+          0,
+          1,
+          1,
+          4,
+          3,
+          4,
+          7,
+          3,
+          3,
+          5,
+          6,
+          2,
+          7
+        ],
+        "multiplier": 458,
+        "multiplier_order": 21
+      },
+      "endpoint_order": 15131380,
+      "endpoint_Gram_scale": 15131380,
+      "endpoint_entry_recipe": "sum_k X[k,i,j]*A[k,a,b], row=(i,a), column=(j,b)",
+      "endpoint_entry_control_indices": [
+        0,
+        1,
+        5995,
+        7565690,
+        15131379
+      ],
+      "endpoint_entry_control_values": [
+        [
+          1,
+          1,
+          1,
+          -1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          -1
+        ],
+        [
+          1,
+          1,
+          -1,
+          1,
+          1
+        ],
+        [
+          -1,
+          1,
+          1,
+          -1,
+          1
+        ]
+      ],
+      "full_endpoint_Gram_verified_algebraically": true,
+      "endpoint_Gram_proof": "Complete T631 polynomial OD identity, exact commuting self-adjoint group-source norm, and disjoint sign supports.",
+      "full_dense_source_or_endpoint_allocation_performed": false,
+      "allocation_scope": "Only step zero uses dense starter components; all positive-step source norms use group rows and no dense endpoint is allocated.",
+      "finite_order_novelty_inferred": false
+    },
+    {
+      "q": 113,
+      "r": 1,
+      "source_order": 6441,
+      "group_dimensions": [
+        57,
+        113
+      ],
+      "strong_starter": {
+        "q": 113,
+        "order": 57,
+        "channel_permutation": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "channel_signs": [
+          1,
+          1,
+          1,
+          1
+        ],
+        "input_file": "experiments/scalar_lift/williamson_inputs.json",
+        "input_file_sha256": "242f554cf113c68ab882e147c3b2702b7bb62e68b66ad36b16c92b6c194f8560",
+        "input_rows_int8_sha256": "45db03f6349fe2b3e6408b04f9d1ea4b11b9004782120a1b96c1a33829fdcd85",
+        "literal_first_rows_pm": [
+          "+---++-+--++++-+++-++---+-++++++-+---++-+++-++++--+-++---",
+          "----++-+--++++-+++-++---+-++++++-+---++-+++-++++--+-++---",
+          "--+-+-+++--+--+-++---+++++-++++-+++++---++-+--+--+++-+-+-",
+          "--+-+-+++--+--+-++---+++++-++++-+++++---++-+--+--+++-+-+-"
+        ],
+        "all_signs_symmetry_and_commutation_verified": true,
+        "complete_strong_minus_Gram_scale": 4,
+        "complete_strong_plus_Gram_scale": 452,
+        "complete_summed_Gram_scale": 228,
+        "primary_source": {
+          "id": "sage_official_literal_table",
+          "url": "https://github.com/sagemath/sage/blob/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py#L577",
+          "raw_url": "https://raw.githubusercontent.com/sagemath/sage/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py",
+          "commit": "8de8dad7bcb38e1baa43508cbe944bf04a2d0401",
+          "commit_date": "2026-11-14",
+          "source_sha256": "15b018c9d25cfbe1a45f98ee1421b338beb2b39077c6777e6bc33bc0fbd4b01d",
+          "function": "williamson_type_quadruples_smallcases",
+          "documentation_url": "https://doc.sagemath.org/html/en/reference/combinat/sage/combinat/matrices/hadamard_matrix.html#sage.combinat.matrices.hadamard_matrix.williamson_type_quadruples_smallcases",
+          "documented_original_sources": "Sage attributes orders 3,5,...,29,37,43 to [Ha83], and 31,33,39,41,45,49,51,55,57,61,63 to [Lon2013]."
+        },
+        "primary_literal_selection": null
+      },
+      "source_recurrence_reference": "https://doi.org/10.1017/S1446788700020255",
+      "literal_first_rows_int8_row_major_sha256": "44be39ccc33a12cf60dd4511c95090dbf376889eb5e6cb3761b248b4c57bceb6",
+      "actual_source_entry_alphabet": [
+        -1,
+        1
+      ],
+      "complete_exact_source_norm_checks": {
+        "all_group_coefficients_per_identity_checked": 6441,
+        "complete_identities_checked": [
+          "sum_j A_j^2=4wI",
+          "(D-E)^2+(F-G)^2=4q^rI",
+          "(D+E)^2+(F+G)^2=4q^(r+1)I"
+        ],
+        "method": "integer NTT of Kronecker-encoded multivariate polynomials, followed by exact group folding",
+        "modulus": 998244353,
+        "NTT_length": 32768,
+        "absolute_integer_coefficient_bound": 51528,
+        "bound_strictly_below_modulus": true,
+        "all_polynomials_self_conjugate": true,
+        "integer_exactness": "target residual coefficients have magnitude at most8w<modulus; zero residues therefore prove zero integers"
+      },
+      "recurrence_trace": [
+        {
+          "r": 0,
+          "minus_Gram_scale": 4,
+          "plus_Gram_scale": 452,
+          "mixed_J_coefficient": 0,
+          "next_minus_Gram_scale": 452,
+          "next_plus_Gram_scale": 51076
+        }
+      ],
+      "source_algebra": {
+        "algebra": "Q[G]",
+        "group": "C_57 x C_113",
+        "group_dimensions": [
+          57,
+          113
+        ],
+        "rational_dimension": 6441,
+        "group_exponent": 6441,
+        "cyclotomic_field_factors": [
+          {
+            "conductor": 1,
+            "field_degree": 1,
+            "multiplicity": 1
+          },
+          {
+            "conductor": 3,
+            "field_degree": 2,
+            "multiplicity": 1
+          },
+          {
+            "conductor": 19,
+            "field_degree": 18,
+            "multiplicity": 1
+          },
+          {
+            "conductor": 57,
+            "field_degree": 36,
+            "multiplicity": 1
+          },
+          {
+            "conductor": 113,
+            "field_degree": 112,
+            "multiplicity": 1
+          },
+          {
+            "conductor": 339,
+            "field_degree": 224,
+            "multiplicity": 1
+          },
+          {
+            "conductor": 2147,
+            "field_degree": 2016,
+            "multiplicity": 1
+          },
+          {
+            "conductor": 6441,
+            "field_degree": 4032,
+            "multiplicity": 1
+          }
+        ],
+        "conjugation": "g -> -g in the additive group",
+        "coordinate_basis": "beta_g=c^(-g), indexed by the recorded mixed-radix group coordinates",
+        "trace_functional": "tau(a)=[identity]a=(1/|G|)*sum_all_field_factors Tr(a_factor)",
+        "trace_metric": "I_6441",
+        "multiplication_action": "rho(f)[r,s]=f_coefficients[s-r], with componentwise group subtraction",
+        "adjoint_identity": "rho(conjugate(f))=rho(f)^T",
+        "endpoint_frame_Gram_scale": 1
+      },
+      "source_entry_control_indices": [
+        0,
+        1,
+        3220,
+        6440
+      ],
+      "weighted_OD_source_order_over_algebra": 2524,
+      "weighted_OD_source_Gram_scale": 16257084,
+      "T631_orthogonal_design_proof": {
+        "T_source": {
+          "order": 631,
+          "actual_alphabet": [
+            -1,
+            0,
+            1
+          ],
+          "supports_partition_every_position": true,
+          "all_periodic_shifts_checked": 631,
+          "summed_circulant_Gram_scale": 631,
+          "generating_rows_int8_sha256": "fe4855aee9e85fc10ba5ca13ce55e7afd037d310d7636067678629e3a6b47ea2",
+          "row_sums": [
+            22,
+            7,
+            7,
+            7
+          ]
+        },
+        "orthogonal_design_order": 2524,
+        "variable_count": 4,
+        "variable_weights": [
+          631,
+          631,
+          631,
+          631
+        ],
+        "source_identity": "D(x)D(x)^T=p*(x0^2+x1^2+x2^2+x3^2)*I_(4p)",
+        "construction": "D(x)=GS(L(x)b), with the literal L table retained below",
+        "L_variable_and_sign": [
+          [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              2,
+              -1
+            ],
+            [
+              3,
+              -1
+            ]
+          ],
+          [
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              2,
+              -1
+            ]
+          ],
+          [
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              -1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              3,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        ],
+        "GS_convention": "The standalone gs function in this recipe; reversal has J_uv=1 when u+v=p-1",
+        "all_polynomial_periodic_Gram_coefficients_checked": 6310,
+        "full_polynomial_Gram_verified": true,
+        "all_circulant_blocks_commute": true,
+        "coefficient_matrices_entry_alphabet": [
+          -1,
+          0,
+          1
+        ],
+        "coefficient_matrices_disjoint_and_cover_every_entry": true,
+        "coefficient_matrices_int8_sha256": [
+          "2c113a74d199300eb90c297e7cc58cf63f19ee70bf4bf6596b99622e26d0330b",
+          "0a69f1ba5e00ae9852dfe298d26fdbdd870af8d2c514b764afeb9abcc1ad6542",
+          "d34628b2fac3cd0b546679224ef5661dccdbb88bb181c64ebcbe270e95555f18",
+          "413bf6e2044646fc92c36eb92cf4d609eb9cf4df78fb5ccbc5aa93512d265d97"
+        ],
+        "full_dense_coefficient_matrix_products_performed": false,
+        "literal_T_source": "artifacts/hadamard-7572/t631.json",
+        "literal_T_source_sha256": "c5497ef485a23f1c99385035eaf02472b4dad4dee9d906d0d6b2aeb2f3680871",
+        "orbit_states": [
+          0,
+          0,
+          5,
+          4,
+          4,
+          0,
+          7,
+          0,
+          7,
+          2,
+          3,
+          0,
+          1,
+          2,
+          6,
+          1,
+          4,
+          2,
+          0,
+          1,
+          1,
+          4,
+          3,
+          4,
+          7,
+          3,
+          3,
+          5,
+          6,
+          2,
+          7
+        ],
+        "multiplier": 458,
+        "multiplier_order": 21
+      },
+      "endpoint_order": 16257084,
+      "endpoint_Gram_scale": 16257084,
+      "endpoint_entry_recipe": "sum_k X[k,i,j]*A[k,a,b], row=(i,a), column=(j,b)",
+      "endpoint_entry_control_indices": [
+        0,
+        1,
+        6441,
+        8128542,
+        16257083
+      ],
+      "endpoint_entry_control_values": [
+        [
+          1,
+          1,
+          1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          1,
+          1,
+          -1,
+          -1
+        ],
+        [
+          -1,
+          -1,
+          1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          -1,
+          1
+        ]
+      ],
+      "full_endpoint_Gram_verified_algebraically": true,
+      "endpoint_Gram_proof": "Complete T631 polynomial OD identity, exact commuting self-adjoint group-source norm, and disjoint sign supports.",
+      "full_dense_source_or_endpoint_allocation_performed": false,
+      "allocation_scope": "Only step zero uses dense starter components; all positive-step source norms use group rows and no dense endpoint is allocated.",
+      "finite_order_novelty_inferred": false
+    },
+    {
+      "q": 137,
+      "r": 1,
+      "source_order": 9453,
+      "group_dimensions": [
+        69,
+        137
+      ],
+      "strong_starter": {
+        "q": 137,
+        "order": 69,
+        "channel_permutation": [
+          0,
+          1,
+          2,
+          3
+        ],
+        "channel_signs": [
+          1,
+          -1,
+          1,
+          1
+        ],
+        "input_file": "experiments/scalar_lift/near_williamson_inputs.json",
+        "input_file_sha256": "be3da66fbf0517cde1e326e6a60c26acaeb03c0a1948b74bff78bcadad00957f",
+        "input_rows_int8_sha256": "f2283a3ee736bcca9e52cc61c366a004c667fcbf198e0e78a8f6f3b713362f15",
+        "literal_first_rows_pm": [
+          "+-----+-+--++-++-++++---+--++-+-+-++-+-+-++--+---++++-++-++--+-+-----",
+          "------+-+--++-++-++++---+--++-+-+-++-+-+-++--+---++++-++-++--+-+-----",
+          "+++--++-----++++-+----++---+---+-+--+-+---+---++----+-++++-----++--++",
+          "+++--++-----++++-+----++---+---+-+--+-+---+---++----+-++++-----++--++"
+        ],
+        "all_signs_symmetry_and_commutation_verified": true,
+        "complete_strong_minus_Gram_scale": 4,
+        "complete_strong_plus_Gram_scale": 548,
+        "complete_summed_Gram_scale": 276,
+        "primary_source": {
+          "url": "https://zenodo.org/records/1195693/files/williamson-69.txt?download=1",
+          "final_url": "https://zenodo.org/records/1195693/files/williamson-69.txt?download=1",
+          "sha256": "bfc68b4172d52e881fcd417d97b4a9b779b2dca57767fa54276fff0173f9f9f3",
+          "bytes": 280
+        },
+        "primary_literal_selection": {
+          "encoding": "four space-separated +/- rows, one quadruple per line",
+          "selected_nonempty_line_1_based": 1,
+          "dataset_DOI": "10.5281/zenodo.1195693",
+          "published_MD5": "8527b3c55a4851226a39b3f8181edd5a"
+        }
+      },
+      "source_recurrence_reference": "https://doi.org/10.1017/S1446788700020255",
+      "literal_first_rows_int8_row_major_sha256": "4572e05ce0260ebfdf3d8e2868c4f813c6cef53852149d4317a4fda3aa1a407e",
+      "actual_source_entry_alphabet": [
+        -1,
+        1
+      ],
+      "complete_exact_source_norm_checks": {
+        "all_group_coefficients_per_identity_checked": 9453,
+        "complete_identities_checked": [
+          "sum_j A_j^2=4wI",
+          "(D-E)^2+(F-G)^2=4q^rI",
+          "(D+E)^2+(F+G)^2=4q^(r+1)I"
+        ],
+        "method": "integer NTT of Kronecker-encoded multivariate polynomials, followed by exact group folding",
+        "modulus": 998244353,
+        "NTT_length": 65536,
+        "absolute_integer_coefficient_bound": 75624,
+        "bound_strictly_below_modulus": true,
+        "all_polynomials_self_conjugate": true,
+        "integer_exactness": "target residual coefficients have magnitude at most8w<modulus; zero residues therefore prove zero integers"
+      },
+      "recurrence_trace": [
+        {
+          "r": 0,
+          "minus_Gram_scale": 4,
+          "plus_Gram_scale": 548,
+          "mixed_J_coefficient": 0,
+          "next_minus_Gram_scale": 548,
+          "next_plus_Gram_scale": 75076
+        }
+      ],
+      "source_algebra": {
+        "algebra": "Q[G]",
+        "group": "C_69 x C_137",
+        "group_dimensions": [
+          69,
+          137
+        ],
+        "rational_dimension": 9453,
+        "group_exponent": 9453,
+        "cyclotomic_field_factors": [
+          {
+            "conductor": 1,
+            "field_degree": 1,
+            "multiplicity": 1
+          },
+          {
+            "conductor": 3,
+            "field_degree": 2,
+            "multiplicity": 1
+          },
+          {
+            "conductor": 23,
+            "field_degree": 22,
+            "multiplicity": 1
+          },
+          {
+            "conductor": 69,
+            "field_degree": 44,
+            "multiplicity": 1
+          },
+          {
+            "conductor": 137,
+            "field_degree": 136,
+            "multiplicity": 1
+          },
+          {
+            "conductor": 411,
+            "field_degree": 272,
+            "multiplicity": 1
+          },
+          {
+            "conductor": 3151,
+            "field_degree": 2992,
+            "multiplicity": 1
+          },
+          {
+            "conductor": 9453,
+            "field_degree": 5984,
+            "multiplicity": 1
+          }
+        ],
+        "conjugation": "g -> -g in the additive group",
+        "coordinate_basis": "beta_g=c^(-g), indexed by the recorded mixed-radix group coordinates",
+        "trace_functional": "tau(a)=[identity]a=(1/|G|)*sum_all_field_factors Tr(a_factor)",
+        "trace_metric": "I_9453",
+        "multiplication_action": "rho(f)[r,s]=f_coefficients[s-r], with componentwise group subtraction",
+        "adjoint_identity": "rho(conjugate(f))=rho(f)^T",
+        "endpoint_frame_Gram_scale": 1
+      },
+      "source_entry_control_indices": [
+        0,
+        1,
+        4726,
+        9452
+      ],
+      "weighted_OD_source_order_over_algebra": 2524,
+      "weighted_OD_source_Gram_scale": 23859372,
+      "T631_orthogonal_design_proof": {
+        "T_source": {
+          "order": 631,
+          "actual_alphabet": [
+            -1,
+            0,
+            1
+          ],
+          "supports_partition_every_position": true,
+          "all_periodic_shifts_checked": 631,
+          "summed_circulant_Gram_scale": 631,
+          "generating_rows_int8_sha256": "fe4855aee9e85fc10ba5ca13ce55e7afd037d310d7636067678629e3a6b47ea2",
+          "row_sums": [
+            22,
+            7,
+            7,
+            7
+          ]
+        },
+        "orthogonal_design_order": 2524,
+        "variable_count": 4,
+        "variable_weights": [
+          631,
+          631,
+          631,
+          631
+        ],
+        "source_identity": "D(x)D(x)^T=p*(x0^2+x1^2+x2^2+x3^2)*I_(4p)",
+        "construction": "D(x)=GS(L(x)b), with the literal L table retained below",
+        "L_variable_and_sign": [
+          [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              2,
+              -1
+            ],
+            [
+              3,
+              -1
+            ]
+          ],
+          [
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              2,
+              -1
+            ]
+          ],
+          [
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              -1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              3,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        ],
+        "GS_convention": "The standalone gs function in this recipe; reversal has J_uv=1 when u+v=p-1",
+        "all_polynomial_periodic_Gram_coefficients_checked": 6310,
+        "full_polynomial_Gram_verified": true,
+        "all_circulant_blocks_commute": true,
+        "coefficient_matrices_entry_alphabet": [
+          -1,
+          0,
+          1
+        ],
+        "coefficient_matrices_disjoint_and_cover_every_entry": true,
+        "coefficient_matrices_int8_sha256": [
+          "2c113a74d199300eb90c297e7cc58cf63f19ee70bf4bf6596b99622e26d0330b",
+          "0a69f1ba5e00ae9852dfe298d26fdbdd870af8d2c514b764afeb9abcc1ad6542",
+          "d34628b2fac3cd0b546679224ef5661dccdbb88bb181c64ebcbe270e95555f18",
+          "413bf6e2044646fc92c36eb92cf4d609eb9cf4df78fb5ccbc5aa93512d265d97"
+        ],
+        "full_dense_coefficient_matrix_products_performed": false,
+        "literal_T_source": "artifacts/hadamard-7572/t631.json",
+        "literal_T_source_sha256": "c5497ef485a23f1c99385035eaf02472b4dad4dee9d906d0d6b2aeb2f3680871",
+        "orbit_states": [
+          0,
+          0,
+          5,
+          4,
+          4,
+          0,
+          7,
+          0,
+          7,
+          2,
+          3,
+          0,
+          1,
+          2,
+          6,
+          1,
+          4,
+          2,
+          0,
+          1,
+          1,
+          4,
+          3,
+          4,
+          7,
+          3,
+          3,
+          5,
+          6,
+          2,
+          7
+        ],
+        "multiplier": 458,
+        "multiplier_order": 21
+      },
+      "endpoint_order": 23859372,
+      "endpoint_Gram_scale": 23859372,
+      "endpoint_entry_recipe": "sum_k X[k,i,j]*A[k,a,b], row=(i,a), column=(j,b)",
+      "endpoint_entry_control_indices": [
+        0,
+        1,
+        9453,
+        11929686,
+        23859371
+      ],
+      "endpoint_entry_control_values": [
+        [
+          1,
+          1,
+          1,
+          -1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          -1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          -1
+        ],
+        [
+          1,
+          1,
+          -1,
+          1,
+          1
+        ],
+        [
+          -1,
+          -1,
+          1,
+          -1,
+          1
+        ]
+      ],
+      "full_endpoint_Gram_verified_algebraically": true,
+      "endpoint_Gram_proof": "Complete T631 polynomial OD identity, exact commuting self-adjoint group-source norm, and disjoint sign supports.",
+      "full_dense_source_or_endpoint_allocation_performed": false,
+      "allocation_scope": "Only step zero uses dense starter components; all positive-step source norms use group rows and no dense endpoint is allocated.",
+      "finite_order_novelty_inferred": false
+    }
+  ],
+  "higher_original_family_members": [
+    {
+      "q": 13,
+      "r": 2,
+      "source_order": 1183,
+      "group_dimensions": [
+        7,
+        13,
+        13
+      ],
+      "strong_starter": {
+        "q": 13,
+        "order": 7,
+        "origin": {
+          "recipe": "D=E=S,F=I+R,G=-I+R; symmetric circulants R^2+S^2=qI",
+          "R_first_row": [
+            0,
+            -1,
+            -1,
+            1,
+            1,
+            -1,
+            -1
+          ],
+          "S_first_row": [
+            1,
+            -1,
+            1,
+            1,
+            1,
+            1,
+            -1
+          ],
+          "complete_conference_half_Gram_verified": true
+        },
+        "literal_first_rows_pm": [
+          "+-++++-",
+          "+-++++-",
+          "+--++--",
+          "---++--"
+        ],
+        "all_signs_symmetry_and_commutativity_verified": true,
+        "complete_strong_minus_Gram": "4I",
+        "complete_strong_plus_Gram": "52I",
+        "complete_summed_Gram": "28I"
+      },
+      "source_recurrence_reference": "https://doi.org/10.1017/S1446788700020255",
+      "literal_first_rows_int8_row_major_sha256": "9cc4332d949eccb8ad1fc1b5eb1227d934ce6478190468c206de13334d511119",
+      "actual_source_entry_alphabet": [
+        -1,
+        1
+      ],
+      "complete_exact_source_norm_checks": {
+        "all_group_coefficients_per_identity_checked": 1183,
+        "complete_identities_checked": [
+          "sum_j A_j^2=4wI",
+          "(D-E)^2+(F-G)^2=4q^rI",
+          "(D+E)^2+(F+G)^2=4q^(r+1)I"
+        ],
+        "method": "integer NTT of Kronecker-encoded multivariate polynomials, followed by exact group folding",
+        "modulus": 998244353,
+        "NTT_length": 8192,
+        "absolute_integer_coefficient_bound": 9464,
+        "bound_strictly_below_modulus": true,
+        "all_polynomials_self_conjugate": true,
+        "integer_exactness": "target residual coefficients have magnitude at most8w<modulus; zero residues therefore prove zero integers"
+      },
+      "recurrence_trace": [
+        {
+          "r": 0,
+          "minus_Gram_scale": 4,
+          "plus_Gram_scale": 52,
+          "mixed_J_coefficient": 0,
+          "next_minus_Gram_scale": 52,
+          "next_plus_Gram_scale": 676
+        },
+        {
+          "r": 1,
+          "minus_Gram_scale": 52,
+          "plus_Gram_scale": 676,
+          "mixed_J_coefficient": 0,
+          "next_minus_Gram_scale": 676,
+          "next_plus_Gram_scale": 8788
+        }
+      ],
+      "source_algebra": {
+        "algebra": "Q[G]",
+        "group": "C_7 x C_13 x C_13",
+        "group_dimensions": [
+          7,
+          13,
+          13
+        ],
+        "rational_dimension": 1183,
+        "group_exponent": 91,
+        "cyclotomic_field_factors": [
+          {
+            "conductor": 1,
+            "field_degree": 1,
+            "multiplicity": 1
+          },
+          {
+            "conductor": 7,
+            "field_degree": 6,
+            "multiplicity": 1
+          },
+          {
+            "conductor": 13,
+            "field_degree": 12,
+            "multiplicity": 14
+          },
+          {
+            "conductor": 91,
+            "field_degree": 72,
+            "multiplicity": 14
+          }
+        ],
+        "conjugation": "g -> -g in the additive group",
+        "coordinate_basis": "beta_g=c^(-g), indexed by the recorded mixed-radix group coordinates",
+        "trace_functional": "tau(a)=[identity]a=(1/|G|)*sum_all_field_factors Tr(a_factor)",
+        "trace_metric": "I_1183",
+        "multiplication_action": "rho(f)[r,s]=f_coefficients[s-r], with componentwise group subtraction",
+        "adjoint_identity": "rho(conjugate(f))=rho(f)^T",
+        "endpoint_frame_Gram_scale": 1
+      },
+      "source_entry_control_indices": [
+        0,
+        1,
+        591,
+        1182
+      ],
+      "weighted_OD_source_order_over_algebra": 2524,
+      "weighted_OD_source_Gram_scale": 2985892,
+      "T631_orthogonal_design_proof": {
+        "T_source": {
+          "order": 631,
+          "actual_alphabet": [
+            -1,
+            0,
+            1
+          ],
+          "supports_partition_every_position": true,
+          "all_periodic_shifts_checked": 631,
+          "summed_circulant_Gram_scale": 631,
+          "generating_rows_int8_sha256": "fe4855aee9e85fc10ba5ca13ce55e7afd037d310d7636067678629e3a6b47ea2",
+          "row_sums": [
+            22,
+            7,
+            7,
+            7
+          ]
+        },
+        "orthogonal_design_order": 2524,
+        "variable_count": 4,
+        "variable_weights": [
+          631,
+          631,
+          631,
+          631
+        ],
+        "source_identity": "D(x)D(x)^T=p*(x0^2+x1^2+x2^2+x3^2)*I_(4p)",
+        "construction": "D(x)=GS(L(x)b), with the literal L table retained below",
+        "L_variable_and_sign": [
+          [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              2,
+              -1
+            ],
+            [
+              3,
+              -1
+            ]
+          ],
+          [
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              2,
+              -1
+            ]
+          ],
+          [
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              -1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              3,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        ],
+        "GS_convention": "The standalone gs function in this recipe; reversal has J_uv=1 when u+v=p-1",
+        "all_polynomial_periodic_Gram_coefficients_checked": 6310,
+        "full_polynomial_Gram_verified": true,
+        "all_circulant_blocks_commute": true,
+        "coefficient_matrices_entry_alphabet": [
+          -1,
+          0,
+          1
+        ],
+        "coefficient_matrices_disjoint_and_cover_every_entry": true,
+        "coefficient_matrices_int8_sha256": [
+          "2c113a74d199300eb90c297e7cc58cf63f19ee70bf4bf6596b99622e26d0330b",
+          "0a69f1ba5e00ae9852dfe298d26fdbdd870af8d2c514b764afeb9abcc1ad6542",
+          "d34628b2fac3cd0b546679224ef5661dccdbb88bb181c64ebcbe270e95555f18",
+          "413bf6e2044646fc92c36eb92cf4d609eb9cf4df78fb5ccbc5aa93512d265d97"
+        ],
+        "full_dense_coefficient_matrix_products_performed": false,
+        "literal_T_source": "artifacts/hadamard-7572/t631.json",
+        "literal_T_source_sha256": "c5497ef485a23f1c99385035eaf02472b4dad4dee9d906d0d6b2aeb2f3680871",
+        "orbit_states": [
+          0,
+          0,
+          5,
+          4,
+          4,
+          0,
+          7,
+          0,
+          7,
+          2,
+          3,
+          0,
+          1,
+          2,
+          6,
+          1,
+          4,
+          2,
+          0,
+          1,
+          1,
+          4,
+          3,
+          4,
+          7,
+          3,
+          3,
+          5,
+          6,
+          2,
+          7
+        ],
+        "multiplier": 458,
+        "multiplier_order": 21
+      },
+      "endpoint_order": 2985892,
+      "endpoint_Gram_scale": 2985892,
+      "endpoint_entry_recipe": "sum_k X[k,i,j]*A[k,a,b], row=(i,a), column=(j,b)",
+      "endpoint_entry_control_indices": [
+        0,
+        1,
+        1183,
+        1492946,
+        2985891
+      ],
+      "endpoint_entry_control_values": [
+        [
+          1,
+          1,
+          1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          1,
+          1,
+          -1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          -1
+        ],
+        [
+          1,
+          1,
+          -1,
+          1,
+          1
+        ],
+        [
+          1,
+          -1,
+          1,
+          -1,
+          1
+        ]
+      ],
+      "full_endpoint_Gram_verified_algebraically": true,
+      "endpoint_Gram_proof": "Complete T631 polynomial OD identity, exact commuting self-adjoint group-source norm, and disjoint sign supports.",
+      "full_dense_source_or_endpoint_allocation_performed": false,
+      "allocation_scope": "Only step zero uses dense starter components; all positive-step source norms use group rows and no dense endpoint is allocated.",
+      "finite_order_novelty_inferred": false
+    },
+    {
+      "q": 13,
+      "r": 3,
+      "source_order": 15379,
+      "group_dimensions": [
+        7,
+        13,
+        13,
+        13
+      ],
+      "strong_starter": {
+        "q": 13,
+        "order": 7,
+        "origin": {
+          "recipe": "D=E=S,F=I+R,G=-I+R; symmetric circulants R^2+S^2=qI",
+          "R_first_row": [
+            0,
+            -1,
+            -1,
+            1,
+            1,
+            -1,
+            -1
+          ],
+          "S_first_row": [
+            1,
+            -1,
+            1,
+            1,
+            1,
+            1,
+            -1
+          ],
+          "complete_conference_half_Gram_verified": true
+        },
+        "literal_first_rows_pm": [
+          "+-++++-",
+          "+-++++-",
+          "+--++--",
+          "---++--"
+        ],
+        "all_signs_symmetry_and_commutativity_verified": true,
+        "complete_strong_minus_Gram": "4I",
+        "complete_strong_plus_Gram": "52I",
+        "complete_summed_Gram": "28I"
+      },
+      "source_recurrence_reference": "https://doi.org/10.1017/S1446788700020255",
+      "literal_first_rows_int8_row_major_sha256": "1441206c56bfc1d277d4d298bed545ebdb8d9d093daa862deef0a2ae4ee7cad1",
+      "actual_source_entry_alphabet": [
+        -1,
+        1
+      ],
+      "complete_exact_source_norm_checks": {
+        "all_group_coefficients_per_identity_checked": 15379,
+        "complete_identities_checked": [
+          "sum_j A_j^2=4wI",
+          "(D-E)^2+(F-G)^2=4q^rI",
+          "(D+E)^2+(F+G)^2=4q^(r+1)I"
+        ],
+        "method": "integer NTT of Kronecker-encoded multivariate polynomials, followed by exact group folding",
+        "modulus": 998244353,
+        "NTT_length": 262144,
+        "absolute_integer_coefficient_bound": 123032,
+        "bound_strictly_below_modulus": true,
+        "all_polynomials_self_conjugate": true,
+        "integer_exactness": "target residual coefficients have magnitude at most8w<modulus; zero residues therefore prove zero integers"
+      },
+      "recurrence_trace": [
+        {
+          "r": 0,
+          "minus_Gram_scale": 4,
+          "plus_Gram_scale": 52,
+          "mixed_J_coefficient": 0,
+          "next_minus_Gram_scale": 52,
+          "next_plus_Gram_scale": 676
+        },
+        {
+          "r": 1,
+          "minus_Gram_scale": 52,
+          "plus_Gram_scale": 676,
+          "mixed_J_coefficient": 0,
+          "next_minus_Gram_scale": 676,
+          "next_plus_Gram_scale": 8788
+        },
+        {
+          "r": 2,
+          "minus_Gram_scale": 676,
+          "plus_Gram_scale": 8788,
+          "mixed_J_coefficient": 0,
+          "next_minus_Gram_scale": 8788,
+          "next_plus_Gram_scale": 114244
+        }
+      ],
+      "source_algebra": {
+        "algebra": "Q[G]",
+        "group": "C_7 x C_13 x C_13 x C_13",
+        "group_dimensions": [
+          7,
+          13,
+          13,
+          13
+        ],
+        "rational_dimension": 15379,
+        "group_exponent": 91,
+        "cyclotomic_field_factors": [
+          {
+            "conductor": 1,
+            "field_degree": 1,
+            "multiplicity": 1
+          },
+          {
+            "conductor": 7,
+            "field_degree": 6,
+            "multiplicity": 1
+          },
+          {
+            "conductor": 13,
+            "field_degree": 12,
+            "multiplicity": 183
+          },
+          {
+            "conductor": 91,
+            "field_degree": 72,
+            "multiplicity": 183
+          }
+        ],
+        "conjugation": "g -> -g in the additive group",
+        "coordinate_basis": "beta_g=c^(-g), indexed by the recorded mixed-radix group coordinates",
+        "trace_functional": "tau(a)=[identity]a=(1/|G|)*sum_all_field_factors Tr(a_factor)",
+        "trace_metric": "I_15379",
+        "multiplication_action": "rho(f)[r,s]=f_coefficients[s-r], with componentwise group subtraction",
+        "adjoint_identity": "rho(conjugate(f))=rho(f)^T",
+        "endpoint_frame_Gram_scale": 1
+      },
+      "source_entry_control_indices": [
+        0,
+        1,
+        7689,
+        15378
+      ],
+      "weighted_OD_source_order_over_algebra": 2524,
+      "weighted_OD_source_Gram_scale": 38816596,
+      "T631_orthogonal_design_proof": {
+        "T_source": {
+          "order": 631,
+          "actual_alphabet": [
+            -1,
+            0,
+            1
+          ],
+          "supports_partition_every_position": true,
+          "all_periodic_shifts_checked": 631,
+          "summed_circulant_Gram_scale": 631,
+          "generating_rows_int8_sha256": "fe4855aee9e85fc10ba5ca13ce55e7afd037d310d7636067678629e3a6b47ea2",
+          "row_sums": [
+            22,
+            7,
+            7,
+            7
+          ]
+        },
+        "orthogonal_design_order": 2524,
+        "variable_count": 4,
+        "variable_weights": [
+          631,
+          631,
+          631,
+          631
+        ],
+        "source_identity": "D(x)D(x)^T=p*(x0^2+x1^2+x2^2+x3^2)*I_(4p)",
+        "construction": "D(x)=GS(L(x)b), with the literal L table retained below",
+        "L_variable_and_sign": [
+          [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              2,
+              -1
+            ],
+            [
+              3,
+              -1
+            ]
+          ],
+          [
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              2,
+              -1
+            ]
+          ],
+          [
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              -1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              3,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        ],
+        "GS_convention": "The standalone gs function in this recipe; reversal has J_uv=1 when u+v=p-1",
+        "all_polynomial_periodic_Gram_coefficients_checked": 6310,
+        "full_polynomial_Gram_verified": true,
+        "all_circulant_blocks_commute": true,
+        "coefficient_matrices_entry_alphabet": [
+          -1,
+          0,
+          1
+        ],
+        "coefficient_matrices_disjoint_and_cover_every_entry": true,
+        "coefficient_matrices_int8_sha256": [
+          "2c113a74d199300eb90c297e7cc58cf63f19ee70bf4bf6596b99622e26d0330b",
+          "0a69f1ba5e00ae9852dfe298d26fdbdd870af8d2c514b764afeb9abcc1ad6542",
+          "d34628b2fac3cd0b546679224ef5661dccdbb88bb181c64ebcbe270e95555f18",
+          "413bf6e2044646fc92c36eb92cf4d609eb9cf4df78fb5ccbc5aa93512d265d97"
+        ],
+        "full_dense_coefficient_matrix_products_performed": false,
+        "literal_T_source": "artifacts/hadamard-7572/t631.json",
+        "literal_T_source_sha256": "c5497ef485a23f1c99385035eaf02472b4dad4dee9d906d0d6b2aeb2f3680871",
+        "orbit_states": [
+          0,
+          0,
+          5,
+          4,
+          4,
+          0,
+          7,
+          0,
+          7,
+          2,
+          3,
+          0,
+          1,
+          2,
+          6,
+          1,
+          4,
+          2,
+          0,
+          1,
+          1,
+          4,
+          3,
+          4,
+          7,
+          3,
+          3,
+          5,
+          6,
+          2,
+          7
+        ],
+        "multiplier": 458,
+        "multiplier_order": 21
+      },
+      "endpoint_order": 38816596,
+      "endpoint_Gram_scale": 38816596,
+      "endpoint_entry_recipe": "sum_k X[k,i,j]*A[k,a,b], row=(i,a), column=(j,b)",
+      "endpoint_entry_control_indices": [
+        0,
+        1,
+        15379,
+        19408298,
+        38816595
+      ],
+      "endpoint_entry_control_values": [
+        [
+          1,
+          1,
+          1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          1,
+          1,
+          -1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          1
+        ],
+        [
+          1,
+          -1,
+          1,
+          -1,
+          1
+        ]
+      ],
+      "full_endpoint_Gram_verified_algebraically": true,
+      "endpoint_Gram_proof": "Complete T631 polynomial OD identity, exact commuting self-adjoint group-source norm, and disjoint sign supports.",
+      "full_dense_source_or_endpoint_allocation_performed": false,
+      "allocation_scope": "Only step zero uses dense starter components; all positive-step source norms use group rows and no dense endpoint is allocated.",
+      "finite_order_novelty_inferred": false
+    },
+    {
+      "q": 61,
+      "r": 2,
+      "source_order": 115351,
+      "group_dimensions": [
+        31,
+        61,
+        61
+      ],
+      "strong_starter": {
+        "q": 61,
+        "order": 31,
+        "origin": {
+          "recipe": "signed re-pairing of exact retained Williamson input",
+          "input": "experiments/scalar_lift/williamson_inputs.json",
+          "input_sha256": "242f554cf113c68ab882e147c3b2702b7bb62e68b66ad36b16c92b6c194f8560",
+          "raw_order": 31,
+          "channel_indices": [
+            0,
+            3,
+            1,
+            2
+          ],
+          "channel_signs": [
+            1,
+            -1,
+            1,
+            1
+          ]
+        },
+        "literal_first_rows_pm": [
+          "++++++-+--+---++++---+--+-+++++",
+          "-+++++-+--+---++++---+--+-+++++",
+          "+--++---+-+-++----++-+-+---++--",
+          "+--++---+-+-++----++-+-+---++--"
+        ],
+        "all_signs_symmetry_and_commutativity_verified": true,
+        "complete_strong_minus_Gram": "4I",
+        "complete_strong_plus_Gram": "244I",
+        "complete_summed_Gram": "124I"
+      },
+      "source_recurrence_reference": "https://doi.org/10.1017/S1446788700020255",
+      "literal_first_rows_int8_row_major_sha256": "7a71f6fa2ae60569b7cf0c8d63937c85f050d78fca00dff65edb643131e72fd9",
+      "actual_source_entry_alphabet": [
+        -1,
+        1
+      ],
+      "complete_exact_source_norm_checks": {
+        "all_group_coefficients_per_identity_checked": 115351,
+        "complete_identities_checked": [
+          "sum_j A_j^2=4wI",
+          "(D-E)^2+(F-G)^2=4q^rI",
+          "(D+E)^2+(F+G)^2=4q^(r+1)I"
+        ],
+        "method": "integer NTT of Kronecker-encoded multivariate polynomials, followed by exact group folding",
+        "modulus": 998244353,
+        "NTT_length": 1048576,
+        "absolute_integer_coefficient_bound": 922808,
+        "bound_strictly_below_modulus": true,
+        "all_polynomials_self_conjugate": true,
+        "integer_exactness": "target residual coefficients have magnitude at most8w<modulus; zero residues therefore prove zero integers"
+      },
+      "recurrence_trace": [
+        {
+          "r": 0,
+          "minus_Gram_scale": 4,
+          "plus_Gram_scale": 244,
+          "mixed_J_coefficient": 0,
+          "next_minus_Gram_scale": 244,
+          "next_plus_Gram_scale": 14884
+        },
+        {
+          "r": 1,
+          "minus_Gram_scale": 244,
+          "plus_Gram_scale": 14884,
+          "mixed_J_coefficient": 0,
+          "next_minus_Gram_scale": 14884,
+          "next_plus_Gram_scale": 907924
+        }
+      ],
+      "source_algebra": {
+        "algebra": "Q[G]",
+        "group": "C_31 x C_61 x C_61",
+        "group_dimensions": [
+          31,
+          61,
+          61
+        ],
+        "rational_dimension": 115351,
+        "group_exponent": 1891,
+        "cyclotomic_field_factors": [
+          {
+            "conductor": 1,
+            "field_degree": 1,
+            "multiplicity": 1
+          },
+          {
+            "conductor": 31,
+            "field_degree": 30,
+            "multiplicity": 1
+          },
+          {
+            "conductor": 61,
+            "field_degree": 60,
+            "multiplicity": 62
+          },
+          {
+            "conductor": 1891,
+            "field_degree": 1800,
+            "multiplicity": 62
+          }
+        ],
+        "conjugation": "g -> -g in the additive group",
+        "coordinate_basis": "beta_g=c^(-g), indexed by the recorded mixed-radix group coordinates",
+        "trace_functional": "tau(a)=[identity]a=(1/|G|)*sum_all_field_factors Tr(a_factor)",
+        "trace_metric": "I_115351",
+        "multiplication_action": "rho(f)[r,s]=f_coefficients[s-r], with componentwise group subtraction",
+        "adjoint_identity": "rho(conjugate(f))=rho(f)^T",
+        "endpoint_frame_Gram_scale": 1
+      },
+      "source_entry_control_indices": [
+        0,
+        1,
+        57675,
+        115350
+      ],
+      "weighted_OD_source_order_over_algebra": 2524,
+      "weighted_OD_source_Gram_scale": 291145924,
+      "T631_orthogonal_design_proof": {
+        "T_source": {
+          "order": 631,
+          "actual_alphabet": [
+            -1,
+            0,
+            1
+          ],
+          "supports_partition_every_position": true,
+          "all_periodic_shifts_checked": 631,
+          "summed_circulant_Gram_scale": 631,
+          "generating_rows_int8_sha256": "fe4855aee9e85fc10ba5ca13ce55e7afd037d310d7636067678629e3a6b47ea2",
+          "row_sums": [
+            22,
+            7,
+            7,
+            7
+          ]
+        },
+        "orthogonal_design_order": 2524,
+        "variable_count": 4,
+        "variable_weights": [
+          631,
+          631,
+          631,
+          631
+        ],
+        "source_identity": "D(x)D(x)^T=p*(x0^2+x1^2+x2^2+x3^2)*I_(4p)",
+        "construction": "D(x)=GS(L(x)b), with the literal L table retained below",
+        "L_variable_and_sign": [
+          [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              2,
+              -1
+            ],
+            [
+              3,
+              -1
+            ]
+          ],
+          [
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              2,
+              -1
+            ]
+          ],
+          [
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              -1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              3,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        ],
+        "GS_convention": "The standalone gs function in this recipe; reversal has J_uv=1 when u+v=p-1",
+        "all_polynomial_periodic_Gram_coefficients_checked": 6310,
+        "full_polynomial_Gram_verified": true,
+        "all_circulant_blocks_commute": true,
+        "coefficient_matrices_entry_alphabet": [
+          -1,
+          0,
+          1
+        ],
+        "coefficient_matrices_disjoint_and_cover_every_entry": true,
+        "coefficient_matrices_int8_sha256": [
+          "2c113a74d199300eb90c297e7cc58cf63f19ee70bf4bf6596b99622e26d0330b",
+          "0a69f1ba5e00ae9852dfe298d26fdbdd870af8d2c514b764afeb9abcc1ad6542",
+          "d34628b2fac3cd0b546679224ef5661dccdbb88bb181c64ebcbe270e95555f18",
+          "413bf6e2044646fc92c36eb92cf4d609eb9cf4df78fb5ccbc5aa93512d265d97"
+        ],
+        "full_dense_coefficient_matrix_products_performed": false,
+        "literal_T_source": "artifacts/hadamard-7572/t631.json",
+        "literal_T_source_sha256": "c5497ef485a23f1c99385035eaf02472b4dad4dee9d906d0d6b2aeb2f3680871",
+        "orbit_states": [
+          0,
+          0,
+          5,
+          4,
+          4,
+          0,
+          7,
+          0,
+          7,
+          2,
+          3,
+          0,
+          1,
+          2,
+          6,
+          1,
+          4,
+          2,
+          0,
+          1,
+          1,
+          4,
+          3,
+          4,
+          7,
+          3,
+          3,
+          5,
+          6,
+          2,
+          7
+        ],
+        "multiplier": 458,
+        "multiplier_order": 21
+      },
+      "endpoint_order": 291145924,
+      "endpoint_Gram_scale": 291145924,
+      "endpoint_entry_recipe": "sum_k X[k,i,j]*A[k,a,b], row=(i,a), column=(j,b)",
+      "endpoint_entry_control_indices": [
+        0,
+        1,
+        115351,
+        145572962,
+        291145923
+      ],
+      "endpoint_entry_control_values": [
+        [
+          1,
+          1,
+          1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          1,
+          1,
+          -1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          -1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          -1
+        ],
+        [
+          1,
+          -1,
+          -1,
+          1,
+          1
+        ]
+      ],
+      "full_endpoint_Gram_verified_algebraically": true,
+      "endpoint_Gram_proof": "Complete T631 polynomial OD identity, exact commuting self-adjoint group-source norm, and disjoint sign supports.",
+      "full_dense_source_or_endpoint_allocation_performed": false,
+      "allocation_scope": "Only step zero uses dense starter components; all positive-step source norms use group rows and no dense endpoint is allocated.",
+      "finite_order_novelty_inferred": false
+    },
+    {
+      "q": 17,
+      "r": 2,
+      "source_order": 2601,
+      "group_dimensions": [
+        9,
+        17,
+        17
+      ],
+      "strong_starter": {
+        "q": 17,
+        "order": 9,
+        "origin": {
+          "recipe": "D=E=S,F=I+R,G=-I+R; symmetric circulants R^2+S^2=qI",
+          "R_first_row": [
+            0,
+            -1,
+            1,
+            -1,
+            -1,
+            -1,
+            -1,
+            1,
+            -1
+          ],
+          "S_first_row": [
+            1,
+            -1,
+            -1,
+            1,
+            1,
+            1,
+            1,
+            -1,
+            -1
+          ],
+          "complete_conference_half_Gram_verified": true
+        },
+        "literal_first_rows_pm": [
+          "+--++++--",
+          "+--++++--",
+          "+-+----+-",
+          "--+----+-"
+        ],
+        "all_signs_symmetry_and_commutativity_verified": true,
+        "complete_strong_minus_Gram": "4I",
+        "complete_strong_plus_Gram": "68I",
+        "complete_summed_Gram": "36I"
+      },
+      "source_recurrence_reference": "https://doi.org/10.1017/S1446788700020255",
+      "literal_first_rows_int8_row_major_sha256": "77b5664d5b08781e27d659de7658b6eda8da294ec9cd5cf48725e907b916b49f",
+      "actual_source_entry_alphabet": [
+        -1,
+        1
+      ],
+      "complete_exact_source_norm_checks": {
+        "all_group_coefficients_per_identity_checked": 2601,
+        "complete_identities_checked": [
+          "sum_j A_j^2=4wI",
+          "(D-E)^2+(F-G)^2=4q^rI",
+          "(D+E)^2+(F+G)^2=4q^(r+1)I"
+        ],
+        "method": "integer NTT of Kronecker-encoded multivariate polynomials, followed by exact group folding",
+        "modulus": 998244353,
+        "NTT_length": 32768,
+        "absolute_integer_coefficient_bound": 20808,
+        "bound_strictly_below_modulus": true,
+        "all_polynomials_self_conjugate": true,
+        "integer_exactness": "target residual coefficients have magnitude at most8w<modulus; zero residues therefore prove zero integers"
+      },
+      "recurrence_trace": [
+        {
+          "r": 0,
+          "minus_Gram_scale": 4,
+          "plus_Gram_scale": 68,
+          "mixed_J_coefficient": 0,
+          "next_minus_Gram_scale": 68,
+          "next_plus_Gram_scale": 1156
+        },
+        {
+          "r": 1,
+          "minus_Gram_scale": 68,
+          "plus_Gram_scale": 1156,
+          "mixed_J_coefficient": 0,
+          "next_minus_Gram_scale": 1156,
+          "next_plus_Gram_scale": 19652
+        }
+      ],
+      "source_algebra": {
+        "algebra": "Q[G]",
+        "group": "C_9 x C_17 x C_17",
+        "group_dimensions": [
+          9,
+          17,
+          17
+        ],
+        "rational_dimension": 2601,
+        "group_exponent": 153,
+        "cyclotomic_field_factors": [
+          {
+            "conductor": 1,
+            "field_degree": 1,
+            "multiplicity": 1
+          },
+          {
+            "conductor": 3,
+            "field_degree": 2,
+            "multiplicity": 1
+          },
+          {
+            "conductor": 9,
+            "field_degree": 6,
+            "multiplicity": 1
+          },
+          {
+            "conductor": 17,
+            "field_degree": 16,
+            "multiplicity": 18
+          },
+          {
+            "conductor": 51,
+            "field_degree": 32,
+            "multiplicity": 18
+          },
+          {
+            "conductor": 153,
+            "field_degree": 96,
+            "multiplicity": 18
+          }
+        ],
+        "conjugation": "g -> -g in the additive group",
+        "coordinate_basis": "beta_g=c^(-g), indexed by the recorded mixed-radix group coordinates",
+        "trace_functional": "tau(a)=[identity]a=(1/|G|)*sum_all_field_factors Tr(a_factor)",
+        "trace_metric": "I_2601",
+        "multiplication_action": "rho(f)[r,s]=f_coefficients[s-r], with componentwise group subtraction",
+        "adjoint_identity": "rho(conjugate(f))=rho(f)^T",
+        "endpoint_frame_Gram_scale": 1
+      },
+      "source_entry_control_indices": [
+        0,
+        1,
+        1300,
+        2600
+      ],
+      "weighted_OD_source_order_over_algebra": 2524,
+      "weighted_OD_source_Gram_scale": 6564924,
+      "T631_orthogonal_design_proof": {
+        "T_source": {
+          "order": 631,
+          "actual_alphabet": [
+            -1,
+            0,
+            1
+          ],
+          "supports_partition_every_position": true,
+          "all_periodic_shifts_checked": 631,
+          "summed_circulant_Gram_scale": 631,
+          "generating_rows_int8_sha256": "fe4855aee9e85fc10ba5ca13ce55e7afd037d310d7636067678629e3a6b47ea2",
+          "row_sums": [
+            22,
+            7,
+            7,
+            7
+          ]
+        },
+        "orthogonal_design_order": 2524,
+        "variable_count": 4,
+        "variable_weights": [
+          631,
+          631,
+          631,
+          631
+        ],
+        "source_identity": "D(x)D(x)^T=p*(x0^2+x1^2+x2^2+x3^2)*I_(4p)",
+        "construction": "D(x)=GS(L(x)b), with the literal L table retained below",
+        "L_variable_and_sign": [
+          [
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              2,
+              -1
+            ],
+            [
+              3,
+              -1
+            ]
+          ],
+          [
+            [
+              1,
+              1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              3,
+              1
+            ],
+            [
+              2,
+              -1
+            ]
+          ],
+          [
+            [
+              2,
+              1
+            ],
+            [
+              3,
+              -1
+            ],
+            [
+              0,
+              1
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          [
+            [
+              3,
+              1
+            ],
+            [
+              2,
+              1
+            ],
+            [
+              1,
+              -1
+            ],
+            [
+              0,
+              1
+            ]
+          ]
+        ],
+        "GS_convention": "The standalone gs function in this recipe; reversal has J_uv=1 when u+v=p-1",
+        "all_polynomial_periodic_Gram_coefficients_checked": 6310,
+        "full_polynomial_Gram_verified": true,
+        "all_circulant_blocks_commute": true,
+        "coefficient_matrices_entry_alphabet": [
+          -1,
+          0,
+          1
+        ],
+        "coefficient_matrices_disjoint_and_cover_every_entry": true,
+        "coefficient_matrices_int8_sha256": [
+          "2c113a74d199300eb90c297e7cc58cf63f19ee70bf4bf6596b99622e26d0330b",
+          "0a69f1ba5e00ae9852dfe298d26fdbdd870af8d2c514b764afeb9abcc1ad6542",
+          "d34628b2fac3cd0b546679224ef5661dccdbb88bb181c64ebcbe270e95555f18",
+          "413bf6e2044646fc92c36eb92cf4d609eb9cf4df78fb5ccbc5aa93512d265d97"
+        ],
+        "full_dense_coefficient_matrix_products_performed": false,
+        "literal_T_source": "artifacts/hadamard-7572/t631.json",
+        "literal_T_source_sha256": "c5497ef485a23f1c99385035eaf02472b4dad4dee9d906d0d6b2aeb2f3680871",
+        "orbit_states": [
+          0,
+          0,
+          5,
+          4,
+          4,
+          0,
+          7,
+          0,
+          7,
+          2,
+          3,
+          0,
+          1,
+          2,
+          6,
+          1,
+          4,
+          2,
+          0,
+          1,
+          1,
+          4,
+          3,
+          4,
+          7,
+          3,
+          3,
+          5,
+          6,
+          2,
+          7
+        ],
+        "multiplier": 458,
+        "multiplier_order": 21
+      },
+      "endpoint_order": 6564924,
+      "endpoint_Gram_scale": 6564924,
+      "endpoint_entry_recipe": "sum_k X[k,i,j]*A[k,a,b], row=(i,a), column=(j,b)",
+      "endpoint_entry_control_indices": [
+        0,
+        1,
+        2601,
+        3282462,
+        6564923
+      ],
+      "endpoint_entry_control_values": [
+        [
+          1,
+          1,
+          1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          1,
+          1,
+          -1,
+          -1
+        ],
+        [
+          1,
+          1,
+          1,
+          1,
+          -1
+        ],
+        [
+          1,
+          1,
+          -1,
+          1,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          -1,
+          1
+        ]
+      ],
+      "full_endpoint_Gram_verified_algebraically": true,
+      "endpoint_Gram_proof": "Complete T631 polynomial OD identity, exact commuting self-adjoint group-source norm, and disjoint sign supports.",
+      "full_dense_source_or_endpoint_allocation_performed": false,
+      "allocation_scope": "Only step zero uses dense starter components; all positive-step source norms use group rows and no dense endpoint is allocated.",
+      "finite_order_novelty_inferred": false
+    }
+  ]
+}

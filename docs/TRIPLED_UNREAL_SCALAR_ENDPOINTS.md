@@ -21,6 +21,11 @@ the complete source and frame identities for the full Gram proof.
 The retained [certificate](../certificates/scalar-lift/tripled-unreal-scalar-endpoints.json)
 contains all exact source checks, gauges, frame bindings and interface controls.
 
+The registered next source at order 1053 would give H2657772, which is
+already known by Paley I with prime parameter 2657771. The
+[current source inventory](SOURCE_INVENTORY.md) records larger compatible
+sources and their positive prior-order checks.
+
 ## Source, gauge and family rule
 
 The raw order-13 seed is the published

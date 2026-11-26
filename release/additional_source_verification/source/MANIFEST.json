@@ -1,0 +1,650 @@
+{
+  "schema": "butson-towers-additional-source-reproducibility-v1",
+  "lean_toolchain": "leanprover/lean4:v4.32.0",
+  "mathlib_revision": "81a5d257c8e410db227a6665ed08f64fea08e997",
+  "expected_theorems": [
+    "ButsonTowers.Data.nearWilliamson47_quad",
+    "ButsonTowers.Data.nearWilliamson53_quad",
+    "ButsonTowers.Data.nearWilliamson59_quad",
+    "ButsonTowers.Data.nearWilliamson67_quad",
+    "ButsonTowers.Data.nearWilliamson69_quad",
+    "ButsonTowers.Data.nearWilliamson73_quad",
+    "ButsonTowers.Data.nearWilliamson79_quad",
+    "ButsonTowers.Data.nearWilliamson93_quad",
+    "ButsonTowers.Data.nearWilliamson97_quad",
+    "ButsonTowers.Data.nearWilliamson103_quad",
+    "ButsonTowers.Data.nearWilliamson109_quad",
+    "ButsonTowers.Data.nearWilliamson127_quad",
+    "ButsonTowers.hadamard_118628",
+    "ButsonTowers.hadamard_133772",
+    "ButsonTowers.hadamard_148916",
+    "ButsonTowers.hadamard_169108",
+    "ButsonTowers.hadamard_174156",
+    "ButsonTowers.hadamard_184252",
+    "ButsonTowers.hadamard_199396",
+    "ButsonTowers.hadamard_234732",
+    "ButsonTowers.hadamard_244828",
+    "ButsonTowers.hadamard_259972",
+    "ButsonTowers.hadamard_275116",
+    "ButsonTowers.hadamard_320548",
+    "ButsonTowers.Data.additionalSpence5_strong",
+    "ButsonTowers.Data.additionalSpence53_strong",
+    "ButsonTowers.Data.additionalSpence97_strong",
+    "ButsonTowers.Data.additionalSpence109_strong",
+    "ButsonTowers.Data.additionalSpence113_strong",
+    "ButsonTowers.Data.additionalSpence137_strong",
+    "ButsonTowers.Data.additionalPaley5_isPaley",
+    "ButsonTowers.Data.additionalPaley53_isPaley",
+    "ButsonTowers.Data.additionalPaley97_isPaley",
+    "ButsonTowers.Data.additionalPaley109_isPaley",
+    "ButsonTowers.Data.additionalPaley113_isPaley",
+    "ButsonTowers.Data.additionalPaley137_isPaley",
+    "ButsonTowers.spence_family_5",
+    "ButsonTowers.spence_family_53",
+    "ButsonTowers.spence_family_97",
+    "ButsonTowers.spence_family_109",
+    "ButsonTowers.spence_family_113",
+    "ButsonTowers.spence_family_137",
+    "ButsonTowers.near_williamson_table_endpoints",
+    "ButsonTowers.hadamard_2985892",
+    "ButsonTowers.hadamard_38816596",
+    "ButsonTowers.hadamard_291145924",
+    "ButsonTowers.hadamard_15131380",
+    "ButsonTowers.new_spence_family_109"
+  ],
+  "expected_audits": {
+    "AuditAxioms.lean": [
+      "ButsonTowers.inverse_metric_adjoint",
+      "ButsonTowers.framed_zero",
+      "ButsonTowers.frame_pair_transport",
+      "ButsonTowers.frame_sum_transport",
+      "ButsonTowers.weighted_pair_transport",
+      "ButsonTowers.weighted_sum_transport",
+      "ButsonTowers.weighted_gram_block",
+      "ButsonTowers.frame_gram_block",
+      "ButsonTowers.framed_matrix_flat",
+      "ButsonTowers.framed_matrix_gram",
+      "ButsonTowers.framed_matrix_hadamard",
+      "ButsonTowers.Spence.doubled_minus_norm",
+      "ButsonTowers.Spence.doubled_plus_norm",
+      "ButsonTowers.Spence.sum_squares_from_strong_norms",
+      "ButsonTowers.Spence.strong_norm_induction",
+      "ButsonTowers.Spence.entry_step_sign",
+      "ButsonTowers.TraceTowers.trace_metric_adjoint",
+      "ButsonTowers.TraceTowers.inverse_trace_metric_adjoint",
+      "ButsonTowers.TraceTowers.weighted_trace_gram_transport",
+      "ButsonTowers.TraceTowers.basis_gram_congruence",
+      "ButsonTowers.GroupAlgebra.regular_mul",
+      "ButsonTowers.GroupAlgebra.regular_involution",
+      "ButsonTowers.GroupAlgebra.regular_trace",
+      "ButsonTowers.GroupAlgebra.inverse_basis_trace_metric",
+      "ButsonTowers.GroupAlgebra.regularAlgHom_injective",
+      "ButsonTowers.GroupAlgebra.regular_star",
+      "ButsonTowers.GroupAlgebra.regularAlgHom_normalized_trace",
+      "ButsonTowers.GroupAlgebra.group_algebra_identity_trace_metric",
+      "ButsonTowers.GoethalsSeidel.gs_gram",
+      "ButsonTowers.OrthogonalDesign.coefficient_gram",
+      "ButsonTowers.OrthogonalDesign.coefficient_cross",
+      "ButsonTowers.OrthogonalDesign.coefficients_signed_partition",
+      "ButsonTowers.tensor_substitute_gram",
+      "ButsonTowers.tensor_substitute_flat",
+      "ButsonTowers.tensor_substitute_hadamard",
+      "ButsonTowers.SpenceMatrix.strong_step",
+      "ButsonTowers.SpenceMatrix.family_strong",
+      "ButsonTowers.SpenceMatrix.family_norm",
+      "ButsonTowers.SpenceMatrix.family_card",
+      "ButsonTowers.SpenceMatrix.family_hadamard",
+      "ButsonTowers.Unreal.next_amicable",
+      "ButsonTowers.Unreal.next_norm",
+      "ButsonTowers.Unreal.quad_amicable",
+      "ButsonTowers.hadamard_reindex",
+      "ButsonTowers.exists_from_t",
+      "ButsonTowers.spence_exists_from_t",
+      "ButsonTowers.Data.t127_codes_corr",
+      "ButsonTowers.Data.t127_corr",
+      "ButsonTowers.Data.t127_onehot",
+      "ButsonTowers.Data.t631_codes_corr",
+      "ButsonTowers.Data.t631_corr",
+      "ButsonTowers.Data.t631_onehot",
+      "ButsonTowers.Data.unreal13_norm",
+      "ButsonTowers.hadamard_7572",
+      "ButsonTowers.hadamard_17668",
+      "ButsonTowers.hadamard_22716",
+      "ButsonTowers.hadamard_32812",
+      "ButsonTowers.hadamard_42908",
+      "ButsonTowers.hadamard_58052",
+      "ButsonTowers.hadamard_73196",
+      "ButsonTowers.hadamard_78244",
+      "ButsonTowers.hadamard_93388",
+      "ButsonTowers.hadamard_98436",
+      "ButsonTowers.hadamard_108532",
+      "ButsonTowers.hadamard_128724",
+      "ButsonTowers.hadamard_153964",
+      "ButsonTowers.hadamard_229684",
+      "ButsonTowers.hadamard_295308",
+      "ButsonTowers.hadamard_386172",
+      "ButsonTowers.hadamard_4772884",
+      "ButsonTowers.hadamard_13001124",
+      "ButsonTowers.spence_family_13",
+      "ButsonTowers.spence_family_17",
+      "ButsonTowers.spence_family_61",
+      "ButsonTowers.spence_family_101",
+      "ButsonTowers.spence_family_121",
+      "ButsonTowers.unreal_cubic_family",
+      "ButsonTowers.announced_orders_exist",
+      "ButsonTowers.williamson_table_endpoints",
+      "ButsonTowers.GoethalsSeidel.python_reflection_127",
+      "ButsonTowers.GoethalsSeidel.python_reflection_631",
+      "ButsonTowers.GSAlgebra.blocks_gram",
+      "ButsonTowers.TraceTowers.finite_free_trace_transitivity",
+      "ButsonTowers.TraceTowers.tower_action_coordinates",
+      "ButsonTowers.TraceTowers.tower_trace_metric"
+    ],
+    "AuditSixthRootPair.lean": [
+      "ButsonTowers.SixthRootPair.transpose_mul_of_mul_transpose",
+      "ButsonTowers.SixthRootPair.action_mul_transpose",
+      "ButsonTowers.SixthRootPair.action_add_transpose",
+      "ButsonTowers.SixthRootPair.action_transpose",
+      "ButsonTowers.SixthRootPair.action_polynomial",
+      "ButsonTowers.SixthRootPair.action_mul_left",
+      "ButsonTowers.SixthRootPair.imaginaryAction_transpose",
+      "ButsonTowers.SixthRootPair.imaginaryAction_square",
+      "ButsonTowers.SixthRootPair.coordinateAction_mul",
+      "ButsonTowers.SixthRootPair.coordinateAction_conjugate"
+    ],
+    "AuditAdditionalSources.lean": [
+      "ButsonTowers.Data.nearWilliamson47_quad",
+      "ButsonTowers.Data.nearWilliamson53_quad",
+      "ButsonTowers.Data.nearWilliamson59_quad",
+      "ButsonTowers.Data.nearWilliamson67_quad",
+      "ButsonTowers.Data.nearWilliamson69_quad",
+      "ButsonTowers.Data.nearWilliamson73_quad",
+      "ButsonTowers.Data.nearWilliamson79_quad",
+      "ButsonTowers.Data.nearWilliamson93_quad",
+      "ButsonTowers.Data.nearWilliamson97_quad",
+      "ButsonTowers.Data.nearWilliamson103_quad",
+      "ButsonTowers.Data.nearWilliamson109_quad",
+      "ButsonTowers.Data.nearWilliamson127_quad",
+      "ButsonTowers.hadamard_118628",
+      "ButsonTowers.hadamard_133772",
+      "ButsonTowers.hadamard_148916",
+      "ButsonTowers.hadamard_169108",
+      "ButsonTowers.hadamard_174156",
+      "ButsonTowers.hadamard_184252",
+      "ButsonTowers.hadamard_199396",
+      "ButsonTowers.hadamard_234732",
+      "ButsonTowers.hadamard_244828",
+      "ButsonTowers.hadamard_259972",
+      "ButsonTowers.hadamard_275116",
+      "ButsonTowers.hadamard_320548",
+      "ButsonTowers.Data.additionalSpence5_strong",
+      "ButsonTowers.Data.additionalSpence53_strong",
+      "ButsonTowers.Data.additionalSpence97_strong",
+      "ButsonTowers.Data.additionalSpence109_strong",
+      "ButsonTowers.Data.additionalSpence113_strong",
+      "ButsonTowers.Data.additionalSpence137_strong",
+      "ButsonTowers.Data.additionalPaley5_isPaley",
+      "ButsonTowers.Data.additionalPaley53_isPaley",
+      "ButsonTowers.Data.additionalPaley97_isPaley",
+      "ButsonTowers.Data.additionalPaley109_isPaley",
+      "ButsonTowers.Data.additionalPaley113_isPaley",
+      "ButsonTowers.Data.additionalPaley137_isPaley",
+      "ButsonTowers.spence_family_5",
+      "ButsonTowers.spence_family_53",
+      "ButsonTowers.spence_family_97",
+      "ButsonTowers.spence_family_109",
+      "ButsonTowers.spence_family_113",
+      "ButsonTowers.spence_family_137",
+      "ButsonTowers.near_williamson_table_endpoints",
+      "ButsonTowers.hadamard_2985892",
+      "ButsonTowers.hadamard_38816596",
+      "ButsonTowers.hadamard_291145924",
+      "ButsonTowers.hadamard_15131380",
+      "ButsonTowers.new_spence_family_109"
+    ]
+  },
+  "scope": "canonical Lean existence proofs for34 finiteorders and9 announcedfamilies, plus recordedconstructioncontrols",
+  "packaging_policy": "explicit public source whitelist; no .lake, symlinks, .local files, API credentials or submission parameters",
+  "files": [
+    {
+      "path": "formal/.gitignore",
+      "bytes": 7,
+      "sha256": "fde850d24186b6e99c8c0debd641fb3ab85198b109eb66f71a1fea02bd6ea1b3"
+    },
+    {
+      "path": "formal/lean-toolchain",
+      "bytes": 25,
+      "sha256": "2773c517aa90b66ea8a2c52bddddf84393157797f8341be0df45294fff7fd32e"
+    },
+    {
+      "path": "formal/lakefile.toml",
+      "bytes": 258,
+      "sha256": "84ef67fa3ef82931c2445677444420b423c1deb62aa18cb94c26ad02321bbfca"
+    },
+    {
+      "path": "formal/lake-manifest.json",
+      "bytes": 3566,
+      "sha256": "b911c68385c5cc7ccb5f2dc991268cbd396ea91a884814477cd499a1f3ecd9a5"
+    },
+    {
+      "path": "formal/build.py",
+      "bytes": 1829,
+      "sha256": "aca1da07939bdab0fe0c079bbd66100d38e1c7e9355b3081d4df9b36e445ec94"
+    },
+    {
+      "path": "formal/DATA_PROVENANCE.json",
+      "bytes": 7005,
+      "sha256": "d2dded23fc1f9e1852d8999b7759a0f64c859ee033a322b08fec73847675eb14"
+    },
+    {
+      "path": "formal/NEW_SOURCE_VERIFICATION.md",
+      "bytes": 1923,
+      "sha256": "d02507c1c05bf39ea5374e6f05013759dd78d90a398fdc4bd103b074af5f44b3"
+    },
+    {
+      "path": "formal/AuditAdditionalSources.lean",
+      "bytes": 2635,
+      "sha256": "c59c64217e03d426b53687c42ac13cd0d822c4980adec6cc4dbef2f246a7efa4"
+    },
+    {
+      "path": "formal/AuditAxioms.lean",
+      "bytes": 4331,
+      "sha256": "6aae55b14b94e5da657135e3f8a89bee179a05e39ff182f8ab6fb833fd5699b9"
+    },
+    {
+      "path": "formal/AuditSixthRootPair.lean",
+      "bytes": 666,
+      "sha256": "0afb740c886c229337968dd829a2c8eb5f2fea28af5b975dc8433d849f145a70"
+    },
+    {
+      "path": "formal/ButsonTowers.lean",
+      "bytes": 328,
+      "sha256": "19cbd2d06071ab0f892987ab970118a397716ecb5edda877aa56898b042a3b64"
+    },
+    {
+      "path": "formal/ButsonTowers/AdditionalResults.lean",
+      "bytes": 812,
+      "sha256": "99141ad4c1a52f9ff54d1452452601e2e8d3bc65605cd4a3f40109ecb3f55df5"
+    },
+    {
+      "path": "formal/ButsonTowers/AdditionalSpenceFamilies.lean",
+      "bytes": 2369,
+      "sha256": "3b930ae54ca30c6b02c9529629402ad73ebf13fb6d7ea766013ea875f1f73626"
+    },
+    {
+      "path": "formal/ButsonTowers/Construction.lean",
+      "bytes": 1816,
+      "sha256": "8008fefc36cc9f47442476d35e3412eb6bcbb01ed359c3459d14ffd9cb35ab66"
+    },
+    {
+      "path": "formal/ButsonTowers/Data/AdditionalSpence.lean",
+      "bytes": 278,
+      "sha256": "eea6790a203d64ef859aaaf34d2c8814b99855452821c9964fb3d17fa682788c"
+    },
+    {
+      "path": "formal/ButsonTowers/Data/AdditionalSpence/Q109.lean",
+      "bytes": 9906,
+      "sha256": "4240b1c0d52273d6d3cbcde676e4c97b30ee7692009f3c15459aba46e1b94a43"
+    },
+    {
+      "path": "formal/ButsonTowers/Data/AdditionalSpence/Q113.lean",
+      "bytes": 10174,
+      "sha256": "6ed60a1815652518be5389c5d220c4da8fbff796987f2730eee484ad6a9b8b57"
+    },
+    {
+      "path": "formal/ButsonTowers/Data/AdditionalSpence/Q137.lean",
+      "bytes": 11825,
+      "sha256": "ec5a46b8969b6d6476001279eefdd05b739430b9f168b4c8bc2a9e3bd236694c"
+    },
+    {
+      "path": "formal/ButsonTowers/Data/AdditionalSpence/Q5.lean",
+      "bytes": 2772,
+      "sha256": "ddef783ae0b72dcd04c9d89d171530063ae21f73bab5cbd2c1d791e6ac13da1d"
+    },
+    {
+      "path": "formal/ButsonTowers/Data/AdditionalSpence/Q53.lean",
+      "bytes": 6073,
+      "sha256": "df2b3b96db3c001f447ab411436f47b367fc3ffdd424cc21b335981a3fad4906"
+    },
+    {
+      "path": "formal/ButsonTowers/Data/AdditionalSpence/Q97.lean",
+      "bytes": 9047,
+      "sha256": "28cc37481da9ba28592ae1037b4f3775295aeb153f270fd15b174f4cb5483d71"
+    },
+    {
+      "path": "formal/ButsonTowers/Data/CorrRange.lean",
+      "bytes": 961,
+      "sha256": "ab4c2195894f7d936ba58c94d816cc9d5ca1f7c36f491ac9effa5798570d081e"
+    },
+    {
+      "path": "formal/ButsonTowers/Data/FiniteChecks.lean",
+      "bytes": 4092,
+      "sha256": "5da9b634c31f5fb16f314ea93a84a1351b05b57e9d9fa1f746b75a9abe483066"
+    },
+    {
+      "path": "formal/ButsonTowers/Data/LiteralTree.lean",
+      "bytes": 604,
+      "sha256": "7b94c2095c13794b4de78fe9dc0495db1ced1db23b6977dc251cb5259eb2e551"
+    },
+    {
+      "path": "formal/ButsonTowers/Data/NearWilliamson.lean",
+      "bytes": 531,
+      "sha256": "94cda0e467bf275e29827e503b5c49f569a07bc5f40144977b4066d753a668e4"
+    },
+    {
+      "path": "formal/ButsonTowers/Data/NearWilliamson/Core.lean",
+      "bytes": 5164,
+      "sha256": "8628156f4af8aa545d9d20e49d8a3d944df7f251dd24534feee3a6834c92f47f"
+    },
+    {
+      "path": "formal/ButsonTowers/Data/NearWilliamson/W103.lean",
+      "bytes": 10702,
+      "sha256": "fee8abc24a5b4a8023656b4926ee46822b34690bb8e462e998cad5bce286ab7d"
+    },
+    {
+      "path": "formal/ButsonTowers/Data/NearWilliamson/W109.lean",
+      "bytes": 11240,
+      "sha256": "3a4f7f407181e643317d37943f0b2cbf04bd6a52202e99b04a717c5a8a14eed2"
+    },
+    {
+      "path": "formal/ButsonTowers/Data/NearWilliamson/W127.lean",
+      "bytes": 12860,
+      "sha256": "e43a117a1d044af79c6501cdb2e0d5b53fce5d6ee451b64641f6dae5ecf3b79c"
+    },
+    {
+      "path": "formal/ButsonTowers/Data/NearWilliamson/W47.lean",
+      "bytes": 5660,
+      "sha256": "486f48a7102991f2514d8a046bccdebcb28bc2d6b43243783d14f6f06ab10e34"
+    },
+    {
+      "path": "formal/ButsonTowers/Data/NearWilliamson/W53.lean",
+      "bytes": 6181,
+      "sha256": "8972ffc4b6497bd5f391636a40d54624b3091f0742381ce3d2f61c7a545be951"
+    },
+    {
+      "path": "formal/ButsonTowers/Data/NearWilliamson/W59.lean",
+      "bytes": 6721,
+      "sha256": "b1f32e40fc706c7a2786b85001de5bb8185350025713278fc225049033083e21"
+    },
+    {
+      "path": "formal/ButsonTowers/Data/NearWilliamson/W67.lean",
+      "bytes": 7454,
+      "sha256": "c83866099d18c1cd53d2f39c3ff54b3afdf6522deb2172c727272e2d1322f955"
+    },
+    {
+      "path": "formal/ButsonTowers/Data/NearWilliamson/W69.lean",
+      "bytes": 7645,
+      "sha256": "305ad1046dc0ced26ca91abae9e073d1a7e591b6188084e30d1cbb2ef91ff404"
+    },
+    {
+      "path": "formal/ButsonTowers/Data/NearWilliamson/W73.lean",
+      "bytes": 7976,
+      "sha256": "a27dd640d1839b93b0673599acf3c67d4cc14c55881b3f897862fd87ab980094"
+    },
+    {
+      "path": "formal/ButsonTowers/Data/NearWilliamson/W79.lean",
+      "bytes": 8534,
+      "sha256": "6356b6ec7718ddb772534e43d97be0e5eeeee64d99c4edad363f5246b4420846"
+    },
+    {
+      "path": "formal/ButsonTowers/Data/NearWilliamson/W93.lean",
+      "bytes": 9809,
+      "sha256": "790101c3ad70536ba9cbbff03633cb15fd123ea4075d3720a3a1364ff77ee8c0"
+    },
+    {
+      "path": "formal/ButsonTowers/Data/NearWilliamson/W97.lean",
+      "bytes": 10173,
+      "sha256": "fae7a619254f5ddcacc4892efcf0fce8ae1e43287c8c3e96efbf80b5f2b4e0d0"
+    },
+    {
+      "path": "formal/ButsonTowers/Data/Paley.lean",
+      "bytes": 3730,
+      "sha256": "2aac3cca93eae33110d4d600d46155638d35ece8fe34d17a6d58fd41fc78e398"
+    },
+    {
+      "path": "formal/ButsonTowers/Data/PaleyChecks.lean",
+      "bytes": 4032,
+      "sha256": "b92f6546766a088c9542687f33924de15a1f78c8e51bf66eafb27777545608c6"
+    },
+    {
+      "path": "formal/ButsonTowers/Data/PaleyPairChecks.lean",
+      "bytes": 4489,
+      "sha256": "4306a1052573c481e62e411471b8b58d64332eb64f8fb5a6a105872f4ff482a5"
+    },
+    {
+      "path": "formal/ButsonTowers/Data/RowChecks.lean",
+      "bytes": 4394,
+      "sha256": "5791e782eb30323b718657b6c8860dd7519221c6d623325e5780b79afe105243"
+    },
+    {
+      "path": "formal/ButsonTowers/Data/StrongChecks.lean",
+      "bytes": 1928,
+      "sha256": "34a05f5e08eaa12c38ae2efb82f6efb380aaf5f3d0979f495e1c12eeea878a4c"
+    },
+    {
+      "path": "formal/ButsonTowers/Data/StrongStarters.lean",
+      "bytes": 4092,
+      "sha256": "41a7895855604857f5b1089fadb486a814a0cf8253131ea588b8893964e1e090"
+    },
+    {
+      "path": "formal/ButsonTowers/Data/T127.lean",
+      "bytes": 1255,
+      "sha256": "670b2ac34b88d7132da361ac3a6541db8504d6cafc3aaa120b273c1b739c7721"
+    },
+    {
+      "path": "formal/ButsonTowers/Data/T631.lean",
+      "bytes": 1303,
+      "sha256": "27318be272421bd6c1e6a8f945695c66378aa72f20002e098817cfc6e1f9d25f"
+    },
+    {
+      "path": "formal/ButsonTowers/Data/T631Blocked.lean",
+      "bytes": 4322,
+      "sha256": "bf554fab939e6970dccd52ecf5239daae149f2e7b39349748a42a7396d683d30"
+    },
+    {
+      "path": "formal/ButsonTowers/Data/T631Blocks/Chunk0.lean",
+      "bytes": 993,
+      "sha256": "12495ad0cb79174d523f8ed905a7806c689ca749a478820f535aad46538ee1db"
+    },
+    {
+      "path": "formal/ButsonTowers/Data/T631Blocks/Chunk1.lean",
+      "bytes": 999,
+      "sha256": "9c9b7fb37b0c55ff30fcbb36b7f32486bdb0d7408a067cffda3131cc31e8c7c9"
+    },
+    {
+      "path": "formal/ButsonTowers/Data/T631Blocks/Chunk2.lean",
+      "bytes": 999,
+      "sha256": "103441dca853f65809f33ffc93cfb39a6be23462f1937072d3817b81e452a76e"
+    },
+    {
+      "path": "formal/ButsonTowers/Data/T631Blocks/Chunk3.lean",
+      "bytes": 999,
+      "sha256": "95f5e76d8c038a287887b2269771ba6dc0e7dd47a0568696dc1efb3406c7cd1e"
+    },
+    {
+      "path": "formal/ButsonTowers/Data/TreeLiterals.lean",
+      "bytes": 110294,
+      "sha256": "910e4c600a8e4303e85a952bf2097190dde9b8e6082611852268bcf54548b6ce"
+    },
+    {
+      "path": "formal/ButsonTowers/Data/Unreal13.lean",
+      "bytes": 10121,
+      "sha256": "78c14345ac74606b896b5d3490019b2230228d3194dc26219ccad3aff45e93a5"
+    },
+    {
+      "path": "formal/ButsonTowers/Data/Williamson.lean",
+      "bytes": 129,
+      "sha256": "84d6c5f23be4701ec7bb69a08e8816db30c272bb04e7f5949e89bb479f17ad79"
+    },
+    {
+      "path": "formal/ButsonTowers/Data/Williamson/Chunk0.lean",
+      "bytes": 12780,
+      "sha256": "8fd6e6536726027a32ef6eb8a850ea4305802abb061c2fd5b89fa308b3577298"
+    },
+    {
+      "path": "formal/ButsonTowers/Data/Williamson/Chunk1.lean",
+      "bytes": 13012,
+      "sha256": "b11f8d7ed5aafb971b3cd82aa97b1a659e91c92fb54203bbcb16503b00e0f269"
+    },
+    {
+      "path": "formal/ButsonTowers/Data/Williamson/Chunk2.lean",
+      "bytes": 13015,
+      "sha256": "ec24cee84eb0fe8d3ba19208d2fc1dc8157597a611bcb91a04ec0c94d243ab74"
+    },
+    {
+      "path": "formal/ButsonTowers/Endpoints.lean",
+      "bytes": 17925,
+      "sha256": "46768c758570ac1c6d22d35f918e8839f8e1686e16e2ca289bffd761c3dff1a9"
+    },
+    {
+      "path": "formal/ButsonTowers/Existence.lean",
+      "bytes": 968,
+      "sha256": "287ea0b390e39bd65434dd052c1c474d0164907f391731c4262260057517e68c"
+    },
+    {
+      "path": "formal/ButsonTowers/FiniteGroupAlgebra.lean",
+      "bytes": 5160,
+      "sha256": "25669aded793e7448d6768c16d4c5707d67b1db41dda04c575faab417c623ecf"
+    },
+    {
+      "path": "formal/ButsonTowers/GSAlgebra.lean",
+      "bytes": 1755,
+      "sha256": "6e8615ac36919a52859ab366737224a8b37e31f1e5a38e75d5a23c8d364d655e"
+    },
+    {
+      "path": "formal/ButsonTowers/GoethalsSeidel.lean",
+      "bytes": 1860,
+      "sha256": "1d3c0bc28976ea609f2ea49f19c9cb45338e2633bbb29bba8c99cac5a2195409"
+    },
+    {
+      "path": "formal/ButsonTowers/GoethalsSeidelCore.lean",
+      "bytes": 2821,
+      "sha256": "46f8c8be1e0a4510d162838b446074a710e3cf0429b373335d0baadadf704160"
+    },
+    {
+      "path": "formal/ButsonTowers/GoethalsSeidelEntry.lean",
+      "bytes": 3624,
+      "sha256": "ee25ef97f2bb5ca5f0358b40c9d9e93b8a64267125b227c8d68b7165e0bb53c9"
+    },
+    {
+      "path": "formal/ButsonTowers/GroupAlgebra.lean",
+      "bytes": 3760,
+      "sha256": "e0163e7d175c468f9351a016b01f31a03e1e73cc336a9ab5f2ac7e709cd7e577"
+    },
+    {
+      "path": "formal/ButsonTowers/NearWilliamsonEndpoints.lean",
+      "bytes": 3047,
+      "sha256": "7402a23f76a9fc45ca5b2312ddac941be032d3c33786343591f25fc2780f5d09"
+    },
+    {
+      "path": "formal/ButsonTowers/OrthogonalDesign.lean",
+      "bytes": 2494,
+      "sha256": "efa72b2b75d59d784556b603523d48974308e8a8b7ec18ec34c52ad926d6a2bf"
+    },
+    {
+      "path": "formal/ButsonTowers/OrthogonalDesignCore.lean",
+      "bytes": 6483,
+      "sha256": "85bdbdfd961ca224ed56226c30750ad3d2f7f76dcf54d80bff7aff845c029a22"
+    },
+    {
+      "path": "formal/ButsonTowers/OrthogonalSubstitution.lean",
+      "bytes": 5001,
+      "sha256": "9ac107a1fc20cb965b005961c17d5330d83a1bc85ae7b2d771ed1b5e102336f4"
+    },
+    {
+      "path": "formal/ButsonTowers/ReflectionConvention.lean",
+      "bytes": 5432,
+      "sha256": "46f19bb9145d3c5682f53fbdbb5bd54549951a09f7d0de1f8f4f7d7995ebd864"
+    },
+    {
+      "path": "formal/ButsonTowers/ScalarFrame.lean",
+      "bytes": 6681,
+      "sha256": "0c22e7c82dfac86bfe9353bd6f16830f9af7e46ed30f0ebd16acc4b60de447bb"
+    },
+    {
+      "path": "formal/ButsonTowers/SixthRootPair.lean",
+      "bytes": 6144,
+      "sha256": "a22eaac1f367dbb43ffd75b976f55ab19f69dc283a96200b2303e4f0535174ce"
+    },
+    {
+      "path": "formal/ButsonTowers/Spence.lean",
+      "bytes": 2851,
+      "sha256": "76550551edb0f877d2c4e55d329f1f7661da473f5efdbe812938558586e05868"
+    },
+    {
+      "path": "formal/ButsonTowers/SpenceHadamard.lean",
+      "bytes": 1771,
+      "sha256": "cb7e43672b9ff1fe29e5111f5502e0065ec454995b1d5a9bf0e9ac4319ba6aea"
+    },
+    {
+      "path": "formal/ButsonTowers/SpenceMatrix.lean",
+      "bytes": 12707,
+      "sha256": "c01bdbdbf3d294cb2fa0918b000dbb6378e507f9009da7d5fe2f866404941ce0"
+    },
+    {
+      "path": "formal/ButsonTowers/TraceTowers.lean",
+      "bytes": 5880,
+      "sha256": "60fc34ea1d92bcd1e86a0fae530c71955f38628121ebf3314b448aa939d0528e"
+    },
+    {
+      "path": "formal/ButsonTowers/UnrealTripling.lean",
+      "bytes": 6089,
+      "sha256": "cf4c752b8303eec1b1396761920297d65799d5b39214424b9a9d9c4a6171a16a"
+    },
+    {
+      "path": "scripts/check_lean_literal_data.py",
+      "bytes": 4670,
+      "sha256": "1404394873f2ac94b993d7543c66a775ae1da86ba5975301a0367d4a1eb6611e"
+    },
+    {
+      "path": "scripts/check_lean_additional_sources.py",
+      "bytes": 3712,
+      "sha256": "15c6d44ffe3ac119c72bbc97500040ae6bd7d951a9f0bdad26e252738683bba2"
+    },
+    {
+      "path": "artifacts/t-matrices-127/t127.json",
+      "bytes": 10545,
+      "sha256": "4a415276e4c1f0360fe4e6bc6ca88d24955cda2b5c5297dbc44a6d63a0bf7a2b"
+    },
+    {
+      "path": "artifacts/hadamard-7572/t631.json",
+      "bytes": 47917,
+      "sha256": "c5497ef485a23f1c99385035eaf02472b4dad4dee9d906d0d6b2aeb2f3680871"
+    },
+    {
+      "path": "experiments/scalar_lift/williamson_inputs.json",
+      "bytes": 22585,
+      "sha256": "242f554cf113c68ab882e147c3b2702b7bb62e68b66ad36b16c92b6c194f8560"
+    },
+    {
+      "path": "experiments/scalar_lift/near_williamson_inputs.json",
+      "bytes": 34076,
+      "sha256": "be3da66fbf0517cde1e326e6a60c26acaeb03c0a1948b74bff78bcadad00957f"
+    },
+    {
+      "path": "experiments/scalar_lift/bh13_6_seed.json",
+      "bytes": 1001,
+      "sha256": "8ff8f10160828e8cc0372ecb045fca397aaf5c44c8f0db06d7aad1ebcb8cf003"
+    },
+    {
+      "path": "certificates/scalar-lift/williamson-spence-family.json",
+      "bytes": 24352,
+      "sha256": "0ab2ac65129b6c8ac7ee97396847bcc000515473ba03b34a2da3c27715ede0ed"
+    },
+    {
+      "path": "README.md",
+      "bytes": 3068,
+      "sha256": "abbbb1cb7d632fbed003dfe72a5d928703301ad4f0783d08b81290e30f6bcb31"
+    },
+    {
+      "path": "verify.py",
+      "bytes": 23679,
+      "sha256": "06f7e0fdddb140024204cd4f1771917052098b965257901e364393eb1e673382"
+    },
+    {
+      "path": "build_package.py",
+      "bytes": 3005,
+      "sha256": "1dc8a7177f2301169b2d9b5421ddbd7648cd8024fcff4819c9328b2446d26e1a"
+    }
+  ]
+}

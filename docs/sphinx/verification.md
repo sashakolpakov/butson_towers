@@ -150,7 +150,7 @@ identities have their own scope in
 {repo-file}`TraceTowers.lean <formal/ButsonTowers/TraceTowers.lean>` and
 {repo-file}`ScalarFrame.lean <formal/ButsonTowers/ScalarFrame.lean>`.
 
-### The 95 selected axiom reports
+### The 143 selected axiom reports
 
 Run the current repository audit with
 
@@ -158,12 +158,14 @@ Run the current repository audit with
 ./scripts/check_formal.sh
 ```
 
-The script builds the project and checks two exact lists: 85 statements
+The script builds the project and checks three exact lists: 85 statements
 in {repo-file}`AuditAxioms.lean <formal/AuditAxioms.lean>` and ten additional
 rational sixth-root matrix identities in
 {repo-file}`AuditSixthRootPair.lean <formal/AuditSixthRootPair.lean>`.
-These are **95 selected axiom reports**, not a count of every theorem in
-the project. The lists include the eighteen announced orders and all six
+A further 48 statements are checked by
+{repo-file}`AuditAdditionalSources.lean <formal/AuditAdditionalSources.lean>`.
+These are **143 selected axiom reports**, not a count of every theorem in
+the project. The lists include the thirty-four announced orders and all nine stated
 all-iteration families. Only `propext`, `Classical.choice` and `Quot.sound`
 are permitted; missing, repeated or unexpected reports are rejected.
 

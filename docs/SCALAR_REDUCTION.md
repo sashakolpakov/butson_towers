@@ -118,8 +118,14 @@ give literal endpoints for every integer `r>=0`, of orders
 `153964*121^r`. Their first expanded members add new orders **229684,
 386172, 4772884 and 13001124**; the fifth, 18629644, is known by Paley II.
 Individual finite orders carry the recorded status labels. The main
-campaign now has **38 completed real orders, 18 new and 20 known recovered
+campaign now has **65 completed real orders, 34 new and 31 known recovered
 orders**; the new periodic T127 ingredient is counted separately.
+
+The [source inventory](SOURCE_INVENTORY.md) adds twelve new orders from
+19 published symmetric amicable inputs, including noncyclic scalar actions
+with all field factors and module multiplicities retained. Further exact
+recurrence members give four additional new orders. The manuscript now
+states nine families, all with kernel-checked existence proofs.
 
 The [lower-order campaign](LOW_ORDER_SEARCH.md) seeks further periodic
 T-matrices, starting with length 223 and Hadamard order 2676. Length 167

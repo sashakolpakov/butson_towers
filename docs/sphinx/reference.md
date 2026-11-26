@@ -93,6 +93,16 @@ operation with its own recorded scope.
 
 ## Recursive source entries
 
+The additional compatible finite sources use a separate verifier with an
+explicit first-matrix reversal flag. It checks all full matrix norms and
+pairwise identities before constructing a `ScalarEndpoint`.
+
+```{eval-rst}
+.. automodule:: experiments.scalar_lift.near_williamson_scalar_endpoints
+   :members: literal_matrices, verify_quadruple, verified_source, endpoint, certificate
+   :member-order: bysource
+```
+
 `SpenceSource(q,r)` validates the supported parameter and its starter, then
 evaluates recursive sign entries without materializing all source rows.
 `order` is $((q+1)/2)q^r$ and `group_dimensions` specifies the actual finite
@@ -110,6 +120,18 @@ $\mathbb F_{11}$; see {ref}`families` for the finite-field arithmetic.
 source matrix. `row` and `coefficient_rows` materialize what their names
 request and can become large; entry access is the appropriate interface for
 large parameters.
+
+```{eval-rst}
+.. automodule:: experiments.scalar_lift.additional_spence_families
+   :members: starter, paley, AdditionalSpenceSource, source, endpoint, finite_member
+   :member-order: bysource
+```
+
+`source(q,r)` dispatches between the original five parameters and the six
+additional prime parameters. `finite_member` checks all group coefficients
+of the three source norms with an integer NTT; it does not allocate a dense
+Hadamard endpoint. Its certificate distinguishes these complete finite
+source checks from the all-parameter recurrence proof.
 
 (reference-parity)=
 ## Coordinate charts and determinant maps

@@ -32,7 +32,7 @@ and precise theorem references used in the manuscript.
 
 E. Spence, [*An infinite family of Williamson matrices*](https://doi.org/10.1017/S1446788700020255),
 *Journal of the Australian Mathematical Society*, Series A 24 (1977), 252–256,
-Theorem 4, supplies the classical recurrence used for five source families.
+Theorem 4, supplies the classical recurrence used for eight announced source families.
 The literal starters, finite-field conventions and recurrence proofs appear
 in {ref}`families` and the manuscript.
 

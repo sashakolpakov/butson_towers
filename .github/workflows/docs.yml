@@ -51,8 +51,12 @@ jobs:
           sudo apt-get install --no-install-recommends -y \
             texlive-xetex texlive-latex-extra texlive-fonts-recommended \
             latexmk fonts-lmodern fonts-dejavu-core cm-super-minimal
-      - name: Check the manuscript's finite inputs
-        run: python scripts/verify_manuscript_data.py
+      - name: Check the manuscript's finite inputs and Lean literal bindings
+        run: |
+          python scripts/verify_manuscript_data.py
+          python scripts/check_lean_literal_data.py
+          python scripts/check_lean_additional_sources.py
+          python release/additional_source_verification/source/verify.py --check-only
       - name: Build the current manuscript
         working-directory: manuscript
         run: latexmk -pdf -interaction=nonstopmode -halt-on-error -outdir=build hadamard_7572_announcement.tex

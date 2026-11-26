@@ -1,0 +1,2067 @@
+{
+  "schema": "compatible-source-endpoint-order-status-v1",
+  "checked_utc": "2026-11-26T20:59:39.125058+00:00",
+  "convention": "Mark a completed endpoint known when a prior construction has been located; otherwise new to the best of the author's knowledge after the dated checks.",
+  "primary_records_checked": [
+    "https://arxiv.org/html/2610.27175v2#S4.T5",
+    "https://github.com/vatskishan03/Hadamard/blob/main/FRONTIER.md",
+    "https://arxiv.org/abs/2411.18897v2",
+    "https://arxiv.org/abs/2605.08661v2"
+  ],
+  "entries": {
+    "35": {
+      "width": 35,
+      "order": 88340,
+      "status": "known",
+      "checked_date": "2026-11-26",
+      "arithmetic_checks": {
+        "N_minus1": {
+          "88339": 1
+        },
+        "N_over2_minus1": {
+          "3": 1,
+          "14723": 1
+        },
+        "Yamada_q": 22083,
+        "Yamada_q_mod8": 3,
+        "Yamada_q_factorization": {
+          "3": 1,
+          "17": 1,
+          "433": 1
+        },
+        "all_divisor_Turyn_and_Paley_block_gates": [
+          {
+            "family": "Paley sixteen-block product",
+            "t": 1,
+            "s": 22085,
+            "q": 88339,
+            "prime_power": true,
+            "congruence_passes": true,
+            "q_factorization": {
+              "88339": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Turyn Williamson input",
+            "t": 1,
+            "s": 22085,
+            "q": 44169,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "3": 1,
+              "14723": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Paley sixteen-block product",
+            "t": 5,
+            "s": 4417,
+            "q": 17667,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "3": 2,
+              "13": 1,
+              "151": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Turyn Williamson input",
+            "t": 5,
+            "s": 4417,
+            "q": 8833,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "11": 2,
+              "73": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Paley sixteen-block product",
+            "t": 7,
+            "s": 3155,
+            "q": 12619,
+            "prime_power": true,
+            "congruence_passes": true,
+            "q_factorization": {
+              "12619": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Turyn Williamson input",
+            "t": 7,
+            "s": 3155,
+            "q": 6309,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "3": 2,
+              "701": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Paley sixteen-block product",
+            "t": 35,
+            "s": 631,
+            "q": 2523,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "3": 1,
+              "29": 2
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Turyn Williamson input",
+            "t": 35,
+            "s": 631,
+            "q": 1261,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "13": 1,
+              "97": 1
+            },
+            "T_input_claimed_known": true
+          }
+        ]
+      },
+      "prior_construction": {
+        "family": "Paley I",
+        "parameters": {
+          "q": 88339
+        },
+        "primary_references": [
+          "https://doi.org/10.1002/sapm1933121311",
+          "https://doi.org/10.1017/S0004972700045019",
+          "https://documents.uow.edu.au/~jennie/WEBPDF/139_1990.pdf"
+        ]
+      }
+    },
+    "45": {
+      "width": 45,
+      "order": 113580,
+      "status": "known",
+      "checked_date": "2026-11-26",
+      "arithmetic_checks": {
+        "N_minus1": {
+          "53": 1,
+          "2143": 1
+        },
+        "N_over2_minus1": {
+          "109": 1,
+          "521": 1
+        },
+        "Yamada_q": 28393,
+        "Yamada_q_mod8": 1,
+        "Yamada_q_factorization": {
+          "28393": 1
+        },
+        "all_divisor_Turyn_and_Paley_block_gates": [
+          {
+            "family": "Paley sixteen-block product",
+            "t": 1,
+            "s": 28395,
+            "q": 113579,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "53": 1,
+              "2143": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Turyn Williamson input",
+            "t": 1,
+            "s": 28395,
+            "q": 56789,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "109": 1,
+              "521": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Paley sixteen-block product",
+            "t": 3,
+            "s": 9465,
+            "q": 37859,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "17": 2,
+              "131": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Turyn Williamson input",
+            "t": 3,
+            "s": 9465,
+            "q": 18929,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "23": 1,
+              "823": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Paley sixteen-block product",
+            "t": 5,
+            "s": 5679,
+            "q": 22715,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "5": 1,
+              "7": 1,
+              "11": 1,
+              "59": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Turyn Williamson input",
+            "t": 5,
+            "s": 5679,
+            "q": 11357,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "41": 1,
+              "277": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Paley sixteen-block product",
+            "t": 9,
+            "s": 3155,
+            "q": 12619,
+            "prime_power": true,
+            "congruence_passes": true,
+            "q_factorization": {
+              "12619": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Turyn Williamson input",
+            "t": 9,
+            "s": 3155,
+            "q": 6309,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "3": 2,
+              "701": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Paley sixteen-block product",
+            "t": 15,
+            "s": 1893,
+            "q": 7571,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "67": 1,
+              "113": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Turyn Williamson input",
+            "t": 15,
+            "s": 1893,
+            "q": 3785,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "5": 1,
+              "757": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Paley sixteen-block product",
+            "t": 45,
+            "s": 631,
+            "q": 2523,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "3": 1,
+              "29": 2
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Turyn Williamson input",
+            "t": 45,
+            "s": 631,
+            "q": 1261,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "13": 1,
+              "97": 1
+            },
+            "T_input_claimed_known": true
+          }
+        ]
+      },
+      "prior_construction": {
+        "family": "Paley sixteen-block product",
+        "parameters": {
+          "q": 12619,
+          "s": 3155,
+          "t": 9
+        },
+        "primary_references": [
+          "https://doi.org/10.1002/sapm1933121311",
+          "https://doi.org/10.1017/S0004972700045019",
+          "https://documents.uow.edu.au/~jennie/WEBPDF/139_1990.pdf"
+        ]
+      }
+    },
+    "47": {
+      "width": 47,
+      "order": 118628,
+      "status": "new_to_best_of_authors_knowledge",
+      "checked_date": "2026-11-26",
+      "arithmetic_checks": {
+        "N_minus1": {
+          "313": 1,
+          "379": 1
+        },
+        "N_over2_minus1": {
+          "3": 1,
+          "17": 1,
+          "1163": 1
+        },
+        "Yamada_q": 29655,
+        "Yamada_q_mod8": 7,
+        "Yamada_q_factorization": {
+          "3": 2,
+          "5": 1,
+          "659": 1
+        },
+        "all_divisor_Turyn_and_Paley_block_gates": [
+          {
+            "family": "Paley sixteen-block product",
+            "t": 1,
+            "s": 29657,
+            "q": 118627,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "313": 1,
+              "379": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Turyn Williamson input",
+            "t": 1,
+            "s": 29657,
+            "q": 59313,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "3": 1,
+              "17": 1,
+              "1163": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Paley sixteen-block product",
+            "t": 47,
+            "s": 631,
+            "q": 2523,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "3": 1,
+              "29": 2
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Turyn Williamson input",
+            "t": 47,
+            "s": 631,
+            "q": 1261,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "13": 1,
+              "97": 1
+            },
+            "T_input_claimed_known": true
+          }
+        ]
+      },
+      "prior_construction": null
+    },
+    "53": {
+      "width": 53,
+      "order": 133772,
+      "status": "new_to_best_of_authors_knowledge",
+      "checked_date": "2026-11-26",
+      "arithmetic_checks": {
+        "N_minus1": {
+          "11": 1,
+          "12161": 1
+        },
+        "N_over2_minus1": {
+          "3": 1,
+          "5": 1,
+          "7": 3,
+          "13": 1
+        },
+        "Yamada_q": 33441,
+        "Yamada_q_mod8": 1,
+        "Yamada_q_factorization": {
+          "3": 1,
+          "71": 1,
+          "157": 1
+        },
+        "all_divisor_Turyn_and_Paley_block_gates": [
+          {
+            "family": "Paley sixteen-block product",
+            "t": 1,
+            "s": 33443,
+            "q": 133771,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "11": 1,
+              "12161": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Turyn Williamson input",
+            "t": 1,
+            "s": 33443,
+            "q": 66885,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "3": 1,
+              "5": 1,
+              "7": 3,
+              "13": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Paley sixteen-block product",
+            "t": 53,
+            "s": 631,
+            "q": 2523,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "3": 1,
+              "29": 2
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Turyn Williamson input",
+            "t": 53,
+            "s": 631,
+            "q": 1261,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "13": 1,
+              "97": 1
+            },
+            "T_input_claimed_known": true
+          }
+        ]
+      },
+      "prior_construction": null
+    },
+    "59": {
+      "width": 59,
+      "order": 148916,
+      "status": "new_to_best_of_authors_knowledge",
+      "checked_date": "2026-11-26",
+      "arithmetic_checks": {
+        "N_minus1": {
+          "5": 1,
+          "13": 1,
+          "29": 1,
+          "79": 1
+        },
+        "N_over2_minus1": {
+          "3": 2,
+          "8273": 1
+        },
+        "Yamada_q": 37227,
+        "Yamada_q_mod8": 3,
+        "Yamada_q_factorization": {
+          "3": 1,
+          "12409": 1
+        },
+        "all_divisor_Turyn_and_Paley_block_gates": [
+          {
+            "family": "Paley sixteen-block product",
+            "t": 1,
+            "s": 37229,
+            "q": 148915,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "5": 1,
+              "13": 1,
+              "29": 1,
+              "79": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Turyn Williamson input",
+            "t": 1,
+            "s": 37229,
+            "q": 74457,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "3": 2,
+              "8273": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Paley sixteen-block product",
+            "t": 59,
+            "s": 631,
+            "q": 2523,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "3": 1,
+              "29": 2
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Turyn Williamson input",
+            "t": 59,
+            "s": 631,
+            "q": 1261,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "13": 1,
+              "97": 1
+            },
+            "T_input_claimed_known": true
+          }
+        ]
+      },
+      "prior_construction": null
+    },
+    "65": {
+      "width": 65,
+      "order": 164060,
+      "status": "known",
+      "checked_date": "2026-11-26",
+      "arithmetic_checks": {
+        "N_minus1": {
+          "7": 1,
+          "23": 1,
+          "1019": 1
+        },
+        "N_over2_minus1": {
+          "3": 1,
+          "37": 1,
+          "739": 1
+        },
+        "Yamada_q": 41013,
+        "Yamada_q_mod8": 5,
+        "Yamada_q_factorization": {
+          "3": 3,
+          "7": 2,
+          "31": 1
+        },
+        "all_divisor_Turyn_and_Paley_block_gates": [
+          {
+            "family": "Paley sixteen-block product",
+            "t": 1,
+            "s": 41015,
+            "q": 164059,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "7": 1,
+              "23": 1,
+              "1019": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Turyn Williamson input",
+            "t": 1,
+            "s": 41015,
+            "q": 82029,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "3": 1,
+              "37": 1,
+              "739": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Paley sixteen-block product",
+            "t": 5,
+            "s": 8203,
+            "q": 32811,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "3": 1,
+              "10937": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Turyn Williamson input",
+            "t": 5,
+            "s": 8203,
+            "q": 16405,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "5": 1,
+              "17": 1,
+              "193": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Paley sixteen-block product",
+            "t": 13,
+            "s": 3155,
+            "q": 12619,
+            "prime_power": true,
+            "congruence_passes": true,
+            "q_factorization": {
+              "12619": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Turyn Williamson input",
+            "t": 13,
+            "s": 3155,
+            "q": 6309,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "3": 2,
+              "701": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Paley sixteen-block product",
+            "t": 65,
+            "s": 631,
+            "q": 2523,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "3": 1,
+              "29": 2
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Turyn Williamson input",
+            "t": 65,
+            "s": 631,
+            "q": 1261,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "13": 1,
+              "97": 1
+            },
+            "T_input_claimed_known": true
+          }
+        ]
+      },
+      "prior_construction": {
+        "family": "Paley sixteen-block product",
+        "parameters": {
+          "q": 12619,
+          "s": 3155,
+          "t": 13
+        },
+        "primary_references": [
+          "https://doi.org/10.1002/sapm1933121311",
+          "https://doi.org/10.1017/S0004972700045019",
+          "https://documents.uow.edu.au/~jennie/WEBPDF/139_1990.pdf"
+        ]
+      }
+    },
+    "67": {
+      "width": 67,
+      "order": 169108,
+      "status": "new_to_best_of_authors_knowledge",
+      "checked_date": "2026-11-26",
+      "arithmetic_checks": {
+        "N_minus1": {
+          "3": 1,
+          "56369": 1
+        },
+        "N_over2_minus1": {
+          "7": 1,
+          "47": 1,
+          "257": 1
+        },
+        "Yamada_q": 42275,
+        "Yamada_q_mod8": 3,
+        "Yamada_q_factorization": {
+          "5": 2,
+          "19": 1,
+          "89": 1
+        },
+        "all_divisor_Turyn_and_Paley_block_gates": [
+          {
+            "family": "Paley sixteen-block product",
+            "t": 1,
+            "s": 42277,
+            "q": 169107,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "3": 1,
+              "56369": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Turyn Williamson input",
+            "t": 1,
+            "s": 42277,
+            "q": 84553,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "7": 1,
+              "47": 1,
+              "257": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Paley sixteen-block product",
+            "t": 67,
+            "s": 631,
+            "q": 2523,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "3": 1,
+              "29": 2
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Turyn Williamson input",
+            "t": 67,
+            "s": 631,
+            "q": 1261,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "13": 1,
+              "97": 1
+            },
+            "T_input_claimed_known": true
+          }
+        ]
+      },
+      "prior_construction": null
+    },
+    "69": {
+      "width": 69,
+      "order": 174156,
+      "status": "new_to_best_of_authors_knowledge",
+      "checked_date": "2026-11-26",
+      "arithmetic_checks": {
+        "N_minus1": {
+          "5": 1,
+          "61": 1,
+          "571": 1
+        },
+        "N_over2_minus1": {
+          "19": 1,
+          "4583": 1
+        },
+        "Yamada_q": 43537,
+        "Yamada_q_mod8": 1,
+        "Yamada_q_factorization": {
+          "13": 1,
+          "17": 1,
+          "197": 1
+        },
+        "all_divisor_Turyn_and_Paley_block_gates": [
+          {
+            "family": "Paley sixteen-block product",
+            "t": 1,
+            "s": 43539,
+            "q": 174155,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "5": 1,
+              "61": 1,
+              "571": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Turyn Williamson input",
+            "t": 1,
+            "s": 43539,
+            "q": 87077,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "19": 1,
+              "4583": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Paley sixteen-block product",
+            "t": 3,
+            "s": 14513,
+            "q": 58051,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "7": 1,
+              "8293": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Turyn Williamson input",
+            "t": 3,
+            "s": 14513,
+            "q": 29025,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "3": 3,
+              "5": 2,
+              "43": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Paley sixteen-block product",
+            "t": 23,
+            "s": 1893,
+            "q": 7571,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "67": 1,
+              "113": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Turyn Williamson input",
+            "t": 23,
+            "s": 1893,
+            "q": 3785,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "5": 1,
+              "757": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Paley sixteen-block product",
+            "t": 69,
+            "s": 631,
+            "q": 2523,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "3": 1,
+              "29": 2
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Turyn Williamson input",
+            "t": 69,
+            "s": 631,
+            "q": 1261,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "13": 1,
+              "97": 1
+            },
+            "T_input_claimed_known": true
+          }
+        ]
+      },
+      "prior_construction": null
+    },
+    "73": {
+      "width": 73,
+      "order": 184252,
+      "status": "new_to_best_of_authors_knowledge",
+      "checked_date": "2026-11-26",
+      "arithmetic_checks": {
+        "N_minus1": {
+          "3": 1,
+          "61417": 1
+        },
+        "N_over2_minus1": {
+          "5": 3,
+          "11": 1,
+          "67": 1
+        },
+        "Yamada_q": 46061,
+        "Yamada_q_mod8": 5,
+        "Yamada_q_factorization": {
+          "46061": 1
+        },
+        "all_divisor_Turyn_and_Paley_block_gates": [
+          {
+            "family": "Paley sixteen-block product",
+            "t": 1,
+            "s": 46063,
+            "q": 184251,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "3": 1,
+              "61417": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Turyn Williamson input",
+            "t": 1,
+            "s": 46063,
+            "q": 92125,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "5": 3,
+              "11": 1,
+              "67": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Paley sixteen-block product",
+            "t": 73,
+            "s": 631,
+            "q": 2523,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "3": 1,
+              "29": 2
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Turyn Williamson input",
+            "t": 73,
+            "s": 631,
+            "q": 1261,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "13": 1,
+              "97": 1
+            },
+            "T_input_claimed_known": true
+          }
+        ]
+      },
+      "prior_construction": null,
+      "Yamada_unavailable_input": {
+        "order": 23032,
+        "condition": "skew Hadamard",
+        "record": "https://github.com/vatskishan03/Hadamard/blob/main/FRONTIER.md",
+        "detail": "Its underlying real order8*2879 remains unresolved in the dated frontier."
+      }
+    },
+    "79": {
+      "width": 79,
+      "order": 199396,
+      "status": "new_to_best_of_authors_knowledge",
+      "checked_date": "2026-11-26",
+      "arithmetic_checks": {
+        "N_minus1": {
+          "3": 3,
+          "5": 1,
+          "7": 1,
+          "211": 1
+        },
+        "N_over2_minus1": {
+          "13": 1,
+          "7669": 1
+        },
+        "Yamada_q": 49847,
+        "Yamada_q_mod8": 7,
+        "Yamada_q_factorization": {
+          "7": 1,
+          "7121": 1
+        },
+        "all_divisor_Turyn_and_Paley_block_gates": [
+          {
+            "family": "Paley sixteen-block product",
+            "t": 1,
+            "s": 49849,
+            "q": 199395,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "3": 3,
+              "5": 1,
+              "7": 1,
+              "211": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Turyn Williamson input",
+            "t": 1,
+            "s": 49849,
+            "q": 99697,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "13": 1,
+              "7669": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Paley sixteen-block product",
+            "t": 79,
+            "s": 631,
+            "q": 2523,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "3": 1,
+              "29": 2
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Turyn Williamson input",
+            "t": 79,
+            "s": 631,
+            "q": 1261,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "13": 1,
+              "97": 1
+            },
+            "T_input_claimed_known": true
+          }
+        ]
+      },
+      "prior_construction": null
+    },
+    "91": {
+      "width": 91,
+      "order": 229684,
+      "status": "new_to_best_of_authors_knowledge",
+      "checked_date": "2026-11-26",
+      "arithmetic_checks": {
+        "N_minus1": {
+          "3": 1,
+          "76561": 1
+        },
+        "N_over2_minus1": {
+          "41": 1,
+          "2801": 1
+        },
+        "Yamada_q": 57419,
+        "Yamada_q_mod8": 3,
+        "Yamada_q_factorization": {
+          "67": 1,
+          "857": 1
+        },
+        "all_divisor_Turyn_and_Paley_block_gates": [
+          {
+            "family": "Paley sixteen-block product",
+            "t": 1,
+            "s": 57421,
+            "q": 229683,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "3": 1,
+              "76561": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Turyn Williamson input",
+            "t": 1,
+            "s": 57421,
+            "q": 114841,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "41": 1,
+              "2801": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Paley sixteen-block product",
+            "t": 7,
+            "s": 8203,
+            "q": 32811,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "3": 1,
+              "10937": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Turyn Williamson input",
+            "t": 7,
+            "s": 8203,
+            "q": 16405,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "5": 1,
+              "17": 1,
+              "193": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Paley sixteen-block product",
+            "t": 13,
+            "s": 4417,
+            "q": 17667,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "3": 2,
+              "13": 1,
+              "151": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Turyn Williamson input",
+            "t": 13,
+            "s": 4417,
+            "q": 8833,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "11": 2,
+              "73": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Paley sixteen-block product",
+            "t": 91,
+            "s": 631,
+            "q": 2523,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "3": 1,
+              "29": 2
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Turyn Williamson input",
+            "t": 91,
+            "s": 631,
+            "q": 1261,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "13": 1,
+              "97": 1
+            },
+            "T_input_claimed_known": true
+          }
+        ]
+      },
+      "prior_construction": null,
+      "already_completed_project_order": true,
+      "earlier_recipe": "Spence source q13,r1"
+    },
+    "93": {
+      "width": 93,
+      "order": 234732,
+      "status": "new_to_best_of_authors_knowledge",
+      "checked_date": "2026-11-26",
+      "arithmetic_checks": {
+        "N_minus1": {
+          "7": 1,
+          "33533": 1
+        },
+        "N_over2_minus1": {
+          "5": 1,
+          "23473": 1
+        },
+        "Yamada_q": 58681,
+        "Yamada_q_mod8": 1,
+        "Yamada_q_factorization": {
+          "7": 1,
+          "83": 1,
+          "101": 1
+        },
+        "all_divisor_Turyn_and_Paley_block_gates": [
+          {
+            "family": "Paley sixteen-block product",
+            "t": 1,
+            "s": 58683,
+            "q": 234731,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "7": 1,
+              "33533": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Turyn Williamson input",
+            "t": 1,
+            "s": 58683,
+            "q": 117365,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "5": 1,
+              "23473": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Paley sixteen-block product",
+            "t": 3,
+            "s": 19561,
+            "q": 78243,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "3": 1,
+              "11": 1,
+              "2371": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Turyn Williamson input",
+            "t": 3,
+            "s": 19561,
+            "q": 39121,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "19": 1,
+              "29": 1,
+              "71": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Paley sixteen-block product",
+            "t": 31,
+            "s": 1893,
+            "q": 7571,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "67": 1,
+              "113": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Turyn Williamson input",
+            "t": 31,
+            "s": 1893,
+            "q": 3785,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "5": 1,
+              "757": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Paley sixteen-block product",
+            "t": 93,
+            "s": 631,
+            "q": 2523,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "3": 1,
+              "29": 2
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Turyn Williamson input",
+            "t": 93,
+            "s": 631,
+            "q": 1261,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "13": 1,
+              "97": 1
+            },
+            "T_input_claimed_known": true
+          }
+        ]
+      },
+      "prior_construction": null
+    },
+    "95": {
+      "width": 95,
+      "order": 239780,
+      "status": "known",
+      "checked_date": "2026-11-26",
+      "arithmetic_checks": {
+        "N_minus1": {
+          "239779": 1
+        },
+        "N_over2_minus1": {
+          "3": 2,
+          "7": 1,
+          "11": 1,
+          "173": 1
+        },
+        "Yamada_q": 59943,
+        "Yamada_q_mod8": 7,
+        "Yamada_q_factorization": {
+          "3": 1,
+          "13": 1,
+          "29": 1,
+          "53": 1
+        },
+        "all_divisor_Turyn_and_Paley_block_gates": [
+          {
+            "family": "Paley sixteen-block product",
+            "t": 1,
+            "s": 59945,
+            "q": 239779,
+            "prime_power": true,
+            "congruence_passes": true,
+            "q_factorization": {
+              "239779": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Turyn Williamson input",
+            "t": 1,
+            "s": 59945,
+            "q": 119889,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "3": 2,
+              "7": 1,
+              "11": 1,
+              "173": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Paley sixteen-block product",
+            "t": 5,
+            "s": 11989,
+            "q": 47955,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "3": 1,
+              "5": 1,
+              "23": 1,
+              "139": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Turyn Williamson input",
+            "t": 5,
+            "s": 11989,
+            "q": 23977,
+            "prime_power": true,
+            "congruence_passes": true,
+            "q_factorization": {
+              "23977": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Paley sixteen-block product",
+            "t": 19,
+            "s": 3155,
+            "q": 12619,
+            "prime_power": true,
+            "congruence_passes": true,
+            "q_factorization": {
+              "12619": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Turyn Williamson input",
+            "t": 19,
+            "s": 3155,
+            "q": 6309,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "3": 2,
+              "701": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Paley sixteen-block product",
+            "t": 95,
+            "s": 631,
+            "q": 2523,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "3": 1,
+              "29": 2
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Turyn Williamson input",
+            "t": 95,
+            "s": 631,
+            "q": 1261,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "13": 1,
+              "97": 1
+            },
+            "T_input_claimed_known": true
+          }
+        ]
+      },
+      "prior_construction": {
+        "family": "Paley I",
+        "parameters": {
+          "q": 239779
+        },
+        "primary_references": [
+          "https://doi.org/10.1002/sapm1933121311",
+          "https://doi.org/10.1017/S0004972700045019",
+          "https://documents.uow.edu.au/~jennie/WEBPDF/139_1990.pdf"
+        ]
+      }
+    },
+    "97": {
+      "width": 97,
+      "order": 244828,
+      "status": "new_to_best_of_authors_knowledge",
+      "checked_date": "2026-11-26",
+      "arithmetic_checks": {
+        "N_minus1": {
+          "3": 2,
+          "11": 1,
+          "2473": 1
+        },
+        "N_over2_minus1": {
+          "163": 1,
+          "751": 1
+        },
+        "Yamada_q": 61205,
+        "Yamada_q_mod8": 5,
+        "Yamada_q_factorization": {
+          "5": 1,
+          "12241": 1
+        },
+        "all_divisor_Turyn_and_Paley_block_gates": [
+          {
+            "family": "Paley sixteen-block product",
+            "t": 1,
+            "s": 61207,
+            "q": 244827,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "3": 2,
+              "11": 1,
+              "2473": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Turyn Williamson input",
+            "t": 1,
+            "s": 61207,
+            "q": 122413,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "163": 1,
+              "751": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Paley sixteen-block product",
+            "t": 97,
+            "s": 631,
+            "q": 2523,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "3": 1,
+              "29": 2
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Turyn Williamson input",
+            "t": 97,
+            "s": 631,
+            "q": 1261,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "13": 1,
+              "97": 1
+            },
+            "T_input_claimed_known": true
+          }
+        ]
+      },
+      "prior_construction": null
+    },
+    "103": {
+      "width": 103,
+      "order": 259972,
+      "status": "new_to_best_of_authors_knowledge",
+      "checked_date": "2026-11-26",
+      "arithmetic_checks": {
+        "N_minus1": {
+          "3": 1,
+          "193": 1,
+          "449": 1
+        },
+        "N_over2_minus1": {
+          "5": 1,
+          "25997": 1
+        },
+        "Yamada_q": 64991,
+        "Yamada_q_mod8": 7,
+        "Yamada_q_factorization": {
+          "17": 1,
+          "3823": 1
+        },
+        "all_divisor_Turyn_and_Paley_block_gates": [
+          {
+            "family": "Paley sixteen-block product",
+            "t": 1,
+            "s": 64993,
+            "q": 259971,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "3": 1,
+              "193": 1,
+              "449": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Turyn Williamson input",
+            "t": 1,
+            "s": 64993,
+            "q": 129985,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "5": 1,
+              "25997": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Paley sixteen-block product",
+            "t": 103,
+            "s": 631,
+            "q": 2523,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "3": 1,
+              "29": 2
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Turyn Williamson input",
+            "t": 103,
+            "s": 631,
+            "q": 1261,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "13": 1,
+              "97": 1
+            },
+            "T_input_claimed_known": true
+          }
+        ]
+      },
+      "prior_construction": null
+    },
+    "109": {
+      "width": 109,
+      "order": 275116,
+      "status": "new_to_best_of_authors_knowledge",
+      "checked_date": "2026-11-26",
+      "arithmetic_checks": {
+        "N_minus1": {
+          "3": 1,
+          "5": 1,
+          "18341": 1
+        },
+        "N_over2_minus1": {
+          "7": 1,
+          "43": 1,
+          "457": 1
+        },
+        "Yamada_q": 68777,
+        "Yamada_q_mod8": 1,
+        "Yamada_q_factorization": {
+          "68777": 1
+        },
+        "all_divisor_Turyn_and_Paley_block_gates": [
+          {
+            "family": "Paley sixteen-block product",
+            "t": 1,
+            "s": 68779,
+            "q": 275115,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "3": 1,
+              "5": 1,
+              "18341": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Turyn Williamson input",
+            "t": 1,
+            "s": 68779,
+            "q": 137557,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "7": 1,
+              "43": 1,
+              "457": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Paley sixteen-block product",
+            "t": 109,
+            "s": 631,
+            "q": 2523,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "3": 1,
+              "29": 2
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Turyn Williamson input",
+            "t": 109,
+            "s": 631,
+            "q": 1261,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "13": 1,
+              "97": 1
+            },
+            "T_input_claimed_known": true
+          }
+        ]
+      },
+      "prior_construction": null
+    },
+    "127": {
+      "width": 127,
+      "order": 320548,
+      "status": "new_to_best_of_authors_knowledge",
+      "checked_date": "2026-11-26",
+      "arithmetic_checks": {
+        "N_minus1": {
+          "3": 1,
+          "59": 1,
+          "1811": 1
+        },
+        "N_over2_minus1": {
+          "83": 1,
+          "1931": 1
+        },
+        "Yamada_q": 80135,
+        "Yamada_q_mod8": 7,
+        "Yamada_q_factorization": {
+          "5": 1,
+          "11": 1,
+          "31": 1,
+          "47": 1
+        },
+        "all_divisor_Turyn_and_Paley_block_gates": [
+          {
+            "family": "Paley sixteen-block product",
+            "t": 1,
+            "s": 80137,
+            "q": 320547,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "3": 1,
+              "59": 1,
+              "1811": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Turyn Williamson input",
+            "t": 1,
+            "s": 80137,
+            "q": 160273,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "83": 1,
+              "1931": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Paley sixteen-block product",
+            "t": 127,
+            "s": 631,
+            "q": 2523,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "3": 1,
+              "29": 2
+            },
+            "T_input_claimed_known": false
+          },
+          {
+            "family": "Turyn Williamson input",
+            "t": 127,
+            "s": 631,
+            "q": 1261,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "13": 1,
+              "97": 1
+            },
+            "T_input_claimed_known": false
+          }
+        ]
+      },
+      "prior_construction": null
+    },
+    "133": {
+      "width": 133,
+      "order": 335692,
+      "status": "known",
+      "checked_date": "2026-11-26",
+      "arithmetic_checks": {
+        "N_minus1": {
+          "3": 3,
+          "12433": 1
+        },
+        "N_over2_minus1": {
+          "5": 1,
+          "33569": 1
+        },
+        "Yamada_q": 83921,
+        "Yamada_q_mod8": 1,
+        "Yamada_q_factorization": {
+          "83921": 1
+        },
+        "all_divisor_Turyn_and_Paley_block_gates": [
+          {
+            "family": "Paley sixteen-block product",
+            "t": 1,
+            "s": 83923,
+            "q": 335691,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "3": 3,
+              "12433": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Turyn Williamson input",
+            "t": 1,
+            "s": 83923,
+            "q": 167845,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "5": 1,
+              "33569": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Paley sixteen-block product",
+            "t": 7,
+            "s": 11989,
+            "q": 47955,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "3": 1,
+              "5": 1,
+              "23": 1,
+              "139": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Turyn Williamson input",
+            "t": 7,
+            "s": 11989,
+            "q": 23977,
+            "prime_power": true,
+            "congruence_passes": true,
+            "q_factorization": {
+              "23977": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Paley sixteen-block product",
+            "t": 19,
+            "s": 4417,
+            "q": 17667,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "3": 2,
+              "13": 1,
+              "151": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Turyn Williamson input",
+            "t": 19,
+            "s": 4417,
+            "q": 8833,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "11": 2,
+              "73": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Paley sixteen-block product",
+            "t": 133,
+            "s": 631,
+            "q": 2523,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "3": 1,
+              "29": 2
+            },
+            "T_input_claimed_known": false
+          },
+          {
+            "family": "Turyn Williamson input",
+            "t": 133,
+            "s": 631,
+            "q": 1261,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "13": 1,
+              "97": 1
+            },
+            "T_input_claimed_known": false
+          }
+        ]
+      },
+      "prior_construction": {
+        "family": "Cooper-Wallis with Turyn Williamson input",
+        "parameters": {
+          "q": 23977,
+          "Williamson_order": 11989,
+          "T_order": 7
+        },
+        "primary_references": [
+          "https://doi.org/10.1002/sapm1933121311",
+          "https://doi.org/10.1017/S0004972700045019",
+          "https://documents.uow.edu.au/~jennie/WEBPDF/139_1990.pdf"
+        ]
+      }
+    },
+    "181": {
+      "width": 181,
+      "order": 456844,
+      "status": "known",
+      "checked_date": "2026-11-26",
+      "arithmetic_checks": {
+        "N_minus1": {
+          "3": 1,
+          "197": 1,
+          "773": 1
+        },
+        "N_over2_minus1": {
+          "228421": 1
+        },
+        "Yamada_q": 114209,
+        "Yamada_q_mod8": 1,
+        "Yamada_q_factorization": {
+          "19": 1,
+          "6011": 1
+        },
+        "all_divisor_Turyn_and_Paley_block_gates": [
+          {
+            "family": "Paley sixteen-block product",
+            "t": 1,
+            "s": 114211,
+            "q": 456843,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "3": 1,
+              "197": 1,
+              "773": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Turyn Williamson input",
+            "t": 1,
+            "s": 114211,
+            "q": 228421,
+            "prime_power": true,
+            "congruence_passes": true,
+            "q_factorization": {
+              "228421": 1
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Paley sixteen-block product",
+            "t": 181,
+            "s": 631,
+            "q": 2523,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "3": 1,
+              "29": 2
+            },
+            "T_input_claimed_known": true
+          },
+          {
+            "family": "Turyn Williamson input",
+            "t": 181,
+            "s": 631,
+            "q": 1261,
+            "prime_power": false,
+            "congruence_passes": true,
+            "q_factorization": {
+              "13": 1,
+              "97": 1
+            },
+            "T_input_claimed_known": true
+          }
+        ]
+      },
+      "prior_construction": {
+        "family": "Paley II",
+        "parameters": {
+          "q": 228421
+        },
+        "primary_references": [
+          "https://doi.org/10.1002/sapm1933121311",
+          "https://doi.org/10.1017/S0004972700045019",
+          "https://documents.uow.edu.au/~jennie/WEBPDF/139_1990.pdf"
+        ]
+      }
+    }
+  }
+}

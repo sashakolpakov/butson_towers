@@ -58,8 +58,9 @@ these finite checks establish all hypotheses of
 {eq}`eq-families-source`, rather than only some selected row products.
 The literal rows, provenance and source hashes are in
 {repo-file}`williamson_inputs.json <experiments/scalar_lift/williamson_inputs.json>`.
-The paper prints thirteen sufficient quadruples; the repository retains
-and formally checks all 27. A malformed entry labelled order 45 in the
+The paper prints thirteen of these cyclic quadruples and the twelve further
+compatible inputs described below; the repository formally checks all 27
+original cyclic inputs. A malformed entry labelled order 45 in the
 pinned upstream table is excluded because its literal words have length 43.
 
 From the repository root:
@@ -80,13 +81,74 @@ assert H.entry(0, 100) in (-1, 1)
 object evaluates entries and rows without allocating the complete endpoint.
 Its `.row(i)` method does materialize the requested row.
 
-## Five source recurrences of Spence
+## Further compatible inputs and their scalar algebras
+
+The {repo-file}`additional literal table <experiments/scalar_lift/near_williamson_inputs.json>`
+contains 19 published inputs through width 181. Let $C(a)_{i,j}=a(j-i)$
+and let $R_{i,j}=1$ when $i+j=w-1$, with zero otherwise. Except at width
+69, the represented source is
+$A_0=C(a_0)R$, $A_j=C(a_j)$ for $j=1,2,3$; at 69 all four are ordinary
+circulants. The last three rows are symmetric. Thus $C(a_0)R$ is symmetric,
+commutes with the other three matrices and has the same Gram contribution
+as $C(a_0)$. Every source norm and pairwise identity is checked in full.
+
+```python
+from experiments.scalar_lift.near_williamson_scalar_endpoints import (
+    verified_source, endpoint,
+)
+
+A, proof = verified_source(47)
+H = endpoint(47)
+assert H.order == 118628
+assert H.entry(0, 100) in (-1, 1)
+```
+
+These matrices generate a commutative reduced algebra
+$\mathcal A=\mathbb Q[A_0,A_1,A_2,A_3]$ on $V=\mathbb Q^w$, with physical
+metric $I_w$. They are not assumed to belong to a cyclic group algebra.
+The {repo-file}`exact algebra audit <experiments/scalar_lift/commutative_scalar_algebra.py>`
+expresses every $A_j$ as a polynomial in $T=A_0+3A_1+5A_2+7A_3$, factors its
+minimal polynomial, and reconstructs all field modules by rational spectral
+idempotents. If $\mathcal A=\prod_iK_i$, it retains
+$V=\bigoplus_iK_i^{m_i}$ and $\sum_im_i[K_i:\mathbb Q]=w$.
+The normalized trace is $\sum_i m_i\operatorname{Tr}_{K_i/\mathbb Q}/w$.
+For example, the width-73 input has algebra dimension 25 and module
+dimension 73: its degree-24 field occurs three times. The audit preserves
+all three copies. Its basis change $B$ transports the metric to
+$G=B^{\mathsf T}B$, and all represented scalar actions are checked to be
+self-adjoint for this $G$.
+
+This is how nonflat field components return to literal sign blocks after
+the recorded rational reconstruction. The
+{repo-file}`algebra certificate <certificates/scalar-lift/near-williamson-scalar-algebras.json>`
+stores compact reconstruction recipes and exact hashes, rather than large
+rational matrices. Its optional factor audit requires `python-flint`:
+
+```sh
+python -m experiments.scalar_lift.commutative_scalar_algebra \
+  --check certificates/scalar-lift/near-williamson-scalar-algebras.json
+```
+
+The {repo-file}`source inventory <docs/SOURCE_INVENTORY.md>` records which
+twelve outputs add new orders and which outputs were already known.
+
+## Source recurrences of Spence
 
 We use Spence's classical recurrence, with the five parameters
 $q\in\{13,17,61,101,121\}$ and $w_0=(q+1)/2$. The sources and their
 recurrence are classical; the T631 construction supplies the new output
 multiplier. The retained source attribution and precise starter data are
 in {repo-file}`SPENCE_SCALAR_FAMILIES.md <docs/SPENCE_SCALAR_FAMILIES.md>`.
+
+The separate
+{repo-file}`additional executor <experiments/scalar_lift/additional_spence_families.py>`
+also verifies prime parameters $5,53,97,109,113,137$ without changing the
+earlier five-source records. The current paper states the three additional
+families $7572\cdot5^r$, $174156\cdot137^r$ and $15131380\cdot109^r$.
+The last starts at recurrence stage $r+1$; the other three prime recurrences
+remain construction controls without a new-family claim. Each added starter
+satisfies the same two strong identities below, and the same induction
+proves every parameter value.
 
 Write the four starting matrices as $D_0,E_0,F_0,G_0$. Besides being
 symmetric commuting sign matrices, they must satisfy **both** identities

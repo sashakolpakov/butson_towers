@@ -21,11 +21,11 @@
 \maketitle
 
 \begin{abstract}
-We construct real Hadamard matrices of eighteen new orders and give six
+We construct real Hadamard matrices of thirty-four new orders and give nine
 new infinite families.
 The constructions preserve orthogonality and ensure that every final entry
 is $1$ or $-1$. Explicit recipes and reproducible formal proofs establish
-every stated order and every member of the six families.
+every stated order and every member of the nine families.
 \end{abstract}
 
 \section{Results and conventions}
@@ -39,19 +39,23 @@ new to the best of the author's knowledge. Known individual orders in the
 infinite families are identified in Section~\ref{sec:conclusion}.
 
 \begin{theorem}\label{thm:main}
-Real Hadamard matrices exist at each of the following eighteen new ranks:
+Real Hadamard matrices exist at each of the following thirty-four new ranks:
 \[
 \begin{gathered}
-7572,\quad17668,\quad22716,\quad32812,\quad42908,\quad58052,\\
-73196,\quad78244,\quad93388,\quad98436,\quad108532,\quad128724,\\
-153964,\quad229684,\quad295308,\quad386172,\quad4772884,\quad13001124.
+7572,\quad17668,\quad22716,\quad32812,\quad42908,\quad58052\\
+73196,\quad78244,\quad93388,\quad98436,\quad108532,\quad118628\\
+128724,\quad133772,\quad148916,\quad153964,\quad169108,\quad174156\\
+184252,\quad199396,\quad229684,\quad234732,\quad244828,\quad259972\\
+275116,\quad295308,\quad320548,\quad386172,\quad2985892,\quad4772884\\
+13001124,\quad15131380,\quad38816596,\quad291145924.
 \end{gathered}
 \]
-They also exist at every rank in the following six families:
+They also exist at every rank in the following nine families:
 \[
 \begin{gathered}
-17668\cdot13^r,\qquad22716\cdot17^r,\qquad32812\cdot3^r,\\
-78244\cdot61^r,\qquad128724\cdot101^r,\qquad153964\cdot121^r
+7572\cdot5^r,\qquad17668\cdot13^r,\qquad22716\cdot17^r\\
+32812\cdot3^r,\qquad78244\cdot61^r,\qquad128724\cdot101^r\\
+153964\cdot121^r,\qquad174156\cdot137^r,\qquad15131380\cdot109^r
 \qquad(r\in\mathbb Z_{\geq0}).
 \end{gathered}
 \]
@@ -86,9 +90,9 @@ with the correlation identity proved in Section~\ref{sec:finite}.
 It gives both a sixth-root scalar action and four matrices that allow
 substitution of commuting sign matrices. The same construction on
 $\F_{127}$ gives periodic T-matrices of order $127$.
-Five infinite families use Spence's classical recurrence for the
-\emph{source} matrices; we call the resulting five real output families
-our Spence families. The sixth uses the classical tripling construction
+Eight infinite families use Spence's classical recurrence for the
+\emph{source} matrices; we call these eight real output families
+our Spence families. The ninth uses the classical tripling construction
 for an explicitly specified sixth-root source. All finite initial data and all
 recurrence identities needed here are given below.
 
@@ -1060,7 +1064,7 @@ are all $P,Q,-P$ or $-Q$ and form a real Hadamard matrix of order
 \[
  d n_r=2524\cdot13\cdot3^r=32812\cdot3^r.
 \]
-This proves the sixth infinite family for every $r\geq0$, and gives
+This proves the cubic infinite family for every $r\geq0$, and gives
 the individual orders $32812$, $98436$ and $295308$ at $r=0,1,2$.
 
 
@@ -1191,18 +1195,216 @@ The two constructions of rank $7572$ given here prove the same existence
 statement; they need not produce equivalent matrices.
 
 
-\section{Five infinite families from Spence's recurrence}\label{sec:spence-rigorous}
+
+\section{Twelve further compatible quadruples}\label{sec:additional-quadruples}
+
+The previous section uses symmetric circulants. The substitution theorem
+also applies when the first matrix is a symmetric back-circulant. We use
+published near-Williamson data~\cite{near-williamson} and a published
+Williamson quadruple of order $69$~\cite{williamson69} to supply twelve
+further inputs. These are known source quadruples.
+
+For each row $a$ below, put $C(a)_{i,j}=a(j-i)$, reducing arguments
+modulo its displayed width $w$. Let $R_w$ be the reversal matrix, defined
+by $(R_w)_{i,j}=1$ when $i+j=w-1$ and $0$ otherwise. Thus $R_w^2=I_w$.
+For $w\ne69$, the four matrices used here are
+\[
+ A_0=C(a_0)R_w,\qquad A_j=C(a_j)\quad(1\le j\le3).
+\]
+For $w=69$ use $A_j=C(a_j)$ for all four indices. Each group of four
+words in the table is $(a_0,a_1,a_2,a_3)$, in that order; the signs and
+residue indexing have the same meaning as in the preceding section.
+
+\begin{center}\fontsize{5}{6}\selectfont
+\begin{tabular}{rl}
+$w$&four rows, in order\\\hline
+$47$&\texttt{++-+-+++---+-+--+++-+-+---+--++-++-+--+-++-----}\\
+&\texttt{+-+---+++-++++--------------------++++-+++---+-}\\
+&\texttt{--+++-+----+++-++-+-+--++--+-+-++-+++----+-+++-}\\
+&\texttt{--+++--+--++-++---+--+-++-+--+---++-++--+--+++-}\\
+\hline
+$53$&\texttt{++---++-++----+-+-+-+--++++++++--+-+-+-+----++-++----}\\
+&\texttt{+---++-+-+--++-+--++++++-++++-++++++--+-++--+-+-++---}\\
+&\texttt{+-++++--+---+-----++++-++----++-++++-----+---+--++++-}\\
+&\texttt{+---+-++---+-++---+----++-++-++----+---++-+---++-+---}\\
+\hline
+$59$&\texttt{++----++++---++--+---+-++-+++--+++-++-+---+--++---++++-----}\\
+&\texttt{+----++-++++-+-+++-+-++-+++-+--+-+++-++-+-+++-+-++++-++----}\\
+&\texttt{+--+----++++-+-+-+--+--+---++--++---+--+--+-+-+-++++----+--}\\
+&\texttt{+-----+---+-+--++++++--+---++++++---+--++++++--+-+---+-----}\\
+\hline
+$67$&\texttt{+-++-+-++--+---+--+++----+-++--+-++-+--+----+-+-+--+++++--++-+-+---}\\
+&\texttt{+--+--+++--++++++-++-----+---+--------+---+-----++-++++++--+++--+--}\\
+&\texttt{++--++---+-+++----++-+-+-+--+----++----+--+-+-+-++----+++-+---++--+}\\
+&\texttt{+-+-++------+++++---+----+-+--++-++-++--+-+----+---+++++------++-+-}\\
+\hline
+$69$&\texttt{+-----+-+--++-++-++++---+--++-+-+-++-+-+-++--+---++++-++-++--+-+-----}\\
+&\texttt{++++++-+-++--+--+----+++-++--+-+-+--+-+-+--++-+++----+--+--++-+-+++++}\\
+&\texttt{+++--++-----++++-+----++---+---+-+--+-+---+---++----+-++++-----++--++}\\
+&\texttt{+++--++-----++++-+----++---+---+-+--+-+---+---++----+-++++-----++--++}\\
+\hline
+$73$&\texttt{+-+-+++----+---+++++-------++---++-+-+--+-++++-++++++--+-+--++-+--+-+-++-}\\
+&\texttt{+-----++--+-+++--+-+++++-+---+++--++--++--+++---+-+++++-+--+++-+--++-----}\\
+&\texttt{+-+--++-------+-+-+++++--+--+-+--++----++--+-+--+--+++++-+-+-------++--+-}\\
+&\texttt{+---++-+--++-+++-+--+++---+-+++++++-++-+++++++-+---+++--+-+++-++--+-++---}\\
+\hline
+$79$&\texttt{+---+++---+--++-----+---+-----+--++-+++---------+----+--+-+++++--+----++++--+++}\\
+&\texttt{+-++--+++--+--+-+-----++++++-+--+--+++-++-+++--+--+-++++++-----+-+--+--+++--++-}\\
+&\texttt{++---+-++-+++-+++--++-++-+-+-+-++-+----------+-++-+-+-+-++-++--+++-+++-++-+---+}\\
+&\texttt{++-+--+---++---++-+-+-+-+++++---++++--+--+--++++---+++++-+-+-+-++---++---+--+-+}\\
+\hline
+$93$&\texttt{++--++-+--+-++--++++-+-+++-++--++++-++----+-+-+-++---++-+---++++++-+----+----++--++-+--++-+--}\\
+&\texttt{++-----++++-+-++++-+-++-+-+-------++-+-+-----+--+-----+-+-++-------+-+-++-+-++++-+-++++-----+}\\
+&\texttt{+---+---++--+-+---+++-++-+++-+--++-----+----++++++----+-----++--+-+++-++-+++---+-+--++---+---}\\
+&\texttt{++-+-+--++++-++------++--+--++---+----+++-+--+--+--+-+++----+---++--+--++------++-++++--+-+-+}\\
+\hline
+$97$&\texttt{+++-+-----+----+------++-++-++---++++++-++++-+-+-++---++-+-+-++---+--++--+--++-+-++----++--+-+--+}\\
+&\texttt{+--++-+--++-+++--++-++++----------++-+-+-+---++----++---+-+-+-++----------++++-++--+++-++--+-++--}\\
+&\texttt{++-----+---+----++-++++---+-++++-+---+---+--++++--++++--+---+---+-++++-+---++++-++----+---+-----+}\\
+&\texttt{+----++++----+--+---++-++-+--++-+-+-+-++-+-+----++----+-+-++-+-+-+-++--+-++-++---+--+----++++----}\\
+\hline
+$103$&\texttt{--+--+-+-++-++++++-++-+-+++--++-+++--+---++--+-++-++-+++-++--+++-----+-++++++-+++--++++---+-++--++++--+}\\
+&\texttt{+-+-++++++-+-+---++-+-++++-++++-++--+----++-+------++------+-++----+--++-++++-++++-+-++---+-+-++++++-+-}\\
+&\texttt{+-++--++-+-+-++--+-++--+-++++-+-++++--+-+++-------++++-------+++-+--++++-+-++++-+--++-+--++-+-+-++--++-}\\
+&\texttt{----+++++-+--++---+++-+++-++++---++-+---+---++--+-++++-+--++---+---+-++---++++-+++-+++---++--+-+++++---}\\
+\hline
+$109$&\texttt{-+-+-+-+--+-+++++-++++----++++------+---+--+++-+--+----++++-++-+--++--+-+++--+-++-+++++-+---+++--++---+++-++-}\\
+&\texttt{+--+++-+-++-+-+-+-+-+-++++++++-++-++--+----++--+++----++----+++--++----+--++-++-++++++++-+-+-+-+-+-++-+-+++--}\\
+&\texttt{--+-+-+--+++--++++-++++-++-++--+--+++-++---+----+++++----+++++----+---++-+++--+--++-++-++++-++++--+++--+-+-+-}\\
+&\texttt{--+-+++++++++-+-++-+--+-+--+--++-++--+++-+++------+++----+++------+++-+++--++-++--+--+-+--+-++-+-+++++++++-+-}\\
+\hline
+$127$&\texttt{+-+-----+++++++-++--+---+++-+-+-+-+++-++-++-+++--+++--+----++++++----+++++++---++-+-+--+--+--++-+-+-++--+++-++--++-+++--+++++-+}\\
+&\texttt{+-+-+------+---++++--+++-----+-+--+-++++++++-+++++++---++-++-+----+-++-++---+++++++-++++++++-+--+-+-----+++--++++---+------+-+-}\\
+&\texttt{+-+++-++-+--++++--+--+--+-+-++++---+--+++--++-++---+++-+-+--+-+--+-+--+-+-+++---++-++--+++--+---++++-+-+--+--+--++++--+-++-+++-}\\
+&\texttt{++-+++--+++----++-++++-+-+-+---+++-----+----+-+++-++-++-++--++-++-++--++-++-++-+++-+----+-----+++---+-+-+-++++-++----+++--+++-+}\\
+\hline
+\end{tabular}
+\end{center}
+
+We verify all conditions needed for substitution. For $j=1,2,3$ each
+printed row satisfies $a_j(-x)=a_j(x)$, so $C(a_j)$ is symmetric. At
+$w=69$ this holds for $a_0$ as well. In every other case,
+\[
+ (C(a_0)R_w)_{i,j}=a_0(w-1-i-j),
+\]
+which is symmetric in $i,j$ without any assumption on $a_0$. A direct
+entry calculation gives $R_wC(a_j)=C(a_j)R_w$ for each symmetric
+circulant $C(a_j)$: both entries at $(i,j)$ are
+$a_j(w-1-i-j)$. All circulants commute, as already proved. Hence
+$C(a_0)R_w$ commutes with the other three matrices. Finally
+\[
+ (C(a_0)R_w)(C(a_0)R_w)^{\mathsf T}=C(a_0)C(a_0)^{\mathsf T}.
+\]
+It remains to verify the sum of the four periodic autocorrelations. With
+\texttt{NW[w]} denoting exactly the four words printed at width
+\texttt{w}, the complete finite check is
+\begin{verbatim}
+for w, words in NW.items():
+    assert len(words) == 4
+    assert all(len(h) == w and set(h) <= {'+', '-'} for h in words)
+    a = [[1 if c == '+' else -1 for c in h] for h in words]
+    symmetric = range(4) if w == 69 else range(1, 4)
+    assert all(a[j][x] == a[j][-x % w]
+               for j in symmetric for x in range(w))
+    for t in range(w):
+        c = sum(h[x]*h[(x+t) % w] for h in a for x in range(w))
+        assert c == (4*w if t == 0 else 0)
+\end{verbatim}
+All signs in this check are the displayed integers; the ancillary checker
+contains the complete literal dictionary. The checked sums prove
+$\sum_jA_jA_j^{\mathsf T}=4wI_w$. Together with the proved symmetry and
+commutation, this supplies every hypothesis of
+Proposition~\ref{prop:substitution}. It gives the twelve additional ranks
+\[
+\begin{array}{r|r@{\qquad}r|r@{\qquad}r|r}
+w&2524w&w&2524w&w&2524w\\\hline
+47&118628&53&133772&59&148916\\
+67&169108&69&174156&73&184252\\
+79&199396&93&234732&97&244828\\
+103&259972&109&275116&127&320548\\
+\end{array}
+\]
+
+For clarity, these sources also have an exact scalar interpretation.
+Let $\mathcal A=\Q[A_0,A_1,A_2,A_3]\subseteq M_w(\Q)$ and let
+$V=\Q^w$ with its standard inner product. The scalar action is the given
+inclusion on $V$. The algebra is commutative, and its involution is the
+identity, because its generators commute and are symmetric. Commuting
+real symmetric matrices are simultaneously diagonalizable, so
+$\mathcal A$ has no nonzero nilpotent elements. The structure theorem
+for finite-dimensional commutative reduced rational algebras gives
+\[
+ \mathcal A\cong\prod_\nu K_\nu,\qquad
+ V\cong\bigoplus_\nu K_\nu^{m_\nu},\qquad
+ \sum_\nu m_\nu[K_\nu:\Q]=w.
+\]
+Here $K_\nu$ are totally real number fields and $m_\nu$ are positive
+integer module multiplicities. They are not all assumed to be one.
+The normalized trace of the actual representation is
+\[
+ \tau(a)=\frac1w\operatorname{tr}_V(a)
+ =\frac1w\sum_\nu m_\nu\Tr_{K_\nu/\Q}(a_\nu).
+\]
+More explicitly, put $T=A_0+3A_1+5A_2+7A_3$. The fields $K_\nu$ are
+$\Q[t]/(f_\nu)$ for the distinct monic irreducible factors $f_\nu$ of
+$\det(tI_w-T)$. The following table records all their degrees and module
+multiplicities. Each pair is $([K_\nu:\Q],m_\nu)$; a repeated pair denotes
+a separate factor, not a further power of one factor.
+\[
+\begin{array}{r|r|l}
+w&\dim_\Q\mathcal A&([K_\nu:\Q],m_\nu)\\\hline
+47&47&(1,1),\,(46,1)\\
+53&53&(1,1),\,(52,1)\\
+59&59&(1,1),\,(58,1)\\
+67&67&(1,1),\,(66,1)\\
+69&35&(1,2),\,(1,1),\,(11,2),\,(22,2)\\
+73&25&(1,1),\,(24,3)\\
+79&79&(1,1),\,(78,1)\\
+93&93&(1,1),\,(1,1),\,(1,1),\,(30,1),\,(60,1)\\
+97&97&(1,1),\,(96,1)\\
+103&35&(1,1),\,(34,3)\\
+109&37&(1,1),\,(36,3)\\
+127&43&(1,1),\,(42,3)\\
+\end{array}
+\]
+If $M=\prod_\nu f_\nu$ and $g_\nu=M/f_\nu$, the projector onto the
+$\nu$th field component is $e_\nu(T)$, where
+\[
+ e_\nu(t)=g_\nu(t)\bigl(g_\nu(t)^{-1}\bmod f_\nu(t)\bigr)\bmod M(t).
+\]
+The inverse exists because the factors are distinct. Modulo $f_\mu$,
+$e_\nu$ is $1$ if $\mu=\nu$ and $0$ otherwise. Thus the sum minus $1$
+and every product with distinct indices vanish modulo $M$; evaluating at
+$T$ proves that the projectors sum to the identity and their pairwise
+products vanish. Applying them to
+standard basis columns of $V$, and retaining linearly independent strings
+$v,Tv,\ldots,T^{\deg f_\nu-1}v$, supplies every copy of $K_\nu$.
+The accompanying exact algebra audit performs this rational reconstruction.
+ It verifies
+$A_j=p_j(T)$ for four rational polynomials and checks these equalities
+as full matrices. In the resulting rational basis $B$ of $V$, the
+transported metric is $B^{\mathsf T}B$, and the scalar action is
+$B^{-1}A_jB$. The certificate checks the intertwining and metric
+identities; it does not replace this transported metric by an identity.
+In the original standard basis the metric is $I_w$ and the scalar images
+are the literal sign matrices above. Applying this action to the weighted
+source $\sum_jX_jA_j$ gives $\sum_jX_j\otimes A_j$, of order and Gram
+scale $2524w$. Thus the field components may be nonflat before the
+specified rational reconstruction. No claim that these noncyclic inputs
+belong to $\Q[C_w]$ is needed.
+
+\section{Eight infinite families from Spence's recurrence}\label{sec:spence-rigorous}
 
 We use the classical recurrence in Spence's Theorem~4~\cite{spence}.
-We specify five initial quadruples explicitly, prove that they meet its
+We specify eight initial quadruples explicitly, prove that they meet its
 hypotheses, and combine the resulting sources with the length-$631$
-construction to obtain the five families below.
+construction to obtain the eight families below.
 
 A \emph{sign matrix} is a real matrix whose entries belong to $\{1,-1\}$.
 A matrix $A$ is symmetric if $A^{\mathsf T}=A$, and two square matrices
 commute if $AB=BA$. Fix
 \[
- q\in\{13,17,61,101,121\},\qquad w_0=(q+1)/2.
+ q\in\{5,13,17,61,101,109,121,137\},\qquad w_0=(q+1)/2.
 \]
 We first specify four symmetric, pairwise commuting sign matrices
 $D_0,E_0,F_0,G_0$ of order $w_0$ and prove the two identities
@@ -1229,6 +1431,11 @@ the entries at $0,1,\ldots,w_0-1$, in that order.
 \begin{center}\scriptsize
 \begin{tabular}{rcl}
 $q$&row&entries\\\hline
+$5$&$d$&\texttt{+++}\\
+$5$&$e$&\texttt{-++}\\
+$5$&$f$&\texttt{+--}\\
+$5$&$g$&\texttt{+--}\\
+\hline
 $13$&$d$&\texttt{+-++++-}\\
 $13$&$e$&\texttt{+-++++-}\\
 $13$&$f$&\texttt{+--++--}\\
@@ -1249,10 +1456,20 @@ $101$&$e$&\texttt{----+++-++-+-+++--+++++--++--+++++--+++-+-++-+++---}\\
 $101$&$f$&\texttt{-+--+----+-+++-+-+++++--+--+--+++++-+-+++-+----+--+}\\
 $101$&$g$&\texttt{-+--+----+-+++-+-+++++--+--+--+++++-+-+++-+----+--+}\\
 \hline
+$109$&$d$&\texttt{+-+--+-+-++--+-+++++-+++--++++--+++-+++++-+--++-+-+--+-}\\
+$109$&$e$&\texttt{--+--+-+-++--+-+++++-+++--++++--+++-+++++-+--++-+-+--+-}\\
+$109$&$f$&\texttt{+++----++-++--++----+-+-++++++++-+-+----++--++-++----++}\\
+$109$&$g$&\texttt{+++----++-++--++----+-+-++++++++-+-+----++--++-++----++}\\
+\hline
 $121$&$d$&\texttt{++--+--++--+-+-++++--+-----+------+-----+--++++-+-+--++--+--+}\\
 $121$&$e$&\texttt{++--+--++--+-+-++++--+-----+------+-----+--++++-+-+--++--+--+}\\
 $121$&$f$&\texttt{+---+-+-++++---++--+-++-+---++++++---+-++-+--++---++++-+-+---}\\
 $121$&$g$&\texttt{----+-+-++++---++--+-++-+---++++++---+-++-+--++---++++-+-+---}\\
+\hline
+$137$&$d$&\texttt{+-----+-+--++-++-++++---+--++-+-+-++-+-+-++--+---++++-++-++--+-+-----}\\
+$137$&$e$&\texttt{------+-+--++-++-++++---+--++-+-+-++-+-+-++--+---++++-++-++--+-+-----}\\
+$137$&$f$&\texttt{+++--++-----++++-+----++---+---+-+--+-+---+---++----+-++++-----++--++}\\
+$137$&$g$&\texttt{+++--++-----++++-+----++---+---+-+--+-+---+---++----+-++++-----++--++}\\
 \hline
 \end{tabular}
 \end{center}
@@ -1267,7 +1484,7 @@ without any spectral assumptions, for arbitrary rows $h,k$ observe that
 Replacing $t$ by $j-i-t$ interchanges $h$ and $k$. Thus any two circulant
 matrices of this order commute.
 
-In each of the five cases, one of $d-e,f-g$ is zero and the other is
+In each of the eight cases, one of $d-e,f-g$ is zero and the other is
 $2\delta_0$, where $\delta_0(0)=1$ and $\delta_0(x)=0$ for $x\ne0$.
 Since $\operatorname{Circ}(\delta_0)=I$, this proves the first identity in
 \eqref{eq:spence-starter-strong}. For the second, put
@@ -1279,17 +1496,20 @@ The complete finite sums from the displayed rows are
 \[
 \begin{array}{c|r|r|c}
  q&w_0&c(0)&(c(1),\ldots,c(w_0-1))\\\hline
+ 5&3&5&(0,\ldots,0)\\
  13&7&13&(0,\ldots,0)\\
  17&9&17&(0,\ldots,0)\\
  61&31&61&(0,\ldots,0)\\
  101&51&101&(0,\ldots,0)\\
- 121&61&121&(0,\ldots,0)
+ 109&55&109&(0,\ldots,0)\\
+ 121&61&121&(0,\ldots,0)\\
+ 137&69&137&(0,\ldots,0)
 \end{array}
 \]
 Here the rightmost vector has exactly $w_0-1$ entries. For completeness,
 the following complete integer check reproduces these finite equalities,
 and checks the signs, symmetry and the difference rows at the same time.
-Its input consists precisely of the five quadruples of sign words printed above;
+Its input consists precisely of the eight quadruples of sign words printed above;
 the literal assignment is included to make the check independent of any
 external data file.
 \begin{verbatim}
@@ -1324,6 +1544,25 @@ starters = {
         '+---+-+-++++---++--+-++-+---++++++---+-++-+--++---++++-+-+---',
         '----+-+-++++---++--+-++-+---++++++---+-++-+--++---++++-+-+---',
     ),
+    5: (
+        '+++',
+        '-++',
+        '+--',
+        '+--',
+    ),
+    109: (
+        '+-+--+-+-++--+-+++++-+++--++++--+++-+++++-+--++-+-+--+-',
+        '--+--+-+-++--+-+++++-+++--++++--+++-+++++-+--++-+-+--+-',
+        '+++----++-++--++----+-+-++++++++-+-+----++--++-++----++',
+        '+++----++-++--++----+-+-++++++++-+-+----++--++-++----++',
+    ),
+    137: (
+        '+-----+-+--++-++-++++---+--++-+-+-++-+-+-++--+---++++-++-++--+-+-----',
+        '------+-+--++-++-++++---+--++-+-+-++-+-+-++--+---++++-++-++--+-+-----',
+        '+++--++-----++++-+----++---+---+-+--+-+---+---++----+-++++-----++--++',
+        '+++--++-----++++-+----++---+---+-+--+-+---+---++----+-++++-----++--++',
+    ),
+
 }
 for q, words in starters.items():
     w = (q + 1) // 2
@@ -1352,12 +1591,13 @@ The rows $d\pm e$ and $f\pm g$ are symmetric, so their circulants equal
 their transposes. The two checked correlation vectors therefore give
 \eqref{eq:spence-starter-strong}, entry by entry. The same literal rows
 and finite integer equalities are checked independently by the Lean kernel
-in \texttt{Data/StrongStarters.lean}.
+in \texttt{Data/StrongStarters.lean} and
+\texttt{Data/AdditionalSpence/}.
 
 \subsection{The character matrices used in the recurrence}
 
 We define a field $\mathbb F_q$ and a character matrix $K_q$ for each
-of the five values of $q$. For $q=13,17,61,101$, take
+of the eight values of $q$. For $q=5,13,17,61,101,109,137$, take
 $\mathbb F_q=\mathbb Z/q\mathbb Z$. For $q=121$, take
 \[
  \mathbb F_{121}=\mathbb F_{11}[u]/(u^2-2).
@@ -1381,15 +1621,18 @@ Set
  \qquad (J_q)_{x,y}=1.
 \]
 The following are the first rows of $K_q$ in the residue order
-$0,1,\ldots,q-1$ for the four prime values. The meaning of the signs is
+$0,1,\ldots,q-1$ for the seven prime values. The meaning of the signs is
 as above, and $0$ denotes the zero entry.
-\begin{center}\scriptsize
+\begin{center}\fontsize{5}{6}\selectfont
 \begin{tabular}{rl}
 $q$&$\bigl(\chi_q(0),\ldots,\chi_q(q-1)\bigr)$\\\hline
 $13$&\texttt{0+-++----++-+}\\
 $17$&\texttt{0++-+---++---+-++}\\
 $61$&\texttt{0+-+++---+--+++++--++-+--+-+------+-+--+-++--+++++--+---+++-+}\\
 $101$&\texttt{0+--+++--+---++-++-+++++++----++-+--++-----+-+-+-+--+-+-+-+-----++--+-++----+++++++-++-++---+--+++--+}\\
+$5$&\texttt{0+--+}\\
+$109$&\texttt{0+-+++-+-+--+--++---+++--+++++-+--+++-+----+-++-++----------++-++-+----+-+++--+-+++++--+++---++--+--+-+-+++-+}\\
+$137$&\texttt{0++-+--+++-+--++++++--+--+--+-+-+-+-++++----+----++-----+--+++-+++--++--+++-+++--+-----++----+----++++-+-+-+-+--+--+--++++++--+-+++--+-++}\\
 \end{tabular}
 \end{center}
 For $q=121$, the next table gives the eleven consecutive blocks in the
@@ -1445,7 +1688,8 @@ nonzero squares and nonsquares, whence
  \sum_{x\in\mathbb F_q}\chi_q(x)=0.
 \]
 Also $-1$ is a square in each field. Explicit square roots are
-$5,4,11,10$ for $q=13,17,61,101$, respectively, and $4u$ for $q=121$.
+$2,5,4,11,10,33,37$ for $q=5,13,17,61,101,109,137$, respectively,
+and $4u$ for $q=121$.
 Thus $\chi_q(-x)=\chi_q(x)$, proving the symmetry of $K_q$. The character
 sum proves that all row and column sums of $K_q$ vanish, which gives
 $K_qJ_q=J_qK_q=0$. Multiplication of the all-one matrix gives
@@ -1617,15 +1861,18 @@ in the Gram product cancel. The remaining terms, by
  \end{split}
 \]
 This is the defining identity for a real Hadamard matrix of order
-$4pw_r=1262(q+1)q^r$. In particular the five orders are
+$4pw_r=1262(q+1)q^r$. In particular the eight formulas are
 \[
 \begin{array}{c|r|l}
  q&w_0&4pw_r\\\hline
+ 5&3&7572\cdot5^r\\
  13&7&17668\cdot13^r\\
  17&9&22716\cdot17^r\\
  61&31&78244\cdot61^r\\
  101&51&128724\cdot101^r\\
- 121&61&153964\cdot121^r
+ 109&55&138820\cdot109^r\\
+ 121&61&153964\cdot121^r\\
+ 137&69&174156\cdot137^r
 \end{array}
 \qquad(r\geq0).
 \]
@@ -1635,28 +1882,39 @@ to every nonnegative integer $r$; it does not require constructing a dense
 matrix or checking a finite initial segment of the family.
 
 
+For $q=109$ the rank at $r=0$ is known. We start the family in
+Theorem~\ref{thm:main} at $r=1$, replacing its parameter by $r+1$:
+$138820\cdot109^{r+1}=15131380\cdot109^r$.
+
 \section{Completion of the theorem and known members}\label{sec:conclusion}
 
 \begin{proof}[Proof of Theorem~\ref{thm:main}]
-Section~\ref{sec:williamson} gives thirteen of the stated ranks, listed
-there as $2524w$. Section~\ref{sec:cubic-family} gives every rank
-$32812\cdot3^r$, including the additional rank $295308$ at $r=2$.
-Section~\ref{sec:spence-rigorous} gives the other five infinite families.
-Their first expanded members for $q=13,17,61,101$, respectively, are
+Section~\ref{sec:williamson} supplies thirteen ranks and
+Section~\ref{sec:additional-quadruples} supplies twelve further ranks.
+The cubic family adds $295308=32812\cdot3^2$.
+The eight Spence recurrences supply the remaining eight finite ranks:
 \[
- 17668\cdot13=229684,\qquad 22716\cdot17=386172,
+\begin{array}{c|r|r}
+(q,r)&w_r&2524w_r\\\hline
+(13,1)&91&229684\\
+(17,1)&153&386172\\
+(61,1)&1891&4772884\\
+(101,1)&5151&13001124\\
+(13,2)&1183&2985892\\
+(13,3)&15379&38816596\\
+(61,2)&115351&291145924\\
+(109,1)&5995&15131380
+\end{array}
 \]
-\[
- 78244\cdot61=4772884,\qquad128724\cdot101=13001124.
-\]
-These are the four remaining finite ranks. This accounts for all
-eighteen distinct ranks in Theorem~\ref{thm:main} and all six families.
+These are distinct and give all thirty-four ranks in
+Theorem~\ref{thm:main}. The eight Spence recurrences and the cubic
+recurrence prove its nine all-parameter assertions.
 Every construction proves both sign entries and the Gram identity
 with scale equal to the order. Nonsingularity, and hence the stated
 rank, follows from the inverse formula in Section~1.
 \end{proof}
 
-Each of the six families has a new initial rank. This assertion does not
+Each of the nine stated families starts at a new rank. This assertion does not
 mean that every rank occurring in a family was previously unknown.
 For example, $32812\cdot3^3=885924$ is known by Paley's first construction,
 with prime parameter $885923$, and
@@ -1728,7 +1986,7 @@ failed search or from the absence of a located construction.
 The proofs above require only the printed finite inputs and the proved
 matrix identities. The finite computations are integer sums; they can
 be repeated by the included programs. In particular, no dense matrix of
-order $13001124$ needs to be stored or checked row by row: the source
+order $291145924$ needs to be stored or checked row by row: the source
 recurrence, sign-entry proof and block Gram calculation apply at that
 order as at every other parameter value.
 
@@ -1746,10 +2004,11 @@ existence proof here; the fixed functions are verified directly.
 
 The formal development uses Lean~4.32.0. Its pinned mathlib revision is
 \begin{center}\small\texttt{81a5d257c8e410db227a6665ed08f64fea08e997}.\end{center}
-It proves the eighteen existence statements and all six families for
+It proves the thirty-four existence statements and all nine stated families for
 every nonnegative integer parameter, starting from literal finite
 witnesses. Its finite inputs include T127 and T631, $27$ Williamson
-quadruples (thirteen suffice here), the five strong starters, and the
+quadruples, twelve additional symmetric amicable quadruples, the eight
+strong starters used here, and the
 order-$13$ pair. Its construction proofs establish the exact Gram
 identities and final sign entries. Literature novelty is not a formal
 claim. The formal existence proof also does not assert equality with a
@@ -1759,7 +2018,7 @@ independent audit just described.
 The core Lean reversal uses $u+v=0$. The checked convention lemmas
 identify the reversal $u+v=-1$ used here by simultaneous row and column
 translation by $316$ modulo $631$, or $64$ modulo $127$.
-The five character matrices are checked in Lean from their literal integer
+The character matrices are checked in Lean from their literal integer
 rows; their general character-sum derivation above is a separate proof.
 A manuscript-to-code correspondence audit is included in the repository.
 
@@ -1774,8 +2033,11 @@ supplement under \texttt{release/lean\_sixth\_root\_pair/} checks the ten
 rational matrix identities for $R$, $S$ and the scalar coordinates.
 It assumes precisely the proved $P,Q$ identities and $d\ne0$; it does not
 formalize the particular cyclotomic field or Hermitian-form realization.
-Instructions in the packages
-reproduce the build and axiom check. The manuscript and executable
+The current source-only supplement is
+\texttt{release/additional\_source\_verification/}. It includes the new
+finite sources and recurrence starters, all their proof dependencies,
+the input data, the pinned dependency lock and a strict axiom audit.
+Instructions in the packages reproduce the build and axiom check. The manuscript and executable
 reconstruction have their own versioned release, so improvements to
 exposition do not alter the frozen construction or proof archives.
 
@@ -1843,7 +2105,8 @@ zero, without using the orbit reduction of shifts.
 
 For completeness the following trial-division function checks the two
 primes used to define the functions and the two primes used to identify
-known Paley orders in Section~\ref{sec:conclusion}:
+known Paley orders in Section~\ref{sec:conclusion}, together with every
+prime character parameter used in the recurrence:
 \begin{verbatim}
 def prime(n):
     if n < 2:
@@ -1854,14 +2117,16 @@ def prime(n):
             return False
         d += 1
     return True
-assert all(prime(n) for n in (127, 631, 885923, 9314821))
+assert all(prime(n) for n in
+           (5, 13, 17, 61, 101, 109, 127, 137, 631, 885923, 9314821))
 \end{verbatim}
 If an integer $n\geq2$ is composite, write $n=ab$ with $1<a\leq b$;
 then $a^2\leq n$. Thus checking all integers $2\leq d\leq\sqrt n$
 proves primality, which justifies the function. All operations above are
 integer additions, products, divisions with remainder, and finite loops.
 The ancillary file \texttt{anc/manuscript\_data.py} combines these checks
-with the thirteen quadruple checks, the five strong starter checks and
+with the thirteen cyclic quadruple checks, the twelve additional quadruple
+checks, the eight strong starter checks and
 the order-$13$ pair check.
 
 
@@ -1879,6 +2144,17 @@ J.~Cooper and J.~Wallis,
 The SageMath Developers, \emph{Williamson-type quadruples, small cases},
 \texttt{hadamard\_matrix.py}, commit \texttt{8de8dad7}, 14 November 2026.
 \url{https://github.com/sagemath/sage/blob/8de8dad7bcb38e1baa43508cbe944bf04a2d0401/src/sage/combinat/matrices/hadamard_matrix.py}.
+\bibitem{near-williamson}
+H.~Kharaghani, A.~Mohammadian, B.~Tayfeh-Rezaie and V.~Zaitsev,
+\emph{A Search for Hadamard Matrices of Near-Williamson Type},
+arXiv:2605.08661v2, 6 September 2026.
+\url{https://arxiv.org/abs/2605.08661v2}.
+Literal data: \url{https://www.cs.uleth.ca/~zaitsevv/nearwilliamson.html}.
+\bibitem{williamson69}
+C.~Bright, I.~S.~Kotsireas and V.~Ganesh,
+\emph{Enumeration of Williamson sequences divisible by 2 or 3},
+version 2, Zenodo, 2018, file \texttt{williamson-69.txt}.
+\url{https://zenodo.org/records/1195693/files/williamson-69.txt}.
 \bibitem{spence}
 E.~Spence, \emph{An infinite family of Williamson matrices},
 J. Austral. Math. Soc. Ser. A\ 24 (1977), 252--256, Theorem~4.

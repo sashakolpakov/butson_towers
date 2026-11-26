@@ -1,13 +1,12 @@
 # Higher-order records and repeat-target audit
 
-Completed-order ledger checked on 24 November 2026; target-status update
-on 26 November 2026. The completed new real Hadamard orders are
-**7572, 17668, 22716, 32812, 42908, 58052, 73196, 78244, 93388, 98436,
-108532, 128724, 153964, 229684, 295308, 386172, 4772884 and 13001124**.
+Completed-order union checked on 26 November 2026. The completed new
+real Hadamard orders are
+**7572, 17668, 22716, 32812, 42908, 58052, 73196, 78244, 93388, 98436, 108532, 118628, 128724, 133772, 148916, 153964, 169108, 174156, 184252, 199396, 229684, 234732, 244828, 259972, 275116, 295308, 320548, 386172, 2985892, 4772884, 13001124, 15131380, 38816596, 291145924.**
 The periodic T-matrices of order **127** are a new ingredient.
 
-The main higher-order campaign has **38 completed real Hadamard orders**:
-**18 new** as listed above and **20 known recovered orders**. The counts
+The main higher-order campaign has **65 completed real Hadamard orders**:
+**34 new** as listed above and **31 known recovered orders**. The counts
 are unions of distinct orders from the exact endpoint certificates;
 repeated constructions of the same order are counted once. The new
 periodic T-matrix order 127 is separate; its known real endpoint H1524
@@ -18,7 +17,10 @@ after the recorded literature checks. “Known” means that a prior constructio
 has been located. These labels apply to completed constructions; an
 incomplete search remains a target.
 
-The dated machine-readable record is
+The current machine-readable union is
+[completed-order-inventory.json](../certificates/scalar-lift/completed-order-inventory.json).
+The [source inventory](SOURCE_INVENTORY.md) records every additional source
+and the known-order exclusions. The original dated literature record is
 [higher-order-records.json](../certificates/scalar-lift/higher-order-records.json).
 The dated evidence includes explicit unresolved entries, positive table
 entries and applicable construction theorems with their hypotheses checked.
@@ -117,7 +119,7 @@ classify these five finite members. The infinite existence statements do
 not label every member's order new.
 
 Together with the earlier known orders 1524, 3252, 6564 and 885924, the
-14 known T631/Williamson endpoints, H8636 and H18629644 give the 20 known
+14 known T631/Williamson endpoints, H8636 and H18629644 account for the original 20 known
 recovered orders. Small implementation controls and older scalar inventory
 outputs remain outside this main-campaign count.
 
@@ -248,6 +250,30 @@ combines them with classical T-matrices of order 9 to give **H14292**.
 Their Corollary 4 and the table on pp.274–275 supply T-matrices for every
 odd order through 19. Thus every `4*397*w` with odd `w<=19` is already
 known; the p397 parity map is retained only as a method control.
+
+## Additional completed source inventory
+
+The 19 inputs in [near_williamson_inputs.json](../experiments/scalar_lift/near_williamson_inputs.json)
+produce 19 exact endpoints, one at the already completed order 229684.
+Twelve add new ranks: **118628, 133772, 148916, 169108, 174156, 184252,
+199396, 234732, 244828, 259972, 275116 and 320548**.
+The six recovered known ranks are 88340, 113580, 164060, 239780, 335692
+and 456844, with positive Paley, Turyn and Cooper–Wallis constructions in
+[the status file](../experiments/scalar_lift/near_williamson_order_status.json).
+All source signs, full norms and pairwise amicability identities are checked.
+The corresponding operator-algebra certificate retains every field factor,
+module multiplicity and transported metric; these inputs are not all cyclic.
+
+Higher Spence members add the new ranks **2985892** (q13,r2),
+**38816596** (q13,r3), **291145924** (q61,r2), and **15131380** (q109,r1).
+All have complete literal recipes and algebraic Gram/flatness proofs, with
+source identities additionally checked by exact integer NTT. The full
+union has 65 distinct ranks, 34 new and 31 known. The new all-parameter
+families stated alongside the original six are `7572*5^r`,
+`174156*137^r` and `15131380*109^r`, for every r>=0. The q109 formula
+starts at its first expansion because its unshifted initial order 138820
+is known. The other three additional prime recurrences are retained as
+construction controls without a new-family claim.
 
 ## Remaining targets and exact scope
 

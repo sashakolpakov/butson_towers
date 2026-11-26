@@ -1,21 +1,20 @@
 (results)=
 # Completed results and construction targets
 
-The submitted manuscript dated 25 November 2026 contains eighteen real
-Hadamard orders labelled new to the best of the author's knowledge, six
-infinite output families, and a separate new periodic T127 ingredient. Its
-main campaign also reconstructs twenty known orders, giving 38 distinct
-completed real orders. The finite claims are existence constructions;
-novelty labels refer to the dated literature ledger.
+The current manuscript proves **34 new real Hadamard orders** and **nine
+infinite families**, alongside the separate new periodic T127 ingredient.
+The source inventory reconstructs **31 known orders**, giving **65 distinct
+completed real orders**. The submitted 25 November package is preserved
+with its earlier 18-order scope; the current PDF includes the later results.
+The finite claims are existence constructions; novelty labels refer to
+the dated literature ledger.
 
-The eighteen orders are
-
-**7572, 17668, 22716, 32812, 42908, 58052, 73196, 78244, 93388, 98436,
-108532, 128724, 153964, 229684, 295308, 386172, 4772884, 13001124.**
+The complete finite list is in the manuscript's main theorem and the
+{repo-file}`source inventory <docs/SOURCE_INVENTORY.md>`.
 
 The source recipes and individual status evidence are retained in the
 {repo-file}`dated construction ledger <docs/HADAMARD_HIGHER_ORDER_RECORDS.md>`
-and its {repo-file}`machine-readable record <certificates/scalar-lift/higher-order-records.json>`.
+and its {repo-file}`machine-readable union <certificates/scalar-lift/completed-order-inventory.json>`.
 A repeated construction of the same order contributes once to these counts.
 
 ## Which objects are new
@@ -49,6 +48,7 @@ targets until their actual finite witnesses and endpoint checks exist:
 | 7876 | 179 | 11 |
 | 8684 | 167 | 13 |
 | 9308 | 179 | 13 |
+| 9260 | 463, identity multiplier | 5 |
 | 11596 | 223 | 13 |
 
 Several rows share a missing ingredient. There is one length-223 input

@@ -5,7 +5,7 @@ its mathematical proof. The review checked the actual endpoint dependencies,
 not only the presence of similarly named lemmas. No incorrect construction,
 unproved endpoint assumption or finite-input mismatch was found.
 
-The paper states eighteen existence results and six all-parameter families.
+The paper states thirty-four existence results and nine stated all-parameter families.
 Those are the formal claims. Literature novelty is recorded separately.
 The trace interpretation and the alternative sixth-root representatives have
 the precise formal scope described below.
@@ -27,10 +27,25 @@ the precise formal scope described below.
 | Final scalar entry test | `ScalarFrame.frame_gram_block`, `framed_matrix_flat`, `framed_matrix_gram`, `framed_matrix_hadamard` | The scalar representation's adjoint property, frame norm, actual sign-entry test and final scale equality are separate hypotheses. |
 | Thirteen finite Williamson inputs | `Data/RowChecks.lean`; `Data/Williamson/Chunk0.lean` through `Chunk2.lean`; `Endpoints.williamson*_quad` | All thirteen printed quadruples agree entry for entry with Lean. Sign, symmetry, every cyclic correlation and amicability are proved from the literals. The larger archive retains 27 inputs. |
 | Cubic seed and recurrence | `Data/Unreal13.lean`; `UnrealTripling.nextA`, `nextB`, `nextA_sign`, `nextB_sign`, `next_amicable`, `next_norm`, `tower`, `quad_amicable` | All338 seed signs and both169-entry pair identities match. Iteration proves signs, norm, amicability and the index cardinality for every r. |
-| Five strong Spence starters | `Data/StrongChecks.quad_matrices_strong`; `Data/StrongStarters.lean` | The literals give both M0=4I and N0=4qI. A weaker Williamson norm is never substituted for these two hypotheses. |
-| Five character matrices | `Data/Paley.lean`, `PaleyChecks.lean`, `PaleyPairChecks.lean` | All printed rows agree, including all 121 entries at q=121. The latter group is `ZMod 11 × ZMod 11`, encoded a+11b, with componentwise addition. |
+| Original five strong Spence starters | `Data/StrongChecks.quad_matrices_strong`; `Data/StrongStarters.lean` | The literals give both M0=4I and N0=4qI. A weaker Williamson norm is never substituted for these two hypotheses. |
+| Original five character matrices | `Data/Paley.lean`, `PaleyChecks.lean`, `PaleyPairChecks.lean` | All printed rows agree, including all 121 entries at q=121. The latter group is `ZMod 11 × ZMod 11`, encoded a+11b, with componentwise addition. |
 | Spence recurrence | `SpenceMatrix.stepPlus`, `stepMinus`, `pairStep_sign`, `pairStep_symmetric`, `pairStep_commute`, `step_minus_norm`, `step_plus_norm`, `strong_step`, `family_strong`, `family_norm`, `family_card`; `SpenceHadamard.family_amicable` | The same two strong norms are carried through induction. The condition 2w0=q+1 is explicit. Signs, symmetry, commutativity and growing order are proved. |
-| Eighteen ranks and six families | `Endpoints.lean`: `hadamard_*`, `spence_family_{13,17,61,101,121}`, `unreal_cubic_family`, `announced_orders_exist` | Thirteen finite endpoints use Williamson substitution; four use Spence at r=1;295308 uses the cubic family at r=2. All depend on the proved construction chain. |
+| Original eighteen ranks and six families | `Endpoints.lean`: `hadamard_*`, `spence_family_{13,17,61,101,121}`, `unreal_cubic_family`, `announced_orders_exist` | Thirteen finite endpoints use Williamson substitution; four use Spence at r=1;295308 uses the cubic family at r=2. All depend on the proved construction chain. |
+
+The current extension adds twelve literal compatible quadruples in
+`Data/NearWilliamson/`, the generic reversal proof in `Core.lean`, and
+twelve endpoint statements in `NearWilliamsonEndpoints.lean`.
+`Data/AdditionalSpence/` proves six more strong starters and Paley rows;
+`AdditionalSpenceFamilies.lean` proves their all-parameter recurrences.
+`AdditionalResults.lean` specializes the four additional finite ranks and
+shifts q109 to start at 15131380. Together these prove all 34 announced
+ranks and nine announced families. The three additional recurrence
+controls are not claimed as new families in the manuscript.
+
+The noncyclic input algebra decompositions are independently verified
+by `commutative_scalar_algebra.py`, including field multiplicities and
+module metrics. The Lean existence proofs use the checked concrete
+amicable matrices and do not assume this separate decomposition audit.
 
 ## Exact conventions and proof scope
 
@@ -47,8 +62,8 @@ are related by simultaneous row and column permutations. The formal
 existence claims do not assert equality with the saved packed matrix.
 
 The paper proves character identities by counting solutions over a finite
-field. Lean proves exactly the required identities of each of the five
-finite integer matrices from its literal entries, using kernel reduction.
+field. Lean proves exactly the required identities of each required
+finite integer character matrix from its literal entries, using kernel reduction.
 It does not need, or claim, a general formal quadratic-character theorem.
 The orbit encoding in the paper is likewise expanded into literal inputs;
 Lean verifies every shift rather than assuming the encoding's covariance.
@@ -71,14 +86,14 @@ metrics, their coordinate changes and tower identities, rather than that
 full matrix-valued statement as a named theorem. This generality is not a
 premise of any endpoint proof.
 
-This scope distinction does not weaken any of the eighteen
-formal existence statements or six all-parameter theorems.
+This scope distinction does not weaken any of the thirty-four
+formal existence statements or nine stated all-parameter theorems.
 
 ## Finite input checks
 
 An independent review parsed the actual TeX tables and compared them with
-the Lean lookup literals: both T functions, all thirteen Williamson
-quadruples, all five strong starters, every character row and the order-13
+the Lean lookup literals: both T functions, all thirteen cyclic Williamson
+quadruples, all twelve additional compatible quadruples, the eight announced strong starters, every character row and the order-13
 pair agree, including ordering and signs. Every printed correlation and
 both strong starter norms were recomputed with integer arithmetic.
 
@@ -86,6 +101,7 @@ Reproduce the executable provenance and finite arithmetic checks with
 
 ```sh
 python3 scripts/check_lean_literal_data.py
+python3 scripts/check_lean_additional_sources.py
 python3 scripts/verify_manuscript_data.py
 ```
 
@@ -99,12 +115,14 @@ supplement built and checked its ten reports in 6.67 seconds. Only the standard
 axioms propext, Classical.choice and Quot.sound occur. The exact JSON records
 are retained as `release/butson_towers_v3/lean-rerun.json` and
 `release/lean_sixth_root_pair/verification.json`.
+The new [portable supplement](../release/additional_source_verification/README.md)
+checks the complete current source closure and all 143 selected reports.
 The original package's narrative scope string mentions five Spence families;
 its exact audited theorem list also contains `unreal_cubic_family`. The
-actual certified total is six families, as recorded in the current scope
-document, without rewriting the frozen older archive.
- The current `./scripts/check_formal.sh` also passed both exact report lists
-(85 + 10 statements). The repository suite passed 326 tests and 4 subtests.
+certified scope of that older package is six families. The current nine-family
+announcement is verified by the additional supplement without rewriting it.
+ The current `./scripts/check_formal.sh` also checks the additional exact 48-report list
+(85 + 10 + 48 selected statements). The repository suite passed 326 tests and 4 subtests.
 
 The original proof archive, original matrix
 bundles and earlier article releases remain unchanged.

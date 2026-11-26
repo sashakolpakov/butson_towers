@@ -19,13 +19,13 @@ precise claims.
 |---|---|---|
 | Finite input | Disjoint signed basis values and zero nontrivial periodic correlations | Literal states, coordinate sequences and integer verifier |
 | Disjoint design | Polynomial Gram identity and entrywise support partition | Four coefficient matrices and circulant/block recipes |
-| Scalar source | Exact norm, involution, action and trace form | Butson exponents or group-algebra coefficients |
+| Scalar source | Exact norm, involution, action and trace form | Butson exponents, group polynomials or explicit rational operators |
 | Restriction and frame | Transport the norm and test the used entry alphabet | Exact rational action, sign blocks or regular representation |
 | Completed endpoint | Sign entries and Gram scale equal to expanded order | Literal entry recipe, certificates and formal existence proof |
 
 The project name describes chains of scalar restrictions. Its
 {ref}`references` record the earlier morphism constructions and the immediate
-starting reference. The submitted paper's completed results and the live
+starting reference. The current paper's completed results and the live
 search targets have separate entries in {ref}`results`.
 
 ```{toctree}
