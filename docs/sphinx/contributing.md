@@ -48,6 +48,22 @@ BUTSON_DOCS_PYTHON=/path/to/docs-env/bin/python ./scripts/build_docs.sh html
 The optional `linkcheck` target checks external URLs. Its network results are
 separate from the deterministic local source/reference and doctest checks.
 
+## Publish on GitHub Pages
+
+The public manual is at
+[sashakolpakov.github.io/butson_towers](https://sashakolpakov.github.io/butson_towers/),
+with a [downloadable PDF](https://sashakolpakov.github.io/butson_towers/butson-towers-manual.pdf).
+The {repo-file}`documentation workflow <.github/workflows/docs.yml>` runs after
+relevant pushes to `main` and can also be started from the Actions tab. It
+installs the pinned frontend, builds HTML, executes the small examples,
+builds the PDF and publishes only `docs/_build/html`. The PDF is copied into
+that directory for download. Sphinx's build caches stay outside the site.
+
+Deployment uses the repository's `github-pages` environment and GitHub's
+short-lived workflow token. It needs no repository API secret or local
+submission configuration. The repository's Pages source is GitHub Actions;
+the workflow's official actions are pinned to release commits.
+
 ## Add a mathematical construction
 
 State the input's algebra, involution, norm scale and actual alphabet.

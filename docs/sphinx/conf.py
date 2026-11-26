@@ -24,6 +24,7 @@ numfig = True
 math_numfig = True
 html_theme = 'furo'
 html_title = 'Butson Towers: constructions, code and verification'
+html_baseurl = 'https://sashakolpakov.github.io/butson_towers/'
 html_static_path = ['_static']
 html_css_files = ['manual.css']
 html_theme_options = {

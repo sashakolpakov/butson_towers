@@ -9,7 +9,8 @@ Lean proofs.** This repository accompanies Alexander Kolpakov's manuscript
 [Source and reconstruction package](release/butson_towers_v3/source.zip) ·
 [Lean proofs](formal/ButsonTowers/Endpoints.lean)
 
-[Sphinx manual](docs/sphinx/index.md) ·
+[Sphinx manual](https://sashakolpakov.github.io/butson_towers/) ·
+[Manual PDF](https://sashakolpakov.github.io/butson_towers/butson-towers-manual.pdf) ·
 [Build the HTML and PDF](docs/sphinx/contributing.md)
 
 The paper was submitted to HexagonMath on **25 November 2026** and is
@@ -72,7 +73,7 @@ uses classical sixth-root source tripling. The
 references and attribution. The immediate starting reference was
 [Egan–Ó Catháin, *On complete morphisms of Butson Hadamard matrices*](https://doi.org/10.1002/jcd.70047).
 
-The [Sphinx manual](docs/sphinx/index.md) follows the
+The [Sphinx manual](https://sashakolpakov.github.io/butson_towers/) follows the
 whole argument: exact T-matrix input, disjoint orthogonal design, scalar
 action and trace metric, final sign entries, and the resulting orders and
 families. Proofs appear beside the code, data contracts and replay checks
@@ -123,6 +124,11 @@ The [recorded audit](release/butson_towers_v3/audit.json) reports 326 passing
 tests and 4 passing subtests.
 
 ## Read and build the documentation
+
+Read the [hosted manual](https://sashakolpakov.github.io/butson_towers/)
+or download its [PDF](https://sashakolpakov.github.io/butson_towers/butson-towers-manual.pdf).
+The [documentation workflow](.github/workflows/docs.yml) rebuilds and publishes
+both after relevant changes on `main`, once all documentation checks pass.
 
 The manual includes a complete small H84 example, the scalar-restriction
 and endpoint proofs, the finite-field/sign solvers, implicit families,

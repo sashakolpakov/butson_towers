@@ -13,7 +13,7 @@ cd "$ROOT"
 BUILD_KIND="${1:-html}"
 case "$BUILD_KIND" in
   html|doctest|linkcheck)
-    "$PYTHON_BIN" -m sphinx -b "$BUILD_KIND" -n -W --keep-going docs/sphinx "docs/_build/$BUILD_KIND"
+    "$PYTHON_BIN" -m sphinx -b "$BUILD_KIND" -d "docs/_build/doctrees/$BUILD_KIND" -n -W --keep-going docs/sphinx "docs/_build/$BUILD_KIND"
     ;;
   pdf)
     "$PYTHON_BIN" -m sphinx -M latexpdf docs/sphinx docs/_build -n -W --keep-going
