@@ -43,6 +43,15 @@ Use `docs/RESULTS_SCOPE.md` for the precise scope of a completed result.
   replay commands from the active engine guide when validating an
   individual source or endpoint.
 
+# Manuscript updates
+
+- Incorporate newly verified matrix orders and infinite families into the
+  current manuscript and completed-result ledger. Keep the abstract concise:
+  report the counts of new orders and families, with the full finite order
+  list and all family formulas in the main theorem. Update these together.
+- Preserve submitted versioned packages and their hashes as historical
+  records when preparing a later manuscript revision.
+
 # Formalization status
 
 - The eighteen announced orders and six output families (five Spence-source
