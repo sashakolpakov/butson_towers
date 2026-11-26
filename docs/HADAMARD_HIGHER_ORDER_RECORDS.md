@@ -1,6 +1,7 @@
 # Higher-order records and repeat-target audit
 
-Checked on 24 November 2026. The completed new real Hadamard orders are
+Completed-order ledger checked on 24 November 2026; target-status update
+on 26 November 2026. The completed new real Hadamard orders are
 **7572, 17668, 22716, 32812, 42908, 58052, 73196, 78244, 93388, 98436,
 108532, 128724, 153964, 229684, 295308, 386172, 4772884 and 13001124**.
 The periodic T-matrices of order **127** are a new ingredient.
@@ -171,6 +172,9 @@ checked exactly:
 | 25732 | 6433 | No | No | No |
 | 14292 | 3573 | No | No | No |
 
+These are historical lookup results. The 26 November positive construction
+below settles H14292 independently of the unread Handbook entry.
+
 The original entries were not obtained. Đoković also reports in the 2010
 introduction that some positive Handbook entries lacked sufficient
 construction references for independent verification. The JSON preserves
@@ -231,21 +235,47 @@ This rules out H17212 as a new-order target even though its direct Paley
 parameters fail. It also explains why a successful independent-prime repeat
 can be a useful method control while adding no new Hadamard order.
 
+**Positive p397 exclusion, 26 November 2026.** Paley's construction gives
+a symmetric conference matrix of order `198=197+1`, since 197 is prime
+and congruent to 1 modulo 4. Seberry–Yamada,
+[*On the products of Hadamard matrices, Williamson matrices and other orthogonal matrices using M-structures*](https://documents.uow.edu.au/~jennie/WEBPDF/139_1990.pdf#page=24),
+J. Combin. Math. Combin. Comput. 7 (1990), 97–137, Corollary 29(ii),
+printed p.120, therefore gives symmetric Williamson-type matrices of
+order `397=2*198+1`; that page also explicitly lists 397. This uses part
+(ii), separately from the missing-hypothesis issue in part (i).
+Cooper–Wallis, [Theorem 3, p.274](https://doi.org/10.1017/S0004972700045019),
+combines them with classical T-matrices of order 9 to give **H14292**.
+Their Corollary 4 and the table on pp.274–275 supply T-matrices for every
+odd order through 19. Thus every `4*397*w` with odd `w<=19` is already
+known; the p397 parity map is retained only as a method control.
+
 ## Remaining targets and exact scope
 
+Updated on 26 November 2026.
 For `p=919`, the source-order-3 and -9 orders H11028 and H33084 are already
 Paley I orders, with prime parameters 11027 and 33083. H47788, from source
-order 13, is Paley II with prime parameter 23893. **H25732**, from source
-order 7, remains a target for a completed length-919 frame. Here
-`2p−1=1837=11·167`, so the preceding Turyn family does not settle it.
+order 13, is Paley II with prime parameter 23893. **H25732** and **H40436**,
+from Williamson widths 7 and 11, remain targets for a completed length-919 input. Here
+`2p−1=1837=11·167`, so the preceding Turyn family does not settle them.
 
-Other incomplete compact charts target H14292 (`p=397`, source 9), H75556
-(`p=1453`, source 13), and H23412/H54628/H101452 (`p=1951`, sources 3/7/13).
-The JSON records the positive Paley constructions in the other columns.
+The p1453 chart targets **H63932/H75556** (Williamson widths 11/13), and p1951 targets
+**H23412/H54628/H101452** (widths 3/7/13). No prior construction was
+located for these seven targets in the checks recorded here. The earlier
+JSON records the positive Paley constructions in the other columns.
+Width 11 requires the complete T-input's four-variable orthogonal design;
+it is not a new admitted sixth-root source for the P/Q frame alone.
 H17436 is already known: Paley gives skew H2180 because 2179 is
 prime; Yamada with prime `q=4357 ≡5 (mod8)` then gives `4(q+2)=17436`.
-The suggested Paley-block shortcut for H14292 fails its prime-power test:
-`4763=11·433`. No nonexistence conclusion follows.
+
+The [p1951 parity map](../certificates/scalar-lift/hadamard-frame-p1951.json)
+is now verified, with 50 nonorigin orbits and a generic normalized affine
+sign-lift estimate of 23 free bits; each axis word requires exact elimination.
+Its lowest prospective output is H23412; no sign witness
+or endpoint has been completed. The
+[expanded multiplier scan](../certificates/scalar-lift/multiplier-target-scan-20261126.json)
+also queues `p3571,m51` and `p4219,m57` as arithmetic candidates, with no
+verified parity maps yet. The [target scan](HADAMARD_FRAME_TARGET_SCAN.md)
+separates these stages explicitly.
 
 For targets with explicit current unresolved records, the stronger literature
 position is still a length-223 frame: H2676 is listed in the

@@ -347,6 +347,95 @@ requested sums. It does not reuse the sign solver's pair tables:
 :pyobject: verify_states
 ```
 
+## Choose a multiplier before choosing the matrix order
+
+A large multiplier can make a large prime much cheaper than a smaller
+unrestricted input. In this chart the multiplier has odd order $m=3k$,
+where $k$ is odd. Write $N=(p-1)/m$ for the number of nonzero multiplication
+orbits. There are $N+1$ orbit-sign variables and $N/2$ nonzero correlation
+classes. If the modulo-four correlation rows have rank $N/2$ and the fixed
+signs and count parities add three independent conditions, the nullity is
+$(N+1)-N/2-3=N/2-2$. Exact count constraints can force more signs; the actual
+dimension must be measured for each prepared pattern.
+
+Let $a$ and $b$ be the signed sums of the nonzero coordinate-zero orbits
+and the remaining orbits, respectively. Changing the last three coordinate
+signs permits $b>0$. The four expanded coordinate sums are
+$(1+ma,kb,kb,kb)$. Their squared norm gives
+
+```{math}
+N=2a+k(3a^2+b^2),\qquad p=3kN+1,\qquad a\equiv b\pmod2.
+```
+
+This is a finite arithmetic way to select charts. It also gives the bound
+$p\leq1+3N(N+2)/4$, proved in the
+{repo-file}`compact scan note <docs/HADAMARD_FRAME_TARGET_SCAN.md>`.
+The {repo-file}`replayable scanner <experiments/scalar_lift/multiplier_target_scan.py>`
+agrees with an independent prime-first enumeration. At $N\le160$ it finds
+87 parameter choices on 79 primes, recorded in the
+{repo-file}`finite parameter certificate <certificates/scalar-lift/multiplier-target-scan-20261126.json>`.
+Each surviving chart still proceeds through sign lifting and the complete
+integer correlation checks.
+
+```{list-table}
+:header-rows: 1
+:widths: 10 15 15 16 44
+
+* - $p$
+  - Multiplier order $m$
+  - Sign variables
+  - Free bits
+  - State
+* - 631
+  - 21
+  - 31
+  - 13
+  - Completed input
+* - 919
+  - 27
+  - 35
+  - 15
+  - Verified map; no completed input
+* - 1453
+  - 33
+  - 45
+  - 20 or 21
+  - Verified map, including the zero-head case; no completed input
+* - 1951
+  - 39
+  - 51
+  - 23 in checked patterns
+  - Verified map; active target
+* - 3571
+  - 51
+  - 71
+  - About 33
+  - Arithmetic candidate; map remains to be constructed
+* - 4219
+  - 57
+  - 75
+  - About 35
+  - Arithmetic candidate; map remains to be constructed
+```
+
+For $p=1951$, the
+{repo-file}`coordinate map <certificates/scalar-lift/hadamard-frame-p1951.json>`
+uses $\mu=1127$ of order 39 and the field $\mathbb F_{2^{25}}$. All 5,051
+constant, linear and quadratic coefficients, and all 9,849,450 independently
+expanded parity correlations, were checked. The requested sums are
+$(-38,13,13,13)$. A complete input would give the candidate real orders
+23412, 54628 and 101452 through the retained source orders 3, 7 and 13.
+Source order 9 would give 70236, already a Paley order.
+
+The compact $p=397$ chart is an engine control. Its formerly listed target
+14292 is known: Paley gives a symmetric conference matrix of order 198;
+Seberry–Yamada's Corollary 29(ii) then gives symmetric Williamson-type
+matrices of order 397, which Cooper--Wallis combines with T9. The
+{repo-file}`dated records update <docs/HADAMARD_HIGHER_ORDER_RECORDS.md>`
+gives the primary references and the other known-order gates used in target
+selection.
+
+
 (exact-search-replay)=
 ## Small deterministic replay
 

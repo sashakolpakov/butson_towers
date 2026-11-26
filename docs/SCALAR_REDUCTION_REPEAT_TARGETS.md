@@ -141,15 +141,41 @@ and integer equations have a solution. The DC condition must also pass:
 | 223 | 3,183 | -14;3,3,3 | 74 | 37 | SL(2,2^37) | H2676 and H11596 remain explicitly unresolved; existing small sign engine does not directly fit 75 orbit signs |
 | 271 | 15,90 | -14;5,5,5 | 18 | 9 | SL(2,2^9) | Independent repeat completed; H3252 already has Paley's construction with prime 3251 |
 | 631 | 21,458 | 22;7,7,7 | 30 | 15 | SL(2,2^15) | Completed H7572 witness |
-| 919 | 27,207 | -26;9,9,9 | 34 | 17 | SL(2,2^17) | Next compact prime above 631 in the finite scan through 1000; H11028 is already Paley with prime 11027 |
+| 919 | 27,207 | -26;9,9,9 | 34 | 17 | SL(2,2^17) | Targets H25732/H40436 with Williamson widths 7/11; H11028 is already Paley with prime 11027 |
+| 1951 | 39,1127 | -38;13,13,13 | 50 | 25 | SL(2,2^25) | Verified parity map; targets H23412/H54628/H101452 from sources 3/7/13 |
 
-These arithmetic charts were checked by an exact finite prime/DC scan,
-retained in the ignored `artifacts/scalar-frontier/repeat-targets` store.
+The width-11 target uses the complete T-input's four-variable orthogonal
+design and the verified Williamson source over its group algebra. It does
+not follow from admitting a new order-11 sixth-root source to P/Q alone.
+
+The earlier arithmetic scans are retained in the ignored
+`artifacts/scalar-frontier/repeat-targets` store; the current public scan
+and p1951 map are linked below.
 The two known-order labels use [Paley's primary construction as restated in
 the 2026 survey, Theorem 2](https://arxiv.org/html/2610.27175v2#S2.Thm2),
 not an absence argument. Under the odd-s, three-cycle hypotheses, p=223 is
 the remaining direct small unresolved-order target; its 74-axis size makes
 it a further solver task, not a quick rerun of the 631 engine.
+
+**26 November 2026 update.** The
+[expanded 87-chart scan](../certificates/scalar-lift/multiplier-target-scan-20261126.json)
+extends the arithmetic shortlist. The
+[p1951 certificate](../certificates/scalar-lift/hadamard-frame-p1951.json)
+verifies the exact coordinate-parity map, including all expanded shifts.
+Its generic normalized affine sign-lift estimate is 23 free bits; each
+sampled axis word needs exact elimination, counts, mod-8 and integer tests.
+No completed T1951 or endpoint is claimed.
+The charts `p3571,m51` and `p4219,m57` are queued, with parity maps not
+yet verified.
+
+H14292, previously a p397/source-9 target, is **known**. Paley's symmetric
+conference matrix of order 198 gives symmetric Williamson-type matrices
+of order 397 by Seberry–Yamada,
+[Corollary 29(ii), p.120](https://documents.uow.edu.au/~jennie/WEBPDF/139_1990.pdf#page=24).
+Cooper–Wallis, [Theorem 3 and Corollary 4, p.274](https://doi.org/10.1017/S0004972700045019),
+then settles `4*397*w` for every odd `w<=19`. The p397 map remains a valid
+engine control. This positive construction supersedes the earlier lookup
+gap in the [dated order audit](HADAMARD_HIGHER_ORDER_RECORDS.md).
 
 The [generalized engine](HADAMARD_FRAME_SEARCH.md) has now repeated the
 construction at p=271, with the [completed exact certificate](../certificates/scalar-lift/hadamard-frame-p271.json).

@@ -49,6 +49,11 @@ Current [construction searches](docs/LOW_ORDER_SEARCH.md) target missing
 order **2676** first, through length-223 periodic T-matrices. Search candidates
 are kept separate from the completed results above.
 
+The [multiplier scan](docs/HADAMARD_FRAME_TARGET_SCAN.md) also selects larger
+inputs with fewer independent variables. Its newly verified prime-1951 chart
+uses a multiplier of order 39 and typically leaves 23 free sign bits;
+candidate output orders include 23412, 54628 and 101452.
+
 ## Construction
 
 The main finite input is an explicitly specified function on

@@ -8,6 +8,13 @@ orbits**. It contains **28 charts**, including small controls. The largest
 surviving prime is **1951**. A surviving chart is a necessary-condition
 candidate, not an endpoint or a Hadamard nonexistence result.
 
+**26 November 2026 update.** The
+[expanded 87-chart multiplier scan](../certificates/scalar-lift/multiplier-target-scan-20261126.json)
+extends to 160 nonorigin orbits, with the proved prime bound 19441. The
+50-orbit bound below describes the original scan. The p1951 parity map is
+now verified; p397 has been removed
+from the missing-order shortlist by a positive classical construction.
+
 ## Why the finite arithmetic scan is complete
 
 Write the common row sums as
@@ -57,19 +64,39 @@ and its [Cooper–Wallis construction](https://arxiv.org/html/2610.27175v2#S4).
 
 This eliminates the small-source new-order rationale for the compact
 271, 307, 331 and 547 charts, though they remain useful construction
-controls. Further explicit Paley and Yamada checks give the current scope:
+controls. The p397/m9 chart is also a control: Paley gives a symmetric
+conference matrix of order 198, and Seberry–Yamada's
+[Corollary 29(ii), p.120](https://documents.uow.edu.au/~jennie/WEBPDF/139_1990.pdf#page=24)
+gives symmetric Williamson-type matrices of order 397. Cooper–Wallis,
+[Theorem 3 and Corollary 4, p.274](https://doi.org/10.1017/S0004972700045019),
+then gives `4*397*w` for every odd `w<=19`. In particular, **H14292 is
+known**. The valid GF(2^22) parity map remains an engine control.
 
-| Chart | Nonorigin orbits | Parity field | Remaining small-source order with unverified prior status |
+The remaining compact targets in the 26 November check are:
+
+| Chart | Nonorigin orbits | Parity field | Candidate orders `4*p*w`, with Williamson width `w` |
 |---|---:|---|---:|
-| p919, m27 | 34 | GF(2^17) | 25732, source7 |
-| p397, m9 | 44 | GF(2^22) | 14292, source9 |
-| p1453, m33 | 44 | GF(2^22) | 75556, source13 |
-| p1951, m39 | 50 | GF(2^25) arithmetic candidate | Higher-order audit still required |
+| p919, m27 | 34 | GF(2^17) | 25732, w7; 40436, w11 |
+| p1453, m33 | 44 | GF(2^22) | 63932, w11; 75556, w13 |
+| p1951, m39 | 50 | GF(2^25) | 23412, w3; 54628, w7; 101452, w13 |
 
-**Unverified prior status is not a novelty claim.** The currently checked
-unresolved-order inventories stop below these three orders. The concrete
-primary record for each must be assessed after a completed endpoint is
-available; absence from a lower-order table proves nothing about it.
+No prior construction was located for these targets. Each requires a
+completed T-input and the recorded Williamson source. Width 11 uses the
+four-variable orthogonal design and weighted group-algebra restriction;
+it is not an additional admitted sixth-root source for a P/Q frame alone.
+
+The [p1951 certificate](../certificates/scalar-lift/hadamard-frame-p1951.json)
+verifies the coordinate-parity map for `mu=1127` and row sums
+`(-38,13,13,13)`, including every expanded nonzero shift. The generic
+normalized affine sign-lift estimate is 23 free bits; each sampled axis
+word still needs exact elimination, counts, mod-8 and integer tests.
+This supplies a search route, not a completed T-matrix or endpoint.
+
+The larger charts `p3571,m51` (70 nonorigin orbits) and `p4219,m57`
+(74 nonorigin orbits) are queued arithmetic candidates. Their parity maps
+have not yet been verified. The
+[higher-order audit](HADAMARD_HIGHER_ORDER_RECORDS.md) records the positive
+known-order exclusions separately from these incomplete searches.
 
 The explicitly unresolved small-source targets at p223 and p283 need
 74 and 94 nonorigin orbits in this twist, respectively. They exceed the

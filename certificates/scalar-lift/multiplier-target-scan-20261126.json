@@ -1,0 +1,3293 @@
+{
+  "schema": "finite-odd-C3-multiplier-target-scan-v1",
+  "scope": {
+    "object": "Necessary integer row-sum arithmetic for prime periodic T-functions with an odd C3 multiplier chart.",
+    "normalization": "f(0)=+e0; the multiplier fixes coordinate0 and cycles coordinates1,2,3; b>0.",
+    "construction_or_search_performed": false,
+    "existence_nonexistence_or_novelty_claim": false,
+    "unlisted_orders_assumed_unknown": false
+  },
+  "limits": {
+    "max_nonorigin_orbits": 160,
+    "derived_prime_max": 19441
+  },
+  "parameter_definitions": {
+    "m": "3*k, with k positive and odd; m divides p-1.",
+    "N": "(p-1)/m, the number of nonzero multiplication-by-mu orbits; N is even.",
+    "n": "N+1, including the representative0.",
+    "a": "Signed count of the N orbits assigned to coordinate0.",
+    "b": "Positive signed count of all other orbits; a and b have the same parity.",
+    "norm_equation": "p=(1+m*a)^2+3*((m/3)*b)^2; equivalently N=2*a+k*(3*a^2+b^2).",
+    "admissible_head_counts": "h=abs(a),abs(a)+2,...,N-b; signed counts then determine all four sign totals."
+  },
+  "prime_bound_proof": {
+    "formula": "p <= 1+3*N*(N+2)/4",
+    "steps": [
+      "For b>0 and a=b mod2, q=3*a^2+b^2 satisfies q>=4 and q+2*a>=2.",
+      "N-(4*k-2)=k*(q-4)+2*a+2 >= q+2*a-2 >= 0.",
+      "Therefore k <= (N+2)/4 and p=1+3*k*N <= 1+3*N*(N+2)/4."
+    ],
+    "even_multiplier_exclusion": "For even m divisible by3, mu^(m/2)=-1 and the coordinate permutation to that power is identity. Thus f(-x)=f(x); pairing the summands of C(s) by x -> -x-s leaves one summand1, so C(s) is odd."
+  },
+  "independent_enumeration": {
+    "parameter_first": "Enumerate a,b,k from N=2*a+k*(3*a^2+b^2), with b>0, a=b mod2, k positive odd, and p prime.",
+    "prime_first": "Enumerate prime p=x^2+3*y^2 within the proved bound; y>0, x=1 mod3; k runs over odd divisors of gcd((x-1)/3,y).",
+    "agree": true,
+    "prime_first_norm_representations_checked": 1095,
+    "candidate_parameter_sha256": "799145692f75b67e3c86a176bf5bbad0f3c74106b584f2c497a2a344d0225d29"
+  },
+  "sign_dimension_estimate_scope": {
+    "generic_formula": "max(0,L-2), where L=N/2.",
+    "assumptions": "The full correlation rank and count-parity dependency pattern of the validated determinant charts, with no additional forced signs; actual axis words require exact elimination.",
+    "extreme_head_formula": "max(0,L-max(2,abs(a))) when a is nonzero and h=abs(a), under the corresponding additional fixed-sign rank assumptions.",
+    "headless_caveat": "a=0,h=0 requires a tail gauge; no extreme-head estimate is supplied.",
+    "unconditional_kernel_dimension_claim": false
+  },
+  "frequency_index_scope": {
+    "definitions": "H=<4,mu> in F_p^*; |H|=lcm(ord_p(4),m); e=|H|/m; r=(p-1)/(2*|H|); N=2*r*e.",
+    "inverse_structure": "If e is odd, inverse H-orbits pair distinctly; if e is even, -1 lies in H and H-orbits are self-inverse.",
+    "size_compatibility_only": "r=1 and e odd is only an arithmetic triage label, not a determinant-map validation."
+  },
+  "turyn_tag_scope": {
+    "test": "q=2*p-1 is a prime power; q=1 mod4 automatically for odd p.",
+    "interpretation": "Only this arithmetic hypothesis is tagged; failure does not establish novelty or rule out other constructions.",
+    "retained_theorem_reference": "docs/HADAMARD_FRAME_TARGET_SCAN.md"
+  },
+  "conditional_endpoint_orders": {
+    "formula": "4*p*w",
+    "hypotheses": "A completed exact periodic T_p witness and a verified retained Williamson source of width w are required.",
+    "williamson_input": "experiments/scalar_lift/williamson_inputs.json",
+    "williamson_input_sha256": "242f554cf113c68ab882e147c3b2702b7bb62e68b66ad36b16c92b6c194f8560",
+    "literal_widths": [
+      1,
+      3,
+      5,
+      7,
+      9,
+      11,
+      13,
+      15,
+      17,
+      19,
+      21,
+      23,
+      25,
+      27,
+      29,
+      31,
+      33,
+      37,
+      39,
+      41,
+      43,
+      49,
+      51,
+      55,
+      57,
+      61,
+      63
+    ],
+    "endpoint_constructed_by_this_scan": false
+  },
+  "summary": {
+    "candidate_rows": 87,
+    "distinct_primes": 79,
+    "maximum_p_found": 18253
+  },
+  "candidates": [
+    {
+      "p": 7,
+      "m": 3,
+      "a": -1,
+      "b": 1,
+      "N": 2,
+      "n": 3,
+      "correlation_classes": 1,
+      "coordinate_sums": [
+        -2,
+        1,
+        1,
+        1
+      ],
+      "admissible_head_counts": {
+        "minimum": 1,
+        "maximum": 1,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 0,
+      "conditional_extreme_head_free_bits_estimate": 0,
+      "ord_p_2": 3,
+      "ord_p_4": 3,
+      "frequency_extension_index": 1,
+      "half_frequency_orbit_count": 1,
+      "frequency_inverse_structure": "paired distinct H-orbits",
+      "odd_single_factor_size_compatible": true,
+      "turyn_arithmetic_gate": {
+        "q": 13,
+        "q_factorization": {
+          "13": 1
+        },
+        "q_is_prime_power": true
+      }
+    },
+    {
+      "p": 13,
+      "m": 3,
+      "a": 0,
+      "b": 2,
+      "N": 4,
+      "n": 5,
+      "correlation_classes": 2,
+      "coordinate_sums": [
+        1,
+        2,
+        2,
+        2
+      ],
+      "admissible_head_counts": {
+        "minimum": 0,
+        "maximum": 2,
+        "step": 2
+      },
+      "headless_allowed": true,
+      "conditional_generic_free_bits_estimate": 0,
+      "conditional_extreme_head_free_bits_estimate": null,
+      "ord_p_2": 12,
+      "ord_p_4": 6,
+      "frequency_extension_index": 2,
+      "half_frequency_orbit_count": 1,
+      "frequency_inverse_structure": "self-inverse H-orbits",
+      "odd_single_factor_size_compatible": false,
+      "turyn_arithmetic_gate": {
+        "q": 25,
+        "q_factorization": {
+          "5": 2
+        },
+        "q_is_prime_power": true
+      }
+    },
+    {
+      "p": 19,
+      "m": 3,
+      "a": 1,
+      "b": 1,
+      "N": 6,
+      "n": 7,
+      "correlation_classes": 3,
+      "coordinate_sums": [
+        4,
+        1,
+        1,
+        1
+      ],
+      "admissible_head_counts": {
+        "minimum": 1,
+        "maximum": 5,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 1,
+      "conditional_extreme_head_free_bits_estimate": 1,
+      "ord_p_2": 18,
+      "ord_p_4": 9,
+      "frequency_extension_index": 3,
+      "half_frequency_orbit_count": 1,
+      "frequency_inverse_structure": "paired distinct H-orbits",
+      "odd_single_factor_size_compatible": true,
+      "turyn_arithmetic_gate": {
+        "q": 37,
+        "q_factorization": {
+          "37": 1
+        },
+        "q_is_prime_power": true
+      }
+    },
+    {
+      "p": 31,
+      "m": 3,
+      "a": -1,
+      "b": 3,
+      "N": 10,
+      "n": 11,
+      "correlation_classes": 5,
+      "coordinate_sums": [
+        -2,
+        3,
+        3,
+        3
+      ],
+      "admissible_head_counts": {
+        "minimum": 1,
+        "maximum": 7,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 3,
+      "conditional_extreme_head_free_bits_estimate": 3,
+      "ord_p_2": 5,
+      "ord_p_4": 5,
+      "frequency_extension_index": 5,
+      "half_frequency_orbit_count": 1,
+      "frequency_inverse_structure": "paired distinct H-orbits",
+      "odd_single_factor_size_compatible": true,
+      "turyn_arithmetic_gate": {
+        "q": 61,
+        "q_factorization": {
+          "61": 1
+        },
+        "q_is_prime_power": true
+      }
+    },
+    {
+      "p": 37,
+      "m": 3,
+      "a": -2,
+      "b": 2,
+      "N": 12,
+      "n": 13,
+      "correlation_classes": 6,
+      "coordinate_sums": [
+        -5,
+        2,
+        2,
+        2
+      ],
+      "admissible_head_counts": {
+        "minimum": 2,
+        "maximum": 10,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 4,
+      "conditional_extreme_head_free_bits_estimate": 4,
+      "ord_p_2": 36,
+      "ord_p_4": 18,
+      "frequency_extension_index": 6,
+      "half_frequency_orbit_count": 1,
+      "frequency_inverse_structure": "self-inverse H-orbits",
+      "odd_single_factor_size_compatible": false,
+      "turyn_arithmetic_gate": {
+        "q": 73,
+        "q_factorization": {
+          "73": 1
+        },
+        "q_is_prime_power": true
+      }
+    },
+    {
+      "p": 109,
+      "m": 9,
+      "a": 0,
+      "b": 2,
+      "N": 12,
+      "n": 13,
+      "correlation_classes": 6,
+      "coordinate_sums": [
+        1,
+        6,
+        6,
+        6
+      ],
+      "admissible_head_counts": {
+        "minimum": 0,
+        "maximum": 10,
+        "step": 2
+      },
+      "headless_allowed": true,
+      "conditional_generic_free_bits_estimate": 4,
+      "conditional_extreme_head_free_bits_estimate": null,
+      "ord_p_2": 36,
+      "ord_p_4": 18,
+      "frequency_extension_index": 2,
+      "half_frequency_orbit_count": 3,
+      "frequency_inverse_structure": "self-inverse H-orbits",
+      "odd_single_factor_size_compatible": false,
+      "turyn_arithmetic_gate": {
+        "q": 217,
+        "q_factorization": {
+          "7": 1,
+          "31": 1
+        },
+        "q_is_prime_power": false
+      }
+    },
+    {
+      "p": 43,
+      "m": 3,
+      "a": 1,
+      "b": 3,
+      "N": 14,
+      "n": 15,
+      "correlation_classes": 7,
+      "coordinate_sums": [
+        4,
+        3,
+        3,
+        3
+      ],
+      "admissible_head_counts": {
+        "minimum": 1,
+        "maximum": 11,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 5,
+      "conditional_extreme_head_free_bits_estimate": 5,
+      "ord_p_2": 14,
+      "ord_p_4": 7,
+      "frequency_extension_index": 7,
+      "half_frequency_orbit_count": 1,
+      "frequency_inverse_structure": "paired distinct H-orbits",
+      "odd_single_factor_size_compatible": true,
+      "turyn_arithmetic_gate": {
+        "q": 85,
+        "q_factorization": {
+          "5": 1,
+          "17": 1
+        },
+        "q_is_prime_power": false
+      }
+    },
+    {
+      "p": 127,
+      "m": 9,
+      "a": 1,
+      "b": 1,
+      "N": 14,
+      "n": 15,
+      "correlation_classes": 7,
+      "coordinate_sums": [
+        10,
+        3,
+        3,
+        3
+      ],
+      "admissible_head_counts": {
+        "minimum": 1,
+        "maximum": 13,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 5,
+      "conditional_extreme_head_free_bits_estimate": 5,
+      "ord_p_2": 7,
+      "ord_p_4": 7,
+      "frequency_extension_index": 7,
+      "half_frequency_orbit_count": 1,
+      "frequency_inverse_structure": "paired distinct H-orbits",
+      "odd_single_factor_size_compatible": true,
+      "turyn_arithmetic_gate": {
+        "q": 253,
+        "q_factorization": {
+          "11": 1,
+          "23": 1
+        },
+        "q_is_prime_power": false
+      }
+    },
+    {
+      "p": 271,
+      "m": 15,
+      "a": -1,
+      "b": 1,
+      "N": 18,
+      "n": 19,
+      "correlation_classes": 9,
+      "coordinate_sums": [
+        -14,
+        5,
+        5,
+        5
+      ],
+      "admissible_head_counts": {
+        "minimum": 1,
+        "maximum": 17,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 7,
+      "conditional_extreme_head_free_bits_estimate": 7,
+      "ord_p_2": 135,
+      "ord_p_4": 135,
+      "frequency_extension_index": 9,
+      "half_frequency_orbit_count": 1,
+      "frequency_inverse_structure": "paired distinct H-orbits",
+      "odd_single_factor_size_compatible": true,
+      "turyn_arithmetic_gate": {
+        "q": 541,
+        "q_factorization": {
+          "541": 1
+        },
+        "q_is_prime_power": true
+      }
+    },
+    {
+      "p": 61,
+      "m": 3,
+      "a": 2,
+      "b": 2,
+      "N": 20,
+      "n": 21,
+      "correlation_classes": 10,
+      "coordinate_sums": [
+        7,
+        2,
+        2,
+        2
+      ],
+      "admissible_head_counts": {
+        "minimum": 2,
+        "maximum": 18,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 8,
+      "conditional_extreme_head_free_bits_estimate": 8,
+      "ord_p_2": 60,
+      "ord_p_4": 30,
+      "frequency_extension_index": 10,
+      "half_frequency_orbit_count": 1,
+      "frequency_inverse_structure": "self-inverse H-orbits",
+      "odd_single_factor_size_compatible": false,
+      "turyn_arithmetic_gate": {
+        "q": 121,
+        "q_factorization": {
+          "11": 2
+        },
+        "q_is_prime_power": true
+      }
+    },
+    {
+      "p": 67,
+      "m": 3,
+      "a": -3,
+      "b": 1,
+      "N": 22,
+      "n": 23,
+      "correlation_classes": 11,
+      "coordinate_sums": [
+        -8,
+        1,
+        1,
+        1
+      ],
+      "admissible_head_counts": {
+        "minimum": 3,
+        "maximum": 21,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 9,
+      "conditional_extreme_head_free_bits_estimate": 8,
+      "ord_p_2": 66,
+      "ord_p_4": 33,
+      "frequency_extension_index": 11,
+      "half_frequency_orbit_count": 1,
+      "frequency_inverse_structure": "paired distinct H-orbits",
+      "odd_single_factor_size_compatible": true,
+      "turyn_arithmetic_gate": {
+        "q": 133,
+        "q_factorization": {
+          "7": 1,
+          "19": 1
+        },
+        "q_is_prime_power": false
+      }
+    },
+    {
+      "p": 331,
+      "m": 15,
+      "a": 1,
+      "b": 1,
+      "N": 22,
+      "n": 23,
+      "correlation_classes": 11,
+      "coordinate_sums": [
+        16,
+        5,
+        5,
+        5
+      ],
+      "admissible_head_counts": {
+        "minimum": 1,
+        "maximum": 21,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 9,
+      "conditional_extreme_head_free_bits_estimate": 9,
+      "ord_p_2": 30,
+      "ord_p_4": 15,
+      "frequency_extension_index": 1,
+      "half_frequency_orbit_count": 11,
+      "frequency_inverse_structure": "paired distinct H-orbits",
+      "odd_single_factor_size_compatible": false,
+      "turyn_arithmetic_gate": {
+        "q": 661,
+        "q_factorization": {
+          "661": 1
+        },
+        "q_is_prime_power": true
+      }
+    },
+    {
+      "p": 73,
+      "m": 3,
+      "a": -2,
+      "b": 4,
+      "N": 24,
+      "n": 25,
+      "correlation_classes": 12,
+      "coordinate_sums": [
+        -5,
+        4,
+        4,
+        4
+      ],
+      "admissible_head_counts": {
+        "minimum": 2,
+        "maximum": 20,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 10,
+      "conditional_extreme_head_free_bits_estimate": 10,
+      "ord_p_2": 9,
+      "ord_p_4": 9,
+      "frequency_extension_index": 3,
+      "half_frequency_orbit_count": 4,
+      "frequency_inverse_structure": "paired distinct H-orbits",
+      "odd_single_factor_size_compatible": false,
+      "turyn_arithmetic_gate": {
+        "q": 145,
+        "q_factorization": {
+          "5": 1,
+          "29": 1
+        },
+        "q_is_prime_power": false
+      }
+    },
+    {
+      "p": 79,
+      "m": 3,
+      "a": -1,
+      "b": 5,
+      "N": 26,
+      "n": 27,
+      "correlation_classes": 13,
+      "coordinate_sums": [
+        -2,
+        5,
+        5,
+        5
+      ],
+      "admissible_head_counts": {
+        "minimum": 1,
+        "maximum": 21,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 11,
+      "conditional_extreme_head_free_bits_estimate": 11,
+      "ord_p_2": 39,
+      "ord_p_4": 39,
+      "frequency_extension_index": 13,
+      "half_frequency_orbit_count": 1,
+      "frequency_inverse_structure": "paired distinct H-orbits",
+      "odd_single_factor_size_compatible": true,
+      "turyn_arithmetic_gate": {
+        "q": 157,
+        "q_factorization": {
+          "157": 1
+        },
+        "q_is_prime_power": true
+      }
+    },
+    {
+      "p": 547,
+      "m": 21,
+      "a": -1,
+      "b": 1,
+      "N": 26,
+      "n": 27,
+      "correlation_classes": 13,
+      "coordinate_sums": [
+        -20,
+        7,
+        7,
+        7
+      ],
+      "admissible_head_counts": {
+        "minimum": 1,
+        "maximum": 25,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 11,
+      "conditional_extreme_head_free_bits_estimate": 11,
+      "ord_p_2": 546,
+      "ord_p_4": 273,
+      "frequency_extension_index": 13,
+      "half_frequency_orbit_count": 1,
+      "frequency_inverse_structure": "paired distinct H-orbits",
+      "odd_single_factor_size_compatible": true,
+      "turyn_arithmetic_gate": {
+        "q": 1093,
+        "q_factorization": {
+          "1093": 1
+        },
+        "q_is_prime_power": true
+      }
+    },
+    {
+      "p": 631,
+      "m": 21,
+      "a": 1,
+      "b": 1,
+      "N": 30,
+      "n": 31,
+      "correlation_classes": 15,
+      "coordinate_sums": [
+        22,
+        7,
+        7,
+        7
+      ],
+      "admissible_head_counts": {
+        "minimum": 1,
+        "maximum": 29,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 13,
+      "conditional_extreme_head_free_bits_estimate": 13,
+      "ord_p_2": 45,
+      "ord_p_4": 45,
+      "frequency_extension_index": 15,
+      "half_frequency_orbit_count": 1,
+      "frequency_inverse_structure": "paired distinct H-orbits",
+      "odd_single_factor_size_compatible": true,
+      "turyn_arithmetic_gate": {
+        "q": 1261,
+        "q_factorization": {
+          "13": 1,
+          "97": 1
+        },
+        "q_is_prime_power": false
+      }
+    },
+    {
+      "p": 97,
+      "m": 3,
+      "a": 2,
+      "b": 4,
+      "N": 32,
+      "n": 33,
+      "correlation_classes": 16,
+      "coordinate_sums": [
+        7,
+        4,
+        4,
+        4
+      ],
+      "admissible_head_counts": {
+        "minimum": 2,
+        "maximum": 28,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 14,
+      "conditional_extreme_head_free_bits_estimate": 14,
+      "ord_p_2": 48,
+      "ord_p_4": 24,
+      "frequency_extension_index": 8,
+      "half_frequency_orbit_count": 2,
+      "frequency_inverse_structure": "self-inverse H-orbits",
+      "odd_single_factor_size_compatible": false,
+      "turyn_arithmetic_gate": {
+        "q": 193,
+        "q_factorization": {
+          "193": 1
+        },
+        "q_is_prime_power": true
+      }
+    },
+    {
+      "p": 103,
+      "m": 3,
+      "a": 3,
+      "b": 1,
+      "N": 34,
+      "n": 35,
+      "correlation_classes": 17,
+      "coordinate_sums": [
+        10,
+        1,
+        1,
+        1
+      ],
+      "admissible_head_counts": {
+        "minimum": 3,
+        "maximum": 33,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 15,
+      "conditional_extreme_head_free_bits_estimate": 14,
+      "ord_p_2": 51,
+      "ord_p_4": 51,
+      "frequency_extension_index": 17,
+      "half_frequency_orbit_count": 1,
+      "frequency_inverse_structure": "paired distinct H-orbits",
+      "odd_single_factor_size_compatible": true,
+      "turyn_arithmetic_gate": {
+        "q": 205,
+        "q_factorization": {
+          "5": 1,
+          "41": 1
+        },
+        "q_is_prime_power": false
+      }
+    },
+    {
+      "p": 307,
+      "m": 9,
+      "a": -1,
+      "b": 3,
+      "N": 34,
+      "n": 35,
+      "correlation_classes": 17,
+      "coordinate_sums": [
+        -8,
+        9,
+        9,
+        9
+      ],
+      "admissible_head_counts": {
+        "minimum": 1,
+        "maximum": 31,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 15,
+      "conditional_extreme_head_free_bits_estimate": 15,
+      "ord_p_2": 102,
+      "ord_p_4": 51,
+      "frequency_extension_index": 17,
+      "half_frequency_orbit_count": 1,
+      "frequency_inverse_structure": "paired distinct H-orbits",
+      "odd_single_factor_size_compatible": true,
+      "turyn_arithmetic_gate": {
+        "q": 613,
+        "q_factorization": {
+          "613": 1
+        },
+        "q_is_prime_power": true
+      }
+    },
+    {
+      "p": 919,
+      "m": 27,
+      "a": -1,
+      "b": 1,
+      "N": 34,
+      "n": 35,
+      "correlation_classes": 17,
+      "coordinate_sums": [
+        -26,
+        9,
+        9,
+        9
+      ],
+      "admissible_head_counts": {
+        "minimum": 1,
+        "maximum": 33,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 15,
+      "conditional_extreme_head_free_bits_estimate": 15,
+      "ord_p_2": 153,
+      "ord_p_4": 153,
+      "frequency_extension_index": 17,
+      "half_frequency_orbit_count": 1,
+      "frequency_inverse_structure": "paired distinct H-orbits",
+      "odd_single_factor_size_compatible": true,
+      "turyn_arithmetic_gate": {
+        "q": 1837,
+        "q_factorization": {
+          "11": 1,
+          "167": 1
+        },
+        "q_is_prime_power": false
+      }
+    },
+    {
+      "p": 109,
+      "m": 3,
+      "a": 0,
+      "b": 6,
+      "N": 36,
+      "n": 37,
+      "correlation_classes": 18,
+      "coordinate_sums": [
+        1,
+        6,
+        6,
+        6
+      ],
+      "admissible_head_counts": {
+        "minimum": 0,
+        "maximum": 30,
+        "step": 2
+      },
+      "headless_allowed": true,
+      "conditional_generic_free_bits_estimate": 16,
+      "conditional_extreme_head_free_bits_estimate": null,
+      "ord_p_2": 36,
+      "ord_p_4": 18,
+      "frequency_extension_index": 6,
+      "half_frequency_orbit_count": 3,
+      "frequency_inverse_structure": "self-inverse H-orbits",
+      "odd_single_factor_size_compatible": false,
+      "turyn_arithmetic_gate": {
+        "q": 217,
+        "q_factorization": {
+          "7": 1,
+          "31": 1
+        },
+        "q_is_prime_power": false
+      }
+    },
+    {
+      "p": 127,
+      "m": 3,
+      "a": 3,
+      "b": 3,
+      "N": 42,
+      "n": 43,
+      "correlation_classes": 21,
+      "coordinate_sums": [
+        10,
+        3,
+        3,
+        3
+      ],
+      "admissible_head_counts": {
+        "minimum": 3,
+        "maximum": 39,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 19,
+      "conditional_extreme_head_free_bits_estimate": 18,
+      "ord_p_2": 7,
+      "ord_p_4": 7,
+      "frequency_extension_index": 7,
+      "half_frequency_orbit_count": 3,
+      "frequency_inverse_structure": "paired distinct H-orbits",
+      "odd_single_factor_size_compatible": false,
+      "turyn_arithmetic_gate": {
+        "q": 253,
+        "q_factorization": {
+          "11": 1,
+          "23": 1
+        },
+        "q_is_prime_power": false
+      }
+    },
+    {
+      "p": 397,
+      "m": 9,
+      "a": -2,
+      "b": 2,
+      "N": 44,
+      "n": 45,
+      "correlation_classes": 22,
+      "coordinate_sums": [
+        -17,
+        6,
+        6,
+        6
+      ],
+      "admissible_head_counts": {
+        "minimum": 2,
+        "maximum": 42,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 20,
+      "conditional_extreme_head_free_bits_estimate": 20,
+      "ord_p_2": 44,
+      "ord_p_4": 22,
+      "frequency_extension_index": 22,
+      "half_frequency_orbit_count": 1,
+      "frequency_inverse_structure": "self-inverse H-orbits",
+      "odd_single_factor_size_compatible": false,
+      "turyn_arithmetic_gate": {
+        "q": 793,
+        "q_factorization": {
+          "13": 1,
+          "61": 1
+        },
+        "q_is_prime_power": false
+      }
+    },
+    {
+      "p": 1453,
+      "m": 33,
+      "a": 0,
+      "b": 2,
+      "N": 44,
+      "n": 45,
+      "correlation_classes": 22,
+      "coordinate_sums": [
+        1,
+        22,
+        22,
+        22
+      ],
+      "admissible_head_counts": {
+        "minimum": 0,
+        "maximum": 42,
+        "step": 2
+      },
+      "headless_allowed": true,
+      "conditional_generic_free_bits_estimate": 20,
+      "conditional_extreme_head_free_bits_estimate": null,
+      "ord_p_2": 1452,
+      "ord_p_4": 726,
+      "frequency_extension_index": 22,
+      "half_frequency_orbit_count": 1,
+      "frequency_inverse_structure": "self-inverse H-orbits",
+      "odd_single_factor_size_compatible": false,
+      "turyn_arithmetic_gate": {
+        "q": 2905,
+        "q_factorization": {
+          "5": 1,
+          "7": 1,
+          "83": 1
+        },
+        "q_is_prime_power": false
+      }
+    },
+    {
+      "p": 139,
+      "m": 3,
+      "a": -3,
+      "b": 5,
+      "N": 46,
+      "n": 47,
+      "correlation_classes": 23,
+      "coordinate_sums": [
+        -8,
+        5,
+        5,
+        5
+      ],
+      "admissible_head_counts": {
+        "minimum": 3,
+        "maximum": 41,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 21,
+      "conditional_extreme_head_free_bits_estimate": 20,
+      "ord_p_2": 138,
+      "ord_p_4": 69,
+      "frequency_extension_index": 23,
+      "half_frequency_orbit_count": 1,
+      "frequency_inverse_structure": "paired distinct H-orbits",
+      "odd_single_factor_size_compatible": true,
+      "turyn_arithmetic_gate": {
+        "q": 277,
+        "q_factorization": {
+          "277": 1
+        },
+        "q_is_prime_power": true
+      }
+    },
+    {
+      "p": 433,
+      "m": 9,
+      "a": 0,
+      "b": 4,
+      "N": 48,
+      "n": 49,
+      "correlation_classes": 24,
+      "coordinate_sums": [
+        1,
+        12,
+        12,
+        12
+      ],
+      "admissible_head_counts": {
+        "minimum": 0,
+        "maximum": 44,
+        "step": 2
+      },
+      "headless_allowed": true,
+      "conditional_generic_free_bits_estimate": 22,
+      "conditional_extreme_head_free_bits_estimate": null,
+      "ord_p_2": 72,
+      "ord_p_4": 36,
+      "frequency_extension_index": 4,
+      "half_frequency_orbit_count": 6,
+      "frequency_inverse_structure": "self-inverse H-orbits",
+      "odd_single_factor_size_compatible": false,
+      "turyn_arithmetic_gate": {
+        "q": 865,
+        "q_factorization": {
+          "5": 1,
+          "173": 1
+        },
+        "q_is_prime_power": false
+      }
+    },
+    {
+      "p": 151,
+      "m": 3,
+      "a": -1,
+      "b": 7,
+      "N": 50,
+      "n": 51,
+      "correlation_classes": 25,
+      "coordinate_sums": [
+        -2,
+        7,
+        7,
+        7
+      ],
+      "admissible_head_counts": {
+        "minimum": 1,
+        "maximum": 43,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 23,
+      "conditional_extreme_head_free_bits_estimate": 23,
+      "ord_p_2": 15,
+      "ord_p_4": 15,
+      "frequency_extension_index": 5,
+      "half_frequency_orbit_count": 5,
+      "frequency_inverse_structure": "paired distinct H-orbits",
+      "odd_single_factor_size_compatible": false,
+      "turyn_arithmetic_gate": {
+        "q": 301,
+        "q_factorization": {
+          "7": 1,
+          "43": 1
+        },
+        "q_is_prime_power": false
+      }
+    },
+    {
+      "p": 1951,
+      "m": 39,
+      "a": -1,
+      "b": 1,
+      "N": 50,
+      "n": 51,
+      "correlation_classes": 25,
+      "coordinate_sums": [
+        -38,
+        13,
+        13,
+        13
+      ],
+      "admissible_head_counts": {
+        "minimum": 1,
+        "maximum": 49,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 23,
+      "conditional_extreme_head_free_bits_estimate": 23,
+      "ord_p_2": 975,
+      "ord_p_4": 975,
+      "frequency_extension_index": 25,
+      "half_frequency_orbit_count": 1,
+      "frequency_inverse_structure": "paired distinct H-orbits",
+      "odd_single_factor_size_compatible": true,
+      "turyn_arithmetic_gate": {
+        "q": 3901,
+        "q_factorization": {
+          "47": 1,
+          "83": 1
+        },
+        "q_is_prime_power": false
+      }
+    },
+    {
+      "p": 157,
+      "m": 3,
+      "a": 2,
+      "b": 6,
+      "N": 52,
+      "n": 53,
+      "correlation_classes": 26,
+      "coordinate_sums": [
+        7,
+        6,
+        6,
+        6
+      ],
+      "admissible_head_counts": {
+        "minimum": 2,
+        "maximum": 46,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 24,
+      "conditional_extreme_head_free_bits_estimate": 24,
+      "ord_p_2": 52,
+      "ord_p_4": 26,
+      "frequency_extension_index": 26,
+      "half_frequency_orbit_count": 1,
+      "frequency_inverse_structure": "self-inverse H-orbits",
+      "odd_single_factor_size_compatible": false,
+      "turyn_arithmetic_gate": {
+        "q": 313,
+        "q_factorization": {
+          "313": 1
+        },
+        "q_is_prime_power": true
+      }
+    },
+    {
+      "p": 2029,
+      "m": 39,
+      "a": 0,
+      "b": 2,
+      "N": 52,
+      "n": 53,
+      "correlation_classes": 26,
+      "coordinate_sums": [
+        1,
+        26,
+        26,
+        26
+      ],
+      "admissible_head_counts": {
+        "minimum": 0,
+        "maximum": 50,
+        "step": 2
+      },
+      "headless_allowed": true,
+      "conditional_generic_free_bits_estimate": 24,
+      "conditional_extreme_head_free_bits_estimate": null,
+      "ord_p_2": 2028,
+      "ord_p_4": 1014,
+      "frequency_extension_index": 26,
+      "half_frequency_orbit_count": 1,
+      "frequency_inverse_structure": "self-inverse H-orbits",
+      "odd_single_factor_size_compatible": false,
+      "turyn_arithmetic_gate": {
+        "q": 4057,
+        "q_factorization": {
+          "4057": 1
+        },
+        "q_is_prime_power": true
+      }
+    },
+    {
+      "p": 163,
+      "m": 3,
+      "a": 1,
+      "b": 7,
+      "N": 54,
+      "n": 55,
+      "correlation_classes": 27,
+      "coordinate_sums": [
+        4,
+        7,
+        7,
+        7
+      ],
+      "admissible_head_counts": {
+        "minimum": 1,
+        "maximum": 47,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 25,
+      "conditional_extreme_head_free_bits_estimate": 25,
+      "ord_p_2": 162,
+      "ord_p_4": 81,
+      "frequency_extension_index": 27,
+      "half_frequency_orbit_count": 1,
+      "frequency_inverse_structure": "paired distinct H-orbits",
+      "odd_single_factor_size_compatible": true,
+      "turyn_arithmetic_gate": {
+        "q": 325,
+        "q_factorization": {
+          "5": 2,
+          "13": 1
+        },
+        "q_is_prime_power": false
+      }
+    },
+    {
+      "p": 181,
+      "m": 3,
+      "a": 4,
+      "b": 2,
+      "N": 60,
+      "n": 61,
+      "correlation_classes": 30,
+      "coordinate_sums": [
+        13,
+        2,
+        2,
+        2
+      ],
+      "admissible_head_counts": {
+        "minimum": 4,
+        "maximum": 58,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 28,
+      "conditional_extreme_head_free_bits_estimate": 26,
+      "ord_p_2": 180,
+      "ord_p_4": 90,
+      "frequency_extension_index": 30,
+      "half_frequency_orbit_count": 1,
+      "frequency_inverse_structure": "self-inverse H-orbits",
+      "odd_single_factor_size_compatible": false,
+      "turyn_arithmetic_gate": {
+        "q": 361,
+        "q_factorization": {
+          "19": 2
+        },
+        "q_is_prime_power": true
+      }
+    },
+    {
+      "p": 2791,
+      "m": 45,
+      "a": 1,
+      "b": 1,
+      "N": 62,
+      "n": 63,
+      "correlation_classes": 31,
+      "coordinate_sums": [
+        46,
+        15,
+        15,
+        15
+      ],
+      "admissible_head_counts": {
+        "minimum": 1,
+        "maximum": 61,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 29,
+      "conditional_extreme_head_free_bits_estimate": 29,
+      "ord_p_2": 465,
+      "ord_p_4": 465,
+      "frequency_extension_index": 31,
+      "half_frequency_orbit_count": 1,
+      "frequency_inverse_structure": "paired distinct H-orbits",
+      "odd_single_factor_size_compatible": true,
+      "turyn_arithmetic_gate": {
+        "q": 5581,
+        "q_factorization": {
+          "5581": 1
+        },
+        "q_is_prime_power": true
+      }
+    },
+    {
+      "p": 193,
+      "m": 3,
+      "a": 0,
+      "b": 8,
+      "N": 64,
+      "n": 65,
+      "correlation_classes": 32,
+      "coordinate_sums": [
+        1,
+        8,
+        8,
+        8
+      ],
+      "admissible_head_counts": {
+        "minimum": 0,
+        "maximum": 56,
+        "step": 2
+      },
+      "headless_allowed": true,
+      "conditional_generic_free_bits_estimate": 30,
+      "conditional_extreme_head_free_bits_estimate": null,
+      "ord_p_2": 96,
+      "ord_p_4": 48,
+      "frequency_extension_index": 16,
+      "half_frequency_orbit_count": 2,
+      "frequency_inverse_structure": "self-inverse H-orbits",
+      "odd_single_factor_size_compatible": false,
+      "turyn_arithmetic_gate": {
+        "q": 385,
+        "q_factorization": {
+          "5": 1,
+          "7": 1,
+          "11": 1
+        },
+        "q_is_prime_power": false
+      }
+    },
+    {
+      "p": 199,
+      "m": 3,
+      "a": -5,
+      "b": 1,
+      "N": 66,
+      "n": 67,
+      "correlation_classes": 33,
+      "coordinate_sums": [
+        -14,
+        1,
+        1,
+        1
+      ],
+      "admissible_head_counts": {
+        "minimum": 5,
+        "maximum": 65,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 31,
+      "conditional_extreme_head_free_bits_estimate": 28,
+      "ord_p_2": 99,
+      "ord_p_4": 99,
+      "frequency_extension_index": 33,
+      "half_frequency_orbit_count": 1,
+      "frequency_inverse_structure": "paired distinct H-orbits",
+      "odd_single_factor_size_compatible": true,
+      "turyn_arithmetic_gate": {
+        "q": 397,
+        "q_factorization": {
+          "397": 1
+        },
+        "q_is_prime_power": true
+      }
+    },
+    {
+      "p": 3469,
+      "m": 51,
+      "a": 0,
+      "b": 2,
+      "N": 68,
+      "n": 69,
+      "correlation_classes": 34,
+      "coordinate_sums": [
+        1,
+        34,
+        34,
+        34
+      ],
+      "admissible_head_counts": {
+        "minimum": 0,
+        "maximum": 66,
+        "step": 2
+      },
+      "headless_allowed": true,
+      "conditional_generic_free_bits_estimate": 32,
+      "conditional_extreme_head_free_bits_estimate": null,
+      "ord_p_2": 3468,
+      "ord_p_4": 1734,
+      "frequency_extension_index": 34,
+      "half_frequency_orbit_count": 1,
+      "frequency_inverse_structure": "self-inverse H-orbits",
+      "odd_single_factor_size_compatible": false,
+      "turyn_arithmetic_gate": {
+        "q": 6937,
+        "q_factorization": {
+          "7": 1,
+          "991": 1
+        },
+        "q_is_prime_power": false
+      }
+    },
+    {
+      "p": 211,
+      "m": 3,
+      "a": -3,
+      "b": 7,
+      "N": 70,
+      "n": 71,
+      "correlation_classes": 35,
+      "coordinate_sums": [
+        -8,
+        7,
+        7,
+        7
+      ],
+      "admissible_head_counts": {
+        "minimum": 3,
+        "maximum": 63,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 33,
+      "conditional_extreme_head_free_bits_estimate": 32,
+      "ord_p_2": 210,
+      "ord_p_4": 105,
+      "frequency_extension_index": 35,
+      "half_frequency_orbit_count": 1,
+      "frequency_inverse_structure": "paired distinct H-orbits",
+      "odd_single_factor_size_compatible": true,
+      "turyn_arithmetic_gate": {
+        "q": 421,
+        "q_factorization": {
+          "421": 1
+        },
+        "q_is_prime_power": true
+      }
+    },
+    {
+      "p": 3571,
+      "m": 51,
+      "a": 1,
+      "b": 1,
+      "N": 70,
+      "n": 71,
+      "correlation_classes": 35,
+      "coordinate_sums": [
+        52,
+        17,
+        17,
+        17
+      ],
+      "admissible_head_counts": {
+        "minimum": 1,
+        "maximum": 69,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 33,
+      "conditional_extreme_head_free_bits_estimate": 33,
+      "ord_p_2": 3570,
+      "ord_p_4": 1785,
+      "frequency_extension_index": 35,
+      "half_frequency_orbit_count": 1,
+      "frequency_inverse_structure": "paired distinct H-orbits",
+      "odd_single_factor_size_compatible": true,
+      "turyn_arithmetic_gate": {
+        "q": 7141,
+        "q_factorization": {
+          "37": 1,
+          "193": 1
+        },
+        "q_is_prime_power": false
+      }
+    },
+    {
+      "p": 223,
+      "m": 3,
+      "a": -5,
+      "b": 3,
+      "N": 74,
+      "n": 75,
+      "correlation_classes": 37,
+      "coordinate_sums": [
+        -14,
+        3,
+        3,
+        3
+      ],
+      "admissible_head_counts": {
+        "minimum": 5,
+        "maximum": 71,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 35,
+      "conditional_extreme_head_free_bits_estimate": 32,
+      "ord_p_2": 37,
+      "ord_p_4": 37,
+      "frequency_extension_index": 37,
+      "half_frequency_orbit_count": 1,
+      "frequency_inverse_structure": "paired distinct H-orbits",
+      "odd_single_factor_size_compatible": true,
+      "turyn_arithmetic_gate": {
+        "q": 445,
+        "q_factorization": {
+          "5": 1,
+          "89": 1
+        },
+        "q_is_prime_power": false
+      }
+    },
+    {
+      "p": 4219,
+      "m": 57,
+      "a": -1,
+      "b": 1,
+      "N": 74,
+      "n": 75,
+      "correlation_classes": 37,
+      "coordinate_sums": [
+        -56,
+        19,
+        19,
+        19
+      ],
+      "admissible_head_counts": {
+        "minimum": 1,
+        "maximum": 73,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 35,
+      "conditional_extreme_head_free_bits_estimate": 35,
+      "ord_p_2": 4218,
+      "ord_p_4": 2109,
+      "frequency_extension_index": 37,
+      "half_frequency_orbit_count": 1,
+      "frequency_inverse_structure": "paired distinct H-orbits",
+      "odd_single_factor_size_compatible": true,
+      "turyn_arithmetic_gate": {
+        "q": 8437,
+        "q_factorization": {
+          "11": 1,
+          "13": 1,
+          "59": 1
+        },
+        "q_is_prime_power": false
+      }
+    },
+    {
+      "p": 229,
+      "m": 3,
+      "a": -4,
+      "b": 6,
+      "N": 76,
+      "n": 77,
+      "correlation_classes": 38,
+      "coordinate_sums": [
+        -11,
+        6,
+        6,
+        6
+      ],
+      "admissible_head_counts": {
+        "minimum": 4,
+        "maximum": 70,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 36,
+      "conditional_extreme_head_free_bits_estimate": 34,
+      "ord_p_2": 76,
+      "ord_p_4": 38,
+      "frequency_extension_index": 38,
+      "half_frequency_orbit_count": 1,
+      "frequency_inverse_structure": "self-inverse H-orbits",
+      "odd_single_factor_size_compatible": false,
+      "turyn_arithmetic_gate": {
+        "q": 457,
+        "q_factorization": {
+          "457": 1
+        },
+        "q_is_prime_power": true
+      }
+    },
+    {
+      "p": 4447,
+      "m": 57,
+      "a": 1,
+      "b": 1,
+      "N": 78,
+      "n": 79,
+      "correlation_classes": 39,
+      "coordinate_sums": [
+        58,
+        19,
+        19,
+        19
+      ],
+      "admissible_head_counts": {
+        "minimum": 1,
+        "maximum": 77,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 37,
+      "conditional_extreme_head_free_bits_estimate": 37,
+      "ord_p_2": 2223,
+      "ord_p_4": 2223,
+      "frequency_extension_index": 39,
+      "half_frequency_orbit_count": 1,
+      "frequency_inverse_structure": "paired distinct H-orbits",
+      "odd_single_factor_size_compatible": true,
+      "turyn_arithmetic_gate": {
+        "q": 8893,
+        "q_factorization": {
+          "8893": 1
+        },
+        "q_is_prime_power": true
+      }
+    },
+    {
+      "p": 241,
+      "m": 3,
+      "a": 2,
+      "b": 8,
+      "N": 80,
+      "n": 81,
+      "correlation_classes": 40,
+      "coordinate_sums": [
+        7,
+        8,
+        8,
+        8
+      ],
+      "admissible_head_counts": {
+        "minimum": 2,
+        "maximum": 72,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 38,
+      "conditional_extreme_head_free_bits_estimate": 38,
+      "ord_p_2": 24,
+      "ord_p_4": 12,
+      "frequency_extension_index": 4,
+      "half_frequency_orbit_count": 10,
+      "frequency_inverse_structure": "self-inverse H-orbits",
+      "odd_single_factor_size_compatible": false,
+      "turyn_arithmetic_gate": {
+        "q": 481,
+        "q_factorization": {
+          "13": 1,
+          "37": 1
+        },
+        "q_is_prime_power": false
+      }
+    },
+    {
+      "p": 1201,
+      "m": 15,
+      "a": 0,
+      "b": 4,
+      "N": 80,
+      "n": 81,
+      "correlation_classes": 40,
+      "coordinate_sums": [
+        1,
+        20,
+        20,
+        20
+      ],
+      "admissible_head_counts": {
+        "minimum": 0,
+        "maximum": 76,
+        "step": 2
+      },
+      "headless_allowed": true,
+      "conditional_generic_free_bits_estimate": 38,
+      "conditional_extreme_head_free_bits_estimate": null,
+      "ord_p_2": 300,
+      "ord_p_4": 150,
+      "frequency_extension_index": 10,
+      "half_frequency_orbit_count": 4,
+      "frequency_inverse_structure": "self-inverse H-orbits",
+      "odd_single_factor_size_compatible": false,
+      "turyn_arithmetic_gate": {
+        "q": 2401,
+        "q_factorization": {
+          "7": 4
+        },
+        "q_is_prime_power": true
+      }
+    },
+    {
+      "p": 739,
+      "m": 9,
+      "a": -1,
+      "b": 5,
+      "N": 82,
+      "n": 83,
+      "correlation_classes": 41,
+      "coordinate_sums": [
+        -8,
+        15,
+        15,
+        15
+      ],
+      "admissible_head_counts": {
+        "minimum": 1,
+        "maximum": 77,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 39,
+      "conditional_extreme_head_free_bits_estimate": 39,
+      "ord_p_2": 246,
+      "ord_p_4": 123,
+      "frequency_extension_index": 41,
+      "half_frequency_orbit_count": 1,
+      "frequency_inverse_structure": "paired distinct H-orbits",
+      "odd_single_factor_size_compatible": true,
+      "turyn_arithmetic_gate": {
+        "q": 1477,
+        "q_factorization": {
+          "7": 1,
+          "211": 1
+        },
+        "q_is_prime_power": false
+      }
+    },
+    {
+      "p": 1723,
+      "m": 21,
+      "a": -1,
+      "b": 3,
+      "N": 82,
+      "n": 83,
+      "correlation_classes": 41,
+      "coordinate_sums": [
+        -20,
+        21,
+        21,
+        21
+      ],
+      "admissible_head_counts": {
+        "minimum": 1,
+        "maximum": 79,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 39,
+      "conditional_extreme_head_free_bits_estimate": 39,
+      "ord_p_2": 574,
+      "ord_p_4": 287,
+      "frequency_extension_index": 41,
+      "half_frequency_orbit_count": 1,
+      "frequency_inverse_structure": "paired distinct H-orbits",
+      "odd_single_factor_size_compatible": true,
+      "turyn_arithmetic_gate": {
+        "q": 3445,
+        "q_factorization": {
+          "5": 1,
+          "13": 1,
+          "53": 1
+        },
+        "q_is_prime_power": false
+      }
+    },
+    {
+      "p": 5167,
+      "m": 63,
+      "a": -1,
+      "b": 1,
+      "N": 82,
+      "n": 83,
+      "correlation_classes": 41,
+      "coordinate_sums": [
+        -62,
+        21,
+        21,
+        21
+      ],
+      "admissible_head_counts": {
+        "minimum": 1,
+        "maximum": 81,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 39,
+      "conditional_extreme_head_free_bits_estimate": 39,
+      "ord_p_2": 861,
+      "ord_p_4": 861,
+      "frequency_extension_index": 41,
+      "half_frequency_orbit_count": 1,
+      "frequency_inverse_structure": "paired distinct H-orbits",
+      "odd_single_factor_size_compatible": true,
+      "turyn_arithmetic_gate": {
+        "q": 10333,
+        "q_factorization": {
+          "10333": 1
+        },
+        "q_is_prime_power": true
+      }
+    },
+    {
+      "p": 5419,
+      "m": 63,
+      "a": 1,
+      "b": 1,
+      "N": 86,
+      "n": 87,
+      "correlation_classes": 43,
+      "coordinate_sums": [
+        64,
+        21,
+        21,
+        21
+      ],
+      "admissible_head_counts": {
+        "minimum": 1,
+        "maximum": 85,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 41,
+      "conditional_extreme_head_free_bits_estimate": 41,
+      "ord_p_2": 42,
+      "ord_p_4": 21,
+      "frequency_extension_index": 1,
+      "half_frequency_orbit_count": 43,
+      "frequency_inverse_structure": "paired distinct H-orbits",
+      "odd_single_factor_size_compatible": false,
+      "turyn_arithmetic_gate": {
+        "q": 10837,
+        "q_factorization": {
+          "10837": 1
+        },
+        "q_is_prime_power": true
+      }
+    },
+    {
+      "p": 271,
+      "m": 3,
+      "a": -5,
+      "b": 5,
+      "N": 90,
+      "n": 91,
+      "correlation_classes": 45,
+      "coordinate_sums": [
+        -14,
+        5,
+        5,
+        5
+      ],
+      "admissible_head_counts": {
+        "minimum": 5,
+        "maximum": 85,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 43,
+      "conditional_extreme_head_free_bits_estimate": 40,
+      "ord_p_2": 135,
+      "ord_p_4": 135,
+      "frequency_extension_index": 45,
+      "half_frequency_orbit_count": 1,
+      "frequency_inverse_structure": "paired distinct H-orbits",
+      "odd_single_factor_size_compatible": true,
+      "turyn_arithmetic_gate": {
+        "q": 541,
+        "q_factorization": {
+          "541": 1
+        },
+        "q_is_prime_power": true
+      }
+    },
+    {
+      "p": 811,
+      "m": 9,
+      "a": 3,
+      "b": 1,
+      "N": 90,
+      "n": 91,
+      "correlation_classes": 45,
+      "coordinate_sums": [
+        28,
+        3,
+        3,
+        3
+      ],
+      "admissible_head_counts": {
+        "minimum": 3,
+        "maximum": 89,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 43,
+      "conditional_extreme_head_free_bits_estimate": 42,
+      "ord_p_2": 270,
+      "ord_p_4": 135,
+      "frequency_extension_index": 15,
+      "half_frequency_orbit_count": 3,
+      "frequency_inverse_structure": "paired distinct H-orbits",
+      "odd_single_factor_size_compatible": false,
+      "turyn_arithmetic_gate": {
+        "q": 1621,
+        "q_factorization": {
+          "1621": 1
+        },
+        "q_is_prime_power": true
+      }
+    },
+    {
+      "p": 6211,
+      "m": 69,
+      "a": -1,
+      "b": 1,
+      "N": 90,
+      "n": 91,
+      "correlation_classes": 45,
+      "coordinate_sums": [
+        -68,
+        23,
+        23,
+        23
+      ],
+      "admissible_head_counts": {
+        "minimum": 1,
+        "maximum": 89,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 43,
+      "conditional_extreme_head_free_bits_estimate": 43,
+      "ord_p_2": 6210,
+      "ord_p_4": 3105,
+      "frequency_extension_index": 45,
+      "half_frequency_orbit_count": 1,
+      "frequency_inverse_structure": "paired distinct H-orbits",
+      "odd_single_factor_size_compatible": true,
+      "turyn_arithmetic_gate": {
+        "q": 12421,
+        "q_factorization": {
+          "12421": 1
+        },
+        "q_is_prime_power": true
+      }
+    },
+    {
+      "p": 277,
+      "m": 3,
+      "a": 4,
+      "b": 6,
+      "N": 92,
+      "n": 93,
+      "correlation_classes": 46,
+      "coordinate_sums": [
+        13,
+        6,
+        6,
+        6
+      ],
+      "admissible_head_counts": {
+        "minimum": 4,
+        "maximum": 86,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 44,
+      "conditional_extreme_head_free_bits_estimate": 42,
+      "ord_p_2": 92,
+      "ord_p_4": 46,
+      "frequency_extension_index": 46,
+      "half_frequency_orbit_count": 1,
+      "frequency_inverse_structure": "self-inverse H-orbits",
+      "odd_single_factor_size_compatible": false,
+      "turyn_arithmetic_gate": {
+        "q": 553,
+        "q_factorization": {
+          "7": 1,
+          "79": 1
+        },
+        "q_is_prime_power": false
+      }
+    },
+    {
+      "p": 283,
+      "m": 3,
+      "a": 5,
+      "b": 3,
+      "N": 94,
+      "n": 95,
+      "correlation_classes": 47,
+      "coordinate_sums": [
+        16,
+        3,
+        3,
+        3
+      ],
+      "admissible_head_counts": {
+        "minimum": 5,
+        "maximum": 91,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 45,
+      "conditional_extreme_head_free_bits_estimate": 42,
+      "ord_p_2": 94,
+      "ord_p_4": 47,
+      "frequency_extension_index": 47,
+      "half_frequency_orbit_count": 1,
+      "frequency_inverse_structure": "paired distinct H-orbits",
+      "odd_single_factor_size_compatible": true,
+      "turyn_arithmetic_gate": {
+        "q": 565,
+        "q_factorization": {
+          "5": 1,
+          "113": 1
+        },
+        "q_is_prime_power": false
+      }
+    },
+    {
+      "p": 7351,
+      "m": 75,
+      "a": -1,
+      "b": 1,
+      "N": 98,
+      "n": 99,
+      "correlation_classes": 49,
+      "coordinate_sums": [
+        -74,
+        25,
+        25,
+        25
+      ],
+      "admissible_head_counts": {
+        "minimum": 1,
+        "maximum": 97,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 47,
+      "conditional_extreme_head_free_bits_estimate": 47,
+      "ord_p_2": 525,
+      "ord_p_4": 525,
+      "frequency_extension_index": 7,
+      "half_frequency_orbit_count": 7,
+      "frequency_inverse_structure": "paired distinct H-orbits",
+      "odd_single_factor_size_compatible": false,
+      "turyn_arithmetic_gate": {
+        "q": 14701,
+        "q_factorization": {
+          "61": 1,
+          "241": 1
+        },
+        "q_is_prime_power": false
+      }
+    },
+    {
+      "p": 307,
+      "m": 3,
+      "a": -3,
+      "b": 9,
+      "N": 102,
+      "n": 103,
+      "correlation_classes": 51,
+      "coordinate_sums": [
+        -8,
+        9,
+        9,
+        9
+      ],
+      "admissible_head_counts": {
+        "minimum": 3,
+        "maximum": 93,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 49,
+      "conditional_extreme_head_free_bits_estimate": 48,
+      "ord_p_2": 102,
+      "ord_p_4": 51,
+      "frequency_extension_index": 17,
+      "half_frequency_orbit_count": 3,
+      "frequency_inverse_structure": "paired distinct H-orbits",
+      "odd_single_factor_size_compatible": false,
+      "turyn_arithmetic_gate": {
+        "q": 613,
+        "q_factorization": {
+          "613": 1
+        },
+        "q_is_prime_power": true
+      }
+    },
+    {
+      "p": 919,
+      "m": 9,
+      "a": -3,
+      "b": 3,
+      "N": 102,
+      "n": 103,
+      "correlation_classes": 51,
+      "coordinate_sums": [
+        -26,
+        9,
+        9,
+        9
+      ],
+      "admissible_head_counts": {
+        "minimum": 3,
+        "maximum": 99,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 49,
+      "conditional_extreme_head_free_bits_estimate": 48,
+      "ord_p_2": 153,
+      "ord_p_4": 153,
+      "frequency_extension_index": 17,
+      "half_frequency_orbit_count": 3,
+      "frequency_inverse_structure": "paired distinct H-orbits",
+      "odd_single_factor_size_compatible": false,
+      "turyn_arithmetic_gate": {
+        "q": 1837,
+        "q_factorization": {
+          "11": 1,
+          "167": 1
+        },
+        "q_is_prime_power": false
+      }
+    },
+    {
+      "p": 313,
+      "m": 3,
+      "a": -4,
+      "b": 8,
+      "N": 104,
+      "n": 105,
+      "correlation_classes": 52,
+      "coordinate_sums": [
+        -11,
+        8,
+        8,
+        8
+      ],
+      "admissible_head_counts": {
+        "minimum": 4,
+        "maximum": 96,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 50,
+      "conditional_extreme_head_free_bits_estimate": 48,
+      "ord_p_2": 156,
+      "ord_p_4": 78,
+      "frequency_extension_index": 26,
+      "half_frequency_orbit_count": 2,
+      "frequency_inverse_structure": "self-inverse H-orbits",
+      "odd_single_factor_size_compatible": false,
+      "turyn_arithmetic_gate": {
+        "q": 625,
+        "q_factorization": {
+          "5": 4
+        },
+        "q_is_prime_power": true
+      }
+    },
+    {
+      "p": 2269,
+      "m": 21,
+      "a": -2,
+      "b": 2,
+      "N": 108,
+      "n": 109,
+      "correlation_classes": 54,
+      "coordinate_sums": [
+        -41,
+        14,
+        14,
+        14
+      ],
+      "admissible_head_counts": {
+        "minimum": 2,
+        "maximum": 106,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 52,
+      "conditional_extreme_head_free_bits_estimate": 52,
+      "ord_p_2": 2268,
+      "ord_p_4": 1134,
+      "frequency_extension_index": 54,
+      "half_frequency_orbit_count": 1,
+      "frequency_inverse_structure": "self-inverse H-orbits",
+      "odd_single_factor_size_compatible": false,
+      "turyn_arithmetic_gate": {
+        "q": 4537,
+        "q_factorization": {
+          "13": 1,
+          "349": 1
+        },
+        "q_is_prime_power": false
+      }
+    },
+    {
+      "p": 331,
+      "m": 3,
+      "a": 5,
+      "b": 5,
+      "N": 110,
+      "n": 111,
+      "correlation_classes": 55,
+      "coordinate_sums": [
+        16,
+        5,
+        5,
+        5
+      ],
+      "admissible_head_counts": {
+        "minimum": 5,
+        "maximum": 105,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 53,
+      "conditional_extreme_head_free_bits_estimate": 50,
+      "ord_p_2": 30,
+      "ord_p_4": 15,
+      "frequency_extension_index": 5,
+      "half_frequency_orbit_count": 11,
+      "frequency_inverse_structure": "paired distinct H-orbits",
+      "odd_single_factor_size_compatible": false,
+      "turyn_arithmetic_gate": {
+        "q": 661,
+        "q_factorization": {
+          "661": 1
+        },
+        "q_is_prime_power": true
+      }
+    },
+    {
+      "p": 2971,
+      "m": 27,
+      "a": 1,
+      "b": 3,
+      "N": 110,
+      "n": 111,
+      "correlation_classes": 55,
+      "coordinate_sums": [
+        28,
+        27,
+        27,
+        27
+      ],
+      "admissible_head_counts": {
+        "minimum": 1,
+        "maximum": 107,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 53,
+      "conditional_extreme_head_free_bits_estimate": 53,
+      "ord_p_2": 110,
+      "ord_p_4": 55,
+      "frequency_extension_index": 55,
+      "half_frequency_orbit_count": 1,
+      "frequency_inverse_structure": "paired distinct H-orbits",
+      "odd_single_factor_size_compatible": true,
+      "turyn_arithmetic_gate": {
+        "q": 5941,
+        "q_factorization": {
+          "13": 1,
+          "457": 1
+        },
+        "q_is_prime_power": false
+      }
+    },
+    {
+      "p": 337,
+      "m": 3,
+      "a": -6,
+      "b": 4,
+      "N": 112,
+      "n": 113,
+      "correlation_classes": 56,
+      "coordinate_sums": [
+        -17,
+        4,
+        4,
+        4
+      ],
+      "admissible_head_counts": {
+        "minimum": 6,
+        "maximum": 108,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 54,
+      "conditional_extreme_head_free_bits_estimate": 50,
+      "ord_p_2": 21,
+      "ord_p_4": 21,
+      "frequency_extension_index": 7,
+      "half_frequency_orbit_count": 8,
+      "frequency_inverse_structure": "paired distinct H-orbits",
+      "odd_single_factor_size_compatible": false,
+      "turyn_arithmetic_gate": {
+        "q": 673,
+        "q_factorization": {
+          "673": 1
+        },
+        "q_is_prime_power": true
+      }
+    },
+    {
+      "p": 349,
+      "m": 3,
+      "a": 2,
+      "b": 10,
+      "N": 116,
+      "n": 117,
+      "correlation_classes": 58,
+      "coordinate_sums": [
+        7,
+        10,
+        10,
+        10
+      ],
+      "admissible_head_counts": {
+        "minimum": 2,
+        "maximum": 106,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 56,
+      "conditional_extreme_head_free_bits_estimate": 56,
+      "ord_p_2": 348,
+      "ord_p_4": 174,
+      "frequency_extension_index": 58,
+      "half_frequency_orbit_count": 1,
+      "frequency_inverse_structure": "self-inverse H-orbits",
+      "odd_single_factor_size_compatible": false,
+      "turyn_arithmetic_gate": {
+        "q": 697,
+        "q_factorization": {
+          "17": 1,
+          "41": 1
+        },
+        "q_is_prime_power": false
+      }
+    },
+    {
+      "p": 2437,
+      "m": 21,
+      "a": 2,
+      "b": 2,
+      "N": 116,
+      "n": 117,
+      "correlation_classes": 58,
+      "coordinate_sums": [
+        43,
+        14,
+        14,
+        14
+      ],
+      "admissible_head_counts": {
+        "minimum": 2,
+        "maximum": 114,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 56,
+      "conditional_extreme_head_free_bits_estimate": 56,
+      "ord_p_2": 2436,
+      "ord_p_4": 1218,
+      "frequency_extension_index": 58,
+      "half_frequency_orbit_count": 1,
+      "frequency_inverse_structure": "self-inverse H-orbits",
+      "odd_single_factor_size_compatible": false,
+      "turyn_arithmetic_gate": {
+        "q": 4873,
+        "q_factorization": {
+          "11": 1,
+          "443": 1
+        },
+        "q_is_prime_power": false
+      }
+    },
+    {
+      "p": 10093,
+      "m": 87,
+      "a": 0,
+      "b": 2,
+      "N": 116,
+      "n": 117,
+      "correlation_classes": 58,
+      "coordinate_sums": [
+        1,
+        58,
+        58,
+        58
+      ],
+      "admissible_head_counts": {
+        "minimum": 0,
+        "maximum": 114,
+        "step": 2
+      },
+      "headless_allowed": true,
+      "conditional_generic_free_bits_estimate": 56,
+      "conditional_extreme_head_free_bits_estimate": null,
+      "ord_p_2": 10092,
+      "ord_p_4": 5046,
+      "frequency_extension_index": 58,
+      "half_frequency_orbit_count": 1,
+      "frequency_inverse_structure": "self-inverse H-orbits",
+      "odd_single_factor_size_compatible": false,
+      "turyn_arithmetic_gate": {
+        "q": 20185,
+        "q_factorization": {
+          "5": 1,
+          "11": 1,
+          "367": 1
+        },
+        "q_is_prime_power": false
+      }
+    },
+    {
+      "p": 10267,
+      "m": 87,
+      "a": 1,
+      "b": 1,
+      "N": 118,
+      "n": 119,
+      "correlation_classes": 59,
+      "coordinate_sums": [
+        88,
+        29,
+        29,
+        29
+      ],
+      "admissible_head_counts": {
+        "minimum": 1,
+        "maximum": 117,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 57,
+      "conditional_extreme_head_free_bits_estimate": 57,
+      "ord_p_2": 10266,
+      "ord_p_4": 5133,
+      "frequency_extension_index": 59,
+      "half_frequency_orbit_count": 1,
+      "frequency_inverse_structure": "paired distinct H-orbits",
+      "odd_single_factor_size_compatible": true,
+      "turyn_arithmetic_gate": {
+        "q": 20533,
+        "q_factorization": {
+          "20533": 1
+        },
+        "q_is_prime_power": true
+      }
+    },
+    {
+      "p": 367,
+      "m": 3,
+      "a": -1,
+      "b": 11,
+      "N": 122,
+      "n": 123,
+      "correlation_classes": 61,
+      "coordinate_sums": [
+        -2,
+        11,
+        11,
+        11
+      ],
+      "admissible_head_counts": {
+        "minimum": 1,
+        "maximum": 111,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 59,
+      "conditional_extreme_head_free_bits_estimate": 59,
+      "ord_p_2": 183,
+      "ord_p_4": 183,
+      "frequency_extension_index": 61,
+      "half_frequency_orbit_count": 1,
+      "frequency_inverse_structure": "paired distinct H-orbits",
+      "odd_single_factor_size_compatible": true,
+      "turyn_arithmetic_gate": {
+        "q": 733,
+        "q_factorization": {
+          "733": 1
+        },
+        "q_is_prime_power": true
+      }
+    },
+    {
+      "p": 373,
+      "m": 3,
+      "a": 6,
+      "b": 2,
+      "N": 124,
+      "n": 125,
+      "correlation_classes": 62,
+      "coordinate_sums": [
+        19,
+        2,
+        2,
+        2
+      ],
+      "admissible_head_counts": {
+        "minimum": 6,
+        "maximum": 122,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 60,
+      "conditional_extreme_head_free_bits_estimate": 56,
+      "ord_p_2": 372,
+      "ord_p_4": 186,
+      "frequency_extension_index": 62,
+      "half_frequency_orbit_count": 1,
+      "frequency_inverse_structure": "self-inverse H-orbits",
+      "odd_single_factor_size_compatible": false,
+      "turyn_arithmetic_gate": {
+        "q": 745,
+        "q_factorization": {
+          "5": 1,
+          "149": 1
+        },
+        "q_is_prime_power": false
+      }
+    },
+    {
+      "p": 379,
+      "m": 3,
+      "a": 1,
+      "b": 11,
+      "N": 126,
+      "n": 127,
+      "correlation_classes": 63,
+      "coordinate_sums": [
+        4,
+        11,
+        11,
+        11
+      ],
+      "admissible_head_counts": {
+        "minimum": 1,
+        "maximum": 115,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 61,
+      "conditional_extreme_head_free_bits_estimate": 61,
+      "ord_p_2": 378,
+      "ord_p_4": 189,
+      "frequency_extension_index": 63,
+      "half_frequency_orbit_count": 1,
+      "frequency_inverse_structure": "paired distinct H-orbits",
+      "odd_single_factor_size_compatible": true,
+      "turyn_arithmetic_gate": {
+        "q": 757,
+        "q_factorization": {
+          "757": 1
+        },
+        "q_is_prime_power": true
+      }
+    },
+    {
+      "p": 11719,
+      "m": 93,
+      "a": 1,
+      "b": 1,
+      "N": 126,
+      "n": 127,
+      "correlation_classes": 63,
+      "coordinate_sums": [
+        94,
+        31,
+        31,
+        31
+      ],
+      "admissible_head_counts": {
+        "minimum": 1,
+        "maximum": 125,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 61,
+      "conditional_extreme_head_free_bits_estimate": 61,
+      "ord_p_2": 5859,
+      "ord_p_4": 5859,
+      "frequency_extension_index": 63,
+      "half_frequency_orbit_count": 1,
+      "frequency_inverse_structure": "paired distinct H-orbits",
+      "odd_single_factor_size_compatible": true,
+      "turyn_arithmetic_gate": {
+        "q": 23437,
+        "q_factorization": {
+          "23": 1,
+          "1019": 1
+        },
+        "q_is_prime_power": false
+      }
+    },
+    {
+      "p": 397,
+      "m": 3,
+      "a": -6,
+      "b": 6,
+      "N": 132,
+      "n": 133,
+      "correlation_classes": 66,
+      "coordinate_sums": [
+        -17,
+        6,
+        6,
+        6
+      ],
+      "admissible_head_counts": {
+        "minimum": 6,
+        "maximum": 126,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 64,
+      "conditional_extreme_head_free_bits_estimate": 60,
+      "ord_p_2": 44,
+      "ord_p_4": 22,
+      "frequency_extension_index": 22,
+      "half_frequency_orbit_count": 3,
+      "frequency_inverse_structure": "self-inverse H-orbits",
+      "odd_single_factor_size_compatible": false,
+      "turyn_arithmetic_gate": {
+        "q": 793,
+        "q_factorization": {
+          "13": 1,
+          "61": 1
+        },
+        "q_is_prime_power": false
+      }
+    },
+    {
+      "p": 2011,
+      "m": 15,
+      "a": -3,
+      "b": 1,
+      "N": 134,
+      "n": 135,
+      "correlation_classes": 67,
+      "coordinate_sums": [
+        -44,
+        5,
+        5,
+        5
+      ],
+      "admissible_head_counts": {
+        "minimum": 3,
+        "maximum": 133,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 65,
+      "conditional_extreme_head_free_bits_estimate": 64,
+      "ord_p_2": 402,
+      "ord_p_4": 201,
+      "frequency_extension_index": 67,
+      "half_frequency_orbit_count": 1,
+      "frequency_inverse_structure": "paired distinct H-orbits",
+      "odd_single_factor_size_compatible": true,
+      "turyn_arithmetic_gate": {
+        "q": 4021,
+        "q_factorization": {
+          "4021": 1
+        },
+        "q_is_prime_power": true
+      }
+    },
+    {
+      "p": 4423,
+      "m": 33,
+      "a": 1,
+      "b": 3,
+      "N": 134,
+      "n": 135,
+      "correlation_classes": 67,
+      "coordinate_sums": [
+        34,
+        33,
+        33,
+        33
+      ],
+      "admissible_head_counts": {
+        "minimum": 1,
+        "maximum": 131,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 65,
+      "conditional_extreme_head_free_bits_estimate": 65,
+      "ord_p_2": 737,
+      "ord_p_4": 737,
+      "frequency_extension_index": 67,
+      "half_frequency_orbit_count": 1,
+      "frequency_inverse_structure": "paired distinct H-orbits",
+      "odd_single_factor_size_compatible": true,
+      "turyn_arithmetic_gate": {
+        "q": 8845,
+        "q_factorization": {
+          "5": 1,
+          "29": 1,
+          "61": 1
+        },
+        "q_is_prime_power": false
+      }
+    },
+    {
+      "p": 13267,
+      "m": 99,
+      "a": 1,
+      "b": 1,
+      "N": 134,
+      "n": 135,
+      "correlation_classes": 67,
+      "coordinate_sums": [
+        100,
+        33,
+        33,
+        33
+      ],
+      "admissible_head_counts": {
+        "minimum": 1,
+        "maximum": 133,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 65,
+      "conditional_extreme_head_free_bits_estimate": 65,
+      "ord_p_2": 4422,
+      "ord_p_4": 2211,
+      "frequency_extension_index": 67,
+      "half_frequency_orbit_count": 1,
+      "frequency_inverse_structure": "paired distinct H-orbits",
+      "odd_single_factor_size_compatible": true,
+      "turyn_arithmetic_gate": {
+        "q": 26533,
+        "q_factorization": {
+          "13": 2,
+          "157": 1
+        },
+        "q_is_prime_power": false
+      }
+    },
+    {
+      "p": 409,
+      "m": 3,
+      "a": 6,
+      "b": 4,
+      "N": 136,
+      "n": 137,
+      "correlation_classes": 68,
+      "coordinate_sums": [
+        19,
+        4,
+        4,
+        4
+      ],
+      "admissible_head_counts": {
+        "minimum": 6,
+        "maximum": 132,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 66,
+      "conditional_extreme_head_free_bits_estimate": 62,
+      "ord_p_2": 204,
+      "ord_p_4": 102,
+      "frequency_extension_index": 34,
+      "half_frequency_orbit_count": 2,
+      "frequency_inverse_structure": "self-inverse H-orbits",
+      "odd_single_factor_size_compatible": false,
+      "turyn_arithmetic_gate": {
+        "q": 817,
+        "q_factorization": {
+          "19": 1,
+          "43": 1
+        },
+        "q_is_prime_power": false
+      }
+    },
+    {
+      "p": 421,
+      "m": 3,
+      "a": -4,
+      "b": 10,
+      "N": 140,
+      "n": 141,
+      "correlation_classes": 70,
+      "coordinate_sums": [
+        -11,
+        10,
+        10,
+        10
+      ],
+      "admissible_head_counts": {
+        "minimum": 4,
+        "maximum": 130,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 68,
+      "conditional_extreme_head_free_bits_estimate": 66,
+      "ord_p_2": 420,
+      "ord_p_4": 210,
+      "frequency_extension_index": 70,
+      "half_frequency_orbit_count": 1,
+      "frequency_inverse_structure": "self-inverse H-orbits",
+      "odd_single_factor_size_compatible": false,
+      "turyn_arithmetic_gate": {
+        "q": 841,
+        "q_factorization": {
+          "29": 2
+        },
+        "q_is_prime_power": true
+      }
+    },
+    {
+      "p": 2131,
+      "m": 15,
+      "a": 1,
+      "b": 5,
+      "N": 142,
+      "n": 143,
+      "correlation_classes": 71,
+      "coordinate_sums": [
+        16,
+        25,
+        25,
+        25
+      ],
+      "admissible_head_counts": {
+        "minimum": 1,
+        "maximum": 137,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 69,
+      "conditional_extreme_head_free_bits_estimate": 69,
+      "ord_p_2": 2130,
+      "ord_p_4": 1065,
+      "frequency_extension_index": 71,
+      "half_frequency_orbit_count": 1,
+      "frequency_inverse_structure": "paired distinct H-orbits",
+      "odd_single_factor_size_compatible": true,
+      "turyn_arithmetic_gate": {
+        "q": 4261,
+        "q_factorization": {
+          "4261": 1
+        },
+        "q_is_prime_power": true
+      }
+    },
+    {
+      "p": 433,
+      "m": 3,
+      "a": 0,
+      "b": 12,
+      "N": 144,
+      "n": 145,
+      "correlation_classes": 72,
+      "coordinate_sums": [
+        1,
+        12,
+        12,
+        12
+      ],
+      "admissible_head_counts": {
+        "minimum": 0,
+        "maximum": 132,
+        "step": 2
+      },
+      "headless_allowed": true,
+      "conditional_generic_free_bits_estimate": 70,
+      "conditional_extreme_head_free_bits_estimate": null,
+      "ord_p_2": 72,
+      "ord_p_4": 36,
+      "frequency_extension_index": 12,
+      "half_frequency_orbit_count": 6,
+      "frequency_inverse_structure": "self-inverse H-orbits",
+      "odd_single_factor_size_compatible": false,
+      "turyn_arithmetic_gate": {
+        "q": 865,
+        "q_factorization": {
+          "5": 1,
+          "173": 1
+        },
+        "q_is_prime_power": false
+      }
+    },
+    {
+      "p": 2161,
+      "m": 15,
+      "a": 2,
+      "b": 4,
+      "N": 144,
+      "n": 145,
+      "correlation_classes": 72,
+      "coordinate_sums": [
+        31,
+        20,
+        20,
+        20
+      ],
+      "admissible_head_counts": {
+        "minimum": 2,
+        "maximum": 140,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 70,
+      "conditional_extreme_head_free_bits_estimate": 70,
+      "ord_p_2": 1080,
+      "ord_p_4": 540,
+      "frequency_extension_index": 36,
+      "half_frequency_orbit_count": 2,
+      "frequency_inverse_structure": "self-inverse H-orbits",
+      "odd_single_factor_size_compatible": false,
+      "turyn_arithmetic_gate": {
+        "q": 4321,
+        "q_factorization": {
+          "29": 1,
+          "149": 1
+        },
+        "q_is_prime_power": false
+      }
+    },
+    {
+      "p": 3889,
+      "m": 27,
+      "a": 0,
+      "b": 4,
+      "N": 144,
+      "n": 145,
+      "correlation_classes": 72,
+      "coordinate_sums": [
+        1,
+        36,
+        36,
+        36
+      ],
+      "admissible_head_counts": {
+        "minimum": 0,
+        "maximum": 140,
+        "step": 2
+      },
+      "headless_allowed": true,
+      "conditional_generic_free_bits_estimate": 70,
+      "conditional_extreme_head_free_bits_estimate": null,
+      "ord_p_2": 648,
+      "ord_p_4": 324,
+      "frequency_extension_index": 12,
+      "half_frequency_orbit_count": 6,
+      "frequency_inverse_structure": "self-inverse H-orbits",
+      "odd_single_factor_size_compatible": false,
+      "turyn_arithmetic_gate": {
+        "q": 7777,
+        "q_factorization": {
+          "7": 1,
+          "11": 1,
+          "101": 1
+        },
+        "q_is_prime_power": false
+      }
+    },
+    {
+      "p": 439,
+      "m": 3,
+      "a": -5,
+      "b": 9,
+      "N": 146,
+      "n": 147,
+      "correlation_classes": 73,
+      "coordinate_sums": [
+        -14,
+        9,
+        9,
+        9
+      ],
+      "admissible_head_counts": {
+        "minimum": 5,
+        "maximum": 137,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 71,
+      "conditional_extreme_head_free_bits_estimate": 68,
+      "ord_p_2": 73,
+      "ord_p_4": 73,
+      "frequency_extension_index": 73,
+      "half_frequency_orbit_count": 1,
+      "frequency_inverse_structure": "paired distinct H-orbits",
+      "odd_single_factor_size_compatible": true,
+      "turyn_arithmetic_gate": {
+        "q": 877,
+        "q_factorization": {
+          "877": 1
+        },
+        "q_is_prime_power": true
+      }
+    },
+    {
+      "p": 16651,
+      "m": 111,
+      "a": 1,
+      "b": 1,
+      "N": 150,
+      "n": 151,
+      "correlation_classes": 75,
+      "coordinate_sums": [
+        112,
+        37,
+        37,
+        37
+      ],
+      "admissible_head_counts": {
+        "minimum": 1,
+        "maximum": 149,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 73,
+      "conditional_extreme_head_free_bits_estimate": 73,
+      "ord_p_2": 16650,
+      "ord_p_4": 8325,
+      "frequency_extension_index": 75,
+      "half_frequency_orbit_count": 1,
+      "frequency_inverse_structure": "paired distinct H-orbits",
+      "odd_single_factor_size_compatible": true,
+      "turyn_arithmetic_gate": {
+        "q": 33301,
+        "q_factorization": {
+          "33301": 1
+        },
+        "q_is_prime_power": true
+      }
+    },
+    {
+      "p": 457,
+      "m": 3,
+      "a": -2,
+      "b": 12,
+      "N": 152,
+      "n": 153,
+      "correlation_classes": 76,
+      "coordinate_sums": [
+        -5,
+        12,
+        12,
+        12
+      ],
+      "admissible_head_counts": {
+        "minimum": 2,
+        "maximum": 140,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 74,
+      "conditional_extreme_head_free_bits_estimate": 74,
+      "ord_p_2": 76,
+      "ord_p_4": 38,
+      "frequency_extension_index": 38,
+      "half_frequency_orbit_count": 2,
+      "frequency_inverse_structure": "self-inverse H-orbits",
+      "odd_single_factor_size_compatible": false,
+      "turyn_arithmetic_gate": {
+        "q": 913,
+        "q_factorization": {
+          "11": 1,
+          "83": 1
+        },
+        "q_is_prime_power": false
+      }
+    },
+    {
+      "p": 463,
+      "m": 3,
+      "a": 3,
+      "b": 11,
+      "N": 154,
+      "n": 155,
+      "correlation_classes": 77,
+      "coordinate_sums": [
+        10,
+        11,
+        11,
+        11
+      ],
+      "admissible_head_counts": {
+        "minimum": 3,
+        "maximum": 143,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 75,
+      "conditional_extreme_head_free_bits_estimate": 74,
+      "ord_p_2": 231,
+      "ord_p_4": 231,
+      "frequency_extension_index": 77,
+      "half_frequency_orbit_count": 1,
+      "frequency_inverse_structure": "paired distinct H-orbits",
+      "odd_single_factor_size_compatible": true,
+      "turyn_arithmetic_gate": {
+        "q": 925,
+        "q_factorization": {
+          "5": 2,
+          "37": 1
+        },
+        "q_is_prime_power": false
+      }
+    },
+    {
+      "p": 6007,
+      "m": 39,
+      "a": -1,
+      "b": 3,
+      "N": 154,
+      "n": 155,
+      "correlation_classes": 77,
+      "coordinate_sums": [
+        -38,
+        39,
+        39,
+        39
+      ],
+      "admissible_head_counts": {
+        "minimum": 1,
+        "maximum": 151,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 75,
+      "conditional_extreme_head_free_bits_estimate": 75,
+      "ord_p_2": 1001,
+      "ord_p_4": 1001,
+      "frequency_extension_index": 77,
+      "half_frequency_orbit_count": 1,
+      "frequency_inverse_structure": "paired distinct H-orbits",
+      "odd_single_factor_size_compatible": true,
+      "turyn_arithmetic_gate": {
+        "q": 12013,
+        "q_factorization": {
+          "41": 1,
+          "293": 1
+        },
+        "q_is_prime_power": false
+      }
+    },
+    {
+      "p": 18253,
+      "m": 117,
+      "a": 0,
+      "b": 2,
+      "N": 156,
+      "n": 157,
+      "correlation_classes": 78,
+      "coordinate_sums": [
+        1,
+        78,
+        78,
+        78
+      ],
+      "admissible_head_counts": {
+        "minimum": 0,
+        "maximum": 154,
+        "step": 2
+      },
+      "headless_allowed": true,
+      "conditional_generic_free_bits_estimate": 76,
+      "conditional_extreme_head_free_bits_estimate": null,
+      "ord_p_2": 6084,
+      "ord_p_4": 3042,
+      "frequency_extension_index": 26,
+      "half_frequency_orbit_count": 3,
+      "frequency_inverse_structure": "self-inverse H-orbits",
+      "odd_single_factor_size_compatible": false,
+      "turyn_arithmetic_gate": {
+        "q": 36505,
+        "q_factorization": {
+          "5": 1,
+          "7": 2,
+          "149": 1
+        },
+        "q_is_prime_power": false
+      }
+    },
+    {
+      "p": 1423,
+      "m": 9,
+      "a": 1,
+      "b": 7,
+      "N": 158,
+      "n": 159,
+      "correlation_classes": 79,
+      "coordinate_sums": [
+        10,
+        21,
+        21,
+        21
+      ],
+      "admissible_head_counts": {
+        "minimum": 1,
+        "maximum": 151,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 77,
+      "conditional_extreme_head_free_bits_estimate": 77,
+      "ord_p_2": 237,
+      "ord_p_4": 237,
+      "frequency_extension_index": 79,
+      "half_frequency_orbit_count": 1,
+      "frequency_inverse_structure": "paired distinct H-orbits",
+      "odd_single_factor_size_compatible": true,
+      "turyn_arithmetic_gate": {
+        "q": 2845,
+        "q_factorization": {
+          "5": 1,
+          "569": 1
+        },
+        "q_is_prime_power": false
+      }
+    },
+    {
+      "p": 6163,
+      "m": 39,
+      "a": 1,
+      "b": 3,
+      "N": 158,
+      "n": 159,
+      "correlation_classes": 79,
+      "coordinate_sums": [
+        40,
+        39,
+        39,
+        39
+      ],
+      "admissible_head_counts": {
+        "minimum": 1,
+        "maximum": 155,
+        "step": 2
+      },
+      "headless_allowed": false,
+      "conditional_generic_free_bits_estimate": 77,
+      "conditional_extreme_head_free_bits_estimate": 77,
+      "ord_p_2": 2054,
+      "ord_p_4": 1027,
+      "frequency_extension_index": 79,
+      "half_frequency_orbit_count": 1,
+      "frequency_inverse_structure": "paired distinct H-orbits",
+      "odd_single_factor_size_compatible": true,
+      "turyn_arithmetic_gate": {
+        "q": 12325,
+        "q_factorization": {
+          "5": 2,
+          "17": 1,
+          "29": 1
+        },
+        "q_is_prime_power": false
+      }
+    }
+  ],
+  "runtime_seconds": {
+    "parameter_first": 0.0002977909753099084,
+    "prime_first": 0.0258254170184955,
+    "total": 0.02932037494610995
+  }
+}
