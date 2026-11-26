@@ -138,7 +138,7 @@ and integer equations have a solution. The DC condition must also pass:
 
 | p | m, mu | Row sums | Nonorigin orbits | Correlation classes | Parity factors | Role |
 |---:|---|---|---:|---:|---|---|
-| 223 | 3,183 | -14;3,3,3 | 74 | 37 | SL(2,2^37) | H2676 and H11596 remain explicitly unresolved; existing small sign engine does not directly fit 75 orbit signs |
+| 223 | 3,183 | -14;3,3,3 | 74 | 37 | SL(2,2^37) | H2676 and H11596 remain explicitly unresolved; the active search uses arbitrary-size orbit masks |
 | 271 | 15,90 | -14;5,5,5 | 18 | 9 | SL(2,2^9) | Independent repeat completed; H3252 already has Paley's construction with prime 3251 |
 | 631 | 21,458 | 22;7,7,7 | 30 | 15 | SL(2,2^15) | Completed H7572 witness |
 | 919 | 27,207 | -26;9,9,9 | 34 | 17 | SL(2,2^17) | Targets H25732/H40436 with Williamson widths 7/11; H11028 is already Paley with prime 11027 |
@@ -165,8 +165,13 @@ verifies the exact coordinate-parity map, including all expanded shifts.
 Its generic normalized affine sign-lift estimate is 23 free bits; each
 sampled axis word needs exact elimination, counts, mod-8 and integer tests.
 No completed T1951 or endpoint is claimed.
-The charts `p3571,m51` and `p4219,m57` are queued, with parity maps not
-yet verified.
+The charts `p3571,m51` and `p4219,m57` now have verified
+[degree-35](../certificates/scalar-lift/hadamard-frame-p3571.json) and
+[degree-37](../certificates/scalar-lift/hadamard-frame-p4219.json) parity
+maps. All coefficient probes pass at every expanded nonzero shift:
+35,239,470 and 46,511,886 comparisons, respectively. Four sign preparations
+per chart leave 33 and 35 free bits. No signed input has been found; these
+larger charts are lower priorities than the smaller validated searches.
 
 H14292, previously a p397/source-9 target, is **known**. Paley's symmetric
 conference matrix of order 198 gives symmetric Williamson-type matrices

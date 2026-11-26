@@ -273,9 +273,10 @@ sign-lift estimate of 23 free bits; each axis word requires exact elimination.
 Its lowest prospective output is H23412; no sign witness
 or endpoint has been completed. The
 [expanded multiplier scan](../certificates/scalar-lift/multiplier-target-scan-20261126.json)
-also queues `p3571,m51` and `p4219,m57` as arithmetic candidates, with no
-verified parity maps yet. The [target scan](HADAMARD_FRAME_TARGET_SCAN.md)
-separates these stages explicitly.
+also includes `p3571,m51` and `p4219,m57`. Their parity maps now pass every
+coefficient and expanded-shift check, but neither has a signed T-witness.
+The [target scan](HADAMARD_FRAME_TARGET_SCAN.md) gives the verification
+counts and measured sign dimensions separately from completed designs.
 
 For targets with explicit current unresolved records, the stronger literature
 position is still a length-223 frame: H2676 is listed in the

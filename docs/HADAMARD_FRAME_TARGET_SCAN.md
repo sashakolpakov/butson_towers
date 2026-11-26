@@ -51,6 +51,42 @@ Equality is realized arithmetically by `p1951,m39,h=-1,k=1`, with row sums
 this particular family. This bound does not concern other twists, groups,
 or unrestricted Hadamard matrices.
 
+## Searching at the scale of the successful case
+
+The completed p631 search used 30 nonzero orbits and 13 free sign bits
+in each normalized sign system. Its recorded winning run took 2347.74
+seconds. The p271 and p547 controls took 0.037877 and 25.2677 seconds of
+native search; these timings exclude subsequent endpoint verification.
+The [run record](HADAMARD_FRAME_SEARCH.md) gives the seeds and counters.
+A successful run time also depends on how frequently the sampled coordinate
+patterns admit exact signs, which varies between charts.
+
+The arithmetic scanner exhausts this particular three-cycle action at
+N<=30: the prime bound is 721 and its two independent enumerations agree
+on exactly 16 charts, one each at
+
+```
+7, 13, 19, 31, 37, 43, 61, 67, 73, 79, 109, 127, 271, 331, 547, 631.
+```
+
+For every listed prime other than 631, Williamson-type matrices of that
+prime order are already known. Turyn's family covers
+7,13,19,31,37,61,79,271,331,547. The remaining five are covered by
+[Kharaghani–Mohammadian–Tayfeh-Rezaie–Zaitsev, Definition 1.1 and §2.3](https://arxiv.org/html/2605.08661#S2.SS3):
+near-Williamson matrices give Williamson-type matrices after reversing the
+columns of the first matrix. Classical T-sequences exist at each of our
+27 retained odd widths, all at most 63, by the base-sequence construction
+in [Đoković, (2.3) and §3](https://arxiv.org/html/0912.5091#S3).
+Cooper–Wallis with these two ingredients therefore already supplies every
+corresponding order 4*p*w. This comparison concerns existence at the
+output orders; it does not classify the T-inputs or Hadamard equivalence
+classes.
+
+Consequently finding another new order with as few orbit variables as 631
+requires broadening this coordinate action, the underlying group, or the
+source inputs. A larger multiplier within the same action can still leave
+more independent orbits and a larger sign system.
+
 ## Knownness gates and remaining research targets
 
 Turyn's theorem supplies Williamson matrices of order `p` when `2p-1` is
@@ -92,19 +128,70 @@ normalized affine sign-lift estimate is 23 free bits; each sampled axis
 word still needs exact elimination, counts, mod-8 and integer tests.
 This supplies a search route, not a completed T-matrix or endpoint.
 
-The larger charts `p3571,m51` (70 nonorigin orbits) and `p4219,m57`
-(74 nonorigin orbits) are queued arithmetic candidates. Their parity maps
-have not yet been verified. The
+The larger charts now have verified parity maps:
+
+| Chart | Coordinate sums | Coefficient probes | Expanded parity comparisons | Free sign bits in four checked patterns |
+|---|---|---:|---:|---:|
+| [p3571, m51, mu292](../certificates/scalar-lift/hadamard-frame-p3571.json) | 52,17,17,17 | 9,871 | 35,239,470 | 33 |
+| [p4219, m57, mu24](../certificates/scalar-lift/hadamard-frame-p4219.json) | -56,19,19,19 | 11,027 | 46,511,886 | 35 |
+
+Each expanded comparison uses an actual length-p coordinate assignment
+and one nonzero cyclic shift. Every constant, linear and quadratic probe
+was checked at every nonzero shift. Both binary maps have full rank and
+both field moduli are irreducible. These certify the parity reductions;
+neither chart has a signed T-input. The modern arbitrary-size sign masks
+are required: these charts exceed the legacy engine's 63-orbit limit.
+Their measured sign dimensions make them substantially more expensive
+than the completed p631 search, despite the larger multipliers. The
 [higher-order audit](HADAMARD_HIGHER_ORDER_RECORDS.md) records the positive
 known-order exclusions separately from these incomplete searches.
 
 The explicitly unresolved small-source targets at p223 and p283 need
-74 and 94 nonorigin orbits in this twist, respectively. They exceed the
-present single-word sign representation and practical finite sign filter.
-Even multiplier orders acting trivially on colors at inversion have a
-modulo-two obstruction; a transposition at inversion forces the special
-DC form `p=1+2s^2`. In particular, using order6 to shrink the p223 chart
-does not evade that obstruction.
+74 and 94 nonorigin orbits in this twist, respectively. They require the
+modern arbitrary-size orbit masks and substantially larger sign systems
+than the successful p631 run.
+Even-order multiplier subgroups with signed-permutation coordinate actions
+are excluded at every prime length p>3. Pairing a nonzero correlation
+under x -> -x-s first forces exactly two coordinate sequences away from
+zero, exchanged by inversion. Their circulant matrix would have weight
+(p-1)/2=s^2 and zero diagonal. A prime divisor of s is self-conjugate
+modulo p, contradicting that circulant Gram identity. The
+[complete proof](EVEN_MULTIPLIER_OBSTRUCTION.md) includes the genuine
+p=3 exception. In particular, order 6 cannot shrink the p223 chart.
+
+For odd multiplier order, a signed permutation fixing e0 acts on the
+remaining three coordinates. Their signed-permutation group has order 48,
+so its odd cyclic subgroups have order 1 or 3. An order-three action becomes
+the ordinary three-cycle after changing coordinate signs. Thus identity
+and three-cycle coordinate actions exhaust this particular symmetry model
+at prime lengths greater than 3; composite lengths and more general
+coordinate actions remain outside the obstruction.
+
+## A different multiplier action at p463
+
+The identity coordinate action requires b(mu*x)=b(x): each of the four
+coordinate sequences is constant, including its sign, on multiplication
+orbits. This allows odd multiplier orders that are not divisible by three.
+Normalize b(0)=e0 and let a_i be the signed number of nonzero orbits
+assigned to coordinate i. The expanded row sums and their necessary norm
+equation are
+
+\[
+(1+ma_0,ma_1,ma_2,ma_3),\qquad
+N=2a_0+m\sum_{i=0}^3 a_i^2,\qquad N=(p-1)/m.
+\]
+
+For p463, multiplication by mu158 has order 11. The choice
+(a0,a1,a2,a3)=(-1,1,1,1) gives 42 nonzero orbits and row sums
+(-10,11,11,11), whose squared norm is 463. A completed T463 would give
+**H9260=4*463*5** using the retained Williamson input of width five.
+Order 9260 is explicitly unresolved in the
+[author-maintained frontier](https://github.com/vatskishan03/Hadamard/blob/main/FRONTIER.md),
+checked 26 November 2026.
+
+This case needs its own orbit coefficients and four separate sign-count
+conditions. The three-cycle map and its two-count sign system do not apply.
+It remains a construction target awaiting a complete signed witness.
 
 ## Ingredient orders are a separate opportunity
 

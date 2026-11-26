@@ -409,13 +409,13 @@ integer correlation checks.
 * - 3571
   - 51
   - 71
-  - About 33
-  - Arithmetic candidate; map remains to be constructed
+  - 33 in checked patterns
+  - Verified map; no completed input
 * - 4219
   - 57
   - 75
-  - About 35
-  - Arithmetic candidate; map remains to be constructed
+  - 35 in checked patterns
+  - Verified map; no completed input
 ```
 
 For $p=1951$, the
@@ -426,6 +426,32 @@ expanded parity correlations, were checked. The requested sums are
 $(-38,13,13,13)$. A complete input would give the candidate real orders
 23412, 54628 and 101452 through the retained source orders 3, 7 and 13.
 Source order 9 would give 70236, already a Paley order.
+
+The larger maps at
+{repo-file}`3571 <certificates/scalar-lift/hadamard-frame-p3571.json>` and
+{repo-file}`4219 <certificates/scalar-lift/hadamard-frame-p4219.json>` also
+pass every quadratic coefficient probe at every expanded nonzero shift:
+35,239,470 and 46,511,886 parity comparisons. Four prepared patterns per
+chart leave 33 and 35 free sign bits. Their 71 and 75 orbit-sign variables
+require the modern arbitrary-size masks. Larger multiplier orders have
+therefore not made these two searches cheaper than 631.
+
+There is also a finite limitation on finding another equally small chart
+with this coordinate action. The scanner finds exactly 16 charts with at
+most 30 nonzero orbits, the number used at 631. Every other prime in that
+list already has Williamson-type matrices. Combining those with classical
+T-inputs at our 27 small source widths recovers known Hadamard orders.
+The {repo-file}`target-selection note <docs/HADAMARD_FRAME_TARGET_SCAN.md>`
+gives the complete list and primary references. Broader coordinate actions
+can supply different small searches without altering the subsequent scalar
+restriction construction.
+
+Even multiplier orders cannot provide a shortcut in this prime-length
+signed-permutation model. The
+{repo-file}`inversion obstruction <docs/EVEN_MULTIPLIER_OBSTRUCTION.md>`
+proves this for every prime greater than three, including actions that
+exchange two coordinates at inversion. The identity action remains a
+separate possibility from the three-cycle action used at 631.
 
 The compact $p=397$ chart is an engine control. Its formerly listed target
 14292 is known: Paley gives a symmetric conference matrix of order 198;
