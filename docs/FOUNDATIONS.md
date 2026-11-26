@@ -51,8 +51,9 @@ construction theorem, used here with exact source and entry certificates.
 
 ## Restriction preserves the norm with its metric
 
-Let a complete source over `L` satisfy `H H*=w I_n`, and let `L/K` have
-degree `d` and be stable under complex conjugation. For a basis `beta`,
+Let a complete source over `L` satisfy `H H*=w I_n`, with `w` a positive
+real element of `K`, and let `L/K` have degree `d` and be stable under
+complex conjugation. For a basis `beta`,
 the multiplication action and trace metric satisfy
 
 \[

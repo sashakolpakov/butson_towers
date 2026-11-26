@@ -28,8 +28,8 @@ The frontend versions tested for this manual are pinned in
 is supplied by the package's base dependencies. Add `.[search]` to execute
 CP-SAT examples, and install the `cryptominisat5` executable for native SAT.
 
-For the printable manual, install XeLaTeX and `latexmk` with a suitable TeX
-installation, then run:
+For the printable manual, install XeLaTeX, `latexmk`, the Latin Modern fonts
+and DejaVu Sans Mono. Then run:
 
 ```sh
 ./scripts/build_docs.sh pdf
@@ -106,7 +106,3 @@ archives.
 | `python docs/examples/verify_small_endpoint.py` | Literal T7 input, polynomial design, width-three source and complete dense H84 Gram |
 | `./scripts/run_tests.sh` | The repository's executable arithmetic/construction/search regression suite |
 | `./scripts/check_formal.sh` | Lean build and the selected axiom audits, when their pinned dependencies are present |
-
-The documentation build is not itself a new mathematical existence proof.
-Its job is to make the proof obligations, executable objects and independent
-replay paths easy to inspect together.

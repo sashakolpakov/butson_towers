@@ -8,8 +8,9 @@ endpoint have the desired root, sign or zero entries is the extra problem.
 
 ## The preserved identity
 
-Suppose a source of order `n` over `L` satisfies `H H* = w I` and `L/K`
-is stable under complex conjugation. For a basis `beta` of degree `d`, let
+Suppose a source of order `n` over `L` satisfies `H H* = w I`, where
+`w` is a positive real element of `K`, and `L/K` is stable under complex
+conjugation. For a basis `beta` of degree `d`, let
 `rho(z)` be multiplication by `z`, and retain the trace metric
 
 \[
