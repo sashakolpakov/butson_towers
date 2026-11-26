@@ -1,0 +1,7 @@
+/* Keep equations and source readable on both wide and narrow screens. */
+.content { max-width: 56rem; }
+article { line-height: 1.65; }
+.math-wrapper { overflow-x: auto; }
+.highlight pre { line-height: 1.45; }
+table.docutils { font-variant-numeric: tabular-nums; }
+@media print { .sidebar-drawer, .toc-drawer { display: none; } }

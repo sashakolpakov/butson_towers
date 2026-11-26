@@ -15,6 +15,7 @@ dist/
 .native-env/
 .micromamba/
 manuscript/build/
+docs/_build/
 runs/
 .DS_Store
 *.local
