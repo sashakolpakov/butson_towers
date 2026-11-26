@@ -16,6 +16,7 @@ dependencies = ["numpy>=1.26", "sympy>=1.12"]
 search = ["ortools>=9.10"]
 native = ["python-flint>=0.7"]
 dev = ["pytest>=8", "setuptools>=77"]
+docs = ["sphinx>=8.2", "myst-parser>=4", "furo>=2024.8"]
 
 [project.urls]
 "Starting reference" = "https://arxiv.org/abs/2610.28394"

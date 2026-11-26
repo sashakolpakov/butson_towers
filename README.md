@@ -9,6 +9,9 @@ Lean proofs.** This repository accompanies Alexander Kolpakov's manuscript
 [Source and reconstruction package](release/butson_towers_v3/source.zip) ·
 [Lean proofs](formal/ButsonTowers/Endpoints.lean)
 
+[Sphinx manual](docs/sphinx/index.md) ·
+[Build the HTML and PDF](docs/sphinx/contributing.md)
+
 The paper was submitted to HexagonMath on **25 November 2026** and is
 **under review**. The [submission record](release/butson_towers_v3/submission-status.json)
 binds the submitted package to its file hashes.
@@ -69,10 +72,11 @@ uses classical sixth-root source tripling. The
 references and attribution. The immediate starting reference was
 [Egan–Ó Catháin, *On complete morphisms of Butson Hadamard matrices*](https://doi.org/10.1002/jcd.70047).
 
-The [construction walkthrough](docs/CONSTRUCTION_WALKTHROUGH.md) follows the
+The [Sphinx manual](docs/sphinx/index.md) follows the
 whole argument: exact T-matrix input, disjoint orthogonal design, scalar
 action and trace metric, final sign entries, and the resulting orders and
-families. The [lower-order search](docs/LOW_ORDER_SEARCH.md) includes exact
+families. Proofs appear beside the code, data contracts and replay checks
+that implement them. The [lower-order search](docs/LOW_ORDER_SEARCH.md) includes exact
 SAT and CP-SAT sign solvers for lengths 167 and 179.
 
 Every finite input and recurrence needed for the results is printed in the
@@ -117,6 +121,26 @@ python -m pip install -e '.[dev,native,search]'
 
 The [recorded audit](release/butson_towers_v3/audit.json) reports 326 passing
 tests and 4 passing subtests.
+
+## Read and build the documentation
+
+The manual includes a complete small H84 example, the scalar-restriction
+and endpoint proofs, the finite-field/sign solvers, implicit families,
+checkpointed campaigns, Lean verification and a source-linked API reference.
+Its chapters follow the construction rather than separating mathematical
+and implementation material.
+
+```sh
+python -m pip install -e '.[docs,dev]' -c docs/requirements.txt
+./scripts/build_docs.sh html
+./scripts/build_docs.sh doctest
+```
+
+Open `docs/_build/html/index.html`. For the printable manual, install
+XeLaTeX and `latexmk`, then run `./scripts/build_docs.sh pdf`; the output is
+`docs/_build/latex/butson-towers-manual.pdf`. The build treats unresolved
+references and documentation warnings as errors. Generated files and local
+research state are excluded from Git.
 
 ## Verify the Lean proofs
 

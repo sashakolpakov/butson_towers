@@ -1,0 +1,4 @@
+# Tested documentation frontend. Install with: pip install -e '.[docs]' -c docs/requirements.txt
+sphinx==8.2.3
+myst-parser==5.2.0
+furo==2025.12.19
