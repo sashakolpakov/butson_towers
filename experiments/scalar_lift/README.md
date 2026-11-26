@@ -11,6 +11,7 @@ matrix recipe. General weighted nodes are useful outputs in their own right.
 | New periodic T127, full T identities and known-order H1524 scalar control | [Standalone recipe and dated scope](../../artifacts/t-matrices-127/README.md) |
 | Active SL2 parity-axis generation, exact mod4/mod8 sign lifting, finite pool controls and completed endpoint verification | `hadamard_frame_search`; [method and replay](../../docs/HADAMARD_FRAME_SEARCH.md) |
 | Search for length-223 periodic T-matrices, targeting missing order 2676 first | `large_parity_map`, `quadratic_sign_lift`, `exact_t_campaign`; [target, exact checks and replay](../../docs/LOW_ORDER_SEARCH.md) |
+| Exact unrestricted sign searches at lengths 167 and 179 | `unrestricted_parity_map`, `unrestricted_t_sign_model`, `unrestricted_t_sign_sat`, `unrestricted_t_sign_cp`, `unrestricted_t_campaign`; [solver scope and replay](../../docs/LOW_ORDER_SEARCH.md#unrestricted-sign-solvers-for-lengths-167-and-179) |
 | New real orders 17668/22716/32812 from the verified width-2524 frame and further admitted Butson sources | `reuse_hadamard_7572_frame` |
 | Apply all four admitted source orders to a newly completed prime frame | `reuse_hadamard_frame` |
 | New real orders 98436/295308 and known order 885924 from complete unreal-source triplings | `tripled_unreal_scalar_endpoints`; [proof and scope](../../docs/TRIPLED_UNREAL_SCALAR_ENDPOINTS.md) |

@@ -69,6 +69,12 @@ uses classical sixth-root source tripling. The
 references and attribution. The immediate starting reference was
 [Egan–Ó Catháin, *On complete morphisms of Butson Hadamard matrices*](https://doi.org/10.1002/jcd.70047).
 
+The [construction walkthrough](docs/CONSTRUCTION_WALKTHROUGH.md) follows the
+whole argument: exact T-matrix input, disjoint orthogonal design, scalar
+action and trace metric, final sign entries, and the resulting orders and
+families. The [lower-order search](docs/LOW_ORDER_SEARCH.md) includes exact
+SAT and CP-SAT sign solvers for lengths 167 and 179.
+
 Every finite input and recurrence needed for the results is printed in the
 **22-page paper**. Large matrices have exact entry recipes and algebraic
 proofs, so verification does not require storing their dense expansions.

@@ -8,6 +8,8 @@ The construction is the manuscript's restriction of scalars with a certified
 flat endpoint. The exact search described here supplies a new compatible
 frame, using the same determinant-coordinate and sign-lifting method that
 found T631 and hence H7572.
+The [end-to-end walkthrough](CONSTRUCTION_WALKTHROUGH.md) explains both the
+finite search and the subsequent scalar-restriction proof.
 
 | Missing design | Direct target orders |
 |---|---|
@@ -168,3 +170,76 @@ PYTHONPATH=src:. .venv/bin/python -m pytest -q \
 A timeout applies only to its run, and a fully checked coordinate pattern
 applies only to that pattern and its stated gauges. Neither excludes a
 T-design or a Hadamard matrix at the target order.
+
+## Unrestricted sign solvers for lengths 167 and 179
+
+The [unrestricted parity module](../experiments/scalar_lift/unrestricted_parity_map.py)
+uses the same determinant parametrization without a multiplier symmetry.
+The [167 certificate](../certificates/scalar-lift/unrestricted-parity-p167.json)
+has field degree 83, with 55,279 coefficients and 9,176,314 expanded parity
+comparisons checked. The [179 certificate](../certificates/scalar-lift/unrestricted-parity-p179.json)
+has degree 89, with 63,547 coefficients and 11,311,366 expanded comparisons.
+
+Fix the value at residue zero to $+e_0$. Up to coordinate signs,
+permutations and cyclic translation, the complete row-sum types are:
+
+| Length | Row-sum types |
+|---:|---|
+| 167 | (9,6,5,5), (9,7,6,1), (9,9,2,1), (10,7,3,3), (11,6,3,1) |
+| 179 | (9,7,7,0), (9,8,5,3), (9,9,4,1), (11,7,3,0), (12,5,3,1), (13,3,1,0) |
+
+The campaign computes these lists by complete integer four-square
+enumeration. A positive first coordinate guarantees a positive entry in
+that coordinate, which can be translated to residue zero.
+
+For each sampled coordinate pattern, the
+[shared sign model](../experiments/scalar_lift/unrestricted_t_sign_model.py)
+eliminates the exact modulo-four equations and imposes all four negative-sign
+counts. Typical affine dimensions are 80 and 86. The two backends are:
+
+- [SAT](../experiments/scalar_lift/unrestricted_t_sign_sat.py): native XORs,
+  modulo-eight quadratic constraints, and exact binary-adder encodings of
+  all four counts and every integer correlation; requires `cryptominisat5`.
+- [CP-SAT](../experiments/scalar_lift/unrestricted_t_sign_cp.py): the same
+  constraints in OR-Tools, using one solver worker and arbitrary-size
+  binary affine masks.
+
+Both reconstruct every returned sign word independently and check all $p$
+integer shifts. `UNSAT` excludes only the given coordinate pattern, row
+sums and recorded gauges. `UNKNOWN` is an unfinished search. Solver
+implementation and successful model construction alone supply no endpoint.
+
+Run the full exact pipeline with source snapshots and a SQLite ledger:
+
+```sh
+PYTHONPATH=src:. .venv/bin/python -m experiments.scalar_lift.unrestricted_t_campaign \
+  --config certificates/scalar-lift/unrestricted-parity-p167.json \
+  --output artifacts/scalar-frontier/unrestricted-p167 \
+  --seconds 259200 --pattern-seconds 900 --backends sat,cp \
+  --seed 20261126167 --nice 10 --detach
+PYTHONPATH=src:. .venv/bin/python -m experiments.scalar_lift.unrestricted_t_campaign \
+  --config certificates/scalar-lift/unrestricted-parity-p179.json \
+  --output artifacts/scalar-frontier/unrestricted-p179 \
+  --seconds 259200 --pattern-seconds 900 --backends cp,sat \
+  --seed 20261126179 --nice 10 --detach
+```
+
+Each worker cycles through every row-sum type and alternates the backends
+between complete passes. The default gives each fixed-pattern solve up to
+15 minutes within a three-day campaign. A heartbeat updates `status.json`
+while a solver is running. The ledger distinguishes exact exclusions from
+timeouts. Interrupted work can be resumed with its frozen launch command;
+a committed positive witness is recovered before any further search.
+
+An exact witness triggers the independent orthogonal-design/source checks
+and endpoint recipes already used by the length-223 campaign. The finite
+controls include the complete T7 census (180 sign solutions), independent
+fixed-pattern T19 enumeration, planted T127/T631 recovery, and real 80/86-bit
+model-building checks. Replay them with:
+
+```sh
+PYTHONPATH=src:. .venv/bin/python -m pytest -q \
+  tests/test_unrestricted_parity_map.py tests/test_unrestricted_t_sign_model.py \
+  tests/test_unrestricted_t_sign_sat.py tests/test_unrestricted_t_sign_cp.py \
+  tests/test_unrestricted_t_campaign.py
+```
