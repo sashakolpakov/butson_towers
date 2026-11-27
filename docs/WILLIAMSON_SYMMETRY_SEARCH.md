@@ -1,4 +1,18 @@
-# Symmetry-first Williamson sources for gaps below 10,000
+# Symmetry-first Williamson sources
+
+All ten recent Williamson runs are paused at the user's request for strategy
+review. The direct searches took too long without a verified new source;
+this is neither a nonexistence result nor a reason to exclude these classes
+from a later retry. Complete frozen inputs, checkpoints, random-generator
+states and logs are preserved in a verified private archive under
+`.local/search-archives`. The earlier eleven one-hot T-input workers also
+remain paused. The two unstarted choices are withdrawn from the queue.
+No search starts automatically.
+
+The [next selection strategy](https://sashakolpakov.github.io/butson_towers/echelons.html) uses three order
+tiers, below 10000, 10000–50000 and 50000–100000, and chooses reusable
+ingredients and compatible symmetries before allocating computation.
+The proof and the dated below-10000 selection remain available below.
 
 Start with the dated list of 81 unresolved orders, factor each target as
 $N=4pt$, and retain a prime $p$ only when a complete T-input of length $t$
@@ -64,13 +78,13 @@ and exact joint orbit-count/product tests. They remain construction targets.
 
 | Target orders | $p$ | $m$ | $r$ | Coordinate action | Status |
 |---|---:|---:|---:|---|---|
-| 9260 | 463 | 22 | 21 | Identity | Active |
-| 2676, 4460 | 223 | 6 | 37 | Identity or three-cycle | Active |
-| 2956 | 739 | 18 | 41 | Three-cycle | Active |
-| 7924 | 283 | 6 | 47 | Identity or three-cycle | Active |
-| 5892 | 491 | 10 | 49 | Identity | Active |
-| 3004 | 751 | 10 | 75 | Identity | Queued |
-| 5692 | 1423 | 18 | 79 | Three-cycle | Queued |
+| 9260 | 463 | 22 | 21 | Identity | Paused for review |
+| 2676, 4460 | 223 | 6 | 37 | Identity or three-cycle | Paused for review |
+| 2956 | 739 | 18 | 41 | Three-cycle | Paused for review |
+| 7924 | 283 | 6 | 47 | Identity or three-cycle | Paused for review |
+| 5892 | 491 | 10 | 49 | Identity | Paused for review |
+| 3004 | 751 | 10 | 75 | Identity | Unstarted; selection under review |
+| 5692 | 1423 | 18 | 79 | Three-cycle | Unstarted; selection under review |
 
 ## From a completed source to the endpoint
 
@@ -97,10 +111,10 @@ matrices or a new Hadamard-order claim.
 
 ## Code and exact replay
 
-The earlier eleven one-hot T-input workers are paused. The selected dense
-Williamson charts use a CP-SAT model and an independent native axis sampler
-and annealer. Both reconstruct the literal source and verify every integer
-correlation before accepting a witness.
+The retained dense Williamson engines provide a CP-SAT model and an
+independent native axis sampler and annealer. Both reconstruct the literal
+source and verify every integer correlation before accepting a witness.
+They remain usable for a later retry.
 
 The core geometry, forced-sign formula and complete source verifier are in
 [`williamson_symmetry`](../experiments/scalar_lift/williamson_symmetry.py).
@@ -127,7 +141,7 @@ new source still needs its endpoint certificate and literal Lean bridge
 before the corresponding new existence theorem is reported as formalized.
 The manuscript's completed 34-order and nine-family scope is unchanged.
 
-Run bounded examples with fresh output paths:
+For a later retry, the bounded example commands are:
 
 ```sh
 python -m experiments.scalar_lift.williamson_axis_cp \

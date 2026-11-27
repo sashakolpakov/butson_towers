@@ -1,0 +1,4573 @@
+{
+  "schema": "symmetry-first-T-multiplier-echelon-selection-v1",
+  "scope": "Exact necessary integer norm/support screens; no matrix search or new construction.",
+  "max_nonzero_orbits": 74,
+  "max_output_order_inclusive": 100000,
+  "prime_bounds": {
+    "identity": 2813,
+    "C3": 4219
+  },
+  "identity_prime_bound_proof": [
+    "p=1+mN=(1+mh)^2+m^2(a^2+b^2+c^2), so N=2h+mS.",
+    "Odd prime p forces S>=2. N+2-2m=2h+2+m(S-2)>=0.",
+    "For h>=-1 this is immediate; for h<=-2 use S>=h^2 and m>=1, giving h(h+2)>=0.",
+    "Therefore m<=(N+2)/2 and p<=1+N(N+2)/2."
+  ],
+  "independent_parameter_and_prime_screens_agree": true,
+  "all_arithmetic_chart_count": 128,
+  "all_arithmetic_charts_sha256": "be5393e988ff499d2668de78886c1f11b8c75659c4fe0d4b5e9d6ea600232751",
+  "strongest_action_chart_count_before_endpoint_gates": 107,
+  "source_widths": [
+    1,
+    3,
+    5,
+    7,
+    9,
+    11,
+    13,
+    15,
+    17,
+    19,
+    21,
+    23,
+    25,
+    27,
+    29,
+    31,
+    33,
+    35,
+    37,
+    39,
+    41,
+    43,
+    45,
+    47,
+    49,
+    51,
+    53,
+    55,
+    57,
+    59,
+    61,
+    63,
+    65,
+    67,
+    69,
+    73,
+    79,
+    91,
+    93,
+    95,
+    97,
+    103,
+    109,
+    127,
+    133,
+    181
+  ],
+  "additional_finite_Butson_widths": [
+    117,
+    351
+  ],
+  "power_two_daughters_included": true,
+  "input_sha256": {
+    "experiments/scalar_lift/williamson_inputs.json": "242f554cf113c68ab882e147c3b2702b7bb62e68b66ad36b16c92b6c194f8560",
+    "experiments/scalar_lift/near_williamson_inputs.json": "be3da66fbf0517cde1e326e6a60c26acaeb03c0a1948b74bff78bcadad00957f",
+    "certificates/scalar-lift/hadamard-7572-frame-reuse.json": "1e2dfc6aa7f5c6b8d278e43904549176d806fe1efb2a39b250175024a2300370",
+    "certificates/scalar-lift/tripled-unreal-scalar-endpoints.json": "9d378b69f2c2479ac6d02e088c50cb279957a7ab81cef738253d19cbd27dcb8a",
+    "certificates/scalar-lift/identity-parity-p223.json": "94edc7469e782fec2d7db896516bda9061489d834e7b2f6bf3d4907c84697fcb",
+    "certificates/scalar-lift/identity-parity-p491.json": "b33e84bd14c9823ecb646b605be26f1acc0009f2e8b1f836e84dcdc31a304606",
+    "certificates/scalar-lift/hadamard-frame-p919.json": "b5c5e44c55331f1194194a23a00350dc716bc9cde4465b3403b257a8fb5f1fb6",
+    "certificates/scalar-lift/hadamard-frame-p1453.json": "a179c1b049742bb76fbdc7306d82fa3ff533300b4e5d87cb32d79d7c1d072d69",
+    "certificates/scalar-lift/hadamard-frame-p1951.json": "83eacac974771d0b2e44e615e3778413867aabe1367b71327ad244a8790bb175",
+    "certificates/scalar-lift/hadamard-frame-p3571.json": "44aa73c22360d111eef7d82055df7a8e9039bc13d70526dfa5cad1cebda134f8",
+    "certificates/scalar-lift/hadamard-frame-p4219.json": "53c12840ed2a5afe2fb5db5af90f7586af967d544e76711fc56ab5c23ef70b7e",
+    "experiments/scalar_lift/williamson_symmetry.py": "9414bcf761e72d2bd2d06e431f17df5d7f0b822f797168dad1d6636f9cab1b8b"
+  },
+  "frontier_pool_sha256": "c7f13e3ba20856b6e5967b5e737f51c43e23a06fbae8703a27b74af4be62200f",
+  "positive_product_exclusion_count": 2028,
+  "positive_product_exclusions_sha256": "e7af0a570ae6208e13d872cc1c42bd053538e87ff2e8888dedb2e78234f909ba",
+  "positive_knownness_provenance": {
+    "known-T-times-Williamson-type": {
+      "product": {
+        "url": "https://doi.org/10.1017/S0004972700045019",
+        "location": "Cooper-Wallis Theorem3 and Corollary4, p.274"
+      },
+      "literal_Williamson_widths": [
+        "experiments/scalar_lift/williamson_inputs.json",
+        "experiments/scalar_lift/near_williamson_inputs.json"
+      ],
+      "additional_Williamson_widths": {
+        "193": {
+          "url": "https://documents.uow.edu.au/~jennie/WEBPDF/139_1990.pdf",
+          "location": "Corollary29(ii), explicit list, printed p.121"
+        },
+        "241": {
+          "url": "https://documents.uow.edu.au/~jennie/WEBPDF/139_1990.pdf",
+          "location": "Corollary29(ii), explicit list, printed p.121"
+        },
+        "433": {
+          "url": "https://documents.uow.edu.au/~jennie/WEBPDF/139_1990.pdf",
+          "location": "Corollary29(ii), explicit list, printed p.121"
+        },
+        "397": {
+          "url": "https://documents.uow.edu.au/~jennie/WEBPDF/139_1990.pdf#page=24",
+          "location": "Corollary29(ii), p.120; conference order198"
+        },
+        "761": {
+          "url": "https://documents.uow.edu.au/~jennie/WEBPDF/139_1990.pdf",
+          "location": "Corollary29(ii), explicit list, printed p.121"
+        },
+        "883": {
+          "url": "https://documents.uow.edu.au/~jennie/WEBPDF/139_1990.pdf",
+          "location": "Corollary31 and Remark32, explicit list, printed p.122"
+        }
+      }
+    },
+    "known_T_inputs": {
+      "odd_at_most100": {
+        "url": "https://arxiv.org/html/0912.5091#S3",
+        "location": "Base-sequence-to-T construction (2.3) and section3 existence range"
+      },
+      "Golay_and_base_sequence_families": {
+        "url": "https://arxiv.org/html/2610.27175v2#S4",
+        "location": "T-matrix constructions and Table3: Golay lengths, 2g+1, g+h, and TT(n)"
+      },
+      "published_special_lengths": {
+        "lengths": [
+          103,
+          109,
+          151,
+          163,
+          181,
+          197
+        ],
+        "url": "https://arxiv.org/html/2610.27175v2#S4.T3",
+        "location": "Table3"
+      },
+      "completed_exact_project_lengths": {
+        "lengths": [
+          127,
+          271,
+          547,
+          631
+        ],
+        "record": "certificates/scalar-lift/completed-order-inventory.json"
+      }
+    },
+    "known-T-times-Turyn-Williamson": {
+      "url": "https://arxiv.org/html/2610.27175v2#S2.SS1",
+      "location": "Turyn Williamson construction; q=2s-1 a prime power congruent1 modulo4"
+    },
+    "known-T-times-commuting-Miyamoto-blocks": {
+      "url": "https://github.com/vatskishan03/Hadamard/blob/main/hadamard/MIYAMOTO_BLOCKS.md",
+      "location": "Explicit commuting 16-block sources of sizes4*269,4*509,4*613,4*809 and T-input substitution",
+      "block_sizes": [
+        269,
+        509,
+        613,
+        809
+      ]
+    }
+  },
+  "positive_knownness_references": [
+    "https://arxiv.org/html/2610.27175v2#S4.T3",
+    "https://documents.uow.edu.au/~jennie/WEBPDF/139_1990.pdf",
+    "https://github.com/vatskishan03/Hadamard/blob/main/hadamard/MIYAMOTO_BLOCKS.md"
+  ],
+  "successful_control": {
+    "p": 631,
+    "m": 21,
+    "coordinate_action": "C3",
+    "nonzero_orbits": 30,
+    "unfiltered_axis_bits": 60,
+    "unsigned_parity_field_degree": 15,
+    "checked_fixed_axis_free_sign_bits": 13,
+    "scope": "Completed exact source, distinct from the necessary screens above."
+  },
+  "tiers": [
+    {
+      "name": "below10000",
+      "selected_order_count": 4,
+      "source_listed_selected_orders": [
+        2676,
+        4460,
+        5892,
+        9260
+      ],
+      "unassessed_selected_count": 0
+    },
+    {
+      "name": "10000through50000",
+      "selected_order_count": 118,
+      "source_listed_selected_orders": [
+        11596
+      ],
+      "unassessed_selected_count": 117
+    },
+    {
+      "name": "above50000through100000",
+      "selected_order_count": 142,
+      "source_listed_selected_orders": [],
+      "unassessed_selected_count": 142
+    }
+  ],
+  "strongest_surviving_charts": [
+    {
+      "p": 919,
+      "m": 27,
+      "coordinate_action": "C3",
+      "nonzero_orbits": 34,
+      "necessary_DC_rows": [
+        {
+          "row": [
+            -26,
+            9,
+            9,
+            9
+          ],
+          "head_sign_sum": -1,
+          "tail_sign_sum": 1
+        }
+      ],
+      "unfiltered_axis_bits": 68,
+      "unfiltered_axis_word_count": "295147905179352825856",
+      "unfiltered_axis_and_sign_bits": 102,
+      "frequency_arithmetic": {
+        "ord_p_2": 153,
+        "H_order": 459,
+        "extension_index": 17,
+        "half_frequency_orbits": 1,
+        "scope": "Factor-size arithmetic only; no parity-algebra validation."
+      },
+      "conditional_generic_fixed_axis_sign_bits_estimate": 15,
+      "sign_estimate_scope": "Conditional generic affine-rank estimate; actual rank depends on each axis word.",
+      "retained_outputs": [
+        {
+          "order": 25732,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 7,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 40436,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 11,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 51464,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 7,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 55140,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 15,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 62492,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 17,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 69844,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 19,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 77196,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 21,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 80872,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 11,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 84548,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 23,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        }
+      ],
+      "retained_parity_map": {
+        "path": "certificates/scalar-lift/hadamard-frame-p919.json",
+        "field_degree": 17,
+        "validation": {
+          "color_map_rank": 68,
+          "determinant_map_rank": 17,
+          "full_quadratic_coefficients_checked": 2347,
+          "exact_identity": "Cabs mod2=L(p*b1+q*b0+1), L invertible"
+        },
+        "scope": "Retained exact unsigned parity map; no signed T-input claimed."
+      }
+    },
+    {
+      "p": 281,
+      "m": 7,
+      "coordinate_action": "identity",
+      "nonzero_orbits": 40,
+      "necessary_DC_rows": [
+        {
+          "row": [
+            -6,
+            14,
+            7,
+            0
+          ],
+          "orbit_sign_sums": [
+            -1,
+            2,
+            1,
+            0
+          ]
+        }
+      ],
+      "unfiltered_axis_bits": 80,
+      "unfiltered_axis_word_count": "1208925819614629174706176",
+      "unfiltered_axis_and_sign_bits": 120,
+      "frequency_arithmetic": {
+        "ord_p_2": 70,
+        "H_order": 35,
+        "extension_index": 5,
+        "half_frequency_orbits": 4,
+        "scope": "Factor-size arithmetic only; no parity-algebra validation."
+      },
+      "conditional_generic_fixed_axis_sign_bits_estimate": 16,
+      "sign_estimate_scope": "Conditional generic affine-rank estimate; actual rank depends on each axis word.",
+      "retained_outputs": [
+        {
+          "order": 10116,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 9,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 12364,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 11,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 14612,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 13,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 19108,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 17,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 21356,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 19,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 24728,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 11,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 25852,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 23,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 29224,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 13,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 32596,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 29,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 37092,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 33,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 38216,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 17,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 41588,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 37,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 42712,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 19,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 43836,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 39,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 48332,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 43,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 51704,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 23,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 52828,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 47,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 55076,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 49,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 59572,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 53,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 65192,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 29,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 66316,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 59,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 68564,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 61,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 74184,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 33,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 77556,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 69,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 83176,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 37,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 88796,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 79,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 96664,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 43,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "p": 463,
+      "m": 11,
+      "coordinate_action": "identity",
+      "nonzero_orbits": 42,
+      "necessary_DC_rows": [
+        {
+          "row": [
+            -10,
+            11,
+            11,
+            11
+          ],
+          "orbit_sign_sums": [
+            -1,
+            1,
+            1,
+            1
+          ]
+        }
+      ],
+      "unfiltered_axis_bits": 84,
+      "unfiltered_axis_word_count": "19342813113834066795298816",
+      "unfiltered_axis_and_sign_bits": 126,
+      "frequency_arithmetic": {
+        "ord_p_2": 231,
+        "H_order": 231,
+        "extension_index": 21,
+        "half_frequency_orbits": 1,
+        "scope": "Factor-size arithmetic only; no parity-algebra validation."
+      },
+      "conditional_generic_fixed_axis_sign_bits_estimate": 17,
+      "sign_estimate_scope": "Conditional generic affine-rank estimate; actual rank depends on each axis word.",
+      "retained_outputs": [
+        {
+          "order": 9260,
+          "status": "current_explorer_gap",
+          "routes": [
+            {
+              "width": 5,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 18520,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 5,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 20372,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 11,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 31484,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 17,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 35188,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 19,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 40744,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 11,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 42596,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 23,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 46300,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 25,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 53708,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 29,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 57412,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 31,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 62968,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 17,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 70376,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 19,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 79636,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 43,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 85192,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 23,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 87044,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 47,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 92600,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 25,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 98156,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 53,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "p": 1013,
+      "m": 23,
+      "coordinate_action": "identity",
+      "nonzero_orbits": 44,
+      "necessary_DC_rows": [
+        {
+          "row": [
+            -22,
+            23,
+            0,
+            0
+          ],
+          "orbit_sign_sums": [
+            -1,
+            1,
+            0,
+            0
+          ]
+        }
+      ],
+      "unfiltered_axis_bits": 88,
+      "unfiltered_axis_word_count": "309485009821345068724781056",
+      "unfiltered_axis_and_sign_bits": 132,
+      "frequency_arithmetic": {
+        "ord_p_2": 92,
+        "H_order": 46,
+        "extension_index": 2,
+        "half_frequency_orbits": 11,
+        "scope": "Factor-size arithmetic only; no parity-algebra validation."
+      },
+      "conditional_generic_fixed_axis_sign_bits_estimate": 18,
+      "sign_estimate_scope": "Conditional generic affine-rank estimate; actual rank depends on each axis word.",
+      "retained_outputs": [
+        {
+          "order": 12156,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 3,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 20260,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 5,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 24312,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 3,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 28364,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 7,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 44572,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 11,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 52676,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 13,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 56728,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 7,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 68884,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 17,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 76988,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 19,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 89144,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 11,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 93196,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 23,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "p": 1453,
+      "m": 33,
+      "coordinate_action": "C3",
+      "nonzero_orbits": 44,
+      "necessary_DC_rows": [
+        {
+          "row": [
+            1,
+            22,
+            22,
+            22
+          ],
+          "head_sign_sum": 0,
+          "tail_sign_sum": 2
+        }
+      ],
+      "unfiltered_axis_bits": 88,
+      "unfiltered_axis_word_count": "309485009821345068724781056",
+      "unfiltered_axis_and_sign_bits": 132,
+      "frequency_arithmetic": {
+        "ord_p_2": 1452,
+        "H_order": 726,
+        "extension_index": 22,
+        "half_frequency_orbits": 1,
+        "scope": "Factor-size arithmetic only; no parity-algebra validation."
+      },
+      "conditional_generic_fixed_axis_sign_bits_estimate": 20,
+      "sign_estimate_scope": "Conditional generic affine-rank estimate; actual rank depends on each axis word.",
+      "retained_outputs": [
+        {
+          "order": 17436,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 3,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 63932,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 11,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 75556,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 13,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 98804,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 17,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        }
+      ],
+      "retained_parity_map": {
+        "path": "certificates/scalar-lift/hadamard-frame-p1453.json",
+        "field_degree": 22,
+        "validation": {
+          "color_map_rank": 88,
+          "determinant_map_rank": 22,
+          "full_quadratic_coefficients_checked": 3917,
+          "exact_identity": "Cabs mod2=L(P*V+Q*U+1), L invertible",
+          "all_inverse_basis_compositions_checked": 176,
+          "all_shift_controls": 24,
+          "exhaustive_small_control_axis_words": 0,
+          "exhaustive_small_control_parity_valid_words": 0
+        },
+        "scope": "Retained exact unsigned parity map; no signed T-input claimed."
+      }
+    },
+    {
+      "p": 251,
+      "m": 5,
+      "coordinate_action": "identity",
+      "nonzero_orbits": 50,
+      "necessary_DC_rows": [
+        {
+          "row": [
+            1,
+            15,
+            5,
+            0
+          ],
+          "orbit_sign_sums": [
+            0,
+            3,
+            1,
+            0
+          ]
+        }
+      ],
+      "unfiltered_axis_bits": 100,
+      "unfiltered_axis_word_count": "1267650600228229401496703205376",
+      "unfiltered_axis_and_sign_bits": 150,
+      "frequency_arithmetic": {
+        "ord_p_2": 50,
+        "H_order": 25,
+        "extension_index": 5,
+        "half_frequency_orbits": 5,
+        "scope": "Factor-size arithmetic only; no parity-algebra validation."
+      },
+      "conditional_generic_fixed_axis_sign_bits_estimate": 21,
+      "sign_estimate_scope": "Conditional generic affine-rank estimate; actual rank depends on each axis word.",
+      "retained_outputs": [
+        {
+          "order": 13052,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 13,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 17068,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 17,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 19076,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 19,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 21084,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 21,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 23092,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 23,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 25100,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 25,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 26104,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 13,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 34136,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 17,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 37148,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 37,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 38152,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 19,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 41164,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 41,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 42168,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 21,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 43172,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 43,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 49196,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 49,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 50200,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 25,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 53212,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 53,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 57228,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 57,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 59236,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 59,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 61244,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 61,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 65260,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 65,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 67268,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 67,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 69276,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 69,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 74296,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 37,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 79316,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 79,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 82328,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 41,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 86344,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 43,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 91364,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 91,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 95380,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 95,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 98392,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 49,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "p": 1951,
+      "m": 39,
+      "coordinate_action": "C3",
+      "nonzero_orbits": 50,
+      "necessary_DC_rows": [
+        {
+          "row": [
+            -38,
+            13,
+            13,
+            13
+          ],
+          "head_sign_sum": -1,
+          "tail_sign_sum": 1
+        }
+      ],
+      "unfiltered_axis_bits": 100,
+      "unfiltered_axis_word_count": "1267650600228229401496703205376",
+      "unfiltered_axis_and_sign_bits": 150,
+      "frequency_arithmetic": {
+        "ord_p_2": 975,
+        "H_order": 975,
+        "extension_index": 25,
+        "half_frequency_orbits": 1,
+        "scope": "Factor-size arithmetic only; no parity-algebra validation."
+      },
+      "conditional_generic_fixed_axis_sign_bits_estimate": 23,
+      "sign_estimate_scope": "Conditional generic affine-rank estimate; actual rank depends on each axis word.",
+      "retained_outputs": [
+        {
+          "order": 23412,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 3,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 46824,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 3,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 54628,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 7,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        }
+      ],
+      "retained_parity_map": {
+        "path": "certificates/scalar-lift/hadamard-frame-p1951.json",
+        "field_degree": 25,
+        "validation": {
+          "all_quadratic_coefficients_verified": true,
+          "coefficients_checked": 5051,
+          "color_map_rank": 100,
+          "equation_map_rank": 25,
+          "field_modulus_irreducible": true,
+          "exact_identity": "unsigned correlation parity = L(p*b1+q*b0+1), L invertible",
+          "validation_seconds": 1.587498
+        },
+        "scope": "Retained exact unsigned parity map; no signed T-input claimed."
+      }
+    },
+    {
+      "p": 1301,
+      "m": 25,
+      "coordinate_action": "identity",
+      "nonzero_orbits": 52,
+      "necessary_DC_rows": [
+        {
+          "row": [
+            26,
+            25,
+            0,
+            0
+          ],
+          "orbit_sign_sums": [
+            1,
+            1,
+            0,
+            0
+          ]
+        }
+      ],
+      "unfiltered_axis_bits": 104,
+      "unfiltered_axis_word_count": "20282409603651670423947251286016",
+      "unfiltered_axis_and_sign_bits": 156,
+      "frequency_arithmetic": {
+        "ord_p_2": 1300,
+        "H_order": 650,
+        "extension_index": 26,
+        "half_frequency_orbits": 1,
+        "scope": "Factor-size arithmetic only; no parity-algebra validation."
+      },
+      "conditional_generic_fixed_axis_sign_bits_estimate": 22,
+      "sign_estimate_scope": "Conditional generic affine-rank estimate; actual rank depends on each axis word.",
+      "retained_outputs": [
+        {
+          "order": 15612,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 3,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 36428,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 7,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 72856,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 7,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 88468,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 17,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 98876,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 19,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "p": 487,
+      "m": 9,
+      "coordinate_action": "identity",
+      "nonzero_orbits": 54,
+      "necessary_DC_rows": [
+        {
+          "row": [
+            1,
+            18,
+            9,
+            9
+          ],
+          "orbit_sign_sums": [
+            0,
+            2,
+            1,
+            1
+          ]
+        }
+      ],
+      "unfiltered_axis_bits": 108,
+      "unfiltered_axis_word_count": "324518553658426726783156020576256",
+      "unfiltered_axis_and_sign_bits": 162,
+      "frequency_arithmetic": {
+        "ord_p_2": 243,
+        "H_order": 243,
+        "extension_index": 27,
+        "half_frequency_orbits": 1,
+        "scope": "Factor-size arithmetic only; no parity-algebra validation."
+      },
+      "conditional_generic_fixed_axis_sign_bits_estimate": 23,
+      "sign_estimate_scope": "Conditional generic affine-rank estimate; actual rank depends on each axis word.",
+      "retained_outputs": [
+        {
+          "order": 13636,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 7,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 17532,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 9,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 21428,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 11,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 25324,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 13,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 29220,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 15,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 33116,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 17,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 35064,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 9,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 37012,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 19,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 40908,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 21,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 42856,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 11,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 44804,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 23,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 48700,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 25,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 56492,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 29,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 60388,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 31,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 66232,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 17,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 68180,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 35,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 74024,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 19,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 75972,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 39,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 81816,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 21,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 83764,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 43,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 87660,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 45,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 89608,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 23,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 91556,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 47,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 95452,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 49,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 97400,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 25,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "p": 523,
+      "m": 9,
+      "coordinate_action": "identity",
+      "nonzero_orbits": 58,
+      "necessary_DC_rows": [
+        {
+          "row": [
+            19,
+            9,
+            9,
+            0
+          ],
+          "orbit_sign_sums": [
+            2,
+            1,
+            1,
+            0
+          ]
+        }
+      ],
+      "unfiltered_axis_bits": 116,
+      "unfiltered_axis_word_count": "83076749736557242056487941267521536",
+      "unfiltered_axis_and_sign_bits": 174,
+      "frequency_arithmetic": {
+        "ord_p_2": 522,
+        "H_order": 261,
+        "extension_index": 29,
+        "half_frequency_orbits": 1,
+        "scope": "Factor-size arithmetic only; no parity-algebra validation."
+      },
+      "conditional_generic_fixed_axis_sign_bits_estimate": 25,
+      "sign_estimate_scope": "Conditional generic affine-rank estimate; actual rank depends on each axis word.",
+      "retained_outputs": [
+        {
+          "order": 35564,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 17,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 39748,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 19,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 48116,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 23,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 52300,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 25,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 60668,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 29,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 64852,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 31,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 71128,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 17,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 77404,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 37,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 79496,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 19,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 85772,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 41,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 89956,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 43,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 96232,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 23,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "p": 311,
+      "m": 5,
+      "coordinate_action": "identity",
+      "nonzero_orbits": 62,
+      "necessary_DC_rows": [
+        {
+          "row": [
+            6,
+            15,
+            5,
+            5
+          ],
+          "orbit_sign_sums": [
+            1,
+            3,
+            1,
+            1
+          ]
+        }
+      ],
+      "unfiltered_axis_bits": 124,
+      "unfiltered_axis_word_count": "21267647932558653966460912964485513216",
+      "unfiltered_axis_and_sign_bits": 186,
+      "frequency_arithmetic": {
+        "ord_p_2": 155,
+        "H_order": 155,
+        "extension_index": 31,
+        "half_frequency_orbits": 1,
+        "scope": "Factor-size arithmetic only; no parity-algebra validation."
+      },
+      "conditional_generic_fixed_axis_sign_bits_estimate": 27,
+      "sign_estimate_scope": "Conditional generic affine-rank estimate; actual rank depends on each axis word.",
+      "retained_outputs": [
+        {
+          "order": 11196,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 9,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 16172,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 13,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 21148,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 17,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 23636,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 19,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 26124,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 21,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 28612,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 23,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 32344,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 13,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 36076,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 29,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 38564,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 31,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 42296,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 17,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 47272,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 19,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 48516,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 39,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 51004,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 41,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 52248,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 21,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 53492,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 43,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 58468,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 47,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 60956,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 49,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 65932,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 53,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 70908,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 57,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 72152,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 29,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 77128,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 31,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 78372,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 63,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 83348,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 67,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 85836,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 69,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 90812,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 73,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 97032,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 39,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 98276,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 79,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "p": 683,
+      "m": 11,
+      "coordinate_action": "identity",
+      "nonzero_orbits": 62,
+      "necessary_DC_rows": [
+        {
+          "row": [
+            -21,
+            11,
+            11,
+            0
+          ],
+          "orbit_sign_sums": [
+            -2,
+            1,
+            1,
+            0
+          ]
+        }
+      ],
+      "unfiltered_axis_bits": 124,
+      "unfiltered_axis_word_count": "21267647932558653966460912964485513216",
+      "unfiltered_axis_and_sign_bits": 186,
+      "frequency_arithmetic": {
+        "ord_p_2": 22,
+        "H_order": 11,
+        "extension_index": 1,
+        "half_frequency_orbits": 31,
+        "scope": "Factor-size arithmetic only; no parity-algebra validation."
+      },
+      "conditional_generic_fixed_axis_sign_bits_estimate": 27,
+      "sign_estimate_scope": "Conditional generic affine-rank estimate; actual rank depends on each axis word.",
+      "retained_outputs": [
+        {
+          "order": 19124,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 7,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 30052,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 11,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 35516,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 13,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 38248,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 7,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 46444,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 17,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 62836,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 23,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 71032,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 13,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 79228,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 29,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 92888,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 17,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "p": 449,
+      "m": 7,
+      "coordinate_action": "identity",
+      "nonzero_orbits": 64,
+      "necessary_DC_rows": [
+        {
+          "row": [
+            -20,
+            7,
+            0,
+            0
+          ],
+          "orbit_sign_sums": [
+            -3,
+            1,
+            0,
+            0
+          ]
+        }
+      ],
+      "unfiltered_axis_bits": 128,
+      "unfiltered_axis_word_count": "340282366920938463463374607431768211456",
+      "unfiltered_axis_and_sign_bits": 192,
+      "frequency_arithmetic": {
+        "ord_p_2": 224,
+        "H_order": 112,
+        "extension_index": 16,
+        "half_frequency_orbits": 2,
+        "scope": "Factor-size arithmetic only; no parity-algebra validation."
+      },
+      "conditional_generic_fixed_axis_sign_bits_estimate": 28,
+      "sign_estimate_scope": "Conditional generic affine-rank estimate; actual rank depends on each axis word.",
+      "retained_outputs": [
+        {
+          "order": 12572,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 7,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 19756,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 11,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 23348,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 13,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 25144,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 7,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 30532,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 17,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 41308,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 23,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 46696,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 13,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 55676,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 31,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 61064,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 17,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 66452,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 37,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 73636,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 41,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 77228,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 43,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 82616,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 23,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 84412,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 47,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 95188,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 53,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "p": 2113,
+      "m": 33,
+      "coordinate_action": "identity",
+      "nonzero_orbits": 64,
+      "necessary_DC_rows": [
+        {
+          "row": [
+            -32,
+            33,
+            0,
+            0
+          ],
+          "orbit_sign_sums": [
+            -1,
+            1,
+            0,
+            0
+          ]
+        }
+      ],
+      "unfiltered_axis_bits": 128,
+      "unfiltered_axis_word_count": "340282366920938463463374607431768211456",
+      "unfiltered_axis_and_sign_bits": 192,
+      "frequency_arithmetic": {
+        "ord_p_2": 44,
+        "H_order": 66,
+        "extension_index": 2,
+        "half_frequency_orbits": 16,
+        "scope": "Factor-size arithmetic only; no parity-algebra validation."
+      },
+      "conditional_generic_fixed_axis_sign_bits_estimate": 28,
+      "sign_estimate_scope": "Conditional generic affine-rank estimate; actual rank depends on each axis word.",
+      "retained_outputs": [
+        {
+          "order": 25356,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 3,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 42260,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 5,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 50712,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 3,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 76068,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 9,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 84520,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 5,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 92972,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 11,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "p": 1123,
+      "m": 17,
+      "coordinate_action": "identity",
+      "nonzero_orbits": 66,
+      "necessary_DC_rows": [
+        {
+          "row": [
+            -16,
+            17,
+            17,
+            17
+          ],
+          "orbit_sign_sums": [
+            -1,
+            1,
+            1,
+            1
+          ]
+        }
+      ],
+      "unfiltered_axis_bits": 132,
+      "unfiltered_axis_word_count": "5444517870735015415413993718908291383296",
+      "unfiltered_axis_and_sign_bits": 198,
+      "frequency_arithmetic": {
+        "ord_p_2": 1122,
+        "H_order": 561,
+        "extension_index": 33,
+        "half_frequency_orbits": 1,
+        "scope": "Factor-size arithmetic only; no parity-algebra validation."
+      },
+      "conditional_generic_fixed_axis_sign_bits_estimate": 29,
+      "sign_estimate_scope": "Conditional generic affine-rank estimate; actual rank depends on each axis word.",
+      "retained_outputs": [
+        {
+          "order": 22460,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 5,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 31444,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 7,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 44920,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 5,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 58396,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 13,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 62888,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 7,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 76364,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 17,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 85348,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 19,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "p": 2381,
+      "m": 35,
+      "coordinate_action": "identity",
+      "nonzero_orbits": 68,
+      "necessary_DC_rows": [
+        {
+          "row": [
+            -34,
+            35,
+            0,
+            0
+          ],
+          "orbit_sign_sums": [
+            -1,
+            1,
+            0,
+            0
+          ]
+        }
+      ],
+      "unfiltered_axis_bits": 136,
+      "unfiltered_axis_word_count": "87112285931760246646623899502532662132736",
+      "unfiltered_axis_and_sign_bits": 204,
+      "frequency_arithmetic": {
+        "ord_p_2": 476,
+        "H_order": 1190,
+        "extension_index": 34,
+        "half_frequency_orbits": 1,
+        "scope": "Factor-size arithmetic only; no parity-algebra validation."
+      },
+      "conditional_generic_fixed_axis_sign_bits_estimate": 30,
+      "sign_estimate_scope": "Conditional generic affine-rank estimate; actual rank depends on each axis word.",
+      "retained_outputs": [
+        {
+          "order": 47620,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 5,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 66668,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 7,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 85716,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 9,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "p": 3469,
+      "m": 51,
+      "coordinate_action": "C3",
+      "nonzero_orbits": 68,
+      "necessary_DC_rows": [
+        {
+          "row": [
+            1,
+            34,
+            34,
+            34
+          ],
+          "head_sign_sum": 0,
+          "tail_sign_sum": 2
+        }
+      ],
+      "unfiltered_axis_bits": 136,
+      "unfiltered_axis_word_count": "87112285931760246646623899502532662132736",
+      "unfiltered_axis_and_sign_bits": 204,
+      "frequency_arithmetic": {
+        "ord_p_2": 3468,
+        "H_order": 1734,
+        "extension_index": 34,
+        "half_frequency_orbits": 1,
+        "scope": "Factor-size arithmetic only; no parity-algebra validation."
+      },
+      "conditional_generic_fixed_axis_sign_bits_estimate": 32,
+      "sign_estimate_scope": "Conditional generic affine-rank estimate; actual rank depends on each axis word.",
+      "retained_outputs": [
+        {
+          "order": 13876,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 1,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 97132,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 7,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "p": 491,
+      "m": 7,
+      "coordinate_action": "identity",
+      "nonzero_orbits": 70,
+      "necessary_DC_rows": [
+        {
+          "row": [
+            1,
+            21,
+            7,
+            0
+          ],
+          "orbit_sign_sums": [
+            0,
+            3,
+            1,
+            0
+          ]
+        }
+      ],
+      "unfiltered_axis_bits": 140,
+      "unfiltered_axis_word_count": "1393796574908163946345982392040522594123776",
+      "unfiltered_axis_and_sign_bits": 210,
+      "frequency_arithmetic": {
+        "ord_p_2": 490,
+        "H_order": 245,
+        "extension_index": 35,
+        "half_frequency_orbits": 1,
+        "scope": "Factor-size arithmetic only; no parity-algebra validation."
+      },
+      "conditional_generic_fixed_axis_sign_bits_estimate": 31,
+      "sign_estimate_scope": "Conditional generic affine-rank estimate; actual rank depends on each axis word.",
+      "retained_outputs": [
+        {
+          "order": 5892,
+          "status": "current_explorer_gap",
+          "routes": [
+            {
+              "width": 3,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 13748,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 7,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 21604,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 11,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 25532,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 13,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 27496,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 7,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 37316,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 19,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 45172,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 23,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 51064,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 13,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 60884,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 31,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 72668,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 37,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 74632,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 19,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 76596,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 39,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 80524,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 41,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 84452,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 43,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 90344,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 23,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 96236,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 49,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        }
+      ],
+      "retained_parity_map": {
+        "path": "certificates/scalar-lift/identity-parity-p491.json",
+        "field_degree": 35,
+        "validation": {
+          "coefficient_inputs": 9871,
+          "color_map_rank": 140,
+          "equation_map_rank": 35,
+          "all_coefficients_verified": true,
+          "all_expanded_shifts_verified": true,
+          "expanded_correlations_checked": 4836790,
+          "seconds": 9.633681583916768
+        },
+        "scope": "Retained exact unsigned parity map; no signed T-input claimed."
+      }
+    },
+    {
+      "p": 3571,
+      "m": 51,
+      "coordinate_action": "C3",
+      "nonzero_orbits": 70,
+      "necessary_DC_rows": [
+        {
+          "row": [
+            52,
+            17,
+            17,
+            17
+          ],
+          "head_sign_sum": 1,
+          "tail_sign_sum": 1
+        }
+      ],
+      "unfiltered_axis_bits": 140,
+      "unfiltered_axis_word_count": "1393796574908163946345982392040522594123776",
+      "unfiltered_axis_and_sign_bits": 210,
+      "frequency_arithmetic": {
+        "ord_p_2": 3570,
+        "H_order": 1785,
+        "extension_index": 35,
+        "half_frequency_orbits": 1,
+        "scope": "Factor-size arithmetic only; no parity-algebra validation."
+      },
+      "conditional_generic_fixed_axis_sign_bits_estimate": 33,
+      "sign_estimate_scope": "Conditional generic affine-rank estimate; actual rank depends on each axis word.",
+      "retained_outputs": [
+        {
+          "order": 14284,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 1,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 28568,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 1,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 42852,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 3,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 57136,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 1,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 2
+            }
+          ]
+        }
+      ],
+      "retained_parity_map": {
+        "path": "certificates/scalar-lift/hadamard-frame-p3571.json",
+        "field_degree": 35,
+        "validation": {
+          "all_quadratic_coefficients_verified": true,
+          "coefficients_checked": 9871,
+          "color_map_rank": 140,
+          "equation_map_rank": 35,
+          "field_modulus_irreducible": true,
+          "exact_identity": "unsigned correlation parity = L(p*b1+q*b0+1), L invertible",
+          "validation_seconds": 8.693915
+        },
+        "scope": "Retained exact unsigned parity map; no signed T-input claimed."
+      }
+    },
+    {
+      "p": 223,
+      "m": 3,
+      "coordinate_action": "C3",
+      "nonzero_orbits": 74,
+      "necessary_DC_rows": [
+        {
+          "row": [
+            -14,
+            3,
+            3,
+            3
+          ],
+          "head_sign_sum": -5,
+          "tail_sign_sum": 3
+        }
+      ],
+      "unfiltered_axis_bits": 148,
+      "unfiltered_axis_word_count": "356811923176489970264571492362373784095686656",
+      "unfiltered_axis_and_sign_bits": 222,
+      "frequency_arithmetic": {
+        "ord_p_2": 37,
+        "H_order": 111,
+        "extension_index": 37,
+        "half_frequency_orbits": 1,
+        "scope": "Factor-size arithmetic only; no parity-algebra validation."
+      },
+      "conditional_generic_fixed_axis_sign_bits_estimate": 35,
+      "sign_estimate_scope": "Conditional generic affine-rank estimate; actual rank depends on each axis word.",
+      "retained_outputs": [
+        {
+          "order": 2676,
+          "status": "current_explorer_gap",
+          "routes": [
+            {
+              "width": 3,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 4460,
+          "status": "current_explorer_gap",
+          "routes": [
+            {
+              "width": 5,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 11596,
+          "status": "source_listed_kumar_gap",
+          "routes": [
+            {
+              "width": 13,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 15164,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 17,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 16948,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 19,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 20516,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 23,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 23192,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 13,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 27652,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 31,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 30328,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 17,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 33004,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 37,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 33896,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 19,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 38356,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 43,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 41032,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 23,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 41924,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 47,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 47276,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 53,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 49060,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 55,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 50844,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 57,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 54412,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 61,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 55304,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 31,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 57980,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 65,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 65116,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 73,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 66008,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 37,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 70468,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 79,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 76712,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 43,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 82956,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 93,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 83848,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 47,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 84740,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 95,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 91876,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 103,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 94552,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 53,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 97228,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 109,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 98120,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 55,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "p": 223,
+      "m": 3,
+      "coordinate_action": "identity",
+      "nonzero_orbits": 74,
+      "necessary_DC_rows": [
+        {
+          "row": [
+            -14,
+            3,
+            3,
+            3
+          ],
+          "orbit_sign_sums": [
+            -5,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "row": [
+            -5,
+            9,
+            9,
+            6
+          ],
+          "orbit_sign_sums": [
+            -2,
+            3,
+            3,
+            2
+          ]
+        },
+        {
+          "row": [
+            13,
+            6,
+            3,
+            3
+          ],
+          "orbit_sign_sums": [
+            4,
+            2,
+            1,
+            1
+          ]
+        }
+      ],
+      "unfiltered_axis_bits": 148,
+      "unfiltered_axis_word_count": "356811923176489970264571492362373784095686656",
+      "unfiltered_axis_and_sign_bits": 222,
+      "frequency_arithmetic": {
+        "ord_p_2": 37,
+        "H_order": 111,
+        "extension_index": 37,
+        "half_frequency_orbits": 1,
+        "scope": "Factor-size arithmetic only; no parity-algebra validation."
+      },
+      "conditional_generic_fixed_axis_sign_bits_estimate": 33,
+      "sign_estimate_scope": "Conditional generic affine-rank estimate; actual rank depends on each axis word.",
+      "retained_outputs": [
+        {
+          "order": 2676,
+          "status": "current_explorer_gap",
+          "routes": [
+            {
+              "width": 3,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 4460,
+          "status": "current_explorer_gap",
+          "routes": [
+            {
+              "width": 5,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 11596,
+          "status": "source_listed_kumar_gap",
+          "routes": [
+            {
+              "width": 13,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 15164,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 17,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 16948,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 19,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 20516,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 23,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 23192,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 13,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 27652,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 31,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 30328,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 17,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 33004,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 37,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 33896,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 19,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 38356,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 43,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 41032,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 23,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 41924,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 47,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 47276,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 53,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 49060,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 55,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 50844,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 57,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 54412,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 61,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 55304,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 31,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 57980,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 65,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 65116,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 73,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 66008,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 37,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 70468,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 79,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 76712,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 43,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 82956,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 93,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 83848,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 47,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 84740,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 95,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 91876,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 103,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 94552,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 53,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        },
+        {
+          "order": 97228,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 109,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 98120,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 55,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 1
+            }
+          ]
+        }
+      ],
+      "retained_parity_map": {
+        "path": "certificates/scalar-lift/identity-parity-p223.json",
+        "field_degree": 37,
+        "validation": {
+          "coefficient_inputs": 11027,
+          "color_map_rank": 148,
+          "equation_map_rank": 37,
+          "all_coefficients_verified": true,
+          "all_expanded_shifts_verified": true,
+          "expanded_correlations_checked": 2447994,
+          "seconds": 1.416003540973179
+        },
+        "scope": "Retained exact unsigned parity map; no signed T-input claimed."
+      }
+    },
+    {
+      "p": 4219,
+      "m": 57,
+      "coordinate_action": "C3",
+      "nonzero_orbits": 74,
+      "necessary_DC_rows": [
+        {
+          "row": [
+            -56,
+            19,
+            19,
+            19
+          ],
+          "head_sign_sum": -1,
+          "tail_sign_sum": 1
+        }
+      ],
+      "unfiltered_axis_bits": 148,
+      "unfiltered_axis_word_count": "356811923176489970264571492362373784095686656",
+      "unfiltered_axis_and_sign_bits": 222,
+      "frequency_arithmetic": {
+        "ord_p_2": 4218,
+        "H_order": 2109,
+        "extension_index": 37,
+        "half_frequency_orbits": 1,
+        "scope": "Factor-size arithmetic only; no parity-algebra validation."
+      },
+      "conditional_generic_fixed_axis_sign_bits_estimate": 35,
+      "sign_estimate_scope": "Conditional generic affine-rank estimate; actual rank depends on each axis word.",
+      "retained_outputs": [
+        {
+          "order": 16876,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 1,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        },
+        {
+          "order": 84380,
+          "status": "unassessed_candidate",
+          "routes": [
+            {
+              "width": 5,
+              "source_kind": "literal-Williamson-or-near-Williamson",
+              "tensor_H2_exponent": 0
+            }
+          ]
+        }
+      ],
+      "retained_parity_map": {
+        "path": "certificates/scalar-lift/hadamard-frame-p4219.json",
+        "field_degree": 37,
+        "validation": {
+          "all_quadratic_coefficients_verified": true,
+          "coefficients_checked": 11027,
+          "color_map_rank": 148,
+          "equation_map_rank": 37,
+          "field_modulus_irreducible": true,
+          "exact_identity": "unsigned correlation parity = L(p*b1+q*b0+1), L invertible",
+          "validation_seconds": 11.648741
+        },
+        "scope": "Retained exact unsigned parity map; no signed T-input claimed."
+      }
+    }
+  ],
+  "dense_Williamson_comparison": {
+    "scope": "Five strategy rows replayed by exact DC/support selection; correlations remain unsolved.",
+    "known_T_lengths": [
+      1,
+      2,
+      3,
+      5,
+      7,
+      9,
+      11,
+      13,
+      127,
+      271,
+      547,
+      631
+    ],
+    "max_nonzero_orbits": 80,
+    "rows": [
+      {
+        "p": 919,
+        "m": 54,
+        "nonzero_orbits": 17,
+        "action": "C3",
+        "row_types": [
+          {
+            "row_sums": [
+              -53,
+              -17,
+              -17,
+              -17
+            ],
+            "signed_head_axis_sum": 0,
+            "signed_tail_axis_sum": -1,
+            "total_orbit_sign_sum": -1
+          }
+        ],
+        "target_routes": [
+          {
+            "target_order": 25732,
+            "known_T_length": 7,
+            "status": "unassessed_candidate"
+          },
+          {
+            "target_order": 40436,
+            "known_T_length": 11,
+            "status": "unassessed_candidate"
+          }
+        ],
+        "unfiltered_axis_bits": 34,
+        "unfiltered_axis_word_count": "17179869184"
+      },
+      {
+        "p": 463,
+        "m": 22,
+        "nonzero_orbits": 21,
+        "action": "identity",
+        "row_types": [
+          {
+            "row_sums": [
+              -21,
+              -21,
+              -21,
+              23
+            ],
+            "signed_axis_sums": [
+              0,
+              0,
+              0,
+              -1
+            ],
+            "total_orbit_sign_sum": -1
+          }
+        ],
+        "target_routes": [
+          {
+            "target_order": 9260,
+            "known_T_length": 5,
+            "status": "current_explorer_gap"
+          },
+          {
+            "target_order": 16668,
+            "known_T_length": 9,
+            "status": "unassessed_candidate"
+          },
+          {
+            "target_order": 20372,
+            "known_T_length": 11,
+            "status": "unassessed_candidate"
+          }
+        ],
+        "unfiltered_axis_bits": 42,
+        "unfiltered_axis_word_count": "4398046511104"
+      },
+      {
+        "p": 1801,
+        "m": 72,
+        "nonzero_orbits": 25,
+        "action": "C3",
+        "row_types": [
+          {
+            "row_sums": [
+              73,
+              25,
+              25,
+              25
+            ],
+            "signed_head_axis_sum": 0,
+            "signed_tail_axis_sum": 1,
+            "total_orbit_sign_sum": 1
+          }
+        ],
+        "target_routes": [
+          {
+            "target_order": 36020,
+            "known_T_length": 5,
+            "status": "unassessed_candidate"
+          },
+          {
+            "target_order": 50428,
+            "known_T_length": 7,
+            "status": "unassessed_candidate"
+          },
+          {
+            "target_order": 64836,
+            "known_T_length": 9,
+            "status": "unassessed_candidate"
+          },
+          {
+            "target_order": 79244,
+            "known_T_length": 11,
+            "status": "unassessed_candidate"
+          },
+          {
+            "target_order": 93652,
+            "known_T_length": 13,
+            "status": "unassessed_candidate"
+          }
+        ],
+        "unfiltered_axis_bits": 50,
+        "unfiltered_axis_word_count": "1125899906842624"
+      },
+      {
+        "p": 1951,
+        "m": 78,
+        "nonzero_orbits": 25,
+        "action": "C3",
+        "row_types": [
+          {
+            "row_sums": [
+              -77,
+              -25,
+              -25,
+              -25
+            ],
+            "signed_head_axis_sum": 0,
+            "signed_tail_axis_sum": -1,
+            "total_orbit_sign_sum": -1
+          }
+        ],
+        "target_routes": [
+          {
+            "target_order": 23412,
+            "known_T_length": 3,
+            "status": "unassessed_candidate"
+          },
+          {
+            "target_order": 54628,
+            "known_T_length": 7,
+            "status": "unassessed_candidate"
+          }
+        ],
+        "unfiltered_axis_bits": 50,
+        "unfiltered_axis_word_count": "1125899906842624"
+      },
+      {
+        "p": 2269,
+        "m": 84,
+        "nonzero_orbits": 27,
+        "action": "C3",
+        "row_types": [
+          {
+            "row_sums": [
+              -83,
+              -27,
+              -27,
+              -27
+            ],
+            "signed_head_axis_sum": 0,
+            "signed_tail_axis_sum": -1,
+            "total_orbit_sign_sum": -1
+          }
+        ],
+        "target_routes": [
+          {
+            "target_order": 45380,
+            "known_T_length": 5,
+            "status": "unassessed_candidate"
+          },
+          {
+            "target_order": 63532,
+            "known_T_length": 7,
+            "status": "unassessed_candidate"
+          },
+          {
+            "target_order": 99836,
+            "known_T_length": 11,
+            "status": "unassessed_candidate"
+          }
+        ],
+        "unfiltered_axis_bits": 54,
+        "unfiltered_axis_word_count": "18014398509481984"
+      }
+    ],
+    "fixed_axis_sign_dimension": 0,
+    "sign_dimension_scope": "Signs are forced by the modulo-four argument for this dense model. Axis choices remain4^N.",
+    "full_parity_map_or_sign_witness_claimed_here": false
+  },
+  "interpretation": {
+    "survivor_proves_existence": false,
+    "absence_from_positive_gates_proves_global_unknownness": false,
+    "symmetry_class_exclusion_proves_nonexistence": false,
+    "matrix_search_performed": false
+  }
+}

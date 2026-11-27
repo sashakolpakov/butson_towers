@@ -1,13 +1,15 @@
 (campaigns)=
 # Exact search campaigns and recoverable computation
 
-The current selection matches eight unresolved orders below 10000 with seven
-strongly symmetric Williamson inputs. The
-{repo-file}`source model and selection <docs/WILLIAMSON_SYMMETRY_SEARCH.md>`
-derive every sign from the occupied coordinate on each orbit. CP-SAT and
-an independent native axis sampler and annealer check the remaining integer
-conditions. Runs for six orders are active; 3004 and 5692 remain queued.
-The earlier eleven one-hot T-input workers are paused.
+All campaigns are paused for strategy review. The ten recent Williamson
+runs produced no verified new source within their elapsed runs; their full
+runtime states are preserved privately for retry. The earlier eleven one-hot
+T-input workers remain paused, and 3004 and 5692 are no longer queued.
+The {repo-file}`source model and dated selection <docs/WILLIAMSON_SYMMETRY_SEARCH.md>`
+retain the proofs and exact replay interfaces. The
+{repo-file}`next strategy <docs/SYMMETRY_FIRST_ECHELONS.md>` selects reusable
+ingredients and stronger symmetry across three tiers through order 100000
+before another launch. These bounded computations exclude no source class.
 
 ## Earlier one-hot T-input engines
 

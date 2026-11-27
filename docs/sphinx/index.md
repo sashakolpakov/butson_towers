@@ -38,6 +38,7 @@ families
 exact-search
 sign-solvers
 williamson-search
+echelons
 campaigns
 verification
 results

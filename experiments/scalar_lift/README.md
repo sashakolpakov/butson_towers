@@ -5,18 +5,21 @@ Every starting design must have an exact Gram proof. The active operations
 restrict its scalars while keeping the source, metric, alphabet and literal
 matrix recipe. General weighted nodes are useful outputs in their own right.
 
-The current selection matches eight unresolved orders below 10000 with
-strongly symmetric Williamson sources. Their axis assignments determine
-all orbit signs exactly. CP-SAT and an independent native axis sampler and
-annealer handle the remaining integer conditions. The weaker 3004 and 5692
-charts remain queued; the other six target orders have active runs. The earlier eleven
-one-hot T-input workers are paused; their engines remain replay references.
+All campaigns are paused for strategy review, including the ten recent
+Williamson runs and the earlier eleven one-hot T-input workers. The recent
+direct searches produced no verified new source within their elapsed runs;
+their classes remain eligible for retry. Complete runtime states are archived
+privately under `.local/search-archives`. The [next strategy](../../docs/SYMMETRY_FIRST_ECHELONS.md)
+selects reusable ingredients and stronger symmetry in the below-10000,
+10000–50000 and 50000–100000 tiers before any further launch.
+The earlier 3004 and 5692 queue is withdrawn pending that review.
 
 | Task | Entry module |
 |---|---|
+| Replay the three-tier frontier and symmetry-first source selection through 100000; starts no searches | `echelon_frontier --check`, `echelon_multiplier_scan --check`; [strategy](../../docs/SYMMETRY_FIRST_ECHELONS.md) |
 | New real H7572: exact T631, scalar frame, saved matrix and full integer verification | [Standalone recipe and certificate](../../artifacts/hadamard-7572/README.md) |
 | New periodic T127, full T identities and known-order H1524 scalar control | [Standalone recipe and dated scope](../../artifacts/t-matrices-127/README.md) |
-| Symmetry-selected dense Williamson sources; seven prime inputs and eight conditional orders below 10000 | `williamson_symmetry`, `williamson_axis_cp`, `williamson_campaign`, `williamson_axis_native`; [proof, selection and replay](../../docs/WILLIAMSON_SYMMETRY_SEARCH.md) |
+| Paused dense Williamson source searches; seven prime inputs and eight conditional orders in the dated below-10000 selection | `williamson_symmetry`, `williamson_axis_cp`, `williamson_campaign`, `williamson_axis_native`; [proof, selection and replay](../../docs/WILLIAMSON_SYMMETRY_SEARCH.md) |
 | Replay the dated frontier screen below 12000 using both odd coordinate actions and bounded orbit counts | `low_gap_target_scan --check`; [historical necessary-condition certificate](../../certificates/scalar-lift/low-gap-target-scan.json) |
 | SL2 parity-axis generation, exact mod4/mod8 sign lifting, finite pool controls and completed endpoint verification | `hadamard_frame_search`; [method and replay](../../docs/HADAMARD_FRAME_SEARCH.md) |
 | Length-223 multiplier map and exact sign-lifting reference | `large_parity_map`, `quadratic_sign_lift`, `exact_t_campaign`; [exact checks and replay](../../docs/LOW_ORDER_SEARCH.md) |

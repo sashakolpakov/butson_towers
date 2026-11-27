@@ -62,13 +62,16 @@ inequivalent to the standard Paley matrix: their ranks modulo 3 are 246090
 and 442962. Equivalence at the other recovered orders remains unsettled.
 There is a separate new [periodic T-matrix construction of order 127](artifacts/t-matrices-127/README.md).
 
-The current selection pairs strongly symmetric Williamson sources with eight
-unresolved orders **below 10000**. The [method and selection](docs/WILLIAMSON_SYMMETRY_SEARCH.md)
-use seven prime inputs; the coordinates determine every orbit sign exactly.
-CP-SAT and a separate native axis sampler and annealer check the remaining
-integer identities. Active runs cover 2676, 2956, 4460, 5892, 7924 and 9260;
-3004 and 5692 are queued. The earlier eleven one-hot T-input workers are paused.
-These selected charts add no completed order to the results above.
+All search campaigns are **paused for strategy review**. The ten recent
+Williamson runs took too long with the direct approach and produced no verified
+new source; this does not exclude their source classes. Their complete frozen
+inputs, checkpoints and random-generator states are archived privately for
+retry. The earlier eleven one-hot T-input workers also remain paused.
+The [Williamson method and dated selection](docs/WILLIAMSON_SYMMETRY_SEARCH.md)
+are retained, while the [next strategy](docs/SYMMETRY_FIRST_ECHELONS.md)
+prioritizes reusable sources and stronger symmetry in three tiers: below
+10000, 10000–50000 and 50000–100000. No searches are queued.
+These searches add no completed order to the results above.
 
 The [complete source inventory](docs/SOURCE_INVENTORY.md) records the four
 compatible sixth-root seed orders, the 27 original cyclic inputs, the 19
