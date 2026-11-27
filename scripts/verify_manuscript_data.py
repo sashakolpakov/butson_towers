@@ -197,7 +197,85 @@ for i in range(13):
         assert dot(A[i], B[j]) == dot(B[i], A[j])
         assert dot(A[i], A[j]) + 3*dot(B[i], B[j]) == 52*(i == j)
 
+
+# BEGIN_SOURCE351_RANK
+def f3_rank(rows, width):
+    """Exact Gaussian elimination, storing the 1 and 2 entries as bit sets.
+
+    A pair (r1,r2) encodes one row over F3: bit j is set in r1 or r2
+    precisely when that entry is 1 or 2, respectively. Swapping the
+    sets negates the row. The formulas below implement addition in F3.
+    """
+    rows = list(rows)
+    mask = (1 << width) - 1
+    assert all(not (a & b) and not ((a | b) & ~mask) for a, b in rows)
+    rank = 0
+    for column in range(width):
+        bit = 1 << column
+        pivot = next((i for i in range(rank, len(rows))
+                      if (rows[i][0] | rows[i][1]) & bit), None)
+        if pivot is None:
+            continue
+        rows[rank], rows[pivot] = rows[pivot], rows[rank]
+        p1, p2 = rows[rank]
+        if p2 & bit:
+            p1, p2 = p2, p1
+            rows[rank] = (p1, p2)
+        p0 = mask ^ (p1 | p2)
+        for i in range(rank + 1, len(rows)):
+            a1, a2 = rows[i]
+            if not ((a1 | a2) & bit):
+                continue
+            # Subtract the pivot for coefficient 1, add it for coefficient 2.
+            b1, b2 = (p2, p1) if a1 & bit else (p1, p2)
+            a0 = mask ^ (a1 | a2)
+            c1 = (a0 & b1) | (a1 & p0) | (a2 & b2)
+            c2 = (a0 & b2) | (a2 & p0) | (a1 & b1)
+            assert not (c1 & c2) and not ((c1 | c2) & bit)
+            rows[i] = (c1, c2)
+        rank += 1
+    assert all(not (a | b) for a, b in rows[rank:])
+    return rank
+
+
+def pack_f3(row):
+    return (sum(1 << j for j, x in enumerate(row) if x % 3 == 1),
+            sum(1 << j for j, x in enumerate(row) if x % 3 == 2))
+
+
+def printed_pair_rank(a, b):
+    """Rank of the manuscript's matrix T=[[A,B],[0,A]] modulo 3."""
+    n = len(a)
+    assert len(b) == n and all(len(row) == n for row in a+b)
+    assert all(abs(x) == 1 for row in a+b for x in row)
+    rows = [pack_f3(x+y) for x, y in zip(a, b)]
+    rows += [(r1 << n, r2 << n) for r1, r2 in map(pack_f3, a)]
+    return f3_rank(rows, 2*n)
+
+
+C = ((0, 1, -1), (-1, 0, 1), (1, -1, 0))
+printed_pair_F3_ranks = {}
+for level, expected in enumerate((26, 39, 89, 195)):
+    n = len(A)
+    rank = printed_pair_rank(A, B)
+    assert rank == expected
+    printed_pair_F3_ranks[n] = rank
+    if level < 3:
+        A, B = (
+            [[B[i][j] for j in range(n) for v in range(3)]
+             for i in range(n) for u in range(3)],
+            [[A[i][j]*(u == v) + B[i][j]*C[u][v]
+              for j in range(n) for v in range(3)]
+             for i in range(n) for u in range(3)],
+        )
+assert len(A) == 351 and 1262*printed_pair_F3_ranks[351] == 246090
+assert 246090 != 885924//2 == 442962
+# END_SOURCE351_RANK
+
 print(json.dumps({"all_checks_passed": True, "T_lengths": sorted(T),
                   "Williamson_orders": sorted(W), "strong_starters": 8, "additional_quadruple_widths": sorted(NW),
                   "cubic_seed_order": 13,
+                  "printed_pair_F3_ranks": printed_pair_F3_ranks,
+                  "order885924_F3_rank": 246090,
+                  "Paley_order885924_F3_rank": 442962,
                   "known_Paley_parameters_prime": [885923, 9314821]}))

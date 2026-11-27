@@ -107,7 +107,7 @@ edge applies. They are retained as actual intermediate matrices.
 ## Replay and accessors
 
 ```sh
-PYTHONPATH=src:. ./.native-env/bin/python -m experiments.scalar_lift.partial_fifth_descent --check certificates/scalar-lift/partial-fifth-descent.json
+PYTHONPATH=src:. python -m experiments.scalar_lift.partial_fifth_descent --check certificates/scalar-lift/partial-fifth-descent.json
 ```
 
 The [implementation](../experiments/scalar_lift/partial_fifth_descent.py)

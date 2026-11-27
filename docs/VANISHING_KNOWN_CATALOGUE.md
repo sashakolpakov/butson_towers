@@ -52,8 +52,8 @@ The admitted phase-120 entry set has two cubic colors, four nonzero fifth colors
 For the 585-to-1499 packet construction, the productive collision key is a **joint matrix or sector-Gram signature**, including both row and column metrics, admitted coefficient domains, and conjugation. A scalar sum collision alone does not complete those coupled equations. Balanced packet replacements can themselves be decomposable as scalar sums; rejecting them merely because they are not irreducible would discard useful matrix constructions.
 
 ```sh
-PYTHONPATH=src:. ./.native-env/bin/python -m experiments.scalar_lift.vanishing_known_catalogue --check certificates/scalar-lift/vanishing-known-catalogue.json
-PYTHONPATH=src:. ./.native-env/bin/python -m pytest -q tests/test_vanishing_known_catalogue.py
+PYTHONPATH=src:. python -m experiments.scalar_lift.vanishing_known_catalogue --check certificates/scalar-lift/vanishing-known-catalogue.json
+PYTHONPATH=src:. python -m pytest -q tests/test_vanishing_known_catalogue.py
 ```
 
 This module is a complete scalar substrate, not a Butson source or a new Hadamard order.

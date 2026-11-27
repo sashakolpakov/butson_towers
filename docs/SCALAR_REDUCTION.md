@@ -112,7 +112,7 @@ therefore gives a sign matrix of order and Gram scale `2524w`.
 
 The [27 literal Williamson inputs and prior-order checks](WILLIAMSON_ORDER_RECORDS.md)
 add new orders **42908, 58052, 73196, 78244, 93388, 108532, 128724 and
-153964**. The [five constructive Spence families](SPENCE_SCALAR_FAMILIES.md)
+153964**. The [original five constructive Spence families](SPENCE_SCALAR_FAMILIES.md)
 give literal endpoints for every integer `r>=0`, of orders
 `17668*13^r`, `22716*17^r`, `78244*61^r`, `128724*101^r` and
 `153964*121^r`. Their first expanded members add new orders **229684,
@@ -125,7 +125,15 @@ The [source inventory](SOURCE_INVENTORY.md) adds twelve new orders from
 19 published symmetric amicable inputs, including noncyclic scalar actions
 with all field factors and module multiplicities retained. Further exact
 recurrence members give four additional new orders. The manuscript now
-states nine families, all with kernel-checked existence proofs.
+states nine families, all with kernel-checked existence proofs: eight use
+Spence sources and one uses the cubic recurrence. Three other verified
+Spence-source recurrences are retained as construction controls.
+
+The [known-order table and comparison](sphinx/known-orders.md) records positive
+prior constructions for all 31 recovered orders. At order 885924, our
+sixth-root representative and the standard Paley matrix have different
+ranks over `F_3`, proving inequivalence. That finite-field comparison has
+a separate executable certificate and is outside the Lean existence proofs.
 
 The [lower-order campaign](LOW_ORDER_SEARCH.md) seeks further periodic
 T-matrices, starting with length 223 and Hadamard order 2676. Length 167

@@ -1,0 +1,15 @@
+{
+  "schema": "butson-current-Lean-package-pointer-v1",
+  "scope": "34 announced existence orders and nine all-parameter families;143 selected axiom reports",
+  "proof_commit": "6e515aecc448181c52d8c1eba3f3b0db0d9d5f11",
+  "source_package_url": "https://github.com/sashakolpakov/butson_towers/raw/6e515aecc448181c52d8c1eba3f3b0db0d9d5f11/release/additional_source_verification/butson-towers-additional-sources.zip",
+  "source_package_sha256": "6ff9f98c20fa577dcb9c756e0c904d85b4c57c23f62238450cd3fe7e0f69f1e5",
+  "verification_record_sha256": "fb3232546741c942d59c5a7fc956635ae520019f988559f1e163cb0482dba1f2",
+  "payload_manifest_sha256": "e04f6b36ee96ee7a9ed65c4c6613a6a03a6a4ed28b225437082968d356831bbc",
+  "current_formal_and_literal_source_files_matched": 84,
+  "lean_toolchain": "leanprover/lean4:v4.32.0",
+  "mathlib_revision": "81a5d257c8e410db227a6665ed08f64fea08e997",
+  "proof_theorems_checked": 143,
+  "finite_field_rank_comparison_in_Lean": false,
+  "replay": "Extract the source-only ZIP and run python3 verify.py; see itsREADME for pinned dependency/cache options."
+}

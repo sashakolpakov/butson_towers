@@ -190,11 +190,14 @@ the 27 verified orders are used exactly as supplied.
 
 The [literal Spence recurrence](../experiments/scalar_lift/williamson_spence_family.py)
 and its [complete source proofs](../certificates/scalar-lift/williamson-spence-family.json)
-provide five families with source order `(q+1)*q^r/2`, for `r>=0` and
+provide the original five families with source order `(q+1)*q^r/2`, for `r>=0` and
 `q=13,17,61,101,121`. The source recurrence is
 [Spence's Theorem 4 (1977)](https://doi.org/10.1017/S1446788700020255);
 substitution into the verified T631 orthogonal design gives endpoint
 order `1262*(q+1)*q^r`.
+The [current source inventory](SOURCE_INVENTORY.md) also records six
+additional verified Spence recurrences, the further finite members and
+the three additional families announced in the manuscript.
 
 The first expanded members have separate
 [finite order-status records](../experiments/scalar_lift/williamson_family_order_status.json):

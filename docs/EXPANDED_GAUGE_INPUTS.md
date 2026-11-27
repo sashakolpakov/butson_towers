@@ -52,5 +52,5 @@ API in [expanded_gauge_inputs.py](../experiments/scalar_lift/expanded_gauge_inpu
   `VerifiedSource` protocol with exact proofs and the explicit gauge.
 
 ```sh
-PYTHONPATH=src:. ./.native-env/bin/python -m experiments.scalar_lift.expanded_gauge_inputs --check certificates/scalar-lift/expanded-gauge-inputs.json
+PYTHONPATH=src:. python -m experiments.scalar_lift.expanded_gauge_inputs --check certificates/scalar-lift/expanded-gauge-inputs.json
 ```

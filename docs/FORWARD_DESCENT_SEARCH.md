@@ -75,7 +75,7 @@ Gram.
 ## Commands
 
 ```sh
-PYTHONPATH=src:. ./.native-env/bin/python -m experiments.scalar_lift.forward_descent_search \
+PYTHONPATH=src:. python -m experiments.scalar_lift.forward_descent_search \
   --database experiments/scalar_lift/search-state/forward-descent-v2.sqlite3 \
   --seconds 60 --max-db-mib 256 \
   --report certificates/scalar-lift/forward-descent-search.json

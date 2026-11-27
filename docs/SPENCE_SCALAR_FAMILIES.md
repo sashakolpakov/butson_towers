@@ -150,9 +150,9 @@ dense integer Gram checks. The resulting endpoint orders are
 allocated by this source executor.
 
 ```sh
-PYTHONPATH=src:. .native-env/bin/python -m experiments.scalar_lift.williamson_spence_family \
+PYTHONPATH=src:. python -m experiments.scalar_lift.williamson_spence_family \
   --output /tmp/williamson-spence-family.json
-PYTHONPATH=src:. .native-env/bin/python -m experiments.scalar_lift.williamson_spence_family \
+PYTHONPATH=src:. python -m experiments.scalar_lift.williamson_spence_family \
   --q 61 --r 20 --entry 2 0 100
 ```
 

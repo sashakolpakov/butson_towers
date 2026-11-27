@@ -52,6 +52,6 @@ matrices; see [the forward formulation](FORWARD_SCALAR_DESCENT.md).
 Replay:
 
 ```sh
-PYTHONPATH=src:. ./.native-env/bin/python -m experiments.scalar_lift.forward_frame_search \
+PYTHONPATH=src:. python -m experiments.scalar_lift.forward_frame_search \
   --report certificates/scalar-lift/forward-frame-search.json
 ```

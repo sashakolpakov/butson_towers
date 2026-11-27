@@ -1,0 +1,19 @@
+{
+  "source": "main.tex",
+  "source_sha256": "2fbba41c245fa5b420a46a8871578b5c6b8baab1fe08d9961c5fb023eb2cd556",
+  "reference_pdf": "announcement.pdf",
+  "pdf_sha256": "b3f8841ee1f48e8cd9484aabdf5383a29e52fa4770349211e3b811a20faf941d",
+  "pages": 28,
+  "command": [
+    "latexmk",
+    "-pdf",
+    "-interaction=nonstopmode",
+    "-halt-on-error",
+    "-outdir=build",
+    "main.tex"
+  ],
+  "warnings": [],
+  "source_equals_current_manuscript": true,
+  "all_pages_visually_reviewed": true,
+  "visual_review_scope": "Layout review of all 28 rendered PDF pages; mathematical and literal-input checks are recorded separately."
+}

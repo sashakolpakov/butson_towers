@@ -10,7 +10,9 @@ the specific outputs described in this manual.
 
 - Ronan Egan and Pádraig Ó Catháin,
   [*On complete morphisms of Butson Hadamard matrices*](https://arxiv.org/abs/2610.28394v1),
-  20 October 2026. This was the immediate starting reference for the project.
+  20 October 2026; [*Journal of Combinatorial Designs*, Early View,
+  2 November 2026](https://doi.org/10.1002/jcd.70047).
+  This was the immediate starting reference for the project.
   Its complete-morphism framework treats a fixed map on an entire stated
   root alphabet. A frame passing only an admitted palette has a narrower
   domain.
@@ -44,15 +46,30 @@ The executable verifier establishes the exact sign, symmetry, commutation
 and norm identities needed here; a bibliographic entry alone is not a source
 certificate.
 
+The {repo-file}`additional literal table <experiments/scalar_lift/near_williamson_inputs.json>`
+retains 18 published near-Williamson inputs and the ordinary width-69
+Williamson input. The source URLs, literal row choices and reversal flags
+are recorded with the data. Their exact signs, norms, amicability and
+operator-algebra reconstruction are checked in the separate certificates
+listed in the {repo-file}`source inventory <docs/SOURCE_INVENTORY.md>`.
+
+The prior constructions at the 31 recovered known orders have their own
+table and citations in {ref}`known-orders`. This distinguishes a previously
+known order from an equivalence claim about a particular representative.
+
 ## Paper, literal data and formal proofs
 
 | Material | Purpose |
 |---|---|
 | {repo-file}`Manuscript source <manuscript/hadamard_7572_announcement.tex>` | Definitions, constructions, complete finite inputs and mathematical proofs |
-| {repo-file}`Submitted PDF <release/butson_towers_v3/announcement.pdf>` | Frozen 22-page paper |
+| [Published first version](https://hexagonmath.org/2611.01070v1) | Existing HexagonMath article, with version 2 submitted as a revision |
+| {repo-file}`Original submitted PDF <release/butson_towers_v3/announcement.pdf>` | Frozen first-version manuscript |
+| {repo-file}`Current revision package <release/hexagon_2611_01070_v2/README.md>` | Submitted version 2 manuscript and replay records |
+| {repo-file}`Version 2 receipt <release/hexagon_2611_01070_v2/submission-status.json>` | Revision of the existing article; service status under review |
 | {repo-file}`Original T631 recipe <artifacts/hadamard-7572/recipe.py>` | Standalone reconstruction and checks of the first endpoint |
 | {repo-file}`T127 recipe <artifacts/t-matrices-127/recipe.py>` | Independent finite T127 input and known-order control |
-| {repo-file}`Lean endpoint file <formal/ButsonTowers/Endpoints.lean>` | Formal existence statements and dependencies |
+| {repo-file}`Lean formalization guide <docs/FORMALIZATION.md>` | All 34 endpoint theorems, nine families and the precise formal scope |
+| {repo-file}`Current portable Lean package <release/additional_source_verification/README.md>` | Complete current proof closure and 143 selected axiom reports |
 | {repo-file}`Paper-to-Lean audit <docs/MANUSCRIPT_LEAN_AUDIT.md>` | Correspondence, conventions and the scope of checked assumptions |
 
 ## Further exact implementation notes

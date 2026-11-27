@@ -1,0 +1,37 @@
+{
+  "schema": "hexagon-existing-article-version-receipt-v1",
+  "service": "https://hexagonmath.org",
+  "identifier": "2611.01070",
+  "previous_version": "2611.01070v1",
+  "version_id": "2611.01070v2",
+  "version_number": 2,
+  "title": "Butson towers and high-rank Hadamard matrices",
+  "operation": "revision_of_existing_published_article",
+  "new_article_created": false,
+  "status": "under_review",
+  "received_at": "2026-11-27 00:35:31",
+  "checked_at_utc": "2026-11-27T00:37:23.410557+00:00",
+  "source_archive_sha256": "8ade92f2038ec9e44ee58c20a7c28d063004a1948003fa9c14719af38001684f",
+  "metadata_sha256": "5c5969f6dc54cc9af90a231f7ba6a7e8f245a704a858f9a5fa60735d18cf3471",
+  "source_tree_sha256": "ce21f258ba859a902680cea57c71228a3ff903c641907098b2dcced923ac4997",
+  "expanded_source_files": 81,
+  "all_remote_expanded_file_hashes_match": true,
+  "server_preview_compile": "succeeded",
+  "server_preview_pages": 28,
+  "public_record_url": null,
+  "processing_jobs": [
+    {
+      "kind": "screen",
+      "status": "complete"
+    },
+    {
+      "kind": "compile",
+      "status": "complete"
+    },
+    {
+      "kind": "screen",
+      "status": "running"
+    }
+  ],
+  "private_receipt_saved_in_ignored_local_directory": true
+}

@@ -62,8 +62,8 @@ actual matrix for further work.
 ## Replays
 
 ```sh
-PYTHONPATH=src:. ./.native-env/bin/python -m experiments.scalar_lift.large_butson_factory --database search-state/broad-root-flat-all-inputs-v1.sqlite3 --all-verified --seconds 1 --report certificates/scalar-lift/broad-root-flat-all-inputs-tree.json
-PYTHONPATH=src:. ./.native-env/bin/python -m experiments.scalar_lift.large_butson_factory --database search-state/expanded-gauge-root-flat-v1.sqlite3 --expanded-only --seconds 1 --report certificates/scalar-lift/expanded-gauge-root-flat-tree.json
+PYTHONPATH=src:. python -m experiments.scalar_lift.large_butson_factory --database search-state/broad-root-flat-all-inputs-v1.sqlite3 --all-verified --seconds 1 --report certificates/scalar-lift/broad-root-flat-all-inputs-tree.json
+PYTHONPATH=src:. python -m experiments.scalar_lift.large_butson_factory --database search-state/expanded-gauge-root-flat-v1.sqlite3 --expanded-only --seconds 1 --report certificates/scalar-lift/expanded-gauge-root-flat-tree.json
 ```
 
 These commands resume completed checkpoints without redoing matrix nodes.

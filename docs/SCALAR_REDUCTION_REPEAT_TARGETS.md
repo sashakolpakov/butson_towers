@@ -61,8 +61,8 @@ controls. Its public `endpoint(source_id).entry(i,j)` and `.row(i)` specify
 every matrix entry without allocating the full endpoint.
 
 ```sh
-PYTHONPATH=src:. .native-env/bin/python -m experiments.scalar_lift.reuse_hadamard_7572_frame --check certificates/scalar-lift/hadamard-7572-frame-reuse.json
-PYTHONPATH=src:. .native-env/bin/python -m unittest tests.test_hadamard_7572_frame_reuse
+PYTHONPATH=src:. python -m experiments.scalar_lift.reuse_hadamard_7572_frame --check certificates/scalar-lift/hadamard-7572-frame-reuse.json
+PYTHONPATH=src:. python -m unittest tests.test_hadamard_7572_frame_reuse
 ```
 
 ## What the primary records establish

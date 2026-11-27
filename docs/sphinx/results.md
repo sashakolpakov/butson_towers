@@ -6,6 +6,10 @@ infinite families**, alongside the separate new periodic T127 ingredient.
 The source inventory reconstructs **31 known orders**, giving **65 distinct
 completed real orders**. The submitted 25 November package is preserved
 with its earlier 18-order scope; the current PDF includes the later results.
+Version 1 is [published on HexagonMath](https://hexagonmath.org/2611.01070v1);
+version 2 was submitted on 26 November 2026 (Toronto) as a revision of that
+article. The {repo-file}`version 2 receipt <release/hexagon_2611_01070_v2/submission-status.json>`
+records service status **under review**. Version 1 remains the published record.
 The finite claims are existence constructions; novelty labels refer to
 the dated literature ledger.
 

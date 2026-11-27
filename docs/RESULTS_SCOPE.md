@@ -23,6 +23,13 @@ Full dense endpoint audits are recorded separately where executed. Source
 verification, mathematical induction and proof-assistant verification remain
 separately identified in their certificates.
 
+At the known order 885924, a separate exact rank calculation over
+`F_3` proves that our sixth-root representative is inequivalent to the
+standard Paley matrix and to every skew Hadamard representative of that
+order. This comparison does not classify the other known-order outputs
+and is outside the current Lean existence proofs. Its proof, certificate
+and replay command are in the [known-order comparison](sphinx/known-orders.md).
+
 The finite Butson-Hadamard and generalized-weighing classifications remain
 in the original `hadamard` repository. Shared arithmetic support was copied
 here to keep the construction project independent; those classifications

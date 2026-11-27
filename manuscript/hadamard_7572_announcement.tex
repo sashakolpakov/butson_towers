@@ -647,7 +647,7 @@ Let $n,d$ be positive integers, let $K$ be as above, and let
 $\rho:K\longrightarrow M_d(\Q)$ be a
 unital $\Q$-algebra homomorphism such that
 $\rho(\bar z)=\rho(z)^{\mathsf T}$. Suppose that $N\in K^{n\times n}$
-satisfies $NN^*=wI_n$, and that $F\in\Q^{d\times d}$ satisfies
+satisfies $NN^*=wI_n$ for $w\in\Q$, and that $F\in\Q^{d\times d}$ satisfies
 $FF^{\mathsf T}=cI_d$ for $c\in\Q$. Form the matrix $H$ of order $dn$ with blocks
 \[
  H_{ij}=\rho(N_{ij})F.
@@ -1347,7 +1347,10 @@ The normalized trace of the actual representation is
  \tau(a)=\frac1w\operatorname{tr}_V(a)
  =\frac1w\sum_\nu m_\nu\Tr_{K_\nu/\Q}(a_\nu).
 \]
-More explicitly, put $T=A_0+3A_1+5A_2+7A_3$. The fields $K_\nu$ are
+More explicitly, put $T=A_0+3A_1+5A_2+7A_3$. The exact algebra audit
+verifies $A_j=p_j(T)$ for four rational polynomials by checking these
+equalities as full matrices. Since $T\in\mathcal A$, this proves
+$\mathcal A=\Q[T]$. The fields $K_\nu$ are therefore
 $\Q[t]/(f_\nu)$ for the distinct monic irreducible factors $f_\nu$ of
 $\det(tI_w-T)$. The following table records all their degrees and module
 multiplicities. Each pair is $([K_\nu:\Q],m_\nu)$; a repeated pair denotes
@@ -1369,7 +1372,9 @@ w&\dim_\Q\mathcal A&([K_\nu:\Q],m_\nu)\\\hline
 127&43&(1,1),\,(42,3)\\
 \end{array}
 \]
-If $M=\prod_\nu f_\nu$ and $g_\nu=M/f_\nu$, the projector onto the
+The matrix $T$ is symmetric, hence diagonalizable over $\mathbb R$.
+Its minimal polynomial is therefore $M=\prod_\nu f_\nu$, with each
+factor occurring once, and $M(T)=0$. Put $g_\nu=M/f_\nu$. The projector onto the
 $\nu$th field component is $e_\nu(T)$, where
 \[
  e_\nu(t)=g_\nu(t)\bigl(g_\nu(t)^{-1}\bmod f_\nu(t)\bigr)\bmod M(t).
@@ -1382,9 +1387,7 @@ products vanish. Applying them to
 standard basis columns of $V$, and retaining linearly independent strings
 $v,Tv,\ldots,T^{\deg f_\nu-1}v$, supplies every copy of $K_\nu$.
 The accompanying exact algebra audit performs this rational reconstruction.
- It verifies
-$A_j=p_j(T)$ for four rational polynomials and checks these equalities
-as full matrices. In the resulting rational basis $B$ of $V$, the
+In the resulting rational basis $B$ of $V$, the
 transported metric is $B^{\mathsf T}B$, and the scalar action is
 $B^{-1}A_jB$. The certificate checks the intertwining and metric
 identities; it does not replace this transported metric by an identity.
@@ -2340,8 +2343,11 @@ proves primality, which justifies the function. All operations above are
 integer additions, products, divisions with remainder, and finite loops.
 The ancillary file \texttt{anc/manuscript\_data.py} combines these checks
 with the thirteen cyclic quadruple checks, the twelve additional quadruple
-checks, the eight strong starter checks and
-the order-$13$ pair check.
+checks, the eight strong starter checks and the order-$13$ pair check.
+It also reconstructs the three triplings from that pair and performs
+independent Gaussian elimination over $\F_3$ on
+\eqref{eq:source351-mod3}, obtaining rank $195$. This check uses only
+the Python standard library and the printed finite inputs.
 
 
 \begin{thebibliography}{10}\footnotesize\raggedright

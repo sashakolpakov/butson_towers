@@ -168,6 +168,6 @@ Artifacts:
 - [Finite audit, tower and output tests](../tests/test_fifth_dyadic_tower.py).
 
 ```sh
-./.native-env/bin/python -m experiments.scalar_lift.fifth_dyadic_tower \
+python -m experiments.scalar_lift.fifth_dyadic_tower \
   --check certificates/scalar-lift/fifth-dyadic-tower.json
 ```

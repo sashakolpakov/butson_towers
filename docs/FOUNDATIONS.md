@@ -12,7 +12,9 @@ restriction of scalars or Butson morphisms.
 The immediate starting reference for this research direction was
 **Ronan Egan and Pádraig Ó Catháin,
 [*On complete morphisms of Butson Hadamard matrices*](https://arxiv.org/abs/2610.28394),
-arXiv:2610.28394v1, 20 October 2026**. Its
+arXiv:2610.28394v1, 20 October 2026**, published in
+[*Journal of Combinatorial Designs*, Early View, 2 November 2026](https://doi.org/10.1002/jcd.70047).
+Its
 [Theorem 2.2](https://arxiv.org/html/2610.28394#S2.Thmtheorem2.2)
 describes every complete morphism by a pair `(U,Z)`: `U` is unitary,
 `Phi_k(U)=0`, `Z` is a Butson matrix, and all used products `U^j Z` have
@@ -125,16 +127,21 @@ The [Williamson records](WILLIAMSON_ORDER_RECORDS.md) and
 [Spence family proof](SPENCE_SCALAR_FAMILIES.md) retain these algebras,
 field factors, dimensions, source norms and actual sign images. The
 new order claims concern individually completed endpoints in the
-[dated ledger](HADAMARD_HIGHER_ORDER_RECORDS.md). The five all-`r`
-construction theorems and the finite members' novelty labels have
-separate scopes.
+[dated ledger](HADAMARD_HIGHER_ORDER_RECORDS.md). Eleven verified Spence-source
+recurrences are available; eight supply announced new output families.
+Together with the cubic family, the manuscript states nine all-parameter
+families. Their existence theorems and their finite members' novelty labels
+have separate scopes.
 
 ## Formal verification status
 
 The [Lean development](FORMALIZATION.md) connects literal finite witnesses
 to the thirty-four announced existence theorems and all nine output families:
-eight Spence-source families and the cubic family. It proves the regular action and trace metric, the complete
-orthogonal-design construction, final sign entries and the exact matrix
-recurrences. Run `./scripts/check_formal.sh` for the build and fixed axiom
-audit; the [portable package](../release/lean_verification/README.md)
-contains the proof sources and a reproducibility verifier.
+eight Spence-source families and the cubic family. It proves the regular
+action and trace metric, the complete orthogonal-design construction, final
+sign entries and the exact matrix recurrences. Run `./scripts/check_formal.sh`
+for the build and all 143 selected axiom reports. The
+[current portable package](../release/additional_source_verification/README.md)
+contains the complete proof closure and a reproducibility verifier; the
+[original package](../release/lean_verification/README.md) preserves its earlier
+18-order, six-family scope.

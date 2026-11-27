@@ -1,0 +1,63 @@
+{
+  "schema": "butson-hexagon-v2-publication-audit-v1",
+  "identifier": "2611.01070",
+  "version_number": 2,
+  "manuscript": {
+    "source_matches_current_canonical": true,
+    "pages": 28,
+    "typesetting_warnings": [],
+    "all_page_layouts_reviewed": true,
+    "new_orders": 34,
+    "new_families": 9,
+    "known_orders": 31,
+    "total_distinct_finite_orders": 65,
+    "missing_rational_scale_hypothesis_made_explicit": true,
+    "generator_and_squarefree_minimal_polynomial_justification_expanded": true,
+    "independent_standard_library_source351_rank_check_added": true
+  },
+  "repository_tests": {
+    "passed": 367,
+    "subtests_passed": 4,
+    "command": "./scripts/run_tests.sh",
+    "transcript_sha256": "3cf588688fb22f328e0d85da4cc8eda743d37a22330a55e9d210cff0241b17e8"
+  },
+  "additional_release_tests": {
+    "verifier_tests_passed": 12,
+    "existing_article_target_tests_passed": 6
+  },
+  "documentation": {
+    "strict_HTML": "passed",
+    "doctests_passed": 26,
+    "manual_PDF_pages": 90,
+    "local_Markdown_link_targets_checked": 283,
+    "unresolved_targets": 0
+  },
+  "fresh_archive_replay": {
+    "all_replays_passed": true,
+    "replay_count": 13,
+    "full_field_CRT_audit_included": true,
+    "source_archive_sha256": "8ade92f2038ec9e44ee58c20a7c28d063004a1948003fa9c14719af38001684f",
+    "editable_install_hooks_disabled": true
+  },
+  "formal_scope": {
+    "selected_axiom_reports": 143,
+    "announced_orders": 34,
+    "announced_families": 9,
+    "kernel_replay": "Previously verified pinned current source packet; no new Lean source changed in this revision.",
+    "rank_comparison_formalized_in_Lean": false
+  },
+  "publication_target": {
+    "operation": "revision_of_existing_published_article",
+    "identifier": "2611.01070",
+    "previous_version": "2611.01070v1",
+    "expected_version": "2611.01070v2",
+    "create_new_article_endpoint_prohibited": true,
+    "receipt_confirmed": true,
+    "actual_version": "2611.01070v2",
+    "service_status": "under_review",
+    "original_published_version_metadata_and_all_file_records_unchanged": true,
+    "remote_expanded_file_hashes_verified": 81,
+    "server_preview_pages": 28,
+    "post_commit_compile_job": "complete"
+  }
+}

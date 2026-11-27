@@ -73,7 +73,7 @@ an arbitrary root-exponent array alone does not establish orthogonality.
 Replay:
 
 ```sh
-PYTHONPATH=src:. ./.native-env/bin/python \
+PYTHONPATH=src:. python \
   -m experiments.scalar_lift.forward_butson_descent \
   --check certificates/scalar-lift/forward-butson-descent.json
 ```

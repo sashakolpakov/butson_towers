@@ -60,7 +60,7 @@ an arithmetic target, not a construction or an independent novelty proof.
 Replay:
 
 ```sh
-PYTHONPATH=src:. ./.native-env/bin/python -m experiments.scalar_lift.catalogue_source_acquisition --check certificates/scalar-lift/catalogue-source-acquisition.json
+PYTHONPATH=src:. python -m experiments.scalar_lift.catalogue_source_acquisition --check certificates/scalar-lift/catalogue-source-acquisition.json
 ```
 
 The API `load_source(source_id)` returns the existing `VerifiedSource` protocol,

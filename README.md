@@ -6,18 +6,23 @@ Lean proofs.** This repository accompanies Alexander Kolpakov's manuscript
 
 [Read the paper (PDF)](https://sashakolpakov.github.io/butson_towers/butson-towers-paper.pdf) ·
 [LaTeX source](manuscript/hadamard_7572_announcement.tex) ·
-[Submitted source and reconstruction package](release/butson_towers_v3/source.zip) ·
-[Lean proofs](formal/ButsonTowers/Endpoints.lean)
+[Current revision package](release/hexagon_2611_01070_v2/README.md) ·
+[Lean proofs and scope](docs/FORMALIZATION.md)
 
 [Sphinx manual](https://sashakolpakov.github.io/butson_towers/) ·
 [Manual PDF](https://sashakolpakov.github.io/butson_towers/butson-towers-manual.pdf) ·
 [Build the HTML and PDF](docs/sphinx/contributing.md)
 
-The paper was submitted to HexagonMath on **25 November 2026** and is
-**under review**. The [submission record](release/butson_towers_v3/submission-status.json)
-binds the submitted package to its file hashes.
-The [submitted PDF](release/butson_towers_v3/announcement.pdf) is preserved;
-the paper link above follows the current manuscript revision.
+The first version is published as
+[HexagonMath 2611.01070v1](https://hexagonmath.org/2611.01070v1).
+Its [25 November submission record](release/butson_towers_v3/submission-status.json)
+and [PDF](release/butson_towers_v3/announcement.pdf) remain unchanged.
+The current manuscript expands that version to the results below; its
+[version 2 package](release/hexagon_2611_01070_v2/README.md) was submitted
+on **26 November 2026** (Toronto) as a revision of the same article.
+The [version 2 receipt](release/hexagon_2611_01070_v2/submission-status.json)
+records status **under review**; version 1 remains the published record.
+The paper link above follows the current manuscript source.
 
 ## Results
 
@@ -116,12 +121,21 @@ python -m pip install -e .
 python scripts/verify_manuscript_data.py
 python scripts/check_lean_literal_data.py
 python scripts/check_lean_additional_sources.py
+python scripts/audit_known_order_provenance.py --check
+python -m experiments.scalar_lift.known_order_comparisons \
+  --check certificates/scalar-lift/known-order-paley-comparison.json
 ```
 
 The first check uses only Python's standard library and verifies the literal
-finite inputs in the manuscript. The second compares the public construction
-data with the Lean literals. To replay the complete submitted source archive
-in a fresh temporary directory:
+finite inputs in the manuscript. The next two compare the original and
+additional public inputs with their Lean literals. The last two replay the
+31-order provenance record and the separate order-885924 rank comparison;
+the comparison uses NumPy for exact arithmetic modulo 3.
+
+The [current revision package](release/hexagon_2611_01070_v2/README.md)
+collects the current manuscript and its replay instructions. The earlier
+submitted archive retains its original 18-order, six-family scope. Replay
+that historical package in a fresh temporary directory with:
 
 ```sh
 python release/butson_towers_v3/verify.py
@@ -140,8 +154,9 @@ python -m pip install -e '.[dev,native,search]'
 ./scripts/run_tests.sh
 ```
 
-The [recorded audit](release/butson_towers_v3/audit.json) reports 326 passing
-tests and 4 passing subtests.
+The [original submission audit](release/butson_towers_v3/audit.json) records
+326 passing tests and 4 passing subtests for that earlier source snapshot.
+The command above checks the current checkout.
 
 ## Read and build the documentation
 
@@ -207,7 +222,8 @@ dependency setup and exact scope.
 | [`manuscript/`](manuscript/) | Mathematical source of the paper |
 | [`formal/ButsonTowers/`](formal/ButsonTowers/) | Lean constructions, finite witnesses and endpoint theorems |
 | [`artifacts/hadamard-7572/`](artifacts/hadamard-7572/) | Original order 7572 matrix, recipe and independent audits |
-| [`release/butson_towers_v3/`](release/butson_towers_v3/) | Submitted PDF, source package and verification records |
+| [`release/hexagon_2611_01070_v2/`](release/hexagon_2611_01070_v2/) | Submitted version 2 package, replay records and service receipt; under review |
+| [`release/butson_towers_v3/`](release/butson_towers_v3/) | Original submitted PDF, source package and verification records |
 | [`docs/`](docs/) | Construction proofs, literature checks and research notes |
 | [`experiments/scalar_lift/`](experiments/scalar_lift/) | Active construction and search implementations |
 

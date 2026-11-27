@@ -81,7 +81,7 @@ The acquired inputs' larger ambient fields are handled separately in
 divisor-field inventory do not cap their possible ambient degrees.
 
 ```sh
-PYTHONPATH=src:. ./.native-env/bin/python -m experiments.scalar_lift.weighted_scalar_tree --database search-state/weighted-additional-inputs-v1.sqlite3 --additional-inputs --seconds 30 --report certificates/scalar-lift/weighted-additional-inputs-tree.json
+PYTHONPATH=src:. python -m experiments.scalar_lift.weighted_scalar_tree --database search-state/weighted-additional-inputs-v1.sqlite3 --additional-inputs --seconds 30 --report certificates/scalar-lift/weighted-additional-inputs-tree.json
 ```
 
 There is a separate, stronger conclusion about **new orders from these fixed

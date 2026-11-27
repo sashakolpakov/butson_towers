@@ -1,0 +1,22 @@
+{
+  "origin": "https://hexagonmath.org",
+  "schema_url": "https://hexagonmath.org/api/v1/openapi.json",
+  "schema_version": "1.13.0-beta",
+  "existing_identifier": "2611.01070",
+  "previous_version": "2611.01070v1",
+  "expected_new_version": "2611.01070v2",
+  "revision_operation": "POST /api/v1/submissions/{originalDraftId}/revise",
+  "new_article_creation_route_prohibited": "POST /api/v1/submissions",
+  "successful_preview_and_expanded_source_hash_checks_required_before_commit": true,
+  "source_archive_maximum_bytes": 104857600,
+  "main_entry_point": "main.tex",
+  "private_credentials_and_receipts_excluded": true,
+  "schema_sha256": "4cc8635cc8d6c440b52009d41c8fa285f647297d54e1b74bcc7ed69f9d258df8",
+  "observed_revision_behavior": [
+    "The revision route creates a distinct editable draft while preserving the published parent article.",
+    "An editable revision retains the base versionId until commit; the final receipt must identify version2.",
+    "Inherited expanded source files are removed through their inherited source archive, only inside the editable revision.",
+    "The top-level commit identifier may carry the hexagon: prefix; the receipt carries the bare article identifier.",
+    "Bearer authentication is sent only to the submission API, not to public work reads."
+  ]
+}

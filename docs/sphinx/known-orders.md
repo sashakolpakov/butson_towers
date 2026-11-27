@@ -28,12 +28,12 @@ for the Paley-block product,
 [Turyn](https://doi.org/10.1016/0097-3165(72)90095-7) and
 [Whiteman](https://doi.org/10.1016/0097-3165(73)90010-1), and
 [Đoković–Golubitsky–Kotsireas, §3.3](https://arxiv.org/abs/1301.3671v2)
-for the cyclic difference sets.
+for the cyclic supplementary difference sets.
 
 | Order | Prior construction | Parameters |
 |---:|---|---|
 | 1524 | Paley I | $q=1523$ |
-| 2524 | Cyclic difference sets | $v=631$ |
+| 2524 | Cyclic supplementary difference sets | $v=631$ |
 | 3252 | Paley I | $q=3251$ |
 | 6564 | Paley I | $q=6563$ |
 | 8636 | CW | $t=17, w=127$ |
@@ -70,7 +70,7 @@ sequences of lengths 75,75,38,38, and hence T-sequences of length 113; see
 [Best et al., Corollary 5.1](https://arxiv.org/abs/1206.4107).
 The order-8636 row uses previously known Williamson-type matrices of order
 127, recorded by [Đoković, §3](https://arxiv.org/abs/0912.5091). That input differs from this project's new periodic T127 construction.
-The order-2524 cyclic difference sets use a cyclic group of order $v=631$
+The order-2524 cyclic supplementary difference sets use a cyclic group of order $v=631$
 and have block sizes 315,330,330,330 and
 common difference multiplicity 674; Section 3.3 of the cited paper gives
 the correct parameter.

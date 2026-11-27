@@ -148,5 +148,5 @@ above are established directly by the displayed identities and certificates.
 
 Replay:
 
-    .native-env/bin/python -m experiments.scalar_lift.dyadic_partial_lift \
+    python -m experiments.scalar_lift.dyadic_partial_lift \
       --check certificates/scalar-lift/dyadic-partial-lift.json

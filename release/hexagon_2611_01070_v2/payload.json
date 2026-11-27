@@ -1,0 +1,258 @@
+{
+  "schema": "butson-hexagon-v2-payload-v1",
+  "repository_files": [
+    "artifacts/hadamard-7572/certificate.json",
+    "artifacts/hadamard-7572/recipe.py",
+    "artifacts/hadamard-7572/t631.json",
+    "artifacts/t-matrices-127/t127.json",
+    "certificates/scalar-lift/additional-spence-families.json",
+    "certificates/scalar-lift/completed-order-inventory.json",
+    "certificates/scalar-lift/hadamard-7572-frame-reuse.json",
+    "certificates/scalar-lift/hadamard-frame-p127.json",
+    "certificates/scalar-lift/hadamard-frame-p271.json",
+    "certificates/scalar-lift/hadamard-frame-p547.json",
+    "certificates/scalar-lift/higher-order-records.json",
+    "certificates/scalar-lift/known-order-paley-comparison.json",
+    "certificates/scalar-lift/known-order-provenance.json",
+    "certificates/scalar-lift/near-williamson-scalar-algebras.json",
+    "certificates/scalar-lift/near-williamson-scalar-endpoints.json",
+    "certificates/scalar-lift/tripled-unreal-scalar-endpoints.json",
+    "certificates/scalar-lift/williamson-cyclotomic-trace-audit.json",
+    "certificates/scalar-lift/williamson-family-endpoints.json",
+    "certificates/scalar-lift/williamson-scalar-endpoints.json",
+    "certificates/scalar-lift/williamson-scalar-known-control.json",
+    "certificates/scalar-lift/williamson-spence-family.json",
+    "experiments/scalar_lift/additional_spence_families.py",
+    "experiments/scalar_lift/additional_spence_order_status.json",
+    "experiments/scalar_lift/bh13_6_seed.json",
+    "experiments/scalar_lift/bordered_seed_assembly.py",
+    "experiments/scalar_lift/broad_source_acquisition.py",
+    "experiments/scalar_lift/catalogue_source_acquisition.py",
+    "experiments/scalar_lift/commutative_scalar_algebra.py",
+    "experiments/scalar_lift/cyclotomic_towers.py",
+    "experiments/scalar_lift/fifth_dyadic_tower.py",
+    "experiments/scalar_lift/fifth_gauged_seed_escape.py",
+    "experiments/scalar_lift/fifth_source_assembly.py",
+    "experiments/scalar_lift/fifth_source_boundary_audit.py",
+    "experiments/scalar_lift/forward_butson_descent.py",
+    "experiments/scalar_lift/forward_source_registry.py",
+    "experiments/scalar_lift/hadamard_frame_search.py",
+    "experiments/scalar_lift/inverse_blocks.py",
+    "experiments/scalar_lift/known_order_comparisons.py",
+    "experiments/scalar_lift/near_williamson_inputs.json",
+    "experiments/scalar_lift/near_williamson_order_status.json",
+    "experiments/scalar_lift/near_williamson_scalar_endpoints.py",
+    "experiments/scalar_lift/rectangular_petrescu_sources.py",
+    "experiments/scalar_lift/reuse_hadamard_7572_frame.py",
+    "experiments/scalar_lift/scalar_restriction_obstructions.py",
+    "experiments/scalar_lift/tripled_unreal_scalar_endpoints.py",
+    "experiments/scalar_lift/vanishing_known_catalogue.py",
+    "experiments/scalar_lift/williamson_cyclotomic_trace_audit.py",
+    "experiments/scalar_lift/williamson_family_order_status.json",
+    "experiments/scalar_lift/williamson_inputs.json",
+    "experiments/scalar_lift/williamson_order_status.json",
+    "experiments/scalar_lift/williamson_scalar_endpoints.py",
+    "experiments/scalar_lift/williamson_spence_family.py",
+    "scripts/audit_known_order_provenance.py",
+    "scripts/verify_manuscript_data.py",
+    "src/hadamard/__init__.py",
+    "src/hadamard/butson.py",
+    "src/hadamard/cgw.py",
+    "src/hadamard/coefficients/__init__.py",
+    "src/hadamard/coefficients/cyclotomic.py",
+    "src/hadamard/dense_lift.py",
+    "src/hadamard/finite_equivalence.py",
+    "src/hadamard/hadamard/__init__.py",
+    "src/hadamard/hadamard/family.py",
+    "src/hadamard/hadamard/group_developed.py",
+    "src/hadamard/hadamard/model.py",
+    "src/hadamard/hadamard/signs.py",
+    "src/hadamard/integer_lattice.py",
+    "src/hadamard/inverse_lift.py",
+    "src/hadamard/laurent/__init__.py",
+    "src/hadamard/laurent/ideal.py",
+    "src/hadamard/laurent/polynomial.py",
+    "src/hadamard/provenance.py",
+    "src/hadamard/scalar_lift.py",
+    "src/hadamard/types.py"
+  ],
+  "release_files": {
+    "proof-sources.json": "anc/proof-sources.json",
+    "lean-verification.json": "anc/lean-verification.json",
+    "payload.json": "anc/payload.json",
+    "verify.py": "anc/verify_release.py",
+    "manuscript_data.py": "anc/manuscript_data.py"
+  },
+  "replays": [
+    {
+      "name": "manuscript-literals",
+      "argv": [
+        "scripts/verify_manuscript_data.py"
+      ],
+      "cwd": "anc"
+    },
+    {
+      "name": "known-order-provenance",
+      "argv": [
+        "scripts/audit_known_order_provenance.py",
+        "--check"
+      ],
+      "cwd": "anc"
+    },
+    {
+      "name": "completed-inventory",
+      "argv": [
+        "verify_release.py",
+        "--recipe",
+        "completed-inventory"
+      ],
+      "cwd": "anc"
+    },
+    {
+      "name": "base-sixth-root-sources",
+      "argv": [
+        "verify_release.py",
+        "--recipe",
+        "base-sixth-root-sources"
+      ],
+      "cwd": "anc"
+    },
+    {
+      "name": "known-order-rank",
+      "argv": [
+        "-m",
+        "experiments.scalar_lift.known_order_comparisons",
+        "--check",
+        "certificates/scalar-lift/known-order-paley-comparison.json"
+      ],
+      "cwd": "anc"
+    },
+    {
+      "name": "weighted-endpoints",
+      "argv": [
+        "-m",
+        "experiments.scalar_lift.williamson_scalar_endpoints",
+        "--output",
+        "_replay/weighted-endpoints.json"
+      ],
+      "compare_json": {
+        "output": "_replay/weighted-endpoints.json",
+        "certificate": "certificates/scalar-lift/williamson-scalar-endpoints.json"
+      },
+      "cwd": "anc"
+    },
+    {
+      "name": "weighted-known-control",
+      "argv": [
+        "-m",
+        "experiments.scalar_lift.williamson_scalar_endpoints",
+        "--p",
+        "127",
+        "--orders",
+        "17",
+        "--output",
+        "_replay/weighted-known-control.json"
+      ],
+      "compare_json": {
+        "output": "_replay/weighted-known-control.json",
+        "certificate": "certificates/scalar-lift/williamson-scalar-known-control.json"
+      },
+      "cwd": "anc"
+    },
+    {
+      "name": "original-spence-families",
+      "argv": [
+        "-m",
+        "experiments.scalar_lift.williamson_scalar_endpoints",
+        "--families",
+        "--output",
+        "_replay/original-spence-families.json"
+      ],
+      "compare_json": {
+        "output": "_replay/original-spence-families.json",
+        "certificate": "certificates/scalar-lift/williamson-family-endpoints.json"
+      },
+      "cwd": "anc"
+    },
+    {
+      "name": "near-williamson-endpoints",
+      "argv": [
+        "-m",
+        "experiments.scalar_lift.near_williamson_scalar_endpoints",
+        "--output",
+        "_replay/near-williamson-endpoints.json"
+      ],
+      "compare_json": {
+        "output": "_replay/near-williamson-endpoints.json",
+        "certificate": "certificates/scalar-lift/near-williamson-scalar-endpoints.json"
+      },
+      "cwd": "anc"
+    },
+    {
+      "name": "additional-spence-families",
+      "argv": [
+        "-m",
+        "experiments.scalar_lift.additional_spence_families",
+        "--output",
+        "_replay/additional-spence-families.json"
+      ],
+      "compare_json": {
+        "output": "_replay/additional-spence-families.json",
+        "certificate": "certificates/scalar-lift/additional-spence-families.json"
+      },
+      "cwd": "anc"
+    },
+    {
+      "name": "tripled-sixth-root-endpoints",
+      "argv": [
+        "-m",
+        "experiments.scalar_lift.tripled_unreal_scalar_endpoints",
+        "--output",
+        "_replay/tripled-sixth-root-endpoints.json"
+      ],
+      "compare_json": {
+        "output": "_replay/tripled-sixth-root-endpoints.json",
+        "certificate": "certificates/scalar-lift/tripled-unreal-scalar-endpoints.json"
+      },
+      "cwd": "anc"
+    },
+    {
+      "name": "cyclic-trace",
+      "argv": [
+        "-m",
+        "experiments.scalar_lift.williamson_cyclotomic_trace_audit",
+        "--output",
+        "_replay/cyclic-trace.json"
+      ],
+      "compare_json": {
+        "output": "_replay/cyclic-trace.json",
+        "certificate": "certificates/scalar-lift/williamson-cyclotomic-trace-audit.json"
+      },
+      "cwd": "anc"
+    },
+    {
+      "name": "near-williamson-field-factors",
+      "argv": [
+        "-m",
+        "experiments.scalar_lift.commutative_scalar_algebra",
+        "--check",
+        "certificates/scalar-lift/near-williamson-scalar-algebras.json"
+      ],
+      "optional_dependency": "python-flint",
+      "cwd": "anc"
+    }
+  ],
+  "dependencies": [
+    "Python>=3.10",
+    "NumPy",
+    "SymPy"
+  ],
+  "optional_dependency": "python-flint, only for the separate near-Williamson field/CRT factor replay",
+  "claims": {
+    "new_orders": 34,
+    "known_orders": 31,
+    "new_families": 9,
+    "Lean_axiom_reports": 143,
+    "rank_comparison_Lean_checked": false
+  }
+}

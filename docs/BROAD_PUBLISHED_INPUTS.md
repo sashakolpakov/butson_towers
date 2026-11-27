@@ -93,7 +93,7 @@ is Q(zeta5), not automatically the degree-eight field Q(zeta20).
 Replay:
 
 ```sh
-PYTHONPATH=src:. ./.native-env/bin/python -m experiments.scalar_lift.broad_source_acquisition --check certificates/scalar-lift/broad-source-acquisition.json
-PYTHONPATH=src:. ./.native-env/bin/python -m experiments.scalar_lift.published_h764 --check certificates/scalar-lift/published-h764-inputs.json
-PYTHONPATH=src:. ./.native-env/bin/python -m experiments.scalar_lift.published_alpoge_gs --check certificates/scalar-lift/published-alpoge-gs-inputs.json
+PYTHONPATH=src:. python -m experiments.scalar_lift.broad_source_acquisition --check certificates/scalar-lift/broad-source-acquisition.json
+PYTHONPATH=src:. python -m experiments.scalar_lift.published_h764 --check certificates/scalar-lift/published-h764-inputs.json
+PYTHONPATH=src:. python -m experiments.scalar_lift.published_alpoge_gs --check certificates/scalar-lift/published-alpoge-gs-inputs.json
 ```

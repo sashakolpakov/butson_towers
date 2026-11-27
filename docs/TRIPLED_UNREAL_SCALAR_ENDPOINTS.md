@@ -21,6 +21,13 @@ the complete source and frame identities for the full Gram proof.
 The retained [certificate](../certificates/scalar-lift/tripled-unreal-scalar-endpoints.json)
 contains all exact source checks, gauges, frame bindings and interface controls.
 
+At the known order 885924, the specific sixth-root representative is
+inequivalent to the standard Paley matrix and to every skew Hadamard matrix
+of that order: its rank over `F_3` is 246090, whereas a skew representative
+has rank 442962. The [comparison proof and replay](sphinx/known-orders.md)
+use a separate exact finite-field certificate. The order remains in the
+known-order count; the comparison is outside the Lean existence proofs.
+
 The registered next source at order 1053 would give H2657772, which is
 already known by Paley I with prime parameter 2657771. The
 [current source inventory](SOURCE_INVENTORY.md) records larger compatible
@@ -116,7 +123,7 @@ by eight. This statement does not settle equivalence to another construction.
 Replay the finite certificate:
 
 ```sh
-PYTHONPATH=src:. .native-env/bin/python -m experiments.scalar_lift.tripled_unreal_scalar_endpoints \
+python -m experiments.scalar_lift.tripled_unreal_scalar_endpoints \
   --output /tmp/tripled-unreal-scalar-endpoints.json
 ```
 

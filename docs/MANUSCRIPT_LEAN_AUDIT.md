@@ -137,10 +137,13 @@ The original package's narrative scope string mentions five Spence families;
 its exact audited theorem list also contains `unreal_cubic_family`. The
 certified scope of that older package is six families. The current nine-family
 announcement is verified by the additional supplement without rewriting it.
- The current `./scripts/check_formal.sh` also checks the additional exact 48-report list
-(85 + 10 + 48 selected statements). The most recent full repository run
-passed 351 tests and 4 subtests; the subsequent comparison and
-provenance checks passed 15 focused tests.
+The current `./scripts/check_formal.sh` also checks the additional exact
+48-report list (85 + 10 + 48 selected statements). Before the comparison and
+provenance checks were added, a full repository run passed 351 tests and
+4 subtests; those additions subsequently passed 15 focused tests. The version-2
+publication audit subsequently passed the full 367-test suite and 4 subtests,
+18 additional release/uploader tests, and all 13 fresh extracted archive
+replays, including the exact field-factor and reconstruction audit.
 
 The original proof archive, original matrix
 bundles and earlier article releases remain unchanged.

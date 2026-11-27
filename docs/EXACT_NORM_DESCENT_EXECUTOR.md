@@ -161,7 +161,7 @@ complete ordinary norm while destroying sign flatness, explicitly
 testing that the two certificates are separate. Four tests pass.
 
 ```
-PYTHONPATH=src:. OPENBLAS_NUM_THREADS=1 .native-env/bin/python -B \
+PYTHONPATH=src:. OPENBLAS_NUM_THREADS=1 python -B \
   -m experiments.scalar_lift.exact_norm_descent \
   --check certificates/scalar-lift/exact-norm-descent-control.json
 ```

@@ -75,6 +75,6 @@ The implementation is
 `certificates/scalar-lift/scalar-restriction-obstructions.json`.
 
 ```sh
-PYTHONPATH=src:. ./.native-env/bin/python -m experiments.scalar_lift.scalar_restriction_obstructions \
+PYTHONPATH=src:. python -m experiments.scalar_lift.scalar_restriction_obstructions \
   --check certificates/scalar-lift/scalar-restriction-obstructions.json
 ```

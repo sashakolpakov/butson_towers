@@ -134,7 +134,7 @@ twelve outputs add new orders and which outputs were already known.
 
 ## Source recurrences of Spence
 
-We use Spence's classical recurrence, with the five parameters
+The original implementation uses Spence's classical recurrence with parameters
 $q\in\{13,17,61,101,121\}$ and $w_0=(q+1)/2$. The sources and their
 recurrence are classical; the T631 construction supplies the new output
 multiplier. The retained source attribution and precise starter data are
@@ -354,7 +354,7 @@ Thus $n_r=13\cdot3^r$ is a valid source order for every $r\geq0$.
 The source entries are the unreal sixth roots with exponents
 $\{1,2,4,5\}$. A common factor $\zeta_6^{-1}$ changes that palette to
 $\{0,1,3,4\}$. For the T631 action/frame, precisely these entries have
-images $P,Q,-P,-Q$. Their sign entries and frame scale 2524 give the sixth
+images $P,Q,-P,-Q$. Their sign entries and frame scale 2524 give the cubic
 output family, $32812\cdot3^r$.
 
 The Python recurrence follows the formula literally:
@@ -375,7 +375,7 @@ amicable quadruple $(A_r,B_r,B_r,B_r)$ for the final substitution.
 
 ## What is new
 
-The source recurrences are established constructions; the six displayed
+The source recurrences are established constructions; the nine announced
 output families use the new T631 ingredient. Each has a new initial order
 to the best of the author's knowledge. Individual members can have prior
 constructions: for example 885924 in the cubic family and 18629644 in the
@@ -383,4 +383,8 @@ $q=121$ family are known orders. The exact finite labels and prior
 constructions are recorded in
 {repo-file}`HADAMARD_HIGHER_ORDER_RECORDS.md <docs/HADAMARD_HIGHER_ORDER_RECORDS.md>`.
 No equivalence-class conclusion follows merely from two recipes having
-the same order.
+the same order. The separate {ref}`known-order comparison <known-orders>`
+does prove that the order-885924 sixth-root representative is inequivalent
+to every skew Hadamard matrix of that order, including the standard Paley
+matrix. Its finite-field rank certificate is independent of the formal
+family existence proofs.

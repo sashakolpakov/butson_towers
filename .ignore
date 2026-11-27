@@ -13,3 +13,5 @@
 
 # Reproducibility copies duplicate the live sources; inspect a packet by path.
 /release/*/source/
+/release/*/main.tex
+/release/*/manuscript_data.py

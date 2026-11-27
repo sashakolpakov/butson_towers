@@ -1,0 +1,84 @@
+{
+  "schema": "butson-hexagon-v2-extracted-replay-v1",
+  "success": true,
+  "source_archive_sha256": "8ade92f2038ec9e44ee58c20a7c28d063004a1948003fa9c14719af38001684f",
+  "all_explicit_archive_members_and_hashes_checked": true,
+  "title_and_abstract_synchronized": true,
+  "source_packet_pinned_to_complete_143_report_Lean_audit": true,
+  "Lean_kernel_rerun_by_this_command": false,
+  "rank_comparison_Lean_checked": false,
+  "only_extracted_recipe_files_used": true,
+  "inherited_PYTHONPATH_replaced_with_extracted_source_paths": true,
+  "editable_install_pth_execution_disabled": true,
+  "check_only": false,
+  "replays": [
+    {
+      "name": "manuscript-literals",
+      "success": true,
+      "elapsed_seconds": 0.67
+    },
+    {
+      "name": "known-order-provenance",
+      "success": true,
+      "elapsed_seconds": 0.07
+    },
+    {
+      "name": "completed-inventory",
+      "success": true,
+      "elapsed_seconds": 0.07
+    },
+    {
+      "name": "base-sixth-root-sources",
+      "success": true,
+      "elapsed_seconds": 0.71
+    },
+    {
+      "name": "known-order-rank",
+      "success": true,
+      "elapsed_seconds": 4.41
+    },
+    {
+      "name": "weighted-endpoints",
+      "success": true,
+      "elapsed_seconds": 3.73
+    },
+    {
+      "name": "weighted-known-control",
+      "success": true,
+      "elapsed_seconds": 0.18
+    },
+    {
+      "name": "original-spence-families",
+      "success": true,
+      "elapsed_seconds": 9.26
+    },
+    {
+      "name": "near-williamson-endpoints",
+      "success": true,
+      "elapsed_seconds": 2.91
+    },
+    {
+      "name": "additional-spence-families",
+      "success": true,
+      "elapsed_seconds": 4.58
+    },
+    {
+      "name": "tripled-sixth-root-endpoints",
+      "success": true,
+      "elapsed_seconds": 6.18
+    },
+    {
+      "name": "cyclic-trace",
+      "success": true,
+      "elapsed_seconds": 0.98
+    },
+    {
+      "name": "near-williamson-field-factors",
+      "success": true,
+      "elapsed_seconds": 83.01
+    }
+  ],
+  "optional_full_scalar_algebra_replay_requested": true,
+  "remote_requests_performed": false,
+  "elapsed_seconds": 116.81
+}

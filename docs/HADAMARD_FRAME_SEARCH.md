@@ -209,14 +209,14 @@ a full H228 integer Gram, all 8192 masks of the planted T631 sign kernel,
 and the independently found H3252 with its complete integer Gram:
 
 ```sh
-PYTHONPATH=src:. .native-env/bin/python -m experiments.scalar_lift.hadamard_frame_search \
+PYTHONPATH=src:. python -m experiments.scalar_lift.hadamard_frame_search \
   --self-test --workdir /tmp/hadamard-frame-controls
 ```
 
 Run a bounded independent search:
 
 ```sh
-PYTHONPATH=src:. .native-env/bin/python -m experiments.scalar_lift.hadamard_frame_search \
+PYTHONPATH=src:. python -m experiments.scalar_lift.hadamard_frame_search \
   --seconds 60 --seed 2026112422 --heads 5,7,9 --workdir /tmp/hadamard-frame-run
 ```
 
@@ -307,7 +307,7 @@ integer correlation evaluations. These finite negative runs are separate
 from the positive T127 pilot and imply no nonexistence result.
 
 ```sh
-PYTHONPATH=src:. .native-env/bin/python -m experiments.scalar_lift.hadamard_frame_search \
+PYTHONPATH=src:. python -m experiments.scalar_lift.hadamard_frame_search \
   --headless --parity-map certificates/scalar-lift/hadamard-frame-p1453.json \
   --seconds 60 --seed 202611261455 --workdir /tmp/hadamard-frame-headless
 ```

@@ -1,0 +1,8 @@
+{
+  "identifier": "2611.01070",
+  "previous_version": "2611.01070v1",
+  "expected_version": "2611.01070v2",
+  "title": "Butson towers and high-rank Hadamard matrices",
+  "new_article_creation_permitted": false,
+  "operation": "POST /api/v1/submissions/{originalDraftId}/revise"
+}

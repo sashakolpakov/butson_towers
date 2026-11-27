@@ -65,5 +65,5 @@ as excluding every possible scalar-restriction formulation.
 Replay:
 
 ```sh
-PYTHONPATH=src:. ./.native-env/bin/python -m experiments.scalar_lift.mixed_basis_restriction --check certificates/scalar-lift/mixed-basis-restriction.json
+PYTHONPATH=src:. python -m experiments.scalar_lift.mixed_basis_restriction --check certificates/scalar-lift/mixed-basis-restriction.json
 ```

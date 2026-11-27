@@ -152,8 +152,10 @@ The dependency chain connects:
    coefficient identities.
 3. Disjoint signed supports, amicable substitution and equality of final
    order and Gram scale.
-4. The eight strong Spence recurrences and the unreal cubic recurrence,
+4. The eleven verified Spence recurrences and the unreal cubic recurrence,
    including their signs, norms and index cardinalities for every iteration.
+   Eight of the Spence recurrences supply the announced new output families;
+   the other three are retained as construction controls.
 
 The finite certificates use kernel reduction (`decide +kernel`). No
 external search result, source-file hash, native evaluator or numerical
@@ -197,7 +199,8 @@ route. These checks do not rebuild the Lean compiler itself.
 ### Formal scope and representative conventions
 
 The paper's character identities have a general finite-field proof. Lean
-checks the eight required finite character matrices from literals. Its endpoint
+checks all eleven retained finite character matrices from literals, including
+the eight used by the announced Spence-source families. Its endpoint
 proofs therefore need no general quadratic-character theorem.
 
 The core formal GS reversal uses $u+v=0$; Python uses $u+v=-1$.
@@ -218,15 +221,24 @@ assumption missing from an announced endpoint theorem.
 
 ## Releases, checksums and reproducible runs
 
-The frozen submission has a standalone executable source package and a
-separate source-only Lean package. They serve different purposes:
+The first version is published as
+[HexagonMath 2611.01070v1](https://hexagonmath.org/2611.01070v1).
+Its submitted packages retain their original bytes and scope. The current
+version 2 package was submitted on 26 November 2026 (Toronto) as a revision
+of that article. The service receipt records status **under review**, with
+all 81 expanded source-file hashes matching the local package and a
+successful 28-page server PDF preview. Version 1 remains the published record.
+Executable source replays and Lean replays serve different purposes:
 
 | Package or record | Binding and replay |
 |---|---|
-| {repo-file}`Submitted source archive <release/butson_towers_v3/source.zip>` | Literal data, reconstruction recipes, finite source/trace replays and the manuscript |
+| {repo-file}`Current revision package <release/hexagon_2611_01070_v2/README.md>` | Submitted version 2 manuscript and replay records |
+| {repo-file}`Version 2 receipt <release/hexagon_2611_01070_v2/submission-status.json>` | Existing-article revision; under review, with source hashes and successful server preview |
+| {repo-file}`Original submitted source archive <release/butson_towers_v3/source.zip>` | Original literal data, reconstruction recipes, finite source/trace replays and manuscript |
 | {repo-file}`Submission manifest <release/butson_towers_v3/submission-manifest.json>` | Archive-member sizes and hashes |
 | {repo-file}`Build record <release/butson_towers_v3/build.json>` | The reference PDF and exact TeX source |
-| {repo-file}`Complete Lean source packet <release/lean_verification/README.md>` | Pinned formal sources, literal data, dependency lock and the original 85-report verifier |
+| {repo-file}`Current complete Lean source packet <release/additional_source_verification/README.md>` | All current proof dependencies, literal bindings and all three audit sets (143 reports) |
+| {repo-file}`Original Lean source packet <release/lean_verification/README.md>` | Earlier 18-order, six-family snapshot and its original 85-report verifier |
 | {repo-file}`Sixth-root supplement <release/lean_sixth_root_pair/README.md>` | The additional ten matrix identities and their separate verifier |
 | {repo-file}`Manuscript/Lean audit <docs/MANUSCRIPT_LEAN_AUDIT.md>` | Current interpretation of the exact theorem lists and their mathematical scope |
 
@@ -239,8 +251,9 @@ scope is stated explicitly here and in the correspondence audit.
 python3 release/butson_towers_v3/verify.py
 ```
 
-This extracts a fresh source archive, verifies its bindings and runs the
-seven standalone executable replays. It checks the separate Lean packet's
+This replays the original 18-order, six-family source snapshot. It extracts a
+fresh archive, verifies its bindings and runs the seven standalone executable
+replays. It checks the separate original Lean packet's
 hash; it does not itself rerun the Lean kernel. For a fresh kernel replay,
 extract the appropriate Lean packet and run its `verify.py`, following
 its README and pinned-cache instructions.

@@ -16,6 +16,13 @@ family theorems are collected in `Endpoints.lean`, `NearWilliamsonEndpoints.lean
 Novelty labels belong to the dated literature ledger; the formal
 statements prove existence.
 
+The separate order-885924 comparison proves inequivalence of our sixth-root
+representative to every skew Hadamard matrix of that order, including the
+standard Paley matrix. Its finite-field rank proof and executable certificate
+are described in the [known-order comparison](sphinx/known-orders.md).
+That comparison and the literature provenance of the 31 known orders are
+outside the current Lean formalization.
+
 The nine stated families are
 
 | Character order | Hadamard order, for every `r : ℕ` |
@@ -105,8 +112,8 @@ The [current source-only package](../release/additional_source_verification/READ
 contains all current proof dependencies, the literal input bindings and all
 three strict audit sets. The earlier
 [source-only reproducibility package](../release/lean_verification/README.md)
-contains the complete proof sources, dependency lock, exact audit list
-and a checksum verifier. Its recorded replay builds a fresh extraction
+preserves the original 18-order, six-family proof snapshot, dependency lock,
+85-statement audit list and checksum verifier. Its recorded replay builds a fresh extraction
 using a matching pinned dependency cache. A cold download route and a
 full dependency source-build route are also provided.
 

@@ -1,0 +1,33 @@
+{
+  "ok": true,
+  "scope": "Original checkout private inputs compared in memory with the revision worktree Git index, reachable history and release archives.",
+  "checks": {
+    "root_private_files_present_regular_and_mode_0600": true,
+    "credential_loaded": true,
+    "parameters_loaded": true,
+    "git_index_checked": true,
+    "all_reachable_git_objects_checked": true,
+    "all_git_index_blobs_checked": true,
+    "release_zip_walk_completed": true
+  },
+  "counts": {
+    "private_files_checked": 2,
+    "tracked_paths_checked": 1256,
+    "git_index_blob_entries_checked": 1256,
+    "git_objects_checked": 1731,
+    "git_blobs_checked": 1524,
+    "git_index_only_blobs_checked": 56,
+    "reachable_git_objects_checked": 1675,
+    "reachable_git_trees_checked": 184,
+    "reachable_git_blobs_checked": 1468,
+    "git_blob_bytes_checked": 124139659,
+    "release_archives_checked": 7,
+    "zip_archives_checked": 490,
+    "zip_members_checked": 1713,
+    "zip_expanded_bytes_checked": 158319394,
+    "findings": 0,
+    "errors": 0
+  },
+  "findings": [],
+  "errors": []
+}

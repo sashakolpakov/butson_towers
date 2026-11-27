@@ -1,0 +1,427 @@
+{
+  "schema": "butson-hexagon-existing-article-version-v2",
+  "identifier": "2611.01070",
+  "previous_version": "2611.01070v1",
+  "expected_version": "2611.01070v2",
+  "source_archive": "source.zip",
+  "source_archive_sha256": "8ade92f2038ec9e44ee58c20a7c28d063004a1948003fa9c14719af38001684f",
+  "reference_pdf_sha256": "b3f8841ee1f48e8cd9484aabdf5383a29e52fa4770349211e3b811a20faf941d",
+  "metadata_sha256": "5c5969f6dc54cc9af90a231f7ba6a7e8f245a704a858f9a5fa60735d18cf3471",
+  "main_source_sha256": "2fbba41c245fa5b420a46a8871578b5c6b8baab1fe08d9961c5fb023eb2cd556",
+  "pages": 28,
+  "new_orders": 34,
+  "new_families": 9,
+  "known_orders_recovered": 31,
+  "distinct_finite_completed_orders": 65,
+  "Lean_selected_axiom_reports": 143,
+  "pinned_Lean_package_sha256": "6ff9f98c20fa577dcb9c756e0c904d85b4c57c23f62238450cd3fe7e0f69f1e5",
+  "source_archive_members": [
+    {
+      "path": "anc/artifacts/hadamard-7572/certificate.json",
+      "bytes": 13741,
+      "sha256": "5c37e95c97ded5025b7b5bd92b9c994a09f419426a04e564872eda4b19f899b1"
+    },
+    {
+      "path": "anc/artifacts/hadamard-7572/recipe.py",
+      "bytes": 9493,
+      "sha256": "a839a6052b2bd6b55170304318099e61cc62b1b9e3d525834a4d131bd9900ec8"
+    },
+    {
+      "path": "anc/artifacts/hadamard-7572/t631.json",
+      "bytes": 47917,
+      "sha256": "c5497ef485a23f1c99385035eaf02472b4dad4dee9d906d0d6b2aeb2f3680871"
+    },
+    {
+      "path": "anc/artifacts/t-matrices-127/t127.json",
+      "bytes": 10545,
+      "sha256": "4a415276e4c1f0360fe4e6bc6ca88d24955cda2b5c5297dbc44a6d63a0bf7a2b"
+    },
+    {
+      "path": "anc/certificates/scalar-lift/additional-spence-families.json",
+      "bytes": 109524,
+      "sha256": "d074b907d599817b5eaafd485f32dfe3a52cce6688669f4746acc6f405fa074e"
+    },
+    {
+      "path": "anc/certificates/scalar-lift/completed-order-inventory.json",
+      "bytes": 41699,
+      "sha256": "b138418bf7418e0a807f93cfe99eba4db176f87ca24bffaff4437bcac718f782"
+    },
+    {
+      "path": "anc/certificates/scalar-lift/hadamard-7572-frame-reuse.json",
+      "bytes": 20890,
+      "sha256": "1e2dfc6aa7f5c6b8d278e43904549176d806fe1efb2a39b250175024a2300370"
+    },
+    {
+      "path": "anc/certificates/scalar-lift/hadamard-frame-p127.json",
+      "bytes": 11693,
+      "sha256": "bd892f6bb0e928691f68c32bfc15927d31f07519ffa943c451d714b26e824c20"
+    },
+    {
+      "path": "anc/certificates/scalar-lift/hadamard-frame-p271.json",
+      "bytes": 4273,
+      "sha256": "312528cd202efb4e8509c49dc1727f8a08a999cb55d4b3856d2259e60b61b35e"
+    },
+    {
+      "path": "anc/certificates/scalar-lift/hadamard-frame-p547.json",
+      "bytes": 13585,
+      "sha256": "899c07b7a76932dae1c120617f1d3cf9b3bdcf963e75de7d15297e079c1beb78"
+    },
+    {
+      "path": "anc/certificates/scalar-lift/higher-order-records.json",
+      "bytes": 110643,
+      "sha256": "ad565eea5ce13a8be29d71d05c0e61455b0b39e08bd7e4cd1d3a63cadbbbca88"
+    },
+    {
+      "path": "anc/certificates/scalar-lift/known-order-paley-comparison.json",
+      "bytes": 7927,
+      "sha256": "5c16d568d7f30d5bb06cad187f920fd482a67721614a3170a832a67e7a5352a0"
+    },
+    {
+      "path": "anc/certificates/scalar-lift/known-order-provenance.json",
+      "bytes": 57317,
+      "sha256": "e357fddcebd428a0ed46b25bafa5f79cf0e7a7e2761f208086b4737bcc6a78d0"
+    },
+    {
+      "path": "anc/certificates/scalar-lift/near-williamson-scalar-algebras.json",
+      "bytes": 468424,
+      "sha256": "3459d794369c00a8ee3eaff8a477847856b806f2633929655033bfd7640c179a"
+    },
+    {
+      "path": "anc/certificates/scalar-lift/near-williamson-scalar-endpoints.json",
+      "bytes": 151823,
+      "sha256": "12622cb68a90c4e20b45d2c97fa29bed71407f1042ec6f1f84c0f06a92156cbd"
+    },
+    {
+      "path": "anc/certificates/scalar-lift/tripled-unreal-scalar-endpoints.json",
+      "bytes": 20798,
+      "sha256": "9d378b69f2c2479ac6d02e088c50cb279957a7ab81cef738253d19cbd27dcb8a"
+    },
+    {
+      "path": "anc/certificates/scalar-lift/williamson-cyclotomic-trace-audit.json",
+      "bytes": 46815,
+      "sha256": "3ac485aabd5191df41061c369cfd6d51833e9c7cb1683e6c0aeeb30e8a21ab4a"
+    },
+    {
+      "path": "anc/certificates/scalar-lift/williamson-family-endpoints.json",
+      "bytes": 203162,
+      "sha256": "758dc7bf6c269e89f3142332789d468d17ac31fa5dbfa362278ca49fc76d2ca6"
+    },
+    {
+      "path": "anc/certificates/scalar-lift/williamson-scalar-endpoints.json",
+      "bytes": 165408,
+      "sha256": "346b1e57671605d8cc0dcafa415f8cabe62154feb18d653a67c3f59188f7dc38"
+    },
+    {
+      "path": "anc/certificates/scalar-lift/williamson-scalar-known-control.json",
+      "bytes": 9041,
+      "sha256": "3075adff1d23d28169b6cd5b1678ebc282651888e8c280644c5c35d3c2254fa2"
+    },
+    {
+      "path": "anc/certificates/scalar-lift/williamson-spence-family.json",
+      "bytes": 24352,
+      "sha256": "0ab2ac65129b6c8ac7ee97396847bcc000515473ba03b34a2da3c27715ede0ed"
+    },
+    {
+      "path": "anc/experiments/scalar_lift/additional_spence_families.py",
+      "bytes": 11964,
+      "sha256": "277a57ab3537e75974f75d834a93bd035313eb088e93c08596fb3e8b0c21c2f8"
+    },
+    {
+      "path": "anc/experiments/scalar_lift/additional_spence_order_status.json",
+      "bytes": 8207,
+      "sha256": "e1b4b58790c710719f625a2768cfda6cbb7db83512f31ddd9d79cb43425506da"
+    },
+    {
+      "path": "anc/experiments/scalar_lift/bh13_6_seed.json",
+      "bytes": 1001,
+      "sha256": "8ff8f10160828e8cc0372ecb045fca397aaf5c44c8f0db06d7aad1ebcb8cf003"
+    },
+    {
+      "path": "anc/experiments/scalar_lift/bordered_seed_assembly.py",
+      "bytes": 5720,
+      "sha256": "7c9935f73cd397b0ac4039a3f92da87fe1a92b2241ac5c8c8ab540530531d32d"
+    },
+    {
+      "path": "anc/experiments/scalar_lift/broad_source_acquisition.py",
+      "bytes": 8902,
+      "sha256": "750a9729a3e6cf279e2c88a8a9bdc7a322485480de40be9a438c0b4fcb9061ef"
+    },
+    {
+      "path": "anc/experiments/scalar_lift/catalogue_source_acquisition.py",
+      "bytes": 9595,
+      "sha256": "e64d4f8a3d43704555a3b3d2384b925c5ef4d3ddc8c5558feaad3c4ec4447336"
+    },
+    {
+      "path": "anc/experiments/scalar_lift/commutative_scalar_algebra.py",
+      "bytes": 17756,
+      "sha256": "25db763e807914e8d55adc7a7aacc3ebb391a423406cbed6e7ef02a643f83655"
+    },
+    {
+      "path": "anc/experiments/scalar_lift/cyclotomic_towers.py",
+      "bytes": 12044,
+      "sha256": "614ef0fb2389c3c9b18b6009f3ca648cfa3f495a10303faa6166c79b5dc7b089"
+    },
+    {
+      "path": "anc/experiments/scalar_lift/fifth_dyadic_tower.py",
+      "bytes": 13800,
+      "sha256": "6e93817f2cc42886f787b94941a2e2525f16d7c2db11c33b299cf0d57d05ff17"
+    },
+    {
+      "path": "anc/experiments/scalar_lift/fifth_gauged_seed_escape.py",
+      "bytes": 8971,
+      "sha256": "7dbbaca58c181c0f01714e0895a81942cc81de6bf200c065ae32fbd0d5a5fa17"
+    },
+    {
+      "path": "anc/experiments/scalar_lift/fifth_source_assembly.py",
+      "bytes": 9833,
+      "sha256": "db1791e03065ca3bf1716fb8fec951af45aaa53909824b7f95ca63aa17ec2f67"
+    },
+    {
+      "path": "anc/experiments/scalar_lift/fifth_source_boundary_audit.py",
+      "bytes": 9759,
+      "sha256": "e1b18329f8a35e05b0a0ec4bf0e8d3db7ed1e7907dbdcd900fcd663f481d1e57"
+    },
+    {
+      "path": "anc/experiments/scalar_lift/forward_butson_descent.py",
+      "bytes": 15229,
+      "sha256": "49e85106aeadb4a3721ac2b3a20e4862d1bc0fd677d25b5885e7de850c59fee0"
+    },
+    {
+      "path": "anc/experiments/scalar_lift/forward_source_registry.py",
+      "bytes": 12084,
+      "sha256": "57696a79fc28b0aa254e754e30405dc50d00185afff7d1a78b194de0b9b0c406"
+    },
+    {
+      "path": "anc/experiments/scalar_lift/hadamard_frame_search.py",
+      "bytes": 27803,
+      "sha256": "486cdef73d1e10ae81644d6a0d21e1a85257f8d5c93e79a6ff812dbfdcdacc79"
+    },
+    {
+      "path": "anc/experiments/scalar_lift/inverse_blocks.py",
+      "bytes": 7600,
+      "sha256": "5a2bc9a658579f8461082904944d93e4e4b1a7555d094065c13af25ffa09114e"
+    },
+    {
+      "path": "anc/experiments/scalar_lift/known_order_comparisons.py",
+      "bytes": 15239,
+      "sha256": "abb8cd1efc53bb2349c89f8e455f882d207ea5302f1cad7700b499f14206bf60"
+    },
+    {
+      "path": "anc/experiments/scalar_lift/near_williamson_inputs.json",
+      "bytes": 34076,
+      "sha256": "be3da66fbf0517cde1e326e6a60c26acaeb03c0a1948b74bff78bcadad00957f"
+    },
+    {
+      "path": "anc/experiments/scalar_lift/near_williamson_order_status.json",
+      "bytes": 54056,
+      "sha256": "6e171a284a7e2c5a88a3cbffea2d6d732640256992cb37c865cc8b7b1ac8ad21"
+    },
+    {
+      "path": "anc/experiments/scalar_lift/near_williamson_scalar_endpoints.py",
+      "bytes": 8072,
+      "sha256": "3d9e971768f2b411e4db33e219a72775abd5ec40cd9b95d98a982a4e2792570f"
+    },
+    {
+      "path": "anc/experiments/scalar_lift/rectangular_petrescu_sources.py",
+      "bytes": 18769,
+      "sha256": "3450d589d349e72c1d108c19cfbae0da3ecbc21acc2698d7f45664c08fdb83d0"
+    },
+    {
+      "path": "anc/experiments/scalar_lift/reuse_hadamard_7572_frame.py",
+      "bytes": 13282,
+      "sha256": "323475c1c779c0491b7b157dfee647ee4d39e8ebcbb97bf340af26f8fdb0e6e4"
+    },
+    {
+      "path": "anc/experiments/scalar_lift/scalar_restriction_obstructions.py",
+      "bytes": 9658,
+      "sha256": "4574d02478c0bb2f05d5852960340edd4e96309c7777b84d61a226588e7b57f7"
+    },
+    {
+      "path": "anc/experiments/scalar_lift/tripled_unreal_scalar_endpoints.py",
+      "bytes": 12892,
+      "sha256": "7510f5eebdb85a3cd1ce7ede7f5488c25bcfb81e72909e22b41532d199af06fc"
+    },
+    {
+      "path": "anc/experiments/scalar_lift/vanishing_known_catalogue.py",
+      "bytes": 8130,
+      "sha256": "36c43dadda49455e48e137ceb907b8269fdef93a0ec30ae9db571caa88bee499"
+    },
+    {
+      "path": "anc/experiments/scalar_lift/williamson_cyclotomic_trace_audit.py",
+      "bytes": 12360,
+      "sha256": "90c6129d79cc6b07409c04a43ce373de9d9294a48f672a618a97e05917a5575e"
+    },
+    {
+      "path": "anc/experiments/scalar_lift/williamson_family_order_status.json",
+      "bytes": 25670,
+      "sha256": "cba7867ea88f9f22f0319fc4c2d6af71f23d617b3446fce02d3ff2791c82208b"
+    },
+    {
+      "path": "anc/experiments/scalar_lift/williamson_inputs.json",
+      "bytes": 22585,
+      "sha256": "242f554cf113c68ab882e147c3b2702b7bb62e68b66ad36b16c92b6c194f8560"
+    },
+    {
+      "path": "anc/experiments/scalar_lift/williamson_order_status.json",
+      "bytes": 28033,
+      "sha256": "74dd93f23c72a9d2bb828eaf7b7ca0b190b32e9000dd97bb99b6a7da095a49ea"
+    },
+    {
+      "path": "anc/experiments/scalar_lift/williamson_scalar_endpoints.py",
+      "bytes": 22215,
+      "sha256": "990d193441cc3c64366826495190db39862e78d970ec6cae87dc9594805e1270"
+    },
+    {
+      "path": "anc/experiments/scalar_lift/williamson_spence_family.py",
+      "bytes": 19631,
+      "sha256": "4ecae4bb17fa18a0a0f06a8018d952a36ac209c9ca813312a25efbee0e38995a"
+    },
+    {
+      "path": "anc/lean-verification.json",
+      "bytes": 20516,
+      "sha256": "fb3232546741c942d59c5a7fc956635ae520019f988559f1e163cb0482dba1f2"
+    },
+    {
+      "path": "anc/manifest.json",
+      "bytes": 14508,
+      "sha256": "1d3f984616707d7f2e4fd6fe3d564f93a480811d9d369ce4ca92b680513c6d89"
+    },
+    {
+      "path": "anc/manuscript_data.py",
+      "bytes": 15437,
+      "sha256": "abde132cf9dd94f7c2710565fcd9848adb3b2cd810277e42bb7254e680ce3a0d"
+    },
+    {
+      "path": "anc/payload.json",
+      "bytes": 8888,
+      "sha256": "03d38bb7111c4f6d9864b1d1dab95b939e93fe538be32bac9af6e41353b59576"
+    },
+    {
+      "path": "anc/proof-sources.json",
+      "bytes": 1083,
+      "sha256": "463d399b0cbf56d5cf6b9f27fa492ee8362317783811d526b2b3ff9292536959"
+    },
+    {
+      "path": "anc/scripts/audit_known_order_provenance.py",
+      "bytes": 19104,
+      "sha256": "2c3243916a7509580053e04a85ac4bb421dab4dba9fc113d4e195fd8c4da9961"
+    },
+    {
+      "path": "anc/scripts/verify_manuscript_data.py",
+      "bytes": 15437,
+      "sha256": "abde132cf9dd94f7c2710565fcd9848adb3b2cd810277e42bb7254e680ce3a0d"
+    },
+    {
+      "path": "anc/src/hadamard/__init__.py",
+      "bytes": 748,
+      "sha256": "b338f904dfaaf9ab6fbac856999dbc93583aab169866826500ac8c6dc0a65427"
+    },
+    {
+      "path": "anc/src/hadamard/butson.py",
+      "bytes": 1717,
+      "sha256": "c8c4a0fe8e6832574bf13dda3604f8d726842dbaa2a884424e8132ab564fa47d"
+    },
+    {
+      "path": "anc/src/hadamard/cgw.py",
+      "bytes": 27538,
+      "sha256": "23c2a1db9ba0a832060e04f22a8e1e9d01938955662faa8941609373bab2bac3"
+    },
+    {
+      "path": "anc/src/hadamard/coefficients/__init__.py",
+      "bytes": 111,
+      "sha256": "5c82c0fd59c8f4bc0ccf0b9891d2f860107eab3bfecc41e8ab45a005bf2cd70b"
+    },
+    {
+      "path": "anc/src/hadamard/coefficients/cyclotomic.py",
+      "bytes": 18855,
+      "sha256": "a918d4a2d44fbec76f166e97996bd6e862bbc8f2a5c8d24d3022ae7bd5fdba4e"
+    },
+    {
+      "path": "anc/src/hadamard/dense_lift.py",
+      "bytes": 5565,
+      "sha256": "2cd5d0a8aa11504795fb984a18f14c257366822047cf3c43b3a938ac600563bf"
+    },
+    {
+      "path": "anc/src/hadamard/finite_equivalence.py",
+      "bytes": 8677,
+      "sha256": "42f76a51447c66779bc3ba51dd9ab94aa7f984486f06abe3107451097dfb9b37"
+    },
+    {
+      "path": "anc/src/hadamard/hadamard/__init__.py",
+      "bytes": 422,
+      "sha256": "e54ce8cddfad6a6542faa993982e70dc287df16b8db1cfb0f2cd48d595120871"
+    },
+    {
+      "path": "anc/src/hadamard/hadamard/family.py",
+      "bytes": 9002,
+      "sha256": "86275aabe757abda1f2ef4adaca0947cbcb3a76b4fc08cae3f0d7d18398518da"
+    },
+    {
+      "path": "anc/src/hadamard/hadamard/group_developed.py",
+      "bytes": 11031,
+      "sha256": "bdd1aae2d2803d1507dd9694232c0b484b425a31d4d4a9f776d6038b9e34d530"
+    },
+    {
+      "path": "anc/src/hadamard/hadamard/model.py",
+      "bytes": 8835,
+      "sha256": "69da0054093134035cdc90214b5ece3492531427ace79e5a0fc8574fe54c05f9"
+    },
+    {
+      "path": "anc/src/hadamard/hadamard/signs.py",
+      "bytes": 16160,
+      "sha256": "eb51106a43b075ff160d2048a752da4cc503da5b213d5544d1c3a841bb088ecb"
+    },
+    {
+      "path": "anc/src/hadamard/integer_lattice.py",
+      "bytes": 9328,
+      "sha256": "e65211f733a64696ea3093be46ca812ec5bdbc87e9f82673bfe48c07d948253f"
+    },
+    {
+      "path": "anc/src/hadamard/inverse_lift.py",
+      "bytes": 4228,
+      "sha256": "fb2d1a64767e656d73fbaa1ce50680c5749a09eb26d2d6f5e33fe8cfa176fc89"
+    },
+    {
+      "path": "anc/src/hadamard/laurent/__init__.py",
+      "bytes": 294,
+      "sha256": "2a785c08afde675a1c20f28eb21fbda0d3f982d0d85bad26377c68c92e89e4ba"
+    },
+    {
+      "path": "anc/src/hadamard/laurent/ideal.py",
+      "bytes": 7064,
+      "sha256": "165e5e0298fd8da8374cb874b33755315b3380560892cf78900238977170b25c"
+    },
+    {
+      "path": "anc/src/hadamard/laurent/polynomial.py",
+      "bytes": 16931,
+      "sha256": "8688c261772718f2dd50927095c92a7f7ee755926eae2c1b46fab32fb7317437"
+    },
+    {
+      "path": "anc/src/hadamard/provenance.py",
+      "bytes": 1573,
+      "sha256": "e3610e4465bb604d21ff982eed448843a61833c3488886634eaa88ef2bfcad1c"
+    },
+    {
+      "path": "anc/src/hadamard/scalar_lift.py",
+      "bytes": 13002,
+      "sha256": "19f87100c195436490e99b8e11f8bf4cda0a1d9084e7d421d1e33a255724b43f"
+    },
+    {
+      "path": "anc/src/hadamard/types.py",
+      "bytes": 745,
+      "sha256": "be6e39b164266fbbaaff5b08b746d49178910e794bfea96075498a2171314c44"
+    },
+    {
+      "path": "anc/verify_release.py",
+      "bytes": 12258,
+      "sha256": "2b5231b876887d7377f8c61a74517834922a283b6c6c27c40f42bd5e7160a1cf"
+    },
+    {
+      "path": "main.tex",
+      "bytes": 105011,
+      "sha256": "2fbba41c245fa5b420a46a8871578b5c6b8baab1fe08d9961c5fb023eb2cd556"
+    }
+  ],
+  "private_local_files_excluded": true,
+  "network_requests_performed_by_builder": false
+}

@@ -1,0 +1,791 @@
+{
+  "schema": "verified-butson-towers-additional-source-kernel-v1",
+  "success": true,
+  "payload_manifest_sha256": "e04f6b36ee96ee7a9ed65c4c6613a6a03a6a4ed28b225437082968d356831bbc",
+  "scope": "complete canonical proof closure; sixteen additional finite orders, six additional Spence recurrences and the shifted109 family",
+  "lean_toolchain": "leanprover/lean4:v4.32.0",
+  "lake_version": "Lake version 5.0.0-src+8c9756b (Lean version 4.32.0)",
+  "mathlib_revision": "81a5d257c8e410db227a6665ed08f64fea08e997",
+  "dependency_pins": [
+    {
+      "name": "mathlib",
+      "revision": "81a5d257c8e410db227a6665ed08f64fea08e997",
+      "tracked_tree_clean": true
+    },
+    {
+      "name": "plausible",
+      "revision": "e12c1910fe855cbfc38803cd4e55543906d5fa62",
+      "tracked_tree_clean": true
+    },
+    {
+      "name": "LeanSearchClient",
+      "revision": "c5d5b8fe6e5158def25cd28eb94e4141ad97c843",
+      "tracked_tree_clean": true
+    },
+    {
+      "name": "importGraph",
+      "revision": "7e9612bf0b9ee66db3cb5b9988a35afc706f5a12",
+      "tracked_tree_clean": true
+    },
+    {
+      "name": "proofwidgets",
+      "revision": "6e311e2a844da9b2cc3971187df2fe0066947b93",
+      "tracked_tree_clean": true
+    },
+    {
+      "name": "aesop",
+      "revision": "a7dbf0c63b694e47f425f3dcddbc0e178bb432d3",
+      "tracked_tree_clean": true
+    },
+    {
+      "name": "Qq",
+      "revision": "38d591e778f100aec9762bb582f9c7f55f50e9dc",
+      "tracked_tree_clean": true
+    },
+    {
+      "name": "batteries",
+      "revision": "023ce7d62a0531e22a5331e20b587817a80d49ff",
+      "tracked_tree_clean": true
+    },
+    {
+      "name": "Cli",
+      "revision": "88679d088c9720c27ebdf2ba4dafe17341747f94",
+      "tracked_tree_clean": true
+    }
+  ],
+  "proof_theorems_checked": 143,
+  "additional_theorems_checked": 48,
+  "axioms_by_audit": {
+    "AuditAxioms.lean": {
+      "ButsonTowers.inverse_metric_adjoint": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.framed_zero": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.frame_pair_transport": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.frame_sum_transport": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.weighted_pair_transport": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.weighted_sum_transport": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.weighted_gram_block": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.frame_gram_block": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.framed_matrix_flat": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.framed_matrix_gram": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.framed_matrix_hadamard": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.Spence.doubled_minus_norm": [
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.Spence.doubled_plus_norm": [
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.Spence.sum_squares_from_strong_norms": [
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.Spence.strong_norm_induction": [
+        "propext"
+      ],
+      "ButsonTowers.Spence.entry_step_sign": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.TraceTowers.trace_metric_adjoint": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.TraceTowers.inverse_trace_metric_adjoint": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.TraceTowers.weighted_trace_gram_transport": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.TraceTowers.basis_gram_congruence": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.GroupAlgebra.regular_mul": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.GroupAlgebra.regular_involution": [
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.GroupAlgebra.regular_trace": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.GroupAlgebra.inverse_basis_trace_metric": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.GroupAlgebra.regularAlgHom_injective": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.GroupAlgebra.regular_star": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.GroupAlgebra.regularAlgHom_normalized_trace": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.GroupAlgebra.group_algebra_identity_trace_metric": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.GoethalsSeidel.gs_gram": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.OrthogonalDesign.coefficient_gram": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.OrthogonalDesign.coefficient_cross": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.OrthogonalDesign.coefficients_signed_partition": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.tensor_substitute_gram": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.tensor_substitute_flat": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.tensor_substitute_hadamard": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.SpenceMatrix.strong_step": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.SpenceMatrix.family_strong": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.SpenceMatrix.family_norm": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.SpenceMatrix.family_card": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.SpenceMatrix.family_hadamard": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.Unreal.next_amicable": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.Unreal.next_norm": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.Unreal.quad_amicable": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.hadamard_reindex": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.exists_from_t": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.spence_exists_from_t": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.Data.t127_codes_corr": [],
+      "ButsonTowers.Data.t127_corr": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.Data.t127_onehot": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.Data.t631_codes_corr": [
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.Data.t631_corr": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.Data.t631_onehot": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.Data.unreal13_norm": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.hadamard_7572": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.hadamard_17668": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.hadamard_22716": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.hadamard_32812": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.hadamard_42908": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.hadamard_58052": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.hadamard_73196": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.hadamard_78244": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.hadamard_93388": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.hadamard_98436": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.hadamard_108532": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.hadamard_128724": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.hadamard_153964": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.hadamard_229684": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.hadamard_295308": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.hadamard_386172": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.hadamard_4772884": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.hadamard_13001124": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.spence_family_13": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.spence_family_17": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.spence_family_61": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.spence_family_101": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.spence_family_121": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.unreal_cubic_family": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.announced_orders_exist": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.williamson_table_endpoints": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.GoethalsSeidel.python_reflection_127": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.GoethalsSeidel.python_reflection_631": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.GSAlgebra.blocks_gram": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.TraceTowers.finite_free_trace_transitivity": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.TraceTowers.tower_action_coordinates": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.TraceTowers.tower_trace_metric": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "AuditSixthRootPair.lean": {
+      "ButsonTowers.SixthRootPair.transpose_mul_of_mul_transpose": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.SixthRootPair.action_mul_transpose": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.SixthRootPair.action_add_transpose": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.SixthRootPair.action_transpose": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.SixthRootPair.action_polynomial": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.SixthRootPair.action_mul_left": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.SixthRootPair.imaginaryAction_transpose": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.SixthRootPair.imaginaryAction_square": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.SixthRootPair.coordinateAction_mul": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.SixthRootPair.coordinateAction_conjugate": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "AuditAdditionalSources.lean": {
+      "ButsonTowers.Data.nearWilliamson47_quad": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.Data.nearWilliamson53_quad": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.Data.nearWilliamson59_quad": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.Data.nearWilliamson67_quad": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.Data.nearWilliamson69_quad": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.Data.nearWilliamson73_quad": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.Data.nearWilliamson79_quad": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.Data.nearWilliamson93_quad": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.Data.nearWilliamson97_quad": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.Data.nearWilliamson103_quad": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.Data.nearWilliamson109_quad": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.Data.nearWilliamson127_quad": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.hadamard_118628": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.hadamard_133772": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.hadamard_148916": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.hadamard_169108": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.hadamard_174156": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.hadamard_184252": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.hadamard_199396": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.hadamard_234732": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.hadamard_244828": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.hadamard_259972": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.hadamard_275116": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.hadamard_320548": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.Data.additionalSpence5_strong": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.Data.additionalSpence53_strong": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.Data.additionalSpence97_strong": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.Data.additionalSpence109_strong": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.Data.additionalSpence113_strong": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.Data.additionalSpence137_strong": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.Data.additionalPaley5_isPaley": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.Data.additionalPaley53_isPaley": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.Data.additionalPaley97_isPaley": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.Data.additionalPaley109_isPaley": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.Data.additionalPaley113_isPaley": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.Data.additionalPaley137_isPaley": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.spence_family_5": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.spence_family_53": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.spence_family_97": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.spence_family_109": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.spence_family_113": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.spence_family_137": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.near_williamson_table_endpoints": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.hadamard_2985892": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.hadamard_38816596": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.hadamard_291145924": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.hadamard_15131380": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "ButsonTowers.new_spence_family_109": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ]
+    }
+  },
+  "elapsed_seconds": 64.13,
+  "project_axioms_or_placeholders_used": false,
+  "dependency_mode": "existing-pinned-cache",
+  "archive_sha256": "6ff9f98c20fa577dcb9c756e0c904d85b4c57c23f62238450cd3fe7e0f69f1e5",
+  "cold_source_replay": {
+    "success": true,
+    "elapsed_seconds": 857.71,
+    "proof_theorems_checked": 143,
+    "additional_theorems_checked": 48,
+    "initial_payload_manifest_sha256": "90ec43f88b9471c1f80b3d1c970ecf20461fa2080a1870fe4892ce2d23f7099b",
+    "canonical_library_modules_rebuilt": 67,
+    "Lean_source_files_identical_to_final_archive": 70,
+    "all_JSON_inputs_and_literal_checkers_identical": true,
+    "axiom_reports_identical_to_final_validation": true,
+    "changes_after_cold_replay": [
+      "formal/NEW_SOURCE_VERIFICATION.md",
+      "README.md",
+      "verify.py"
+    ],
+    "verifier_AST_unchanged_except_report_scope_wording": true
+  }
+}

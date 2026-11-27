@@ -180,7 +180,7 @@ and all five Haagerup histograms differ.
 ## Replay and access
 
 ```sh
-PYTHONPATH=src:. OPENBLAS_NUM_THREADS=1 .native-env/bin/python \
+PYTHONPATH=src:. OPENBLAS_NUM_THREADS=1 python \
   -m experiments.scalar_lift.projective_flat_descent \
   --check certificates/scalar-lift/projective-flat-descent.json
 ```

@@ -175,7 +175,7 @@ hashes and status references. The executable replay for the additional
 source families is:
 
 ```sh
-PYTHONPATH=src:. .native-env/bin/python -m experiments.scalar_lift.additional_spence_families \
+python -m experiments.scalar_lift.additional_spence_families \
   --output /tmp/additional-spence-families.json
 ```
 
@@ -195,3 +195,16 @@ inequivalence to that matrix (and to every skew representative). The other
 thirty comparisons remain unsettled. This comparison has a separate exact
 finite certificate; it does not alter the Lean existence package or the
 34-new-order count.
+
+Replay these separate records from an installed checkout:
+
+```sh
+python scripts/audit_known_order_provenance.py --check
+python -m experiments.scalar_lift.known_order_comparisons \
+  --check certificates/scalar-lift/known-order-paley-comparison.json
+```
+
+The first command checks all 31 positive prior-construction records, ledger
+selectors, integer hypotheses and input hashes using the standard library.
+The second checks the exact rank certificate using NumPy arithmetic modulo 3.
+Neither command repeats a construction search or allocates the large endpoint.

@@ -93,5 +93,5 @@ Its localization denominator must include every prime inverted in the
 actual operator, including those of the inverse basis if needed.
 
 ```sh
-PYTHONPATH=src:. ./.native-env/bin/python -m experiments.scalar_lift.normalization_denominator_gate --check certificates/scalar-lift/normalization-denominator-gate.json
+PYTHONPATH=src:. python -m experiments.scalar_lift.normalization_denominator_gate --check certificates/scalar-lift/normalization-denominator-gate.json
 ```
