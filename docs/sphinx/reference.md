@@ -91,6 +91,40 @@ entry/row recipe. Neither class allocates the full endpoint at construction.
 comes from the verified input identities. A dense full audit is an additional
 operation with its own recorded scope.
 
+## Symmetry-selected Williamson sources
+
+The {repo-file}`current source model <docs/WILLIAMSON_SYMMETRY_SEARCH.md>`
+uses even multiplier orbits. `chart` checks every expanded coefficient
+table; `coefficients` derives the unique signs for a supplied axis word.
+`verify_source` requires literal integer sign rows, symmetry and every
+integer correlation. Its result is a complete source certificate, whereas
+`select_charts` checks necessary arithmetic before a construction search.
+
+```{eval-rst}
+.. automodule:: experiments.scalar_lift.williamson_symmetry
+   :members: chart, coefficients, expand, verify_source, coefficient_record, select_charts
+   :member-order: bysource
+```
+
+The CP model retains the exact pair contributions and the forced-sign XOR
+identities. A positive result is independently expanded and verified.
+The native launcher copies its coefficient input, source and binary into
+an immutable snapshot; its checkpoint retains the generator state and
+current annealing word. Random and annealing evaluation counts can include
+repeated words. Both interfaces accept explicit time and seed arguments.
+
+```{eval-rst}
+.. automodule:: experiments.scalar_lift.williamson_axis_cp
+   :members: integer_nets, build, solve
+   :member-order: bysource
+```
+
+```{eval-rst}
+.. automodule:: experiments.scalar_lift.williamson_axis_native
+   :members: row_targets, serialize, prepare
+   :member-order: bysource
+```
+
 ## Recursive source entries
 
 The additional compatible finite sources use a separate verifier with an

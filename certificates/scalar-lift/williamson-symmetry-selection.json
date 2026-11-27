@@ -1,0 +1,464 @@
+{
+  "schema": "symmetric-Williamson-under10000-selection-v1",
+  "scope": "Necessary row-norm and joint signed-axis count screen; selected geometries have full expanded coefficient audits. No new completed large source orHadamardendpoint asserted.",
+  "limits": {
+    "target_order_exclusive": 10000,
+    "max_nonzero_orbits": 80
+  },
+  "frontier": {
+    "primary_urls": [
+      "https://www.math74.com/Hadamard/unknown.html",
+      "https://www.math74.com/Hadamard/index.html"
+    ],
+    "retrieved_utc": "2026-11-27T15:51:27.109944+00:00",
+    "version": 61,
+    "orders": [
+      2396,
+      2676,
+      2876,
+      2956,
+      3004,
+      3452,
+      3628,
+      3788,
+      3884,
+      4076,
+      4124,
+      4156,
+      4348,
+      4412,
+      4460,
+      4676,
+      4748,
+      4792,
+      4892,
+      5028,
+      5036,
+      5132,
+      5276,
+      5308,
+      5468,
+      5692,
+      5708,
+      5748,
+      5752,
+      5756,
+      5804,
+      5884,
+      5892,
+      5948,
+      5996,
+      6172,
+      6236,
+      6268,
+      6284,
+      6316,
+      6332,
+      6476,
+      6652,
+      6668,
+      6852,
+      6876,
+      6988,
+      7132,
+      7148,
+      7180,
+      7324,
+      7388,
+      7484,
+      7628,
+      7716,
+      7876,
+      7916,
+      7924,
+      7948,
+      8108,
+      8156,
+      8252,
+      8348,
+      8380,
+      8396,
+      8684,
+      8812,
+      8828,
+      8860,
+      9004,
+      9148,
+      9260,
+      9308,
+      9356,
+      9388,
+      9484,
+      9532,
+      9596,
+      9692,
+      9716,
+      9836
+    ],
+    "ordered_list_sha256": "aea971232f70b0efb341ae926884673f1187563e8fe6d0dab8030cdf6e1669fb",
+    "scope": "The 81 orders for which Hadamard Matrix Explorer v61 reports no construction. This is an attributed finite target list, not a nonexistence statement."
+  },
+  "known_T_inputs_certificate": "certificates/scalar-lift/williamson-symmetry-controls.json",
+  "known_T_inputs_sha256": "e316b9e94dc7d619e1ec6064cc90dea554757096d61eab614dfab97bbccbc0f0",
+  "charts": [
+    {
+      "p": 463,
+      "m": 22,
+      "nonzero_orbits": 21,
+      "action": "identity",
+      "row_types": [
+        {
+          "row_sums": [
+            -21,
+            -21,
+            -21,
+            23
+          ],
+          "signed_axis_sums": [
+            0,
+            0,
+            0,
+            -1
+          ],
+          "total_orbit_sign_sum": -1
+        }
+      ],
+      "target_routes": [
+        {
+          "target_order": 9260,
+          "known_T_length": 5
+        }
+      ]
+    },
+    {
+      "p": 223,
+      "m": 6,
+      "nonzero_orbits": 37,
+      "action": "C3",
+      "row_types": [
+        {
+          "row_sums": [
+            -5,
+            -17,
+            -17,
+            -17
+          ],
+          "signed_head_axis_sum": -2,
+          "signed_tail_axis_sum": -3,
+          "total_orbit_sign_sum": -5
+        }
+      ],
+      "target_routes": [
+        {
+          "target_order": 2676,
+          "known_T_length": 3
+        },
+        {
+          "target_order": 4460,
+          "known_T_length": 5
+        }
+      ]
+    },
+    {
+      "p": 223,
+      "m": 6,
+      "nonzero_orbits": 37,
+      "action": "identity",
+      "row_types": [
+        {
+          "row_sums": [
+            -17,
+            -17,
+            -17,
+            -5
+          ],
+          "signed_axis_sums": [
+            -1,
+            -1,
+            -1,
+            -2
+          ],
+          "total_orbit_sign_sum": -5
+        }
+      ],
+      "target_routes": [
+        {
+          "target_order": 2676,
+          "known_T_length": 3
+        },
+        {
+          "target_order": 4460,
+          "known_T_length": 5
+        }
+      ]
+    },
+    {
+      "p": 739,
+      "m": 18,
+      "nonzero_orbits": 41,
+      "action": "C3",
+      "row_types": [
+        {
+          "row_sums": [
+            -53,
+            7,
+            7,
+            7
+          ],
+          "signed_head_axis_sum": 1,
+          "signed_tail_axis_sum": -2,
+          "total_orbit_sign_sum": -1
+        }
+      ],
+      "target_routes": [
+        {
+          "target_order": 2956,
+          "known_T_length": 1
+        }
+      ]
+    },
+    {
+      "p": 283,
+      "m": 6,
+      "nonzero_orbits": 47,
+      "action": "C3",
+      "row_types": [
+        {
+          "row_sums": [
+            7,
+            19,
+            19,
+            19
+          ],
+          "signed_head_axis_sum": 2,
+          "signed_tail_axis_sum": 3,
+          "total_orbit_sign_sum": 5
+        }
+      ],
+      "target_routes": [
+        {
+          "target_order": 7924,
+          "known_T_length": 7
+        }
+      ]
+    },
+    {
+      "p": 283,
+      "m": 6,
+      "nonzero_orbits": 47,
+      "action": "identity",
+      "row_types": [
+        {
+          "row_sums": [
+            7,
+            19,
+            19,
+            19
+          ],
+          "signed_axis_sums": [
+            2,
+            1,
+            1,
+            1
+          ],
+          "total_orbit_sign_sum": 5
+        }
+      ],
+      "target_routes": [
+        {
+          "target_order": 7924,
+          "known_T_length": 7
+        }
+      ]
+    },
+    {
+      "p": 491,
+      "m": 10,
+      "nonzero_orbits": 49,
+      "action": "identity",
+      "row_types": [
+        {
+          "row_sums": [
+            -29,
+            -9,
+            -9,
+            31
+          ],
+          "signed_axis_sums": [
+            1,
+            0,
+            0,
+            -2
+          ],
+          "total_orbit_sign_sum": -1
+        }
+      ],
+      "target_routes": [
+        {
+          "target_order": 5892,
+          "known_T_length": 3
+        }
+      ]
+    },
+    {
+      "p": 751,
+      "m": 10,
+      "nonzero_orbits": 75,
+      "action": "identity",
+      "row_types": [
+        {
+          "row_sums": [
+            11,
+            31,
+            31,
+            31
+          ],
+          "signed_axis_sums": [
+            2,
+            1,
+            1,
+            1
+          ],
+          "total_orbit_sign_sum": 5
+        }
+      ],
+      "target_routes": [
+        {
+          "target_order": 3004,
+          "known_T_length": 1
+        }
+      ]
+    },
+    {
+      "p": 1423,
+      "m": 18,
+      "nonzero_orbits": 79,
+      "action": "C3",
+      "row_types": [
+        {
+          "row_sums": [
+            -53,
+            31,
+            31,
+            31
+          ],
+          "signed_head_axis_sum": 2,
+          "signed_tail_axis_sum": -1,
+          "total_orbit_sign_sum": 1
+        }
+      ],
+      "target_routes": [
+        {
+          "target_order": 5692,
+          "known_T_length": 1
+        }
+      ]
+    }
+  ],
+  "coefficient_audits": [
+    {
+      "p": 463,
+      "m": 22,
+      "mu": 38,
+      "action": "identity",
+      "N": 21,
+      "all_nonzero_shift_tables_verified": 462,
+      "all_offdiagonal_coefficients_even": true,
+      "diagonal_parity_verified": true
+    },
+    {
+      "p": 223,
+      "m": 6,
+      "mu": 40,
+      "action": "C3",
+      "N": 37,
+      "all_nonzero_shift_tables_verified": 222,
+      "all_offdiagonal_coefficients_even": true,
+      "diagonal_parity_verified": true
+    },
+    {
+      "p": 223,
+      "m": 6,
+      "mu": 40,
+      "action": "identity",
+      "N": 37,
+      "all_nonzero_shift_tables_verified": 222,
+      "all_offdiagonal_coefficients_even": true,
+      "diagonal_parity_verified": true
+    },
+    {
+      "p": 739,
+      "m": 18,
+      "mu": 15,
+      "action": "C3",
+      "N": 41,
+      "all_nonzero_shift_tables_verified": 738,
+      "all_offdiagonal_coefficients_even": true,
+      "diagonal_parity_verified": true
+    },
+    {
+      "p": 283,
+      "m": 6,
+      "mu": 45,
+      "action": "C3",
+      "N": 47,
+      "all_nonzero_shift_tables_verified": 282,
+      "all_offdiagonal_coefficients_even": true,
+      "diagonal_parity_verified": true
+    },
+    {
+      "p": 283,
+      "m": 6,
+      "mu": 45,
+      "action": "identity",
+      "N": 47,
+      "all_nonzero_shift_tables_verified": 282,
+      "all_offdiagonal_coefficients_even": true,
+      "diagonal_parity_verified": true
+    },
+    {
+      "p": 491,
+      "m": 10,
+      "mu": 110,
+      "action": "identity",
+      "N": 49,
+      "all_nonzero_shift_tables_verified": 490,
+      "all_offdiagonal_coefficients_even": true,
+      "diagonal_parity_verified": true
+    },
+    {
+      "p": 751,
+      "m": 10,
+      "mu": 182,
+      "action": "identity",
+      "N": 75,
+      "all_nonzero_shift_tables_verified": 750,
+      "all_offdiagonal_coefficients_even": true,
+      "diagonal_parity_verified": true
+    },
+    {
+      "p": 1423,
+      "m": 18,
+      "mu": 17,
+      "action": "C3",
+      "N": 79,
+      "all_nonzero_shift_tables_verified": 1422,
+      "all_offdiagonal_coefficients_even": true,
+      "diagonal_parity_verified": true
+    }
+  ],
+  "summary": {
+    "prime_inputs": 7,
+    "coordinate_charts": 9,
+    "target_orders": [
+      2676,
+      2956,
+      3004,
+      4460,
+      5692,
+      5892,
+      7924,
+      9260
+    ]
+  }
+}

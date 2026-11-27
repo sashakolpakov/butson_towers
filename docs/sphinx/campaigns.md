@@ -1,14 +1,19 @@
 (campaigns)=
 # Exact search campaigns and recoverable computation
 
-All construction campaigns are paused. The next selection matches unresolved
-endpoint orders below 50000 with compatible multiplier symmetries, then
-compares their reduced sign systems before allocating search time.
-The interfaces and example commands
-below document the retained engines; earlier runtime checkpoints remain
-private and separate from completed construction certificates.
+The current selection matches eight unresolved orders below 10000 with seven
+strongly symmetric Williamson inputs. The
+{repo-file}`source model and selection <docs/WILLIAMSON_SYMMETRY_SEARCH.md>`
+derive every sign from the occupied coordinate on each orbit. CP-SAT and
+an independent native axis sampler and annealer check the remaining integer
+conditions. Runs for six orders are active; 3004 and 5692 remain queued.
+The earlier eleven one-hot T-input workers are paused.
 
-A campaign searches for the finite T-input required by the construction.
+## Earlier one-hot T-input engines
+
+Their interfaces below remain exact replay references.
+
+The earlier campaigns searched for the finite T-input required by the construction.
 It fixes occupied coordinates, solves their signs, and accepts a design
 only after an independent integer check at every cyclic shift. The later
 orthogonal-design and source proofs then give actual Hadamard endpoints.

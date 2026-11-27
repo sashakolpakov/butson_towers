@@ -37,6 +37,7 @@ construction
 families
 exact-search
 sign-solvers
+williamson-search
 campaigns
 verification
 results

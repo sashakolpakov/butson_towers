@@ -62,12 +62,13 @@ inequivalent to the standard Paley matrix: their ranks modulo 3 are 246090
 and 442962. Equivalence at the other recovered orders remains unsettled.
 There is a separate new [periodic T-matrix construction of order 127](artifacts/t-matrices-127/README.md).
 
-All construction searches are **paused**. The next stage matches unresolved
-orders **below 50000** with compatible high-order multiplier symmetries,
-then ranks these pairs by orbit count and reduced sign-system size.
-The [selection guide](docs/LOW_ORDER_SEARCH.md) records this scope and keeps
-the earlier search recipes available for exact replay. No new construction
-has been added to the completed results above.
+The current selection pairs strongly symmetric Williamson sources with eight
+unresolved orders **below 10000**. The [method and selection](docs/WILLIAMSON_SYMMETRY_SEARCH.md)
+use seven prime inputs; the coordinates determine every orbit sign exactly.
+CP-SAT and a separate native axis sampler and annealer check the remaining
+integer identities. Active runs cover 2676, 2956, 4460, 5892, 7924 and 9260;
+3004 and 5692 are queued. The earlier eleven one-hot T-input workers are paused.
+These selected charts add no completed order to the results above.
 
 The [complete source inventory](docs/SOURCE_INVENTORY.md) records the four
 compatible sixth-root seed orders, the 27 original cyclic inputs, the 19
@@ -103,8 +104,8 @@ The [Sphinx manual](https://sashakolpakov.github.io/butson_towers/) follows the
 whole argument: exact T-matrix input, disjoint orthogonal design, scalar
 action and trace metric, final sign entries, and the resulting orders and
 families. Proofs appear beside the code, data contracts and replay checks
-that implement them. The [lower-order search](docs/LOW_ORDER_SEARCH.md) includes exact
-SAT and CP-SAT sign solvers for lengths 167 and 179.
+that implement them. The [current search guide](docs/WILLIAMSON_SYMMETRY_SEARCH.md)
+explains the new symmetric source model and its exact verification stages.
 
 Every finite input and recurrence needed for the results is printed in the
 **current paper**. Large matrices have exact entry recipes and algebraic

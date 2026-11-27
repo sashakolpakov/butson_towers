@@ -47,9 +47,13 @@ the actual reconstructed sign blocks; see {ref}`construction-group-algebra`.
 
 ## Conditional endpoint recipes
 
-All construction searches are paused. Future selection matches unresolved
-output orders below 50000 with compatible multiplier symmetries, then ranks
-these pairs by their reduced search size.
+The current selection pairs symmetric Williamson sources with eight unresolved
+orders below 10000, using seven prime input lengths. The
+{repo-file}`selection and proof <docs/WILLIAMSON_SYMMETRY_SEARCH.md>`
+describe the admissible multipliers, forced signs and independent solvers.
+Runs for six orders are active; 3004 and 5692 remain queued.
+The eleven earlier one-hot T-input workers are paused. No result from the
+new selection has been added to the completed inventory above.
 
 A completed periodic T-input of length $p$ combines with a verified source
 width $w$ to give order $4pw$. Each additional result requires its finite

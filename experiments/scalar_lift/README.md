@@ -5,15 +5,18 @@ Every starting design must have an exact Gram proof. The active operations
 restrict its scalars while keeping the source, metric, alphabet and literal
 matrix recipe. General weighted nodes are useful outputs in their own right.
 
-All construction searches are paused. The next selection matches unresolved
-endpoint orders below 50000 with compatible multiplier symmetries, then
-compares their reduced search size. The listed engines and certificates
-remain available for replay; saved unsuccessful runs are retained privately.
+The current selection matches eight unresolved orders below 10000 with
+strongly symmetric Williamson sources. Their axis assignments determine
+all orbit signs exactly. CP-SAT and an independent native axis sampler and
+annealer handle the remaining integer conditions. The weaker 3004 and 5692
+charts remain queued; the other six target orders have active runs. The earlier eleven
+one-hot T-input workers are paused; their engines remain replay references.
 
 | Task | Entry module |
 |---|---|
 | New real H7572: exact T631, scalar frame, saved matrix and full integer verification | [Standalone recipe and certificate](../../artifacts/hadamard-7572/README.md) |
 | New periodic T127, full T identities and known-order H1524 scalar control | [Standalone recipe and dated scope](../../artifacts/t-matrices-127/README.md) |
+| Symmetry-selected dense Williamson sources; seven prime inputs and eight conditional orders below 10000 | `williamson_symmetry`, `williamson_axis_cp`, `williamson_campaign`, `williamson_axis_native`; [proof, selection and replay](../../docs/WILLIAMSON_SYMMETRY_SEARCH.md) |
 | Replay the dated frontier screen below 12000 using both odd coordinate actions and bounded orbit counts | `low_gap_target_scan --check`; [historical necessary-condition certificate](../../certificates/scalar-lift/low-gap-target-scan.json) |
 | SL2 parity-axis generation, exact mod4/mod8 sign lifting, finite pool controls and completed endpoint verification | `hadamard_frame_search`; [method and replay](../../docs/HADAMARD_FRAME_SEARCH.md) |
 | Length-223 multiplier map and exact sign-lifting reference | `large_parity_map`, `quadratic_sign_lift`, `exact_t_campaign`; [exact checks and replay](../../docs/LOW_ORDER_SEARCH.md) |

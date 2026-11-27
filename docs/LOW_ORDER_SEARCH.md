@@ -1,18 +1,10 @@
-# Symmetry-first construction search below 50000
+# Earlier one-hot T-input search reference
 
-All construction searches are **paused as of 27 November 2026**. Their
-checkpoints and frozen inputs are retained privately. The submitted manuscript
-and its construction/proof packages are unchanged.
-
-The next selection matches current unresolved orders below **50000** with
-compatible multiplier symmetries. For a factorization $4pw$, with a verified
-source of width $w$, enumerate admissible multipliers at length $p$ and check
-the exact row-sum and support conditions. Discard pairs with an existing
-construction, rank the survivors by orbit count, and validate their exact
-parity maps and sign dimensions before allocating search time. The
-[compact multiplier scan](HADAMARD_FRAME_TARGET_SCAN.md) supplies the first
-finite arithmetic screen. A coordinate action and its measured rank are
-part of the candidate specification.
+The eleven one-hot T-input searches are paused; their checkpoints and frozen
+inputs are retained privately. Current searches instead use
+[symmetry-selected dense Williamson sources below 10000](WILLIAMSON_SYMMETRY_SEARCH.md).
+The exact models and replay interfaces below remain references for the
+earlier engines. The manuscript and its construction/proof packages are unchanged.
 
 The construction is the manuscript's restriction of scalars with a certified
 flat endpoint. The exact search described here supplies a new compatible

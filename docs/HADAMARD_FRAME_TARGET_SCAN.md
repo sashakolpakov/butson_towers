@@ -1,10 +1,9 @@
 # Compact scalar-frame target scan
 
-All construction searches are paused. The next
-[selection](LOW_ORDER_SEARCH.md) matches unresolved endpoint orders below
-50000 with admissible multiplier symmetries, then compares their reduced
-sign systems before allocating search time. Earlier runtime results are
-retained privately.
+The earlier one-hot T-input workers are paused. Current
+[selection below 10000](WILLIAMSON_SYMMETRY_SEARCH.md) uses dense symmetric
+Williamson sources, whose value at zero permits stronger even multipliers.
+The one-hot chart tables below remain exact arithmetic references.
 
 The [finite parameter certificate](../certificates/scalar-lift/hadamard-frame-target-scan.json)
 lists every positive DC configuration in the following class: prime
