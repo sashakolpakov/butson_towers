@@ -1,8 +1,8 @@
 # Compact scalar-frame target scan
 
 The current search priority is [lower missing orders](LOW_ORDER_SEARCH.md).
-The larger-prime workers described below have been stopped with their
-checkpoints retained; their validated maps remain available.
+The validated workers at primes 919, 1453 and 1951 run concurrently on
+additional CPU cores, retaining earlier results across continuation runs.
 
 The [finite parameter certificate](../certificates/scalar-lift/hadamard-frame-target-scan.json)
 lists every positive DC configuration in the following class: prime

@@ -67,8 +67,8 @@ order **2676** first, through length-223 periodic T-matrices. A second
 validated multiplier action gives a smaller sign system at this length;
 the same action at length 491 targets **5892**. A further validated
 three-cycle chart targets **2956**. All have checkpointed searches.
-New searches focus on gaps below 12000; the higher-order
-multiplier workers have been stopped with their checkpoints retained.
+Gaps below 12000 remain the priority. The validated length-919, -1453
+and -1951 multiplier workers run concurrently on additional CPU cores.
 The [bounded target scan](certificates/scalar-lift/low-gap-target-scan.json)
 records the necessary row-sum conditions and source widths. These search
 reductions add no completed orders to the results above.
