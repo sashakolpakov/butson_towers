@@ -62,16 +62,12 @@ inequivalent to the standard Paley matrix: their ranks modulo 3 are 246090
 and 442962. Equivalence at the other recovered orders remains unsettled.
 There is a separate new [periodic T-matrix construction of order 127](artifacts/t-matrices-127/README.md).
 
-Current [construction searches](docs/LOW_ORDER_SEARCH.md) target missing
-order **2676** first, through length-223 periodic T-matrices. A second
-validated multiplier action gives a smaller sign system at this length;
-the same action at length 491 targets **5892**. A further validated
-three-cycle chart targets **2956**. All have checkpointed searches.
-Gaps below 12000 remain the priority. The validated length-919, -1453
-and -1951 multiplier workers run concurrently on additional CPU cores.
-The [bounded target scan](certificates/scalar-lift/low-gap-target-scan.json)
-records the necessary row-sum conditions and source widths. These search
-reductions add no completed orders to the results above.
+All construction searches are **paused**. The next stage matches unresolved
+orders **below 50000** with compatible high-order multiplier symmetries,
+then ranks these pairs by orbit count and reduced sign-system size.
+The [selection guide](docs/LOW_ORDER_SEARCH.md) records this scope and keeps
+the earlier search recipes available for exact replay. No new construction
+has been added to the completed results above.
 
 The [complete source inventory](docs/SOURCE_INVENTORY.md) records the four
 compatible sixth-root seed orders, the 27 original cyclic inputs, the 19

@@ -1,6 +1,13 @@
 (campaigns)=
 # Exact search campaigns and recoverable computation
 
+All construction campaigns are paused. The next selection matches unresolved
+endpoint orders below 50000 with compatible multiplier symmetries, then
+compares their reduced sign systems before allocating search time.
+The interfaces and example commands
+below document the retained engines; earlier runtime checkpoints remain
+private and separate from completed construction certificates.
+
 A campaign searches for the finite T-input required by the construction.
 It fixes occupied coordinates, solves their signs, and accepts a design
 only after an independent integer check at every cyclic shift. The later
@@ -291,28 +298,8 @@ of interrupted branches. They are not counts of full integer endpoint
 checks or necessarily of distinct assignments. A parity-map certificate
 proves a coordinate parametrization; it proves no signed T-design by itself.
 
-The direct construction targets, in increasing real order, are:
-
-| Missing T length | Verified source width | Conditional real order |
-|---:|---:|---:|
-| 223 | 3 | 2676 |
-| 739 | 1 | 2956 |
-| 223 | 5 | 4460 |
-| 167 | 7 | 4676 |
-| 491 | 3 | 5892 |
-| 179 | 11 | 7876 |
-| 167 | 13 | 8684 |
-| 463 | 5 | 9260 |
-| 179 | 13 | 9308 |
-| 223 | 13 | 11596 |
-
-The {repo-file}`739 map <certificates/scalar-lift/hadamard-frame-p739.json>`
-uses the three-cycle action with multiplier order nine. Its unsigned map
-and all expanded shifts are checked; a complete signed input is still
-needed. The three-cycle runner selects the width-one source for this chart,
-so a verified witness would produce order 2956 directly.
-
-The source quadruples are already verified. A new T-input first needs its
+A completed T-input of length $p$ combines with a verified source quadruple
+of width $w$ to give a real endpoint of order $4pw$. A new T-input needs its
 literal integer certificate and endpoint proof; a new-order label then
 requires the dated literature check. Its new Lean literal bridge must also
 be added and successfully checked before claiming formal verification of
@@ -323,6 +310,8 @@ The {repo-file}`low-gap scanner <experiments/scalar_lift/low_gap_target_scan.py>
 also screens both odd coordinate actions at prime lengths, with at most
 100 nonzero orbits and the retained literal source widths. Its
 {repo-file}`certificate <certificates/scalar-lift/low-gap-target-scan.json>`
-leaves nine necessary-arithmetic targets among the 119 remaining pinned
-frontier entries below 12000. It constructs no parity map or signed design.
+recorded nine necessary-arithmetic survivors among 119 pinned frontier
+entries below 12000. Subsequent records identify 5164 as known, so the
+dated certificate is retained for replay rather than current gap selection.
+It constructs no parity map or signed design.
 Replay with `python -m experiments.scalar_lift.low_gap_target_scan --check`.

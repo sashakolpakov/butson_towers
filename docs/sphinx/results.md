@@ -45,30 +45,17 @@ The group-algebra restrictions can use known sources even when their complex
 field components are nonflat. What matters is their exact norm together with
 the actual reconstructed sign blocks; see {ref}`construction-group-algebra`.
 
-## The current lower-order ingredients
+## Conditional endpoint recipes
+
+All construction searches are paused. Future selection matches unresolved
+output orders below 50000 with compatible multiplier symmetries, then ranks
+these pairs by their reduced search size.
 
 A completed periodic T-input of length $p$ combines with a verified source
-width $w$ to give order $4pw$. The following ingredients remain construction
-targets until their actual finite witnesses and endpoint checks exist:
-
-| Target order | T-input length $p$ | Source width $w$ |
-|---:|---:|---:|
-| 2676 | 223 | 3 |
-| 2956 | 739, three-cycle multiplier | 1 |
-| 4460 | 223 | 5 |
-| 4676 | 167 | 7 |
-| 5892 | 491, identity multiplier | 3 |
-| 7876 | 179 | 11 |
-| 8684 | 167 | 13 |
-| 9260 | 463, identity multiplier | 5 |
-| 9308 | 179 | 13 |
-| 11596 | 223 | 13 |
-
-Several rows share a missing ingredient. There is one length-223 input
-problem for the three rows using 223. Increasing a run's elapsed time,
-checking a parity parametrization, or constructing a SAT model does not
-complete any of these rows. {ref}`campaigns` explains how the runtime reports
-record actual witnesses, exclusions and unfinished work.
+width $w$ to give order $4pw$. Each additional result requires its finite
+witness, exact endpoint verification and dated literature check.
+{ref}`campaigns` records the retained search interfaces and their exact
+verification stages.
 
 The {repo-file}`construction scope <docs/RESULTS_SCOPE.md>` defines the
 project boundary. Finite phase/torsion classifications in the earlier

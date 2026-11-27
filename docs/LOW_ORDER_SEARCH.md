@@ -1,8 +1,18 @@
-# Lower-order construction search
+# Symmetry-first construction search below 50000
 
-The first target is **2676**, followed by the remaining targets in increasing
-order. The submitted manuscript and its frozen construction/proof packages
-are preserved separately from this search.
+All construction searches are **paused as of 27 November 2026**. Their
+checkpoints and frozen inputs are retained privately. The submitted manuscript
+and its construction/proof packages are unchanged.
+
+The next selection matches current unresolved orders below **50000** with
+compatible multiplier symmetries. For a factorization $4pw$, with a verified
+source of width $w$, enumerate admissible multipliers at length $p$ and check
+the exact row-sum and support conditions. Discard pairs with an existing
+construction, rank the survivors by orbit count, and validate their exact
+parity maps and sign dimensions before allocating search time. The
+[compact multiplier scan](HADAMARD_FRAME_TARGET_SCAN.md) supplies the first
+finite arithmetic screen. A coordinate action and its measured rank are
+part of the candidate specification.
 
 The construction is the manuscript's restriction of scalars with a certified
 flat endpoint. The exact search described here supplies a new compatible
@@ -11,30 +21,20 @@ found T631 and hence H7572.
 The [end-to-end walkthrough](CONSTRUCTION_WALKTHROUGH.md) explains both the
 finite search and the subsequent scalar-restriction proof.
 
-| Missing design | Direct target orders |
-|---|---|
-| Periodic T-matrices of length 223 | 2676, 4460, 11596 |
-| Periodic T-matrices of length 739 | 2956 |
-| Periodic T-matrices of length 167 | 4676, 8684 |
-| Periodic T-matrices of length 491 | 5892 |
-| Periodic T-matrices of length 179 | 7876, 9308 |
-| Periodic T-matrices of length 463 | 9260 |
-
-A length 223 witness gives the four-variable orthogonal design proved in the
-manuscript. The already verified Williamson inputs of orders 3, 5, 13 then
-produce 2676, 4460, 11596. Miyamoto's construction would also give 10708 from
-2676, with prime parameter 2677. These orders occur in the
-[author-maintained unresolved frontier](https://github.com/vatskishan03/Hadamard/blob/main/FRONTIER.md),
-cross-checked 26 November 2026. Every completed endpoint will be compared again
-with primary records before adding a new-order claim.
+A complete periodic T-input of length $p$ combines with a verified
+Williamson-type source of width $w$ to give an endpoint of order $4pw$.
+The earlier runs produced no additional signed T-input or Hadamard order.
+Their exact models and replay interfaces remain documented below.
 
 The [bounded target scanner](../experiments/scalar_lift/low_gap_target_scan.py)
 checks both odd coordinate actions at prime lengths, with at most 100
 nonzero orbits and source widths from the two retained literal input tables.
 Its [certificate](../certificates/scalar-lift/low-gap-target-scan.json)
-screens the 119 remaining entries below 12000 in the pinned frontier and
-retains nine target orders at the level of row-sum and support arithmetic.
-It constructs neither parity maps nor signed witnesses. Replay it with
+screened 119 entries below 12000 in the pinned frontier and retained nine
+orders at the level of row-sum and support arithmetic. This is the dated
+finite scan. In particular, [**5164 is now known**](https://www.math74.com/Hadamard/05/index.html)
+and is excluded from future gap targets. The scan constructs neither parity
+maps nor signed witnesses. Replay its historical arithmetic with
 `python -m experiments.scalar_lift.low_gap_target_scan --check`.
 
 ## Three-cycle coordinate action at length 223
