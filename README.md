@@ -6,7 +6,7 @@ Lean proofs.** This repository accompanies Alexander Kolpakov's manuscript
 
 [Read the paper (PDF)](https://sashakolpakov.github.io/butson_towers/butson-towers-paper.pdf) ·
 [LaTeX source](manuscript/hadamard_7572_announcement.tex) ·
-[Current revision package](release/hexagon_2611_01070_v2/README.md) ·
+[Current manuscript-only revision](release/hexagon_2611_01070_manuscript/README.md) ·
 [Lean proofs and scope](docs/FORMALIZATION.md)
 
 [Sphinx manual](https://sashakolpakov.github.io/butson_towers/) ·
@@ -18,11 +18,15 @@ The first version is published as
 Its [25 November submission record](release/butson_towers_v3/submission-status.json)
 and [PDF](release/butson_towers_v3/announcement.pdf) remain unchanged.
 The current manuscript expands that version to the results below; its
-[version 2 package](release/hexagon_2611_01070_v2/README.md) was submitted
-on **26 November 2026** (Toronto) as a revision of the same article.
-The [version 2 receipt](release/hexagon_2611_01070_v2/submission-status.json)
-records status **under review**; version 1 remains the published record.
-The paper link above follows the current manuscript source.
+[manuscript-only revision](release/hexagon_2611_01070_manuscript/README.md)
+was submitted as **version 3** of the same article. Its
+[service receipt](release/hexagon_2611_01070_manuscript/submission-status.json)
+records status **under review**. Only `main.tex` is deposited and
+Hexagon generates the PDF; no ancillary files or source archive are uploaded.
+The earlier oversized version-2 package was
+[canceled](release/hexagon_2611_01070_v2/cancellation-status.json).
+Version 1 remains the published record. The paper link above follows the
+current manuscript source.
 
 ## Results
 
@@ -132,9 +136,10 @@ additional public inputs with their Lean literals. The last two replay the
 31-order provenance record and the separate order-885924 rank comparison;
 the comparison uses NumPy for exact arithmetic modulo 3.
 
-The [current revision package](release/hexagon_2611_01070_v2/README.md)
-collects the current manuscript and its replay instructions. The earlier
-submitted archive retains its original 18-order, six-family scope. Replay
+The [current revision package](release/hexagon_2611_01070_manuscript/README.md)
+contains the manuscript; the code, data and proof replays remain in this
+repository, cited in the paper. The earlier submitted archive retains its
+original 18-order, six-family scope. Replay
 that historical package in a fresh temporary directory with:
 
 ```sh
@@ -222,7 +227,8 @@ dependency setup and exact scope.
 | [`manuscript/`](manuscript/) | Mathematical source of the paper |
 | [`formal/ButsonTowers/`](formal/ButsonTowers/) | Lean constructions, finite witnesses and endpoint theorems |
 | [`artifacts/hadamard-7572/`](artifacts/hadamard-7572/) | Original order 7572 matrix, recipe and independent audits |
-| [`release/hexagon_2611_01070_v2/`](release/hexagon_2611_01070_v2/) | Submitted version 2 package, replay records and service receipt; under review |
+| [`release/hexagon_2611_01070_manuscript/`](release/hexagon_2611_01070_manuscript/) | Submitted manuscript-only version 3, build record and receipt; under review |
+| [`release/hexagon_2611_01070_v2/`](release/hexagon_2611_01070_v2/) | Canceled oversized version-2 package and cancellation record |
 | [`release/butson_towers_v3/`](release/butson_towers_v3/) | Original submitted PDF, source package and verification records |
 | [`docs/`](docs/) | Construction proofs, literature checks and research notes |
 | [`experiments/scalar_lift/`](experiments/scalar_lift/) | Active construction and search implementations |

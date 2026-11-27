@@ -223,17 +223,20 @@ assumption missing from an announced endpoint theorem.
 
 The first version is published as
 [HexagonMath 2611.01070v1](https://hexagonmath.org/2611.01070v1).
-Its submitted packages retain their original bytes and scope. The current
-version 2 package was submitted on 26 November 2026 (Toronto) as a revision
-of that article. The service receipt records status **under review**, with
-all 81 expanded source-file hashes matching the local package and a
-successful 28-page server PDF preview. Version 1 remains the published record.
+Its submitted packages retain their original bytes and scope. The manuscript-only
+revision was submitted as version 3 of that article; the service receipt
+records status **under review**. Exactly one `main.tex` file is deposited;
+Hexagon compiles its PDF. No ancillary files or source archive are uploaded.
+Code, data, finite certificates and proof sources remain in the public
+repository cited by the manuscript. The earlier oversized version-2 package
+was canceled; version 1 remains the published record.
 Executable source replays and Lean replays serve different purposes:
 
 | Package or record | Binding and replay |
 |---|---|
-| {repo-file}`Current revision package <release/hexagon_2611_01070_v2/README.md>` | Submitted version 2 manuscript and replay records |
-| {repo-file}`Version 2 receipt <release/hexagon_2611_01070_v2/submission-status.json>` | Existing-article revision; under review, with source hashes and successful server preview |
+| {repo-file}`Current manuscript-only revision <release/hexagon_2611_01070_manuscript/README.md>` | Submitted version 3 manuscript, local PDF and build record |
+| {repo-file}`Version 3 receipt <release/hexagon_2611_01070_manuscript/submission-status.json>` | Existing-article revision; under review, with exactly one manuscript file and no ancillary files or uploaded archive |
+| {repo-file}`Oversized revision cancellation <release/hexagon_2611_01070_v2/cancellation-status.json>` | Earlier version-2 package canceled; published version 1 unchanged |
 | {repo-file}`Original submitted source archive <release/butson_towers_v3/source.zip>` | Original literal data, reconstruction recipes, finite source/trace replays and manuscript |
 | {repo-file}`Submission manifest <release/butson_towers_v3/submission-manifest.json>` | Archive-member sizes and hashes |
 | {repo-file}`Build record <release/butson_towers_v3/build.json>` | The reference PDF and exact TeX source |

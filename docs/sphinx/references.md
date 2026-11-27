@@ -62,10 +62,11 @@ known order from an equivalence claim about a particular representative.
 | Material | Purpose |
 |---|---|
 | {repo-file}`Manuscript source <manuscript/hadamard_7572_announcement.tex>` | Definitions, constructions, complete finite inputs and mathematical proofs |
-| [Published first version](https://hexagonmath.org/2611.01070v1) | Existing HexagonMath article, with version 2 submitted as a revision |
+| [Published first version](https://hexagonmath.org/2611.01070v1) | Existing HexagonMath article; unchanged by the canceled oversized revision |
 | {repo-file}`Original submitted PDF <release/butson_towers_v3/announcement.pdf>` | Frozen first-version manuscript |
-| {repo-file}`Current revision package <release/hexagon_2611_01070_v2/README.md>` | Submitted version 2 manuscript and replay records |
-| {repo-file}`Version 2 receipt <release/hexagon_2611_01070_v2/submission-status.json>` | Revision of the existing article; service status under review |
+| {repo-file}`Current manuscript-only revision <release/hexagon_2611_01070_manuscript/README.md>` | Submitted version 3: one manuscript file, with code, data and proof sources hosted in the cited repository |
+| {repo-file}`Version 3 receipt <release/hexagon_2611_01070_manuscript/submission-status.json>` | Existing-article revision; service status under review |
+| {repo-file}`Oversized revision cancellation <release/hexagon_2611_01070_v2/cancellation-status.json>` | Earlier version-2 package canceled; published version 1 unchanged |
 | {repo-file}`Original T631 recipe <artifacts/hadamard-7572/recipe.py>` | Standalone reconstruction and checks of the first endpoint |
 | {repo-file}`T127 recipe <artifacts/t-matrices-127/recipe.py>` | Independent finite T127 input and known-order control |
 | {repo-file}`Lean formalization guide <docs/FORMALIZATION.md>` | All 34 endpoint theorems, nine families and the precise formal scope |

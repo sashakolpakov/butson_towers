@@ -1180,7 +1180,7 @@ for w, words in W.items():
         assert c == (4*w if s == 0 else 0)
 \end{verbatim}
 Every loop index and every input in this check has been specified above.
-The complete standalone file in the ancillary material contains the
+The complete standalone file in the public repository contains the
 literal assignment as well as the check.
 Thus the thirteen quadruples give the following thirteen ranks:
 \[
@@ -1312,7 +1312,7 @@ for w, words in NW.items():
         c = sum(h[x]*h[(x+t) % w] for h in a for x in range(w))
         assert c == (4*w if t == 0 else 0)
 \end{verbatim}
-All signs in this check are the displayed integers; the ancillary checker
+All signs in this check are the displayed integers; the repository checker
 contains the complete literal dictionary. The checked sums prove
 $\sum_jA_jA_j^{\mathsf T}=4wI_w$. Together with the proved symmetry and
 commutation, this supplies every hypothesis of
@@ -2070,7 +2070,7 @@ Order & Prior construction & Parameters\\\hline
 \hline
 \end{longtable}
 
-The ancillary provenance checker verifies every integer order formula,
+The repository's provenance checker verifies every integer order formula,
 prime parameter and congruence in this table, and binds each recovered
 order to its positive construction certificate. The table identifies
 prior existence at the same orders. It does not identify our matrices
@@ -2155,7 +2155,7 @@ $2B$ by $B$ over $\F_3$. Therefore it has the same rank as
 \end{equation}
 The exact finite calculation gives $\operatorname{rank}T=195$.
 It is reproduced from the printed sign rows and the tripling formula
-by the ancillary checker. The checker constructs $195$ selected
+by the repository's rank checker. The checker constructs $195$ selected
 columns $U$ of $T$, a matrix $V$ and a left inverse $L$, and verifies
 $T=UV$ and $LU=I_{195}$ over $\F_3$; hence both rank bounds are
 checked. The selected column indices and factor hashes are recorded;
@@ -2200,16 +2200,17 @@ to earlier matrices.
 
 The proofs above require only the printed finite inputs and the proved
 matrix identities. The finite computations are integer sums; they can
-be repeated by the included programs. In particular, no dense matrix of
+be repeated by the programs printed here or recorded in the public
+repository. In particular, no dense matrix of
 order $291145924$ needs to be stored or checked row by row: the source
 recurrence, sign-entry proof and block Gram calculation apply at that
 order as at every other parameter value.
 
-The public repository is
-\url{https://github.com/sashakolpakov/butson_towers}.
-Its ancillary material provides the integer checker
-\texttt{manuscript\_data.py}, reconstruction programs, complete finite
-data, order-status ledgers and independent exact audits.
+The public code and data repository~\cite{butson-towers} provides the integer
+checker \texttt{scripts/verify\_manuscript\_data.py}, reconstruction programs,
+complete finite data, order-status ledgers and independent exact audits.
+All programs, data, certificates and proof sources cited in this section
+are hosted in that repository; the paths below are relative to its root.
 For the saved order-$7572$ representative, a separate integer audit
 checked all $\binom{7572}{2}=28\,663\,806$ distinct row pairs; their
 inner products are all zero. The archived matrix and its hashes are
@@ -2239,24 +2240,19 @@ The character matrices are checked in Lean from their literal integer
 rows; their general character-sum derivation above is a separate proof.
 A manuscript-to-code correspondence audit is included in the repository.
 
-The original source-only reproducibility package is retained under
-\texttt{release/lean\_verification/}; the verified mathematical proof
-snapshot is commit \texttt{686acf9}. The package supplies its dependency
-lock and an audit of $85$ selected statements. A fresh extracted build
-passed, and the selected statements use only Lean's standard axioms
-\texttt{propext}, \texttt{Classical.choice} and \texttt{Quot.sound},
-as listed individually in the audit record. A separate source-only
-supplement under \texttt{release/lean\_sixth\_root\_pair/} checks the ten
-rational matrix identities for $R$, $S$ and the scalar coordinates.
-It assumes precisely the proved $P,Q$ identities and $d\ne0$; it does not
-formalize the particular cyclotomic field or Hermitian-form realization.
-The current source-only supplement is
-\texttt{release/additional\_source\_verification/}. It includes the new
-finite sources and recurrence starters, all their proof dependencies,
-the input data, the pinned dependency lock and a strict axiom audit.
-Instructions in the packages reproduce the build and axiom check. The manuscript and executable
-reconstruction have their own versioned release, so improvements to
-exposition do not alter the frozen construction or proof archives.
+The complete source-only Lean development, pinned dependency lock and
+reproducibility verifier are in the repository directory
+\texttt{release/additional\_source\_verification/}.
+Its audit checks $143$ selected statements: $85$ original statements,
+ten rational sixth-root matrix identities and $48$ additional source and
+recurrence statements. A fresh extracted source build passed. Each audited
+statement uses only Lean's standard axioms \texttt{propext},
+\texttt{Classical.choice} and \texttt{Quot.sound}, listed individually
+in the audit record. The ten rational matrix identities assume precisely
+the proved $P,Q$ identities and $d\ne0$; they do not formalize the particular
+cyclotomic field or Hermitian-form realization. Repository instructions
+reproduce the build and axiom check. Earlier proof and construction records
+retain their original bytes and scope.
 
 \paragraph{Computational assistance.}
 The scalar-reduction viewpoint and projective-flatness formulation were
@@ -2341,7 +2337,7 @@ If an integer $n\geq2$ is composite, write $n=ab$ with $1<a\leq b$;
 then $a^2\leq n$. Thus checking all integers $2\leq d\leq\sqrt n$
 proves primality, which justifies the function. All operations above are
 integer additions, products, divisions with remainder, and finite loops.
-The ancillary file \texttt{anc/manuscript\_data.py} combines these checks
+The repository file \texttt{scripts/verify\_manuscript\_data.py} combines these checks
 with the thirteen cyclic quadruple checks, the twelve additional quadruple
 checks, the eight strong starter checks and the order-$13$ pair check.
 It also reconstructs the three triplings from that pair and performs
@@ -2352,6 +2348,10 @@ the Python standard library and the printed finite inputs.
 
 \begin{thebibliography}{10}\footnotesize\raggedright
 \setlength{\itemsep}{0pt}\setlength{\parsep}{0pt}
+\bibitem{butson-towers}
+A.~Kolpakov, \emph{Butson Towers: source code, finite data and verification},
+public repository, 2026.
+\url{https://github.com/sashakolpakov/butson_towers}.
 \bibitem{paley}
 R.~E.~A.~C.~Paley, \emph{On Orthogonal Matrices},
 J. Math. Phys.\ 12 (1933), 311--320.

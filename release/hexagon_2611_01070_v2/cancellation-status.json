@@ -1,0 +1,10 @@
+{
+  "identifier": "2611.01070",
+  "version_id": "2611.01070v2",
+  "status": "canceled",
+  "checked_at_utc": "2026-11-27T00:46:39.252164+00:00",
+  "reason": "The submitter canceled the package because it included unwanted ancillary files.",
+  "published_version_1_unchanged": true,
+  "replacement": "manuscript-only revision; no ancillary files or source archive",
+  "replacement_record": "../hexagon_2611_01070_manuscript/submission-status.json"
+}

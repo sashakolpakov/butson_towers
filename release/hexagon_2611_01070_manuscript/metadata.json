@@ -1,0 +1,36 @@
+{
+  "authors": [
+    {
+      "name": "Alexander Kolpakov",
+      "orcid": "0000-0002-6764-8894",
+      "affiliation": null
+    }
+  ],
+  "submittingContributorIndex": 0,
+  "sponsorName": "Alexander Kolpakov",
+  "submittingOrganizationId": null,
+  "license": "CC BY-SA 4.0",
+  "authorshipMode": "mixed",
+  "humanUnderstanding": "some",
+  "provenance": "The author reviewed this manuscript to the extent expected of a referee. Ideas supplied by the author have known provenance; for ideas originating with the AI, the author cannot always trace how the model arrived at them. The human-understanding declaration is therefore some; the review is not a guarantee of correctness.\n\nThe search implementation, exact arithmetic checks, automated cross-checks and initial text were developed with OpenAI Codex and automated collaborators. The paper distinguishes Lean existence proofs, executable finite certificates and literature novelty labels.",
+  "correctnessConfirmed": true,
+  "communityInterestConfirmed": true,
+  "citationsConfirmed": true,
+  "rightsConfirmed": true,
+  "title": "Butson towers and high-rank Hadamard matrices",
+  "abstract": "We construct real Hadamard matrices of thirty-four new orders and give nine new infinite families. The constructions preserve orthogonality and ensure that every final entry is 1 or -1. Explicit recipes and reproducible formal proofs establish every new order and every member of the nine families.",
+  "subject": "math.CO",
+  "crossListSubjects": [],
+  "mscCodes": [
+    "05B20",
+    "15B34"
+  ],
+  "tags": [
+    "Butson matrices",
+    "Hadamard matrices",
+    "computer-assisted proof",
+    "finite fields",
+    "restriction of scalars"
+  ],
+  "comments": "28 pages. Revised manuscript with 34 new Hadamard orders, nine infinite families and 31 recovered known orders. Complete code, data and verification are hosted in the repository cited in the references. Only the manuscript is deposited."
+}

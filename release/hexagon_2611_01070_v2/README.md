@@ -1,12 +1,13 @@
-# Hexagon 2611.01070, version 2
+# Canceled oversized Hexagon version-2 package
 
-This is the package for a **new version of the existing article
-[2611.01070v1](https://hexagonmath.org/2611.01070v1)**,
-*Butson towers and high-rank Hadamard matrices*. Version 2 was submitted
-through that article's revision route and is now
-under review. The [service receipt record](submission-status.json) confirms the
-same identifier and version number 2; no new article was created.
-The earlier publication and frozen source packages retain their original bytes.
+This oversized package for *Butson towers and high-rank Hadamard matrices*
+was **canceled by the submitter** because it included unwanted ancillary files.
+The [cancellation record](cancellation-status.json) supersedes the initial
+[submission receipt](submission-status.json). The replacement is the
+[manuscript-only revision](../hexagon_2611_01070_manuscript/README.md), with
+no ancillary files or uploaded source archive. The published
+[first version](https://hexagonmath.org/2611.01070v1) remains unchanged.
+The package contents and replay records below are preserved as historical data.
 
 The revised paper proves **34 new orders and nine new infinite families**,
 with the full order list and family formulas in its main theorem. A separate
