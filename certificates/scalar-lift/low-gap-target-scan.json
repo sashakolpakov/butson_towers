@@ -1,0 +1,907 @@
+{
+  "schema": "low-gap-prime-multiplier-necessary-arithmetic-v1",
+  "producer": "experiments/scalar_lift/low_gap_target_scan.py",
+  "scope": {
+    "object": "Necessary row-sum arithmetic for prime periodic T-inputs with an odd multiplier.",
+    "normalization": "Value at zero is +e0; tail signs and coordinate permutations are normalized.",
+    "coordinate_actions": [
+      "identity",
+      "C3 fixing coordinate0 and cycling coordinates1,2,3"
+    ],
+    "action_coverage": "Every odd-order signed permutation of four coordinates is conjugate to one of these actions; even multiplier orders are outside this scan.",
+    "complete_only_for_declared_DC_and_orbit_count_conditions": true,
+    "parity_map_constructed": false,
+    "signed_correlations_verified": false,
+    "endpoint_constructed": false,
+    "existence_nonexistence_or_novelty_claim": false
+  },
+  "limits": {
+    "max_target_order_inclusive": 12000,
+    "max_nonorigin_orbits": 100
+  },
+  "frontier": {
+    "path": "experiments/scalar_lift/frontier_120_snapshot.json",
+    "snapshot_source_url": "https://raw.githubusercontent.com/vatskishan03/Hadamard/d885022/FRONTIER.md",
+    "snapshot_retrieved_utc_date": "2026-11-22",
+    "scope": "The 120 rows of the primary author's unresolved 4n table; no independent global novelty proof",
+    "rows": 120,
+    "ordered_list_sha256": "e287da90e67171dc9274ffb8c8c8a810ba5d03775f6aeb8375a8c015dc02e3ec",
+    "recorded_primary_cross_check": {
+      "url": "https://raw.githubusercontent.com/vatskishan03/Hadamard/main/FRONTIER.md",
+      "source_sha256": "e67e681689e3a02a3426d8c70800244bb7e2b6eb0f024987fa7ca0ff63f0e9bd",
+      "same_ordered_120_rows": true,
+      "replay_scope": "The recorded comparison is retained; offline replay does not fetch the live URL."
+    }
+  },
+  "completed_order_ledger": "certificates/scalar-lift/completed-order-inventory.json",
+  "excluded_completed_orders": [
+    7572
+  ],
+  "source_widths": [
+    1,
+    3,
+    5,
+    7,
+    9,
+    11,
+    13,
+    15,
+    17,
+    19,
+    21,
+    23,
+    25,
+    27,
+    29,
+    31,
+    33,
+    35,
+    37,
+    39,
+    41,
+    43,
+    45,
+    47,
+    49,
+    51,
+    53,
+    55,
+    57,
+    59,
+    61,
+    63,
+    65,
+    67,
+    69,
+    73,
+    79,
+    91,
+    93,
+    95,
+    97,
+    103,
+    109,
+    127,
+    133,
+    181
+  ],
+  "source_width_provenance": {
+    "1": [
+      {
+        "path": "experiments/scalar_lift/williamson_inputs.json",
+        "selector": "entries[0]"
+      }
+    ],
+    "3": [
+      {
+        "path": "experiments/scalar_lift/williamson_inputs.json",
+        "selector": "entries[1]"
+      }
+    ],
+    "5": [
+      {
+        "path": "experiments/scalar_lift/williamson_inputs.json",
+        "selector": "entries[2]"
+      }
+    ],
+    "7": [
+      {
+        "path": "experiments/scalar_lift/williamson_inputs.json",
+        "selector": "entries[3]"
+      }
+    ],
+    "9": [
+      {
+        "path": "experiments/scalar_lift/williamson_inputs.json",
+        "selector": "entries[4]"
+      }
+    ],
+    "11": [
+      {
+        "path": "experiments/scalar_lift/williamson_inputs.json",
+        "selector": "entries[5]"
+      }
+    ],
+    "13": [
+      {
+        "path": "experiments/scalar_lift/williamson_inputs.json",
+        "selector": "entries[6]"
+      }
+    ],
+    "15": [
+      {
+        "path": "experiments/scalar_lift/williamson_inputs.json",
+        "selector": "entries[7]"
+      }
+    ],
+    "17": [
+      {
+        "path": "experiments/scalar_lift/williamson_inputs.json",
+        "selector": "entries[8]"
+      }
+    ],
+    "19": [
+      {
+        "path": "experiments/scalar_lift/williamson_inputs.json",
+        "selector": "entries[9]"
+      }
+    ],
+    "21": [
+      {
+        "path": "experiments/scalar_lift/williamson_inputs.json",
+        "selector": "entries[10]"
+      }
+    ],
+    "23": [
+      {
+        "path": "experiments/scalar_lift/williamson_inputs.json",
+        "selector": "entries[11]"
+      }
+    ],
+    "25": [
+      {
+        "path": "experiments/scalar_lift/williamson_inputs.json",
+        "selector": "entries[12]"
+      }
+    ],
+    "27": [
+      {
+        "path": "experiments/scalar_lift/williamson_inputs.json",
+        "selector": "entries[13]"
+      }
+    ],
+    "29": [
+      {
+        "path": "experiments/scalar_lift/williamson_inputs.json",
+        "selector": "entries[14]"
+      }
+    ],
+    "31": [
+      {
+        "path": "experiments/scalar_lift/williamson_inputs.json",
+        "selector": "entries[15]"
+      }
+    ],
+    "33": [
+      {
+        "path": "experiments/scalar_lift/williamson_inputs.json",
+        "selector": "entries[16]"
+      }
+    ],
+    "37": [
+      {
+        "path": "experiments/scalar_lift/williamson_inputs.json",
+        "selector": "entries[17]"
+      }
+    ],
+    "39": [
+      {
+        "path": "experiments/scalar_lift/williamson_inputs.json",
+        "selector": "entries[18]"
+      }
+    ],
+    "41": [
+      {
+        "path": "experiments/scalar_lift/williamson_inputs.json",
+        "selector": "entries[19]"
+      }
+    ],
+    "43": [
+      {
+        "path": "experiments/scalar_lift/williamson_inputs.json",
+        "selector": "entries[20]"
+      }
+    ],
+    "49": [
+      {
+        "path": "experiments/scalar_lift/williamson_inputs.json",
+        "selector": "entries[21]"
+      }
+    ],
+    "51": [
+      {
+        "path": "experiments/scalar_lift/williamson_inputs.json",
+        "selector": "entries[22]"
+      }
+    ],
+    "55": [
+      {
+        "path": "experiments/scalar_lift/williamson_inputs.json",
+        "selector": "entries[23]"
+      }
+    ],
+    "57": [
+      {
+        "path": "experiments/scalar_lift/williamson_inputs.json",
+        "selector": "entries[24]"
+      }
+    ],
+    "61": [
+      {
+        "path": "experiments/scalar_lift/williamson_inputs.json",
+        "selector": "entries[25]"
+      }
+    ],
+    "63": [
+      {
+        "path": "experiments/scalar_lift/williamson_inputs.json",
+        "selector": "entries[26]"
+      }
+    ],
+    "35": [
+      {
+        "path": "experiments/scalar_lift/near_williamson_inputs.json",
+        "selector": "entries[0]"
+      }
+    ],
+    "45": [
+      {
+        "path": "experiments/scalar_lift/near_williamson_inputs.json",
+        "selector": "entries[1]"
+      }
+    ],
+    "47": [
+      {
+        "path": "experiments/scalar_lift/near_williamson_inputs.json",
+        "selector": "entries[2]"
+      }
+    ],
+    "53": [
+      {
+        "path": "experiments/scalar_lift/near_williamson_inputs.json",
+        "selector": "entries[3]"
+      }
+    ],
+    "59": [
+      {
+        "path": "experiments/scalar_lift/near_williamson_inputs.json",
+        "selector": "entries[4]"
+      }
+    ],
+    "65": [
+      {
+        "path": "experiments/scalar_lift/near_williamson_inputs.json",
+        "selector": "entries[5]"
+      }
+    ],
+    "67": [
+      {
+        "path": "experiments/scalar_lift/near_williamson_inputs.json",
+        "selector": "entries[6]"
+      }
+    ],
+    "69": [
+      {
+        "path": "experiments/scalar_lift/near_williamson_inputs.json",
+        "selector": "entries[7]"
+      }
+    ],
+    "73": [
+      {
+        "path": "experiments/scalar_lift/near_williamson_inputs.json",
+        "selector": "entries[8]"
+      }
+    ],
+    "79": [
+      {
+        "path": "experiments/scalar_lift/near_williamson_inputs.json",
+        "selector": "entries[9]"
+      }
+    ],
+    "91": [
+      {
+        "path": "experiments/scalar_lift/near_williamson_inputs.json",
+        "selector": "entries[10]"
+      }
+    ],
+    "93": [
+      {
+        "path": "experiments/scalar_lift/near_williamson_inputs.json",
+        "selector": "entries[11]"
+      }
+    ],
+    "95": [
+      {
+        "path": "experiments/scalar_lift/near_williamson_inputs.json",
+        "selector": "entries[12]"
+      }
+    ],
+    "97": [
+      {
+        "path": "experiments/scalar_lift/near_williamson_inputs.json",
+        "selector": "entries[13]"
+      }
+    ],
+    "103": [
+      {
+        "path": "experiments/scalar_lift/near_williamson_inputs.json",
+        "selector": "entries[14]"
+      }
+    ],
+    "109": [
+      {
+        "path": "experiments/scalar_lift/near_williamson_inputs.json",
+        "selector": "entries[15]"
+      }
+    ],
+    "127": [
+      {
+        "path": "experiments/scalar_lift/near_williamson_inputs.json",
+        "selector": "entries[16]"
+      }
+    ],
+    "133": [
+      {
+        "path": "experiments/scalar_lift/near_williamson_inputs.json",
+        "selector": "entries[17]"
+      }
+    ],
+    "181": [
+      {
+        "path": "experiments/scalar_lift/near_williamson_inputs.json",
+        "selector": "entries[18]"
+      }
+    ]
+  },
+  "summary": {
+    "completed_orders_in_ledger": 65,
+    "frontier_orders_screened": 119,
+    "surviving_target_orders": [
+      2676,
+      2956,
+      4460,
+      5164,
+      5892,
+      6668,
+      7924,
+      9260,
+      11596
+    ],
+    "target_count": 9,
+    "chart_rows": 15,
+    "distinct_prime_multiplier_action_charts": 11,
+    "action_counts": {
+      "C3": 5,
+      "identity": 10
+    }
+  },
+  "charts": [
+    {
+      "target": 2676,
+      "p": 223,
+      "width": 3,
+      "m": 3,
+      "nonorigin_orbits": 74,
+      "action": "C3",
+      "necessary_DC_rows": [
+        {
+          "row": [
+            -14,
+            3,
+            3,
+            3
+          ],
+          "head_sign_sum": -5,
+          "tail_sign_sum": 3
+        }
+      ]
+    },
+    {
+      "target": 2676,
+      "p": 223,
+      "width": 3,
+      "m": 3,
+      "nonorigin_orbits": 74,
+      "action": "identity",
+      "necessary_DC_rows": [
+        {
+          "row": [
+            -14,
+            3,
+            3,
+            3
+          ],
+          "orbit_sign_sums": [
+            -5,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "row": [
+            -5,
+            9,
+            9,
+            6
+          ],
+          "orbit_sign_sums": [
+            -2,
+            3,
+            3,
+            2
+          ]
+        },
+        {
+          "row": [
+            13,
+            6,
+            3,
+            3
+          ],
+          "orbit_sign_sums": [
+            4,
+            2,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "target": 2956,
+      "p": 739,
+      "width": 1,
+      "m": 9,
+      "nonorigin_orbits": 82,
+      "action": "C3",
+      "necessary_DC_rows": [
+        {
+          "row": [
+            -8,
+            15,
+            15,
+            15
+          ],
+          "head_sign_sum": -1,
+          "tail_sign_sum": 5
+        }
+      ]
+    },
+    {
+      "target": 4460,
+      "p": 223,
+      "width": 5,
+      "m": 3,
+      "nonorigin_orbits": 74,
+      "action": "C3",
+      "necessary_DC_rows": [
+        {
+          "row": [
+            -14,
+            3,
+            3,
+            3
+          ],
+          "head_sign_sum": -5,
+          "tail_sign_sum": 3
+        }
+      ]
+    },
+    {
+      "target": 4460,
+      "p": 223,
+      "width": 5,
+      "m": 3,
+      "nonorigin_orbits": 74,
+      "action": "identity",
+      "necessary_DC_rows": [
+        {
+          "row": [
+            -14,
+            3,
+            3,
+            3
+          ],
+          "orbit_sign_sums": [
+            -5,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "row": [
+            -5,
+            9,
+            9,
+            6
+          ],
+          "orbit_sign_sums": [
+            -2,
+            3,
+            3,
+            2
+          ]
+        },
+        {
+          "row": [
+            13,
+            6,
+            3,
+            3
+          ],
+          "orbit_sign_sums": [
+            4,
+            2,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "target": 5164,
+      "p": 1291,
+      "width": 1,
+      "m": 15,
+      "nonorigin_orbits": 86,
+      "action": "identity",
+      "necessary_DC_rows": [
+        {
+          "row": [
+            -29,
+            15,
+            15,
+            0
+          ],
+          "orbit_sign_sums": [
+            -2,
+            1,
+            1,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "target": 5892,
+      "p": 491,
+      "width": 3,
+      "m": 7,
+      "nonorigin_orbits": 70,
+      "action": "identity",
+      "necessary_DC_rows": [
+        {
+          "row": [
+            1,
+            21,
+            7,
+            0
+          ],
+          "orbit_sign_sums": [
+            0,
+            3,
+            1,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "target": 5892,
+      "p": 491,
+      "width": 3,
+      "m": 5,
+      "nonorigin_orbits": 98,
+      "action": "identity",
+      "necessary_DC_rows": [
+        {
+          "row": [
+            -4,
+            15,
+            15,
+            5
+          ],
+          "orbit_sign_sums": [
+            -1,
+            3,
+            3,
+            1
+          ]
+        },
+        {
+          "row": [
+            21,
+            5,
+            5,
+            0
+          ],
+          "orbit_sign_sums": [
+            4,
+            1,
+            1,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "target": 6668,
+      "p": 1667,
+      "width": 1,
+      "m": 17,
+      "nonorigin_orbits": 98,
+      "action": "identity",
+      "necessary_DC_rows": [
+        {
+          "row": [
+            -33,
+            17,
+            17,
+            0
+          ],
+          "orbit_sign_sums": [
+            -2,
+            1,
+            1,
+            0
+          ]
+        }
+      ]
+    },
+    {
+      "target": 7924,
+      "p": 283,
+      "width": 7,
+      "m": 3,
+      "nonorigin_orbits": 94,
+      "action": "C3",
+      "necessary_DC_rows": [
+        {
+          "row": [
+            16,
+            3,
+            3,
+            3
+          ],
+          "head_sign_sum": 5,
+          "tail_sign_sum": 3
+        }
+      ]
+    },
+    {
+      "target": 7924,
+      "p": 283,
+      "width": 7,
+      "m": 3,
+      "nonorigin_orbits": 94,
+      "action": "identity",
+      "necessary_DC_rows": [
+        {
+          "row": [
+            -11,
+            9,
+            9,
+            0
+          ],
+          "orbit_sign_sums": [
+            -4,
+            3,
+            3,
+            0
+          ]
+        },
+        {
+          "row": [
+            -11,
+            12,
+            3,
+            3
+          ],
+          "orbit_sign_sums": [
+            -4,
+            4,
+            1,
+            1
+          ]
+        },
+        {
+          "row": [
+            7,
+            12,
+            9,
+            3
+          ],
+          "orbit_sign_sums": [
+            2,
+            4,
+            3,
+            1
+          ]
+        },
+        {
+          "row": [
+            7,
+            15,
+            3,
+            0
+          ],
+          "orbit_sign_sums": [
+            2,
+            5,
+            1,
+            0
+          ]
+        },
+        {
+          "row": [
+            16,
+            3,
+            3,
+            3
+          ],
+          "orbit_sign_sums": [
+            5,
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "target": 9260,
+      "p": 463,
+      "width": 5,
+      "m": 11,
+      "nonorigin_orbits": 42,
+      "action": "identity",
+      "necessary_DC_rows": [
+        {
+          "row": [
+            -10,
+            11,
+            11,
+            11
+          ],
+          "orbit_sign_sums": [
+            -1,
+            1,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "target": 9260,
+      "p": 463,
+      "width": 5,
+      "m": 7,
+      "nonorigin_orbits": 66,
+      "action": "identity",
+      "necessary_DC_rows": [
+        {
+          "row": [
+            -13,
+            14,
+            7,
+            7
+          ],
+          "orbit_sign_sums": [
+            -2,
+            2,
+            1,
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "target": 11596,
+      "p": 223,
+      "width": 13,
+      "m": 3,
+      "nonorigin_orbits": 74,
+      "action": "C3",
+      "necessary_DC_rows": [
+        {
+          "row": [
+            -14,
+            3,
+            3,
+            3
+          ],
+          "head_sign_sum": -5,
+          "tail_sign_sum": 3
+        }
+      ]
+    },
+    {
+      "target": 11596,
+      "p": 223,
+      "width": 13,
+      "m": 3,
+      "nonorigin_orbits": 74,
+      "action": "identity",
+      "necessary_DC_rows": [
+        {
+          "row": [
+            -14,
+            3,
+            3,
+            3
+          ],
+          "orbit_sign_sums": [
+            -5,
+            1,
+            1,
+            1
+          ]
+        },
+        {
+          "row": [
+            -5,
+            9,
+            9,
+            6
+          ],
+          "orbit_sign_sums": [
+            -2,
+            3,
+            3,
+            2
+          ]
+        },
+        {
+          "row": [
+            13,
+            6,
+            3,
+            3
+          ],
+          "orbit_sign_sums": [
+            4,
+            2,
+            1,
+            1
+          ]
+        }
+      ]
+    }
+  ],
+  "chart_indices_by_nonorigin_orbit_count": [
+    11,
+    12,
+    6,
+    0,
+    1,
+    3,
+    4,
+    13,
+    14,
+    2,
+    5,
+    9,
+    10,
+    7,
+    8
+  ],
+  "source_sha256": {
+    "certificates/scalar-lift/completed-order-inventory.json": "b138418bf7418e0a807f93cfe99eba4db176f87ca24bffaff4437bcac718f782",
+    "experiments/scalar_lift/frontier_120_snapshot.json": "a5522644cc5ccfddb72edcb406fa175114d3d28db7dec15ace77babbdf0241a3",
+    "experiments/scalar_lift/near_williamson_inputs.json": "be3da66fbf0517cde1e326e6a60c26acaeb03c0a1948b74bff78bcadad00957f",
+    "experiments/scalar_lift/williamson_inputs.json": "242f554cf113c68ab882e147c3b2702b7bb62e68b66ad36b16c92b6c194f8560"
+  }
+}

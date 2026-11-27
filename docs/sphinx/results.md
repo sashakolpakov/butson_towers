@@ -54,12 +54,14 @@ targets until their actual finite witnesses and endpoint checks exist:
 | Target order | T-input length $p$ | Source width $w$ |
 |---:|---:|---:|
 | 2676 | 223 | 3 |
+| 2956 | 739, three-cycle multiplier | 1 |
 | 4460 | 223 | 5 |
 | 4676 | 167 | 7 |
+| 5892 | 491, identity multiplier | 3 |
 | 7876 | 179 | 11 |
 | 8684 | 167 | 13 |
-| 9308 | 179 | 13 |
 | 9260 | 463, identity multiplier | 5 |
+| 9308 | 179 | 13 |
 | 11596 | 223 | 13 |
 
 Several rows share a missing ingredient. There is one length-223 input

@@ -8,11 +8,12 @@ orthogonal-design and source proofs then give actual Hadamard endpoints.
 A finite search result always records its coordinate pattern, requested
 sums and any additional gauges.
 
-Two runners use the same exact modular strategy:
+Three runners use the same exact modular strategy:
 
 | Runner | Coordinate pattern | Sign solver |
 |---|---|---|
 | {repo-file}`223 worker <experiments/scalar_lift/exact_t_campaign.py>` | The multiplier-covariant length-223 chart | Native packed Boolean mod8 filtering, followed by exact counts and correlations |
+| {repo-file}`Identity multiplier worker <experiments/scalar_lift/identity_t_campaign.py>` | Constant coordinate vectors on multiplier orbits at lengths 223 or 491 | Native mod8 filtering with four separate exact sign counts and every expanded integer shift |
 | {repo-file}`167/179 worker <experiments/scalar_lift/unrestricted_t_campaign.py>` | One coordinate label at every site of lengths 167 or 179 | CryptoMiniSat or OR-Tools CP-SAT with all exact counts and correlations |
 
 The submitted manuscript's literal witnesses and frozen packages are
@@ -41,7 +42,8 @@ parametrization. In the retained determinant coordinates this is
 PV+QU=1\quad\text{over }\mathbb F_{2^k}.
 ```
 
-The fields have degrees $k=37$ for the twisted 223 chart, $83$ for
+The fields have degrees $k=37$ for both 223 actions, $35$ for the identity
+491 chart, $83$ for
 unrestricted length 167, and $89$ for unrestricted length 179. The stored
 binary maps are checked through every constant, linear and quadratic
 coefficient. Independent geometry checks compare those probes with the
@@ -118,6 +120,37 @@ and its native companion for that interface. Their arithmetic,
 coordinate conversion, filtering and serialized stream are checked
 against independent Python controls.
 
+## Identity coordinate action
+
+The {repo-file}`identity geometry <experiments/scalar_lift/identity_multiplier.py>`
+requires $b(\mu x)=b(x)$, fixing every coordinate label. It differs from
+the three-cycle action above. If the four signed orbit counts are $a_j$,
+the row sums are $(1+ma_0,ma_1,ma_2,ma_3)$ and must have squared norm $p$.
+This necessary condition is followed by four exact sign counts and the
+full integer correlation checks.
+
+The {repo-file}`223 certificate <certificates/scalar-lift/identity-parity-p223.json>`
+validates the full parity map. Its saved minimum-head pattern for
+$(-14,3,3,3)$ has 30 free sign bits, compared with 32 in the earlier
+three-cycle control. This comparison concerns the recorded affine systems;
+neither is a signed witness. A focused three-day campaign uses
+
+```sh
+PYTHONPATH=src:. .venv/bin/python -B -m experiments.scalar_lift.identity_t_campaign \
+  --config certificates/scalar-lift/identity-parity-p223.json \
+  --output artifacts/scalar-frontier/example-identity223 \
+  --target-row=-14,3,3,3 --head-offsets=0,2,4 \
+  --seconds 259200 --branch-seconds 120 --branch-policy all \
+  --sampler native --seed 20261127223001 --nice 10 --detach
+```
+
+Offsets are added to $|a_0|$, so this selects $h=5,7,9$.
+`--target-row` is repeatable; its omission selects all compatible row types.
+The {repo-file}`491 certificate <certificates/scalar-lift/identity-parity-p491.json>`
+uses $m=7$, $\mu=138$ and compatible row sums $(1,21,7,0)$, checking every
+parity coefficient and expanded-shift comparison. A signed witness would
+yield order $4\cdot491\cdot3=5892$. No such witness is claimed.
+
 ## Run unrestricted length 167 or 179
 
 The unrestricted runner does not impose multiplier covariance. It cycles
@@ -156,7 +189,7 @@ WAL mode and `synchronous=FULL`. JSON status records are replaced
 atomically. The ledger is the durable record; the status file is a readable
 summary.
 
-For the 223 runner, the ledger stores coordinate patterns, a head-sign
+For the three-cycle 223 runner, the ledger stores coordinate patterns, a head-sign
 branch cursor, skipped-branch counts, attempts, sampler state and totals.
 A completely checked branch advances the cursor. If a per-branch limit
 interrupts a branch while session time remains, that branch is recorded
@@ -164,6 +197,11 @@ unfinished and may be skipped to explore further branches. Its pattern
 is marked `partial`, not complete. A branch interrupted at the session
 deadline stays active for replay on resume. The native solver does not
 serialize its internal Gray-code computation at every word.
+
+The identity runner commits accepted patterns and sampler state together.
+Each unfinished branch remains pending and is retried on resume; it is
+never converted into a completed exclusion. Only a pattern with every
+required branch complete advances the completed-pattern total.
 
 For the unrestricted runner, insertion of a coordinate/target/backend job
 and the updated sampler state are committed together. Completed jobs are
@@ -212,12 +250,14 @@ A different source/configuration identity requires a fresh run directory.
 An existing frozen directory rejects a conflicting supplied parity map.
 
 Resume an output directory by rerunning its saved launch command, or the
-same runner options against that frozen identity. The time budget applies
-to the new session; committed totals carry across sessions. Remove a
+same runner options against that frozen identity. The three-cycle and
+unrestricted time budgets apply to each new session; the identity runner
+uses a cumulative budget across resumed sessions. Committed totals carry
+across sessions. Remove a
 previously requested `STOP` file only when intending to resume the worker.
 
 Both native search and each SAT/CP-SAT invocation use one solver thread.
-The two runners have separate session and branch/pattern limits. Exact
+The runners have separate campaign and branch/pattern limits. Exact
 startup validation, model construction and final verification can add
 overhead; the recorded elapsed times state what actually ran. A positive
 witness can end the search early. `--max-patterns` counts completed coordinate patterns in the 223
@@ -256,12 +296,21 @@ The direct construction targets, in increasing real order, are:
 | Missing T length | Verified source width | Conditional real order |
 |---:|---:|---:|
 | 223 | 3 | 2676 |
+| 739 | 1 | 2956 |
 | 223 | 5 | 4460 |
 | 167 | 7 | 4676 |
+| 491 | 3 | 5892 |
 | 179 | 11 | 7876 |
 | 167 | 13 | 8684 |
+| 463 | 5 | 9260 |
 | 179 | 13 | 9308 |
 | 223 | 13 | 11596 |
+
+The {repo-file}`739 map <certificates/scalar-lift/hadamard-frame-p739.json>`
+uses the three-cycle action with multiplier order nine. Its unsigned map
+and all expanded shifts are checked; a complete signed input is still
+needed. The three-cycle runner selects the width-one source for this chart,
+so a verified witness would produce order 2956 directly.
 
 The source quadruples are already verified. A new T-input first needs its
 literal integer certificate and endpoint proof; a new-order label then
@@ -269,3 +318,11 @@ requires the dated literature check. Its new Lean literal bridge must also
 be added and successfully checked before claiming formal verification of
 that new result. These stages do not alter the manuscript's already
 completed thirty-four new orders and nine stated families.
+
+The {repo-file}`low-gap scanner <experiments/scalar_lift/low_gap_target_scan.py>`
+also screens both odd coordinate actions at prime lengths, with at most
+100 nonzero orbits and the retained literal source widths. Its
+{repo-file}`certificate <certificates/scalar-lift/low-gap-target-scan.json>`
+leaves nine necessary-arithmetic targets among the 119 remaining pinned
+frontier entries below 12000. It constructs no parity map or signed design.
+Replay with `python -m experiments.scalar_lift.low_gap_target_scan --check`.

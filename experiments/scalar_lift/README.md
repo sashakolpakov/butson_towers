@@ -9,8 +9,11 @@ matrix recipe. General weighted nodes are useful outputs in their own right.
 |---|---|
 | New real H7572: exact T631, scalar frame, saved matrix and full integer verification | [Standalone recipe and certificate](../../artifacts/hadamard-7572/README.md) |
 | New periodic T127, full T identities and known-order H1524 scalar control | [Standalone recipe and dated scope](../../artifacts/t-matrices-127/README.md) |
+| Screen the remaining frontier below 12000 using both odd coordinate actions and bounded orbit counts | `low_gap_target_scan --check`; [finite necessary-condition certificate](../../certificates/scalar-lift/low-gap-target-scan.json) |
 | Active SL2 parity-axis generation, exact mod4/mod8 sign lifting, finite pool controls and completed endpoint verification | `hadamard_frame_search`; [method and replay](../../docs/HADAMARD_FRAME_SEARCH.md) |
 | Search for length-223 periodic T-matrices, targeting missing order 2676 first | `large_parity_map`, `quadratic_sign_lift`, `exact_t_campaign`; [target, exact checks and replay](../../docs/LOW_ORDER_SEARCH.md) |
+| Validated length-739 three-cycle chart targeting 2956 with source width one | `exact_t_campaign`; [map scope and replay](../../docs/LOW_ORDER_SEARCH.md#the-next-lower-gap-order-2956) |
+| Identity-action multiplier charts at lengths 223 and 491; conditional orders 2676/4460/11596 and 5892 | `identity_multiplier`, `identity_t_campaign`; [distinct geometry, 30-bit T223 control and replay](../../docs/LOW_ORDER_SEARCH.md#identity-coordinate-action-at-lengths-223-and-491) |
 | Exact unrestricted sign searches at lengths 167 and 179 | `unrestricted_parity_map`, `unrestricted_t_sign_model`, `unrestricted_t_sign_sat`, `unrestricted_t_sign_cp`, `unrestricted_t_campaign`; [solver scope and replay](../../docs/LOW_ORDER_SEARCH.md#unrestricted-sign-solvers-for-lengths-167-and-179) |
 | Select compact multiplier charts; verified maps at 1951, 3571 and 4219 | `multiplier_target_scan`, `large_parity_map`, `hadamard_frame_search`; [finite scan and target selection](../../docs/HADAMARD_FRAME_TARGET_SCAN.md). Use `exact_t_campaign` and `quadratic_sign_lift` for the larger orbit masks. |
 | New real orders 17668/22716/32812 from the verified width-2524 frame and further admitted Butson sources | `reuse_hadamard_7572_frame` |
@@ -71,3 +74,5 @@ recovered orders**, plus the separate new periodic T127 ingredient. The
 nine announced infinite constructions have individually audited finite members;
 their entire order sets are not labelled new. Earlier source inventories
 and reference chains retain their separate known-order control scope.
+The identity-action maps and their affine sign controls are search reductions;
+they provide no new signed T223/T491 witness or additional completed order.

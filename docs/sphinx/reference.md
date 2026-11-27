@@ -174,6 +174,31 @@ Python field arithmetic:
    :undoc-members:
 ```
 
+The identity-action chart instead keeps every coordinate fixed under the
+multiplier. Its sign variables index whole orbits, including the singleton
+at residue zero. `prepare` converts the four requested row sums into four
+exact orbit-sign counts, accounting for that singleton separately. Its
+`groups` therefore contain orbit indices; the unrestricted model below
+uses actual residue indices. `validate_map` checks both the complete
+quadratic identity and its expansion at every nonzero shift.
+
+```{eval-rst}
+.. automodule:: experiments.scalar_lift.identity_multiplier
+   :members: chart, target_rows, normalize_head, validate_map, prepare, solve_bits, verify_states
+   :member-order: bysource
+```
+
+The bounded target scanner checks row-sum norms and signed orbit counts
+before constructing a parity map. It binds its frontier, completed-order
+ledger and source-width tables by hashes. Its output contains necessary
+arithmetic candidates, with no signed design or endpoint assertion.
+
+```{eval-rst}
+.. automodule:: experiments.scalar_lift.low_gap_target_scan
+   :members: identity_dc_rows, c3_dc_rows, scan_targets, build_report
+   :member-order: bysource
+```
+
 (reference-sign-model)=
 ## Prepared sign systems
 

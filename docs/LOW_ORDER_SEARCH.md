@@ -14,18 +14,30 @@ finite search and the subsequent scalar-restriction proof.
 | Missing design | Direct target orders |
 |---|---|
 | Periodic T-matrices of length 223 | 2676, 4460, 11596 |
+| Periodic T-matrices of length 739 | 2956 |
 | Periodic T-matrices of length 167 | 4676, 8684 |
+| Periodic T-matrices of length 491 | 5892 |
 | Periodic T-matrices of length 179 | 7876, 9308 |
+| Periodic T-matrices of length 463 | 9260 |
 
 A length 223 witness gives the four-variable orthogonal design proved in the
 manuscript. The already verified Williamson inputs of orders 3, 5, 13 then
 produce 2676, 4460, 11596. Miyamoto's construction would also give 10708 from
 2676, with prime parameter 2677. These orders occur in the
 [author-maintained unresolved frontier](https://github.com/vatskishan03/Hadamard/blob/main/FRONTIER.md),
-checked 25 November 2026. Every completed endpoint will be compared again
+cross-checked 26 November 2026. Every completed endpoint will be compared again
 with primary records before adding a new-order claim.
 
-## Exact target
+The [bounded target scanner](../experiments/scalar_lift/low_gap_target_scan.py)
+checks both odd coordinate actions at prime lengths, with at most 100
+nonzero orbits and source widths from the two retained literal input tables.
+Its [certificate](../certificates/scalar-lift/low-gap-target-scan.json)
+screens the 119 remaining entries below 12000 in the pinned frontier and
+retains nine target orders at the level of row-sum and support arithmetic.
+It constructs neither parity maps nor signed witnesses. Replay it with
+`python -m experiments.scalar_lift.low_gap_target_scan --check`.
+
+## Three-cycle coordinate action at length 223
 
 Let $p=223$ and let $e_0,e_1,e_2,e_3$ be the standard basis of
 $\mathbb Z^4$. Multiplication by $\mu=183$ on $\mathbb Z/p\mathbb Z$
@@ -170,6 +182,83 @@ PYTHONPATH=src:. .venv/bin/python -m pytest -q \
 A timeout applies only to its run, and a fully checked coordinate pattern
 applies only to that pattern and its stated gauges. Neither excludes a
 T-design or a Hadamard matrix at the target order.
+
+## The next lower gap: order 2956
+
+The same three-cycle construction has a validated chart at
+$p=739$, $m=9$, $\mu=197$, with 82 nonzero orbits and row sums
+$(-8,15,15,15)$. The
+[parity certificate](../certificates/scalar-lift/hadamard-frame-p739.json)
+checks all 13,531 coefficient inputs and all 9,985,878 expanded parity
+comparisons. A signed witness would combine with the width-one source
+$(1,1,1,1)$ to give order $4\cdot739=2956$.
+
+Use the three-cycle runner above with this certificate and a fresh output
+directory. Its `--heads 5,7,9` schedule avoids the rarely sampled smallest
+supports. In checked patterns, fully fixing the head signs leaves
+36, 34 and 32 free sign bits respectively. These branches are larger than
+the T223 branches; their exact count and integer correlation checks remain
+necessary. No signed T739 witness is asserted by the parity certificate.
+
+## Identity coordinate action at lengths 223 and 491
+
+The alternative [identity multiplier module](../experiments/scalar_lift/identity_multiplier.py)
+requires $b(\mu x)=b(x)$: multiplication permutes the residues and fixes
+all four coordinates. The three-cycle chart above does not describe this
+condition. There are $N=(p-1)/m$ nonzero orbits. If $a_j$ is the signed
+number assigned to coordinate $j$, the row sums are
+$(1+ma_0,ma_1,ma_2,ma_3)$. Their squared norm must be $p$.
+The sign solver enforces four separate exact counts, as well as every
+integer correlation; the norm equation alone does not give a T-design.
+
+At $p=223,m=3,\mu=183$, the
+[identity parity certificate](../certificates/scalar-lift/identity-parity-p223.json)
+checks the complete degree-37 field map and its expanded correlations.
+The compatible row-sum types, after signs and permutations of coordinates
+1,2,3, are $(-14,3,3,3)$, $(13,6,3,3)$ and $(-5,9,9,6)$.
+The saved pattern with the first type and the minimum $h=5$ has **30 free
+sign bits**, compared with 32 in the earlier three-cycle control. These
+are checked affine dimensions for the retained patterns, not a uniform
+rank theorem or a signed witness.
+
+The [identity runner](../experiments/scalar_lift/identity_t_campaign.py)
+can focus on the first row type and its $h=5,7,9$ strata:
+
+```sh
+PYTHONPATH=src:. .venv/bin/python -B -m experiments.scalar_lift.identity_t_campaign \
+  --config certificates/scalar-lift/identity-parity-p223.json \
+  --output artifacts/scalar-frontier/low-order-search/identity223 \
+  --target-row=-14,3,3,3 --head-offsets=0,2,4 \
+  --seconds 259200 --branch-seconds 120 --branch-policy all \
+  --sampler native --seed 20261127223001 --nice 10 --detach
+```
+
+`--head-offsets` increases $h$ from $|a_0|$; repeat `--target-row` to select
+several row types. Omitting it selects all compatible row types, which can
+include rare support strata. The ledger commits each accepted pattern and
+sampler state together. Incomplete branches remain pending and are retried
+on resume; a pattern is complete only after all its branches are complete.
+The source snapshot, five-second heartbeat, stop request and independent
+endpoint checks use the same safeguards described above. This runner's
+time limit is cumulative across resumed sessions.
+
+The [length-491 certificate](../certificates/scalar-lift/identity-parity-p491.json)
+uses $m=7$, $\mu=138$ and a degree-35 field map. Its row sums
+$(1,21,7,0)$ have squared norm 491; all parity coefficients and expanded
+shift comparisons are verified, with additional exact sign-model controls.
+A complete signed T491 would give **H5892**, using the retained Williamson
+source of width three. For this search, change the command above to use
+the length-491 certificate, `--target-row=1,21,7,0`,
+`--head-offsets=4,6` and a fresh output directory. It remains a target.
+Neither map certificate adds
+an endpoint to the completed inventory of 34 new and 31 known orders.
+
+Focused identity checks:
+
+```sh
+PYTHONPATH=src:. .venv/bin/python -m pytest -q \
+  tests/test_identity_multiplier.py tests/test_identity_t_campaign.py
+```
 
 ## Unrestricted sign solvers for lengths 167 and 179
 

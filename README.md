@@ -63,13 +63,15 @@ and 442962. Equivalence at the other recovered orders remains unsettled.
 There is a separate new [periodic T-matrix construction of order 127](artifacts/t-matrices-127/README.md).
 
 Current [construction searches](docs/LOW_ORDER_SEARCH.md) target missing
-order **2676** first, through length-223 periodic T-matrices. Search candidates
-are kept separate from the completed results above.
-
-The [multiplier scan](docs/HADAMARD_FRAME_TARGET_SCAN.md) also selects larger
-inputs with fewer independent variables. Its newly verified prime-1951 chart
-uses a multiplier of order 39 and typically leaves 23 free sign bits;
-candidate output orders include 23412, 54628 and 101452.
+order **2676** first, through length-223 periodic T-matrices. A second
+validated multiplier action gives a smaller sign system at this length;
+the same action at length 491 targets **5892**. A further validated
+three-cycle chart targets **2956**. All have checkpointed searches.
+New searches focus on gaps below 12000; the higher-order
+multiplier workers have been stopped with their checkpoints retained.
+The [bounded target scan](certificates/scalar-lift/low-gap-target-scan.json)
+records the necessary row-sum conditions and source widths. These search
+reductions add no completed orders to the results above.
 
 The [complete source inventory](docs/SOURCE_INVENTORY.md) records the four
 compatible sixth-root seed orders, the 27 original cyclic inputs, the 19

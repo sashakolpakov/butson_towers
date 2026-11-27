@@ -1,5 +1,9 @@
 # Compact scalar-frame target scan
 
+The current search priority is [lower missing orders](LOW_ORDER_SEARCH.md).
+The larger-prime workers described below have been stopped with their
+checkpoints retained; their validated maps remain available.
+
 The [finite parameter certificate](../certificates/scalar-lift/hadamard-frame-target-scan.json)
 lists every positive DC configuration in the following class: prime
 `7 <= p <= 20000`, an odd multiplier order `m` divisible by three, the

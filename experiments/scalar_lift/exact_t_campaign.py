@@ -80,7 +80,7 @@ def verified_endpoints(states, data, output):
         verify_orthogonal_design, verified_williamson, ScalarEndpoint, row_controls)
     rows = frame.expand(states, data)
     matrices, od_proof = verify_orthogonal_design(rows)
-    widths = {223:(3,5,13), 167:(7,13), 179:(11,13)}.get(data['p'], (3,))
+    widths = {223:(3,5,13), 167:(7,13), 179:(11,13), 739:(1,)}.get(data['p'], (3,))
     endpoints = []
     for width in widths:
         source, proof = verified_williamson(width)
